@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width,initial-scale=1" name="viewport"/>
+    <title>结构化输出转换器 :: Spring AI 参考</title>
+    <link href="https://docs.spring.io/spring-ai/reference/api/structured-output-converter.html" rel="canonical"/>
+    <link href="prompt.html" rel="prev"/>
+    <link href="multimodality.html" rel="next"/>
+    <meta content="Antora 3.1.15" name="generator"/>
+    <script>
+!function (theme, navWidth) {
+  if (theme === 'dark') document.documentElement.classList.add('dark-theme')
+  if (navWidth) document.documentElement.style.setProperty('--nav-width', `${navWidth}px`)
+}(localStorage && localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)')?.matches && 'dark'),
+  localStorage && localStorage.getItem('nav-width'))
+    </script>
+    <link href="../_/css/site.css" rel="stylesheet"/>
+    <link href="../_/css/vendor/search.css" rel="stylesheet"/>
+    <link href="../_/css/vendor/page-search.css" rel="stylesheet"/>
+    <link href="../_/css/vendor/asciidoctor-tabs.css" rel="stylesheet"/>
+
+    <meta content="v0.4.17" name="antora-ui-version"/> 
+    <meta content="2.0.0" name="version"/>
+    <meta content="ai" name="component"/>
+    <meta content="false" name="latest-version"/>
+    <link href="../_/img/favicon.ico" rel="icon" type="image/vnd.microsoft.icon"/>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://spring.io">
+        <img alt="Spring" class="block" id="springlogo" src="../_/img/spring-logo.svg"/>
+      </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="navbar-menu" id="topbar-nav">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">为什么选择 Spring</a>
+          <div class="navbar-dropdown"><a class="navbar-item" href="https://spring.io/why-spring">概述</a>
+<a class="navbar-item" href="https://spring.io/microservices">微服务</a>
+<a class="navbar-item" href="https://spring.io/reactive">响应式</a>
+<a class="navbar-item" href="https://spring.io/event-driven">事件驱动</a>
+<a class="navbar-item" href="https://spring.io/cloud">云原生</a>
+<a class="navbar-item" href="https://spring.io/web-applications">Web 应用</a>
+<a class="navbar-item" href="https://spring.io/serverless">Serverless</a>
+<a class="navbar-item" href="https://spring.io/batch">批处理</a></div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Learn</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://spring.io/learn">Overview</a>
+            <a class="navbar-item" href="https://spring.io/quickstart">Quickstart</a>
+            <a class="navbar-item" href="https://spring.io/guides">Guides</a>
+            <a class="navbar-item" href="https://spring.io/blog">Blog</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Projects</a>
+          <div class="navbar-dropdown" style="min-width: 280px"><a class="navbar-item" href="https://spring.io/projects">概览</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-boot">Spring Boot</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-framework">Spring Framework</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-cloud">Spring Cloud</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-cloud-dataflow">Spring Cloud Data Flow</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-data">Spring Data</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-integration">Spring Integration</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-batch">Spring Batch</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-security">Spring Security</a>
+<a class="navbar-item navbar-item-special" href="https://spring.io/projects">查看所有项目</a>
+<li class="navbar-item navbar-item-special-3">开发工具</li>
+<a class="navbar-item" href="https://spring.io/tools">Spring Tools 4</a>
+<a class="navbar-item navbar-item-special-2" href="https://start.spring.io">Spring Initializr
+              <svg class="external-link-icon" viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><polyline fill="none" points="15 10.94 15 15 1 15 1 1 5.06 1" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"></polyline><polyline fill="none" points="8.93 1 15 1 15 7.07" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"></polyline><line fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" x1="15" x2="8" y1="1" y2="8"></line></svg></a></div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Academy</a>
+          <div class="navbar-dropdown"><a class="navbar-item" href="https://spring.academy/courses">课程</a>
+<a class="navbar-item" href="https://spring.academy/learning-path">获取认证</a></div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Solutions</a>
+          <div class="navbar-dropdown lg"><a class="navbar-item" href="https://spring.io/solutions">概览</a>
+<a class="navbar-item" href="https://spring.io/support">Spring Runtime</a>
+<a class="navbar-item" href="https://spring.io/consulting">Spring Consulting</a>
+<a class="navbar-item" href="https://spring.academy/teams">Spring Academy For Teams</a>
+<a class="navbar-item" href="https://spring.io/security">安全公告</a></div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable is-community">
+          <a class="navbar-link" href="#">Community</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://spring.io/community">Overview</a>
+            <a class="navbar-item" href="https://spring.io/events">Events</a>
+            <a class="navbar-item" href="https://spring.io/team">Team</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <label class="theme-toggler">
+      <input id="switch-theme-checkbox" name="switch-theme-checkbox" type="checkbox"/>
+      <span class="icon"><svg aria-hidden="true" class="svg-inline--fa fa-moon moon" data-icon="moon" data-prefix="fas" focusable="false" role="img" viewbox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z" fill="currentColor"></path>
+</svg>
+        <svg aria-hidden="true" class="svg-inline--fa fa-sun sun" data-icon="sun" data-prefix="fas" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z" fill="currentColor"></path>
+</svg></span>
+      <span class="text">light</span>
+    </label>
+  </nav>
+</header>
+<script>
+!function (theme) {
+  if (theme === 'dark') {
+    document.getElementById('switch-theme-checkbox').parentElement.classList.add('active')
+  }
+}(localStorage && localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)')?.matches && 'dark'))
+</script>
+<div class="body">
+<div class="nav-container" data-component="ai" data-version="2.0.0">
+  <aside class="nav">
+    <div class="panels">
+      <div class="nav-panel-menu is-active" data-panel="menu">
+        <nav class="nav-menu">
+<div class="context">
+  <span class="title">Spring AI</span>
+  <span class="version">2.0.0</span>
+  <button class="browse-version" id="browse-version">
+    <svg height="24px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewbox="0 0 512 512" width="24px" xml:space="preserve"><g><path d="M256,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S273.7,224,256,224L256,224z"></path><path d="M128.4,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S146,224,128.4,224L128.4,224z"></path><path d="M384,224c-17.7,0-32,14.3-32,32s14.3,32,32,32s32-14.3,32-32S401.7,224,384,224L384,224z"></path></g></svg>
+  </button>
+  <div class="search">
+  <button class="DocSearch-Button search-button">
+    <svg enable-background="new 0 0 32 32" id="Glyph" version="1.1" viewbox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M27.414,24.586l-5.077-5.077C23.386,17.928,24,16.035,24,14c0-5.514-4.486-10-10-10S4,8.486,4,14  s4.486,10,10,10c2.035,0,3.928-0.614,5.509-1.663l5.077,5.077c0.78,0.781,2.048,0.781,2.828,0  C28.195,26.633,28.195,25.367,27.414,24.586z M7,14c0-3.86,3.14-7,7-7s7,3.14,7,7s-3.14,7-7,7S7,17.86,7,14z" id="XMLID_223_"></path>
+</svg>
+    <span>Search</span>
+    <span class="search-key"></span>
+  </button>
+</div>
+</div><ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../index.html">概览</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../concepts.html">AI 概念</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="1"><a class="nav-link" href="../getting-started.html">入门指南</a></li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Reference</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="chatclient.html">Chat Client API</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="advisors.html">顾问</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="advisors-recursive.html">递归顾问</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="prompt.html">Prompts</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2"><a class="nav-link" href="structured-output-converter.html">结构化输出</a></li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="multimodality.html">Multimodality</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">Models</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="chatmodel.html">聊天模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/comparison.html">聊天模型对比</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/bedrock-converse.html">Amazon Bedrock Converse</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/anthropic-chat.html">Anthropic</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/azure-openai-chat.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/deepseek-chat.html">DeepSeek</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/dmr-chat.html">Docker Model Runner</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/google-genai-chat.html">Google GenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/groq-chat.html">Groq</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/mistralai-chat.html">Mistral AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/minimax-chat.html">MiniMax</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/nvidia-chat.html">NVIDIA</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/ollama-chat.html">Ollama</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/perplexity-chat.html">Perplexity AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/oci-genai-chat.html">OCI Generative AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/openai-chat.html">OpenAI</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="embeddings.html">嵌入模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="bedrock.html">Amazon Bedrock</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="embeddings/bedrock-cohere-embedding.html">Cohere</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="embeddings/bedrock-titan-embedding.html">Titan</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/azure-openai-embeddings.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/google-genai-embeddings-text.html">Google GenAI 文本嵌入</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/mistralai-embeddings.html">Mistral AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/oci-genai-embeddings.html">OCI GenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/ollama-embeddings.html">Ollama</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/onnx.html">(ONNX) Transformers</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/openai-embeddings.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/postgresml-embeddings.html">PostgresML</a>
+</li>
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<span class="nav-text">VertexAI</span>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="embeddings/vertexai-embeddings-text.html">文本嵌入</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="embeddings/vertexai-embeddings-multimodal.html">多模态嵌入</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="imageclient.html">图像模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="image/azure-openai-image.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="image/openai-image.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="image/stabilityai-image.html">Stability</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="audio.html">音频模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="audio/transcriptions.html">转录 API</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="audio/transcriptions/azure-openai-transcriptions.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="audio/transcriptions/openai-transcriptions.html">OpenAI</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="audio/speech.html">文本转语音 (TTS) API</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="audio/speech/openai-speech.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="audio/speech/elevenlabs-speech.html">ElevenLabs</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="moderation.html">审核模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="moderation/openai-moderation.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="moderation/mistral-ai-moderation.html">Mistral AI</a>
+</li>
+</ul></li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="chat-memory.html">聊天记忆</a></li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="tools.html">工具调用</a></li>
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="mcp/mcp-overview.html">Model Context Protocol (MCP)</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="mcp/mcp-client-boot-starter-docs.html">MCP Client Boot Starters</a>
+</li>
+<li class="nav-item" data-depth="3">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="mcp/mcp-server-boot-starter-docs.html">MCP Server Boot Starters</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-stdio-sse-server-boot-starter-docs.html">STDIO 和 SSE MCP 服务器</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-streamable-http-server-boot-starter-docs.html">Streamable-HTTP MCP 服务器</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-stateless-server-boot-starter-docs.html">无状态 Streamable-HTTP MCP 服务器</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="mcp/mcp-security.html">MCP 安全性 (WIP)</a>
+</li>
+<li class="nav-item" data-depth="3">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="mcp/mcp-annotations-overview.html">MCP 注解</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-annotations-client.html">客户端注解</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-annotations-server.html">服务器注解</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-annotations-special-params.html">特殊参数</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-annotations-examples.html">MCP 注解示例</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="retrieval-augmented-generation.html">检索增强生成 (RAG)</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="etl-pipeline.html">ETL 流水线</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="testing.html">模型评估</a></li>
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="vectordbs.html">向量数据库</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/azure.html">Azure AI Service</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/azure-cosmos-db.html">Azure Cosmos DB</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/bedrock-knowledge-base.html">Amazon Bedrock Knowledge Base</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/apache-cassandra.html">Apache Cassandra 向量存储</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/chroma.html">Chroma</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/couchbase.html">Couchbase</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/elasticsearch.html">Elasticsearch</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/gemfire.html">GemFire</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/mariadb.html">MariaDB 向量存储</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/milvus.html">Milvus</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/mongodb.html">MongoDB Atlas</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/neo4j.html">Neo4j</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/opensearch.html">OpenSearch</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/oracle.html">Oracle</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/pgvector.html">PGvector</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/pinecone.html">Pinecone</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/qdrant.html">Qdrant</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/redis.html">Redis</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/typesense.html">Typesense</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/weaviate.html">Weaviate</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/s3-vector-store.html">S3 向量存储</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../observability/index.html">Observability</a>
+  </li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="docker-compose.html">开发时服务</a></li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Testing</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="testcontainers.html">Testcontainers</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1"><button class="nav-item-toggle"></button>
+<span class="nav-text">指南</span>
+<ul class="nav-list">
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://github.com/spring-ai-community/awesome-spring-ai">Awesome Spring AI</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../guides/getting-started-mcp.html">MCP 入门指南</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../guides/dynamic-tool-search.html">动态工具发现</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../guides/llm-as-judge.html">LLM-as-a-Judge 评估</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="chat/prompt-engineering-patterns.html">提示工程模式</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="effective-agents.html">构建高效 Agent</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://catalog.workshops.aws/java-spring-ai-agents">由 AWS 提供的使用 Spring AI 构建 Agent</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://catalog.workshops.aws/java-spring-ai-agentcore">由 AWS 提供的使用 Spring AI 和 AgentCore 构建 Agent</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://github.com/microsoft/Spring-AI-for-Beginners">由 Microsoft 提供的 Spring AI 入门教程</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="1"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../upgrade-notes.html">升级说明</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="tools-migration.html">将 FunctionCallback 迁移到 ToolCallback API</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="chat/anthropic-migration.html">将 Anthropic 模块迁移到官方 Java SDK</a>
+</li>
+</ul></li>
+</ul>
+  </li>
+</ul>
+          <div class="toggle-sm">
+            <button class="nav-toggle" id="nav-toggle-2"></button>
+          </div>
+        </nav>
+      </div>
+      <div class="nav-collapse">
+        <button id="nav-collapse-toggle"><span></span></button>        
+      </div>
+    </div>
+    <div class="nav-resize"></div>
+  </aside>
+</div>
+<script>
+!function (sidebar) {
+  if (sidebar) {
+    document.body.classList.add('nav-sm')
+  }
+}(localStorage && localStorage.getItem('sidebar') === 'close')
+</script><main class="article">
+<div class="toolbar" role="navigation">
+  <button class="nav-toggle" id="nav-toggle-1"></button>
+<div class="search">
+  <button class="DocSearch-Button search-button">
+    <svg id="svg-stash-de15fb15"></svg>
+    <span>Search</span>
+    <span class="search-key"></span>
+  </button>
+</div>
+</div>
+  <div class="content">
+<aside class="sidebar">
+  <div class="content">
+    <div class="toc" data-levels="2" data-title="Structured Output Converter">
+      <div class="toc-menu"></div>
+    </div>
+    <div class="sidebar-links"><a href="file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/structured-output-converter.adoc">
+<svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m16 2.012 3 3L16.713 7.3l-3-3zM4 14v3h3l8.299-8.287-3-3zm0 6h16v2H4z"></path></svg>
+          编辑此页面
+        </a>
+<a href="https://github.com/spring-projects/spring-ai" title="GitHub">
+<svg height="512px" id="Layer_1" version="1.1" viewbox="0 0 512 512" width="512px" xmlns="http://www.w3.org/2000/svg"><style type="text/css">
+              .st0{fill-rule:evenodd;clip-rule:evenodd;} </style><g><path class="st0" d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"></path></g></svg>
+          GitHub 项目
+        </a></div>
+  </div>
+</aside>
+<article class="doc">
+<div class="breadcrumbs-container"><nav aria-label="breadcrumbs" class="breadcrumbs">
+<ul>
+<li><a href="../index.html">Spring AI</a></li>
+<li>参考资料</li>
+<li><a href="structured-output-converter.html">结构化输出</a></li>
+</ul>
+</nav></div><h1 class="page" id="page-title">结构化输出转换器</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>LLM 生成结构化输出的能力对于依赖可靠解析输出值的内容下游应用至关重要。
+
+开发者希望能够快速将 AI 模型的结果转换为数据类型（例如 JSON、XML 或 Java 类），以便传递给其他应用程序的函数和方法。</p>
+</div>
+<div class="paragraph">
+<p>Spring AI 的 <code style="color: #d63384;">Structured Output Converters</code> 有助于将 LLM 输出转换为结构化格式。
+如下图所示，此方法围绕 LLM 文本补全（text completion）端点运行：</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img alt="Structured Output Converter Architecture" src="../_images/structured-output-architecture.jpg" width="900"/>
+</div>
+</div>
+<div class="paragraph">
+<p>使用通用补全 API 从大语言模型（LLMs）生成结构化输出时，需要对输入和输出进行仔细的处理。结构化输出转换器在 LLM 调用前后起着至关重要的作用，确保能够实现所需的输出结构。</p>
+</div>
+<div class="paragraph">
+<p>在调用 LLM 之前，转换器会在提示词中添加格式指令，为模型生成所需的输出结构提供明确的指导。这些指令充当蓝图，引导模型的响应符合指定的格式。</p>
+</div>
+<div class="admonitionblock note">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+随着越来越多的 AI 模型原生支持结构化输出，您可以使用 <a class="xref page" href="chatclient.html#_native_structured_output">Native Structured Output</a> 功能，并配合 <code>AdvisorParams.ENABLE_NATIVE_STRUCTURED_OUTPUT</code> 来利用这一能力。此方法直接将生成的 JSON schema 与模型的原生结构化输出 API 结合使用，无需预设提示词格式指令，且能提供更可靠的结果。
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="paragraph">
+<p>在 LLM 调用之后，转换器获取模型的输出文本并将其转换为结构化类型的实例。这一转换过程包括解析原始文本输出，并将其映射到相应的结构化数据表示形式，例如 JSON、XML 或特定领域的数据结构。</p>
+</div>
+<div class="admonitionblock tip">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-tip" title="提示"></i>
+</td>
+<td class="content">
+<code class="StructuredOutputConverter"></code> 是将模型输出转换为结构化输出的一种尽力而为的尝试。
+AI 模型不保证一定能返回所要求的结构化输出。
+模型可能无法理解提示词，或者无法按要求生成结构化输出。
+请考虑实现一种验证机制，以确保模型输出符合预期。
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="admonitionblock tip">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<code class="StructuredOutputConverter"></code> 不用于 LLM <a class="xref page" href="tools.html">Tool Calling</a>，因为该功能本身默认就提供结构化输出。
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_structured_output_api"><a class="anchor" href="#_structured_output_api">Structured Output API</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><code style="color: #d73a49;">StructuredOutputConverter</code> 接口允许您获取结构化输出，例如将基于文本的 AI 模型输出映射到 Java 类或值数组。
+该接口的定义如下：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public interface StructuredOutputConverter&lt;T&gt; extends Converter&lt;String, T&gt;, FormatProvider {
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>它结合了 Spring 的 <a href="https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/core/convert/converter/Converter.html">Converter&lt;String, T&gt;</a> 接口和 <code class="language-java">FormatProvider</code> 接口</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public interface FormatProvider {
+	String getFormat();
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>下图显示了使用结构化输出 API 时的数据流。</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img alt="Structured Output API" src="../_images/structured-output-api.jpg" width="900"/>
+</div>
+</div>
+<div class="paragraph">
+<p><code style="color: #d73a49;">FormatProvider</code> 为 AI 模型提供特定的格式指南，使其能够生成可以通过 <code style="color: #d73a49;">Converter</code> 转换为指定目标类型 <code style="color: #d73a49;">T</code> 的文本输出。以下是此类格式指令的一个示例：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>  Your response should be in JSON format.
+  The data structure for the JSON should match this Java class: java.util.HashMap
+  Do not include any explanations, only provide a RFC8259 compliant JSON response following this format without deviation.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>格式指令通常附加在用户输入的末尾，并使用类似这样的 <a class="xref page" href="prompt.html#_prompttemplate">PromptTemplate</a>：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">    StructuredOutputConverter outputConverter = ...
+    String userInputTemplate = """
+        ... user text input ....
+        {format}
+        """; // user input with a "format" placeholder.
+    Prompt prompt = new Prompt(
+            PromptTemplate.builder()
+						.template(this.userInputTemplate)
+						.variables(Map.of(..., "format", this.outputConverter.getFormat())) // replace the "format" placeholder with the converter's format.
+						.build().createMessage()
+    );</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Converter&lt;String, T&gt; 负责将模型输出的文本转换为指定类型 &lt;code&gt;T&lt;/code&gt; 的实例。</p>
+</div>
+<div class="sect2">
+<h3 id="_available_converters"><a class="anchor" href="#_available_converters">可用转换器</a></h3>
+<div class="paragraph">
+<p>目前，Spring AI 提供了 <code>AbstractConversionServiceOutputConverter</code>、<code>AbstractMessageOutputConverter</code>、<code>BeanOutputConverter</code>、<code>MapOutputConverter</code> 和 <code>ListOutputConverter</code> 的实现：</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img alt="Structured Output Class Hierarchy" src="../_images/structured-output-hierarchy4.jpg" width="900"/>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>AbstractConversionServiceOutputConverter&lt;T&gt;</code> - 提供一个预配置的 <a href="https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/core/convert/support/GenericConversionService.html">GenericConversionService</a>，用于将 LLM 输出转换为所需的格式。未提供默认的 <code>FormatProvider</code> 实现。</p>
+</li>
+<li>
+<p><code>AbstractMessageOutputConverter&lt;T&gt;</code> - 提供一个预配置的 <a href="https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/jms/support/converter/MessageConverter.html">MessageConverter</a>，用于将 LLM 输出转换为所需的格式。未提供默认的 <code>FormatProvider</code> 实现。</p>
+</li>
+<li>
+<p><code>BeanOutputConverter&lt;T&gt;</code> - 通过指定的 Java 类（例如 Bean）或 <a href="https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/core/ParameterizedTypeReference.html">ParameterizedTypeReference</a> 进行配置，该转换器采用 <code>FormatProvider</code> 实现，引导 AI 模型生成符合基于指定 Java 类推导出的 <code>DRAFT_2020_12</code> <code>JSON Schema</code> 的 JSON 响应。随后，它利用 <code>JsonMapper</code> 将 JSON 输出反序列化为目标类的 Java 对象实例。</p>
+</li>
+<li>
+<p><code>MapOutputConverter</code> - 通过一个 <code>FormatProvider</code> 实现扩展了 <code>AbstractMessageOutputConverter</code> 的功能，旨在引导 AI 模型生成符合 RFC8259 标准的 JSON 响应。此外，它还包含一个转换器实现，利用提供的 <code>MessageConverter</code> 将 JSON 有效负载转换为 <code>java.util.Map&lt;String, Object&gt;</code> 实例。</p>
+</li>
+<li>
+<p><code>ListOutputConverter</code> - 继承自 <code>AbstractConversionServiceOutputConverter</code>，并包含一个专为逗号分隔列表输出定制的 <code>FormatProvider</code> 实现。该转换器实现采用提供的 <code>ConversionService</code> 将模型文本输出转换为 <code>java.util.List</code>。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_using_converters"><a class="anchor" href="#_using_converters">使用转换器</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>以下章节提供了如何使用可用转换器生成结构化输出的指南。</p>
+</div>
+<div class="sect2">
+<h3 id="_bean_output_converter"><a class="anchor" href="#_bean_output_converter">Bean 输出转换器</a></h3>
+<div class="paragraph">
+<p>以下示例展示了如何使用 <code>BeanOutputConverter</code> 为演员生成作品年表。</p>
+</div>
+<div class="paragraph">
+<p>代表演员作品集的目标记录：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">record ActorsFilms(String actor, List&lt;String&gt; movies) {
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>以下是如何使用高层、流式的 <code style="color: #d14">ChatClient</code> API 来应用 BeanOutputConverter 的方法：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ActorsFilms actorsFilms = ChatClient.create(chatModel).prompt()
+        .user(u -&gt; u.text("Generate the filmography of 5 movies for {actor}.")
+                    .param("actor", "Tom Hanks"))
+        .call()
+        .entity(ActorsFilms.class);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>或者直接使用低级的 <code>ChatModel</code> API：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">BeanOutputConverter&lt;ActorsFilms&gt; beanOutputConverter =
+    new BeanOutputConverter&lt;&gt;(ActorsFilms.class);
+
+String format = this.beanOutputConverter.getFormat();
+
+String actor = "Tom Hanks";
+
+String template = """
+        Generate the filmography of 5 movies for {actor}.
+        {format}
+        """;
+
+Generation generation = chatModel.call(
+    PromptTemplate.builder().template(this.template).variables(Map.of("actor", this.actor, "format", this.format)).build().create()).getResult();
+
+ActorsFilms actorsFilms = this.beanOutputConverter.convert(this.generation.getOutput().getText());</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_property_ordering_in_generated_schema"><a class="anchor" href="#_property_ordering_in_generated_schema">生成架构中的属性排序</a></h3>
+<div class="paragraph">
+<p><code style="color: #d73a49;">BeanOutputConverter</code> 支持通过 <code style="color: #d73a49;">@JsonPropertyOrder</code> 注解在生成的 JSON schema 中自定义属性顺序。
+此注解允许您指定属性在 schema 中出现的精确顺序，而无需考虑它们在类或 record 中的声明顺序。</p>
+</div>
+<div class="paragraph">
+<p>例如，为了确保 <code>ActorsFilms</code> 记录中属性的特定顺序：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@JsonPropertyOrder({"actor", "movies"})
+record ActorsFilms(String actor, List&lt;String&gt; movies) {}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>此注解适用于 record 和普通的 Java 类。</p>
+</div>
+<div class="sect3">
+<h4 id="_generic_bean_types"><a class="anchor" href="#_generic_bean_types">通用 Bean 类型</a></h4>
+<div class="paragraph">
+<p>使用 <code style="color: #d73a49;">ParameterizedTypeReference</code> 构造函数来指定更复杂的目标类结构。
+例如，要表示演员及其作品列表：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">List&lt;ActorsFilms&gt; actorsFilms = ChatClient.create(chatModel).prompt()
+        .user("Generate the filmography of 5 movies for Tom Hanks and Bill Murray.")
+        .call()
+        .entity(new ParameterizedTypeReference&lt;List&lt;ActorsFilms&gt;&gt;() {});</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>或者直接使用低级的 <code>ChatModel</code> API：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">BeanOutputConverter&lt;List&lt;ActorsFilms&gt;&gt; outputConverter = new BeanOutputConverter&lt;&gt;(
+        new ParameterizedTypeReference&lt;List&lt;ActorsFilms&gt;&gt;() { });
+
+String format = this.outputConverter.getFormat();
+String template = """
+        Generate the filmography of 5 movies for Tom Hanks and Bill Murray.
+        {format}
+        """;
+
+Prompt prompt = PromptTemplate.builder().template(this.template).variables(Map.of("format", this.format)).build().create();
+
+Generation generation = chatModel.call(this.prompt).getResult();
+
+List&lt;ActorsFilms&gt; actorsFilms = this.outputConverter.convert(this.generation.getOutput().getText());</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_map_output_converter"><a class="anchor" href="#_map_output_converter">地图输出转换器</a></h3>
+<div class="paragraph">
+<p>以下代码片段展示了如何使用 <code>MapOutputConverter</code> 将模型输出转换为一个包含数字列表的映射（map）。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">Map&lt;String, Object&gt; result = ChatClient.create(chatModel).prompt()
+        .user(u -&gt; u.text("Provide me a List of {subject}")
+                    .param("subject", "an array of numbers from 1 to 9 under they key name 'numbers'"))
+        .call()
+        .entity(new ParameterizedTypeReference&lt;Map&lt;String, Object&gt;&gt;() {});</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>或者直接使用低级的 <code>ChatModel</code> API：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">MapOutputConverter mapOutputConverter = new MapOutputConverter();
+
+String format = this.mapOutputConverter.getFormat();
+String template = """
+        Provide me a List of {subject}
+        {format}
+        """;
+
+Prompt prompt = PromptTemplate.builder().template(this.template)
+.variables(Map.of("subject", "an array of numbers from 1 to 9 under they key name 'numbers'", "format", this.format)).build().create();
+
+Generation generation = chatModel.call(this.prompt).getResult();
+
+Map&lt;String, Object&gt; result = this.mapOutputConverter.convert(this.generation.getOutput().getText());</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_list_output_converter"><a class="anchor" href="#_list_output_converter">列表输出转换器</a></h3>
+<div class="paragraph">
+<p>以下代码片段展示了如何使用 <code>ListOutputConverter</code> 将模型输出转换为冰淇淋口味列表。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">List&lt;String&gt; flavors = ChatClient.create(chatModel).prompt()
+                .user(u -&gt; u.text("List five {subject}")
+                            .param("subject", "ice cream flavors"))
+                .call()
+                .entity(new ListOutputConverter(new DefaultConversionService()));</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>或者直接使用低级的 <code>ChatModel API</code>：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ListOutputConverter listOutputConverter = new ListOutputConverter(new DefaultConversionService());
+
+String format = this.listOutputConverter.getFormat();
+String template = """
+        List five {subject}
+        {format}
+        """;
+
+Prompt prompt = PromptTemplate.builder().template(this.template).variables(Map.of("subject", "ice cream flavors", "format", this.format)).build().create();
+
+Generation generation = this.chatModel.call(this.prompt).getResult();
+
+List&lt;String&gt; list = this.listOutputConverter.convert(this.generation.getOutput().getText());</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_native_structured_output"><a class="anchor" href="#_native_structured_output">原生结构化输出</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>许多现代 AI 模型现在都提供对结构化输出的原生支持，与基于提示词的格式化相比，这能提供更可靠的结果。Spring AI 通过 <a class="xref page" href="chatclient.html#_native_structured_output">Native Structured Output</a> 功能提供此支持。</p>
+</div>
+<div class="paragraph">
+<p>在使用原生结构化输出时，由 <code>BeanOutputConverter</code> 生成的 JSON schema 直接发送到模型的结构化输出 API，从而无需在提示词中包含格式指令。这种方法提供了：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>更高的可靠性</strong>：模型保证输出符合架构（schema）</p>
+</li>
+<li>
+<p><strong>更简洁的提示词</strong>：无需附加格式指令</p>
+</li>
+<li>
+<p><strong>更好的性能</strong>：模型可以在内部针对结构化输出进行优化</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_using_native_structured_output"><a class="anchor" href="#_using_native_structured_output">使用原生结构化输出</a></h3>
+<div class="paragraph">
+<p>若要启用原生结构化输出，请使用 <code>AdvisorParams.ENABLE_NATIVE_STRUCTURED_OUTPUT</code> 参数：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ActorsFilms actorsFilms = ChatClient.create(chatModel).prompt()
+    .advisors(AdvisorParams.ENABLE_NATIVE_STRUCTURED_OUTPUT)
+    .user("Generate the filmography for a random actor.")
+    .call()
+    .entity(ActorsFilms.class);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>您也可以通过在 <code>ChatClient.Builder</code> 上使用 <code>defaultAdvisors()</code> 来进行全局设置：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Bean
+ChatClient chatClient(ChatClient.Builder builder) {
+    return builder
+        .defaultAdvisors(AdvisorParams.ENABLE_NATIVE_STRUCTURED_OUTPUT)
+        .build();
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_supported_models_for_native_structured_output"><a class="anchor" href="#_supported_models_for_native_structured_output">支持原生结构化输出的模型</a></h3>
+<div class="paragraph">
+<p>以下模型目前支持原生结构化输出：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>OpenAI</strong>：支持 JSON Schema 的 GPT-4o 及后续模型</p>
+</li>
+<li>
+<p><strong>Anthropic</strong>：Claude 3.5 Sonnet 及后续模型</p>
+</li>
+<li>
+<p><strong>Google GenAI</strong>：Gemini 1.5 Pro 及后续模型</p>
+</li>
+<li>
+<p><strong>Mistral AI</strong>：Mistral Small 及后续支持 JSON Schema 的模型</p>
+</li>
+<li>
+<p><strong>Ollama</strong>：支持 JSON Schema 的模型（特定于模型；参见下文的 <a href="#_ollama_model_specific_instability">Ollama 限制</a>）</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock warning">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+原生结构化输出默认<strong>未启用</strong>，因为不同模型和提供商之间的支持差异巨大。
+基于提示词的方法（默认）在所有模型中表现一致。
+仅在需要更强的 API 级架构强制执行时才启用原生结构化输出，并始终使用您的特定模型版本进行测试。
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="sect3">
+<h4 id="_known_limitations"><a class="anchor" href="#_known_limitations">已知限制</a></h4>
+<div class="sect4">
+<h5 id="_ollama_model_specific_instability"><a class="anchor" href="#_ollama_model_specific_instability">Ollama：模型特定的不稳定性</a></h5>
+<div class="paragraph">
+<p>并非所有的 Ollama 模型都能可靠地遵循结构化输出架构约束。
+特别是具有内置推理或“思考”模式的模型（例如 <code>qwen3:8b</code>、<code>qwen3.5:9b</code> 以及其他较新的 Qwen 变体），可能会将内部推理轨迹作为纯文本而非结构化 JSON 返回，从而导致 <code>BeanOutputConverter</code> 出现如下反序列化错误：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>StreamReadException: Unrecognized token 'The': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>如果您在使用 Ollama 时遇到此问题，请尝试使用不同的模型（例如 <code>llama3.1:latest</code>）或退回到默认的基于提示词的方法。
+您还可以将 <code>useProviderStructuredOutput()</code> 与 <code>validateSchema()</code> 结合使用，以便自动重试格式错误的响应：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ActorFilms actorFilms = chatClient.prompt()
+    .user("Generate the filmography for a random actor.")
+    .call()
+    .entity(ActorFilms.class, spec -&gt; spec
+        .useProviderStructuredOutput()
+        .validateSchema());</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_openai_no_top_level_array_support"><a class="anchor" href="#_openai_no_top_level_array_support">OpenAI：不支持顶级数组</a></h5>
+<div class="paragraph">
+<p>OpenAI Structured Outputs API 不接受顶层的 JSON 数组作为响应架构（参见 <a href="https://community.openai.com/t/support-top-level-array-in-json-schema/896048">OpenAI 社区讨论</a>）。
+在启用原生结构化输出的情况下请求 <code style="white-space:pre-wrap;">List&lt;T&gt;</code> 将导致 API 错误。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">// Does NOT work with OpenAI native structured output:
+List&lt;ActorsFilms&gt; films = chatClient.prompt()
+    .user("Generate filmographies for Tom Hanks and Bill Murray.")
+    .call()
+    .entity(new ParameterizedTypeReference&lt;List&lt;ActorsFilms&gt;&gt;() {},
+            spec -&gt; spec.useProviderStructuredOutput()); // fails with OpenAI</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>请改用以下替代方案之一：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">// Option 1: wrap the list in a container record
+record FilmographyList(List&lt;ActorsFilms&gt; films) {}
+
+FilmographyList result = chatClient.prompt()
+    .user("Generate filmographies for Tom Hanks and Bill Murray.")
+    .call()
+    .entity(FilmographyList.class, spec -&gt; spec.useProviderStructuredOutput());
+List&lt;ActorsFilms&gt; films = result.films();
+
+// Option 2: use the default prompt-based approach (no native output required)
+List&lt;ActorsFilms&gt; films = chatClient.prompt()
+    .user("Generate filmographies for Tom Hanks and Bill Murray.")
+    .call()
+    .entity(new ParameterizedTypeReference&lt;List&lt;ActorsFilms&gt;&gt;() {});</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_built_in_json_mode"><a class="anchor" href="#_built_in_json_mode">内置 JSON 模式</a></h3>
+<div class="paragraph">
+<p>一些 AI 模型提供专门的配置选项，用于生成结构化（通常为 JSON）的输出。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a class="xref page" href="chat/openai-chat.html#_structured_outputs">OpenAI Structured Outputs</a> 可以确保您的模型生成的响应严格符合您提供的 JSON Schema。您可以选择 <code class="code">JSON_OBJECT</code>，它保证模型生成的消息是有效的 JSON；或者选择带有提供架构的 <code class="code">JSON_SCHEMA</code>，它保证模型生成的响应与您提供的架构相匹配（<code class="code">spring.ai.openai.chat.response-format</code> 选项）。</p>
+</li>
+<li>
+<p><a class="xref page" href="chat/ollama-chat.html">Ollama</a> - 提供一个 <code class="code">spring.ai.ollama.chat.format</code> 选项，用于指定返回响应的格式。目前，唯一接受的值是 <code class="code">json</code>。</p>
+</li>
+<li>
+<p><a class="xref page" href="chat/mistralai-chat.html">Mistral AI</a> - 提供 <code class="language-java">spring.ai.mistralai.chat.response-format</code> 选项来指定返回响应的格式。将其设置为 <code class="language-json">{ "type": "json_object" }</code> 可启用 JSON 模式，确保模型生成的消息是有效的 JSON。此外，将其设置为 <code class="language-json">{ "type": "json_schema" }</code> 并提供相应的 schema 可启用原生结构化输出支持，确保模型生成的响应符合您提供的 schema。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="prompt.html">Prompts</a></span>
+  <span class="next"><a href="multimodality.html">Multimodality</a></span>
+</nav>
+</article>  </div>
+</main>
+<div aria-hidden="true" class="modal micromodal-slide" id="modal-versions">
+    <div class="modal__overlay" data-micromodal-close="" tabindex="-1">
+        <div aria-modal="true" class="modal__container" role="dialog">
+            <main class="modal__content" id="modal-versions-content">
+              <button class="modal-versions-close" data-micromodal-close="">
+                <svg height="28px" viewbox="0 0 32 32" width="28px" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1h{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title></title><g id="cross"><line class="cls-1h" x1="7" x2="25" y1="7" y2="25"></line><line class="cls-1h" x1="7" x2="25" y1="25" y2="7"></line></g></svg>
+              </button>
+              <div class="colset">
+                <div class="col-left">
+
+                  <ul class="nav-versions">
+                      <li class="component">
+                        <div><a class="title" href="../index.html">Spring AI</a></div>                        <div class="version-item is-active">
+                          <div>
+                            <button class="version-toggle" type="button">
+                              <span></span>
+                              Stable
+                            </button>
+                          </div>
+                          <ul class="versions">
+  <li class="version">
+    <a href="../index.html">
+      2.0.0
+    </a>
+  </li>
+</ul>                        </div>
+                        
+                      </li>
+                  </ul>
+                </div>
+                <div class="col-right"><ul class="projects">
+<li>
+    相关 Spring 文档
+    <ul class="projects-list">
+</ul>
+</li><a href="../spring-projects.html">所有文档...</a>
+</ul></div>
+              </div>
+            </main>
+        </div>
+    </div>
+</div>
+
+</div>
+<footer class="footer flex">
+    <div id="spring-links flex">
+        <img alt="Spring" id="springlogo" src="../_/img/spring-logo.svg"/>
+        <p class="smallest antialiased">Copyright © 2005 - <script>var d = new Date();
+        document.write(d.getFullYear());</script> Broadcom. 保留所有权利。术语“Broadcom”是指 Broadcom Inc. 和/或其子公司。<br/><a href="https://www.vmware.com/help/legal.html">使用条款</a> • <a href="https://www.vmware.com/help/privacy.html" rel="noopener noreferrer">隐私政策</a> • <a href="https://spring.io/trademarks">商标指南</a> <span id="thank-you-mobile">• <a href="https://spring.io/thank-you">致谢</a></span> • <a href="https://www.vmware.com/help/privacy/california-privacy-rights.html">您的加州隐私权</a> • <a class="ot-sdk-show-settings">Cookie 设置</a> <span id="teconsent"></span></p>
+        <p class="smallest antialiased has-gray-text">Apache®、Apache Tomcat®、Apache Kafka®、Apache Cassandra™ 和 Apache Geode™ 是 Apache Software Foundation 在美国和/或其他国家的商标或注册商标。Java™、Java™ SE、Java™ EE 和 OpenJDK™ 是 Oracle 和/或其关联公司的商标。Kubernetes® 是 Linux Foundation 在美国和其他国家的注册商标。Linux® 是 Linus Torvalds 在美国和其他国家的注册商标。Windows® 和 Microsoft® Azure 是 Microsoft Corporation 的注册商标。“AWS”和“Amazon Web Services”是 Amazon.com Inc. 或其关联公司的商标或注册商标。所有其他商标和版权均为其各自所有者的财产，仅用于提供信息。其他名称可能是其各自所有者的商标。</p>
+    </div>
+    <div class="flex jc-between" id="social-icons">
+        <a href="https://www.youtube.com/user/SpringSourceDev" title="Youtube"><svg id="youtube-icon" viewbox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><circle class="cls-1" cx="20" cy="20" r="20"></circle><path class="cls-2" d="M30.91,14.53a2.89,2.89,0,0,0-2-2C27.12,12,20,12,20,12s-7.12,0-8.9.47a2.9,2.9,0,0,0-2,2A30.56,30.56,0,0,0,8.63,20a30.44,30.44,0,0,0,.46,5.47,2.89,2.89,0,0,0,2,2C12.9,28,20,28,20,28s7.12,0,8.9-.47a2.87,2.87,0,0,0,2-2A30.56,30.56,0,0,0,31.37,20,28.88,28.88,0,0,0,30.91,14.53ZM17.73,23.41V16.59L23.65,20Z"></path></svg></a>
+        <a href="https://github.com/spring-projects" title="GitHub"><svg id="github-icon" viewbox="0 0 75.93 75.93" xmlns="http://www.w3.org/2000/svg"><path class="cls-1" d="M38,0a38,38,0,1,0,38,38A38,38,0,0,0,38,0Z"></path><path class="cls-2" d="M38,15.59A22.95,22.95,0,0,0,30.71,60.3c1.15.21,1.57-.5,1.57-1.11s0-2,0-3.9c-6.38,1.39-7.73-3.07-7.73-3.07A6.09,6.09,0,0,0,22,48.86c-2.09-1.42.15-1.39.15-1.39a4.81,4.81,0,0,1,3.52,2.36c2,3.5,5.37,2.49,6.67,1.91a4.87,4.87,0,0,1,1.46-3.07c-5.09-.58-10.45-2.55-10.45-11.34a8.84,8.84,0,0,1,2.36-6.15,8.29,8.29,0,0,1,.23-6.07s1.92-.62,6.3,2.35a21.82,21.82,0,0,1,11.49,0c4.38-3,6.3-2.35,6.3-2.35a8.29,8.29,0,0,1,.23,6.07,8.84,8.84,0,0,1,2.36,6.15c0,8.81-5.37,10.75-10.48,11.32a5.46,5.46,0,0,1,1.56,4.25c0,3.07,0,5.54,0,6.29s.42,1.33,1.58,1.1A22.94,22.94,0,0,0,38,15.59Z"></path></svg></a>
+        <a href="https://twitter.com/springcentral" title="Twitter"><svg id="twitter-icon" viewbox="0 0 75.93 75.93" xmlns="http://www.w3.org/2000/svg"><circle class="cls-1" cx="37.97" cy="37.97" r="37.97"></circle><path class="cls-2" d="M55.2,22.73a15.43,15.43,0,0,1-4.88,1.91,7.56,7.56,0,0,0-5.61-2.49A7.78,7.78,0,0,0,37,30a7.56,7.56,0,0,0,.2,1.79,21.63,21.63,0,0,1-15.84-8.23,8,8,0,0,0,2.37,10.52,7.66,7.66,0,0,1-3.48-1v.09A7.84,7.84,0,0,0,26.45,41a7.54,7.54,0,0,1-2,.28A7.64,7.64,0,0,1,23,41.09a7.71,7.71,0,0,0,7.18,5.47,15.21,15.21,0,0,1-9.55,3.37,15.78,15.78,0,0,1-1.83-.11,21.41,21.41,0,0,0,11.78,3.54c14.13,0,21.86-12,21.86-22.42,0-.34,0-.68,0-1a15.67,15.67,0,0,0,3.83-4.08,14.9,14.9,0,0,1-4.41,1.24A7.8,7.8,0,0,0,55.2,22.73Z" data-name="Twitter" id="Twitter-2"></path></svg></a>
+    </div>
+</footer>
+<script src="../_/js/vendor/import.js"></script>
+<script src="../_/js/site.js"></script>
+<script async="" src="../_/js/vendor/highlight.js"></script>
+<script async="" data-sync-storage-key="docs:preferred-tab" src="../_/js/vendor/asciidoctor-tabs.js"></script>
+
+<div aria-hidden="true" class="modal micromodal-slide" id="modal-1">
+    <div class="modal__overlay" data-micromodal-close="" tabindex="-1">
+        <div aria-labelledby="modal-1-title" aria-modal="true" class="modal__container" role="dialog">
+            <main class="modal__content" id="modal-1-content">
+                <div id="searchbox"></div>
+                <div id="counter"></div>
+                <div class="search-link-box"><a class="search-link" href="../search.html">在所有 Spring 文档中搜索</a></div>
+                <div class="search-by">
+                    <a aria-label="Search by Algolia" href="https://www.algolia.com/" rel="noopener noreferrer" target="_blank">
+                        <img class="light" src="../_/img/algolia-light.svg" width="140"/>
+                        <img class="dark" src="../_/img/algolia-dark.svg" width="140"/>
+                    </a>
+                </div>
+                <div id="hits"></div>
+            </main>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
+<script crossorigin="anonymous" integrity="sha256-Lf9DrpGmcRip6OQzbcL6lnvNmoZNSKpyQX5pMlwatWE=" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.17.0/dist/algoliasearch-lite.umd.js"></script>
+<script crossorigin="anonymous" integrity="sha256-xYsZPDeNjYNTBWLvqD2Lxe98hOxcDgOHyMPfz4tVAbk=" src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.54.1/dist/instantsearch.production.min.js"></script>
+<script async="" data-api-key="c2e84f15fa630d534f1c62b1c413bb77" data-app-id="WB1FQYI187" data-index-name="springdocs" data-page-component="ai" data-page-version="2.0.0" data-stylesheet="../_/css/vendor/search.css" id="search-script" src="../_/js/vendor/search.js"></script>
+  
+
+</body></html>

@@ -1,0 +1,1126 @@
+{
+  "created_at": "2026-06-13 17:17:35",
+  "updated_at": "2026-06-13 17:17:35",
+  "stats": {
+    "total_entries": 222,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 225,
+    "entries_with_hits": 222,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0135135135135136,
+    "usage_percentage": 0.0222
+  },
+  "items": [
+    {
+      "source": "Spring AI’s <code>Message</code> interface supports multimodal AI models by introducing the <code>Media</code> type.\nIt contains data and information about media attachments in messages, using Spring’s <code>org.springframework.util.MimeType</code> and a <code>java.lang.Object</code> for the raw media data.",
+      "translation": "Spring AI 的 <code>Message</code> 接口通过引入 <code>Media</code> 类型来支持多模态 AI 模型。\n它包含消息中媒体附件的数据和信息，使用 Spring 的 <code>org.springframework.util.MimeType</code> 以及一个用于原始媒体数据的 <code>java.lang.Object</code>。",
+      "count": 2
+    },
+    {
+      "source": "Enable Bedrock Converse chat model.",
+      "translation": "启用 Bedrock Converse 对话模型。",
+      "count": 2
+    },
+    {
+      "source": "AWS Bedrock default",
+      "translation": "AWS Bedrock 默认值",
+      "count": 2
+    },
+    {
+      "source": "Copyright © 2005 - <script>var d = new Date();\n        document.write(d.getFullYear());</script> Broadcom. All Rights Reserved. The term \"Broadcom\" refers to Broadcom Inc. and/or its subsidiaries.<br/><a href=\"https://www.vmware.com/help/legal.html\">Terms of Use</a> • <a href=\"https://www.vmware.com/help/privacy.html\" rel=\"noopener noreferrer\">Privacy</a> • <a href=\"https://spring.io/trademarks\">Trademark Guidelines</a> <span id=\"thank-you-mobile\">• <a href=\"https://spring.io/thank-you\">Thank you</a></span> • <a href=\"https://www.vmware.com/help/privacy/california-privacy-rights.html\">Your California Privacy Rights</a> • <a class=\"ot-sdk-show-settings\">Cookie Settings</a> <span id=\"teconsent\"></span>",
+      "translation": "Copyright © 2005 - <script>var d = new Date();\n        document.write(d.getFullYear());</script> Broadcom. 保留所有权利。术语“Broadcom”是指 Broadcom Inc. 和/或其子公司。<br/><a href=\"https://www.vmware.com/help/legal.html\">使用条款</a> • <a href=\"https://www.vmware.com/help/privacy.html\" rel=\"noopener noreferrer\">隐私政策</a> • <a href=\"https://spring.io/trademarks\">商标指南</a> <span id=\"thank-you-mobile\">• <a href=\"https://spring.io/thank-you\">致谢</a></span> • <a href=\"https://www.vmware.com/help/privacy/california-privacy-rights.html\">您的加州隐私权</a> • <a class=\"ot-sdk-show-settings\">Cookie 设置</a> <span id=\"teconsent\"></span",
+      "count": 1
+    },
+    {
+      "source": "Currently, Bedrock Nova supports the videos of <code>video/x-matroska</code>, <code>video/quicktime</code>, <code>video/mp4</code>, <code>video/webm</code>, <code>video/x-flv</code>, <code>video/mpeg</code>, <code>video/x-ms-wmv</code> and <code>video/3gpp</code> mime types.",
+      "translation": "目前，Bedrock Nova 支持 <code>video/x-matroska</code>、<code>video/quicktime</code>、<code>video/mp4</code>、<code>video/webm</code>、<code>video/x-flv</code>、<code>video/mpeg</code>、<code>video/x-ms-wmv</code> 和 <code>video/3gpp</code> 类型的 MIME。",
+      "count": 1
+    },
+    {
+      "source": "By default, when <code>SYSTEM_ONLY</code> or <code>SYSTEM_AND_TOOLS</code> caching is enabled, each <code>SystemMessage</code> is emitted as a separate <code>SystemContentBlock</code> and the cache point is placed <strong>after the last block</strong>.\nIf any part of that content changes between requests, the entire system cache is invalidated — resulting in a 1.25x cache write cost on every request instead of the much cheaper cache read.",
+      "translation": "默认情况下，当启用 <code>SYSTEM_ONLY</code> 或 <code>SYSTEM_AND_TOOLS</code> 缓存时，每个 <code>SystemMessage</code> 都作为独立的 <code>SystemContentBlock</code> 发出，且缓存点放置在<strong>最后一个块之后</strong>。\n如果该内容中的任何部分在请求之间发生变化，整个系统缓存都将失效——这将导致每次请求产生 1.25 倍的缓存写入成本，而不是更便宜的缓存读取成本。",
+      "count": 1
+    },
+    {
+      "source": "Currently, Bedrock Converse supports the <code>base64</code> encoded images of <code>image/jpeg</code>, <code>image/png</code>, <code>image/gif</code> and <code>image/webp</code> mime types.",
+      "translation": "目前，Bedrock Converse 支持 <code>base64</code> 编码的 <code>image/jpeg</code>、<code>image/png</code>、<code>image/gif</code> 和 <code>image/webp</code> MIME 类型图像。",
+      "count": 1
+    },
+    {
+      "source": "Amazon Nova models (Nova Micro, Lite, Pro, Premier) only support caching for <code>system</code> and <code>messages</code> content.\nThey do <strong>not</strong> support caching for <code>tools</code>.",
+      "translation": "Amazon Nova 模型（Nova Micro、Lite、Pro、Premier）仅支持对 <code>system</code> 和 <code>messages</code> 内容进行缓存。\n它们<strong>不支持</strong>对 <code>tools</code> 进行缓存。",
+      "count": 1
+    },
+    {
+      "source": "If you attempt to use <code>TOOLS_ONLY</code> or <code>SYSTEM_AND_TOOLS</code> strategies with Nova models, AWS will return a <code>ValidationException</code>.\nUse <code>SYSTEM_ONLY</code> strategy for Amazon Nova models.",
+      "translation": "如果您尝试对 Nova 模型使用 <code>TOOLS_ONLY</code> 或 <code>SYSTEM_AND_TOOLS</code> 策略，AWS 将返回 <code>ValidationException</code>。\n请对 Amazon Nova 模型使用 <code>SYSTEM_ONLY</code> 策略。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Tool Stability</strong>: When using <code>TOOLS_ONLY</code>, <code>SYSTEM_AND_TOOLS</code>, or <code>CONVERSATION_HISTORY</code> strategies, ensure tools remain stable.\nChanging tool definitions will invalidate all downstream cache breakpoints due to cascade invalidation.",
+      "translation": "<strong>工具稳定性</strong>：在使用 <code>TOOLS_ONLY</code>、<code>SYSTEM_AND_TOOLS</code> 或 <code>CONVERSATION_HISTORY</code> 策略时，请确保工具保持稳定。\n更改工具定义将由于级联失效而导致所有下游缓存断点失效。",
+      "count": 1
+    },
+    {
+      "source": "Add the <code>spring-ai-starter-model-bedrock-converse</code> dependency to your project’s Maven <code>pom.xml</code> or Gradle <code>build.gradle</code> build files:",
+      "translation": "将 <code>spring-ai-starter-model-bedrock-converse</code> 依赖添加到您项目的 Maven <code>pom.xml</code> 或 Gradle <code>build.gradle</code> 构建文件中：",
+      "count": 1
+    },
+    {
+      "source": "Enable prompt caching by setting <code>cacheOptions</code> on <code>BedrockChatOptions</code> and choosing a <code>strategy</code>.",
+      "translation": "通过在 <code>BedrockChatOptions</code> 上设置 <code>cacheOptions</code> 并选择 <code>strategy</code> 来启用提示词缓存（prompt caching）。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Amazon Nova models</strong>: Only support <code>SYSTEM_ONLY</code> and <code>CONVERSATION_HISTORY</code> (tool caching not supported)",
+      "translation": "<strong>Amazon Nova 模型</strong>：仅支持 <code>SYSTEM_ONLY</code> 和 <code>CONVERSATION_HISTORY</code>（不支持工具缓存）",
+      "count": 1
+    },
+    {
+      "source": "Sets the <code>outputSchema</code> on <code>BedrockChatOptions</code> via the AWS Bedrock <code>OutputConfig</code> API",
+      "translation": "通过 AWS Bedrock <code style=\"color: #d73a49;\">OutputConfig</code> API 在 <code style=\"color: #d73a49;\">BedrockChatOptions</code> 上设置 <code style=\"color: #d73a49;\">outputSchema</code>",
+      "count": 1
+    },
+    {
+      "source": "Enable the Models to use: Go to <a href=\"https://us-east-1.console.aws.amazon.com/bedrock/home\">Amazon Bedrock</a> and from the <a href=\"https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/modelaccess\">Model Access</a> menu on the left, configure access to the models you are going to use.",
+      "translation": "启用模型使用：前往 <a href=\"https://us-east-1.console.aws.amazon.com/bedrock/home\">Amazon Bedrock</a>，并在左侧的 <a href=\"https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/modelaccess\">Model Access</a> 菜单中配置您将要使用的模型的访问权限。",
+      "count": 1
+    },
+    {
+      "source": "Use the portable <code>ChatOptions</code> or <code>BedrockChatOptions</code> portable builders to create model configurations, such as temperature, maxToken, topP, etc.",
+      "translation": "使用可移植的 <code>ChatOptions</code> 或 <code>BedrockChatOptions</code> 可移植构建器来创建模型配置，例如 temperature、maxToken、topP 等。",
+      "count": 1
+    },
+    {
+      "source": "On start-up, the default options can be configured with the <code>BedrockConverseProxyChatModel(api, options)</code> constructor or the <code>spring.ai.bedrock.converse.chat.*</code> properties.",
+      "translation": "在启动时，可以通过 <code>BedrockConverseProxyChatModel(api, options)</code> 构造函数或 <code>spring.ai.bedrock.converse.chat.*</code> 属性来配置默认选项。",
+      "count": 1
+    },
+    {
+      "source": "The <code>multiBlockSystemCaching</code> option solves this by placing the cache point <strong>after the second-to-last</strong> system block (i.e., at the boundary between the static prefix and the dynamic suffix), so the static portion remains cached even as the last block changes freely.",
+      "translation": "<code style=\"color: #d73a49;\">multiBlockSystemCaching</code> 选项通过将缓存点放置在<strong>倒数第二个</strong>系统块之后（即静态前缀与动态后缀之间的边界）来解决此问题，从而确保即使最后一个块自由变化，静态部分仍能保持缓存。",
+      "count": 1
+    },
+    {
+      "source": "This produces a Bedrock <code>system</code> array of the form <code>[text(static), cachePoint, text(dynamic)]</code> so only the static prefix participates in the cache key.",
+      "translation": "这将生成一个形式为 <code>[text(static), cachePoint, text(dynamic)]</code> 的 Bedrock <code>system</code> 数组，因此只有静态前缀会参与缓存键的生成。",
+      "count": 1
+    },
+    {
+      "source": "When you first send a cached prompt:\n- <code>cacheWriteInputTokens</code> will be greater than 0\n- <code>cacheReadInputTokens</code> will be 0",
+      "translation": "当您首次发送缓存提示词时：\n- <code>cacheWriteInputTokens</code> 将大于 0\n- <code>cacheReadInputTokens</code> 将为 0",
+      "count": 1
+    },
+    {
+      "source": "When you send the same cached prompt again (within 5-minute TTL):\n- <code>cacheWriteInputTokens</code> will be 0\n- <code>cacheReadInputTokens</code> will be greater than 0",
+      "translation": "当您再次发送相同的缓存提示词时（在 5 分钟的 TTL 内）：\n- <code>cacheWriteInputTokens</code> 将为 0\n- <code>cacheReadInputTokens</code> 将大于 0",
+      "count": 1
+    },
+    {
+      "source": "<strong>Cache Hierarchy</strong>: <code>Tools → System → Messages</code>",
+      "translation": "<strong>缓存层级</strong>：<code>Tools → System → Messages</code>",
+      "count": 1
+    },
+    {
+      "source": "<strong>Example with <code>SYSTEM_AND_TOOLS</code> strategy</strong>:",
+      "translation": "<strong>使用 <code style=\"color: #e67e22;\">SYSTEM_AND_TOOLS</code> 策略的示例</strong>：",
+      "count": 1
+    },
+    {
+      "source": "<strong>Provider Portability</strong>: Cache configuration is done through <code>BedrockChatOptions</code> rather than individual messages, preserving compatibility when switching between different AI providers.",
+      "translation": "<strong>提供商可移植性</strong>：缓存配置通过 <code>BedrockChatOptions</code> 完成，而非针对单个消息进行配置，从而在切换不同的 AI 提供商时保持兼容性。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Incremental Caching</strong>: The <code>CONVERSATION_HISTORY</code> strategy places cache breakpoints on the last user message, enabling incremental caching where each conversation turn builds on the previous cached prefix.",
+      "translation": "<strong>增量缓存</strong>：<code style=\"color: #e67e22;\">CONVERSATION_HISTORY</code> 策略在最后一条用户消息上设置缓存断点，从而实现增量缓存，即每一次对话轮次都建立在之前已缓存的前缀之上。",
+      "count": 1
+    },
+    {
+      "source": "<strong>ChatClient with ToolCallingAdvisor</strong> — the recommended approach for most use cases.\n<code>ToolCallingAdvisor</code> is automatically registered and manages the tool-call loop transparently.",
+      "translation": "<strong>带有 ToolCallingAdvisor 的 ChatClient</strong> —— 这是大多数使用场景下的推荐方法。\n<code style=\"color: #e06c75;\">ToolCallingAdvisor</code> 会被自动注册，并透明地管理工具调用循环。",
+      "count": 1
+    },
+    {
+      "source": "<strong>User-controlled tool execution</strong> — use <code>DefaultToolCallingManager</code> directly when you need full control over the loop (for example, when combining tool calling with prompt caching).",
+      "translation": "<strong>用户控制的工具执行</strong> —— 当您需要完全控制循环时（例如，当将工具调用与提示词缓存结合使用时），请直接使用 <code>DefaultToolCallingManager</code>。",
+      "count": 1
+    },
+    {
+      "source": "The simplest way to use tools is with the <code>ChatClient</code> high-level API.\n<code>ToolCallingAdvisor</code> handles the tool-call loop automatically for both synchronous and streaming calls.",
+      "translation": "使用工具最简单的方法是使用 <code class=\"code\">ChatClient</code> 高级 API。\n<code class=\"code\">ToolCallingAdvisor</code> 会自动处理同步和流式调用中的工具调用循环。",
+      "count": 1
+    },
+    {
+      "source": "The simplest way to use structured output is with the <code>ChatClient</code> high-level API and the <code>ENABLE_NATIVE_STRUCTURED_OUTPUT</code> advisor:",
+      "translation": "使用结构化输出最简单的方法是结合 <code>ChatClient</code> 高级 API 和 <code>ENABLE_NATIVE_STRUCTURED_OUTPUT</code> 顾问：",
+      "count": 1
+    },
+    {
+      "source": "Add an <code>application.properties</code> file under <code>src/main/resources</code>:",
+      "translation": "在 <code>src/main/resources</code> 下添加一个 <code>application.properties</code> 文件：",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference.html\">Amazon Bedrock Converse API</a> provides a unified interface for conversational AI models with enhanced capabilities including function/tool calling, multimodal inputs, and streaming responses.",
+      "translation": "<a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference.html\">Amazon Bedrock Converse API</a> 为对话式 AI 模型提供了一个统一的接口，并具备增强功能，包括函数/工具调用、多模态输入和流式响应。",
+      "count": 1
+    },
+    {
+      "source": "Following the Bedrock recommendations, Spring AI is transitioning to using Amazon Bedrock’s Converse API for all chat conversation implementations in Spring AI.\nWhile the existing <a class=\"xref page\" href=\"../bedrock-chat.html\">InvokeModel API</a> supports conversation applications, we strongly recommend adopting the Converse API for all Chat conversation models.",
+      "translation": "遵循 Bedrock 的建议，Spring AI 正在过渡到使用 Amazon Bedrock 的 Converse API 来实现 Spring AI 中的所有聊天对话。\n\n虽然现有的 <a class=\"xref page\" href=\"../bedrock-chat.html\">InvokeModel API</a> 支持对话应用，但我们强烈建议为所有 Chat 对话模型采用 Converse API。",
+      "count": 1
+    },
+    {
+      "source": "The Converse API does not support embedding operations, so these will remain in the current API and the embedding model functionality in the existing <code>InvokeModel API</code> will be maintained",
+      "translation": "Converse API 不支持嵌入（embedding）操作，因此这些操作将保留在当前 API 中，且现有 <code>InvokeModel API</code> 中的嵌入模型功能将继续保留。",
+      "count": 1
+    },
+    {
+      "source": "Refer to <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started.html\">Getting started with Amazon Bedrock</a> for setting up API access",
+      "translation": "请参阅 <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started.html\">Getting started with Amazon Bedrock</a> 以设置 API 访问权限",
+      "count": 1
+    },
+    {
+      "source": "Obtain AWS credentials: If you don’t have an AWS account and AWS CLI configured yet, this video guide can help you configure it: <a href=\"https://youtu.be/gswVHTrRX8I?si=buaY7aeI0l3-bBVb\">AWS CLI &amp; SDK Setup in Less Than 4 Minutes!</a>. You should be able to obtain your access and security keys.",
+      "translation": "获取 AWS 凭证：如果您还没有 AWS 账号且尚未配置 AWS CLI，此视频指南可以帮助您进行配置：<a href=\"https://youtu.be/gswVHTrRX8I?si=buaY7aeI0l3-bBVb\">AWS CLI &amp; SDK Setup in Less Than 4 Minutes!</a>。您应当能够获取您的访问密钥（access key）和安全密钥（security key）。",
+      "count": 1
+    },
+    {
+      "source": "There has been a significant change in the Spring AI auto-configuration, starter modules' artifact names.\nPlease refer to the <a href=\"https://docs.spring.io/spring-ai/reference/upgrade-notes.html\">upgrade notes</a> for more information.",
+      "translation": "Spring AI 的自动配置中，starter 模块的 artifact 名称发生了重大变化。\n请参阅 <a href=\"https://docs.spring.io/spring-ai/reference/upgrade-notes.html\">升级说明</a> 获取更多信息。",
+      "count": 1
+    },
+    {
+      "source": "The prefix <code>spring.ai.bedrock.aws</code> is the property prefix to configure the connection to AWS Bedrock.",
+      "translation": "前缀 <code>spring.ai.bedrock.aws</code> 是用于配置连接到 AWS Bedrock 的属性前缀。",
+      "count": 1
+    },
+    {
+      "source": "Enabling and disabling of the chat auto-configurations are now configured via top level properties with the prefix <code>spring.ai.model.chat</code>.",
+      "translation": "启用和禁用聊天自动配置现在通过带有前缀 <code style=\"color: #d73a49;\">spring.ai.model.chat</code> 的顶级属性进行配置。",
+      "count": 1
+    },
+    {
+      "source": "The prefix <code>spring.ai.bedrock.converse.chat</code> is the property prefix that configures the chat model implementation for the Converse API.",
+      "translation": "前缀 <code>spring.ai.bedrock.converse.chat</code> 是用于配置 Converse API 对话模型实现的属性前缀。",
+      "count": 1
+    },
+    {
+      "source": "The model ID to use. You can use the <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference-supported-models-features.html\">Supported models and model features</a>",
+      "translation": "要使用的模型 ID。您可以使用<a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference-supported-models-features.html\">支持的模型和模型功能</a>",
+      "count": 1
+    },
+    {
+      "source": "None. Select your <a href=\"https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/models\">modelId</a> from the AWS Bedrock console.",
+      "translation": "无。请从 AWS Bedrock 控制台选择您的 <a href=\"https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/models\">modelId</a>。",
+      "count": 1
+    },
+    {
+      "source": "At run-time you can override the default options by adding new, request specific, options to the <code>Prompt</code> call:",
+      "translation": "在运行时，您可以通过在 <code>Prompt</code> 调用中添加新的、特定于请求的选项来覆盖默认选项：",
+      "count": 1
+    },
+    {
+      "source": "AWS Bedrock’s <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-caching.html\">prompt caching feature</a> allows you to cache frequently used prompts to reduce costs and improve response times for repeated interactions.\nWhen you cache a prompt, subsequent identical requests can reuse the cached content, significantly reducing the number of input tokens processed.",
+      "translation": "AWS Bedrock 的 <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-caching.html\">prompt caching 功能</a> 允许您缓存频繁使用的提示词，从而降低成本并缩短重复交互的响应时间。\n当您缓存一个提示词时，后续相同的请求可以重用缓存内容，显著减少处理的输入 token 数量。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Supported Models</strong>",
+      "translation": "<strong>支持的模型</strong>",
+      "count": 1
+    },
+    {
+      "source": "<strong>Token Requirements</strong>",
+      "translation": "<strong>Token 要求</strong>",
+      "count": 1
+    },
+    {
+      "source": "Spring AI provides strategic cache placement through the <code>BedrockCacheStrategy</code> enum:",
+      "translation": "Spring AI 通过 <code class=\"language-java\">BedrockCacheStrategy</code> 枚举提供了策略性的缓存放置：",
+      "count": 1
+    },
+    {
+      "source": "<code>NONE</code>: Disables prompt caching completely (default)",
+      "translation": "<code>NONE</code>：完全禁用提示词缓存（默认）",
+      "count": 1
+    },
+    {
+      "source": "<code>SYSTEM_ONLY</code>: Caches only the system message content",
+      "translation": "<code>SYSTEM_ONLY</code>：仅缓存系统消息内容",
+      "count": 1
+    },
+    {
+      "source": "<code>TOOLS_ONLY</code>: Caches tool definitions only (Claude models only)",
+      "translation": "<code>TOOLS_ONLY</code>：仅缓存工具定义（仅限 Claude 模型）",
+      "count": 1
+    },
+    {
+      "source": "<code>SYSTEM_AND_TOOLS</code>: Caches both system message and tool definitions (Claude models only)",
+      "translation": "<code>SYSTEM_AND_TOOLS</code>：同时缓存系统消息和工具定义（仅限 Claude 模型）",
+      "count": 1
+    },
+    {
+      "source": "<code>CONVERSATION_HISTORY</code>: Caches entire conversation history in chat memory scenarios",
+      "translation": "<code>CONVERSATION_HISTORY</code>：在聊天记忆场景中缓存整个对话历史",
+      "count": 1
+    },
+    {
+      "source": "<strong>Amazon Nova Limitations</strong>",
+      "translation": "<strong>Amazon Nova 限制</strong>",
+      "count": 1
+    },
+    {
+      "source": "When using advisors (e.g., RAG context injection), your system prompt may consist of multiple <code>SystemMessage</code> instances: a static prefix (your base instructions) and a dynamic suffix (advisor-injected context that changes each request).",
+      "translation": "在使用顾问（例如 RAG 上下文注入）时，您的系统提示词可能由多个 <code>SystemMessage</code> 实例组成：一个静态前缀（您的基础指令）和一个动态后缀（每次请求都会变化的顾问注入上下文）。",
+      "count": 1
+    },
+    {
+      "source": "For observability handlers and metrics collection, access cache metrics through the native <code>TokenUsage</code> object:",
+      "translation": "对于可观测性处理器和指标收集，请通过原生的 <code>TokenUsage</code> 对象访问缓存指标：",
+      "count": 1
+    },
+    {
+      "source": "<code>cacheWriteInputTokens</code>: Returns the number of tokens used when creating a cache entry",
+      "translation": "<code>cacheWriteInputTokens</code>：返回创建缓存条目时使用的 token 数量",
+      "count": 1
+    },
+    {
+      "source": "<code>cacheReadInputTokens</code>: Returns the number of tokens read from an existing cache entry",
+      "translation": "<code>cacheReadInputTokens</code>：返回从现有缓存条目中读取的 token 数量",
+      "count": 1
+    },
+    {
+      "source": "<strong>Choose the Right Strategy</strong>:",
+      "translation": "<strong>选择正确的策略</strong>：",
+      "count": 1
+    },
+    {
+      "source": "Use <code>SYSTEM_ONLY</code> for reusable system prompts and instructions (works with all models)",
+      "translation": "使用 <code>SYSTEM_ONLY</code> 作为可重用的系统提示词和指令（适用于所有模型）",
+      "count": 1
+    },
+    {
+      "source": "Use <code>TOOLS_ONLY</code> when you have large stable tools but dynamic system prompts (Claude only)",
+      "translation": "当您拥有大型稳定工具但动态系统提示词时（仅限 Claude），请使用 <code>TOOLS_ONLY</code>。",
+      "count": 1
+    },
+    {
+      "source": "Use <code>SYSTEM_AND_TOOLS</code> when both system and tools are large and stable (Claude only)",
+      "translation": "当系统和工具都很大且稳定时（仅限 Claude），请使用 <code>SYSTEM_AND_TOOLS</code>",
+      "count": 1
+    },
+    {
+      "source": "Use <code>CONVERSATION_HISTORY</code> with ChatClient memory for multi-turn conversations",
+      "translation": "使用 <code >CONVERSATION_HISTORY</code> 与 ChatClient 内存进行多轮对话",
+      "count": 1
+    },
+    {
+      "source": "Use <code>NONE</code> to explicitly disable caching",
+      "translation": "使用 <code style=\"color:red;\">NONE</code> 来显式禁用缓存",
+      "count": 1
+    },
+    {
+      "source": "<strong>Meet Token Requirements</strong>: Focus on caching content that meets the minimum token requirements (1024+ tokens for most models).",
+      "translation": "<strong>满足 Token 要求</strong>：重点缓存符合最低 Token 要求的内容（大多数模型为 1024+ tokens）。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Reuse Identical Content</strong>: Caching works best with exact matches of prompt content.\nEven small changes will require a new cache entry.",
+      "translation": "<strong>重用相同内容</strong>：缓存在提示词内容完全匹配时效果最佳。\n即使是微小的变化也需要创建新的缓存条目。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Monitor Token Usage</strong>: Track cache effectiveness using the metadata metrics:",
+      "translation": "<strong>监控 Token 使用情况</strong>：使用元数据指标跟踪缓存效果：",
+      "count": 1
+    },
+    {
+      "source": "<strong>Strategic Cache Placement</strong>: The implementation automatically places cache breakpoints at optimal locations based on your chosen strategy, ensuring compliance with AWS Bedrock’s 4-breakpoint limit.",
+      "translation": "<strong>策略性缓存放置</strong>：系统将根据您选择的策略自动在最佳位置放置缓存断点，确保符合 AWS Bedrock 的 4 个断点限制。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Cache Lifetime</strong>: AWS Bedrock caches have a fixed 5-minute TTL (Time To Live).\nEach cache access resets the timer.",
+      "translation": "<strong>缓存生命周期</strong>：AWS Bedrock 缓存具有固定的 5 分钟 TTL（生存时间）。\n每次访问缓存都会重置计时器。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Model Compatibility</strong>: Be aware of model-specific limitations:",
+      "translation": "<strong>模型兼容性</strong>：请注意特定模型的限制：",
+      "count": 1
+    },
+    {
+      "source": "<strong>Claude models</strong>: Support all caching strategies",
+      "translation": "<strong>Claude 模型</strong>：支持所有缓存策略",
+      "count": 1
+    },
+    {
+      "source": "<strong>Strategic Cache Placement</strong>: Cache breakpoints are automatically placed at optimal locations based on the chosen strategy, ensuring compliance with AWS Bedrock’s 4-breakpoint limit.",
+      "translation": "<strong>策略性缓存放置</strong>：缓存断点将根据所选策略自动放置在最佳位置，确保符合 AWS Bedrock 的 4 个断点限制。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Thread Safety</strong>: The cache breakpoint tracking is implemented with thread-safe mechanisms to handle concurrent requests correctly.",
+      "translation": "<strong>线程安全</strong>：缓存断点追踪采用线程安全机制实现，以正确处理并发请求。",
+      "count": 1
+    },
+    {
+      "source": "<strong>UNION Type Pattern</strong>: AWS SDK uses UNION types where cache points are added as separate blocks rather than properties.\nThis is different from direct API approaches but ensures type safety and API compliance.",
+      "translation": "<strong>UNION 类型模式</strong>：AWS SDK 使用 UNION 类型，其中缓存点作为独立的块而非属性被添加。\n这与直接的 API 方法不同，但能确保类型安全和 API 合规性。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Cache writes</strong>: ~25% more expensive than base input tokens",
+      "translation": "<strong>缓存写入</strong>：比基础输入 Token 贵约 25%",
+      "count": 1
+    },
+    {
+      "source": "<strong>Cache reads</strong>: ~90% cheaper (only 10% of base input token price)",
+      "translation": "<strong>缓存读取</strong>：约便宜 90%（仅为基础输入 Token 价格的 10%）",
+      "count": 1
+    },
+    {
+      "source": "<strong>Break-even point</strong>: After just 1 cache read, you’ve saved money",
+      "translation": "<strong>盈亏平衡点</strong>：仅需一次缓存读取，即可节省成本",
+      "count": 1
+    },
+    {
+      "source": "<strong>Example cost calculation</strong>:",
+      "translation": "<strong>成本计算示例</strong>：",
+      "count": 1
+    },
+    {
+      "source": "<code>BedrockProxyChatModel</code> does not execute tool calls internally.\nTool execution must be handled externally using one of two supported approaches:",
+      "translation": "<code>BedrockProxyChatModel</code> 不在内部执行工具调用。\n必须使用以下两种支持的方法之一在外部处理工具执行：",
+      "count": 1
+    },
+    {
+      "source": "Here’s an example using <code>@Tool</code>-annotated methods:",
+      "translation": "以下是使用带有 <code>@Tool</code> 注解的方法的一个示例：",
+      "count": 1
+    },
+    {
+      "source": "You can also register a <code>ToolCallback</code> bean and pass it directly:",
+      "translation": "您还可以注册一个 <code>ToolCallback</code> 类型的 bean 并直接传递：",
+      "count": 1
+    },
+    {
+      "source": "For scenarios where you need explicit control over the tool-call loop — for example, when combining tool calling with prompt caching — you can drive the loop manually using <code>DefaultToolCallingManager</code>.",
+      "translation": "对于需要对工具调用循环进行显式控制的场景——例如在将工具调用与提示词缓存（prompt caching）结合使用时——您可以使用 <code>DefaultToolCallingManager</code> 手动驱动该循环。",
+      "count": 1
+    },
+    {
+      "source": "Because tool calls span multiple stream chunks, each streaming call must be aggregated first using <code>MessageAggregator</code> before checking for tool calls.",
+      "translation": "由于工具调用跨越多个流式分块，在检查工具调用之前，必须先使用 <code>MessageAggregator</code> 对每个流式调用进行聚合。",
+      "count": 1
+    },
+    {
+      "source": "Find more in <a class=\"xref page\" href=\"../tools.html\">Tools</a> documentation.",
+      "translation": "在 <a class=\"xref page\" href=\"../tools.html\">Tools</a> 文档中查找更多内容。",
+      "count": 1
+    },
+    {
+      "source": "AWS Bedrock supports native structured outputs through JSON Schema, ensuring the model generates responses that strictly conform to your specified structure.\nThis feature is available for <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference-supported-models-features.html\">supported models</a> including Anthropic Claude and Amazon Nova.",
+      "translation": "AWS Bedrock 通过 JSON Schema 支持原生结构化输出，确保模型生成的响应严格符合您指定的结构。\n此功能适用于包括 Anthropic Claude 和 Amazon Nova 在内的<a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference-supported-models-features.html\">支持的模型</a>。",
+      "count": 1
+    },
+    {
+      "source": "For more control, you can set the JSON schema directly on <code>BedrockChatOptions</code>:",
+      "translation": "为了获得更多控制权，您可以直接在 <code>BedrockChatOptions</code> 上设置 JSON schema：",
+      "count": 1
+    },
+    {
+      "source": "For more information, see the <a class=\"xref page\" href=\"../structured-output-converter.html\">Structured Output Converter</a> documentation.",
+      "translation": "更多信息，请参阅 <a class=\"xref page\" href=\"../structured-output-converter.html\">Structured Output Converter</a> 文档。",
+      "count": 1
+    },
+    {
+      "source": "For <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference-supported-models-features.html\">models</a> that support vision multimodality, such as Amazon Nova, Anthropic Claude, Llama 3.2, the Bedrock Converse API Amazon allows you to include multiple images in the payload. Those models can analyze the passed images and answer questions, classify an image, as well as summarize images based on provided instructions.",
+      "translation": "对于支持视觉多模态的<a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference-supported-models-features.html\">模型</a>（例如 Amazon Nova、Anthropic Claude 和 Llama 3.2），Bedrock Converse API 允许您在负载中包含多张图像。这些模型可以分析传递的图像并回答问题、对图像进行分类，以及根据提供的指令对图像进行总结。",
+      "count": 1
+    },
+    {
+      "source": "It takes as an input the <code>test.png</code> image:",
+      "translation": "它以 <code>test.png</code> 图像作为输入：",
+      "count": 1
+    },
+    {
+      "source": "The <a href=\"https://docs.aws.amazon.com/nova/latest/userguide/modalities-video.html\">Amazon Nova models</a> allow you to include a single video in the payload, which can be provided either in base64 format or through an Amazon S3 URI.",
+      "translation": "<a href=\"https://docs.aws.amazon.com/nova/latest/userguide/modalities-video.html\">Amazon Nova 模型</a>允许您在负载中包含单个视频，该视频可以通过 base64 格式或通过 Amazon S3 URI 提供。",
+      "count": 1
+    },
+    {
+      "source": "It takes as an input the <code>test.video.mp4</code> image:",
+      "translation": "它以 <code>test.video.mp4</code> 图像作为输入：",
+      "count": 1
+    },
+    {
+      "source": "<strong>Text document types</strong> (txt, csv, html, md, and so on), where the emphasis is on text understanding. These use case include answering based on textual elements of the document.",
+      "translation": "<strong>文本文档类型</strong>（txt、csv、html、md 等），重点在于文本理解。这些用例包括基于文档中的文本元素进行回答。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Media document types</strong> (pdf, docx, xlsx), where the emphasis is on vision-based understanding to answer questions. These use cases include answering questions based on charts, graphs, and so on.",
+      "translation": "<strong>媒体文档类型</strong>（pdf、docx、xlsx），其重点在于通过基于视觉的理解来回答问题。这些用例包括根据图表、图形等内容回答问题。",
+      "count": 1
+    },
+    {
+      "source": "Currently the Anthropic <a href=\"https://docs.anthropic.com/en/docs/build-with-claude/pdf-support\">PDF support (beta)</a> and Amazon Bedrock Nova models support document multimodality.",
+      "translation": "目前，Anthropic 的 <a href=\"https://docs.anthropic.com/en/docs/build-with-claude/pdf-support\">PDF 支持（测试版）</a>和 Amazon Bedrock Nova 模型均支持文档多模态。",
+      "count": 1
+    },
+    {
+      "source": "It takes as an input the <code>spring-ai-reference-overview.pdf</code> document:",
+      "translation": "它以 <code>spring-ai-reference-overview.pdf</code> 文档作为输入：",
+      "count": 1
+    },
+    {
+      "source": "Create a new Spring Boot project and add the <code>spring-ai-starter-model-bedrock-converse</code> to your dependencies.",
+      "translation": "创建一个新的 Spring Boot 项目，并在依赖项中添加 <code>spring-ai-starter-model-bedrock-converse</code>。",
+      "count": 1
+    },
+    {
+      "source": "The Bedrock Converse API has the following high-level features:",
+      "translation": "Bedrock Converse API 具有以下高层级功能：",
+      "count": 1
+    },
+    {
+      "source": "Tool/Function Calling: Support for function definitions and tool use during conversations",
+      "translation": "工具/函数调用：支持在对话过程中进行函数定义和工具使用",
+      "count": 1
+    },
+    {
+      "source": "Multimodal Input: Ability to process both text and image inputs in conversations",
+      "translation": "多模态输入：能够在对话中同时处理文本和图像输入",
+      "count": 1
+    },
+    {
+      "source": "Streaming Support: Real-time streaming of model responses",
+      "translation": "流式支持：模型响应的实时流式传输",
+      "count": 1
+    },
+    {
+      "source": "System Messages: Support for system-level instructions and context setting",
+      "translation": "系统消息：支持系统级指令和上下文设置",
+      "count": 1
+    },
+    {
+      "source": "AWS region to use",
+      "translation": "要使用的 AWS 区域",
+      "count": 1
+    },
+    {
+      "source": "AWS max duration for entire API call",
+      "translation": "AWS 整个 API 调用请求的最大时长限制",
+      "count": 1
+    },
+    {
+      "source": "Max duration to wait while establishing connection",
+      "translation": "建立连接时的最大等待时长",
+      "count": 1
+    },
+    {
+      "source": "Max duration to wait for new connection from the pool",
+      "translation": "从连接池获取新连接的最大等待时间",
+      "count": 1
+    },
+    {
+      "source": "Max duration spent reading asynchronous responses",
+      "translation": "读取异步响应所花费的最大时长",
+      "count": 1
+    },
+    {
+      "source": "AWS access key",
+      "translation": "AWS 访问密钥",
+      "count": 1
+    },
+    {
+      "source": "AWS secret key",
+      "translation": "AWS 密钥",
+      "count": 1
+    },
+    {
+      "source": "AWS session token for temporary credentials",
+      "translation": "用于临时凭证的 AWS 会话令牌",
+      "count": 1
+    },
+    {
+      "source": "AWS profile name.",
+      "translation": "AWS 配置文件的名称。",
+      "count": 1
+    },
+    {
+      "source": "AWS credentials file path.",
+      "translation": "AWS 凭证文件路径。",
+      "count": 1
+    },
+    {
+      "source": "AWS config file path.",
+      "translation": "AWS 配置文件路径。",
+      "count": 1
+    },
+    {
+      "source": "To enable, spring.ai.model.chat=bedrock-converse (It is enabled by default)",
+      "translation": "若要启用，请设置 spring.ai.model.chat=bedrock-converse（默认已启用）",
+      "count": 1
+    },
+    {
+      "source": "To disable, spring.ai.model.chat=none (or any value which doesn’t match bedrock-converse)",
+      "translation": "若要禁用，请设置 spring.ai.model.chat=none（或任何不匹配 bedrock-converse 的值）",
+      "count": 1
+    },
+    {
+      "source": "This change is done to allow configuration of multiple models.",
+      "translation": "此更改是为了支持配置多个模型。",
+      "count": 1
+    },
+    {
+      "source": "spring.ai.bedrock.converse.chat.enabled (Removed and no longer valid)",
+      "translation": "spring.ai.bedrock.converse.chat.enabled (已移除且不再有效)",
+      "count": 1
+    },
+    {
+      "source": "Controls the randomness of the output. Values can range over [0.0,1.0]",
+      "translation": "控制输出的随机性。数值范围可在 [0.0, 1.0] 之间。",
+      "count": 1
+    },
+    {
+      "source": "The maximum cumulative probability of tokens to consider when sampling.",
+      "translation": "采样时考虑的 token 的最大累计概率。",
+      "count": 1
+    },
+    {
+      "source": "Number of token choices for generating the next token.",
+      "translation": "生成下一个 token 的候选 token 数量。",
+      "count": 1
+    },
+    {
+      "source": "Maximum number of tokens in the generated response.",
+      "translation": "生成的响应中的最大 token 数量。",
+      "count": 1
+    },
+    {
+      "source": "Prompt caching is supported on Claude 3.x, Claude 4.x, and Amazon Nova models available through AWS Bedrock.",
+      "translation": "AWS Bedrock 提供的 Claude 3.x、Claude 4.x 和 Amazon Nova 模型支持 Prompt caching。",
+      "count": 1
+    },
+    {
+      "source": "Different models have different minimum token thresholds for cache effectiveness:\n- Claude Sonnet 4 and most models: 1024+ tokens\n- Model-specific requirements may vary - consult AWS Bedrock documentation",
+      "translation": "不同模型对缓存有效性的最小 Token 阈值各不相同：\n- Claude Sonnet 4 及大多数模型：1024+ tokens\n- 特定模型的具体要求可能有所不同 —— 请参阅 AWS Bedrock 文档",
+      "count": 1
+    },
+    {
+      "source": "This strategic approach ensures optimal cache breakpoint placement while staying within AWS Bedrock’s 4-breakpoint limit.",
+      "translation": "这种策略性方法确保了在遵守 AWS Bedrock 4 个断点限制的同时，实现最佳的缓存断点放置。",
+      "count": 1
+    },
+    {
+      "source": "The most common use case - cache system instructions across multiple requests:",
+      "translation": "最常见的用例——在多次请求中缓存系统指令：",
+      "count": 1
+    },
+    {
+      "source": "Cache large tool definitions while keeping system prompts dynamic (Claude models only):",
+      "translation": "在保持系统提示词动态的同时缓存大型工具定义（仅限 Claude 模型）：",
+      "count": 1
+    },
+    {
+      "source": "Cache both system instructions and tool definitions for maximum reuse (Claude models only):",
+      "translation": "缓存系统指令和工具定义以实现最大程度的复用（仅限 Claude 模型）：",
+      "count": 1
+    },
+    {
+      "source": "Cache growing conversation history for multi-turn chatbots and assistants:",
+      "translation": "为多轮对话机器人和助手缓存增长的对话历史：",
+      "count": 1
+    },
+    {
+      "source": "Here’s a complete example demonstrating prompt caching with cost tracking:",
+      "translation": "这是一个展示带有成本追踪的提示词缓存（prompt caching）的完整示例：",
+      "count": 1
+    },
+    {
+      "source": "AWS Bedrock provides cache-specific metrics through the response.\nCache metrics are accessible via two methods:",
+      "translation": "AWS Bedrock 通过响应提供特定于缓存的指标。\n可以通过两种方法获取缓存指标：",
+      "count": 1
+    },
+    {
+      "source": "Cache metrics are also available via the metadata Map for backward compatibility:",
+      "translation": "为了保持向后兼容性，也可以通过元数据 Map 获取缓存指标：",
+      "count": 1
+    },
+    {
+      "source": "Cache-specific metrics include:",
+      "translation": "缓存特定指标包括：",
+      "count": 1
+    },
+    {
+      "source": "Analyze large legal contracts or compliance documents efficiently by caching document content across multiple questions:",
+      "translation": "通过在多个问题中缓存文档内容，高效分析大型法律合同或合规文件：",
+      "count": 1
+    },
+    {
+      "source": "Process multiple code files with consistent review criteria while caching the review guidelines:",
+      "translation": "在缓存审查指南的同时，使用一致的审查标准处理多个代码文件：",
+      "count": 1
+    },
+    {
+      "source": "Create a customer support system that caches your product knowledge base for consistent, accurate responses:",
+      "translation": "创建一个客户支持系统，缓存您的产品知识库，以提供一致且准确的回复：",
+      "count": 1
+    },
+    {
+      "source": "Cache shared tool definitions across different tenants while customizing system prompts per tenant:",
+      "translation": "在跨租户共享工具定义的同时，为每个租户自定义系统提示词：",
+      "count": 1
+    },
+    {
+      "source": "AWS Bedrock follows a hierarchical cache model with cascade invalidation:",
+      "translation": "AWS Bedrock 遵循具有级联失效机制的分层缓存模型：",
+      "count": 1
+    },
+    {
+      "source": "Changes at each level invalidate that level and all subsequent levels:",
+      "translation": "每一层级的变更都会使该层级及其所有后续层级失效：",
+      "count": 1
+    },
+    {
+      "source": "The prompt caching implementation in Spring AI follows these key design principles:",
+      "translation": "Spring AI 中的提示词缓存（prompt caching）实现遵循以下核心设计原则：",
+      "count": 1
+    },
+    {
+      "source": "AWS Bedrock pricing for prompt caching (approximate, varies by model):",
+      "translation": "AWS Bedrock 提示词缓存（prompt caching）定价（近似值，随模型而异）：",
+      "count": 1
+    },
+    {
+      "source": "This approach automatically:",
+      "translation": "此方法会自动：",
+      "count": 1
+    },
+    {
+      "source": "Generates a JSON schema from your Java class",
+      "translation": "从您的 Java 类生成 JSON schema",
+      "count": 1
+    },
+    {
+      "source": "Parses the JSON response into your specified type",
+      "translation": "将 JSON 响应解析为您指定的类型",
+      "count": 1
+    },
+    {
+      "source": "Multimodality refers to a model’s ability to simultaneously understand and process information from various sources, including text, images, video, pdf, doc, html, md and more data formats.",
+      "translation": "多模态是指模型同时理解和处理来自多种来源的信息的能力，包括文本、图像、视频、pdf、doc、html、md 等多种数据格式。",
+      "count": 1
+    },
+    {
+      "source": "The Bedrock Converse API supports multimodal inputs, including text and image inputs, and can generate a text response based on the combined input.",
+      "translation": "Bedrock Converse API 支持多模态输入，包括文本和图像输入，并能根据组合后的输入生成文本响应。",
+      "count": 1
+    },
+    {
+      "source": "You need a model that supports multimodal inputs, such as the Anthropic Claude or Amazon Nova models.",
+      "translation": "您需要一个支持多模态输入的模型，例如 Anthropic Claude 或 Amazon Nova 模型。",
+      "count": 1
+    },
+    {
+      "source": "Below is a simple code example, demonstrating the combination of user text with an image.",
+      "translation": "以下是一个简单的代码示例，演示了如何将用户文本与图像结合。",
+      "count": 1
+    },
+    {
+      "source": "along with the text message \"Explain what do you see on this picture?\", and generates a response something like:",
+      "translation": "连同短信“请解释一下你在这张图片中看到了什么？”，并生成类似如下的回复：",
+      "count": 1
+    },
+    {
+      "source": "Below is a simple code example, demonstrating the combination of user text with a video.",
+      "translation": "以下是一个简单的代码示例，演示了如何将用户文本与视频结合。",
+      "count": 1
+    },
+    {
+      "source": "along with the text message \"Explain what do you see in this video?\", and generates a response something like:",
+      "translation": "连同短信“解释一下你在视频中看到了什么？”，并生成类似如下的回复：",
+      "count": 1
+    },
+    {
+      "source": "For some models, Bedrock allows you to include documents in the payload through Converse API document support, which can be provided in bytes.\nThe document support has two different variants as explained below:",
+      "translation": "对于某些模型，Bedrock 允许您通过 Converse API 的文档支持在有效负载中包含文档，这些文档可以以字节（bytes）形式提供。\n文档支持有两种不同的变体，如下所述：",
+      "count": 1
+    },
+    {
+      "source": "Below is a simple code example, demonstrating the combination of user text with a media document.",
+      "translation": "以下是一个简单的代码示例，演示了如何将用户文本与媒体文档相结合。",
+      "count": 1
+    },
+    {
+      "source": "along with the text message \"You are a very professional document summarization specialist. Please summarize the given document.\", and generates a response something like:",
+      "translation": "连同短信“你是一位非常专业的文档摘要专家。请总结给定的文档。”，并生成类似如下的回复：",
+      "count": 1
+    },
+    {
+      "source": "Here’s an example controller using the chat model:",
+      "translation": "这是一个使用 chat 模型示例的控制器：",
+      "count": 1
+    },
+    {
+      "source": "Apache®, Apache Tomcat®, Apache Kafka®, Apache Cassandra™, and Apache Geode™ are trademarks or registered trademarks of the Apache Software Foundation in the United States and/or other countries. Java™, Java™ SE, Java™ EE, and OpenJDK™ are trademarks of Oracle and/or its affiliates. Kubernetes® is a registered trademark of the Linux Foundation in the United States and other countries. Linux® is the registered trademark of Linus Torvalds in the United States and other countries. Windows® and Microsoft® Azure are registered trademarks of Microsoft Corporation. “AWS” and “Amazon Web Services” are trademarks or registered trademarks of Amazon.com Inc. or its affiliates. All other trademarks and copyrights are property of their respective owners and are only mentioned for informative purposes. Other names may be trademarks of their respective owners.",
+      "translation": "Apache®、Apache Tomcat®、Apache Kafka®、Apache Cassandra™ 和 Apache Geode™ 是 Apache Software Foundation 在美国和/或其他国家的商标或注册商标。Java™、Java™ SE、Java™ EE 和 OpenJDK™ 是 Oracle 和/或其关联公司的商标。Kubernetes® 是 Linux Foundation 在美国和其他国家的注册商标。Linux® 是 Linus Torvalds 在美国和其他国家的注册商标。Windows® 和 Microsoft® Azure 是 Microsoft Corporation 的注册商标。“AWS”和“Amazon Web Services”是 Amazon.com Inc. 或其关联公司的商标或注册商标。所有其他商标和版权均为其各自所有者的财产，仅用于提供信息。其他名称可能是其各自所有者的商标。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/projects\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-boot\">Spring Boot</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-framework\">Spring Framework</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud\">Spring Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud-dataflow\">Spring Cloud Data Flow</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-data\">Spring Data</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-integration\">Spring Integration</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-batch\">Spring Batch</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-security\">Spring Security</a>\n            <a class=\"navbar-item navbar-item-special\" href=\"https://spring.io/projects\">View all projects</a>\n            <li class=\"navbar-item navbar-item-special-3\">DEVELOPMENT TOOLS</li>\n            <a class=\"navbar-item\" href=\"https://spring.io/tools\">Spring Tools 4</a>\n            <a class=\"navbar-item navbar-item-special-2\" href=\"https://start.spring.io\">Spring Initializr\n              <svg id=\"svg-stash-f15b5668\"></svg></a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/projects\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-boot\">Spring Boot</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-framework\">Spring Framework</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud\">Spring Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud-dataflow\">Spring Cloud Data Flow</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-data\">Spring Data</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-integration\">Spring Integration</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-batch\">Spring Batch</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-security\">Spring Security</a>\n            <a class=\"navbar-item navbar-item-special\" href=\"https://spring.io/projects\">查看所有项目</a>\n            <li class=\"navbar-item navbar-item-special-3\">开发工具</li>\n            <a class=\"navbar-item\" href=\"https://spring.io/tools\">Spring Tools 4</a>\n            <a class=\"navbar-item navbar-item-special-2\" href=\"https://start.spring.io\">Spring Initializr\n              <svg id=\"svg-stash-f15b5668\"></svg></a>",
+      "count": 1
+    },
+    {
+      "source": "<nav aria-label=\"breadcrumbs\" class=\"breadcrumbs\">\n    <ul>\n      <li><a href=\"../../index.html\">Spring AI</a></li>\n      <li>Reference</li>\n      <li><a href=\"../index.html\">Models</a></li>\n      <li><a href=\"../chatmodel.html\">Chat Models</a></li>\n      <li><a href=\"bedrock-converse.html\">Amazon Bedrock Converse</a></li>\n    </ul>\n  </nav>",
+      "translation": "<nav aria-label=\"breadcrumbs\" class=\"breadcrumbs\">\n    <ul>\n      <li><a href=\"../../index.html\">Spring AI</a></li>\n      <li>参考资料</li>\n      <li><a href=\"../index.html\">Models</a></li>\n      <li><a href=\"../chatmodel.html\">Chat Models</a></li>\n      <li><a href=\"bedrock-converse.html\">Amazon Bedrock Converse</a></li>\n    </ul>\n  </nav>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/why-spring\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/microservices\">Microservices</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/reactive\">Reactive</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/event-driven\">Event\n              Driven</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/cloud\">Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/web-applications\">Web\n              Applications</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/serverless\">Serverless</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/batch\">Batch</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/why-spring\">概述</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/microservices\">微服务</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/reactive\">响应式</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/event-driven\">事件驱动</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/cloud\">云原生</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/web-applications\">Web 应用</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/serverless\">Serverless</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/batch\">批处理</a>",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/chat/bedrock-converse.adoc\">\n          <svg id=\"svg-stash-05b5c46b\"></svg>\n          Edit this Page\n        </a>\n        <a href=\"https://github.com/spring-projects/spring-ai\" title=\"GitHub\">\n          <svg id=\"svg-stash-28d888b7\"></svg>\n          GitHub Project\n        </a>",
+      "translation": "<a href=\"file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/chat/bedrock-converse.adoc\">\n          <svg id=\"svg-stash-05b5c46b\"></svg>\n          编辑此页面\n        </a>\n        <a href=\"https://github.com/spring-projects/spring-ai\" title=\"GitHub\">\n          <svg id=\"svg-stash-28d888b7\"></svg>\n          GitHub 项目\n        </a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/solutions\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/support\">Spring Runtime</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/consulting\">Spring Consulting</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/teams\">Spring Academy For Teams</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/security\">Security Advisories</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/solutions\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/support\">Spring Runtime</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/consulting\">Spring Consulting</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/teams\">Spring Academy For Teams</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/security\">安全公告</a>",
+      "count": 1
+    },
+    {
+      "source": "<ul class=\"projects\">\n  <li>\n    Related Spring Documentation\n    <ul class=\"projects-list\">\n    </ul>\n  </li><a href=\"../../spring-projects.html\">All Docs...</a>\n</ul>",
+      "translation": "<ul class=\"projects\">\n  <li>\n    相关 Spring 文档\n    <ul class=\"projects-list\">\n    </ul>\n  </li><a href=\"../../spring-projects.html\">所有文档...</a>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.academy/courses\">Courses</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/learning-path\">Get Certified</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.academy/courses\">课程</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/learning-path\">获取认证</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"title\" href=\"../../index.html\">Spring AI</a>",
+      "translation": "<a class=\"title\" href=\"../../index.html\">Spring AI</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"search-link\" href=\"../../search.html\">Search in all Spring Docs</a>",
+      "translation": "<a class=\"search-link\" href=\"../../search.html\">在所有 Spring 文档中搜索</a>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../vectordbs.html\">Vector Databases</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/azure.html\">Azure AI Service</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/azure-cosmos-db.html\">Azure Cosmos DB</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/bedrock-knowledge-base.html\">Amazon Bedrock Knowledge Base</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/apache-cassandra.html\">Apache Cassandra Vector Store</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/chroma.html\">Chroma</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/couchbase.html\">Couchbase</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/elasticsearch.html\">Elasticsearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/gemfire.html\">GemFire</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/mariadb.html\">MariaDB Vector Store</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/milvus.html\">Milvus</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/mongodb.html\">MongoDB Atlas</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/neo4j.html\">Neo4j</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/opensearch.html\">OpenSearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/oracle.html\">Oracle</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/pgvector.html\">PGvector</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/pinecone.html\">Pinecone</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/qdrant.html\">Qdrant</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/redis.html\">Redis</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/typesense.html\">Typesense</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/weaviate.html\">Weaviate</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/s3-vector-store.html\">S3 Vector Store</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../vectordbs.html\">向量数据库</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/azure.html\">Azure AI Service</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/azure-cosmos-db.html\">Azure Cosmos DB</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/bedrock-knowledge-base.html\">Amazon Bedrock Knowledge Base</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/apache-cassandra.html\">Apache Cassandra 向量存储</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/chroma.html\">Chroma</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/couchbase.html\">Couchbase</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/elasticsearch.html\">Elasticsearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/gemfire.html\">GemFire</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/mariadb.html\">MariaDB 向量存储</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/milvus.html\">Milvus</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/mongodb.html\">MongoDB Atlas</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/neo4j.html\">Neo4j</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/opensearch.html\">OpenSearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/oracle.html\">Oracle</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/pgvector.html\">PGvector</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/pinecone.html\">Pinecone</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/qdrant.html\">Qdrant</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/redis.html\">Redis</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/typesense.html\">Typesense</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/weaviate.html\">Weaviate</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/s3-vector-store.html\">S3 向量存储</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../embeddings.html\">Embedding Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../bedrock.html\">Amazon Bedrock</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/bedrock-cohere-embedding.html\">Cohere</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/bedrock-titan-embedding.html\">Titan</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/azure-openai-embeddings.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/google-genai-embeddings-text.html\">Google GenAI Text Embedding</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/mistralai-embeddings.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/oci-genai-embeddings.html\">OCI GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/ollama-embeddings.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/onnx.html\">(ONNX) Transformers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/openai-embeddings.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/postgresml-embeddings.html\">PostgresML</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">VertexAI</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/vertexai-embeddings-text.html\">Text Embedding</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/vertexai-embeddings-multimodal.html\">Multimodal Embedding</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../embeddings.html\">嵌入模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../bedrock.html\">Amazon Bedrock</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/bedrock-cohere-embedding.html\">Cohere</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/bedrock-titan-embedding.html\">Titan</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/azure-openai-embeddings.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/google-genai-embeddings-text.html\">Google GenAI 文本嵌入</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/mistralai-embeddings.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/oci-genai-embeddings.html\">OCI GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/ollama-embeddings.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/onnx.html\">(ONNX) Transformers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/openai-embeddings.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/postgresml-embeddings.html\">PostgresML</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">VertexAI</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/vertexai-embeddings-text.html\">文本嵌入</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/vertexai-embeddings-multimodal.html\">多模态嵌入</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../chatmodel.html\">Chat Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"comparison.html\">Chat Models Comparison</a>\n  </li>\n  <li class=\"nav-item is-current-page\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"bedrock-converse.html\">Amazon Bedrock Converse</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"anthropic-chat.html\">Anthropic</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"azure-openai-chat.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"deepseek-chat.html\">DeepSeek</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"dmr-chat.html\">Docker Model Runner</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"google-genai-chat.html\">Google GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"groq-chat.html\">Groq</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mistralai-chat.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"minimax-chat.html\">MiniMax</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"nvidia-chat.html\">NVIDIA</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"ollama-chat.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"perplexity-chat.html\">Perplexity AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"oci-genai-chat.html\">OCI Generative AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"openai-chat.html\">OpenAI</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../chatmodel.html\">聊天模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"comparison.html\">聊天模型对比</a>\n  </li>\n  <li class=\"nav-item is-current-page\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"bedrock-converse.html\">Amazon Bedrock Converse</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"anthropic-chat.html\">Anthropic</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"azure-openai-chat.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"deepseek-chat.html\">DeepSeek</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"dmr-chat.html\">Docker Model Runner</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"google-genai-chat.html\">Google GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"groq-chat.html\">Groq</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mistralai-chat.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"minimax-chat.html\">MiniMax</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"nvidia-chat.html\">NVIDIA</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"ollama-chat.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"perplexity-chat.html\">Perplexity AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"oci-genai-chat.html\">OCI Generative AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"openai-chat.html\">OpenAI</a>\n  </li>\n</ul",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-overview.html\">Model Context Protocol (MCP)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-client-boot-starter-docs.html\">MCP Client Boot Starters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-server-boot-starter-docs.html\">MCP Server Boot Starters</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-stdio-sse-server-boot-starter-docs.html\">STDIO and SSE MCP Servers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-streamable-http-server-boot-starter-docs.html\">Streamable-HTTP MCP Servers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-stateless-server-boot-starter-docs.html\">Stateless Streamable-HTTP MCP Servers</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-security.html\">MCP Security (WIP)</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-overview.html\">MCP Annotations</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-client.html\">Client Annotations</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-server.html\">Server Annotations</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-special-params.html\">Special Parameters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-examples.html\">MCP Annotations Examples</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-overview.html\">Model Context Protocol (MCP)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-client-boot-starter-docs.html\">MCP Client Boot Starters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-server-boot-starter-docs.html\">MCP Server Boot Starters</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-stdio-sse-server-boot-starter-docs.html\">STDIO 和 SSE MCP 服务器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-streamable-http-server-boot-starter-docs.html\">Streamable-HTTP MCP 服务器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-stateless-server-boot-starter-docs.html\">无状态 Streamable-HTTP MCP 服务器</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-security.html\">MCP 安全性 (WIP)</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-overview.html\">MCP 注解</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-client.html\">客户端注解</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-server.html\">服务器注解</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-special-params.html\">特殊参数</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-examples.html\">MCP 注解示例</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">Guides</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/spring-ai-community/awesome-spring-ai\">Awesome Spring AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/getting-started-mcp.html\">Getting Started with MCP</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/dynamic-tool-search.html\">Dynamic Tool Discovery</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/llm-as-judge.html\">LLM-as-a-Judge Evaluation</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"prompt-engineering-patterns.html\">Prompt Engineering Patterns</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../effective-agents.html\">Building Effective Agents</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agents\">Building agents with Spring AI by AWS</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agentcore\">Building agents with Spring AI and AgentCore by AWS</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/microsoft/Spring-AI-for-Beginners\">Spring AI for Beginners by Microsoft</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">指南</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/spring-ai-community/awesome-spring-ai\">Awesome Spring AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/getting-started-mcp.html\">MCP 入门指南</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/dynamic-tool-search.html\">动态工具发现</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/llm-as-judge.html\">LLM-as-a-Judge 评估</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"prompt-engineering-patterns.html\">提示工程模式</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../effective-agents.html\">构建高效智能体</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agents\">AWS 提供的使用 Spring AI 构建智能体教程</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agentcore\">AWS 提供的使用 Spring AI 和 AgentCore 构建智能体教程</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/microsoft/Spring-AI-for-Beginners\">Microsoft 提供的 Spring AI 入门教程</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio.html\">Audio Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio/transcriptions.html\">Transcription API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/transcriptions/azure-openai-transcriptions.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/transcriptions/openai-transcriptions.html\">OpenAI</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio/speech.html\">Text-To-Speech (TTS) API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/speech/openai-speech.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/speech/elevenlabs-speech.html\">ElevenLabs</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio.html\">音频模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio/transcriptions.html\">转录 API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/transcriptions/azure-openai-transcriptions.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/transcriptions/openai-transcriptions.html\">OpenAI</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio/speech.html\">文本转语音 (TTS) API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/speech/openai-speech.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/speech/elevenlabs-speech.html\">ElevenLabs</a>\n  </li>\n</ul>\n  </li>\n</ul",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\nThe Bedrock Converse API provides a unified interface across multiple model providers while handling AWS-specific authentication and infrastructure concerns.\nCurrently, the Converse API <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference-supported-models-features.html\">Supported Models</a> include:\n<code>Amazon Titan</code>, <code>Amazon Nova</code>, <code>AI21 Labs</code>, <code>Anthropic Claude</code>, <code>Cohere Command</code>, <code>Meta Llama</code>, <code>Mistral AI</code>.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"提示\"></i>\n</td>\n<td class=\"content\">\nBedrock Converse API 提供了一个统一的接口，可在处理 AWS 特定身份验证和基础设施问题的同时，支持多个模型提供商。\n目前，Converse API <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference-supported-models-features.html\">支持的模型</a> 包括：\n<code>Amazon Titan</code>、<code>Amazon Nova</code>、<code>AI21 Labs</code>、<code>Anthropic Claude</code>、<code>Cohere Command</code>、<code>Meta Llama</code>、<code>Mistral AI</code>。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../chatclient.html\">Chat Client API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../advisors.html\">Advisors</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../advisors-recursive.html\">Recursive Advisors</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../chatclient.html\">Chat Client API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../advisors.html\">顾问</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../advisors-recursive.html\">递归顾问</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../imageclient.html\">Image Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/azure-openai-image.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/openai-image.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/stabilityai-image.html\">Stability</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../imageclient.html\">图像模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/azure-openai-image.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/openai-image.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/stabilityai-image.html\">Stability</a>\n  </li>\n</ul",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nAWS Bedrock structured output uses a fixed schema name <code>response_schema</code> internally when constructing the <code>OutputConfig</code>.\nThe schema JSON is passed directly to the AWS SDK’s <code>JsonSchemaDefinition</code>.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nAWS Bedrock 在构建 <code class=\"OutputConfig\">OutputConfig</code> 时，在内部使用固定的架构名称 <code class=\"response_schema\">response_schema</code>。\n架构 JSON 直接传递给 AWS SDK 的 <code class=\"JsonSchemaDefinition\">JsonSchemaDefinition</code>。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../moderation.html\">Moderation Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../moderation/openai-moderation.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../moderation/mistral-ai-moderation.html\">Mistral AI</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../moderation.html\">审核模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../moderation/openai-moderation.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../moderation/mistral-ai-moderation.html\">Mistral AI</a>\n  </li>\n</ul",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../../upgrade-notes.html\">Upgrade Notes</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../tools-migration.html\">Migrating FunctionCallback to ToolCallback API</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"anthropic-migration.html\">Migrating the Anthropic Module to the Official Java SDK</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../../upgrade-notes.html\">升级说明</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../tools-migration.html\">将 FunctionCallback 迁移到 ToolCallback API</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"anthropic-migration.html\">将 Anthropic 模块迁移到官方 Java SDK</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nIf only a single <code>SystemMessage</code> is present, the cache point is placed after that single block (same as the default behavior).\nThe <code>multiBlockSystemCaching</code> option only changes placement when there are two or more system messages.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n如果仅存在单个 <code>SystemMessage</code>，缓存点将放置在该单块之后（与默认行为相同）。\n<code class=\"multiBlockSystemCaching\"></code> 选项仅在存在两个或更多系统消息时才会改变位置。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\nRefer to the <a class=\"xref page\" href=\"../../getting-started.html#dependency-management\">Dependency Management</a> section to add the Spring AI BOM to your build file.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\n请参阅 <a class=\"xref page\" href=\"../../getting-started.html#dependency-management\">Dependency Management</a> 部分，将 Spring AI BOM 添加到您的构建文件中。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nThis strategy is only supported on Claude models.\nAmazon Nova models will return a <code>ValidationException</code>.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n此策略仅支持 Claude 模型。\nAmazon Nova 模型将返回 <code>ValidationException</code>。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-important\" title=\"Important\"></i>\n</td>\n<td class=\"content\">\nMessage ordering matters. The cache point is always placed after the second-to-last system block, so static content must come before dynamic content in the message list. If you register your base instructions as the first <code>SystemMessage</code> and let advisors append dynamic context after, this ordering is naturally satisfied.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-important\" title=\"Important\"></i>\n</td>\n<td class=\"content\">\n消息的顺序非常重要。缓存点始终位于倒数第二个系统块之后，因此在消息列表中，静态内容必须排在动态内容之前。如果您将基础指令注册为第一个 <code>SystemMessage</code>，并让顾问在之后追加动态上下文，那么这种顺序就会自然满足。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../../index.html\">Overview</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../concepts.html\">AI Concepts</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../../index.html\">概览</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../concepts.html\">AI 概念</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../retrieval-augmented-generation.html\">Retrieval Augmented Generation (RAG)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../etl-pipeline.html\">ETL Pipeline</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../retrieval-augmented-generation.html\">检索增强生成 (RAG)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../etl-pipeline.html\">ETL 流水线</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nThis strategy uses 2 cache breakpoints (one for tools, one for system).\nOnly supported on Claude models.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n此策略使用 2 个缓存断点（一个用于工具，一个用于系统）。\n仅支持在 Claude 模型上使用。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tr>\n<th class=\"tableblock halign-left valign-top\">What Changes</th>\n<th class=\"tableblock halign-left valign-top\">Tools Cache</th>\n<th class=\"tableblock halign-left valign-top\">System Cache</th>\n<th class=\"tableblock halign-left valign-top\">Messages Cache</th>\n</tr>",
+      "translation": "<tr>\n<th class=\"tableblock halign-left valign-top\">变更内容</th>\n<th class=\"tableblock halign-left valign-top\">工具缓存</th>\n<th class=\"tableblock halign-left valign-top\">系统缓存</th>\n<th class=\"tableblock halign-left valign-top\">消息缓存</th>\n</tr>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"prev\"><a href=\"comparison.html\">Chat Models Comparison</a></span>\n  <span class=\"next\"><a href=\"anthropic-chat.html\">Anthropic</a></span>",
+      "translation": "<span class=\"prev\"><a href=\"comparison.html\">聊天模型对比</a></a></span>\n  <span class=\"next\"><a href=\"anthropic-chat.html\">Anthropic</a></a></span>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../../getting-started.html\">Getting Started</a>",
+      "translation": "<a class=\"nav-link\" href=\"../../getting-started.html\">入门指南</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../structured-output-converter.html\">Structured Output</a>",
+      "translation": "<a class=\"nav-link\" href=\"../structured-output-converter.html\">结构化输出</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../chat-memory.html\">Chat Memory</a>",
+      "translation": "<a class=\"nav-link\" href=\"../chat-memory.html\">聊天记忆</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../tools.html\">Tool Calling</a>",
+      "translation": "<a class=\"nav-link\" href=\"../tools.html\">工具调用</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../testing.html\">Model Evaluation</a>",
+      "translation": "<a class=\"nav-link\" href=\"../testing.html\">模型评估</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../docker-compose.html\">Development-time Services</a>",
+      "translation": "<a class=\"nav-link\" href=\"../docker-compose.html\">开发时服务</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_chat_properties\"></a>Chat Properties",
+      "translation": "<a class=\"anchor\" href=\"#_chat_properties\">聊天属性</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#chat-options\"></a>Runtime Options",
+      "translation": "<a class=\"anchor\" href=\"#chat-options\"></a>运行时选项",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_prompt_caching\"></a>Prompt Caching",
+      "translation": "<a class=\"anchor\" href=\"#_prompt_caching\">提示词缓存</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_cache_strategies\"></a>Cache Strategies",
+      "translation": "<a class=\"anchor\" href=\"#_cache_strategies\">缓存策略</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_enabling_prompt_caching\"></a>Enabling Prompt Caching",
+      "translation": "<a class=\"anchor\" href=\"#_enabling_prompt_caching\">启用提示词缓存</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_system_only_caching\"></a>System-Only Caching",
+      "translation": "<a class=\"anchor\" href=\"#_system_only_caching\">仅系统缓存</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_tools_only_caching\"></a>Tools-Only Caching",
+      "translation": "<a class=\"anchor\" href=\"#_tools_only_caching\">仅限工具缓存</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_system_and_tools_caching\"></a>System and Tools Caching",
+      "translation": "<a class=\"anchor\" href=\"#_system_and_tools_caching\">系统与工具缓存</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_conversation_history_caching\"></a>Conversation History Caching",
+      "translation": "<a class=\"anchor\" href=\"#_conversation_history_caching\">对话历史缓存</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_multi_block_system_message_caching\"></a>Multi-Block System Message Caching",
+      "translation": "<a class=\"anchor\" href=\"#_multi_block_system_message_caching\">多块系统消息缓存</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_using_chatclient_fluent_api\"></a>Using ChatClient Fluent API",
+      "translation": "<a class=\"anchor\" href=\"#_using_chatclient_fluent_api\">使用 ChatClient Fluent API</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_usage_example\"></a>Usage Example",
+      "translation": "<a class=\"anchor\" href=\"#_usage_example\">使用示例</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_token_usage_tracking\"></a>Token Usage Tracking",
+      "translation": "<a class=\"anchor\" href=\"#_token_usage_tracking\">Token 使用量追踪</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_native_usage_object_recommended_for_observability\"></a>Native Usage Object (Recommended for Observability)",
+      "translation": "<a class=\"anchor\" href=\"#_native_usage_object_recommended_for_observability\">原生用法对象（推荐用于可观测性）</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_metadata_map_backward_compatible\"></a>Metadata Map (Backward Compatible)",
+      "translation": "<a class=\"anchor\" href=\"#_metadata_map_backward_compatible\">元数据映射（向下兼容）</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_real_world_use_cases\"></a>Real-World Use Cases",
+      "translation": "<a class=\"anchor\" href=\"#_real_world_use_cases\">实际应用案例</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_legal_document_analysis\"></a>Legal Document Analysis",
+      "translation": "<a class=\"anchor\" href=\"#_legal_document_analysis\">法律文件分析</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_batch_code_review\"></a>Batch Code Review",
+      "translation": "<a class=\"anchor\" href=\"#_batch_code_review\">批量代码审查</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_customer_support_with_knowledge_base\"></a>Customer Support with Knowledge Base",
+      "translation": "<a class=\"anchor\" href=\"#_customer_support_with_knowledge_base\">带有知识库的客户支持</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_multi_tenant_saas_application\"></a>Multi-Tenant SaaS Application",
+      "translation": "<a class=\"anchor\" href=\"#_multi_tenant_saas_application\">多租户 SaaS 应用程序</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_best_practices\"></a>Best Practices",
+      "translation": "<a class=\"anchor\" href=\"#_best_practices\">最佳实践</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_cache_invalidation_and_cascade_behavior\"></a>Cache Invalidation and Cascade Behavior",
+      "translation": "<a class=\"anchor\" href=\"#_cache_invalidation_and_cascade_behavior\">缓存失效与级联行为</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_implementation_details\"></a>Implementation Details",
+      "translation": "<a class=\"anchor\" href=\"#_implementation_details\">实现细节</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_cost_considerations\"></a>Cost Considerations",
+      "translation": "<a class=\"anchor\" href=\"#_cost_considerations\">成本考虑</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_tool_calling\"></a>Tool Calling",
+      "translation": "<a class=\"anchor\" href=\"#_tool_calling\">工具调用</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_tool_calling_via_chatclient_recommended\"></a>Tool Calling via ChatClient (Recommended)",
+      "translation": "<a class=\"anchor\" href=\"#_tool_calling_via_chatclient_recommended\"></a>通过 ChatClient 进行工具调用（推荐）",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_user_controlled_tool_execution\"></a>User-Controlled Tool Execution",
+      "translation": "<a class=\"anchor\" href=\"#_user_controlled_tool_execution\">用户控制的工具执行</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#structured-output\"></a>Structured Output",
+      "translation": "<a class=\"anchor\" href=\"#structured-output\">结构化输出</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_using_chatclient_with_native_structured_output\"></a>Using ChatClient with Native Structured Output",
+      "translation": "<a class=\"anchor\" href=\"#_using_chatclient_with_native_structured_output\">使用 ChatClient 进行原生结构化输出</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_using_outputschema_directly\"></a>Using outputSchema Directly",
+      "translation": "<a class=\"anchor\" href=\"#_using_outputschema_directly\">直接使用 outputSchema</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_sample_controller\"></a>Sample Controller",
+      "translation": "<a class=\"anchor\" href=\"#_sample_controller\">示例控制器</a>",
+      "count": 1
+    },
+    {
+      "source": "Why Spring",
+      "translation": "为什么选择 Spring",
+      "count": 1
+    },
+    {
+      "source": "Spring AI",
+      "translation": "Spring AI",
+      "count": 1
+    },
+    {
+      "source": "Bedrock Converse API",
+      "translation": "Bedrock Converse API",
+      "count": 1
+    }
+  ]
+}

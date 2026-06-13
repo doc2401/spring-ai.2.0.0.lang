@@ -1,0 +1,1026 @@
+{
+  "created_at": "2026-06-13 16:45:53",
+  "updated_at": "2026-06-13 16:45:53",
+  "stats": {
+    "total_entries": 202,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 210,
+    "entries_with_hits": 202,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0396039603960396,
+    "usage_percentage": 0.0202
+  },
+  "items": [
+    {
+      "source": "Example usage",
+      "translation": "用法示例",
+      "count": 6
+    },
+    {
+      "source": "In this configuration:",
+      "translation": "在此配置中：",
+      "count": 2
+    },
+    {
+      "source": "You can also use the following operators:",
+      "translation": "您还可以使用以下运算符：",
+      "count": 2
+    },
+    {
+      "source": "Consider the following example:",
+      "translation": "考虑以下示例：",
+      "count": 2
+    },
+    {
+      "source": "Copyright © 2005 - <script>var d = new Date();\n        document.write(d.getFullYear());</script> Broadcom. All Rights Reserved. The term \"Broadcom\" refers to Broadcom Inc. and/or its subsidiaries.<br/><a href=\"https://www.vmware.com/help/legal.html\">Terms of Use</a> • <a href=\"https://www.vmware.com/help/privacy.html\" rel=\"noopener noreferrer\">Privacy</a> • <a href=\"https://spring.io/trademarks\">Trademark Guidelines</a> <span id=\"thank-you-mobile\">• <a href=\"https://spring.io/thank-you\">Thank you</a></span> • <a href=\"https://www.vmware.com/help/privacy/california-privacy-rights.html\">Your California Privacy Rights</a> • <a class=\"ot-sdk-show-settings\">Cookie Settings</a> <span id=\"teconsent\"></span>",
+      "translation": "Copyright © 2005 - <script>var d = new Date();\n        document.write(d.getFullYear());</script> Broadcom. 保留所有权利。术语“Broadcom”是指 Broadcom Inc. 和/或其子公司。<br/><a href=\"https://www.vmware.com/help/legal.html\">使用条款</a> • <a href=\"https://www.vmware.com/help/privacy.html\" rel=\"noopener noreferrer\">隐私政策</a> • <a href=\"https://spring.io/trademarks\">商标指南</a> <span id=\"thank-you-mobile\">• <a href=\"https://spring.io/thank-you\">致谢</a></span> • <a href=\"https://www.vmware.com/help/privacy/california-privacy-rights.html\">您的加州隐私权</a> • <a class=\"ot-sdk-show-settings\">Cookie 设置</a> <span id=\"teconsent\"></span",
+      "count": 1
+    },
+    {
+      "source": "Upon insertion into the vector database, the text content is transformed into a numerical array, or a <code>float[]</code>, known as vector embeddings, using an embedding model. Embedding models, such as <a href=\"https://en.wikipedia.org/wiki/Word2vec\">Word2Vec</a>, <a href=\"https://en.wikipedia.org/wiki/GloVe_(machine_learning)\">GLoVE</a>, and <a href=\"https://en.wikipedia.org/wiki/BERT_(language_model)\">BERT</a>, or OpenAI’s <code>text-embedding-ada-002</code>, are used to convert words, sentences, or paragraphs into these vector embeddings.",
+      "translation": "在插入到向量数据库时，文本内容会通过嵌入模型转换为数值数组（即 <code>float[]</code>），这被称为向量嵌入（vector embeddings）。诸如 <a href=\"https://en.wikipedia.org/wiki/Word2vec\">Word2Vec</a>、<a href=\"https://en.wikipedia.org/wiki/GloVe_(machine_learning)\">GLoVe</a>、<a href=\"https://en.wikipedia.org/wiki/BERT_(language_model)\">BERT</a> 或 OpenAI 的 <code>text-embedding-ada-002</code> 等嵌入模型，被用于将单词、句子或段落转换为这些向量嵌入。",
+      "count": 1
+    },
+    {
+      "source": "Some vector stores require their backend schema to be initialized before usage.\nIt will not be initialized for you by default.\nYou must opt-in, by passing a <code>boolean</code> for the appropriate constructor argument or, if using Spring Boot, setting the appropriate <code>initialize-schema</code> property to <code>true</code> in <code>application.properties</code> or <code>application.yml</code>.\nCheck the documentation for the vector store you are using for the specific property name.",
+      "translation": "某些向量数据库（vector stores）要求在使用前初始化其后端架构。\n默认情况下，系统不会为您进行初始化。\n您必须主动选择开启此功能：可以通过为相应的构造函数参数传递一个 <code>boolean</code> 值，或者如果您使用的是 Spring Boot，可以在 <code>application.properties</code> 或 <code>application.yml</code> 中将相应的 <code>initialize-schema</code> 属性设置为 <code>true</code>。\n请查阅您所使用的向量数据库的文档以获取具体的属性名称。",
+      "count": 1
+    },
+    {
+      "source": "<code>filterExpression</code>: An external DSL based on ANTLR4 that accepts filter expressions as strings. For example, with metadata keys like country, year, and <code>isActive</code>, you could use an expression such as: <code>country == 'UK' &amp;&amp; year &gt;= 2020 &amp;&amp; isActive == true.</code>",
+      "translation": "<code>filterExpression</code>：一种基于 ANTLR4 的外部 DSL，可接受字符串形式的过滤表达式。例如，对于 country、year 和 <code>isActive</code> 等元数据键，您可以使用如下表达式：<code>country == 'UK' &amp;&amp; year &gt;= 2020 &amp;&amp; isActive == true。</code>",
+      "count": 1
+    },
+    {
+      "source": "The <code>TokenCountBatchingStrategy</code> internally uses a <code>TokenCountEstimator</code> (specifically, <code>JTokkitTokenCountEstimator</code>) to calculate token counts for efficient batching. This ensures accurate token estimation based on the specified encoding type.",
+      "translation": "<code style=\"color: #d73a49;\">TokenCountBatchingStrategy</code> 内部使用 <code style=\"color: #d73a49;\">TokenCountEstimator</code>（具体为 <code style=\"color: #d73a49;\">JTokkitTokenCountEstimator</code>）来计算 token 数量以实现高效的批处理。这确保了能够根据指定的编码类型进行准确的 token 估算。",
+      "count": 1
+    },
+    {
+      "source": "The general usage of loading data into a vector store is something you would do in a batch-like job, by first loading data into Spring AI’s <code>Document</code> class and then calling the <code>add</code> method on the <code>VectorStore</code> interface.",
+      "translation": "将数据加载到向量存储中的通用用法是将其作为一种批处理任务来执行，即首先将数据加载到 Spring AI 的 <code>Document</code> 类中，然后调用 <code>VectorStore</code> 接口上的 <code>add</code> 方法。",
+      "count": 1
+    },
+    {
+      "source": "Given a <code>String</code> reference to a source file that represents a JSON file with data we want to load into the vector database, we use Spring AI’s <code>JsonReader</code> to load specific fields in the JSON, which splits them up into small pieces and then passes those small pieces to the vector store implementation.\nThe <code>VectorStore</code> implementation computes the embeddings and stores the JSON and the embedding in the vector database:",
+      "translation": "给定一个代表包含我们想要加载到向量数据库中的数据的 JSON 文件的源文件的 <code>String</code> 引用，我们使用 Spring AI 的 <code>JsonReader</code> 来加载 JSON 中的特定字段，将其拆分为小块，然后将这些小块传递给向量存储实现。\n<code>VectorStore</code> 实现计算嵌入（embeddings），并将 JSON 和嵌入内容存储到向量数据库中：",
+      "count": 1
+    },
+    {
+      "source": "Spring AI offers an abstracted API for interacting with vector databases through the <code>VectorStore</code> interface and its read-only counterpart, the <code>VectorStoreRetriever</code> interface.",
+      "translation": "Spring AI 通过 <code>VectorStore</code> 接口及其只读对应接口 <code>VectorStoreRetriever</code> 提供了一个抽象的 API，用于与向量数据库进行交互。",
+      "count": 1
+    },
+    {
+      "source": "The <code>VectorStore</code> interface extends <code>VectorStoreRetriever</code> and adds mutation capabilities:",
+      "translation": "<code style=\"color: #d73a49;\">VectorStore</code> 接口继承自 <code style=\"color: #d73a49;\">VectorStoreRetriever</code>，并增加了变更（mutation）能力：",
+      "count": 1
+    },
+    {
+      "source": "To insert data into the vector database, encapsulate it within a <code>Document</code> object.\nThe <code>Document</code> class encapsulates content from a data source, such as a PDF or Word document, and includes text represented as a string.\nIt also contains metadata in the form of key-value pairs, including details such as the filename.",
+      "translation": "要将数据插入到向量数据库中，请将其封装在 <code>Document</code> 对象中。\n<code>Document</code> 类封装了来自数据源（如 PDF 或 Word 文档）的内容，并包含以字符串表示的文本。\n它还包含以键值对形式存在的元数据，包括文件名等详细信息。",
+      "count": 1
+    },
+    {
+      "source": "<code>Filter.Expression</code>: A class used for passing a fluent DSL (Domain-Specific Language) expression that functions similarly to a 'where' clause in SQL, but it applies exclusively to the metadata key-value pairs of a <code>Document</code>.",
+      "translation": "<code>Filter.Expression</code>：一个用于传递流式 DSL（领域特定语言）表达式的类，其功能类似于 SQL 中的“where”子句，但它仅适用于 <code>Document</code> 的元数据键值对。",
+      "count": 1
+    },
+    {
+      "source": "Find more information on the <code>Filter.Expression</code> in the <a href=\"#metadata-filters\">Metadata Filters</a> section.",
+      "translation": "在 <a href=\"#metadata-filters\">Metadata Filters</a> 部分中查找有关 <code class=\"language-python\">Filter.Expression</code> 的更多信息。",
+      "count": 1
+    },
+    {
+      "source": "You can also customize the <code>TokenCountBatchingStrategy</code> to better suit your specific requirements. This can be done by creating a new instance with custom parameters in a Spring Boot <code>@Configuration</code> class.",
+      "translation": "您还可以自定义 <code>TokenCountBatchingStrategy</code> 以更好地满足您的特定需求。这可以通过在 Spring Boot <code>@Configuration</code> 类中创建一个带有自定义参数的新实例来实现。",
+      "count": 1
+    },
+    {
+      "source": "<code>EncodingType.CL100K_BASE</code>: Specifies the encoding type used for tokenization. This encoding type is used by the <code>JTokkitTokenCountEstimator</code> to accurately estimate token counts.",
+      "translation": "<code>EncodingType.CL100K_BASE</code>：指定用于分词的编码类型。该编码类型被 <code>JTokkitTokenCountEstimator</code> 用于准确估算 token 数量。",
+      "count": 1
+    },
+    {
+      "source": "By default, this constructor uses <code>Document.DEFAULT_CONTENT_FORMATTER</code> for content formatting and <code>MetadataMode.NONE</code> for metadata handling. If you need to customize these parameters, you can use the full constructor with additional parameters.",
+      "translation": "默认情况下，此构造函数使用 <code>Document.DEFAULT_CONTENT_FORMATTER</code> 进行内容格式化，并使用 <code>MetadataMode.NONE</code> 处理元数据。如果您需要自定义这些参数，可以使用带有额外参数的完整构造函数。",
+      "count": 1
+    },
+    {
+      "source": "Once defined, this custom <code>TokenCountBatchingStrategy</code> bean will be automatically used by the <code>EmbeddingModel</code> implementations in your application, replacing the default strategy.",
+      "translation": "一旦定义，此自定义 <code>TokenCountBatchingStrategy</code> 豆（bean）将自动被您应用程序中的 <code>EmbeddingModel</code> 实现类使用，并取代默认策略。",
+      "count": 1
+    },
+    {
+      "source": "Additionally, <code>TokenCountBatchingStrategy</code> provides flexibility by allowing you to pass in your own implementation of the <code>TokenCountEstimator</code> interface. This feature enables you to use custom token counting strategies tailored to your specific needs. For example:",
+      "translation": "此外，<code>TokenCountBatchingStrategy</code> 通过允许您传入自定义的 <code>TokenCountEstimator</code> 接口实现来提供灵活性。此功能使您能够使用针对特定需求定制的自定义 token 计数策略。例如：",
+      "count": 1
+    },
+    {
+      "source": "The <code>TokenCountBatchingStrategy</code> checks if any single document exceeds the configured maximum and throws an <code>IllegalArgumentException</code> if it does.",
+      "translation": "<code style=\"color: #d73a49;\">TokenCountBatchingStrategy</code> 会检查是否有任何单个文档超过配置的最大值，如果超过，则抛出 <code style=\"color: #d73a49;\">IllegalArgumentException</code>。",
+      "count": 1
+    },
+    {
+      "source": "This custom <code>BatchingStrategy</code> will then be automatically used by the <code>EmbeddingModel</code> implementations in your application.",
+      "translation": "此自定义的 <code>BatchingStrategy</code> 将随后被您应用程序中的 <code>EmbeddingModel</code> 实现类自动使用。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"vectordbs/azure.html\">Azure Vector Search</a> - The <a href=\"https://learn.microsoft.com/en-us/azure/search/vector-search-overview\">Azure</a> vector store.",
+      "translation": "<a class=\"xref page\" href=\"vectordbs/azure.html\">Azure Vector Search</a> - <a href=\"https://learn.microsoft.com/en-us/azure/search/vector-search-overview\">Azure</a> 向量数据库。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"vectordbs/apache-cassandra.html\">Apache Cassandra</a> - The <a href=\"https://cassandra.apache.org/doc/latest/cassandra/vector-search/overview.html\">Apache Cassandra</a> vector store.",
+      "translation": "<a class=\"xref page\" href=\"vectordbs/apache-cassandra.html\">Apache Cassandra</a> - <a href=\"https://cassandra.apache.org/doc/latest/cassandra/vector-search/overview.html\">Apache Cassandra</a> 向量数据库。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"vectordbs/chroma.html\">Chroma Vector Store</a> - The <a href=\"https://www.trychroma.com/\">Chroma</a> vector store.",
+      "translation": "<a class=\"xref page\" href=\"vectordbs/chroma.html\">Chroma Vector Store</a> - <a href=\"https://www.trychroma.com/\">Chroma</a> 向量数据库。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"vectordbs/elasticsearch.html\">Elasticsearch Vector Store</a> - The <a href=\"https://www.elastic.co/\">Elasticsearch</a> vector store.",
+      "translation": "<a class=\"xref page\" href=\"vectordbs/elasticsearch.html\">Elasticsearch Vector Store</a> - <a href=\"https://www.elastic.co/\">Elasticsearch</a> 向量数据库。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"vectordbs/gemfire.html\">GemFire Vector Store</a> - The <a href=\"https://tanzu.vmware.com/content/blog/vmware-gemfire-vector-database-extension\">GemFire</a> vector store.",
+      "translation": "<a class=\"xref page\" href=\"vectordbs/gemfire.html\">GemFire Vector Store</a> - <a href=\"https://tanzu.vmware.com/content/blog/vmware-gemfire-vector-database-extension\">GemFire</a> 向量数据库。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"vectordbs/mariadb.html\">MariaDB Vector Store</a> - The <a href=\"https://mariadb.com/\">MariaDB</a> vector store.",
+      "translation": "<a class=\"xref page\" href=\"vectordbs/mariadb.html\">MariaDB Vector Store</a> - <a href=\"https://mariadb.com/\">MariaDB</a> 向量数据库。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"vectordbs/milvus.html\">Milvus Vector Store</a> - The <a href=\"https://milvus.io/\">Milvus</a> vector store.",
+      "translation": "<a class=\"xref page\" href=\"vectordbs/milvus.html\">Milvus Vector Store</a> - <a href=\"https://milvus.io/\">Milvus</a> 向量数据库。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"vectordbs/mongodb.html\">MongoDB Atlas Vector Store</a> - The <a href=\"https://www.mongodb.com/atlas/database\">MongoDB Atlas</a> vector store.",
+      "translation": "<a class=\"xref page\" href=\"vectordbs/mongodb.html\">MongoDB Atlas Vector Store</a> - <a href=\"https://www.mongodb.com/atlas/database\">MongoDB Atlas</a> 向量数据库。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"vectordbs/neo4j.html\">Neo4j Vector Store</a> - The <a href=\"https://neo4j.com/\">Neo4j</a> vector store.",
+      "translation": "<a class=\"xref page\" href=\"vectordbs/neo4j.html\">Neo4j Vector Store</a> - <a href=\"https://neo4j.com/\">Neo4j</a> 向量数据库。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"vectordbs/opensearch.html\">OpenSearch Vector Store</a> - The <a href=\"https://opensearch.org/platform/search/vector-database.html\">OpenSearch</a> vector store.",
+      "translation": "<a class=\"xref page\" href=\"vectordbs/opensearch.html\">OpenSearch Vector Store</a> - <a href=\"https://opensearch.org/platform/search/vector-database.html\">OpenSearch</a> 向量数据库。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"vectordbs/oracle.html\">Oracle Vector Store</a> - The <a href=\"https://docs.oracle.com/en/database/oracle/oracle-database/23/vecse/overview-ai-vector-search.html\">Oracle Database</a> vector store.",
+      "translation": "<a class=\"xref page\" href=\"vectordbs/oracle.html\">Oracle Vector Store</a> - <a href=\"https://docs.oracle.com/en/database/oracle/oracle-database/23/vecse/overview-ai-vector-search.html\">Oracle Database</a> 向量存储。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"vectordbs/pgvector.html\">PgVector Store</a> - The <a href=\"https://github.com/pgvector/pgvector\">PostgreSQL/PGVector</a> vector store.",
+      "translation": "<a class=\"xref page\" href=\"vectordbs/pgvector.html\">PgVector Store</a> - <a href=\"https://github.com/pgvector/pgvector\">PostgreSQL/PGVector</a> 向量数据库。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"vectordbs/pinecone.html\">Pinecone Vector Store</a> - <a href=\"https://www.pinecone.io/\">Pinecone</a> vector store.",
+      "translation": "<a class=\"xref page\" href=\"vectordbs/pinecone.html\">Pinecone Vector Store</a> - <a href=\"https://www.pinecone.io/\">Pinecone</a> 向量数据库。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"vectordbs/qdrant.html\">Qdrant Vector Store</a> - <a href=\"https://www.qdrant.tech/\">Qdrant</a> vector store.",
+      "translation": "<a class=\"xref page\" href=\"vectordbs/qdrant.html\">Qdrant Vector Store</a> - <a href=\"https://www.qdrant.tech/\">Qdrant</a> 向量数据库。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"vectordbs/redis.html\">Redis Vector Store</a> - The <a href=\"https://redis.io/\">Redis</a> vector store.",
+      "translation": "<a class=\"xref page\" href=\"vectordbs/redis.html\">Redis Vector Store</a> - <a href=\"https://redis.io/\">Redis</a> 向量数据库。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"vectordbs/typesense.html\">Typesense Vector Store</a> - The <a href=\"https://typesense.org/docs/0.24.0/api/vector-search.html\">Typesense</a> vector store.",
+      "translation": "<a class=\"xref page\" href=\"vectordbs/typesense.html\">Typesense Vector Store</a> - <a href=\"https://typesense.org/docs/0.24.0/api/vector-search.html\">Typesense</a> 向量数据库。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"vectordbs/weaviate.html\">Weaviate Vector Store</a> - The <a href=\"https://weaviate.io/\">Weaviate</a> vector store.",
+      "translation": "<a class=\"xref page\" href=\"vectordbs/weaviate.html\">Weaviate Vector Store</a> - <a href=\"https://weaviate.io/\">Weaviate</a> 向量数据库。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"vectordbs/s3-vector-store.html\">S3 Vector Store</a> - The <a href=\"https://aws.amazon.com/s3/features/vectors/\">AWS S3</a> vector store.",
+      "translation": "<a class=\"xref page\" href=\"vectordbs/s3-vector-store.html\">S3 Vector Store</a> - <a href=\"https://aws.amazon.com/s3/features/vectors/\">AWS S3</a> 向量存储。",
+      "count": 1
+    },
+    {
+      "source": "For example, with OpenAI’s ChatGPT, we use the <code>OpenAiEmbeddingModel</code> and a model named <code>text-embedding-ada-002</code>.",
+      "translation": "例如，在使用 OpenAI 的 ChatGPT 时，我们使用 <code>OpenAiEmbeddingModel</code> 以及名为 <code>text-embedding-ada-002</code> 的模型。",
+      "count": 1
+    },
+    {
+      "source": "For read-only operations, you can use either the <code>VectorStore</code> interface or the more focused <code>VectorStoreRetriever</code> interface:",
+      "translation": "对于只读操作，您可以使用 <code>VectorStore</code> 接口或更具针对性的 <code>VectorStoreRetriever</code> 接口：",
+      "count": 1
+    },
+    {
+      "source": "<strong>Reduced Dependencies</strong>: Components that only need to perform searches don’t need to depend on the full <code>VectorStore</code> interface.",
+      "translation": "<strong>减少依赖</strong>：仅需执行搜索的组件不需要依赖完整的 <code>VectorStore</code> 接口。",
+      "count": 1
+    },
+    {
+      "source": "You can pass in an SQL-like filter expressions as a <code>String</code> to one of the <code>similaritySearch</code> overloads.",
+      "translation": "您可以将类 SQL 的过滤表达式作为 <code>String</code> 传递给 <code>similaritySearch</code> 的其中一个重载方法。",
+      "count": 1
+    },
+    {
+      "source": "You can create an instance of <code>Filter.Expression</code> with a <code>FilterExpressionBuilder</code> that exposes a fluent API.\nA simple example is as follows:",
+      "translation": "您可以使用提供流式 API 的 <code>FilterExpressionBuilder</code> 来创建一个 <code>Filter.Expression</code> 实例。\n一个简单的示例如下：",
+      "count": 1
+    },
+    {
+      "source": "In vector databases, queries differ from traditional relational databases.\nInstead of exact matches, they perform similarity searches.\nWhen given a vector as a query, a vector database returns vectors that are “similar” to the query vector.\nFurther details on how this similarity is calculated at a high-level is provided in a <a class=\"xref page\" href=\"vectordbs/understand-vectordbs.html#vectordbs-similarity\">Vector Similarity</a>.",
+      "translation": "在向量数据库中，查询与传统的关系型数据库不同。\n它们执行的是相似性搜索，而非精确匹配。\n当给定一个向量作为查询时，向量数据库会返回与该查询向量“相似”的向量。\n关于这种相似性如何在宏观层面计算的更多细节，请参阅 <a class=\"xref page\" href=\"vectordbs/understand-vectordbs.html#vectordbs-similarity\">Vector Similarity</a>。",
+      "count": 1
+    },
+    {
+      "source": "Vector databases are used to integrate your data with AI models.\nThe first step in their usage is to load your data into a vector database.\nThen, when a user query is to be sent to the AI model, a set of similar documents is first retrieved.\nThese documents then serve as the context for the user’s question and are sent to the AI model, along with the user’s query.\nThis technique is known as <a class=\"xref page\" href=\"../concepts.html#concept-rag\">Retrieval Augmented Generation (RAG)</a>.",
+      "translation": "向量数据库用于将您的数据与 AI 模型进行整合。\n使用它们的第一步是将您的数据加载到向量数据库中。\n然后，当用户查询要发送到 AI 模型时，系统会首先检索出一组相似的文档。\n这些文档随后作为用户问题的上下文，与用户的查询一起发送给 AI 模型。\n这种技术被称为 <a class=\"xref page\" href=\"../concepts.html#concept-rag\">检索增强生成 (RAG)</a>。",
+      "count": 1
+    },
+    {
+      "source": "This section serves as a guide to the <code>VectorStore</code> interface and its associated classes within the Spring AI framework.",
+      "translation": "本章节作为 Spring AI 框架中 <code style=\"white-space:nowrap\">VectorStore</code> 接口及其相关类的指南。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI provides a read-only interface called <code>VectorStoreRetriever</code> that exposes only the document retrieval functionality:",
+      "translation": "Spring AI 提供了一个名为 <code style=\"color: #d63384;\">VectorStoreRetriever</code> 的只读接口，它仅暴露文档检索功能：",
+      "count": 1
+    },
+    {
+      "source": "The <code>VectorStore</code> interface combines both read and write operations, allowing you to add, delete, and search for documents in a vector database.",
+      "translation": "<code >VectorStore</code> 接口结合了读和写操作，允许您在向量数据库中添加、删除和搜索文档。",
+      "count": 1
+    },
+    {
+      "source": "The vector database’s role is to store and facilitate similarity searches for these embeddings. It does not generate the embeddings itself. For creating vector embeddings, the <code>EmbeddingModel</code> should be utilized.",
+      "translation": "向量数据库的作用是存储这些嵌入（embeddings）并促进相似性搜索。它本身并不生成嵌入。若要创建向量嵌入，应使用 <code>EmbeddingModel</code>。",
+      "count": 1
+    },
+    {
+      "source": "The <code>similaritySearch</code> methods in the interface allow for retrieving documents similar to a given query string. These methods can be fine-tuned by using the following parameters:",
+      "translation": "接口中的 <code style=\"color: #d73a49;\">similaritySearch</code> 方法允许检索与给定查询字符串相似的文档。可以通过使用以下参数对这些方法进行微调：",
+      "count": 1
+    },
+    {
+      "source": "<code>k</code>: An integer that specifies the maximum number of similar documents to return. This is often referred to as a 'top K' search, or 'K nearest neighbors' (KNN).",
+      "translation": "<code>k</code>：指定返回相似文档的最大数量。这通常被称为“前 K 个”（top K）搜索或“K 个最近邻”（KNN）。",
+      "count": 1
+    },
+    {
+      "source": "<code>threshold</code>: A double value ranging from 0 to 1, where values closer to 1 indicate higher similarity. By default, if you set a threshold of 0.75, for instance, only documents with a similarity above this value are returned.",
+      "translation": "<code>threshold</code>：一个范围在 0 到 1 之间的双精度数值，越接近 1 表示相似度越高。默认情况下，例如如果您将阈值设置为 0.75，则只有相似度高于此值的文档才会被返回。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI provides this functionality through the <code>BatchingStrategy</code> interface, which allows for processing documents in sub-batches based on their token counts.",
+      "translation": "Spring AI 通过 <code class=\"language-xml\">BatchingStrategy</code> 接口提供此功能，该接口允许根据 Token 数量将文档处理为子批次。",
+      "count": 1
+    },
+    {
+      "source": "The core <code>BatchingStrategy</code> interface is defined as follows:",
+      "translation": "核心 <code class=\"code\">BatchingStrategy</code> 接口定义如下：",
+      "count": 1
+    },
+    {
+      "source": "This interface defines a single method, <code>batch</code>, which takes a list of documents and returns a list of document batches.",
+      "translation": "此接口定义了一个单一方法 <code style=\"color: #d73a49;\">batch</code>，它接收一个文档列表并返回一个文档批次列表。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI provides a default implementation called <code>TokenCountBatchingStrategy</code>.\nThis strategy batches documents based on their token counts, ensuring that each batch does not exceed a calculated maximum input token count.",
+      "translation": "Spring AI 提供了一个名为 <code style=\"color: #d14\">TokenCountBatchingStrategy</code> 的默认实现。\n该策略根据文档的 token 数量进行分批，确保每个批次都不超过计算出的最大输入 token 数量。",
+      "count": 1
+    },
+    {
+      "source": "Key features of <code>TokenCountBatchingStrategy</code>:",
+      "translation": "<code style=\"color: #d73a49;\">TokenCountBatchingStrategy</code> 的核心特性：",
+      "count": 1
+    },
+    {
+      "source": "Uses <a href=\"https://platform.openai.com/docs/guides/embeddings/embedding-models\">OpenAI’s max input token count</a> (8191) as the default upper limit.",
+      "translation": "使用 <a href=\"https://platform.openai.com/docs/guides/embeddings/embedding-models\">OpenAI 的最大输入 Token 数量</a>（8191）作为默认上限。",
+      "count": 1
+    },
+    {
+      "source": "Calculates the actual max input token count as: <code>actualMaxInputTokenCount = originalMaxInputTokenCount * (1 - RESERVE_PERCENTAGE)</code>",
+      "translation": "计算实际最大输入 Token 数量的公式为：<code>actualMaxInputTokenCount = originalMaxInputTokenCount * (1 - RESERVE_PERCENTAGE)</code>",
+      "count": 1
+    },
+    {
+      "source": "Here’s an example of how to create a custom <code>TokenCountBatchingStrategy</code> bean:",
+      "translation": "以下是创建一个自定义 <code>TokenCountBatchingStrategy</code> 豆（bean）的示例：",
+      "count": 1
+    },
+    {
+      "source": "<code>8000</code>: Sets the maximum input token count. This value should be less than or equal to the maximum context window size of your embedding model.",
+      "translation": "<code>8000</code>：设置最大输入 token 数量。此值应小于或等于您所使用的嵌入模型的最大上下文窗口大小。",
+      "count": 1
+    },
+    {
+      "source": "<code>0.1</code>: Sets the reserve percentage. The percentage of tokens to reserve from the max input token count. This creates a buffer for potential token count increases during processing.",
+      "translation": "<code>0.1</code>：设置保留百分比。从最大输入 Token 数量中预留的 Token 百分比。这为处理过程中可能增加的 Token 数量创建了一个缓冲区。",
+      "count": 1
+    },
+    {
+      "source": "Some embedding models, such as Vertex AI text embedding, support an <code>auto_truncate</code> feature. When enabled, the model silently truncates text inputs that exceed the maximum size and continues processing; when disabled, it throws an explicit error for inputs that are too large.",
+      "translation": "某些嵌入模型（例如 Vertex AI text embedding）支持 <code>auto_truncate</code> 功能。当启用此功能时，模型会静默截断超过最大尺寸的文本输入并继续处理；当禁用此功能时，对于过大的输入，模型会抛出明确的错误。",
+      "count": 1
+    },
+    {
+      "source": "Here’s an example configuration for using Vertex AI with auto-truncation and custom <code>BatchingStrategy</code> and then using them in the PgVectorStore:",
+      "translation": "以下是使用 Vertex AI 配合自动截断和自定义 <code>BatchingStrategy</code>，并将其应用于 PgVectorStore 的示例配置：",
+      "count": 1
+    },
+    {
+      "source": "The vector store uses the configured embedding model and the custom <code>BatchingStrategy</code> bean.",
+      "translation": "向量存储使用配置的嵌入模型和自定义的 <code style=\"color: #d73a49;\">BatchingStrategy</code> 豆。",
+      "count": 1
+    },
+    {
+      "source": "If you’re using Spring Boot auto-configuration, you must provide a custom <code>BatchingStrategy</code> bean to override the default one that comes with Spring AI:",
+      "translation": "如果您正在使用 Spring Boot 自动配置，则必须提供一个自定义的 <code>BatchingStrategy</code> bean，以覆盖 Spring AI 自带的默认配置：",
+      "count": 1
+    },
+    {
+      "source": "While <code>TokenCountBatchingStrategy</code> provides a robust default implementation, you can customize the batching strategy to fit your specific needs.\nThis can be done through Spring Boot’s auto-configuration.",
+      "translation": "虽然 <code style=\"color: #d73a49;\">TokenCountBatchingStrategy</code> 提供了一个稳健的默认实现，但您可以根据特定需求自定义批处理策略。\n这可以通过 Spring Boot 的自动配置来实现。",
+      "count": 1
+    },
+    {
+      "source": "To customize the batching strategy, define a <code>BatchingStrategy</code> bean in your Spring Boot application:",
+      "translation": "若要自定义批处理策略，请在您的 Spring Boot 应用程序中定义一个 <code>BatchingStrategy</code> 类型的 bean：",
+      "count": 1
+    },
+    {
+      "source": "These are the available implementations of the <code>VectorStore</code> interface:",
+      "translation": "以下是 <code style=\"color: #d73a49;\">VectorStore</code> 接口的可用的实现：",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"https://github.com/spring-projects/spring-ai/blob/main/spring-ai-vector-store/src/main/java/org/springframework/ai/vectorstore/SimpleVectorStore.java\">SimpleVectorStore</a> - A simple implementation of a vector storage, good only for testing purposes.",
+      "translation": "<a href=\"https://github.com/spring-projects/spring-ai/blob/main/spring-ai-vector-store/src/main/java/org/springframework/ai/vectorstore/SimpleVectorStore.java\">SimpleVectorStore</a> - 一个向量存储的简单实现，仅适用于测试目的。",
+      "count": 1
+    },
+    {
+      "source": "Information on each of the <code>VectorStore</code> implementations can be found in the subsections of this chapter.",
+      "translation": "有关每个 <code style=\"color: #d63384;\">VectorStore</code> 实现的信息可以在本章的各个小节中找到。",
+      "count": 1
+    },
+    {
+      "source": "The Spring Boot starter’s auto-configuration for OpenAI makes an implementation of <code>EmbeddingModel</code> available in the Spring application context for dependency injection.",
+      "translation": "Spring Boot starter 的 OpenAI 自动配置在 Spring 应用上下文中提供了一个 <code>EmbeddingModel</code> 的实现，供依赖注入使用。",
+      "count": 1
+    },
+    {
+      "source": "Additional options can be passed into the <code>similaritySearch</code> method to define how many documents to retrieve and a threshold of the similarity search.",
+      "translation": "可以向 <code class=\"language-js\">similaritySearch</code> 方法传递额外的选项，以定义要检索的文档数量以及相似度搜索的阈值。",
+      "count": 1
+    },
+    {
+      "source": "The <code>VectorStoreRetriever</code> interface provides a read-only view of a vector store, exposing only the similarity search functionality. This follows the principle of least privilege and is particularly useful in RAG (Retrieval-Augmented Generation) applications where you only need to retrieve documents without modifying the underlying data.",
+      "translation": "<code style=\"color: #d73a49;\">VectorStoreRetriever</code> 接口提供了向量库的只读视图，仅暴露相似性搜索功能。这遵循最小权限原则，在 RAG（检索增强生成）应用中特别有用，因为在这些应用中您只需要检索文档而无需修改底层数据。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Separation of Concerns</strong>: Clearly separates read operations from write operations.",
+      "translation": "<strong>关注点分离</strong>：清晰地将读取操作与写入操作分离。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Interface Segregation</strong>: Clients that only need retrieval functionality aren’t exposed to mutation methods.",
+      "translation": "<strong>接口隔离</strong>：仅需要检索功能的客户端不会暴露给变更方法。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Functional Interface</strong>: Can be implemented with lambda expressions or method references for simple use cases.",
+      "translation": "<strong>函数式接口</strong>：对于简单的用例，可以使用 lambda 表达式或方法引用来实现。",
+      "count": 1
+    },
+    {
+      "source": "You can use <code>VectorStoreRetriever</code> directly when you only need to perform similarity searches:",
+      "translation": "当您只需要执行相似性搜索时，可以直接使用 <code>VectorStoreRetriever</code>：",
+      "count": 1
+    },
+    {
+      "source": "In this example, the service only depends on the <code>VectorStoreRetriever</code> interface, making it clear that it only performs retrieval operations and doesn’t modify the vector store.",
+      "translation": "在这个示例中，该服务仅依赖于 <code style=\"color: #d73a49;\">VectorStoreRetriever</code> 接口，这清楚地表明它仅执行检索操作，而不修改向量库。",
+      "count": 1
+    },
+    {
+      "source": "The <code>VectorStoreRetriever</code> interface is particularly useful in RAG applications, where you need to retrieve relevant documents to provide context for an AI model:",
+      "translation": "<code style=\"color: #d63384;\">VectorStoreRetriever</code> 接口在 RAG 应用中特别有用，因为在这些应用中，您需要检索相关的文档来为 AI 模型提供上下文：",
+      "count": 1
+    },
+    {
+      "source": "This method accepts a <code>Filter.Expression</code> object that defines the criteria for which documents should be deleted.\nIt’s particularly useful when you need to delete documents based on their metadata properties.",
+      "translation": "此方法接受一个 <code class=\"language-python\">Filter.Expression</code> 对象，用于定义哪些文档应被删除。\n当您需要根据元数据属性删除文档时，此方法特别有用。",
+      "count": 1
+    },
+    {
+      "source": "This method converts the provided string filter into a <code>Filter.Expression</code> object internally.\nIt’s useful when you have filter criteria in string format.",
+      "translation": "此方法在内部将提供的字符串过滤器转换为 <code>Filter.Expression</code> 对象。\n当您拥有字符串格式的过滤条件时，此方法非常有用。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"vectordbs/understand-vectordbs.html\">Understanding Vectors</a>",
+      "translation": "<a class=\"xref page\" href=\"vectordbs/understand-vectordbs.html\">理解向量</a>",
+      "count": 1
+    },
+    {
+      "source": "A vector database is a specialized type of database that plays an essential role in AI applications.",
+      "translation": "向量数据库是一种专门的数据库类型，在人工智能应用中发挥着至关重要的作用。",
+      "count": 1
+    },
+    {
+      "source": "The following sections describe the Spring AI interface for using multiple vector database implementations and some high-level sample usage.",
+      "translation": "以下章节描述了用于使用多种向量数据库实现的 Spring AI 接口以及一些高层级的示例用法。",
+      "count": 1
+    },
+    {
+      "source": "The last section is intended to demystify the underlying approach of similarity searching in vector databases.",
+      "translation": "最后一部分旨在揭开向量数据库中相似性搜索底层方法的神秘面纱。",
+      "count": 1
+    },
+    {
+      "source": "This functional interface is designed for use cases where you only need to retrieve documents from a vector store without performing any mutation operations. It follows the principle of least privilege by exposing only the necessary functionality for document retrieval.",
+      "translation": "此函数式接口旨在用于仅需从向量存储中检索文档而无需执行任何变更操作的用例。它遵循最小权限原则，仅暴露用于文档检索的必要功能。",
+      "count": 1
+    },
+    {
+      "source": "When working with vector stores, it’s often necessary to embed large numbers of documents.\nWhile it might seem straightforward to make a single call to embed all documents at once, this approach can lead to issues.\nEmbedding models process text as tokens and have a maximum token limit, often referred to as the context window size.\nThis limit restricts the amount of text that can be processed in a single embedding request.\nAttempting to embed too many tokens in one call can result in errors or truncated embeddings.",
+      "translation": "在处理向量数据库时，通常需要对大量文档进行嵌入。\n虽然一次性调用来嵌入所有文档似乎很简单，但这种方法可能会导致问题。\n嵌入模型将文本作为 token 进行处理，并设有最大 token 限制，通常被称为上下文窗口大小（context window size）。\n这一限制规定了在单次嵌入请求中可以处理的文本量。\n尝试在单次调用中嵌入过多的 token 可能会导致错误或嵌入内容被截断。",
+      "count": 1
+    },
+    {
+      "source": "To address this token limit, Spring AI implements a batching strategy.\nThis approach breaks down large sets of documents into smaller batches that fit within the embedding model’s maximum context window.\nBatching not only solves the token limit issue but can also lead to improved performance and more efficient use of API rate limits.",
+      "translation": "为了解决这一 Token 限制问题，Spring AI 采用了批处理策略。\n这种方法将大型文档集分解为较小的批次，使其符合嵌入模型的最大上下文窗口。\n批处理不仅解决了 Token 限制问题，还能提高性能并更有效地利用 API 速率限制。",
+      "count": 1
+    },
+    {
+      "source": "Incorporates a reserve percentage (default 10%) to provide a buffer for potential overhead.",
+      "translation": "包含预留百分比（默认 10%），为潜在的间接费用提供缓冲。",
+      "count": 1
+    },
+    {
+      "source": "The strategy estimates the token count for each document, groups them into batches without exceeding the max input token count, and throws an exception if a single document exceeds this limit.",
+      "translation": "该策略估算每个文档的 token 数量，将其分组到批次中且不超过最大输入 token 数量，如果单个文档超过此限制，则抛出异常。",
+      "count": 1
+    },
+    {
+      "source": "When using auto-truncation with the batching strategy, you must configure your batching strategy with a much higher input token count than the model’s actual maximum. This prevents the batching strategy from raising exceptions for large documents, allowing the embedding model to handle truncation internally.",
+      "translation": "在使用批处理策略（batching strategy）配合自动截断（auto-truncation）时，您必须将批处理策略的输入 Token 计数配置为远高于模型的实际最大值。这可以防止批处理策略在处理大型文档时抛出异常，从而允许嵌入模型在内部自行处理截断。",
+      "count": 1
+    },
+    {
+      "source": "When enabling auto-truncation, set your batching strategy’s maximum input token count much higher than the model’s actual limit. This prevents the batching strategy from raising exceptions for large documents, allowing the embedding model to handle truncation internally.",
+      "translation": "在启用自动截断时，请将批处理策略的最大输入 Token 数量设置为远高于模型的实际限制。这可以防止批处理策略在处理大型文档时抛出异常，从而允许嵌入模型在内部自行处理截断。",
+      "count": 1
+    },
+    {
+      "source": "The embedding model has auto-truncation enabled, allowing it to handle oversized inputs gracefully.",
+      "translation": "嵌入模型启用了自动截断功能，使其能够优雅地处理超大输入。",
+      "count": 1
+    },
+    {
+      "source": "The batching strategy uses an artificially high token limit (132,900) that’s much larger than the actual model limit (20,000).",
+      "translation": "批处理策略使用了一个人为设定的高 Token 限制（132,900），这远大于模型的实际限制（20,000）。",
+      "count": 1
+    },
+    {
+      "source": "This approach works because:",
+      "translation": "这种方法之所以奏效，是因为：",
+      "count": 1
+    },
+    {
+      "source": "By setting a very high limit in the batching strategy, we ensure that this check never fails.",
+      "translation": "通过在批处理策略中设置非常高的限制，我们确保此检查永远不会失败。",
+      "count": 1
+    },
+    {
+      "source": "Documents or batches exceeding the model’s limit are silently truncated and processed by the embedding model’s auto-truncation feature.",
+      "translation": "超过模型限制的文档或批次将被静默截断，并由嵌入模型的自动截断功能进行处理。",
+      "count": 1
+    },
+    {
+      "source": "When using auto-truncation:",
+      "translation": "在使用自动截断时：",
+      "count": 1
+    },
+    {
+      "source": "Set the batching strategy’s max input token count to be at least 5-10x larger than the model’s actual limit to avoid premature exceptions from the batching strategy.",
+      "translation": "将批处理策略的最大输入 Token 数量设置为至少比模型的实际限制大 5-10 倍，以避免因批处理策略导致的过早异常。",
+      "count": 1
+    },
+    {
+      "source": "Monitor your logs for truncation warnings from the embedding model (note: not all models log truncation events).",
+      "translation": "监控您的日志，查看来自嵌入模型（embedding model）的截断警告（注意：并非所有模型都会记录截断事件）。",
+      "count": 1
+    },
+    {
+      "source": "Consider the implications of silent truncation on your embedding quality.",
+      "translation": "考虑静默截断（silent truncation）对您嵌入质量的影响。",
+      "count": 1
+    },
+    {
+      "source": "Test with sample documents to ensure truncated embeddings still meet your requirements.",
+      "translation": "使用样本文档进行测试，以确保截断后的嵌入（embeddings）仍符合您的要求。",
+      "count": 1
+    },
+    {
+      "source": "Document this configuration for future maintainers, as it is non-standard.",
+      "translation": "由于此配置并非标准配置，请为未来的维护人员记录下此配置。",
+      "count": 1
+    },
+    {
+      "source": "The presence of this bean in your application context will automatically replace the default batching strategy used by all vector stores.",
+      "translation": "此 Bean 在您的应用上下文中存在时，将自动替换所有向量存储使用的默认批处理策略。",
+      "count": 1
+    },
+    {
+      "source": "More implementations may be supported in future releases.",
+      "translation": "未来的版本可能会支持更多的实现。",
+      "count": 1
+    },
+    {
+      "source": "If you have a vector database that needs to be supported by Spring AI, open an issue on GitHub or, even better, submit a pull request with an implementation.",
+      "translation": "如果您有一个需要被 Spring AI 支持的向量数据库，请在 GitHub 上提交一个 issue，或者更好的做法是提交一个包含相关实现的 pull request。",
+      "count": 1
+    },
+    {
+      "source": "To compute the embeddings for a vector database, you need to pick an embedding model that matches the higher-level AI model being used.",
+      "translation": "为了计算向量数据库的嵌入（embeddings），您需要选择一个与所使用的更高层级 AI 模型相匹配的嵌入模型。",
+      "count": 1
+    },
+    {
+      "source": "Later, when a user question is passed into the AI model, a similarity search is done to retrieve similar documents, which are then \"stuffed\" into the prompt as context for the user’s question.",
+      "translation": "随后，当用户问题输入到 AI 模型时，系统会进行相似性搜索以检索相关的文档，然后将这些文档作为上下文“塞入”提示词中，用于回答用户的问题。",
+      "count": 1
+    },
+    {
+      "source": "Using the separate interfaces allows you to clearly define which components need write access and which only need read access:",
+      "translation": "使用独立的接口可以让您清晰地定义哪些组件需要写入权限，而哪些仅需要读取权限：",
+      "count": 1
+    },
+    {
+      "source": "This separation of concerns helps create more maintainable and secure applications by limiting access to mutation operations only to components that truly need them.",
+      "translation": "这种关注点分离有助于通过将变更操作的访问权限仅限于真正需要它们的组件，从而创建更易于维护且更安全的应用程序。",
+      "count": 1
+    },
+    {
+      "source": "This pattern allows for a clean separation between the retrieval component and the generation component in RAG applications.",
+      "translation": "这种模式实现了 RAG 应用中检索组件与生成组件之间的清晰分离。",
+      "count": 1
+    },
+    {
+      "source": "This section describes various filters that you can use against the results of a query.",
+      "translation": "本节介绍了您可以在查询结果中使用的各种过滤器。",
+      "count": 1
+    },
+    {
+      "source": "Consider the following examples:",
+      "translation": "考虑以下示例：",
+      "count": 1
+    },
+    {
+      "source": "You can build up sophisticated expressions by using the following operators:",
+      "translation": "您可以使用以下运算符构建复杂的表达式：",
+      "count": 1
+    },
+    {
+      "source": "You can combine expressions by using the following operators:",
+      "translation": "您可以使用以下运算符来组合表达式：",
+      "count": 1
+    },
+    {
+      "source": "Considering the following example:",
+      "translation": "考虑到以下示例：",
+      "count": 1
+    },
+    {
+      "source": "The Vector Store interface provides multiple methods for deleting documents, allowing you to remove data either by specific document IDs or using filter expressions.",
+      "translation": "Vector Store 接口提供多种删除文档的方法，允许您通过特定的文档 ID 或使用过滤表达式来删除数据。",
+      "count": 1
+    },
+    {
+      "source": "The simplest way to delete documents is by providing a list of document IDs:",
+      "translation": "删除文档最简单的方法是提供一份文档 ID 列表：",
+      "count": 1
+    },
+    {
+      "source": "This method removes all documents whose IDs match those in the provided list.\nIf any ID in the list doesn’t exist in the store, it will be ignored.",
+      "translation": "此方法将删除所有 ID 与提供的列表中匹配的文档。\n如果列表中的任何 ID 在存储中不存在，它将被忽略。",
+      "count": 1
+    },
+    {
+      "source": "For more complex deletion criteria, you can use filter expressions:",
+      "translation": "对于更复杂的删除条件，您可以使用过滤表达式：",
+      "count": 1
+    },
+    {
+      "source": "For convenience, you can also delete documents using a string-based filter expression:",
+      "translation": "为了方便起见，您也可以使用基于字符串的过滤表达式来删除文档：",
+      "count": 1
+    },
+    {
+      "source": "All deletion methods may throw exceptions in case of errors:",
+      "translation": "所有删除方法在发生错误时都可能抛出异常：",
+      "count": 1
+    },
+    {
+      "source": "The best practice is to wrap delete operations in try-catch blocks:",
+      "translation": "最佳实践是将删除操作封装在 try-catch 块中：",
+      "count": 1
+    },
+    {
+      "source": "A common scenario is managing document versions where you need to upload a new version of a document while removing the old version. Here’s how to handle this using filter expressions:",
+      "translation": "一个常见的场景是管理文档版本，即您需要在上传新版本文档的同时删除旧版本。以下是如何使用过滤表达式来处理此操作的方法：",
+      "count": 1
+    },
+    {
+      "source": "You can also accomplish the same using the string filter expression:",
+      "translation": "您也可以使用字符串过滤表达式来完成同样的操作：",
+      "count": 1
+    },
+    {
+      "source": "Deleting by ID list is generally faster when you know exactly which documents to remove.",
+      "translation": "当您明确知道要删除哪些文档时，按 ID 列表删除通常更快。",
+      "count": 1
+    },
+    {
+      "source": "Filter-based deletion may require scanning the index to find matching documents; however, this is vector store implementation-specific.",
+      "translation": "基于过滤条件的删除可能需要扫描索引以查找匹配的文档；然而，这取决于向量数据库的具体实现。",
+      "count": 1
+    },
+    {
+      "source": "Large deletion operations should be batched to avoid overwhelming the system.",
+      "translation": "大规模删除操作应进行批处理，以避免系统过载。",
+      "count": 1
+    },
+    {
+      "source": "Consider using filter expressions when deleting based on document properties rather than collecting IDs first.",
+      "translation": "在根据文档属性进行删除操作时，请考虑使用过滤表达式（filter expressions），而不是先收集 ID。",
+      "count": 1
+    },
+    {
+      "source": "Apache®, Apache Tomcat®, Apache Kafka®, Apache Cassandra™, and Apache Geode™ are trademarks or registered trademarks of the Apache Software Foundation in the United States and/or other countries. Java™, Java™ SE, Java™ EE, and OpenJDK™ are trademarks of Oracle and/or its affiliates. Kubernetes® is a registered trademark of the Linux Foundation in the United States and other countries. Linux® is the registered trademark of Linus Torvalds in the United States and other countries. Windows® and Microsoft® Azure are registered trademarks of Microsoft Corporation. “AWS” and “Amazon Web Services” are trademarks or registered trademarks of Amazon.com Inc. or its affiliates. All other trademarks and copyrights are property of their respective owners and are only mentioned for informative purposes. Other names may be trademarks of their respective owners.",
+      "translation": "Apache®、Apache Tomcat®、Apache Kafka®、Apache Cassandra™ 和 Apache Geode™ 是 Apache Software Foundation 在美国和/或其他国家的商标或注册商标。Java™、Java™ SE、Java™ EE 和 OpenJDK™ 是 Oracle 和/或其关联公司的商标。Kubernetes® 是 Linux Foundation 在美国和其他国家的注册商标。Linux® 是 Linus Torvalds 在美国和其他国家的注册商标。Windows® 和 Microsoft® Azure 是 Microsoft Corporation 的注册商标。“AWS”和“Amazon Web Services”是 Amazon.com Inc. 或其关联公司的商标或注册商标。所有其他商标和版权均为其各自所有者的财产，仅用于提供信息。其他名称可能是其各自所有者的商标。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/projects\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-boot\">Spring Boot</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-framework\">Spring Framework</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud\">Spring Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud-dataflow\">Spring Cloud Data Flow</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-data\">Spring Data</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-integration\">Spring Integration</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-batch\">Spring Batch</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-security\">Spring Security</a>\n            <a class=\"navbar-item navbar-item-special\" href=\"https://spring.io/projects\">View all projects</a>\n            <li class=\"navbar-item navbar-item-special-3\">DEVELOPMENT TOOLS</li>\n            <a class=\"navbar-item\" href=\"https://spring.io/tools\">Spring Tools 4</a>\n            <a class=\"navbar-item navbar-item-special-2\" href=\"https://start.spring.io\">Spring Initializr\n              <svg id=\"svg-stash-f15b5668\"></svg></a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/projects\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-boot\">Spring Boot</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-framework\">Spring Framework</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud\">Spring Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud-dataflow\">Spring Cloud Data Flow</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-data\">Spring Data</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-integration\">Spring Integration</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-batch\">Spring Batch</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-security\">Spring Security</a>\n            <a class=\"navbar-item navbar-item-special\" href=\"https://spring.io/projects\">查看所有项目</a>\n            <li class=\"navbar-item navbar-item-special-3\">开发工具</li>\n            <a class=\"navbar-item\" href=\"https://spring.io/tools\">Spring Tools 4</a>\n            <a class=\"navbar-item navbar-item-special-2\" href=\"https://start.spring.io\">Spring Initializr\n              <svg id=\"svg-stash-f15b5668\"></svg></a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/why-spring\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/microservices\">Microservices</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/reactive\">Reactive</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/event-driven\">Event\n              Driven</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/cloud\">Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/web-applications\">Web\n              Applications</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/serverless\">Serverless</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/batch\">Batch</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/why-spring\">概述</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/microservices\">微服务</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/reactive\">响应式</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/event-driven\">事件驱动</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/cloud\">云原生</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/web-applications\">Web 应用</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/serverless\">Serverless</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/batch\">批处理</a>",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/vectordbs.adoc\">\n          <svg id=\"svg-stash-05b5c46b\"></svg>\n          Edit this Page\n        </a>\n        <a href=\"https://github.com/spring-projects/spring-ai\" title=\"GitHub\">\n          <svg id=\"svg-stash-28d888b7\"></svg>\n          GitHub Project\n        </a>",
+      "translation": "<a href=\"file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/vectordbs.adoc\">\n          <svg id=\"svg-stash-05b5c46b\"></svg>\n          编辑此页面\n        </a>\n        <a href=\"https://github.com/spring-projects/spring-ai\" title=\"GitHub\">\n          <svg id=\"svg-stash-28d888b7\"></svg>\n          GitHub 项目\n        </a>",
+      "count": 1
+    },
+    {
+      "source": "<nav aria-label=\"breadcrumbs\" class=\"breadcrumbs\">\n    <ul>\n      <li><a href=\"../index.html\">Spring AI</a></li>\n      <li>Reference</li>\n      <li><a href=\"vectordbs.html\">Vector Databases</a></li>\n    </ul>\n  </nav>",
+      "translation": "<nav aria-label=\"breadcrumbs\" class=\"breadcrumbs\">\n    <ul>\n      <li><a href=\"../index.html\">Spring AI</a></li>\n      <li>参考资料</li>\n      <li><a href=\"vectordbs.html\">向量数据库</a></li>\n    </ul>\n  </nav>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/solutions\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/support\">Spring Runtime</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/consulting\">Spring Consulting</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/teams\">Spring Academy For Teams</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/security\">Security Advisories</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/solutions\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/support\">Spring Runtime</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/consulting\">Spring Consulting</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/teams\">Spring Academy For Teams</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/security\">安全公告</a>",
+      "count": 1
+    },
+    {
+      "source": "<ul class=\"projects\">\n  <li>\n    Related Spring Documentation\n    <ul class=\"projects-list\">\n    </ul>\n  </li><a href=\"../spring-projects.html\">All Docs...</a>\n</ul>",
+      "translation": "<ul class=\"projects\">\n  <li>\n    相关 Spring 文档\n    <ul class=\"projects-list\">\n    </ul>\n  </li><a href=\"../spring-projects.html\">所有文档...</a>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.academy/courses\">Courses</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/learning-path\">Get Certified</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.academy/courses\">课程</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/learning-path\">获取认证</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"title\" href=\"../index.html\">Spring AI</a>",
+      "translation": "<a class=\"title\" href=\"../index.html\">Spring AI</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"search-link\" href=\"../search.html\">Search in all Spring Docs</a>",
+      "translation": "<a class=\"search-link\" href=\"../search.html\">在所有 Spring 文档中搜索</a>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"vectordbs.html\">Vector Databases</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/azure.html\">Azure AI Service</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/azure-cosmos-db.html\">Azure Cosmos DB</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/bedrock-knowledge-base.html\">Amazon Bedrock Knowledge Base</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/apache-cassandra.html\">Apache Cassandra Vector Store</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/chroma.html\">Chroma</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/couchbase.html\">Couchbase</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/elasticsearch.html\">Elasticsearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/gemfire.html\">GemFire</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/mariadb.html\">MariaDB Vector Store</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/milvus.html\">Milvus</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/mongodb.html\">MongoDB Atlas</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/neo4j.html\">Neo4j</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/opensearch.html\">OpenSearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/oracle.html\">Oracle</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/pgvector.html\">PGvector</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/pinecone.html\">Pinecone</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/qdrant.html\">Qdrant</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/redis.html\">Redis</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/typesense.html\">Typesense</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/weaviate.html\">Weaviate</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/s3-vector-store.html\">S3 Vector Store</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"vectordbs.html\">向量数据库</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/azure.html\">Azure AI Service</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/azure-cosmos-db.html\">Azure Cosmos DB</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/bedrock-knowledge-base.html\">Amazon Bedrock Knowledge Base</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/apache-cassandra.html\">Apache Cassandra 向量存储</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/chroma.html\">Chroma</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/couchbase.html\">Couchbase</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/elasticsearch.html\">Elasticsearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/gemfire.html\">GemFire</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/mariadb.html\">MariaDB 向量存储</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/milvus.html\">Milvus</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/mongodb.html\">MongoDB Atlas</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/neo4j.html\">Neo4j</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/opensearch.html\">OpenSearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/oracle.html\">Oracle</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/pgvector.html\">PGvector</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/pinecone.html\">Pinecone</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/qdrant.html\">Qdrant</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/redis.html\">Redis</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/typesense.html\">Typesense</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/weaviate.html\">Weaviate</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/s3-vector-store.html\">S3 向量存储</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"embeddings.html\">Embedding Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"bedrock.html\">Amazon Bedrock</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/bedrock-cohere-embedding.html\">Cohere</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/bedrock-titan-embedding.html\">Titan</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/azure-openai-embeddings.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/google-genai-embeddings-text.html\">Google GenAI Text Embedding</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/mistralai-embeddings.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/oci-genai-embeddings.html\">OCI GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/ollama-embeddings.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/onnx.html\">(ONNX) Transformers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/openai-embeddings.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/postgresml-embeddings.html\">PostgresML</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">VertexAI</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/vertexai-embeddings-text.html\">Text Embedding</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/vertexai-embeddings-multimodal.html\">Multimodal Embedding</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"embeddings.html\">嵌入模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"bedrock.html\">Amazon Bedrock</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/bedrock-cohere-embedding.html\">Cohere</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/bedrock-titan-embedding.html\">Titan</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/azure-openai-embeddings.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/google-genai-embeddings-text.html\">Google GenAI 文本嵌入</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/mistralai-embeddings.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/oci-genai-embeddings.html\">OCI GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/ollama-embeddings.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/onnx.html\">(ONNX) Transformers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/openai-embeddings.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/postgresml-embeddings.html\">PostgresML</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">VertexAI</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/vertexai-embeddings-text.html\">文本嵌入</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/vertexai-embeddings-multimodal.html\">多模态嵌入</a>\n  </li>\n</ul>\n  </li>\n</ul",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"chatmodel.html\">Chat Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/comparison.html\">Chat Models Comparison</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/bedrock-converse.html\">Amazon Bedrock Converse</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/anthropic-chat.html\">Anthropic</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/azure-openai-chat.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/deepseek-chat.html\">DeepSeek</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/dmr-chat.html\">Docker Model Runner</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/google-genai-chat.html\">Google GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/groq-chat.html\">Groq</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/mistralai-chat.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/minimax-chat.html\">MiniMax</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/nvidia-chat.html\">NVIDIA</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/ollama-chat.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/perplexity-chat.html\">Perplexity AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/oci-genai-chat.html\">OCI Generative AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/openai-chat.html\">OpenAI</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"chatmodel.html\">聊天模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/comparison.html\">聊天模型对比</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/bedrock-converse.html\">Amazon Bedrock Converse</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/anthropic-chat.html\">Anthropic</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/azure-openai-chat.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/deepseek-chat.html\">DeepSeek</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/dmr-chat.html\">Docker Model Runner</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/google-genai-chat.html\">Google GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/groq-chat.html\">Groq</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/mistralai-chat.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/minimax-chat.html\">MiniMax</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/nvidia-chat.html\">NVIDIA</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/ollama-chat.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/perplexity-chat.html\">Perplexity AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/oci-genai-chat.html\">OCI Generative AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/openai-chat.html\">OpenAI</a>\n  </li>\n</ul",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-overview.html\">Model Context Protocol (MCP)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mcp/mcp-client-boot-starter-docs.html\">MCP Client Boot Starters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-server-boot-starter-docs.html\">MCP Server Boot Starters</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-stdio-sse-server-boot-starter-docs.html\">STDIO and SSE MCP Servers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-streamable-http-server-boot-starter-docs.html\">Streamable-HTTP MCP Servers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-stateless-server-boot-starter-docs.html\">Stateless Streamable-HTTP MCP Servers</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mcp/mcp-security.html\">MCP Security (WIP)</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-overview.html\">MCP Annotations</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-client.html\">Client Annotations</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-server.html\">Server Annotations</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-special-params.html\">Special Parameters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-examples.html\">MCP Annotations Examples</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-overview.html\">Model Context Protocol (MCP)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mcp/mcp-client-boot-starter-docs.html\">MCP Client Boot Starters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-server-boot-starter-docs.html\">MCP Server Boot Starters</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-stdio-sse-server-boot-starter-docs.html\">STDIO 和 SSE MCP 服务器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-streamable-http-server-boot-starter-docs.html\">Streamable-HTTP MCP 服务器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-stateless-server-boot-starter-docs.html\">无状态 Streamable-HTTP MCP 服务器</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mcp/mcp-security.html\">MCP 安全性 (WIP)</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-overview.html\">MCP 注解</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-client.html\">客户端注解</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-server.html\">服务器注解</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-special-params.html\">特殊参数</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-examples.html\">MCP 注解示例</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">Guides</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/spring-ai-community/awesome-spring-ai\">Awesome Spring AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/getting-started-mcp.html\">Getting Started with MCP</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/dynamic-tool-search.html\">Dynamic Tool Discovery</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/llm-as-judge.html\">LLM-as-a-Judge Evaluation</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"chat/prompt-engineering-patterns.html\">Prompt Engineering Patterns</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"effective-agents.html\">Building Effective Agents</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agents\">Building agents with Spring AI by AWS</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agentcore\">Building agents with Spring AI and AgentCore by AWS</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/microsoft/Spring-AI-for-Beginners\">Spring AI for Beginners by Microsoft</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">指南</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/spring-ai-community/awesome-spring-ai\">Awesome Spring AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/getting-started-mcp.html\">MCP 入门指南</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/dynamic-tool-search.html\">动态工具发现</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/llm-as-judge.html\">LLM-as-a-Judge 评估</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"chat/prompt-engineering-patterns.html\">提示工程模式</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"effective-agents.html\">构建高效 Agent</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agents\">由 AWS 提供的使用 Spring AI 构建 Agent</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agentcore\">由 AWS 提供的使用 Spring AI 和 AgentCore 构建 Agent</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/microsoft/Spring-AI-for-Beginners\">由 Microsoft 提供的 Spring AI 入门教程</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio.html\">Audio Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio/transcriptions.html\">Transcription API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/transcriptions/azure-openai-transcriptions.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/transcriptions/openai-transcriptions.html\">OpenAI</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio/speech.html\">Text-To-Speech (TTS) API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/speech/openai-speech.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/speech/elevenlabs-speech.html\">ElevenLabs</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio.html\">音频模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio/transcriptions.html\">转录 API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/transcriptions/azure-openai-transcriptions.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/transcriptions/openai-transcriptions.html\">OpenAI</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio/speech.html\">文本转语音 (TTS) API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/speech/openai-speech.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/speech/elevenlabs-speech.html\">ElevenLabs</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"chatclient.html\">Chat Client API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"advisors.html\">Advisors</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"advisors-recursive.html\">Recursive Advisors</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"chatclient.html\">Chat Client API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"advisors.html\">顾问</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"advisors-recursive.html\">递归顾问</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"imageclient.html\">Image Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/azure-openai-image.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/openai-image.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/stabilityai-image.html\">Stability</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"imageclient.html\">图像模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/azure-openai-image.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/openai-image.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/stabilityai-image.html\">Stability</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"moderation.html\">Moderation Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"moderation/openai-moderation.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"moderation/mistral-ai-moderation.html\">Mistral AI</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"moderation.html\">审核模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"moderation/openai-moderation.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"moderation/mistral-ai-moderation.html\">Mistral AI</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../upgrade-notes.html\">Upgrade Notes</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"tools-migration.html\">Migrating FunctionCallback to ToolCallback API</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"chat/anthropic-migration.html\">Migrating the Anthropic Module to the Official Java SDK</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../upgrade-notes.html\">升级说明</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"tools-migration.html\">将 FunctionCallback 迁移到 ToolCallback API</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"chat/anthropic-migration.html\">将 Anthropic 模块迁移到官方 Java SDK</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n<code>IS NULL</code> and <code>IS NOT NULL</code> have not been implemented in all vector stores yet.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n<code>IS NULL</code> 和 <code>IS NOT NULL</code> 尚未在所有向量数据库中实现。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nVector stores supported by Spring AI are configured to use the default <code>TokenCountBatchingStrategy</code>.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nSpring AI 支持的向量存储已配置为使用默认的 <code>TokenCountBatchingStrategy</code>。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nAzure Cosmos DB vector store support is available as an external module maintained by the Azure Cosmos DB team.\nSee <a class=\"bare\" href=\"https://azurecosmosdb.github.io/spring-ai/docs/index.html\">azurecosmosdb.github.io/spring-ai/docs/index.html</a> for more information.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nAzure Cosmos DB vector store 支持作为由 Azure Cosmos DB 团队维护的外部模块提供。\n请参阅 <a class=\"bare\" href=\"https://azurecosmosdb.github.io/spring-ai/docs/index.html\">azurecosmosdb.github.io/spring-ai/docs/index.html</a> 获取更多信息。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-warning\" title=\"Warning\"></i>\n</td>\n<td class=\"content\">\nThe <code>SimpleVectorStore</code> implementation is not designed for production use and should only be used for testing or demonstration purposes.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-warning\" title=\"Warning\"></i>\n</td>\n<td class=\"content\">\n<code class=\"SimpleVectorStore\">SimpleVectorStore</code> 的实现并非为生产环境设计，仅应用于测试或演示目的。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../index.html\">Overview</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../concepts.html\">AI Concepts</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../index.html\">概览</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../concepts.html\">AI 概念</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"retrieval-augmented-generation.html\">Retrieval Augmented Generation (RAG)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"etl-pipeline.html\">ETL Pipeline</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"retrieval-augmented-generation.html\">检索增强生成 (RAG)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"etl-pipeline.html\">ETL 流水线</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-caution\" title=\"Caution\"></i>\n</td>\n<td class=\"content\">\nWhile auto-truncation prevents errors, it can result in incomplete embeddings. Important information at the end of long documents may be lost. If your application requires all content to be embedded, split documents into smaller chunks before embedding.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-caution\" title=\"Caution\"></i>\n</td>\n<td class=\"content\">\n虽然自动截断可以防止错误，但可能会导致嵌入内容不完整。长文档末尾的重要信息可能会丢失。如果您的应用程序要求嵌入所有内容，请在嵌入之前将文档拆分为较小的块。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"prev\"><a href=\"testing.html\">Model Evaluation</a></span>\n  <span class=\"next\"><a href=\"vectordbs/azure.html\">Azure AI Service</a></span>",
+      "translation": "<span class=\"prev\"><a href=\"testing.html\">模型评估</a></a></span>\n  <span class=\"next\"><a href=\"vectordbs/azure.html\">Azure AI 服务</a></a></span>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../getting-started.html\">Getting Started</a>",
+      "translation": "<a class=\"nav-link\" href=\"../getting-started.html\">入门指南</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"structured-output-converter.html\">Structured Output</a>",
+      "translation": "<a class=\"nav-link\" href=\"structured-output-converter.html\">结构化输出</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"chat-memory.html\">Chat Memory</a>",
+      "translation": "<a class=\"nav-link\" href=\"chat-memory.html\">聊天记忆</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"tools.html\">Tool Calling</a>",
+      "translation": "<a class=\"nav-link\" href=\"tools.html\">工具调用</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"testing.html\">Model Evaluation</a>",
+      "translation": "<a class=\"nav-link\" href=\"testing.html\">模型评估</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"docker-compose.html\">Development-time Services</a>",
+      "translation": "<a class=\"nav-link\" href=\"docker-compose.html\">开发时服务</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#api-overview\"></a>API Overview",
+      "translation": "<a class=\"anchor\" href=\"#api-overview\">API 概览</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_vectorstoreretriever_interface\"></a>VectorStoreRetriever Interface",
+      "translation": "<a class=\"anchor\" href=\"#_vectorstoreretriever_interface\">VectorStoreRetriever 接口</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_vectorstore_interface\"></a>VectorStore Interface",
+      "translation": "<a class=\"anchor\" href=\"#_vectorstore_interface\">VectorStore 接口</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_searchrequest_builder\"></a>SearchRequest Builder",
+      "translation": "<a class=\"anchor\" href=\"#_searchrequest_builder\">SearchRequest 构建器</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_schema_initialization\"></a>Schema Initialization",
+      "translation": "<a class=\"anchor\" href=\"#_schema_initialization\">架构初始化</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_batching_strategy\"></a>Batching Strategy",
+      "translation": "<a class=\"anchor\" href=\"#_batching_strategy\">批处理策略</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_default_implementation\"></a>Default Implementation",
+      "translation": "<a class=\"anchor\" href=\"#_default_implementation\">默认实现</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_working_with_auto_truncation\"></a>Working with Auto-Truncation",
+      "translation": "<a class=\"anchor\" href=\"#_working_with_auto_truncation\">处理自动截断</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_configuration_for_auto_truncation\"></a>Configuration for Auto-Truncation",
+      "translation": "<a class=\"anchor\" href=\"#_configuration_for_auto_truncation\">自动截断配置</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_why_this_works\"></a>Why This Works",
+      "translation": "<a class=\"anchor\" href=\"#_why_this_works\">为什么有效</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_best_practices\"></a>Best Practices",
+      "translation": "<a class=\"anchor\" href=\"#_best_practices\">最佳实践</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_spring_boot_auto_configuration\"></a>Spring Boot Auto-Configuration",
+      "translation": "<a class=\"anchor\" href=\"#_spring_boot_auto_configuration\">Spring Boot 自动配置</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_custom_implementation\"></a>Custom Implementation",
+      "translation": "<a class=\"anchor\" href=\"#_custom_implementation\">自定义实现</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_vectorstore_implementations\"></a>VectorStore Implementations",
+      "translation": "<a class=\"anchor\" href=\"#_vectorstore_implementations\">VectorStore 实现</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_example_usage\"></a>Example Usage",
+      "translation": "<a class=\"anchor\" href=\"#_example_usage\">使用示例</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_writing_to_a_vector_store\"></a>Writing to a Vector Store",
+      "translation": "<a class=\"anchor\" href=\"#_writing_to_a_vector_store\"></a>写入向量数据库",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_reading_from_a_vector_store\"></a>Reading from a Vector Store",
+      "translation": "<a class=\"anchor\" href=\"#_reading_from_a_vector_store\"></a>从向量数据库中读取数据",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_separation_of_read_and_write_operations\"></a>Separation of Read and Write Operations",
+      "translation": "<a class=\"anchor\" href=\"#_separation_of_read_and_write_operations\"></a>读写操作分离",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_retrieval_operations_with_vectorstoreretriever\"></a>Retrieval Operations with VectorStoreRetriever",
+      "translation": "<a class=\"anchor\" href=\"#_retrieval_operations_with_vectorstoreretriever\">使用 VectorStoreRetriever 的检索操作</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_benefits_of_using_vectorstoreretriever\"></a>Benefits of Using VectorStoreRetriever",
+      "translation": "<a class=\"anchor\" href=\"#_benefits_of_using_vectorstoreretriever\">使用 VectorStoreRetriever 的优势</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_example_usage_2\"></a>Example Usage",
+      "translation": "<a class=\"anchor\" href=\"#_example_usage_2\">使用示例</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_integration_with_rag_applications\"></a>Integration with RAG Applications",
+      "translation": "<a class=\"anchor\" href=\"#_integration_with_rag_applications\">与 RAG 应用的集成</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#metadata-filters\"></a>Metadata Filters",
+      "translation": "<a class=\"anchor\" href=\"#metadata-filters\">元数据筛选</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_filter_string\"></a>Filter String",
+      "translation": "<a class=\"anchor\" href=\"#_filter_string\">过滤字符串</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_deleting_documents_from_vector_store\"></a>Deleting Documents from Vector Store",
+      "translation": "<a class=\"anchor\" href=\"#_deleting_documents_from_vector_store\">从向量库中删除文档</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_delete_by_document_ids\"></a>Delete by Document IDs",
+      "translation": "<a class=\"anchor\" href=\"#_delete_by_document_ids\">按文档 ID 删除</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_delete_by_filter_expression\"></a>Delete by Filter Expression",
+      "translation": "<a class=\"anchor\" href=\"#_delete_by_filter_expression\">按过滤表达式删除</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_delete_by_string_filter_expression\"></a>Delete by String Filter Expression",
+      "translation": "<a class=\"anchor\" href=\"#_delete_by_string_filter_expression\">按字符串过滤表达式删除</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_error_handling_when_calling_the_delete_api\"></a>Error Handling When Calling the Delete API",
+      "translation": "<a class=\"anchor\" href=\"#_error_handling_when_calling_the_delete_api\">调用 Delete API 时的错误处理</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_document_versioning_use_case\"></a>Document Versioning Use Case",
+      "translation": "<a class=\"anchor\" href=\"#_document_versioning_use_case\">文档版本控制用例</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_performance_considerations_while_deleting_documents\"></a>Performance Considerations While Deleting Documents",
+      "translation": "<a class=\"anchor\" href=\"#_performance_considerations_while_deleting_documents\">删除文档时的性能注意事项</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_understanding_vectors\"></a>Understanding Vectors",
+      "translation": "<a class=\"anchor\" href=\"#_understanding_vectors\">理解向量</a>",
+      "count": 1
+    },
+    {
+      "source": "Why Spring",
+      "translation": "为什么选择 Spring",
+      "count": 1
+    },
+    {
+      "source": "Spring AI",
+      "translation": "Spring AI",
+      "count": 1
+    },
+    {
+      "source": "Vector Databases",
+      "translation": "向量数据库",
+      "count": 1
+    }
+  ]
+}

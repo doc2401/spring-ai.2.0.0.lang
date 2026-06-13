@@ -1,0 +1,626 @@
+{
+  "created_at": "2026-06-13 18:24:25",
+  "updated_at": "2026-06-13 18:24:25",
+  "stats": {
+    "total_entries": 122,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 123,
+    "entries_with_hits": 122,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0081967213114753,
+    "usage_percentage": 0.012199999999999999
+  },
+  "items": [
+    {
+      "source": "Server Type",
+      "translation": "服务器类型",
+      "count": 2
+    },
+    {
+      "source": "Copyright © 2005 - <script>var d = new Date();\n        document.write(d.getFullYear());</script> Broadcom. All Rights Reserved. The term \"Broadcom\" refers to Broadcom Inc. and/or its subsidiaries.<br/><a href=\"https://www.vmware.com/help/legal.html\">Terms of Use</a> • <a href=\"https://www.vmware.com/help/privacy.html\" rel=\"noopener noreferrer\">Privacy</a> • <a href=\"https://spring.io/trademarks\">Trademark Guidelines</a> <span id=\"thank-you-mobile\">• <a href=\"https://spring.io/thank-you\">Thank you</a></span> • <a href=\"https://www.vmware.com/help/privacy/california-privacy-rights.html\">Your California Privacy Rights</a> • <a class=\"ot-sdk-show-settings\">Cookie Settings</a> <span id=\"teconsent\"></span>",
+      "translation": "Copyright © 2005 - <script>var d = new Date();\n        document.write(d.getFullYear());</script> Broadcom. 保留所有权利。术语“Broadcom”是指 Broadcom Inc. 和/或其子公司。<br/><a href=\"https://www.vmware.com/help/legal.html\">使用条款</a> • <a href=\"https://www.vmware.com/help/privacy.html\" rel=\"noopener noreferrer\">隐私政策</a> • <a href=\"https://spring.io/trademarks\">商标指南</a> <span id=\"thank-you-mobile\">• <a href=\"https://spring.io/thank-you\">致谢</a></span> • <a href=\"https://www.vmware.com/help/privacy/california-privacy-rights.html\">您的加州隐私权</a> • <a class=\"ot-sdk-show-settings\">Cookie 设置</a> <span id=\"teconsent\"></span",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"mcp-streamable-http-server-boot-starter-docs.html\"><strong>Streamable-HTTP</strong></a> - The <a href=\"https://modelcontextprotocol.io/specification/2025-06-18/basic/transports#streamable-http\">Streamable HTTP transport</a> allows MCP servers to operate as independent processes that can handle multiple client connections using HTTP POST and GET requests, with optional Server-Sent Events (SSE) streaming for multiple server messages. It replaces the SSE transport. To enable the <code>STREAMABLE</code> protocol, set <code>spring.ai.mcp.server.protocol=STREAMABLE</code>.",
+      "translation": "<a class=\"xref page\" href=\"mcp-streamable-http-server-boot-starter-docs.html\"><strong>Streamable-HTTP</strong></a> - <a href=\"https://modelcontextprotocol.io/specification/2025-06-18/basic/transports#streamable-http\">Streamable HTTP 传输协议</a>允许 MCP 服务器作为独立进程运行，能够通过 HTTP POST 和 GET 请求处理多个客户端连接，并可选择性地使用 Server-Sent Events (SSE) 流式传输多条服务器消息。它取代了 SSE 传输协议。要启用 <code class=\"code\">STREAMABLE</code> 协议，请设置 <code class=\"code\">spring.ai.mcp.server.protocol=STREAMABLE</code>。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"mcp-stdio-sse-server-boot-starter-docs.html\"><strong>STDIO</strong></a> - In process (e.g. server runs inside the host application) protocol. Communication is over standard in and standard out. To enable the <code>STDIO</code> set <code>spring.ai.mcp.server.stdio=true</code>.",
+      "translation": "<a class=\"xref page\" href=\"mcp-stdio-sse-server-boot-starter-docs.html\"><strong>STDIO</strong></a> - 进程内（例如：服务器运行在宿主应用程序内部）协议。通过标准输入和标准输出进行通信。要启用 <code>STDIO</code>，请设置 <code>spring.ai.mcp.server.stdio=true</code>。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"mcp-stateless-server-boot-starter-docs.html\"><strong>Stateless</strong></a> - Stateless MCP servers are designed for simplified deployments where session state is not maintained between requests.\nThey are ideal for microservices architectures and cloud-native deployments. To enable the <code>STATELESS</code> protocol, set <code>spring.ai.mcp.server.protocol=STATELESS</code>.",
+      "translation": "<a class=\"xref page\" href=\"mcp-stateless-server-boot-starter-docs.html\"><strong>无状态 (Stateless)</strong></a> - 无状态 MCP 服务器旨在简化部署，在请求之间不维护会话状态。\n它们非常适合微服务架构和云原生部署。要启用 <code>STATELESS</code> 协议，请设置 <code>spring.ai.mcp.server.protocol=STATELESS</code>。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Synchronous Server</strong> - The default server type implemented using <code>McpSyncServer</code>.\nIt is designed for straightforward request-response patterns in your applications.\nTo enable this server type, set <code>spring.ai.mcp.server.type=SYNC</code> in your configuration.\nWhen activated, it automatically handles the configuration of synchronous tool specifications.",
+      "translation": "<strong>同步服务器 (Synchronous Server)</strong> - 使用 <code>McpSyncServer</code> 实现的默认服务器类型。\n它专为应用程序中简单的请求-响应模式而设计。\n若要启用此服务器类型，请在配置中设置 <code>spring.ai.mcp.server.type=SYNC</code>。\n激活后，它会自动处理同步工具规范的配置。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Asynchronous Server</strong> - The asynchronous server implementation uses <code>McpAsyncServer</code> and is optimized for non-blocking operations.\nTo enable this server type, configure your application with <code>spring.ai.mcp.server.type=ASYNC</code>.\nThis server type automatically sets up asynchronous tool specifications with built-in Project Reactor support.",
+      "translation": "<strong>异步服务器</strong> - 异步服务器实现使用 <code>McpAsyncServer</code>，并针对非阻塞操作进行了优化。\n要启用此服务器类型，请配置您的应用程序：<code>spring.ai.mcp.server.type=ASYNC</code>。\n此服务器类型会自动设置带有内置 Project Reactor 支持的异步工具规范。",
+      "count": 1
+    },
+    {
+      "source": "<strong><code>McpSyncServerExchange</code>/<code>McpAsyncServerExchange</code></strong> - Full server context for advanced operations",
+      "translation": "<strong><code>McpSyncServerExchange</code>/<code>McpAsyncServerExchange</code></strong> - 用于高级操作的完整服务器上下文",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"mcp-stdio-sse-server-boot-starter-docs.html#_sse_webmvc_server\"><strong>SSE</strong></a> - Server-sent events protocol for real-time updates. The server operates as an independent process that can handle multiple client connections.",
+      "translation": "<a class=\"xref page\" href=\"mcp-stdio-sse-server-boot-starter-docs.html#_sse_webmvc_server\"><strong>SSE</strong></a> - 用于实时更新的服务器发送事件协议。服务器作为一个独立进程运行，可以处理多个客户端连接。",
+      "count": 1
+    },
+    {
+      "source": "<strong><a class=\"xref page\" href=\"mcp-annotations-server.html#_mcptool\">@McpTool</a></strong> - Mark methods as MCP tools with automatic JSON schema generation",
+      "translation": "<strong><a class=\"xref page\" href=\"mcp-annotations-server.html#_mcptool\">@McpTool</a></strong> - 将方法标记为 MCP 工具，并自动生成 JSON schema",
+      "count": 1
+    },
+    {
+      "source": "<strong><a class=\"xref page\" href=\"mcp-annotations-server.html#_mcpresource\">@McpResource</a></strong> - Provide access to resources via URI templates",
+      "translation": "<strong><a class=\"xref page\" href=\"mcp-annotations-server.html#_mcpresource\">@McpResource</a></strong> - 通过 URI 模板提供对资源的访问权限",
+      "count": 1
+    },
+    {
+      "source": "<strong><a class=\"xref page\" href=\"mcp-annotations-server.html#_mcpprompt\">@McpPrompt</a></strong> - Generate prompt messages for AI interactions",
+      "translation": "<strong><a class=\"xref page\" href=\"mcp-annotations-server.html#_mcpprompt\">@McpPrompt</a></strong> - 为 AI 交互生成提示消息",
+      "count": 1
+    },
+    {
+      "source": "<strong><a class=\"xref page\" href=\"mcp-annotations-server.html#_mcpcomplete\">@McpComplete</a></strong> - Provide auto-completion functionality for prompts",
+      "translation": "<strong><a class=\"xref page\" href=\"mcp-annotations-server.html#_mcpcomplete\">@McpComplete</a></strong> - 为提示词提供自动补全功能",
+      "count": 1
+    },
+    {
+      "source": "<strong><code>McpMeta</code></strong> - Access metadata from MCP requests",
+      "translation": "<strong><code>McpMeta</code></strong> - 获取来自 MCP 请求的元数据",
+      "count": 1
+    },
+    {
+      "source": "<strong><code>@McpProgressToken</code></strong> - Receive progress tokens for long-running operations",
+      "translation": "<strong><code>@McpProgressToken</code></strong> - 获取耗时操作的进度令牌",
+      "count": 1
+    },
+    {
+      "source": "<strong><code>McpTransportContext</code></strong> - Lightweight context for stateless operations",
+      "translation": "<strong><code>McpTransportContext</code></strong> - 用于无状态操作的轻量级上下文",
+      "count": 1
+    },
+    {
+      "source": "<strong><code>CallToolRequest</code></strong> - Dynamic schema support for flexible tools",
+      "translation": "<strong><code>CallToolRequest</code></strong> - 支持动态架构的灵活工具",
+      "count": 1
+    },
+    {
+      "source": "By default, the <code>McpTransportContext</code> is empty (<code>McpTransportContext.EMPTY</code>).\nThis is by design, to keep the MCP server transport-agnostic.",
+      "translation": "默认情况下，<code class=\"language-html\">McpTransportContext</code> 为空（<code class=\"language-html\">McpTransportContext.EMPTY</code>）。\n这是出于设计考虑，旨在保持 MCP 服务器与传输层无关。",
+      "count": 1
+    },
+    {
+      "source": "Once configured, access the context via <code>McpSyncRequestContext</code> (or <code>McpAsyncRequestContext</code>) in your tool.",
+      "translation": "配置完成后，可通过工具中的 <code>McpSyncRequestContext</code>（或 <code>McpAsyncRequestContext</code>）访问上下文。",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"https://modelcontextprotocol.io/docs/learn/server-concepts\">Model Context Protocol (MCP) Servers</a> are programs that expose specific capabilities to AI applications through standardized protocol interfaces.\nEach server provides focused functionality for a particular domain.",
+      "translation": "<a href=\"https://modelcontextprotocol.io/docs/learn/server-concepts\">Model Context Protocol (MCP) Servers</a> 是通过标准化协议接口向 AI 应用程序提供特定能力的程序。\n每个服务器都为特定领域提供专注的功能。",
+      "count": 1
+    },
+    {
+      "source": "The Spring AI MCP Server Boot Starters provide auto-configuration for setting up <a href=\"https://modelcontextprotocol.io/docs/learn/server-concepts\">MCP Servers</a> in Spring Boot applications.\nThey enable seamless integration of MCP server capabilities with Spring Boot’s auto-configuration system.",
+      "translation": "Spring AI MCP Server Boot Starters 为在 Spring Boot 应用程序中设置 <a href=\"https://modelcontextprotocol.io/docs/learn/server-concepts\">MCP Servers</a> 提供自动配置。\n它们实现了 MCP 服务器功能与 Spring Boot 自动配置系统的无缝集成。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"mcp-annotations-server.html\">Annotation-based server development</a> with automatic bean scanning and registration",
+      "translation": "具有自动 Bean 扫描和注册功能的<a class=\"xref page\" href=\"mcp-annotations-server.html\">基于注解的服务器开发</a>",
+      "count": 1
+    },
+    {
+      "source": "MCP Servers support multiple protocol and transport mechanisms.\nUse the dedicated starter and the correct <code>spring.ai.mcp.server.protocol</code> property to configure your server:",
+      "translation": "MCP 服务器支持多种协议和传输机制。\n使用专用启动器并配置正确的 <code>spring.ai.mcp.server.protocol</code> 属性来配置您的服务器：",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"mcp-stdio-sse-server-boot-starter-docs.html\">Standard Input/Output (STDIO)</a>",
+      "translation": "<a class=\"xref page\" href=\"mcp-stdio-sse-server-boot-starter-docs.html\">标准输入/输出 (STDIO)</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"mcp-stdio-sse-server-boot-starter-docs.html#&lt;em&gt;sse_webmvc_server\">SSE WebMVC</a> _(deprecated since 2.0.0, use STREAMABLE instead)",
+      "translation": "<a class=\"xref page\" href=\"mcp-stdio-sse-server-boot-starter-docs.html#&lt;em&gt;sse_webmvc_server\">SSE WebMVC</a> _(自 2.0.0 版本起已弃用，请使用 STREAMABLE 代替)",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"mcp-streamable-http-server-boot-starter-docs.html#_streamable_http_webmvc_server\">Streamable-HTTP WebMVC</a>",
+      "translation": "<a class=\"xref page\" href=\"mcp-streamable-http-server-boot-starter-docs.html#_streamable_http_webmvc_server\">Streamable-HTTP WebMVC</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"mcp-stateless-server-boot-starter-docs.html#_stateless_webmvc_server\">Stateless WebMVC</a>",
+      "translation": "<a class=\"xref page\" href=\"mcp-stateless-server-boot-starter-docs.html#_stateless_webmvc_server\">无状态 WebMVC</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"mcp-stdio-sse-server-boot-starter-docs.html#&lt;em&gt;sse_webflux_server\">SSE WebFlux</a> _(deprecated since 2.0.0, use STREAMABLE instead)",
+      "translation": "<a class=\"xref page\" href=\"mcp-stdio-sse-server-boot-starter-docs.html#&lt;em&gt;sse_webflux_server\">SSE WebFlux</a> _(自 2.0.0 版本起已弃用，请使用 STREAMABLE 代替)",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"mcp-streamable-http-server-boot-starter-docs.html#_streamable_http_webflux_server\">Streamable-HTTP WebFlux</a>",
+      "translation": "<a class=\"xref page\" href=\"mcp-streamable-http-server-boot-starter-docs.html#_streamable_http_webflux_server\">Streamable-HTTP WebFlux</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"mcp-stateless-server-boot-starter-docs.html#_stateless_webflux_server\">Stateless WebFlux</a>",
+      "translation": "<a class=\"xref page\" href=\"mcp-stateless-server-boot-starter-docs.html#_stateless_webflux_server\">无状态 WebFlux</a>",
+      "count": 1
+    },
+    {
+      "source": "<strong>Tools</strong> - Allows servers to expose tools that can be invoked by language models",
+      "translation": "<strong>工具</strong> - 允许服务器提供可由语言模型调用的工具",
+      "count": 1
+    },
+    {
+      "source": "<strong>Resources</strong> - Provides a standardized way for servers to expose resources to clients",
+      "translation": "<strong>资源</strong> - 为服务器向客户端提供资源提供了一种标准化的方式",
+      "count": 1
+    },
+    {
+      "source": "<strong>Prompts</strong> - Provides a standardized way for servers to expose prompt templates to clients",
+      "translation": "<strong>Prompts</strong> - 为服务器向客户端提供提示词模板提供了一种标准化的方式",
+      "count": 1
+    },
+    {
+      "source": "<strong>Utility/Completions</strong> - Provides a standardized way for servers to offer argument autocompletion suggestions for prompts and resource URIs",
+      "translation": "<strong>Utility/Completions</strong> - 为服务器提供标准化的方式，用于为提示词（prompts）和资源 URI 提供参数自动补全建议",
+      "count": 1
+    },
+    {
+      "source": "<strong>Utility/Logging</strong> - Provides a standardized way for servers to send structured log messages to clients",
+      "translation": "<strong>工具/日志记录</strong> - 为服务器向客户端发送结构化日志消息提供标准化的方式",
+      "count": 1
+    },
+    {
+      "source": "<strong>Utility/Progress</strong> - Optional progress tracking for long-running operations through notification messages",
+      "translation": "<strong>实用性/进度</strong> - 通过通知消息对长时间运行的操作提供可选的进度跟踪",
+      "count": 1
+    },
+    {
+      "source": "<strong>Utility/Ping</strong> - Optional health check mechanism for the server to report its status",
+      "translation": "<strong>Utility/Ping</strong> - 用于服务器报告其状态的可选健康检查机制",
+      "count": 1
+    },
+    {
+      "source": "<strong>NOTE:</strong> The SYNC server will register only synchronous MCP annotated methods. Asynchronous methods will be ignored.",
+      "translation": "<strong>注意：</strong>SYNC 服务器仅会注册带有同步 MCP 注解的方法。异步方法将被忽略。",
+      "count": 1
+    },
+    {
+      "source": "<strong>NOTE:</strong> The ASYNC server will register only asynchronous MCP annotated methods. Synchronous methods will be ignored.",
+      "translation": "<strong>注意：</strong>ASYNC 服务器仅会注册带有异步 MCP 注解的方法。同步方法将被忽略。",
+      "count": 1
+    },
+    {
+      "source": "The annotation system supports <a class=\"xref page\" href=\"mcp-annotations-special-params.html\">special parameter types</a> that provide additional context:",
+      "translation": "注解系统支持提供额外上下文的<a class=\"xref page\" href=\"mcp-annotations-special-params.html\">特殊参数类型</a>：",
+      "count": 1
+    },
+    {
+      "source": "If you need transport-specific metadata (for example, HTTP headers, remote host, etc) in your tools,\nconfigure a <code>TransportContextExtractor</code> on your transport provider.",
+      "translation": "如果您需要在工具中获取特定于传输的元数据（例如 HTTP 标头、远程主机等），请在您的传输提供程序上配置一个 <code>TransportContextExtractor</code>。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"mcp-annotations-server.html\">Server Annotations Reference</a> - Complete guide to server annotations",
+      "translation": "<a class=\"xref page\" href=\"mcp-annotations-server.html\">服务器注解参考</a> - 服务器注解完整指南",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"mcp-annotations-special-params.html\">Special Parameters</a> - Advanced parameter injection",
+      "translation": "<a class=\"xref page\" href=\"mcp-annotations-special-params.html\">特殊参数</a> - 高级参数注入",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"mcp-annotations-examples.html\">Examples</a> - Comprehensive examples and use cases",
+      "translation": "<a class=\"xref page\" href=\"mcp-annotations-examples.html\">示例</a> - 综合示例和使用案例",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"https://github.com/spring-projects/spring-ai-examples/tree/main/model-context-protocol/weather/starter-webflux-server\">Weather Server (SSE WebFlux)</a> - Spring AI MCP Server Boot Starter with WebFlux transport",
+      "translation": "<a href=\"https://github.com/spring-projects/spring-ai-examples/tree/main/model-context-protocol/weather/starter-webflux-server\">Weather Server (SSE WebFlux)</a> - 带有 WebFlux 传输机制的 Spring AI MCP Server Boot Starter",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"https://github.com/spring-projects/spring-ai-examples/tree/main/model-context-protocol/weather/starter-stdio-server\">Weather Server (STDIO)</a> - Spring AI MCP Server Boot Starter with STDIO transport",
+      "translation": "<a href=\"https://github.com/spring-projects/spring-ai-examples/tree/main/model-context-protocol/weather/starter-stdio-server\">Weather Server (STDIO)</a> - 使用 STDIO 传输协议的 Spring AI MCP Server Boot Starter",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"https://github.com/spring-projects/spring-ai-examples/tree/main/model-context-protocol/weather/manual-webflux-server\">Weather Server Manual Configuration</a> - Spring AI MCP Server Boot Starter that doesn’t use auto-configuration but uses the Java SDK to configure the server manually",
+      "translation": "<a href=\"https://github.com/spring-projects/spring-ai-examples/tree/main/model-context-protocol/weather/manual-webflux-server\">Weather Server 手动配置</a> - 不使用自动配置，而是使用 Java SDK 手动配置服务器的 Spring AI MCP Server Boot Starter",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"mcp-annotations-server.html\">MCP Server Annotations</a> - Declarative server development with annotations",
+      "translation": "<a class=\"xref page\" href=\"mcp-annotations-server.html\">MCP Server 注解</a> - 使用注解进行声明式服务器开发",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"mcp-annotations-special-params.html\">Special Parameters</a> - Advanced parameter injection and context access",
+      "translation": "<a class=\"xref page\" href=\"mcp-annotations-special-params.html\">特殊参数</a> - 高级参数注入与上下文访问",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"mcp-annotations-examples.html\">MCP Annotations Examples</a> - Comprehensive examples and use cases",
+      "translation": "<a class=\"xref page\" href=\"mcp-annotations-examples.html\">MCP 注解示例</a> - 全面的示例和使用案例",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"https://docs.spring.io/spring-ai/reference/\">Spring AI Documentation</a>",
+      "translation": "<a href=\"https://docs.spring.io/spring-ai/reference/\">Spring AI 文档</a>",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"https://modelcontextprotocol.io/specification\">Model Context Protocol Specification</a>",
+      "translation": "<a href=\"https://modelcontextprotocol.io/specification\">Model Context Protocol 规范</a>",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.developing-auto-configuration\">Spring Boot Auto-configuration</a>",
+      "translation": "<a href=\"https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.developing-auto-configuration\">Spring Boot 自动配置</a>",
+      "count": 1
+    },
+    {
+      "source": "The MCP Server Boot Starters offer:",
+      "translation": "MCP Server 启动器提供：",
+      "count": 1
+    },
+    {
+      "source": "Automatic configuration of MCP server components, including tools, resources, and prompts",
+      "translation": "MCP 服务器组件的自动配置，包括工具、资源和提示词",
+      "count": 1
+    },
+    {
+      "source": "Support for different MCP protocol versions, including STDIO, SSE, Streamable-HTTP, and stateless servers",
+      "translation": "支持不同的 MCP 协议版本，包括 STDIO、SSE、Streamable-HTTP 以及无状态服务器（stateless servers）",
+      "count": 1
+    },
+    {
+      "source": "Support for both synchronous and asynchronous operation modes",
+      "translation": "支持同步和异步操作模式",
+      "count": 1
+    },
+    {
+      "source": "Multiple transport layer options",
+      "translation": "多种传输层选项",
+      "count": 1
+    },
+    {
+      "source": "Flexible tool, resource, and prompt specification",
+      "translation": "灵活的工具、资源和提示词规范",
+      "count": 1
+    },
+    {
+      "source": "Change notification capabilities",
+      "translation": "更改通知功能",
+      "count": 1
+    },
+    {
+      "source": "Depending on the server and transport types, MCP Servers can support various capabilities, such as:",
+      "translation": "根据服务器和传输类型的不同，MCP 服务器可以支持多种功能，例如：",
+      "count": 1
+    },
+    {
+      "source": "All capabilities are enabled by default. Disabling a capability will prevent the server from registering and exposing the corresponding features to clients.",
+      "translation": "所有功能默认均已启用。禁用某项功能将阻止服务器注册并向客户端暴露相应的特性。",
+      "count": 1
+    },
+    {
+      "source": "MCP provides several protocol types including:",
+      "translation": "MCP 提供多种协议类型，包括：",
+      "count": 1
+    },
+    {
+      "source": "The MCP Server API supports imperative (i.e. synchronous) and reactive (e.g. asynchronous) programming models.",
+      "translation": "MCP Server API 支持命令式（即同步）和响应式（例如异步）编程模型。",
+      "count": 1
+    },
+    {
+      "source": "The MCP Server Boot Starters provide comprehensive support for annotation-based server development, allowing you to create MCP servers using declarative Java annotations instead of manual configuration.",
+      "translation": "MCP Server Boot Starters 为基于注解的服务器开发提供全面支持，允许您使用声明式的 Java 注解而非手动配置来创建 MCP 服务器。",
+      "count": 1
+    },
+    {
+      "source": "For WebMVC:",
+      "translation": "对于 WebMVC：",
+      "count": 1
+    },
+    {
+      "source": "For WebFlux (reactive):",
+      "translation": "对于 WebFlux（响应式）：",
+      "count": 1
+    },
+    {
+      "source": "With Spring Boot auto-configuration, annotated beans are automatically detected and registered:",
+      "translation": "通过 Spring Boot 自动配置，带有注解的 bean 会被自动检测并注册：",
+      "count": 1
+    },
+    {
+      "source": "The auto-configuration will:",
+      "translation": "自动配置将：",
+      "count": 1
+    },
+    {
+      "source": "Scan for beans with MCP annotations",
+      "translation": "扫描带有 MCP 注解的 beans",
+      "count": 1
+    },
+    {
+      "source": "Create appropriate specifications",
+      "translation": "创建适当的规范",
+      "count": 1
+    },
+    {
+      "source": "Register them with the MCP server",
+      "translation": "将它们注册到 MCP 服务器",
+      "count": 1
+    },
+    {
+      "source": "Handle both sync and async implementations based on configuration",
+      "translation": "根据配置处理同步和异步实现",
+      "count": 1
+    },
+    {
+      "source": "Configure the server annotation scanner:",
+      "translation": "配置服务器注解扫描器：",
+      "count": 1
+    },
+    {
+      "source": "Streamable-HTTP WebFlux/WebMVC Example - TODO",
+      "translation": "Streamable-HTTP WebFlux/WebMVC 示例 - 待办事项",
+      "count": 1
+    },
+    {
+      "source": "Stateless WebFlux/WebMVC Example - TODO",
+      "translation": "无状态 WebFlux/WebMVC 示例 - 待办事项",
+      "count": 1
+    },
+    {
+      "source": "Apache®, Apache Tomcat®, Apache Kafka®, Apache Cassandra™, and Apache Geode™ are trademarks or registered trademarks of the Apache Software Foundation in the United States and/or other countries. Java™, Java™ SE, Java™ EE, and OpenJDK™ are trademarks of Oracle and/or its affiliates. Kubernetes® is a registered trademark of the Linux Foundation in the United States and other countries. Linux® is the registered trademark of Linus Torvalds in the United States and other countries. Windows® and Microsoft® Azure are registered trademarks of Microsoft Corporation. “AWS” and “Amazon Web Services” are trademarks or registered trademarks of Amazon.com Inc. or its affiliates. All other trademarks and copyrights are property of their respective owners and are only mentioned for informative purposes. Other names may be trademarks of their respective owners.",
+      "translation": "Apache®、Apache Tomcat®、Apache Kafka®、Apache Cassandra™ 和 Apache Geode™ 是 Apache Software Foundation 在美国和/或其他国家的商标或注册商标。Java™、Java™ SE、Java™ EE 和 OpenJDK™ 是 Oracle 和/或其关联公司的商标。Kubernetes® 是 Linux Foundation 在美国和其他国家的注册商标。Linux® 是 Linus Torvalds 在美国和其他国家的注册商标。Windows® 和 Microsoft® Azure 是 Microsoft Corporation 的注册商标。“AWS”和“Amazon Web Services”是 Amazon.com Inc. 或其关联公司的商标或注册商标。所有其他商标和版权均为其各自所有者的财产，仅用于提供信息。其他名称可能是其各自所有者的商标。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/projects\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-boot\">Spring Boot</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-framework\">Spring Framework</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud\">Spring Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud-dataflow\">Spring Cloud Data Flow</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-data\">Spring Data</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-integration\">Spring Integration</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-batch\">Spring Batch</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-security\">Spring Security</a>\n            <a class=\"navbar-item navbar-item-special\" href=\"https://spring.io/projects\">View all projects</a>\n            <li class=\"navbar-item navbar-item-special-3\">DEVELOPMENT TOOLS</li>\n            <a class=\"navbar-item\" href=\"https://spring.io/tools\">Spring Tools 4</a>\n            <a class=\"navbar-item navbar-item-special-2\" href=\"https://start.spring.io\">Spring Initializr\n              <svg id=\"svg-stash-f15b5668\"></svg></a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/projects\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-boot\">Spring Boot</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-framework\">Spring Framework</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud\">Spring Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud-dataflow\">Spring Cloud Data Flow</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-data\">Spring Data</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-integration\">Spring Integration</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-batch\">Spring Batch</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-security\">Spring Security</a>\n            <a class=\"navbar-item navbar-item-special\" href=\"https://spring.io/projects\">查看所有项目</a>\n            <li class=\"navbar-item navbar-item-special-3\">开发工具</li>\n            <a class=\"navbar-item\" href=\"https://spring.io/tools\">Spring Tools 4</a>\n            <a class=\"navbar-item navbar-item-special-2\" href=\"https://start.spring.io\">Spring Initializr\n              <svg id=\"svg-stash-f15b5668\"></svg></a>",
+      "count": 1
+    },
+    {
+      "source": "<nav aria-label=\"breadcrumbs\" class=\"breadcrumbs\">\n    <ul>\n      <li><a href=\"../../index.html\">Spring AI</a></li>\n      <li>Reference</li>\n      <li><a href=\"mcp-overview.html\">Model Context Protocol (MCP)</a></li>\n      <li><a href=\"mcp-server-boot-starter-docs.html\">MCP Server Boot Starters</a></li>\n    </ul>\n  </nav>",
+      "translation": "<nav aria-label=\"breadcrumbs\" class=\"breadcrumbs\">\n    <ul>\n      <li><a href=\"../../index.html\">Spring AI</a></li>\n      <li>参考资料</li>\n      <li><a href=\"mcp-overview.html\">Model Context Protocol (MCP)</a></li>\n      <li><a href=\"mcp-server-boot-starter-docs.html\">MCP Server Boot Starters</a></li>\n    </ul>\n  </nav>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/why-spring\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/microservices\">Microservices</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/reactive\">Reactive</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/event-driven\">Event\n              Driven</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/cloud\">Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/web-applications\">Web\n              Applications</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/serverless\">Serverless</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/batch\">Batch</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/why-spring\">概述</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/microservices\">微服务</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/reactive\">响应式</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/event-driven\">事件驱动</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/cloud\">云原生</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/web-applications\">Web 应用</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/serverless\">Serverless</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/batch\">批处理</a>",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/mcp/mcp-server-boot-starter-docs.adoc\">\n          <svg id=\"svg-stash-05b5c46b\"></svg>\n          Edit this Page\n        </a>\n        <a href=\"https://github.com/spring-projects/spring-ai\" title=\"GitHub\">\n          <svg id=\"svg-stash-28d888b7\"></svg>\n          GitHub Project\n        </a>",
+      "translation": "<a href=\"file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/mcp/mcp-server-boot-starter-docs.adoc\">\n          <svg id=\"svg-stash-05b5c46b\"></svg>\n          编辑此页面\n        </a>\n        <a href=\"https://github.com/spring-projects/spring-ai\" title=\"GitHub\">\n          <svg id=\"svg-stash-28d888b7\"></svg>\n          GitHub 项目\n        </a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/solutions\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/support\">Spring Runtime</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/consulting\">Spring Consulting</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/teams\">Spring Academy For Teams</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/security\">Security Advisories</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/solutions\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/support\">Spring Runtime</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/consulting\">Spring Consulting</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/teams\">Spring Academy For Teams</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/security\">安全公告</a>",
+      "count": 1
+    },
+    {
+      "source": "<ul class=\"projects\">\n  <li>\n    Related Spring Documentation\n    <ul class=\"projects-list\">\n    </ul>\n  </li><a href=\"../../spring-projects.html\">All Docs...</a>\n</ul>",
+      "translation": "<ul class=\"projects\">\n  <li>\n    相关 Spring 文档\n    <ul class=\"projects-list\">\n    </ul>\n  </li><a href=\"../../spring-projects.html\">所有文档...</a>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.academy/courses\">Courses</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/learning-path\">Get Certified</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.academy/courses\">课程</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/learning-path\">获取认证</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"title\" href=\"../../index.html\">Spring AI</a>",
+      "translation": "<a class=\"title\" href=\"../../index.html\">Spring AI</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"search-link\" href=\"../../search.html\">Search in all Spring Docs</a>",
+      "translation": "<a class=\"search-link\" href=\"../../search.html\">在所有 Spring 文档中搜索</a>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../vectordbs.html\">Vector Databases</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/azure.html\">Azure AI Service</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/azure-cosmos-db.html\">Azure Cosmos DB</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/bedrock-knowledge-base.html\">Amazon Bedrock Knowledge Base</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/apache-cassandra.html\">Apache Cassandra Vector Store</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/chroma.html\">Chroma</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/couchbase.html\">Couchbase</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/elasticsearch.html\">Elasticsearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/gemfire.html\">GemFire</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/mariadb.html\">MariaDB Vector Store</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/milvus.html\">Milvus</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/mongodb.html\">MongoDB Atlas</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/neo4j.html\">Neo4j</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/opensearch.html\">OpenSearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/oracle.html\">Oracle</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/pgvector.html\">PGvector</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/pinecone.html\">Pinecone</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/qdrant.html\">Qdrant</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/redis.html\">Redis</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/typesense.html\">Typesense</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/weaviate.html\">Weaviate</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/s3-vector-store.html\">S3 Vector Store</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../vectordbs.html\">向量数据库</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/azure.html\">Azure AI Service</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/azure-cosmos-db.html\">Azure Cosmos DB</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/bedrock-knowledge-base.html\">Amazon Bedrock Knowledge Base</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/apache-cassandra.html\">Apache Cassandra 向量存储</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/chroma.html\">Chroma</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/couchbase.html\">Couchbase</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/elasticsearch.html\">Elasticsearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/gemfire.html\">GemFire</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/mariadb.html\">MariaDB 向量存储</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/milvus.html\">Milvus</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/mongodb.html\">MongoDB Atlas</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/neo4j.html\">Neo4j</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/opensearch.html\">OpenSearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/oracle.html\">Oracle</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/pgvector.html\">PGvector</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/pinecone.html\">Pinecone</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/qdrant.html\">Qdrant</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/redis.html\">Redis</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/typesense.html\">Typesense</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/weaviate.html\">Weaviate</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/s3-vector-store.html\">S3 向量存储</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../embeddings.html\">Embedding Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../bedrock.html\">Amazon Bedrock</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/bedrock-cohere-embedding.html\">Cohere</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/bedrock-titan-embedding.html\">Titan</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/azure-openai-embeddings.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/google-genai-embeddings-text.html\">Google GenAI Text Embedding</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/mistralai-embeddings.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/oci-genai-embeddings.html\">OCI GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/ollama-embeddings.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/onnx.html\">(ONNX) Transformers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/openai-embeddings.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/postgresml-embeddings.html\">PostgresML</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">VertexAI</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/vertexai-embeddings-text.html\">Text Embedding</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/vertexai-embeddings-multimodal.html\">Multimodal Embedding</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../embeddings.html\">嵌入模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../bedrock.html\">Amazon Bedrock</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/bedrock-cohere-embedding.html\">Cohere</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/bedrock-titan-embedding.html\">Titan</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/azure-openai-embeddings.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/google-genai-embeddings-text.html\">Google GenAI 文本嵌入</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/mistralai-embeddings.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/oci-genai-embeddings.html\">OCI GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/ollama-embeddings.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/onnx.html\">(ONNX) Transformers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/openai-embeddings.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/postgresml-embeddings.html\">PostgresML</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">VertexAI</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/vertexai-embeddings-text.html\">文本嵌入</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/vertexai-embeddings-multimodal.html\">多模态嵌入</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../chatmodel.html\">Chat Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/comparison.html\">Chat Models Comparison</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/bedrock-converse.html\">Amazon Bedrock Converse</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/anthropic-chat.html\">Anthropic</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/azure-openai-chat.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/deepseek-chat.html\">DeepSeek</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/dmr-chat.html\">Docker Model Runner</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/google-genai-chat.html\">Google GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/groq-chat.html\">Groq</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/mistralai-chat.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/minimax-chat.html\">MiniMax</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/nvidia-chat.html\">NVIDIA</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/ollama-chat.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/perplexity-chat.html\">Perplexity AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/oci-genai-chat.html\">OCI Generative AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/openai-chat.html\">OpenAI</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../chatmodel.html\">聊天模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/comparison.html\">聊天模型对比</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/bedrock-converse.html\">Amazon Bedrock Converse</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/anthropic-chat.html\">Anthropic</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/azure-openai-chat.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/deepseek-chat.html\">DeepSeek</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/dmr-chat.html\">Docker Model Runner</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/google-genai-chat.html\">Google GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/groq-chat.html\">Groq</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/mistralai-chat.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/minimax-chat.html\">MiniMax</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/nvidia-chat.html\">NVIDIA</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/ollama-chat.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/perplexity-chat.html\">Perplexity AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/oci-genai-chat.html\">OCI Generative AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/openai-chat.html\">OpenAI</a>\n  </li>\n</ul",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp-overview.html\">Model Context Protocol (MCP)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mcp-client-boot-starter-docs.html\">MCP Client Boot Starters</a>\n  </li>\n  <li class=\"nav-item is-current-page\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp-server-boot-starter-docs.html\">MCP Server Boot Starters</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp-stdio-sse-server-boot-starter-docs.html\">STDIO and SSE MCP Servers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp-streamable-http-server-boot-starter-docs.html\">Streamable-HTTP MCP Servers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp-stateless-server-boot-starter-docs.html\">Stateless Streamable-HTTP MCP Servers</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mcp-security.html\">MCP Security (WIP)</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp-annotations-overview.html\">MCP Annotations</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp-annotations-client.html\">Client Annotations</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp-annotations-server.html\">Server Annotations</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp-annotations-special-params.html\">Special Parameters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp-annotations-examples.html\">MCP Annotations Examples</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp-overview.html\">Model Context Protocol (MCP)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mcp-client-boot-starter-docs.html\">MCP Client Boot Starters</a>\n  </li>\n  <li class=\"nav-item is-current-page\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp-server-boot-starter-docs.html\">MCP Server Boot Starters</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp-stdio-sse-server-boot-starter-docs.html\">STDIO 和 SSE MCP 服务器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp-streamable-http-server-boot-starter-docs.html\">Streamable-HTTP MCP 服务器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp-stateless-server-boot-starter-docs.html\">无状态 Streamable-HTTP MCP 服务器</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mcp-security.html\">MCP 安全性 (在建)</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp-annotations-overview.html\">MCP 注解</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp-annotations-client.html\">客户端注解</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp-annotations-server.html\">服务器注解</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp-annotations-special-params.html\">特殊参数</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp-annotations-examples.html\">MCP 注解示例</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">Guides</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/spring-ai-community/awesome-spring-ai\">Awesome Spring AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/getting-started-mcp.html\">Getting Started with MCP</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/dynamic-tool-search.html\">Dynamic Tool Discovery</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/llm-as-judge.html\">LLM-as-a-Judge Evaluation</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../chat/prompt-engineering-patterns.html\">Prompt Engineering Patterns</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../effective-agents.html\">Building Effective Agents</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agents\">Building agents with Spring AI by AWS</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agentcore\">Building agents with Spring AI and AgentCore by AWS</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/microsoft/Spring-AI-for-Beginners\">Spring AI for Beginners by Microsoft</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">指南</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/spring-ai-community/awesome-spring-ai\">Awesome Spring AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/getting-started-mcp.html\">MCP 入门指南</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/dynamic-tool-search.html\">动态工具发现</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/llm-as-judge.html\">LLM-as-a-Judge 评估</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../chat/prompt-engineering-patterns.html\">提示工程模式</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../effective-agents.html\">构建高效 Agent</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agents\">由 AWS 提供的使用 Spring AI 构建 Agent</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agentcore\">由 AWS 提供的使用 Spring AI 和 AgentCore 构建 Agent</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/microsoft/Spring-AI-for-Beginners\">由 Microsoft 提供的 Spring AI 入门教程</a>\n  </li>\n</ul",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio.html\">Audio Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio/transcriptions.html\">Transcription API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/transcriptions/azure-openai-transcriptions.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/transcriptions/openai-transcriptions.html\">OpenAI</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio/speech.html\">Text-To-Speech (TTS) API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/speech/openai-speech.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/speech/elevenlabs-speech.html\">ElevenLabs</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio.html\">音频模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio/transcriptions.html\">转录 API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/transcriptions/azure-openai-transcriptions.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/transcriptions/openai-transcriptions.html\">OpenAI</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio/speech.html\">文本转语音 (TTS) API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/speech/openai-speech.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/speech/elevenlabs-speech.html\">ElevenLabs</a>\n  </li>\n</ul>\n  </li>\n</ul",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../chatclient.html\">Chat Client API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../advisors.html\">Advisors</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../advisors-recursive.html\">Recursive Advisors</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../chatclient.html\">Chat Client API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../advisors.html\">顾问</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../advisors-recursive.html\">递归顾问</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../imageclient.html\">Image Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/azure-openai-image.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/openai-image.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/stabilityai-image.html\">Stability</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../imageclient.html\">图像模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/azure-openai-image.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/openai-image.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/stabilityai-image.html\">Stability</a>\n  </li>\n</ul",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../moderation.html\">Moderation Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../moderation/openai-moderation.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../moderation/mistral-ai-moderation.html\">Mistral AI</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../moderation.html\">审核模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../moderation/openai-moderation.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../moderation/mistral-ai-moderation.html\">Mistral AI</a>\n  </li>\n</ul",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../../upgrade-notes.html\">Upgrade Notes</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../tools-migration.html\">Migrating FunctionCallback to ToolCallback API</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../chat/anthropic-migration.html\">Migrating the Anthropic Module to the Official Java SDK</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../../upgrade-notes.html\">升级说明</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../tools-migration.html\">将 FunctionCallback 迁移到 ToolCallback API</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../chat/anthropic-migration.html\">将 Anthropic 模块迁移到官方 Java SDK</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../../index.html\">Overview</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../concepts.html\">AI Concepts</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../../index.html\">概览</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../concepts.html\">AI 概念</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../retrieval-augmented-generation.html\">Retrieval Augmented Generation (RAG)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../etl-pipeline.html\">ETL Pipeline</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../retrieval-augmented-generation.html\">检索增强生成 (RAG)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../etl-pipeline.html\">ETL 流水线</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<tr>\n<th class=\"tableblock halign-left valign-top\">Server Type</th>\n<th class=\"tableblock halign-left valign-top\">Dependency</th>\n<th class=\"tableblock halign-left valign-top\">Property</th>\n</tr>",
+      "translation": "<tr>\n<th class=\"tableblock halign-left valign-top\">服务器类型</th>\n<th class=\"tableblock halign-left valign-top\">依赖关系</th>\n<th class=\"tableblock halign-left valign-top\">属性</th>\n</tr>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"prev\"><a href=\"mcp-client-boot-starter-docs.html\">MCP Client Boot Starters</a></span>\n  <span class=\"next\"><a href=\"mcp-stdio-sse-server-boot-starter-docs.html\">STDIO and SSE MCP Servers</a></span>",
+      "translation": "<span class=\"prev\"><a href=\"mcp-client-boot-starter-docs.html\">MCP Client Boot Starters</a></span>\n  <span class=\"next\"><a href=\"mcp-stdio-sse-server-boot-starter-docs.html\">STDIO and SSE MCP Servers</a></span>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../../getting-started.html\">Getting Started</a>",
+      "translation": "<a class=\"nav-link\" href=\"../../getting-started.html\">入门指南</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../structured-output-converter.html\">Structured Output</a>",
+      "translation": "<a class=\"nav-link\" href=\"../structured-output-converter.html\">结构化输出</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../chat-memory.html\">Chat Memory</a>",
+      "translation": "<a class=\"nav-link\" href=\"../chat-memory.html\">聊天记忆</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../tools.html\">Tool Calling</a>",
+      "translation": "<a class=\"nav-link\" href=\"../tools.html\">工具调用</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../testing.html\">Model Evaluation</a>",
+      "translation": "<a class=\"nav-link\" href=\"../testing.html\">模型评估</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../docker-compose.html\">Development-time Services</a>",
+      "translation": "<a class=\"nav-link\" href=\"../docker-compose.html\">开发时服务</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_mcp_server_boot_starters\"></a>MCP Server Boot Starters",
+      "translation": "<a class=\"anchor\" href=\"#_mcp_server_boot_starters\">MCP Server 启动器</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_server_capabilities\"></a>Server Capabilities",
+      "translation": "<a class=\"anchor\" href=\"#_server_capabilities\">服务器功能</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_server_protocols\"></a>Server Protocols",
+      "translation": "<a class=\"anchor\" href=\"#_server_protocols\">服务器协议</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_syncasync_server_api_options\"></a>Sync/Async Server API Options",
+      "translation": "<a class=\"anchor\" href=\"#_syncasync_server_api_options\">同步/异步服务器 API 选项</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_mcp_server_annotations\"></a>MCP Server Annotations",
+      "translation": "<a class=\"anchor\" href=\"#_mcp_server_annotations\">MCP Server 注解</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_key_annotations\"></a>Key Annotations",
+      "translation": "<a class=\"anchor\" href=\"#_key_annotations\">关键注释</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_special_parameters\"></a>Special Parameters",
+      "translation": "<a class=\"anchor\" href=\"#_special_parameters\">特殊参数</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_simple_example\"></a>Simple Example",
+      "translation": "<a class=\"anchor\" href=\"#_simple_example\">简单示例</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_adding_data_to_mcptransportcontext\"></a>Adding data to McpTransportContext",
+      "translation": "<a class=\"anchor\" href=\"#_adding_data_to_mcptransportcontext\">向 McpTransportContext 添加数据</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_configuration_properties\"></a>Configuration Properties",
+      "translation": "<a class=\"anchor\" href=\"#_configuration_properties\">配置属性</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_additional_resources\"></a>Additional Resources",
+      "translation": "<a class=\"anchor\" href=\"#_additional_resources\">更多资源</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_example_applications\"></a>Example Applications",
+      "translation": "<a class=\"anchor\" href=\"#_example_applications\">示例应用</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_additional_resources_2\"></a>Additional Resources",
+      "translation": "<a class=\"anchor\" href=\"#_additional_resources_2\">更多资源</a>",
+      "count": 1
+    },
+    {
+      "source": "Why Spring",
+      "translation": "为什么选择 Spring",
+      "count": 1
+    },
+    {
+      "source": "Spring AI",
+      "translation": "Spring AI",
+      "count": 1
+    },
+    {
+      "source": "MCP Server Boot Starter",
+      "translation": "MCP 服务端启动器",
+      "count": 1
+    }
+  ]
+}

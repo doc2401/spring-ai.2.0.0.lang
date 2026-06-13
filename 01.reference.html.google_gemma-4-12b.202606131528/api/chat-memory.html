@@ -1,0 +1,1759 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width,initial-scale=1" name="viewport"/>
+    <title>聊天记忆 :: Spring AI 参考</title>
+    <link href="https://docs.spring.io/spring-ai/reference/api/chat-memory.html" rel="canonical"/>
+    <link href="moderation/mistral-ai-moderation.html" rel="prev"/>
+    <link href="tools.html" rel="next"/>
+    <meta content="Antora 3.1.15" name="generator"/>
+    <script>
+!function (theme, navWidth) {
+  if (theme === 'dark') document.documentElement.classList.add('dark-theme')
+  if (navWidth) document.documentElement.style.setProperty('--nav-width', `${navWidth}px`)
+}(localStorage && localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)')?.matches && 'dark'),
+  localStorage && localStorage.getItem('nav-width'))
+    </script>
+    <link href="../_/css/site.css" rel="stylesheet"/>
+    <link href="../_/css/vendor/search.css" rel="stylesheet"/>
+    <link href="../_/css/vendor/page-search.css" rel="stylesheet"/>
+    <link href="../_/css/vendor/asciidoctor-tabs.css" rel="stylesheet"/>
+
+    <meta content="v0.4.17" name="antora-ui-version"/> 
+    <meta content="2.0.0" name="version"/>
+    <meta content="ai" name="component"/>
+    <meta content="false" name="latest-version"/>
+    <link href="../_/img/favicon.ico" rel="icon" type="image/vnd.microsoft.icon"/>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://spring.io">
+        <img alt="Spring" class="block" id="springlogo" src="../_/img/spring-logo.svg"/>
+      </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="navbar-menu" id="topbar-nav">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">为什么选择 Spring</a>
+          <div class="navbar-dropdown"><a class="navbar-item" href="https://spring.io/why-spring">概述</a>
+<a class="navbar-item" href="https://spring.io/microservices">微服务</a>
+<a class="navbar-item" href="https://spring.io/reactive">响应式</a>
+<a class="navbar-item" href="https://spring.io/event-driven">事件驱动</a>
+<a class="navbar-item" href="https://spring.io/cloud">云原生</a>
+<a class="navbar-item" href="https://spring.io/web-applications">Web 应用</a>
+<a class="navbar-item" href="https://spring.io/serverless">Serverless</a>
+<a class="navbar-item" href="https://spring.io/batch">批处理</a></div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Learn</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://spring.io/learn">Overview</a>
+            <a class="navbar-item" href="https://spring.io/quickstart">Quickstart</a>
+            <a class="navbar-item" href="https://spring.io/guides">Guides</a>
+            <a class="navbar-item" href="https://spring.io/blog">Blog</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Projects</a>
+          <div class="navbar-dropdown" style="min-width: 280px"><a class="navbar-item" href="https://spring.io/projects">概览</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-boot">Spring Boot</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-framework">Spring Framework</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-cloud">Spring Cloud</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-cloud-dataflow">Spring Cloud Data Flow</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-data">Spring Data</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-integration">Spring Integration</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-batch">Spring Batch</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-security">Spring Security</a>
+<a class="navbar-item navbar-item-special" href="https://spring.io/projects">查看所有项目</a>
+<li class="navbar-item navbar-item-special-3">开发工具</li>
+<a class="navbar-item" href="https://spring.io/tools">Spring Tools 4</a>
+<a class="navbar-item navbar-item-special-2" href="https://start.spring.io">Spring Initializr
+              <svg class="external-link-icon" viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><polyline fill="none" points="15 10.94 15 15 1 15 1 1 5.06 1" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"></polyline><polyline fill="none" points="8.93 1 15 1 15 7.07" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"></polyline><line fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" x1="15" x2="8" y1="1" y2="8"></line></svg></a></div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Academy</a>
+          <div class="navbar-dropdown"><a class="navbar-item" href="https://spring.academy/courses">课程</a>
+<a class="navbar-item" href="https://spring.academy/learning-path">获取认证</a></div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Solutions</a>
+          <div class="navbar-dropdown lg"><a class="navbar-item" href="https://spring.io/solutions">概览</a>
+<a class="navbar-item" href="https://spring.io/support">Spring Runtime</a>
+<a class="navbar-item" href="https://spring.io/consulting">Spring Consulting</a>
+<a class="navbar-item" href="https://spring.academy/teams">Spring Academy For Teams</a>
+<a class="navbar-item" href="https://spring.io/security">安全公告</a></div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable is-community">
+          <a class="navbar-link" href="#">Community</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://spring.io/community">Overview</a>
+            <a class="navbar-item" href="https://spring.io/events">Events</a>
+            <a class="navbar-item" href="https://spring.io/team">Team</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <label class="theme-toggler">
+      <input id="switch-theme-checkbox" name="switch-theme-checkbox" type="checkbox"/>
+      <span class="icon"><svg aria-hidden="true" class="svg-inline--fa fa-moon moon" data-icon="moon" data-prefix="fas" focusable="false" role="img" viewbox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z" fill="currentColor"></path>
+</svg>
+        <svg aria-hidden="true" class="svg-inline--fa fa-sun sun" data-icon="sun" data-prefix="fas" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z" fill="currentColor"></path>
+</svg></span>
+      <span class="text">light</span>
+    </label>
+  </nav>
+</header>
+<script>
+!function (theme) {
+  if (theme === 'dark') {
+    document.getElementById('switch-theme-checkbox').parentElement.classList.add('active')
+  }
+}(localStorage && localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)')?.matches && 'dark'))
+</script>
+<div class="body">
+<div class="nav-container" data-component="ai" data-version="2.0.0">
+  <aside class="nav">
+    <div class="panels">
+      <div class="nav-panel-menu is-active" data-panel="menu">
+        <nav class="nav-menu">
+<div class="context">
+  <span class="title">Spring AI</span>
+  <span class="version">2.0.0</span>
+  <button class="browse-version" id="browse-version">
+    <svg height="24px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewbox="0 0 512 512" width="24px" xml:space="preserve"><g><path d="M256,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S273.7,224,256,224L256,224z"></path><path d="M128.4,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S146,224,128.4,224L128.4,224z"></path><path d="M384,224c-17.7,0-32,14.3-32,32s14.3,32,32,32s32-14.3,32-32S401.7,224,384,224L384,224z"></path></g></svg>
+  </button>
+  <div class="search">
+  <button class="DocSearch-Button search-button">
+    <svg enable-background="new 0 0 32 32" id="Glyph" version="1.1" viewbox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M27.414,24.586l-5.077-5.077C23.386,17.928,24,16.035,24,14c0-5.514-4.486-10-10-10S4,8.486,4,14  s4.486,10,10,10c2.035,0,3.928-0.614,5.509-1.663l5.077,5.077c0.78,0.781,2.048,0.781,2.828,0  C28.195,26.633,28.195,25.367,27.414,24.586z M7,14c0-3.86,3.14-7,7-7s7,3.14,7,7s-3.14,7-7,7S7,17.86,7,14z" id="XMLID_223_"></path>
+</svg>
+    <span>Search</span>
+    <span class="search-key"></span>
+  </button>
+</div>
+</div><ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../index.html">概览</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../concepts.html">AI 概念</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="1"><a class="nav-link" href="../getting-started.html">入门指南</a></li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Reference</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="chatclient.html">Chat Client API</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="advisors.html">顾问</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="advisors-recursive.html">递归顾问</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="prompt.html">Prompts</a>
+  </li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="structured-output-converter.html">结构化输出</a></li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="multimodality.html">Multimodality</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">Models</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="chatmodel.html">聊天模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/comparison.html">聊天模型对比</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/bedrock-converse.html">Amazon Bedrock Converse</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/anthropic-chat.html">Anthropic</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/azure-openai-chat.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/deepseek-chat.html">DeepSeek</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/dmr-chat.html">Docker Model Runner</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/google-genai-chat.html">Google GenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/groq-chat.html">Groq</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/mistralai-chat.html">Mistral AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/minimax-chat.html">MiniMax</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/nvidia-chat.html">NVIDIA</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/ollama-chat.html">Ollama</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/perplexity-chat.html">Perplexity AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/oci-genai-chat.html">OCI Generative AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/openai-chat.html">OpenAI</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="embeddings.html">嵌入模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="bedrock.html">Amazon Bedrock</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="embeddings/bedrock-cohere-embedding.html">Cohere</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="embeddings/bedrock-titan-embedding.html">Titan</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/azure-openai-embeddings.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/google-genai-embeddings-text.html">Google GenAI 文本嵌入</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/mistralai-embeddings.html">Mistral AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/oci-genai-embeddings.html">OCI GenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/ollama-embeddings.html">Ollama</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/onnx.html">(ONNX) Transformers</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/openai-embeddings.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/postgresml-embeddings.html">PostgresML</a>
+</li>
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<span class="nav-text">VertexAI</span>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="embeddings/vertexai-embeddings-text.html">文本嵌入</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="embeddings/vertexai-embeddings-multimodal.html">多模态嵌入</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="imageclient.html">图像模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="image/azure-openai-image.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="image/openai-image.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="image/stabilityai-image.html">Stability</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="audio.html">音频模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="audio/transcriptions.html">转录 API</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="audio/transcriptions/azure-openai-transcriptions.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="audio/transcriptions/openai-transcriptions.html">OpenAI</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="audio/speech.html">文本转语音 (TTS) API</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="audio/speech/openai-speech.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="audio/speech/elevenlabs-speech.html">ElevenLabs</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="moderation.html">审核模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="moderation/openai-moderation.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="moderation/mistral-ai-moderation.html">Mistral AI</a>
+</li>
+</ul></li>
+</ul>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2"><a class="nav-link" href="chat-memory.html">聊天记忆</a></li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="tools.html">工具调用</a></li>
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="mcp/mcp-overview.html">Model Context Protocol (MCP)</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="mcp/mcp-client-boot-starter-docs.html">MCP Client Boot Starters</a>
+</li>
+<li class="nav-item" data-depth="3">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="mcp/mcp-server-boot-starter-docs.html">MCP Server Boot Starters</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-stdio-sse-server-boot-starter-docs.html">STDIO 和 SSE MCP 服务器</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-streamable-http-server-boot-starter-docs.html">Streamable-HTTP MCP 服务器</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-stateless-server-boot-starter-docs.html">无状态 Streamable-HTTP MCP 服务器</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="mcp/mcp-security.html">MCP 安全性 (WIP)</a>
+</li>
+<li class="nav-item" data-depth="3">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="mcp/mcp-annotations-overview.html">MCP 注解</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-annotations-client.html">客户端注解</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-annotations-server.html">服务器注解</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-annotations-special-params.html">特殊参数</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-annotations-examples.html">MCP 注解示例</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="retrieval-augmented-generation.html">检索增强生成 (RAG)</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="etl-pipeline.html">ETL 流水线</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="testing.html">模型评估</a></li>
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="vectordbs.html">向量数据库</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/azure.html">Azure AI Service</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/azure-cosmos-db.html">Azure Cosmos DB</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/bedrock-knowledge-base.html">Amazon Bedrock Knowledge Base</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/apache-cassandra.html">Apache Cassandra 向量存储</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/chroma.html">Chroma</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/couchbase.html">Couchbase</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/elasticsearch.html">Elasticsearch</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/gemfire.html">GemFire</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/mariadb.html">MariaDB 向量存储</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/milvus.html">Milvus</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/mongodb.html">MongoDB Atlas</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/neo4j.html">Neo4j</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/opensearch.html">OpenSearch</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/oracle.html">Oracle</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/pgvector.html">PGvector</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/pinecone.html">Pinecone</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/qdrant.html">Qdrant</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/redis.html">Redis</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/typesense.html">Typesense</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/weaviate.html">Weaviate</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/s3-vector-store.html">S3 向量存储</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../observability/index.html">Observability</a>
+  </li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="docker-compose.html">开发时服务</a></li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Testing</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="testcontainers.html">Testcontainers</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1"><button class="nav-item-toggle"></button>
+<span class="nav-text">指南</span>
+<ul class="nav-list">
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://github.com/spring-ai-community/awesome-spring-ai">Awesome Spring AI</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../guides/getting-started-mcp.html">MCP 入门指南</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../guides/dynamic-tool-search.html">动态工具发现</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../guides/llm-as-judge.html">LLM-as-a-Judge 评估</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="chat/prompt-engineering-patterns.html">提示工程模式</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="effective-agents.html">构建高效 Agent</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://catalog.workshops.aws/java-spring-ai-agents">由 AWS 提供的使用 Spring AI 构建 Agent</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://catalog.workshops.aws/java-spring-ai-agentcore">由 AWS 提供的使用 Spring AI 和 AgentCore 构建 Agent</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://github.com/microsoft/Spring-AI-for-Beginners">由 Microsoft 提供的 Spring AI 入门教程</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="1"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../upgrade-notes.html">升级说明</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="tools-migration.html">将 FunctionCallback 迁移到 ToolCallback API</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="chat/anthropic-migration.html">将 Anthropic 模块迁移到官方 Java SDK</a>
+</li>
+</ul></li>
+</ul>
+  </li>
+</ul>
+          <div class="toggle-sm">
+            <button class="nav-toggle" id="nav-toggle-2"></button>
+          </div>
+        </nav>
+      </div>
+      <div class="nav-collapse">
+        <button id="nav-collapse-toggle"><span></span></button>        
+      </div>
+    </div>
+    <div class="nav-resize"></div>
+  </aside>
+</div>
+<script>
+!function (sidebar) {
+  if (sidebar) {
+    document.body.classList.add('nav-sm')
+  }
+}(localStorage && localStorage.getItem('sidebar') === 'close')
+</script><main class="article">
+<div class="toolbar" role="navigation">
+  <button class="nav-toggle" id="nav-toggle-1"></button>
+<div class="search">
+  <button class="DocSearch-Button search-button">
+    <svg id="svg-stash-de15fb15"></svg>
+    <span>Search</span>
+    <span class="search-key"></span>
+  </button>
+</div>
+</div>
+  <div class="content">
+<aside class="sidebar">
+  <div class="content">
+    <div class="toc" data-levels="2" data-title="Chat Memory">
+      <div class="toc-menu"></div>
+    </div>
+    <div class="sidebar-links"><a href="file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/chat-memory.adoc">
+<svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m16 2.012 3 3L16.713 7.3l-3-3zM4 14v3h3l8.299-8.287-3-3zm0 6h16v2H4z"></path></svg>
+          编辑此页面
+        </a>
+<a href="https://github.com/spring-projects/spring-ai" title="GitHub">
+<svg height="512px" id="Layer_1" version="1.1" viewbox="0 0 512 512" width="512px" xmlns="http://www.w3.org/2000/svg"><style type="text/css">
+              .st0{fill-rule:evenodd;clip-rule:evenodd;} </style><g><path class="st0" d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"></path></g></svg>
+          GitHub 项目
+        </a></div>
+  </div>
+</aside>
+<article class="doc">
+<div class="breadcrumbs-container"><nav aria-label="breadcrumbs" class="breadcrumbs">
+<ul>
+<li><a href="../index.html">Spring AI</a></li>
+<li>参考资料</li>
+<li><a href="chat-memory.html">Chat Memory</a></li>
+</ul>
+</nav></div><h1 class="page" id="page-title">聊天记忆</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>大语言模型（LLMs）是无状态的，这意味着它们不会保留之前交互的信息。当您希望在多次交互中保持上下文或状态时，这可能会成为一种限制。为了解决这个问题，Spring AI 提供了聊天记忆功能，允许您在与 LLM 的多次交互中存储和检索信息。</p>
+</div>
+<div class="paragraph">
+<p><code style="color: #d73a49;">ChatMemory</code> 抽象允许您实现各种类型的内存以支持不同的使用场景。消息的底层存储由 <code style="color: #d73a49;">ChatMemoryRepository</code> 处理，其唯一职责是存储和检索消息。至于保留哪些消息以及何时删除它们，则由 <code style="color: #d73a49;">ChatMemory</code> 的具体实现来决定。策略示例可能包括保留最后 N 条消息、在特定时间段内保留消息，或保留不超过特定 token 限制的消息。</p>
+</div>
+<div class="paragraph">
+<p>在选择记忆类型之前，了解聊天记忆（chat memory）与聊天历史（chat history）之间的区别至关重要。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>对话记忆</strong>。大型语言模型所保留并用于在整个对话过程中维持上下文感知的信息。</p>
+</li>
+<li>
+<p><strong>聊天记录</strong>。完整的对话历史，包括用户与模型之间交换的所有消息。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><code style="font-family: monospace;">ChatMemory</code> 抽象旨在管理<em style="font-style: italic;">聊天记忆</em>。它允许您存储和检索与当前对话上下文相关的消息。然而，它并不最适合用于存储<em style="font-style: italic;">聊天历史记录</em>。如果您需要维护所有交换消息的完整记录，您应该考虑使用不同的方法，例如依靠 Spring Data 来高效地存储和检索完整的聊天历史记录。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_quick_start"><a class="anchor" href="#_quick_start">快速入门</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Spring AI 会自动配置一个 <code>ChatMemory</code> Bean，您可以在应用程序中直接使用它。默认情况下，它使用内存仓库来存储消息 (<code>InMemoryChatMemoryRepository</code>)，并使用 <code>MessageWindowChatMemory</code> 实现来管理对话历史。如果已经配置了不同的仓库（例如 Cassandra、JDBC 或 Neo4j），Spring AI 将改用该仓库。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Autowired
+ChatMemory chatMemory;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>以下章节将进一步描述 Spring AI 中可用的不同内存类型和存储库。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_memory_types"><a class="anchor" href="#_memory_types">内存类型</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><code style="color: #d73a49;">ChatMemory</code> 抽象允许您实现各种类型的内存，以适应不同的使用场景。内存类型的选择可能会显著影响应用程序的性能和行为。本节介绍了 Spring AI 提供的内置内存类型及其特性。</p>
+</div>
+<div class="sect2">
+<h3 id="_message_window_chat_memory"><a class="anchor" href="#_message_window_chat_memory"></a>消息窗口聊天记忆</h3>
+<div class="paragraph">
+<p><code>MessageWindowChatMemory</code> 维护一个最大长度为指定值的滑动窗口消息。当消息数量超过最大值时，系统将移除旧消息，同时始终保留 <code>SystemMessage</code> 实例。默认窗口大小为 20 条消息。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">MessageWindowChatMemory memory = MessageWindowChatMemory.builder()
+    .maxMessages(10)
+    .build();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>这是 Spring AI 用于自动配置 <code style="color: #d73a49;">ChatMemory</code> 类型的默认消息类型。</p>
+</div>
+<div class="sect3">
+<h4 id="_turn_boundary_eviction"><a class="anchor" href="#_turn_boundary_eviction">转折边界驱逐</a></h4>
+<div class="paragraph">
+<p>当需要驱逐时，<code>MessageWindowChatMemory</code> 总是移除完整的轮次（turns），而不是在轮次中间截断。一个<em style="font-style: italic;">轮次</em>从 <code>UserMessage</code> 开始，包括随后所有的助手回复、工具调用和工具响应，直到下一个 <code>UserMessage</code> 为止。如果原始驱逐点落在非用户消息上（例如在工具调用交互过程中的助手回复），截断位置将向前推进到下一个 <code>UserMessage</code>，以确保保留的窗口始终从一个完整的轮次开始。</p>
+</div>
+<div class="paragraph">
+<p>这意味着 <code>maxMessages</code> 是存储消息数量的<em>上限</em> —— 当需要通过快照（snapping）来寻找下一个轮次边界时，实际数量可能会略低一些。</p>
+</div>
+<div class="admonitionblock note">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+如果 <code class="maxMessages">maxMessages</code> 小于单个完整的轮次（例如，超过窗口大小的多步工具调用交互），所有非系统消息可能会在添加新的 <code class="UserMessage">UserMessage</code> 之前被移除。请将 <code class="maxMessages">maxMessages</code> 设置得足够大，以容纳您使用场景中至少一个具有代表性的轮次。
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_memory_storage"><a class="anchor" href="#_memory_storage">内存存储</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Spring AI 提供了用于存储聊天记忆的 <code class="language-java">ChatMemoryRepository</code> 抽象。本节介绍了 Spring AI 提供的内置存储库及其用法，但如果需要，您也可以实现自己的存储库。</p>
+</div>
+<div class="admonitionblock note">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Azure Cosmos DB 聊天记忆库支持作为由 Azure Cosmos DB 团队维护的外部模块提供。
+请参阅 <a class="bare" href="https://azurecosmosdb.github.io/spring-ai/docs/index.html">azurecosmosdb.github.io/spring-ai/docs/index.html</a> 获取更多信息。
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="sect2">
+<h3 id="_in_memory_repository"><a class="anchor" href="#_in_memory_repository">内存仓库</a></h3>
+<div class="paragraph">
+<p><code>InMemoryChatMemoryRepository</code> 使用 <code>ConcurrentHashMap</code> 将消息存储在内存中。</p>
+</div>
+<div class="paragraph">
+<p>默认情况下，如果没有配置其他仓库，Spring AI 会自动配置一个类型为 <code>InMemoryChatMemoryRepository</code> 的 <code>ChatMemoryRepository</code> Bean，您可以在应用程序中直接使用它。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Autowired
+ChatMemoryRepository chatMemoryRepository;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>如果您更倾向于手动创建 <code class="language-python">InMemoryChatMemoryRepository</code>，可以按照以下步骤操作：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatMemoryRepository repository = new InMemoryChatMemoryRepository();</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_jdbcchatmemoryrepository"><a class="anchor" href="#_jdbcchatmemoryrepository"></a>JdbcChatMemoryRepository</h3>
+<div class="paragraph">
+<p><code>JdbcChatMemoryRepository</code> 是一个内置的实现，它使用 JDBC 将消息存储在关系型数据库中。它开箱即支持多种数据库，适用于需要持久化存储聊天记忆的应用程序。</p>
+</div>
+<div class="paragraph">
+<p>消息按升序（从旧到新）检索，这是 LLM 对话历史的预期格式。排序由 <code>sequence_id</code> 列维护，该列记录了每条消息在其对话中的位置。每条消息还存储了一个创建 <code>timestamp</code>，在消息元数据中以 <code>JdbcChatMemoryRepository.CONVERSATION_TS</code> 键下的 <code>java.time.Instant</code> 类型公开，以便应用程序显示消息的创建时间。</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><strong><code class="language-java">JdbcChatMemoryRepository</code> 不支持工具调用消息（tool call messages）。</strong>
+包含工具调用的 <code class="language-java">AssistantMessage</code> 实例和 <code class="language-java">ToolResponseMessage</code> 实例在保存时会被静默过滤，并且不会出现在检索到的对话历史中。
+如果您的应用程序使用了工具调用，请考虑使用 <a href="https://spring-ai-community.github.io/spring-ai-session/latest/">Spring AI Session</a> 项目和 <a href="https://spring-ai-community.github.io/spring-ai-session/latest/session-jdbc/">JDBC session store</a>，它们能够正确持久化所有类型的消息。</p>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="paragraph">
+<p>首先，请在您的项目中添加以下依赖：</p>
+</div>
+<div class="openblock tabs is-sync is-loading" id="_tabs_1">
+<div class="content">
+<div class="ulist tablist">
+<ul>
+<li class="tab" id="_tabs_1_maven">
+<p>Maven</p>
+</li>
+<li class="tab" id="_tabs_1_gradle">
+<p>Gradle</p>
+</li>
+</ul>
+</div>
+<div aria-labelledby="_tabs_1_maven" class="tabpanel" id="_tabs_1_maven--panel">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-ai-starter-model-chat-memory-repository-jdbc&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+<div aria-labelledby="_tabs_1_gradle" class="tabpanel" id="_tabs_1_gradle--panel">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">dependencies {
+    implementation 'org.springframework.ai:spring-ai-starter-model-chat-memory-repository-jdbc'
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Spring AI 为 <code class="language-xml">JdbcChatMemoryRepository</code> 提供自动配置，您可以在应用程序中直接使用。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Autowired
+JdbcChatMemoryRepository chatMemoryRepository;
+
+ChatMemory chatMemory = MessageWindowChatMemory.builder()
+    .chatMemoryRepository(chatMemoryRepository)
+    .maxMessages(10)
+    .build();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>如果您更倾向于手动创建 <code>JdbcChatMemoryRepository</code>，可以通过提供一个 <code>JdbcTemplate</code> 实例和一个 <code>JdbcChatMemoryRepositoryDialect</code> 来实现：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatMemoryRepository chatMemoryRepository = JdbcChatMemoryRepository.builder()
+    .jdbcTemplate(jdbcTemplate)
+    .dialect(new PostgresChatMemoryRepositoryDialect())
+    .build();
+
+ChatMemory chatMemory = MessageWindowChatMemory.builder()
+    .chatMemoryRepository(chatMemoryRepository)
+    .maxMessages(10)
+    .build();</code></pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_reading_message_timestamps"><a class="anchor" href="#_reading_message_timestamps">阅读消息时间戳</a></h4>
+<div class="paragraph">
+<p>每条存储的消息都记录了其创建时间。该时间戳可在消息元数据中，位于 <code>JdbcChatMemoryRepository.CONVERSATION_TS</code> 键下，类型为 <code>java.time.Instant</code>，这对于在 UI 中显示消息时间非常有用：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">List&lt;Message&gt; messages = chatMemory.get(conversationId);
+for (Message message : messages) {
+    Instant createdAt = (Instant) message.getMetadata().get(JdbcChatMemoryRepository.CONVERSATION_TS);
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>当对话再次保存时，时间戳会被保留，因此消息在整个对话生命周期内都将保持其原始创建时间。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_supported_databases_and_dialect_abstraction"><a class="anchor" href="#_supported_databases_and_dialect_abstraction">支持的数据库和方言抽象</a></h4>
+<div class="paragraph">
+<p>Spring AI 通过方言抽象（dialect abstraction）支持多种关系型数据库。以下数据库支持开箱即用：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>PostgreSQL</p>
+</li>
+<li>
+<p>MySQL / MariaDB</p>
+</li>
+<li>
+<p>SQL Server</p>
+</li>
+<li>
+<p>HSQLDB</p>
+</li>
+<li>
+<p>Oracle 数据库</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>当使用 <code>JdbcChatMemoryRepositoryDialect.from(DataSource)</code> 时，可以从 JDBC URL 中自动检测正确的方言。您可以通过实现 <code>JdbcChatMemoryRepositoryDialect</code> 接口来扩展对其他数据库的支持。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_configuration_properties"><a class="anchor" href="#_configuration_properties">配置属性</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 25%;"/>
+<col style="width: 62.5%;"/>
+<col style="width: 12.5%;"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Property</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">默认值</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.memory.repository.jdbc.initialize-schema</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">控制何时初始化 schema。可选值：<code style="color:red">embedded</code>（默认）、<code style="color:red">always</code>、<code style="color:red">never</code>。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>embedded</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.memory.repository.jdbc.schema</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">用于初始化的架构脚本（schema script）位置。支持 <code>classpath:</code> URL 和平台占位符。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>classpath:org/springframework/ai/chat/memory/repository/jdbc/schema-@@platform@@.sql</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.memory.repository.jdbc.platform</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">如果使用了 @@platform@@ 占位符，则在初始化脚本中使用的平台。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>auto-detected</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_schema_initialization"><a class="anchor" href="#_schema_initialization">架构初始化</a></h4>
+<div class="paragraph">
+<p>自动配置将在启动时自动创建 <code style="color: #d73a49;">SPRING_AI_CHAT_MEMORY</code> 表，并使用针对您数据库的特定供应商 SQL 脚本。默认情况下，架构初始化仅针对嵌入式数据库（H2、HSQL、Derby 等）运行。</p>
+</div>
+<div class="admonitionblock note">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+自 2.0.0 版本起，架构中新增了 <code>sequence_id</code> 列用于确定消息顺序，与现有的 <code>timestamp</code> 列（现通过消息元数据暴露）并列。升级现有应用程序需要添加新列；有关迁移步骤，请参阅 <a class="xref page" href="../upgrade-notes.html">Upgrade Notes</a>。
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="paragraph">
+<p>您可以使用 <code style="white-space:nowrap">spring.ai.chat.memory.repository.jdbc.initialize-schema</code> 属性来控制架构初始化：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties">spring.ai.chat.memory.repository.jdbc.initialize-schema=embedded # Only for embedded DBs (default)
+spring.ai.chat.memory.repository.jdbc.initialize-schema=always   # Always initialize
+spring.ai.chat.memory.repository.jdbc.initialize-schema=never    # Never initialize (useful with Flyway/Liquibase)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>若要覆盖架构脚本位置，请使用：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties">spring.ai.chat.memory.repository.jdbc.schema=classpath:/custom/path/schema-mysql.sql</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_extending_dialects"><a class="anchor" href="#_extending_dialects">扩展方言</a></h4>
+<div class="paragraph">
+<p>若要支持新的数据库，请实现 <code>JdbcChatMemoryRepositoryDialect</code> 接口并提供用于选择、插入和删除消息的 SQL。然后，您可以将自定义的方言传递给 repository 构建器。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatMemoryRepository chatMemoryRepository = JdbcChatMemoryRepository.builder()
+    .jdbcTemplate(jdbcTemplate)
+    .dialect(new MyCustomDbDialect())
+    .build();</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_cassandrachatmemoryrepository"><a class="anchor" href="#_cassandrachatmemoryrepository"></a>CassandraChatMemoryRepository</h3>
+<div class="paragraph">
+<p><code>CassandraChatMemoryRepository</code> 使用 Apache Cassandra 来存储消息。它适用于需要持久化存储聊天记忆的应用程序，特别是在追求可用性、持久性、可扩展性以及利用生存时间（TTL）功能的场景下。</p>
+</div>
+<div class="paragraph">
+<p><code>CassandraChatMemoryRepository</code> 采用时序架构，记录所有过去的聊天窗口，这对于治理和审计非常重要。建议将生存时间（time-to-live）设置为某个值，例如三年。</p>
+</div>
+<div class="paragraph">
+<p>消息按时间戳升序排列（从旧到新），这是大语言模型（LLM）对话历史的预期格式。</p>
+</div>
+<div class="paragraph">
+<p>若要使用 <code>CassandraChatMemoryRepository</code>，首先请将依赖添加到您的项目中：</p>
+</div>
+<div class="openblock tabs is-sync is-loading" id="_tabs_2">
+<div class="content">
+<div class="ulist tablist">
+<ul>
+<li class="tab" id="_tabs_2_maven">
+<p>Maven</p>
+</li>
+<li class="tab" id="_tabs_2_gradle">
+<p>Gradle</p>
+</li>
+</ul>
+</div>
+<div aria-labelledby="_tabs_2_maven" class="tabpanel" id="_tabs_2_maven--panel">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-ai-starter-model-chat-memory-repository-cassandra&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+<div aria-labelledby="_tabs_2_gradle" class="tabpanel" id="_tabs_2_gradle--panel">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">dependencies {
+    implementation 'org.springframework.ai:spring-ai-starter-model-chat-memory-repository-cassandra'
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Spring AI 为 <code class="language-xml">CassandraChatMemoryRepository</code> 提供自动配置，您可以直接在应用程序中使用。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Autowired
+CassandraChatMemoryRepository chatMemoryRepository;
+
+ChatMemory chatMemory = MessageWindowChatMemory.builder()
+    .chatMemoryRepository(chatMemoryRepository)
+    .maxMessages(10)
+    .build();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>如果您更倾向于手动创建 <code class="code">CassandraChatMemoryRepository</code>，可以通过提供一个 <code class="code">CassandraChatMemoryRepositoryConfig</code> 实例来实现：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatMemoryRepository chatMemoryRepository = CassandraChatMemoryRepository
+    .create(CassandraChatMemoryRepositoryConfig.builder().withCqlSession(cqlSession));
+
+ChatMemory chatMemory = MessageWindowChatMemory.builder()
+    .chatMemoryRepository(chatMemoryRepository)
+    .maxMessages(10)
+    .build();</code></pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_configuration_properties_2"><a class="anchor" href="#_configuration_properties_2">配置属性</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 25%;"/>
+<col style="width: 62.5%;"/>
+<col style="width: 12.5%;"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Property</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">默认值</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.cassandra.contactPoints</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">启动集群发现的主机</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>127.0.0.1</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.cassandra.port</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cassandra 原生协议连接端口</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>9042</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.cassandra.localDatacenter</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">要连接的 Cassandra 数据中心</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>datacenter1</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.memory.cassandra.time-to-live</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">写入 Cassandra 的消息的生存时间 (TTL)</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.memory.cassandra.keyspace</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cassandra keyspace</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>springframework</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.memory.cassandra.messages-column</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cassandra 中用于消息的列名</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>springframework</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.memory.cassandra.table</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cassandra 表</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ai_chat_memory</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.memory.cassandra.initialize-schema</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">是否在启动时初始化架构。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_schema_initialization_2"><a class="anchor" href="#_schema_initialization_2">架构初始化</a></h4>
+<div class="paragraph">
+<p>自动配置将自动创建 <code class="language-html">ai_chat_memory</code> 表。</p>
+</div>
+<div class="paragraph">
+<p>您可以通过将属性 <code>spring.ai.chat.memory.repository.cassandra.initialize-schema</code> 设置为 <code>false</code> 来禁用架构初始化。</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><strong><code class="language-java">CassandraChatMemoryRepository</code> 不支持工具调用消息（tool call messages）。</strong>
+包含工具调用的 <code class="language-java">AssistantMessage</code> 实例和 <code class="language-java">ToolResponseMessage</code> 实例在保存时会被静默过滤，且不会出现在检索到的对话历史中。
+如果您的应用程序使用了工具调用，请考虑使用 <a href="https://spring-ai-community.github.io/spring-ai-session/latest/">Spring AI Session</a> 项目和 <a href="https://spring-ai-community.github.io/spring-ai-session/latest/session-jdbc/">JDBC session store</a>，它们能够正确持久化所有类型的消息。</p>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_neo4j_chatmemoryrepository"><a class="anchor" href="#_neo4j_chatmemoryrepository">Neo4j ChatMemoryRepository</a></h3>
+<div class="paragraph">
+<p><code style="color: #d63384;">Neo4jChatMemoryRepository</code> 是一个内置实现，它使用 Neo4j 将聊天消息作为节点和关系存储在属性图数据库中。它适用于希望利用 Neo4j 图能力进行聊天记忆持久化的应用程序。</p>
+</div>
+<div class="paragraph">
+<p>消息按消息索引升序（从旧到新）检索，这是大语言模型（LLM）对话历史的预期格式。</p>
+</div>
+<div class="paragraph">
+<p>首先，请在您的项目中添加以下依赖：</p>
+</div>
+<div class="openblock tabs is-sync is-loading" id="_tabs_3">
+<div class="content">
+<div class="ulist tablist">
+<ul>
+<li class="tab" id="_tabs_3_maven">
+<p>Maven</p>
+</li>
+<li class="tab" id="_tabs_3_gradle">
+<p>Gradle</p>
+</li>
+</ul>
+</div>
+<div aria-labelledby="_tabs_3_maven" class="tabpanel" id="_tabs_3_maven--panel">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-ai-starter-model-chat-memory-repository-neo4j&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+<div aria-labelledby="_tabs_3_gradle" class="tabpanel" id="_tabs_3_gradle--panel">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">dependencies {
+    implementation 'org.springframework.ai:spring-ai-starter-model-chat-memory-repository-neo4j'
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Spring AI 为 <code class="language-html">Neo4jChatMemoryRepository</code> 提供自动配置，您可以在应用程序中直接使用。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Autowired
+Neo4jChatMemoryRepository chatMemoryRepository;
+
+ChatMemory chatMemory = MessageWindowChatMemory.builder()
+    .chatMemoryRepository(chatMemoryRepository)
+    .maxMessages(10)
+    .build();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>如果您更倾向于手动创建 <code style="color: #e67e22;">Neo4jChatMemoryRepository</code>，可以通过提供一个 Neo4j <code style="color: #e67e22;">Driver</code> 实例来实现：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatMemoryRepository chatMemoryRepository = Neo4jChatMemoryRepository.builder()
+    .driver(driver)
+    .build();
+
+ChatMemory chatMemory = MessageWindowChatMemory.builder()
+    .chatMemoryRepository(chatMemoryRepository)
+    .maxMessages(10)
+    .build();</code></pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_configuration_properties_3"><a class="anchor" href="#_configuration_properties_3">配置属性</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 25%;"/>
+<col style="width: 62.5%;"/>
+<col style="width: 12.5%;"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Property</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">默认值</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.memory.repository.neo4j.session-label</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">存储会话内容的节点标签</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Session</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.memory.repository.neo4j.message-label</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">存储消息的节点标签</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Message</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.memory.repository.neo4j.tool-call-label</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">存储工具调用（例如在 Assistant Messages 中）的节点的标签</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ToolCall</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.memory.repository.neo4j.metadata-label</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">存储消息元数据的节点标签</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Metadata</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.memory.repository.neo4j.tool-response-label</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">存储工具响应的节点的标签</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ToolResponse</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.memory.repository.neo4j.media-label</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">存储与消息相关媒体的节点的标签</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Media</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_index_initialization"><a class="anchor" href="#_index_initialization">索引初始化</a></h4>
+<div class="paragraph">
+<p>Neo4j 仓库将自动为会话 ID（conversation IDs）和消息索引（message indices）创建索引以优化性能。如果您使用自定义标签，系统也将为这些标签创建索引。无需进行架构初始化，但您应确保您的 Neo4j 实例可被您的应用程序访问。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_mongochatmemoryrepository"><a class="anchor" href="#_mongochatmemoryrepository"></a>MongoChatMemoryRepository</h3>
+<div class="paragraph">
+<p><code>MongoChatMemoryRepository</code> 是一个内置的实现，它使用 MongoDB 来存储消息。它适用于需要灵活的、面向文档的数据库来持久化聊天记忆的应用。</p>
+</div>
+<div class="paragraph">
+<p>消息按时间戳升序排列（从旧到新），这是大语言模型（LLM）对话历史的预期格式。这种排序方式在所有聊天记忆库实现中都是一致的。</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><strong><code class="language-java">MongoChatMemoryRepository</code> 不支持工具调用消息（tool call messages）。</strong>
+包含工具调用的 <code class="language-java">AssistantMessage</code> 实例和 <code class="language-java">ToolResponseMessage</code> 实例在保存时会被静默过滤，并且不会出现在检索到的对话历史中。
+如果您的应用程序使用了工具调用，请考虑使用 <a href="https://spring-ai-community.github.io/spring-ai-session/latest/">Spring AI Session</a> 项目和 <a href="https://spring-ai-community.github.io/spring-ai-session/latest/session-jdbc/">JDBC session store</a>，它们能够正确持久化所有类型的消息。</p>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="paragraph">
+<p>首先，请在您的项目中添加以下依赖：</p>
+</div>
+<div class="openblock tabs is-sync is-loading" id="_tabs_4">
+<div class="content">
+<div class="ulist tablist">
+<ul>
+<li class="tab" id="_tabs_4_maven">
+<p>Maven</p>
+</li>
+<li class="tab" id="_tabs_4_gradle">
+<p>Gradle</p>
+</li>
+</ul>
+</div>
+<div aria-labelledby="_tabs_4_maven" class="tabpanel" id="_tabs_4_maven--panel">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-ai-starter-model-chat-memory-repository-mongodb&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+<div aria-labelledby="_tabs_4_gradle" class="tabpanel" id="_tabs_4_gradle--panel">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">dependencies {
+    implementation 'org.springframework.ai:spring-ai-starter-model-chat-memory-repository-mongodb'
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Spring AI 为 <code class="language-xml">MongoChatMemoryRepository</code> 提供自动配置，您可以在应用程序中直接使用。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Autowired
+MongoChatMemoryRepository chatMemoryRepository;
+
+ChatMemory chatMemory = MessageWindowChatMemory.builder()
+    .chatMemoryRepository(chatMemoryRepository)
+    .maxMessages(10)
+    .build();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>如果您更倾向于手动创建 <code class="language-html">MongoChatMemoryRepository</code>，可以通过提供一个 <code class="language-html">MongoTemplate</code> 实例来实现：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatMemoryRepository chatMemoryRepository = MongoChatMemoryRepository.builder()
+    .mongoTemplate(mongoTemplate)
+    .build();
+
+ChatMemory chatMemory = MessageWindowChatMemory.builder()
+    .chatMemoryRepository(chatMemoryRepository)
+    .maxMessages(10)
+    .build();</code></pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_configuration_properties_4"><a class="anchor" href="#_configuration_properties_4">配置属性</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 25%;"/>
+<col style="width: 62.5%;"/>
+<col style="width: 12.5%;"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Property</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">默认值</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.memory.repository.mongo.create-indices</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">在启动时是否应自动创建或重新创建索引。注意：更改 * TTL 值将删除 TTL 索引并重新创建它。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>false</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.memory.repository.mongo.ttl</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">写入 MongoDB 的消息的生存时间（TTL），单位为秒。如果未设置，消息将永久存储。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_collection_initialization"><a class="anchor" href="#_collection_initialization">集合初始化</a></h4>
+<div class="paragraph">
+<p>如果 <code class="language-html">ai_chat_memory</code> 集合尚不存在，自动配置将在启动时自动创建该集合。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_redischatmemoryrepository"><a class="anchor" href="#_redischatmemoryrepository"></a>RedisChatMemoryRepository</h3>
+<div class="paragraph">
+<p><code>RedisChatMemoryRepository</code> 是一个内置实现，它使用 Redis Stack（包含 Redis Query Engine 和 RedisJSON）来存储聊天消息。
+它适用于需要高性能、低延迟聊天记忆持久化，并支持可选的 TTL（生存时间）以及高级查询能力的应用程序。</p>
+</div>
+<div class="paragraph">
+<p>该仓库将消息存储为 JSON 文档，并创建搜索索引以实现高效查询。
+它还通过 <code class="language-python">AdvancedRedisChatMemoryRepository</code> 接口提供扩展查询功能，支持按内容、类型、时间范围和元数据搜索消息。</p>
+</div>
+<div class="paragraph">
+<p>消息按时间戳升序排列（从旧到新），这是大语言模型（LLM）对话历史的预期格式。</p>
+</div>
+<div class="paragraph">
+<p>首先，请在您的项目中添加以下依赖：</p>
+</div>
+<div class="openblock tabs is-sync is-loading" id="_tabs_5">
+<div class="content">
+<div class="ulist tablist">
+<ul>
+<li class="tab" id="_tabs_5_maven">
+<p>Maven</p>
+</li>
+<li class="tab" id="_tabs_5_gradle">
+<p>Gradle</p>
+</li>
+</ul>
+</div>
+<div aria-labelledby="_tabs_5_maven" class="tabpanel" id="_tabs_5_maven--panel">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-ai-starter-model-chat-memory-repository-redis&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+<div aria-labelledby="_tabs_5_gradle" class="tabpanel" id="_tabs_5_gradle--panel">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">dependencies {
+    implementation 'org.springframework.ai:spring-ai-starter-model-chat-memory-repository-redis'
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Spring AI 为 <code class="language-xml">RedisChatMemoryRepository</code> 提供自动配置，您可以在应用程序中直接使用。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Autowired
+RedisChatMemoryRepository chatMemoryRepository;
+
+ChatMemory chatMemory = MessageWindowChatMemory.builder()
+    .chatMemoryRepository(chatMemoryRepository)
+    .maxMessages(10)
+    .build();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>如果您更倾向于手动创建 <code class="code">RedisChatMemoryRepository</code>，可以通过提供一个 <code class="code">RedisClient</code> 客户端来实现：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">RedisClient jedisClient = RedisClient.builder().hostAndPort("localhost", 6379).build();
+
+ChatMemoryRepository chatMemoryRepository = RedisChatMemoryRepository.builder()
+    .jedisClient(jedisClient)
+    .indexName("my-chat-index")
+    .keyPrefix("my-chat:")
+    .timeToLive(Duration.ofHours(24))
+    .build();
+
+ChatMemory chatMemory = MessageWindowChatMemory.builder()
+    .chatMemoryRepository(chatMemoryRepository)
+    .maxMessages(10)
+    .build();</code></pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_configuration_properties_5"><a class="anchor" href="#_configuration_properties_5">配置属性</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 25%;"/>
+<col style="width: 62.5%;"/>
+<col style="width: 12.5%;"/>
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Property</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">默认值</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.memory.redis.host</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Redis 服务器主机</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>localhost</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.memory.redis.port</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Redis 服务器端口</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>6379</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.memory.redis.index-name</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Redis 搜索索引的名称</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>chat-memory-idx</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.memory.redis.key-prefix</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">聊天记忆条目的键前缀</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>chat-memory:</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.memory.redis.time-to-live</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">聊天记忆条目的生存时间（例如，<code>24h</code>，<code>30d</code>）</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>永不过期</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.memory.redis.initialize-schema</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">是否在启动时初始化 Redis 架构</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.memory.redis.max-conversation-ids</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">返回的对话 ID 最大数量</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>1000</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.memory.redis.max-messages-per-conversation</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">每段对话返回的最大消息数量</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>1000</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_advanced_querying"><a class="anchor" href="#_advanced_querying">高级查询</a></h4>
+<div class="paragraph">
+<p><code style="color: #d73a49;">RedisChatMemoryRepository</code> 还实现了 <code style="color: #d73a49;">AdvancedRedisChatMemoryRepository</code>，它提供了扩展的查询功能：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">// Cast to access advanced features
+AdvancedRedisChatMemoryRepository advancedRepo = (AdvancedRedisChatMemoryRepository) chatMemoryRepository;
+
+// Find messages by type across all conversations
+List&lt;MessageWithConversation&gt; userMessages = advancedRepo.findByType(MessageType.USER, 100);
+
+// Find messages containing specific content
+List&lt;MessageWithConversation&gt; results = advancedRepo.findByContent("Spring AI", 50);
+
+// Find messages within a time range
+List&lt;MessageWithConversation&gt; recentMessages = advancedRepo.findByTimeRange(
+    conversationId,
+    Instant.now().minus(Duration.ofHours(1)),
+    Instant.now(),
+    100
+);
+
+// Find messages by metadata
+List&lt;MessageWithConversation&gt; priorityMessages = advancedRepo.findByMetadata("priority", "high", 50);
+
+// Execute custom Redis queries
+List&lt;MessageWithConversation&gt; customResults = advancedRepo.executeQuery("@type:USER @content:Redis", 100);</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_metadata_field_indexing"><a class="anchor" href="#_metadata_field_indexing">元数据字段索引</a></h4>
+<div class="paragraph">
+<p>为了实现对自定义元数据字段的高效查询，您可以配置元数据字段定义：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties">spring.ai.chat.memory.redis.metadata-fields[0].name=priority
+spring.ai.chat.memory.redis.metadata-fields[0].type=tag
+spring.ai.chat.memory.redis.metadata-fields[1].name=score
+spring.ai.chat.memory.redis.metadata-fields[1].type=numeric
+spring.ai.chat.memory.redis.metadata-fields[2].name=category
+spring.ai.chat.memory.redis.metadata-fields[2].type=tag</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>支持的字段类型包括：<code>tag</code>（用于精确匹配过滤）、<code>text</code>（用于全文检索）以及 <code>numeric</code>（用于范围查询）。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_schema_initialization_3"><a class="anchor" href="#_schema_initialization_3">架构初始化</a></h4>
+<div class="paragraph">
+<p>如果 Redis 搜索索引尚不存在，自动配置将在启动时自动创建该索引。
+您可以通过设置 <code style="color: #d73a49;">spring.ai.chat.memory.redis.initialize-schema=false</code> 来禁用此行为。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_requirements"><a class="anchor" href="#_requirements"></a>Requirements</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Redis Stack 7.0 或更高版本（包含 Redis Query Engine 和 RedisJSON 模块）</p>
+</li>
+<li>
+<p>Jedis 客户端库（作为依赖项包含）</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_memory_in_chat_client"><a class="anchor" href="#_memory_in_chat_client">聊天客户端中的记忆</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>在使用 ChatClient API 时，您可以提供一个 <code>ChatMemory</code> 实现，以在多次交互中维护对话上下文。</p>
+</div>
+<div class="paragraph">
+<p>Spring AI 提供了一些内置的 Advisor，您可以根据需求使用它们来配置 <code class="language-java">ChatClient</code> 的记忆行为。</p>
+</div>
+<div class="admonitionblock warning">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+目前，在执行工具调用时与大语言模型交换的中间消息不会存储在内存中。这是当前实现的局限性，并将在未来的版本中予以解决。如果您需要存储这些消息，请参阅 <a class="xref page" href="tools.html#_user_controlled_tool_execution">用户控制的工具执行 (User Controlled Tool Execution)</a> 的说明。
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>MessageChatMemoryAdvisor</code>。该顾问使用提供的 <code>ChatMemory</code> 实现来管理对话记忆。在每次交互中，它从记忆中检索对话历史，并将其作为消息集合包含在提示词中。</p>
+</li>
+<li>
+<p><code>VectorStoreChatMemoryAdvisor</code>。该顾问使用提供的 <code>VectorStore</code> 实现来管理对话记忆。在每次交互中，它从向量存储中检索对话历史，并将其作为纯文本追加到系统消息中。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>例如，如果您想在 <code>MessageChatMemoryAdvisor</code> 中使用 <code>MessageWindowChatMemory</code>，您可以按如下方式进行配置：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatMemory chatMemory = MessageWindowChatMemory.builder().build();
+
+ChatClient chatClient = ChatClient.builder(chatModel)
+    .defaultAdvisors(MessageChatMemoryAdvisor.builder(chatMemory).build())
+    .build();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>在调用 <code class="language-xml">ChatClient</code> 时，内存将由 <code class="language-xml">MessageChatMemoryAdvisor</code> 自动管理。系统将根据指定的会话 ID 从内存中检索对话历史。</p>
+</div>
+<div class="admonitionblock important">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+对于所有的 memory advisors，<code class="ChatMemory.CONVERSATION_ID"></code> 参数都是<strong class="required">必填的</strong>。省略此参数的调用将在运行时抛出 <code class="IllegalArgumentException"></code> 异常。系统没有默认的会话 ID（conversation ID）。
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">String conversationId = "007";
+
+chatClient.prompt()
+    .user("Do I have license to code?")
+    .advisors(a -&gt; a.param(ChatMemory.CONVERSATION_ID, conversationId))
+    .call()
+    .content();</code></pre>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_vectorstorechatmemoryadvisor"><a class="anchor" href="#_vectorstorechatmemoryadvisor"></a>VectorStoreChatMemoryAdvisor</h3>
+<div class="sect3">
+<h4 id="_custom_template"><a class="anchor" href="#_custom_template"></a>自定义模板</h4>
+<div class="paragraph">
+<p><code style="color: #d73a49;">VectorStoreChatMemoryAdvisor</code> 使用默认模板将检索到的对话记忆添加到系统消息中。您可以通过 <code style="color: #d73a49;">.promptTemplate()</code> 构建方法提供自定义的 <code style="color: #d73a49;">PromptTemplate</code> 对象来定制此行为。</p>
+</div>
+<div class="admonitionblock note">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+此处提供的 <code class="PromptTemplate">PromptTemplate</code> 用于自定义顾问（advisor）如何将检索到的记忆与系统消息进行合并。这与在 <code class="ChatClient">ChatClient</code> 本身上配置 <code class="TemplateRenderer">TemplateRenderer</code>（使用 <code class="templateRenderer()">.templateRenderer()</code>）不同，后者影响的是在顾问运行<strong class="before">之前</strong>初始用户/系统提示内容的内容渲染。有关客户端级别模板渲染的更多详情，请参阅 <a class="xref page" href="chatclient.html#_prompt_templates">ChatClient Prompt Templates</a>。
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="paragraph">
+<p>自定义的 <code>PromptTemplate</code> 可以使用任何 <code>TemplateRenderer</code> 实现（默认情况下，它使用基于 <a href="https://www.stringtemplate.org/">StringTemplate</a> 引擎的 <code>StPromptTemplate</code>）。重要的要求是模板必须包含以下两个占位符：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>一个 <code>instructions</code> 占位符用于接收原始系统消息。</p>
+</li>
+<li>
+<p>一个 <code style="color: #d73a49;">long_term_memory</code> 占位符，用于接收检索到的对话记忆。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_memory_in_chat_model"><a class="anchor" href="#_memory_in_chat_model">聊天模型中的记忆</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>如果您是直接与 <code style="color: #d73a49;">ChatModel</code> 而不是 <code style="color: #d73a49;">ChatClient</code> 进行交互，您可以显式地管理内存：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">// Create a memory instance
+ChatMemory chatMemory = MessageWindowChatMemory.builder().build();
+String conversationId = "007";
+
+// First interaction
+UserMessage userMessage1 = new UserMessage("My name is James Bond");
+chatMemory.add(conversationId, userMessage1);
+ChatResponse response1 = chatModel.call(new Prompt(chatMemory.get(conversationId)));
+chatMemory.add(conversationId, response1.getResult().getOutput());
+
+// Second interaction
+UserMessage userMessage2 = new UserMessage("What is my name?");
+chatMemory.add(conversationId, userMessage2);
+ChatResponse response2 = chatModel.call(new Prompt(chatMemory.get(conversationId)));
+chatMemory.add(conversationId, response2.getResult().getOutput());
+
+// The response will contain "James Bond"</code></pre>
+</div>
+</div>
+</div>
+</div>
+<nav class="pagination"><span class="prev"><a href="moderation/mistral-ai-moderation.html">Mistral AI</a></span>
+<span class="next"><a href="tools.html">工具调用 (Tool Calling)</a></span></nav>
+</article>  </div>
+</main>
+<div aria-hidden="true" class="modal micromodal-slide" id="modal-versions">
+    <div class="modal__overlay" data-micromodal-close="" tabindex="-1">
+        <div aria-modal="true" class="modal__container" role="dialog">
+            <main class="modal__content" id="modal-versions-content">
+              <button class="modal-versions-close" data-micromodal-close="">
+                <svg height="28px" viewbox="0 0 32 32" width="28px" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1h{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title></title><g id="cross"><line class="cls-1h" x1="7" x2="25" y1="7" y2="25"></line><line class="cls-1h" x1="7" x2="25" y1="25" y2="7"></line></g></svg>
+              </button>
+              <div class="colset">
+                <div class="col-left">
+
+                  <ul class="nav-versions">
+                      <li class="component">
+                        <div><a class="title" href="../index.html">Spring AI</a></div>                        <div class="version-item is-active">
+                          <div>
+                            <button class="version-toggle" type="button">
+                              <span></span>
+                              Stable
+                            </button>
+                          </div>
+                          <ul class="versions">
+  <li class="version">
+    <a href="../index.html">
+      2.0.0
+    </a>
+  </li>
+</ul>                        </div>
+                        
+                      </li>
+                  </ul>
+                </div>
+                <div class="col-right"><ul class="projects">
+<li>
+    相关 Spring 文档
+    <ul class="projects-list">
+</ul>
+</li><a href="../spring-projects.html">所有文档...</a>
+</ul></div>
+              </div>
+            </main>
+        </div>
+    </div>
+</div>
+
+</div>
+<footer class="footer flex">
+    <div id="spring-links flex">
+        <img alt="Spring" id="springlogo" src="../_/img/spring-logo.svg"/>
+        <p class="smallest antialiased">Copyright © 2005 - <script>var d = new Date();
+        document.write(d.getFullYear());</script> Broadcom. 保留所有权利。术语“Broadcom”是指 Broadcom Inc. 和/或其子公司。<br/><a href="https://www.vmware.com/help/legal.html">使用条款</a> • <a href="https://www.vmware.com/help/privacy.html" rel="noopener noreferrer">隐私政策</a> • <a href="https://spring.io/trademarks">商标指南</a> <span id="thank-you-mobile">• <a href="https://spring.io/thank-you">致谢</a></span> • <a href="https://www.vmware.com/help/privacy/california-privacy-rights.html">您的加州隐私权</a> • <a class="ot-sdk-show-settings">Cookie 设置</a> <span id="teconsent"></span></p>
+        <p class="smallest antialiased has-gray-text">Apache®、Apache Tomcat®、Apache Kafka®、Apache Cassandra™ 和 Apache Geode™ 是 Apache Software Foundation 在美国和/或其他国家的商标或注册商标。Java™、Java™ SE、Java™ EE 和 OpenJDK™ 是 Oracle 和/或其关联公司的商标。Kubernetes® 是 Linux Foundation 在美国和其他国家的注册商标。Linux® 是 Linus Torvalds 在美国和其他国家的注册商标。Windows® 和 Microsoft® Azure 是 Microsoft Corporation 的注册商标。“AWS”和“Amazon Web Services”是 Amazon.com Inc. 或其关联公司的商标或注册商标。所有其他商标和版权均为其各自所有者的财产，仅用于提供信息。其他名称可能是其各自所有者的商标。</p>
+    </div>
+    <div class="flex jc-between" id="social-icons">
+        <a href="https://www.youtube.com/user/SpringSourceDev" title="Youtube"><svg id="youtube-icon" viewbox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><circle class="cls-1" cx="20" cy="20" r="20"></circle><path class="cls-2" d="M30.91,14.53a2.89,2.89,0,0,0-2-2C27.12,12,20,12,20,12s-7.12,0-8.9.47a2.9,2.9,0,0,0-2,2A30.56,30.56,0,0,0,8.63,20a30.44,30.44,0,0,0,.46,5.47,2.89,2.89,0,0,0,2,2C12.9,28,20,28,20,28s7.12,0,8.9-.47a2.87,2.87,0,0,0,2-2A30.56,30.56,0,0,0,31.37,20,28.88,28.88,0,0,0,30.91,14.53ZM17.73,23.41V16.59L23.65,20Z"></path></svg></a>
+        <a href="https://github.com/spring-projects" title="GitHub"><svg id="github-icon" viewbox="0 0 75.93 75.93" xmlns="http://www.w3.org/2000/svg"><path class="cls-1" d="M38,0a38,38,0,1,0,38,38A38,38,0,0,0,38,0Z"></path><path class="cls-2" d="M38,15.59A22.95,22.95,0,0,0,30.71,60.3c1.15.21,1.57-.5,1.57-1.11s0-2,0-3.9c-6.38,1.39-7.73-3.07-7.73-3.07A6.09,6.09,0,0,0,22,48.86c-2.09-1.42.15-1.39.15-1.39a4.81,4.81,0,0,1,3.52,2.36c2,3.5,5.37,2.49,6.67,1.91a4.87,4.87,0,0,1,1.46-3.07c-5.09-.58-10.45-2.55-10.45-11.34a8.84,8.84,0,0,1,2.36-6.15,8.29,8.29,0,0,1,.23-6.07s1.92-.62,6.3,2.35a21.82,21.82,0,0,1,11.49,0c4.38-3,6.3-2.35,6.3-2.35a8.29,8.29,0,0,1,.23,6.07,8.84,8.84,0,0,1,2.36,6.15c0,8.81-5.37,10.75-10.48,11.32a5.46,5.46,0,0,1,1.56,4.25c0,3.07,0,5.54,0,6.29s.42,1.33,1.58,1.1A22.94,22.94,0,0,0,38,15.59Z"></path></svg></a>
+        <a href="https://twitter.com/springcentral" title="Twitter"><svg id="twitter-icon" viewbox="0 0 75.93 75.93" xmlns="http://www.w3.org/2000/svg"><circle class="cls-1" cx="37.97" cy="37.97" r="37.97"></circle><path class="cls-2" d="M55.2,22.73a15.43,15.43,0,0,1-4.88,1.91,7.56,7.56,0,0,0-5.61-2.49A7.78,7.78,0,0,0,37,30a7.56,7.56,0,0,0,.2,1.79,21.63,21.63,0,0,1-15.84-8.23,8,8,0,0,0,2.37,10.52,7.66,7.66,0,0,1-3.48-1v.09A7.84,7.84,0,0,0,26.45,41a7.54,7.54,0,0,1-2,.28A7.64,7.64,0,0,1,23,41.09a7.71,7.71,0,0,0,7.18,5.47,15.21,15.21,0,0,1-9.55,3.37,15.78,15.78,0,0,1-1.83-.11,21.41,21.41,0,0,0,11.78,3.54c14.13,0,21.86-12,21.86-22.42,0-.34,0-.68,0-1a15.67,15.67,0,0,0,3.83-4.08,14.9,14.9,0,0,1-4.41,1.24A7.8,7.8,0,0,0,55.2,22.73Z" data-name="Twitter" id="Twitter-2"></path></svg></a>
+    </div>
+</footer>
+<script src="../_/js/vendor/import.js"></script>
+<script src="../_/js/site.js"></script>
+<script async="" src="../_/js/vendor/highlight.js"></script>
+<script async="" data-sync-storage-key="docs:preferred-tab" src="../_/js/vendor/asciidoctor-tabs.js"></script>
+
+<div aria-hidden="true" class="modal micromodal-slide" id="modal-1">
+    <div class="modal__overlay" data-micromodal-close="" tabindex="-1">
+        <div aria-labelledby="modal-1-title" aria-modal="true" class="modal__container" role="dialog">
+            <main class="modal__content" id="modal-1-content">
+                <div id="searchbox"></div>
+                <div id="counter"></div>
+                <div class="search-link-box"><a class="search-link" href="../search.html">在所有 Spring 文档中搜索</a></div>
+                <div class="search-by">
+                    <a aria-label="Search by Algolia" href="https://www.algolia.com/" rel="noopener noreferrer" target="_blank">
+                        <img class="light" src="../_/img/algolia-light.svg" width="140"/>
+                        <img class="dark" src="../_/img/algolia-dark.svg" width="140"/>
+                    </a>
+                </div>
+                <div id="hits"></div>
+            </main>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
+<script crossorigin="anonymous" integrity="sha256-Lf9DrpGmcRip6OQzbcL6lnvNmoZNSKpyQX5pMlwatWE=" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.17.0/dist/algoliasearch-lite.umd.js"></script>
+<script crossorigin="anonymous" integrity="sha256-xYsZPDeNjYNTBWLvqD2Lxe98hOxcDgOHyMPfz4tVAbk=" src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.54.1/dist/instantsearch.production.min.js"></script>
+<script async="" data-api-key="c2e84f15fa630d534f1c62b1c413bb77" data-app-id="WB1FQYI187" data-index-name="springdocs" data-page-component="ai" data-page-version="2.0.0" data-stylesheet="../_/css/vendor/search.css" id="search-script" src="../_/js/vendor/search.js"></script>
+  
+
+</body></html>

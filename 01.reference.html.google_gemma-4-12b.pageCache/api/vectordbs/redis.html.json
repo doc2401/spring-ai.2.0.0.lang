@@ -1,0 +1,906 @@
+{
+  "created_at": "2026-06-13 18:57:53",
+  "updated_at": "2026-06-13 18:57:53",
+  "stats": {
+    "total_entries": 178,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 180,
+    "entries_with_hits": 178,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0112359550561798,
+    "usage_percentage": 0.0178
+  },
+  "items": [
+    {
+      "source": "or to your Gradle <code>build.gradle</code> build file.",
+      "translation": "或者添加到您的 Gradle <code style=\"white-space:pre;\">build.gradle</code> 构建文件中。",
+      "count": 2
+    },
+    {
+      "source": "<tr>\n<th class=\"tableblock halign-left valign-top\">Property</th>\n<th class=\"tableblock halign-left valign-top\">Description</th>\n<th class=\"tableblock halign-left valign-top\">Default Value</th>\n</tr>",
+      "translation": "<tr>\n<th class=\"tableblock halign-left valign-top\">属性</th>\n<th class=\"tableblock halign-left valign-top\">描述</th>\n<th class=\"tableblock halign-left valign-top\">默认值</th>\n</tr>",
+      "count": 2
+    },
+    {
+      "source": "Copyright © 2005 - <script>var d = new Date();\n        document.write(d.getFullYear());</script> Broadcom. All Rights Reserved. The term \"Broadcom\" refers to Broadcom Inc. and/or its subsidiaries.<br/><a href=\"https://www.vmware.com/help/legal.html\">Terms of Use</a> • <a href=\"https://www.vmware.com/help/privacy.html\" rel=\"noopener noreferrer\">Privacy</a> • <a href=\"https://spring.io/trademarks\">Trademark Guidelines</a> <span id=\"thank-you-mobile\">• <a href=\"https://spring.io/thank-you\">Thank you</a></span> • <a href=\"https://www.vmware.com/help/privacy/california-privacy-rights.html\">Your California Privacy Rights</a> • <a class=\"ot-sdk-show-settings\">Cookie Settings</a> <span id=\"teconsent\"></span>",
+      "translation": "Copyright © 2005 - <script>var d = new Date();\n        document.write(d.getFullYear());</script> Broadcom. 保留所有权利。术语“Broadcom”是指 Broadcom Inc. 和/或其子公司。<br/><a href=\"https://www.vmware.com/help/legal.html\">使用条款</a> • <a href=\"https://www.vmware.com/help/privacy.html\" rel=\"noopener noreferrer\">隐私政策</a> • <a href=\"https://spring.io/trademarks\">商标指南</a> <span id=\"thank-you-mobile\">• <a href=\"https://spring.io/thank-you\">致谢</a></span> • <a href=\"https://www.vmware.com/help/privacy/california-privacy-rights.html\">您的加州隐私权</a> • <a class=\"ot-sdk-show-settings\">Cookie 设置</a> <span id=\"teconsent\"></span",
+      "count": 1
+    },
+    {
+      "source": "You must list explicitly all metadata field names and types (<code>TAG</code>, <code>TEXT</code>, or <code>NUMERIC</code>) for any metadata field used in filter expressions.\nThe <code>metadataFields</code> above registers filterable metadata fields: <code>country</code> of type <code>TAG</code>, <code>year</code> of type <code>NUMERIC</code>.",
+      "translation": "您必须明确列出过滤表达式中使用的所有元数据字段名称及其类型（<code>TAG</code>、<code>TEXT</code> 或 <code>NUMERIC</code>）。\n上方的 <code>metadataFields</code> 注册了可过滤的元数据字段：类型为 <code>TAG</code> 的 <code>country</code>，以及类型为 <code>NUMERIC</code> 的 <code>year</code>。",
+      "count": 1
+    },
+    {
+      "source": "The vector store implementation can initialize the requisite schema for you, but you must opt-in by specifying the <code>initializeSchema</code> boolean in the appropriate constructor or by setting <code>…​initialize-schema=true</code> in the <code>application.properties</code> file.",
+      "translation": "向量存储实现可以为您初始化所需的架构，但您必须通过在相应的构造函数中指定 <code>initializeSchema</code> 布尔值，或在 <code>application.properties</code> 文件中设置 <code>…​initialize-schema=true</code> 来选择启用。",
+      "count": 1
+    },
+    {
+      "source": "If required, an API key for the <a class=\"xref page\" href=\"../embeddings.html#available-implementations\">EmbeddingModel</a> to generate the embeddings stored by the <code>RedisVectorStore</code>.",
+      "translation": "如果需要，则需要用于生成由 <code class=\"xref page\" href=\"../embeddings.html#available-implementations\">EmbeddingModel</code> 生成并存储在 <code class=\"xref page\" href=\"../embeddings.html#available-implementations\">RedisVectorStore</code> 中的嵌入向量的 API 密钥。",
+      "count": 1
+    },
+    {
+      "source": "Additionally, you will need a configured <code>EmbeddingModel</code> bean. Refer to the <a class=\"xref page\" href=\"../embeddings.html#available-implementations\">EmbeddingModel</a> section for more information.",
+      "translation": "此外，您还需要一个配置好的 <code class=\"language-java\">EmbeddingModel</code> 豆（bean）。请参阅 <a class=\"xref page\" href=\"../embeddings.html#available-implementations\">EmbeddingModel</a> 部分获取更多信息。",
+      "count": 1
+    },
+    {
+      "source": "To connect to Redis and use the <code>RedisVectorStore</code>, you need to provide access details for your instance.\nA simple configuration can be provided via Spring Boot’s <code>application.yml</code>,",
+      "translation": "若要连接 Redis 并使用 <code class=\"code\">RedisVectorStore</code>，您需要提供实例的访问详情。\n可以通过 Spring Boot 的 <code class=\"code\">application.yml</code> 提供简单的配置，",
+      "count": 1
+    },
+    {
+      "source": "Properties starting with <code>spring.ai.vectorstore.redis.*</code> are used to configure the <code>RedisVectorStore</code>:",
+      "translation": "以 <code>spring.ai.vectorstore.redis.*</code> 开头的属性用于配置 <code class=\"RedisVectorStore\"></code>：",
+      "count": 1
+    },
+    {
+      "source": "The Redis Vector Store implementation provides access to the underlying native Redis client (<code>RedisClient</code>) through the <code>getNativeClient()</code> method:",
+      "translation": "Redis Vector Store 的实现通过 <code style=\"color: #d73a49;\">getNativeClient()</code> 方法提供对底层原生 Redis 客户端 (<code style=\"color: #d73a49;\">RedisClient</code>) 的访问：",
+      "count": 1
+    },
+    {
+      "source": "The <code>SemanticCacheAdvisor</code> integrates seamlessly with Spring AI’s <code>ChatClient</code> advisor pattern.\nIt automatically caches responses and returns cached results for similar queries:",
+      "translation": "<code style=\"color: #d73a49;\">SemanticCacheAdvisor</code> 与 Spring AI 的 <code style=\"color: #d73a49;\">ChatClient</code> 顾问模式（advisor pattern）无缝集成。\n它会自动缓存响应，并针对相似的查询返回缓存结果：",
+      "count": 1
+    },
+    {
+      "source": "<strong>Query embedding</strong>: When a query arrives, it is converted to a vector embedding using the configured <code>EmbeddingModel</code>",
+      "translation": "<strong>查询嵌入</strong>：当查询到达时，它将使用配置的 <code>EmbeddingModel</code> 转换为向量嵌入。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Vector search</strong>: Redis performs a range-based vector search (<code>VECTOR_RANGE</code>) to find cached entries within the similarity threshold",
+      "translation": "<strong>向量搜索</strong>：Redis 执行基于范围的向量搜索（<code style=\"color: #e06c75;\">VECTOR_RANGE</code>），以查找相似度阈值内的缓存条目",
+      "count": 1
+    },
+    {
+      "source": "<strong>Cache hit</strong>: If a semantically similar query is found, the cached <code>ChatResponse</code> is returned immediately",
+      "translation": "<strong>缓存命中</strong>：如果找到语义相似的查询，则立即返回缓存的 <code>ChatResponse</code>",
+      "count": 1
+    },
+    {
+      "source": "This section walks you through setting up <code>RedisVectorStore</code> to store document embeddings and perform similarity searches.",
+      "translation": "本节将引导您设置 <code >RedisVectorStore<code >，用于存储文档嵌入并执行相似性搜索。",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"https://redis.io\">Redis</a> is an open source (BSD licensed), in-memory data structure store used as a database, cache, message broker, and streaming engine. Redis provides data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, geospatial indexes, and streams.",
+      "translation": "<a href=\"https://redis.io\">Redis</a> 是一个开源（BSD 许可）的内存数据结构存储系统，可用于数据库、缓存、消息代理和流引擎。Redis 提供多种数据结构，如字符串、哈希、列表、集合、带范围查询的有序集合、位图、HyperLogLog、地理空间索引和流。",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"https://redis.io/docs/interact/search-and-query/\">Redis Search and Query</a> extends the core features of Redis OSS and allows you to use Redis as a vector database:",
+      "translation": "<a href=\"https://redis.io/docs/interact/search-and-query/\">Redis Search and Query</a> 扩展了 Redis OSS 的核心功能，并允许您将 Redis 用作向量数据库：",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"https://app.redislabs.com/#/\">Redis Cloud</a> (recommended)",
+      "translation": "<a href=\"https://app.redislabs.com/#/\">Redis Cloud</a>（推荐）",
+      "count": 1
+    },
+    {
+      "source": "<code>EmbeddingModel</code> instance to compute the document embeddings. Several options are available:",
+      "translation": "使用 <code>EmbeddingModel</code> 实例来计算文档嵌入。提供多种选项：",
+      "count": 1
+    },
+    {
+      "source": "There has been a significant change in the Spring AI auto-configuration, starter modules' artifact names.\nPlease refer to the <a href=\"https://docs.spring.io/spring-ai/reference/upgrade-notes.html\">upgrade notes</a> for more information.",
+      "translation": "Spring AI 的自动配置中，starter 模块的 artifact 名称发生了重大变化。\n请参阅 <a href=\"https://docs.spring.io/spring-ai/reference/upgrade-notes.html\">升级说明</a> 获取更多信息。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI provides Spring Boot auto-configuration for the Redis Vector Store.\nTo enable it, add the following dependency to your project’s Maven <code>pom.xml</code> file:",
+      "translation": "Spring AI 为 Redis Vector Store 提供 Spring Boot 自动配置。\n要启用它，请将以下依赖添加到项目的 Maven <code style=\"color: #d73a49;\">pom.xml</code> 文件中：",
+      "count": 1
+    },
+    {
+      "source": "Please have a look at the list of <a href=\"#redisvector-properties\">configuration parameters</a> for the vector store to learn about the default values and configuration options.",
+      "translation": "请查看向量库的 <a href=\"#redisvector-properties\">配置参数</a> 列表，以了解默认值和配置选项。",
+      "count": 1
+    },
+    {
+      "source": "Now you can auto-wire the <code>RedisVectorStore</code> as a vector store in your application.",
+      "translation": "现在您可以在应用程序中通过自动装配（auto-wire）<code class=\"language-html\">RedisVectorStore</code> 作为向量数据库。",
+      "count": 1
+    },
+    {
+      "source": "For redis connection configuration, alternatively, a simple configuration can be provided via Spring Boot’s <em>application.properties</em>.",
+      "translation": "对于 Redis 连接配置，或者说，也可以通过 Spring Boot 的 <em>application.properties</em> 提供简单的配置。",
+      "count": 1
+    },
+    {
+      "source": "You can leverage the generic, portable <a class=\"xref page\" href=\"../vectordbs.html#metadata-filters\">metadata filters</a> with Redis as well.",
+      "translation": "您也可以在 Redis 中利用通用的、可移植的 <a class=\"xref page\" href=\"../vectordbs.html#metadata-filters\">元数据过滤器</a>。",
+      "count": 1
+    },
+    {
+      "source": "or programmatically using the <code>Filter.Expression</code> DSL:",
+      "translation": "或者通过程序使用 <code class=\"language-html\">Filter.Expression</code> DSL：",
+      "count": 1
+    },
+    {
+      "source": "Instead of using the Spring Boot auto-configuration, you can manually configure the Redis vector store. For this you need to add the <code>spring-ai-redis-store</code> to your project:",
+      "translation": "除了使用 Spring Boot 自动配置外，您还可以手动配置 Redis vector store。为此，您需要将 <code>spring-ai-redis-store</code> 添加到您的项目中：",
+      "count": 1
+    },
+    {
+      "source": "Create a <code>RedisClient</code> bean:",
+      "translation": "创建一个 <code style=\"color: #d73a49;\">RedisClient</code> 类型的 bean：",
+      "count": 1
+    },
+    {
+      "source": "Then create the <code>RedisVectorStore</code> bean using the builder pattern:",
+      "translation": "然后使用构建者模式创建 <code >RedisVectorStore<</code>> 豆（bean）：",
+      "count": 1
+    },
+    {
+      "source": "The native client gives you access to Redis-specific features and operations that might not be exposed through the <code>VectorStore</code> interface.",
+      "translation": "原生客户端为您提供 Redis 特有的功能和操作，这些功能可能无法通过 <code class=\"language-html\">VectorStore</code> 接口暴露。",
+      "count": 1
+    },
+    {
+      "source": "<strong>COSINE</strong>: Cosine similarity (default) - measures the cosine of the angle between vectors",
+      "translation": "<strong>COSINE</strong>：余弦相似度（默认）——衡量向量之间夹角的余弦值",
+      "count": 1
+    },
+    {
+      "source": "<strong>L2</strong>: Euclidean distance - measures the straight-line distance between vectors",
+      "translation": "<strong>L2</strong>：欧几里得距离 - 衡量向量之间的直线距离",
+      "count": 1
+    },
+    {
+      "source": "<strong>IP</strong>: Inner Product - measures the dot product between vectors",
+      "translation": "<strong>IP</strong>：内积 - 衡量向量之间的点积",
+      "count": 1
+    },
+    {
+      "source": "<strong>M</strong>: Higher values improve recall but increase memory usage and index time. Typical values: 12-48.",
+      "translation": "<strong>M</strong>：较高的值可以提高召回率，但会增加内存占用和索引时间。典型值：12-48。",
+      "count": 1
+    },
+    {
+      "source": "<strong>EF_CONSTRUCTION</strong>: Higher values improve index quality but increase build time. Typical values: 100-500.",
+      "translation": "<strong>EF_CONSTRUCTION</strong>：较高的值可以提高索引质量，但会增加构建时间。典型值：100-500。",
+      "count": 1
+    },
+    {
+      "source": "<strong>EF_RUNTIME</strong>: Higher values improve search accuracy but increase latency. Typical values: 10-100.",
+      "translation": "<strong>EF_RUNTIME</strong>：较高的值可提高搜索准确性，但会增加延迟。典型值：10-100。",
+      "count": 1
+    },
+    {
+      "source": "Phrase searches with exact matching when <code>inOrder</code> is true",
+      "translation": "当 <code>inOrder</code> 为 true 时，使用精确匹配进行短语搜索",
+      "count": 1
+    },
+    {
+      "source": "Term-based searches with OR semantics when <code>inOrder</code> is false",
+      "translation": "当 <code style=\"white-space:nowrap\">inOrder</code> 为 false 时，基于术语的搜索采用 OR 语义",
+      "count": 1
+    },
+    {
+      "source": "<strong>BM25</strong>: Modern version of TF-IDF with term saturation (default)",
+      "translation": "<strong>BM25</strong>：具有词项饱和度（默认）的现代版 TF-IDF",
+      "count": 1
+    },
+    {
+      "source": "<strong>TFIDF</strong>: Classic term frequency-inverse document frequency",
+      "translation": "<strong>TF-IDF</strong>：经典的词频-逆文档频率",
+      "count": 1
+    },
+    {
+      "source": "<strong>BM25STD</strong>: Standardized BM25",
+      "translation": "<strong>BM25STD</strong>：标准化的 BM25",
+      "count": 1
+    },
+    {
+      "source": "<strong>DISMAX</strong>: Disjunction max",
+      "translation": "<strong>DISMAX</strong>：最大析取",
+      "count": 1
+    },
+    {
+      "source": "<strong>DOCSCORE</strong>: Document score",
+      "translation": "<strong>DOCSCORE</strong>：文档评分",
+      "count": 1
+    },
+    {
+      "source": "Semantic caching is a powerful optimization technique that leverages Redis vector search capabilities to cache and retrieve AI chat responses based on the <strong>semantic similarity</strong> of user queries rather than exact string matching.\nThis enables intelligent response reuse even when users phrase similar questions differently.",
+      "translation": "语义缓存是一种强大的优化技术，它利用 Redis 的向量搜索能力，根据用户查询的<strong>语义相似性</strong>而非精确字符串匹配来缓存和检索 AI 聊天响应。\n这使得即使用户以不同的方式表达相似的问题，也能实现智能的响应复用。",
+      "count": 1
+    },
+    {
+      "source": "All three queries have the same answer, but traditional caching would treat them as different requests, resulting in redundant LLM API calls.\nSemantic caching solves this by comparing the <strong>meaning</strong> of queries using vector embeddings.",
+      "translation": "这三个查询的答案相同，但传统的缓存机制会将它们视为不同的请求，从而导致冗余的 LLM API 调用。\n\n语义缓存通过使用向量嵌入来比较查询的<strong>含义</strong>，从而解决了这个问题。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Reduced API costs</strong>: Avoid redundant calls to expensive LLM APIs",
+      "translation": "<strong>降低 API 成本</strong>：避免对高昂的 LLM API 进行冗余调用",
+      "count": 1
+    },
+    {
+      "source": "<strong>Lower latency</strong>: Return cached responses instantly instead of waiting for model inference",
+      "translation": "<strong>更低的延迟</strong>：立即返回缓存的响应，而不是等待模型推理",
+      "count": 1
+    },
+    {
+      "source": "<strong>Improved scalability</strong>: Handle higher query volumes without proportional API cost increases",
+      "translation": "<strong>更高的可扩展性</strong>：在处理更高查询量的同时，避免 API 成本成比例增加",
+      "count": 1
+    },
+    {
+      "source": "<strong>Consistent responses</strong>: Return identical answers for semantically similar questions",
+      "translation": "<strong>一致性响应</strong>：对语义相似的问题返回相同的答案",
+      "count": 1
+    },
+    {
+      "source": "Spring AI provides Spring Boot auto-configuration for the Redis Semantic Cache.\nTo enable it, add the following dependency to your project’s Maven <code>pom.xml</code> file:",
+      "translation": "Spring AI 为 Redis Semantic Cache 提供 Spring Boot 自动配置。\n要启用它，请将以下依赖添加到项目的 Maven <code style=\"color: #d73a49;\">pom.xml</code> 文件中：",
+      "count": 1
+    },
+    {
+      "source": "or to your Gradle <code>build.gradle</code> build file:",
+      "translation": "或者添加到您的 Gradle <code style=\"white-space:pre;\">build.gradle</code> 构建文件中：",
+      "count": 1
+    },
+    {
+      "source": "Properties starting with <code>spring.ai.vectorstore.redis.semantic-cache.*</code> configure the semantic cache:",
+      "translation": "以 <code>spring.ai.vectorstore.redis.semantic-cache.*</code> 开头的属性用于配置语义缓存：",
+      "count": 1
+    },
+    {
+      "source": "Example configuration in <code>application.yml</code>:",
+      "translation": "<code style=\"color: #d14\">application.yml</code> 中的示例配置：",
+      "count": 1
+    },
+    {
+      "source": "You can also interact with the <code>SemanticCache</code> directly for fine-grained control:",
+      "translation": "您还可以直接与 <code style=\"color: #d12e0b;\">SemanticCache</code> 进行交互，以实现更细粒度的控制：",
+      "count": 1
+    },
+    {
+      "source": "The <code>SemanticCacheAdvisor</code> automatically isolates cached responses based on the system prompt.\nThis ensures that the same user query with different system prompts returns different cached responses, which is essential for applications with multiple AI personas or context-dependent behavior.",
+      "translation": "<code style=\"color: #d63384;\">SemanticCacheAdvisor</code> 会根据系统提示词（system prompt）自动隔离缓存的响应。\n这确保了相同的用户查询在不同的系统提示词下会返回不同的缓存响应，这对于具有多种 AI 人格或依赖上下文行为的应用至关重要。",
+      "count": 1
+    },
+    {
+      "source": "<strong>How it works:</strong>",
+      "translation": "<strong>工作原理：</strong>",
+      "count": 1
+    },
+    {
+      "source": "<strong>Higher threshold (e.g., 0.95)</strong>: Requires very close semantic matches.\nReduces false positives but may miss valid cache hits.",
+      "translation": "<strong>更高阈值（例如 0.95）</strong>：要求语义高度匹配。\n减少误报，但可能会漏掉有效的缓存命中。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Lower threshold (e.g., 0.70)</strong>: Allows broader semantic matches.\nIncreases cache hit rate but may return less relevant cached responses.",
+      "translation": "<strong>较低的阈值（例如 0.70）</strong>：允许更广泛的语义匹配。\n提高缓存命中率，但可能返回相关性较低的缓存响应。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Cache miss</strong>: If no match is found, the query proceeds to the LLM, and the response is cached for future use",
+      "translation": "<strong>缓存未命中</strong>：如果未找到匹配项，查询将继续发送至 LLM，并将响应缓存以供后续使用",
+      "count": 1
+    },
+    {
+      "source": "Store vectors and the associated metadata within hashes or JSON documents",
+      "translation": "将向量及其相关的元数据存储在哈希或 JSON 文档中",
+      "count": 1
+    },
+    {
+      "source": "Retrieve vectors",
+      "translation": "检索向量",
+      "count": 1
+    },
+    {
+      "source": "Perform vector similarity searches (KNN)",
+      "translation": "执行向量相似性搜索 (KNN)",
+      "count": 1
+    },
+    {
+      "source": "Perform range-based vector searches with radius threshold",
+      "translation": "执行具有半径阈值的基于范围的向量搜索",
+      "count": 1
+    },
+    {
+      "source": "Perform full-text searches on TEXT fields",
+      "translation": "对 TEXT 字段进行全文检索",
+      "count": 1
+    },
+    {
+      "source": "Support for multiple distance metrics (COSINE, L2, IP) and vector algorithms (HNSW, FLAT)",
+      "translation": "支持多种距离度量标准（COSINE、L2、IP）和向量算法（HNSW、FLAT）",
+      "count": 1
+    },
+    {
+      "source": "A Redis Stack instance",
+      "translation": "一个 Redis Stack 实例",
+      "count": 1
+    },
+    {
+      "source": "Whether to initialize the required schema",
+      "translation": "是否初始化所需的 schema",
+      "count": 1
+    },
+    {
+      "source": "The name of the index to store the vectors",
+      "translation": "存储向量的索引名称",
+      "count": 1
+    },
+    {
+      "source": "The prefix for Redis keys",
+      "translation": "Redis 键的前缀",
+      "count": 1
+    },
+    {
+      "source": "Distance metric for vector similarity (COSINE, L2, IP)",
+      "translation": "向量相似度的距离度量标准 (COSINE, L2, IP)",
+      "count": 1
+    },
+    {
+      "source": "Vector indexing algorithm (HNSW, FLAT)",
+      "translation": "向量索引算法 (HNSW, FLAT)",
+      "count": 1
+    },
+    {
+      "source": "HNSW: Number of maximum outgoing connections",
+      "translation": "HNSW：最大出度连接数",
+      "count": 1
+    },
+    {
+      "source": "HNSW: Number of maximum connections during index building",
+      "translation": "HNSW：构建索引期间的最大连接数",
+      "count": 1
+    },
+    {
+      "source": "HNSW: Number of connections to consider during search",
+      "translation": "HNSW：搜索过程中考虑的连接数量",
+      "count": 1
+    },
+    {
+      "source": "Default radius threshold for range searches",
+      "translation": "范围搜索的默认半径阈值",
+      "count": 1
+    },
+    {
+      "source": "Text scoring algorithm (BM25, TFIDF, BM25STD, DISMAX, DOCSCORE)",
+      "translation": "文本评分算法 (BM25, TFIDF, BM25STD, DISMAX, DOCSCORE)",
+      "count": 1
+    },
+    {
+      "source": "For example, you can use either the text expression language:",
+      "translation": "例如，您可以使用以下文本表达式语言：",
+      "count": 1
+    },
+    {
+      "source": "For example, this portable filter expression:",
+      "translation": "例如，这个可移植的过滤表达式：",
+      "count": 1
+    },
+    {
+      "source": "is converted into the proprietary Redis filter format:",
+      "translation": "被转换为专有的 Redis 过滤器格式：",
+      "count": 1
+    },
+    {
+      "source": "The Redis Vector Store supports three distance metrics for vector similarity:",
+      "translation": "Redis Vector Store 支持三种用于向量相似度的距离度量标准：",
+      "count": 1
+    },
+    {
+      "source": "Each metric is automatically normalized to a 0-1 similarity score, where 1 is most similar.",
+      "translation": "每个指标都会自动归一化为 0-1 的相似度分数，其中 1 表示最相似。",
+      "count": 1
+    },
+    {
+      "source": "The Redis Vector Store uses the HNSW (Hierarchical Navigable Small World) algorithm by default for efficient approximate nearest neighbor search. You can tune the HNSW parameters for your specific use case:",
+      "translation": "Redis Vector Store 默认使用 HNSW（Hierarchical Navigable Small World）算法来进行高效的近似最近邻搜索。您可以根据特定的使用场景调整 HNSW 参数：",
+      "count": 1
+    },
+    {
+      "source": "Parameter guidelines:",
+      "translation": "参数指南：",
+      "count": 1
+    },
+    {
+      "source": "For smaller datasets or when exact results are required, use the FLAT algorithm instead:",
+      "translation": "对于较小的数据集或需要精确结果时，请改用 FLAT 算法：",
+      "count": 1
+    },
+    {
+      "source": "The Redis Vector Store provides text search capabilities using Redis Query Engine’s full-text search features. This allows you to find documents based on keywords and phrases in TEXT fields:",
+      "translation": "Redis Vector Store 利用 Redis Query Engine 的全文检索功能提供文本搜索能力。这允许您根据 TEXT 字段中的关键词和短语来查找文档：",
+      "count": 1
+    },
+    {
+      "source": "Text search supports:",
+      "translation": "文本搜索支持：",
+      "count": 1
+    },
+    {
+      "source": "Single word searches",
+      "translation": "单词搜索",
+      "count": 1
+    },
+    {
+      "source": "Stopword filtering to ignore common words",
+      "translation": "停用词过滤以忽略常用词",
+      "count": 1
+    },
+    {
+      "source": "Multiple text scoring algorithms",
+      "translation": "多种文本评分算法",
+      "count": 1
+    },
+    {
+      "source": "Configure text search behavior at construction time:",
+      "translation": "在构建时配置文本搜索行为：",
+      "count": 1
+    },
+    {
+      "source": "Several text scoring algorithms are available:",
+      "translation": "现有几种文本评分算法：",
+      "count": 1
+    },
+    {
+      "source": "Scores are normalized to a 0-1 range for consistency with vector similarity scores.",
+      "translation": "分数被归一化到 0-1 范围，以保持与向量相似度分数的一致性。",
+      "count": 1
+    },
+    {
+      "source": "The range search returns all documents within a specified radius threshold, rather than a fixed number of nearest neighbors:",
+      "translation": "范围搜索返回指定半径阈值内的所有文档，而不是固定数量的最近邻：",
+      "count": 1
+    },
+    {
+      "source": "You can also set a default range threshold at construction time:",
+      "translation": "您也可以在构造时设置默认的范围阈值：",
+      "count": 1
+    },
+    {
+      "source": "Range search is useful when you want to retrieve all relevant documents above a similarity threshold, rather than limiting to a specific count.",
+      "translation": "当您希望检索所有相似度高于某一阈值的相关文档，而非限制在特定的数量时，范围搜索（Range search）非常有用。",
+      "count": 1
+    },
+    {
+      "source": "Traditional caching relies on exact key matches, which fails when users ask semantically equivalent questions with different wording:",
+      "translation": "传统的缓存依赖于精确的键匹配，当用户使用不同的措辞提出语义等价的问题时，这种方式就会失效：",
+      "count": 1
+    },
+    {
+      "source": "\"What is the capital of France?\"",
+      "translation": "“法国的首都是什么？”",
+      "count": 1
+    },
+    {
+      "source": "\"Tell me France’s capital city\"",
+      "translation": "“告诉我法国的首都”",
+      "count": 1
+    },
+    {
+      "source": "\"Which city is the capital of France?\"",
+      "translation": "“法国的首都是哪个城市？”",
+      "count": 1
+    },
+    {
+      "source": "Enable or disable the semantic cache",
+      "translation": "启用或禁用语义缓存",
+      "count": 1
+    },
+    {
+      "source": "Redis server host",
+      "translation": "Redis 服务器主机",
+      "count": 1
+    },
+    {
+      "source": "Redis server port",
+      "translation": "Redis 服务器端口",
+      "count": 1
+    },
+    {
+      "source": "Similarity threshold for cache hits (0.0-1.0). Higher values require closer semantic matches.",
+      "translation": "缓存命中的相似度阈值 (0.0-1.0)。数值越高，要求的语义匹配程度越接近。",
+      "count": 1
+    },
+    {
+      "source": "Name of the Redis search index for cache entries",
+      "translation": "缓存条目的 Redis 搜索索引名称",
+      "count": 1
+    },
+    {
+      "source": "Key prefix for cached entries in Redis",
+      "translation": "Redis 中缓存条目的键前缀",
+      "count": 1
+    },
+    {
+      "source": "The advisor automatically:",
+      "translation": "顾问会自动：",
+      "count": 1
+    },
+    {
+      "source": "Checks the cache for semantically similar queries before calling the LLM",
+      "translation": "在调用 LLM 之前，检查缓存中是否存在语义相似的查询。",
+      "count": 1
+    },
+    {
+      "source": "Returns cached responses when a match is found above the similarity threshold",
+      "translation": "当匹配结果高于相似度阈值时，返回缓存的响应",
+      "count": 1
+    },
+    {
+      "source": "Caches new responses after successful LLM calls",
+      "translation": "在成功调用 LLM 后缓存新的响应",
+      "count": 1
+    },
+    {
+      "source": "Supports both synchronous and streaming chat operations",
+      "translation": "支持同步和流式聊天操作",
+      "count": 1
+    },
+    {
+      "source": "For more control, you can manually configure the semantic cache components:",
+      "translation": "为了获得更多控制权，您可以手动配置语义缓存组件：",
+      "count": 1
+    },
+    {
+      "source": "For multi-tenant applications or when you need separate cache spaces, use different index names to isolate cache entries:",
+      "translation": "对于多租户应用或当您需要独立的缓存空间时，请使用不同的索引名称来隔离缓存条目：",
+      "count": 1
+    },
+    {
+      "source": "The advisor computes a deterministic hash of the system prompt and uses it as a metadata filter when storing and retrieving cached responses:",
+      "translation": "顾问对系统提示词（system prompt）计算一个确定性的哈希值，并在存储和检索缓存响应时将其作为元数据过滤器：",
+      "count": 1
+    },
+    {
+      "source": "Same user question + same system prompt → cache hit",
+      "translation": "相同的用户问题 + 相同的系统提示词 → 缓存命中",
+      "count": 1
+    },
+    {
+      "source": "Same user question + different system prompt → cache miss (separate cache entry)",
+      "translation": "相同的用户问题 + 不同的系统提示词 → 缓存未命中（独立的缓存条目）",
+      "count": 1
+    },
+    {
+      "source": "Queries without a system prompt share a common cache space",
+      "translation": "没有系统提示词的查询共享公共缓存空间",
+      "count": 1
+    },
+    {
+      "source": "For advanced use cases, you can use the context-aware cache methods directly:",
+      "translation": "对于高级用例，您可以直接使用上下文感知缓存方法：",
+      "count": 1
+    },
+    {
+      "source": "The similarity threshold determines how closely a query must match a cached entry to be considered a hit.\nThe threshold is expressed as a value between 0.0 and 1.0:",
+      "translation": "相似度阈值决定了查询必须与缓存条目有多接近才能被视为命中。\n该阈值以 0.0 到 1.0 之间的数值表示：",
+      "count": 1
+    },
+    {
+      "source": "Cached responses can be configured with a time-to-live (TTL) for automatic expiration.\nThis is essential for time-sensitive data:",
+      "translation": "缓存响应可以配置生存时间（TTL）以实现自动过期。\n这对于具有时效性的数据至关重要：",
+      "count": 1
+    },
+    {
+      "source": "The semantic cache operates using the following flow:",
+      "translation": "语义缓存的操作流程如下：",
+      "count": 1
+    },
+    {
+      "source": "The implementation leverages Redis’s efficient vector indexing (HNSW algorithm) for fast similarity searches, even with large cache sizes.",
+      "translation": "该实现利用 Redis 高效的向量索引（HNSW 算法）来进行快速相似性搜索，即使在大型缓存规模下也能保持高效。",
+      "count": 1
+    },
+    {
+      "source": "Apache®, Apache Tomcat®, Apache Kafka®, Apache Cassandra™, and Apache Geode™ are trademarks or registered trademarks of the Apache Software Foundation in the United States and/or other countries. Java™, Java™ SE, Java™ EE, and OpenJDK™ are trademarks of Oracle and/or its affiliates. Kubernetes® is a registered trademark of the Linux Foundation in the United States and other countries. Linux® is the registered trademark of Linus Torvalds in the United States and other countries. Windows® and Microsoft® Azure are registered trademarks of Microsoft Corporation. “AWS” and “Amazon Web Services” are trademarks or registered trademarks of Amazon.com Inc. or its affiliates. All other trademarks and copyrights are property of their respective owners and are only mentioned for informative purposes. Other names may be trademarks of their respective owners.",
+      "translation": "Apache®、Apache Tomcat®、Apache Kafka®、Apache Cassandra™ 和 Apache Geode™ 是 Apache Software Foundation 在美国和/或其他国家的商标或注册商标。Java™、Java™ SE、Java™ EE 和 OpenJDK™ 是 Oracle 和/或其关联公司的商标。Kubernetes® 是 Linux Foundation 在美国和其他国家的注册商标。Linux® 是 Linus Torvalds 在美国和其他国家的注册商标。Windows® 和 Microsoft® Azure 是 Microsoft Corporation 的注册商标。“AWS”和“Amazon Web Services”是 Amazon.com Inc. 或其关联公司的商标或注册商标。所有其他商标和版权均为其各自所有者的财产，仅用于提供信息。其他名称可能是其各自所有者的商标。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/projects\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-boot\">Spring Boot</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-framework\">Spring Framework</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud\">Spring Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud-dataflow\">Spring Cloud Data Flow</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-data\">Spring Data</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-integration\">Spring Integration</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-batch\">Spring Batch</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-security\">Spring Security</a>\n            <a class=\"navbar-item navbar-item-special\" href=\"https://spring.io/projects\">View all projects</a>\n            <li class=\"navbar-item navbar-item-special-3\">DEVELOPMENT TOOLS</li>\n            <a class=\"navbar-item\" href=\"https://spring.io/tools\">Spring Tools 4</a>\n            <a class=\"navbar-item navbar-item-special-2\" href=\"https://start.spring.io\">Spring Initializr\n              <svg id=\"svg-stash-f15b5668\"></svg></a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/projects\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-boot\">Spring Boot</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-framework\">Spring Framework</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud\">Spring Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud-dataflow\">Spring Cloud Data Flow</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-data\">Spring Data</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-integration\">Spring Integration</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-batch\">Spring Batch</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-security\">Spring Security</a>\n            <a class=\"navbar-item navbar-item-special\" href=\"https://spring.io/projects\">查看所有项目</a>\n            <li class=\"navbar-item navbar-item-special-3\">开发工具</li>\n            <a class=\"navbar-item\" href=\"https://spring.io/tools\">Spring Tools 4</a>\n            <a class=\"navbar-item navbar-item-special-2\" href=\"https://start.spring.io\">Spring Initializr\n              <svg id=\"svg-stash-f15b5668\"></svg></a>",
+      "count": 1
+    },
+    {
+      "source": "<nav aria-label=\"breadcrumbs\" class=\"breadcrumbs\">\n    <ul>\n      <li><a href=\"../../index.html\">Spring AI</a></li>\n      <li>Reference</li>\n      <li><a href=\"../vectordbs.html\">Vector Databases</a></li>\n      <li><a href=\"redis.html\">Redis</a></li>\n    </ul>\n  </nav>",
+      "translation": "<nav aria-label=\"breadcrumbs\" class=\"breadcrumbs\">\n    <ul>\n      <li><a href=\"../../index.html\">Spring AI</a></li>\n      <li>参考资料</li>\n      <li><a href=\"../vectordbs.html\">向量数据库</a></li>\n      <li><a href=\"redis.html\">Redis</a></li>\n    </ul>\n  </nav>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/why-spring\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/microservices\">Microservices</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/reactive\">Reactive</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/event-driven\">Event\n              Driven</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/cloud\">Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/web-applications\">Web\n              Applications</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/serverless\">Serverless</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/batch\">Batch</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/why-spring\">概述</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/microservices\">微服务</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/reactive\">响应式</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/event-driven\">事件驱动</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/cloud\">云原生</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/web-applications\">Web 应用</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/serverless\">Serverless</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/batch\">批处理</a>",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/vectordbs/redis.adoc\">\n          <svg id=\"svg-stash-05b5c46b\"></svg>\n          Edit this Page\n        </a>\n        <a href=\"https://github.com/spring-projects/spring-ai\" title=\"GitHub\">\n          <svg id=\"svg-stash-28d888b7\"></svg>\n          GitHub Project\n        </a>",
+      "translation": "<a href=\"file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/vectordbs/redis.adoc\">\n          <svg id=\"svg-stash-05b5c46b\"></svg>\n          编辑此页面\n        </a>\n        <a href=\"https://github.com/spring-projects/spring-ai\" title=\"GitHub\">\n          <svg id=\"svg-stash-28d888b7\"></svg>\n          GitHub 项目\n        </a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/solutions\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/support\">Spring Runtime</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/consulting\">Spring Consulting</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/teams\">Spring Academy For Teams</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/security\">Security Advisories</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/solutions\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/support\">Spring Runtime</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/consulting\">Spring Consulting</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/teams\">Spring Academy For Teams</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/security\">安全公告</a>",
+      "count": 1
+    },
+    {
+      "source": "<ul class=\"projects\">\n  <li>\n    Related Spring Documentation\n    <ul class=\"projects-list\">\n    </ul>\n  </li><a href=\"../../spring-projects.html\">All Docs...</a>\n</ul>",
+      "translation": "<ul class=\"projects\">\n  <li>\n    相关 Spring 文档\n    <ul class=\"projects-list\">\n    </ul>\n  </li><a href=\"../../spring-projects.html\">所有文档...</a>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.academy/courses\">Courses</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/learning-path\">Get Certified</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.academy/courses\">课程</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/learning-path\">获取认证</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"title\" href=\"../../index.html\">Spring AI</a>",
+      "translation": "<a class=\"title\" href=\"../../index.html\">Spring AI</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"search-link\" href=\"../../search.html\">Search in all Spring Docs</a>",
+      "translation": "<a class=\"search-link\" href=\"../../search.html\">在所有 Spring 文档中搜索</a>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../vectordbs.html\">Vector Databases</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"azure.html\">Azure AI Service</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"azure-cosmos-db.html\">Azure Cosmos DB</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"bedrock-knowledge-base.html\">Amazon Bedrock Knowledge Base</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"apache-cassandra.html\">Apache Cassandra Vector Store</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"chroma.html\">Chroma</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"couchbase.html\">Couchbase</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"elasticsearch.html\">Elasticsearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"gemfire.html\">GemFire</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mariadb.html\">MariaDB Vector Store</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"milvus.html\">Milvus</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mongodb.html\">MongoDB Atlas</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"neo4j.html\">Neo4j</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"opensearch.html\">OpenSearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"oracle.html\">Oracle</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"pgvector.html\">PGvector</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"pinecone.html\">Pinecone</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"qdrant.html\">Qdrant</a>\n  </li>\n  <li class=\"nav-item is-current-page\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"redis.html\">Redis</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"typesense.html\">Typesense</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"weaviate.html\">Weaviate</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"s3-vector-store.html\">S3 Vector Store</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../vectordbs.html\">向量数据库</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"azure.html\">Azure AI Service</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"azure-cosmos-db.html\">Azure Cosmos DB</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"bedrock-knowledge-base.html\">Amazon Bedrock Knowledge Base</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"apache-cassandra.html\">Apache Cassandra 向量存储</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"chroma.html\">Chroma</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"couchbase.html\">Couchbase</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"elasticsearch.html\">Elasticsearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"gemfire.html\">GemFire</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mariadb.html\">MariaDB 向量存储</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"milvus.html\">Milvus</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mongodb.html\">MongoDB Atlas</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"neo4j.html\">Neo4j</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"opensearch.html\">OpenSearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"oracle.html\">Oracle</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"pgvector.html\">PGvector</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"pinecone.html\">Pinecone</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"qdrant.html\">Qdrant</a>\n  </li>\n  <li class=\"nav-item is-current-page\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"redis.html\">Redis</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"typesense.html\">Typesense</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"weaviate.html\">Weaviate</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"s3-vector-store.html\">S3 向量存储</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../embeddings.html\">Embedding Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../bedrock.html\">Amazon Bedrock</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/bedrock-cohere-embedding.html\">Cohere</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/bedrock-titan-embedding.html\">Titan</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/azure-openai-embeddings.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/google-genai-embeddings-text.html\">Google GenAI Text Embedding</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/mistralai-embeddings.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/oci-genai-embeddings.html\">OCI GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/ollama-embeddings.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/onnx.html\">(ONNX) Transformers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/openai-embeddings.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/postgresml-embeddings.html\">PostgresML</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">VertexAI</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/vertexai-embeddings-text.html\">Text Embedding</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/vertexai-embeddings-multimodal.html\">Multimodal Embedding</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../embeddings.html\">嵌入模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../bedrock.html\">Amazon Bedrock</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/bedrock-cohere-embedding.html\">Cohere</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/bedrock-titan-embedding.html\">Titan</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/azure-openai-embeddings.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/google-genai-embeddings-text.html\">Google GenAI 文本嵌入</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/mistralai-embeddings.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/oci-genai-embeddings.html\">OCI GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/ollama-embeddings.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/onnx.html\">(ONNX) Transformers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/openai-embeddings.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/postgresml-embeddings.html\">PostgresML</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">VertexAI</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/vertexai-embeddings-text.html\">文本嵌入</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/vertexai-embeddings-multimodal.html\">多模态嵌入</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../chatmodel.html\">Chat Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/comparison.html\">Chat Models Comparison</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/bedrock-converse.html\">Amazon Bedrock Converse</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/anthropic-chat.html\">Anthropic</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/azure-openai-chat.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/deepseek-chat.html\">DeepSeek</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/dmr-chat.html\">Docker Model Runner</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/google-genai-chat.html\">Google GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/groq-chat.html\">Groq</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/mistralai-chat.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/minimax-chat.html\">MiniMax</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/nvidia-chat.html\">NVIDIA</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/ollama-chat.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/perplexity-chat.html\">Perplexity AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/oci-genai-chat.html\">OCI Generative AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/openai-chat.html\">OpenAI</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../chatmodel.html\">聊天模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/comparison.html\">聊天模型对比</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/bedrock-converse.html\">Amazon Bedrock Converse</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/anthropic-chat.html\">Anthropic</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/azure-openai-chat.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/deepseek-chat.html\">DeepSeek</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/dmr-chat.html\">Docker Model Runner</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/google-genai-chat.html\">Google GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/groq-chat.html\">Groq</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/mistralai-chat.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/minimax-chat.html\">MiniMax</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/nvidia-chat.html\">NVIDIA</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/ollama-chat.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/perplexity-chat.html\">Perplexity AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/oci-genai-chat.html\">OCI Generative AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../chat/openai-chat.html\">OpenAI</a>\n  </li>\n</ul",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-overview.html\">Model Context Protocol (MCP)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-client-boot-starter-docs.html\">MCP Client Boot Starters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-server-boot-starter-docs.html\">MCP Server Boot Starters</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-stdio-sse-server-boot-starter-docs.html\">STDIO and SSE MCP Servers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-streamable-http-server-boot-starter-docs.html\">Streamable-HTTP MCP Servers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-stateless-server-boot-starter-docs.html\">Stateless Streamable-HTTP MCP Servers</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-security.html\">MCP Security (WIP)</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-overview.html\">MCP Annotations</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-client.html\">Client Annotations</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-server.html\">Server Annotations</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-special-params.html\">Special Parameters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-examples.html\">MCP Annotations Examples</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-overview.html\">Model Context Protocol (MCP)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-client-boot-starter-docs.html\">MCP Client Boot Starters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-server-boot-starter-docs.html\">MCP Server Boot Starters</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-stdio-sse-server-boot-starter-docs.html\">STDIO 和 SSE MCP 服务器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-streamable-http-server-boot-starter-docs.html\">Streamable-HTTP MCP 服务器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-stateless-server-boot-starter-docs.html\">无状态 Streamable-HTTP MCP 服务器</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-security.html\">MCP 安全性 (WIP)</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-overview.html\">MCP 注解</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-client.html\">客户端注解</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-server.html\">服务器注解</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-special-params.html\">特殊参数</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-examples.html\">MCP 注解示例</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">Guides</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/spring-ai-community/awesome-spring-ai\">Awesome Spring AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/getting-started-mcp.html\">Getting Started with MCP</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/dynamic-tool-search.html\">Dynamic Tool Discovery</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/llm-as-judge.html\">LLM-as-a-Judge Evaluation</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../chat/prompt-engineering-patterns.html\">Prompt Engineering Patterns</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../effective-agents.html\">Building Effective Agents</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agents\">Building agents with Spring AI by AWS</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agentcore\">Building agents with Spring AI and AgentCore by AWS</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/microsoft/Spring-AI-for-Beginners\">Spring AI for Beginners by Microsoft</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">指南</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/spring-ai-community/awesome-spring-ai\">Awesome Spring AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/getting-started-mcp.html\">MCP 入门指南</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/dynamic-tool-search.html\">动态工具发现</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/llm-as-judge.html\">LLM-as-a-Judge 评估</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../chat/prompt-engineering-patterns.html\">提示工程模式</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../effective-agents.html\">构建高效 Agent</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agents\">由 AWS 提供的使用 Spring AI 构建 Agent</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agentcore\">由 AWS 提供的使用 Spring AI 和 AgentCore 构建 Agent</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/microsoft/Spring-AI-for-Beginners\">由 Microsoft 提供的 Spring AI 入门教程</a>\n  </li>\n</ul",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio.html\">Audio Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio/transcriptions.html\">Transcription API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/transcriptions/azure-openai-transcriptions.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/transcriptions/openai-transcriptions.html\">OpenAI</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio/speech.html\">Text-To-Speech (TTS) API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/speech/openai-speech.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/speech/elevenlabs-speech.html\">ElevenLabs</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio.html\">音频模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio/transcriptions.html\">转录 API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/transcriptions/azure-openai-transcriptions.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/transcriptions/openai-transcriptions.html\">OpenAI</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio/speech.html\">文本转语音 (TTS) API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/speech/openai-speech.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/speech/elevenlabs-speech.html\">ElevenLabs</a>\n  </li>\n</ul>\n  </li>\n</ul",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../chatclient.html\">Chat Client API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../advisors.html\">Advisors</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../advisors-recursive.html\">Recursive Advisors</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../chatclient.html\">Chat Client API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../advisors.html\">顾问</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../advisors-recursive.html\">递归顾问</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../imageclient.html\">Image Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/azure-openai-image.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/openai-image.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/stabilityai-image.html\">Stability</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../imageclient.html\">图像模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/azure-openai-image.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/openai-image.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/stabilityai-image.html\">Stability</a>\n  </li>\n</ul",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../moderation.html\">Moderation Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../moderation/openai-moderation.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../moderation/mistral-ai-moderation.html\">Mistral AI</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../moderation.html\">审核模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../moderation/openai-moderation.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../moderation/mistral-ai-moderation.html\">Mistral AI</a>\n  </li>\n</ul",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../../upgrade-notes.html\">Upgrade Notes</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../tools-migration.html\">Migrating FunctionCallback to ToolCallback API</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../chat/anthropic-migration.html\">Migrating the Anthropic Module to the Official Java SDK</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../../upgrade-notes.html\">升级说明</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../tools-migration.html\">将 FunctionCallback 迁移到 ToolCallback API</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../chat/anthropic-migration.html\">将 Anthropic 模块迁移到官方 Java SDK</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\nThe auto-configuration provides a default embedding model optimized for semantic caching (<code>redis/langcache-embed-v1</code>).\nYou can override this by providing your own <code>EmbeddingModel</code> bean.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\n自动配置提供了一个针对语义缓存优化的默认嵌入模型 (<code>redis/langcache-embed-v1</code>)。\n您可以通过提供自定义的 <code>EmbeddingModel</code> bean 来覆盖此设置。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\nRefer to the <a class=\"xref page\" href=\"../../getting-started.html#dependency-management\">Dependency Management</a> section to add the Spring AI BOM to your build file.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\n请参阅 <a class=\"xref page\" href=\"../../getting-started.html#dependency-management\">Dependency Management</a> 部分，将 Spring AI BOM 添加到您的构建文件中。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\nRefer to the <a class=\"xref page\" href=\"../../getting-started.html#artifact-repositories\">Artifact Repositories</a> section to add Maven Central and/or Snapshot Repositories to your build file.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\n请参阅 <a class=\"xref page\" href=\"../../getting-started.html#artifact-repositories\">Artifact Repositories</a> 部分，将 Maven Central 和/或 Snapshot Repositories 添加到您的构建文件中。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nThose (portable) filter expressions get automatically converted into <a href=\"https://redis.io/docs/interact/search-and-query/query/\">Redis search queries</a>.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n这些（可移植的）过滤表达式会自动转换为 <a href=\"https://redis.io/docs/interact/search-and-query/query/\">Redis 查询语句</a>。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../../index.html\">Overview</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../concepts.html\">AI Concepts</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../../index.html\">概览</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../concepts.html\">AI 概念</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../retrieval-augmented-generation.html\">Retrieval Augmented Generation (RAG)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../etl-pipeline.html\">ETL Pipeline</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../retrieval-augmented-generation.html\">检索增强生成 (RAG)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../etl-pipeline.html\">ETL 流水线</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nthis is a breaking change! In earlier versions of Spring AI, this schema initialization happened by default.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n这是一个重大变更！在之前的 Spring AI 版本中，此架构初始化是默认发生的。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\nStart with a higher threshold (stricter matching) and gradually lower it based on your application’s tolerance for semantic variation.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"提示\"></i>\n</td>\n<td class=\"content\">\n从较高的阈值（更严格的匹配）开始，并根据您的应用对语义变化的容忍度逐渐降低该阈值。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../../getting-started.html\">Getting Started</a>",
+      "translation": "<a class=\"nav-link\" href=\"../../getting-started.html\">入门指南</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../structured-output-converter.html\">Structured Output</a>",
+      "translation": "<a class=\"nav-link\" href=\"../structured-output-converter.html\">结构化输出</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../chat-memory.html\">Chat Memory</a>",
+      "translation": "<a class=\"nav-link\" href=\"../chat-memory.html\">聊天记忆</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../tools.html\">Tool Calling</a>",
+      "translation": "<a class=\"nav-link\" href=\"../tools.html\">工具调用</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../testing.html\">Model Evaluation</a>",
+      "translation": "<a class=\"nav-link\" href=\"../testing.html\">模型评估</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../docker-compose.html\">Development-time Services</a>",
+      "translation": "<a class=\"nav-link\" href=\"../docker-compose.html\">开发时服务</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#redisvector-properties\"></a>Configuration Properties",
+      "translation": "<a class=\"anchor\" href=\"#redisvector-properties\">配置属性</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_metadata_filtering\"></a>Metadata Filtering",
+      "translation": "<a class=\"anchor\" href=\"#_metadata_filtering\">元数据过滤</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_manual_configuration\"></a>Manual Configuration",
+      "translation": "<a class=\"anchor\" href=\"#_manual_configuration\">手动配置</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_accessing_the_native_client\"></a>Accessing the Native Client",
+      "translation": "<a class=\"anchor\" href=\"#_accessing_the_native_client\">访问原生客户端</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_distance_metrics\"></a>Distance Metrics",
+      "translation": "<a class=\"anchor\" href=\"#_distance_metrics\">距离指标</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_hnsw_algorithm_configuration\"></a>HNSW Algorithm Configuration",
+      "translation": "<a class=\"anchor\" href=\"#_hnsw_algorithm_configuration\">HNSW 算法配置</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_text_search\"></a>Text Search",
+      "translation": "<a class=\"anchor\" href=\"#_text_search\"></a文本搜索",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_text_scoring_algorithms\"></a>Text Scoring Algorithms",
+      "translation": "<a class=\"anchor\" href=\"#_text_scoring_algorithms\">文本评分算法</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_range_search\"></a>Range Search",
+      "translation": "<a class=\"anchor\" href=\"#_range_search\">范围搜索</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_semantic_caching\"></a>Semantic Caching",
+      "translation": "<a class=\"anchor\" href=\"#_semantic_caching\">语义缓存</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_why_semantic_caching\"></a>Why Semantic Caching?",
+      "translation": "<a class=\"anchor\" href=\"#_why_semantic_caching\">为什么选择语义缓存？</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#semantic-cache-properties\"></a>Configuration Properties",
+      "translation": "<a class=\"anchor\" href=\"#semantic-cache-properties\">配置属性</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_using_the_semanticcacheadvisor\"></a>Using the SemanticCacheAdvisor",
+      "translation": "<a class=\"anchor\" href=\"#_using_the_semanticcacheadvisor\">使用 SemanticCacheAdvisor</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_direct_cache_usage\"></a>Direct Cache Usage",
+      "translation": "<a class=\"anchor\" href=\"#_direct_cache_usage\">直接缓存使用</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_manual_configuration_2\"></a>Manual Configuration",
+      "translation": "<a class=\"anchor\" href=\"#_manual_configuration_2\">手动配置</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_cache_isolation_with_namespaces\"></a>Cache Isolation with Namespaces",
+      "translation": "<a class=\"anchor\" href=\"#_cache_isolation_with_namespaces\">使用命名空间进行缓存隔离</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_system_prompt_isolation\"></a>System Prompt Isolation",
+      "translation": "<a class=\"anchor\" href=\"#_system_prompt_isolation\">系统提示词隔离</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_context_aware_cache_api\"></a>Context-Aware Cache API",
+      "translation": "<a class=\"anchor\" href=\"#_context_aware_cache_api\">上下文感知缓存 API</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_tuning_the_similarity_threshold\"></a>Tuning the Similarity Threshold",
+      "translation": "<a class=\"anchor\" href=\"#_tuning_the_similarity_threshold\">调整相似度阈值</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_ttl_and_cache_expiration\"></a>TTL and Cache Expiration",
+      "translation": "<a class=\"anchor\" href=\"#_ttl_and_cache_expiration\">TTL 与缓存过期</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_how_it_works\"></a>How It Works",
+      "translation": "<a class=\"anchor\" href=\"#_how_it_works\">工作原理</a>",
+      "count": 1
+    },
+    {
+      "source": "Why Spring",
+      "translation": "为什么选择 Spring",
+      "count": 1
+    },
+    {
+      "source": "Spring AI",
+      "translation": "Spring AI",
+      "count": 1
+    }
+  ]
+}

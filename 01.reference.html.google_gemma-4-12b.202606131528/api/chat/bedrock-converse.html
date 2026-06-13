@@ -1,0 +1,2291 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width,initial-scale=1" name="viewport"/>
+    <title>Bedrock Converse API :: Spring AI 参考手册</title>
+    <link href="https://docs.spring.io/spring-ai/reference/api/chat/bedrock-converse.html" rel="canonical"/>
+    <link href="comparison.html" rel="prev"/>
+    <link href="anthropic-chat.html" rel="next"/>
+    <meta content="Antora 3.1.15" name="generator"/>
+    <script>
+!function (theme, navWidth) {
+  if (theme === 'dark') document.documentElement.classList.add('dark-theme')
+  if (navWidth) document.documentElement.style.setProperty('--nav-width', `${navWidth}px`)
+}(localStorage && localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)')?.matches && 'dark'),
+  localStorage && localStorage.getItem('nav-width'))
+    </script>
+    <link href="../../_/css/site.css" rel="stylesheet"/>
+    <link href="../../_/css/vendor/search.css" rel="stylesheet"/>
+    <link href="../../_/css/vendor/page-search.css" rel="stylesheet"/>
+    <link href="../../_/css/vendor/asciidoctor-tabs.css" rel="stylesheet"/>
+
+    <meta content="v0.4.17" name="antora-ui-version"/> 
+    <meta content="2.0.0" name="version"/>
+    <meta content="ai" name="component"/>
+    <meta content="false" name="latest-version"/>
+    <link href="../../_/img/favicon.ico" rel="icon" type="image/vnd.microsoft.icon"/>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://spring.io">
+        <img alt="Spring" class="block" id="springlogo" src="../../_/img/spring-logo.svg"/>
+      </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="navbar-menu" id="topbar-nav">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">为什么选择 Spring</a>
+          <div class="navbar-dropdown"><a class="navbar-item" href="https://spring.io/why-spring">概述</a>
+<a class="navbar-item" href="https://spring.io/microservices">微服务</a>
+<a class="navbar-item" href="https://spring.io/reactive">响应式</a>
+<a class="navbar-item" href="https://spring.io/event-driven">事件驱动</a>
+<a class="navbar-item" href="https://spring.io/cloud">云原生</a>
+<a class="navbar-item" href="https://spring.io/web-applications">Web 应用</a>
+<a class="navbar-item" href="https://spring.io/serverless">Serverless</a>
+<a class="navbar-item" href="https://spring.io/batch">批处理</a></div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Learn</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://spring.io/learn">Overview</a>
+            <a class="navbar-item" href="https://spring.io/quickstart">Quickstart</a>
+            <a class="navbar-item" href="https://spring.io/guides">Guides</a>
+            <a class="navbar-item" href="https://spring.io/blog">Blog</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Projects</a>
+          <div class="navbar-dropdown" style="min-width: 280px"><a class="navbar-item" href="https://spring.io/projects">概览</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-boot">Spring Boot</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-framework">Spring Framework</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-cloud">Spring Cloud</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-cloud-dataflow">Spring Cloud Data Flow</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-data">Spring Data</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-integration">Spring Integration</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-batch">Spring Batch</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-security">Spring Security</a>
+<a class="navbar-item navbar-item-special" href="https://spring.io/projects">查看所有项目</a>
+<li class="navbar-item navbar-item-special-3">开发工具</li>
+<a class="navbar-item" href="https://spring.io/tools">Spring Tools 4</a>
+<a class="navbar-item navbar-item-special-2" href="https://start.spring.io">Spring Initializr
+              <svg class="external-link-icon" viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><polyline fill="none" points="15 10.94 15 15 1 15 1 1 5.06 1" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"></polyline><polyline fill="none" points="8.93 1 15 1 15 7.07" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"></polyline><line fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" x1="15" x2="8" y1="1" y2="8"></line></svg></a></div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Academy</a>
+          <div class="navbar-dropdown"><a class="navbar-item" href="https://spring.academy/courses">课程</a>
+<a class="navbar-item" href="https://spring.academy/learning-path">获取认证</a></div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Solutions</a>
+          <div class="navbar-dropdown lg"><a class="navbar-item" href="https://spring.io/solutions">概览</a>
+<a class="navbar-item" href="https://spring.io/support">Spring Runtime</a>
+<a class="navbar-item" href="https://spring.io/consulting">Spring Consulting</a>
+<a class="navbar-item" href="https://spring.academy/teams">Spring Academy For Teams</a>
+<a class="navbar-item" href="https://spring.io/security">安全公告</a></div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable is-community">
+          <a class="navbar-link" href="#">Community</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://spring.io/community">Overview</a>
+            <a class="navbar-item" href="https://spring.io/events">Events</a>
+            <a class="navbar-item" href="https://spring.io/team">Team</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <label class="theme-toggler">
+      <input id="switch-theme-checkbox" name="switch-theme-checkbox" type="checkbox"/>
+      <span class="icon"><svg aria-hidden="true" class="svg-inline--fa fa-moon moon" data-icon="moon" data-prefix="fas" focusable="false" role="img" viewbox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z" fill="currentColor"></path>
+</svg>
+        <svg aria-hidden="true" class="svg-inline--fa fa-sun sun" data-icon="sun" data-prefix="fas" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z" fill="currentColor"></path>
+</svg></span>
+      <span class="text">light</span>
+    </label>
+  </nav>
+</header>
+<script>
+!function (theme) {
+  if (theme === 'dark') {
+    document.getElementById('switch-theme-checkbox').parentElement.classList.add('active')
+  }
+}(localStorage && localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)')?.matches && 'dark'))
+</script>
+<div class="body">
+<div class="nav-container" data-component="ai" data-version="2.0.0">
+  <aside class="nav">
+    <div class="panels">
+      <div class="nav-panel-menu is-active" data-panel="menu">
+        <nav class="nav-menu">
+<div class="context">
+  <span class="title">Spring AI</span>
+  <span class="version">2.0.0</span>
+  <button class="browse-version" id="browse-version">
+    <svg height="24px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewbox="0 0 512 512" width="24px" xml:space="preserve"><g><path d="M256,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S273.7,224,256,224L256,224z"></path><path d="M128.4,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S146,224,128.4,224L128.4,224z"></path><path d="M384,224c-17.7,0-32,14.3-32,32s14.3,32,32,32s32-14.3,32-32S401.7,224,384,224L384,224z"></path></g></svg>
+  </button>
+  <div class="search">
+  <button class="DocSearch-Button search-button">
+    <svg enable-background="new 0 0 32 32" id="Glyph" version="1.1" viewbox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M27.414,24.586l-5.077-5.077C23.386,17.928,24,16.035,24,14c0-5.514-4.486-10-10-10S4,8.486,4,14  s4.486,10,10,10c2.035,0,3.928-0.614,5.509-1.663l5.077,5.077c0.78,0.781,2.048,0.781,2.828,0  C28.195,26.633,28.195,25.367,27.414,24.586z M7,14c0-3.86,3.14-7,7-7s7,3.14,7,7s-3.14,7-7,7S7,17.86,7,14z" id="XMLID_223_"></path>
+</svg>
+    <span>Search</span>
+    <span class="search-key"></span>
+  </button>
+</div>
+</div><ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../../index.html">概览</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../../concepts.html">AI 概念</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="1"><a class="nav-link" href="../../getting-started.html">入门指南</a></li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Reference</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../chatclient.html">Chat Client API</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="../advisors.html">顾问</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../advisors-recursive.html">递归顾问</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../prompt.html">Prompts</a>
+  </li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="../structured-output-converter.html">结构化输出</a></li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../multimodality.html">Multimodality</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../index.html">Models</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../chatmodel.html">聊天模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="comparison.html">聊天模型对比</a>
+</li>
+<li class="nav-item is-current-page" data-depth="4">
+<a class="nav-link" href="bedrock-converse.html">Amazon Bedrock Converse</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="anthropic-chat.html">Anthropic</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="azure-openai-chat.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="deepseek-chat.html">DeepSeek</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="dmr-chat.html">Docker Model Runner</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="google-genai-chat.html">Google GenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="groq-chat.html">Groq</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mistralai-chat.html">Mistral AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="minimax-chat.html">MiniMax</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="nvidia-chat.html">NVIDIA</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="ollama-chat.html">Ollama</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="perplexity-chat.html">Perplexity AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="oci-genai-chat.html">OCI Generative AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="openai-chat.html">OpenAI</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../embeddings.html">嵌入模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="../bedrock.html">Amazon Bedrock</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="../embeddings/bedrock-cohere-embedding.html">Cohere</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="../embeddings/bedrock-titan-embedding.html">Titan</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../embeddings/azure-openai-embeddings.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../embeddings/google-genai-embeddings-text.html">Google GenAI 文本嵌入</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../embeddings/mistralai-embeddings.html">Mistral AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../embeddings/oci-genai-embeddings.html">OCI GenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../embeddings/ollama-embeddings.html">Ollama</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../embeddings/onnx.html">(ONNX) Transformers</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../embeddings/openai-embeddings.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../embeddings/postgresml-embeddings.html">PostgresML</a>
+</li>
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<span class="nav-text">VertexAI</span>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="../embeddings/vertexai-embeddings-text.html">文本嵌入</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="../embeddings/vertexai-embeddings-multimodal.html">多模态嵌入</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../imageclient.html">图像模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../image/azure-openai-image.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../image/openai-image.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../image/stabilityai-image.html">Stability</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../audio.html">音频模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="../audio/transcriptions.html">转录 API</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="../audio/transcriptions/azure-openai-transcriptions.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="../audio/transcriptions/openai-transcriptions.html">OpenAI</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="../audio/speech.html">文本转语音 (TTS) API</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="../audio/speech/openai-speech.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="../audio/speech/elevenlabs-speech.html">ElevenLabs</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../moderation.html">审核模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../moderation/openai-moderation.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../moderation/mistral-ai-moderation.html">Mistral AI</a>
+</li>
+</ul></li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="../chat-memory.html">聊天记忆</a></li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="../tools.html">工具调用</a></li>
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../mcp/mcp-overview.html">Model Context Protocol (MCP)</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../mcp/mcp-client-boot-starter-docs.html">MCP Client Boot Starters</a>
+</li>
+<li class="nav-item" data-depth="3">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="../mcp/mcp-server-boot-starter-docs.html">MCP Server Boot Starters</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../mcp/mcp-stdio-sse-server-boot-starter-docs.html">STDIO 和 SSE MCP 服务器</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../mcp/mcp-streamable-http-server-boot-starter-docs.html">Streamable-HTTP MCP 服务器</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../mcp/mcp-stateless-server-boot-starter-docs.html">无状态 Streamable-HTTP MCP 服务器</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../mcp/mcp-security.html">MCP 安全性 (WIP)</a>
+</li>
+<li class="nav-item" data-depth="3">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="../mcp/mcp-annotations-overview.html">MCP 注解</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../mcp/mcp-annotations-client.html">客户端注解</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../mcp/mcp-annotations-server.html">服务器注解</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../mcp/mcp-annotations-special-params.html">特殊参数</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../mcp/mcp-annotations-examples.html">MCP 注解示例</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../retrieval-augmented-generation.html">检索增强生成 (RAG)</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../etl-pipeline.html">ETL 流水线</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="../testing.html">模型评估</a></li>
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../vectordbs.html">向量数据库</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/azure.html">Azure AI Service</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/azure-cosmos-db.html">Azure Cosmos DB</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/bedrock-knowledge-base.html">Amazon Bedrock Knowledge Base</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/apache-cassandra.html">Apache Cassandra 向量存储</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/chroma.html">Chroma</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/couchbase.html">Couchbase</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/elasticsearch.html">Elasticsearch</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/gemfire.html">GemFire</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/mariadb.html">MariaDB 向量存储</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/milvus.html">Milvus</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/mongodb.html">MongoDB Atlas</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/neo4j.html">Neo4j</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/opensearch.html">OpenSearch</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/oracle.html">Oracle</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/pgvector.html">PGvector</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/pinecone.html">Pinecone</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/qdrant.html">Qdrant</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/redis.html">Redis</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/typesense.html">Typesense</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/weaviate.html">Weaviate</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/s3-vector-store.html">S3 向量存储</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../observability/index.html">Observability</a>
+  </li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="../docker-compose.html">开发时服务</a></li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Testing</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../testcontainers.html">Testcontainers</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1"><button class="nav-item-toggle"></button>
+<span class="nav-text">指南</span>
+<ul class="nav-list">
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://github.com/spring-ai-community/awesome-spring-ai">Awesome Spring AI</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../../guides/getting-started-mcp.html">MCP 入门指南</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../../guides/dynamic-tool-search.html">动态工具发现</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../../guides/llm-as-judge.html">LLM-as-a-Judge 评估</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="prompt-engineering-patterns.html">提示工程模式</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../effective-agents.html">构建高效智能体</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://catalog.workshops.aws/java-spring-ai-agents">AWS 提供的使用 Spring AI 构建智能体教程</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://catalog.workshops.aws/java-spring-ai-agentcore">AWS 提供的使用 Spring AI 和 AgentCore 构建智能体教程</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://github.com/microsoft/Spring-AI-for-Beginners">Microsoft 提供的 Spring AI 入门教程</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="1"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../../upgrade-notes.html">升级说明</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../tools-migration.html">将 FunctionCallback 迁移到 ToolCallback API</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="anthropic-migration.html">将 Anthropic 模块迁移到官方 Java SDK</a>
+</li>
+</ul></li>
+</ul>
+  </li>
+</ul>
+          <div class="toggle-sm">
+            <button class="nav-toggle" id="nav-toggle-2"></button>
+          </div>
+        </nav>
+      </div>
+      <div class="nav-collapse">
+        <button id="nav-collapse-toggle"><span></span></button>        
+      </div>
+    </div>
+    <div class="nav-resize"></div>
+  </aside>
+</div>
+<script>
+!function (sidebar) {
+  if (sidebar) {
+    document.body.classList.add('nav-sm')
+  }
+}(localStorage && localStorage.getItem('sidebar') === 'close')
+</script><main class="article">
+<div class="toolbar" role="navigation">
+  <button class="nav-toggle" id="nav-toggle-1"></button>
+<div class="search">
+  <button class="DocSearch-Button search-button">
+    <svg id="svg-stash-de15fb15"></svg>
+    <span>Search</span>
+    <span class="search-key"></span>
+  </button>
+</div>
+</div>
+  <div class="content">
+<aside class="sidebar">
+  <div class="content">
+    <div class="toc" data-levels="2" data-title="Bedrock Converse API">
+      <div class="toc-menu"></div>
+    </div>
+    <div class="sidebar-links"><a href="file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/chat/bedrock-converse.adoc">
+<svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m16 2.012 3 3L16.713 7.3l-3-3zM4 14v3h3l8.299-8.287-3-3zm0 6h16v2H4z"></path></svg>
+          编辑此页面
+        </a>
+<a href="https://github.com/spring-projects/spring-ai" title="GitHub">
+<svg height="512px" id="Layer_1" version="1.1" viewbox="0 0 512 512" width="512px" xmlns="http://www.w3.org/2000/svg"><style type="text/css">
+              .st0{fill-rule:evenodd;clip-rule:evenodd;} </style><g><path class="st0" d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"></path></g></svg>
+          GitHub 项目
+        </a></div>
+  </div>
+</aside>
+<article class="doc">
+<div class="breadcrumbs-container"><nav aria-label="breadcrumbs" class="breadcrumbs">
+<ul>
+<li><a href="../../index.html">Spring AI</a></li>
+<li>参考资料</li>
+<li><a href="../index.html">Models</a></li>
+<li><a href="../chatmodel.html">Chat Models</a></li>
+<li><a href="bedrock-converse.html">Amazon Bedrock Converse</a></li>
+</ul>
+</nav></div><h1 class="page" id="page-title">Bedrock Converse API</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference.html">Amazon Bedrock Converse API</a> 为对话式 AI 模型提供了一个统一的接口，并具备增强功能，包括函数/工具调用、多模态输入和流式响应。</p>
+</div>
+<div class="paragraph">
+<p>Bedrock Converse API 具有以下高层级功能：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>工具/函数调用：支持在对话过程中进行函数定义和工具使用</p>
+</li>
+<li>
+<p>多模态输入：能够在对话中同时处理文本和图像输入</p>
+</li>
+<li>
+<p>流式支持：模型响应的实时流式传输</p>
+</li>
+<li>
+<p>系统消息：支持系统级指令和上下文设置</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-tip" title="提示"></i>
+</td>
+<td class="content">
+Bedrock Converse API 提供了一个统一的接口，可在处理 AWS 特定身份验证和基础设施问题的同时，支持多个模型提供商。
+目前，Converse API <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference-supported-models-features.html">支持的模型</a> 包括：
+<code>Amazon Titan</code>、<code>Amazon Nova</code>、<code>AI21 Labs</code>、<code>Anthropic Claude</code>、<code>Cohere Command</code>、<code>Meta Llama</code>、<code>Mistral AI</code>。
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>遵循 Bedrock 的建议，Spring AI 正在过渡到使用 Amazon Bedrock 的 Converse API 来实现 Spring AI 中的所有聊天对话。
+
+虽然现有的 <a class="xref page" href="../bedrock-chat.html">InvokeModel API</a> 支持对话应用，但我们强烈建议为所有 Chat 对话模型采用 Converse API。</p>
+</div>
+<div class="paragraph">
+<p>Converse API 不支持嵌入（embedding）操作，因此这些操作将保留在当前 API 中，且现有 <code>InvokeModel API</code> 中的嵌入模型功能将继续保留。</p>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prerequisites"><a class="anchor" href="#_prerequisites"></a>Prerequisites</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>请参阅 <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started.html">Getting started with Amazon Bedrock</a> 以设置 API 访问权限</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>获取 AWS 凭证：如果您还没有 AWS 账号且尚未配置 AWS CLI，此视频指南可以帮助您进行配置：<a href="https://youtu.be/gswVHTrRX8I?si=buaY7aeI0l3-bBVb">AWS CLI &amp; SDK Setup in Less Than 4 Minutes!</a>。您应当能够获取您的访问密钥（access key）和安全密钥（security key）。</p>
+</li>
+<li>
+<p>启用模型使用：前往 <a href="https://us-east-1.console.aws.amazon.com/bedrock/home">Amazon Bedrock</a>，并在左侧的 <a href="https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/modelaccess">Model Access</a> 菜单中配置您将要使用的模型的访问权限。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_auto_configuration"><a class="anchor" href="#_auto_configuration"></a>Auto-configuration</h2>
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Spring AI 的自动配置中，starter 模块的 artifact 名称发生了重大变化。
+请参阅 <a href="https://docs.spring.io/spring-ai/reference/upgrade-notes.html">升级说明</a> 获取更多信息。</p>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="paragraph">
+<p>将 <code>spring-ai-starter-model-bedrock-converse</code> 依赖添加到您项目的 Maven <code>pom.xml</code> 或 Gradle <code>build.gradle</code> 构建文件中：</p>
+</div>
+<div class="openblock tabs is-sync is-loading" id="_tabs_1">
+<div class="content">
+<div class="ulist tablist">
+<ul>
+<li class="tab" id="_tabs_1_maven">
+<p>Maven</p>
+</li>
+<li class="tab" id="_tabs_1_gradle">
+<p>Gradle</p>
+</li>
+</ul>
+</div>
+<div aria-labelledby="_tabs_1_maven" class="tabpanel" id="_tabs_1_maven--panel">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-ai-starter-model-bedrock-converse&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+<div aria-labelledby="_tabs_1_gradle" class="tabpanel" id="_tabs_1_gradle--panel">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-gradle hljs" data-lang="gradle">dependencies {
+    implementation 'org.springframework.ai:spring-ai-starter-model-bedrock-converse'
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+请参阅 <a class="xref page" href="../../getting-started.html#dependency-management">Dependency Management</a> 部分，将 Spring AI BOM 添加到您的构建文件中。
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="sect2">
+<h3 id="_chat_properties"><a class="anchor" href="#_chat_properties">聊天属性</a></h3>
+<div class="paragraph">
+<p>前缀 <code>spring.ai.bedrock.aws</code> 是用于配置连接到 AWS Bedrock 的属性前缀。</p>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 42.8571%;"/>
+<col style="width: 42.8571%;"/>
+<col style="width: 14.2858%;"/>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Property</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.bedrock.aws.region</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">要使用的 AWS 区域</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">us-east-1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.bedrock.aws.timeout</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AWS 整个 API 调用请求的最大时长限制</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5m</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.bedrock.aws.connection-timeout</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">建立连接时的最大等待时长</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5s</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.bedrock.aws.connection-acquisition-timeout</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">从连接池获取新连接的最大等待时间</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30s</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.bedrock.aws.async-read-timeout</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">读取异步响应所花费的最大时长</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30s</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.bedrock.aws.access-key</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AWS 访问密钥</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.bedrock.aws.secret-key</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AWS 密钥</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.bedrock.aws.session-token</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">用于临时凭证的 AWS 会话令牌</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.bedrock.aws.profile.name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AWS 配置文件的名称。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.bedrock.aws.profile.credentials-path</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AWS 凭证文件路径。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.bedrock.aws.profile.configuration-path</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AWS 配置文件路径。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>启用和禁用聊天自动配置现在通过带有前缀 <code style="color: #d73a49;">spring.ai.model.chat</code> 的顶级属性进行配置。</p>
+</div>
+<div class="paragraph">
+<p>若要启用，请设置 spring.ai.model.chat=bedrock-converse（默认已启用）</p>
+</div>
+<div class="paragraph">
+<p>若要禁用，请设置 spring.ai.model.chat=none（或任何不匹配 bedrock-converse 的值）</p>
+</div>
+<div class="paragraph">
+<p>此更改是为了支持配置多个模型。</p>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="paragraph">
+<p>前缀 <code>spring.ai.bedrock.converse.chat</code> 是用于配置 Converse API 对话模型实现的属性前缀。</p>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 33.3333%;"/>
+<col style="width: 55.5555%;"/>
+<col style="width: 11.1112%;"/>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Property</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.bedrock.converse.chat.enabled (已移除且不再有效)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">启用 Bedrock Converse 对话模型。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.model.chat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">启用 Bedrock Converse 对话模型。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">bedrock-converse</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.bedrock.converse.chat.model</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">要使用的模型 ID。您可以使用<a href="https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference-supported-models-features.html">支持的模型和模型功能</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">无。请从 AWS Bedrock 控制台选择您的 <a href="https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/models">modelId</a>。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.bedrock.converse.chat.temperature</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">控制输出的随机性。数值范围可在 [0.0, 1.0] 之间。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.8</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.bedrock.converse.chat.top-p</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">采样时考虑的 token 的最大累计概率。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AWS Bedrock 默认值</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.bedrock.converse.chat.top-k</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">生成下一个 token 的候选 token 数量。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">AWS Bedrock 默认值</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.bedrock.converse.chat.max-tokens</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">生成的响应中的最大 token 数量。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">500</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="chat-options"><a class="anchor" href="#chat-options"></a>运行时选项</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>使用可移植的 <code>ChatOptions</code> 或 <code>BedrockChatOptions</code> 可移植构建器来创建模型配置，例如 temperature、maxToken、topP 等。</p>
+</div>
+<div class="paragraph">
+<p>在启动时，可以通过 <code>BedrockConverseProxyChatModel(api, options)</code> 构造函数或 <code>spring.ai.bedrock.converse.chat.*</code> 属性来配置默认选项。</p>
+</div>
+<div class="paragraph">
+<p>在运行时，您可以通过在 <code>Prompt</code> 调用中添加新的、特定于请求的选项来覆盖默认选项：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">var options = BedrockChatOptions.builder()
+        .model("us.anthropic.claude-haiku-4-5-20251001-v1:0")
+        .temperature(0.6)
+        .maxTokens(300)
+        .toolCallbacks(List.of(FunctionToolCallback.builder("getCurrentWeather", new WeatherService())
+            .description("Get the weather in location. Return temperature in 36°F or 36°C format. Use multi-turn if needed.")
+            .inputType(WeatherService.Request.class)
+            .build()))
+        .build();
+
+String response = ChatClient.create(this.chatModel)
+    .prompt("What is current weather in Amsterdam?")
+    .options(options)
+    .call()
+    .content();</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prompt_caching"><a class="anchor" href="#_prompt_caching">提示词缓存</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>AWS Bedrock 的 <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-caching.html">prompt caching 功能</a> 允许您缓存频繁使用的提示词，从而降低成本并缩短重复交互的响应时间。
+当您缓存一个提示词时，后续相同的请求可以重用缓存内容，显著减少处理的输入 token 数量。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><strong>支持的模型</strong></p>
+</div>
+<div class="paragraph">
+<p>AWS Bedrock 提供的 Claude 3.x、Claude 4.x 和 Amazon Nova 模型支持 Prompt caching。</p>
+</div>
+<div class="paragraph">
+<p><strong>Token 要求</strong></p>
+</div>
+<div class="paragraph">
+<p>不同模型对缓存有效性的最小 Token 阈值各不相同：
+- Claude Sonnet 4 及大多数模型：1024+ tokens
+- 特定模型的具体要求可能有所不同 —— 请参阅 AWS Bedrock 文档</p>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="sect2">
+<h3 id="_cache_strategies"><a class="anchor" href="#_cache_strategies">缓存策略</a></h3>
+<div class="paragraph">
+<p>Spring AI 通过 <code class="language-java">BedrockCacheStrategy</code> 枚举提供了策略性的缓存放置：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>NONE</code>：完全禁用提示词缓存（默认）</p>
+</li>
+<li>
+<p><code>SYSTEM_ONLY</code>：仅缓存系统消息内容</p>
+</li>
+<li>
+<p><code>TOOLS_ONLY</code>：仅缓存工具定义（仅限 Claude 模型）</p>
+</li>
+<li>
+<p><code>SYSTEM_AND_TOOLS</code>：同时缓存系统消息和工具定义（仅限 Claude 模型）</p>
+</li>
+<li>
+<p><code>CONVERSATION_HISTORY</code>：在聊天记忆场景中缓存整个对话历史</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>这种策略性方法确保了在遵守 AWS Bedrock 4 个断点限制的同时，实现最佳的缓存断点放置。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><strong>Amazon Nova 限制</strong></p>
+</div>
+<div class="paragraph">
+<p>Amazon Nova 模型（Nova Micro、Lite、Pro、Premier）仅支持对 <code>system</code> 和 <code>messages</code> 内容进行缓存。
+它们<strong>不支持</strong>对 <code>tools</code> 进行缓存。</p>
+</div>
+<div class="paragraph">
+<p>如果您尝试对 Nova 模型使用 <code>TOOLS_ONLY</code> 或 <code>SYSTEM_AND_TOOLS</code> 策略，AWS 将返回 <code>ValidationException</code>。
+请对 Amazon Nova 模型使用 <code>SYSTEM_ONLY</code> 策略。</p>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_enabling_prompt_caching"><a class="anchor" href="#_enabling_prompt_caching">启用提示词缓存</a></h3>
+<div class="paragraph">
+<p>通过在 <code>BedrockChatOptions</code> 上设置 <code>cacheOptions</code> 并选择 <code>strategy</code> 来启用提示词缓存（prompt caching）。</p>
+</div>
+<div class="sect3">
+<h4 id="_system_only_caching"><a class="anchor" href="#_system_only_caching">仅系统缓存</a></h4>
+<div class="paragraph">
+<p>最常见的用例——在多次请求中缓存系统指令：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">// Cache system message content
+ChatResponse response = chatModel.call(
+    new Prompt(
+        List.of(
+            new SystemMessage("You are a helpful AI assistant with extensive knowledge..."),
+            new UserMessage("What is machine learning?")
+        ),
+        BedrockChatOptions.builder()
+            .model("us.anthropic.claude-haiku-4-5-20251001-v1:0")
+            .cacheOptions(BedrockCacheOptions.builder()
+                .strategy(BedrockCacheStrategy.SYSTEM_ONLY)
+                .build())
+            .maxTokens(500)
+            .build()
+    )
+);</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_tools_only_caching"><a class="anchor" href="#_tools_only_caching">仅限工具缓存</a></h4>
+<div class="paragraph">
+<p>在保持系统提示词动态的同时缓存大型工具定义（仅限 Claude 模型）：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">// Cache tool definitions only
+ChatResponse response = chatModel.call(
+    new Prompt(
+        "What's the weather in San Francisco?",
+        BedrockChatOptions.builder()
+            .model("us.anthropic.claude-haiku-4-5-20251001-v1:0")
+            .cacheOptions(BedrockCacheOptions.builder()
+                .strategy(BedrockCacheStrategy.TOOLS_ONLY)
+                .build())
+            .toolCallbacks(weatherToolCallbacks)  // Large tool definitions
+            .maxTokens(500)
+            .build()
+    )
+);</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+此策略仅支持 Claude 模型。
+Amazon Nova 模型将返回 <code>ValidationException</code>。
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_system_and_tools_caching"><a class="anchor" href="#_system_and_tools_caching">系统与工具缓存</a></h4>
+<div class="paragraph">
+<p>缓存系统指令和工具定义以实现最大程度的复用（仅限 Claude 模型）：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">// Cache system message and tool definitions
+ChatResponse response = chatModel.call(
+    new Prompt(
+        List.of(
+            new SystemMessage("You are a weather analysis assistant..."),
+            new UserMessage("What's the weather like in Tokyo?")
+        ),
+        BedrockChatOptions.builder()
+            .model("us.anthropic.claude-haiku-4-5-20251001-v1:0")
+            .cacheOptions(BedrockCacheOptions.builder()
+                .strategy(BedrockCacheStrategy.SYSTEM_AND_TOOLS)
+                .build())
+            .toolCallbacks(weatherToolCallbacks)
+            .maxTokens(500)
+            .build()
+    )
+);</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+此策略使用 2 个缓存断点（一个用于工具，一个用于系统）。
+仅支持在 Claude 模型上使用。
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_conversation_history_caching"><a class="anchor" href="#_conversation_history_caching">对话历史缓存</a></h4>
+<div class="paragraph">
+<p>为多轮对话机器人和助手缓存增长的对话历史：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">// Cache conversation history with ChatClient and memory
+ChatClient chatClient = ChatClient.builder(chatModel)
+    .defaultSystem("You are a personalized career counselor...")
+    .defaultAdvisors(MessageChatMemoryAdvisor.builder(chatMemory).build())
+    .build();
+
+String response = chatClient.prompt()
+    .user("What career advice would you give me?")
+    .advisors(a -&gt; a.param(ChatMemory.CONVERSATION_ID, conversationId))
+    .options(BedrockChatOptions.builder()
+        .model("us.anthropic.claude-haiku-4-5-20251001-v1:0")
+        .cacheOptions(BedrockCacheOptions.builder()
+            .strategy(BedrockCacheStrategy.CONVERSATION_HISTORY)
+            .build())
+        .maxTokens(500)
+        .build())
+    .call()
+    .content();</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_multi_block_system_message_caching"><a class="anchor" href="#_multi_block_system_message_caching">多块系统消息缓存</a></h4>
+<div class="paragraph">
+<p>在使用顾问（例如 RAG 上下文注入）时，您的系统提示词可能由多个 <code>SystemMessage</code> 实例组成：一个静态前缀（您的基础指令）和一个动态后缀（每次请求都会变化的顾问注入上下文）。</p>
+</div>
+<div class="paragraph">
+<p>默认情况下，当启用 <code>SYSTEM_ONLY</code> 或 <code>SYSTEM_AND_TOOLS</code> 缓存时，每个 <code>SystemMessage</code> 都作为独立的 <code>SystemContentBlock</code> 发出，且缓存点放置在<strong>最后一个块之后</strong>。
+如果该内容中的任何部分在请求之间发生变化，整个系统缓存都将失效——这将导致每次请求产生 1.25 倍的缓存写入成本，而不是更便宜的缓存读取成本。</p>
+</div>
+<div class="paragraph">
+<p><code style="color: #d73a49;">multiBlockSystemCaching</code> 选项通过将缓存点放置在<strong>倒数第二个</strong>系统块之后（即静态前缀与动态后缀之间的边界）来解决此问题，从而确保即使最后一个块自由变化，静态部分仍能保持缓存。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">BedrockCacheOptions cacheOptions = BedrockCacheOptions.builder()
+    .strategy(BedrockCacheStrategy.SYSTEM_ONLY)
+    .multiBlockSystemCaching(true)
+    .build();
+
+BedrockChatOptions chatOptions = BedrockChatOptions.builder()
+    .model("us.anthropic.claude-haiku-4-5-20251001-v1:0")
+    .cacheOptions(cacheOptions)
+    .build();
+
+// Static system prompt (will be cached)
+SystemMessage staticPrompt = new SystemMessage("You are an expert assistant...");
+// Dynamic RAG context (injected by advisor, changes each request)
+SystemMessage dynamicContext = new SystemMessage("Relevant context: " + ragResults);
+
+Prompt prompt = new Prompt(List.of(staticPrompt, dynamicContext, new UserMessage("...")), chatOptions);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>这将生成一个形式为 <code>[text(static), cachePoint, text(dynamic)]</code> 的 Bedrock <code>system</code> 数组，因此只有静态前缀会参与缓存键的生成。</p>
+</div>
+<div class="admonitionblock note">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+如果仅存在单个 <code>SystemMessage</code>，缓存点将放置在该单块之后（与默认行为相同）。
+<code class="multiBlockSystemCaching"></code> 选项仅在存在两个或更多系统消息时才会改变位置。
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="admonitionblock important">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+消息的顺序非常重要。缓存点始终位于倒数第二个系统块之后，因此在消息列表中，静态内容必须排在动态内容之前。如果您将基础指令注册为第一个 <code>SystemMessage</code>，并让顾问在之后追加动态上下文，那么这种顺序就会自然满足。
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_using_chatclient_fluent_api"><a class="anchor" href="#_using_chatclient_fluent_api">使用 ChatClient Fluent API</a></h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">String response = ChatClient.create(chatModel)
+    .prompt()
+    .system("You are an expert document analyst...")
+    .user("Analyze this large document: " + document)
+    .options(BedrockChatOptions.builder()
+        .model("us.anthropic.claude-haiku-4-5-20251001-v1:0")
+        .cacheOptions(BedrockCacheOptions.builder()
+            .strategy(BedrockCacheStrategy.SYSTEM_ONLY)
+            .build())
+        .build())
+    .call()
+    .content();</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_usage_example"><a class="anchor" href="#_usage_example">使用示例</a></h3>
+<div class="paragraph">
+<p>这是一个展示带有成本追踪的提示词缓存（prompt caching）的完整示例：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">// Create system content that will be reused multiple times
+String largeSystemPrompt = "You are an expert software architect specializing in distributed systems...";
+// (Ensure this is 1024+ tokens for cache effectiveness)
+
+// First request - creates cache
+ChatResponse firstResponse = chatModel.call(
+    new Prompt(
+        List.of(
+            new SystemMessage(largeSystemPrompt),
+            new UserMessage("What is microservices architecture?")
+        ),
+        BedrockChatOptions.builder()
+            .model("us.anthropic.claude-haiku-4-5-20251001-v1:0")
+            .cacheOptions(BedrockCacheOptions.builder()
+                .strategy(BedrockCacheStrategy.SYSTEM_ONLY)
+                .build())
+            .maxTokens(500)
+            .build()
+    )
+);
+
+// Access cache-related token usage from metadata
+Integer cacheWrite1 = (Integer) firstResponse.getMetadata()
+    .getMetadata()
+    .get("cacheWriteInputTokens");
+Integer cacheRead1 = (Integer) firstResponse.getMetadata()
+    .getMetadata()
+    .get("cacheReadInputTokens");
+
+System.out.println("Cache creation tokens: " + cacheWrite1);
+System.out.println("Cache read tokens: " + cacheRead1);
+
+// Second request with same system prompt - reads from cache
+ChatResponse secondResponse = chatModel.call(
+    new Prompt(
+        List.of(
+            new SystemMessage(largeSystemPrompt),  // Same prompt - cache hit
+            new UserMessage("What are the benefits of event sourcing?")
+        ),
+        BedrockChatOptions.builder()
+            .model("us.anthropic.claude-haiku-4-5-20251001-v1:0")
+            .cacheOptions(BedrockCacheOptions.builder()
+                .strategy(BedrockCacheStrategy.SYSTEM_ONLY)
+                .build())
+            .maxTokens(500)
+            .build()
+    )
+);
+
+Integer cacheWrite2 = (Integer) secondResponse.getMetadata()
+    .getMetadata()
+    .get("cacheWriteInputTokens");
+Integer cacheRead2 = (Integer) secondResponse.getMetadata()
+    .getMetadata()
+    .get("cacheReadInputTokens");
+
+System.out.println("Cache creation tokens: " + cacheWrite2); // Should be 0
+System.out.println("Cache read tokens: " + cacheRead2);      // Should be &gt; 0</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_token_usage_tracking"><a class="anchor" href="#_token_usage_tracking">Token 使用量追踪</a></h3>
+<div class="paragraph">
+<p>AWS Bedrock 通过响应提供特定于缓存的指标。
+可以通过两种方法获取缓存指标：</p>
+</div>
+<div class="sect3">
+<h4 id="_native_usage_object_recommended_for_observability"><a class="anchor" href="#_native_usage_object_recommended_for_observability">原生用法对象（推荐用于可观测性）</a></h4>
+<div class="paragraph">
+<p>对于可观测性处理器和指标收集，请通过原生的 <code>TokenUsage</code> 对象访问缓存指标：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java"><span class="fold-block is-hidden-folded">import software.amazon.awssdk.services.bedrockruntime.model.TokenUsage;
+
+</span><span class="fold-block">ChatResponse response = chatModel.call(/* ... */);
+
+// Access cache metrics from native TokenUsage object
+TokenUsage tokenUsage = (TokenUsage) response.getMetadata()
+    .getUsage()
+    .getNativeUsage();
+
+if (tokenUsage != null) {
+    Integer cacheWrite = tokenUsage.cacheWriteInputTokens();
+    Integer cacheRead = tokenUsage.cacheReadInputTokens();
+    System.out.println("Cache write: " + cacheWrite + ", Cache read: " + cacheRead);
+}</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_metadata_map_backward_compatible"><a class="anchor" href="#_metadata_map_backward_compatible">元数据映射（向下兼容）</a></h4>
+<div class="paragraph">
+<p>为了保持向后兼容性，也可以通过元数据 Map 获取缓存指标：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatResponse response = chatModel.call(/* ... */);
+
+// Access cache metrics from metadata Map
+Integer cacheWrite = (Integer) response.getMetadata()
+    .getMetadata()
+    .get("cacheWriteInputTokens");
+Integer cacheRead = (Integer) response.getMetadata()
+    .getMetadata()
+    .get("cacheReadInputTokens");</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>缓存特定指标包括：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>cacheWriteInputTokens</code>：返回创建缓存条目时使用的 token 数量</p>
+</li>
+<li>
+<p><code>cacheReadInputTokens</code>：返回从现有缓存条目中读取的 token 数量</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>当您首次发送缓存提示词时：
+- <code>cacheWriteInputTokens</code> 将大于 0
+- <code>cacheReadInputTokens</code> 将为 0</p>
+</div>
+<div class="paragraph">
+<p>当您再次发送相同的缓存提示词时（在 5 分钟的 TTL 内）：
+- <code>cacheWriteInputTokens</code> 将为 0
+- <code>cacheReadInputTokens</code> 将大于 0</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_real_world_use_cases"><a class="anchor" href="#_real_world_use_cases">实际应用案例</a></h3>
+<div class="sect3">
+<h4 id="_legal_document_analysis"><a class="anchor" href="#_legal_document_analysis">法律文件分析</a></h4>
+<div class="paragraph">
+<p>通过在多个问题中缓存文档内容，高效分析大型法律合同或合规文件：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">// Load a legal contract (PDF or text)
+String legalContract = loadDocument("merger-agreement.pdf"); // ~3000 tokens
+
+// System prompt with legal expertise
+String legalSystemPrompt = "You are an expert legal analyst specializing in corporate law. " +
+    "Analyze the following contract and provide precise answers about terms, obligations, and risks: " +
+    legalContract;
+
+// First analysis - creates cache
+ChatResponse riskAnalysis = chatModel.call(
+    new Prompt(
+        List.of(
+            new SystemMessage(legalSystemPrompt),
+            new UserMessage("What are the key termination clauses and associated penalties?")
+        ),
+        BedrockChatOptions.builder()
+            .model("us.anthropic.claude-haiku-4-5-20251001-v1:0")
+            .cacheOptions(BedrockCacheOptions.builder()
+                .strategy(BedrockCacheStrategy.SYSTEM_ONLY)
+                .build())
+            .maxTokens(1000)
+            .build()
+    )
+);
+
+// Subsequent questions reuse cached document - 90% cost savings
+ChatResponse obligationAnalysis = chatModel.call(
+    new Prompt(
+        List.of(
+            new SystemMessage(legalSystemPrompt), // Same content - cache hit
+            new UserMessage("List all financial obligations and payment schedules.")
+        ),
+        BedrockChatOptions.builder()
+            .model("us.anthropic.claude-haiku-4-5-20251001-v1:0")
+            .cacheOptions(BedrockCacheOptions.builder()
+                .strategy(BedrockCacheStrategy.SYSTEM_ONLY)
+                .build())
+            .maxTokens(1000)
+            .build()
+    )
+);</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_batch_code_review"><a class="anchor" href="#_batch_code_review">批量代码审查</a></h4>
+<div class="paragraph">
+<p>在缓存审查指南的同时，使用一致的审查标准处理多个代码文件：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">// Define comprehensive code review guidelines
+String reviewGuidelines = """
+    You are a senior software engineer conducting code reviews. Apply these criteria:
+    - Security vulnerabilities and best practices
+    - Performance optimizations and memory usage
+    - Code maintainability and readability
+    - Testing coverage and edge cases
+    - Design patterns and architecture compliance
+    """;
+
+List&lt;String&gt; codeFiles = Arrays.asList(
+    "UserService.java", "PaymentController.java", "SecurityConfig.java"
+);
+
+List&lt;String&gt; reviews = new ArrayList&lt;&gt;();
+
+for (String filename : codeFiles) {
+    String sourceCode = loadSourceFile(filename);
+
+    ChatResponse review = chatModel.call(
+        new Prompt(
+            List.of(
+                new SystemMessage(reviewGuidelines), // Cached across all reviews
+                new UserMessage("Review this " + filename + " code:\n\n" + sourceCode)
+            ),
+            BedrockChatOptions.builder()
+                .model("us.anthropic.claude-haiku-4-5-20251001-v1:0")
+                .cacheOptions(BedrockCacheOptions.builder()
+                    .strategy(BedrockCacheStrategy.SYSTEM_ONLY)
+                    .build())
+                .maxTokens(800)
+                .build()
+        )
+    );
+
+    reviews.add(review.getResult().getOutput().getText());
+}
+
+// Guidelines cached after first request, subsequent reviews are faster and cheaper</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_customer_support_with_knowledge_base"><a class="anchor" href="#_customer_support_with_knowledge_base">带有知识库的客户支持</a></h4>
+<div class="paragraph">
+<p>创建一个客户支持系统，缓存您的产品知识库，以提供一致且准确的回复：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">// Load comprehensive product knowledge
+String knowledgeBase = """
+    PRODUCT DOCUMENTATION:
+    - API endpoints and authentication methods
+    - Common troubleshooting procedures
+    - Billing and subscription details
+    - Integration guides and examples
+    - Known issues and workarounds
+    """ + loadProductDocs(); // ~2500 tokens
+
+@Service
+public class CustomerSupportService {
+
+    public String handleCustomerQuery(String customerQuery, String customerId) {
+        ChatResponse response = chatModel.call(
+            new Prompt(
+                List.of(
+                    new SystemMessage("You are a helpful customer support agent. " +
+                        "Use this knowledge base to provide accurate solutions: " + knowledgeBase),
+                    new UserMessage("Customer " + customerId + " asks: " + customerQuery)
+                ),
+                BedrockChatOptions.builder()
+                    .model("us.anthropic.claude-haiku-4-5-20251001-v1:0")
+                    .cacheOptions(BedrockCacheOptions.builder()
+                        .strategy(BedrockCacheStrategy.SYSTEM_ONLY)
+                        .build())
+                    .maxTokens(600)
+                    .build()
+            )
+        );
+
+        return response.getResult().getOutput().getText();
+    }
+}
+
+// Knowledge base is cached across all customer queries
+// Multiple support agents can benefit from the same cached content</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_multi_tenant_saas_application"><a class="anchor" href="#_multi_tenant_saas_application">多租户 SaaS 应用程序</a></h4>
+<div class="paragraph">
+<p>在跨租户共享工具定义的同时，为每个租户自定义系统提示词：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">// Shared tool definitions (cached once, used across all tenants)
+List&lt;FunctionToolCallback&gt; sharedTools = createLargeToolRegistry(); // ~2000 tokens
+
+// Tenant-specific configuration
+@Service
+public class MultiTenantAIService {
+
+    public String processRequest(String tenantId, String userQuery) {
+        // Load tenant-specific system prompt (changes per tenant)
+        String tenantPrompt = loadTenantSystemPrompt(tenantId);
+
+        ChatResponse response = chatModel.call(
+            new Prompt(
+                List.of(
+                    new SystemMessage(tenantPrompt), // Tenant-specific, not cached
+                    new UserMessage(userQuery)
+                ),
+                BedrockChatOptions.builder()
+                    .model("us.anthropic.claude-haiku-4-5-20251001-v1:0")
+                    .cacheOptions(BedrockCacheOptions.builder()
+                        .strategy(BedrockCacheStrategy.TOOLS_ONLY)
+                        .build())
+                    .toolCallbacks(sharedTools) // Shared tools - cached
+                    .maxTokens(500)
+                    .build()
+            )
+        );
+
+        return response.getResult().getOutput().getText();
+    }
+}
+
+// Tools cached once, each tenant gets customized system prompt</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_best_practices"><a class="anchor" href="#_best_practices">最佳实践</a></h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>选择正确的策略</strong>：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>使用 <code>SYSTEM_ONLY</code> 作为可重用的系统提示词和指令（适用于所有模型）</p>
+</li>
+<li>
+<p>当您拥有大型稳定工具但动态系统提示词时（仅限 Claude），请使用 <code>TOOLS_ONLY</code>。</p>
+</li>
+<li>
+<p>当系统和工具都很大且稳定时（仅限 Claude），请使用 <code>SYSTEM_AND_TOOLS</code></p>
+</li>
+<li>
+<p>使用 <code>CONVERSATION_HISTORY</code> 与 ChatClient 内存进行多轮对话</p>
+</li>
+<li>
+<p>使用 <code style="color:red;">NONE</code> 来显式禁用缓存</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>满足 Token 要求</strong>：重点缓存符合最低 Token 要求的内容（大多数模型为 1024+ tokens）。</p>
+</li>
+<li>
+<p><strong>重用相同内容</strong>：缓存在提示词内容完全匹配时效果最佳。
+即使是微小的变化也需要创建新的缓存条目。</p>
+</li>
+<li>
+<p><strong>监控 Token 使用情况</strong>：使用元数据指标跟踪缓存效果：</p>
+<div class="literalblock">
+<div class="content">
+<pre>Integer cacheWrite = (Integer) response.getMetadata().getMetadata().get("cacheWriteInputTokens");
+Integer cacheRead = (Integer) response.getMetadata().getMetadata().get("cacheReadInputTokens");
+if (cacheRead != null &amp;&amp; cacheRead &gt; 0) {
+    System.out.println("Cache hit: " + cacheRead + " tokens saved");
+}</pre>
+</div>
+</div>
+</li>
+<li>
+<p><strong>策略性缓存放置</strong>：系统将根据您选择的策略自动在最佳位置放置缓存断点，确保符合 AWS Bedrock 的 4 个断点限制。</p>
+</li>
+<li>
+<p><strong>缓存生命周期</strong>：AWS Bedrock 缓存具有固定的 5 分钟 TTL（生存时间）。
+每次访问缓存都会重置计时器。</p>
+</li>
+<li>
+<p><strong>模型兼容性</strong>：请注意特定模型的限制：</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Claude 模型</strong>：支持所有缓存策略</p>
+</li>
+<li>
+<p><strong>Amazon Nova 模型</strong>：仅支持 <code>SYSTEM_ONLY</code> 和 <code>CONVERSATION_HISTORY</code>（不支持工具缓存）</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>工具稳定性</strong>：在使用 <code>TOOLS_ONLY</code>、<code>SYSTEM_AND_TOOLS</code> 或 <code>CONVERSATION_HISTORY</code> 策略时，请确保工具保持稳定。
+更改工具定义将由于级联失效而导致所有下游缓存断点失效。</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_cache_invalidation_and_cascade_behavior"><a class="anchor" href="#_cache_invalidation_and_cascade_behavior">缓存失效与级联行为</a></h3>
+<div class="paragraph">
+<p>AWS Bedrock 遵循具有级联失效机制的分层缓存模型：</p>
+</div>
+<div class="paragraph">
+<p><strong>缓存层级</strong>：<code>Tools → System → Messages</code></p>
+</div>
+<div class="paragraph">
+<p>每一层级的变更都会使该层级及其所有后续层级失效：</p>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 25%;"/>
+<col style="width: 25%;"/>
+<col style="width: 25%;"/>
+<col style="width: 25%;"/>
+</colgroup>
+<thead><tr>
+<th class="tableblock halign-left valign-top">变更内容</th>
+<th class="tableblock halign-left valign-top">工具缓存</th>
+<th class="tableblock halign-left valign-top">系统缓存</th>
+<th class="tableblock halign-left valign-top">消息缓存</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tools</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">❌ Invalid</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">❌ Invalid</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">❌ Invalid</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">System</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✅ Valid</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">❌ Invalid</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">❌ Invalid</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Messages</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✅ Valid</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✅ Valid</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">❌ Invalid</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>使用 <code style="color: #e67e22;">SYSTEM_AND_TOOLS</code> 策略的示例</strong>：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">// Request 1: Cache both tools and system
+ChatResponse r1 = chatModel.call(
+    new Prompt(
+        List.of(new SystemMessage("System prompt"), new UserMessage("Question")),
+        BedrockChatOptions.builder()
+            .cacheOptions(BedrockCacheOptions.builder()
+                .strategy(BedrockCacheStrategy.SYSTEM_AND_TOOLS)
+                .build())
+            .toolCallbacks(tools)
+            .build()
+    )
+);
+// Result: Both caches created
+
+// Request 2: Change only system prompt (tools same)
+ChatResponse r2 = chatModel.call(
+    new Prompt(
+        List.of(new SystemMessage("DIFFERENT system prompt"), new UserMessage("Question")),
+        BedrockChatOptions.builder()
+            .cacheOptions(BedrockCacheOptions.builder()
+                .strategy(BedrockCacheStrategy.SYSTEM_AND_TOOLS)
+                .build())
+            .toolCallbacks(tools) // SAME tools
+            .build()
+    )
+);
+// Result: Tools cache HIT (reused), system cache MISS (recreated)
+
+// Request 3: Change tools (system same as Request 2)
+ChatResponse r3 = chatModel.call(
+    new Prompt(
+        List.of(new SystemMessage("DIFFERENT system prompt"), new UserMessage("Question")),
+        BedrockChatOptions.builder()
+            .cacheOptions(BedrockCacheOptions.builder()
+                .strategy(BedrockCacheStrategy.SYSTEM_AND_TOOLS)
+                .build())
+            .toolCallbacks(newTools) // DIFFERENT tools
+            .build()
+    )
+);
+// Result: BOTH caches MISS (tools change invalidates everything downstream)</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_implementation_details"><a class="anchor" href="#_implementation_details">实现细节</a></h3>
+<div class="paragraph">
+<p>Spring AI 中的提示词缓存（prompt caching）实现遵循以下核心设计原则：</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>策略性缓存放置</strong>：缓存断点将根据所选策略自动放置在最佳位置，确保符合 AWS Bedrock 的 4 个断点限制。</p>
+</li>
+<li>
+<p><strong>提供商可移植性</strong>：缓存配置通过 <code>BedrockChatOptions</code> 完成，而非针对单个消息进行配置，从而在切换不同的 AI 提供商时保持兼容性。</p>
+</li>
+<li>
+<p><strong>线程安全</strong>：缓存断点追踪采用线程安全机制实现，以正确处理并发请求。</p>
+</li>
+<li>
+<p><strong>UNION 类型模式</strong>：AWS SDK 使用 UNION 类型，其中缓存点作为独立的块而非属性被添加。
+这与直接的 API 方法不同，但能确保类型安全和 API 合规性。</p>
+</li>
+<li>
+<p><strong>增量缓存</strong>：<code style="color: #e67e22;">CONVERSATION_HISTORY</code> 策略在最后一条用户消息上设置缓存断点，从而实现增量缓存，即每一次对话轮次都建立在之前已缓存的前缀之上。</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_cost_considerations"><a class="anchor" href="#_cost_considerations">成本考虑</a></h3>
+<div class="paragraph">
+<p>AWS Bedrock 提示词缓存（prompt caching）定价（近似值，随模型而异）：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>缓存写入</strong>：比基础输入 Token 贵约 25%</p>
+</li>
+<li>
+<p><strong>缓存读取</strong>：约便宜 90%（仅为基础输入 Token 价格的 10%）</p>
+</li>
+<li>
+<p><strong>盈亏平衡点</strong>：仅需一次缓存读取，即可节省成本</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>成本计算示例</strong>：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">// System prompt: 2000 tokens
+// User question: 50 tokens
+
+// Without caching (5 requests):
+// Cost: 5 × (2000 + 50) = 10,250 tokens at base rate
+
+// With caching (5 requests):
+// Request 1: 2000 tokens × 1.25 (cache write) + 50 = 2,550 tokens
+// Requests 2-5: 4 × (2000 × 0.10 (cache read) + 50) = 4 × 250 = 1,000 tokens
+// Total: 2,550 + 1,000 = 3,550 tokens equivalent
+
+// Savings: (10,250 - 3,550) / 10,250 = 65% cost reduction</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tool_calling"><a class="anchor" href="#_tool_calling">工具调用</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><code>BedrockProxyChatModel</code> 不在内部执行工具调用。
+必须使用以下两种支持的方法之一在外部处理工具执行：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>带有 ToolCallingAdvisor 的 ChatClient</strong> —— 这是大多数使用场景下的推荐方法。
+<code style="color: #e06c75;">ToolCallingAdvisor</code> 会被自动注册，并透明地管理工具调用循环。</p>
+</li>
+<li>
+<p><strong>用户控制的工具执行</strong> —— 当您需要完全控制循环时（例如，当将工具调用与提示词缓存结合使用时），请直接使用 <code>DefaultToolCallingManager</code>。</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_tool_calling_via_chatclient_recommended"><a class="anchor" href="#_tool_calling_via_chatclient_recommended"></a>通过 ChatClient 进行工具调用（推荐）</h3>
+<div class="paragraph">
+<p>使用工具最简单的方法是使用 <code class="code">ChatClient</code> 高级 API。
+<code class="code">ToolCallingAdvisor</code> 会自动处理同步和流式调用中的工具调用循环。</p>
+</div>
+<div class="paragraph">
+<p>以下是使用带有 <code>@Tool</code> 注解的方法的一个示例：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public class WeatherService {
+
+    @Tool(description = "Get the weather in location")
+    public String weatherByLocation(@ToolParam(description = "City or state name") String location) {
+        // ...
+    }
+}
+
+String response = ChatClient.create(this.chatModel)
+        .prompt("What's the weather like in Boston?")
+        .tools(new WeatherService())
+        .call()
+        .content();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>您还可以注册一个 <code>ToolCallback</code> 类型的 bean 并直接传递：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Bean
+ToolCallback weatherFunction() {
+    return FunctionToolCallback.builder("weatherFunction", new MockWeatherService())
+        .description("Get the weather in location. Return temperature in 36°F or 36°C format.")
+        .inputType(Request.class)
+        .build();
+}
+
+String response = ChatClient.create(this.chatModel)
+        .prompt("What's the weather like in Boston?")
+        .tools(weatherFunction)
+        .call()
+        .content();</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_user_controlled_tool_execution"><a class="anchor" href="#_user_controlled_tool_execution">用户控制的工具执行</a></h3>
+<div class="paragraph">
+<p>对于需要对工具调用循环进行显式控制的场景——例如在将工具调用与提示词缓存（prompt caching）结合使用时——您可以使用 <code>DefaultToolCallingManager</code> 手动驱动该循环。</p>
+</div>
+<div class="sect3">
+<h4 id="_synchronous"><a class="anchor" href="#_synchronous"></a>Synchronous</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ToolCallingManager toolCallingManager = DefaultToolCallingManager.builder().build();
+
+var options = BedrockChatOptions.builder()
+        .toolCallbacks(List.of(FunctionToolCallback.builder("getCurrentWeather", new WeatherService())
+            .description("Get the weather in location. Return temperature in 36°F or 36°C format.")
+            .inputType(WeatherService.Request.class)
+            .build()))
+        .build();
+
+var prompt = new Prompt("What's the weather like in San Francisco, Tokyo and Paris?", options);
+
+ChatResponse response = chatModel.call(prompt);
+
+while (response.hasToolCalls()) {
+    ToolExecutionResult toolExecutionResult = toolCallingManager.executeToolCalls(prompt, response);
+    prompt = new Prompt(toolExecutionResult.conversationHistory(), options);
+    response = chatModel.call(prompt);
+}
+
+System.out.println(response.getResult().getOutput().getText());</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_streaming"><a class="anchor" href="#_streaming"></a>Streaming</h4>
+<div class="paragraph">
+<p>由于工具调用跨越多个流式分块，在检查工具调用之前，必须先使用 <code>MessageAggregator</code> 对每个流式调用进行聚合。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ToolCallingManager toolCallingManager = DefaultToolCallingManager.builder().build();
+
+var options = BedrockChatOptions.builder()
+        .toolCallbacks(List.of(FunctionToolCallback.builder("getCurrentWeather", new WeatherService())
+            .description("Get the weather in location. Return temperature in 36°F or 36°C format.")
+            .inputType(WeatherService.Request.class)
+            .build()))
+        .build();
+
+var prompt = new Prompt("What's the weather like in San Francisco, Tokyo and Paris?", options);
+
+AtomicReference&lt;ChatResponse&gt; aggregatedRef = new AtomicReference&lt;&gt;();
+new MessageAggregator().aggregate(chatModel.stream(prompt), aggregatedRef::set).collectList().block();
+
+while (aggregatedRef.get().hasToolCalls()) {
+    ToolExecutionResult toolExecutionResult = toolCallingManager.executeToolCalls(prompt, aggregatedRef.get());
+    prompt = new Prompt(toolExecutionResult.conversationHistory(), options);
+    aggregatedRef.set(null);
+    new MessageAggregator().aggregate(chatModel.stream(prompt), aggregatedRef::set).collectList().block();
+}
+
+System.out.println(aggregatedRef.get().getResult().getOutput().getText());</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>在 <a class="xref page" href="../tools.html">Tools</a> 文档中查找更多内容。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="structured-output"><a class="anchor" href="#structured-output">结构化输出</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>AWS Bedrock 通过 JSON Schema 支持原生结构化输出，确保模型生成的响应严格符合您指定的结构。
+此功能适用于包括 Anthropic Claude 和 Amazon Nova 在内的<a href="https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference-supported-models-features.html">支持的模型</a>。</p>
+</div>
+<div class="sect2">
+<h3 id="_using_chatclient_with_native_structured_output"><a class="anchor" href="#_using_chatclient_with_native_structured_output">使用 ChatClient 进行原生结构化输出</a></h3>
+<div class="paragraph">
+<p>使用结构化输出最简单的方法是结合 <code>ChatClient</code> 高级 API 和 <code>ENABLE_NATIVE_STRUCTURED_OUTPUT</code> 顾问：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">record ActorsFilms(String actor, List&lt;String&gt; movies) {}
+
+ActorsFilms actorsFilms = ChatClient.create(chatModel).prompt()
+    .options(ToolCallingChatOptions.builder()
+        .model("us.anthropic.claude-haiku-4-5-20251001-v1:0")
+        .build())
+    .advisors(AdvisorParams.ENABLE_NATIVE_STRUCTURED_OUTPUT)
+    .user("Generate the filmography for a random actor.")
+    .call()
+    .entity(ActorsFilms.class);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>此方法会自动：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>从您的 Java 类生成 JSON schema</p>
+</li>
+<li>
+<p>通过 AWS Bedrock <code style="color: #d73a49;">OutputConfig</code> API 在 <code style="color: #d73a49;">BedrockChatOptions</code> 上设置 <code style="color: #d73a49;">outputSchema</code></p>
+</li>
+<li>
+<p>将 JSON 响应解析为您指定的类型</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_using_outputschema_directly"><a class="anchor" href="#_using_outputschema_directly">直接使用 outputSchema</a></h3>
+<div class="paragraph">
+<p>为了获得更多控制权，您可以直接在 <code>BedrockChatOptions</code> 上设置 JSON schema：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">String jsonSchema = """
+        {
+            "type": "object",
+            "properties": {
+                "actor": { "type": "string" },
+                "movies": {
+                    "type": "array",
+                    "items": { "type": "string" }
+                }
+            },
+            "required": ["actor", "movies"],
+            "additionalProperties": false
+        }
+        """;
+
+ChatResponse response = chatModel.call(
+    new Prompt("Generate the filmography for a random actor.",
+        BedrockChatOptions.builder()
+            .model("us.anthropic.claude-haiku-4-5-20251001-v1:0")
+            .outputSchema(jsonSchema)
+            .build()));
+
+String content = response.getResult().getOutput().getText();</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+AWS Bedrock 在构建 <code class="OutputConfig">OutputConfig</code> 时，在内部使用固定的架构名称 <code class="response_schema">response_schema</code>。
+架构 JSON 直接传递给 AWS SDK 的 <code class="JsonSchemaDefinition">JsonSchemaDefinition</code>。
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="paragraph">
+<p>更多信息，请参阅 <a class="xref page" href="../structured-output-converter.html">Structured Output Converter</a> 文档。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_multimodal"><a class="anchor" href="#_multimodal"></a>Multimodal</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>多模态是指模型同时理解和处理来自多种来源的信息的能力，包括文本、图像、视频、pdf、doc、html、md 等多种数据格式。</p>
+</div>
+<div class="paragraph">
+<p>Bedrock Converse API 支持多模态输入，包括文本和图像输入，并能根据组合后的输入生成文本响应。</p>
+</div>
+<div class="paragraph">
+<p>您需要一个支持多模态输入的模型，例如 Anthropic Claude 或 Amazon Nova 模型。</p>
+</div>
+<div class="sect2">
+<h3 id="_images"><a class="anchor" href="#_images"></a>Images</h3>
+<div class="paragraph">
+<p>对于支持视觉多模态的<a href="https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference-supported-models-features.html">模型</a>（例如 Amazon Nova、Anthropic Claude 和 Llama 3.2），Bedrock Converse API 允许您在负载中包含多张图像。这些模型可以分析传递的图像并回答问题、对图像进行分类，以及根据提供的指令对图像进行总结。</p>
+</div>
+<div class="paragraph">
+<p>目前，Bedrock Converse 支持 <code>base64</code> 编码的 <code>image/jpeg</code>、<code>image/png</code>、<code>image/gif</code> 和 <code>image/webp</code> MIME 类型图像。</p>
+</div>
+<div class="paragraph">
+<p>Spring AI 的 <code>Message</code> 接口通过引入 <code>Media</code> 类型来支持多模态 AI 模型。
+它包含消息中媒体附件的数据和信息，使用 Spring 的 <code>org.springframework.util.MimeType</code> 以及一个用于原始媒体数据的 <code>java.lang.Object</code>。</p>
+</div>
+<div class="paragraph">
+<p>以下是一个简单的代码示例，演示了如何将用户文本与图像结合。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">String response = ChatClient.create(chatModel)
+    .prompt()
+    .user(u -&gt; u.text("Explain what do you see on this picture?")
+        .media(Media.Format.IMAGE_PNG, new ClassPathResource("/test.png")))
+    .call()
+    .content();
+
+logger.info(response);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>它以 <code>test.png</code> 图像作为输入：</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img alt="Multimodal Test Image" height="200" src="../../_images/multimodal.test.png" width="200"/>
+</div>
+</div>
+<div class="paragraph">
+<p>连同短信“请解释一下你在这张图片中看到了什么？”，并生成类似如下的回复：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>The image shows a close-up view of a wire fruit basket containing several pieces of fruit.
+...</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_video"><a class="anchor" href="#_video"></a>Video</h3>
+<div class="paragraph">
+<p><a href="https://docs.aws.amazon.com/nova/latest/userguide/modalities-video.html">Amazon Nova 模型</a>允许您在负载中包含单个视频，该视频可以通过 base64 格式或通过 Amazon S3 URI 提供。</p>
+</div>
+<div class="paragraph">
+<p>目前，Bedrock Nova 支持 <code>video/x-matroska</code>、<code>video/quicktime</code>、<code>video/mp4</code>、<code>video/webm</code>、<code>video/x-flv</code>、<code>video/mpeg</code>、<code>video/x-ms-wmv</code> 和 <code>video/3gpp</code> 类型的 MIME。</p>
+</div>
+<div class="paragraph">
+<p>Spring AI 的 <code>Message</code> 接口通过引入 <code>Media</code> 类型来支持多模态 AI 模型。
+它包含消息中媒体附件的数据和信息，使用 Spring 的 <code>org.springframework.util.MimeType</code> 以及一个用于原始媒体数据的 <code>java.lang.Object</code>。</p>
+</div>
+<div class="paragraph">
+<p>以下是一个简单的代码示例，演示了如何将用户文本与视频结合。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">String response = ChatClient.create(chatModel)
+    .prompt()
+    .user(u -&gt; u.text("Explain what do you see in this video?")
+        .media(Media.Format.VIDEO_MP4, new ClassPathResource("/test.video.mp4")))
+    .call()
+    .content();
+
+logger.info(response);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>它以 <code>test.video.mp4</code> 图像作为输入：</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img alt="Multimodal Test Video" height="200" src="../../_images/test.video.jpeg" width="200"/>
+</div>
+</div>
+<div class="paragraph">
+<p>连同短信“解释一下你在视频中看到了什么？”，并生成类似如下的回复：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>The video shows a group of baby chickens, also known as chicks, huddled together on a surface
+...</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_documents"><a class="anchor" href="#_documents"></a>Documents</h3>
+<div class="paragraph">
+<p>对于某些模型，Bedrock 允许您通过 Converse API 的文档支持在有效负载中包含文档，这些文档可以以字节（bytes）形式提供。
+文档支持有两种不同的变体，如下所述：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>文本文档类型</strong>（txt、csv、html、md 等），重点在于文本理解。这些用例包括基于文档中的文本元素进行回答。</p>
+</li>
+<li>
+<p><strong>媒体文档类型</strong>（pdf、docx、xlsx），其重点在于通过基于视觉的理解来回答问题。这些用例包括根据图表、图形等内容回答问题。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>目前，Anthropic 的 <a href="https://docs.anthropic.com/en/docs/build-with-claude/pdf-support">PDF 支持（测试版）</a>和 Amazon Bedrock Nova 模型均支持文档多模态。</p>
+</div>
+<div class="paragraph">
+<p>以下是一个简单的代码示例，演示了如何将用户文本与媒体文档相结合。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">String response = ChatClient.create(chatModel)
+    .prompt()
+    .user(u -&gt; u.text(
+            "You are a very professional document summarization specialist. Please summarize the given document.")
+        .media(Media.Format.DOC_PDF, new ClassPathResource("/spring-ai-reference-overview.pdf")))
+    .call()
+    .content();
+
+logger.info(response);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>它以 <code>spring-ai-reference-overview.pdf</code> 文档作为输入：</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img alt="Multimodal Test PNG" height="200" src="../../_images/test.pdf.png" width="200"/>
+</div>
+</div>
+<div class="paragraph">
+<p>连同短信“你是一位非常专业的文档摘要专家。请总结给定的文档。”，并生成类似如下的回复：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>**Introduction:**
+- Spring AI is designed to simplify the development of applications with artificial intelligence (AI) capabilities, aiming to avoid unnecessary complexity.
+...</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_sample_controller"><a class="anchor" href="#_sample_controller">示例控制器</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>创建一个新的 Spring Boot 项目，并在依赖项中添加 <code>spring-ai-starter-model-bedrock-converse</code>。</p>
+</div>
+<div class="paragraph">
+<p>在 <code>src/main/resources</code> 下添加一个 <code>application.properties</code> 文件：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties">spring.ai.bedrock.aws.region=eu-central-1
+spring.ai.bedrock.aws.timeout=10m
+spring.ai.bedrock.aws.access-key=${AWS_ACCESS_KEY_ID}
+spring.ai.bedrock.aws.secret-key=${AWS_SECRET_ACCESS_KEY}
+# session token is only required for temporary credentials
+spring.ai.bedrock.aws.session-token=${AWS_SESSION_TOKEN}
+
+spring.ai.bedrock.converse.chat.temperature=0.8
+spring.ai.bedrock.converse.chat.top-k=15</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>这是一个使用 chat 模型示例的控制器：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@RestController
+public class ChatController {
+
+    private final ChatClient chatClient;
+
+    @Autowired
+    public ChatController(ChatClient.Builder builder) {
+        this.chatClient = builder.build();
+    }
+
+    @GetMapping("/ai/generate")
+    public Map generate(@RequestParam(value = "message", defaultValue = "Tell me a joke") String message) {
+        return Map.of("generation", this.chatClient.prompt(message).call().content());
+    }
+
+    @GetMapping("/ai/generateStream")
+    public Flux&lt;ChatResponse&gt; generateStream(@RequestParam(value = "message", defaultValue = "Tell me a joke") String message) {
+        return this.chatClient.prompt(message).stream().content();
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<nav class="pagination"><span class="prev"><a href="comparison.html">聊天模型对比</a></span>
+<span class="next"><a href="anthropic-chat.html">Anthropic</a></span></nav>
+</article>  </div>
+</main>
+<div aria-hidden="true" class="modal micromodal-slide" id="modal-versions">
+    <div class="modal__overlay" data-micromodal-close="" tabindex="-1">
+        <div aria-modal="true" class="modal__container" role="dialog">
+            <main class="modal__content" id="modal-versions-content">
+              <button class="modal-versions-close" data-micromodal-close="">
+                <svg height="28px" viewbox="0 0 32 32" width="28px" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1h{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title></title><g id="cross"><line class="cls-1h" x1="7" x2="25" y1="7" y2="25"></line><line class="cls-1h" x1="7" x2="25" y1="25" y2="7"></line></g></svg>
+              </button>
+              <div class="colset">
+                <div class="col-left">
+
+                  <ul class="nav-versions">
+                      <li class="component">
+                        <div><a class="title" href="../../index.html">Spring AI</a></div>                        <div class="version-item is-active">
+                          <div>
+                            <button class="version-toggle" type="button">
+                              <span></span>
+                              Stable
+                            </button>
+                          </div>
+                          <ul class="versions">
+  <li class="version">
+    <a href="../../index.html">
+      2.0.0
+    </a>
+  </li>
+</ul>                        </div>
+                        
+                      </li>
+                  </ul>
+                </div>
+                <div class="col-right"><ul class="projects">
+<li>
+    相关 Spring 文档
+    <ul class="projects-list">
+</ul>
+</li><a href="../../spring-projects.html">所有文档...</a>
+</ul></div>
+              </div>
+            </main>
+        </div>
+    </div>
+</div>
+
+</div>
+<footer class="footer flex">
+    <div id="spring-links flex">
+        <img alt="Spring" id="springlogo" src="../../_/img/spring-logo.svg"/>
+        <p class="smallest antialiased">Copyright © 2005 - <script>var d = new Date();
+        document.write(d.getFullYear());</script> Broadcom. 保留所有权利。术语“Broadcom”是指 Broadcom Inc. 和/或其子公司。<br/><a href="https://www.vmware.com/help/legal.html">使用条款</a> • <a href="https://www.vmware.com/help/privacy.html" rel="noopener noreferrer">隐私政策</a> • <a href="https://spring.io/trademarks">商标指南</a> <span id="thank-you-mobile">• <a href="https://spring.io/thank-you">致谢</a></span> • <a href="https://www.vmware.com/help/privacy/california-privacy-rights.html">您的加州隐私权</a> • <a class="ot-sdk-show-settings">Cookie 设置</a> <span id="teconsent"></span></p>
+        <p class="smallest antialiased has-gray-text">Apache®、Apache Tomcat®、Apache Kafka®、Apache Cassandra™ 和 Apache Geode™ 是 Apache Software Foundation 在美国和/或其他国家的商标或注册商标。Java™、Java™ SE、Java™ EE 和 OpenJDK™ 是 Oracle 和/或其关联公司的商标。Kubernetes® 是 Linux Foundation 在美国和其他国家的注册商标。Linux® 是 Linus Torvalds 在美国和其他国家的注册商标。Windows® 和 Microsoft® Azure 是 Microsoft Corporation 的注册商标。“AWS”和“Amazon Web Services”是 Amazon.com Inc. 或其关联公司的商标或注册商标。所有其他商标和版权均为其各自所有者的财产，仅用于提供信息。其他名称可能是其各自所有者的商标。</p>
+    </div>
+    <div class="flex jc-between" id="social-icons">
+        <a href="https://www.youtube.com/user/SpringSourceDev" title="Youtube"><svg id="youtube-icon" viewbox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><circle class="cls-1" cx="20" cy="20" r="20"></circle><path class="cls-2" d="M30.91,14.53a2.89,2.89,0,0,0-2-2C27.12,12,20,12,20,12s-7.12,0-8.9.47a2.9,2.9,0,0,0-2,2A30.56,30.56,0,0,0,8.63,20a30.44,30.44,0,0,0,.46,5.47,2.89,2.89,0,0,0,2,2C12.9,28,20,28,20,28s7.12,0,8.9-.47a2.87,2.87,0,0,0,2-2A30.56,30.56,0,0,0,31.37,20,28.88,28.88,0,0,0,30.91,14.53ZM17.73,23.41V16.59L23.65,20Z"></path></svg></a>
+        <a href="https://github.com/spring-projects" title="GitHub"><svg id="github-icon" viewbox="0 0 75.93 75.93" xmlns="http://www.w3.org/2000/svg"><path class="cls-1" d="M38,0a38,38,0,1,0,38,38A38,38,0,0,0,38,0Z"></path><path class="cls-2" d="M38,15.59A22.95,22.95,0,0,0,30.71,60.3c1.15.21,1.57-.5,1.57-1.11s0-2,0-3.9c-6.38,1.39-7.73-3.07-7.73-3.07A6.09,6.09,0,0,0,22,48.86c-2.09-1.42.15-1.39.15-1.39a4.81,4.81,0,0,1,3.52,2.36c2,3.5,5.37,2.49,6.67,1.91a4.87,4.87,0,0,1,1.46-3.07c-5.09-.58-10.45-2.55-10.45-11.34a8.84,8.84,0,0,1,2.36-6.15,8.29,8.29,0,0,1,.23-6.07s1.92-.62,6.3,2.35a21.82,21.82,0,0,1,11.49,0c4.38-3,6.3-2.35,6.3-2.35a8.29,8.29,0,0,1,.23,6.07,8.84,8.84,0,0,1,2.36,6.15c0,8.81-5.37,10.75-10.48,11.32a5.46,5.46,0,0,1,1.56,4.25c0,3.07,0,5.54,0,6.29s.42,1.33,1.58,1.1A22.94,22.94,0,0,0,38,15.59Z"></path></svg></a>
+        <a href="https://twitter.com/springcentral" title="Twitter"><svg id="twitter-icon" viewbox="0 0 75.93 75.93" xmlns="http://www.w3.org/2000/svg"><circle class="cls-1" cx="37.97" cy="37.97" r="37.97"></circle><path class="cls-2" d="M55.2,22.73a15.43,15.43,0,0,1-4.88,1.91,7.56,7.56,0,0,0-5.61-2.49A7.78,7.78,0,0,0,37,30a7.56,7.56,0,0,0,.2,1.79,21.63,21.63,0,0,1-15.84-8.23,8,8,0,0,0,2.37,10.52,7.66,7.66,0,0,1-3.48-1v.09A7.84,7.84,0,0,0,26.45,41a7.54,7.54,0,0,1-2,.28A7.64,7.64,0,0,1,23,41.09a7.71,7.71,0,0,0,7.18,5.47,15.21,15.21,0,0,1-9.55,3.37,15.78,15.78,0,0,1-1.83-.11,21.41,21.41,0,0,0,11.78,3.54c14.13,0,21.86-12,21.86-22.42,0-.34,0-.68,0-1a15.67,15.67,0,0,0,3.83-4.08,14.9,14.9,0,0,1-4.41,1.24A7.8,7.8,0,0,0,55.2,22.73Z" data-name="Twitter" id="Twitter-2"></path></svg></a>
+    </div>
+</footer>
+<script src="../../_/js/vendor/import.js"></script>
+<script src="../../_/js/site.js"></script>
+<script async="" src="../../_/js/vendor/highlight.js"></script>
+<script async="" data-sync-storage-key="docs:preferred-tab" src="../../_/js/vendor/asciidoctor-tabs.js"></script>
+
+<div aria-hidden="true" class="modal micromodal-slide" id="modal-1">
+    <div class="modal__overlay" data-micromodal-close="" tabindex="-1">
+        <div aria-labelledby="modal-1-title" aria-modal="true" class="modal__container" role="dialog">
+            <main class="modal__content" id="modal-1-content">
+                <div id="searchbox"></div>
+                <div id="counter"></div>
+                <div class="search-link-box"><a class="search-link" href="../../search.html">在所有 Spring 文档中搜索</a></div>
+                <div class="search-by">
+                    <a aria-label="Search by Algolia" href="https://www.algolia.com/" rel="noopener noreferrer" target="_blank">
+                        <img class="light" src="../../_/img/algolia-light.svg" width="140"/>
+                        <img class="dark" src="../../_/img/algolia-dark.svg" width="140"/>
+                    </a>
+                </div>
+                <div id="hits"></div>
+            </main>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
+<script crossorigin="anonymous" integrity="sha256-Lf9DrpGmcRip6OQzbcL6lnvNmoZNSKpyQX5pMlwatWE=" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.17.0/dist/algoliasearch-lite.umd.js"></script>
+<script crossorigin="anonymous" integrity="sha256-xYsZPDeNjYNTBWLvqD2Lxe98hOxcDgOHyMPfz4tVAbk=" src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.54.1/dist/instantsearch.production.min.js"></script>
+<script async="" data-api-key="c2e84f15fa630d534f1c62b1c413bb77" data-app-id="WB1FQYI187" data-index-name="springdocs" data-page-component="ai" data-page-version="2.0.0" data-stylesheet="../../_/css/vendor/search.css" id="search-script" src="../../_/js/vendor/search.js"></script>
+  
+
+</body></html>

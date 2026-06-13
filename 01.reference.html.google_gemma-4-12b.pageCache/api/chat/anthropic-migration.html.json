@@ -1,0 +1,661 @@
+{
+  "created_at": "2026-06-13 17:13:04",
+  "updated_at": "2026-06-13 17:13:04",
+  "stats": {
+    "total_entries": 129,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 129,
+    "entries_with_hits": 129,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.012899999999999998
+  },
+  "items": [
+    {
+      "source": "Enum values of <code>AnthropicCacheStrategy</code> (<code>NONE</code>, <code>TOOLS_ONLY</code>, <code>SYSTEM_ONLY</code>, <code>SYSTEM_AND_TOOLS</code>, <code>CONVERSATION_HISTORY</code>) and <code>AnthropicCacheTtl</code> (<code>FIVE_MINUTES</code>, <code>ONE_HOUR</code>) are unchanged.\nThe <code>plainText(…​)</code>, <code>pdf(…​)</code>, and <code>customContent(…​)</code> factory methods still exist on the renamed <code>AnthropicCitationDocument</code>.",
+      "translation": "<code>AnthropicCacheStrategy</code> 的枚举值（<code>NONE</code>、<code>TOOLS_ONLY</code>、<code>SYSTEM_ONLY</code>、<code>SYSTEM_AND_TOOLS</code>、<code>CONVERSATION_HISTORY</code>）和 <code>AnthropicCacheTtl</code>（<code>FIVE_MINUTES</code>、<code>ONE_HOUR</code>）保持不变。\n重命名后的 <code>AnthropicCitationDocument</code> 上仍保留有 <code>plainText(…​)</code>、<code>pdf(…​)</code> 和 <code>customContent(…​)</code> 工厂方法。",
+      "count": 1
+    },
+    {
+      "source": "The builder also accepts <code>baseUrl</code>, <code>timeout</code>, <code>maxRetries</code>, <code>proxy</code>, <code>customHeaders</code>, <code>observationRegistry</code>, and <code>observationConvention</code>.\nThere is no <code>retryTemplate</code> builder method; retry is now handled by the SDK (see <a href=\"#retry-behavior\">Retry uses SDK <code>maxRetries</code>, not <code>RetryTemplate</code></a>).",
+      "translation": "构建器还接受 <code>baseUrl</code>、<code>timeout</code>、<code>maxRetries</code>、<code>proxy</code>、<code>customHeaders</code>、<code>observationRegistry</code> 和 <code>observationConvention</code>。\n没有 <code>retryTemplate</code> 构建方法；重试现在由 SDK 处理（参见 <a href=\"#retry-behavior\">Retry uses SDK <code>maxRetries</code>, not <code>RetryTemplate</code></a>）。",
+      "count": 1
+    },
+    {
+      "source": "Copyright © 2005 - <script>var d = new Date();\n        document.write(d.getFullYear());</script> Broadcom. All Rights Reserved. The term \"Broadcom\" refers to Broadcom Inc. and/or its subsidiaries.<br/><a href=\"https://www.vmware.com/help/legal.html\">Terms of Use</a> • <a href=\"https://www.vmware.com/help/privacy.html\" rel=\"noopener noreferrer\">Privacy</a> • <a href=\"https://spring.io/trademarks\">Trademark Guidelines</a> <span id=\"thank-you-mobile\">• <a href=\"https://spring.io/thank-you\">Thank you</a></span> • <a href=\"https://www.vmware.com/help/privacy/california-privacy-rights.html\">Your California Privacy Rights</a> • <a class=\"ot-sdk-show-settings\">Cookie Settings</a> <span id=\"teconsent\"></span>",
+      "translation": "Copyright © 2005 - <script>var d = new Date();\n        document.write(d.getFullYear());</script> Broadcom. 保留所有权利。术语“Broadcom”是指 Broadcom Inc. 和/或其子公司。<br/><a href=\"https://www.vmware.com/help/legal.html\">使用条款</a> • <a href=\"https://www.vmware.com/help/privacy.html\" rel=\"noopener noreferrer\">隐私政策</a> • <a href=\"https://spring.io/trademarks\">商标指南</a> <span id=\"thank-you-mobile\">• <a href=\"https://spring.io/thank-you\">致谢</a></span> • <a href=\"https://www.vmware.com/help/privacy/california-privacy-rights.html\">您的加州隐私权</a> • <a class=\"ot-sdk-show-settings\">Cookie 设置</a> <span id=\"teconsent\"></span",
+      "count": 1
+    },
+    {
+      "source": "<code>ContentBlock</code> (sealed union: <code>TextBlock</code>, <code>ToolUseBlock</code>, <code>ThinkingBlock</code>, <code>RedactedThinkingBlock</code>, <code>ServerToolUseBlock</code>, <code>WebSearchToolResultBlock</code>, <code>ContainerUploadBlock</code>, …​)",
+      "translation": "<code>ContentBlock</code>（密封联合类型：<code>TextBlock</code>、<code>ToolUseBlock</code>、<code>ThinkingBlock</code>、<code>RedactedThinkingBlock</code>、<code>ServerToolUseBlock</code>、<code>WebSearchToolResultBlock</code>、<code>ContainerUploadBlock</code>，……）",
+      "count": 1
+    },
+    {
+      "source": "In <code>2.0.0-M3</code>, <code>spring-ai-anthropic</code> was rewritten on top of the official <code>com.anthropic:anthropic-java</code> SDK, replacing the hand-rolled <code>RestClient</code> / <code>WebClient</code> implementation. The previous <code>AnthropicApi</code> class was a 2,300-line file with 47 nested DTO records.",
+      "translation": "在 <code>2.0.0-M3</code> 版本中，<code>spring-ai-anthropic</code> 基于官方的 <code>com.anthropic:anthropic-java</code> SDK 进行了重写，取代了之前手动编写的 <code>RestClient</code> / <code>WebClient</code> 实现。之前的 <code>AnthropicApi</code> 类是一个包含 47 个嵌套 DTO record 的 2,300 行文件。",
+      "count": 1
+    },
+    {
+      "source": "The Maven coordinates, the <code>spring-ai-starter-model-anthropic</code> Boot starter, and the <code>spring.ai.anthropic.*</code> configuration properties are all unchanged.\nThe <code>ChatClient</code> API is unchanged.\n<code>ChatModel.call(Prompt)</code> and <code>ChatModel.stream(Prompt)</code> keep their signatures.\n<code>AnthropicChatOptions</code> keeps all existing fields, adding new ones for skills, web search, service tier, inference geo, and structured output.",
+      "translation": "Maven 坐标、<code>spring-ai-starter-model-anthropic</code> Boot starter 以及 <code>spring.ai.anthropic.*</code> 配置属性均保持不变。\n<code>ChatClient</code> API 保持不变。\n<code>ChatModel.call(Prompt)</code> 和 <code>ChatModel.stream(Prompt)</code> 保留其签名。\n<code>AnthropicChatOptions</code> 保留所有现有字段，并新增了用于技能、网络搜索、服务层级、推理地理位置和结构化输出的字段。",
+      "count": 1
+    },
+    {
+      "source": "Per-request HTTP headers on <code>AnthropicChatOptions#httpHeaders</code>, distinct from client-level <code>customHeaders</code> on <code>AbstractAnthropicOptions</code>. <code>customHeaders</code> is set once on the client and applies to every request; <code>httpHeaders</code> is set per <code>Prompt</code> and merged in at request-build time. Useful for request tracing, beta-API toggles, and routing.",
+      "translation": "<code style=\"color: #d73a49;\">AnthropicChatOptions#httpHeaders</code> 上的单次请求 HTTP 请求头，与 <code style=\"color: #d73a49;\">AbstractAnthropicOptions</code> 上的客户端级 <code style=\"color: #d73a49;\">customHeaders</code> 不同。<code style=\"color: #d73a49;\">customHeaders</code> 在客户端上设置一次并应用于每次请求；<code style=\"color: #d73a49;\">httpHeaders</code> 在每个 <code style=\"color: #d73a49;\">Prompt</code> 中设置并在请求构建时合并。适用于请求追踪、beta-API 开关和路由。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Partial prompt-level options.</strong> <code>new Prompt(text, AnthropicChatOptions.builder().maxTokens(2048).build())</code> no longer inherits <code>model</code>, <code>temperature</code>, etc. from the model’s defaults (see <a href=\"#prompt-option-merging\">Prompt-level options no longer merge with model defaults</a>). No compile error, no exception; the request runs with different values. If output drifts after the upgrade and you call <code>ChatModel</code> directly, look here first.",
+      "translation": "<strong>部分提示词级选项。</strong> <code>new Prompt(text, AnthropicChatOptions.builder().maxTokens(2048).build())</code> 不再继承模型默认设置中的 <code>model</code>、<code>temperature</code> 等参数（参见 <a href=\"#prompt-option-merging\">提示词级选项不再与模型默认值合并</a>）。不会出现编译错误或异常；请求将以不同的值运行。如果升级后输出发生偏移且您直接调用了 <code>ChatModel</code>，请首先查看此处。",
+      "count": 1
+    },
+    {
+      "source": "Provider-neutral request and response types (<code>Prompt</code>, <code>ChatResponse</code>, <code>Generation</code>, <code>Usage</code>), so application code doesn’t depend on <code>com.anthropic.*</code>.",
+      "translation": "提供商中立的请求和响应类型（<code style=\"color: #d73a49;\">Prompt</code>、<code style=\"color: #d73a49;\">ChatResponse</code>、<code style=\"color: #d73a49;\">Generation</code>、<code style=\"color: #d73a49;\">Usage</code>），因此应用程序代码不会依赖于 <code style=\"color: #d73a49;\">com.anthropic.*</code>。",
+      "count": 1
+    },
+    {
+      "source": "<code>ToolChoice</code> (sealed union with <code>ToolChoiceAuto</code>, <code>ToolChoiceAny</code>, <code>ToolChoiceTool</code>, <code>ToolChoiceNone</code> variants)",
+      "translation": "<code>ToolChoice</code>（密封联合类型，包含 <code>ToolChoiceAuto</code>、<code>ToolChoiceAny</code>、<code>ToolChoiceTool</code> 和 <code>ToolChoiceNone</code> 变体）",
+      "count": 1
+    },
+    {
+      "source": "<code>com.anthropic.core.http.AsyncStreamResponse&lt;RawMessageStreamEvent&gt;</code>. <code>StreamHelper</code> was the internal SSE-merging helper for the old <code>WebClient</code> streaming path; the SDK now delivers stream events natively, and Spring AI bridges them to a Reactor <code>Flux</code> internally. Code calling <code>ChatModel.stream(Prompt)</code> is unaffected.",
+      "translation": "<code>com.anthropic.core.http.AsyncStreamResponse&lt;RawMessageStreamEvent&gt;</code>。<code>StreamHelper</code> 是旧版 <code>WebClient</code> 流式传输路径中的内部 SSE 合并辅助类；现在的 SDK 原生提供流事件，并且 Spring AI 在内部将其桥接到 Reactor <code>Flux</code>。调用 <code>ChatModel.stream(Prompt)</code> 的代码不受影响。",
+      "count": 1
+    },
+    {
+      "source": "The previous module merged prompt-level <code>AnthropicChatOptions</code> into the model-level defaults via <code>ModelOptionsUtils.copyToTarget(…​)</code> and <code>ModelOptionsUtils.merge(…​)</code>, so <code>model</code>, <code>temperature</code>, and any other unset fields were filled in from the model’s defaults:",
+      "translation": "之前的模块通过 <code>ModelOptionsUtils.copyToTarget(…​)</code> 和 <code>ModelOptionsUtils.merge(…​)</code> 将提示词层级的 <code>AnthropicChatOptions</code> 合并到了模型层级的默认值中，因此 <code>model</code>、<code>temperature</code> 以及任何其他未设置的字段都从模型的默认值中填充：",
+      "count": 1
+    },
+    {
+      "source": "<strong><code>AnthropicCacheStrategy.NONE</code> means \"unset\", not \"disabled\".</strong> Setting <code>NONE</code> at the prompt level falls back to the model default. To turn caching off when the model default has it on, build a second <code>AnthropicChatModel</code> with <code>AnthropicCacheOptions.disabled()</code> as its default.",
+      "translation": "<strong><code style=\"color: #e67e22;\">AnthropicCacheStrategy.NONE</code></strong> 意味着“未设置”，而非“禁用”。在 prompt 层级设置 <code style=\"color: #e67e22;\">NONE</code> 将会回退到模型的默认值。如果模型默认开启了缓存，而您想将其关闭，请构建第二个 <code style=\"color: #e67e22;\">AnthropicChatModel</code>，并将 <code style=\"color: #e67e22;\">AnthropicCacheOptions.disabled()</code> 作为其默认值。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Tool cache TTL is taken from <code>MessageType.SYSTEM</code>.</strong> <code>resolveToolCacheControl</code> looks up <code>messageTypeTtl(MessageType.SYSTEM)</code> regardless of strategy. Setting <code>messageTypeTtl(MessageType.USER, ONE_HOUR)</code> has no effect on tool caching.",
+      "translation": "<strong>工具缓存的 TTL 取自 <code>MessageType.SYSTEM</code>。</strong> 无论采用何种策略，<code>resolveToolCacheControl</code> 都会查找 <code>messageTypeTtl(MessageType.SYSTEM)</code>。设置 <code>messageTypeTtl(MessageType.USER, ONE_HOUR)</code> 对工具缓存没有影响。",
+      "count": 1
+    },
+    {
+      "source": "<code>Citation</code> type with four location variants (<code>CHAR_LOCATION</code>, <code>PAGE_LOCATION</code>, <code>CONTENT_BLOCK_LOCATION</code>, <code>WEB_SEARCH_RESULT_LOCATION</code>).",
+      "translation": "<code>Citation</code> 类型包含四种位置变体（<code>CHAR_LOCATION</code>、<code>PAGE_LOCATION</code>、<code>CONTENT_BLOCK_LOCATION</code>、<code>WEB_SEARCH_RESULT_LOCATION</code>）。",
+      "count": 1
+    },
+    {
+      "source": "<code>AnthropicChatOptions</code> defaults <code>maxTokens</code> to <code>4096</code> instead of <code>500</code>.\nThe previous default routinely truncated responses; the new value matches the other Spring AI chat modules.",
+      "translation": "<code>AnthropicChatOptions</code> 将 <code>maxTokens</code> 的默认值从 <code>500</code> 修改为 <code>4096</code>。\n之前的默认值经常导致响应被截断；新的数值与其他的 Spring AI 对话模块保持一致。",
+      "count": 1
+    },
+    {
+      "source": "The previous module bundled the text and signature of a thinking block into a single <code>Generation</code>. The SDK delivers them as separate events, and the new module forwards them that way: a <code>Generation</code> with <code>properties.signature</code> arrives after the thinking-text deltas, before any subsequent text deltas. <code>MessageAggregator</code> and `ChatClient’s built-in aggregation absorb the extra chunk transparently.",
+      "translation": "之前的模块将思考块的文本和签名捆绑到单个 <code>Generation</code> 中。SDK 将它们作为独立的事件传递，而新模块也按此方式转发：在思考文本增量（deltas）之后、后续任何文本增量之前，会到达一个带有 <code>properties.signature</code> 的 <code>Generation</code>。<code>MessageAggregator</code> 和 `ChatClient` 内置的聚合功能会透明地吸收这个额外的块。",
+      "count": 1
+    },
+    {
+      "source": "<strong>The 4-breakpoint limit is enforced in Spring AI, not at the API.</strong> Anthropic permits at most 4 cache breakpoints per request. The previous module passed markers through and let the API reject excess. <code>CacheBreakpointTracker</code> now keeps count and silently skips additions past 4, logging a one-time <code>WARN</code>. The most likely way to hit the cap is <code>SYSTEM_AND_TOOLS</code> combined with multi-block system caching and citation documents. Requests that previously failed with an API error can now succeed with reduced caching, so check your cache hit rate after the upgrade.",
+      "translation": "<strong>4 个断点限制是在 Spring AI 中强制执行的，而不是在 API 端。</strong> Anthropic 每个请求最多允许 4 个缓存断点。之前的模块只是透传标记，让 API 拒绝超出数量的部分。现在的 <code>CacheBreakpointTracker</code> 会进行计数，并静默跳过超过 4 个的添加操作，同时记录一次性的 <code>WARN</code> 日志。最容易达到上限的情况是 <code>SYSTEM_AND_TOOLS</code> 结合多块系统缓存和引用文档。以前因 API 错误而失败的请求现在可以以减少的缓存量成功运行，因此请在升级后检查您的缓存命中率。",
+      "count": 1
+    },
+    {
+      "source": "The Anthropic API requires every <code>DocumentBlockParam</code> with citation configuration in a single request to share the same <code>citations.enabled</code> value.\n<code>AnthropicChatOptions.validateCitationConsistency()</code> now enforces this and throws <code>IllegalArgumentException</code> before the request is sent. The previous module let the API return an HTTP 400.\nTests or call sites that mixed enabled and disabled citation documents will now fail at build time instead of on the network call.",
+      "translation": "Anthropic API 要求在单个请求中，所有包含引用配置的 <code>DocumentBlockParam</code> 必须共享相同的 <code>citations.enabled</code> 值。\n<code>AnthropicChatOptions.validateCitationConsistency()</code> 现在会强制执行此项规定，并在请求发送前抛出 <code>IllegalArgumentException</code>。之前的模块则允许 API 返回 HTTP 400。\n混合使用已启用和未启用引用的文档的测试或调用点现在将在构建时失败，而不是在网络调用时失败。",
+      "count": 1
+    },
+    {
+      "source": "Moved out of <code>org.springframework.ai.anthropic.api</code> (and <code>api.utils</code>) into the root <code>org.springframework.ai.anthropic</code> package. Enum values unchanged.",
+      "translation": "从 <code>org.springframework.ai.anthropic.api</code>（以及 <code>api.utils</code>）移动到根包 <code>org.springframework.ai.anthropic</code>。枚举值保持不变。",
+      "count": 1
+    },
+    {
+      "source": "The one behavioral change to watch for is the new default <code>maxTokens</code> value (see <a href=\"#default-max-tokens\">Default <code>maxTokens</code> is now 4096</a>).",
+      "translation": "需要注意的一个行为变化是新的默认 <code>maxTokens</code> 值（参见 <a href=\"#default-max-tokens\">默认 <code>maxTokens</code> 现在为 4096</a>）。",
+      "count": 1
+    },
+    {
+      "source": "The cache and citation helper classes moved out of the <code>api</code> (and <code>api.utils</code>) subpackage into the root <code>org.springframework.ai.anthropic</code> package.\nUpdate imports as follows:",
+      "translation": "缓存和引用辅助类已从 <code>api</code>（以及 <code>api.utils</code>）子包移动到根 <code>org.springframework.ai.anthropic</code> 包中。\n请按如下方式更新导入：",
+      "count": 1
+    },
+    {
+      "source": "<code>AnthropicApi</code>, its nested DTO records, and <code>AnthropicCacheType</code> are gone. Before reaching for the SDK client, consider whether <code>AnthropicChatModel</code> covers what you were doing. It usually does, and you keep the framework integration.",
+      "translation": "<code style=\"color: #d73a49;\">AnthropicApi</code>、其嵌套的 DTO records 以及 <code style=\"color: #d73a49;\">AnthropicCacheType</code> 已被移除。在寻求使用 SDK 客户端之前，请考虑 <code style=\"color: #d73a49;\">AnthropicChatModel</code> 是否涵盖了你正在执行的操作。通常情况下它是涵盖的，而且你可以保留框架集成。",
+      "count": 1
+    },
+    {
+      "source": "For typical chat usage, switch to <code>AnthropicChatModel.builder()</code> (see <a href=\"#programmatic-construction\">If You Construct <code>AnthropicChatModel</code> Programmatically</a>):",
+      "translation": "对于典型的聊天用法，请切换到 <code>AnthropicChatModel.builder()</code>（参见 <a href=\"#programmatic-construction\">如果您以编程方式构建 <code>AnthropicChatModel</code></a>）：",
+      "count": 1
+    },
+    {
+      "source": "This is a forward port of the broader change in <a class=\"xref page\" href=\"../../upgrade-notes.html#upgrading-to-2-0-0-M5\">Upgrading to 2.0.0-M5 — ChatOptions Handling</a>, landed early for Anthropic.\n<code>ChatClient</code> performs its own merging before reaching the model, so callers using <code>ChatClient</code> are not affected.",
+      "translation": "这是针对更广泛的变更 <a class=\"xref page\" href=\"../../upgrade-notes.html#upgrading-to-2-0-0-M5\">升级到 2.0.0-M5 — ChatOptions 处理</a> 的前置移植，并为 Anthropic 提前发布。\n<code class=\"ChatClient\">ChatClient</code> 在到达模型之前会执行自身的合并操作，因此使用 <code class=\"ChatClient\">ChatClient</code> 的调用者不受影响。",
+      "count": 1
+    },
+    {
+      "source": "The previous module took a Spring Retry <code>RetryTemplate</code> in its constructor.\nRetries are now handled by the SDK and configured through <code>maxRetries</code> (default <code>2</code>):",
+      "translation": "之前的模块在其构造函数中接收一个 Spring Retry <code class=\"language-xml\">RetryTemplate</code>。\n现在重试由 SDK 处理，并通过 <code class=\"language-xml\">maxRetries</code>（默认值为 <code class=\"language-xml\">2</code>）进行配置：",
+      "count": 1
+    },
+    {
+      "source": "Two changes affect anyone subscribed to the raw <code>Flux&lt;ChatResponse&gt;</code> stream (rather than letting <code>ChatClient</code> or <code>MessageAggregator</code> collapse it).",
+      "translation": "有两个变化会影响任何订阅原始 <code style=\"white-space:nowrap;\">Flux&lt;ChatResponse&gt;</code> 流（而不是让 <code style=\"white-space:nowrap;\">ChatClient</code> 或 <code style=\"white-space:nowrap;\">MessageAggregator</code> 对其进行折叠）的人。",
+      "count": 1
+    },
+    {
+      "source": "<code>com.anthropic:anthropic-java</code> pulls in <code>com.squareup.okhttp3:okhttp</code>.\nMost applications will not notice; if you have strict dependency-convergence rules or an existing OkHttp pin, you may need a <code>&lt;dependencyManagement&gt;</code> entry.",
+      "translation": "<code>com.anthropic:anthropic-java</code> 会引入 <code>com.squareup.okhttp3:okhttp</code>。\n大多数应用程序不会受到影响；如果您有严格的依赖收敛规则或现有的 OkHttp 版本锁定，您可能需要添加一个 <code>&lt;dependencyManagement&gt;</code> 条目。",
+      "count": 1
+    },
+    {
+      "source": "Native structured output through <code>JsonOutputFormat</code> and <code>Effort</code> (requires <code>claude-sonnet-4-6</code> or newer).",
+      "translation": "通过 <code>JsonOutputFormat</code> 和 <code>Effort</code> 实现原生结构化输出（需要 <code>claude-sonnet-4-6</code> 或更高版本）。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Cache breakpoints dropped past four.</strong> Stacking multi-block system caching with tools and citation documents can push past Anthropic’s 4-breakpoint cap. <code>CacheBreakpointTracker</code> skips the extras and logs <code>WARN</code> once. Cache hit rate drops without an error.",
+      "translation": "<strong>缓存断点已超过四个。</strong>通过将多块系统缓存与工具和引用文档堆叠，可以突破 Anthropic 的 4 个断点上限。<code>CacheBreakpointTracker</code> 会跳过额外的断点并仅记录一次 <code>WARN</code>。缓存命中率会下降，但不会报错。",
+      "count": 1
+    },
+    {
+      "source": "The new module is a thin adapter over the SDK rather than a parallel API. Spring AI’s value is in its own abstractions — <code>ChatModel</code>, <code>ChatClient</code>, advisors, observability, auto-config — and in features that work across providers. Where the SDK already covers a concern (cache-control modeling, streaming, rate-limit handling), the previous module’s wrapper was dropped instead of carried forward, so applications use the SDK’s type directly. This keeps the surface area small and avoids drift as Anthropic ships new SDK releases.",
+      "translation": "新模块是建立在 SDK 之上的薄适配层，而非并行的 API。Spring AI 的价值在于其自身的抽象——<code>ChatModel</code>、<code>ChatClient</code>、advisors、observability 和 auto-config——以及跨提供商通用的功能。在 SDK 已经涵盖某些功能（如 cache-control 建模、流式传输、速率限制处理）的地方，我们去掉了之前的模块中的包装器，而不是沿用它，因此应用程序直接使用 SDK 的类型。这样做可以保持接口面积精简，并避免在 Anthropic 发布新 SDK 版本时出现偏差。",
+      "count": 1
+    },
+    {
+      "source": "Changed from <code>500</code> to <code>4096</code>.",
+      "translation": "从 <code>500</code> 更改为 <code>4096</code>。",
+      "count": 1
+    },
+    {
+      "source": "<code>AnthropicChatModel</code> adds the following on top of a raw <code>AnthropicClient</code>:",
+      "translation": "<code>AnthropicChatModel</code> 在原始的 <code>AnthropicClient</code> 之上增加了以下功能：",
+      "count": 1
+    },
+    {
+      "source": "Tool calling integrated with <code>ToolCallback</code> and the <code>ToolCallingManager</code> loop, including automatic multi-turn execution.",
+      "translation": "与 <code>ToolCallback</code> 和 <code>ToolCallingManager</code> 循环集成的工具调用，包括自动多轮执行。",
+      "count": 1
+    },
+    {
+      "source": "Streaming as a Reactor <code>Flux&lt;ChatResponse&gt;</code> rather than the SDK’s callback-based <code>AsyncStreamResponse</code>.",
+      "translation": "以 Reactor 形式流式传输 <code>Flux&lt;ChatResponse&gt;</code>，而非使用 SDK 基于回调的 <code>AsyncStreamResponse</code>。",
+      "count": 1
+    },
+    {
+      "source": "<code>Citation</code> with four location variants surfaced under <code>ChatResponseMetadata</code>.",
+      "translation": "在 <code style=\"color: #d73a49;\">ChatResponseMetadata</code> 下出现了带有四个位置变体的 <code style=\"color: #d73a49;\">Citation</code>。",
+      "count": 1
+    },
+    {
+      "source": "Skills, built-in web search, service tier, inference geo, and structured output as <code>AnthropicChatOptions</code> fields, all bindable from <code>spring.ai.anthropic.chat.*</code>.",
+      "translation": "Skills、内置网络搜索、服务层级、推理地理位置以及结构化输出作为 <code>AnthropicChatOptions</code> 字段，均可从 <code>spring.ai.anthropic.chat.*</code> 进行绑定。",
+      "count": 1
+    },
+    {
+      "source": "If you genuinely need an Anthropic API surface that <code>AnthropicChatModel</code> doesn’t expose (a beta endpoint, files API, custom skills CRUD), drop to the SDK client. You’re outside the framework at that point — no observability, no provider neutrality, no <code>ChatClient</code> pipeline:",
+      "translation": "如果你确实需要 <code style=\"white-space:pre-wrap;\">AnthropicChatModel</code> 未提供的 Anthropic API 接口（例如 beta 端点、files API 或自定义技能的 CRUD 操作），请直接使用 SDK 客户端。到那时，你已经脱离了框架——将失去可观测性、供应商中立性以及 <code style=\"white-space:pre-wrap;\">ChatClient</code> 流水线：",
+      "count": 1
+    },
+    {
+      "source": "<code>com.anthropic.models.messages.CacheControlEphemeral</code>. The old enum carried only the literal <code>ephemeral</code> value, which is also the only cache-control type the API supports.",
+      "translation": "<code style=\"color: #d73a49;\">com.anthropic.models.messages.CacheControlEphemeral</code>。旧的枚举仅包含字面量 <code style=\"color: #d73a49;\">ephemeral</code> 值，这也是 API 支持的唯一缓存控制类型。",
+      "count": 1
+    },
+    {
+      "source": "<code>com.anthropic.errors.RateLimitException</code> (thrown by the SDK after retries are exhausted), plus the headers on the SDK’s response objects. Replace code that read rate-limit metadata off <code>ChatResponseMetadata</code> with exception handling.",
+      "translation": "<code>com.anthropic.errors.RateLimitException</code>（在重试耗尽后由 SDK 抛出），以及 SDK 响应对象上的 header。将读取 <code>ChatResponseMetadata</code> 中速率限制元数据的代码替换为异常处理。",
+      "count": 1
+    },
+    {
+      "source": "Any <code>RetryTemplate</code> bean wired specifically for the Anthropic module can be removed.\nFor finer control, configure the SDK client through a custom <code>AnthropicSetup</code>.",
+      "translation": "任何专门为 Anthropic 模块配置的 <code style=\"white-space:pre-wrap;\">RetryTemplate</code> bean 都可以被移除。\n为了更精细的控制，可以通过自定义的 <code style=\"white-space:pre-wrap;\">AnthropicSetup</code> 来配置 SDK 客户端。",
+      "count": 1
+    },
+    {
+      "source": "<code>content = &lt;thinking text&gt;</code>, <code>properties.thinking = true</code> (new in M3)",
+      "translation": "<code>content = &lt;thinking text&gt;</code>，<code>properties.thinking = true</code>（M3 新增）",
+      "count": 1
+    },
+    {
+      "source": "Native skills (<code>AnthropicSkill</code>, <code>AnthropicSkillContainer</code>).",
+      "translation": "原生技能（<code style=\"color: #e67e22;\">AnthropicSkill</code>，<code style=\"color: #e67e22;\">AnthropicSkillContainer</code>）。",
+      "count": 1
+    },
+    {
+      "source": "Inference geo for data residency (<code>us</code>, <code>eu</code>).",
+      "translation": "用于数据驻留的推理地理位置（<code style=\"color:red\">us</code>，<code style=\"color:red\">eu</code>）。",
+      "count": 1
+    },
+    {
+      "source": "If costs climb after the upgrade, check whether you were relying on the old <code>500</code>-token <code>maxTokens</code> default to cap responses.",
+      "translation": "如果升级后成本上升，请检查您是否依赖旧的 <code style=\"color:red\">500</code> token <code style=\"color:red\">maxTokens</code> 默认值来限制响应。",
+      "count": 1
+    },
+    {
+      "source": "Public constructors removed. Use <code>AnthropicChatModel.builder()</code>.",
+      "translation": "公共构造函数已移除。请使用 <code>AnthropicChatModel.builder()</code>。",
+      "count": 1
+    },
+    {
+      "source": "<code>org.springframework.ai.anthropic.api.AnthropicApi</code> and its nested DTOs",
+      "translation": "<code>org.springframework.ai.anthropic.api.AnthropicApi</code> 及其嵌套的 DTOs",
+      "count": 1
+    },
+    {
+      "source": "Removed. For direct API access, use the SDK’s <code>com.anthropic.client.AnthropicClient</code>.",
+      "translation": "已移除。如需直接访问 API，请使用 SDK 中的 <code class=\"language-java\">com.anthropic.client.AnthropicClient</code>。",
+      "count": 1
+    },
+    {
+      "source": "Renamed to <code>AnthropicCitationDocument</code>.",
+      "translation": "重命名为 <code>AnthropicCitationDocument</code>。",
+      "count": 1
+    },
+    {
+      "source": "New, pulled in by <code>com.anthropic:anthropic-java</code>.",
+      "translation": "新增，由 <code class=\"language-java\">com.anthropic:anthropic-java</code> 拉取。",
+      "count": 1
+    },
+    {
+      "source": "The auto-configuration produces an <code>AnthropicChatModel</code> bean wired to the new SDK-based implementation. Calling code is unaffected.",
+      "translation": "自动配置会生成一个连接到基于新 SDK 实现的 <code>AnthropicChatModel</code> 豆（bean）。调用代码不受影响。",
+      "count": 1
+    },
+    {
+      "source": "Prompt caching with strategy modeling, TTL controls, and 4-breakpoint enforcement (<code>AnthropicCacheOptions</code>).",
+      "translation": "带有策略建模、TTL 控制和 4 个断点强制执行的 Prompt 缓存（<code>AnthropicCacheOptions</code>）。",
+      "count": 1
+    },
+    {
+      "source": "The <code>ChatClient</code> pipeline above the model (advisors, message templates, RAG, conversation memory, structured-output converter).",
+      "translation": "位于模型上方的 <code style=\"color: #d63384;\">ChatClient</code> 流水线（包含 advisors、消息模板、RAG、对话记忆和结构化输出转换器）。",
+      "count": 1
+    },
+    {
+      "source": "Provider portability: the same <code>ChatClient</code> code runs against OpenAI, Bedrock, Google GenAI, and others.",
+      "translation": "提供商可移植性：相同的 <code >ChatClient</code > 代码可运行在 OpenAI、Bedrock、Google GenAI 等平台。",
+      "count": 1
+    },
+    {
+      "source": "The hand-rolled record types have direct analogues in the SDK under <code>com.anthropic.models.messages.*</code>:",
+      "translation": "手工滚动的记录类型在 SDK 的 <code>com.anthropic.models.messages.*</code> 下有直接对应的类：",
+      "count": 1
+    },
+    {
+      "source": "<code>Source</code> (image / PDF media)",
+      "translation": "<code>来源</code>（图像 / PDF 媒体）",
+      "count": 1
+    },
+    {
+      "source": "<code>RawMessageStreamEvent</code> (sealed union)",
+      "translation": "<code>RawMessageStreamEvent</code>（密封联合类型）",
+      "count": 1
+    },
+    {
+      "source": "If you relied on <code>500</code> to bound costs, set it explicitly:",
+      "translation": "如果您依赖 <code>500</code> 来限制成本，请将其显式设置：",
+      "count": 1
+    },
+    {
+      "source": "Thinking-text deltas now also include <code>properties.thinking = Boolean.TRUE</code>. The previous module emitted them as plain content, leaving callers no reliable way to distinguish thinking text from response text mid-stream.",
+      "translation": "Thinking-text deltas 现在也包含 <code>properties.thinking = Boolean.TRUE</code>。之前的模块将其作为纯文本输出，导致调用者在流式传输过程中无法可靠地区分思考文本和响应文本。",
+      "count": 1
+    },
+    {
+      "source": "Three behaviors to know about if you configured <code>AnthropicCacheOptions</code>:",
+      "translation": "如果您配置了 <code style=\"color: #d13438;\">AnthropicCacheOptions</code>，需要了解的三个行为：",
+      "count": 1
+    },
+    {
+      "source": "The migration also enables several Anthropic features. See <a class=\"xref page\" href=\"anthropic-chat.html\">Anthropic Chat</a> for the full reference.",
+      "translation": "此次迁移还启用了多个 Anthropic 功能。请参阅 <a class=\"xref page\" href=\"anthropic-chat.html\">Anthropic Chat</a> 获取完整参考。",
+      "count": 1
+    },
+    {
+      "source": "Built-in web search tool (<code>AnthropicWebSearchTool</code>).",
+      "translation": "内置网络搜索工具（<code>AnthropicWebSearchTool</code>）。",
+      "count": 1
+    },
+    {
+      "source": "Service tier selection (<code>AnthropicServiceTier</code>).",
+      "translation": "服务层级选择（<code>AnthropicServiceTier</code>）。",
+      "count": 1
+    },
+    {
+      "source": "Stale <code>org.springframework.ai.anthropic.api.AnthropicCache*</code> imports are the source of most compile errors after the upgrade. A project-wide find-and-replace fixes them.",
+      "translation": "升级后，大部分编译错误源于过时的 <code style=\"color: #d73a49;\">org.springframework.ai.anthropic.api.AnthropicCache*</code> 导入。通过项目范围内的查找并替换即可修复这些问题。",
+      "count": 1
+    },
+    {
+      "source": "Removed without direct replacement.",
+      "translation": "已移除，未直接替换。",
+      "count": 1
+    },
+    {
+      "source": "If your code looks like this, no migration is needed:",
+      "translation": "如果您的代码如下所示，则不需要进行迁移：",
+      "count": 1
+    },
+    {
+      "source": "Replace direct constructor usage with the builder:",
+      "translation": "请使用 builder 替换直接调用构造函数：",
+      "count": 1
+    },
+    {
+      "source": "Spring Boot auto-config and Micrometer observation.",
+      "translation": "Spring Boot 自动配置与 Micrometer 观测。",
+      "count": 1
+    },
+    {
+      "source": "These types were dropped because the SDK already exposes the same concept. Use the SDK type directly.",
+      "translation": "这些类型已被移除，因为 SDK 已经暴露了相同的概念。请直接使用 SDK 类型。",
+      "count": 1
+    },
+    {
+      "source": "The new module does not merge.\nA prompt-level options instance is used as-is; if the prompt has no options, the model defaults are used.",
+      "translation": "新模块无法合并。\n直接使用提示词级选项实例；如果提示词中没有选项，则使用模型默认值。",
+      "count": 1
+    },
+    {
+      "source": "The full set of streaming metadata keys:",
+      "translation": "完整的流媒体元数据键：",
+      "count": 1
+    },
+    {
+      "source": "Thinking text delta",
+      "translation": "思考文本增量",
+      "count": 1
+    },
+    {
+      "source": "Thinking signature delta",
+      "translation": "思考签名增量",
+      "count": 1
+    },
+    {
+      "source": "Redacted thinking block",
+      "translation": "已删除思考块",
+      "count": 1
+    },
+    {
+      "source": "Sync thinking block (non-streaming)",
+      "translation": "同步思考块（非流式）",
+      "count": 1
+    },
+    {
+      "source": "Extended-thinking display modes (summarized / omitted).",
+      "translation": "扩展思考显示模式（已摘要/省略）。",
+      "count": 1
+    },
+    {
+      "source": "The compile errors are easy. These don’t throw; they produce different output instead.",
+      "translation": "编译错误很容易处理。这些不会抛出异常；它们而是产生不同的输出。",
+      "count": 1
+    },
+    {
+      "source": "Apache®, Apache Tomcat®, Apache Kafka®, Apache Cassandra™, and Apache Geode™ are trademarks or registered trademarks of the Apache Software Foundation in the United States and/or other countries. Java™, Java™ SE, Java™ EE, and OpenJDK™ are trademarks of Oracle and/or its affiliates. Kubernetes® is a registered trademark of the Linux Foundation in the United States and other countries. Linux® is the registered trademark of Linus Torvalds in the United States and other countries. Windows® and Microsoft® Azure are registered trademarks of Microsoft Corporation. “AWS” and “Amazon Web Services” are trademarks or registered trademarks of Amazon.com Inc. or its affiliates. All other trademarks and copyrights are property of their respective owners and are only mentioned for informative purposes. Other names may be trademarks of their respective owners.",
+      "translation": "Apache®、Apache Tomcat®、Apache Kafka®、Apache Cassandra™ 和 Apache Geode™ 是 Apache Software Foundation 在美国和/或其他国家的商标或注册商标。Java™、Java™ SE、Java™ EE 和 OpenJDK™ 是 Oracle 和/或其关联公司的商标。Kubernetes® 是 Linux Foundation 在美国和其他国家的注册商标。Linux® 是 Linus Torvalds 在美国和其他国家的注册商标。Windows® 和 Microsoft® Azure 是 Microsoft Corporation 的注册商标。“AWS”和“Amazon Web Services”是 Amazon.com Inc. 或其关联公司的商标或注册商标。所有其他商标和版权均为其各自所有者的财产，仅用于提供信息。其他名称可能是其各自所有者的商标。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/projects\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-boot\">Spring Boot</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-framework\">Spring Framework</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud\">Spring Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud-dataflow\">Spring Cloud Data Flow</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-data\">Spring Data</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-integration\">Spring Integration</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-batch\">Spring Batch</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-security\">Spring Security</a>\n            <a class=\"navbar-item navbar-item-special\" href=\"https://spring.io/projects\">View all projects</a>\n            <li class=\"navbar-item navbar-item-special-3\">DEVELOPMENT TOOLS</li>\n            <a class=\"navbar-item\" href=\"https://spring.io/tools\">Spring Tools 4</a>\n            <a class=\"navbar-item navbar-item-special-2\" href=\"https://start.spring.io\">Spring Initializr\n              <svg id=\"svg-stash-f15b5668\"></svg></a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/projects\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-boot\">Spring Boot</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-framework\">Spring Framework</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud\">Spring Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud-dataflow\">Spring Cloud Data Flow</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-data\">Spring Data</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-integration\">Spring Integration</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-batch\">Spring Batch</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-security\">Spring Security</a>\n            <a class=\"navbar-item navbar-item-special\" href=\"https://spring.io/projects\">查看所有项目</a>\n            <li class=\"navbar-item navbar-item-special-3\">开发工具</li>\n            <a class=\"navbar-item\" href=\"https://spring.io/tools\">Spring Tools 4</a>\n            <a class=\"navbar-item navbar-item-special-2\" href=\"https://start.spring.io\">Spring Initializr\n              <svg id=\"svg-stash-f15b5668\"></svg></a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/why-spring\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/microservices\">Microservices</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/reactive\">Reactive</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/event-driven\">Event\n              Driven</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/cloud\">Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/web-applications\">Web\n              Applications</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/serverless\">Serverless</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/batch\">Batch</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/why-spring\">概述</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/microservices\">微服务</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/reactive\">响应式</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/event-driven\">事件驱动</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/cloud\">云原生</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/web-applications\">Web 应用</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/serverless\">Serverless</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/batch\">批处理</a>",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/chat/anthropic-migration.adoc\">\n          <svg id=\"svg-stash-05b5c46b\"></svg>\n          Edit this Page\n        </a>\n        <a href=\"https://github.com/spring-projects/spring-ai\" title=\"GitHub\">\n          <svg id=\"svg-stash-28d888b7\"></svg>\n          GitHub Project\n        </a>",
+      "translation": "<a href=\"file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/chat/anthropic-migration.adoc\">\n          <svg id=\"svg-stash-05b5c46b\"></svg>\n          编辑此页面\n        </a>\n        <a href=\"https://github.com/spring-projects/spring-ai\" title=\"GitHub\">\n          <svg id=\"svg-stash-28d888b7\"></svg>\n          GitHub 项目\n        </a>",
+      "count": 1
+    },
+    {
+      "source": "<nav aria-label=\"breadcrumbs\" class=\"breadcrumbs\">\n    <ul>\n      <li><a href=\"../../index.html\">Spring AI</a></li>\n      <li><a href=\"../../upgrade-notes.html\">Upgrade Notes</a></li>\n      <li><a href=\"anthropic-migration.html\">Migrating the Anthropic Module to the Official Java SDK</a></li>\n    </ul>\n  </nav>",
+      "translation": "<nav aria-label=\"breadcrumbs\" class=\"breadcrumbs\">\n    <ul>\n      <li><a href=\"../../index.html\">Spring AI</a></li>\n      <li><a href=\"../../upgrade-notes.html\">升级说明</a></li>\n      <li><a href=\"anthropic-migration.html\">将 Anthropic 模块迁移到官方 Java SDK</a></li>\n    </ul>\n  </nav>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/solutions\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/support\">Spring Runtime</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/consulting\">Spring Consulting</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/teams\">Spring Academy For Teams</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/security\">Security Advisories</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/solutions\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/support\">Spring Runtime</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/consulting\">Spring Consulting</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/teams\">Spring Academy For Teams</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/security\">安全公告</a>",
+      "count": 1
+    },
+    {
+      "source": "<ul class=\"projects\">\n  <li>\n    Related Spring Documentation\n    <ul class=\"projects-list\">\n    </ul>\n  </li><a href=\"../../spring-projects.html\">All Docs...</a>\n</ul>",
+      "translation": "<ul class=\"projects\">\n  <li>\n    相关 Spring 文档\n    <ul class=\"projects-list\">\n    </ul>\n  </li><a href=\"../../spring-projects.html\">所有文档...</a>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.academy/courses\">Courses</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/learning-path\">Get Certified</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.academy/courses\">课程</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/learning-path\">获取认证</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"title\" href=\"../../index.html\">Spring AI</a>",
+      "translation": "<a class=\"title\" href=\"../../index.html\">Spring AI</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"search-link\" href=\"../../search.html\">Search in all Spring Docs</a>",
+      "translation": "<a class=\"search-link\" href=\"../../search.html\">在所有 Spring 文档中搜索</a>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../vectordbs.html\">Vector Databases</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/azure.html\">Azure AI Service</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/azure-cosmos-db.html\">Azure Cosmos DB</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/bedrock-knowledge-base.html\">Amazon Bedrock Knowledge Base</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/apache-cassandra.html\">Apache Cassandra Vector Store</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/chroma.html\">Chroma</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/couchbase.html\">Couchbase</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/elasticsearch.html\">Elasticsearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/gemfire.html\">GemFire</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/mariadb.html\">MariaDB Vector Store</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/milvus.html\">Milvus</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/mongodb.html\">MongoDB Atlas</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/neo4j.html\">Neo4j</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/opensearch.html\">OpenSearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/oracle.html\">Oracle</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/pgvector.html\">PGvector</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/pinecone.html\">Pinecone</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/qdrant.html\">Qdrant</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/redis.html\">Redis</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/typesense.html\">Typesense</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/weaviate.html\">Weaviate</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/s3-vector-store.html\">S3 Vector Store</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../vectordbs.html\">向量数据库</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/azure.html\">Azure AI Service</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/azure-cosmos-db.html\">Azure Cosmos DB</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/bedrock-knowledge-base.html\">Amazon Bedrock Knowledge Base</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/apache-cassandra.html\">Apache Cassandra 向量存储</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/chroma.html\">Chroma</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/couchbase.html\">Couchbase</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/elasticsearch.html\">Elasticsearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/gemfire.html\">GemFire</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/mariadb.html\">MariaDB 向量存储</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/milvus.html\">Milvus</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/mongodb.html\">MongoDB Atlas</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/neo4j.html\">Neo4j</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/opensearch.html\">OpenSearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/oracle.html\">Oracle</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/pgvector.html\">PGvector</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/pinecone.html\">Pinecone</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/qdrant.html\">Qdrant</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/redis.html\">Redis</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/typesense.html\">Typesense</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/weaviate.html\">Weaviate</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/s3-vector-store.html\">S3 向量存储</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../embeddings.html\">Embedding Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../bedrock.html\">Amazon Bedrock</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/bedrock-cohere-embedding.html\">Cohere</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/bedrock-titan-embedding.html\">Titan</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/azure-openai-embeddings.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/google-genai-embeddings-text.html\">Google GenAI Text Embedding</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/mistralai-embeddings.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/oci-genai-embeddings.html\">OCI GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/ollama-embeddings.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/onnx.html\">(ONNX) Transformers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/openai-embeddings.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/postgresml-embeddings.html\">PostgresML</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">VertexAI</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/vertexai-embeddings-text.html\">Text Embedding</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/vertexai-embeddings-multimodal.html\">Multimodal Embedding</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../embeddings.html\">嵌入模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../bedrock.html\">Amazon Bedrock</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/bedrock-cohere-embedding.html\">Cohere</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/bedrock-titan-embedding.html\">Titan</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/azure-openai-embeddings.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/google-genai-embeddings-text.html\">Google GenAI 文本嵌入</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/mistralai-embeddings.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/oci-genai-embeddings.html\">OCI GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/ollama-embeddings.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/onnx.html\">(ONNX) Transformers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/openai-embeddings.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/postgresml-embeddings.html\">PostgresML</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">VertexAI</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/vertexai-embeddings-text.html\">文本嵌入</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/vertexai-embeddings-multimodal.html\">多模态嵌入</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../chatmodel.html\">Chat Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"comparison.html\">Chat Models Comparison</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"bedrock-converse.html\">Amazon Bedrock Converse</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"anthropic-chat.html\">Anthropic</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"azure-openai-chat.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"deepseek-chat.html\">DeepSeek</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"dmr-chat.html\">Docker Model Runner</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"google-genai-chat.html\">Google GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"groq-chat.html\">Groq</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mistralai-chat.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"minimax-chat.html\">MiniMax</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"nvidia-chat.html\">NVIDIA</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"ollama-chat.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"perplexity-chat.html\">Perplexity AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"oci-genai-chat.html\">OCI Generative AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"openai-chat.html\">OpenAI</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../chatmodel.html\">聊天模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"comparison.html\">聊天模型对比</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"bedrock-converse.html\">Amazon Bedrock Converse</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"anthropic-chat.html\">Anthropic</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"azure-openai-chat.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"deepseek-chat.html\">DeepSeek</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"dmr-chat.html\">Docker Model Runner</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"google-genai-chat.html\">Google GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"groq-chat.html\">Groq</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mistralai-chat.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"minimax-chat.html\">MiniMax</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"nvidia-chat.html\">NVIDIA</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"ollama-chat.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"perplexity-chat.html\">Perplexity AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"oci-genai-chat.html\">OCI Generative AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"openai-chat.html\">OpenAI</a>\n  </li>\n</ul",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-overview.html\">Model Context Protocol (MCP)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-client-boot-starter-docs.html\">MCP Client Boot Starters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-server-boot-starter-docs.html\">MCP Server Boot Starters</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-stdio-sse-server-boot-starter-docs.html\">STDIO and SSE MCP Servers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-streamable-http-server-boot-starter-docs.html\">Streamable-HTTP MCP Servers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-stateless-server-boot-starter-docs.html\">Stateless Streamable-HTTP MCP Servers</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-security.html\">MCP Security (WIP)</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-overview.html\">MCP Annotations</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-client.html\">Client Annotations</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-server.html\">Server Annotations</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-special-params.html\">Special Parameters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-examples.html\">MCP Annotations Examples</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-overview.html\">Model Context Protocol (MCP)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-client-boot-starter-docs.html\">MCP Client Boot Starters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-server-boot-starter-docs.html\">MCP Server Boot Starters</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-stdio-sse-server-boot-starter-docs.html\">STDIO 和 SSE MCP 服务器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-streamable-http-server-boot-starter-docs.html\">Streamable-HTTP MCP 服务器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-stateless-server-boot-starter-docs.html\">无状态 Streamable-HTTP MCP 服务器</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-security.html\">MCP 安全性 (WIP)</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-overview.html\">MCP 注解</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-client.html\">客户端注解</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-server.html\">服务器注解</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-special-params.html\">特殊参数</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-examples.html\">MCP 注解示例</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">Guides</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/spring-ai-community/awesome-spring-ai\">Awesome Spring AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/getting-started-mcp.html\">Getting Started with MCP</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/dynamic-tool-search.html\">Dynamic Tool Discovery</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/llm-as-judge.html\">LLM-as-a-Judge Evaluation</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"prompt-engineering-patterns.html\">Prompt Engineering Patterns</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../effective-agents.html\">Building Effective Agents</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agents\">Building agents with Spring AI by AWS</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agentcore\">Building agents with Spring AI and AgentCore by AWS</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/microsoft/Spring-AI-for-Beginners\">Spring AI for Beginners by Microsoft</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">指南</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/spring-ai-community/awesome-spring-ai\">Awesome Spring AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/getting-started-mcp.html\">MCP 入门指南</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/dynamic-tool-search.html\">动态工具发现</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/llm-as-judge.html\">LLM-as-a-Judge 评估</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"prompt-engineering-patterns.html\">提示工程模式</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../effective-agents.html\">构建高效智能体</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agents\">AWS 提供的使用 Spring AI 构建智能体教程</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agentcore\">AWS 提供的使用 Spring AI 和 AgentCore 构建智能体教程</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/microsoft/Spring-AI-for-Beginners\">Microsoft 提供的 Spring AI 入门教程</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio.html\">Audio Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio/transcriptions.html\">Transcription API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/transcriptions/azure-openai-transcriptions.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/transcriptions/openai-transcriptions.html\">OpenAI</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio/speech.html\">Text-To-Speech (TTS) API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/speech/openai-speech.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/speech/elevenlabs-speech.html\">ElevenLabs</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio.html\">音频模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio/transcriptions.html\">转录 API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/transcriptions/azure-openai-transcriptions.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/transcriptions/openai-transcriptions.html\">OpenAI</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio/speech.html\">文本转语音 (TTS) API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/speech/openai-speech.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/speech/elevenlabs-speech.html\">ElevenLabs</a>\n  </li>\n</ul>\n  </li>\n</ul",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n<code>ToolUseBlock.input()</code> returns the SDK’s <code>JsonValue</code>, not a JSON string. Calling <code>.toString()</code> on a <code>JsonValue</code> produces Java map syntax (<code>{key=value}</code>) that looks like JSON but is not. Walk it with <code>JsonValue.Visitor&lt;T&gt;</code> or serialize via Jackson to get a real JSON string.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n<code>ToolUseBlock.input()</code> 返回的是 SDK 的 <code>JsonValue</code>，而不是 JSON 字符串。对 <code>JsonValue</code> 调用 <code>.toString()</code> 会产生 Java map 语法（<code>{key=value}</code>），它看起来像 JSON 但并不是。请使用 <code>JsonValue.Visitor&lt;T&gt;</code> 进行遍历，或通过 Jackson 进行序列化以获取真实的 JSON 字符串。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../chatclient.html\">Chat Client API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../advisors.html\">Advisors</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../advisors-recursive.html\">Recursive Advisors</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../chatclient.html\">Chat Client API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../advisors.html\">顾问</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../advisors-recursive.html\">递归顾问</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../imageclient.html\">Image Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/azure-openai-image.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/openai-image.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/stabilityai-image.html\">Stability</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../imageclient.html\">图像模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/azure-openai-image.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/openai-image.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/stabilityai-image.html\">Stability</a>\n  </li>\n</ul",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../moderation.html\">Moderation Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../moderation/openai-moderation.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../moderation/mistral-ai-moderation.html\">Mistral AI</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../moderation.html\">审核模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../moderation/openai-moderation.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../moderation/mistral-ai-moderation.html\">Mistral AI</a>\n  </li>\n</ul",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../../upgrade-notes.html\">Upgrade Notes</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../tools-migration.html\">Migrating FunctionCallback to ToolCallback API</a>\n  </li>\n  <li class=\"nav-item is-current-page\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"anthropic-migration.html\">Migrating the Anthropic Module to the Official Java SDK</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../../upgrade-notes.html\">升级说明</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../tools-migration.html\">将 FunctionCallback 迁移到 ToolCallback API</a>\n  </li>\n  <li class=\"nav-item is-current-page\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"anthropic-migration.html\">将 Anthropic 模块迁移到官方 Java SDK</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../../index.html\">Overview</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../concepts.html\">AI Concepts</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../../index.html\">概览</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../concepts.html\">AI 概念</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../retrieval-augmented-generation.html\">Retrieval Augmented Generation (RAG)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../etl-pipeline.html\">ETL Pipeline</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../retrieval-augmented-generation.html\">检索增强生成 (RAG)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../etl-pipeline.html\">ETL 流水线</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<tr>\n<th class=\"tableblock halign-left valign-top\">Removed type (old <code>AnthropicApi.*</code>)</th>\n<th class=\"tableblock halign-left valign-top\">SDK replacement (<code>com.anthropic.models.messages.*</code>)</th>\n</tr>",
+      "translation": "<tr>\n<th class=\"tableblock halign-left valign-top\">移除的类型（旧版 <code class=\"language-java\">AnthropicApi.*</code>）</th>\n<th class=\"tableblock halign-left valign-top\">SDK 替换项（<code class=\"language-java\">com.anthropic.models.messages.*</code>）</th>\n</tr>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_if_you_use_only_chatclient_or_chatmodel\"></a>If You Use Only <code>ChatClient</code> or <code>ChatModel</code>",
+      "translation": "<a class=\"anchor\" href=\"#_if_you_use_only_chatclient_or_chatmodel\">如果您仅使用 <code class=\"code\">ChatClient</code> 或 <code class=\"code\">ChatModel</code>",
+      "count": 1
+    },
+    {
+      "source": "<tr>\n<th class=\"tableblock halign-left valign-top\">Old import</th>\n<th class=\"tableblock halign-left valign-top\">New import</th>\n</tr>",
+      "translation": "<tr>\n<th class=\"tableblock halign-left valign-top\">旧导入</th>\n<th class=\"tableblock halign-left valign-top\">新导入</th>\n</tr>",
+      "count": 1
+    },
+    {
+      "source": "<tr>\n<th class=\"tableblock halign-left valign-top\">Removed</th>\n<th class=\"tableblock halign-left valign-top\">Use instead</th>\n</tr>",
+      "translation": "<tr>\n<th class=\"tableblock halign-left valign-top\">已移除</th>\n<th class=\"tableblock halign-left valign-top\">改用</th>\n</tr>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#retry-behavior\"></a>Retry uses SDK <code>maxRetries</code>, not <code>RetryTemplate</code>",
+      "translation": "<a class=\"anchor\" href=\"#retry-behavior\">重试使用 SDK 中的 <code class=\"maxRetries\">maxRetries</code>，而非 <code class=\"RetryTemplate\">RetryTemplate</code></a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#programmatic-construction\"></a>If You Construct <code>AnthropicChatModel</code> Programmatically",
+      "translation": "<a class=\"anchor\" href=\"#programmatic-construction\">如果您通过编程方式构建 <code class=\"AnthropicChatModel\">AnthropicChatModel</code></a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_if_you_used_anthropicapi_directly\"></a>If You Used <code>AnthropicApi</code> Directly",
+      "translation": "<a class=\"anchor\" href=\"#_if_you_used_anthropicapi_directly\">如果您直接使用了 <code class=\"AnthropicApi\">AnthropicApi</code></a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#default-max-tokens\"></a>Default <code>maxTokens</code> is now 4096",
+      "translation": "<a class=\"anchor\" href=\"#default-max-tokens\">默认 <code class=\"maxTokens\">maxTokens</code> 现在为 4096</a>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"prev\"><a href=\"../tools-migration.html\">Migrating FunctionCallback to ToolCallback API</a></span>",
+      "translation": "<span class=\"prev\"><a href=\"../tools-migration.html\">将 FunctionCallback 迁移到 ToolCallback API</a></span>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../../getting-started.html\">Getting Started</a>",
+      "translation": "<a class=\"nav-link\" href=\"../../getting-started.html\">入门指南</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../structured-output-converter.html\">Structured Output</a>",
+      "translation": "<a class=\"nav-link\" href=\"../structured-output-converter.html\">结构化输出</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../chat-memory.html\">Chat Memory</a>",
+      "translation": "<a class=\"nav-link\" href=\"../chat-memory.html\">聊天记忆</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../tools.html\">Tool Calling</a>",
+      "translation": "<a class=\"nav-link\" href=\"../tools.html\">工具调用</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../testing.html\">Model Evaluation</a>",
+      "translation": "<a class=\"nav-link\" href=\"../testing.html\">模型评估</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../docker-compose.html\">Development-time Services</a>",
+      "translation": "<a class=\"nav-link\" href=\"../docker-compose.html\">开发时服务</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_what_changed\"></a>What Changed",
+      "translation": "<a class=\"anchor\" href=\"#_what_changed\">变更内容</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_if_you_imported_cache_or_citation_types\"></a>If You Imported Cache or Citation Types",
+      "translation": "<a class=\"anchor\" href=\"#_if_you_imported_cache_or_citation_types\">如果您导入了缓存或引用类型</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_removed_in_favor_of_sdk_equivalents\"></a>Removed in Favor of SDK Equivalents",
+      "translation": "<a class=\"anchor\" href=\"#_removed_in_favor_of_sdk_equivalents\">已移除，改用 SDK 等效项</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_behavior_changes\"></a>Behavior Changes",
+      "translation": "<a class=\"anchor\" href=\"#_behavior_changes\">行为变更</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#prompt-option-merging\"></a>Prompt-level options no longer merge with model defaults",
+      "translation": "<a class=\"anchor\" href=\"#prompt-option-merging\">提示词级选项不再与模型默认值合并</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_streaming_thinking_events\"></a>Streaming thinking events",
+      "translation": "<a class=\"anchor\" href=\"#_streaming_thinking_events\">流式思考事件</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_prompt_caching_changes\"></a>Prompt caching changes",
+      "translation": "<a class=\"anchor\" href=\"#_prompt_caching_changes\">Prompt 缓存变更</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_citation_document_consistency_is_validated_client_side\"></a>Citation document consistency is validated client-side",
+      "translation": "<a class=\"anchor\" href=\"#_citation_document_consistency_is_validated_client_side\">引用文档的一致性在客户端进行验证</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_new_okhttp_transitive_dependency\"></a>New OkHttp Transitive Dependency",
+      "translation": "<a class=\"anchor\" href=\"#_new_okhttp_transitive_dependency\">新的 OkHttp 传递依赖</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_new_capabilities\"></a>New Capabilities",
+      "translation": "<a class=\"anchor\" href=\"#_new_capabilities\">新功能</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_things_that_fail_silently\"></a>Things That Fail Silently",
+      "translation": "<a class=\"anchor\" href=\"#_things_that_fail_silently\">静默失败的内容</a>",
+      "count": 1
+    },
+    {
+      "source": "Why Spring",
+      "translation": "为什么选择 Spring",
+      "count": 1
+    },
+    {
+      "source": "Spring AI",
+      "translation": "Spring AI",
+      "count": 1
+    },
+    {
+      "source": "Migrating the Anthropic Module to the Official Java SDK",
+      "translation": "将 Anthropic 模块迁移至官方 Java SDK",
+      "count": 1
+    }
+  ]
+}

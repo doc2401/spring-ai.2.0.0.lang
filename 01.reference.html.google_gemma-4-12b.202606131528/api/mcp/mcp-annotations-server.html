@@ -1,0 +1,1848 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width,initial-scale=1" name="viewport"/>
+    <title>MCP Server 注解 :: Spring AI 参考</title>
+    <link href="https://docs.spring.io/spring-ai/reference/api/mcp/mcp-annotations-server.html" rel="canonical"/>
+    <link href="mcp-annotations-client.html" rel="prev"/>
+    <link href="mcp-annotations-special-params.html" rel="next"/>
+    <meta content="Antora 3.1.15" name="generator"/>
+    <script>
+!function (theme, navWidth) {
+  if (theme === 'dark') document.documentElement.classList.add('dark-theme')
+  if (navWidth) document.documentElement.style.setProperty('--nav-width', `${navWidth}px`)
+}(localStorage && localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)')?.matches && 'dark'),
+  localStorage && localStorage.getItem('nav-width'))
+    </script>
+    <link href="../../_/css/site.css" rel="stylesheet"/>
+    <link href="../../_/css/vendor/search.css" rel="stylesheet"/>
+    <link href="../../_/css/vendor/page-search.css" rel="stylesheet"/>
+    <link href="../../_/css/vendor/asciidoctor-tabs.css" rel="stylesheet"/>
+
+    <meta content="v0.4.17" name="antora-ui-version"/> 
+    <meta content="2.0.0" name="version"/>
+    <meta content="ai" name="component"/>
+    <meta content="false" name="latest-version"/>
+    <link href="../../_/img/favicon.ico" rel="icon" type="image/vnd.microsoft.icon"/>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://spring.io">
+        <img alt="Spring" class="block" id="springlogo" src="../../_/img/spring-logo.svg"/>
+      </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="navbar-menu" id="topbar-nav">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">为什么选择 Spring</a>
+          <div class="navbar-dropdown"><a class="navbar-item" href="https://spring.io/why-spring">概述</a>
+<a class="navbar-item" href="https://spring.io/microservices">微服务</a>
+<a class="navbar-item" href="https://spring.io/reactive">响应式</a>
+<a class="navbar-item" href="https://spring.io/event-driven">事件驱动</a>
+<a class="navbar-item" href="https://spring.io/cloud">云原生</a>
+<a class="navbar-item" href="https://spring.io/web-applications">Web 应用</a>
+<a class="navbar-item" href="https://spring.io/serverless">Serverless</a>
+<a class="navbar-item" href="https://spring.io/batch">批处理</a></div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Learn</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://spring.io/learn">Overview</a>
+            <a class="navbar-item" href="https://spring.io/quickstart">Quickstart</a>
+            <a class="navbar-item" href="https://spring.io/guides">Guides</a>
+            <a class="navbar-item" href="https://spring.io/blog">Blog</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Projects</a>
+          <div class="navbar-dropdown" style="min-width: 280px"><a class="navbar-item" href="https://spring.io/projects">概览</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-boot">Spring Boot</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-framework">Spring Framework</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-cloud">Spring Cloud</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-cloud-dataflow">Spring Cloud Data Flow</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-data">Spring Data</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-integration">Spring Integration</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-batch">Spring Batch</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-security">Spring Security</a>
+<a class="navbar-item navbar-item-special" href="https://spring.io/projects">查看所有项目</a>
+<li class="navbar-item navbar-item-special-3">开发工具</li>
+<a class="navbar-item" href="https://spring.io/tools">Spring Tools 4</a>
+<a class="navbar-item navbar-item-special-2" href="https://start.spring.io">Spring Initializr
+              <svg class="external-link-icon" viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><polyline fill="none" points="15 10.94 15 15 1 15 1 1 5.06 1" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"></polyline><polyline fill="none" points="8.93 1 15 1 15 7.07" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"></polyline><line fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" x1="15" x2="8" y1="1" y2="8"></line></svg></a></div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Academy</a>
+          <div class="navbar-dropdown"><a class="navbar-item" href="https://spring.academy/courses">课程</a>
+<a class="navbar-item" href="https://spring.academy/learning-path">获取认证</a></div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Solutions</a>
+          <div class="navbar-dropdown lg"><a class="navbar-item" href="https://spring.io/solutions">概览</a>
+<a class="navbar-item" href="https://spring.io/support">Spring Runtime</a>
+<a class="navbar-item" href="https://spring.io/consulting">Spring Consulting</a>
+<a class="navbar-item" href="https://spring.academy/teams">Spring Academy For Teams</a>
+<a class="navbar-item" href="https://spring.io/security">安全公告</a></div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable is-community">
+          <a class="navbar-link" href="#">Community</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://spring.io/community">Overview</a>
+            <a class="navbar-item" href="https://spring.io/events">Events</a>
+            <a class="navbar-item" href="https://spring.io/team">Team</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <label class="theme-toggler">
+      <input id="switch-theme-checkbox" name="switch-theme-checkbox" type="checkbox"/>
+      <span class="icon"><svg aria-hidden="true" class="svg-inline--fa fa-moon moon" data-icon="moon" data-prefix="fas" focusable="false" role="img" viewbox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z" fill="currentColor"></path>
+</svg>
+        <svg aria-hidden="true" class="svg-inline--fa fa-sun sun" data-icon="sun" data-prefix="fas" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z" fill="currentColor"></path>
+</svg></span>
+      <span class="text">light</span>
+    </label>
+  </nav>
+</header>
+<script>
+!function (theme) {
+  if (theme === 'dark') {
+    document.getElementById('switch-theme-checkbox').parentElement.classList.add('active')
+  }
+}(localStorage && localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)')?.matches && 'dark'))
+</script>
+<div class="body">
+<div class="nav-container" data-component="ai" data-version="2.0.0">
+  <aside class="nav">
+    <div class="panels">
+      <div class="nav-panel-menu is-active" data-panel="menu">
+        <nav class="nav-menu">
+<div class="context">
+  <span class="title">Spring AI</span>
+  <span class="version">2.0.0</span>
+  <button class="browse-version" id="browse-version">
+    <svg height="24px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewbox="0 0 512 512" width="24px" xml:space="preserve"><g><path d="M256,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S273.7,224,256,224L256,224z"></path><path d="M128.4,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S146,224,128.4,224L128.4,224z"></path><path d="M384,224c-17.7,0-32,14.3-32,32s14.3,32,32,32s32-14.3,32-32S401.7,224,384,224L384,224z"></path></g></svg>
+  </button>
+  <div class="search">
+  <button class="DocSearch-Button search-button">
+    <svg enable-background="new 0 0 32 32" id="Glyph" version="1.1" viewbox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M27.414,24.586l-5.077-5.077C23.386,17.928,24,16.035,24,14c0-5.514-4.486-10-10-10S4,8.486,4,14  s4.486,10,10,10c2.035,0,3.928-0.614,5.509-1.663l5.077,5.077c0.78,0.781,2.048,0.781,2.828,0  C28.195,26.633,28.195,25.367,27.414,24.586z M7,14c0-3.86,3.14-7,7-7s7,3.14,7,7s-3.14,7-7,7S7,17.86,7,14z" id="XMLID_223_"></path>
+</svg>
+    <span>Search</span>
+    <span class="search-key"></span>
+  </button>
+</div>
+</div><ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../../index.html">概览</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../../concepts.html">AI 概念</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="1"><a class="nav-link" href="../../getting-started.html">入门指南</a></li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Reference</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../chatclient.html">Chat Client API</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="../advisors.html">顾问</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../advisors-recursive.html">递归顾问</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../prompt.html">Prompts</a>
+  </li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="../structured-output-converter.html">结构化输出</a></li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../multimodality.html">Multimodality</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../index.html">Models</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../chatmodel.html">聊天模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../chat/comparison.html">聊天模型对比</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../chat/bedrock-converse.html">Amazon Bedrock Converse</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../chat/anthropic-chat.html">Anthropic</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../chat/azure-openai-chat.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../chat/deepseek-chat.html">DeepSeek</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../chat/dmr-chat.html">Docker Model Runner</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../chat/google-genai-chat.html">Google GenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../chat/groq-chat.html">Groq</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../chat/mistralai-chat.html">Mistral AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../chat/minimax-chat.html">MiniMax</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../chat/nvidia-chat.html">NVIDIA</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../chat/ollama-chat.html">Ollama</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../chat/perplexity-chat.html">Perplexity AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../chat/oci-genai-chat.html">OCI Generative AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../chat/openai-chat.html">OpenAI</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../embeddings.html">嵌入模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="../bedrock.html">Amazon Bedrock</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="../embeddings/bedrock-cohere-embedding.html">Cohere</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="../embeddings/bedrock-titan-embedding.html">Titan</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../embeddings/azure-openai-embeddings.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../embeddings/google-genai-embeddings-text.html">Google GenAI 文本嵌入</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../embeddings/mistralai-embeddings.html">Mistral AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../embeddings/oci-genai-embeddings.html">OCI GenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../embeddings/ollama-embeddings.html">Ollama</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../embeddings/onnx.html">(ONNX) Transformers</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../embeddings/openai-embeddings.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../embeddings/postgresml-embeddings.html">PostgresML</a>
+</li>
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<span class="nav-text">VertexAI</span>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="../embeddings/vertexai-embeddings-text.html">文本嵌入</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="../embeddings/vertexai-embeddings-multimodal.html">多模态嵌入</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../imageclient.html">图像模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../image/azure-openai-image.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../image/openai-image.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../image/stabilityai-image.html">Stability</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../audio.html">音频模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="../audio/transcriptions.html">转录 API</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="../audio/transcriptions/azure-openai-transcriptions.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="../audio/transcriptions/openai-transcriptions.html">OpenAI</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="../audio/speech.html">文本转语音 (TTS) API</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="../audio/speech/openai-speech.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="../audio/speech/elevenlabs-speech.html">ElevenLabs</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../moderation.html">审核模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../moderation/openai-moderation.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../moderation/mistral-ai-moderation.html">Mistral AI</a>
+</li>
+</ul></li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="../chat-memory.html">聊天记忆</a></li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="../tools.html">工具调用</a></li>
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="mcp-overview.html">Model Context Protocol (MCP)</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="mcp-client-boot-starter-docs.html">MCP Client Boot Starters</a>
+</li>
+<li class="nav-item" data-depth="3">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="mcp-server-boot-starter-docs.html">MCP Server Boot Starters</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp-stdio-sse-server-boot-starter-docs.html">STDIO 和 SSE MCP 服务器</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp-streamable-http-server-boot-starter-docs.html">Streamable-HTTP MCP 服务器</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp-stateless-server-boot-starter-docs.html">无状态 Streamable-HTTP MCP 服务器</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="mcp-security.html">MCP 安全性 (WIP)</a>
+</li>
+<li class="nav-item" data-depth="3">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="mcp-annotations-overview.html">MCP 注解</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp-annotations-client.html">客户端注解</a>
+</li>
+<li class="nav-item is-current-page" data-depth="4">
+<a class="nav-link" href="mcp-annotations-server.html">服务器注解</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp-annotations-special-params.html">特殊参数</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp-annotations-examples.html">MCP 注解示例</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../retrieval-augmented-generation.html">检索增强生成 (RAG)</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../etl-pipeline.html">ETL 流水线</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="../testing.html">模型评估</a></li>
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../vectordbs.html">向量数据库</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/azure.html">Azure AI Service</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/azure-cosmos-db.html">Azure Cosmos DB</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/bedrock-knowledge-base.html">Amazon Bedrock Knowledge Base</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/apache-cassandra.html">Apache Cassandra 向量存储</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/chroma.html">Chroma</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/couchbase.html">Couchbase</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/elasticsearch.html">Elasticsearch</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/gemfire.html">GemFire</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/mariadb.html">MariaDB 向量存储</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/milvus.html">Milvus</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/mongodb.html">MongoDB Atlas</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/neo4j.html">Neo4j</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/opensearch.html">OpenSearch</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/oracle.html">Oracle</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/pgvector.html">PGvector</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/pinecone.html">Pinecone</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/qdrant.html">Qdrant</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/redis.html">Redis</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/typesense.html">Typesense</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/weaviate.html">Weaviate</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/s3-vector-store.html">S3 向量存储</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../observability/index.html">Observability</a>
+  </li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="../docker-compose.html">开发时服务</a></li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Testing</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../testcontainers.html">Testcontainers</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1"><button class="nav-item-toggle"></button>
+<span class="nav-text">指南</span>
+<ul class="nav-list">
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://github.com/spring-ai-community/awesome-spring-ai">Awesome Spring AI</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../../guides/getting-started-mcp.html">MCP 入门指南</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../../guides/dynamic-tool-search.html">动态工具发现</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../../guides/llm-as-judge.html">LLM-as-a-Judge 评估</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../chat/prompt-engineering-patterns.html">提示工程模式</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../effective-agents.html">构建高效 Agent</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://catalog.workshops.aws/java-spring-ai-agents">由 AWS 提供的使用 Spring AI 构建 Agent</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://catalog.workshops.aws/java-spring-ai-agentcore">由 AWS 提供的使用 Spring AI 和 AgentCore 构建 Agent</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://github.com/microsoft/Spring-AI-for-Beginners">由 Microsoft 提供的 Spring AI 入门教程</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="1"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../../upgrade-notes.html">升级说明</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../tools-migration.html">将 FunctionCallback 迁移到 ToolCallback API</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../chat/anthropic-migration.html">将 Anthropic 模块迁移到官方 Java SDK</a>
+</li>
+</ul></li>
+</ul>
+  </li>
+</ul>
+          <div class="toggle-sm">
+            <button class="nav-toggle" id="nav-toggle-2"></button>
+          </div>
+        </nav>
+      </div>
+      <div class="nav-collapse">
+        <button id="nav-collapse-toggle"><span></span></button>        
+      </div>
+    </div>
+    <div class="nav-resize"></div>
+  </aside>
+</div>
+<script>
+!function (sidebar) {
+  if (sidebar) {
+    document.body.classList.add('nav-sm')
+  }
+}(localStorage && localStorage.getItem('sidebar') === 'close')
+</script><main class="article">
+<div class="toolbar" role="navigation">
+  <button class="nav-toggle" id="nav-toggle-1"></button>
+<div class="search">
+  <button class="DocSearch-Button search-button">
+    <svg id="svg-stash-de15fb15"></svg>
+    <span>Search</span>
+    <span class="search-key"></span>
+  </button>
+</div>
+</div>
+  <div class="content">
+<aside class="sidebar">
+  <div class="content">
+    <div class="toc" data-levels="2" data-title="MCP Server Annotations">
+      <div class="toc-menu"></div>
+    </div>
+    <div class="sidebar-links"><a href="file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/mcp/mcp-annotations-server.adoc">
+<svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m16 2.012 3 3L16.713 7.3l-3-3zM4 14v3h3l8.299-8.287-3-3zm0 6h16v2H4z"></path></svg>
+          编辑此页面
+        </a>
+<a href="https://github.com/spring-projects/spring-ai" title="GitHub">
+<svg height="512px" id="Layer_1" version="1.1" viewbox="0 0 512 512" width="512px" xmlns="http://www.w3.org/2000/svg"><style type="text/css">
+              .st0{fill-rule:evenodd;clip-rule:evenodd;} </style><g><path class="st0" d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"></path></g></svg>
+          GitHub 项目
+        </a></div>
+  </div>
+</aside>
+<article class="doc">
+<div class="breadcrumbs-container"><nav aria-label="breadcrumbs" class="breadcrumbs">
+<ul>
+<li><a href="../../index.html">Spring AI</a></li>
+<li>参考资料</li>
+<li><a href="mcp-overview.html">Model Context Protocol (MCP)</a></li>
+<li><a href="mcp-annotations-overview.html">MCP 注解</a></li>
+<li><a href="mcp-annotations-server.html">Server 注解</a></li>
+</ul>
+</nav></div><h1 class="page" id="page-title">MCP Server 注解</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>MCP Server 注解提供了一种使用 Java 注解来实现 MCP 服务功能的内容声明式方式。
+这些注解简化了工具、资源、提示词和完成处理程序的创建。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_server_annotations"><a class="anchor" href="#_server_annotations">服务器注释</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_mcptool"><a class="anchor" href="#_mcptool"></a>@McpTool</h3>
+<div class="paragraph">
+<p><code>@McpTool</code> 注解将一个方法标记为 MCP 工具实现，并支持自动生成 JSON schema。</p>
+</div>
+<div class="sect3">
+<h4 id="_basic_usage"><a class="anchor" href="#_basic_usage">基本用法</a></h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Component
+public class CalculatorTools {
+
+    @McpTool(name = "add", description = "Add two numbers together")
+    public int add(
+            @McpToolParam(description = "First number", required = true) int a,
+            @McpToolParam(description = "Second number", required = true) int b) {
+        return a + b;
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_annotation_attributes"><a class="anchor" href="#_annotation_attributes">注释属性</a></h4>
+<div class="paragraph">
+<p><code class="code">@McpTool</code> 注解支持以下属性：</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;"/>
+<col style="width: 20%;"/>
+<col style="width: 60%;"/>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Attribute</th>
+<th class="tableblock halign-left valign-top">Default</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>name</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">方法名称</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">工具标识符。如果未提供，则默认为方法名称。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>description</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">方法名称</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">该工具的可读性描述。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>title</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>""</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">适用于 UI 和最终用户场景——经过优化以确保易于阅读。如果未提供，则使用 <code>name</code> 进行显示。（优先级：<code>annotations.title</code> &gt; <code>title</code> &gt; <code>name</code>）</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>generateOutputSchema</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>false</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">如果 <code>true</code>，则会自动为非原始返回类型生成 JSON 输出架构。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>annotations</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@McpAnnotations</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">给客户的额外提示（见下方的工具注释）。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>metaProvider</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>DefaultMetaProvider.class</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">实现 <code class="code">MetaProvider</code> 的类，用于为工具声明中的 <code class="code">_meta</code> 字段提供数据。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_tool_annotations_hints"><a class="anchor" href="#_tool_annotations_hints"></a>工具注释（提示）</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@McpTool(name = "calculate-area",
+         description = "Calculate the area of a rectangle",
+         title = "Rectangle Area Calculator",
+         generateOutputSchema = true,
+         annotations = @McpTool.McpAnnotations(
+             title = "Rectangle Area Calculator",
+             readOnlyHint = true,
+             destructiveHint = false,
+             idempotentHint = true
+         ))
+public AreaResult calculateRectangleArea(
+        @McpToolParam(description = "Width", required = true) double width,
+        @McpToolParam(description = "Height", required = true) double height) {
+
+    return new AreaResult(width * height, "square units");
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code style="color: #d63384;">McpAnnotations</code> 嵌套注解提供了客户端提示：</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;"/>
+<col style="width: 20%;"/>
+<col style="width: 60%;"/>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Hint</th>
+<th class="tableblock halign-left valign-top">Default</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>title</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>""</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">该工具的可读标题。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>readOnlyHint</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>false</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">如果 <code>true</code>，该工具不会修改其环境。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>destructiveHint</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">如果 <code>true</code>，该工具可能会执行破坏性更新（仅在 <code>readOnlyHint == false</code> 时才有意义）。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>idempotentHint</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>false</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">如果 <code>true</code>，使用相同的参数调用不会产生任何额外效果（仅在 <code>readOnlyHint == false</code> 时才有意义）。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>openWorldHint</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">如果 <code>true</code>，该工具可以与外部实体交互（例如网络搜索）。如果 <code>false</code>，则域是封闭的。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_with_request_context"><a class="anchor" href="#_with_request_context">带有请求上下文</a></h4>
+<div class="paragraph">
+<p>工具可以访问请求上下文以进行高级操作：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@McpTool(name = "process-data", description = "Process data with request context")
+public String processData(
+        McpSyncRequestContext context,
+        @McpToolParam(description = "Data to process", required = true) String data) {
+
+    // Send logging notification
+    context.info("Processing data: " + data);
+
+    // Send progress notification (using convenient method)
+    context.progress(p -&gt; p.progress(0.5).total(1.0).message("Processing..."));
+
+    // Ping the client
+    context.ping();
+
+    return "Processed: " + data.toUpperCase();
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_dynamic_schema_support"><a class="anchor" href="#_dynamic_schema_support">动态架构支持</a></h4>
+<div class="paragraph">
+<p>工具可以接受 <code>CallToolRequest</code> 以进行运行时架构处理：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@McpTool(name = "flexible-tool", description = "Process dynamic schema")
+public CallToolResult processDynamic(CallToolRequest request) {
+    Map&lt;String, Object&gt; args = request.arguments();
+
+    // Process based on runtime schema
+    String result = "Processed " + args.size() + " arguments dynamically";
+
+    return CallToolResult.builder()
+        .addTextContent(result)
+        .build();
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_progress_tracking"><a class="anchor" href="#_progress_tracking">进度跟踪</a></h4>
+<div class="paragraph">
+<p>工具可以接收进度令牌（progress tokens）以跟踪长时间运行的操作：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@McpTool(name = "long-task", description = "Long-running task with progress")
+public String performLongTask(
+        McpSyncRequestContext context,
+        @McpToolParam(description = "Task name", required = true) String taskName) {
+
+    // Access progress token from context
+    String progressToken = context.request().progressToken();
+
+    if (progressToken != null) {
+        context.progress(p -&gt; p.progress(0.0).total(1.0).message("Starting task"));
+
+        // Perform work...
+
+        context.progress(p -&gt; p.progress(1.0).total(1.0).message("Task completed"));
+    }
+
+    return "Task " + taskName + " completed";
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_mcpresource"><a class="anchor" href="#_mcpresource"></a>@McpResource</h3>
+<div class="paragraph">
+<p><code class="code">@McpResource</code> 注解通过 URI 模板提供对资源的访问。</p>
+</div>
+<div class="sect3">
+<h4 id="_annotation_attributes_2"><a class="anchor" href="#_annotation_attributes_2">注释属性</a></h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;"/>
+<col style="width: 20%;"/>
+<col style="width: 60%;"/>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Attribute</th>
+<th class="tableblock halign-left valign-top">Default</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>uri</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>""</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">资源的 URI（或 URI 模板）。使用 <code>{varName}</code> 表示模板变量。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>name</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>""</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">程序标识符。当缺少 <code>title</code> 时，也用作显示名称。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>title</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>""</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">用于显示目的的可选人类可读名称。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>description</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>""</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">该资源所代表内容的描述。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>mimeType</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>"text/plain"</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">资源内容的 MIME 类型。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>metaProvider</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>DefaultMetaProvider.class</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">实现 <code style="color: #d73a49;">MetaProvider</code> 的类，用于为 <code style="color: #d73a49;">_meta</code> 字段提供数据。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>annotations</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>@McpAnnotations(…​)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">用于受众、优先级和最后修改时间的元数据客户端注解。</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>嵌套的 <code>McpAnnotations</code> 资源支持：</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;"/>
+<col style="width: 20%;"/>
+<col style="width: 60%;"/>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Attribute</th>
+<th class="tableblock halign-left valign-top">Default</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>audience</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>{Role.USER}</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">描述预期消费者（<code style="color: #d73a49;">Role.USER</code>、<code style="color: #d73a49;">Role.ASSISTANT</code> 或两者皆是）。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>priority</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0.5</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">重要程度从 <code>0.0</code>（最低）到 <code>1.0</code>（最高）。数值为 <code>1.0</code> 表示实际上是必需的。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>lastModified</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>""</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">资源最后修改时间的 ISO 8601 日期时间。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_basic_usage_2"><a class="anchor" href="#_basic_usage_2">基本用法</a></h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Component
+public class ResourceProvider {
+
+    @McpResource(
+        uri = "config://{key}",
+        name = "Configuration",
+        title = "App Configuration",
+        description = "Provides configuration data")
+    public String getConfig(String key) {
+        return configData.get(key);
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_with_readresourceresult"><a class="anchor" href="#_with_readresourceresult">配合 ReadResourceResult 使用</a></h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@McpResource(
+    uri = "user-profile://{username}",
+    name = "User Profile",
+    description = "Provides user profile information")
+public ReadResourceResult getUserProfile(String username) {
+    String profileData = loadUserProfile(username);
+
+    return ReadResourceResult.builder(List.of(
+        new TextResourceContents(
+            "user-profile://" + username,
+            "application/json",
+            profileData)
+    )).build();
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_with_request_context_2"><a class="anchor" href="#_with_request_context_2">带有请求上下文</a></h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@McpResource(
+    uri = "data://{id}",
+    name = "Data Resource",
+    description = "Resource with request context")
+public ReadResourceResult getData(
+        McpSyncRequestContext context,
+        String id) {
+
+    // Send logging notification using convenient method
+    context.info("Accessing resource: " + id);
+
+    // Ping the client
+    context.ping();
+
+    String data = fetchData(id);
+
+    return ReadResourceResult.builder(List.of(
+        new TextResourceContents("data://" + id, "text/plain", data)
+    )).build();
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_mcpprompt"><a class="anchor" href="#_mcpprompt"></a>@McpPrompt</h3>
+<div class="paragraph">
+<p><code>@McpPrompt</code> 注解用于生成 AI 交互的提示消息。</p>
+</div>
+<div class="sect3">
+<h4 id="_annotation_attributes_3"><a class="anchor" href="#_annotation_attributes_3">注释属性</a></h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;"/>
+<col style="width: 20%;"/>
+<col style="width: 60%;"/>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Attribute</th>
+<th class="tableblock halign-left valign-top">Default</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>name</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>""</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">提示词的唯一标识符。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>title</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>""</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">用于显示目的的可选人类可读名称。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>description</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>""</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">可选的可读人类描述。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>metaProvider</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>DefaultMetaProvider.class</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">实现 <code style="color: #d73a49;">MetaProvider</code> 的类，用于为 <code style="color: #d73a49;">_meta</code> 字段提供数据。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_basic_usage_3"><a class="anchor" href="#_basic_usage_3">基本用法</a></h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Component
+public class PromptProvider {
+
+    @McpPrompt(
+        name = "greeting",
+        description = "Generate a greeting message")
+    public GetPromptResult greeting(
+            @McpArg(name = "name", description = "User's name", required = true)
+            String name) {
+
+        String message = "Hello, " + name + "! How can I help you today?";
+
+        return GetPromptResult.builder(List.of(new PromptMessage(Role.ASSISTANT, TextContent.builder(message).build())))
+            .description("Greeting")
+            .build();
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_with_optional_arguments"><a class="anchor" href="#_with_optional_arguments">带有可选参数时</a></h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@McpPrompt(
+    name = "personalized-message",
+    description = "Generate a personalized message")
+public GetPromptResult personalizedMessage(
+        @McpArg(name = "name", required = true) String name,
+        @McpArg(name = "age", required = false) Integer age,
+        @McpArg(name = "interests", required = false) String interests) {
+
+    StringBuilder message = new StringBuilder();
+    message.append("Hello, ").append(name).append("!\n\n");
+
+    if (age != null) {
+        message.append("At ").append(age).append(" years old, ");
+        // Add age-specific content
+    }
+
+    if (interests != null &amp;&amp; !interests.isEmpty()) {
+        message.append("Your interest in ").append(interests);
+        // Add interest-specific content
+    }
+
+    return GetPromptResult.builder(List.of(new PromptMessage(Role.ASSISTANT, TextContent.builder(message.toString()).build())))
+        .description("Personalized Message")
+        .build();
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_mcpcomplete"><a class="anchor" href="#_mcpcomplete"></a>@McpComplete</h3>
+<div class="paragraph">
+<p><code>@McpComplete</code> 注解为提示词（prompts）和资源 URI 模板提供自动补全功能。</p>
+</div>
+<div class="paragraph">
+<p>使用 <code>prompt</code> 或 <code>uri</code> 属性中的其中一个 —— 不要同时使用两者：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>prompt</code> —— 完成名为 prompt 的参数</p>
+</li>
+<li>
+<p><code>uri</code> — 完成命名资源 URI 的 URI 模板表达式</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_prompt_argument_completion"><a class="anchor" href="#_prompt_argument_completion">提示词参数补全</a></h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Component
+public class CompletionProvider {
+
+    @McpComplete(prompt = "city-search")
+    public List&lt;String&gt; completeCityName(String prefix) {
+        return cities.stream()
+            .filter(city -&gt; city.toLowerCase().startsWith(prefix.toLowerCase()))
+            .limit(10)
+            .toList();
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_resource_uri_completion"><a class="anchor" href="#_resource_uri_completion">资源 URI 补全</a></h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@McpComplete(uri = "config://{key}")
+public List&lt;String&gt; completeConfigKey(String prefix) {
+    return configKeys.stream()
+        .filter(key -&gt; key.startsWith(prefix))
+        .limit(10)
+        .toList();
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_with_completerequest_completeargument"><a class="anchor" href="#_with_completerequest_completeargument">使用 CompleteRequest.CompleteArgument</a></h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@McpComplete(prompt = "travel-planner")
+public List&lt;String&gt; completeTravelDestination(CompleteRequest.CompleteArgument argument) {
+    String prefix = argument.value().toLowerCase();
+    String argumentName = argument.name();
+
+    // Different completions based on argument name
+    if ("city".equals(argumentName)) {
+        return completeCities(prefix);
+    } else if ("country".equals(argumentName)) {
+        return completeCountries(prefix);
+    }
+
+    return List.of();
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_with_completeresult"><a class="anchor" href="#_with_completeresult">带有 CompleteResult</a></h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@McpComplete(prompt = "code-completion")
+public CompleteResult completeCode(String prefix) {
+    List&lt;String&gt; completions = generateCodeCompletions(prefix);
+
+    return new CompleteResult(
+        new CompleteResult.CompleteCompletion(
+            completions,
+            completions.size(),  // total
+            hasMoreCompletions   // hasMore flag
+        )
+    );
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_stateless_vs_stateful_implementations"><a class="anchor" href="#_stateless_vs_stateful_implementations">无状态与有状态实现</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_unified_request_context_recommended"><a class="anchor" href="#_unified_request_context_recommended">统一请求上下文（推荐）</a></h3>
+<div class="paragraph">
+<p>使用 <code>McpSyncRequestContext</code> 或 <code>McpAsyncRequestContext</code> 以获得一个同时适用于有状态和无状态操作的统一接口：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public record UserInfo(String name, String email, int age) {}
+
+@McpTool(name = "unified-tool", description = "Tool with unified request context")
+public String unifiedTool(
+        McpSyncRequestContext context,
+        @McpToolParam(description = "Input", required = true) String input) {
+
+    // Access request and metadata
+    String progressToken = context.request().progressToken();
+
+    // Logging with convenient methods
+    context.info("Processing: " + input);
+
+    // Progress notifications (Note client should set a progress token
+    // with its request to be able to receive progress updates)
+    context.progress(50); // Simple percentage
+
+    // Ping client
+    context.ping();
+
+    // Check capabilities before using
+    if (context.elicitEnabled()) {
+        // Request user input (only in stateful mode)
+        StructuredElicitResult&lt;UserInfo&gt; elicitResult = context.elicit(UserInfo.class);
+        if (elicitResult.action() == ElicitResult.Action.ACCEPT) {
+            // Use elicited data
+        }
+    }
+
+    if (context.sampleEnabled()) {
+        // Request LLM sampling (only in stateful mode)
+        CreateMessageResult samplingResult = context.sample("Generate response");
+        // Use sampling result
+    }
+
+    // Access root directories (only in stateful mode)
+    if (context.rootsEnabled()) {
+        ListRootsResult roots = context.roots();
+        roots.roots().forEach(root -&gt; context.info("Root: " + root.uri()));
+    }
+
+    return "Processed with unified context";
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_simple_operations_no_context"><a class="anchor" href="#_simple_operations_no_context">简单操作（无上下文）</a></h3>
+<div class="paragraph">
+<p>对于简单操作，您可以完全省略上下文参数：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@McpTool(name = "simple-add", description = "Simple addition")
+public int simpleAdd(
+        @McpToolParam(description = "First number", required = true) int a,
+        @McpToolParam(description = "Second number", required = true) int b) {
+    return a + b;
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_lightweight_stateless_with_mcptransportcontext"><a class="anchor" href="#_lightweight_stateless_with_mcptransportcontext">轻量级无状态（包含 McpTransportContext）</a></h3>
+<div class="paragraph">
+<p>对于需要最小传输上下文的无状态操作：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@McpTool(name = "stateless-tool", description = "Stateless with transport context")
+public String statelessTool(
+        McpTransportContext context,
+        @McpToolParam(description = "Input", required = true) String input) {
+    // Access transport-level context only
+    // No bidirectional operations (roots, elicitation, sampling)
+    return "Processed: " + input;
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock important">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<strong>无状态服务器不支持双向操作：</strong>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="paragraph">
+<p>因此，在无状态模式下使用 <code>McpSyncRequestContext</code> 或 <code>McpAsyncRequestContext</code> 的方法将被忽略。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_method_filtering_by_server_type"><a class="anchor" href="#_method_filtering_by_server_type">按服务器类型过滤方法</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>MCP 注解框架会根据服务器类型和方法特征自动过滤已标注的方法。这确保了每个服务器配置仅注册适当的方法。
+
+系统会为每个被过滤的方法记录一条警告，以辅助调试。</p>
+</div>
+<div class="sect2">
+<h3 id="_synchronous_vs_asynchronous_filtering"><a class="anchor" href="#_synchronous_vs_asynchronous_filtering">同步与异步过滤</a></h3>
+<div class="sect3">
+<h4 id="_synchronous_servers"><a class="anchor" href="#_synchronous_servers">同步服务器</a></h4>
+<div class="paragraph">
+<p>同步服务器（配置为 <code style="white-space:pre-wrap;">spring.ai.mcp.server.type=SYNC</code>）使用同步提供程序，这些提供程序：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>接受</strong>具有非响应式返回类型的方法：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>基本类型（<code style="color: #d73a49;">int</code>，<code style="color: #d73a49;">double</code>，<code style="color: #d73a49;">boolean</code>）</p>
+</li>
+<li>
+<p>对象类型（<code style="color:red;">String</code>、<code style="color:red;">Integer</code>、自定义 POJO）</p>
+</li>
+<li>
+<p>MCP 类型（<code style="color: #d13438;">CallToolResult</code>，<code style="color: #d13438;">ReadResourceResult</code>，<code style="color: #d13438;">GetPromptResult</code>，<code style="color: #d13438;">CompleteResult</code>）</p>
+</li>
+<li>
+<p>Collections (<code>List&lt;String&gt;</code>, <code>Map&lt;String, Object&gt;</code>)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>过滤掉</strong>具有响应式返回类型的方法：</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Mono&lt;T&gt;</code></p>
+</li>
+<li>
+<p><code>Flux&lt;T&gt;</code></p>
+</li>
+<li>
+<p><code>Publisher&lt;T&gt;</code></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Component
+public class SyncTools {
+
+    @McpTool(name = "sync-tool", description = "Synchronous tool")
+    public String syncTool(String input) {
+        // This method WILL be registered on sync servers
+        return "Processed: " + input;
+    }
+
+    @McpTool(name = "async-tool", description = "Async tool")
+    public Mono&lt;String&gt; asyncTool(String input) {
+        // This method will be FILTERED OUT on sync servers
+        // A warning will be logged
+        return Mono.just("Processed: " + input);
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_asynchronous_servers"><a class="anchor" href="#_asynchronous_servers">异步服务器</a></h4>
+<div class="paragraph">
+<p>异步服务器（配置为 <code style="white-space:pre-wrap;">spring.ai.mcp.server.type=ASYNC</code>）使用异步提供程序，这些提供程序：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>接受</strong>具有响应式返回类型的方法：</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Mono&lt;T&gt;</code>（用于单条结果）</p>
+</li>
+<li>
+<p><code>Flux&lt;T&gt;</code>（用于流式结果）</p>
+</li>
+<li>
+<p><code>Publisher&lt;T&gt;</code>（泛型响应式类型）</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>过滤掉</strong>具有非响应式返回类型的方法：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>基本类型</p>
+</li>
+<li>
+<p>对象类型</p>
+</li>
+<li>
+<p>Collections</p>
+</li>
+<li>
+<p>MCP 结果类型</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Component
+public class AsyncTools {
+
+    @McpTool(name = "async-tool", description = "Async tool")
+    public Mono&lt;String&gt; asyncTool(String input) {
+        // This method WILL be registered on async servers
+        return Mono.just("Processed: " + input);
+    }
+
+    @McpTool(name = "sync-tool", description = "Sync tool")
+    public String syncTool(String input) {
+        // This method will be FILTERED OUT on async servers
+        // A warning will be logged
+        return "Processed: " + input;
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_stateful_vs_stateless_filtering"><a class="anchor" href="#_stateful_vs_stateless_filtering">有状态与无状态过滤</a></h3>
+<div class="sect3">
+<h4 id="_stateful_servers"><a class="anchor" href="#_stateful_servers">有状态服务器</a></h4>
+<div class="paragraph">
+<p>有状态服务器支持双向通信，并接受具有以下内容的请求方法：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>双向上下文参数</strong>：</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>McpSyncRequestContext</code>（用于同步操作）</p>
+</li>
+<li>
+<p><code>McpAsyncRequestContext</code>（用于异步操作）</p>
+</li>
+<li>
+<p><code>McpSyncServerExchange</code>（旧版，用于同步操作）</p>
+</li>
+<li>
+<p><code>McpAsyncServerExchange</code>（旧版，用于异步操作）</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>支持双向操作：</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>roots()</code> - 访问根目录</p>
+</li>
+<li>
+<p><code>elicit()</code> - 请求用户输入</p>
+</li>
+<li>
+<p><code>sample()</code> - 请求 LLM 采样</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Component
+public class StatefulTools {
+
+    @McpTool(name = "interactive-tool", description = "Tool with bidirectional operations")
+    public String interactiveTool(
+            McpSyncRequestContext context,
+            @McpToolParam(description = "Input", required = true) String input) {
+
+        // This method WILL be registered on stateful servers
+        // Can use elicitation, sampling, roots
+        if (context.sampleEnabled()) {
+            var samplingResult = context.sample("Generate response");
+            // Process sampling result...
+        }
+
+        return "Processed with context";
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_stateless_servers"><a class="anchor" href="#_stateless_servers">无状态服务器</a></h4>
+<div class="paragraph">
+<p>无状态服务器针对简单的请求-响应模式进行了优化，并且：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>过滤掉</strong>具有双向上下文参数的方法：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>包含 <code style="color: #d73a49;">McpSyncRequestContext</code> 的方法将被跳过</p>
+</li>
+<li>
+<p>包含 <code class="language-html">McpAsyncRequestContext</code> 的方法会被跳过</p>
+</li>
+<li>
+<p>包含 <code style="white-space:nowrap">McpSyncServerExchange</code> 的方法将被跳过</p>
+</li>
+<li>
+<p>包含 <code style="white-space:nowrap">McpAsyncServerExchange</code> 的方法将被跳过</p>
+</li>
+<li>
+<p>每个被过滤的方法都会记录一条警告。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>接受</strong>的方法包括：</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>McpTransportContext</code>（轻量级无状态上下文）</p>
+</li>
+<li>
+<p>完全没有上下文参数</p>
+</li>
+<li>
+<p>仅限常规的 <code>@McpToolParam</code> 参数</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong style="color:red;">不要</strong>支持双向操作：</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>roots()</code> - 不可用</p>
+</li>
+<li>
+<p><code>elicit()</code> - 不可用</p>
+</li>
+<li>
+<p><code>sample()</code> - 不可用</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Component
+public class StatelessTools {
+
+    @McpTool(name = "simple-tool", description = "Simple stateless tool")
+    public String simpleTool(@McpToolParam(description = "Input") String input) {
+        // This method WILL be registered on stateless servers
+        return "Processed: " + input;
+    }
+
+    @McpTool(name = "context-tool", description = "Tool with transport context")
+    public String contextTool(
+            McpTransportContext context,
+            @McpToolParam(description = "Input") String input) {
+        // This method WILL be registered on stateless servers
+        return "Processed: " + input;
+    }
+
+    @McpTool(name = "bidirectional-tool", description = "Tool with bidirectional context")
+    public String bidirectionalTool(
+            McpSyncRequestContext context,
+            @McpToolParam(description = "Input") String input) {
+        // This method will be FILTERED OUT on stateless servers
+        // A warning will be logged
+        return "Processed with sampling";
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_filtering_summary"><a class="anchor" href="#_filtering_summary">过滤摘要</a></h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;"/>
+<col style="width: 40%;"/>
+<col style="width: 40%;"/>
+</colgroup>
+<thead><tr>
+<th class="tableblock halign-left valign-top">服务器类型</th>
+<th class="tableblock halign-left valign-top">接受的方法</th>
+<th class="tableblock halign-left valign-top">过滤的方法</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>同步状态</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">非响应式返回 + 双向上下文</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">响应式返回值 (Mono/Flux)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>异步有状态</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">响应式返回值 (Mono/Flux) + 双向上下文</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">非反应性回报</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>同步无状态</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">非响应式返回 + 无双向上下文</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">响应式返回或双向上下文参数</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>异步无状态</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">响应式返回值 (Mono/Flux) + 无双向上下文</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">非响应式返回值 或 双向上下文参数</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock tip">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-tip" title="提示"></i>
+</td>
+<td class="content">
+<strong>方法过滤的最佳实践：</strong>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>保持方法与您的服务器类型一致</strong>——对于同步服务器使用同步方法，对于异步服务器使用异步方法</p>
+</li>
+<li>
+<p><strong>将有状态和无状态</strong>的实现分离到不同的类中，以提高清晰度</p>
+</li>
+<li>
+<p>在启动期间<strong>检查日志</strong>，查看被过滤的方法警告。</p>
+</li>
+<li>
+<p><strong>使用正确的上下文</strong> - 对于有状态的，使用 <code>McpSyncRequestContext</code>/<code>McpAsyncRequestContext</code>；对于无状态的，使用 <code>McpTransportContext</code></p>
+</li>
+<li>
+<p><strong>测试两种模式</strong>，如果您同时支持有状态和无状态部署。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_async_support"><a class="anchor" href="#_async_support">异步支持</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>所有服务器注解都支持使用 Reactor 的异步实现：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Component
+public class AsyncTools {
+
+    @McpTool(name = "async-fetch", description = "Fetch data asynchronously")
+    public Mono&lt;String&gt; asyncFetch(
+            @McpToolParam(description = "URL", required = true) String url) {
+
+        return Mono.fromCallable(() -&gt; {
+            // Simulate async operation
+            return fetchFromUrl(url);
+        }).subscribeOn(Schedulers.boundedElastic());
+    }
+
+    @McpResource(uri = "async-data://{id}", name = "Async Data")
+    public Mono&lt;ReadResourceResult&gt; asyncResource(String id) {
+        return Mono.fromCallable(() -&gt; {
+            String data = loadData(id);
+            return ReadResourceResult.builder(List.of(
+                new TextResourceContents("async-data://" + id, "text/plain", data)
+            )).build();
+        }).delayElements(Duration.ofMillis(100));
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_spring_boot_integration"><a class="anchor" href="#_spring_boot_integration">Spring Boot 集成</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>通过 Spring Boot 自动配置，带有注解的 bean 会被自动检测并注册：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@SpringBootApplication
+public class McpServerApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(McpServerApplication.class, args);
+    }
+}
+
+@Component
+public class MyMcpTools {
+    // Your @McpTool annotated methods
+}
+
+@Component
+public class MyMcpResources {
+    // Your @McpResource annotated methods
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>自动配置将：</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>扫描带有 MCP 注解的 beans</p>
+</li>
+<li>
+<p>创建适当的规范</p>
+</li>
+<li>
+<p>将它们注册到 MCP 服务器</p>
+</li>
+<li>
+<p>根据配置处理同步和异步实现</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configuration_properties"><a class="anchor" href="#_configuration_properties">配置属性</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>配置服务器注解扫描器：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">spring:
+  ai:
+    mcp:
+      server:
+        type: SYNC  # or ASYNC
+        annotation-scanner:
+          enabled: true</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_additional_resources"><a class="anchor" href="#_additional_resources">更多资源</a></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a class="xref page" href="mcp-annotations-overview.html">MCP 注解概述</a></p>
+</li>
+<li>
+<p><a class="xref page" href="mcp-annotations-client.html">客户端注解</a></p>
+</li>
+<li>
+<p><a class="xref page" href="mcp-annotations-special-params.html">特殊参数</a></p>
+</li>
+<li>
+<p><a class="xref page" href="mcp-server-boot-starter-docs.html">MCP Server Boot Starter</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<nav class="pagination"><span class="prev"><a href="mcp-annotations-client.html">客户端注解</a></span>
+<span class="next"><a href="mcp-annotations-special-params.html">特殊参数</a></span></nav>
+</article>  </div>
+</main>
+<div aria-hidden="true" class="modal micromodal-slide" id="modal-versions">
+    <div class="modal__overlay" data-micromodal-close="" tabindex="-1">
+        <div aria-modal="true" class="modal__container" role="dialog">
+            <main class="modal__content" id="modal-versions-content">
+              <button class="modal-versions-close" data-micromodal-close="">
+                <svg height="28px" viewbox="0 0 32 32" width="28px" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1h{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title></title><g id="cross"><line class="cls-1h" x1="7" x2="25" y1="7" y2="25"></line><line class="cls-1h" x1="7" x2="25" y1="25" y2="7"></line></g></svg>
+              </button>
+              <div class="colset">
+                <div class="col-left">
+
+                  <ul class="nav-versions">
+                      <li class="component">
+                        <div><a class="title" href="../../index.html">Spring AI</a></div>                        <div class="version-item is-active">
+                          <div>
+                            <button class="version-toggle" type="button">
+                              <span></span>
+                              Stable
+                            </button>
+                          </div>
+                          <ul class="versions">
+  <li class="version">
+    <a href="../../index.html">
+      2.0.0
+    </a>
+  </li>
+</ul>                        </div>
+                        
+                      </li>
+                  </ul>
+                </div>
+                <div class="col-right"><ul class="projects">
+<li>
+    相关 Spring 文档
+    <ul class="projects-list">
+</ul>
+</li><a href="../../spring-projects.html">所有文档...</a>
+</ul></div>
+              </div>
+            </main>
+        </div>
+    </div>
+</div>
+
+</div>
+<footer class="footer flex">
+    <div id="spring-links flex">
+        <img alt="Spring" id="springlogo" src="../../_/img/spring-logo.svg"/>
+        <p class="smallest antialiased">Copyright © 2005 - <script>var d = new Date();
+        document.write(d.getFullYear());</script> Broadcom. 保留所有权利。术语“Broadcom”是指 Broadcom Inc. 和/或其子公司。<br/><a href="https://www.vmware.com/help/legal.html">使用条款</a> • <a href="https://www.vmware.com/help/privacy.html" rel="noopener noreferrer">隐私政策</a> • <a href="https://spring.io/trademarks">商标指南</a> <span id="thank-you-mobile">• <a href="https://spring.io/thank-you">致谢</a></span> • <a href="https://www.vmware.com/help/privacy/california-privacy-rights.html">您的加州隐私权</a> • <a class="ot-sdk-show-settings">Cookie 设置</a> <span id="teconsent"></span></p>
+        <p class="smallest antialiased has-gray-text">Apache®、Apache Tomcat®、Apache Kafka®、Apache Cassandra™ 和 Apache Geode™ 是 Apache Software Foundation 在美国和/或其他国家的商标或注册商标。Java™、Java™ SE、Java™ EE 和 OpenJDK™ 是 Oracle 和/或其关联公司的商标。Kubernetes® 是 Linux Foundation 在美国和其他国家的注册商标。Linux® 是 Linus Torvalds 在美国和其他国家的注册商标。Windows® 和 Microsoft® Azure 是 Microsoft Corporation 的注册商标。“AWS”和“Amazon Web Services”是 Amazon.com Inc. 或其关联公司的商标或注册商标。所有其他商标和版权均为其各自所有者的财产，仅用于提供信息。其他名称可能是其各自所有者的商标。</p>
+    </div>
+    <div class="flex jc-between" id="social-icons">
+        <a href="https://www.youtube.com/user/SpringSourceDev" title="Youtube"><svg id="youtube-icon" viewbox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><circle class="cls-1" cx="20" cy="20" r="20"></circle><path class="cls-2" d="M30.91,14.53a2.89,2.89,0,0,0-2-2C27.12,12,20,12,20,12s-7.12,0-8.9.47a2.9,2.9,0,0,0-2,2A30.56,30.56,0,0,0,8.63,20a30.44,30.44,0,0,0,.46,5.47,2.89,2.89,0,0,0,2,2C12.9,28,20,28,20,28s7.12,0,8.9-.47a2.87,2.87,0,0,0,2-2A30.56,30.56,0,0,0,31.37,20,28.88,28.88,0,0,0,30.91,14.53ZM17.73,23.41V16.59L23.65,20Z"></path></svg></a>
+        <a href="https://github.com/spring-projects" title="GitHub"><svg id="github-icon" viewbox="0 0 75.93 75.93" xmlns="http://www.w3.org/2000/svg"><path class="cls-1" d="M38,0a38,38,0,1,0,38,38A38,38,0,0,0,38,0Z"></path><path class="cls-2" d="M38,15.59A22.95,22.95,0,0,0,30.71,60.3c1.15.21,1.57-.5,1.57-1.11s0-2,0-3.9c-6.38,1.39-7.73-3.07-7.73-3.07A6.09,6.09,0,0,0,22,48.86c-2.09-1.42.15-1.39.15-1.39a4.81,4.81,0,0,1,3.52,2.36c2,3.5,5.37,2.49,6.67,1.91a4.87,4.87,0,0,1,1.46-3.07c-5.09-.58-10.45-2.55-10.45-11.34a8.84,8.84,0,0,1,2.36-6.15,8.29,8.29,0,0,1,.23-6.07s1.92-.62,6.3,2.35a21.82,21.82,0,0,1,11.49,0c4.38-3,6.3-2.35,6.3-2.35a8.29,8.29,0,0,1,.23,6.07,8.84,8.84,0,0,1,2.36,6.15c0,8.81-5.37,10.75-10.48,11.32a5.46,5.46,0,0,1,1.56,4.25c0,3.07,0,5.54,0,6.29s.42,1.33,1.58,1.1A22.94,22.94,0,0,0,38,15.59Z"></path></svg></a>
+        <a href="https://twitter.com/springcentral" title="Twitter"><svg id="twitter-icon" viewbox="0 0 75.93 75.93" xmlns="http://www.w3.org/2000/svg"><circle class="cls-1" cx="37.97" cy="37.97" r="37.97"></circle><path class="cls-2" d="M55.2,22.73a15.43,15.43,0,0,1-4.88,1.91,7.56,7.56,0,0,0-5.61-2.49A7.78,7.78,0,0,0,37,30a7.56,7.56,0,0,0,.2,1.79,21.63,21.63,0,0,1-15.84-8.23,8,8,0,0,0,2.37,10.52,7.66,7.66,0,0,1-3.48-1v.09A7.84,7.84,0,0,0,26.45,41a7.54,7.54,0,0,1-2,.28A7.64,7.64,0,0,1,23,41.09a7.71,7.71,0,0,0,7.18,5.47,15.21,15.21,0,0,1-9.55,3.37,15.78,15.78,0,0,1-1.83-.11,21.41,21.41,0,0,0,11.78,3.54c14.13,0,21.86-12,21.86-22.42,0-.34,0-.68,0-1a15.67,15.67,0,0,0,3.83-4.08,14.9,14.9,0,0,1-4.41,1.24A7.8,7.8,0,0,0,55.2,22.73Z" data-name="Twitter" id="Twitter-2"></path></svg></a>
+    </div>
+</footer>
+<script src="../../_/js/vendor/import.js"></script>
+<script src="../../_/js/site.js"></script>
+<script async="" src="../../_/js/vendor/highlight.js"></script>
+<script async="" data-sync-storage-key="docs:preferred-tab" src="../../_/js/vendor/asciidoctor-tabs.js"></script>
+
+<div aria-hidden="true" class="modal micromodal-slide" id="modal-1">
+    <div class="modal__overlay" data-micromodal-close="" tabindex="-1">
+        <div aria-labelledby="modal-1-title" aria-modal="true" class="modal__container" role="dialog">
+            <main class="modal__content" id="modal-1-content">
+                <div id="searchbox"></div>
+                <div id="counter"></div>
+                <div class="search-link-box"><a class="search-link" href="../../search.html">在所有 Spring 文档中搜索</a></div>
+                <div class="search-by">
+                    <a aria-label="Search by Algolia" href="https://www.algolia.com/" rel="noopener noreferrer" target="_blank">
+                        <img class="light" src="../../_/img/algolia-light.svg" width="140"/>
+                        <img class="dark" src="../../_/img/algolia-dark.svg" width="140"/>
+                    </a>
+                </div>
+                <div id="hits"></div>
+            </main>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
+<script crossorigin="anonymous" integrity="sha256-Lf9DrpGmcRip6OQzbcL6lnvNmoZNSKpyQX5pMlwatWE=" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.17.0/dist/algoliasearch-lite.umd.js"></script>
+<script crossorigin="anonymous" integrity="sha256-xYsZPDeNjYNTBWLvqD2Lxe98hOxcDgOHyMPfz4tVAbk=" src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.54.1/dist/instantsearch.production.min.js"></script>
+<script async="" data-api-key="c2e84f15fa630d534f1c62b1c413bb77" data-app-id="WB1FQYI187" data-index-name="springdocs" data-page-component="ai" data-page-version="2.0.0" data-stylesheet="../../_/css/vendor/search.css" id="search-script" src="../../_/js/vendor/search.js"></script>
+  
+
+</body></html>

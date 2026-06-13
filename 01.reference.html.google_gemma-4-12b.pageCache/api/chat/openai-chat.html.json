@@ -1,0 +1,1306 @@
+{
+  "created_at": "2026-06-13 17:44:15",
+  "updated_at": "2026-06-13 17:44:15",
+  "stats": {
+    "total_entries": 258,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 263,
+    "entries_with_hits": 258,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0193798449612403,
+    "usage_percentage": 0.025799999999999997
+  },
+  "items": [
+    {
+      "source": "OpenAI models that offer input audio multimodal support include <code>gpt-audio</code>.\nRefer to the <a href=\"https://platform.openai.com/docs/guides/audio\">Audio</a> guide for more information.",
+      "translation": "提供输入音频多模态支持的 OpenAI 模型包括 <code>gpt-audio</code>。\n请参阅 <a href=\"https://platform.openai.com/docs/guides/audio\">Audio</a> 指南获取更多信息。",
+      "count": 2
+    },
+    {
+      "source": "Optionally, you can specify which organization to use for an API request.",
+      "translation": "您可以选择指定用于 API 请求的组织。",
+      "count": 2
+    },
+    {
+      "source": "Optionally, you can specify which project to use for an API request.",
+      "translation": "您可以选择指定用于 API 请求的项目。",
+      "count": 2
+    },
+    {
+      "source": "Enable OpenAI chat model.",
+      "translation": "启用 OpenAI 对话模型。",
+      "count": 2
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\nRefer to the <a class=\"xref page\" href=\"../../getting-started.html#dependency-management\">Dependency Management</a> section to add the Spring AI BOM to your build file.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\n请参阅 <a class=\"xref page\" href=\"../../getting-started.html#dependency-management\">Dependency Management</a> 部分，将 Spring AI BOM 添加到您的构建文件中。\n</td>\n</tr>\n</tbody>",
+      "count": 2
+    },
+    {
+      "source": "Copyright © 2005 - <script>var d = new Date();\n        document.write(d.getFullYear());</script> Broadcom. All Rights Reserved. The term \"Broadcom\" refers to Broadcom Inc. and/or its subsidiaries.<br/><a href=\"https://www.vmware.com/help/legal.html\">Terms of Use</a> • <a href=\"https://www.vmware.com/help/privacy.html\" rel=\"noopener noreferrer\">Privacy</a> • <a href=\"https://spring.io/trademarks\">Trademark Guidelines</a> <span id=\"thank-you-mobile\">• <a href=\"https://spring.io/thank-you\">Thank you</a></span> • <a href=\"https://www.vmware.com/help/privacy/california-privacy-rights.html\">Your California Privacy Rights</a> • <a class=\"ot-sdk-show-settings\">Cookie Settings</a> <span id=\"teconsent\"></span>",
+      "translation": "Copyright © 2005 - <script>var d = new Date();\n        document.write(d.getFullYear());</script> Broadcom. 保留所有权利。术语“Broadcom”是指 Broadcom Inc. 和/或其子公司。<br/><a href=\"https://www.vmware.com/help/legal.html\">使用条款</a> • <a href=\"https://www.vmware.com/help/privacy.html\" rel=\"noopener noreferrer\">隐私政策</a> • <a href=\"https://spring.io/trademarks\">商标指南</a> <span id=\"thank-you-mobile\">• <a href=\"https://spring.io/thank-you\">致谢</a></span> • <a href=\"https://www.vmware.com/help/privacy/california-privacy-rights.html\">您的加州隐私权</a> • <a class=\"ot-sdk-show-settings\">Cookie 设置</a> <span id=\"teconsent\"></span",
+      "count": 1
+    },
+    {
+      "source": "Compatible with <code>GPT-4o</code>, <code>GPT-4o mini</code>, <code>GPT-4 Turbo</code> and all <code>GPT-3.5 Turbo</code> models newer than <code>gpt-3.5-turbo-1106</code>. The <code>JSON_OBJECT</code> type enables JSON mode, which guarantees the message the model generates is valid JSON.\nThe <code>JSON_SCHEMA</code> type enables <a href=\"https://platform.openai.com/docs/guides/structured-outputs\">Structured Outputs</a> which guarantees the model will match your supplied JSON schema. The JSON_SCHEMA type requires setting the <code>responseFormat.schema</code> property as well.",
+      "translation": "兼容 <code>GPT-4o</code>、<code>GPT-4o mini</code>、<code>GPT-4 Turbo</code> 以及所有更新于 <code>gpt-3.5-turbo-1106</code> 的 <code>GPT-3.5 Turbo</code> 模型。<code>JSON_OBJECT</code> 类型启用 JSON 模式，确保模型生成的消息是有效的 JSON。\n<code>JSON_SCHEMA</code> 类型启用 <a href=\"https://platform.openai.com/docs/guides/structured-outputs\">Structured Outputs</a>，确保模型将符合您提供的 JSON schema。<code>JSON_SCHEMA</code> 类型还要求同时设置 <code>responseFormat.schema</code> 属性。",
+      "count": 1
+    },
+    {
+      "source": "The OpenAI <a href=\"https://platform.openai.com/docs/api-reference/chat/create#chat-create-messages\">User Message API</a> can incorporate a list of base64-encoded audio files with the message.\nSpring AI’s <a href=\"https://github.com/spring-projects/spring-ai/blob/main/spring-ai-model/src/main/java/org/springframework/ai/chat/messages/Message.java\">Message</a> interface facilitates multimodal AI models by introducing the <a href=\"https://github.com/spring-projects/spring-ai/blob/main/spring-ai-commons/src/main/java/org/springframework/ai/content/Media.java\">Media</a> type.\nThis type encompasses data and details regarding media attachments in messages, utilizing Spring’s <code>org.springframework.util.MimeType</code> and a <code>org.springframework.core.io.Resource</code> for the raw media data.\nCurrently, OpenAI support only the following media types: <code>audio/mp3</code> and <code>audio/wav</code>.",
+      "translation": "OpenAI 的 <a href=\"https://platform.openai.com/docs/api-reference/chat/create#chat-create-messages\">User Message API</a> 可以将一组 base64 编码的音频文件包含在消息中。\nSpring AI 的 <a href=\"https://github.com/spring-projects/spring-ai/blob/main/spring-ai-model/src/main/java/org/springframework/ai/chat/messages/Message.java\">Message</a> 接口通过引入 <a href=\"https://github.com/spring-projects/spring-ai/blob/main/spring-ai-commons/src/main/java/org/springframework/ai/content/Media.java\">Media</a> 类型来支持多模态 AI 模型。\n该类型包含了消息中媒体附件的数据和详情，并利用 Spring 的 <code>org.springframework.util.MimeType</code> 以及用于原始媒体数据的 <code>org.springframework.core.io.Resource</code>。\n目前，OpenAI 仅支持以下媒体类型：<code>audio/mp3</code> 和 <code>audio/wav</code>。",
+      "count": 1
+    },
+    {
+      "source": "The OpenAI <a href=\"https://platform.openai.com/docs/api-reference/chat/create#chat-create-messages\">Assistant Message API</a> can contain a list of base64-encoded audio files with the message.\nSpring AI’s <a href=\"https://github.com/spring-projects/spring-ai/blob/main/spring-ai-model/src/main/java/org/springframework/ai/chat/messages/Message.java\">Message</a> interface facilitates multimodal AI models by introducing the <a href=\"https://github.com/spring-projects/spring-ai/blob/main/spring-ai-commons/src/main/java/org/springframework/ai/content/Media.java\">Media</a> type.\nThis type encompasses data and details regarding media attachments in messages, utilizing Spring’s <code>org.springframework.util.MimeType</code> and a <code>org.springframework.core.io.Resource</code> for the raw media data.\nCurrently, OpenAI support only the following audio types: <code>audio/mp3</code> and <code>audio/wav</code>.",
+      "translation": "OpenAI 的 <a href=\"https://platform.openai.com/docs/api-reference/chat/create#chat-create-messages\">Assistant Message API</a> 可以包含与消息一起发送的 base64 编码音频文件列表。\nSpring AI 的 <a href=\"https://github.com/spring-projects/spring-ai/blob/main/spring-ai-model/src/main/java/org/springframework/ai/chat/messages/Message.java\">Message</a> 接口通过引入 <a href=\"https://github.com/spring-projects/spring-ai/blob/main/spring-ai-commons/src/main/java/org/springframework/ai/content/Media.java\">Media</a> 类型来支持多模态 AI 模型。\n该类型包含了消息中媒体附件的数据和详情，并利用 Spring 的 <code class=\"language-java\">org.springframework.util.MimeType</code> 以及用于原始媒体数据的 <code class=\"language-java\">org.springframework.core.io.Resource</code>。\n目前，OpenAI 仅支持以下音频类型：<code class=\"language-java\">audio/mp3</code> 和 <code class=\"language-java\">audio/wav</code>。",
+      "count": 1
+    },
+    {
+      "source": "Name of the OpenAI chat model to use. You can select between models such as: <code>gpt-5-mini</code>, <code>gpt-4o</code>, <code>gpt-4o-mini</code>, <code>gpt-4-turbo</code>, <code>gpt-3.5-turbo</code>, and more. See the <a href=\"https://platform.openai.com/docs/models\">models</a> page for more information.",
+      "translation": "要使用的 OpenAI 对话模型名称。您可以选择如下模型：<code>gpt-5-mini</code>、<code>gpt-4o</code>、<code>gpt-4o-mini</code>、<code>gpt-4-turbo</code>、<code>gpt-3.5-turbo</code> 等。更多信息请参阅 <a href=\"https://platform.openai.com/docs/models\">models</a> 页面。",
+      "count": 1
+    },
+    {
+      "source": "When using GPT-5 models such as <code>gpt-5</code>, <code>gpt-5-mini</code>, and <code>gpt-5-nano</code>, the <code>temperature</code> parameter is not supported.\nThese models are optimized for reasoning and do not use temperature.\nSpecifying a temperature value will result in an error.\nIn contrast, conversational models like <code>gpt-5-chat</code> do support the <code>temperature</code> parameter.",
+      "translation": "在使用 <code>gpt-5</code>、<code>gpt-5-mini</code> 和 <code>gpt-5-nano</code> 等 GPT-5 模型时，不支持 <code>temperature</code> 参数。\n这些模型针对推理进行了优化，不使用 temperature。\n指定 temperature 值将导致错误。\n相比之下，像 <code>gpt-5-chat</code> 这样的对话模型支持 <code>temperature</code> 参数。",
+      "count": 1
+    },
+    {
+      "source": "Controls which (if any) function is called by the model. <code>none</code> means the model will not call a function and instead generates a message. <code>auto</code> means the model can pick between generating a message or calling a function. Specifying a particular function via <code>{\"type: \"function\", \"function\": {\"name\": \"my_function\"}}</code> forces the model to call that function. <code>none</code> is the default when no functions are present. <code>auto</code> is the default if functions are present.",
+      "translation": "控制模型调用哪个（如果有的话）函数。<code>none</code> 表示模型不会调用函数，而是生成消息。<code>auto</code> 表示模型可以在生成消息和调用函数之间进行选择。通过 <code>{\"type: \"function\", \"function\": {\"name\": \"my_function\"}}</code> 指定特定函数会强制模型调用该函数。如果没有提供任何函数，默认值为 <code>none</code>。如果存在函数，默认值为 <code>auto</code>。",
+      "count": 1
+    },
+    {
+      "source": "The OpenAI <a href=\"https://platform.openai.com/docs/api-reference/chat/create#chat-create-messages\">User Message API</a> can incorporate a list of base64-encoded images or image urls with the message.\nSpring AI’s <a href=\"https://github.com/spring-projects/spring-ai/blob/main/spring-ai-model/src/main/java/org/springframework/ai/chat/messages/Message.java\">Message</a> interface facilitates multimodal AI models by introducing the <a href=\"https://github.com/spring-projects/spring-ai/blob/main/spring-ai-commons/src/main/java/org/springframework/ai/content/Media.java\">Media</a> type.\nThis type encompasses data and details regarding media attachments in messages, utilizing Spring’s <code>org.springframework.util.MimeType</code> and a <code>org.springframework.core.io.Resource</code> for the raw media data.",
+      "translation": "OpenAI 的 <a href=\"https://platform.openai.com/docs/api-reference/chat/create#chat-create-messages\">User Message API</a> 可以将 base64 编码的图像列表或图像 URL 与消息一起包含。\nSpring AI 的 <a href=\"https://github.com/spring-projects/spring-ai/blob/main/spring-ai-model/src/main/java/org/springframework/ai/chat/messages/Message.java\">Message</a> 接口通过引入 <a href=\"https://github.com/spring-projects/spring-ai/blob/main/spring-ai-commons/src/main/java/org/springframework/ai/content/Media.java\">Media</a> 类型来支持多模态 AI 模型。\n该类型包含了消息中媒体附件的数据和详情，并利用 Spring 的 <code class=\"language-java\">org.springframework.util.MimeType</code> 以及用于原始媒体数据的 <code class=\"language-java\">org.springframework.core.io.Resource</code>。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Chat-model layer.</strong> A <code>gen_ai.client.operation</code> observation wraps every call to <code>OpenAiChatModel.call(…​)</code> or <code>.stream(…​)</code>, carrying request parameters, response metadata, and token usage. See the <a class=\"xref page\" href=\"../../observability/index.html\">observability reference</a> for the full set of tags and metrics.",
+      "translation": "<strong>Chat-model 层。</strong> 一个 <code>gen_ai.client.operation</code> 观测值会包裹对 <code>OpenAiChatModel.call(…​)</code> 或 <code>.stream(…​)</code> 的每一次调用，并携带请求参数、响应元数据以及 token 使用情况。请参阅 <a class=\"xref page\" href=\"../../observability/index.html\">可观测性参考</a> 以获取完整的标签和指标列表。",
+      "count": 1
+    },
+    {
+      "source": "In a Spring Boot application with <code>spring-boot-starter-actuator</code> and a tracing bridge (<code>micrometer-tracing-bridge-otel</code> or <code>micrometer-tracing-bridge-brave</code>), both layers are wired automatically — no opt-in required.\nFor non-Boot applications, pass an <code>ObservationRegistry</code> to <code>OpenAiChatModel.builder()</code>:",
+      "translation": "在包含 <code>spring-boot-starter-actuator</code> 和追踪桥接器（<code>micrometer-tracing-bridge-otel</code> 或 <code>micrometer-tracing-bridge-brave</code>）的 Spring Boot 应用程序中，两个层级都会自动连接——无需手动开启。\n对于非 Boot 应用程序，请将 <code>ObservationRegistry</code> 传递给 <code>OpenAiChatModel.builder()</code>：",
+      "count": 1
+    },
+    {
+      "source": "For streaming calls, the <code>okhttp.requests</code> span fires and is recorded in the registry, the timer is recorded in <code>MeterRegistry</code>, and <code>traceparent</code> is still propagated on the outbound request — but the span is <strong>not</strong> nested under the chat-model span.\nThis is because the OpenAI SDK’s async streaming implementation hops onto <code>ForkJoinPool.commonPool()</code> before invoking Spring AI’s HTTP client, dropping the calling thread’s observation context at that boundary.\nSpring AI cannot recover the context from within its HTTP-client wrapper.",
+      "translation": "对于流式调用，<code>okhttp.requests</code> span 会触发并记录在注册表中，计时器记录在 <code>MeterRegistry</code> 中，且 <code>traceparent</code> 仍会传播到出站请求中——但该 span <strong>并未</strong>嵌套在 chat-model span 下。\n这是因为 OpenAI SDK 的异步流式实现会在调用 Spring AI 的 HTTP 客户端之前跳转到 <code>ForkJoinPool.commonPool()</code>，从而在那个边界处丢失了调用线程的观测上下文（observation context）。\nSpring AI 无法在其 HTTP 客户端包装器内部恢复该上下文。",
+      "count": 1
+    },
+    {
+      "source": "When using a local Docker Model Runner that exposes an OpenAI-compatible API, you may need to append <code>/v1</code> to your base URL if the server expects it.\nFor example: <code>spring.ai.openai.chat.base-url=http://localhost:12434/engines/v1</code> instead of <code><a class=\"bare\" href=\"http://localhost:12434/engines\">localhost:12434/engines</a></code>.",
+      "translation": "当使用暴露 OpenAI 兼容 API 的本地 Docker Model Runner 时，如果服务器要求，您可能需要在基础 URL 后添加 <code>/v1</code>。\n例如：使用 <code>spring.ai.openai.chat.base-url=http://localhost:12434/engines/v1</code> 而不是 <code><a class=\"bare\" href=\"http://localhost:12434/engines\">localhost:12434/engines</a></code>。",
+      "count": 1
+    },
+    {
+      "source": "<strong><a class=\"xref page\" href=\"../tools.html#_user_controlled_tool_execution\">User-controlled tool execution</a></strong> — use <code>DefaultToolCallingManager</code> directly when you need full control over the loop (for example, when combining tool calling with direct <code>ChatModel</code> access).",
+      "translation": "<strong><a class=\"xref page\" href=\"../tools.html#_user_controlled_tool_execution\">用户控制的工具执行</a></strong> — 当您需要完全控制循环时（例如，当将工具调用与直接访问 <code class=\"code\">ChatModel</code> 结合使用时），请直接使用 <code class=\"code\">DefaultToolCallingManager</code>。",
+      "count": 1
+    },
+    {
+      "source": "Use this pattern when you need direct access to the <code>ChatModel</code> API and want full control over the tool-call loop.\nInvoke <code>ChatModel</code> directly without <code>ToolCallingAdvisor</code>; check for tool calls yourself and drive the loop using <code>ToolCallingManager</code>.",
+      "translation": "当您需要直接访问 <code>ChatModel</code> API 并希望完全控制工具调用循环（tool-call loop）时，请使用此模式。\n直接调用 <code>ChatModel</code> 而不使用 <code>ToolCallingAdvisor</code>；自行检查工具调用，并使用 <code>ToolCallingManager</code> 来驱动循环。",
+      "count": 1
+    },
+    {
+      "source": "OpenAI models that offer vision multimodal support include <code>gpt-4</code>, <code>gpt-4o</code>, and <code>gpt-4o-mini</code>.\nRefer to the <a href=\"https://platform.openai.com/docs/guides/vision\">Vision</a> guide for more information.",
+      "translation": "提供视觉多模态支持的 OpenAI 模型包括 <code>gpt-4</code>、<code>gpt-4o</code> 和 <code>gpt-4o-mini</code>。\n请参阅 <a href=\"https://platform.openai.com/docs/guides/vision\">Vision</a> 指南获取更多信息。",
+      "count": 1
+    },
+    {
+      "source": "The <a href=\"https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-openai/src/main/java/org/springframework/ai/openai/OpenAiChatModel.java\">OpenAiChatModel</a> implements the <code>ChatModel</code> and <code>StreamingChatModel</code> and uses the <a href=\"#low-level-api\">[low-level-api]</a> to connect to the OpenAI service.",
+      "translation": "<a href=\"https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-openai/src/main/java/org/springframework/ai/openai/OpenAiChatModel.java\">OpenAiChatModel</a> 实现了 <code class=\"language-java\">ChatModel</code> 和 <code class=\"language-java\">StreamingChatModel</code>，并使用 <a href=\"#low-level-api\">[low-level-api]</a> 连接到 OpenAI 服务。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI can additionally bind OkHttp connection-pool gauges (<code>okhttp.pool.connection.count</code> with <code>state=active|idle</code> and <code>client.kind=sync|async</code>) to the application’s <code>MeterRegistry</code>.\nThese are secondary telemetry — useful for capacity tuning but not required for tracing or per-request latency — so they’re disabled by default.",
+      "translation": "Spring AI 还可以将 OkHttp 连接池指标（带有 <code>state=active|idle</code> 和 <code>client.kind=sync|async</code> 的 <code>okhttp.pool.connection.count</code>）绑定到应用程序的 <code>MeterRegistry</code>。\n这些是次要遥测数据——对于容量调优很有用，但对于链路追踪或单次请求延迟并非必需——因此它们默认处于禁用状态。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI uses the official <code>openai-java</code> SDK under the hood and configures its HTTP transport with a custom OkHttp client built by <code>SpringAiOpenAiHttpClient.Builder</code>.\nYou can intercept that builder before the underlying <code>OkHttpClient</code> is created by exposing one or more <code>OpenAiHttpClientBuilderCustomizer</code> beans.\nEach customizer receives the same builder used by every OpenAI model (chat, embedding, image, audio, moderation), so the customization applies uniformly.",
+      "translation": "Spring AI 在底层使用官方的 <code>openai-java</code> SDK，并使用由 <code>SpringAiOpenAiHttpClient.Builder</code> 构建的自定义 OkHttp 客户端来配置其 HTTP 传输。\n您可以通过暴露一个或多个 <code>OpenAiHttpClientBuilderCustomizer</code> 类型的 Bean，在底层的 <code>OkHttpClient</code> 创建之前拦截该构建器。\n每个自定义器都会接收到所有 OpenAI 模型（chat、embedding、image、audio、moderation）所使用的相同构建器，因此自定义配置将统一应用于所有模型。",
+      "count": 1
+    },
+    {
+      "source": "Starting from version <code>2.0.0-M5</code>, Spring AI uses the official <code>openai-java</code> SDK under the hood for all OpenAI models. The transition is expected to be seamless and there are no breaking changes for existing users of the OpenAI API properties and builders. If you find any issues, please report them to us at <a href=\"https://github.com/spring-projects/spring-ai/issues\">Spring AI GitHub Issues</a>.",
+      "translation": "从版本 <code>2.0.0-M5</code> 开始，Spring AI 在底层为所有 OpenAI 模型使用官方的 <code>openai-java</code> SDK。此次过渡预计是无缝的，对于现有 OpenAI API 属性和构建器的用户来说，不会有任何破坏性变更。如果您发现任何问题，请通过 <a href=\"https://github.com/spring-projects/spring-ai/issues\">Spring AI GitHub Issues</a> 向我们报告。",
+      "count": 1
+    },
+    {
+      "source": "The maximum number of tokens to generate in the chat completion. The total length of input tokens and generated tokens is limited by the model’s context length. <strong>Use for non-reasoning models</strong> (e.g., gpt-4o, gpt-3.5-turbo). <strong>Cannot be used with reasoning models</strong> (e.g., o1, o3, o4-mini series). <strong>Mutually exclusive with maxCompletionTokens</strong> - setting both will result in an API error.",
+      "translation": "在聊天补全中可生成的最大 token 数量。输入 token 和生成 token 的总长度受限于模型的上下文长度。<strong>用于非推理模型</strong>（例如 gpt-4o, gpt-3.5-turbo）。<strong>不可与推理模型配合使用</strong>（例如 o1, o3, o4-mini 系列）。<strong>与 maxCompletionTokens 互斥</strong>——同时设置两者将导致 API 错误。",
+      "count": 1
+    },
+    {
+      "source": "An upper bound for the number of tokens that can be generated for a completion, including visible output tokens and reasoning tokens. <strong>Required for reasoning models</strong> (e.g., o1, o3, o4-mini series). <strong>Cannot be used with non-reasoning models</strong> (e.g., gpt-4o, gpt-3.5-turbo). <strong>Mutually exclusive with maxTokens</strong> - setting both will result in an API error.",
+      "translation": "可用于补全生成的 token 数量上限，包括可见输出 token 和推理 token。<strong>推理模型必填</strong>（例如 o1、o3、o4-mini 系列）。<strong>不可用于非推理模型</strong>（例如 gpt-4o、gpt-3.5-turbo）。<strong>与 maxTokens 互斥</strong>——同时设置两者将导致 API 错误。",
+      "count": 1
+    },
+    {
+      "source": "Output types that you would like the model to generate for this request. Most models are capable of generating text, which is the default.\nThe <code>gpt-audio</code> model can also be used to generate audio. To request that this model generate both text and audio responses,\nyou can use: <code>text</code>, <code>audio</code>. Not supported for streaming.",
+      "translation": "输出您希望模型针对此请求生成的类型。大多数模型都能够生成文本，这是默认选项。\n<code>gpt-audio</code> 模型还可以用于生成音频。若要请求该模型同时生成文本和音频响应，\n您可以使用：<code>text</code>、<code>audio</code>。不支持流式传输。",
+      "count": 1
+    },
+    {
+      "source": "Audio parameters for the audio generation. Required when audio output is requested with <code>output-modalities</code>: <code>audio</code>.\nRequires the <code>gpt-audio</code> model and is is not supported for streaming completions.",
+      "translation": "用于音频生成的音频参数。当请求的 <code>output-modalities</code> 为 <code>audio</code> 时需要提供。\n需要使用 <code>gpt-audio</code> 模型，且不支持流式输出（streaming completions）。",
+      "count": 1
+    },
+    {
+      "source": "Optional HTTP headers to be added to the chat completion request. To override the <code>api-key</code> you need to use an <code>Authorization</code> header key, and you have to prefix the key value with the <code>Bearer</code> prefix.",
+      "translation": "可添加到聊天补全请求中的可选 HTTP 请求头。若要覆盖 <code style=\"color:red;\">api-key</code>，您需要使用 <code style=\"color:red;\">Authorization</code> 请求头键，并且必须在键值前加上 <code style=\"color:red;\">Bearer</code> 前缀。",
+      "count": 1
+    },
+    {
+      "source": "<strong><a class=\"xref page\" href=\"../tools.html#_advisor_controlled_tool_execution_with_toolcallingadvisor\">ChatClient with ToolCallingAdvisor</a></strong> — the recommended approach for most use cases. <code>ToolCallingAdvisor</code> is automatically registered when tools are present and manages the tool-call loop transparently.",
+      "translation": "<strong><a class=\"xref page\" href=\"../tools.html#_advisor_controlled_tool_execution_with_toolcallingadvisor\">带有 ToolCallingAdvisor 的 ChatClient</a></strong> —— 这是大多数用例的推荐方法。<code class=\"ToolCallingAdvisor\">ToolCallingAdvisor</code> 在存在工具时会自动注册，并透明地管理工具调用循环。",
+      "count": 1
+    },
+    {
+      "source": "You have to specify an <code>audio</code> modality in the <code>OpenAiChatOptions</code> to generate audio output.\nThe <code>AudioParameters</code> class provides the voice and audio format for the audio output.",
+      "translation": "您必须在 <code>OpenAiChatOptions</code> 中指定 <code>audio</code> 模态以生成音频输出。\n<code>AudioParameters</code> 类提供了音频输出的语音和音频格式。",
+      "count": 1
+    },
+    {
+      "source": "OpenAI provides custom <a href=\"https://platform.openai.com/docs/guides/structured-outputs\">Structured Outputs</a> APIs that ensure your model generates responses conforming strictly to your provided <code>JSON Schema</code>.\nIn addition to the existing Spring AI model-agnostic <a class=\"xref page\" href=\"../structured-output-converter.html\">Structured Output Converter</a>, these APIs offer enhanced control and precision.",
+      "translation": "OpenAI 提供自定义的 <a href=\"https://platform.openai.com/docs/guides/structured-outputs\">Structured Outputs</a> API，确保您的模型生成的响应严格符合您提供的 <code>JSON Schema</code>。\n除了现有的 Spring AI 模型无关的 <a class=\"xref page\" href=\"../structured-output-converter.html\">Structured Output Converter</a> 外，这些 API 还提供了更强的控制力和精确度。",
+      "count": 1
+    },
+    {
+      "source": "<strong>HTTP layer.</strong> An <code>okhttp.requests</code> observation wraps every HTTP attempt to the OpenAI API, carrying HTTP method, URI, status code, and exception tags. Each request also propagates <code>traceparent</code> on the wire to any downstream services (AI gateways, OpenAI-compatible inference servers, proxies).",
+      "translation": "<strong>HTTP 层。</strong> 一个 <code>okhttp.requests</code> 观测项封装了每一次对 OpenAI API 的 HTTP 请求，携带 HTTP 方法、URI、状态码和异常标签。每个请求还会在传输过程中向任何下游服务（AI 网关、兼容 OpenAI 的推理服务器、代理）传递 <code>traceparent</code>。",
+      "count": 1
+    },
+    {
+      "source": "If you need to correlate streaming HTTP spans with their parent chat-model span in your tracing UI, filter by span name <code>okhttp.requests</code> with host <code>api.openai.com</code> and join to the corresponding <code>gen_ai.client.operation</code> span by trace ID or timestamp range.\nBuilt-in parent linkage for streaming is being pursued upstream in the OpenAI Java SDK.",
+      "translation": "如果您需要在追踪 UI 中将流式 HTTP spans 与其父级 chat-model span 相关联，请按 span 名称 <code>okhttp.requests</code> 且 host 为 <code>api.openai.com</code> 进行过滤，并根据 trace ID 或时间戳范围与相应的 <code>gen_ai.client.operation</code> span 进行关联。\n\n针对流式传输的内置父级链接功能正在 OpenAI Java SDK 的上游进行开发中。",
+      "count": 1
+    },
+    {
+      "source": "Also note that the <code>extraBody</code> Map is intentionally flattened into the top-level of the JSON request during serialization. So setting <code>extraBody(Map.of(\"custom_flag\", true))</code> results in <code>{\"custom_flag\": true}</code> at the root of the JSON payload, matching the behavior of official SDKs.",
+      "translation": "同时请注意，<code>extraBody</code> Map 在序列化过程中会被有意平铺到 JSON 请求的顶层。因此，设置 <code>extraBody(Map.of(\"custom_flag\", true))</code> 将导致 JSON 负载的根部出现 <code>{\"custom_flag\": true}</code>，这与官方 SDK 的行为一致。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Fallback behavior:</strong> When <code>reasoning_content</code> is not provided by the server (e.g., official OpenAI Chat Completions), the <code>reasoningContent</code> metadata field will be an empty string.",
+      "translation": "<strong>回退行为：</strong>当服务器未提供 <code>reasoning_content</code> 时（例如官方的 OpenAI Chat Completions），<code>reasoningContent</code> 元数据字段将为空字符串。",
+      "count": 1
+    },
+    {
+      "source": "Create an account at <a href=\"https://platform.openai.com/signup\">OpenAI signup page</a> and generate the token on the <a href=\"https://platform.openai.com/account/api-keys\">API Keys page</a>.",
+      "translation": "在 <a href=\"https://platform.openai.com/signup\">OpenAI 注册页面</a> 创建一个账户，并在 <a href=\"https://platform.openai.com/account/api-keys\">API Keys 页面</a> 生成 token。",
+      "count": 1
+    },
+    {
+      "source": "The Spring AI project defines a configuration property named <code>spring.ai.openai.api-key</code> that you should set to the value of the <code>API Key</code> obtained from openai.com.",
+      "translation": "Spring AI 项目定义了一个名为 <code>spring.ai.openai.api-key</code> 的配置属性，您应当将其设置为从 openai.com 获取的 <code>API Key</code> 值。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI provides Spring Boot auto-configuration for the OpenAI Chat Client.\nTo enable it add the following dependency to your project’s Maven <code>pom.xml</code> or Gradle <code>build.gradle</code> build files:",
+      "translation": "Spring AI 为 OpenAI Chat Client 提供 Spring Boot 自动配置。\n若要启用它，请将以下依赖添加到您项目的 Maven <code>pom.xml</code> 或 Gradle <code>build.gradle</code> 构建文件中：",
+      "count": 1
+    },
+    {
+      "source": "The sampling temperature to use that controls the apparent creativity of generated completions. Higher values will make output more random while lower values will make results more focused and deterministic. It is not recommended to modify <code>temperature</code> and <code>top_p</code> for the same completions request as the interaction of these two settings is difficult to predict.",
+      "translation": "用于控制生成补全内容表观创造性的采样温度。较高的值会使输出更具随机性，而较低的值则会使结果更集中且具有确定性。不建议在同一个补全请求中同时修改 <code>temperature</code> 和 <code>top_p</code>，因为这两个设置之间的相互作用难以预测。",
+      "count": 1
+    },
+    {
+      "source": "An alternative to sampling with temperature, called nucleus sampling, where the model considers the results of the tokens with <code>top_p</code> probability mass. So 0.1 means only the tokens comprising the top 10% probability mass are considered. We generally recommend altering this or <code>temperature</code> but not both.",
+      "translation": "一种替代温度采样（sampling with temperature）的方法称为核采样（nucleus sampling），其中模型会考虑概率质量在 <code>top_p</code> 以内的 token 结果。因此，0.1 意味着仅考虑包含前 10% 概率质量的 token。我们通常建议修改其中之一或 <code>temperature</code>，但不要同时修改两者。",
+      "count": 1
+    },
+    {
+      "source": "A cache key used by OpenAI to optimize cache hit rates for similar requests. Improves latency and reduces costs. Replaces the deprecated <code>user</code> field for caching purposes. <a href=\"https://platform.openai.com/docs/guides/prompt-caching\">Learn more</a>.",
+      "translation": "OpenAI 用于优化相似请求缓存命中率的缓存键。它能改善延迟并降低成本。它取代了用于缓存目的且已弃用的 <code>user</code> 字段。<a href=\"https://platform.openai.com/docs/guides/prompt-caching\">了解更多信息</a>。",
+      "count": 1
+    },
+    {
+      "source": "A stable identifier to help OpenAI detect users violating usage policies. Should be a hashed value (e.g., hashed username or email). Replaces the deprecated <code>user</code> field for safety tracking. <a href=\"https://platform.openai.com/docs/guides/safety-best-practices#safety-identifiers\">Learn more</a>.",
+      "translation": "一个稳定的标识符，用于帮助 OpenAI 检测违反使用政策的用户。应为哈希值（例如：哈希处理后的用户名或电子邮件）。它取代了已弃用的 <code>user</code> 字段，用于安全追踪。<a href=\"https://platform.openai.com/docs/guides/safety-best-practices#safety-identifiers\">了解更多信息</a>。",
+      "count": 1
+    },
+    {
+      "source": "On start-up, the default options can be configured with the <code>OpenAiChatModel(api, options)</code> constructor or the <code>spring.ai.openai.chat.*</code> properties.",
+      "translation": "在启动时，可以通过 <code>OpenaiChatModel(api, options)</code> 构造函数或 <code>spring.ai.openai.chat.*</code> 属性来配置默认选项。",
+      "count": 1
+    },
+    {
+      "source": "You can register custom Java functions with the <code>OpenAiChatModel</code> and have the OpenAI model intelligently choose to output a JSON object containing arguments to call one or many of the registered functions.\nThis is a powerful technique to connect the LLM capabilities with external tools and APIs.\nRead more about <a class=\"xref page\" href=\"../tools.html\">Tool Calling</a>.",
+      "translation": "您可以在 <code class=\"language-java\">OpenAiChatModel</code> 中注册自定义的 Java 函数，并让 OpenAI 模型智能选择输出包含调用一个或多个已注册函数的参数的 JSON 对象。\n这是将 LLM 能力与外部工具和 API 连接的一种强大技术。\n阅读更多关于 <a class=\"xref page\" href=\"../tools.html\">Tool Calling</a> 的内容。",
+      "count": 1
+    },
+    {
+      "source": "Use <code>ChatClient</code> for both synchronous and streaming tool execution.\n<code>ToolCallingAdvisor</code> is auto-registered when tools are present, so no explicit advisor configuration is required.",
+      "translation": "无论是同步还是流式工具执行，均使用 <code>ChatClient</code>。\n当存在工具时，<code>ToolCallingAdvisor</code> 会自动注册，因此不需要显式的顾问配置。",
+      "count": 1
+    },
+    {
+      "source": "Below is a code example excerpted from <a href=\"https://github.com/spring-projects/spring-ai/blob/c9a3e66f90187ce7eae7eb78c462ec622685de6c/models/spring-ai-openai/src/test/java/org/springframework/ai/openai/chat/OpenAiChatModelIT.java#L293\">OpenAiChatModelIT.java</a>, illustrating the fusion of user text with an image using the <code>gpt-4o</code> model.",
+      "translation": "以下是摘自 <a href=\"https://github.com/spring-projects/spring-ai/blob/c9a3e66f90187ce7eae7eb78c462ec622685de6c/models/spring-ai-openai/src/test/java/org/springframework/ai/openai/chat/OpenAiChatModelIT.java#L293\">OpenAiChatModelIT.java</a> 的代码示例，展示了使用 <code>gpt-4o</code> 模型将用户文本与图像融合的过程。",
+      "count": 1
+    },
+    {
+      "source": "Below is a code example excerpted from <a href=\"https://github.com/spring-projects/spring-ai/blob/c9a3e66f90187ce7eae7eb78c462ec622685de6c/models/spring-ai-openai/src/test/java/org/springframework/ai/openai/chat/OpenAiChatModelIT.java#L442\">OpenAiChatModelIT.java</a>, illustrating the fusion of user text with an audio file using the <code>gpt-audio</code> model.",
+      "translation": "以下是摘自 <a href=\"https://github.com/spring-projects/spring-ai/blob/c9a3e66f90187ce7eae7eb78c462ec622685de6c/models/spring-ai-openai/src/test/java/org/springframework/ai/openai/chat/OpenAiChatModelIT.java#L442\">OpenAiChatModelIT.java</a> 的代码示例，展示了如何使用 <code class=\"language-java\">gpt-audio</code> 模型将用户文本与音频文件融合。",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"https://start.spring.io/\">Create</a> a new Spring Boot project and add the <code>spring-ai-starter-model-openai</code> to your pom (or gradle) dependencies.",
+      "translation": "<a href=\"https://start.spring.io/\">创建一个</a>新的 Spring Boot 项目，并将 <code>spring-ai-starter-model-openai</code> 添加到您的 pom（或 gradle）依赖中。",
+      "count": 1
+    },
+    {
+      "source": "Add an <code>application.properties</code> file under the <code>src/main/resources</code> directory to enable and configure the OpenAi chat model:",
+      "translation": "在 <code style=\"white-space:pre-wrap;\">src/main/resources</code> 目录下添加一个 <code style=\"white-space:pre-wrap;\">application.properties</code> 文件，以启用并配置 OpenAi 对话模型：",
+      "count": 1
+    },
+    {
+      "source": "This will create an <code>OpenAiChatModel</code> implementation that you can inject into your classes.\nHere is an example of a simple <code>@RestController</code> class that uses the chat model for text generations.",
+      "translation": "这将创建一个 <code>OpenaiChatModel</code> 实现，您可以将其注入到您的类中。\n这是一个使用该聊天模型进行文本生成的简单 <code>@RestController</code> 类示例。",
+      "count": 1
+    },
+    {
+      "source": "Add the <code>spring-ai-openai</code> dependency to your project’s Maven <code>pom.xml</code> file:",
+      "translation": "将 <code>spring-ai-openai</code> 依赖添加到您项目的 Maven <code>pom.xml</code> 文件中：",
+      "count": 1
+    },
+    {
+      "source": "The <code>OpenAiChatOptions</code> provides the configuration information for the chat requests.\nThe <code>OpenAiChatOptions.Builder</code> is a fluent options-builder for the chat config.",
+      "translation": "<code style=\"color: #d73a49;\">OpenAiChatOptions</code> 提供了聊天请求的配置信息。\n<code style=\"color: #d73a49;\">OpenAiChatOptions.Builder</code> 是用于聊天配置的流式选项构建器。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI provides flexible API key management through the <code>ApiKey</code> interface and its implementations. The default implementation, <code>SimpleApiKey</code>, is suitable for most use cases, but you can also create custom implementations for more complex scenarios.",
+      "translation": "Spring AI 通过 <code>ApiKey</code> 接口及其实现类提供灵活的 API 密钥管理。默认实现类 <code>SimpleApiKey</code> 适用于大多数使用场景，但您也可以为更复杂的场景创建自定义实现。",
+      "count": 1
+    },
+    {
+      "source": "You can create a custom instance of <code>OpenAiChatModel</code> with your own <code>ApiKey</code> implementation using the builder pattern:",
+      "translation": "您可以使用构建者模式（builder pattern），通过自定义的 <code>ApiKey</code> 实现来创建 <code>OpenAiChatModel</code> 的自定义实例：",
+      "count": 1
+    },
+    {
+      "source": "For synchronous calls, the <code>okhttp.requests</code> span is correctly nested under the <code>gen_ai.client.operation</code> span — the full trace tree forms as expected.",
+      "translation": "对于同步调用，<code class=\"code\">okhttp.requests</code> 跨度正确嵌套在 <code class=\"code\">gen_ai.client.operation</code> 跨度之下——完整的追踪树按预期生成。",
+      "count": 1
+    },
+    {
+      "source": "When several customizers are present, they are applied in <code>@Order</code> / <code>Ordered</code> order, after Spring AI’s own defaults, so user code wins.",
+      "translation": "当存在多个自定义器时，它们将按照 <code>@Order</code> / <code>Ordered</code> 顺序在 Spring AI 自带的默认设置之后应用，从而确保用户代码优先。",
+      "count": 1
+    },
+    {
+      "source": "OpenAI-compatible inference servers like vLLM, Ollama, and others often support additional parameters beyond those defined in OpenAI’s standard API.\nFor example, these servers may accept parameters such as <code>top_k</code>, <code>repetition_penalty</code>, or other sampling controls that the official OpenAI API does not recognize.",
+      "translation": "与 OpenAI 兼容的推理服务器（如 vLLM、Ollama 等）通常支持超出 OpenAI 标准 API 定义的额外参数。\n例如，这些服务器可能会接受诸如 <code>top_k</code>、<code>repetition_penalty</code> 或其他官方 OpenAI API 无法识别的采样控制参数。",
+      "count": 1
+    },
+    {
+      "source": "The <code>extraBody</code> option allows you to pass arbitrary parameters to these servers.\nAny key-value pairs provided in <code>extraBody</code> are included at the top level of the JSON request, enabling you to leverage server-specific features while using Spring AI’s OpenAI client.",
+      "translation": "<code style=\"color: #d73a49;\">extraBody</code> 选项允许您向这些服务器传递任意参数。\n在 <code style=\"color: #d73a49;\">extraBody</code> 中提供的任何键值对都将包含在 JSON 请求的顶层，让您在调用 Spring AI 的 OpenAI 客户端时能够利用特定服务器的功能。",
+      "count": 1
+    },
+    {
+      "source": "The <code>extraBody</code> parameter is intended for use with OpenAI-compatible servers, not the official OpenAI API.\nThe official OpenAI API applies strict validation and will return an HTTP 400 error (<code>\"Unknown parameter: 'extra_body'\"</code>) if unrecognized fields are encountered.",
+      "translation": "<code style=\"color: #d63384;\">extraBody</code> 参数旨在用于与兼容 OpenAI 的服务器配合使用，而非官方 OpenAI API。\n官方 OpenAI API 执行严格的验证，如果遇到无法识别的字段，将返回 HTTP 400 错误 (<code style=\"color: #d63384;\">\"Unknown parameter: 'extra_body'\"</code>)。",
+      "count": 1
+    },
+    {
+      "source": "If you are communicating with the official OpenAI API, you should <strong>never</strong> populate the <code>extraBody</code> parameter.",
+      "translation": "如果您正在与官方 OpenAI API 进行通信，您<strong style=\"font-weight: bold;\">绝不</strong>应该填充 <code style=\"font-family: monospace;\">extraBody</code> 参数。",
+      "count": 1
+    },
+    {
+      "source": "The <code>extraBody</code> parameter accepts any <code>Map&lt;String, Object&gt;</code>, allowing you to pass whatever parameters your target server supports.\nSpring AI does not validate these parameters—they are passed directly to the server.\nThis design provides maximum flexibility for working with diverse OpenAI-compatible implementations.",
+      "translation": "<code style=\"color: #d73a49;\">extraBody</code> 参数接受任何 <code style=\"color: #d73a49;\">Map&lt;String, Object&gt;</code>，允许您传递目标服务器支持的任何参数。\nSpring AI 不会对这些参数进行校验——它们将直接传递给服务器。\n这种设计为处理各种兼容 OpenAI 的实现提供了最大的灵活性。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Important distinction about <code>reasoning_content</code> availability:</strong>",
+      "translation": "<strong>关于 <code style=\"color: #e67e22;\">reasoning_content</code> 可用性的重要区别：</strong>",
+      "count": 1
+    },
+    {
+      "source": "<strong>OpenAI-compatible servers</strong> (DeepSeek, vLLM): Expose <code>reasoning_content</code> in Chat Completions API responses ✅",
+      "translation": "<strong>OpenAI 兼容服务器</strong>（DeepSeek、vLLM）：在 Chat Completions API 响应中暴露 <code>reasoning_content</code> ✅",
+      "count": 1
+    },
+    {
+      "source": "<strong>Official OpenAI models</strong> (GPT-5, o1, o3): Do <strong>NOT</strong> expose reasoning text in Chat Completions API responses ❌",
+      "translation": "<strong>OpenAI 官方模型</strong> (GPT-5, o1, o3)：<strong style=\"color:red;\">不要</strong>在 Chat Completions API 响应中暴露推理文本 ❌",
+      "count": 1
+    },
+    {
+      "source": "You can set this configuration property in your <code>application.properties</code> file:",
+      "translation": "您可以在您的 <code>application.properties</code> 文件中设置此配置属性：",
+      "count": 1
+    },
+    {
+      "source": "Spring AI artifacts are published in Maven Central and Spring Snapshot repositories.\nRefer to the <a class=\"xref page\" href=\"../../getting-started.html#artifact-repositories\">Artifact Repositories</a> section to add these repositories to your build system.",
+      "translation": "Spring AI 的制品发布在 Maven Central 和 Spring Snapshot 仓库中。\n请参阅 <a class=\"xref page\" href=\"../../getting-started.html#artifact-repositories\">Artifact Repositories</a> 部分，将这些仓库添加到您的构建系统中。",
+      "count": 1
+    },
+    {
+      "source": "To help with dependency management, Spring AI provides a BOM (bill of materials) to ensure that a consistent version of Spring AI is used throughout the entire project. Refer to the <a class=\"xref page\" href=\"../../getting-started.html#dependency-management\">Dependency Management</a> section to add the Spring AI BOM to your build system.",
+      "translation": "为了帮助管理依赖，Spring AI 提供了一个 BOM（物料清单），以确保整个项目中使用一致的 Spring AI 版本。请参阅 <a class=\"xref page\" href=\"../../getting-started.html#dependency-management\">Dependency Management</a> 部分将 Spring AI BOM 添加到您的构建系统中。",
+      "count": 1
+    },
+    {
+      "source": "There has been a significant change in the Spring AI auto-configuration, starter modules' artifact names.\nPlease refer to the <a href=\"https://docs.spring.io/spring-ai/reference/upgrade-notes.html\">upgrade notes</a> for more information.",
+      "translation": "Spring AI 的自动配置中，starter 模块的 artifact 名称发生了重大变化。\n请参阅 <a href=\"https://docs.spring.io/spring-ai/reference/upgrade-notes.html\">升级说明</a> 获取更多信息。",
+      "count": 1
+    },
+    {
+      "source": "The prefix <code>spring.ai.retry</code> is used as the property prefix that lets you configure the retry mechanism for the OpenAI chat model.",
+      "translation": "前缀 <code>spring.ai.retry</code> 用作属性前缀，允许您配置 OpenAI 对话模型的重试机制。",
+      "count": 1
+    },
+    {
+      "source": "If false, throw a NonTransientAiException, and do not attempt retry for <code>4xx</code> client error codes",
+      "translation": "如果为 false，则抛出 NonTransientAiException，并且不要尝试重试 <code>4xx</code> 客户端错误代码。",
+      "count": 1
+    },
+    {
+      "source": "The prefix <code>spring.ai.openai</code> is used as the property prefix that lets you connect to OpenAI.",
+      "translation": "前缀 <code>spring.ai.openai</code> 被用作属性前缀，让您能够连接到 OpenAI。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI automatically sends a <code>User-Agent: spring-ai</code> header with all requests to OpenAI.\nThis helps OpenAI identify requests originating from Spring AI for analytics and support purposes.\nThis header is sent automatically and requires no configuration from Spring AI users.",
+      "translation": "Spring AI 会在发送给 OpenAI 的所有请求中自动包含一个 <code>User-Agent: spring-ai</code> 请求头。\n这有助于 OpenAI 为了分析和支持目的识别来自 Spring AI 的请求。\n此请求头是自动发送的，Spring AI 用户无需进行任何配置。",
+      "count": 1
+    },
+    {
+      "source": "If you are an API provider building an OpenAI-compatible service, you can track Spring AI usage by reading the <code>User-Agent</code> HTTP header from incoming requests on your server.",
+      "translation": "如果您是正在构建兼容 OpenAI 服务的 API 提供商，您可以通过读取服务器上接收到的请求中的 <code>User-Agent</code> HTTP 请求头来追踪 Spring AI 的使用情况。",
+      "count": 1
+    },
+    {
+      "source": "Enabling and disabling of the chat auto-configurations are now configured via top level properties with the prefix <code>spring.ai.model.chat</code>.",
+      "translation": "启用和禁用聊天自动配置现在通过带有前缀 <code style=\"color: #d73a49;\">spring.ai.model.chat</code> 的顶级属性进行配置。",
+      "count": 1
+    },
+    {
+      "source": "The prefix <code>spring.ai.openai.chat</code> is the property prefix that lets you configure the chat model implementation for OpenAI.",
+      "translation": "前缀 <code>spring.ai.openai.chat</code> 是用于配置 OpenAI 的聊天模型实现的属性前缀。",
+      "count": 1
+    },
+    {
+      "source": "Optional override for the <code>spring.ai.openai.base-url</code> property to provide a chat-specific URL.",
+      "translation": "<code class=\"property\">spring.ai.openai.base-url</code> 属性的可选覆盖项，用于提供特定于对话的 URL。",
+      "count": 1
+    },
+    {
+      "source": "Optional override for the <code>spring.ai.openai.api-key</code> to provide a chat-specific API Key.",
+      "translation": "<code class=\"code\">spring.ai.openai.api-key</code> 的可选覆盖项，用于提供特定于对话的 API Key。",
+      "count": 1
+    },
+    {
+      "source": "How many chat completion choices to generate for each input message. Note that you will be charged based on the number of generated tokens across all of the choices. Keep <code>n</code> as 1 to minimize costs.",
+      "translation": "为每条输入消息生成多少个聊天补全选项。请注意，您将根据所有选项中生成的 token 总数计费。请将 <code>n</code> 保留在 1 以最小化成本。",
+      "count": 1
+    },
+    {
+      "source": "Response format schema name. Applicable only for <code>responseFormat.type=JSON_SCHEMA</code>",
+      "translation": "响应格式架构名称。仅适用于 <code>responseFormat.type=JSON_SCHEMA</code>",
+      "count": 1
+    },
+    {
+      "source": "Response format JSON schema. Applicable only for <code>responseFormat.type=JSON_SCHEMA</code>",
+      "translation": "响应格式 JSON 架构。仅适用于 <code>responseFormat.type=JSON_SCHEMA</code>",
+      "count": 1
+    },
+    {
+      "source": "Response format JSON schema adherence strictness. Applicable only for <code>responseFormat.type=JSON_SCHEMA</code>",
+      "translation": "JSON Schema 符合性的响应格式严格程度。仅适用于 <code>responseFormat.type=JSON_SCHEMA</code>",
+      "count": 1
+    },
+    {
+      "source": "(For streaming only) Set to add an additional chunk with token usage statistics for the entire request. The <code>choices</code> field for this chunk is an empty array and all other chunks will also include a usage field, but with a null value.",
+      "translation": "（仅限流式传输）设置为添加一个包含整个请求的 token 使用统计数据的额外数据块。此数据块的 <code>choices</code> 字段为空数组，且所有其他数据块也将包含一个 usage 字段，但其值为 null。",
+      "count": 1
+    },
+    {
+      "source": "Whether to enable <a href=\"https://platform.openai.com/docs/guides/function-calling/parallel-function-calling\">parallel function calling</a> during tool use.",
+      "translation": "在工具使用过程中是否启用<a href=\"https://platform.openai.com/docs/guides/function-calling/parallel-function-calling\">并行函数调用</a>。",
+      "count": 1
+    },
+    {
+      "source": "Specifies the <a href=\"https://platform.openai.com/docs/api-reference/responses/create#responses_create-service_tier\">processing type</a> used for serving the request.",
+      "translation": "指定用于处理请求的<a href=\"https://platform.openai.com/docs/api-reference/responses/create#responses_create-service_tier\">处理类型</a>。",
+      "count": 1
+    },
+    {
+      "source": "Additional parameters to include in the request. Accepts any key-value pairs that are flattened to the top level of the JSON request. Intended for use with OpenAI-compatible servers (vLLM, Ollama, etc.) that support parameters beyond the standard OpenAI API. The official OpenAI API rejects unknown parameters with a 400 error. See <a href=\"#openai-compatible-servers\">Using Extra Parameters with OpenAI-Compatible Servers</a> for details.",
+      "translation": "包含在请求中的附加参数。接受任何被扁平化到 JSON 请求顶层的键值对。旨在用于支持超出标准 OpenAI API 参数的 OpenAI 兼容服务器（如 vLLM、Ollama 等）。官方 OpenAI API 会以 400 错误拒绝未知参数。详情请参阅 <a href=\"#openai-compatible-servers\">在 OpenAI 兼容服务器中使用额外参数</a>。",
+      "count": 1
+    },
+    {
+      "source": "<strong>For non-reasoning models (gpt-4o, gpt-3.5-turbo):</strong>",
+      "translation": "<strong>对于非推理模型 (gpt-4o, gpt-3.5-turbo)：</strong>",
+      "count": 1
+    },
+    {
+      "source": "<strong>For reasoning models (o1, o3 series):</strong>",
+      "translation": "<strong>对于推理模型（o1、o3 系列）：</strong>",
+      "count": 1
+    },
+    {
+      "source": "<strong>Builder Pattern Validation:</strong>\nThe OpenAI ChatOptions builder automatically enforces mutual exclusivity with a \"last-set-wins\" approach:",
+      "translation": "<strong>Builder 模式验证：</strong>\nOpenAI ChatOptions 构建器会自动强制执行“最后设置生效”的互斥机制：",
+      "count": 1
+    },
+    {
+      "source": "The <a href=\"https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-openai/src/main/java/org/springframework/ai/openai/OpenAiChatOptions.java\">OpenAiChatOptions.java</a> class provides model configurations such as the model to use, the temperature, the frequency penalty, etc.",
+      "translation": "<a href=\"https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-openai/src/main/java/org/springframework/ai/openai/OpenAiChatOptions.java\">OpenAiChatOptions.java</a> 类提供了模型配置，例如要使用的模型、temperature（温度）、frequency penalty（频率惩罚）等。",
+      "count": 1
+    },
+    {
+      "source": "At run-time, you can override the default options by adding new, request-specific options to the <code>Prompt</code> call.\nFor example, to override the default model and temperature for a specific request:",
+      "translation": "在运行时，您可以通过在 <code>Prompt</code> 调用中添加新的、特定于请求的选项来覆盖默认选项。\n例如，若要为特定请求覆盖默认模型和 temperature：",
+      "count": 1
+    },
+    {
+      "source": "<code>OpenAiChatModel</code> does not execute tool calls internally.\nTool execution must be handled externally using one of two supported approaches:",
+      "translation": "<code>OpenAiChatModel</code> 不在内部执行工具调用。\n工具执行必须通过以下两种支持的方法之一在外部处理：",
+      "count": 1
+    },
+    {
+      "source": "For streaming, aggregate each streaming response with <code>MessageAggregator</code> to detect tool calls across chunks:",
+      "translation": "对于流式传输，使用 <code>MessageAggregator</code> 聚合每个流式响应，以检测跨分块的工具调用：",
+      "count": 1
+    },
+    {
+      "source": "or the image URL equivalent using the <code>gpt-4o</code> model:",
+      "translation": "或者使用 <code>gpt-4o</code> 模型对应的图像 URL：",
+      "count": 1
+    },
+    {
+      "source": "The example shows a model taking as an input the <code>multimodal.test.png</code> image:",
+      "translation": "示例展示了一个模型以 <code>multimodal.test.png</code> 图像作为输入：",
+      "count": 1
+    },
+    {
+      "source": "Below is a code example, illustrating the response of user text along with an audio byte array, using the <code>gpt-audio</code> model:",
+      "translation": "以下是一个代码示例，展示了使用 <code style=\"color: #d73a49;\">gpt-audio</code> 模型处理用户文本并返回音频字节数组（byte array）的响应：",
+      "count": 1
+    },
+    {
+      "source": "Spring AI allows you to configure your response format either programmatically using the <code>OpenAiChatOptions</code> builder or through application properties.",
+      "translation": "Spring AI 允许您通过使用 <code>OpenAiChatOptions</code> 构建器进行程序化配置，或通过应用程序属性来配置您的响应格式。",
+      "count": 1
+    },
+    {
+      "source": "You can set the response format programmatically with the <code>OpenAiChatOptions</code> builder as shown below:",
+      "translation": "您可以通过如下所示的 <code>OpenAiChatOptions</code> 构建器以编程方式设置响应格式：",
+      "count": 1
+    },
+    {
+      "source": "You can leverage existing <a class=\"xref page\" href=\"../structured-output-converter.html#_bean_output_converter\">BeanOutputConverter</a> utilities to automatically generate the JSON Schema from your domain objects and later convert the structured response into domain-specific instances:",
+      "translation": "您可以利用现有的 <a class=\"xref page\" href=\"../structured-output-converter.html#_bean_output_converter\">BeanOutputConverter</a> 工具，从您的领域对象中自动生成 JSON Schema，并随后将结构化响应转换为特定领域的实例：",
+      "count": 1
+    },
+    {
+      "source": "or to your Gradle <code>build.gradle</code> build file.",
+      "translation": "或者添加到您的 Gradle <code style=\"white-space:pre;\">build.gradle</code> 构建文件中。",
+      "count": 1
+    },
+    {
+      "source": "Next, create an <code>OpenAiChatModel</code> and use it for text generations:",
+      "translation": "接下来，创建一个 <code>OpenAiChatModel</code> 并将其用于文本生成：",
+      "count": 1
+    },
+    {
+      "source": "By default, Spring Boot auto-configuration will create an API key bean using the <code>spring.ai.openai.api-key</code> property:",
+      "translation": "默认情况下，Spring Boot 的自动配置将使用 <code style=\"white-space:nowrap\">spring.ai.openai.api-key</code> 属性来创建一个 API key bean：",
+      "count": 1
+    },
+    {
+      "source": "For non-Boot applications, pass a <code>MeterRegistry</code> directly to the builder; the gauges bind whenever a registry is supplied:",
+      "translation": "对于非 Boot 应用程序，请直接将 <code>MeterRegistry</code> 传递给 builder；只要提供了 registry，gauge 就会绑定：",
+      "count": 1
+    },
+    {
+      "source": "By default Spring AI manages the OkHttp dispatcher’s executor — an unbounded pool of platform threads, replicating the SDK’s stock behavior.\nFor workloads with high HTTP concurrency, or to take advantage of Java 21+ virtual threads, you can supply your own <code>ExecutorService</code>:",
+      "translation": "默认情况下，Spring AI 管理 OkHttp 的 dispatcher 执行器——这是一个平台线程的无界池，复制了 SDK 的默认行为。\n对于具有高 HTTP 并发量的负载，或者为了利用 Java 21+ 的虚拟线程，您可以提供自定义的 <code>ExecutorService</code>：",
+      "count": 1
+    },
+    {
+      "source": "The same executor backs both the sync and async (streaming) clients.\nWhen you supply your own executor, you own its lifecycle — Spring AI will never call <code>shutdown()</code> on it.\nWhen omitted, the internal executor is created and cleaned up automatically.",
+      "translation": "相同的 executor 同时支持同步和异步（流式）客户端。\n当您提供自己的 executor 时，您负责其生命周期——Spring AI 永远不会对其调用 <code>shutdown()</code>。\n如果省略该参数，系统将自动创建并清理内部 executor。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Streaming HTTP observations are not parented under the chat-model observation</strong>",
+      "translation": "<strong>流式 HTTP 观测（Streaming HTTP observations）未归属于 chat-model 观测</strong>",
+      "count": 1
+    },
+    {
+      "source": "registering OkHttp <code>Interceptor</code> instances (authentication, propagation headers, custom logging);",
+      "translation": "注册 OkHttp <code style=\"color: #e67e22;\">Interceptor</code> 实例（身份验证、传播请求头、自定义日志）；",
+      "count": 1
+    },
+    {
+      "source": "swapping the dispatcher <code>ExecutorService</code> (for example, to route async I/O through virtual threads);",
+      "translation": "更换调度器 <code>ExecutorService</code>（例如，用于通过虚拟线程路由异步 I/O）；",
+      "count": 1
+    },
+    {
+      "source": "The same hook is available when wiring a model manually via the <code>OpenAi*Model.Builder</code>:",
+      "translation": "当通过 <code class=\"language-html\">OpenAi*Model.Builder</code> 手动连接模型时，也可以使用相同的钩子：",
+      "count": 1
+    },
+    {
+      "source": "You can configure extra parameters using Spring Boot properties.\nEach property under <code>spring.ai.openai.chat.extra-body</code> becomes a top-level parameter in the request:",
+      "translation": "您可以使用 Spring Boot 属性来配置额外参数。\n<code style=\"color: #d63384;\">spring.ai.openai.chat.extra-body</code> 下的每个属性都将成为请求中的顶级参数：",
+      "count": 1
+    },
+    {
+      "source": "Refer to the <a href=\"https://docs.vllm.ai/en/latest/\">vLLM documentation</a> for a complete list of supported sampling parameters.",
+      "translation": "请参阅 <a href=\"https://docs.vllm.ai/en/latest/\">vLLM 文档</a> 以获取支持的采样参数完整列表。",
+      "count": 1
+    },
+    {
+      "source": "Consult the <a href=\"https://github.com/ollama/ollama/blob/main/docs/api.md\">Ollama API documentation</a> for available parameters.",
+      "translation": "请查阅 <a href=\"https://github.com/ollama/ollama/blob/main/docs/api.md\">Ollama API 文档</a> 以获取可用参数。",
+      "count": 1
+    },
+    {
+      "source": "Some OpenAI-compatible servers that support reasoning models (such as DeepSeek R1, vLLM with reasoning parsers) expose the model’s internal chain of thought via a <code>reasoning_content</code> field in their API responses.\nThis field contains the step-by-step reasoning process the model used to arrive at its final answer.",
+      "translation": "一些支持推理模型（例如 DeepSeek R1、带有推理解析器的 vLLM）的 OpenAI 兼容服务器，在其 API 响应中通过 <code>reasoning_content</code> 字段公开模型的内部思维链。\n该字段包含模型用于得出最终答案的逐步推理过程。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI maps this field from the JSON response to the <code>reasoningContent</code> key in the AssistantMessage metadata.",
+      "translation": "Spring AI 将 JSON 响应中的此字段映射到 AssistantMessage 元数据中的 <code>reasoningContent</code> 键。",
+      "count": 1
+    },
+    {
+      "source": "Official OpenAI reasoning models hide the chain-of-thought content when using the Chat Completions API.\nThey only expose <code>reasoning_tokens</code> count in usage statistics.\nTo access actual reasoning text from official OpenAI models, you must use OpenAI’s Responses API (a separate endpoint not currently supported by this client).",
+      "translation": "官方 OpenAI 推理模型在调用 Chat Completions API 时会隐藏思维链（chain-of-thought）内容。\n它们仅在使用统计中暴露 <code>reasoning_tokens</code> 数量。\n若要获取来自官方 OpenAI 模型的实际推理文本，您必须使用 OpenAI 的 Responses API（这是一个目前由本客户端不支持的独立端点）。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Using ChatModel directly:</strong>",
+      "translation": "<strong>直接使用 ChatModel：</strong>",
+      "count": 1
+    },
+    {
+      "source": "<strong>Using ChatClient:</strong>",
+      "translation": "<strong>使用 ChatClient：</strong>",
+      "count": 1
+    },
+    {
+      "source": "Refer to the <a href=\"https://api-docs.deepseek.com/guides/reasoning_model\">DeepSeek API documentation</a> for more details on reasoning models.",
+      "translation": "请参阅 <a href=\"https://api-docs.deepseek.com/guides/reasoning_model\">DeepSeek API documentation</a> 以获取有关推理模型的更多详情。",
+      "count": 1
+    },
+    {
+      "source": "Consult the <a href=\"https://docs.vllm.ai/en/latest/features/reasoning_outputs.html\">vLLM reasoning outputs documentation</a> for supported reasoning models and parsers.",
+      "translation": "请参阅 <a href=\"https://docs.vllm.ai/en/latest/features/reasoning_outputs.html\">vLLM 推理输出文档</a> 以获取支持的推理模型和解析器。",
+      "count": 1
+    },
+    {
+      "source": "The availability of <code>reasoning_content</code> depends entirely on the inference server you’re using.\nNot all OpenAI-compatible servers expose reasoning content, even when using reasoning-capable models.\nAlways refer to your server’s API documentation to understand what fields are available in responses.",
+      "translation": "<code style=\"color: #d14\">reasoning_content</code> 的可用性完全取决于您使用的推理服务器。\n并非所有兼容 OpenAI 的服务器都会暴露推理内容，即使是在使用具备推理能力的模型时也是如此。\n请始终参考您服务器的 API 文档，以了解响应中包含哪些字段。",
+      "count": 1
+    },
+    {
+      "source": "Some OpenAI-compatible providers attach extra fields to tool-call objects in their responses.\nA common example is Google Gemini’s OpenAI-compatible endpoint, which returns a <code>thought_signature</code> field required for multi-turn tool calling:",
+      "translation": "一些兼容 OpenAI 的提供商会在其响应中的 tool-call 对象中附加额外的字段。\n一个常见的例子是 Google Gemini 的 OpenAI 兼容端点，它返回一个用于多轮工具调用的 <code>thought_signature</code> 字段：",
+      "count": 1
+    },
+    {
+      "source": "This applies only to extra fields on the tool-call object itself.\nExtra fields inside the nested <code>function</code> object are not preserved.",
+      "translation": "这仅适用于 tool-call 对象本身上的额外字段。\n嵌套的 <code>function</code> 对象内部的额外字段不会被保留。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI supports the various AI language models from OpenAI, the company behind ChatGPT, which has been instrumental in sparking interest in AI-driven text generation thanks to its creation of industry-leading text generation models and embeddings.",
+      "translation": "Spring AI 支持来自 OpenAI 的各种 AI 语言模型。OpenAI 是 ChatGPT 背后的公司，由于其创建了行业领先的文本生成模型和嵌入模型，在激发人们对 AI 驱动的文本生成的兴趣方面发挥了重要作用。",
+      "count": 1
+    },
+    {
+      "source": "You will need to create an API with OpenAI to access ChatGPT models.",
+      "translation": "您需要创建一个 OpenAI API，以访问 ChatGPT 模型。",
+      "count": 1
+    },
+    {
+      "source": "For enhanced security when handling sensitive information like API keys, you can use Spring Expression Language (SpEL) to reference a custom environment variable:",
+      "translation": "为了在处理 API 密钥等敏感信息时增强安全性，您可以使用 Spring Expression Language (SpEL) 来引用自定义的环境变量：",
+      "count": 1
+    },
+    {
+      "source": "You can also set this configuration programmatically in your application code:",
+      "translation": "您也可以在应用程序代码中通过编程方式设置此配置：",
+      "count": 1
+    },
+    {
+      "source": "Maximum number of retry attempts.",
+      "translation": "最大重试次数。",
+      "count": 1
+    },
+    {
+      "source": "Initial sleep duration for the exponential backoff policy.",
+      "translation": "指数退避策略的初始睡眠时长。",
+      "count": 1
+    },
+    {
+      "source": "2 sec.",
+      "translation": "2 秒",
+      "count": 1
+    },
+    {
+      "source": "Backoff interval multiplier.",
+      "translation": "退避间隔乘数。",
+      "count": 1
+    },
+    {
+      "source": "Maximum backoff duration.",
+      "translation": "最大退避时长。",
+      "count": 1
+    },
+    {
+      "source": "3 min.",
+      "translation": "3 分钟。",
+      "count": 1
+    },
+    {
+      "source": "List of HTTP status codes that should not trigger a retry (e.g. to throw NonTransientAiException).",
+      "translation": "不应触发重试的 HTTP 状态码列表（例如，用于抛出 NonTransientAiException）。",
+      "count": 1
+    },
+    {
+      "source": "List of HTTP status codes that should trigger a retry (e.g. to throw TransientAiException).",
+      "translation": "应触发重试的 HTTP 状态码列表（例如，用于抛出 TransientAiException）。",
+      "count": 1
+    },
+    {
+      "source": "The URL to connect to",
+      "translation": "连接的 URL",
+      "count": 1
+    },
+    {
+      "source": "The API Key",
+      "translation": "API 密钥",
+      "count": 1
+    },
+    {
+      "source": "To enable, spring.ai.model.chat=openai (It is enabled by default)",
+      "translation": "若要启用，请设置 spring.ai.model.chat=openai（默认已启用）",
+      "count": 1
+    },
+    {
+      "source": "To disable, spring.ai.model.chat=none (or any value which doesn’t match openai)",
+      "translation": "若要禁用，请设置 spring.ai.model.chat=none（或任何不匹配 openai 的值）",
+      "count": 1
+    },
+    {
+      "source": "This change is done to allow configuration of multiple models.",
+      "translation": "此更改是为了支持配置多个模型。",
+      "count": 1
+    },
+    {
+      "source": "spring.ai.openai.chat.enabled (Removed and no longer valid)",
+      "translation": "spring.ai.openai.chat.enabled（已移除且不再有效）",
+      "count": 1
+    },
+    {
+      "source": "Number between -2.0 and 2.0. Positive values penalize new tokens based on their existing frequency in the text so far, decreasing the model’s likelihood to repeat the same line verbatim.",
+      "translation": "介于 -2.0 和 2.0 之间的数值。正值会根据新 token 在文本中已出现的频率对其进行惩罚，从而降低模型逐字重复同一行内容的概率。",
+      "count": 1
+    },
+    {
+      "source": "Modify the likelihood of specified tokens appearing in the completion.",
+      "translation": "修改指定 token 出现在补全内容中的概率。",
+      "count": 1
+    },
+    {
+      "source": "Whether to store the output of this chat completion request for use in our model",
+      "translation": "是否将此对话补全请求的输出存储以用于我们的模型训练",
+      "count": 1
+    },
+    {
+      "source": "Developer-defined tags and values used for filtering completions in the chat completion dashboard",
+      "translation": "用于在聊天完成仪表板中过滤完成结果的开发者自定义标签和值",
+      "count": 1
+    },
+    {
+      "source": "empty map",
+      "translation": "空映射",
+      "count": 1
+    },
+    {
+      "source": "Number between -2.0 and 2.0. Positive values penalize new tokens based on whether they appear in the text so far, increasing the model’s likelihood to talk about new topics.",
+      "translation": "介于 -2.0 和 2.0 之间的数值。正值会根据新标记（tokens）是否出现在之前的文本中来对其进行惩罚，从而增加模型谈论新话题的概率。",
+      "count": 1
+    },
+    {
+      "source": "This feature is in Beta. If specified, our system will make a best effort to sample deterministically, such that repeated requests with the same seed and parameters should return the same result.",
+      "translation": "此功能处于 Beta 测试阶段。如果指定了种子，我们的系统将尽力进行确定性采样，使得使用相同种子和参数的重复请求应返回相同的结果。",
+      "count": 1
+    },
+    {
+      "source": "Up to 4 sequences where the API will stop generating further tokens.",
+      "translation": "最多 4 个序列，API 将停止生成后续 token。",
+      "count": 1
+    },
+    {
+      "source": "A list of tools the model may call. Currently, only functions are supported as a tool. Use this to provide a list of functions the model may generate JSON inputs for.",
+      "translation": "模型可调用的工具列表。目前仅支持函数作为工具。请使用此项提供模型可能生成 JSON 输入的函数列表。",
+      "count": 1
+    },
+    {
+      "source": "A unique identifier representing your end-user, which can help OpenAI to monitor and detect abuse.",
+      "translation": "代表您的终端用户的唯一标识符，可帮助 OpenAI 进行监控和滥用检测。",
+      "count": 1
+    },
+    {
+      "source": "Tool Callbacks to register with the ChatModel.",
+      "translation": "用于与 ChatModel 注册的工具回调（Tool Callbacks）。",
+      "count": 1
+    },
+    {
+      "source": "OpenAI provides two mutually exclusive parameters for controlling token generation limits:",
+      "translation": "OpenAI 提供两个互斥的参数来控制 Token 生成限制：",
+      "count": 1
+    },
+    {
+      "source": "Non-reasoning models",
+      "translation": "非推理模型",
+      "count": 1
+    },
+    {
+      "source": "Reasoning models",
+      "translation": "推理模型",
+      "count": 1
+    },
+    {
+      "source": "o1, o1-mini, o1-preview, o3, o4-mini series",
+      "translation": "o1, o1-mini, o1-preview, o3, o4-mini 系列",
+      "count": 1
+    },
+    {
+      "source": "Multimodality refers to a model’s ability to simultaneously understand and process information from various sources, including text, images, audio, and other data formats.\nOpenAI supports text, vision, and audio input modalities.",
+      "translation": "多模态是指模型同时理解和处理来自多种来源的信息的能力，包括文本、图像、音频和其他数据格式。\nOpenAI 支持文本、视觉和音频输入模态。",
+      "count": 1
+    },
+    {
+      "source": "along with the text message \"Explain what do you see on this picture?\", and generating a response like this:",
+      "translation": "伴随短信“请解释你在这张图片中看到了什么？”，并生成如下响应：",
+      "count": 1
+    },
+    {
+      "source": "Alternatively, when using the OpenAI auto-configuration, you can configure the desired response format through the following application properties:",
+      "translation": "或者，当使用 OpenAI 自动配置时，您可以通过以下应用程序属性来配置所需的响应格式：",
+      "count": 1
+    },
+    {
+      "source": "This is useful when you need to:",
+      "translation": "当您需要执行以下操作时，此功能非常有用：",
+      "count": 1
+    },
+    {
+      "source": "Retrieve the API key from a secure key store",
+      "translation": "从安全的密钥库中检索 API 密钥",
+      "count": 1
+    },
+    {
+      "source": "Rotate API keys dynamically",
+      "translation": "动态轮换 API 密钥",
+      "count": 1
+    },
+    {
+      "source": "Implement custom API key selection logic",
+      "translation": "实现自定义 API 密钥选择逻辑",
+      "count": 1
+    },
+    {
+      "source": "Spring AI emits Micrometer observations at two layers for every OpenAI call:",
+      "translation": "Spring AI 在每次调用 OpenAI 时，会在两个层级发出 Micrometer 观测数据：",
+      "count": 1
+    },
+    {
+      "source": "To enable them in a Spring Boot application:",
+      "translation": "要在 Spring Boot 应用程序中启用它们：",
+      "count": 1
+    },
+    {
+      "source": "Typical use cases include:",
+      "translation": "典型使用场景包括：",
+      "count": 1
+    },
+    {
+      "source": "configuring proxy, SSL, hostname verification, or the connection-pool sizing exposed by the builder.",
+      "translation": "配置由 builder 暴露的代理、SSL、主机名验证或连接池大小。",
+      "count": 1
+    },
+    {
+      "source": "This configuration would produce a JSON request like:",
+      "translation": "此配置将生成如下 JSON 请求：",
+      "count": 1
+    },
+    {
+      "source": "You can also specify extra parameters at runtime using the options builder:",
+      "translation": "您还可以使用选项构建器（options builder）在运行时指定额外的参数：",
+      "count": 1
+    },
+    {
+      "source": "When running vLLM with a Llama model, you might want to use sampling parameters specific to vLLM:",
+      "translation": "在使用 vLLM 运行 Llama 模型时，您可能想要使用 vLLM 特有的采样参数：",
+      "count": 1
+    },
+    {
+      "source": "When using Ollama through the OpenAI-compatible endpoint, you can pass Ollama-specific parameters:",
+      "translation": "在使用通过 OpenAI 兼容端点调用 Ollama 时，您可以传递 Ollama 特有的参数：",
+      "count": 1
+    },
+    {
+      "source": "When using a compatible server, you can access the reasoning content from the response metadata.",
+      "translation": "当使用兼容的服务器时，您可以从响应元数据中获取推理内容。",
+      "count": 1
+    },
+    {
+      "source": "When using streaming responses, reasoning content is accumulated across chunks just like regular message content:",
+      "translation": "在使用流式响应时，推理内容与普通消息内容一样，是按块（chunks）累积的：",
+      "count": 1
+    },
+    {
+      "source": "DeepSeek R1 is a reasoning model that exposes its internal reasoning process:",
+      "translation": "DeepSeek R1 是一个能够展示其内部推理过程的推理模型：",
+      "count": 1
+    },
+    {
+      "source": "When you make requests to DeepSeek R1, responses will include both the reasoning content (the model’s thought process) and the final answer.",
+      "translation": "当您向 DeepSeek R1 发送请求时，响应将同时包含推理内容（模型的思考过程）和最终答案。",
+      "count": 1
+    },
+    {
+      "source": "vLLM supports reasoning models when configured with a reasoning parser:",
+      "translation": "当配置了推理解析器（reasoning parser）时，vLLM 支持推理模型：",
+      "count": 1
+    },
+    {
+      "source": "Without these provider-specific fields present in the follow-up request, some models reject the tool-call history.",
+      "translation": "如果后续请求中缺少这些特定于提供商的字段，某些模型会拒绝工具调用历史记录。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI automatically captures any extra fields present on tool-call objects in the provider response and replays them verbatim when the assistant message is included in a subsequent request.\nNo configuration is required — the behavior is transparent for both blocking and streaming flows.",
+      "translation": "Spring AI 会自动捕获提供商响应中工具调用对象（tool-call objects）上的任何额外字段，并在助手消息包含在后续请求中时原样重放这些字段。\n\n无需任何配置——该行为对于阻塞式和流式流程都是透明的。",
+      "count": 1
+    },
+    {
+      "source": "Apache®, Apache Tomcat®, Apache Kafka®, Apache Cassandra™, and Apache Geode™ are trademarks or registered trademarks of the Apache Software Foundation in the United States and/or other countries. Java™, Java™ SE, Java™ EE, and OpenJDK™ are trademarks of Oracle and/or its affiliates. Kubernetes® is a registered trademark of the Linux Foundation in the United States and other countries. Linux® is the registered trademark of Linus Torvalds in the United States and other countries. Windows® and Microsoft® Azure are registered trademarks of Microsoft Corporation. “AWS” and “Amazon Web Services” are trademarks or registered trademarks of Amazon.com Inc. or its affiliates. All other trademarks and copyrights are property of their respective owners and are only mentioned for informative purposes. Other names may be trademarks of their respective owners.",
+      "translation": "Apache®、Apache Tomcat®、Apache Kafka®、Apache Cassandra™ 和 Apache Geode™ 是 Apache Software Foundation 在美国和/或其他国家的商标或注册商标。Java™、Java™ SE、Java™ EE 和 OpenJDK™ 是 Oracle 和/或其关联公司的商标。Kubernetes® 是 Linux Foundation 在美国和其他国家的注册商标。Linux® 是 Linus Torvalds 在美国和其他国家的注册商标。Windows® 和 Microsoft® Azure 是 Microsoft Corporation 的注册商标。“AWS”和“Amazon Web Services”是 Amazon.com Inc. 或其关联公司的商标或注册商标。所有其他商标和版权均为其各自所有者的财产，仅用于提供信息。其他名称可能是其各自所有者的商标。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/projects\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-boot\">Spring Boot</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-framework\">Spring Framework</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud\">Spring Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud-dataflow\">Spring Cloud Data Flow</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-data\">Spring Data</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-integration\">Spring Integration</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-batch\">Spring Batch</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-security\">Spring Security</a>\n            <a class=\"navbar-item navbar-item-special\" href=\"https://spring.io/projects\">View all projects</a>\n            <li class=\"navbar-item navbar-item-special-3\">DEVELOPMENT TOOLS</li>\n            <a class=\"navbar-item\" href=\"https://spring.io/tools\">Spring Tools 4</a>\n            <a class=\"navbar-item navbar-item-special-2\" href=\"https://start.spring.io\">Spring Initializr\n              <svg id=\"svg-stash-f15b5668\"></svg></a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/projects\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-boot\">Spring Boot</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-framework\">Spring Framework</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud\">Spring Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud-dataflow\">Spring Cloud Data Flow</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-data\">Spring Data</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-integration\">Spring Integration</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-batch\">Spring Batch</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-security\">Spring Security</a>\n            <a class=\"navbar-item navbar-item-special\" href=\"https://spring.io/projects\">查看所有项目</a>\n            <li class=\"navbar-item navbar-item-special-3\">开发工具</li>\n            <a class=\"navbar-item\" href=\"https://spring.io/tools\">Spring Tools 4</a>\n            <a class=\"navbar-item navbar-item-special-2\" href=\"https://start.spring.io\">Spring Initializr\n              <svg id=\"svg-stash-f15b5668\"></svg></a>",
+      "count": 1
+    },
+    {
+      "source": "<nav aria-label=\"breadcrumbs\" class=\"breadcrumbs\">\n    <ul>\n      <li><a href=\"../../index.html\">Spring AI</a></li>\n      <li>Reference</li>\n      <li><a href=\"../index.html\">Models</a></li>\n      <li><a href=\"../chatmodel.html\">Chat Models</a></li>\n      <li><a href=\"openai-chat.html\">OpenAI</a></li>\n    </ul>\n  </nav>",
+      "translation": "<nav aria-label=\"breadcrumbs\" class=\"breadcrumbs\">\n    <ul>\n      <li><a href=\"../../index.html\">Spring AI</a></li>\n      <li>参考资料</li>\n      <li><a href=\"../index.html\">Models</a></li>\n      <li><a href=\"../chatmodel.html\">Chat Models</a></li>\n      <li><a href=\"openai-chat.html\">OpenAI</a></li>\n    </ul>\n  </nav>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/why-spring\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/microservices\">Microservices</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/reactive\">Reactive</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/event-driven\">Event\n              Driven</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/cloud\">Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/web-applications\">Web\n              Applications</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/serverless\">Serverless</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/batch\">Batch</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/why-spring\">概述</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/microservices\">微服务</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/reactive\">响应式</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/event-driven\">事件驱动</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/cloud\">云原生</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/web-applications\">Web 应用</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/serverless\">Serverless</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/batch\">批处理</a>",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/chat/openai-chat.adoc\">\n          <svg id=\"svg-stash-05b5c46b\"></svg>\n          Edit this Page\n        </a>\n        <a href=\"https://github.com/spring-projects/spring-ai\" title=\"GitHub\">\n          <svg id=\"svg-stash-28d888b7\"></svg>\n          GitHub Project\n        </a>",
+      "translation": "<a href=\"file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/chat/openai-chat.adoc\">\n          <svg id=\"svg-stash-05b5c46b\"></svg>\n          编辑此页面\n        </a>\n        <a href=\"https://github.com/spring-projects/spring-ai\" title=\"GitHub\">\n          <svg id=\"svg-stash-28d888b7\"></svg>\n          GitHub 项目\n        </a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/solutions\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/support\">Spring Runtime</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/consulting\">Spring Consulting</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/teams\">Spring Academy For Teams</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/security\">Security Advisories</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/solutions\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/support\">Spring Runtime</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/consulting\">Spring Consulting</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/teams\">Spring Academy For Teams</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/security\">安全公告</a>",
+      "count": 1
+    },
+    {
+      "source": "<ul class=\"projects\">\n  <li>\n    Related Spring Documentation\n    <ul class=\"projects-list\">\n    </ul>\n  </li><a href=\"../../spring-projects.html\">All Docs...</a>\n</ul>",
+      "translation": "<ul class=\"projects\">\n  <li>\n    相关 Spring 文档\n    <ul class=\"projects-list\">\n    </ul>\n  </li><a href=\"../../spring-projects.html\">所有文档...</a>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.academy/courses\">Courses</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/learning-path\">Get Certified</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.academy/courses\">课程</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/learning-path\">获取认证</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"title\" href=\"../../index.html\">Spring AI</a>",
+      "translation": "<a class=\"title\" href=\"../../index.html\">Spring AI</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"search-link\" href=\"../../search.html\">Search in all Spring Docs</a>",
+      "translation": "<a class=\"search-link\" href=\"../../search.html\">在所有 Spring 文档中搜索</a>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../vectordbs.html\">Vector Databases</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/azure.html\">Azure AI Service</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/azure-cosmos-db.html\">Azure Cosmos DB</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/bedrock-knowledge-base.html\">Amazon Bedrock Knowledge Base</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/apache-cassandra.html\">Apache Cassandra Vector Store</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/chroma.html\">Chroma</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/couchbase.html\">Couchbase</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/elasticsearch.html\">Elasticsearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/gemfire.html\">GemFire</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/mariadb.html\">MariaDB Vector Store</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/milvus.html\">Milvus</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/mongodb.html\">MongoDB Atlas</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/neo4j.html\">Neo4j</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/opensearch.html\">OpenSearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/oracle.html\">Oracle</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/pgvector.html\">PGvector</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/pinecone.html\">Pinecone</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/qdrant.html\">Qdrant</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/redis.html\">Redis</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/typesense.html\">Typesense</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/weaviate.html\">Weaviate</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/s3-vector-store.html\">S3 Vector Store</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../vectordbs.html\">向量数据库</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/azure.html\">Azure AI Service</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/azure-cosmos-db.html\">Azure Cosmos DB</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/bedrock-knowledge-base.html\">Amazon Bedrock Knowledge Base</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/apache-cassandra.html\">Apache Cassandra 向量存储</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/chroma.html\">Chroma</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/couchbase.html\">Couchbase</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/elasticsearch.html\">Elasticsearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/gemfire.html\">GemFire</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/mariadb.html\">MariaDB 向量存储</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/milvus.html\">Milvus</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/mongodb.html\">MongoDB Atlas</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/neo4j.html\">Neo4j</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/opensearch.html\">OpenSearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/oracle.html\">Oracle</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/pgvector.html\">PGvector</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/pinecone.html\">Pinecone</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/qdrant.html\">Qdrant</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/redis.html\">Redis</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/typesense.html\">Typesense</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/weaviate.html\">Weaviate</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/s3-vector-store.html\">S3 向量存储</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../embeddings.html\">Embedding Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../bedrock.html\">Amazon Bedrock</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/bedrock-cohere-embedding.html\">Cohere</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/bedrock-titan-embedding.html\">Titan</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/azure-openai-embeddings.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/google-genai-embeddings-text.html\">Google GenAI Text Embedding</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/mistralai-embeddings.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/oci-genai-embeddings.html\">OCI GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/ollama-embeddings.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/onnx.html\">(ONNX) Transformers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/openai-embeddings.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/postgresml-embeddings.html\">PostgresML</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">VertexAI</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/vertexai-embeddings-text.html\">Text Embedding</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/vertexai-embeddings-multimodal.html\">Multimodal Embedding</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../embeddings.html\">嵌入模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../bedrock.html\">Amazon Bedrock</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/bedrock-cohere-embedding.html\">Cohere</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/bedrock-titan-embedding.html\">Titan</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/azure-openai-embeddings.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/google-genai-embeddings-text.html\">Google GenAI 文本嵌入</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/mistralai-embeddings.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/oci-genai-embeddings.html\">OCI GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/ollama-embeddings.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/onnx.html\">(ONNX) Transformers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/openai-embeddings.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/postgresml-embeddings.html\">PostgresML</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">VertexAI</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/vertexai-embeddings-text.html\">文本嵌入</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/vertexai-embeddings-multimodal.html\">多模态嵌入</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../chatmodel.html\">Chat Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"comparison.html\">Chat Models Comparison</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"bedrock-converse.html\">Amazon Bedrock Converse</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"anthropic-chat.html\">Anthropic</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"azure-openai-chat.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"deepseek-chat.html\">DeepSeek</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"dmr-chat.html\">Docker Model Runner</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"google-genai-chat.html\">Google GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"groq-chat.html\">Groq</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mistralai-chat.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"minimax-chat.html\">MiniMax</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"nvidia-chat.html\">NVIDIA</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"ollama-chat.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"perplexity-chat.html\">Perplexity AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"oci-genai-chat.html\">OCI Generative AI</a>\n  </li>\n  <li class=\"nav-item is-current-page\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"openai-chat.html\">OpenAI</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../chatmodel.html\">聊天模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"comparison.html\">聊天模型对比</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"bedrock-converse.html\">Amazon Bedrock Converse</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"anthropic-chat.html\">Anthropic</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"azure-openai-chat.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"deepseek-chat.html\">DeepSeek</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"dmr-chat.html\">Docker Model Runner</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"google-genai-chat.html\">Google GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"groq-chat.html\">Groq</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mistralai-chat.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"minimax-chat.html\">MiniMax</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"nvidia-chat.html\">NVIDIA</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"ollama-chat.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"perplexity-chat.html\">Perplexity AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"oci-genai-chat.html\">OCI Generative AI</a>\n  </li>\n  <li class=\"nav-item is-current-page\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"openai-chat.html\">OpenAI</a>\n  </li>\n</ul",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-overview.html\">Model Context Protocol (MCP)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-client-boot-starter-docs.html\">MCP Client Boot Starters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-server-boot-starter-docs.html\">MCP Server Boot Starters</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-stdio-sse-server-boot-starter-docs.html\">STDIO and SSE MCP Servers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-streamable-http-server-boot-starter-docs.html\">Streamable-HTTP MCP Servers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-stateless-server-boot-starter-docs.html\">Stateless Streamable-HTTP MCP Servers</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-security.html\">MCP Security (WIP)</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-overview.html\">MCP Annotations</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-client.html\">Client Annotations</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-server.html\">Server Annotations</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-special-params.html\">Special Parameters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-examples.html\">MCP Annotations Examples</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-overview.html\">Model Context Protocol (MCP)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-client-boot-starter-docs.html\">MCP Client Boot Starters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-server-boot-starter-docs.html\">MCP Server Boot Starters</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-stdio-sse-server-boot-starter-docs.html\">STDIO 和 SSE MCP 服务器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-streamable-http-server-boot-starter-docs.html\">Streamable-HTTP MCP 服务器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-stateless-server-boot-starter-docs.html\">无状态 Streamable-HTTP MCP 服务器</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-security.html\">MCP 安全性 (WIP)</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-overview.html\">MCP 注解</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-client.html\">客户端注解</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-server.html\">服务器注解</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-special-params.html\">特殊参数</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-examples.html\">MCP 注解示例</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">Guides</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/spring-ai-community/awesome-spring-ai\">Awesome Spring AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/getting-started-mcp.html\">Getting Started with MCP</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/dynamic-tool-search.html\">Dynamic Tool Discovery</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/llm-as-judge.html\">LLM-as-a-Judge Evaluation</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"prompt-engineering-patterns.html\">Prompt Engineering Patterns</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../effective-agents.html\">Building Effective Agents</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agents\">Building agents with Spring AI by AWS</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agentcore\">Building agents with Spring AI and AgentCore by AWS</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/microsoft/Spring-AI-for-Beginners\">Spring AI for Beginners by Microsoft</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">指南</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/spring-ai-community/awesome-spring-ai\">Awesome Spring AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/getting-started-mcp.html\">MCP 入门指南</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/dynamic-tool-search.html\">动态工具发现</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/llm-as-judge.html\">LLM-as-a-Judge 评估</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"prompt-engineering-patterns.html\">提示工程模式</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../effective-agents.html\">构建高效智能体</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agents\">AWS 提供的使用 Spring AI 构建智能体教程</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agentcore\">AWS 提供的使用 Spring AI 和 AgentCore 构建智能体教程</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/microsoft/Spring-AI-for-Beginners\">Microsoft 提供的 Spring AI 入门教程</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio.html\">Audio Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio/transcriptions.html\">Transcription API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/transcriptions/azure-openai-transcriptions.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/transcriptions/openai-transcriptions.html\">OpenAI</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio/speech.html\">Text-To-Speech (TTS) API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/speech/openai-speech.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/speech/elevenlabs-speech.html\">ElevenLabs</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio.html\">音频模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio/transcriptions.html\">转录 API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/transcriptions/azure-openai-transcriptions.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/transcriptions/openai-transcriptions.html\">OpenAI</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio/speech.html\">文本转语音 (TTS) API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/speech/openai-speech.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/speech/elevenlabs-speech.html\">ElevenLabs</a>\n  </li>\n</ul>\n  </li>\n</ul",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nYou can override the common <code>spring.ai.openai.base-url</code> and <code>spring.ai.openai.api-key</code> for the <code>ChatModel</code> and <code>EmbeddingModel</code> implementations.\nThe <code>spring.ai.openai.chat.base-url</code> and <code>spring.ai.openai.chat.api-key</code> properties, if set, take precedence over the common properties.\nThis is useful if you want to use different OpenAI accounts for different models and different model endpoints.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n您可以为 <code class=\"ChatModel\"></code> 和 <code class=\"EmbeddingModel\"></code> 的实现覆盖通用的 <code class=\"spring.ai.openai.base-url\"></code> 和 <code class=\"spring.ai.openai.api-key\"></code>。\n如果设置了 <code class=\"spring.ai.openai.chat.base-url\"></code> 和 <code class=\"spring.ai.openai.chat.api-key\"></code> 属性，它们将优先于通用属性。\n如果您希望为不同的模型和不同的模型端点使用不同的 OpenAI 账号，这将非常有用。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nAlthough this is optional for JSON Schema, OpenAI <a href=\"https://platform.openai.com/docs/guides/structured-outputs/all-fields-must-be-required#all-fields-must-be-required\">mandates</a> required fields for the structured response to function correctly. Kotlin reflection is used to infer which property are required or not based on the nullability of types and default values of parameters, so for most use case <code>@get:JsonProperty(required = true)</code> is not needed. <code>@get:JsonProperty(value = \"custom_name\")</code> can be useful to customize the property name. Make sure to generate the annotation on the related getters with this <code>@get:</code> syntax, see <a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">related documentation</a>.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n虽然这对于 JSON Schema 来说是可选的，但 OpenAI <a href=\"https://platform.openai.com/docs/guides/structured-outputs/all-fields-must-be-required#all-fields-must-be-required\">强制要求</a>结构化响应中的字段必须为必填项才能正常工作。Kotlin 反射会根据类型的可空性（nullability）和参数的默认值来推断哪些属性是必填的，因此在大多数用例中不需要 <code>@get:JsonProperty(required = true)</code>。<code>@get:JsonProperty(value = \"custom_name\")</code> 可用于自定义属性名称。请确保使用此 <code>@get:</code> 语法在相关的 getter 上生成注解，参见<a href=\"https://kotlinlang.org/docs/annotations.html#annotation-use-site-targets\">相关文档</a>。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../chatclient.html\">Chat Client API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../advisors.html\">Advisors</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../advisors-recursive.html\">Recursive Advisors</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../chatclient.html\">Chat Client API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../advisors.html\">顾问</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../advisors-recursive.html\">递归顾问</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../imageclient.html\">Image Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/azure-openai-image.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/openai-image.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/stabilityai-image.html\">Stability</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../imageclient.html\">图像模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/azure-openai-image.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/openai-image.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/stabilityai-image.html\">Stability</a>\n  </li>\n</ul",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\nAll properties prefixed with <code>spring.ai.openai.chat</code> can be overridden at runtime by adding request-specific <a href=\"#chat-options\">Runtime Options</a> to the <code>Prompt</code> call.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"提示\"></i>\n</td>\n<td class=\"content\">\n所有以 <code>spring.ai.openai.chat</code> 为前缀的属性都可以通过在 <code>Prompt</code> 调用中添加特定于请求的 <a href=\"#chat-options\">运行时选项 (Runtime Options)</a> 来在运行时覆盖。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\nIn addition to the model specific <a href=\"https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-openai/src/main/java/org/springframework/ai/openai/OpenAiChatOptions.java\">OpenAiChatOptions</a> you can use a portable <a href=\"https://github.com/spring-projects/spring-ai/blob/main/spring-ai-model/src/main/java/org/springframework/ai/chat/prompt/ChatOptions.java\">ChatOptions</a> instance, created with <a href=\"https://github.com/spring-projects/spring-ai/blob/main/spring-ai-model/src/main/java/org/springframework/ai/chat/prompt/DefaultChatOptionsBuilder.java\">ChatOptions#builder()</a>.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\n除了特定模型的 <a href=\"https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-openai/src/main/java/org/springframework/ai/openai/OpenAiChatOptions.java\">OpenAiChatOptions</a>，您还可以使用通过 <a href=\"https://github.com/spring-projects/spring-ai/blob/main/spring-ai-model/src/main/java/org/springframework/ai/chat/prompt/DefaultChatOptionsBuilder.java\">ChatOptions#builder()</a> 创建的通用 <a href=\"https://github.com/spring-projects/spring-ai/blob/main/spring-ai-model/src/main/java/org/springframework/ai/chat/prompt/ChatOptions.java\">ChatOptions</a> 实例。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../moderation.html\">Moderation Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../moderation/openai-moderation.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../moderation/mistral-ai-moderation.html\">Mistral AI</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../moderation.html\">审核模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../moderation/openai-moderation.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../moderation/mistral-ai-moderation.html\">Mistral AI</a>\n  </li>\n</ul",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../../upgrade-notes.html\">Upgrade Notes</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../tools-migration.html\">Migrating FunctionCallback to ToolCallback API</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"anthropic-migration.html\">Migrating the Anthropic Module to the Official Java SDK</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../../upgrade-notes.html\">升级说明</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../tools-migration.html\">将 FunctionCallback 迁移到 ToolCallback API</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"anthropic-migration.html\">将 Anthropic 模块迁移到官方 Java SDK</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-important\" title=\"Important\"></i>\n</td>\n<td class=\"content\">\nThese parameters are <strong>mutually exclusive</strong>. Setting both will result in an API error from OpenAI.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-important\" title=\"Important\"></i>\n</td>\n<td class=\"content\">\n这些参数是<strong>互斥的</strong>。同时设置两者将导致 OpenAI 返回 API 错误。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\nGPT_4_VISION_PREVIEW will continue to be available only to existing users of this model starting June 17, 2024. If you are not an existing user, please use the GPT_4_O or GPT_4_TURBO models. More details <a href=\"https://platform.openai.com/docs/deprecations/2024-06-06-gpt-4-32k-and-vision-preview-models\">here</a>\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"提示\"></i>\n</td>\n<td class=\"content\">\n从 2024 年 6 月 17 日起，GPT_4_VISION_PREVIEW 将仅对该模型的现有用户继续提供。如果您不是现有用户，请使用 GPT_4_O 或 GPT_4_TURBO 模型。更多详情请参阅 <a href=\"https://platform.openai.com/docs/deprecations/2024-06-06-gpt-4-32k-and-vision-preview-models\">此处</a>\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nCurrently, OpenAI supports a <a href=\"https://platform.openai.com/docs/guides/structured-outputs/supported-schemas\">subset of the JSON Schema language</a> format.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n目前，OpenAI 支持 <a href=\"https://platform.openai.com/docs/guides/structured-outputs/supported-schemas\">JSON Schema 语言的一个子集</a> 格式。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nAdhere to the OpenAI <a href=\"https://platform.openai.com/docs/guides/structured-outputs/supported-schemas\">subset of the JSON Schema language</a> format.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n遵循 OpenAI 的 <a href=\"https://platform.openai.com/docs/guides/structured-outputs/supported-schemas\">JSON Schema 语言子集</a> 格式。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\nReplace the <code>api-key</code> with your OpenAI credentials.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"提示\"></i>\n</td>\n<td class=\"content\">\n将 <code class=\"api-key\">api-key</code> 替换为您自己的 OpenAI 凭据。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../../index.html\">Overview</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../concepts.html\">AI Concepts</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../../index.html\">概览</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../concepts.html\">AI 概念</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../retrieval-augmented-generation.html\">Retrieval Augmented Generation (RAG)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../etl-pipeline.html\">ETL Pipeline</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../retrieval-augmented-generation.html\">检索增强生成 (RAG)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../etl-pipeline.html\">ETL 流水线</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\nFor users that belong to multiple organizations (or are accessing their projects through their legacy user API key), you can optionally specify which organization and project is used for an API request.\nUsage from these API requests will count as usage for the specified organization and project.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"提示\"></i>\n</td>\n<td class=\"content\">\n对于属于多个组织（或通过其旧版用户 API 密钥访问项目）的用户，您可以选择性地指定用于 API 请求的组织和项目。\n这些 API 请求的使用量将计入所指定的组织和项目。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\nYou can pass multiple images as well.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\n您也可以传递多张图片。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\nYou can pass multiple audio files as well.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\n您也可以传递多个音频文件。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tr>\n<th class=\"tableblock halign-left valign-top\">Parameter</th>\n<th class=\"tableblock halign-left valign-top\">Use Case</th>\n<th class=\"tableblock halign-left valign-top\">Compatible Models</th>\n</tr>",
+      "translation": "<tr>\n<th class=\"tableblock halign-left valign-top\">参数</th>\n<th class=\"tableblock halign-left valign-top\">使用场景</th>\n<th class=\"tableblock halign-left valign-top\">兼容型号</th>\n</tr>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"prev\"><a href=\"oci-genai-chat.html\">OCI Generative AI</a></span>\n  <span class=\"next\"><a href=\"../embeddings.html\">Embedding Models</a></span>",
+      "translation": "<span class=\"prev\"><a href=\"oci-genai-chat.html\">OCI 生成式 AI</a></span>\n  <span class=\"next\"><a href=\"../embeddings.html\">嵌入模型</a></span>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../../getting-started.html\">Getting Started</a>",
+      "translation": "<a class=\"nav-link\" href=\"../../getting-started.html\">入门指南</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../structured-output-converter.html\">Structured Output</a>",
+      "translation": "<a class=\"nav-link\" href=\"../structured-output-converter.html\">结构化输出</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../chat-memory.html\">Chat Memory</a>",
+      "translation": "<a class=\"nav-link\" href=\"../chat-memory.html\">聊天记忆</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../tools.html\">Tool Calling</a>",
+      "translation": "<a class=\"nav-link\" href=\"../tools.html\">工具调用</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../testing.html\">Model Evaluation</a>",
+      "translation": "<a class=\"nav-link\" href=\"../testing.html\">模型评估</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../docker-compose.html\">Development-time Services</a>",
+      "translation": "<a class=\"nav-link\" href=\"../docker-compose.html\">开发时服务</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_add_repositories_and_bom\"></a>Add Repositories and BOM",
+      "translation": "<a class=\"anchor\" href=\"#_add_repositories_and_bom\">添加仓库和 BOM</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_chat_properties\"></a>Chat Properties",
+      "translation": "<a class=\"anchor\" href=\"#_chat_properties\">聊天属性</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_retry_properties\"></a>Retry Properties",
+      "translation": "<a class=\"anchor\" href=\"#_retry_properties\">重试属性</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_connection_properties\"></a>Connection Properties",
+      "translation": "<a class=\"anchor\" href=\"#_connection_properties\">连接属性</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_user_agent_header\"></a>User-Agent Header",
+      "translation": "<a class=\"anchor\" href=\"#_user_agent_header\">User-Agent 请求头</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_configuration_properties\"></a>Configuration Properties",
+      "translation": "<a class=\"anchor\" href=\"#_configuration_properties\">配置属性</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_token_limit_parameters_model_specific_usage\"></a>Token Limit Parameters: Model-Specific Usage",
+      "translation": "<a class=\"anchor\" href=\"#_token_limit_parameters_model_specific_usage\">Token 限制参数：模型特定用法</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_usage_examples\"></a>Usage Examples",
+      "translation": "<a class=\"anchor\" href=\"#_usage_examples\">使用示例</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#chat-options\"></a>Runtime Options",
+      "translation": "<a class=\"anchor\" href=\"#chat-options\"></a>运行时选项",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_function_calling\"></a>Function Calling",
+      "translation": "<a class=\"anchor\" href=\"#_function_calling\">函数调用</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_tool_calling_via_chatclient_recommended\"></a>Tool Calling via ChatClient (Recommended)",
+      "translation": "<a class=\"anchor\" href=\"#_tool_calling_via_chatclient_recommended\"></a>通过 ChatClient 进行工具调用（推荐）",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_user_controlled_tool_execution\"></a>User-Controlled Tool Execution",
+      "translation": "<a class=\"anchor\" href=\"#_user_controlled_tool_execution\">用户控制的工具执行</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_output_audio\"></a>Output Audio",
+      "translation": "<a class=\"anchor\" href=\"#_output_audio\">输出音频</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_structured_outputs\"></a>Structured Outputs",
+      "translation": "<a class=\"anchor\" href=\"#_structured_outputs\">结构化输出</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_using_the_chat_options_builder\"></a>Using the Chat Options Builder",
+      "translation": "<a class=\"anchor\" href=\"#_using_the_chat_options_builder\">使用聊天选项构建器</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_integrating_with_beanoutputconverter_utilities\"></a>Integrating with BeanOutputConverter Utilities",
+      "translation": "<a class=\"anchor\" href=\"#_integrating_with_beanoutputconverter_utilities\">与 BeanOutputConverter 工具集成</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_configuring_via_application_properties\"></a>Configuring via Application Properties",
+      "translation": "<a class=\"anchor\" href=\"#_configuring_via_application_properties\">通过 Application Properties 进行配置</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_sample_controller\"></a>Sample Controller",
+      "translation": "<a class=\"anchor\" href=\"#_sample_controller\">示例控制器</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_manual_configuration\"></a>Manual Configuration",
+      "translation": "<a class=\"anchor\" href=\"#_manual_configuration\">手动配置</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_api_key_management\"></a>API Key Management",
+      "translation": "<a class=\"anchor\" href=\"#_api_key_management\">API 密钥管理</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_default_configuration\"></a>Default Configuration",
+      "translation": "<a class=\"anchor\" href=\"#_default_configuration\">默认配置</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_custom_api_key_configuration\"></a>Custom API Key Configuration",
+      "translation": "<a class=\"anchor\" href=\"#_custom_api_key_configuration\">自定义 API 密钥配置</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_connection_pool_metrics_opt_in\"></a>Connection-pool metrics (opt-in)",
+      "translation": "<a class=\"anchor\" href=\"#_connection_pool_metrics_opt_in\">连接池指标（可选启用）</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_http_dispatcher_executor_advanced\"></a>HTTP dispatcher executor (advanced)",
+      "translation": "<a class=\"anchor\" href=\"#_http_dispatcher_executor_advanced\">HTTP 调度器执行器（高级）</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_customizing_the_http_client\"></a>Customizing the HTTP Client",
+      "translation": "<a class=\"anchor\" href=\"#_customizing_the_http_client\">自定义 HTTP 客户端</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#openai-compatible-servers\"></a>Using Extra Parameters with OpenAI-Compatible Servers",
+      "translation": "<a class=\"anchor\" href=\"#openai-compatible-servers\">在与 OpenAI 兼容的服务器中使用额外参数</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_configuration_with_properties\"></a>Configuration with Properties",
+      "translation": "<a class=\"anchor\" href=\"#_configuration_with_properties\">带属性的配置</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_runtime_configuration_with_builder\"></a>Runtime Configuration with Builder",
+      "translation": "<a class=\"anchor\" href=\"#_runtime_configuration_with_builder\">使用 Builder 的运行时配置</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_example_vllm_server\"></a>Example: vLLM Server",
+      "translation": "<a class=\"anchor\" href=\"#_example_vllm_server\">示例：vLLM 服务器</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_example_ollama_server\"></a>Example: Ollama Server",
+      "translation": "<a class=\"anchor\" href=\"#_example_ollama_server\">示例：Ollama 服务器</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_reasoning_content_from_reasoning_models\"></a>Reasoning Content from Reasoning Models",
+      "translation": "<a class=\"anchor\" href=\"#_reasoning_content_from_reasoning_models\"></a>来自推理模型的推理内容",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_accessing_reasoning_content\"></a>Accessing Reasoning Content",
+      "translation": "<a class=\"anchor\" href=\"#_accessing_reasoning_content\">访问推理内容</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_streaming_reasoning_content\"></a>Streaming Reasoning Content",
+      "translation": "<a class=\"anchor\" href=\"#_streaming_reasoning_content\">流式推理内容</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_example_deepseek_r1\"></a>Example: DeepSeek R1",
+      "translation": "<a class=\"anchor\" href=\"#_example_deepseek_r1\">示例：DeepSeek R1</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_example_vllm_with_reasoning_parser\"></a>Example: vLLM with Reasoning Parser",
+      "translation": "<a class=\"anchor\" href=\"#_example_vllm_with_reasoning_parser\"></a>示例：带有推理解析器的 vLLM",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_tool_call_additional_properties_for_openai_compatible_providers\"></a>Tool Call Additional Properties for OpenAI-Compatible Providers",
+      "translation": "<a class=\"anchor\" href=\"#_tool_call_additional_properties_for_openai_compatible_providers\">OpenAI 兼容提供商的工具调用附加属性</a>",
+      "count": 1
+    },
+    {
+      "source": "Why Spring",
+      "translation": "为什么选择 Spring",
+      "count": 1
+    },
+    {
+      "source": "Spring AI",
+      "translation": "Spring AI",
+      "count": 1
+    },
+    {
+      "source": "OpenAI Chat",
+      "translation": "OpenAI 对话",
+      "count": 1
+    }
+  ]
+}

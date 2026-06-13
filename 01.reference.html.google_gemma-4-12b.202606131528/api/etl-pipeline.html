@@ -1,0 +1,2435 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width,initial-scale=1" name="viewport"/>
+    <title>ETL 流水线 :: Spring AI 参考</title>
+    <link href="https://docs.spring.io/spring-ai/reference/api/etl-pipeline.html" rel="canonical"/>
+    <link href="retrieval-augmented-generation.html" rel="prev"/>
+    <link href="testing.html" rel="next"/>
+    <meta content="Antora 3.1.15" name="generator"/>
+    <script>
+!function (theme, navWidth) {
+  if (theme === 'dark') document.documentElement.classList.add('dark-theme')
+  if (navWidth) document.documentElement.style.setProperty('--nav-width', `${navWidth}px`)
+}(localStorage && localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)')?.matches && 'dark'),
+  localStorage && localStorage.getItem('nav-width'))
+    </script>
+    <link href="../_/css/site.css" rel="stylesheet"/>
+    <link href="../_/css/vendor/search.css" rel="stylesheet"/>
+    <link href="../_/css/vendor/page-search.css" rel="stylesheet"/>
+    <link href="../_/css/vendor/asciidoctor-tabs.css" rel="stylesheet"/>
+
+    <meta content="v0.4.17" name="antora-ui-version"/> 
+    <meta content="2.0.0" name="version"/>
+    <meta content="ai" name="component"/>
+    <meta content="false" name="latest-version"/>
+    <link href="../_/img/favicon.ico" rel="icon" type="image/vnd.microsoft.icon"/>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://spring.io">
+        <img alt="Spring" class="block" id="springlogo" src="../_/img/spring-logo.svg"/>
+      </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="navbar-menu" id="topbar-nav">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">为什么选择 Spring</a>
+          <div class="navbar-dropdown"><a class="navbar-item" href="https://spring.io/why-spring">概述</a>
+<a class="navbar-item" href="https://spring.io/microservices">微服务</a>
+<a class="navbar-item" href="https://spring.io/reactive">响应式</a>
+<a class="navbar-item" href="https://spring.io/event-driven">事件驱动</a>
+<a class="navbar-item" href="https://spring.io/cloud">云原生</a>
+<a class="navbar-item" href="https://spring.io/web-applications">Web 应用</a>
+<a class="navbar-item" href="https://spring.io/serverless">Serverless</a>
+<a class="navbar-item" href="https://spring.io/batch">批处理</a></div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Learn</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://spring.io/learn">Overview</a>
+            <a class="navbar-item" href="https://spring.io/quickstart">Quickstart</a>
+            <a class="navbar-item" href="https://spring.io/guides">Guides</a>
+            <a class="navbar-item" href="https://spring.io/blog">Blog</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Projects</a>
+          <div class="navbar-dropdown" style="min-width: 280px"><a class="navbar-item" href="https://spring.io/projects">概览</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-boot">Spring Boot</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-framework">Spring Framework</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-cloud">Spring Cloud</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-cloud-dataflow">Spring Cloud Data Flow</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-data">Spring Data</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-integration">Spring Integration</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-batch">Spring Batch</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-security">Spring Security</a>
+<a class="navbar-item navbar-item-special" href="https://spring.io/projects">查看所有项目</a>
+<li class="navbar-item navbar-item-special-3">开发工具</li>
+<a class="navbar-item" href="https://spring.io/tools">Spring Tools 4</a>
+<a class="navbar-item navbar-item-special-2" href="https://start.spring.io">Spring Initializr
+              <svg class="external-link-icon" viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><polyline fill="none" points="15 10.94 15 15 1 15 1 1 5.06 1" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"></polyline><polyline fill="none" points="8.93 1 15 1 15 7.07" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"></polyline><line fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" x1="15" x2="8" y1="1" y2="8"></line></svg></a></div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Academy</a>
+          <div class="navbar-dropdown"><a class="navbar-item" href="https://spring.academy/courses">课程</a>
+<a class="navbar-item" href="https://spring.academy/learning-path">获取认证</a></div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Solutions</a>
+          <div class="navbar-dropdown lg"><a class="navbar-item" href="https://spring.io/solutions">概览</a>
+<a class="navbar-item" href="https://spring.io/support">Spring Runtime</a>
+<a class="navbar-item" href="https://spring.io/consulting">Spring Consulting</a>
+<a class="navbar-item" href="https://spring.academy/teams">Spring Academy For Teams</a>
+<a class="navbar-item" href="https://spring.io/security">安全公告</a></div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable is-community">
+          <a class="navbar-link" href="#">Community</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://spring.io/community">Overview</a>
+            <a class="navbar-item" href="https://spring.io/events">Events</a>
+            <a class="navbar-item" href="https://spring.io/team">Team</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <label class="theme-toggler">
+      <input id="switch-theme-checkbox" name="switch-theme-checkbox" type="checkbox"/>
+      <span class="icon"><svg aria-hidden="true" class="svg-inline--fa fa-moon moon" data-icon="moon" data-prefix="fas" focusable="false" role="img" viewbox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z" fill="currentColor"></path>
+</svg>
+        <svg aria-hidden="true" class="svg-inline--fa fa-sun sun" data-icon="sun" data-prefix="fas" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z" fill="currentColor"></path>
+</svg></span>
+      <span class="text">light</span>
+    </label>
+  </nav>
+</header>
+<script>
+!function (theme) {
+  if (theme === 'dark') {
+    document.getElementById('switch-theme-checkbox').parentElement.classList.add('active')
+  }
+}(localStorage && localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)')?.matches && 'dark'))
+</script>
+<div class="body">
+<div class="nav-container" data-component="ai" data-version="2.0.0">
+  <aside class="nav">
+    <div class="panels">
+      <div class="nav-panel-menu is-active" data-panel="menu">
+        <nav class="nav-menu">
+<div class="context">
+  <span class="title">Spring AI</span>
+  <span class="version">2.0.0</span>
+  <button class="browse-version" id="browse-version">
+    <svg height="24px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewbox="0 0 512 512" width="24px" xml:space="preserve"><g><path d="M256,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S273.7,224,256,224L256,224z"></path><path d="M128.4,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S146,224,128.4,224L128.4,224z"></path><path d="M384,224c-17.7,0-32,14.3-32,32s14.3,32,32,32s32-14.3,32-32S401.7,224,384,224L384,224z"></path></g></svg>
+  </button>
+  <div class="search">
+  <button class="DocSearch-Button search-button">
+    <svg enable-background="new 0 0 32 32" id="Glyph" version="1.1" viewbox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M27.414,24.586l-5.077-5.077C23.386,17.928,24,16.035,24,14c0-5.514-4.486-10-10-10S4,8.486,4,14  s4.486,10,10,10c2.035,0,3.928-0.614,5.509-1.663l5.077,5.077c0.78,0.781,2.048,0.781,2.828,0  C28.195,26.633,28.195,25.367,27.414,24.586z M7,14c0-3.86,3.14-7,7-7s7,3.14,7,7s-3.14,7-7,7S7,17.86,7,14z" id="XMLID_223_"></path>
+</svg>
+    <span>Search</span>
+    <span class="search-key"></span>
+  </button>
+</div>
+</div><ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../index.html">概览</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../concepts.html">AI 概念</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="1"><a class="nav-link" href="../getting-started.html">入门指南</a></li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Reference</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="chatclient.html">Chat Client API</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="advisors.html">顾问</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="advisors-recursive.html">递归顾问</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="prompt.html">Prompts</a>
+  </li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="structured-output-converter.html">结构化输出</a></li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="multimodality.html">Multimodality</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">Models</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="chatmodel.html">聊天模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/comparison.html">聊天模型对比</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/bedrock-converse.html">Amazon Bedrock Converse</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/anthropic-chat.html">Anthropic</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/azure-openai-chat.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/deepseek-chat.html">DeepSeek</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/dmr-chat.html">Docker Model Runner</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/google-genai-chat.html">Google GenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/groq-chat.html">Groq</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/mistralai-chat.html">Mistral AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/minimax-chat.html">MiniMax</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/nvidia-chat.html">NVIDIA</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/ollama-chat.html">Ollama</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/perplexity-chat.html">Perplexity AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/oci-genai-chat.html">OCI Generative AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/openai-chat.html">OpenAI</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="embeddings.html">嵌入模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="bedrock.html">Amazon Bedrock</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="embeddings/bedrock-cohere-embedding.html">Cohere</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="embeddings/bedrock-titan-embedding.html">Titan</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/azure-openai-embeddings.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/google-genai-embeddings-text.html">Google GenAI 文本嵌入</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/mistralai-embeddings.html">Mistral AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/oci-genai-embeddings.html">OCI GenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/ollama-embeddings.html">Ollama</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/onnx.html">(ONNX) Transformers</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/openai-embeddings.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/postgresml-embeddings.html">PostgresML</a>
+</li>
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<span class="nav-text">VertexAI</span>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="embeddings/vertexai-embeddings-text.html">文本嵌入</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="embeddings/vertexai-embeddings-multimodal.html">多模态嵌入</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="imageclient.html">图像模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="image/azure-openai-image.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="image/openai-image.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="image/stabilityai-image.html">Stability</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="audio.html">音频模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="audio/transcriptions.html">转录 API</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="audio/transcriptions/azure-openai-transcriptions.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="audio/transcriptions/openai-transcriptions.html">OpenAI</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="audio/speech.html">文本转语音 (TTS) API</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="audio/speech/openai-speech.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="audio/speech/elevenlabs-speech.html">ElevenLabs</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="moderation.html">审核模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="moderation/openai-moderation.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="moderation/mistral-ai-moderation.html">Mistral AI</a>
+</li>
+</ul></li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="chat-memory.html">聊天记忆</a></li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="tools.html">工具调用</a></li>
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="mcp/mcp-overview.html">Model Context Protocol (MCP)</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="mcp/mcp-client-boot-starter-docs.html">MCP Client Boot Starters</a>
+</li>
+<li class="nav-item" data-depth="3">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="mcp/mcp-server-boot-starter-docs.html">MCP Server Boot Starters</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-stdio-sse-server-boot-starter-docs.html">STDIO 和 SSE MCP 服务器</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-streamable-http-server-boot-starter-docs.html">Streamable-HTTP MCP 服务器</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-stateless-server-boot-starter-docs.html">无状态 Streamable-HTTP MCP 服务器</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="mcp/mcp-security.html">MCP 安全性 (WIP)</a>
+</li>
+<li class="nav-item" data-depth="3">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="mcp/mcp-annotations-overview.html">MCP 注解</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-annotations-client.html">客户端注解</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-annotations-server.html">服务器注解</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-annotations-special-params.html">特殊参数</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-annotations-examples.html">MCP 注解示例</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="retrieval-augmented-generation.html">检索增强生成 (RAG)</a>
+<ul class="nav-list">
+<li class="nav-item is-current-page" data-depth="3">
+<a class="nav-link" href="etl-pipeline.html">ETL 流水线</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="testing.html">模型评估</a></li>
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="vectordbs.html">向量数据库</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/azure.html">Azure AI Service</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/azure-cosmos-db.html">Azure Cosmos DB</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/bedrock-knowledge-base.html">Amazon Bedrock Knowledge Base</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/apache-cassandra.html">Apache Cassandra 向量存储</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/chroma.html">Chroma</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/couchbase.html">Couchbase</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/elasticsearch.html">Elasticsearch</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/gemfire.html">GemFire</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/mariadb.html">MariaDB 向量存储</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/milvus.html">Milvus</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/mongodb.html">MongoDB Atlas</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/neo4j.html">Neo4j</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/opensearch.html">OpenSearch</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/oracle.html">Oracle</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/pgvector.html">PGvector</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/pinecone.html">Pinecone</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/qdrant.html">Qdrant</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/redis.html">Redis</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/typesense.html">Typesense</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/weaviate.html">Weaviate</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/s3-vector-store.html">S3 向量存储</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../observability/index.html">Observability</a>
+  </li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="docker-compose.html">开发时服务</a></li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Testing</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="testcontainers.html">Testcontainers</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1"><button class="nav-item-toggle"></button>
+<span class="nav-text">指南</span>
+<ul class="nav-list">
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://github.com/spring-ai-community/awesome-spring-ai">Awesome Spring AI</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../guides/getting-started-mcp.html">MCP 入门指南</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../guides/dynamic-tool-search.html">动态工具发现</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../guides/llm-as-judge.html">LLM-as-a-Judge 评估</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="chat/prompt-engineering-patterns.html">提示工程模式</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="effective-agents.html">构建高效 Agent</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://catalog.workshops.aws/java-spring-ai-agents">由 AWS 提供的使用 Spring AI 构建 Agent</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://catalog.workshops.aws/java-spring-ai-agentcore">由 AWS 提供的使用 Spring AI 和 AgentCore 构建 Agent</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://github.com/microsoft/Spring-AI-for-Beginners">由 Microsoft 提供的 Spring AI 入门教程</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="1"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../upgrade-notes.html">升级说明</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="tools-migration.html">将 FunctionCallback 迁移到 ToolCallback API</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="chat/anthropic-migration.html">将 Anthropic 模块迁移到官方 Java SDK</a>
+</li>
+</ul></li>
+</ul>
+  </li>
+</ul>
+          <div class="toggle-sm">
+            <button class="nav-toggle" id="nav-toggle-2"></button>
+          </div>
+        </nav>
+      </div>
+      <div class="nav-collapse">
+        <button id="nav-collapse-toggle"><span></span></button>        
+      </div>
+    </div>
+    <div class="nav-resize"></div>
+  </aside>
+</div>
+<script>
+!function (sidebar) {
+  if (sidebar) {
+    document.body.classList.add('nav-sm')
+  }
+}(localStorage && localStorage.getItem('sidebar') === 'close')
+</script><main class="article">
+<div class="toolbar" role="navigation">
+  <button class="nav-toggle" id="nav-toggle-1"></button>
+<div class="search">
+  <button class="DocSearch-Button search-button">
+    <svg id="svg-stash-de15fb15"></svg>
+    <span>Search</span>
+    <span class="search-key"></span>
+  </button>
+</div>
+</div>
+  <div class="content">
+<aside class="sidebar">
+  <div class="content">
+    <div class="toc" data-levels="2" data-title="ETL Pipeline">
+      <div class="toc-menu"></div>
+    </div>
+    <div class="sidebar-links"><a href="file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/etl-pipeline.adoc">
+<svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m16 2.012 3 3L16.713 7.3l-3-3zM4 14v3h3l8.299-8.287-3-3zm0 6h16v2H4z"></path></svg>
+          编辑此页面
+        </a>
+<a href="https://github.com/spring-projects/spring-ai" title="GitHub">
+<svg height="512px" id="Layer_1" version="1.1" viewbox="0 0 512 512" width="512px" xmlns="http://www.w3.org/2000/svg"><style type="text/css">
+              .st0{fill-rule:evenodd;clip-rule:evenodd;} </style><g><path class="st0" d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"></path></g></svg>
+          GitHub 项目
+        </a></div>
+  </div>
+</aside>
+<article class="doc">
+<div class="breadcrumbs-container"><nav aria-label="breadcrumbs" class="breadcrumbs">
+<ul>
+<li><a href="../index.html">Spring AI</a></li>
+<li>参考资料</li>
+<li><a href="retrieval-augmented-generation.html">检索增强生成 (RAG)</a></li>
+<li><a href="etl-pipeline.html">ETL 流水线</a></li>
+</ul>
+</nav></div><h1 class="page" id="page-title">ETL 流水线</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>提取、转换和加载（ETL）框架是检索增强生成（RAG）用例中数据处理的核心骨干。</p>
+</div>
+<div class="paragraph">
+<p>ETL 流水线编排了从原始数据源到结构化向量库的流动过程，确保数据处于 AI 模型检索的最佳格式。</p>
+</div>
+<div class="paragraph">
+<p>RAG 的使用场景是利用文本来增强生成模型的能力，通过从数据主体中检索相关信息，来提高生成输出的质量和相关性。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_api_overview"><a class="anchor" href="#_api_overview">API 概览</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>ETL 流水线用于创建、转换和存储 <code>Document</code> 实例。</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img alt="Spring AI Message API" src="../_images/spring-ai-document1-api.jpg" width="400"/>
+</div>
+</div>
+<div class="paragraph">
+<p><code style="color: #d14">Document</code> 类包含文本、元数据，以及可选的额外媒体类型，如图像、音频和视频。</p>
+</div>
+<div class="paragraph">
+<p>ETL 流水线主要包含三个核心组件，</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>实现了 <code style="color: #d73a49;">Supplier&lt;List&lt;Document&gt;&gt;</code> 的 <code style="color: #005cc5;">DocumentReader</code></p>
+</li>
+<li>
+<p>实现了 <code>Function&lt;List&lt;Document&gt;, List&lt;Document&gt;&gt;</code> 的 <code>DocumentTransformer</code></p>
+</li>
+<li>
+<p>实现了 <code>Consumer&lt;List&lt;Document&gt;&gt;</code> 的 <code>DocumentWriter</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><code style="color: #d73a49;">Document</code> 类的内容是借助 <code style="color: #d73a49;">DocumentReader</code> 从 PDF、文本文件和其他文档类型中创建的。</p>
+</div>
+<div class="paragraph">
+<p>要构建一个简单的 ETL 流水线，您可以将每种类型的实例串联在一起。</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img alt="etl pipeline" src="../_images/etl-pipeline.jpg"/>
+</div>
+</div>
+<div class="paragraph">
+<p>假设我们有以下三种 ETL 类型的情况</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>PagePdfDocumentReader</code> 是 <code>DocumentReader</code> 的一种实现</p>
+</li>
+<li>
+<p><code>TokenTextSplitter</code> 是 <code>DocumentTransformer</code> 的一种实现</p>
+</li>
+<li>
+<p><code>VectorStore</code> 是 <code>DocumentWriter</code> 的一种实现</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>若要执行将数据加载到向量数据库中的基础操作，以便用于检索增强生成（Retrieval Augmented Generation）模式，请使用以下 Java 函数式语法代码。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">vectorStore.accept(tokenTextSplitter.apply(pdfReader.get()));</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>或者，您可以使用更符合该领域表达习惯的方法名称。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">vectorStore.write(tokenTextSplitter.split(pdfReader.read()));</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_etl_interfaces"><a class="anchor" href="#_etl_interfaces">ETL 接口</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>ETL 流水线由以下接口和实现组成。
+详细的 ETL 类图请参见 <a href="#etl-class-diagram">ETL Class Diagram</a> 部分。</p>
+</div>
+<div class="sect2">
+<h3 id="_documentreader"><a class="anchor" href="#_documentreader"></a>DocumentReader</h3>
+<div class="paragraph">
+<p>提供来自不同来源的文档资源。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public interface DocumentReader extends Supplier&lt;List&lt;Document&gt;&gt; {
+
+    default List&lt;Document&gt; read() {
+		return get();
+	}
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_documenttransformer"><a class="anchor" href="#_documenttransformer"></a>DocumentTransformer</h3>
+<div class="paragraph">
+<p>作为处理工作流的一部分，转换一批文档。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public interface DocumentTransformer extends Function&lt;List&lt;Document&gt;, List&lt;Document&gt;&gt; {
+
+    default List&lt;Document&gt; transform(List&lt;Document&gt; transform) {
+		return apply(transform);
+	}
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_documentwriter"><a class="anchor" href="#_documentwriter"></a>DocumentWriter</h3>
+<div class="paragraph">
+<p>管理 ETL 过程的最终阶段，为存储准备文档。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public interface DocumentWriter extends Consumer&lt;List&lt;Document&gt;&gt; {
+
+    default void write(List&lt;Document&gt; documents) {
+		accept(documents);
+	}
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="etl-class-diagram"><a class="anchor" href="#etl-class-diagram">ETL 类图</a></h3>
+<div class="paragraph">
+<p>以下类图展示了 ETL 接口及其实现。</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img alt="etl class diagram" src="../_images/etl-class-diagram.jpg"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_documentreaders"><a class="anchor" href="#_documentreaders"></a>DocumentReaders</h2>
+<div class="sectionbody">
+<div class="admonitionblock warning">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>下文描述的大多数 <code>DocumentReader</code> 和 <code>DocumentWriter</code> 实现都是使用 <code>Resource</code> 或资源模式构建的，并且内部使用 <code>DefaultResourceLoader</code> 或其变体来访问存储。应注意不要使用用户直接提供的 URL 来构建此类实例，因为这会带来安全影响。</p>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="sect2">
+<h3 id="_json"><a class="anchor" href="#_json"></a>JSON</h3>
+<div class="paragraph">
+<p><code style="color: #d73a49;">JsonReader</code> 处理 JSON 文档，将其转换为 <code style="color: #d73a49;">Document</code> 对象列表。</p>
+</div>
+<div class="sect3">
+<h4 id="_example"><a class="anchor" href="#_example"></a>Example</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Component
+class MyJsonReader {
+
+	private final Resource resource;
+
+    MyJsonReader(@Value("classpath:bikes.json") Resource resource) {
+        this.resource = resource;
+    }
+
+	List&lt;Document&gt; loadJsonAsDocuments() {
+        JsonReader jsonReader = new JsonReader(this.resource, "description", "content");
+        return jsonReader.get();
+	}
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_constructor_options"><a class="anchor" href="#_constructor_options">构造函数选项</a></h4>
+<div class="paragraph">
+<p><code style="color:red;">JsonReader</code> 提供几种构造函数选项：</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><code>JsonReader(Resource resource)</code></p>
+</li>
+<li>
+<p><code>JsonReader(Resource resource, String…​ jsonKeysToUse)</code></p>
+</li>
+<li>
+<p><code>JsonReader(Resource resource, JsonMetadataGenerator jsonMetadataGenerator, String…​ jsonKeysToUse)</code></p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_parameters"><a class="anchor" href="#_parameters"></a>Parameters</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><code>resource</code>：指向 JSON 文件的 Spring <code>Resource</code> 对象。</p>
+</li>
+<li>
+<p><code>jsonKeysToUse</code>：一个来自 JSON 的键数组，这些键将作为生成的 <code>Document</code> 对象中的文本内容。</p>
+</li>
+<li>
+<p><code>jsonMetadataGenerator</code>：一个可选的 <code>JsonMetadataGenerator</code>，用于为每个 <code>Document</code> 创建元数据。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_behavior"><a class="anchor" href="#_behavior"></a>Behavior</h4>
+<div class="paragraph">
+<p><code style="color:red;">JsonReader</code> 按如下方式处理 JSON 内容：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>它可以处理 JSON 数组和单个 JSON 对象。</p>
+</li>
+<li>
+<p>对于每个 JSON 对象（无论是数组中的对象还是单个对象）：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>它根据指定的 <code>jsonKeysToUse</code> 提取内容。</p>
+</li>
+<li>
+<p>如果未指定任何键，则将整个 JSON 对象作为内容。</p>
+</li>
+<li>
+<p>它使用提供的 <code>JsonMetadataGenerator</code> 生成元数据（如果未提供，则使用空的）。</p>
+</li>
+<li>
+<p>它会创建一个包含提取内容和元数据的 <code>Document</code> 对象。</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_using_json_pointers"><a class="anchor" href="#_using_json_pointers">使用 JSON Pointers</a></h4>
+<div class="paragraph">
+<p><code style="color: #d63384;">JsonReader</code> 现在支持使用 JSON Pointers 获取 JSON 文档的特定部分。此功能允许您轻松从复杂的 JSON 结构中提取嵌套数据。</p>
+</div>
+<div class="sect4">
+<h5 id="_the_getstring_pointer_method"><a class="anchor" href="#_the_getstring_pointer_method"></a>The <code>get(String pointer)</code> method</h5>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public List&lt;Document&gt; get(String pointer)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>此方法允许您使用 JSON Pointer 来检索 JSON 文档的特定部分。</p>
+</div>
+<div class="sect5">
+<h6 id="_parameters_2"><a class="anchor" href="#_parameters_2"></a>Parameters</h6>
+<div class="ulist">
+<ul>
+<li>
+<p><code style="color: #d73a49;">pointer</code>：一个 JSON Pointer 字符串（如 RFC 6901 中定义），用于在 JSON 结构中定位所需的元素。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_return_value"><a class="anchor" href="#_return_value">返回值</a></h6>
+<div class="ulist">
+<ul>
+<li>
+<p>返回一个 <code style="color: #d73a49;">List&lt;Document&gt;</code>，其中包含从指针所定位的 JSON 元素中解析出的文档。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_behavior_2"><a class="anchor" href="#_behavior_2"></a>Behavior</h6>
+<div class="ulist">
+<ul>
+<li>
+<p>该方法使用提供的 JSON Pointer 导航到 JSON 结构中的特定位置。</p>
+</li>
+<li>
+<p>如果指针有效且指向一个存在的元素：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>对于一个 JSON 对象：它返回包含单个 Document 的列表。</p>
+</li>
+<li>
+<p>对于 JSON 数组：它会返回一个 Document 列表，数组中的每个元素对应一个 Document。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>如果指针无效或指向不存在的元素，它会抛出一个 <code class="language-java">IllegalArgumentException</code>。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_example_2"><a class="anchor" href="#_example_2"></a>Example</h6>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">JsonReader jsonReader = new JsonReader(resource, "description");
+List&lt;Document&gt; documents = this.jsonReader.get("/store/books/0");</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_example_json_structure"><a class="anchor" href="#_example_json_structure">JSON 结构示例</a></h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">[
+  {
+    "id": 1,
+    "brand": "Trek",
+    "description": "A high-performance mountain bike for trail riding."
+  },
+  {
+    "id": 2,
+    "brand": "Cannondale",
+    "description": "An aerodynamic road bike for racing enthusiasts."
+  }
+]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>在此示例中，如果将 <code>JsonReader</code> 配置为使用 <code>"description"</code> 作为 <code>jsonKeysToUse</code>，它将创建 <code>Document</code> 对象，其中内容是数组中每辆自行车对应的 "description" 字段的值。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_notes"><a class="anchor" href="#_notes"></a>Notes</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><code style="color:red;">JsonReader</code> 使用 Jackson 进行 JSON 解析。</p>
+</li>
+<li>
+<p>它可以通过对数组使用流式处理，高效地处理大型 JSON 文件。</p>
+</li>
+<li>
+<p>如果 <code>jsonKeysToUse</code> 中指定了多个键，内容将是这些键对应值的拼接。</p>
+</li>
+<li>
+<p>该读取器具有灵活性，可以通过自定义 <code>jsonKeysToUse</code> 和 <code>JsonMetadataGenerator</code> 来适配各种 JSON 结构。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_text"><a class="anchor" href="#_text"></a>Text</h3>
+<div class="paragraph">
+<p><code style="color: #d73a49;">TextReader</code> 处理纯文本文档，并将其转换为 <code style="color: #d73a49;">Document</code> 对象列表。</p>
+</div>
+<div class="sect3">
+<h4 id="_example_3"><a class="anchor" href="#_example_3"></a>Example</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Component
+class MyTextReader {
+
+    private final Resource resource;
+
+    MyTextReader(@Value("classpath:text-source.txt") Resource resource) {
+        this.resource = resource;
+    }
+
+	List&lt;Document&gt; loadText() {
+		TextReader textReader = new TextReader(this.resource);
+		textReader.getCustomMetadata().put("filename", "text-source.txt");
+
+		return textReader.read();
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_constructor_options_2"><a class="anchor" href="#_constructor_options_2">构造函数选项</a></h4>
+<div class="paragraph">
+<p><code style="color:red;">TextReader</code> 提供两种构造函数选项：</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><code>TextReader(String resourceUrl)</code></p>
+</li>
+<li>
+<p><code>TextReader(Resource resource)</code></p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_parameters_3"><a class="anchor" href="#_parameters_3"></a>Parameters</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><code>resourceUrl</code>：表示要读取的资源的 URL 的字符串。</p>
+</li>
+<li>
+<p><code>resource</code>：指向文本文件的 Spring <code>Resource</code> 对象。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_configuration"><a class="anchor" href="#_configuration"></a>Configuration</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><code>setCharset(Charset charset)</code>：设置用于读取文本文件的字符集。默认值为 UTF-8。</p>
+</li>
+<li>
+<p><code>getCustomMetadata()</code>：返回一个可变的 map，您可以在其中为文档添加自定义元数据。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_behavior_3"><a class="anchor" href="#_behavior_3"></a>Behavior</h4>
+<div class="paragraph">
+<p><code style="color:red;">TextReader</code> 按如下方式处理文本内容：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>它将文本文件的全部内容读取到一个单一的 <code>Document</code> 对象中。</p>
+</li>
+<li>
+<p>文件的内容将成为<code>Document</code>的内容。</p>
+</li>
+<li>
+<p>元数据会自动添加到 <code>Document</code> 中：</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code style="color:red;">charset</code>：用于读取文件的字符集（默认值："UTF-8"）。</p>
+</li>
+<li>
+<p><code>source</code>：源文本文件的文件名。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>通过 <code>getCustomMetadata()</code> 添加的任何自定义元数据都包含在 <code>Document</code> 中。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_notes_2"><a class="anchor" href="#_notes_2"></a>Notes</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><code style="color: #d63384;">TextReader</code> 将整个文件内容读取到内存中，因此可能不适用于非常大的文件。</p>
+</li>
+<li>
+<p>如果您需要将文本分割成更小的块，可以在读取文档后使用像 <code>TokenTextSplitter</code> 这样的文本分割器：</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">List&lt;Document&gt; documents = textReader.get();
+List&lt;Document&gt; splitDocuments = TokenTextSplitter.builder().build().apply(this.documents);</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>读者使用 Spring 的 <code style="color: #d63384;">Resource</code> 抽象，使其能够从各种来源（classpath、文件系统、URL 等）读取内容。</p>
+</li>
+<li>
+<p>可以使用 <code style="white-space:nowrap">getCustomMetadata()</code> 方法为阅读器创建的所有文档添加自定义元数据。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_html_jsoup"><a class="anchor" href="#_html_jsoup"></a>HTML (JSoup)</h3>
+<div class="paragraph">
+<p><code style="color: #d73a49;">JsoupDocumentReader</code> 处理 HTML 文档，并使用 JSoup 库将其转换为 <code style="color: #d73a49;">Document</code> 对象列表。</p>
+</div>
+<div class="sect3">
+<h4 id="_dependencies"><a class="anchor" href="#_dependencies"></a>Dependencies</h4>
+<div class="paragraph">
+<p>使用 Maven 或 Gradle 将依赖添加到您的项目中。</p>
+</div>
+<div class="openblock tabs is-sync is-loading" id="_tabs_1">
+<div class="content">
+<div class="ulist tablist">
+<ul>
+<li class="tab" id="_tabs_1_maven">
+<p>Maven</p>
+</li>
+<li class="tab" id="_tabs_1_gradle">
+<p>Gradle</p>
+</li>
+</ul>
+</div>
+<div aria-labelledby="_tabs_1_maven" class="tabpanel" id="_tabs_1_maven--panel">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-ai-jsoup-document-reader&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+<div aria-labelledby="_tabs_1_gradle" class="tabpanel" id="_tabs_1_gradle--panel">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">dependencies {
+    implementation 'org.springframework.ai:spring-ai-jsoup-document-reader'
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_example_4"><a class="anchor" href="#_example_4"></a>Example</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Component
+class MyHtmlReader {
+
+    private final Resource resource;
+
+    MyHtmlReader(@Value("classpath:/my-page.html") Resource resource) {
+        this.resource = resource;
+    }
+
+    List&lt;Document&gt; loadHtml() {
+        JsoupDocumentReaderConfig config = JsoupDocumentReaderConfig.builder()
+            .selector("article p") // Extract paragraphs within &lt;article&gt; tags
+            .charset("ISO-8859-1")  // Use ISO-8859-1 encoding
+            .includeLinkUrls(true) // Include link URLs in metadata
+            .metadataTags(List.of("author", "date")) // Extract author and date meta tags
+            .additionalMetadata("source", "my-page.html") // Add custom metadata
+            .build();
+
+        JsoupDocumentReader reader = new JsoupDocumentReader(this.resource, config);
+        return reader.get();
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code style="color: #d73a49;">JsoupDocumentReaderConfig</code> 允许您自定义 <code style="color: #d73a49;">JsoupDocumentReader</code> 的行为：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code style="color:red;">charset</code>：指定 HTML 文档的字符编码（默认为 "UTF-8"）。</p>
+</li>
+<li>
+<p><code>selector</code>：用于指定从哪些元素中提取文本的 JSoup CSS 选择器（默认为 "body"）。</p>
+</li>
+<li>
+<p><code>separator</code>：用于连接来自多个选中元素的文本的字符串（默认为 "\n"）。</p>
+</li>
+<li>
+<p><code>allElements</code>：如果为 <code>true</code>，则提取 <code>&lt;body&gt;</code> 元素中的所有文本，忽略 <code>selector</code>（默认为 <code>false</code>）。</p>
+</li>
+<li>
+<p><code>groupByElement</code>：如果为 <code>true</code>，则为 <code>selector</code> 匹配的每个元素创建一个独立的 <code>Document</code>（默认为 <code>false</code>）。</p>
+</li>
+<li>
+<p><code>includeLinkUrls</code>：如果为 <code>true</code>，则提取绝对链接 URL 并将其添加到元数据中（默认为 <code>false</code>）。</p>
+</li>
+<li>
+<p><code>metadataTags</code>：用于提取内容的 <code>&lt;meta&gt;</code> 标签名称列表（默认为 <code>["description", "keywords"]</code>）。</p>
+</li>
+<li>
+<p><code>additionalMetadata</code>：允许您为所有创建的 <code>Document</code> 对象添加自定义元数据。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_sample_document_my_page_html"><a class="anchor" href="#_sample_document_my_page_html">示例文档：my-page.html</a></h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;My Web Page&lt;/title&gt;
+    &lt;meta name="description" content="A sample web page for Spring AI"&gt;
+    &lt;meta name="keywords" content="spring, ai, html, example"&gt;
+    &lt;meta name="author" content="John Doe"&gt;
+    &lt;meta name="date" content="2024-01-15"&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Welcome to My Page&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="/"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="/about"&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+    &lt;article&gt;
+        &lt;h2&gt;Main Content&lt;/h2&gt;
+        &lt;p&gt;This is the main content of my web page.&lt;/p&gt;
+        &lt;p&gt;It contains multiple paragraphs.&lt;/p&gt;
+        &lt;a href="https://www.example.com"&gt;External Link&lt;/a&gt;
+    &lt;/article&gt;
+    &lt;footer&gt;
+        &lt;p&gt;&amp;copy; 2024 John Doe&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Behavior:</p>
+</div>
+<div class="paragraph">
+<p><code style="color: #d73a49;">JsoupDocumentReader</code> 处理 HTML 内容，并根据配置创建 <code style="color: #d73a49;">Document</code> 对象：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code style="color: red;">selector</code> 决定用于文本提取的元素。</p>
+</li>
+<li>
+<p>如果 <code>allElements</code> 为 <code>true</code>，则 <code>&lt;body&gt;</code> 内的所有文本都将被提取到一个单一的 <code>Document</code> 中。</p>
+</li>
+<li>
+<p>如果 <code>groupByElement</code> 为 <code>true</code>，每个匹配 <code>selector</code> 的元素都会创建一个独立的 <code>Document</code>。</p>
+</li>
+<li>
+<p>如果 <code>allElements</code> 和 <code>groupByElement</code> 都不是 <code>true</code>，则匹配 <code>selector</code> 的所有元素的文本将使用 <code>separator</code> 进行连接。</p>
+</li>
+<li>
+<p>文档标题、来自指定 &lt;code&gt;&lt;meta&gt;&lt;/code&gt; 标签的内容以及（可选的）链接 URL 将被添加到 &lt;code&gt;Document&lt;/code&gt; 元数据中。</p>
+</li>
+<li>
+<p>用于解析相对链接的基准 URI 将从 URL 资源中提取。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>读者保留所选元素的文本内容，但移除其中的任何 HTML 标签。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_markdown"><a class="anchor" href="#_markdown"></a>Markdown</h3>
+<div class="paragraph">
+<p><code style="color: #d73a49;">MarkdownDocumentReader</code> 处理 Markdown 文档，将其转换为 <code style="color: #d73a49;">Document</code> 对象列表。</p>
+</div>
+<div class="sect3">
+<h4 id="_dependencies_2"><a class="anchor" href="#_dependencies_2"></a>Dependencies</h4>
+<div class="paragraph">
+<p>使用 Maven 或 Gradle 将依赖添加到您的项目中。</p>
+</div>
+<div class="openblock tabs is-sync is-loading" id="_tabs_2">
+<div class="content">
+<div class="ulist tablist">
+<ul>
+<li class="tab" id="_tabs_2_maven">
+<p>Maven</p>
+</li>
+<li class="tab" id="_tabs_2_gradle">
+<p>Gradle</p>
+</li>
+</ul>
+</div>
+<div aria-labelledby="_tabs_2_maven" class="tabpanel" id="_tabs_2_maven--panel">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-ai-markdown-document-reader&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+<div aria-labelledby="_tabs_2_gradle" class="tabpanel" id="_tabs_2_gradle--panel">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">dependencies {
+    implementation 'org.springframework.ai:spring-ai-markdown-document-reader'
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_example_5"><a class="anchor" href="#_example_5"></a>Example</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Component
+class MyMarkdownReader {
+
+    private final Resource resource;
+
+    MyMarkdownReader(@Value("classpath:code.md") Resource resource) {
+        this.resource = resource;
+    }
+
+    List&lt;Document&gt; loadMarkdown() {
+        MarkdownDocumentReaderConfig config = MarkdownDocumentReaderConfig.builder()
+            .withHorizontalRuleCreateDocument(true)
+            .withIncludeCodeBlock(false)
+            .withIncludeBlockquote(false)
+            .withAdditionalMetadata("filename", "code.md")
+            .build();
+
+        MarkdownDocumentReader reader = new MarkdownDocumentReader(this.resource, config);
+        return reader.get();
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code style="color: #d63384;">MarkdownDocumentReaderConfig</code> 允许您自定义 MarkdownDocumentReader 的行为：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>horizontalRuleCreateDocument</code>：当设置为 <code>true</code> 时，Markdown 中的水平分割线将创建新的 <code>Document</code> 对象。</p>
+</li>
+<li>
+<p><code>includeCodeBlock</code>：当设置为 <code>true</code> 时，代码块将与周围文本包含在同一个 <code>Document</code> 中。当设置为 <code>false</code> 时，代码块将创建独立的 <code>Document</code> 对象。</p>
+</li>
+<li>
+<p><code>includeBlockquote</code>：当设置为 <code>true</code> 时，引用块（blockquotes）将与周围文本包含在同一个 <code>Document</code> 中。当设置为 <code>false</code> 时，引用块将创建独立的 <code>Document</code> 对象。</p>
+</li>
+<li>
+<p><code>additionalMetadata</code>：允许您为所有创建的 <code>Document</code> 对象添加自定义元数据。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_sample_document_code_md"><a class="anchor" href="#_sample_document_code_md">示例文档：code.md</a></h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-markdown hljs" data-lang="markdown">This is a Java sample application:
+
+```java
+package com.example.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class DemoApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(DemoApplication.class, args);
+    }
+}
+```
+
+Markdown also provides the possibility to `use inline code formatting throughout` the entire sentence.
+
+---
+
+Another possibility is to set block code without specific highlighting:
+
+```
+./mvnw spring-javaformat:apply
+```</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>行为：MarkdownDocumentReader 处理 Markdown 内容，并根据配置创建 Document 对象：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>标题将成为 Document 对象中的元数据。</p>
+</li>
+<li>
+<p>段落成为 Document 对象的内容。</p>
+</li>
+<li>
+<p>代码块可以被分离为独立的 Document 对象，也可以包含在周围的文本中。</p>
+</li>
+<li>
+<p>引用块可以被拆分为独立的 Document 对象，也可以包含在周围的文本中。</p>
+</li>
+<li>
+<p>水平分割线可用于将内容拆分为独立的 Document 对象。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>读者在 Document 对象的内容中保留格式，例如行内代码、列表和文本样式。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_pdf_page"><a class="anchor" href="#_pdf_page">PDF 页码</a></h3>
+<div class="paragraph">
+<p><code style="color: #d63384;">PagePdfDocumentReader</code> 使用 Apache PdfBox 库来解析 PDF 文档。</p>
+</div>
+<div class="sect3">
+<h4 id="_dependencies_3"><a class="anchor" href="#_dependencies_3"></a>Dependencies</h4>
+<div class="paragraph">
+<p>使用 Maven 或 Gradle 将依赖添加到您的项目中。</p>
+</div>
+<div class="openblock tabs is-sync is-loading" id="_tabs_3">
+<div class="content">
+<div class="ulist tablist">
+<ul>
+<li class="tab" id="_tabs_3_maven">
+<p>Maven</p>
+</li>
+<li class="tab" id="_tabs_3_gradle">
+<p>Gradle</p>
+</li>
+</ul>
+</div>
+<div aria-labelledby="_tabs_3_maven" class="tabpanel" id="_tabs_3_maven--panel">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-ai-pdf-document-reader&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+<div aria-labelledby="_tabs_3_gradle" class="tabpanel" id="_tabs_3_gradle--panel">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">dependencies {
+    implementation 'org.springframework.ai:spring-ai-pdf-document-reader'
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_example_6"><a class="anchor" href="#_example_6"></a>Example</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Component
+public class MyPagePdfDocumentReader {
+
+	List&lt;Document&gt; getDocsFromPdf() {
+
+		PagePdfDocumentReader pdfReader = new PagePdfDocumentReader("classpath:/sample1.pdf",
+				PdfDocumentReaderConfig.builder()
+					.withPageTopMargin(0)
+					.withPageExtractedTextFormatter(ExtractedTextFormatter.builder()
+						.withNumberOfTopTextLinesToDelete(0)
+						.build())
+					.withPagesPerDocument(1)
+					.build());
+
+		return pdfReader.read();
+    }
+
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_pdf_paragraph"><a class="anchor" href="#_pdf_paragraph">PDF 段落</a></h3>
+<div class="paragraph">
+<p><code style="color: #d63384;">ParagraphPdfDocumentReader</code> 使用 PDF 目录（例如 TOC）信息将输入的 PDF 分割成文本段落，并为每个段落输出一个单独的 <code style="color: #d63384;">Document</code>。
+注意：并非所有的 PDF 文档都包含 PDF 目录。</p>
+</div>
+<div class="sect3">
+<h4 id="_dependencies_4"><a class="anchor" href="#_dependencies_4"></a>Dependencies</h4>
+<div class="paragraph">
+<p>使用 Maven 或 Gradle 将依赖添加到您的项目中。</p>
+</div>
+<div class="openblock tabs is-sync is-loading" id="_tabs_4">
+<div class="content">
+<div class="ulist tablist">
+<ul>
+<li class="tab" id="_tabs_4_maven">
+<p>Maven</p>
+</li>
+<li class="tab" id="_tabs_4_gradle">
+<p>Gradle</p>
+</li>
+</ul>
+</div>
+<div aria-labelledby="_tabs_4_maven" class="tabpanel" id="_tabs_4_maven--panel">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-ai-pdf-document-reader&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+<div aria-labelledby="_tabs_4_gradle" class="tabpanel" id="_tabs_4_gradle--panel">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">dependencies {
+    implementation 'org.springframework.ai:spring-ai-pdf-document-reader'
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_example_7"><a class="anchor" href="#_example_7"></a>Example</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Component
+public class MyPagePdfDocumentReader {
+
+	List&lt;Document&gt; getDocsFromPdfWithCatalog() {
+
+        ParagraphPdfDocumentReader pdfReader = new ParagraphPdfDocumentReader("classpath:/sample1.pdf",
+                PdfDocumentReaderConfig.builder()
+                    .withPageTopMargin(0)
+                    .withPageExtractedTextFormatter(ExtractedTextFormatter.builder()
+                        .withNumberOfTopTextLinesToDelete(0)
+                        .build())
+                    .withPagesPerDocument(1)
+                    .build());
+
+	    return pdfReader.read();
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_tika_docx_pptx_html"><a class="anchor" href="#_tika_docx_pptx_html"></a>Tika (DOCX, PPTX, HTML…​)</h3>
+<div class="paragraph">
+<p><code style="color: #d73a49;">TikaDocumentReader</code> 使用 Apache Tika 从多种文档格式（如 PDF、DOC/DOCX、PPT/PPTX 和 HTML）中提取文本。有关支持格式的完整列表，请参阅 <a href="https://tika.apache.org/3.1.0/formats.html">Tika 文档</a>。</p>
+</div>
+<div class="sect3">
+<h4 id="_dependencies_5"><a class="anchor" href="#_dependencies_5"></a>Dependencies</h4>
+<div class="paragraph">
+<p>使用 Maven 或 Gradle 将依赖添加到您的项目中。</p>
+</div>
+<div class="openblock tabs is-sync is-loading" id="_tabs_5">
+<div class="content">
+<div class="ulist tablist">
+<ul>
+<li class="tab" id="_tabs_5_maven">
+<p>Maven</p>
+</li>
+<li class="tab" id="_tabs_5_gradle">
+<p>Gradle</p>
+</li>
+</ul>
+</div>
+<div aria-labelledby="_tabs_5_maven" class="tabpanel" id="_tabs_5_maven--panel">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-ai-tika-document-reader&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+<div aria-labelledby="_tabs_5_gradle" class="tabpanel" id="_tabs_5_gradle--panel">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">dependencies {
+    implementation 'org.springframework.ai:spring-ai-tika-document-reader'
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_example_8"><a class="anchor" href="#_example_8"></a>Example</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Component
+class MyTikaDocumentReader {
+
+    private final Resource resource;
+
+    MyTikaDocumentReader(@Value("classpath:/word-sample.docx")
+                            Resource resource) {
+        this.resource = resource;
+    }
+
+    List&lt;Document&gt; loadText() {
+        TikaDocumentReader tikaDocumentReader = new TikaDocumentReader(this.resource);
+        return tikaDocumentReader.read();
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_transformers"><a class="anchor" href="#_transformers"></a>Transformers</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_textsplitter"><a class="anchor" href="#_textsplitter"></a>TextSplitter</h3>
+<div class="paragraph">
+<p><code style="color: #d73a49;">TextSplitter</code> 是一个抽象基类，用于帮助将文档切分以适应 AI 模型的上下文窗口。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_tokentextsplitter"><a class="anchor" href="#_tokentextsplitter"></a>TokenTextSplitter</h3>
+<div class="paragraph">
+<p><code style="color: #d73a49;">TokenTextSplitter</code> 是 <code style="color: #d73a49;">TextSplitter</code> 的一种实现，它根据 token 数量将文本分割成块。它支持可配置的编码类型（例如 <code style="color: #d73a49;">CL100K_BASE</code>、<code style="color: #d73a49;">P50K_BASE</code>、<code style="color: #d73a49;">O200K_BASE</code>），并默认使用 <code style="color: #d73a49;">CL100K_BASE</code>。</p>
+</div>
+<div class="sect3">
+<h4 id="_usage"><a class="anchor" href="#_usage"></a>Usage</h4>
+<div class="sect4">
+<h5 id="_basic_usage"><a class="anchor" href="#_basic_usage">基本用法</a></h5>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Component
+class MyTokenTextSplitter {
+
+    public List&lt;Document&gt; splitDocuments(List&lt;Document&gt; documents) {
+        TokenTextSplitter splitter = TokenTextSplitter.builder().build();
+        return splitter.apply(documents);
+    }
+
+    public List&lt;Document&gt; splitCustomized(List&lt;Document&gt; documents) {
+        TokenTextSplitter splitter = TokenTextSplitter.builder()
+            .withChunkSize(1000)
+            .withMinChunkSizeChars(400)
+            .withMinChunkLengthToEmbed(10)
+            .withMaxNumChunks(5000)
+            .withKeepSeparator(true)
+            .build();
+        return splitter.apply(documents);
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_custom_encoding_type"><a class="anchor" href="#_custom_encoding_type"></a>自定义编码类型</h5>
+<div class="paragraph">
+<p>您可以配置用于分词的编码类型。当处理使用不同分词器的模型时，此功能非常有用：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">TokenTextSplitter splitter = TokenTextSplitter.builder()
+    .withEncodingType(EncodingType.O200K_BASE)
+    .withChunkSize(1000)
+    .build();</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_custom_punctuation_marks"><a class="anchor" href="#_custom_punctuation_marks">自定义标点符号</a></h5>
+<div class="paragraph">
+<p>您可以自定义用于将文本分割成具有语义意义的块的标点符号。这对于国际化特别有用：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Component
+class MyInternationalTextSplitter {
+
+    public List&lt;Document&gt; splitChineseText(List&lt;Document&gt; documents) {
+        // Use Chinese punctuation marks
+        TokenTextSplitter splitter = TokenTextSplitter.builder()
+            .withChunkSize(800)
+            .withMinChunkSizeChars(350)
+            .withPunctuationMarks(List.of('。', '？', '！', '；'))  // Chinese punctuation
+            .build();
+
+        return splitter.apply(documents);
+    }
+
+    public List&lt;Document&gt; splitWithCustomMarks(List&lt;Document&gt; documents) {
+        // Mix of English and other punctuation marks
+        TokenTextSplitter splitter = TokenTextSplitter.builder()
+            .withChunkSize(800)
+            .withPunctuationMarks(List.of('.', '?', '!', '\n', ';', ':', '。'))
+            .build();
+
+        return splitter.apply(documents);
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_configuration_2"><a class="anchor" href="#_configuration_2"></a>Configuration</h4>
+<div class="paragraph">
+<p>使用 <code style="color: #d73a49;">TokenTextSplitter.builder()</code> 来创建实例。所有构造函数均已弃用，请改用 builder。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_parameters_4"><a class="anchor" href="#_parameters_4"></a>Parameters</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><code>encodingType</code>：要使用的分词器编码类型（默认：<code>CL100K_BASE</code>）。支持的值包括 <code>CL100K_BASE</code>、<code>P50K_BASE</code> 和 <code>O200K_BASE</code>。</p>
+</li>
+<li>
+<p><code>chunkSize</code>：每个文本块的目标 token 数量（默认值：800）。</p>
+</li>
+<li>
+<p><code>minChunkSizeChars</code>：每个文本块的最小字符数（默认值：350）。</p>
+</li>
+<li>
+<p><code>minChunkLengthToEmbed</code>：要包含的块的最小长度（默认值：5）。</p>
+</li>
+<li>
+<p><code>maxNumChunks</code>：从文本中生成的最大分块数量（默认值：10000）。</p>
+</li>
+<li>
+<p><code>keepSeparator</code>：是否在分块中保留分隔符（如换行符）（默认：true）。</p>
+</li>
+<li>
+<p><code>punctuationMarks</code>：用于拆分句子边界的字符列表（默认：<code>.</code>、<code>?</code>、<code>!</code>、<code>\n</code>）。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_behavior_4"><a class="anchor" href="#_behavior_4"></a>Behavior</h4>
+<div class="paragraph">
+<p><code style="color: #d73a49;">TokenTextSplitter</code> 按如下方式处理文本内容：</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>它使用 CL100K_BASE 编码将输入文本编码为 token。</p>
+</li>
+<li>
+<p>它根据<code style="color: #e67e22;">chunkSize</code>将编码后的文本分割成块。</p>
+</li>
+<li>
+<p>对于每个片段：</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>它将数据块解码回文本。</p>
+</li>
+<li>
+<p><strong>仅当总 Token 数量超过分块大小时</strong>，系统才会在 <code>minChunkSizeChars</code> 之后尝试寻找合适的断点（使用配置的 <code>punctuationMarks</code>）。</p>
+</li>
+<li>
+<p>如果发现断点，它将在此处截断该块。</p>
+</li>
+<li>
+<p>它会修整该块内容，并根据 <code>keepSeparator</code> 设置选择性地移除换行符。</p>
+</li>
+<li>
+<p>如果生成的块长度超过 <code>minChunkLengthToEmbed</code>，它将被添加到输出中。</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>此过程将持续进行，直到所有 token 处理完毕或达到 <code>maxNumChunks</code> 为止。</p>
+</li>
+<li>
+<p>任何剩余的文本，如果长度超过 <code style="color: #e06c75;">minChunkLengthToEmbed</code>，则作为最后一个块添加。</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock important">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+仅当 Token 数量超过分块大小时，才应用基于标点符号的分隔。与分块大小完全匹配或小于分块大小的文本将作为单个分块返回，不会进行基于标点的截断。这可以防止对短文本进行不必要的分隔。
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_example_9"><a class="anchor" href="#_example_9"></a>Example</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">Document doc1 = new Document("This is a long piece of text that needs to be split into smaller chunks for processing.",
+        Map.of("source", "example.txt"));
+Document doc2 = new Document("Another document with content that will be split based on token count.",
+        Map.of("source", "example2.txt"));
+
+TokenTextSplitter splitter = TokenTextSplitter.builder().build();
+List&lt;Document&gt; splitDocuments = splitter.apply(List.of(doc1, doc2));
+
+for (Document doc : splitDocuments) {
+    System.out.println("Chunk: " + doc.getContent());
+    System.out.println("Metadata: " + doc.getMetadata());
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_notes_3"><a class="anchor" href="#_notes_3"></a>Notes</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><code style="color: #d73a49;">TokenTextSplitter</code> 使用来自 <code style="color: #d73a49;">jtokkit</code> 库的 CL100K_BASE 编码，该编码与较新的 OpenAI 模型兼容。</p>
+</li>
+<li>
+<p>该分割器尝试通过在尽可能多的句子边界处进行切分，来创建具有语义意义的文本块。</p>
+</li>
+<li>
+<p>原始文档的元数据被保留，并复制到从该文档衍生出的所有分块中。</p>
+</li>
+<li>
+<p>如果设置了 <code>copyContentFormatter</code> 为 <code>true</code>（默认行为），原始文档中的内容格式化器（如果已设置）也会被复制到派生的分块中。</p>
+</li>
+<li>
+<p>此分割器对于为具有 Token 限制的大语言模型准备文本特别有用，可确保每个分块都在模型的处理能力范围内。</p>
+</li>
+<li>
+<p><strong>自定义标点符号</strong>：默认的标点符号（<code>.</code>、<code>?</code>、<code>!</code>、<code>\n</code>）适用于英文文本。对于其他语言或专业内容，请使用构建器的 <code>withPunctuationMarks()</code> 方法来自定义标点符号。</p>
+</li>
+<li>
+<p><strong>性能考虑</strong>：虽然分割器可以处理任意数量的标点符号，但为了获得最佳性能，建议将列表保持在合理范围内（少于 20 个字符），因为每个标记都会在每个分块中进行检查。</p>
+</li>
+<li>
+<p><strong>可扩展性</strong>：<code class="method">getLastPunctuationIndex(String)</code> 方法是 <code class="access-modifier">protected</code> 的，允许子类针对特定用例重写标点符号检测逻辑。</p>
+</li>
+<li>
+<p><strong>小文本处理</strong>：自 2.0 版本起，小文本（Token 数量等于或低于分块大小）将不再在标点符号处进行拆分，从而防止对已经符合尺寸限制的内容进行不必要的碎片化。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_contentformattransformer"><a class="anchor" href="#_contentformattransformer"></a>ContentFormatTransformer</h3>
+<div class="paragraph">
+<p>确保所有文档的内容格式统一。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_keywordmetadataenricher"><a class="anchor" href="#_keywordmetadataenricher"></a>KeywordMetadataEnricher</h3>
+<div class="paragraph">
+<p><code style="color: #d73a49;">KeywordMetadataEnricher</code> 是一个 <code style="color: #d73a49;">DocumentTransformer</code>，它使用生成式 AI 模型从文档内容中提取关键词并将其作为元数据添加。</p>
+</div>
+<div class="sect3">
+<h4 id="_usage_2"><a class="anchor" href="#_usage_2"></a>Usage</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Component
+class MyKeywordEnricher {
+
+    private final ChatModel chatModel;
+
+    MyKeywordEnricher(ChatModel chatModel) {
+        this.chatModel = chatModel;
+    }
+
+    List&lt;Document&gt; enrichDocuments(List&lt;Document&gt; documents) {
+        KeywordMetadataEnricher enricher = KeywordMetadataEnricher.builder(chatModel)
+                .keywordCount(5)
+                .build();
+
+        // Or use custom templates
+        KeywordMetadataEnricher enricher = KeywordMetadataEnricher.builder(chatModel)
+               .keywordsTemplate(YOUR_CUSTOM_TEMPLATE)
+               .build();
+
+        return enricher.apply(documents);
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_constructor_options_3"><a class="anchor" href="#_constructor_options_3">构造函数选项</a></h4>
+<div class="paragraph">
+<p><code style="color: #d63384;">KeywordMetadataEnricher</code> 提供两种构造函数选项：</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><code>KeywordMetadataEnricher(ChatModel chatModel, int keywordCount)</code>：用于使用默认模板并提取指定数量的关键词。</p>
+</li>
+<li>
+<p><code>KeywordMetadataEnricher(ChatModel chatModel, PromptTemplate keywordsTemplate)</code>：用于使用自定义模板进行关键词提取。</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_behavior_5"><a class="anchor" href="#_behavior_5"></a>Behavior</h4>
+<div class="paragraph">
+<p><code style="color: #d63384;">KeywordMetadataEnricher</code> 按如下方式处理文档：</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>对于每个输入文档，它都会利用该文档的内容创建一个提示词。</p>
+</li>
+<li>
+<p>它将此提示词发送到提供的 <code>ChatModel</code> 以生成关键词。</p>
+</li>
+<li>
+<p>生成的关键词被添加到文档的元数据中，键名为 "excerpt_keywords"。</p>
+</li>
+<li>
+<p>富化的文档已返回。</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_customization"><a class="anchor" href="#_customization"></a>Customization</h4>
+<div class="paragraph">
+<p>您可以使用默认模板，也可以通过关键字 Template 参数来自定义模板。
+默认模板为：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">\{context_str}. Give %s unique keywords for this document. Format as comma separated. Keywords:</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>其中 <code>{context_str}</code> 被替换为文档内容，而 <code>%s</code> 被替换为指定的关键词数量。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_example_10"><a class="anchor" href="#_example_10"></a>Example</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatModel chatModel = // initialize your chat model
+KeywordMetadataEnricher enricher = KeywordMetadataEnricher.builder(chatModel)
+                .keywordCount(5)
+                .build();
+
+// Or use custom templates
+KeywordMetadataEnricher enricher = KeywordMetadataEnricher.builder(chatModel)
+                .keywordsTemplate(new PromptTemplate("Extract 5 important keywords from the following text and separate them with commas:\n{context_str}"))
+                .build();
+
+Document doc = new Document("This is a document about artificial intelligence and its applications in modern technology.");
+
+List&lt;Document&gt; enrichedDocs = enricher.apply(List.of(this.doc));
+
+Document enrichedDoc = this.enrichedDocs.get(0);
+String keywords = (String) this.enrichedDoc.getMetadata().get("excerpt_keywords");
+System.out.println("Extracted keywords: " + keywords);</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_notes_4"><a class="anchor" href="#_notes_4"></a>Notes</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><code style="color: #d63384;">KeywordMetadataEnricher</code> 需要一个可用的 <code style="color: #d63384;">ChatModel</code> 来生成关键词。</p>
+</li>
+<li>
+<p>关键词数量必须大于或等于 1。</p>
+</li>
+<li>
+<p>富集器为每个处理后的文档添加“excerpt_keywords”元数据字段。</p>
+</li>
+<li>
+<p>生成的关键词以逗号分隔的字符串形式返回。</p>
+</li>
+<li>
+<p>此增强器对于提高文档的可搜索性以及为文档生成标签或类别特别有用。</p>
+</li>
+<li>
+<p>在 Builder 模式中，如果设置了 <code>keywordsTemplate</code> 参数，则将忽略 <code>keywordCount</code> 参数。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_summarymetadataenricher"><a class="anchor" href="#_summarymetadataenricher"></a>SummaryMetadataEnricher</h3>
+<div class="paragraph">
+<p><code style="color: #d73a49;">SummaryMetadataEnricher</code> 是一个 <code style="color: #d73a49;">DocumentTransformer</code>，它利用生成式 AI 模型为文档创建摘要并将其作为元数据添加。它可以为当前文档以及相邻文档（前一个和下一个）生成摘要。</p>
+</div>
+<div class="sect3">
+<h4 id="_usage_3"><a class="anchor" href="#_usage_3"></a>Usage</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Configuration
+class EnricherConfig {
+
+    @Bean
+    public SummaryMetadataEnricher summaryMetadata(OpenAiChatModel aiClient) {
+        return new SummaryMetadataEnricher(aiClient,
+            List.of(SummaryType.PREVIOUS, SummaryType.CURRENT, SummaryType.NEXT));
+    }
+}
+
+@Component
+class MySummaryEnricher {
+
+    private final SummaryMetadataEnricher enricher;
+
+    MySummaryEnricher(SummaryMetadataEnricher enricher) {
+        this.enricher = enricher;
+    }
+
+    List&lt;Document&gt; enrichDocuments(List&lt;Document&gt; documents) {
+        return this.enricher.apply(documents);
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_constructor"><a class="anchor" href="#_constructor"></a>Constructor</h4>
+<div class="paragraph">
+<p><code style="color: #d73a49;">SummaryMetadataEnricher</code> 提供两个构造函数：</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><code>SummaryMetadataEnricher(ChatModel chatModel, List&lt;SummaryType&gt; summaryTypes)</code></p>
+</li>
+<li>
+<p><code>SummaryMetadataEnricher(ChatModel chatModel, List&lt;SummaryType&gt; summaryTypes, String summaryTemplate, MetadataMode metadataMode)</code></p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_parameters_5"><a class="anchor" href="#_parameters_5"></a>Parameters</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><code>chatModel</code>：用于生成摘要的 AI 模型。</p>
+</li>
+<li>
+<p><code>summaryTypes</code>：一个 <code>SummaryType</code> 枚举值列表，用于指示要生成的摘要类型（PREVIOUS、CURRENT、NEXT）。</p>
+</li>
+<li>
+<p><code>summaryTemplate</code>：用于生成摘要的自定义模板（可选）。</p>
+</li>
+<li>
+<p><code>metadataMode</code>：指定在生成摘要时如何处理文档元数据（可选）。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_behavior_6"><a class="anchor" href="#_behavior_6"></a>Behavior</h4>
+<div class="paragraph">
+<p><code style="color: #d63384;">SummaryMetadataEnricher</code> 按如下方式处理文档：</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>对于每个输入文档，它会根据文档内容和指定的摘要模板创建一个提示词。</p>
+</li>
+<li>
+<p>它将此提示词发送到提供的 <code>ChatModel</code> 以生成摘要。</p>
+</li>
+<li>
+<p>根据指定的 <code style="color: #d14">summaryTypes</code>，它会为每个文档添加以下元数据：</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>section_summary</code>：当前文档的摘要。</p>
+</li>
+<li>
+<p><code>prev_section_summary</code>：前一文档的摘要（如果可用且被请求）。</p>
+</li>
+<li>
+<p><code>next_section_summary</code>：下一章节的摘要（如果可用且被请求）。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>富化的文档已返回。</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_customization_2"><a class="anchor" href="#_customization_2"></a>Customization</h4>
+<div class="paragraph">
+<p>可以通过提供自定义的 <code>summaryTemplate</code> 来定制摘要生成提示词。默认模板为：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">"""
+Here is the content of the section:
+{context_str}
+
+Summarize the key topics and entities of the section.
+
+Summary:
+"""</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_example_11"><a class="anchor" href="#_example_11"></a>Example</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatModel chatModel = // initialize your chat model
+SummaryMetadataEnricher enricher = new SummaryMetadataEnricher(chatModel,
+    List.of(SummaryType.PREVIOUS, SummaryType.CURRENT, SummaryType.NEXT));
+
+Document doc1 = new Document("Content of document 1");
+Document doc2 = new Document("Content of document 2");
+
+List&lt;Document&gt; enrichedDocs = enricher.apply(List.of(this.doc1, this.doc2));
+
+// Check the metadata of the enriched documents
+for (Document doc : enrichedDocs) {
+    System.out.println("Current summary: " + doc.getMetadata().get("section_summary"));
+    System.out.println("Previous summary: " + doc.getMetadata().get("prev_section_summary"));
+    System.out.println("Next summary: " + doc.getMetadata().get("next_section_summary"));
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>提供的示例展示了预期的行为：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>对于包含两个文档的列表，这两个文档都将获得一个 <code style="color: #e67e22;">section_summary</code>。</p>
+</li>
+<li>
+<p>第一份文档接收到了 <code>next_section_summary</code>，但没有接收到 <code>prev_section_summary</code>。</p>
+</li>
+<li>
+<p>第二个文档接收到了 <code>prev_section_summary</code>，但没有接收到 <code>next_section_summary</code>。</p>
+</li>
+<li>
+<p>第一份文档的 <code>section_summary</code> 与第二份文档的 <code>prev_section_summary</code> 相匹配。</p>
+</li>
+<li>
+<p>第一份文档的 <code>next_section_summary</code> 与第二份文档的 <code>section_summary</code> 相匹配。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_notes_5"><a class="anchor" href="#_notes_5"></a>Notes</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><code style="color: #d63384;">SummaryMetadataEnricher</code> 需要一个可用的 <code style="color: #d63384;">ChatModel</code> 来生成摘要。</p>
+</li>
+<li>
+<p>富集器可以处理任何大小的文档列表，并能妥善处理首个和最后一个文档的边界情况。</p>
+</li>
+<li>
+<p>此富集器对于创建上下文感知摘要特别有用，有助于更好地理解序列中文档之间的关系。</p>
+</li>
+<li>
+<p><code style="color: #d63384;">MetadataMode</code> 参数允许控制现有元数据如何纳入摘要生成过程。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_writers"><a class="anchor" href="#_writers"></a>Writers</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_file"><a class="anchor" href="#_file"></a>File</h3>
+<div class="paragraph">
+<p><code style="color: #d73a49;">FileDocumentWriter</code> 是一个 <code style="color: #d73a49;">DocumentWriter</code> 的实现，用于将一系列 <code style="color: #d73a49;">Document</code> 对象的内容写入到文件中。</p>
+</div>
+<div class="sect3">
+<h4 id="_usage_4"><a class="anchor" href="#_usage_4"></a>Usage</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Component
+class MyDocumentWriter {
+
+    public void writeDocuments(List&lt;Document&gt; documents) {
+        FileDocumentWriter writer = new FileDocumentWriter("output.txt", true, MetadataMode.ALL, false);
+        writer.accept(documents);
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_constructors"><a class="anchor" href="#_constructors"></a>Constructors</h4>
+<div class="paragraph">
+<p><code style="color: #d73a49;">FileDocumentWriter</code> 提供三个构造函数：</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><code>FileDocumentWriter(String fileName)</code></p>
+</li>
+<li>
+<p><code>FileDocumentWriter(String fileName, boolean withDocumentMarkers)</code></p>
+</li>
+<li>
+<p><code>FileDocumentWriter(String fileName, boolean withDocumentMarkers, MetadataMode metadataMode, boolean append)</code></p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_parameters_6"><a class="anchor" href="#_parameters_6"></a>Parameters</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><code>fileName</code>：用于写入文档的文件名称。</p>
+</li>
+<li>
+<p><code>withDocumentMarkers</code>：是否在输出中包含文档标记（默认：false）。</p>
+</li>
+<li>
+<p><code>metadataMode</code>：指定要写入文件的文档内容（默认值：MetadataMode.NONE）。</p>
+</li>
+<li>
+<p><code>append</code>：如果为 true，数据将写入文件的末尾而非开头（默认值：false）。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_behavior_7"><a class="anchor" href="#_behavior_7"></a>Behavior</h4>
+<div class="paragraph">
+<p><code style="color:red;">FileDocumentWriter</code> 按如下方式处理文档：</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>它为指定的文件名打开一个 FileWriter。</p>
+</li>
+<li>
+<p>对于输入列表中的每个文档：</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>如果 <code>withDocumentMarkers</code> 为 true，它将写入包含文档索引和页码的文档标记。</p>
+</li>
+<li>
+<p>它根据指定的 <code style="color: #d14">metadataMode</code> 写入文档的格式化内容。</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>所有文档写入完成后，文件将被关闭。</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_document_markers"><a class="anchor" href="#_document_markers"></a></h4>
+<div class="paragraph">
+<p>当 <code>withDocumentMarkers</code> 设置为 true 时，写入器将按以下格式包含每个文档的标记：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">### Doc: [index], pages:[start_page_number,end_page_number]</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_metadata_handling"><a class="anchor" href="#_metadata_handling">元数据处理</a></h4>
+<div class="paragraph">
+<p>作者使用了两个特定的元数据键：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>page_number</code>：表示文档的起始页码。</p>
+</li>
+<li>
+<p><code>end_page_number</code>：表示文档的结束页码。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>这些用于编写文档标记。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_example_12"><a class="anchor" href="#_example_12"></a>Example</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">List&lt;Document&gt; documents = // initialize your documents
+FileDocumentWriter writer = new FileDocumentWriter("output.txt", true, MetadataMode.ALL, true);
+writer.accept(documents);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>这将把所有文档（包括文档标记）写入到 "output.txt" 中，使用所有可用的元数据，并且如果文件已存在，则将其追加到文件中。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_notes_6"><a class="anchor" href="#_notes_6"></a>Notes</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>作者使用了 <code style="color:red">FileWriter</code>，因此它会使用操作系统的默认字符编码来写入文本文件。</p>
+</li>
+<li>
+<p>如果写入过程中发生错误，将抛出 <code style="color:red;">RuntimeException</code>，并以原始异常作为其原因。</p>
+</li>
+<li>
+<p><code style="color: #d14">metadataMode</code> 参数允许控制如何将现有的元数据纳入到写入的内容中。</p>
+</li>
+<li>
+<p>此写入器对于调试或创建文档集的易读输出特别有用。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_vectorstore"><a class="anchor" href="#_vectorstore"></a>VectorStore</h3>
+<div class="paragraph">
+<p>提供与各种向量数据库的集成。
+请参阅 <a class="xref page" href="vectordbs.html">Vector DB Documentation</a> 获取完整列表。</p>
+</div>
+</div>
+</div>
+</div>
+<nav class="pagination"><span class="prev"><a href="retrieval-augmented-generation.html">检索增强生成 (RAG)</a></span>
+<span class="next"><a href="testing.html">模型评估</a></span></nav>
+</article>  </div>
+</main>
+<div aria-hidden="true" class="modal micromodal-slide" id="modal-versions">
+    <div class="modal__overlay" data-micromodal-close="" tabindex="-1">
+        <div aria-modal="true" class="modal__container" role="dialog">
+            <main class="modal__content" id="modal-versions-content">
+              <button class="modal-versions-close" data-micromodal-close="">
+                <svg height="28px" viewbox="0 0 32 32" width="28px" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1h{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title></title><g id="cross"><line class="cls-1h" x1="7" x2="25" y1="7" y2="25"></line><line class="cls-1h" x1="7" x2="25" y1="25" y2="7"></line></g></svg>
+              </button>
+              <div class="colset">
+                <div class="col-left">
+
+                  <ul class="nav-versions">
+                      <li class="component">
+                        <div><a class="title" href="../index.html">Spring AI</a></div>                        <div class="version-item is-active">
+                          <div>
+                            <button class="version-toggle" type="button">
+                              <span></span>
+                              Stable
+                            </button>
+                          </div>
+                          <ul class="versions">
+  <li class="version">
+    <a href="../index.html">
+      2.0.0
+    </a>
+  </li>
+</ul>                        </div>
+                        
+                      </li>
+                  </ul>
+                </div>
+                <div class="col-right"><ul class="projects">
+<li>
+    相关 Spring 文档
+    <ul class="projects-list">
+</ul>
+</li><a href="../spring-projects.html">所有文档...</a>
+</ul></div>
+              </div>
+            </main>
+        </div>
+    </div>
+</div>
+
+</div>
+<footer class="footer flex">
+    <div id="spring-links flex">
+        <img alt="Spring" id="springlogo" src="../_/img/spring-logo.svg"/>
+        <p class="smallest antialiased">Copyright © 2005 - <script>var d = new Date();
+        document.write(d.getFullYear());</script> Broadcom. 保留所有权利。术语“Broadcom”是指 Broadcom Inc. 和/或其子公司。<br/><a href="https://www.vmware.com/help/legal.html">使用条款</a> • <a href="https://www.vmware.com/help/privacy.html" rel="noopener noreferrer">隐私政策</a> • <a href="https://spring.io/trademarks">商标指南</a> <span id="thank-you-mobile">• <a href="https://spring.io/thank-you">致谢</a></span> • <a href="https://www.vmware.com/help/privacy/california-privacy-rights.html">您的加州隐私权</a> • <a class="ot-sdk-show-settings">Cookie 设置</a> <span id="teconsent"></span></p>
+        <p class="smallest antialiased has-gray-text">Apache®、Apache Tomcat®、Apache Kafka®、Apache Cassandra™ 和 Apache Geode™ 是 Apache Software Foundation 在美国和/或其他国家的商标或注册商标。Java™、Java™ SE、Java™ EE 和 OpenJDK™ 是 Oracle 和/或其关联公司的商标。Kubernetes® 是 Linux Foundation 在美国和其他国家的注册商标。Linux® 是 Linus Torvalds 在美国和其他国家的注册商标。Windows® 和 Microsoft® Azure 是 Microsoft Corporation 的注册商标。“AWS”和“Amazon Web Services”是 Amazon.com Inc. 或其关联公司的商标或注册商标。所有其他商标和版权均为其各自所有者的财产，仅用于提供信息。其他名称可能是其各自所有者的商标。</p>
+    </div>
+    <div class="flex jc-between" id="social-icons">
+        <a href="https://www.youtube.com/user/SpringSourceDev" title="Youtube"><svg id="youtube-icon" viewbox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><circle class="cls-1" cx="20" cy="20" r="20"></circle><path class="cls-2" d="M30.91,14.53a2.89,2.89,0,0,0-2-2C27.12,12,20,12,20,12s-7.12,0-8.9.47a2.9,2.9,0,0,0-2,2A30.56,30.56,0,0,0,8.63,20a30.44,30.44,0,0,0,.46,5.47,2.89,2.89,0,0,0,2,2C12.9,28,20,28,20,28s7.12,0,8.9-.47a2.87,2.87,0,0,0,2-2A30.56,30.56,0,0,0,31.37,20,28.88,28.88,0,0,0,30.91,14.53ZM17.73,23.41V16.59L23.65,20Z"></path></svg></a>
+        <a href="https://github.com/spring-projects" title="GitHub"><svg id="github-icon" viewbox="0 0 75.93 75.93" xmlns="http://www.w3.org/2000/svg"><path class="cls-1" d="M38,0a38,38,0,1,0,38,38A38,38,0,0,0,38,0Z"></path><path class="cls-2" d="M38,15.59A22.95,22.95,0,0,0,30.71,60.3c1.15.21,1.57-.5,1.57-1.11s0-2,0-3.9c-6.38,1.39-7.73-3.07-7.73-3.07A6.09,6.09,0,0,0,22,48.86c-2.09-1.42.15-1.39.15-1.39a4.81,4.81,0,0,1,3.52,2.36c2,3.5,5.37,2.49,6.67,1.91a4.87,4.87,0,0,1,1.46-3.07c-5.09-.58-10.45-2.55-10.45-11.34a8.84,8.84,0,0,1,2.36-6.15,8.29,8.29,0,0,1,.23-6.07s1.92-.62,6.3,2.35a21.82,21.82,0,0,1,11.49,0c4.38-3,6.3-2.35,6.3-2.35a8.29,8.29,0,0,1,.23,6.07,8.84,8.84,0,0,1,2.36,6.15c0,8.81-5.37,10.75-10.48,11.32a5.46,5.46,0,0,1,1.56,4.25c0,3.07,0,5.54,0,6.29s.42,1.33,1.58,1.1A22.94,22.94,0,0,0,38,15.59Z"></path></svg></a>
+        <a href="https://twitter.com/springcentral" title="Twitter"><svg id="twitter-icon" viewbox="0 0 75.93 75.93" xmlns="http://www.w3.org/2000/svg"><circle class="cls-1" cx="37.97" cy="37.97" r="37.97"></circle><path class="cls-2" d="M55.2,22.73a15.43,15.43,0,0,1-4.88,1.91,7.56,7.56,0,0,0-5.61-2.49A7.78,7.78,0,0,0,37,30a7.56,7.56,0,0,0,.2,1.79,21.63,21.63,0,0,1-15.84-8.23,8,8,0,0,0,2.37,10.52,7.66,7.66,0,0,1-3.48-1v.09A7.84,7.84,0,0,0,26.45,41a7.54,7.54,0,0,1-2,.28A7.64,7.64,0,0,1,23,41.09a7.71,7.71,0,0,0,7.18,5.47,15.21,15.21,0,0,1-9.55,3.37,15.78,15.78,0,0,1-1.83-.11,21.41,21.41,0,0,0,11.78,3.54c14.13,0,21.86-12,21.86-22.42,0-.34,0-.68,0-1a15.67,15.67,0,0,0,3.83-4.08,14.9,14.9,0,0,1-4.41,1.24A7.8,7.8,0,0,0,55.2,22.73Z" data-name="Twitter" id="Twitter-2"></path></svg></a>
+    </div>
+</footer>
+<script src="../_/js/vendor/import.js"></script>
+<script src="../_/js/site.js"></script>
+<script async="" src="../_/js/vendor/highlight.js"></script>
+<script async="" data-sync-storage-key="docs:preferred-tab" src="../_/js/vendor/asciidoctor-tabs.js"></script>
+
+<div aria-hidden="true" class="modal micromodal-slide" id="modal-1">
+    <div class="modal__overlay" data-micromodal-close="" tabindex="-1">
+        <div aria-labelledby="modal-1-title" aria-modal="true" class="modal__container" role="dialog">
+            <main class="modal__content" id="modal-1-content">
+                <div id="searchbox"></div>
+                <div id="counter"></div>
+                <div class="search-link-box"><a class="search-link" href="../search.html">在所有 Spring 文档中搜索</a></div>
+                <div class="search-by">
+                    <a aria-label="Search by Algolia" href="https://www.algolia.com/" rel="noopener noreferrer" target="_blank">
+                        <img class="light" src="../_/img/algolia-light.svg" width="140"/>
+                        <img class="dark" src="../_/img/algolia-dark.svg" width="140"/>
+                    </a>
+                </div>
+                <div id="hits"></div>
+            </main>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
+<script crossorigin="anonymous" integrity="sha256-Lf9DrpGmcRip6OQzbcL6lnvNmoZNSKpyQX5pMlwatWE=" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.17.0/dist/algoliasearch-lite.umd.js"></script>
+<script crossorigin="anonymous" integrity="sha256-xYsZPDeNjYNTBWLvqD2Lxe98hOxcDgOHyMPfz4tVAbk=" src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.54.1/dist/instantsearch.production.min.js"></script>
+<script async="" data-api-key="c2e84f15fa630d534f1c62b1c413bb77" data-app-id="WB1FQYI187" data-index-name="springdocs" data-page-component="ai" data-page-version="2.0.0" data-stylesheet="../_/css/vendor/search.css" id="search-script" src="../_/js/vendor/search.js"></script>
+  
+
+</body></html>

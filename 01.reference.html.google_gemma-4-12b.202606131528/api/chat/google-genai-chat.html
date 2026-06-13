@@ -1,0 +1,2235 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width,initial-scale=1" name="viewport"/>
+    <title>Google GenAI Chat :: Spring AI 参考手册</title>
+    <link href="https://docs.spring.io/spring-ai/reference/api/chat/google-genai-chat.html" rel="canonical"/>
+    <link href="dmr-chat.html" rel="prev"/>
+    <link href="groq-chat.html" rel="next"/>
+    <meta content="Antora 3.1.15" name="generator"/>
+    <script>
+!function (theme, navWidth) {
+  if (theme === 'dark') document.documentElement.classList.add('dark-theme')
+  if (navWidth) document.documentElement.style.setProperty('--nav-width', `${navWidth}px`)
+}(localStorage && localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)')?.matches && 'dark'),
+  localStorage && localStorage.getItem('nav-width'))
+    </script>
+    <link href="../../_/css/site.css" rel="stylesheet"/>
+    <link href="../../_/css/vendor/search.css" rel="stylesheet"/>
+    <link href="../../_/css/vendor/page-search.css" rel="stylesheet"/>
+    <link href="../../_/css/vendor/asciidoctor-tabs.css" rel="stylesheet"/>
+
+    <meta content="v0.4.17" name="antora-ui-version"/> 
+    <meta content="2.0.0" name="version"/>
+    <meta content="ai" name="component"/>
+    <meta content="false" name="latest-version"/>
+    <link href="../../_/img/favicon.ico" rel="icon" type="image/vnd.microsoft.icon"/>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://spring.io">
+        <img alt="Spring" class="block" id="springlogo" src="../../_/img/spring-logo.svg"/>
+      </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="navbar-menu" id="topbar-nav">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">为什么选择 Spring</a>
+          <div class="navbar-dropdown"><a class="navbar-item" href="https://spring.io/why-spring">概述</a>
+<a class="navbar-item" href="https://spring.io/microservices">微服务</a>
+<a class="navbar-item" href="https://spring.io/reactive">响应式</a>
+<a class="navbar-item" href="https://spring.io/event-driven">事件驱动</a>
+<a class="navbar-item" href="https://spring.io/cloud">云原生</a>
+<a class="navbar-item" href="https://spring.io/web-applications">Web 应用</a>
+<a class="navbar-item" href="https://spring.io/serverless">Serverless</a>
+<a class="navbar-item" href="https://spring.io/batch">批处理</a></div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Learn</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://spring.io/learn">Overview</a>
+            <a class="navbar-item" href="https://spring.io/quickstart">Quickstart</a>
+            <a class="navbar-item" href="https://spring.io/guides">Guides</a>
+            <a class="navbar-item" href="https://spring.io/blog">Blog</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Projects</a>
+          <div class="navbar-dropdown" style="min-width: 280px"><a class="navbar-item" href="https://spring.io/projects">概览</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-boot">Spring Boot</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-framework">Spring Framework</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-cloud">Spring Cloud</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-cloud-dataflow">Spring Cloud Data Flow</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-data">Spring Data</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-integration">Spring Integration</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-batch">Spring Batch</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-security">Spring Security</a>
+<a class="navbar-item navbar-item-special" href="https://spring.io/projects">查看所有项目</a>
+<li class="navbar-item navbar-item-special-3">开发工具</li>
+<a class="navbar-item" href="https://spring.io/tools">Spring Tools 4</a>
+<a class="navbar-item navbar-item-special-2" href="https://start.spring.io">Spring Initializr
+              <svg class="external-link-icon" viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><polyline fill="none" points="15 10.94 15 15 1 15 1 1 5.06 1" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"></polyline><polyline fill="none" points="8.93 1 15 1 15 7.07" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"></polyline><line fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" x1="15" x2="8" y1="1" y2="8"></line></svg></a></div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Academy</a>
+          <div class="navbar-dropdown"><a class="navbar-item" href="https://spring.academy/courses">课程</a>
+<a class="navbar-item" href="https://spring.academy/learning-path">获取认证</a></div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Solutions</a>
+          <div class="navbar-dropdown lg"><a class="navbar-item" href="https://spring.io/solutions">概览</a>
+<a class="navbar-item" href="https://spring.io/support">Spring Runtime</a>
+<a class="navbar-item" href="https://spring.io/consulting">Spring Consulting</a>
+<a class="navbar-item" href="https://spring.academy/teams">Spring Academy For Teams</a>
+<a class="navbar-item" href="https://spring.io/security">安全公告</a></div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable is-community">
+          <a class="navbar-link" href="#">Community</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://spring.io/community">Overview</a>
+            <a class="navbar-item" href="https://spring.io/events">Events</a>
+            <a class="navbar-item" href="https://spring.io/team">Team</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <label class="theme-toggler">
+      <input id="switch-theme-checkbox" name="switch-theme-checkbox" type="checkbox"/>
+      <span class="icon"><svg aria-hidden="true" class="svg-inline--fa fa-moon moon" data-icon="moon" data-prefix="fas" focusable="false" role="img" viewbox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z" fill="currentColor"></path>
+</svg>
+        <svg aria-hidden="true" class="svg-inline--fa fa-sun sun" data-icon="sun" data-prefix="fas" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z" fill="currentColor"></path>
+</svg></span>
+      <span class="text">light</span>
+    </label>
+  </nav>
+</header>
+<script>
+!function (theme) {
+  if (theme === 'dark') {
+    document.getElementById('switch-theme-checkbox').parentElement.classList.add('active')
+  }
+}(localStorage && localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)')?.matches && 'dark'))
+</script>
+<div class="body">
+<div class="nav-container" data-component="ai" data-version="2.0.0">
+  <aside class="nav">
+    <div class="panels">
+      <div class="nav-panel-menu is-active" data-panel="menu">
+        <nav class="nav-menu">
+<div class="context">
+  <span class="title">Spring AI</span>
+  <span class="version">2.0.0</span>
+  <button class="browse-version" id="browse-version">
+    <svg height="24px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewbox="0 0 512 512" width="24px" xml:space="preserve"><g><path d="M256,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S273.7,224,256,224L256,224z"></path><path d="M128.4,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S146,224,128.4,224L128.4,224z"></path><path d="M384,224c-17.7,0-32,14.3-32,32s14.3,32,32,32s32-14.3,32-32S401.7,224,384,224L384,224z"></path></g></svg>
+  </button>
+  <div class="search">
+  <button class="DocSearch-Button search-button">
+    <svg enable-background="new 0 0 32 32" id="Glyph" version="1.1" viewbox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M27.414,24.586l-5.077-5.077C23.386,17.928,24,16.035,24,14c0-5.514-4.486-10-10-10S4,8.486,4,14  s4.486,10,10,10c2.035,0,3.928-0.614,5.509-1.663l5.077,5.077c0.78,0.781,2.048,0.781,2.828,0  C28.195,26.633,28.195,25.367,27.414,24.586z M7,14c0-3.86,3.14-7,7-7s7,3.14,7,7s-3.14,7-7,7S7,17.86,7,14z" id="XMLID_223_"></path>
+</svg>
+    <span>Search</span>
+    <span class="search-key"></span>
+  </button>
+</div>
+</div><ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../../index.html">概览</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../../concepts.html">AI 概念</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="1"><a class="nav-link" href="../../getting-started.html">入门指南</a></li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Reference</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../chatclient.html">Chat Client API</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="../advisors.html">顾问</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../advisors-recursive.html">递归顾问</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../prompt.html">Prompts</a>
+  </li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="../structured-output-converter.html">结构化输出</a></li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../multimodality.html">Multimodality</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../index.html">Models</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../chatmodel.html">聊天模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="comparison.html">聊天模型对比</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="bedrock-converse.html">Amazon Bedrock Converse</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="anthropic-chat.html">Anthropic</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="azure-openai-chat.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="deepseek-chat.html">DeepSeek</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="dmr-chat.html">Docker Model Runner</a>
+</li>
+<li class="nav-item is-current-page" data-depth="4">
+<a class="nav-link" href="google-genai-chat.html">Google GenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="groq-chat.html">Groq</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mistralai-chat.html">Mistral AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="minimax-chat.html">MiniMax</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="nvidia-chat.html">NVIDIA</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="ollama-chat.html">Ollama</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="perplexity-chat.html">Perplexity AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="oci-genai-chat.html">OCI Generative AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="openai-chat.html">OpenAI</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../embeddings.html">嵌入模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="../bedrock.html">Amazon Bedrock</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="../embeddings/bedrock-cohere-embedding.html">Cohere</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="../embeddings/bedrock-titan-embedding.html">Titan</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../embeddings/azure-openai-embeddings.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../embeddings/google-genai-embeddings-text.html">Google GenAI 文本嵌入</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../embeddings/mistralai-embeddings.html">Mistral AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../embeddings/oci-genai-embeddings.html">OCI GenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../embeddings/ollama-embeddings.html">Ollama</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../embeddings/onnx.html">(ONNX) Transformers</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../embeddings/openai-embeddings.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../embeddings/postgresml-embeddings.html">PostgresML</a>
+</li>
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<span class="nav-text">VertexAI</span>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="../embeddings/vertexai-embeddings-text.html">文本嵌入</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="../embeddings/vertexai-embeddings-multimodal.html">多模态嵌入</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../imageclient.html">图像模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../image/azure-openai-image.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../image/openai-image.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../image/stabilityai-image.html">Stability</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../audio.html">音频模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="../audio/transcriptions.html">转录 API</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="../audio/transcriptions/azure-openai-transcriptions.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="../audio/transcriptions/openai-transcriptions.html">OpenAI</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="../audio/speech.html">文本转语音 (TTS) API</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="../audio/speech/openai-speech.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="../audio/speech/elevenlabs-speech.html">ElevenLabs</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../moderation.html">审核模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../moderation/openai-moderation.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../moderation/mistral-ai-moderation.html">Mistral AI</a>
+</li>
+</ul></li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="../chat-memory.html">聊天记忆</a></li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="../tools.html">工具调用</a></li>
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../mcp/mcp-overview.html">Model Context Protocol (MCP)</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../mcp/mcp-client-boot-starter-docs.html">MCP Client Boot Starters</a>
+</li>
+<li class="nav-item" data-depth="3">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="../mcp/mcp-server-boot-starter-docs.html">MCP Server Boot Starters</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../mcp/mcp-stdio-sse-server-boot-starter-docs.html">STDIO 和 SSE MCP 服务器</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../mcp/mcp-streamable-http-server-boot-starter-docs.html">Streamable-HTTP MCP 服务器</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../mcp/mcp-stateless-server-boot-starter-docs.html">无状态 Streamable-HTTP MCP 服务器</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../mcp/mcp-security.html">MCP 安全性 (WIP)</a>
+</li>
+<li class="nav-item" data-depth="3">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="../mcp/mcp-annotations-overview.html">MCP 注解</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../mcp/mcp-annotations-client.html">客户端注解</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../mcp/mcp-annotations-server.html">服务器注解</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../mcp/mcp-annotations-special-params.html">特殊参数</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../mcp/mcp-annotations-examples.html">MCP 注解示例</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../retrieval-augmented-generation.html">检索增强生成 (RAG)</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../etl-pipeline.html">ETL 流水线</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="../testing.html">模型评估</a></li>
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../vectordbs.html">向量数据库</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/azure.html">Azure AI Service</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/azure-cosmos-db.html">Azure Cosmos DB</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/bedrock-knowledge-base.html">Amazon Bedrock Knowledge Base</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/apache-cassandra.html">Apache Cassandra 向量存储</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/chroma.html">Chroma</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/couchbase.html">Couchbase</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/elasticsearch.html">Elasticsearch</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/gemfire.html">GemFire</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/mariadb.html">MariaDB 向量存储</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/milvus.html">Milvus</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/mongodb.html">MongoDB Atlas</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/neo4j.html">Neo4j</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/opensearch.html">OpenSearch</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/oracle.html">Oracle</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/pgvector.html">PGvector</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/pinecone.html">Pinecone</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/qdrant.html">Qdrant</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/redis.html">Redis</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/typesense.html">Typesense</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/weaviate.html">Weaviate</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/s3-vector-store.html">S3 向量存储</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../observability/index.html">Observability</a>
+  </li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="../docker-compose.html">开发时服务</a></li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Testing</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../testcontainers.html">Testcontainers</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1"><button class="nav-item-toggle"></button>
+<span class="nav-text">指南</span>
+<ul class="nav-list">
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://github.com/spring-ai-community/awesome-spring-ai">Awesome Spring AI</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../../guides/getting-started-mcp.html">MCP 入门指南</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../../guides/dynamic-tool-search.html">动态工具发现</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../../guides/llm-as-judge.html">LLM-as-a-Judge 评估</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="prompt-engineering-patterns.html">提示工程模式</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../effective-agents.html">构建高效智能体</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://catalog.workshops.aws/java-spring-ai-agents">AWS 提供的使用 Spring AI 构建智能体教程</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://catalog.workshops.aws/java-spring-ai-agentcore">AWS 提供的使用 Spring AI 和 AgentCore 构建智能体教程</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://github.com/microsoft/Spring-AI-for-Beginners">Microsoft 提供的 Spring AI 入门教程</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="1"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../../upgrade-notes.html">升级说明</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../tools-migration.html">将 FunctionCallback 迁移到 ToolCallback API</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="anthropic-migration.html">将 Anthropic 模块迁移到官方 Java SDK</a>
+</li>
+</ul></li>
+</ul>
+  </li>
+</ul>
+          <div class="toggle-sm">
+            <button class="nav-toggle" id="nav-toggle-2"></button>
+          </div>
+        </nav>
+      </div>
+      <div class="nav-collapse">
+        <button id="nav-collapse-toggle"><span></span></button>        
+      </div>
+    </div>
+    <div class="nav-resize"></div>
+  </aside>
+</div>
+<script>
+!function (sidebar) {
+  if (sidebar) {
+    document.body.classList.add('nav-sm')
+  }
+}(localStorage && localStorage.getItem('sidebar') === 'close')
+</script><main class="article">
+<div class="toolbar" role="navigation">
+  <button class="nav-toggle" id="nav-toggle-1"></button>
+<div class="search">
+  <button class="DocSearch-Button search-button">
+    <svg id="svg-stash-de15fb15"></svg>
+    <span>Search</span>
+    <span class="search-key"></span>
+  </button>
+</div>
+</div>
+  <div class="content">
+<aside class="sidebar">
+  <div class="content">
+    <div class="toc" data-levels="2" data-title="Google GenAI Chat">
+      <div class="toc-menu"></div>
+    </div>
+    <div class="sidebar-links"><a href="file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/chat/google-genai-chat.adoc">
+<svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m16 2.012 3 3L16.713 7.3l-3-3zM4 14v3h3l8.299-8.287-3-3zm0 6h16v2H4z"></path></svg>
+          编辑此页面
+        </a>
+<a href="https://github.com/spring-projects/spring-ai" title="GitHub">
+<svg height="512px" id="Layer_1" version="1.1" viewbox="0 0 512 512" width="512px" xmlns="http://www.w3.org/2000/svg"><style type="text/css">
+              .st0{fill-rule:evenodd;clip-rule:evenodd;} </style><g><path class="st0" d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"></path></g></svg>
+          GitHub 项目
+        </a></div>
+  </div>
+</aside>
+<article class="doc">
+<div class="breadcrumbs-container"><nav aria-label="breadcrumbs" class="breadcrumbs">
+<ul>
+<li><a href="../../index.html">Spring AI</a></li>
+<li>参考资料</li>
+<li><a href="../index.html">模型</a></li>
+<li><a href="../chatmodel.html">聊天模型</a></li>
+<li><a href="google-genai-chat.html">Google GenAI</a></li>
+</ul>
+</nav></div><h1 class="page" id="page-title">Google GenAI 聊天</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://ai.google.dev/gemini-api/docs">Google GenAI API</a> 允许开发者通过 Gemini Developer API 或 Vertex AI 使用 Google 的 Gemini 模型构建生成式 AI 应用程序。
+Google GenAI API 支持多模态提示词作为输入，并输出文本或代码。
+多模态模型能够处理来自多种模态的信息，包括图像、视频和文本。例如，您可以向模型发送一张一盘饼干的照片，并要求它提供这些饼干的食谱。</p>
+</div>
+<div class="paragraph">
+<p>Gemini 是由 Google DeepMind 开发的一系列生成式 AI 模型，旨在用于多模态场景。Gemini API 让您可以访问 <a href="https://ai.google.dev/gemini-api/docs/models">各种模型</a>，例如 Gemini Flash-Lite、Gemini Flash 或 Gemini Pro。</p>
+</div>
+<div class="paragraph">
+<p>此实现提供两种身份验证模式：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Gemini Developer API</strong>：使用 API 密钥进行快速原型设计和开发</p>
+</li>
+<li>
+<p><strong>Vertex AI</strong>：使用 Google Cloud 凭据进行具备企业级功能的生产环境部署</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://ai.google.dev/api">Gemini API 参考</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prerequisites"><a class="anchor" href="#_prerequisites"></a>Prerequisites</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>请选择以下一种身份验证方法：</p>
+</div>
+<div class="sect2">
+<h3 id="_option_1_gemini_developer_api_api_key"><a class="anchor" href="#_option_1_gemini_developer_api_api_key">选项 1：Gemini Developer API（API Key）</a></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>从 <a href="https://aistudio.google.com/app/apikey">Google AI Studio</a> 获取 API 密钥</p>
+</li>
+<li>
+<p>将 API 密钥设置为环境变量或在您的应用程序属性中设置</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_option_2_vertex_ai_google_cloud"><a class="anchor" href="#_option_2_vertex_ai_google_cloud">选项 2：Vertex AI (Google Cloud)</a></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>安装适用于您操作系统的 <a href="https://cloud.google.com/sdk/docs/install">gcloud</a> CLI。</p>
+</li>
+<li>
+<p>运行以下命令进行身份验证。
+将 <code>PROJECT_ID</code> 替换为您的 Google Cloud 项目 ID，将 <code>ACCOUNT</code> 替换为您的 Google Cloud 用户名。</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">gcloud config set project &lt;PROJECT_ID&gt; &amp;&amp;
+gcloud auth application-default login &lt;ACCOUNT&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_auto_configuration"><a class="anchor" href="#_auto_configuration"></a>Auto-configuration</h2>
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Spring AI 的自动配置中，starter 模块的 artifact 名称发生了重大变化。
+请参阅 <a href="https://docs.spring.io/spring-ai/reference/upgrade-notes.html">升级说明</a> 获取更多信息。</p>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="paragraph">
+<p>Spring AI 为 Google GenAI Chat Client 提供 Spring Boot 自动配置。
+若要启用它，请将以下依赖添加到项目的 Maven <code>pom.xml</code> 或 Gradle <code>build.gradle</code> 构建文件中：</p>
+</div>
+<div class="openblock tabs is-sync is-loading" id="_tabs_1">
+<div class="content">
+<div class="ulist tablist">
+<ul>
+<li class="tab" id="_tabs_1_maven">
+<p>Maven</p>
+</li>
+<li class="tab" id="_tabs_1_gradle">
+<p>Gradle</p>
+</li>
+</ul>
+</div>
+<div aria-labelledby="_tabs_1_maven" class="tabpanel" id="_tabs_1_maven--panel">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-ai-starter-model-google-genai&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+<div aria-labelledby="_tabs_1_gradle" class="tabpanel" id="_tabs_1_gradle--panel">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">dependencies {
+    implementation 'org.springframework.ai:spring-ai-starter-model-google-genai'
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+请参阅 <a class="xref page" href="../../getting-started.html#dependency-management">Dependency Management</a> 部分，将 Spring AI BOM 添加到您的构建文件中。
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="sect2">
+<h3 id="_chat_properties"><a class="anchor" href="#_chat_properties">聊天属性</a></h3>
+<div class="admonitionblock note">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>启用和禁用聊天自动配置现在通过带有前缀 <code style="color: #d73a49;">spring.ai.model.chat</code> 的顶级属性进行配置。</p>
+</div>
+<div class="paragraph">
+<p>若要启用，请设置 spring.ai.model.chat=google-genai（默认已启用）</p>
+</div>
+<div class="paragraph">
+<p>若要禁用，请设置 spring.ai.model.chat=none（或任何不匹配 google-genai 的值）</p>
+</div>
+<div class="paragraph">
+<p>此更改是为了支持配置多个模型。</p>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="sect3">
+<h4 id="_connection_properties"><a class="anchor" href="#_connection_properties">连接属性</a></h4>
+<div class="paragraph">
+<p>前缀 <code>spring.ai.google.genai</code> 被用作属性前缀，让您能够连接到 Google GenAI。</p>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 33.3333%;"/>
+<col style="width: 55.5555%;"/>
+<col style="width: 11.1112%;"/>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Property</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.model.chat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">启用聊天模型客户端</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">google-genai</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.google.genai.api-key</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gemini Developer API 的 API 密钥。如果提供该密钥，客户端将使用 Gemini Developer API 而非 Vertex AI。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.google.genai.project-id</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Google Cloud Platform 项目 ID（Vertex AI 模式必需）</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.google.genai.location</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Google Cloud 区域（Vertex AI 模式必填）</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.google.genai.credentials-uri</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">指向 Google Cloud 凭据的 URI。如果提供，它将用于创建 <code style="color: #d14">GoogleCredentials</code> 实例进行身份验证。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_chat_model_properties"><a class="anchor" href="#_chat_model_properties">聊天模型属性</a></h4>
+<div class="paragraph">
+<p>前缀 <code>spring.ai.google.genai.chat</code> 是用于配置 Google GenAI Chat 对话模型实现的属性前缀。</p>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 33.3333%;"/>
+<col style="width: 55.5555%;"/>
+<col style="width: 11.1112%;"/>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Property</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.google.genai.chat.model</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">支持使用的 <a href="https://ai.google.dev/gemini-api/docs/models">Google GenAI Chat 模型</a>，包括 <code>gemini-2.5-flash</code>、<code>gemini-2.5-flash-lite</code>、<code>gemini-2.5-pro</code>、<code>gemini-3.1-pro-preview</code>、<code>gemini-3.1-flash-lite</code> 和 <code>gemini-3.5-flash</code>。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">gemini-2.5-flash</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.google.genai.chat.response-mime-type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">输出生成的候选文本的响应 MIME 类型。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>text/plain</code>：(默认) 文本输出或 <code>application/json</code>：JSON 响应。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.google.genai.chat.google-search-retrieval</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">使用 Google 搜索 Grounding 功能</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code> or <code>false</code>, default <code>false</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.google.genai.chat.include-server-side-tool-invocations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">当为 true 时，API 响应将在响应元数据中包含服务端工具调用和响应（例如 Google Search 调用），从而允许观察服务器的工具使用情况。仅支持 Gemini Developer API (MLDev)，不支持 Vertex AI。参见 <a href="#server-side-tool-invocations">Server-Side Tool Invocations</a>。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>false</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.google.genai.chat.temperature</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">控制输出的随机性。数值范围为 [0.0, 1.0]（包含边界）。数值越接近 1.0，生成的响应越多样化；而数值越接近 0.0，生成模型给出的响应通常越少令人意外。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.google.genai.chat.top-k</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">采样时考虑的最大 token 数量。生成过程结合了 Top-k 和核采样（nucleus sampling）。Top-k 采样考虑概率最高的前 TopK 个 token 集合。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.google.genai.chat.top-p</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">采样时考虑的 token 的最大累计概率。生成过程结合了 Top-k 和核采样（nucleus sampling）。核采样考虑概率总和至少达到 topP 的最小 token 集合。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.google.genai.chat.candidate-count</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">要返回的生成响应消息的数量。此值必须在 [1, 8] 之间（包含边界）。默认为 1。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.google.genai.chat.max-output-tokens</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">可生成的最大 token 数量。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.google.genai.chat.frequency-penalty</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">用于减少重复的频率惩罚。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.google.genai.chat.presence-penalty</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">减少重复出现的缺勤处罚。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.google.genai.chat.thinking-budget</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">思考过程的思考预算。参见 <a href="#thinking-config">思考配置</a>。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.google.genai.chat.thinking-level</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">模型应生成的思考标记（thinking tokens）的级别。有效值：<code>LOW</code>、<code>HIGH</code>、<code>THINKING_LEVEL_UNSPECIFIED</code>。参见 <a href="#thinking-config">思考配置</a>。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.google.genai.chat.include-thoughts</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">为函数调用启用思维签名（thought signatures）。对于 Gemini 3 Pro，这是<strong>必须</strong>的，以避免在工具调用循环中出现验证错误。请参阅<a href="#thought-signatures">思维签名</a>。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.google.genai.chat.tool-callbacks</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">用于与 ChatModel 注册的工具回调（Tool Callbacks）。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.google.genai.chat.safety-settings</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">用于控制安全过滤器的安全设置列表，定义参考自 <a href="https://ai.google.dev/gemini-api/docs/safety-settings">Google GenAI Safety Settings</a>。每个安全设置都可以包含方法、阈值和类别。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.google.genai.chat.cached-content-name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">此请求中要使用的缓存内容名称。当与 <code>use-cached-content=true</code> 一起设置时，将使用缓存内容作为上下文。参见 <a href="#cached-content">Cached Content</a>。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.google.genai.chat.use-cached-content</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">是否使用可用缓存内容。当为 true 且设置了 <code>cached-content-name</code> 时，系统将使用缓存内容。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.google.genai.chat.auto-cache-threshold</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">自动缓存超过此 token 阈值的提示词。当设置此项时，大于该值的提示词将自动缓存以供重复使用。设置为 null 可禁用自动缓存。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.google.genai.chat.auto-cache-ttl</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">自动缓存内容的生存时间（Duration），采用 ISO-8601 格式（例如，<code>PT1H</code> 表示 1 小时）。当启用自动缓存时使用。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PT1H</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.google.genai.chat.enable-cached-content</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">启用 <code>GoogleGenAiCachedContentService</code> 豆（bean）以管理缓存内容。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.google.genai.chat.service-tier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">请求使用的服务层级。有效值：<code>STANDARD</code>、<code>PRIORITY</code>、<code>FLEX</code>。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock tip">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-tip" title="提示"></i>
+</td>
+<td class="content">
+所有以 <code>spring.ai.google.genai.chat</code> 为前缀的属性都可以通过在 <code>Prompt</code> 调用中添加特定于请求的 <a href="#chat-options">运行时选项</a> 来在运行时覆盖。
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="chat-options"><a class="anchor" href="#chat-options"></a>运行时选项</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-google-genai/src/main/java/org/springframework/ai/google/genai/GoogleGenAiChatOptions.java">GoogleGenAiChatOptions.java</a> 提供了模型配置，例如 temperature、topK 等。</p>
+</div>
+<div class="paragraph">
+<p>在启动时，可以通过 <code>GoogleGenAiChatModel(client, options)</code> 构造函数或 <code>spring.ai.google.genai.chat.*</code> 属性来配置默认选项。</p>
+</div>
+<div class="paragraph">
+<p>在运行时，您可以通过在 <code>Prompt</code> 调用中添加新的、针对特定请求的选项来覆盖默认选项。
+例如，要为特定请求覆盖默认的 temperature：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatResponse response = chatModel.call(
+    new Prompt(
+        "Generate the names of 5 famous pirates.",
+        GoogleGenAiChatOptions.builder()
+            .temperature(0.4)
+        .build()
+    ));</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-tip" title="提示"></i>
+</td>
+<td class="content">
+除了模型特定的 <code>GoogleGenAiChatOptions</code>，您还可以使用通过 <a href="https://github.com/spring-projects/spring-ai/blob/main/spring-ai-model/src/main/java/org/springframework/ai/chat/prompt/ChatOptions.java">ChatOptions#builder()</a> 创建的可移植 <a href="https://github.com/spring-projects/spring-ai/blob/main/spring-ai-model/src/main/java/org/springframework/ai/chat/prompt/ChatOptions.java">ChatOptions</a> 实例。
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tool_calling"><a class="anchor" href="#_tool_calling">工具调用</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><code>GoogleGenAiChatModel</code> 不在内部执行工具调用。
+必须使用以下两种支持的方法之一在外部处理工具执行。</p>
+</div>
+<div class="sect2">
+<h3 id="_tool_calling_via_chatclient_recommended"><a class="anchor" href="#_tool_calling_via_chatclient_recommended"></a>通过 ChatClient 进行工具调用（推荐）</h3>
+<div class="paragraph">
+<p>推荐的方法是使用带有 <code>ToolCallingAdvisor</code> 的 <code>ChatClient</code>，它会自动注册并透明地管理同步和流式场景下的工具调用循环。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public class WeatherService {
+
+    @Tool(description = "Get the weather in location")
+    public String weatherByLocation(@ToolParam(description= "City or state name") String location) {
+        ...
+    }
+}
+
+String response = ChatClient.create(this.chatModel)
+        .prompt("What's the weather like in Boston?")
+        .tools(new WeatherService())
+        .call()
+        .content();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>您还可以注册一个 <code>ToolCallback</code> 类型的 bean 并直接传递：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Bean
+ToolCallback weatherFunction() {
+    return FunctionToolCallback.builder("weatherFunction", new MockWeatherService())
+        .description("Get the weather in location. Return temperature in 36°F or 36°C format.")
+        .inputType(Request.class)
+        .build();
+}
+
+String response = ChatClient.create(this.chatModel)
+        .prompt("What's the weather like in Boston?")
+        .tools(weatherFunction)
+        .call()
+        .content();</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_user_controlled_tool_execution"><a class="anchor" href="#_user_controlled_tool_execution">用户控制的工具执行</a></h3>
+<div class="paragraph">
+<p>当您需要直接访问 <code>ChatModel</code> API 并希望完全控制工具调用循环（tool-call loop）时，请使用此模式。
+直接调用 <code>ChatModel</code> 而不使用 <code>ToolCallingAdvisor</code>；自行检查工具调用，并使用 <code>ToolCallingManager</code> 来驱动循环。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ToolCallingManager toolCallingManager = ToolCallingManager.builder().build();
+
+GoogleGenAiChatOptions options = GoogleGenAiChatOptions.builder()
+        .toolCallbacks(ToolCallbacks.from(new WeatherService()))
+        .build();
+
+Prompt prompt = new Prompt("What's the weather like in Boston?", options);
+ChatResponse response = chatModel.call(prompt);
+
+while (response.hasToolCalls()) {
+    ToolExecutionResult toolExecutionResult = toolCallingManager.executeToolCalls(prompt, response);
+    prompt = new Prompt(toolExecutionResult.conversationHistory(), options);
+    response = chatModel.call(prompt);
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>在 <a class="xref page" href="../tools.html">Tools</a> 文档中查找更多内容。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="server-side-tool-invocations"><a class="anchor" href="#server-side-tool-invocations">服务端工具调用</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>当通过 <code>googleSearchRetrieval(true)</code> 启用 Google Search 或其他服务端工具时，模型会在服务器上执行这些工具。默认情况下，这些调用对客户端是不可见的——您只能看到最终的文本响应。设置 <code>includeServerSideToolInvocations(true)</code> 会使 API 在响应内容中包含服务器的工具调用和响应，让您可以观察到模型搜索了什么以及获得了哪些结果。</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>此功能仅支持 <strong>Gemini Developer API</strong>（MLDev / API 密钥身份验证）。它在 Vertex AI 上<strong>不被支持</strong>。</p>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="sect2">
+<h3 id="_configuration"><a class="anchor" href="#_configuration"></a>Configuration</h3>
+<div class="paragraph">
+<p>通过应用程序属性启用：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-application.properties hljs" data-lang="application.properties">spring.ai.google.genai.chat.google-search-retrieval=true
+spring.ai.google.genai.chat.include-server-side-tool-invocations=true</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>或者在运行时通过程序方式：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatResponse response = chatModel.call(
+    new Prompt(
+        "What are the latest developments in quantum computing?",
+        GoogleGenAiChatOptions.builder()
+            .model("gemini-2.0-flash")
+            .googleSearchRetrieval(true)
+            .includeServerSideToolInvocations(true)
+            .build()
+    ));</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_accessing_server_side_tool_invocation_metadata"><a class="anchor" href="#_accessing_server_side_tool_invocation_metadata">访问服务端工具调用元数据</a></h3>
+<div class="paragraph">
+<p>启用后，服务器端工具调用将可在响应消息元数据中的 <code>serverSideToolInvocations</code> 键下获取：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatResponse response = chatModel.call(prompt);
+
+Map&lt;String, Object&gt; metadata = response.getResult().getOutput().getMetadata();
+
+List&lt;Map&lt;String, Object&gt;&gt; invocations =
+    (List&lt;Map&lt;String, Object&gt;&gt;) metadata.get("serverSideToolInvocations");
+
+if (invocations != null) {
+    for (Map&lt;String, Object&gt; invocation : invocations) {
+        String type = (String) invocation.get("type");       // "toolCall" or "toolResponse"
+        String id = (String) invocation.get("id");            // Unique invocation ID
+        String toolType = (String) invocation.get("toolType"); // e.g., "GOOGLE_SEARCH_WEB"
+
+        if ("toolCall".equals(type)) {
+            Map&lt;String, Object&gt; args = (Map&lt;String, Object&gt;) invocation.get("args");
+            // Inspect what the model searched for
+        } else if ("toolResponse".equals(type)) {
+            Map&lt;String, Object&gt; responseData = (Map&lt;String, Object&gt;) invocation.get("response");
+            // Inspect what search results the model received
+        }
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>列表中的每个条目包含：</p>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 25%;"/>
+<col style="width: 75%;"/>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Field</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>type</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">要么是 <code>"toolCall"</code>（模型的调用请求），要么是 <code>"toolResponse"</code>（服务器的返回结果）</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>id</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">将 <code>toolCall</code> 与其对应的 <code>toolResponse</code> 关联的唯一标识符</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>toolType</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">服务端工具的类型（例如，<code style="color:red">GOOGLE_SEARCH_WEB</code>、<code style="color:red">GOOGLE_SEARCH_IMAGE</code>、<code style="color:red">URL_CONTEXT</code>、<code style="color:red">GOOGLE_MAPS</code>）</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>args</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(仅限工具调用) 传递给工具的参数</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>response</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(toolResponse only) 工具返回的结果</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_combined_with_function_calling"><a class="anchor" href="#_combined_with_function_calling">结合函数调用</a></h3>
+<div class="paragraph">
+<p>服务端工具调用与客户端函数调用协同工作。您可以在同一个请求中同时启用 Google Search（服务端）和自定义函数（客户端）：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatResponse response = chatModel.call(
+    new Prompt(
+        "What's the weather in San Francisco? Also search for the latest news about the city.",
+        GoogleGenAiChatOptions.builder()
+            .model("gemini-2.0-flash")
+            .googleSearchRetrieval(true)
+            .includeServerSideToolInvocations(true)
+            .toolCallbacks(List.of(
+                FunctionToolCallback.builder("get_current_weather", new WeatherService())
+                    .description("Get the current weather in a given location")
+                    .inputType(WeatherRequest.class)
+                    .build()))
+            .build()
+    ));
+
+// The response contains:
+// - Weather data from the client-side function call (executed locally)
+// - Google Search invocations visible in metadata (executed server-side)</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+服务端工具调用仅用于观测——客户端不会执行它们。为了避免干扰工具执行循环，它们在元数据中与客户端函数调用分开展示。
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="thinking-config"><a class="anchor" href="#thinking-config">思考配置</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Gemini 模型支持“思考”能力，允许模型在生成响应之前进行更深层次的推理。这通过 <code>ThinkingConfig</code> 进行控制，其中包含三个相关选项：<code>thinkingBudget</code>、<code>thinkingLevel</code> 和 <code>includeThoughts</code>。</p>
+</div>
+<div class="sect2">
+<h3 id="_thinking_level"><a class="anchor" href="#_thinking_level">思考层级</a></h3>
+<div class="paragraph">
+<p><code style="color: #d14">thinkingLevel</code> 选项控制模型生成的推理 token 的深度。此选项适用于支持思考功能的模型（例如 Gemini 3 Pro Preview）。</p>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 25%;"/>
+<col style="width: 75%;"/>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>THINKING_LEVEL_UNSPECIFIED</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">模型使用其默认行为。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>MINIMAL</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">适用于大多数查询的“不思考”设置。最小化延迟。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>LOW</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">低思考。极少的推理 Token。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>MEDIUM</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">大多数任务均采用平衡思维。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>HIGH</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">深度思考。用于需要深入分析和逐步推理的复杂问题。</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect3">
+<h4 id="_configuration_via_properties"><a class="anchor" href="#_configuration_via_properties">通过属性进行配置</a></h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-application.properties hljs" data-lang="application.properties">spring.ai.google.genai.chat.model=gemini-3.1-pro-preview
+spring.ai.google.genai.chat.thinking-level=HIGH</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_programmatic_configuration"><a class="anchor" href="#_programmatic_configuration">程序化配置</a></h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java"><span class="fold-block is-hidden-folded">import org.springframework.ai.google.genai.common.GoogleGenAiThinkingLevel;
+
+</span><span class="fold-block">ChatResponse response = chatModel.call(
+    new Prompt(
+        "Explain the theory of relativity in simple terms.",
+        GoogleGenAiChatOptions.builder()
+            .model("gemini-3.1-pro-preview")
+            .thinkingLevel(GoogleGenAiThinkingLevel.HIGH)
+            .build()
+    ));</span></code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_thinking_budget"><a class="anchor" href="#_thinking_budget">思考预算</a></h3>
+<div class="paragraph">
+<p><code>thinkingBudget</code> 选项为思考过程设置了 token 预算：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>正值</strong>：思考的最大 token 数量（例如，<code>8192</code>）</p>
+</li>
+<li>
+<p><strong>零 (<code>0</code>)</strong>：完全禁用思考</p>
+</li>
+<li>
+<p><strong>未设置</strong>：模型根据查询复杂度自动决定</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatResponse response = chatModel.call(
+    new Prompt(
+        "Solve this complex math problem step by step.",
+        GoogleGenAiChatOptions.builder()
+            .model("gemini-2.5-pro")
+            .thinkingBudget(8192)
+            .build()
+    ));</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_option_compatibility"><a class="anchor" href="#_option_compatibility">选项兼容性</a></h3>
+<div class="admonitionblock important">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><strong><code style="color: #e67e22;">thinkingLevel</code> 和 <code style="color: #e67e22;">thinkingBudget</code> 是互斥的。</strong> 您不能在同一个请求中使用两者——这样做会导致 API 错误。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>对于 <strong>Gemini 3.x</strong> 模型，请使用 <code>thinkingLevel</code>。Gemini 3 Pro 仅支持 <code>LOW</code> 和 <code>HIGH</code>；Gemini 3 Flash 模型支持所有级别（<code>MINIMAL</code>、<code>LOW</code>、<code>MEDIUM</code>、<code>HIGH</code>）。</p>
+</li>
+<li>
+<p>对于 <strong>Gemini 2.5</strong> 系列模型，请使用 <code>thinkingBudget</code>（Token 数量）。</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="paragraph">
+<p>您可以将 <code>includeThoughts</code> 与 <code>thinkingLevel</code> 或 <code>thinkingBudget</code> 其中之一结合使用（但不能同时使用两者）：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">// For Gemini 3.x (e.g. Pro): use thinkingLevel + includeThoughts
+ChatResponse response = chatModel.call(
+    new Prompt(
+        "Analyze this complex scenario.",
+        GoogleGenAiChatOptions.builder()
+            .model("gemini-3.1-pro-preview")
+            .thinkingLevel(GoogleGenAiThinkingLevel.HIGH)
+            .includeThoughts(true)
+            .build()
+    ));
+
+// For Gemini 2.5: use thinkingBudget + includeThoughts
+ChatResponse response = chatModel.call(
+    new Prompt(
+        "Analyze this complex scenario.",
+        GoogleGenAiChatOptions.builder()
+            .model("gemini-2.5-pro")
+            .thinkingBudget(8192)
+            .includeThoughts(true)
+            .build()
+    ));</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_model_support"><a class="anchor" href="#_model_support">模型支持</a></h3>
+<div class="paragraph">
+<p>思考配置选项是特定于模型的：</p>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 25%;"/>
+<col style="width: 25%;"/>
+<col style="width: 12.5%;"/>
+<col style="width: 12.5%;"/>
+<col style="width: 25%;"/>
+</colgroup>
+<thead><tr>
+<th class="tableblock halign-left valign-top">模型</th>
+<th class="tableblock halign-left valign-top">模型 ID</th>
+<th class="tableblock halign-left valign-top">thinkingLevel</th>
+<th class="tableblock halign-left valign-top">thinkingBudget</th>
+<th class="tableblock halign-left valign-top">备注</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gemini 3 Pro 预览版</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>gemini-3.1-pro-preview</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✅ Only <code>LOW</code> and <code>HIGH</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">⚠️ 仅向下兼容</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">使用 <code style="color: #e06c75;">thinkingLevel</code>。无法禁用思考功能。需要 <strong style="color: #d19a66;">global</strong> 端点。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gemini 3.5 Flash</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>gemini-3.5-flash</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✅ 所有级别</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">❌ 不支持</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">使用包含 <code style="color:red">MINIMAL</code> 和 <code style="color:red">MEDIUM</code> 在内的任何级别的 <code style="color:red">thinkingLevel</code>。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gemini 3.1 Flash-Lite</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>gemini-3.1-flash-lite</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✅ 所有级别</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">❌ 不支持</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">使用包含 <code style="color:red">MINIMAL</code> 和 <code style="color:red">MEDIUM</code> 在内的任何级别的 <code style="color:red">thinkingLevel</code>。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gemini 2.5 Pro</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>gemini-2.5-pro</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">❌ 不支持</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✅ Supported</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">使用 <code style="color: #e67e22;">thinkingBudget</code>。设置为 0 以禁用，-1 为动态。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gemini 2.5 Flash</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>gemini-2.5-flash</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">❌ 不支持</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✅ Supported</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">使用 <code style="color: #e67e22;">thinkingBudget</code>。设置为 0 以禁用，-1 为动态。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gemini 2.5 Flash-Lite</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>gemini-2.5-flash-lite</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">❌ 不支持</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✅ Supported</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">默认禁用思考。设置 <code>thinkingBudget</code> 以启用。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gemini 2.0 Flash</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>gemini-2.0-flash-001</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">❌ 不支持</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">❌ 不支持</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">暂无思考内容。</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock important">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>在不支持的模型（例如 Gemini 2.5 或更早版本）中使用 <code>thinkingLevel</code> 将导致 API 错误。</p>
+</li>
+<li>
+<p>在使用 Gemini 3 Pro 模型时，使用 <code>MINIMAL</code> 或 <code>MEDIUM</code> 将导致 <code>IllegalArgumentException</code>。</p>
+</li>
+<li>
+<p>Gemini 3 Pro Preview 仅可在<strong>global</strong>&gt;端点上使用。请设置 <code>spring.ai.google.genai.location=global</code> 或 <code>GOOGLE_CLOUD_LOCATION=global</code>。</p>
+</li>
+<li>
+<p>请查看 <a href="https://ai.google.dev/gemini-api/docs/thinking">Google GenAI Thinking 文档</a> 以获取最新的模型功能。</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="admonitionblock note">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+启用思考功能会增加 Token 使用量和 API 成本。请根据您查询内容的复杂度适度使用。
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="thought-signatures"><a class="anchor" href="#thought-signatures">思想签名</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Gemini 3 Pro 引入了 thought signatures（思维签名），它们是用于在函数调用过程中保留模型推理上下文的不透明字节数组。当启用 <code>includeThoughts</code> 时，模型将返回 thought signatures，这些签名必须在工具调用循环中的<strong>同一轮次</strong>内传回。</p>
+</div>
+<div class="sect2">
+<h3 id="_when_thought_signatures_matter"><a class="anchor" href="#_when_thought_signatures_matter">当思维特征变得重要时</a></h3>
+<div class="paragraph">
+<p><strong>重要提示</strong>：思维签名验证仅适用于<strong>当前轮次</strong>——具体而言，是在模型进行函数调用（包括并行和顺序调用）的工具调用循环期间。API<strong>不会</strong>验证对话历史中先前轮次的思维签名。</p>
+</div>
+<div class="paragraph">
+<p>根据 <a href="https://ai.google.dev/gemini-api/docs/thought-signatures">Google 的文档</a>：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>验证仅强制执行当前轮次内的函数调用。</p>
+</li>
+<li>
+<p>之前的轮次签名不需要保留</p>
+</li>
+<li>
+<p>当前轮次函数调用中缺失签名会导致 Gemini 3 Pro 出现 HTTP 400 错误</p>
+</li>
+<li>
+<p>对于并行函数调用，只有第一个 <code>functionCall</code> 部分包含签名。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>对于 Gemini 2.5 Pro 及更早的模型，thought signatures 是可选的，且 API 具有较高的容错性。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_configuration_2"><a class="anchor" href="#_configuration_2"></a>Configuration</h3>
+<div class="paragraph">
+<p>通过配置属性启用思维签名：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-application.properties hljs" data-lang="application.properties">spring.ai.google.genai.chat.model=gemini-3.1-pro-preview
+spring.ai.google.genai.chat.include-thoughts=true</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>或者在运行时通过程序方式：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatResponse response = chatModel.call(
+    new Prompt(
+        "Your question here",
+        GoogleGenAiChatOptions.builder()
+            .model("gemini-3.1-pro-preview")
+            .includeThoughts(true)
+            .toolCallbacks(callbacks)
+            .build()
+    ));</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_automatic_handling_via_chatclient_recommended"><a class="anchor" href="#_automatic_handling_via_chatclient_recommended">通过 ChatClient 自动处理（推荐）</a></h3>
+<div class="paragraph">
+<p>在使用 <code>ChatClient</code> 配合 <code>ToolCallingAdvisor</code>（推荐做法）时，Spring AI 会自动处理思考签名（thought signatures）：</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Extracts</strong> 从模型响应中提取思维签名</p>
+</li>
+<li>
+<p><strong>将它们</strong>附加到返回函数响应时的正确 <code class="functionCall">functionCall</code> 部分</p>
+</li>
+<li>
+<p><strong>正确传播</strong>它们在单轮内的函数调用（包括并行和顺序调用）中</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Bean
+ToolCallback weatherFunction() {
+    return FunctionToolCallback.builder("weatherFunction", new WeatherService())
+        .description("Get the weather in a location")
+        .inputType(WeatherRequest.class)
+        .build();
+}
+
+// Enable includeThoughts for Gemini 3 Pro with function calling
+String response = ChatClient.create(this.chatModel)
+        .prompt("What's the weather like in Boston?")
+        .options(GoogleGenAiChatOptions.builder()
+            .model("gemini-3.1-pro-preview")
+            .includeThoughts(true)
+            .build())
+        .tools(weatherFunction)
+        .call()
+        .content();</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_user_controlled_tool_execution_with_thought_signatures"><a class="anchor" href="#_user_controlled_tool_execution_with_thought_signatures"></a>带有思维签名的用户控制工具执行</h3>
+<div class="paragraph">
+<p>在使用手动工具执行循环时，您必须通过在对话历史中保留原始的 <code>AssistantMessage</code>（及其元数据）来保留思维签名。Spring AI 在转换消息时会自动将签名附加到正确的 <code>functionCall</code> 部分。</p>
+</div>
+<div class="paragraph">
+<p><strong>带有思维签名的手动工具执行要求：</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>从响应元数据中提取思维签名：</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">AssistantMessage assistantMessage = response.getResult().getOutput();
+Map&lt;String, Object&gt; metadata = assistantMessage.getMetadata();
+List&lt;byte[]&gt; thoughtSignatures = (List&lt;byte[]&gt;) metadata.get("thoughtSignatures");</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>在返回函数响应时，请在消息历史记录中包含原始的 <code>AssistantMessage</code> 及其完整的元数据。Spring AI 将自动将思考签名（thought signatures）附加到正确的 <code>functionCall</code> 部分。</p>
+</li>
+<li>
+<p>对于 Gemini 3 Pro，如果在当前轮次中未能保留思维签名（thought signatures），将导致 API 返回 HTTP 400 错误。</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock important">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+只有当前轮次的函数调用需要思维签名（thought signatures）。在开始新的对话轮次时（完成一轮函数调用后），您不需要保留上一轮的签名。
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="admonitionblock note">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+启用 <code>includeThoughts</code> 会增加 Token 的消耗，因为思考过程将被包含在响应中。这会影响 API 成本，但能提供更好的推理透明度。
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_multimodal"><a class="anchor" href="#_multimodal"></a>Multimodal</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>多模态是指模型同时理解和处理来自各种（输入）源的信息的能力，包括<code style="white-space:pre;">text</code>、<code style="white-space:pre;">pdf</code>、<code style="white-space:pre;">images</code>、<code style="white-space:pre;">audio</code>以及其他数据格式。</p>
+</div>
+<div class="sect2">
+<h3 id="_image_audio_video"><a class="anchor" href="#_image_audio_video"></a>Image, Audio, Video</h3>
+<div class="paragraph">
+<p>Google 的 Gemini AI 模型通过理解并整合文本、代码、音频、图像和视频来支持这一功能。
+欲了解更多详情，请参阅博客文章 <a href="https://blog.google/technology/ai/google-gemini-ai/#introducing-gemini">Introducing Gemini</a>。</p>
+</div>
+<div class="paragraph">
+<p>Spring AI 的 <code>Message</code> 接口通过引入 Media 类型来支持多模态 AI 模型。
+此类型包含消息中媒体附件的数据和信息，使用 Spring 的 <code>org.springframework.util.MimeType</code> 以及一个用于原始媒体数据的 <code>java.lang.Object</code>。</p>
+</div>
+<div class="paragraph">
+<p>以下是从 <a href="https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-google-genai/src/test/java/org/springframework/ai/google/genai/GoogleGenAiChatModelIT.java">GoogleGenAiChatModelIT.java</a> 中提取的一个简单代码示例，展示了用户文本与图像的结合。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">byte[] data = new ClassPathResource("/vertex-test.png").getContentAsByteArray();
+
+var userMessage = UserMessage.builder()
+			.text("Explain what do you see o this picture?")
+			.media(List.of(new Media(MimeTypeUtils.IMAGE_PNG, data)))
+			.build();
+
+ChatResponse response = chatModel.call(new Prompt(List.of(this.userMessage)));</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_pdf"><a class="anchor" href="#_pdf"></a>PDF</h3>
+<div class="paragraph">
+<p>Google GenAI 提供对 PDF 输入类型的支持。
+使用 <code class="language-html">application/pdf</code> 媒体类型将 PDF 文件附加到消息中：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">var pdfData = new ClassPathResource("/spring-ai-reference-overview.pdf");
+
+var userMessage = UserMessage.builder()
+			.text("You are a very professional document summarization specialist. Please summarize the given document.")
+			.media(List.of(new Media(new MimeType("application", "pdf"), pdfData)))
+			.build();
+
+var response = this.chatModel.call(new Prompt(List.of(userMessage)));</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="cached-content"><a class="anchor" href="#cached-content">缓存内容</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Google GenAI 的 <a href="https://ai.google.dev/gemini-api/docs/caching">Context Caching</a> 允许您缓存大量内容（如长文档、代码库或媒体文件），并在多次请求中重复使用。这显著降低了 API 成本，并缩短了针对相同内容的重复查询的响应延迟。</p>
+</div>
+<div class="sect2">
+<h3 id="_benefits"><a class="anchor" href="#_benefits"></a>Benefits</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>降低成本</strong>：缓存的 token 的计费标准远低于常规输入 token（通常便宜 75-90%）</p>
+</li>
+<li>
+<p><strong>性能提升</strong>：重用缓存内容可减少大型上下文的处理时间</p>
+</li>
+<li>
+<p><strong>一致性</strong>：相同的缓存上下文确保了多次请求中的响应保持一致</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_cache_requirements"><a class="anchor" href="#_cache_requirements">缓存要求</a></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>最小缓存大小：32,768 个 token（约 25,000 字）</p>
+</li>
+<li>
+<p>最大缓存时长：默认 1 小时（可通过 TTL 进行配置）</p>
+</li>
+<li>
+<p>缓存内容必须包含系统指令或对话历史</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_using_cached_content_service"><a class="anchor" href="#_using_cached_content_service">使用缓存内容服务</a></h3>
+<div class="paragraph">
+<p>Spring AI 提供 <code class="language-html">GoogleGenAiCachedContentService</code> 用于程序化的缓存管理。当使用 Spring Boot 自动配置时，该服务会自动配置。</p>
+</div>
+<div class="sect3">
+<h4 id="_creating_cached_content"><a class="anchor" href="#_creating_cached_content">创建缓存内容</a></h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Autowired
+private GoogleGenAiCachedContentService cachedContentService;
+
+// Create cached content with a large document
+String largeDocument = "... your large context here (&gt;32k tokens) ...";
+
+CachedContentRequest request = CachedContentRequest.builder()
+    .model("gemini-2.5-flash")
+    .contents(List.of(
+        Content.builder()
+            .role("user")
+            .parts(List.of(Part.fromText(largeDocument)))
+            .build()
+    ))
+    .displayName("My Large Document Cache")
+    .ttl(Duration.ofHours(1))
+    .build();
+
+GoogleGenAiCachedContent cachedContent = cachedContentService.create(request);
+String cacheName = cachedContent.getName(); // Save this for reuse</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_using_cached_content_in_chat_requests"><a class="anchor" href="#_using_cached_content_in_chat_requests"></a>在聊天请求中使用缓存内容</h4>
+<div class="paragraph">
+<p>一旦您创建了缓存内容，请在您的聊天请求中引用它：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatResponse response = chatModel.call(
+    new Prompt(
+        "Summarize the key points from the document",
+        GoogleGenAiChatOptions.builder()
+            .useCachedContent(true)
+            .cachedContentName(cacheName) // Use the cached content name
+            .build()
+    ));</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>或者通过配置属性：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-application.properties hljs" data-lang="application.properties">spring.ai.google.genai.chat.use-cached-content=true
+spring.ai.google.genai.chat.cached-content-name=cachedContent/your-cache-name</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_managing_cached_content"><a class="anchor" href="#_managing_cached_content">管理缓存内容</a></h4>
+<div class="paragraph">
+<p><code style="color: #d73a49;">GoogleGenAiCachedContentService</code> 提供全面的缓存管理：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">// Retrieve cached content
+GoogleGenAiCachedContent content = cachedContentService.get(cacheName);
+
+// Update cache TTL
+CachedContentUpdateRequest updateRequest = CachedContentUpdateRequest.builder()
+    .ttl(Duration.ofHours(2))
+    .build();
+GoogleGenAiCachedContent updated = cachedContentService.update(cacheName, updateRequest);
+
+// List all cached content
+List&lt;GoogleGenAiCachedContent&gt; allCaches = cachedContentService.listAll();
+
+// Delete cached content
+boolean deleted = cachedContentService.delete(cacheName);
+
+// Extend cache TTL
+GoogleGenAiCachedContent extended = cachedContentService.extendTtl(cacheName, Duration.ofMinutes(30));
+
+// Cleanup expired caches
+int removedCount = cachedContentService.cleanupExpired();</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_asynchronous_operations"><a class="anchor" href="#_asynchronous_operations">异步操作</a></h4>
+<div class="paragraph">
+<p>所有操作都有异步变体：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">CompletableFuture&lt;GoogleGenAiCachedContent&gt; futureCache =
+    cachedContentService.createAsync(request);
+
+CompletableFuture&lt;GoogleGenAiCachedContent&gt; futureGet =
+    cachedContentService.getAsync(cacheName);
+
+CompletableFuture&lt;Boolean&gt; futureDelete =
+    cachedContentService.deleteAsync(cacheName);</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_auto_caching"><a class="anchor" href="#_auto_caching"></a>Auto-Caching</h3>
+<div class="paragraph">
+<p>当大型提示词（prompts）超过指定的 token 阈值时，Spring AI 可以自动对其进行缓存：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-application.properties hljs" data-lang="application.properties"># Automatically cache prompts larger than 100,000 tokens
+spring.ai.google.genai.chat.auto-cache-threshold=100000
+# Set auto-cache TTL to 1 hour
+spring.ai.google.genai.chat.auto-cache-ttl=PT1H</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>或者通过程序方式：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatResponse response = chatModel.call(
+    new Prompt(
+        largePrompt,
+        GoogleGenAiChatOptions.builder()
+            .autoCacheThreshold(100000)
+            .autoCacheTtl(Duration.ofHours(1))
+            .build()
+    ));</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+自动缓存适用于一次性的长上下文。对于重复使用相同的上下文，手动创建并引用缓存内容效率更高。
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_monitoring_cache_usage"><a class="anchor" href="#_monitoring_cache_usage">监控缓存使用情况</a></h3>
+<div class="paragraph">
+<p>缓存内容包括可通过该服务访问的使用元数据：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">GoogleGenAiCachedContent content = cachedContentService.get(cacheName);
+
+// Check if cache is expired
+boolean expired = content.isExpired();
+
+// Get remaining TTL
+Duration remaining = content.getRemainingTtl();
+
+// Get usage metadata
+CachedContentUsageMetadata metadata = content.getUsageMetadata();
+if (metadata != null) {
+    System.out.println("Total tokens: " + metadata.totalTokenCount().orElse(0));
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_best_practices"><a class="anchor" href="#_best_practices">最佳实践</a></h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>缓存生命周期</strong>：根据您的使用场景设置合适的 TTL。对于频繁变化的内容，设置较短的 TTL；对于静态内容，设置较长的 TTL。</p>
+</li>
+<li>
+<p><strong>缓存命名</strong>：使用具有描述性的显示名称，以便轻松识别缓存内容。</p>
+</li>
+<li>
+<p><strong>清理</strong>：定期清理过期的缓存以保持整洁。</p>
+</li>
+<li>
+<p><strong>Token 阈值</strong>：仅缓存超过最低阈值（32,768 tokens）的内容。</p>
+</li>
+<li>
+<p><strong>成本优化</strong>：复用多个请求中的缓存内容，以最大限度地节省成本。</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_configuration_example"><a class="anchor" href="#_configuration_example">配置示例</a></h3>
+<div class="paragraph">
+<p>完整的配置示例：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-application.properties hljs" data-lang="application.properties"># Enable cached content service (enabled by default)
+spring.ai.google.genai.chat.enable-cached-content=true
+
+# Use a specific cached content
+spring.ai.google.genai.chat.use-cached-content=true
+spring.ai.google.genai.chat.cached-content-name=cachedContent/my-cache-123
+
+# Auto-caching configuration
+spring.ai.google.genai.chat.auto-cache-threshold=50000
+spring.ai.google.genai.chat.auto-cache-ttl=PT30M</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_sample_controller"><a class="anchor" href="#_sample_controller">示例控制器</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://start.spring.io/">创建一个</a>新的 Spring Boot 项目，并将 <code>spring-ai-starter-model-google-genai</code> 添加到您的 pom（或 gradle）依赖中。</p>
+</div>
+<div class="paragraph">
+<p>在 <code style="white-space:pre-wrap;">src/main/resources</code> 目录下添加一个 <code style="white-space:pre-wrap;">application.properties</code> 文件，以启用并配置 Google GenAI 对话模型：</p>
+</div>
+<div class="sect2">
+<h3 id="_using_gemini_developer_api_api_key"><a class="anchor" href="#_using_gemini_developer_api_api_key">使用 Gemini Developer API (API Key)</a></h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-application.properties hljs" data-lang="application.properties">spring.ai.google.genai.api-key=YOUR_API_KEY
+spring.ai.google.genai.chat.model=gemini-2.5-flash
+spring.ai.google.genai.chat.temperature=0.5</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_using_vertex_ai"><a class="anchor" href="#_using_vertex_ai">使用 Vertex AI</a></h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-application.properties hljs" data-lang="application.properties">spring.ai.google.genai.project-id=PROJECT_ID
+spring.ai.google.genai.location=LOCATION
+spring.ai.google.genai.chat.model=gemini-2.5-flash
+spring.ai.google.genai.chat.temperature=0.5</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-tip" title="提示"></i>
+</td>
+<td class="content">
+将 <code>project-id</code> 替换为您的 Google Cloud 项目 ID，<code>location</code> 为 Google Cloud 区域，例如 <code>us-central1</code>、<code>europe-west1</code> 等……​
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>每个模型都有其支持的区域列表，您可以在模型页面中找到支持区域的列表。</p>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="paragraph">
+<p>这将创建一个 <code>GoogleGenAiChatModel</code> 实现，您可以将其注入到您的类中。
+这是一个使用该聊天模型进行文本生成的简单 <code>@Controller</code> 类示例。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@RestController
+public class ChatController {
+
+    private final GoogleGenAiChatModel chatModel;
+
+    @Autowired
+    public ChatController(GoogleGenAiChatModel chatModel) {
+        this.chatModel = chatModel;
+    }
+
+    @GetMapping("/ai/generate")
+    public Map generate(@RequestParam(value = "message", defaultValue = "Tell me a joke") String message) {
+        return Map.of("generation", this.chatModel.call(message));
+    }
+
+    @GetMapping("/ai/generateStream")
+	public Flux&lt;ChatResponse&gt; generateStream(@RequestParam(value = "message", defaultValue = "Tell me a joke") String message) {
+        Prompt prompt = new Prompt(new UserMessage(message));
+        return this.chatModel.stream(prompt);
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_manual_configuration"><a class="anchor" href="#_manual_configuration">手动配置</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-google-genai/src/main/java/org/springframework/ai/google/genai/GoogleGenAiChatModel.java">GoogleGenAiChatModel</a> 实现了 <code class="language-java">ChatModel</code>，并使用 <code class="language-java">com.google.genai.Client</code> 连接到 Google GenAI 服务。</p>
+</div>
+<div class="paragraph">
+<p>将 <code>spring-ai-google-genai</code> 依赖添加到您项目的 Maven <code>pom.xml</code> 文件中：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-ai-google-genai&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>或者添加到您的 Gradle <code style="white-space:pre;">build.gradle</code> 构建文件中。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">dependencies {
+    implementation 'org.springframework.ai:spring-ai-google-genai'
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+请参阅 <a class="xref page" href="../../getting-started.html#dependency-management">Dependency Management</a> 部分，将 Spring AI BOM 添加到您的构建文件中。
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="paragraph">
+<p>接下来，创建一个 <code style="color: #d73a49;">GoogleGenAiChatModel</code> 并将其用于文本生成：</p>
+</div>
+<div class="sect2">
+<h3 id="_using_api_key"><a class="anchor" href="#_using_api_key">使用 API Key</a></h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">Client genAiClient = Client.builder()
+    .apiKey(System.getenv("GOOGLE_API_KEY"))
+    .build();
+
+var chatModel = new GoogleGenAiChatModel(genAiClient,
+    GoogleGenAiChatOptions.builder()
+        .model(ChatModel.GEMINI_2_0_FLASH)
+        .temperature(0.4)
+    .build());
+
+ChatResponse response = this.chatModel.call(
+    new Prompt("Generate the names of 5 famous pirates."));</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_using_vertex_ai_2"><a class="anchor" href="#_using_vertex_ai_2">使用 Vertex AI</a></h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">Client genAiClient = Client.builder()
+    .project(System.getenv("GOOGLE_CLOUD_PROJECT"))
+    .location(System.getenv("GOOGLE_CLOUD_LOCATION"))
+    .vertexAI(true)
+    .build();
+
+var chatModel = new GoogleGenAiChatModel(genAiClient,
+    GoogleGenAiChatOptions.builder()
+        .model(ChatModel.GEMINI_2_0_FLASH)
+        .temperature(0.4)
+    .build());
+
+ChatResponse response = this.chatModel.call(
+    new Prompt("Generate the names of 5 famous pirates."));</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code style="color: #d73a49;">GoogleGenAiChatOptions</code> 为聊天请求提供配置信息。
+<code style="color: #d73a49;">GoogleGenAiChatOptions.Builder</code> 是流式选项构建器。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_migration_from_vertex_ai_gemini"><a class="anchor" href="#_migration_from_vertex_ai_gemini">从 Vertex AI Gemini 迁移</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>如果您之前使用的是已被移除的 Vertex AI Gemini 实现（<code>spring-ai-vertex-ai-gemini</code>），请迁移到 Google GenAI：</p>
+</div>
+<div class="paragraph">
+<p>主要区别：</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>SDK</strong>：Google GenAI 使用新的 <code style="color: #d73a49;">com.google.genai.Client</code> 代替 <code style="color: #d73a49;">com.google.cloud.vertexai.VertexAI</code></p>
+</li>
+<li>
+<p><strong>身份验证</strong>：支持 API 密钥和 Google Cloud 凭据（Vertex AI 模式）</p>
+</li>
+<li>
+<p><strong>包名</strong>：类位于 <code>org.springframework.ai.google.genai</code> 而不是 <code>org.springframework.ai.vertexai.gemini</code></p>
+</li>
+<li>
+<p><strong>属性前缀</strong>：使用 <code>spring.ai.google.genai</code> 代替 <code>spring.ai.vertex.ai.gemini</code></p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Google GenAI 支持通过 API 密钥进行快速原型设计，也支持通过 Google Cloud 凭证使用 Vertex AI 进行生产部署。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="low-level-api"><a class="anchor" href="#low-level-api">低级 Java 客户端</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Google GenAI 的实现是基于全新的 Google GenAI Java SDK 构建的，该 SDK 为访问 Gemini 模型提供了一个现代且精简的 API。</p>
+</div>
+</div>
+</div>
+<nav class="pagination"><span class="prev"><a href="dmr-chat.html">Docker Model Runner</a></span>
+<span class="next"><a href="groq-chat.html">Groq</a></span></nav>
+</article>  </div>
+</main>
+<div aria-hidden="true" class="modal micromodal-slide" id="modal-versions">
+    <div class="modal__overlay" data-micromodal-close="" tabindex="-1">
+        <div aria-modal="true" class="modal__container" role="dialog">
+            <main class="modal__content" id="modal-versions-content">
+              <button class="modal-versions-close" data-micromodal-close="">
+                <svg height="28px" viewbox="0 0 32 32" width="28px" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1h{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title></title><g id="cross"><line class="cls-1h" x1="7" x2="25" y1="7" y2="25"></line><line class="cls-1h" x1="7" x2="25" y1="25" y2="7"></line></g></svg>
+              </button>
+              <div class="colset">
+                <div class="col-left">
+
+                  <ul class="nav-versions">
+                      <li class="component">
+                        <div><a class="title" href="../../index.html">Spring AI</a></div>                        <div class="version-item is-active">
+                          <div>
+                            <button class="version-toggle" type="button">
+                              <span></span>
+                              Stable
+                            </button>
+                          </div>
+                          <ul class="versions">
+  <li class="version">
+    <a href="../../index.html">
+      2.0.0
+    </a>
+  </li>
+</ul>                        </div>
+                        
+                      </li>
+                  </ul>
+                </div>
+                <div class="col-right"><ul class="projects">
+<li>
+    相关 Spring 文档
+    <ul class="projects-list">
+</ul>
+</li><a href="../../spring-projects.html">所有文档...</a>
+</ul></div>
+              </div>
+            </main>
+        </div>
+    </div>
+</div>
+
+</div>
+<footer class="footer flex">
+    <div id="spring-links flex">
+        <img alt="Spring" id="springlogo" src="../../_/img/spring-logo.svg"/>
+        <p class="smallest antialiased">Copyright © 2005 - <script>var d = new Date();
+        document.write(d.getFullYear());</script> Broadcom. 保留所有权利。术语“Broadcom”是指 Broadcom Inc. 和/或其子公司。<br/><a href="https://www.vmware.com/help/legal.html">使用条款</a> • <a href="https://www.vmware.com/help/privacy.html" rel="noopener noreferrer">隐私政策</a> • <a href="https://spring.io/trademarks">商标指南</a> <span id="thank-you-mobile">• <a href="https://spring.io/thank-you">致谢</a></span> • <a href="https://www.vmware.com/help/privacy/california-privacy-rights.html">您的加州隐私权</a> • <a class="ot-sdk-show-settings">Cookie 设置</a> <span id="teconsent"></span></p>
+        <p class="smallest antialiased has-gray-text">Apache®、Apache Tomcat®、Apache Kafka®、Apache Cassandra™ 和 Apache Geode™ 是 Apache Software Foundation 在美国和/或其他国家的商标或注册商标。Java™、Java™ SE、Java™ EE 和 OpenJDK™ 是 Oracle 和/或其关联公司的商标。Kubernetes® 是 Linux Foundation 在美国和其他国家的注册商标。Linux® 是 Linus Torvalds 在美国和其他国家的注册商标。Windows® 和 Microsoft® Azure 是 Microsoft Corporation 的注册商标。“AWS”和“Amazon Web Services”是 Amazon.com Inc. 或其关联公司的商标或注册商标。所有其他商标和版权均为其各自所有者的财产，仅用于提供信息。其他名称可能是其各自所有者的商标。</p>
+    </div>
+    <div class="flex jc-between" id="social-icons">
+        <a href="https://www.youtube.com/user/SpringSourceDev" title="Youtube"><svg id="youtube-icon" viewbox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><circle class="cls-1" cx="20" cy="20" r="20"></circle><path class="cls-2" d="M30.91,14.53a2.89,2.89,0,0,0-2-2C27.12,12,20,12,20,12s-7.12,0-8.9.47a2.9,2.9,0,0,0-2,2A30.56,30.56,0,0,0,8.63,20a30.44,30.44,0,0,0,.46,5.47,2.89,2.89,0,0,0,2,2C12.9,28,20,28,20,28s7.12,0,8.9-.47a2.87,2.87,0,0,0,2-2A30.56,30.56,0,0,0,31.37,20,28.88,28.88,0,0,0,30.91,14.53ZM17.73,23.41V16.59L23.65,20Z"></path></svg></a>
+        <a href="https://github.com/spring-projects" title="GitHub"><svg id="github-icon" viewbox="0 0 75.93 75.93" xmlns="http://www.w3.org/2000/svg"><path class="cls-1" d="M38,0a38,38,0,1,0,38,38A38,38,0,0,0,38,0Z"></path><path class="cls-2" d="M38,15.59A22.95,22.95,0,0,0,30.71,60.3c1.15.21,1.57-.5,1.57-1.11s0-2,0-3.9c-6.38,1.39-7.73-3.07-7.73-3.07A6.09,6.09,0,0,0,22,48.86c-2.09-1.42.15-1.39.15-1.39a4.81,4.81,0,0,1,3.52,2.36c2,3.5,5.37,2.49,6.67,1.91a4.87,4.87,0,0,1,1.46-3.07c-5.09-.58-10.45-2.55-10.45-11.34a8.84,8.84,0,0,1,2.36-6.15,8.29,8.29,0,0,1,.23-6.07s1.92-.62,6.3,2.35a21.82,21.82,0,0,1,11.49,0c4.38-3,6.3-2.35,6.3-2.35a8.29,8.29,0,0,1,.23,6.07,8.84,8.84,0,0,1,2.36,6.15c0,8.81-5.37,10.75-10.48,11.32a5.46,5.46,0,0,1,1.56,4.25c0,3.07,0,5.54,0,6.29s.42,1.33,1.58,1.1A22.94,22.94,0,0,0,38,15.59Z"></path></svg></a>
+        <a href="https://twitter.com/springcentral" title="Twitter"><svg id="twitter-icon" viewbox="0 0 75.93 75.93" xmlns="http://www.w3.org/2000/svg"><circle class="cls-1" cx="37.97" cy="37.97" r="37.97"></circle><path class="cls-2" d="M55.2,22.73a15.43,15.43,0,0,1-4.88,1.91,7.56,7.56,0,0,0-5.61-2.49A7.78,7.78,0,0,0,37,30a7.56,7.56,0,0,0,.2,1.79,21.63,21.63,0,0,1-15.84-8.23,8,8,0,0,0,2.37,10.52,7.66,7.66,0,0,1-3.48-1v.09A7.84,7.84,0,0,0,26.45,41a7.54,7.54,0,0,1-2,.28A7.64,7.64,0,0,1,23,41.09a7.71,7.71,0,0,0,7.18,5.47,15.21,15.21,0,0,1-9.55,3.37,15.78,15.78,0,0,1-1.83-.11,21.41,21.41,0,0,0,11.78,3.54c14.13,0,21.86-12,21.86-22.42,0-.34,0-.68,0-1a15.67,15.67,0,0,0,3.83-4.08,14.9,14.9,0,0,1-4.41,1.24A7.8,7.8,0,0,0,55.2,22.73Z" data-name="Twitter" id="Twitter-2"></path></svg></a>
+    </div>
+</footer>
+<script src="../../_/js/vendor/import.js"></script>
+<script src="../../_/js/site.js"></script>
+<script async="" src="../../_/js/vendor/highlight.js"></script>
+<script async="" data-sync-storage-key="docs:preferred-tab" src="../../_/js/vendor/asciidoctor-tabs.js"></script>
+
+<div aria-hidden="true" class="modal micromodal-slide" id="modal-1">
+    <div class="modal__overlay" data-micromodal-close="" tabindex="-1">
+        <div aria-labelledby="modal-1-title" aria-modal="true" class="modal__container" role="dialog">
+            <main class="modal__content" id="modal-1-content">
+                <div id="searchbox"></div>
+                <div id="counter"></div>
+                <div class="search-link-box"><a class="search-link" href="../../search.html">在所有 Spring 文档中搜索</a></div>
+                <div class="search-by">
+                    <a aria-label="Search by Algolia" href="https://www.algolia.com/" rel="noopener noreferrer" target="_blank">
+                        <img class="light" src="../../_/img/algolia-light.svg" width="140"/>
+                        <img class="dark" src="../../_/img/algolia-dark.svg" width="140"/>
+                    </a>
+                </div>
+                <div id="hits"></div>
+            </main>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
+<script crossorigin="anonymous" integrity="sha256-Lf9DrpGmcRip6OQzbcL6lnvNmoZNSKpyQX5pMlwatWE=" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.17.0/dist/algoliasearch-lite.umd.js"></script>
+<script crossorigin="anonymous" integrity="sha256-xYsZPDeNjYNTBWLvqD2Lxe98hOxcDgOHyMPfz4tVAbk=" src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.54.1/dist/instantsearch.production.min.js"></script>
+<script async="" data-api-key="c2e84f15fa630d534f1c62b1c413bb77" data-app-id="WB1FQYI187" data-index-name="springdocs" data-page-component="ai" data-page-version="2.0.0" data-stylesheet="../../_/css/vendor/search.css" id="search-script" src="../../_/js/vendor/search.js"></script>
+  
+
+</body></html>
