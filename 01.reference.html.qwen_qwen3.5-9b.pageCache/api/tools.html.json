@@ -1,0 +1,1966 @@
+{
+  "created_at": "2026-06-13 14:27:01",
+  "updated_at": "2026-06-13 14:27:01",
+  "stats": {
+    "total_entries": 390,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 422,
+    "entries_with_hits": 390,
+    "entries_without_hits": 0,
+    "hit_rate": 1.082051282051282,
+    "usage_percentage": 0.039
+  },
+  "items": [
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nCalling <code>ChatModel</code> directly sends the tool definitions to the AI model, but tool calls in the response are <strong>not</strong> executed automatically. Use <code>ChatClient</code> (which auto-registers <code>ToolCallingAdvisor</code>) for automatic execution, or implement <a href=\"#_user_controlled_tool_execution\">user-controlled tool execution</a> to drive the loop yourself.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n直接调用 <code>ChatModel</code> 会将工具定义发送给 AI 模型，但响应中的工具调用<strong>不会</strong>自动执行。请使用 <code>ChatClient</code>（它会自动注册 <code>ToolCallingAdvisor</code>）以实现自动执行，或者实现<a href=\"#_user_controlled_tool_execution\">用户控制的工具执行</a>来自行驱动循环。\n</td>\n</tr>\n</tbody>",
+      "count": 4
+    },
+    {
+      "source": "<code>returnDirect</code>: Whether the tool result should be returned directly to the client or passed back to the model. See <a href=\"#_return_direct\">Return Direct</a> for more details.",
+      "translation": "`returnDirect`：工具结果是直接返回给客户端还是回传给模型。有关更多详细信息，请参阅<a href=\"#_return_direct\">直接返回</a>。",
+      "count": 3
+    },
+    {
+      "source": "<code>description</code>: The description for the tool, which can be used by the model to understand when and how to call the tool. If not provided, the method name will be used as the tool description. However, it’s strongly recommended to provide a detailed description because that’s paramount for the model to understand the tool’s purpose and how to use it. Failing in providing a good description can lead to the model not using the tool when it should or using it incorrectly.",
+      "translation": "<code>description</code>：工具的描述，模型可据此理解何时以及如何调用该工具。若未提供，则使用方法名作为工具描述。但强烈建议提供详细描述，因为这对于模型理解工具的目的及使用方法至关重要。若未能提供良好的描述，可能导致模型在应当使用时未使用该工具，或错误地使用它。",
+      "count": 3
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-warning\" title=\"Warning\"></i>\n</td>\n<td class=\"content\">\nDefault tools are shared across all the chat requests performed by all the <code>ChatClient</code> instances built from the same <code>ChatClient.Builder</code>. They are useful for tools that are commonly used across different chat requests, but they can also be dangerous if not used carefully, risking to make them available when they shouldn’t.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-warning\" title=\"Warning\"></i>\n</td>\n<td class=\"content\">\n默认工具由所有通过同一个 <code>ChatClient.Builder</code> 构建的 <code>ChatClient</code> 实例共享。这些工具适用于在不同聊天请求中广泛使用的场景，但若使用不当则可能带来风险，导致在不该提供时提供了它们。\n</td>\n</tr>\n</tbody>",
+      "count": 3
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-warning\" title=\"Warning\"></i>\n</td>\n<td class=\"content\">\nDefault tools are shared across all the chat requests performed by that <code>ChatModel</code> instance. They are useful for tools that are commonly used across different chat requests, but they can also be dangerous if not used carefully, risking to make them available when they shouldn’t.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-warning\" title=\"Warning\"></i>\n</td>\n<td class=\"content\">\n默认工具会被该 <code>ChatModel</code> 实例执行的所有聊天请求共享。这些工具对于在不同聊天请求中常用的功能非常有用，但如果使用不当也可能带来危险，可能导致在不应该提供时提供了这些工具。\n</td>\n</tr>\n</tbody>",
+      "count": 3
+    },
+    {
+      "source": "Besides the <code>@ToolParam</code> annotation, you can also use the <code>@Schema</code> annotation from Swagger or <code>@JsonProperty</code> from Jackson. See <a href=\"#_json_schema\">JSON Schema</a> for more details.",
+      "translation": "除了使用 `<code>@ToolParam</code>` 注解外，您还可以使用来自 Swagger 的 `<code>@Schema</code>` 注解或来自 Jackson 的 `<code>@JsonProperty</code>` 注解。有关更多详细信息，请参阅 <a href=\"#_json_schema\">JSON Schema</a>。",
+      "count": 2
+    },
+    {
+      "source": "<code>toolCallResultConverter</code>: The <code>ToolCallResultConverter</code> instance to use for converting the result of a tool call to a <code>String</code> object to send back to the AI model. If not provided, the default converter will be used (<code>DefaultToolCallResultConverter</code>).",
+      "translation": "<code>toolCallResultConverter</code>：用于将工具调用的结果转换为要发送回 AI 模型的 <code>String</code> 对象的 <code>ToolCallResultConverter</code> 实例。如果未提供，则使用默认转换器（<code>DefaultToolCallResultConverter</code>）。",
+      "count": 2
+    },
+    {
+      "source": "<code>toolMetadata</code>: The <code>ToolMetadata</code> instance that defines additional settings such as whether the result should be returned directly to the client, and the result converter to use. You can build it using the <code>ToolMetadata.Builder</code> class.",
+      "translation": "<code>toolMetadata</code>：定义额外设置的 <code>ToolMetadata</code> 实例，例如是否直接将结果返回给客户端以及要使用的结果转换器。您可以使用 <code>ToolMetadata.Builder</code> 类来构建它。",
+      "count": 2
+    },
+    {
+      "source": "If a parameter is annotated as <code>@Nullable</code>, it will be considered optional unless explicitly marked as required using the <code>@ToolParam</code> annotation.",
+      "translation": "如果参数被注解为<code>@Nullable</code>，除非使用<code>@ToolParam</code>注解明确标记为必需，否则该参数将被视为可选。",
+      "count": 2
+    },
+    {
+      "source": "The <code>ToolMetadata.Builder</code> allows you to build a <code>ToolMetadata</code> instance and define additional settings for the tool:",
+      "translation": "<code>ToolMetadata.Builder</code> 允许您构建一个 <code>ToolMetadata</code> 实例，并为工具定义额外的设置：",
+      "count": 2
+    },
+    {
+      "source": "Asynchronous types (e.g. <code>CompletableFuture</code>, <code>Future</code>)",
+      "translation": "异步类型（例如 <code>CompletableFuture</code>、<code>Future</code>）",
+      "count": 2
+    },
+    {
+      "source": "<code>name</code>: The name of the tool. If not provided, the method name will be used. AI models use this name to identify the tool when calling it. Therefore, it’s not allowed to have two tools with the same name in the same class. The name must be unique across all the tools available to the model for a specific chat request.",
+      "translation": "<code>name</code>：工具的名称。如果未提供，则使用方法名称。AI 模型在调用工具时使用此名称来识别该工具。因此，同一类中不允许存在两个名称相同的工具。该名称必须在模型针对特定聊天请求可用的所有工具中具有唯一性。",
+      "count": 2
+    },
+    {
+      "source": "You can define any number of arguments for the method (including no argument) with most types (primitives, POJOs, enums, lists, arrays, maps, and so on). Similarly, the method can return most types, including <code>void</code>. If the method returns a value, the return type must be a serializable type, as the result will be serialized and sent back to the model.",
+      "translation": "您可以为方法定义任意数量的参数（包括无参数），适用于大多数类型（基本类型、POJO、枚举、列表、数组、映射等）。同样，方法的返回值也可以是大多数类型，包括 <code>void</code>。如果方法返回一个值，其返回类型必须是可序列化的类型，因为结果将被序列化并发送回模型。",
+      "count": 2
+    },
+    {
+      "source": "The <code>@ToolParam</code> annotation allows you to provide key information about a tool parameter:",
+      "translation": "<code>@ToolParam</code> 注解允许您提供有关工具参数的关键信息：",
+      "count": 2
+    },
+    {
+      "source": "<code>description</code>: The description for the parameter, which can be used by the model to understand better how to use it. For example, what format the parameter should be in, what values are allowed, and so on.",
+      "translation": "<code>description</code>：参数的描述，模型可借此更好地理解如何使用该参数。例如，参数应采用的格式、允许的值等。",
+      "count": 2
+    },
+    {
+      "source": "<code>required</code>: Whether the parameter is required or optional. By default, all parameters are considered required.",
+      "translation": "<code>required</code>：参数是否为必需或可选。默认情况下，所有参数均被视为必需。",
+      "count": 2
+    },
+    {
+      "source": "See <a href=\"#_methods_as_tools\">Methods as Tools</a> for more details.",
+      "translation": "有关更多详细信息，请参阅<a href=\"#_methods_as_tools\">方法作为工具</a>。",
+      "count": 2
+    },
+    {
+      "source": "See <a href=\"#_functions_as_tools\">Functions as Tools</a> for more details.",
+      "translation": "有关更多详细信息，请参阅<a href=\"#_functions_as_tools\">作为工具的函数</a>。",
+      "count": 2
+    },
+    {
+      "source": "When the model decides to call a tool, it sends a response with the tool name and the input parameters modeled after the defined schema.",
+      "translation": "当模型决定调用工具时，它会发送一个响应，其中包含工具名称和按照定义的模式构建的输入参数。",
+      "count": 2
+    },
+    {
+      "source": "The application is responsible for using the tool name to identify and execute the tool with the provided input parameters.",
+      "translation": "该应用程序负责使用工具名称来识别并执行带有所提供输入参数的工具。",
+      "count": 2
+    },
+    {
+      "source": "The result of the tool call is processed by the application.",
+      "translation": "应用程序处理工具调用的结果。",
+      "count": 2
+    },
+    {
+      "source": "The method can be either static or instance, and it can have any visibility (public, protected, package-private, or private). The class that contains the method can be either a top-level class or a nested class, and it can also have any visibility (as long as it’s accessible where you’re planning to instantiate it).",
+      "translation": "该方法可以是静态方法或实例方法，其可见性可以是任意级别（public、protected、包私有或 private）。包含该方法类可以是顶层类或嵌套类，且该类也可以具有任意可见性（只要在其计划进行实例化的位置可访问即可）。",
+      "count": 2
+    },
+    {
+      "source": "The interface provides the following methods:",
+      "translation": "该接口提供以下方法：",
+      "count": 2
+    },
+    {
+      "source": "This approach works for both methods and functions, and you can use it recursively for nested types.",
+      "translation": "此方法适用于方法和函数，并且您可以递归地使用它来处理嵌套类型。",
+      "count": 2
+    },
+    {
+      "source": "Position of this advisor in the advisor chain.",
+      "translation": "该顾问在顾问链中的位置。",
+      "count": 2
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nSome types are not supported. See <a href=\"#_method_tool_limitations\">Method Tool Limitations</a> for more details.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n部分类型不受支持。有关详细信息，请参阅<a href=\"#_method_tool_limitations\">方法工具限制</a>。\n</td>\n</tr>\n</tbody>",
+      "count": 2
+    },
+    {
+      "source": "If you’re using any of the Spring AI Spring Boot Starters, <code>DefaultToolExecutionExceptionProcessor</code> is the autoconfigured implementation of the <code>ToolExecutionExceptionProcessor</code> interface. By default, the error message of <code>RuntimeException</code> is sent back to the model, while checked exceptions and Errors (e.g., <code>IOException</code>, <code>OutOfMemoryError</code>) are always thrown. The <code>DefaultToolExecutionExceptionProcessor</code> constructor lets you set the <code>alwaysThrow</code> attribute to <code>true</code> or <code>false</code>. If <code>true</code>, an exception will be thrown instead of sending an error message back to the model.",
+      "translation": "如果您正在使用任何 Spring AI Spring Boot Starter，<code>DefaultToolExecutionExceptionProcessor</code> 是 <code>ToolExecutionExceptionProcessor</code> 接口的自动配置实现。默认情况下，<code>RuntimeException</code> 的错误消息会被发送回模型，而受检异常和 Error（例如 <code>IOException</code>、<code>OutOfMemoryError</code>）则始终被抛出。<code>DefaultToolExecutionExceptionProcessor</code> 的构造函数允许您将 <code>alwaysThrow</code> 属性设置为 <code>true</code> 或 <code>false</code>。如果设置为 <code>true</code>，将抛出异常而不是将错误消息发送回模型。",
+      "count": 1
+    },
+    {
+      "source": "Copyright © 2005 - <script>var d = new Date();\n        document.write(d.getFullYear());</script> Broadcom. All Rights Reserved. The term \"Broadcom\" refers to Broadcom Inc. and/or its subsidiaries.<br/><a href=\"https://www.vmware.com/help/legal.html\">Terms of Use</a> • <a href=\"https://www.vmware.com/help/privacy.html\" rel=\"noopener noreferrer\">Privacy</a> • <a href=\"https://spring.io/trademarks\">Trademark Guidelines</a> <span id=\"thank-you-mobile\">• <a href=\"https://spring.io/thank-you\">Thank you</a></span> • <a href=\"https://www.vmware.com/help/privacy/california-privacy-rights.html\">Your California Privacy Rights</a> • <a class=\"ot-sdk-show-settings\">Cookie Settings</a> <span id=\"teconsent\"></span>",
+      "translation": "版权所有 © 2005 - <script>var d = new Date(); document.write(d.getFullYear());</script> Broadcom。保留所有权利。“Broadcom”指 Broadcom Inc. 及其/或其子公司。<br/><a href=\"https://www.vmware.com/help/legal.html\">使用条款</a> • <a href=\"https://www.vmware.com/help/privacy.html\" rel=\"noopener noreferrer\">隐私政策</a> • <a href=\"https://spring.io/trademarks\">商标指南</a> <span id=\"thank-you-mobile\">• <a href=\"https://spring.io/thank-you\">致谢</a></span> • <a href=\"https://www.vmware.com/help/privacy/california-privacy-rights.html\">您的加州隐私权利</a> • <a class=\"ot-sdk-show-settings\">Cookie 设置</a> <span id=\"teconsent\"></span>",
+      "count": 1
+    },
+    {
+      "source": "The <code>ToolIndex</code> interface and its companion types (<code>ToolSearchRequest</code>, <code>ToolSearchResponse</code>, <code>ToolReference</code>) live in the <code>spring-ai-tool-search-tool</code> module under the package <code>org.springframework.ai.tool.toolsearch</code>.\nThe built-in index implementations (<code>LuceneToolIndex</code>, <code>VectorToolIndex</code>, <code>RegexToolIndex</code>) are also provided in this module.",
+      "translation": "`ToolIndex` 接口及其配套类型（`ToolSearchRequest`、`ToolSearchResponse`、`ToolReference`）位于 `spring-ai-tool-search-tool` 模块的 `org.springframework.ai.tool.toolsearch` 包中。该模块还提供了内置的索引实现（`LuceneToolIndex`、`VectorToolIndex`、`RegexToolIndex`）。",
+      "count": 1
+    },
+    {
+      "source": "Under the hood, the <code>ChatClient</code> will generate a <code>ToolCallback</code> from each <code>@Tool</code>-annotated method in the tool class instance and pass them to the model. In case you prefer to generate the <code>ToolCallback</code>(s) yourself, you can use the <code>ToolCallbacks</code> utility class and pass them directly to <code>tools()</code>.",
+      "translation": "在底层，<code>ChatClient</code> 会从工具类实例中的每个带有 <code>@Tool</code> 注解的方法生成一个 <code>ToolCallback</code>，并将其传递给模型。如果您更倾向于自行生成 <code>ToolCallback</code>(s)，可以使用 <code>ToolCallbacks</code> 工具类，并将它们直接传递给 <code>tools()</code>。",
+      "count": 1
+    },
+    {
+      "source": "The default ordering keeps memory advisors <em>outside</em> the tool-call loop: <code>DEFAULT_CHAT_MEMORY_PRECEDENCE_ORDER</code> is <code>HIGHEST_PRECEDENCE + 200</code>, which is lower than <code>ToolCallingAdvisor.DEFAULT_ORDER</code> (<code>HIGHEST_PRECEDENCE + 300</code>). The memory advisor loads history once before the loop and persists only the final user/assistant exchange afterward. This works with all <code>ChatMemoryRepository</code> implementations because tool-call messages are never written to the repository.",
+      "translation": "默认排序将内存顾问置于工具调用循环之外：<code>DEFAULT_CHAT_MEMORY_PRECEDENCE_ORDER</code> 为 <code>HIGHEST_PRECEDENCE + 200</code>，低于 <code>ToolCallingAdvisor.DEFAULT_ORDER</code>（<code>HIGHEST_PRECEDENCE + 300</code>）。内存顾问在循环开始前一次性加载历史记录，并在之后仅持久化最终的用户/助手交互。由于工具调用消息从未写入存储库，此方案可与所有 <code>ChatMemoryRepository</code> 实现兼容。",
+      "count": 1
+    },
+    {
+      "source": "When using the programmatic specification approach, you can add default tools to a <code>ChatModel</code> at construction time by passing the <code>MethodToolCallback</code> instance to the <code>toolCallbacks()</code> method of the <code>ToolCallingChatOptions</code> instance used to create the <code>ChatModel</code>.\nIf both default and runtime tools are provided, the runtime tools will completely override the default tools.",
+      "translation": "在使用程序化规范方法时，您可以在构建 `ChatModel` 时通过向用于创建该 `ChatModel` 的 `ToolCallingChatOptions` 实例的 `toolCallbacks()` 方法传递 `MethodToolCallback` 实例来添加默认工具。  \n如果同时提供了默认工具和运行时工具，则运行时工具将完全覆盖默认工具。",
+      "count": 1
+    },
+    {
+      "source": "You can turn a functional type (<code>Function</code>, <code>Supplier</code>, <code>Consumer</code>, or <code>BiFunction</code>) into a tool by building a <code>FunctionToolCallback</code> programmatically.",
+      "translation": "您可以通过程序化构建一个<code>FunctionToolCallback</code>，将功能类型（如<code>Function</code>、<code>Supplier</code>、<code>Consumer</code>或<code>BiFunction</code>）转换为工具。",
+      "count": 1
+    },
+    {
+      "source": "<code>toolFunction</code>: The functional object that represents the tool method (<code>Function</code>, <code>Supplier</code>, <code>Consumer</code>, or <code>BiFunction</code>). Required.",
+      "translation": "<code>toolFunction</code>：表示工具方法的函数对象（<code>Function</code>、<code>Supplier</code>、<code>Consumer</code> 或 <code>BiFunction</code>）。必需。",
+      "count": 1
+    },
+    {
+      "source": "When using the programmatic specification approach, you can add default tools to a <code>ChatModel</code> at construction time by passing the <code>FunctionToolCallback</code> instance to the <code>toolCallbacks()</code> method of the <code>ToolCallingChatOptions</code> instance used to create the <code>ChatModel</code>.\nIf both default and runtime tools are provided, the runtime tools will completely override the default tools.",
+      "translation": "在使用程序化规范方法时，您可以在构建 `ChatModel` 时通过向用于创建该 `ChatModel` 的 `ToolCallingChatOptions` 实例的 `toolCallbacks()` 方法传递 `FunctionToolCallback` 实例来添加默认工具。  \n如果同时提供了默认工具和运行时工具，则运行时工具将完全覆盖默认工具。",
+      "count": 1
+    },
+    {
+      "source": "When building tools from a function, the <code>ToolDefinition</code> is automatically generated for you. When you use the <code>FunctionToolCallback.Builder</code> to build a <code>FunctionToolCallback</code> instance, you can provide the tool name, description, and input schema that will be used to generate the <code>ToolDefinition</code>. See <a href=\"#_functions_as_tools\">Functions as Tools</a> for more details.",
+      "translation": "从函数构建工具时，<code>ToolDefinition</code> 会自动为您生成。当您使用 <code>FunctionToolCallback.Builder</code> 构建 <code>FunctionToolCallback</code> 实例时，可以提供用于生成 <code>ToolDefinition</code> 的工具名称、描述和输入模式。有关更多详细信息，请参阅<a href=\"#_functions_as_tools\">将函数作为工具</a>。",
+      "count": 1
+    },
+    {
+      "source": "Use <code>.disableInternalConversationHistory()</code> only when placing the memory advisor <em>inside</em> the loop (order above <code>ToolCallingAdvisor.DEFAULT_ORDER</code>). The memory advisor then handles history on every iteration. This requires a <code>ChatMemoryRepository</code> that supports tool-call messages (such as <code>InMemoryChatMemoryRepository</code>).",
+      "translation": "仅在将记忆顾问置于循环内部（即位于<code>ToolCallingAdvisor.DEFAULT_ORDER</code>之前）时使用<code>.disableInternalConversationHistory()</code>。随后，记忆顾问将在每次迭代中处理历史记录。这需要一个支持工具调用消息的<code>ChatMemoryRepository</code>（例如<code>InMemoryChatMemoryRepository</code>）。",
+      "count": 1
+    },
+    {
+      "source": "The main approach for passing tools to a model is by providing the <code>ToolCallback</code>(s) when invoking the <code>ChatClient</code> or the <code>ChatModel</code>,\nusing one of the strategies described in <a href=\"#_methods_as_tools\">Methods as Tools</a> and <a href=\"#_functions_as_tools\">Functions as Tools</a>.",
+      "translation": "向模型传递工具的主要方法是在调用<code>ChatClient</code>或<code>ChatModel</code>时提供<code>ToolCallback</code>(s)，并采用<a href=\"#_methods_as_tools\">方法作为工具</a>和<a href=\"#_functions_as_tools\">函数作为工具</a>中描述的任一策略。",
+      "count": 1
+    },
+    {
+      "source": "Next, let’s make the tool available to the model. In this example, we’ll use the <code>ChatClient</code> to interact with the model. We’ll provide the tool to the model by passing an instance of <code>DateTimeTools</code> via the <code>tools()</code> method. When the model needs to know the current date and time, it will request the tool to be called. Internally, the <code>ChatClient</code> will call the tool and return the result to the model, which will then use the tool call result to generate the final response to the original question.",
+      "translation": "接下来，让我们将该工具提供给模型。在本示例中，我们将使用<code>ChatClient</code>与模型进行交互。通过<code>tools()</code>方法传递一个<code>DateTimeTools</code>实例来向模型提供该工具。当模型需要知道当前日期和时间时，它将请求调用该工具。内部地，<code>ChatClient</code>将调用该工具并将结果返回给模型，然后模型将使用该工具调用的结果生成对原始问题的最终响应。",
+      "count": 1
+    },
+    {
+      "source": "Next, let’s make both tools available to the model. We’ll use the <code>ChatClient</code> to interact with the model. We’ll provide the tools to the model by passing an instance of <code>DateTimeTools</code> via the <code>tools()</code> method. When we ask to set up an alarm 10 minutes from now, the model will first need to know the current date and time. Then, it will use the current date and time to calculate the alarm time. Finally, it will use the alarm tool to set up the alarm. Internally, the <code>ChatClient</code> will handle any tool call request from the model and send back to it any tool call execution result, so that the model can generate the final response.",
+      "translation": "接下来，让我们使这两个工具对模型可用。我们将使用<code>ChatClient</code>与模型进行交互。通过<code>tools()</code>方法传递一个<code>DateTimeTools</code>实例来向模型提供这些工具。当我们要求设置一个10分钟后的闹钟时，模型首先需要知道当前的日期和时间。然后，它将利用当前日期和时间来计算闹钟时间。最后，它将使用闹钟工具来设置闹钟。内部地，<code>ChatClient</code>将处理来自模型的任何工具调用请求，并将工具调用的执行结果返回给模型，以便模型生成最终响应。",
+      "count": 1
+    },
+    {
+      "source": "Both <code>ChatClient</code> and <code>ChatModel</code> accept a list of <code>ToolCallback</code> objects to make the tools available to the model and the <code>ToolCallingManager</code> that will eventually execute them.",
+      "translation": "`ChatClient` 和 `ChatModel` 均接受一个 `ToolCallback` 对象列表，以便将工具提供给模型以及最终执行这些工具的 `ToolCallingManager`。",
+      "count": 1
+    },
+    {
+      "source": "<code>resultConverter</code>: The <code>ToolCallResultConverter</code> implementation to use for converting the result of a tool call to a <code>String object</code> to send back to the AI model. See <a href=\"#_result_conversion\">Result Conversion</a> for more details.",
+      "translation": "<code>resultConverter</code>：用于将工具调用的结果转换为要发送回 AI 模型的<code>String object</code>的<code>ToolCallResultConverter</code>实现。有关更多详细信息，请参阅<a href=\"#_result_conversion\">结果转换</a>。",
+      "count": 1
+    },
+    {
+      "source": "<code>tools()</code> also accepts <code>ToolCallback</code> and <code>ToolCallbackProvider</code> instances directly, alongside <code>@Tool</code>-annotated POJO instances and collections of any of these types.",
+      "translation": "`tools()` 也直接接受 `ToolCallback` 和 `ToolCallbackProvider` 实例，以及带有 `@Tool` 注解的 POJO 实例和这些类型的集合。",
+      "count": 1
+    },
+    {
+      "source": "When using the declarative specification approach, you can add default tools to <code>ChatModel</code> at construction time by passing the tool class instance to the <code>toolCallbacks()</code> method of the <code>ToolCallingChatOptions</code> instance used to create the <code>ChatModel</code>.\nIf both default and runtime tools are provided, the runtime tools will completely override the default tools.",
+      "translation": "在使用声明式规范方法时，您可以在构建 `ChatModel` 时通过向用于创建 `ChatModel` 的 `ToolCallingChatOptions` 实例的 `toolCallbacks()` 方法传递工具类实例来添加默认工具。  \n如果同时提供了默认工具和运行时工具，则运行时工具将完全覆盖默认工具。",
+      "count": 1
+    },
+    {
+      "source": "When using the programmatic specification approach, you can pass the <code>MethodToolCallback</code> instance to the <code>toolCallbacks()</code> method of the <code>ToolCallingChatOptions</code> you use to call a <code>ChatModel</code>. The tool will only be available for the specific chat request it’s added to.",
+      "translation": "在使用程序化规范方法时，您可以将 `<code>MethodToolCallback</code>` 实例传递给用于调用 `<code>ChatModel` 的 `<code>ToolCallingChatOptions</code>` 的 `<code>toolCallbacks()</code>` 方法。该工具仅对添加它的特定聊天请求可用。",
+      "count": 1
+    },
+    {
+      "source": "<code>inputSchema</code>: The JSON schema for the input parameters of the tool. If not provided, the schema will be generated automatically based on the <code>inputType</code>. You can use the <code>@ToolParam</code> annotation to provide additional information about the input parameters, such as a description or whether the parameter is required or optional. By default, all input parameters are considered required. See <a href=\"#_json_schema\">JSON Schema</a> for more details.",
+      "translation": "<code>inputSchema</code>：工具输入参数的 JSON 模式。如果未提供，将根据 <code>inputType</code> 自动生成该模式。您可以使用 <code>@ToolParam</code> 注解为输入参数提供额外信息，例如描述或参数是否为必需/可选。默认情况下，所有输入参数均被视为必需。有关更多详细信息，请参阅<a href=\"#_json_schema\">JSON Schema</a>。",
+      "count": 1
+    },
+    {
+      "source": "Collection types (e.g. <code>List</code>, <code>Map</code>, <code>Array</code>, <code>Set</code>)",
+      "translation": "集合类型（例如 <code>List</code>、<code>Map</code>、<code>Array</code>、<code>Set</code>）",
+      "count": 1
+    },
+    {
+      "source": "Spring AI supports three approaches to tool execution lifecycle management. The recommended approach is <a href=\"#_framework_controlled_tool_execution\">Framework-Controlled Tool Execution</a> via <code>ChatClient</code>, which handles the tool calling loop automatically. For cases that require customizing the tool calling loop, <a href=\"#_advisor_controlled_tool_execution_with_toolcallingadvisor\">Advisor-Controlled Tool Execution</a> is available. When you need full manual control, a <a href=\"#_user_controlled_tool_execution\">User-Controlled Tool Execution</a> mode is also available.",
+      "translation": "Spring AI 支持三种工具执行生命周期管理方法。推荐的方法是通过 `<code>ChatClient`》实现<a href=\"#_framework_controlled_tool_execution\">框架控制的工具执行</a>，该方法可自动处理工具调用循环。对于需要自定义工具调用循环的情况，可使用<a href=\"#_advisor_controlled_tool_execution_with_toolcallingadvisor\">顾问控制的工具执行</a>。当您需要完全手动控制时，也可采用<a href=\"#_user_controlled_tool_execution\">用户控制的工具执行</a>模式。",
+      "count": 1
+    },
+    {
+      "source": "Both <code>ChatClient</code> and <code>ChatModel</code> support user-controlled tool execution.\nIn either case you are responsible for detecting tool calls in the <code>ChatResponse</code> and executing them with the <code>ToolCallingManager</code>.",
+      "translation": "`ChatClient` 和 `ChatModel` 均支持用户控制的工具执行。\n在这两种情况下，您都负责在 `ChatResponse` 中检测工具调用，并使用 `ToolCallingManager` 执行它们。",
+      "count": 1
+    },
+    {
+      "source": "The <code>ToolExecutionExceptionProcessor</code> is used internally by the default <code>ToolCallingManager</code> (<code>DefaultToolCallingManager</code>) to handle exceptions during tool execution. See <a href=\"#_tool_execution\">Tool Execution</a> for more details about the tool execution lifecycle.",
+      "translation": "<code>ToolExecutionExceptionProcessor</code> 由默认的 <code>ToolCallingManager</code>（即 <code>DefaultToolCallingManager</code>）内部使用，用于处理工具执行期间的异常。有关工具执行生命周期的更多详细信息，请参阅<a href=\"#_tool_execution\">工具执行</a>。",
+      "count": 1
+    },
+    {
+      "source": "The <code>ToolCallbackResolver</code> is used internally by the <code>ToolCallingManager</code> to resolve tools dynamically at runtime, supporting both <a href=\"#_advisor_controlled_tool_execution_with_toolcallingadvisor\">Advisor-Controlled Tool Execution with ToolCallingAdvisor</a> and <a href=\"#_user_controlled_tool_execution\">User-Controlled Tool Execution</a>.",
+      "translation": "<code>ToolCallbackResolver</code> 由 <code>ToolCallingManager</code> 在内部使用，用于在运行时动态解析工具，同时支持<a href=\"#_advisor_controlled_tool_execution_with_toolcallingadvisor\">借助 ToolCallingAdvisor 实现的顾问控制工具执行</a>和<a href=\"#_user_controlled_tool_execution\">用户控制工具执行</a>。",
+      "count": 1
+    },
+    {
+      "source": "<code>AugmentedArgumentEvent&lt;T&gt;</code> - Contains <code>toolDefinition()</code>, <code>rawInput()</code>, and <code>arguments()</code> for consumers",
+      "translation": "<code>AugmentedArgumentEvent&lt;T&gt;</code> - 包含供消费者使用的 <code>toolDefinition()</code>、<code>rawInput()</code> 和 <code>arguments()</code>",
+      "count": 1
+    },
+    {
+      "source": "Uses regex pattern matching. Useful when tool names follow a known naming convention (e.g., <code>get_*</code> or <code><strong><em>database</em></strong></code>).",
+      "translation": "使用正则表达式模式匹配。当工具名称遵循已知的命名约定（例如 `<code>get_*</code>` 或 `<code><strong><em>database</em></strong></code>`）时非常有用。",
+      "count": 1
+    },
+    {
+      "source": "<code>ToolIndex</code> implementation to use: <code>regex</code>, <code>lucene</code>, or <code>vector</code>.",
+      "translation": "要使用的 ToolIndex 实现：<code>regex</code>、<code>lucene</code> 或 <code>vector</code>。",
+      "count": 1
+    },
+    {
+      "source": "<em>Tool calling</em> (also known as <em>function calling</em>) is a common pattern in AI applications allowing a model to interact with a set of APIs, or <em>tools</em>, augmenting its capabilities.",
+      "translation": "<em>工具调用</em>（也称为<em>函数调用</em>）是人工智能应用中的一种常见模式，它允许模型与一组 API 或<em>工具</em>进行交互，从而增强其能力。",
+      "count": 1
+    },
+    {
+      "source": "Let’s implement a tool to get the current date and time in the user’s time zone in a <code>DateTimeTools</code> class. The tool will take no argument. The <code>LocaleContextHolder</code> from Spring Framework can provide the user’s time zone. The tool will be defined as a method annotated with <code>@Tool</code>. To help the model understand if and when to call this tool, we’ll provide a detailed description of what the tools does.",
+      "translation": "让我们实现一个工具，在 `<code>DateTimeTools</code>` 类中获取用户时区的当前日期和时间。该工具不接受任何参数。Spring Framework 中的 `<code>LocaleContextHolder` 可以提供用户的时区信息。我们将将该工具定义为一个带有 `<code>@Tool</code>` 注解的方法。为了帮助模型理解何时以及是否调用此工具，我们将提供关于该工具功能的详细描述。",
+      "count": 1
+    },
+    {
+      "source": "Tools are the building blocks of tool calling and they are modeled by the <code>ToolCallback</code> interface. Spring AI provides built-in support for specifying <code>ToolCallback</code>(s) from methods and functions, but you can always define your own <code>ToolCallback</code> implementations to support more use cases.",
+      "translation": "工具是工具调用的基本构建块，并通过<code>ToolCallback</code>接口进行建模。Spring AI 提供了对从方法和函数中指定<code>ToolCallback</code>(s)的原生支持，但您始终可以定义自己的<code>ToolCallback</code>实现以支持更多用例。",
+      "count": 1
+    },
+    {
+      "source": "When using <code>ChatClient</code>, tool call requests are handled automatically by the <code>ToolCallingAdvisor</code>, which is registered in the advisor chain and manages the full tool execution lifecycle using the <code>ToolCallingManager</code> interface.",
+      "translation": "在使用<code>ChatClient</code>时，工具调用请求由<code>ToolCallingAdvisor</code>自动处理。该 Advisor 已注册到顾问链中，并通过<code>ToolCallingManager</code>接口管理完整的工具执行生命周期。",
+      "count": 1
+    },
+    {
+      "source": "When using the declarative specification approach, you can pass the tool class instance to the <code>toolCallbacks()</code> method of the <code>ToolCallingChatOptions</code> you use to call a <code>ChatModel</code>. Such tools will only be available for the specific chat request they are added to.",
+      "translation": "在使用声明式规范方法时，您可以将工具类实例传递给用于调用<code>ChatModel</code>的<code>ToolCallingChatOptions</code>的<code>toolCallbacks()</code>方法。这些工具仅对它们被添加到的特定聊天请求可用。",
+      "count": 1
+    },
+    {
+      "source": "<code>toolDefinition</code>: The <code>ToolDefinition</code> instance that defines the tool name, description, and input schema. You can build it using the <code>ToolDefinition.Builder</code> class. Required.",
+      "translation": "<code>toolDefinition</code>：定义工具名称、描述和输入模式的 <code>ToolDefinition</code> 实例。您可以使用 <code>ToolDefinition.Builder</code> 类构建它。必需。",
+      "count": 1
+    },
+    {
+      "source": "<code>inputSchema</code>: The JSON schema for the input parameters of the tool. If not provided, the schema will be generated automatically based on the method parameters. You can use the <code>@ToolParam</code> annotation to provide additional information about the input parameters, such as a description or whether the parameter is required or optional. By default, all input parameters are considered required. See <a href=\"#_json_schema\">JSON Schema</a> for more details.",
+      "translation": "<code>inputSchema</code>：工具输入参数的 JSON 模式。如果未提供，将根据方法参数自动生成该模式。您可以使用 <code>@ToolParam</code> 注解为输入参数提供额外信息，例如描述或参数是否为必需/可选。默认情况下，所有输入参数均被视为必需。有关更多详细信息，请参阅<a href=\"#_json_schema\">JSON Schema</a>。",
+      "count": 1
+    },
+    {
+      "source": "When using the programmatic specification approach, you can pass the <code>MethodToolCallback</code> instance directly to the <code>tools()</code> method on <code>ChatClient</code>.\nThe tool will only be available for the specific chat request it’s added to.",
+      "translation": "在使用程序化规范方法时，您可以直接将 `<code>MethodToolCallback</code>` 实例传递给 `<code>ChatClient</code>` 上的 `<code>tools()</code>` 方法。\n该工具仅对其添加到的特定聊天请求可用。",
+      "count": 1
+    },
+    {
+      "source": "When using the programmatic specification approach, you can add default tools to a <code>ChatClient.Builder</code> by passing the <code>MethodToolCallback</code> instance directly to <code>defaultTools()</code>.\nIf both default and runtime tools are provided, the runtime tools will completely override the default tools.",
+      "translation": "在使用程序化规范方法时，您可以将<code>MethodToolCallback</code>实例直接传递给<code>defaultTools()</code>，以向<code>ChatClient.Builder</code>添加默认工具。  \n如果同时提供了默认工具和运行时工具，则运行时工具将完全覆盖默认工具。",
+      "count": 1
+    },
+    {
+      "source": "Reactive types (e.g. <code>Flow</code>, <code>Mono</code>, <code>Flux</code>)",
+      "translation": "响应式类型（例如 <code>Flow</code>、<code>Mono</code>、<code>Flux</code>）",
+      "count": 1
+    },
+    {
+      "source": "Functional types (e.g. <code>Function</code>, <code>Supplier</code>, <code>Consumer</code>).",
+      "translation": "函数类型（例如<code>Function</code>、<code>Supplier</code>、<code>Consumer</code>）。",
+      "count": 1
+    },
+    {
+      "source": "When using the programmatic specification approach, you can pass the <code>FunctionToolCallback</code> instance directly to the <code>tools()</code> method on <code>ChatClient</code>. The tool will only be available for the specific chat request it’s added to.",
+      "translation": "在使用程序化规范方法时，您可以直接将 `<code>FunctionToolCallback</code>` 实例传递给 `<code>ChatClient</code>` 上的 `<code>tools()</code>` 方法。该工具仅对添加它的特定聊天请求可用。",
+      "count": 1
+    },
+    {
+      "source": "When using the programmatic specification approach, you can add default tools to a <code>ChatClient.Builder</code> by passing the <code>FunctionToolCallback</code> instance directly to <code>defaultTools()</code>.\nIf both default and runtime tools are provided, the runtime tools will completely override the default tools.",
+      "translation": "在使用程序化规范方法时，您可以将<code>FunctionToolCallback</code>实例直接传递给<code>defaultTools()</code>，以向<code>ChatClient.Builder</code>添加默认工具。如果同时提供了默认工具和运行时工具，则运行时工具将完全覆盖默认工具。",
+      "count": 1
+    },
+    {
+      "source": "When using the programmatic specification approach, you can pass the <code>FunctionToolCallback</code> instance to the <code>toolCallbacks()</code> method of <code>ToolCallingChatOptions</code>. The tool will only be available for the specific chat request it’s added to.",
+      "translation": "在使用程序化规范方法时，您可以将 `<code>FunctionToolCallback`</code> 实例传递给 `<code>ToolCallingChatOptions</code>` 的 `<code>toolCallbacks()</code>` 方法。该工具仅对其添加到的特定聊天请求可用。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI can automatically discover <code>ToolCallback</code> beans defined in the application context and make them available for resolution by name. This allows you to define tools as Spring beans using <code>FunctionToolCallback.builder()</code> or <code>MethodToolCallback.builder()</code>, and inject them into chat requests explicitly.",
+      "translation": "Spring AI 可以自动发现应用程序上下文中定义的 `<code>ToolCallback` Bean，并使其可通过名称进行解析。这允许您使用 `<code>FunctionToolCallback.builder()</code>` 或 `<code>MethodToolCallback.builder()</code>` 将工具定义为 Spring Bean，并在聊天请求中显式注入它们。",
+      "count": 1
+    },
+    {
+      "source": "Reactive types (e.g. <code>Flow</code>, <code>Mono</code>, <code>Flux</code>).",
+      "translation": "响应式类型（例如 <code>Flow</code>、<code>Mono</code>、<code>Flux</code>）。",
+      "count": 1
+    },
+    {
+      "source": "In Spring AI, tools are modeled via the <code>ToolCallback</code> interface. In the previous sections, we’ve seen how to define tools from methods and functions using the built-in support provided by Spring AI (see <a href=\"#_methods_as_tools\">Methods as Tools</a> and <a href=\"#_functions_as_tools\">Functions as Tools</a>). This section will dive deeper into the tool specification and how to customize and extend it to support more use cases.",
+      "translation": "在 Spring AI 中，工具通过 `<code>ToolCallback` 接口进行建模。在前面的章节中，我们已经了解了如何使用 Spring AI 提供的内置支持，从方法和函数定义工具（参见<a href=\"#_methods_as_tools\">方法作为工具</a>和<a href=\"#_functions_as_tools\">函数作为工具</a>）。本节将深入探讨工具规范，并介绍如何对其进行定制和扩展以支持更多用例。",
+      "count": 1
+    },
+    {
+      "source": "The <code>ToolCallback</code> interface provides a way to define a tool that can be called by the AI model, including both definition and execution logic. It’s the main interface to implement when you want to define a tool from scratch. For example, you can define a <code>ToolCallback</code> from an MCP Client (using the Model Context Protocol) or a <code>ChatClient</code> (to build a modular agentic application).",
+      "translation": "`ToolCallback` 接口提供了一种定义可由 AI 模型调用的工具的方法，包括其定义和执行逻辑。当您希望从头开始定义一个工具时，这是需要实现的主要接口。例如，您可以从 MCP 客户端（使用模型上下文协议）或 `ChatClient`（用于构建模块化代理应用程序）中定义一个 `ToolCallback`。",
+      "count": 1
+    },
+    {
+      "source": "The <code>ToolDefinition</code> interface provides the required information for the AI model to know about the availability of the tool, including the tool name, description, and input schema. Each <code>ToolCallback</code> implementation must provide a <code>ToolDefinition</code> instance to define the tool.",
+      "translation": "`ToolDefinition` 接口提供了 AI 模型了解工具可用性的必要信息，包括工具名称、描述和输入模式。每个 `ToolCallback` 实现都必须提供一个 `ToolDefinition` 实例来定义该工具。",
+      "count": 1
+    },
+    {
+      "source": "The <code>ToolDefinition.Builder</code> lets you build a <code>ToolDefinition</code> instance using the default implementation (<code>DefaultToolDefinition</code>).",
+      "translation": "<code>ToolDefinition.Builder</code> 允许您使用默认实现（<code>DefaultToolDefinition</code>）构建一个 <code>ToolDefinition</code> 实例。",
+      "count": 1
+    },
+    {
+      "source": "The <code>JsonSchemaGenerator</code> class is used under the hood to generate the JSON schema for the input parameters of a method or a function, using any of the strategies described in <a href=\"#_methods_as_tools\">Methods as Tools</a> and <a href=\"#_functions_as_tools\">Functions as Tools</a>. The JSON schema generation logic supports a series of annotations that you can use on the input parameters for methods and functions to customize the resulting schema.",
+      "translation": "`JsonSchemaGenerator` 类在底层用于生成方法或函数输入参数的 JSON Schema，支持<a href=\"#_methods_as_tools\">方法作为工具</a>和<a href=\"#_functions_as_tools\">函数作为工具</a>中描述的任意策略。JSON Schema 生成逻辑支持一系列注解，您可以将这些注解应用于方法和函数的输入参数，以定制生成的 Schema。",
+      "count": 1
+    },
+    {
+      "source": "The result of a tool call is serialized using a <code>ToolCallResultConverter</code> and then sent back to the AI model. The <code>ToolCallResultConverter</code> interface provides a way to convert the result of a tool call to a <code>String</code> object.",
+      "translation": "工具调用的结果通过 `<code>ToolCallResultConverter</code>` 进行序列化，随后发送回 AI 模型。<code>ToolCallResultConverter</code> 接口提供了一种将工具调用结果转换为 `<code>String</code>` 对象的方法。",
+      "count": 1
+    },
+    {
+      "source": "When building tools from a method with the declarative approach, you can provide a custom <code>ToolCallResultConverter</code> to use for the tool by setting the <code>resultConverter()</code> attribute of the <code>@Tool</code> annotation.",
+      "translation": "在使用声明式方法构建工具时，您可以通过设置 `@Tool` 注解的 `resultConverter()` 属性来提供自定义的 `<code>ToolCallResultConverter</code>` 供该工具使用。",
+      "count": 1
+    },
+    {
+      "source": "If using the programmatic approach, you can provide a custom <code>ToolCallResultConverter</code> to use for the tool by setting the <code>resultConverter()</code> attribute of the <code>MethodToolCallback.Builder</code>.",
+      "translation": "如果使用编程方式，可以通过设置<code>MethodToolCallback.Builder</code>的<code>resultConverter()</code>属性来提供自定义的<code>ToolCallResultConverter</code>供工具使用。",
+      "count": 1
+    },
+    {
+      "source": "When building tools from a function using the programmatic approach, you can provide a custom <code>ToolCallResultConverter</code> to use for the tool by setting the <code>resultConverter()</code> attribute of the <code>FunctionToolCallback.Builder</code>.",
+      "translation": "使用编程方式从函数构建工具时，您可以通过设置<code>FunctionToolCallback.Builder</code>的<code>resultConverter()</code>属性来提供自定义的<code>ToolCallResultConverter</code>供该工具使用。",
+      "count": 1
+    },
+    {
+      "source": "The <code>ToolCallingManager</code>, responsible for managing the tool execution lifecycle, is in charge of handling the <code>returnDirect</code> attribute associated with the tool. If the attribute is set to <code>true</code>, the result of the tool call is returned directly to the caller. Otherwise, the result is sent back to the model.",
+      "translation": "<code>ToolCallingManager</code> 负责管理工具执行的生命周期，并处理与工具关联的 <code>returnDirect</code> 属性。如果该属性设置为 <code>true</code>，则工具调用的结果将直接返回给调用者；否则，结果将被发送回模型。",
+      "count": 1
+    },
+    {
+      "source": "When building tools from a method with the declarative approach, you can mark a tool to return the result directly to the caller by setting the <code>returnDirect</code> attribute of the <code>@Tool</code> annotation to <code>true</code>.",
+      "translation": "在使用声明式方法构建工具时，可以通过将 `@Tool` 注解的 `returnDirect` 属性设置为 `true`，来标记该工具直接将结果返回给调用者。",
+      "count": 1
+    },
+    {
+      "source": "If using the programmatic approach, you can set the <code>returnDirect</code> attribute via the <code>ToolMetadata</code> interface and pass it to the <code>MethodToolCallback.Builder</code>.",
+      "translation": "如果使用编程方式，您可以通过 `ToolMetadata` 接口设置 `<code>returnDirect</code>` 属性，并将其传递给 `<code>MethodToolCallback.Builder</code>`。",
+      "count": 1
+    },
+    {
+      "source": "When building tools from a function with the programmatic approach, you can set the <code>returnDirect</code> attribute via the <code>ToolMetadata</code> interface and pass it to the <code>FunctionToolCallback.Builder</code>.",
+      "translation": "在使用编程方式从函数构建工具时，您可以通过 `ToolMetadata` 接口设置 `<code>returnDirect</code>` 属性，并将其传递给 `<code>FunctionToolCallback.Builder</code>`。",
+      "count": 1
+    },
+    {
+      "source": "If you’re using any of the Spring AI Spring Boot Starters, <code>DefaultToolCallingManager</code> is the autoconfigured implementation of the <code>ToolCallingManager</code> interface. You can customize the tool execution behavior by providing your own <code>ToolCallingManager</code> bean.",
+      "translation": "如果您正在使用任何 Spring AI Spring Boot Starter，<code>DefaultToolCallingManager</code> 是 <code>ToolCallingManager</code> 接口的自动配置实现。您可以通过提供自己的 <code>ToolCallingManager</code> Bean 来自定义工具执行行为。",
+      "count": 1
+    },
+    {
+      "source": "For cases that require customizing the tool calling loop, you can configure <code>ToolCallingAdvisor</code> explicitly. <code>ToolCallingAdvisor</code> implements the tool calling loop as part of the <a class=\"xref page\" href=\"chatclient.html#_advisors\">advisor chain</a> and exposes several extension points:",
+      "translation": "对于需要自定义工具调用循环的情况，您可以显式配置<code>ToolCallingAdvisor</code>。<code>ToolCallingAdvisor</code>作为<a class=\"xref page\" href=\"chatclient.html#_advisors\">顾问链</a>的一部分实现工具调用循环，并暴露了多个扩展点：",
+      "count": 1
+    },
+    {
+      "source": "<code>advisorOrder</code>: The order in which the advisor is applied in the chain. Must be between <code>BaseAdvisor.HIGHEST_PRECEDENCE</code> and <code>BaseAdvisor.LOWEST_PRECEDENCE</code>.",
+      "translation": "<code>advisorOrder</code>：顾问在链中应用的顺序。必须在 <code>BaseAdvisor.HIGHEST_PRECEDENCE</code> 和 <code>BaseAdvisor.LOWEST_PRECEDENCE</code> 之间。",
+      "count": 1
+    },
+    {
+      "source": "<code>toolExecutionEligibilityChecker</code>: A <code>Function&lt;ChatResponse, Boolean&gt;</code> that decides whether a model response should trigger the next tool-call iteration. The default checks <code>chatResponse.hasToolCalls()</code>. Override this to apply provider-specific stop-reason logic (e.g. checking a finish reason field in addition to tool-call presence).",
+      "translation": "<code>toolExecutionEligibilityChecker</code>：一个 <code>Function&lt;ChatResponse, Boolean&gt;</code>，用于决定是否应触发模型的下一个工具调用迭代。默认情况下会检查 <code>chatResponse.hasToolCalls()</code>。可重写此函数以应用特定于提供方的停止原因逻辑（例如，除了检查是否存在工具调用外，还需检查完成原因字段）。",
+      "count": 1
+    },
+    {
+      "source": "When using <code>ChatClient</code>, disable the auto-registered <code>ToolCallingAdvisor</code> for a single call using <code>AdvisorParams.toolCallingAdvisorAutoRegister(false)</code>, then drive the tool-call loop yourself.",
+      "translation": "在使用 <code>ChatClient</code> 时，可通过调用 <code>AdvisorParams.toolCallingAdvisorAutoRegister(false)</code> 禁用单次调用的自动注册 <code>ToolCallingAdvisor</code>，然后自行驱动工具调用循环。",
+      "count": 1
+    },
+    {
+      "source": "To drive the tool-call loop with <code>ChatModel</code>, invoke it directly without a <code>ToolCallingAdvisor</code> in the chain and execute tool calls using the <code>ToolCallingManager</code>.",
+      "translation": "使用 <code>ChatModel</code> 驱动工具调用循环时，请在链中直接调用它（不使用 <code>ToolCallingAdvisor</code>），并通过 <code>ToolCallingManager</code> 执行工具调用。",
+      "count": 1
+    },
+    {
+      "source": "When a tool call fails, the exception is propagated as a <code>ToolExecutionException</code> which can be caught to handle the error.\nA <code>ToolExecutionExceptionProcessor</code> can be used to handle a <code>ToolExecutionException</code> with two outcomes: either producing an error message to be sent back to the AI model or throwing an exception to be handled by the caller.",
+      "translation": "当工具调用失败时，异常会作为<code>ToolExecutionException</code>进行传播，可以捕获该异常以处理错误。  \n可以使用<code>ToolExecutionExceptionProcessor</code>来处理<code>ToolExecutionException</code>，其结果有两种：要么生成一条错误消息返回给 AI 模型，要么抛出异常由调用方处理。",
+      "count": 1
+    },
+    {
+      "source": "By default, Spring AI relies on a <code>StaticToolCallbackResolver</code> that resolves tools from a static list of <code>ToolCallback</code> instances. When using the Spring Boot Autoconfiguration, this resolver is automatically configured with all the beans of type <code>ToolCallback</code> defined in the application context.",
+      "translation": "默认情况下，Spring AI 依赖一个<code>StaticToolCallbackResolver</code>，该解析器从静态的<code>ToolCallback</code>实例列表中解析工具。在使用 Spring Boot 自动配置时，该解析器会自动与应用程序上下文中定义的所有类型为<code>ToolCallback</code>的 Bean 进行配置。",
+      "count": 1
+    },
+    {
+      "source": "All the main operations of the tool calling features are logged at the <code>DEBUG</code> level. You can enable the logging by setting the log level to <code>DEBUG</code> for the <code>org.springframework.ai</code> package.",
+      "translation": "工具调用功能的所有主要操作均在<code>DEBUG</code>级别记录日志。您可以通过将<code>org.springframework.ai</code>包的日志级别设置为<code>DEBUG</code>来启用日志记录。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Indexing</strong> — At conversation start, all registered tools are indexed in the <code>ToolIndex</code> but <strong>not</strong> sent to the LLM.",
+      "translation": "<strong>索引</strong>——在对话开始时，所有已注册的工具都会在 <code>ToolIndex</code> 中进行索引，但<strong>不会</strong>发送给 LLM。",
+      "count": 1
+    },
+    {
+      "source": "When enabled, the auto-configuration registers a <code>ToolSearchToolCallingAdvisor.Builder</code> bean that transparently replaces the default <code>ToolCallingAdvisor</code> — no code changes needed.\nIt also auto-registers a <code>ToolIndex</code> bean unless the application declares one explicitly.",
+      "translation": "启用后，自动配置会注册一个 `<code>ToolSearchToolCallingAdvisor.Builder</code>` Bean，该 Bean 会透明地替换默认的 `<code>ToolCallingAdvisor`——无需修改任何代码。此外，除非应用程序显式声明了某个 Bean，否则它还会自动注册一个 `<code>ToolIndex</code>` Bean。",
+      "count": 1
+    },
+    {
+      "source": "Time-to-live for idle sessions. When set, a composite LRU+TTL strategy is used. Accepts a <code>java.time.Duration</code> string (e.g. <code>30m</code>, <code>1h</code>).",
+      "translation": "空闲会话的生存时间。设置后，将使用复合的 LRU+TTL 策略。接受一个 `<code>java.time.Duration</code>` 字符串（例如 `<code>30m</code>`、`<code>1h</code>`）。",
+      "count": 1
+    },
+    {
+      "source": "We’ll add the new tool to the same <code>DateTimeTools</code> class as before. The new tool will take a single parameter, which is the time in ISO-8601 format. The tool will then print a message to the console indicating that the alarm has been set for the given time. Like before, the tool is defined as a method annotated with <code>@Tool</code>, which we also use to provide a detailed description to help the model understand when and how to use the tool.",
+      "translation": "我们将把新工具添加到与之前相同的<code>DateTimeTools</code>类中。该新工具将接受一个参数，即 ISO-8601 格式的时间。随后，工具将在控制台输出一条消息，表明闹钟已设置为指定时间。与之前一样，该工具被定义为一个带有<code>@Tool</code>注解的方法，我们同样使用该注解提供详细描述，以帮助模型理解何时以及如何使用该工具。",
+      "count": 1
+    },
+    {
+      "source": "Besides passing the <code>ToolCallback</code> objects directly, you can also pass a list of tool names, that will be resolved dynamically using the <code>ToolCallbackResolver</code> interface.",
+      "translation": "除了直接传递<code>ToolCallback</code>对象外，您还可以传递一个工具名称列表，该列表将通过<code>ToolCallbackResolver</code>接口动态解析。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI will generate the JSON schema for the input parameters of the <code>@Tool</code>-annotated method automatically. The schema is used by the model to understand how to call the tool and prepare the tool request. The <code>@ToolParam</code> annotation can be used to provide additional information about the input parameters, such as a description or whether the parameter is required or optional. By default, all input parameters are considered required.",
+      "translation": "Spring AI 将自动为 `<code>@Tool</code>` 注解的方法生成输入参数的 JSON Schema。该 Schema 供模型使用，以理解如何调用工具并准备工具请求。<code>@ToolParam</code> 注解可用于提供有关输入参数的额外信息，例如描述或参数是否为必需或可选。默认情况下，所有输入参数均被视为必需。",
+      "count": 1
+    },
+    {
+      "source": "When using the declarative specification approach, you can pass the tool class instance to the <code>tools()</code> method when invoking a <code>ChatClient</code>. Such tools will only be available for the specific chat request they are added to.",
+      "translation": "在使用声明式规范方法时，您可以在调用<code>ChatClient</code>时将工具类实例传递给<code>tools()</code>方法。这些工具仅对它们被添加到的特定聊天请求可用。",
+      "count": 1
+    },
+    {
+      "source": "When using the declarative specification approach, you can add default tools to a <code>ChatClient.Builder</code> by passing the tool class instance to the <code>defaultTools()</code> method.\nIf both default and runtime tools are provided, the runtime tools will completely override the default tools.",
+      "translation": "在使用声明式规范方法时，您可以通过将工具类实例传递给 `defaultTools()` 方法来向 `<code>ChatClient.Builder</code>` 添加默认工具。如果同时提供了默认工具和运行时工具，则运行时工具将完全覆盖默认工具。",
+      "count": 1
+    },
+    {
+      "source": "The <code>MethodToolCallback.Builder</code> allows you to build a <code>MethodToolCallback</code> instance and provide key information about the tool:",
+      "translation": "`MethodToolCallback.Builder` 允许您构建一个 `MethodToolCallback` 实例，并提供有关该工具的关键信息：",
+      "count": 1
+    },
+    {
+      "source": "<code>toolMethod</code>: The <code>Method</code> instance that represents the tool method. Required.",
+      "translation": "<code>toolMethod</code>：代表工具方法的 <code>Method</code> 实例。必需。",
+      "count": 1
+    },
+    {
+      "source": "The <code>ToolDefinition.Builder</code> allows you to build a <code>ToolDefinition</code> instance and define the tool name, description, and input schema:",
+      "translation": "<code>ToolDefinition.Builder</code> 允许您构建一个 <code>ToolDefinition</code> 实例，并定义工具名称、描述和输入模式：",
+      "count": 1
+    },
+    {
+      "source": "Spring AI provides built-in support for specifying tools from functions, either programmatically using the low-level <code>FunctionToolCallback</code> implementation or dynamically as <code>@Bean</code>(s) resolved at runtime.",
+      "translation": "Spring AI 提供内置支持，用于通过函数指定工具：既可以通过底层 `<code>FunctionToolCallback` 实现以编程方式指定，也可以动态地作为运行时解析的 `<code>@Bean</code>` 进行指定。",
+      "count": 1
+    },
+    {
+      "source": "The <code>FunctionToolCallback.Builder</code> allows you to build a <code>FunctionToolCallback</code> instance and provide key information about the tool:",
+      "translation": "<code>FunctionToolCallback.Builder</code> 允许您构建一个 <code>FunctionToolCallback</code> 实例，并提供有关该工具的关键信息：",
+      "count": 1
+    },
+    {
+      "source": "Spring AI provides built-in implementations for tool methods (<code>MethodToolCallback</code>) and tool functions (<code>FunctionToolCallback</code>).",
+      "translation": "Spring AI 提供了针对工具方法（<code>MethodToolCallback</code>）和工具函数（<code>FunctionToolCallback</code>）的内置实现。",
+      "count": 1
+    },
+    {
+      "source": "When building tools from a method, the <code>ToolDefinition</code> is automatically generated for you. In case you prefer to generate the <code>ToolDefinition</code> yourself, you can use this convenient builder.",
+      "translation": "从方法构建工具时，<code>ToolDefinition</code> 会自动为您生成。如果您更倾向于自行生成 <code>ToolDefinition</code>，可以使用此便捷的构建器。",
+      "count": 1
+    },
+    {
+      "source": "The <code>ToolDefinition</code> generated from a method includes the method name as the tool name, the method name as the tool description, and the JSON schema of the method input parameters. If the method is annotated with <code>@Tool</code>, the tool name and description will be taken from the annotation, if set.",
+      "translation": "从方法生成的<code>ToolDefinition</code>包含：以方法名为工具名，以方法名为工具描述，以及方法输入参数的 JSON Schema。如果该方法标注了<code>@Tool</code>，则工具名和描述将取自该注解（如果已设置）。",
+      "count": 1
+    },
+    {
+      "source": "If you’d rather provide some or all of the attributes explicitly, you can use the <code>ToolDefinition.Builder</code> to build a custom <code>ToolDefinition</code> instance.",
+      "translation": "如果您更愿意显式提供部分或全部属性，可以使用 <code>ToolDefinition.Builder</code> 来构建自定义的 <code>ToolDefinition</code> 实例。",
+      "count": 1
+    },
+    {
+      "source": "When providing a tool to the AI model, the model needs to know the schema of the input type for calling the tool. The schema is used to understand how to call the tool and prepare the tool request. Spring AI provides built-in support for generating the JSON Schema of the input type for a tool via the <code>JsonSchemaGenerator</code> class. The schema is provided as part of the <code>ToolDefinition</code>.",
+      "translation": "当向 AI 模型提供工具时，模型需要知道用于调用该工具的输入类型的模式（schema）。该模式用于理解如何调用工具并准备工具请求。Spring AI 通过 <code>JsonSchemaGenerator</code> 类提供了内置支持，可生成工具输入类型的 JSON Schema。该模式作为 <code>ToolDefinition</code> 的一部分提供。",
+      "count": 1
+    },
+    {
+      "source": "The result must be a serializable type. By default, the result is serialized to JSON using Jackson (<code>DefaultToolCallResultConverter</code>), but you can customize the serialization process by providing your own <code>ToolCallResultConverter</code> implementation.",
+      "translation": "结果必须是可序列化的类型。默认情况下，使用 Jackson 将结果序列化为 JSON（<code>DefaultToolCallResultConverter</code>），但您可以通过提供自己的 <code>ToolCallResultConverter</code> 实现来自定义序列化过程。",
+      "count": 1
+    },
+    {
+      "source": "The <code>ToolContext</code> is populated with the data provided by the user when invoking <code>ChatClient</code>.",
+      "translation": "<code>ToolContext</code> 会在调用 <code>ChatClient</code> 时由用户提供的数据填充。",
+      "count": 1
+    },
+    {
+      "source": "If the <code>toolContext</code> option is set both in the default options and in the runtime options, the resulting <code>ToolContext</code> will be the merge of the two,\nwhere the runtime options take precedence over the default options.",
+      "translation": "如果 `toolContext` 选项同时存在于默认选项和运行时选项中，则生成的 `<code>ToolContext` 将是两者的合并结果，其中运行时选项的优先级高于默认选项。",
+      "count": 1
+    },
+    {
+      "source": "When we want to make a tool available to the model, we include its definition in the chat request. If we want the result of the tool execution to be returned directly to the caller, we set the <code>returnDirect</code> attribute to <code>true</code>.",
+      "translation": "当我们要向模型提供工具时，需在其聊天请求中包含该工具的定义。如果希望将工具执行的结果直接返回给调用者，则将<code>returnDirect</code>属性设置为<code>true</code>。",
+      "count": 1
+    },
+    {
+      "source": "When using <code>ChatClient</code>, Spring AI automatically handles the entire tool calling lifecycle through the <code>ToolCallingAdvisor</code>, which is always auto-registered in the advisor chain (unless explicitly disabled). This means dynamic tools injected at runtime by another advisor are also supported, not just tools declared statically on the call. All of this is done transparently — you provide the tools and ask your question; the framework manages the rest.",
+      "translation": "在使用 <code>ChatClient</code> 时，Spring AI 通过 <code>ToolCallingAdvisor</code> 自动处理整个工具调用生命周期，该 advisor 始终会自动注册到 advisor 链中（除非被显式禁用）。这意味着不仅支持在调用时静态声明的工具，还支持由另一个 advisor 在运行时动态注入的工具。所有这些操作都是透明进行的——您只需提供工具并提出问题，框架将负责其余部分。",
+      "count": 1
+    },
+    {
+      "source": "The <code>ToolCallingAdvisor</code> in the advisor chain intercepts the response and sends the tool call request to the <code>ToolCallingManager</code>.",
+      "translation": "advisor 链中的<code>ToolCallingAdvisor</code>拦截响应，并将工具调用请求发送至<code>ToolCallingManager</code>。",
+      "count": 1
+    },
+    {
+      "source": "The <code>ToolCallingManager</code> returns the result to the <code>ToolCallingAdvisor</code>.",
+      "translation": "<code>ToolCallingManager</code> 将结果返回给 <code>ToolCallingAdvisor</code>。",
+      "count": 1
+    },
+    {
+      "source": "The <code>ToolCallingAdvisor</code> sends the tool execution result back to the AI model as a <code>ToolResponseMessage</code>.",
+      "translation": "<code>ToolCallingAdvisor</code> 将工具执行结果作为 <code>ToolResponseMessage</code> 发送回 AI 模型。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Extensibility</strong>: Custom <code>ToolExecutionEligibilityChecker</code> and hook methods allow fine-grained control over the loop",
+      "translation": "<strong>可扩展性</strong>：自定义 <code>ToolExecutionEligibilityChecker</code> 和钩子方法允许对循环进行细粒度控制。",
+      "count": 1
+    },
+    {
+      "source": "When the model requests a tool call, <code>ToolCallingAdvisor</code> executes the tool via <code>ToolCallingManager</code> and sends the result back to the model, looping until no more tool calls are needed.",
+      "translation": "当模型请求工具调用时，<code>ToolCallingAdvisor</code> 通过 <code>ToolCallingManager</code> 执行该工具并将结果返回给模型，循环此过程直到不再需要进一步的工具调用。",
+      "count": 1
+    },
+    {
+      "source": "<code>toolCallingManager</code>: The <code>ToolCallingManager</code> instance to use for executing tool calls. If not provided, a default instance is used.",
+      "translation": "<code>toolCallingManager</code>：用于执行工具调用的 <code>ToolCallingManager</code> 实例。如果未提供，则使用默认实例。",
+      "count": 1
+    },
+    {
+      "source": "<code>conversationHistoryEnabled</code>: Controls whether the advisor maintains conversation history internally during tool call iterations. Default is <code>true</code>.",
+      "translation": "<code>conversationHistoryEnabled</code>：控制顾问在工具调用迭代期间是否内部维护对话历史。默认值为 <code>true</code>。",
+      "count": 1
+    },
+    {
+      "source": "By default (<code>conversationHistoryEnabled=true</code>), the <code>ToolCallingAdvisor</code> maintains the full conversation history internally during tool call iterations. Each subsequent LLM call includes all previous messages.",
+      "translation": "默认情况下（<code>conversationHistoryEnabled=true</code>），<code>ToolCallingAdvisor</code> 会在工具调用迭代过程中在内部维护完整的对话历史。每次后续的 LLM 调用都会包含所有之前的消息。",
+      "count": 1
+    },
+    {
+      "source": "The <code>ToolCallingAdvisor</code> supports the \"return direct\" feature, allowing tools to bypass the LLM and return results directly to the client. When a tool execution has <code>returnDirect=true</code>, the advisor breaks out of the tool calling loop and returns the tool result directly.",
+      "translation": "<code>ToolCallingAdvisor</code> 支持“直接返回”功能，允许工具绕过 LLM 直接将结果返回给客户端。当工具执行的 <code>returnDirect=true</code> 时，advisor 会跳出工具调用循环并直接返回工具结果。",
+      "count": 1
+    },
+    {
+      "source": "For more details about <code>ToolCallingAdvisor</code>, see <a class=\"xref page\" href=\"advisors-recursive.html#_toolcallingadvisor\">Recursive Advisors - ToolCallingAdvisor</a>.",
+      "translation": "有关<code>ToolCallingAdvisor</code>的更多详细信息，请参阅<a class=\"xref page\" href=\"advisors-recursive.html#_toolcallingadvisor\">递归顾问 - ToolCallingAdvisor</a>。",
+      "count": 1
+    },
+    {
+      "source": "The same pattern works with the streaming API.\nBecause tool calls span multiple stream chunks, each streaming call must be aggregated using <code>ChatClientMessageAggregator</code> before checking for tool calls.\nThe <code>Flux</code> of chunks produced by each iteration can be forwarded to a subscriber (for example an SSE endpoint) while aggregating, giving you full control over what is emitted at each step:",
+      "translation": "相同的模式也适用于流式 API。  \n由于工具调用跨越多个流块，因此在检查工具调用之前，必须使用 <code>ChatClientMessageAggregator</code> 对每个流式调用进行聚合。  \n每次迭代产生的流块 <code>Flux</code> 可以在聚合过程中转发给订阅者（例如 SSE 端点），从而让您完全控制每一步中发射的内容：",
+      "count": 1
+    },
+    {
+      "source": "You can use the <code>`spring.ai.tools.throw-exception-on-error</code> property to control the behavior of the <code>DefaultToolExecutionExceptionProcessor</code> bean:",
+      "translation": "您可以使用 `<code>`spring.ai.tools.throw-exception-on-error</code>` 属性来控制 `<code>DefaultToolExecutionExceptionProcessor</code>` Bean 的行为：",
+      "count": 1
+    },
+    {
+      "source": "If <code>true</code>, tool calling errors are thrown as exceptions for the caller to handle. If <code>false</code>, errors are converted to messages and sent back to the AI model, allowing it to process and respond to the error.",
+      "translation": "如果为<code>true</code>，工具调用错误将作为异常抛出，由调用者进行处理。如果为<code>false</code>，错误将被转换为消息并返回给 AI 模型，使其能够处理该错误并作出响应。",
+      "count": 1
+    },
+    {
+      "source": "When using this approach, a <code>ToolCallbackResolver</code> implementation is responsible for resolving the tool names to the corresponding <code>ToolCallback</code> instances.",
+      "translation": "在使用此方法时，<code>ToolCallbackResolver</code> 实现负责将工具名称解析为对应的 <code>ToolCallback</code> 实例。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Wrap your tool</strong> with <code>AugmentedToolCallbackProvider</code>:",
+      "translation": "使用 <code>AugmentedToolCallbackProvider</code> 包装您的工具：",
+      "count": 1
+    },
+    {
+      "source": "<code>AugmentedToolCallback&lt;T&gt;</code> - Wraps individual <code>ToolCallback</code> instances",
+      "translation": "<code>AugmentedToolCallback&lt;T&gt;</code> - 封装单个 <code>ToolCallback</code> 实例",
+      "count": 1
+    },
+    {
+      "source": "The <code>ToolSearchToolCallingAdvisor</code> extends Spring AI’s <code>ToolCallingAdvisor</code> to implement dynamic tool discovery.",
+      "translation": "<code>ToolSearchToolCallingAdvisor</code> 扩展了 Spring AI 的 <code>ToolCallingAdvisor</code>，以实行动态工具发现。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Initial Request</strong> — Only the built-in <code>toolSearchTool</code> definition is sent to the LLM.",
+      "translation": "<strong>初始请求</strong>——仅向 LLM 发送内置的<code>toolSearchTool</code>定义。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Discovery Call</strong> — When the LLM needs a capability, it calls <code>toolSearchTool</code> with a search query.",
+      "translation": "<strong>发现调用</strong>——当 LLM 需要某种能力时，它会使用搜索查询调用<code>toolSearchTool</code>。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Search &amp; Expand</strong> — The <code>ToolIndex</code> finds matching tools; their definitions are added to the next request.",
+      "translation": "<strong>搜索与扩展</strong> — <code>ToolIndex</code> 查找匹配的工具；它们的定义将被添加到下一个请求中。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Tool Invocation</strong> — The LLM sees both <code>toolSearchTool</code> and the discovered tool definitions, and can call the actual tool.",
+      "translation": "<strong>工具调用</strong>——LLM 能够同时看到 <code>toolSearchTool</code> 和已发现的工具定义，并可以调用实际的工具。",
+      "count": 1
+    },
+    {
+      "source": "When <code>true</code>, tool names discovered across all prior search calls are accumulated and injected. When <code>false</code>, only the most recent search result is used.",
+      "translation": "当为<code>true</code>时，会累积并注入所有先前搜索调用中发现的工具名称；当为<code>false</code>时，仅使用最新的搜索结果。",
+      "count": 1
+    },
+    {
+      "source": "By default (<code>LruEvictionStrategy(1000)</code>), up to 1,000 active sessions are retained and the least-recently-used session is evicted when the cap is exceeded.\nCall <code>advisor.evictSession(sessionId)</code> to release a session eagerly (e.g. on logout).\nFive built-in strategies are provided:",
+      "translation": "默认情况下（<code>LruEvictionStrategy(1000)</code>），最多保留 1,000 个活跃会话，当达到上限时，会淘汰最近最少使用的会话。  \n调用 <code>advisor.evictSession(sessionId)</code> 可主动释放某个会话（例如在用户登出时）。  \n提供了五种内置策略：",
+      "count": 1
+    },
+    {
+      "source": "Enable the advisor. Replaces the default <code>ToolCallingAdvisor</code> when <code>true</code>.",
+      "translation": "启用顾问。当设置为`true`时，将替换默认的 `<code>ToolCallingAdvisor</code>`。",
+      "count": 1
+    },
+    {
+      "source": "Example — vector search (requires a <code>VectorStore</code> bean, e.g. from <code>spring-ai-starter-vector-store-pgvector</code>):",
+      "translation": "示例——向量搜索（需要 <code>VectorStore</code> 类型的 Bean，例如来自 <code>spring-ai-starter-vector-store-pgvector</code>）：",
+      "count": 1
+    },
+    {
+      "source": "<strong>Information Retrieval</strong>. Tools in this category can be used to retrieve information from external sources, such as a database, a web service, a file system, or a web search engine. The goal is to augment the knowledge of the model, allowing it to answer questions that it would not be able to answer otherwise. As such, they can be used in Retrieval Augmented Generation (RAG) scenarios. For example, a tool can be used to retrieve the current weather for a given location, to retrieve the latest news articles, or to query a database for a specific record.",
+      "translation": "<strong>信息检索</strong>。此类工具可用于从外部来源（如数据库、网络服务、文件系统或网络搜索引擎）检索信息。其目标是增强模型的知识储备，使其能够回答原本无法回答的问题。因此，它们可应用于检索增强生成（RAG）场景。例如，可使用工具检索特定地点的当前天气、获取最新新闻文章，或查询数据库中的特定记录。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Taking Action</strong>. Tools in this category can be used to take action in a software system, such as sending an email, creating a new record in a database, submitting a form, or triggering a workflow. The goal is to automate tasks that would otherwise require human intervention or explicit programming. For example, a tool can be used to book a flight for a customer interacting with a chatbot, to fill out a form on a web page, or to implement a Java class based on an automated test (TDD) in a code generation scenario.",
+      "translation": "<strong>执行操作</strong>。此类工具可用于在软件系统中执行具体操作，例如发送邮件、在数据库中创建新记录、提交表单或触发工作流。其目标是自动化那些原本需要人工干预或显式编程才能完成的任务。例如，工具可用于为与聊天机器人交互的客户预订航班、填写网页上的表单，或在代码生成场景中根据自动化测试（TDD）实现 Java 类。",
+      "count": 1
+    },
+    {
+      "source": "Even though we typically refer to <em>tool calling</em> as a model capability, it is actually up to the client application to provide the tool calling logic. The model can only request a tool call and provide the input arguments, whereas the application is responsible for executing the tool call from the input arguments and returning the result. The model never gets access to any of the APIs provided as tools, which is a critical security consideration.",
+      "translation": "尽管我们通常将<em>工具调用</em>视为模型的一项能力，但实际上提供工具调用逻辑的是客户端应用程序。模型仅能请求工具调用并提供输入参数，而由应用程序负责根据这些输入参数执行工具调用并返回结果。模型无法访问任何作为工具提供的 API，这是至关重要的安全考量。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI provides built-in support for specifying tools (i.e. <code>ToolCallback</code>(s)) from methods in two ways:",
+      "translation": "Spring AI 提供了两种内置方式来指定工具（即<code>ToolCallback</code>(s)）：",
+      "count": 1
+    },
+    {
+      "source": "declaratively, using the <code>@Tool</code> annotation",
+      "translation": "以声明式方式，使用 `<code>@Tool</code>` 注解。",
+      "count": 1
+    },
+    {
+      "source": "programmatically, using the low-level <code>MethodToolCallback</code> implementation.",
+      "translation": "通过底层 `MethodToolCallback` 实现进行程序化操作。",
+      "count": 1
+    },
+    {
+      "source": "You can turn a method into a tool by annotating it with <code>@Tool</code>.",
+      "translation": "您可以通过使用 <code>@Tool</code> 注解将方法转换为工具。",
+      "count": 1
+    },
+    {
+      "source": "The <code>@Tool</code> annotation allows you to provide key information about the tool:",
+      "translation": "<code>@Tool</code> 注解允许您提供有关该工具的关键信息：",
+      "count": 1
+    },
+    {
+      "source": "You can turn a method into a tool by building a <code>MethodToolCallback</code> programmatically.",
+      "translation": "您可以通过编程方式构建一个<code>MethodToolCallback</code>，将方法转换为工具。",
+      "count": 1
+    },
+    {
+      "source": "<code>toolObject</code>: The object instance that contains the tool method. If the method is static, you can omit this parameter.",
+      "translation": "<code>toolObject</code>：包含工具方法的对象实例。如果方法是静态的，可以省略此参数。",
+      "count": 1
+    },
+    {
+      "source": "If the method is static, you can omit the <code>toolObject()</code> method, as it’s not needed.",
+      "translation": "如果方法是静态的，可以省略<code>toolObject()</code>方法，因为它不需要。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI will generate the JSON schema for the input parameters of the method automatically. The schema is used by the model to understand how to call the tool and prepare the tool request. The <code>@ToolParam</code> annotation can be used to provide additional information about the input parameters, such as a description or whether the parameter is required or optional. By default, all input parameters are considered required.",
+      "translation": "Spring AI 将自动生成方法输入参数的 JSON Schema。模型使用该 Schema 来理解如何调用工具并准备工具请求。<code>@ToolParam</code> 注解可用于提供有关输入参数的额外信息，例如描述或参数是否为必需或可选。默认情况下，所有输入参数均被视为必需。",
+      "count": 1
+    },
+    {
+      "source": "Functional types are supported using the function-based tool specification approach. See <a href=\"#_functions_as_tools\">Functions as Tools</a> for more details.",
+      "translation": "支持使用基于函数的工具规范方法来实现功能类型。有关更多详细信息，请参阅<a href=\"#_functions_as_tools\">函数作为工具</a>。",
+      "count": 1
+    },
+    {
+      "source": "<code>name</code>: The name of the tool. AI models use this name to identify the tool when calling it. Therefore, it’s not allowed to have two tools with the same name in the same context. The name must be unique across all the tools available to the model for a specific chat request. Required.",
+      "translation": "<code>name</code>：工具的名称。AI 模型在调用工具时使用此名称来识别该工具，因此在同一上下文中不允许存在两个同名工具。该名称必须在模型针对特定聊天请求可用的所有工具中保持唯一性。必填项。",
+      "count": 1
+    },
+    {
+      "source": "<code>inputType</code>: The type of the function input. Required.",
+      "translation": "<code>inputType</code>：函数输入的类型。必填项。",
+      "count": 1
+    },
+    {
+      "source": "The function inputs and outputs can be either <code>Void</code> or POJOs. The input and output POJOs must be serializable, as the result will be serialized and sent back to the model. The function as well as the input and output types must be public.",
+      "translation": "函数输入和输出可以是 `<code>Void</code>` 或 POJO。输入和输出的 POJO 必须是可序列化的，因为结果将被序列化并返回给模型。此外，函数以及输入和输出类型都必须是公开的。",
+      "count": 1
+    },
+    {
+      "source": "When the <code>ToolCallback</code> bean is needed in a chat request, inject it directly:",
+      "translation": "当聊天请求需要 `<code>ToolCallback`  Bean 时，直接注入它：",
+      "count": 1
+    },
+    {
+      "source": "Primitive types and collections are supported using the method-based tool specification approach. See <a href=\"#_methods_as_tools\">Methods as Tools</a> for more details.",
+      "translation": "使用基于方法的工具规范方法支持基本类型和集合。有关更多详细信息，请参阅<a href=\"#_methods_as_tools\">作为工具的 Method</a>。",
+      "count": 1
+    },
+    {
+      "source": "<code>@ToolParam(description = \"…​\")</code> from Spring AI",
+      "translation": "来自 Spring AI 的 <code>@ToolParam(description = \"…​\")</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>@JsonClassDescription(description = \"…​\")</code> from Jackson",
+      "translation": "Jackson 中的 <code>@JsonClassDescription(description = \"…​\")</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>@JsonPropertyDescription(description = \"…​\")</code> from Jackson",
+      "translation": "Jackson 中的 <code>@JsonPropertyDescription(description = \"…​\")</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>@Schema(description = \"…​\")</code> from Swagger.",
+      "translation": "Swagger 中的 <code>@Schema(description = \"…​\")</code>。",
+      "count": 1
+    },
+    {
+      "source": "<code>@ToolParam(required = false)</code> from Spring AI",
+      "translation": "Spring AI 中的 <code>@ToolParam(required = false)</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>@JsonProperty(required = false)</code> from Jackson",
+      "translation": "Jackson 的 <code>@JsonProperty(required = false)</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>@Schema(required = false)</code> from Swagger",
+      "translation": "Swagger 中的 <code>@Schema(required = false)</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>@Nullable</code> from Spring Framework.",
+      "translation": "Spring 框架中的 <code>@Nullable</code>。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI relies on the <code>ToolCallResultConverter</code> in both method and function tools.",
+      "translation": "Spring AI 在方法工具和函数工具中均依赖<code>ToolCallResultConverter</code>。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI supports passing additional contextual information to tools through the <code>ToolContext</code> API. This feature allows you to provide extra, user-provided data that can be used within the tool execution along with the tool arguments passed by the AI model.",
+      "translation": "Spring AI 支持通过 <code>ToolContext</code> API 向工具传递额外的上下文信息。此功能允许您提供用户提供的附加数据，这些数据可与 AI 模型传递的工具参数一同在工具执行过程中使用。",
+      "count": 1
+    },
+    {
+      "source": "Similarly, you can define tool context data when invoking the <code>ChatModel</code> directly.",
+      "translation": "同样，您也可以直接调用<code>ChatModel</code>时定义工具上下文数据。",
+      "count": 1
+    },
+    {
+      "source": "Each <code>ToolCallback</code> implementation can define whether the result of a tool call should be returned directly to the caller or sent back to the model. By default, the result is sent back to the model. But you can change this behavior per tool.",
+      "translation": "每个 `<code>ToolCallback` 实现都可以定义工具调用的结果是直接返回给调用者，还是发送回模型。默认情况下，结果会发送回模型。但您可以针对每个工具更改此行为。",
+      "count": 1
+    },
+    {
+      "source": "The tool execution is the process of calling the tool with the provided input arguments and returning the result. The tool execution is handled by the <code>ToolCallingManager</code> interface, which is responsible for managing the tool execution lifecycle.",
+      "translation": "工具执行是指使用提供的输入参数调用工具并返回结果的过程。该过程由 `<code>ToolCallingManager</code>` 接口处理，负责管理工具执行的生命周期。",
+      "count": 1
+    },
+    {
+      "source": "When we want to make a tool available to the model, we include its definition in the chat request and invoke the <code>ChatClient</code> API, which sends the request to the AI model.",
+      "translation": "当我们要向模型提供工具时，会在聊天请求中包含其定义，并调用 `<code>ChatClient</code>` API，该 API 会将请求发送至 AI 模型。",
+      "count": 1
+    },
+    {
+      "source": "The <code>ToolCallingManager</code> identifies and executes the tool with the provided input parameters.",
+      "translation": "<code>ToolCallingManager</code> 会识别并使用提供的输入参数执行相应的工具。",
+      "count": 1
+    },
+    {
+      "source": "The tool execution result is returned to the <code>ToolCallingManager</code>.",
+      "translation": "工具执行结果被返回给<code>ToolCallingManager</code>。",
+      "count": 1
+    },
+    {
+      "source": "The AI model generates the final response using the tool result as additional context and returns it to the caller via <code>ChatClient</code>.",
+      "translation": "AI 模型利用工具结果作为额外上下文生成最终响应，并通过<code>ChatClient</code>返回给调用方。",
+      "count": 1
+    },
+    {
+      "source": "To disable auto-registration globally for all calls from an auto-configured <code>ChatClient</code>, set the following property:",
+      "translation": "若要全局禁用所有来自自动配置的 `<code>ChatClient` 的自动注册，请设置以下属性：",
+      "count": 1
+    },
+    {
+      "source": "<strong>Observability</strong>: Other advisors in the chain can intercept and observe each tool call iteration",
+      "translation": "<strong>可观测性</strong>：链中的其他顾问可以拦截并观察每个工具调用的迭代过程。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Integration with Chat Memory</strong>: Works seamlessly with Chat Memory advisors for conversation history management",
+      "translation": "<strong>与聊天记忆集成</strong>：可与聊天记忆顾问无缝协作，实现对话历史管理。",
+      "count": 1
+    },
+    {
+      "source": "The <code>ToolCallingAdvisor.Builder</code> supports the following configuration options:",
+      "translation": "<code>ToolCallingAdvisor.Builder</code> 支持以下配置选项：",
+      "count": 1
+    },
+    {
+      "source": "The following example shows user-controlled tool execution with the <code>call()</code> path:",
+      "translation": "以下示例展示了通过 `<code>call()</code>` 路径实现的用户控制工具执行：",
+      "count": 1
+    },
+    {
+      "source": "The same pattern works with the streaming API.\nBecause tool calls span multiple stream chunks, each streaming call must be aggregated first using <code>MessageAggregator</code> before checking for tool calls:",
+      "translation": "相同的模式也适用于流式 API。由于工具调用会跨越多个流块，因此在使用 `<code>MessageAggregator` 检查工具调用之前，必须先对每个流式调用进行聚合：",
+      "count": 1
+    },
+    {
+      "source": "The next examples shows a minimal implementation of the user-controlled tool execution approach combined with the usage of the <code>ChatMemory</code> API:",
+      "translation": "接下来的示例展示了用户控制的工具执行方法与 `<code>ChatMemory` API 的用法相结合的最小化实现：",
+      "count": 1
+    },
+    {
+      "source": "However, Spring AI also supports resolving tools dynamically at runtime using the <code>ToolCallbackResolver</code> interface.",
+      "translation": "然而，Spring AI 也支持在运行时通过<code>ToolCallbackResolver</code>接口动态解析工具。",
+      "count": 1
+    },
+    {
+      "source": "If you rely on the Spring Boot Autoconfiguration, you can customize the resolution logic by providing a custom <code>ToolCallbackResolver</code> bean.",
+      "translation": "如果您依赖 Spring Boot 自动配置，可以通过提供自定义的 `<code>ToolCallbackResolver` Bean 来自定义解析逻辑。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI provides a utility for <strong>dynamic augmentation of tool input schemas</strong> with additional arguments. This allows capturing extra information from the model—such as reasoning or metadata—without modifying the underlying tool implementation.",
+      "translation": "Spring AI 提供了一个用于<strong>动态增强工具输入模式</strong>的实用工具，可添加额外参数。这使得能够从模型中捕获额外信息（例如推理过程或元数据），而无需修改底层工具实现。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Inner Thinking/Reasoning</strong>: Capture the model’s step-by-step reasoning before executing a tool",
+      "translation": "<strong>内部思考/推理</strong>：在执行工具之前，捕获模型的逐步推理过程。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Memory Enhancement</strong>: Extract insights to store in long-term memory",
+      "translation": "<strong>记忆增强</strong>：提取洞察并存储到长期记忆中",
+      "count": 1
+    },
+    {
+      "source": "<strong>Analytics &amp; Tracking</strong>: Collect metadata, user intent, or usage patterns",
+      "translation": "<strong>分析与追踪</strong>：收集元数据、用户意图或使用模式",
+      "count": 1
+    },
+    {
+      "source": "<strong>Multi-Agent Coordination</strong>: Pass agent identifiers or coordination signals",
+      "translation": "<strong>多智能体协调</strong>：传递智能体标识符或协调信号",
+      "count": 1
+    },
+    {
+      "source": "<strong>Define augmented arguments</strong> as a Java Record:",
+      "translation": "将<strong>增强参数</strong>定义为 Java 记录：",
+      "count": 1
+    },
+    {
+      "source": "<strong>Use with ChatClient</strong>:",
+      "translation": "<strong>与 ChatClient 配合使用：</strong>",
+      "count": 1
+    },
+    {
+      "source": "The LLM sees the augmented schema with your additional fields. Your consumer receives the <code>AgentThinking</code> record, while the original tool receives only its expected arguments.",
+      "translation": "LLM 会看到包含您新增字段的增强模式。您的消费者将收到 `<code>AgentThinking</code>` 记录，而原始工具仅接收其预期的参数。",
+      "count": 1
+    },
+    {
+      "source": "<code>AugmentedToolCallbackProvider&lt;T&gt;</code> - Wraps tool objects or providers, augmenting all tools with the specified Record type",
+      "translation": "<code>AugmentedToolCallbackProvider&lt;T&gt;</code> - 封装工具对象或提供者，将所有工具增强为指定的 Record 类型。",
+      "count": 1
+    },
+    {
+      "source": "<code>ToolInputSchemaAugmenter</code> - Low-level utility for schema manipulation",
+      "translation": "<code>ToolInputSchemaAugmenter</code> - 用于模式操作的底层工具",
+      "count": 1
+    },
+    {
+      "source": "The <code>removeExtraArgumentsAfterProcessing</code> option controls whether augmented arguments are passed to the original tool:",
+      "translation": "`removeExtraArgumentsAfterProcessing` 选项控制是否在处理后将增强后的参数传递给原始工具：",
+      "count": 1
+    },
+    {
+      "source": "<code>true</code> (default) - Remove augmented arguments before calling the tool",
+      "translation": "<code>true</code>（默认值）- 在调用工具之前移除增强参数",
+      "count": 1
+    },
+    {
+      "source": "<code>false</code> - Preserve augmented arguments in the input (if the tool can ignore extra fields)",
+      "translation": "<code>false</code> - 保留输入中的增强参数（如果工具可以忽略额外字段）",
+      "count": 1
+    },
+    {
+      "source": "Tool calling includes observability support with spring.ai.tool observations that measure completion time and propagate tracing information. See <a class=\"xref page\" href=\"../observability/index.html#_tool_calling\">Tool Calling Observability</a>.",
+      "translation": "工具调用支持可观测性，通过 spring.ai.tool 观察指标来测量完成时间并传播追踪信息。请参阅<a class=\"xref page\" href=\"../observability/index.html#_tool_calling\">工具调用可观测性</a>。",
+      "count": 1
+    },
+    {
+      "source": "Optionally, Spring AI can export tool call arguments and results as span attributes, disabled by default for sensitivity reasons. Details: <a class=\"xref page\" href=\"../observability/index.html#_tool_call_arguments_and_result_data\">Tool Call Arguments and Result Data</a>.",
+      "translation": "可选地，Spring AI 可以将工具调用参数和结果导出为 Span 属性，但出于敏感性考虑默认处于禁用状态。详情： <a class=\"xref page\" href=\"../observability/index.html#_tool_call_arguments_and_result_data\">工具调用参数与结果数据</a>。",
+      "count": 1
+    },
+    {
+      "source": "As AI agents connect to more services (Slack, GitHub, Jira, MCP servers), tool libraries grow rapidly.\nA typical multi-server setup can easily have 50+ tools consuming <strong>55,000+ tokens</strong> before any conversation starts.\nTool selection accuracy also degrades when models face 30+ similarly-named tools.",
+      "translation": "随着 AI 代理连接到更多服务（如 Slack、GitHub、Jira、MCP 服务器），工具库迅速膨胀。\n典型的跨服务器部署在对话开始前，就可能轻松拥有 50 多个工具，消耗超过<strong>55,000 个 token</strong>。\n当模型面对 30 多个名称相似的工具时，工具选择的准确性也会下降。",
+      "count": 1
+    },
+    {
+      "source": "The <strong>Tool Search Tool</strong> pattern solves this by enabling on-demand tool discovery:",
+      "translation": "<strong>工具搜索工具</strong>模式通过实现按需工具发现来解决此问题：",
+      "count": 1
+    },
+    {
+      "source": "<strong>Tool Execution</strong> — The discovered tool is executed and its result returned to the LLM.",
+      "translation": "<strong>工具执行</strong>——执行已发现的工具，并将其结果返回给大语言模型。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Response</strong> — The LLM generates the final answer using the tool result.",
+      "translation": "<strong>响应</strong>——大语言模型利用工具结果生成最终答案。",
+      "count": 1
+    },
+    {
+      "source": "The <code>ToolIndex</code> interface abstracts the search implementation.\nThree strategies are provided out of the box:",
+      "translation": "`ToolIndex` 接口抽象了搜索实现。  \n开箱即用提供了三种策略：",
+      "count": 1
+    },
+    {
+      "source": "Tool name patterns (<code>get_*_data</code>)",
+      "translation": "工具名称模式（<code>get_*_data</code>）",
+      "count": 1
+    },
+    {
+      "source": "The following options are available on <code>ToolSearchToolCallingAdvisor.Builder</code>:",
+      "translation": "<code>ToolSearchToolCallingAdvisor.Builder</code> 提供以下选项：",
+      "count": 1
+    },
+    {
+      "source": "Maximum tool references returned per search. When <code>null</code>, the LLM decides (guided by the tool description hint of 5).",
+      "translation": "每次搜索返回的最大工具引用数。当为<code>null</code>时，由 LLM 决定（受 5 个工具描述提示的引导）。",
+      "count": 1
+    },
+    {
+      "source": "Custom prompt suffix appended to the system message to instruct the model how to use <code>toolSearchTool</code>.",
+      "translation": "附加到系统消息中的自定义提示后缀，用于指导模型如何使用<code>toolSearchTool</code>。",
+      "count": 1
+    },
+    {
+      "source": "Determines when session tool indexes are freed. See <a href=\"#_index_eviction\">Index Eviction</a> below.",
+      "translation": "确定何时释放会话工具索引。请参阅下方的<a href=\"#_index_eviction\">索引驱逐</a>。",
+      "count": 1
+    },
+    {
+      "source": "Each call is scoped by <code>sessionId</code> so tool indexes are isolated across concurrent conversations.",
+      "translation": "每次调用均通过 <code>sessionId</code> 进行作用域限定，从而确保并发对话之间的工具索引相互隔离。",
+      "count": 1
+    },
+    {
+      "source": "Evicts the least-recently-used session once the number of active sessions exceeds <code>maxSessions</code>.",
+      "translation": "当活动会话数超过 `<code>maxSessions</code>` 时，驱逐最近最少使用的会话。",
+      "count": 1
+    },
+    {
+      "source": "Never evicts automatically; indexes persist until <code>evictSession()</code> is called explicitly.",
+      "translation": "永远不会自动驱逐；索引会一直保留，直到显式调用<code>evictSession()</code>。",
+      "count": 1
+    },
+    {
+      "source": "Delegates to multiple strategies and evicts a session if <em>any</em> delegate requests it.",
+      "translation": "委托给多个策略，如果<em>任何</em>一个委托请求驱逐会话，则执行驱逐。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Good fit:</strong>",
+      "translation": "<strong>合身：</strong>",
+      "count": 1
+    },
+    {
+      "source": "<strong>Traditional approach may be better:</strong>",
+      "translation": "<strong>传统方法可能更好：</strong>",
+      "count": 1
+    },
+    {
+      "source": "The <code>spring-ai-starter-tool-search-advisor</code> starter provides zero-boilerplate setup.\nEnable it with a single property:",
+      "translation": "<code>spring-ai-starter-tool-search-advisor</code> 启动器提供了零样板配置。只需设置一个属性即可启用：",
+      "count": 1
+    },
+    {
+      "source": "Set <code>spring.ai.chat.client.tool-search-advisor.tool-index-type</code> to select the implementation:",
+      "translation": "将 `<code>spring.ai.chat.client.tool-search-advisor.tool-index-type</code>` 设置为选择实现：",
+      "count": 1
+    },
+    {
+      "source": "<code>org.apache.lucene:lucene-core</code> on the classpath (included in the starter)",
+      "translation": "classpath 中包含 org.apache.lucene:lucene-core（已包含在 starter 中）",
+      "count": 1
+    },
+    {
+      "source": "A <code>VectorStore</code> bean in the application context",
+      "translation": "应用程序上下文中的 <code>VectorStore</code> 圈豆",
+      "count": 1
+    },
+    {
+      "source": "A custom <code>ToolIndex</code> bean declared by the application always takes precedence.",
+      "translation": "应用程序声明的自定义 <code>ToolIndex</code> 圈始终具有最高优先级。",
+      "count": 1
+    },
+    {
+      "source": "Maximum tool references returned per search call. <code>null</code> uses the built-in default.",
+      "translation": "每次搜索调用返回的最大工具引用数。<code>null</code> 使用内置默认值。",
+      "count": 1
+    },
+    {
+      "source": "Custom prompt suffix appended to the system message. <code>null</code> uses the built-in template.",
+      "translation": "附加到系统消息的自定义提示后缀。<code>null</code> 使用内置模板。",
+      "count": 1
+    },
+    {
+      "source": "Minimum Lucene score for a hit to be included. Applies when <code>tool-index-type=lucene</code>.",
+      "translation": "包含命中的最小 Lucene 分数。当 `<code>tool-index-type=lucene</code>` 时适用。",
+      "count": 1
+    },
+    {
+      "source": "Tools are mainly used for:",
+      "translation": "工具主要用于：",
+      "count": 1
+    },
+    {
+      "source": "Spring AI provides convenient APIs to define tools, resolve tool call requests from a model, and execute the tool calls. The following sections provide an overview of the tool calling capabilities in Spring AI.",
+      "translation": "Spring AI 提供了便捷的 API，用于定义工具、解析来自模型的工具体调用请求并执行这些调用。以下部分概述了 Spring AI 中的工具体调用功能。",
+      "count": 1
+    },
+    {
+      "source": "Let’s see how to start using tool calling in Spring AI. We’ll implement two simple tools: one for information retrieval and one for taking action. The information retrieval tool will be used to get the current date and time in the user’s time zone. The action tool will be used to set an alarm for a specified time.",
+      "translation": "让我们看看如何在 Spring AI 中开始使用工具调用。我们将实现两个简单的工具：一个用于信息检索，另一个用于执行操作。信息检索工具将用于获取用户时区的当前日期和时间，而操作工具将用于在指定时间设置闹钟。",
+      "count": 1
+    },
+    {
+      "source": "AI models don’t have access to real-time information. Any question that assumes awareness of information such as the current date or weather forecast cannot be answered by the model. However, we can provide a tool that can retrieve this information, and let the model call this tool when access to real-time information is needed.",
+      "translation": "AI 模型无法访问实时信息。任何假设模型知晓当前日期或天气预报等信息的问题，都无法由该模型回答。然而，我们可以提供一个用于检索此类信息的工具，并在需要获取实时信息时让模型调用该工具。",
+      "count": 1
+    },
+    {
+      "source": "The output will be something like:",
+      "translation": "输出将类似于以下内容：",
+      "count": 1
+    },
+    {
+      "source": "You can retry asking the same question again. This time, don’t provide the tool to the model. The output will be something like:",
+      "translation": "您可以重新提出相同的问题。这次，不要向模型提供工具。输出结果将类似于：",
+      "count": 1
+    },
+    {
+      "source": "Without the tool, the model doesn’t know how to answer the question because it doesn’t have the ability to determine the current date and time.",
+      "translation": "没有该工具，模型无法回答问题，因为它不具备确定当前日期和时间的能力。",
+      "count": 1
+    },
+    {
+      "source": "AI models can be used to generate plans for accomplishing certain goals. For example, a model can generate a plan for booking a trip to Denmark. However, the model doesn’t have the ability to execute the plan. That’s where tools come in: they can be used to execute the plan that a model generates.",
+      "translation": "AI 模型可用于生成实现特定目标的计划。例如，一个模型可以生成预订丹麦之旅的计划。然而，该模型不具备执行该计划的能力。这就需要工具发挥作用：它们可用于执行模型生成的计划。",
+      "count": 1
+    },
+    {
+      "source": "In the previous example, we used a tool to determine the current date and time. In this example, we’ll define a second tool for setting an alarm at a specific time. The goal is to set an alarm for 10 minutes from now, so we need to provide both tools to the model to accomplish this task.",
+      "translation": "在前面的示例中，我们使用了一个工具来确定当前的日期和时间。在本例中，我们将定义第二个工具，用于在特定时间设置闹钟。目标是设置一个 10 分钟后的闹钟，因此我们需要向模型提供这两个工具以完成此任务。",
+      "count": 1
+    },
+    {
+      "source": "In the application logs, you can check the alarm has been set at the correct time.",
+      "translation": "在应用日志中，您可以检查警报是否已在正确的时间设置。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI supports tool calling through a set of flexible abstractions that allow you to define, resolve, and execute tools in a consistent way. This section provides an overview of the main concepts and components of tool calling in Spring AI.",
+      "translation": "Spring AI 通过一组灵活的抽象支持工具调用，使您能够以一致的方式定义、解析和执行工具。本节概述了 Spring AI 中工具调用的主要概念和组件。",
+      "count": 1
+    },
+    {
+      "source": "When we want to make a tool available to the model, we include its definition in the chat request. Each tool definition comprises of a name, a description, and the schema of the input parameters.",
+      "translation": "当我们要向模型提供工具时，会在聊天请求中包含该工具的定义。每个工具定义包括名称、描述以及输入参数的模式（schema）。",
+      "count": 1
+    },
+    {
+      "source": "The application sends the tool call result back to the model.",
+      "translation": "应用程序将工具调用结果返回给模型。",
+      "count": 1
+    },
+    {
+      "source": "The model generates the final response using the tool call result as additional context.",
+      "translation": "模型利用工具调用的结果作为额外上下文来生成最终响应。",
+      "count": 1
+    },
+    {
+      "source": "The following sections will go into more details about all these concepts and APIs, including how to customize and extend them to support more use cases.",
+      "translation": "以下章节将详细介绍所有这些概念和 API，包括如何对其进行定制和扩展以支持更多用例。",
+      "count": 1
+    },
+    {
+      "source": "The following types are not currently supported as parameters or return types for methods used as tools:",
+      "translation": "以下类型当前不支持作为工具所用方法的参数或返回类型：",
+      "count": 1
+    },
+    {
+      "source": "The following types are not currently supported as input or output types for functions used as tools:",
+      "translation": "以下类型目前不支持作为用作工具的函数的输入或输出类型：",
+      "count": 1
+    },
+    {
+      "source": "Primitive types",
+      "translation": "基本数据类型",
+      "count": 1
+    },
+    {
+      "source": "This section describes two main options you can customize when generating the JSON schema for the input parameters of a tool: description and required status.",
+      "translation": "本节介绍了在生成工具输入参数的 JSON Schema 时，您可以自定义的两个主要选项：描述和必填状态。",
+      "count": 1
+    },
+    {
+      "source": "Besides providing a description for the tool itself, you can also provide a description for the input parameters of a tool. The description can be used to provide key information about the input parameters, such as what format the parameter should be in, what values are allowed, and so on. This is useful to help the model understand the input schema and how to use it. Spring AI provides built-in support for generating the description for an input parameter using one of the following annotations:",
+      "translation": "除了为工具本身提供描述外，您还可以为工具的输入参数提供描述。该描述可用于提供有关输入参数的关键信息，例如参数应采用的格式、允许的值等。这有助于模型理解输入模式及其使用方法。Spring AI 支持使用以下注解之一自动生成输入参数的描述：",
+      "count": 1
+    },
+    {
+      "source": "By default, each input parameter is considered required, which forces the AI model to provide a value for it when calling the tool. However, you can make an input parameter optional by using one of the following annotations, in this order of precedence:",
+      "translation": "默认情况下，每个输入参数都被视为必需参数，这会强制 AI 模型在调用工具时为其提供值。然而，您可以通过使用以下注解之一将输入参数设为可选，其优先级顺序如下：",
+      "count": 1
+    },
+    {
+      "source": "The interface provides the following method:",
+      "translation": "该接口提供以下方法：",
+      "count": 1
+    },
+    {
+      "source": "By default, the result of a tool call is sent back to the model as a response. Then, the model can use the result to continue the conversation.",
+      "translation": "默认情况下，工具调用的结果会作为响应返回给模型，然后模型可以利用该结果继续对话。",
+      "count": 1
+    },
+    {
+      "source": "There are cases where you’d rather return the result directly to the caller instead of sending it back to the model. For example, if you build an agent that relies on a RAG tool, you might want to return the result directly to the caller instead of sending it back to the model for unnecessary post-processing. Or perhaps you have certain tools that should end the reasoning loop of the agent.",
+      "translation": "在某些情况下，您可能更希望直接将结果返回给调用者，而不是将其发回模型。例如，如果您构建了一个依赖 RAG 工具的代理，可能希望直接将结果返回给调用者，以避免将结果发回模型进行不必要的后处理。或者，您可能拥有某些应终止代理推理循环的工具。",
+      "count": 1
+    },
+    {
+      "source": "The application sends the tool call result directly to the caller, instead of sending it back to the model.",
+      "translation": "应用程序直接将工具调用结果发送给调用方，而不是将其返回给模型。",
+      "count": 1
+    },
+    {
+      "source": "When the model decides to call a tool, it sends a response with the tool name and input parameters.",
+      "translation": "当模型决定调用工具时，它会发送一个包含工具名称和输入参数的响应。",
+      "count": 1
+    },
+    {
+      "source": "To disable it for a single call only:",
+      "translation": "若要仅针对单次调用禁用该功能：",
+      "count": 1
+    },
+    {
+      "source": "There are cases where you’d rather control the tool execution lifecycle yourself — for example, to stream intermediate progress to a UI, add custom observability, or apply conditional logic between iterations.",
+      "translation": "在某些情况下，您可能更希望自行控制工具的执行生命周期——例如，将中间进度流式传输到用户界面、添加自定义的可观测性机制，或在迭代之间应用条件逻辑。",
+      "count": 1
+    },
+    {
+      "source": "The following example demonstrates a minimal implementation of the user-controlled tool execution approach:",
+      "translation": "以下示例展示了用户控制工具执行方法的最小化实现：",
+      "count": 1
+    },
+    {
+      "source": "Common use cases include:",
+      "translation": "常见用例包括：",
+      "count": 1
+    },
+    {
+      "source": "The model receives only a single search tool initially — minimal token usage.",
+      "translation": "模型最初仅接收一个搜索工具——以最小化令牌使用量。",
+      "count": 1
+    },
+    {
+      "source": "When capabilities are needed, the model calls the search tool with a natural-language query.",
+      "translation": "当需要特定能力时，模型会使用自然语言查询调用搜索工具。",
+      "count": 1
+    },
+    {
+      "source": "Matching tool definitions are dynamically expanded into the context.",
+      "translation": "匹配工具定义会动态扩展至上下文中。",
+      "count": 1
+    },
+    {
+      "source": "The model can then invoke the discovered tools normally.",
+      "translation": "随后，模型可以正常调用已发现的工具。",
+      "count": 1
+    },
+    {
+      "source": "This achieves significant token savings while maintaining access to large tool catalogs.",
+      "translation": "这实现了显著的令牌节省，同时仍能访问大型工具目录。",
+      "count": 1
+    },
+    {
+      "source": "The flow at runtime is:",
+      "translation": "运行时的流程如下：",
+      "count": 1
+    },
+    {
+      "source": "Use the Spring Boot starter for the simplest setup (includes Lucene and auto-configuration):",
+      "translation": "使用最简化的 Spring Boot Starter 进行设置（包含 Lucene 和自动配置）：",
+      "count": 1
+    },
+    {
+      "source": "Or use the library directly for manual configuration:",
+      "translation": "或直接使用库进行手动配置：",
+      "count": 1
+    },
+    {
+      "source": "Natural-language queries, fuzzy matching",
+      "translation": "自然语言查询，模糊匹配",
+      "count": 1
+    },
+    {
+      "source": "Exact term matching, known tool names",
+      "translation": "精确术语匹配，已知工具名称",
+      "count": 1
+    },
+    {
+      "source": "Uses embedding-based similarity search. Best for natural-language queries where users describe what they need.",
+      "translation": "采用基于嵌入的相似性搜索。最适合用户用自然语言描述其需求的场景。",
+      "count": 1
+    },
+    {
+      "source": "Uses Apache Lucene for keyword-based search. Fast and effective for exact-term matching.",
+      "translation": "使用 Apache Lucene 进行基于关键词的搜索。对于精确术语匹配，快速且高效。",
+      "count": 1
+    },
+    {
+      "source": "The search implementation to use.",
+      "translation": "要使用的搜索实现。",
+      "count": 1
+    },
+    {
+      "source": "Built-in template",
+      "translation": "内置模板",
+      "count": 1
+    },
+    {
+      "source": "Context key used to look up the conversation/session ID. Change this when your app stores the conversation ID under a custom key.",
+      "translation": "用于查找会话/会话 ID 的上下文键。如果您的应用程序将会话 ID 存储在自定义键下，请更改此设置。",
+      "count": 1
+    },
+    {
+      "source": "Clears a session’s index before every request, forcing a full re-index each turn. Useful for testing or when tool sets change every request.",
+      "translation": "在每次请求之前清除会话的索引，强制每轮进行完整重新索引。适用于测试或工具集在每次请求时发生变化的场景。",
+      "count": 1
+    },
+    {
+      "source": "Evicts sessions whose last-access time exceeds the given TTL. Evaluated lazily on each request.",
+      "translation": "驱逐最后访问时间超过给定TTL的会话。在每次请求时惰性评估。",
+      "count": 1
+    },
+    {
+      "source": "Eviction is evaluated lazily on each request — no background thread is required.",
+      "translation": "驱逐操作在每次请求时惰性评估——无需后台线程。",
+      "count": 1
+    },
+    {
+      "source": "10 or more tools in your system.",
+      "translation": "系统中有 10 个或更多工具。",
+      "count": 1
+    },
+    {
+      "source": "Tool definitions are consuming more than 10K tokens.",
+      "translation": "工具定义消耗的令牌数已超过 10K。",
+      "count": 1
+    },
+    {
+      "source": "Building MCP-powered systems with multiple servers.",
+      "translation": "构建由多个服务器支持的 MCP 驱动系统。",
+      "count": 1
+    },
+    {
+      "source": "Experiencing tool selection accuracy issues with large tool sets.",
+      "translation": "在使用大型工具集时，遇到工具选择准确性问题。",
+      "count": 1
+    },
+    {
+      "source": "Small tool library (fewer than 10 tools).",
+      "translation": "小型工具库（少于 10 个工具）。",
+      "count": 1
+    },
+    {
+      "source": "All tools are frequently used in every session.",
+      "translation": "所有工具在每次会话中都会频繁使用。",
+      "count": 1
+    },
+    {
+      "source": "Tool definitions are very compact.",
+      "translation": "工具定义非常紧凑。",
+      "count": 1
+    },
+    {
+      "source": "No additional dependencies",
+      "translation": "无需额外依赖",
+      "count": 1
+    },
+    {
+      "source": "Accumulate tool names discovered across all search calls in a single turn.",
+      "translation": "在单次对话中，汇总所有搜索调用中发现的工具名称。",
+      "count": 1
+    },
+    {
+      "source": "Advisor context key that carries the conversation/session ID.",
+      "translation": "承载会话/会话 ID 的顾问上下文键。",
+      "count": 1
+    },
+    {
+      "source": "Maximum active sessions retained by the LRU eviction strategy.",
+      "translation": "LRU 驱逐策略保留的最大活跃会话数。",
+      "count": 1
+    },
+    {
+      "source": "Example — Lucene with custom threshold:",
+      "translation": "示例——带有自定义阈值的 Lucene：",
+      "count": 1
+    },
+    {
+      "source": "Apache®, Apache Tomcat®, Apache Kafka®, Apache Cassandra™, and Apache Geode™ are trademarks or registered trademarks of the Apache Software Foundation in the United States and/or other countries. Java™, Java™ SE, Java™ EE, and OpenJDK™ are trademarks of Oracle and/or its affiliates. Kubernetes® is a registered trademark of the Linux Foundation in the United States and other countries. Linux® is the registered trademark of Linus Torvalds in the United States and other countries. Windows® and Microsoft® Azure are registered trademarks of Microsoft Corporation. “AWS” and “Amazon Web Services” are trademarks or registered trademarks of Amazon.com Inc. or its affiliates. All other trademarks and copyrights are property of their respective owners and are only mentioned for informative purposes. Other names may be trademarks of their respective owners.",
+      "translation": "Apache®、Apache Tomcat®、Apache Kafka®、Apache Cassandra™ 和 Apache Geode™ 是 Apache 软件基金会在美国和其他/或某些国家的商标或注册商标。Java™、Java™ SE、Java™ EE 和 OpenJDK™ 是 Oracle 公司和/或其关联公司的商标。Kubernetes® 是 Linux 基金会在美国和其他/或某些国家的注册商标。Linux® 是 Linus Torvalds 在美国和其他/或某些国家的注册商标。Windows® 和 Microsoft® Azure 是微软公司的注册商标。\"AWS\"和\"Amazon Web Services\"是 Amazon.com Inc. 或其关联公司的商标或注册商标。所有其他商标和版权均归各自所有者所有，仅用于说明目的。其他名称可能是其各自所有者的商标。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/projects\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-boot\">Spring Boot</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-framework\">Spring Framework</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud\">Spring Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud-dataflow\">Spring Cloud Data Flow</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-data\">Spring Data</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-integration\">Spring Integration</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-batch\">Spring Batch</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-security\">Spring Security</a>\n            <a class=\"navbar-item navbar-item-special\" href=\"https://spring.io/projects\">View all projects</a>\n            <li class=\"navbar-item navbar-item-special-3\">DEVELOPMENT TOOLS</li>\n            <a class=\"navbar-item\" href=\"https://spring.io/tools\">Spring Tools 4</a>\n            <a class=\"navbar-item navbar-item-special-2\" href=\"https://start.spring.io\">Spring Initializr\n              <svg id=\"svg-stash-f15b5668\"></svg></a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/projects\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-boot\">Spring Boot</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-framework\">Spring Framework</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud\">Spring Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud-dataflow\">Spring Cloud Data Flow</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-data\">Spring Data</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-integration\">Spring Integration</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-batch\">Spring Batch</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-security\">Spring Security</a>\n            <a class=\"navbar-item navbar-item-special\" href=\"https://spring.io/projects\">查看所有项目</a>\n            <li class=\"navbar-item navbar-item-special-3\">开发工具</li>\n            <a class=\"navbar-item\" href=\"https://spring.io/tools\">Spring Tools 4</a>\n            <a class=\"navbar-item navbar-item-special-2\" href=\"https://start.spring.io\">Spring Initializr\n              <svg id=\"svg-stash-f15b5668\"></svg></a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/why-spring\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/microservices\">Microservices</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/reactive\">Reactive</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/event-driven\">Event\n              Driven</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/cloud\">Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/web-applications\">Web\n              Applications</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/serverless\">Serverless</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/batch\">Batch</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/why-spring\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/microservices\">微服务</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/reactive\">响应式</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/event-driven\">事件驱动</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/cloud\">云</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/web-applications\">Web 应用</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/serverless\">无服务器</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/batch\">批处理</a>",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/tools.adoc\">\n          <svg id=\"svg-stash-05b5c46b\"></svg>\n          Edit this Page\n        </a>\n        <a href=\"https://github.com/spring-projects/spring-ai\" title=\"GitHub\">\n          <svg id=\"svg-stash-28d888b7\"></svg>\n          GitHub Project\n        </a>",
+      "translation": "<a href=\"file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/tools.adoc\">\n          <svg id=\"svg-stash-05b5c46b\"></svg>\n          编辑此页面\n        </a>\n        <a href=\"https://github.com/spring-projects/spring-ai\" title=\"GitHub\">\n          <svg id=\"svg-stash-28d888b7\"></svg>\n          GitHub 项目\n        </a>",
+      "count": 1
+    },
+    {
+      "source": "<nav aria-label=\"breadcrumbs\" class=\"breadcrumbs\">\n    <ul>\n      <li><a href=\"../index.html\">Spring AI</a></li>\n      <li>Reference</li>\n      <li><a href=\"tools.html\">Tool Calling</a></li>\n    </ul>\n  </nav>",
+      "translation": "<nav aria-label=\"面包屑\" class=\"breadcrumbs\">\n    <ul>\n      <li><a href=\"../index.html\">Spring AI</a></li>\n      <li>参考</li>\n      <li><a href=\"tools.html\">工具调用</a></li>\n    </ul>\n  </nav>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/solutions\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/support\">Spring Runtime</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/consulting\">Spring Consulting</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/teams\">Spring Academy For Teams</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/security\">Security Advisories</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/solutions\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/support\">Spring 运行时</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/consulting\">Spring 咨询</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/teams\">Spring Academy 团队培训</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/security\">安全公告</a>",
+      "count": 1
+    },
+    {
+      "source": "<ul class=\"projects\">\n  <li>\n    Related Spring Documentation\n    <ul class=\"projects-list\">\n    </ul>\n  </li><a href=\"../spring-projects.html\">All Docs...</a>\n</ul>",
+      "translation": "<ul class=\"projects\">\n  <li>\n    相关 Spring 文档\n    <ul class=\"projects-list\">\n    </ul>\n  </li><a href=\"../spring-projects.html\">所有文档...</a>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.academy/courses\">Courses</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/learning-path\">Get Certified</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.academy/courses\">课程</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/learning-path\">获取认证</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"title\" href=\"../index.html\">Spring AI</a>",
+      "translation": "<a class=\"title\" href=\"../index.html\">Spring AI</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"search-link\" href=\"../search.html\">Search in all Spring Docs</a>",
+      "translation": "<a class=\"search-link\" href=\"../search.html\">在全部 Spring 文档中搜索</a>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"vectordbs.html\">Vector Databases</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/azure.html\">Azure AI Service</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/azure-cosmos-db.html\">Azure Cosmos DB</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/bedrock-knowledge-base.html\">Amazon Bedrock Knowledge Base</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/apache-cassandra.html\">Apache Cassandra Vector Store</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/chroma.html\">Chroma</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/couchbase.html\">Couchbase</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/elasticsearch.html\">Elasticsearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/gemfire.html\">GemFire</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/mariadb.html\">MariaDB Vector Store</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/milvus.html\">Milvus</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/mongodb.html\">MongoDB Atlas</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/neo4j.html\">Neo4j</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/opensearch.html\">OpenSearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/oracle.html\">Oracle</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/pgvector.html\">PGvector</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/pinecone.html\">Pinecone</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/qdrant.html\">Qdrant</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/redis.html\">Redis</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/typesense.html\">Typesense</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/weaviate.html\">Weaviate</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/s3-vector-store.html\">S3 Vector Store</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"vectordbs.html\">向量数据库</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/azure.html\">Azure AI 服务</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/azure-cosmos-db.html\">Azure Cosmos DB</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/bedrock-knowledge-base.html\">Amazon Bedrock 知识库</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/apache-cassandra.html\">Apache Cassandra 向量存储</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/chroma.html\">Chroma</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/couchbase.html\">Couchbase</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/elasticsearch.html\">Elasticsearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/gemfire.html\">GemFire</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/mariadb.html\">MariaDB 向量存储</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/milvus.html\">Milvus</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/mongodb.html\">MongoDB Atlas</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/neo4j.html\">Neo4j</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/opensearch.html\">OpenSearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/oracle.html\">Oracle</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/pgvector.html\">PGvector</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/pinecone.html\">Pinecone</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/qdrant.html\">Qdrant</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/redis.html\">Redis</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/typesense.html\">Typesense</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/weaviate.html\">Weaviate</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/s3-vector-store.html\">S3 向量存储</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"embeddings.html\">Embedding Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"bedrock.html\">Amazon Bedrock</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/bedrock-cohere-embedding.html\">Cohere</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/bedrock-titan-embedding.html\">Titan</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/azure-openai-embeddings.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/google-genai-embeddings-text.html\">Google GenAI Text Embedding</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/mistralai-embeddings.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/oci-genai-embeddings.html\">OCI GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/ollama-embeddings.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/onnx.html\">(ONNX) Transformers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/openai-embeddings.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/postgresml-embeddings.html\">PostgresML</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">VertexAI</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/vertexai-embeddings-text.html\">Text Embedding</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/vertexai-embeddings-multimodal.html\">Multimodal Embedding</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"embeddings.html\">嵌入模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"bedrock.html\">Amazon Bedrock</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/bedrock-cohere-embedding.html\">Cohere</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/bedrock-titan-embedding.html\">Titan</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/azure-openai-embeddings.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/google-genai-embeddings-text.html\">Google GenAI 文本嵌入</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/mistralai-embeddings.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/oci-genai-embeddings.html\">OCI GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/ollama-embeddings.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/onnx.html\">(ONNX) Transformers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/openai-embeddings.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/postgresml-embeddings.html\">PostgresML</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">VertexAI</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/vertexai-embeddings-text.html\">文本嵌入</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/vertexai-embeddings-multimodal.html\">多模态嵌入</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"chatmodel.html\">Chat Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/comparison.html\">Chat Models Comparison</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/bedrock-converse.html\">Amazon Bedrock Converse</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/anthropic-chat.html\">Anthropic</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/azure-openai-chat.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/deepseek-chat.html\">DeepSeek</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/dmr-chat.html\">Docker Model Runner</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/google-genai-chat.html\">Google GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/groq-chat.html\">Groq</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/mistralai-chat.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/minimax-chat.html\">MiniMax</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/nvidia-chat.html\">NVIDIA</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/ollama-chat.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/perplexity-chat.html\">Perplexity AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/oci-genai-chat.html\">OCI Generative AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/openai-chat.html\">OpenAI</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"chatmodel.html\">对话模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/comparison.html\">对话模型对比</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/bedrock-converse.html\">Amazon Bedrock Converse</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/anthropic-chat.html\">Anthropic</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/azure-openai-chat.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/deepseek-chat.html\">DeepSeek</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/dmr-chat.html\">Docker Model Runner</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/google-genai-chat.html\">Google GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/groq-chat.html\">Groq</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/mistralai-chat.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/minimax-chat.html\">MiniMax</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/nvidia-chat.html\">NVIDIA</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/ollama-chat.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/perplexity-chat.html\">Perplexity AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/oci-genai-chat.html\">OCI Generative AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/openai-chat.html\">OpenAI</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-overview.html\">Model Context Protocol (MCP)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mcp/mcp-client-boot-starter-docs.html\">MCP Client Boot Starters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-server-boot-starter-docs.html\">MCP Server Boot Starters</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-stdio-sse-server-boot-starter-docs.html\">STDIO and SSE MCP Servers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-streamable-http-server-boot-starter-docs.html\">Streamable-HTTP MCP Servers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-stateless-server-boot-starter-docs.html\">Stateless Streamable-HTTP MCP Servers</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mcp/mcp-security.html\">MCP Security (WIP)</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-overview.html\">MCP Annotations</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-client.html\">Client Annotations</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-server.html\">Server Annotations</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-special-params.html\">Special Parameters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-examples.html\">MCP Annotations Examples</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"mcp/mcp-overview.html\">模型上下文协议 (MCP)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mcp/mcp-client-boot-starter-docs.html\">MCP 客户端启动器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-server-boot-starter-docs.html\">MCP 服务器启动器</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-stdio-sse-server-boot-starter-docs.html\">STDIO 和 SSE MCP 服务器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-streamable-http-server-boot-starter-docs.html\">可流式 HTTP MCP 服务器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-stateless-server-boot-starter-docs.html\">无状态可流式 HTTP MCP 服务器</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mcp/mcp-security.html\">MCP 安全 (进行中)</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-overview.html\">MCP 注解</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-client.html\">客户端注解</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-server.html\">服务器注解</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-special-params.html\">特殊参数</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-examples.html\">MCP 注解示例</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">Guides</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/spring-ai-community/awesome-spring-ai\">Awesome Spring AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/getting-started-mcp.html\">Getting Started with MCP</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/dynamic-tool-search.html\">Dynamic Tool Discovery</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/llm-as-judge.html\">LLM-as-a-Judge Evaluation</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"chat/prompt-engineering-patterns.html\">Prompt Engineering Patterns</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"effective-agents.html\">Building Effective Agents</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agents\">Building agents with Spring AI by AWS</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agentcore\">Building agents with Spring AI and AgentCore by AWS</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/microsoft/Spring-AI-for-Beginners\">Spring AI for Beginners by Microsoft</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<span class=\"nav-text\">指南</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/spring-ai-community/awesome-spring-ai\">Awesome Spring AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/getting-started-mcp.html\">MCP 入门</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/dynamic-tool-search.html\">动态工具发现</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/llm-as-judge.html\">LLM 作为裁判的评估</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"chat/prompt-engineering-patterns.html\">提示工程模式</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"effective-agents.html\">构建高效智能体</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agents\">AWS 使用 Spring AI 构建智能体</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agentcore\">AWS 使用 Spring AI 和 AgentCore 构建智能体</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/microsoft/Spring-AI-for-Beginners\">Microsoft 的 Spring AI 初学者指南</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio.html\">Audio Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio/transcriptions.html\">Transcription API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/transcriptions/azure-openai-transcriptions.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/transcriptions/openai-transcriptions.html\">OpenAI</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio/speech.html\">Text-To-Speech (TTS) API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/speech/openai-speech.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/speech/elevenlabs-speech.html\">ElevenLabs</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio.html\">音频模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio/transcriptions.html\">转录 API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/transcriptions/azure-openai-transcriptions.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/transcriptions/openai-transcriptions.html\">OpenAI</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio/speech.html\">文本转语音 (TTS) API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/speech/openai-speech.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/speech/elevenlabs-speech.html\">ElevenLabs</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"chatclient.html\">Chat Client API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"advisors.html\">Advisors</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"advisors-recursive.html\">Recursive Advisors</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"chatclient.html\">聊天客户端 API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"advisors.html\">顾问</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"advisors-recursive.html\">递归顾问</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"imageclient.html\">Image Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/azure-openai-image.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/openai-image.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/stabilityai-image.html\">Stability</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"imageclient.html\">图像模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/azure-openai-image.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/openai-image.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/stabilityai-image.html\">Stability</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n<code>ChatModel</code> implementations previously handled tool execution internally. That approach is deprecated since 2.0.0 and will be removed in 3.0.0. Prefer using <code>ChatClient</code> with <code>ToolCallingAdvisor</code> instead.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n<code>ChatModel</code> 实现此前在内部处理工具执行。自 2.0.0 版本起，该方式已被弃用，并将在 3.0.0 版本中移除。建议使用 <code>ChatClient</code> 配合 <code>ToolCallingAdvisor</code> 替代。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nSpring AI provides built-in support for AOT compilation of the <code>@Tool</code>-annotated methods as long as the class containing the methods is a Spring bean (e.g. <code>@Component</code>). Otherwise, you’ll need to provide the necessary configuration to the GraalVM compiler. For example, by annotating the class with <code>@RegisterReflection(memberCategories = MemberCategory.INVOKE_DECLARED_METHODS)</code>.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nSpring AI 为使用 <code>@Tool</code> 注解的方法提供了内置的 AOT 编译支持，前提是包含这些方法的类是一个 Spring Bean（例如 <code>@Component</code>）。否则，您需要向 GraalVM 编译器提供必要的配置。例如，可以通过使用 <code>@RegisterReflection(memberCategories = MemberCategory.INVOKE_DECLARED_METHODS)</code> 注解该类来实现。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nIf you defined your own <code>ToolCallback</code> implementation, make sure to throw a <code>ToolExecutionException</code> when an error occurs as part of the tool execution logic in the <code>call()</code> method.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n如果您自定义了 <code>ToolCallback</code> 实现，请确保在工具执行逻辑的 <code>call()</code> 方法中发生错误时抛出 <code>ToolExecutionException</code>。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"moderation.html\">Moderation Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"moderation/openai-moderation.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"moderation/mistral-ai-moderation.html\">Mistral AI</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"moderation.html\">内容审核模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"moderation/openai-moderation.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"moderation/mistral-ai-moderation.html\">Mistral AI</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../upgrade-notes.html\">Upgrade Notes</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"tools-migration.html\">Migrating FunctionCallback to ToolCallback API</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"chat/anthropic-migration.html\">Migrating the Anthropic Module to the Official Java SDK</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"../upgrade-notes.html\">升级说明</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"tools-migration.html\">将 FunctionCallback 迁移至 ToolCallback API</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"chat/anthropic-migration.html\">将 Anthropic 模块迁移至官方 Java SDK</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nSpring AI provides built-in support for AOT compilation of the tool methods as long as the class containing the methods is a Spring bean (e.g. <code>@Component</code>). Otherwise, you’ll need to provide the necessary configuration to the GraalVM compiler. For example, by annotating the class with <code>@RegisterReflection(memberCategories = MemberCategory.INVOKE_DECLARED_METHODS)</code>.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nSpring AI 为工具方法的 AOT 编译提供了内置支持，前提是包含这些方法的类是一个 Spring Bean（例如 <code>@Component</code>）。否则，您需要向 GraalVM 编译器提供必要的配置。例如，可以通过使用 <code>@RegisterReflection(memberCategories = MemberCategory.INVOKE_DECLARED_METHODS)</code> 注解该类来实现。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nSee <a href=\"#_tool_definition\">Tool Definition</a> for more details on the <code>ToolDefinition</code> and how to pass the input schema to it.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n有关 <code>ToolDefinition</code> 的更多详细信息以及如何向其传递输入模式，请参阅<a href=\"#_tool_definition\">工具定义</a>。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nIf multiple tool calls are requested at once, the <code>returnDirect</code> attribute must be set to <code>true</code> for all the tools to return the results directly to the caller. Otherwise, the results will be sent back to the model.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n如果同时请求多个工具调用，则必须将所有工具的 <code>returnDirect</code> 属性设置为 <code>true</code>，以便直接返回结果给调用者。否则，结果将被发送回模型。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\nThe <a href=\"https://github.com/spring-ai-community/spring-ai-session\">spring-ai-session</a> community project provides a session-aware memory implementation that fully supports tool-call messages and can be safely used inside the tool-call loop with any backend. See the <a href=\"https://spring-ai-community.github.io/spring-ai-session/latest-snapshot/\">spring-ai-session documentation</a>.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"提示\"></i>\n</td>\n<td class=\"content\">\n<a href=\"https://github.com/spring-ai-community/spring-ai-session\">spring-ai-session</a> 社区项目提供了一个支持会话记忆的内存实现，完全支持工具调用消息，并可与任何后端安全地在工具调用循环中使用。请参阅 <a href=\"https://spring-ai-community.github.io/spring-ai-session/latest-snapshot/\">spring-ai-session 文档</a>。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nCheck the <a class=\"xref page\" href=\"chat/comparison.html\">Chat Model Comparisons</a> to see which AI models support tool calling invocation.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n请查看<a class=\"xref page\" href=\"chat/comparison.html\">Chat Model Comparisons</a>，以了解哪些 AI 模型支持工具调用。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\nFollow the guide to migrate from the deprecated <a class=\"xref page\" href=\"tools-migration.html\">FunctionCallback to ToolCallback API</a>.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"提示\"></i>\n</td>\n<td class=\"content\">\n请按照指南，从已弃用的 <a class=\"xref page\" href=\"tools-migration.html\">FunctionCallback 迁移至 ToolCallback API</a>。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nSome types are not supported. See <a href=\"#_function_tool_limitations\">Function Tool Limitations</a> for more details.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n部分类型不受支持。有关详细信息，请参阅<a href=\"#_function_tool_limitations\">函数工具限制</a>。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nSee <a href=\"#_json_schema\">JSON Schema</a> for more details on the input schema.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n有关输入架构的详细信息，请参阅<a href=\"#_json_schema\">JSON Schema</a>。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nSee <a href=\"#_methods_as_tools\">Methods as Tools</a> for more details.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n详见<a href=\"#_methods_as_tools\">方法作为工具</a>。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-warning\" title=\"Warning\"></i>\n</td>\n<td class=\"content\">\nDefining the correct required status for the input parameter is crucial to mitigate the risk of hallucinations and ensure the model provides the right input when calling the tool. In the previous example, the <code>email</code> parameter is optional, which means the model can call the tool without providing a value for it. If the parameter was required, the model would have to provide a value for it when calling the tool. And if no value existed, the model would probably make one up, leading to hallucinations.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-warning\" title=\"Warning\"></i>\n</td>\n<td class=\"content\">\n为输入参数定义正确的必需状态对于降低幻觉风险并确保模型在调用工具时提供正确的输入至关重要。在前面的示例中，<code>email</code> 参数是可选的，这意味着模型可以在不提供其值的情况下调用该工具。如果该参数是必需的，则模型在调用工具时必须为其提供一个值。如果没有现成的值，模型很可能会编造一个，从而导致幻觉。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nNone of the data provided in the <code>ToolContext</code> is sent to the AI model.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n<code>ToolContext</code> 中提供的任何数据都不会发送给 AI 模型。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nWhen choosing the user-controlled tool execution approach, we recommend using a <code>ToolCallingManager</code> to manage the tool calling operations. This way, you can benefit from the built-in support provided by Spring AI for tool execution. However, nothing prevents you from implementing your own tool execution logic.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n在选择用户控制的工具执行方式时，我们建议使用 <code>ToolCallingManager</code> 来管理工具调用操作。这样，您可以利用 Spring AI 为工具执行提供的内置支持。不过，您也可以自行实现工具执行逻辑。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../index.html\">Overview</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../concepts.html\">AI Concepts</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"../index.html\">概述</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../concepts.html\">AI 概念</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"retrieval-augmented-generation.html\">Retrieval Augmented Generation (RAG)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"etl-pipeline.html\">ETL Pipeline</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"retrieval-augmented-generation.html\">检索增强生成 (RAG)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"etl-pipeline.html\">ETL 管道</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<tr>\n<th class=\"tableblock halign-left valign-top\">Strategy</th>\n<th class=\"tableblock halign-left valign-top\">Implementation</th>\n<th class=\"tableblock halign-left valign-top\">Best For</th>\n</tr>",
+      "translation": "<tr>\n<th class=\"tableblock halign-left valign-top\">策略</th>\n<th class=\"tableblock halign-left valign-top\">实现方式</th>\n<th class=\"tableblock halign-left valign-top\">最佳适用场景</th>\n</tr>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"prev\"><a href=\"chat-memory.html\">Chat Memory</a></span>\n  <span class=\"next\"><a href=\"mcp/mcp-overview.html\">Model Context Protocol (MCP)</a></span>",
+      "translation": "<span class=\"prev\"><a href=\"chat-memory.html\">对话记忆</a></span>\n  <span class=\"next\"><a href=\"mcp/mcp-overview.html\">模型上下文协议 (MCP)</a></span>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_adding_tools_to_chatclient_and_chatmodel\"></a>Adding Tools to <code>ChatClient</code> and <code>ChatModel</code>",
+      "translation": "<a class=\"anchor\" href=\"#_adding_tools_to_chatclient_and_chatmodel\"></a>向 <code>ChatClient</code> 和 <code>ChatModel</code> 添加工具",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_declarative_specification_tool\"></a>Declarative Specification: <code>@Tool</code>",
+      "translation": "<a class=\"anchor\" href=\"#_declarative_specification_tool\"></a>声明式规范：<code>@Tool</code>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_adding_tools_to_chatclient\"></a>Adding Tools to <code>ChatClient</code>",
+      "translation": "<a class=\"anchor\" href=\"#_adding_tools_to_chatclient\"></a>为 <code>ChatClient</code> 添加工具",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_adding_default_tools_to_chatclient\"></a>Adding Default Tools to <code>ChatClient</code>",
+      "translation": "<a class=\"anchor\" href=\"#_adding_default_tools_to_chatclient\"></a>为<code>ChatClient</code>添加默认工具",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_adding_tools_to_chatmodel\"></a>Adding Tools to <code>ChatModel</code>",
+      "translation": "<a class=\"anchor\" href=\"#_adding_tools_to_chatmodel\"></a>为<code>ChatModel</code>添加工具",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_adding_default_tools_to_chatmodel\"></a>Adding Default Tools to <code>ChatModel</code>",
+      "translation": "<a class=\"anchor\" href=\"#_adding_default_tools_to_chatmodel\"></a>为<code>ChatModel</code>添加默认工具",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_programmatic_specification_methodtoolcallback\"></a>Programmatic Specification: <code>MethodToolCallback</code>",
+      "translation": "<a class=\"anchor\" href=\"#_programmatic_specification_methodtoolcallback\"></a>程序化规范：<code>MethodToolCallback</code>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_adding_default_tools_to_chatclient_2\"></a>Adding Default Tools to <code>ChatClient</code>",
+      "translation": "<a class=\"anchor\" href=\"#_adding_default_tools_to_chatclient_2\"></a>为 <code>ChatClient</code> 添加默认工具",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_adding_tools_to_chatmodel_2\"></a>Adding Tools to <code>ChatModel</code>",
+      "translation": "<a class=\"anchor\" href=\"#_adding_tools_to_chatmodel_2\"></a>为<code>ChatModel</code>添加工具",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_adding_default_tools_to_chatmodel_2\"></a>Adding Default Tools to <code>ChatModel</code>",
+      "translation": "<a class=\"anchor\" href=\"#_adding_default_tools_to_chatmodel_2\"></a>为<code>ChatModel</code>添加默认工具",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_programmatic_specification_functiontoolcallback\"></a>Programmatic Specification: <code>FunctionToolCallback</code>",
+      "translation": "<a class=\"anchor\" href=\"#_programmatic_specification_functiontoolcallback\"></a>程序化规范：<code>FunctionToolCallback</code>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_adding_tools_to_chatclient_2\"></a>Adding Tools to <code>ChatClient</code>",
+      "translation": "<a class=\"anchor\" href=\"#_adding_tools_to_chatclient_2\"></a>为 <code>ChatClient</code> 添加工具",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_adding_default_tools_to_chatclient_3\"></a>Adding Default Tools to <code>ChatClient</code>",
+      "translation": "<a class=\"anchor\" href=\"#_adding_default_tools_to_chatclient_3\"></a>为 <code>ChatClient</code> 添加默认工具",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_adding_tools_to_chatmodel_3\"></a>Adding Tools to <code>ChatModel</code>",
+      "translation": "<a class=\"anchor\" href=\"#_adding_tools_to_chatmodel_3\"></a>为 <code>ChatModel</code> 添加工具",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_adding_default_tools_to_chatmodel_3\"></a>Adding Default Tools to <code>ChatModel</code>",
+      "translation": "<a class=\"anchor\" href=\"#_adding_default_tools_to_chatmodel_3\"></a>为 <code>ChatModel</code> 添加默认工具",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../getting-started.html\">Getting Started</a>",
+      "translation": "<a class=\"nav-link\" href=\"../getting-started.html\">入门指南</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"structured-output-converter.html\">Structured Output</a>",
+      "translation": "<a class=\"nav-link\" href=\"structured-output-converter.html\">结构化输出</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"chat-memory.html\">Chat Memory</a>",
+      "translation": "<a class=\"nav-link\" href=\"chat-memory.html\">对话记忆</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"tools.html\">Tool Calling</a>",
+      "translation": "<a class=\"nav-link\" href=\"tools.html\">工具调用</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"testing.html\">Model Evaluation</a>",
+      "translation": "<a class=\"nav-link\" href=\"testing.html\">模型评估</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"docker-compose.html\">Development-time Services</a>",
+      "translation": "<a class=\"nav-link\" href=\"docker-compose.html\">开发时服务</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_quick_start\"></a>Quick Start",
+      "translation": "<a class=\"anchor\" href=\"#_quick_start\"></a>快速开始",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_information_retrieval\"></a>Information Retrieval",
+      "translation": "<a class=\"anchor\" href=\"#_information_retrieval\"></a>信息检索",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_taking_actions\"></a>Taking Actions",
+      "translation": "<a class=\"anchor\" href=\"#_taking_actions\"></a>采取行动",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_methods_as_tools\"></a>Methods as Tools",
+      "translation": "<a class=\"anchor\" href=\"#_methods_as_tools\"></a>方法作为工具",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_method_tool_limitations\"></a>Method Tool Limitations",
+      "translation": "<a class=\"anchor\" href=\"#_method_tool_limitations\"></a>方法工具局限性",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_functions_as_tools\"></a>Functions as Tools",
+      "translation": "<a class=\"anchor\" href=\"#_functions_as_tools\"></a>函数作为工具",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_function_tool_limitations\"></a>Function Tool Limitations",
+      "translation": "<a class=\"anchor\" href=\"#_function_tool_limitations\"></a>函数工具限制",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_tool_specification\"></a>Tool Specification",
+      "translation": "<a class=\"anchor\" href=\"#_tool_specification\"></a>工具规格",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_tool_callback\"></a>Tool Callback",
+      "translation": "<a class=\"anchor\" href=\"#_tool_callback\"></a>工具回调",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_tool_definition\"></a>Tool Definition",
+      "translation": "<a class=\"anchor\" href=\"#_tool_definition\"></a>工具定义",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_method_tool_definition\"></a>Method Tool Definition",
+      "translation": "<a class=\"anchor\" href=\"#_method_tool_definition\"></a>方法工具定义",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_function_tool_definition\"></a>Function Tool Definition",
+      "translation": "<a class=\"anchor\" href=\"#_function_tool_definition\"></a>函数工具定义",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_json_schema\"></a>JSON Schema",
+      "translation": "<a class=\"anchor\" href=\"#_json_schema\"></a>JSON 模式",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_result_conversion\"></a>Result Conversion",
+      "translation": "<a class=\"anchor\" href=\"#_result_conversion\"></a>结果转换",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_method_tool_call_result_conversion\"></a>Method Tool Call Result Conversion",
+      "translation": "<a class=\"anchor\" href=\"#_method_tool_call_result_conversion\"></a>方法工具调用结果转换",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_function_tool_call_result_conversion\"></a>Function Tool Call Result Conversion",
+      "translation": "<a class=\"anchor\" href=\"#_function_tool_call_result_conversion\"></a>函数工具调用结果转换",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_tool_context\"></a>Tool Context",
+      "translation": "<a class=\"anchor\" href=\"#_tool_context\"></a>工具上下文",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_return_direct\"></a>Return Direct",
+      "translation": "<a class=\"anchor\" href=\"#_return_direct\"></a>直接返回",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_method_return_direct\"></a>Method Return Direct",
+      "translation": "<a class=\"anchor\" href=\"#_method_return_direct\"></a>方法直接返回",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_function_return_direct\"></a>Function Return Direct",
+      "translation": "<a class=\"anchor\" href=\"#_function_return_direct\"></a>函数直接返回",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_tool_execution\"></a>Tool Execution",
+      "translation": "<a class=\"anchor\" href=\"#_tool_execution\"></a>工具执行",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_framework_controlled_tool_execution\"></a>Framework-Controlled Tool Execution",
+      "translation": "<a class=\"anchor\" href=\"#_framework_controlled_tool_execution\"></a>框架控制的工具执行",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_advisor_controlled_tool_execution_with_toolcallingadvisor\"></a>Advisor-Controlled Tool Execution with ToolCallingAdvisor",
+      "translation": "<a class=\"anchor\" href=\"#_advisor_controlled_tool_execution_with_toolcallingadvisor\"></a>使用 ToolCallingAdvisor 实现的顾问控制工具执行",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_configuration_options\"></a>Configuration Options",
+      "translation": "<a class=\"anchor\" href=\"#_configuration_options\"></a>配置选项",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_conversation_history_management\"></a>Conversation History Management",
+      "translation": "<a class=\"anchor\" href=\"#_conversation_history_management\"></a>对话历史管理",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_return_direct_2\"></a>Return Direct",
+      "translation": "<a class=\"anchor\" href=\"#_return_direct_2\"></a>直接返回",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_user_controlled_tool_execution\"></a>User-Controlled Tool Execution",
+      "translation": "<a class=\"anchor\" href=\"#_user_controlled_tool_execution\"></a>用户控制的工具执行",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_with_chatclient\"></a>With ChatClient",
+      "translation": "<a class=\"anchor\" href=\"#_with_chatclient\"></a>使用 ChatClient",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_with_chatmodel\"></a>With ChatModel",
+      "translation": "<a class=\"anchor\" href=\"#_with_chatmodel\"></a>使用 ChatModel",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_exception_handling\"></a>Exception Handling",
+      "translation": "<a class=\"anchor\" href=\"#_exception_handling\"></a>异常处理",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_tool_resolution\"></a>Tool Resolution",
+      "translation": "<a class=\"anchor\" href=\"#_tool_resolution\"></a>工具解析",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#tool-argument-augmentation\"></a>Tool Argument Augmentation",
+      "translation": "<a class=\"anchor\" href=\"#tool-argument-augmentation\"></a>工具参数增强",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_quick_start_2\"></a>Quick Start",
+      "translation": "<a class=\"anchor\" href=\"#_quick_start_2\"></a>快速开始",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_core_components\"></a>Core Components",
+      "translation": "<a class=\"anchor\" href=\"#_core_components\"></a>核心组件",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#tool-search-tool\"></a>Tool Search Tool",
+      "translation": "<a class=\"anchor\" href=\"#tool-search-tool\"></a>工具搜索工具",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_how_it_works\"></a>How It Works",
+      "translation": "<a class=\"anchor\" href=\"#_how_it_works\"></a>工作原理",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_quick_start_3\"></a>Quick Start",
+      "translation": "<a class=\"anchor\" href=\"#_quick_start_3\"></a>快速开始",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_search_strategies\"></a>Search Strategies",
+      "translation": "<a class=\"anchor\" href=\"#_search_strategies\"></a>搜索策略",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_toolindex_api\"></a>ToolIndex API",
+      "translation": "<a class=\"anchor\" href=\"#_toolindex_api\"></a>工具索引 API",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_index_eviction\"></a>Index Eviction",
+      "translation": "<a class=\"anchor\" href=\"#_index_eviction\"></a>索引驱逐",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_when_to_use\"></a>When to Use",
+      "translation": "<a class=\"anchor\" href=\"#_when_to_use\"></a>何时使用",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_spring_boot_auto_configuration\"></a>Spring Boot Auto-configuration",
+      "translation": "<a class=\"anchor\" href=\"#_spring_boot_auto_configuration\"></a>Spring Boot 自动配置",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_toolindex_auto_selection\"></a>ToolIndex Auto-selection",
+      "translation": "<a class=\"anchor\" href=\"#_toolindex_auto_selection\"></a>工具索引自动选择",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_configuration_properties_reference\"></a>Configuration Properties Reference",
+      "translation": "<a class=\"anchor\" href=\"#_configuration_properties_reference\"></a>配置属性参考",
+      "count": 1
+    },
+    {
+      "source": "Why Spring",
+      "translation": "为何是春天",
+      "count": 1
+    },
+    {
+      "source": "Spring AI",
+      "translation": "Spring AI",
+      "count": 1
+    },
+    {
+      "source": "Tool Calling",
+      "translation": "工具调用",
+      "count": 1
+    }
+  ]
+}

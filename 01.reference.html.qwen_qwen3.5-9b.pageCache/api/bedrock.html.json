@@ -1,0 +1,421 @@
+{
+  "created_at": "2026-06-13 14:13:41",
+  "updated_at": "2026-06-13 14:13:41",
+  "stats": {
+    "total_entries": 81,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 82,
+    "entries_with_hits": 81,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0123456790123457,
+    "usage_percentage": 0.0081
+  },
+  "items": [
+    {
+      "source": "Credential profiles file at the default location (<code>~/.aws/credentials</code>) shared by all AWS SDKs and the AWS CLI.",
+      "translation": "位于默认位置（<code>~/.aws/credentials</code>）的凭据配置文件，该文件由所有 AWS SDK 和 AWS CLI 共享。",
+      "count": 2
+    },
+    {
+      "source": "Copyright © 2005 - <script>var d = new Date();\n        document.write(d.getFullYear());</script> Broadcom. All Rights Reserved. The term \"Broadcom\" refers to Broadcom Inc. and/or its subsidiaries.<br/><a href=\"https://www.vmware.com/help/legal.html\">Terms of Use</a> • <a href=\"https://www.vmware.com/help/privacy.html\" rel=\"noopener noreferrer\">Privacy</a> • <a href=\"https://spring.io/trademarks\">Trademark Guidelines</a> <span id=\"thank-you-mobile\">• <a href=\"https://spring.io/thank-you\">Thank you</a></span> • <a href=\"https://www.vmware.com/help/privacy/california-privacy-rights.html\">Your California Privacy Rights</a> • <a class=\"ot-sdk-show-settings\">Cookie Settings</a> <span id=\"teconsent\"></span>",
+      "translation": "版权所有 © 2005 - <script>var d = new Date(); document.write(d.getFullYear());</script> Broadcom。保留所有权利。“Broadcom”指 Broadcom Inc. 及其/或其子公司。<br/><a href=\"https://www.vmware.com/help/legal.html\">使用条款</a> • <a href=\"https://www.vmware.com/help/privacy.html\" rel=\"noopener noreferrer\">隐私政策</a> • <a href=\"https://spring.io/trademarks\">商标指南</a> <span id=\"thank-you-mobile\">• <a href=\"https://spring.io/thank-you\">致谢</a></span> • <a href=\"https://www.vmware.com/help/privacy/california-privacy-rights.html\">您的加州隐私权利</a> • <a class=\"ot-sdk-show-settings\">Cookie 设置</a> <span id=\"teconsent\"></span>",
+      "count": 1
+    },
+    {
+      "source": "Spring-AI Bedrock <code>spring.ai.bedrock.aws.profile.name</code>, If <code>spring.ai.bedrock.aws.profile.credentials-path</code> and <code>spring.ai.bedrock.aws.profile.configuration-path</code> are not specified, Spring AI use the standard AWS shared files: <code>~/.aws/credentials</code> for credentials and <code>~/.aws/config</code> for configuration.",
+      "translation": "Spring-AI Bedrock 的 `<code>spring.ai.bedrock.aws.profile.name</code>`：如果未指定 `<code>spring.ai.bedrock.aws.profile.credentials-path</code>` 和 `<code>spring.ai.bedrock.aws.profile.configuration-path</code>`，Spring AI 将使用标准的 AWS 共享文件：`~/.aws/credentials` 用于凭证，`~/.aws/config` 用于配置。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI supports <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/model-ids-arns.html\">the Embedding AI models</a> available through Amazon Bedrock by implementing the Spring <code>EmbeddingModel</code> interface.",
+      "translation": "Spring AI 通过实现 Spring 的 `EmbeddingModel` 接口，支持通过 Amazon Bedrock 提供的<a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/model-ids-arns.html\">嵌入 AI 模型</a>。",
+      "count": 1
+    },
+    {
+      "source": "Enable the Models to use: Go to <a href=\"https://us-east-1.console.aws.amazon.com/bedrock/home\">Amazon Bedrock</a> and from the <a href=\"https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/modelaccess\">Model Access</a> menu on the left, configure access to the models you are going to use.",
+      "translation": "启用模型使用：前往<a href=\"https://us-east-1.console.aws.amazon.com/bedrock/home\">Amazon Bedrock</a>，在左侧的<a href=\"https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/modelaccess\">模型访问</a>菜单中，配置您将要使用的模型的访问权限。",
+      "count": 1
+    },
+    {
+      "source": "Spring-AI Bedrock <code>spring.ai.bedrock.aws.access-key</code> and <code>spring.ai.bedrock.aws.secret-key</code> properties.",
+      "translation": "Spring AI Bedrock 的 `spring.ai.bedrock.aws.access-key` 和 `spring.ai.bedrock.aws.secret-key` 属性。",
+      "count": 1
+    },
+    {
+      "source": "Java System Properties - <code>aws.accessKeyId</code> and <code>aws.secretAccessKey</code>.",
+      "translation": "Java 系统属性 - `<code>aws.accessKeyId</code>` 和 `<code>aws.secretAccessKey</code>`。",
+      "count": 1
+    },
+    {
+      "source": "Environment Variables - <code>AWS_ACCESS_KEY_ID</code> and <code>AWS_SECRET_ACCESS_KEY</code>.",
+      "translation": "环境变量 - <code>AWS_ACCESS_KEY_ID</code> 和 <code>AWS_SECRET_ACCESS_KEY</code>。",
+      "count": 1
+    },
+    {
+      "source": "Instance profile credentials delivered through the Amazon EC2 metadata service or set the <code>AWS_ACCESS_KEY_ID</code> and <code>AWS_SECRET_ACCESS_KEY</code> environment variables.",
+      "translation": "通过 Amazon EC2 元数据服务提供实例配置文件凭据，或设置 `<code>AWS_ACCESS_KEY_ID</code>` 和 `<code>AWS_SECRET_ACCESS_KEY</code>` 环境变量。",
+      "count": 1
+    },
+    {
+      "source": "In addition to the standard Spring-AI Bedrock credentials and region properties configuration, Spring-AI provides support for custom <code>AwsCredentialsProvider</code> and <code>AwsRegionProvider</code> beans.",
+      "translation": "除了标准的 Spring AI Bedrock 凭据和区域属性配置外，Spring AI 还支持自定义 `<code>AwsCredentialsProvider</code>` 和 `<code>AwsRegionProvider</code>` Bean。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"embeddings/bedrock-cohere-embedding.html\">Spring AI Bedrock Cohere Embeddings</a>: <code>spring.ai.model.embedding=bedrock-cohere</code>",
+      "translation": "<a class=\"xref page\" href=\"embeddings/bedrock-cohere-embedding.html\">Spring AI Bedrock Cohere 嵌入模型</a>：<code>spring.ai.model.embedding=bedrock-cohere</code>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"embeddings/bedrock-titan-embedding.html\">Spring AI Bedrock Titan Embeddings</a>: <code>spring.ai.model.embedding=bedrock-titan</code>",
+      "translation": "<a class=\"xref page\" href=\"embeddings/bedrock-titan-embedding.html\">Spring AI Bedrock Titan Embeddings</a>：<code>spring.ai.model.embedding=bedrock-titan</code>",
+      "count": 1
+    },
+    {
+      "source": "Following the Bedrock recommendations, Spring AI transitioned to using Amazon Bedrock’s Converse API for all Chat conversation implementations in Spring AI.\nThe <a class=\"xref page\" href=\"chat/bedrock-converse.html\">Bedrock Converse API</a> has the following key benefits:",
+      "translation": "遵循 Bedrock 的建议，Spring AI 已过渡到使用 Amazon Bedrock 的 Converse API 来实现 Spring AI 中的所有聊天对话功能。\n<a class=\"xref page\" href=\"chat/bedrock-converse.html\">Bedrock Converse API</a> 具有以下关键优势：",
+      "count": 1
+    },
+    {
+      "source": "The Converse API does not support embedding operations, so these will remain in the current API and the embedding model functionality in the existing <code>InvokeModel API</code> will be maintained",
+      "translation": "Converse API 不支持嵌入操作，因此这些功能将保留在当前 API 中，同时现有<code>InvokeModel API</code>中的嵌入模型功能也将继续维护。",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html\">Amazon Bedrock</a> is a managed service that provides foundation models from various AI providers, available through a unified API.",
+      "translation": "<a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html\">Amazon Bedrock</a> 是一项托管服务，可通过统一 API 提供来自各种人工智能提供商的基础模型。",
+      "count": 1
+    },
+    {
+      "source": "Obtain AWS credentials: If you don’t have an AWS account and AWS CLI configured yet, this video guide can help you configure it: <a href=\"https://youtu.be/gswVHTrRX8I?si=buaY7aeI0l3-bBVb\">AWS CLI &amp; SDK Setup in Less Than 4 Minutes!</a>. You should be able to obtain your access and security keys.",
+      "translation": "获取 AWS 凭证：如果您还没有 AWS 账户且未配置 AWS CLI，此视频指南可帮助您完成配置：<a href=\"https://youtu.be/gswVHTrRX8I?si=buaY7aeI0l3-bBVb\">4 分钟内完成 AWS CLI 和 SDK 设置！</a>。您应该能够获取您的访问密钥和安全密钥。",
+      "count": 1
+    },
+    {
+      "source": "Then add the Spring Boot Starter dependency to your project’s Maven <code>pom.xml</code> build file:",
+      "translation": "然后在项目的 Maven `<code>pom.xml</code>` 构建文件中添加 Spring Boot Starter 依赖：",
+      "count": 1
+    },
+    {
+      "source": "or to your Gradle <code>build.gradle</code> build file.",
+      "translation": "或者将其添加到您的 Gradle `<code>build.gradle</code>` 构建文件中。",
+      "count": 1
+    },
+    {
+      "source": "Use the <code>BedrockAwsConnectionProperties</code> to configure AWS credentials and region:",
+      "translation": "使用<code>BedrockAwsConnectionProperties</code>配置 AWS 凭证和区域：",
+      "count": 1
+    },
+    {
+      "source": "The <code>region</code> property is compulsory.",
+      "translation": "`region` 属性是必需的。",
+      "count": 1
+    },
+    {
+      "source": "Credentials delivered through the Amazon EC2 container service if the <code>AWS_CONTAINER_CREDENTIALS_RELATIVE_URI</code> environment variable is set and the security manager has permission to access the variable.",
+      "translation": "如果设置了环境变量 `<code>AWS_CONTAINER_CREDENTIALS_RELATIVE_URI</code>` 且安全管理员有权访问该变量，则通过 Amazon EC2 Container Service 提供凭证。",
+      "count": 1
+    },
+    {
+      "source": "Spring-AI Bedrock <code>spring.ai.bedrock.aws.region</code> property.",
+      "translation": "Spring AI Bedrock 的 `<code>spring.ai.bedrock.aws.region</code>` 属性。",
+      "count": 1
+    },
+    {
+      "source": "Java System Properties - <code>aws.region</code>.",
+      "translation": "Java 系统属性 - `<code>aws.region</code>`。",
+      "count": 1
+    },
+    {
+      "source": "Environment Variables - <code>AWS_REGION</code>.",
+      "translation": "环境变量 - <code>AWS_REGION</code>。",
+      "count": 1
+    },
+    {
+      "source": "For example, to enable the Bedrock Cohere embedding model, you need to set <code>spring.ai.model.embedding=bedrock-cohere</code>.",
+      "translation": "例如，要启用 Bedrock Cohere 嵌入模型，您需要设置<code>spring.ai.model.embedding=bedrock-cohere</code>。",
+      "count": 1
+    },
+    {
+      "source": "Next, you can use the <code>spring.ai.bedrock.&lt;model&gt;.embedding.*</code> properties to configure each model as provided.",
+      "translation": "接下来，您可以使用 `<code>spring.ai.bedrock.&lt;model&gt;.embedding.*</code>` 属性按照提供的配置来设置每个模型。",
+      "count": 1
+    },
+    {
+      "source": "Unified Interface: Write your code once and use it with any supported Amazon Bedrock model",
+      "translation": "统一接口：编写一次代码，即可与任何支持的 Amazon Bedrock 模型配合使用。",
+      "count": 1
+    },
+    {
+      "source": "Model Flexibility: Seamlessly switch between different conversation models without code changes",
+      "translation": "模型灵活性：无需修改代码即可无缝切换不同的对话模型。",
+      "count": 1
+    },
+    {
+      "source": "Extended Functionality: Support for model-specific parameters through dedicated structures",
+      "translation": "扩展功能：通过专用结构支持模型特定参数。",
+      "count": 1
+    },
+    {
+      "source": "Tool Support: Native integration with function calling and tool usage capabilities",
+      "translation": "工具支持：原生集成函数调用与工具使用能力",
+      "count": 1
+    },
+    {
+      "source": "Multimodal Capabilities: Built-in support for vision and other multimodal features",
+      "translation": "多模态能力：内置支持视觉及其他多模态功能",
+      "count": 1
+    },
+    {
+      "source": "Future-Proof: Aligned with Amazon Bedrock’s recommended best practices",
+      "translation": "面向未来：与 Amazon Bedrock 推荐的最佳实践保持一致",
+      "count": 1
+    },
+    {
+      "source": "Additionally, Spring AI provides Spring Auto-Configurations and Boot Starters for all clients, making it easy to bootstrap and configure for the Bedrock models.",
+      "translation": "此外，Spring AI 为所有客户端提供了 Spring 自动配置和 Boot Starter，使得快速启动并配置 Bedrock 模型变得轻而易举。",
+      "count": 1
+    },
+    {
+      "source": "There are a few steps to get started",
+      "translation": "开始只需几步。",
+      "count": 1
+    },
+    {
+      "source": "Add the Spring Boot starter for Bedrock to your project.",
+      "translation": "将用于 Amazon Bedrock 的 Spring Boot Starter 添加到您的项目中。",
+      "count": 1
+    },
+    {
+      "source": "AWS credentials are resolved in the following order:",
+      "translation": "AWS 凭证按以下顺序解析：",
+      "count": 1
+    },
+    {
+      "source": "Web Identity Token credentials from system properties or environment variables.",
+      "translation": "来自系统属性或环境变量的 Web 身份令牌凭据。",
+      "count": 1
+    },
+    {
+      "source": "AWS region is resolved in the following order:",
+      "translation": "AWS 区域的解析顺序如下：",
+      "count": 1
+    },
+    {
+      "source": "Instance profile region delivered through the Amazon EC2 metadata service.",
+      "translation": "实例配置文件区域通过 Amazon EC2 元数据服务提供。",
+      "count": 1
+    },
+    {
+      "source": "Here are the supported `&lt;model-name&gt;`s:",
+      "translation": "以下是支持的 `<model-name>`：",
+      "count": 1
+    },
+    {
+      "source": "bedrock-titan (no batch support yet)",
+      "translation": "Bedrock-Titan（目前暂不支持批处理）",
+      "count": 1
+    },
+    {
+      "source": "For more information, refer to the documentation below for each supported model.",
+      "translation": "有关更多信息，请参阅以下各支持模型的文档。",
+      "count": 1
+    },
+    {
+      "source": "Apache®, Apache Tomcat®, Apache Kafka®, Apache Cassandra™, and Apache Geode™ are trademarks or registered trademarks of the Apache Software Foundation in the United States and/or other countries. Java™, Java™ SE, Java™ EE, and OpenJDK™ are trademarks of Oracle and/or its affiliates. Kubernetes® is a registered trademark of the Linux Foundation in the United States and other countries. Linux® is the registered trademark of Linus Torvalds in the United States and other countries. Windows® and Microsoft® Azure are registered trademarks of Microsoft Corporation. “AWS” and “Amazon Web Services” are trademarks or registered trademarks of Amazon.com Inc. or its affiliates. All other trademarks and copyrights are property of their respective owners and are only mentioned for informative purposes. Other names may be trademarks of their respective owners.",
+      "translation": "Apache®、Apache Tomcat®、Apache Kafka®、Apache Cassandra™ 和 Apache Geode™ 是 Apache 软件基金会在美国和其他/或某些国家的商标或注册商标。Java™、Java™ SE、Java™ EE 和 OpenJDK™ 是 Oracle 公司和/或其关联公司的商标。Kubernetes® 是 Linux 基金会在美国和其他/或某些国家的注册商标。Linux® 是 Linus Torvalds 在美国和其他/或某些国家的注册商标。Windows® 和 Microsoft® Azure 是微软公司的注册商标。\"AWS\"和\"Amazon Web Services\"是 Amazon.com Inc. 或其关联公司的商标或注册商标。所有其他商标和版权均归各自所有者所有，仅用于说明目的。其他名称可能是其各自所有者的商标。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/projects\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-boot\">Spring Boot</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-framework\">Spring Framework</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud\">Spring Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud-dataflow\">Spring Cloud Data Flow</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-data\">Spring Data</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-integration\">Spring Integration</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-batch\">Spring Batch</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-security\">Spring Security</a>\n            <a class=\"navbar-item navbar-item-special\" href=\"https://spring.io/projects\">View all projects</a>\n            <li class=\"navbar-item navbar-item-special-3\">DEVELOPMENT TOOLS</li>\n            <a class=\"navbar-item\" href=\"https://spring.io/tools\">Spring Tools 4</a>\n            <a class=\"navbar-item navbar-item-special-2\" href=\"https://start.spring.io\">Spring Initializr\n              <svg id=\"svg-stash-f15b5668\"></svg></a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/projects\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-boot\">Spring Boot</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-framework\">Spring Framework</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud\">Spring Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud-dataflow\">Spring Cloud Data Flow</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-data\">Spring Data</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-integration\">Spring Integration</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-batch\">Spring Batch</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-security\">Spring Security</a>\n            <a class=\"navbar-item navbar-item-special\" href=\"https://spring.io/projects\">查看所有项目</a>\n            <li class=\"navbar-item navbar-item-special-3\">开发工具</li>\n            <a class=\"navbar-item\" href=\"https://spring.io/tools\">Spring Tools 4</a>\n            <a class=\"navbar-item navbar-item-special-2\" href=\"https://start.spring.io\">Spring Initializr\n              <svg id=\"svg-stash-f15b5668\"></svg></a>",
+      "count": 1
+    },
+    {
+      "source": "<nav aria-label=\"breadcrumbs\" class=\"breadcrumbs\">\n    <ul>\n      <li><a href=\"../index.html\">Spring AI</a></li>\n      <li>Reference</li>\n      <li><a href=\"index.html\">Models</a></li>\n      <li><a href=\"embeddings.html\">Embedding Models</a></li>\n      <li><a href=\"bedrock.html\">Amazon Bedrock</a></li>\n    </ul>\n  </nav>",
+      "translation": "<nav aria-label=\"面包屑\" class=\"breadcrumbs\">\n    <ul>\n      <li><a href=\"../index.html\">Spring AI</a></li>\n      <li>参考</li>\n      <li><a href=\"index.html\">模型</a></li>\n      <li><a href=\"embeddings.html\">嵌入模型</a></li>\n      <li><a href=\"bedrock.html\">Amazon Bedrock</a></li>\n    </ul>\n  </nav>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/why-spring\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/microservices\">Microservices</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/reactive\">Reactive</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/event-driven\">Event\n              Driven</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/cloud\">Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/web-applications\">Web\n              Applications</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/serverless\">Serverless</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/batch\">Batch</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/why-spring\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/microservices\">微服务</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/reactive\">响应式</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/event-driven\">事件驱动</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/cloud\">云</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/web-applications\">Web 应用</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/serverless\">无服务器</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/batch\">批处理</a>",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/bedrock.adoc\">\n          <svg id=\"svg-stash-05b5c46b\"></svg>\n          Edit this Page\n        </a>\n        <a href=\"https://github.com/spring-projects/spring-ai\" title=\"GitHub\">\n          <svg id=\"svg-stash-28d888b7\"></svg>\n          GitHub Project\n        </a>",
+      "translation": "<a href=\"file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/bedrock.adoc\">\n          <svg id=\"svg-stash-05b5c46b\"></svg>\n          编辑此页面\n        </a>\n        <a href=\"https://github.com/spring-projects/spring-ai\" title=\"GitHub\">\n          <svg id=\"svg-stash-28d888b7\"></svg>\n          GitHub 项目\n        </a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/solutions\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/support\">Spring Runtime</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/consulting\">Spring Consulting</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/teams\">Spring Academy For Teams</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/security\">Security Advisories</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/solutions\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/support\">Spring 运行时</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/consulting\">Spring 咨询</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/teams\">Spring Academy 团队培训</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/security\">安全公告</a>",
+      "count": 1
+    },
+    {
+      "source": "<ul class=\"projects\">\n  <li>\n    Related Spring Documentation\n    <ul class=\"projects-list\">\n    </ul>\n  </li><a href=\"../spring-projects.html\">All Docs...</a>\n</ul>",
+      "translation": "<ul class=\"projects\">\n  <li>\n    相关 Spring 文档\n    <ul class=\"projects-list\">\n    </ul>\n  </li><a href=\"../spring-projects.html\">所有文档...</a>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.academy/courses\">Courses</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/learning-path\">Get Certified</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.academy/courses\">课程</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/learning-path\">获取认证</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"title\" href=\"../index.html\">Spring AI</a>",
+      "translation": "<a class=\"title\" href=\"../index.html\">Spring AI</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"search-link\" href=\"../search.html\">Search in all Spring Docs</a>",
+      "translation": "<a class=\"search-link\" href=\"../search.html\">在全部 Spring 文档中搜索</a>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"vectordbs.html\">Vector Databases</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/azure.html\">Azure AI Service</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/azure-cosmos-db.html\">Azure Cosmos DB</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/bedrock-knowledge-base.html\">Amazon Bedrock Knowledge Base</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/apache-cassandra.html\">Apache Cassandra Vector Store</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/chroma.html\">Chroma</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/couchbase.html\">Couchbase</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/elasticsearch.html\">Elasticsearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/gemfire.html\">GemFire</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/mariadb.html\">MariaDB Vector Store</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/milvus.html\">Milvus</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/mongodb.html\">MongoDB Atlas</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/neo4j.html\">Neo4j</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/opensearch.html\">OpenSearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/oracle.html\">Oracle</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/pgvector.html\">PGvector</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/pinecone.html\">Pinecone</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/qdrant.html\">Qdrant</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/redis.html\">Redis</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/typesense.html\">Typesense</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/weaviate.html\">Weaviate</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/s3-vector-store.html\">S3 Vector Store</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"vectordbs.html\">向量数据库</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/azure.html\">Azure AI 服务</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/azure-cosmos-db.html\">Azure Cosmos DB</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/bedrock-knowledge-base.html\">Amazon Bedrock 知识库</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/apache-cassandra.html\">Apache Cassandra 向量存储</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/chroma.html\">Chroma</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/couchbase.html\">Couchbase</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/elasticsearch.html\">Elasticsearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/gemfire.html\">GemFire</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/mariadb.html\">MariaDB 向量存储</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/milvus.html\">Milvus</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/mongodb.html\">MongoDB Atlas</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/neo4j.html\">Neo4j</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/opensearch.html\">OpenSearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/oracle.html\">Oracle</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/pgvector.html\">PGvector</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/pinecone.html\">Pinecone</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/qdrant.html\">Qdrant</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/redis.html\">Redis</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/typesense.html\">Typesense</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/weaviate.html\">Weaviate</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/s3-vector-store.html\">S3 向量存储</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"embeddings.html\">Embedding Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item is-current-page\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"bedrock.html\">Amazon Bedrock</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/bedrock-cohere-embedding.html\">Cohere</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/bedrock-titan-embedding.html\">Titan</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/azure-openai-embeddings.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/google-genai-embeddings-text.html\">Google GenAI Text Embedding</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/mistralai-embeddings.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/oci-genai-embeddings.html\">OCI GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/ollama-embeddings.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/onnx.html\">(ONNX) Transformers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/openai-embeddings.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/postgresml-embeddings.html\">PostgresML</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">VertexAI</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/vertexai-embeddings-text.html\">Text Embedding</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/vertexai-embeddings-multimodal.html\">Multimodal Embedding</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"embeddings.html\">嵌入模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item is-current-page\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"bedrock.html\">Amazon Bedrock</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/bedrock-cohere-embedding.html\">Cohere</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/bedrock-titan-embedding.html\">Titan</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/azure-openai-embeddings.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/google-genai-embeddings-text.html\">Google GenAI 文本嵌入</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/mistralai-embeddings.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/oci-genai-embeddings.html\">OCI GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/ollama-embeddings.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/onnx.html\">(ONNX) Transformers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/openai-embeddings.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/postgresml-embeddings.html\">PostgresML</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">VertexAI</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/vertexai-embeddings-text.html\">文本嵌入</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/vertexai-embeddings-multimodal.html\">多模态嵌入</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"chatmodel.html\">Chat Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/comparison.html\">Chat Models Comparison</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/bedrock-converse.html\">Amazon Bedrock Converse</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/anthropic-chat.html\">Anthropic</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/azure-openai-chat.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/deepseek-chat.html\">DeepSeek</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/dmr-chat.html\">Docker Model Runner</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/google-genai-chat.html\">Google GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/groq-chat.html\">Groq</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/mistralai-chat.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/minimax-chat.html\">MiniMax</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/nvidia-chat.html\">NVIDIA</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/ollama-chat.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/perplexity-chat.html\">Perplexity AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/oci-genai-chat.html\">OCI Generative AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/openai-chat.html\">OpenAI</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"chatmodel.html\">对话模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/comparison.html\">对话模型对比</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/bedrock-converse.html\">Amazon Bedrock Converse</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/anthropic-chat.html\">Anthropic</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/azure-openai-chat.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/deepseek-chat.html\">DeepSeek</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/dmr-chat.html\">Docker Model Runner</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/google-genai-chat.html\">Google GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/groq-chat.html\">Groq</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/mistralai-chat.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/minimax-chat.html\">MiniMax</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/nvidia-chat.html\">NVIDIA</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/ollama-chat.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/perplexity-chat.html\">Perplexity AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/oci-genai-chat.html\">OCI Generative AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/openai-chat.html\">OpenAI</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-overview.html\">Model Context Protocol (MCP)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mcp/mcp-client-boot-starter-docs.html\">MCP Client Boot Starters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-server-boot-starter-docs.html\">MCP Server Boot Starters</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-stdio-sse-server-boot-starter-docs.html\">STDIO and SSE MCP Servers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-streamable-http-server-boot-starter-docs.html\">Streamable-HTTP MCP Servers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-stateless-server-boot-starter-docs.html\">Stateless Streamable-HTTP MCP Servers</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mcp/mcp-security.html\">MCP Security (WIP)</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-overview.html\">MCP Annotations</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-client.html\">Client Annotations</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-server.html\">Server Annotations</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-special-params.html\">Special Parameters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-examples.html\">MCP Annotations Examples</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"mcp/mcp-overview.html\">模型上下文协议 (MCP)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mcp/mcp-client-boot-starter-docs.html\">MCP 客户端启动器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-server-boot-starter-docs.html\">MCP 服务器启动器</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-stdio-sse-server-boot-starter-docs.html\">STDIO 和 SSE MCP 服务器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-streamable-http-server-boot-starter-docs.html\">可流式 HTTP MCP 服务器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-stateless-server-boot-starter-docs.html\">无状态可流式 HTTP MCP 服务器</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mcp/mcp-security.html\">MCP 安全 (进行中)</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-overview.html\">MCP 注解</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-client.html\">客户端注解</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-server.html\">服务器注解</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-special-params.html\">特殊参数</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-examples.html\">MCP 注解示例</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">Guides</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/spring-ai-community/awesome-spring-ai\">Awesome Spring AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/getting-started-mcp.html\">Getting Started with MCP</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/dynamic-tool-search.html\">Dynamic Tool Discovery</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/llm-as-judge.html\">LLM-as-a-Judge Evaluation</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"chat/prompt-engineering-patterns.html\">Prompt Engineering Patterns</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"effective-agents.html\">Building Effective Agents</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agents\">Building agents with Spring AI by AWS</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agentcore\">Building agents with Spring AI and AgentCore by AWS</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/microsoft/Spring-AI-for-Beginners\">Spring AI for Beginners by Microsoft</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<span class=\"nav-text\">指南</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/spring-ai-community/awesome-spring-ai\">Awesome Spring AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/getting-started-mcp.html\">MCP 入门</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/dynamic-tool-search.html\">动态工具发现</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/llm-as-judge.html\">LLM 作为裁判的评估</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"chat/prompt-engineering-patterns.html\">提示工程模式</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"effective-agents.html\">构建高效智能体</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agents\">AWS 使用 Spring AI 构建智能体</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agentcore\">AWS 使用 Spring AI 和 AgentCore 构建智能体</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/microsoft/Spring-AI-for-Beginners\">Microsoft 的 Spring AI 初学者指南</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio.html\">Audio Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio/transcriptions.html\">Transcription API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/transcriptions/azure-openai-transcriptions.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/transcriptions/openai-transcriptions.html\">OpenAI</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio/speech.html\">Text-To-Speech (TTS) API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/speech/openai-speech.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/speech/elevenlabs-speech.html\">ElevenLabs</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio.html\">音频模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio/transcriptions.html\">转录 API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/transcriptions/azure-openai-transcriptions.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/transcriptions/openai-transcriptions.html\">OpenAI</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio/speech.html\">文本转语音 (TTS) API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/speech/openai-speech.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/speech/elevenlabs-speech.html\">ElevenLabs</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"chatclient.html\">Chat Client API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"advisors.html\">Advisors</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"advisors-recursive.html\">Recursive Advisors</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"chatclient.html\">聊天客户端 API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"advisors.html\">顾问</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"advisors-recursive.html\">递归顾问</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"imageclient.html\">Image Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/azure-openai-image.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/openai-image.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/stabilityai-image.html\">Stability</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"imageclient.html\">图像模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/azure-openai-image.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/openai-image.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/stabilityai-image.html\">Stability</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"moderation.html\">Moderation Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"moderation/openai-moderation.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"moderation/mistral-ai-moderation.html\">Mistral AI</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"moderation.html\">内容审核模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"moderation/openai-moderation.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"moderation/mistral-ai-moderation.html\">Mistral AI</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../upgrade-notes.html\">Upgrade Notes</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"tools-migration.html\">Migrating FunctionCallback to ToolCallback API</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"chat/anthropic-migration.html\">Migrating the Anthropic Module to the Official Java SDK</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"../upgrade-notes.html\">升级说明</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"tools-migration.html\">将 FunctionCallback 迁移至 ToolCallback API</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"chat/anthropic-migration.html\">将 Anthropic 模块迁移至官方 Java SDK</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\nRefer to the <a class=\"xref page\" href=\"../getting-started.html#dependency-management\">Dependency Management</a> section to add the Spring AI BOM to your build file.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"提示\"></i>\n</td>\n<td class=\"content\">\n请参考<a class=\"xref page\" href=\"../getting-started.html#dependency-management\">依赖管理</a>部分，将 Spring AI BOM 添加到您的构建文件中。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nFor example, using Spring-AI and <a href=\"https://spring.io/projects/spring-cloud-aws\">Spring Cloud for Amazon Web Services</a> at the same time. Spring-AI is compatible with Spring Cloud for Amazon Web Services credential configuration.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n例如，同时使用 Spring AI 和<a href=\"https://spring.io/projects/spring-cloud-aws\">Spring Cloud for Amazon Web Services</a>。Spring AI 与 Spring Cloud for Amazon Web Services 的凭据配置兼容。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nBy default, all models are disabled. You have to enable the chosen Bedrock models explicitly using the <code>spring.ai.model.embedding=&lt;model-name&gt;</code> property.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n默认情况下，所有模型均处于禁用状态。您需要显式启用所选的 Bedrock 模型，方法是使用 <code>spring.ai.model.embedding=&lt;model-name&gt;</code> 属性。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../index.html\">Overview</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../concepts.html\">AI Concepts</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"../index.html\">概述</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../concepts.html\">AI 概念</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"retrieval-augmented-generation.html\">Retrieval Augmented Generation (RAG)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"etl-pipeline.html\">ETL Pipeline</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"retrieval-augmented-generation.html\">检索增强生成 (RAG)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"etl-pipeline.html\">ETL 管道</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"prev\"><a href=\"embeddings.html\">Embedding Models</a></span>\n  <span class=\"next\"><a href=\"embeddings/bedrock-cohere-embedding.html\">Cohere</a></span>",
+      "translation": "<span class=\"prev\"><a href=\"embeddings.html\">嵌入模型</a></span>\n  <span class=\"next\"><a href=\"embeddings/bedrock-cohere-embedding.html\">Cohere</a></span>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../getting-started.html\">Getting Started</a>",
+      "translation": "<a class=\"nav-link\" href=\"../getting-started.html\">入门指南</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"structured-output-converter.html\">Structured Output</a>",
+      "translation": "<a class=\"nav-link\" href=\"structured-output-converter.html\">结构化输出</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"chat-memory.html\">Chat Memory</a>",
+      "translation": "<a class=\"nav-link\" href=\"chat-memory.html\">对话记忆</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"tools.html\">Tool Calling</a>",
+      "translation": "<a class=\"nav-link\" href=\"tools.html\">工具调用</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"testing.html\">Model Evaluation</a>",
+      "translation": "<a class=\"nav-link\" href=\"testing.html\">模型评估</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"docker-compose.html\">Development-time Services</a>",
+      "translation": "<a class=\"nav-link\" href=\"docker-compose.html\">开发时服务</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_getting_started\"></a>Getting Started",
+      "translation": "<a class=\"anchor\" href=\"#_getting_started\"></a>入门指南",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_project_dependencies\"></a>Project Dependencies",
+      "translation": "<a class=\"anchor\" href=\"#_project_dependencies\"></a>项目依赖项",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_connect_to_aws_bedrock\"></a>Connect to AWS Bedrock",
+      "translation": "<a class=\"anchor\" href=\"#_connect_to_aws_bedrock\"></a>连接至 AWS Bedrock",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_enable_selected_bedrock_model\"></a>Enable selected Bedrock model",
+      "translation": "<a class=\"anchor\" href=\"#_enable_selected_bedrock_model\"></a>启用选定的 Bedrock 模型",
+      "count": 1
+    },
+    {
+      "source": "Why Spring",
+      "translation": "为何是春天",
+      "count": 1
+    },
+    {
+      "source": "Spring AI",
+      "translation": "Spring AI",
+      "count": 1
+    },
+    {
+      "source": "Amazon Bedrock",
+      "translation": "Amazon Bedrock",
+      "count": 1
+    }
+  ]
+}

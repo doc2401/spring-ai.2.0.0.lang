@@ -1,0 +1,521 @@
+{
+  "created_at": "2026-06-13 14:23:02",
+  "updated_at": "2026-06-13 14:23:02",
+  "stats": {
+    "total_entries": 101,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 103,
+    "entries_with_hits": 101,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0198019801980198,
+    "usage_percentage": 0.0101
+  },
+  "items": [
+    {
+      "source": "or using the low-level <code>ChatModel</code> API directly:",
+      "translation": "或使用低级别的<code>ChatModel</code>API 直接调用：",
+      "count": 3
+    },
+    {
+      "source": "Copyright © 2005 - <script>var d = new Date();\n        document.write(d.getFullYear());</script> Broadcom. All Rights Reserved. The term \"Broadcom\" refers to Broadcom Inc. and/or its subsidiaries.<br/><a href=\"https://www.vmware.com/help/legal.html\">Terms of Use</a> • <a href=\"https://www.vmware.com/help/privacy.html\" rel=\"noopener noreferrer\">Privacy</a> • <a href=\"https://spring.io/trademarks\">Trademark Guidelines</a> <span id=\"thank-you-mobile\">• <a href=\"https://spring.io/thank-you\">Thank you</a></span> • <a href=\"https://www.vmware.com/help/privacy/california-privacy-rights.html\">Your California Privacy Rights</a> • <a class=\"ot-sdk-show-settings\">Cookie Settings</a> <span id=\"teconsent\"></span>",
+      "translation": "版权所有 © 2005 - <script>var d = new Date(); document.write(d.getFullYear());</script> Broadcom。保留所有权利。“Broadcom”指 Broadcom Inc. 及其/或其子公司。<br/><a href=\"https://www.vmware.com/help/legal.html\">使用条款</a> • <a href=\"https://www.vmware.com/help/privacy.html\" rel=\"noopener noreferrer\">隐私政策</a> • <a href=\"https://spring.io/trademarks\">商标指南</a> <span id=\"thank-you-mobile\">• <a href=\"https://spring.io/thank-you\">致谢</a></span> • <a href=\"https://www.vmware.com/help/privacy/california-privacy-rights.html\">您的加州隐私权利</a> • <a class=\"ot-sdk-show-settings\">Cookie 设置</a> <span id=\"teconsent\"></span>",
+      "count": 1
+    },
+    {
+      "source": "<code>BeanOutputConverter&lt;T&gt;</code> - Configured with a designated Java class (e.g., Bean) or a <a href=\"https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/core/ParameterizedTypeReference.html\">ParameterizedTypeReference</a>, this converter employs a <code>FormatProvider</code> implementation that directs the AI Model to produce a JSON response compliant with a <code>DRAFT_2020_12</code>, <code>JSON Schema</code> derived from the specified Java class. Subsequently, it utilizes an <code>JsonMapper</code> to deserialize the JSON output into a Java object instance of the target class.",
+      "translation": "<code>BeanOutputConverter&lt;T&gt;</code> - 配置为指定的 Java 类（例如 Bean）或一个 <a href=\"https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/core/ParameterizedTypeReference.html\">ParameterizedTypeReference</a>，该转换器采用 <code>FormatProvider</code> 实现，指导 AI 模型生成符合由指定 Java 类导出的 <code>DRAFT_2020_12</code> <code>JSON Schema</code> 的 JSON 响应。随后，它利用 <code>JsonMapper</code> 将 JSON 输出反序列化为目标类的 Java 对象实例。",
+      "count": 1
+    },
+    {
+      "source": "Currently, Spring AI provides <code>AbstractConversionServiceOutputConverter</code>, <code>AbstractMessageOutputConverter</code>, <code>BeanOutputConverter</code>, <code>MapOutputConverter</code> and <code>ListOutputConverter</code> implementations:",
+      "translation": "目前，Spring AI 提供了以下实现：<code>AbstractConversionServiceOutputConverter</code>、<code>AbstractMessageOutputConverter</code>、<code>BeanOutputConverter</code>、<code>MapOutputConverter</code> 和 <code>ListOutputConverter</code>：",
+      "count": 1
+    },
+    {
+      "source": "<code>MapOutputConverter</code> - Extends the functionality of <code>AbstractMessageOutputConverter</code> with a <code>FormatProvider</code> implementation that guides the AI Model to generate an RFC8259 compliant JSON response. Additionally, it incorporates a converter implementation that utilizes the provided <code>MessageConverter</code> to translate the JSON payload into a <code>java.util.Map&lt;String, Object&gt;</code> instance.",
+      "translation": "<code>MapOutputConverter</code> - 在 <code>AbstractMessageOutputConverter</code> 的功能基础上，扩展了带有 <code>FormatProvider</code> 实现的版本，该实现引导 AI 模型生成符合 RFC8259 标准的 JSON 响应。此外，它还集成了转换器实现，利用提供的 <code>MessageConverter</code> 将 JSON 负载转换为 <code>java.util.Map&lt;String, Object&gt;</code> 实例。",
+      "count": 1
+    },
+    {
+      "source": "<code>ListOutputConverter</code> - Extends the  <code>AbstractConversionServiceOutputConverter</code> and includes a <code>FormatProvider</code> implementation tailored for comma-delimited list output. The converter implementation employs the provided <code>ConversionService</code> to transform the model text output into a <code>java.util.List</code>.",
+      "translation": "<code>ListOutputConverter</code> 扩展了 <code>AbstractConversionServiceOutputConverter</code>，并包含一个专为逗号分隔列表输出定制的 <code>FormatProvider</code> 实现。该转换器利用提供的 <code>ConversionService</code> 将模型文本输出转换为 <code>java.util.List</code>。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"chat/openai-chat.html#_structured_outputs\">OpenAI Structured Outputs</a> can ensure your model generates responses conforming strictly to your provided JSON Schema. You can choose between the <code>JSON_OBJECT</code> that guarantees the message the model generates is valid JSON or <code>JSON_SCHEMA</code> with a supplied schema that guarantees the model will generate a response that matches your supplied schema (<code>spring.ai.openai.chat.response-format</code> option).",
+      "translation": "<a class=\"xref page\" href=\"chat/openai-chat.html#_structured_outputs\">OpenAI 结构化输出</a>可确保您的模型生成严格符合您提供的 JSON Schema 的响应。您可以选择 <code>JSON_OBJECT</code>，以保证模型生成的消息是有效的 JSON；或者选择 <code>JSON_SCHEMA</code>，并配合提供的 schema，以确保模型生成的响应与所提供的 schema（<code>spring.ai.openai.chat.response-format</code> 选项）相匹配。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"chat/mistralai-chat.html\">Mistral AI</a> - provides a <code>spring.ai.mistralai.chat.response-format</code> option to specify the format to return a response in. Setting it to <code>{ \"type\": \"json_object\" }</code> enables JSON mode, which guarantees the message the model generates is valid JSON. Additionally, setting it to <code>{ \"type\": \"json_schema\" }</code> with a supplied schema enables native structured output support, which guarantees the model will generate a response that matches your supplied schema.",
+      "translation": "<a class=\"xref page\" href=\"chat/mistralai-chat.html\">Mistral AI</a> 提供了一个 <code>spring.ai.mistralai.chat.response-format</code> 选项，用于指定返回响应的格式。将其设置为 <code>{ \"type\": \"json_object\" }</code> 可启用 JSON 模式，从而确保模型生成的消息是有效的 JSON。此外，将其设置为 <code>{ \"type\": \"json_schema\" }</code> 并配合提供的架构（schema），可启用原生的结构化输出支持，从而确保模型生成的响应符合您提供的架构。",
+      "count": 1
+    },
+    {
+      "source": "The <code>FormatProvider</code> supplies specific formatting guidelines to the AI Model, enabling it to produce text outputs that can be converted into the designated target type <code>T</code> using the <code>Converter</code>. Here is an example of such formatting instructions:",
+      "translation": "<code>FormatProvider</code> 为 AI 模型提供特定的格式化指南，使其能够生成可通过 <code>Converter</code> 转换为指定目标类型 <code>T</code> 的文本输出。以下是此类格式化指令的一个示例：",
+      "count": 1
+    },
+    {
+      "source": "<code>AbstractConversionServiceOutputConverter&lt;T&gt;</code> - Offers a pre-configured <a href=\"https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/core/convert/support/GenericConversionService.html\">GenericConversionService</a> for transforming LLM output into the desired format. No default <code>FormatProvider</code> implementation is provided.",
+      "translation": "<code>AbstractConversionServiceOutputConverter&lt;T&gt;</code> - 提供预配置的 <a href=\"https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/core/convert/support/GenericConversionService.html\">GenericConversionService</a>，用于将 LLM 输出转换为所需格式。未提供默认的 <code>FormatProvider</code> 实现。",
+      "count": 1
+    },
+    {
+      "source": "<code>AbstractMessageOutputConverter&lt;T&gt;</code> - Supplies a pre-configured <a href=\"https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/jms/support/converter/MessageConverter.html\">MessageConverter</a> for converting LLM output into the desired format. No default <code>FormatProvider</code> implementation is provided.",
+      "translation": "<code>AbstractMessageOutputConverter&lt;T&gt;</code> - 提供用于将 LLM 输出转换为所需格式的预配置<a href=\"https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/jms/support/converter/MessageConverter.html\">MessageConverter</a>。未提供任何默认的<code>FormatProvider</code>实现。",
+      "count": 1
+    },
+    {
+      "source": "Not all Ollama models reliably honor the structured output schema constraint.\nIn particular, models with a built-in reasoning or \"thinking\" mode (for example <code>qwen3:8b</code>, <code>qwen3.5:9b</code>, and other newer Qwen variants) may return their internal reasoning trace as plain text rather than structured JSON, causing a deserialization error in <code>BeanOutputConverter</code> such as:",
+      "translation": "并非所有 Ollama 模型都能可靠地遵守结构化输出模式约束。  \n特别是那些内置推理或“思考”模式的模型（例如<code>qwen3:8b</code>、<code>qwen3.5:9b</code>以及其他较新的 Qwen 变体）可能会将其内部推理轨迹以纯文本形式返回，而不是结构化 JSON，从而导致在<code>BeanOutputConverter</code>中发生反序列化错误，例如：",
+      "count": 1
+    },
+    {
+      "source": "If you encounter this with Ollama, try a different model (for example <code>llama3.1:latest</code>) or fall back to the default prompt-based approach.\nYou can also combine <code>useProviderStructuredOutput()</code> with <code>validateSchema()</code> so that malformed responses are automatically retried:",
+      "translation": "如果在 Ollama 中遇到此问题，请尝试使用不同的模型（例如<code>llama3.1:latest</code>），或者回退到基于默认提示的方法。  \n您还可以将<code>useProviderStructuredOutput()</code>与<code>validateSchema()</code>结合使用，以便自动重试格式错误的响应：",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"chat/ollama-chat.html\">Ollama</a> - provides a <code>spring.ai.ollama.chat.format</code> option to specify the format to return a response in. Currently, the only accepted value is <code>json</code>.",
+      "translation": "<a class=\"xref page\" href=\"chat/ollama-chat.html\">Ollama</a> - 提供了一个 <code>spring.ai.ollama.chat.format</code> 选项，用于指定返回响应的格式。目前，唯一接受的值为 <code>json</code>。",
+      "count": 1
+    },
+    {
+      "source": "It combines the Spring <a href=\"https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/core/convert/converter/Converter.html\">Converter&lt;String, T&gt;</a> interface and the <code>FormatProvider</code> interface",
+      "translation": "它结合了 Spring 的<a href=\"https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/core/convert/converter/Converter.html\">Converter&lt;String, T&gt;</a>接口和<code>FormatProvider</code>接口。",
+      "count": 1
+    },
+    {
+      "source": "The <code>BeanOutputConverter</code> supports custom property ordering in the generated JSON schema through the <code>@JsonPropertyOrder</code> annotation.\nThis annotation allows you to specify the exact sequence in which properties should appear in the schema, regardless of their declaration order in the class or record.",
+      "translation": "<code>BeanOutputConverter</code> 支持通过 <code>@JsonPropertyOrder</code> 注解在生成的 JSON Schema 中自定义属性顺序。  \n该注解允许您指定属性在 Schema 中出现的精确顺序，而无需考虑其在类或记录中的声明顺序。",
+      "count": 1
+    },
+    {
+      "source": "You can also set this globally using <code>defaultAdvisors()</code> on the <code>ChatClient.Builder</code>:",
+      "translation": "此外，您还可以通过在<code>ChatClient.Builder</code>上调用<code>defaultAdvisors()</code>来全局设置：",
+      "count": 1
+    },
+    {
+      "source": "<strong>Ollama</strong>: Models with JSON Schema support (model-specific; see <a href=\"#_ollama_model_specific_instability\">Ollama limitations</a> below)",
+      "translation": "<strong>Ollama</strong>：支持 JSON Schema 的模型（特定于模型；详见下方的<a href=\"#_ollama_model_specific_instability\">Ollama 限制</a>）",
+      "count": 1
+    },
+    {
+      "source": "The OpenAI Structured Outputs API does not accept a top-level JSON array as the response schema (see the <a href=\"https://community.openai.com/t/support-top-level-array-in-json-schema/896048\">OpenAI community discussion</a>).\nRequesting a <code>List&lt;T&gt;</code> with native structured output enabled will result in an API error.",
+      "translation": "OpenAI 结构化输出 API 不接受顶层 JSON 数组作为响应模式（参见<a href=\"https://community.openai.com/t/support-top-level-array-in-json-schema/896048\">OpenAI 社区讨论</a>）。  \n启用原生结构化输出后请求一个<code>List&lt;T&gt;</code>将导致 API 错误。",
+      "count": 1
+    },
+    {
+      "source": "The Spring AI <code>Structured Output Converters</code> help to convert the LLM output into a structured format.\nAs shown in the following diagram, this approach operates around the LLM text completion endpoint:",
+      "translation": "Spring AI 的<code>结构化输出转换器</code>有助于将大语言模型（LLM）的输出转换为结构化格式。  \n如下图所示，该方法围绕 LLM 文本补全端点运行：",
+      "count": 1
+    },
+    {
+      "source": "The <code>StructuredOutputConverter</code> interface allows you to obtain structured output, such as mapping the output to a Java class or an array of values from the text-based AI Model output.\nThe interface definition is:",
+      "translation": "`StructuredOutputConverter` 接口允许您获取结构化输出，例如将基于文本的 AI 模型输出映射为 Java 类或值数组。  \n接口定义如下：",
+      "count": 1
+    },
+    {
+      "source": "The format instructions are most often appended to the end of the user input using the <a class=\"xref page\" href=\"prompt.html#_prompttemplate\">PromptTemplate</a> like this:",
+      "translation": "格式说明通常使用类似<a class=\"xref page\" href=\"prompt.html#_prompttemplate\">PromptTemplate</a>的方式附加在用户输入的末尾，如下所示：",
+      "count": 1
+    },
+    {
+      "source": "The Converter&lt;String, T&gt; is responsible to transform output text from the model into instances of the specified type <code>T</code>.",
+      "translation": "Converter<String, T> 负责将模型输出的文本转换为指定类型 <code>T</code> 的实例。",
+      "count": 1
+    },
+    {
+      "source": "The following example shows how to use <code>BeanOutputConverter</code> to generate the filmography for an actor.",
+      "translation": "以下示例展示了如何使用 `<code>BeanOutputConverter</code>` 为演员生成作品年表。",
+      "count": 1
+    },
+    {
+      "source": "Here is how to apply the BeanOutputConverter using the high-level, fluent <code>ChatClient</code> API:",
+      "translation": "以下是如何使用高级流式<code>ChatClient</code>API 应用 BeanOutputConverter 的方法：",
+      "count": 1
+    },
+    {
+      "source": "For example, to ensure specific ordering of properties in the <code>ActorsFilms</code> record:",
+      "translation": "例如，为确保 `<code>ActorsFilms</code>` 记录中属性的特定顺序：",
+      "count": 1
+    },
+    {
+      "source": "Use the <code>ParameterizedTypeReference</code> constructor to specify a more complex target class structure.\nFor example, to represent a list of actors and their filmographies:",
+      "translation": "使用 `ParameterizedTypeReference` 构造函数来指定更复杂的目标类结构。  \n例如，要表示演员及其作品列表：",
+      "count": 1
+    },
+    {
+      "source": "The following snippet shows how to use <code>MapOutputConverter</code> to convert the model output to a list of numbers in a map.",
+      "translation": "以下代码片段展示了如何使用 `MapOutputConverter` 将模型输出转换为 Map 中的数字列表。",
+      "count": 1
+    },
+    {
+      "source": "The following snippet shows how to use <code>ListOutputConverter</code> to convert the model output into a list of ice cream flavors.",
+      "translation": "以下代码片段展示了如何使用<code>ListOutputConverter</code>将模型输出转换为冰淇淋口味列表。",
+      "count": 1
+    },
+    {
+      "source": "or using the low-level <code>ChatModel API</code> directly:",
+      "translation": "或使用低级别的<code>ChatModel API</code>直接调用：",
+      "count": 1
+    },
+    {
+      "source": "Many modern AI models now provide native support for structured output, which offers more reliable results compared to prompt-based formatting. Spring AI supports this through the <a class=\"xref page\" href=\"chatclient.html#_native_structured_output\">Native Structured Output</a> feature.",
+      "translation": "如今，许多现代 AI 模型均原生支持结构化输出，其结果比基于提示的格式化更为可靠。Spring AI 通过<a class=\"xref page\" href=\"chatclient.html#_native_structured_output\">原生结构化输出</a>功能实现了这一支持。",
+      "count": 1
+    },
+    {
+      "source": "When using native structured output, the JSON schema generated by <code>BeanOutputConverter</code> is sent directly to the model’s structured output API, eliminating the need for format instructions in the prompt. This approach provides:",
+      "translation": "在使用原生结构化输出时，<code>BeanOutputConverter</code> 生成的 JSON Schema 会直接发送给模型的结构化输出 API，从而无需在提示词中添加格式指令。这种方法提供了：",
+      "count": 1
+    },
+    {
+      "source": "<strong>Higher reliability</strong>: The model guarantees output conforming to the schema",
+      "translation": "<strong>更高的可靠性</strong>：该模型保证输出符合模式定义。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Cleaner prompts</strong>: No need to append format instructions",
+      "translation": "<strong>更简洁的提示词</strong>：无需附加格式指令",
+      "count": 1
+    },
+    {
+      "source": "<strong>Better performance</strong>: Models can optimize for structured output internally",
+      "translation": "<strong>性能更优</strong>：模型可在内部对结构化输出进行优化",
+      "count": 1
+    },
+    {
+      "source": "To enable native structured output, use the <code>AdvisorParams.ENABLE_NATIVE_STRUCTURED_OUTPUT</code> parameter:",
+      "translation": "要启用原生结构化输出，请使用 `AdvisorParams.ENABLE_NATIVE_STRUCTURED_OUTPUT` 参数：",
+      "count": 1
+    },
+    {
+      "source": "<strong>OpenAI</strong>: GPT-4o and later models with JSON Schema support",
+      "translation": "<strong>OpenAI</strong>：支持 JSON Schema 的 GPT-4o 及后续模型",
+      "count": 1
+    },
+    {
+      "source": "<strong>Anthropic</strong>: Claude 3.5 Sonnet and later models",
+      "translation": "<strong>Anthropic</strong>：Claude 3.5 Sonnet 及后续模型",
+      "count": 1
+    },
+    {
+      "source": "<strong>Google GenAI</strong>: Gemini 1.5 Pro and later models",
+      "translation": "<strong>Google GenAI</strong>：Gemini 1.5 Pro 及后续版本模型",
+      "count": 1
+    },
+    {
+      "source": "<strong>Mistral AI</strong>: Mistral Small and later models with JSON Schema support",
+      "translation": "<strong>Mistral AI</strong>：支持 JSON Schema 的 Mistral Small 及后续模型",
+      "count": 1
+    },
+    {
+      "source": "The ability of LLMs to produce structured outputs is important for downstream applications that rely on reliably parsing output values.\nDevelopers want to quickly turn results from an AI model into data types, such as JSON, XML or Java classes, that can be passed to other application functions and methods.",
+      "translation": "大型语言模型生成结构化输出的能力对于依赖可靠解析输出值的下游应用至关重要。开发者希望快速将人工智能模型的结果转换为其他应用程序函数和方法可使用的数据类型，例如 JSON、XML 或 Java 类。",
+      "count": 1
+    },
+    {
+      "source": "Generating structured outputs from Large Language Models (LLMs) using generic completion APIs requires careful handling of inputs and outputs. The structured output converter plays a crucial role before and after the LLM call, ensuring the desired output structure is achieved.",
+      "translation": "使用通用补全 API 从大型语言模型（LLM）生成结构化输出需要仔细处理输入和输出。结构化输出转换器在 LLM 调用前后起着至关重要的作用，确保实现所需的输出结构。",
+      "count": 1
+    },
+    {
+      "source": "Before the LLM call, the converter appends format instructions to the prompt, providing explicit guidance to the models on generating the desired output structure. These instructions act as a blueprint, shaping the model’s response to conform to the specified format.",
+      "translation": "在大语言模型调用之前，转换器会将格式指令附加到提示中，为模型生成所需的输出结构提供明确指导。这些指令充当蓝图，塑造模型的响应以符合指定的格式。",
+      "count": 1
+    },
+    {
+      "source": "After the LLM call, the converter takes the model’s output text and transforms it into instances of the structured type. This conversion process involves parsing the raw text output and mapping it to the corresponding structured data representation, such as JSON, XML, or domain-specific data structures.",
+      "translation": "在大语言模型调用之后，转换器将模型的输出文本转换为结构化类型的实例。该转换过程涉及解析原始文本输出，并将其映射到相应的结构化数据表示形式，例如 JSON、XML 或特定领域的数据结构。",
+      "count": 1
+    },
+    {
+      "source": "The following diagram shows the data flow when using the structured output API.",
+      "translation": "下图展示了使用结构化输出 API 时的数据流。",
+      "count": 1
+    },
+    {
+      "source": "The following sections provide guides how to use the available converters to generate structured outputs.",
+      "translation": "以下章节提供了如何使用可用转换器生成结构化输出的指南。",
+      "count": 1
+    },
+    {
+      "source": "The target record representing actor’s filmography:",
+      "translation": "代表演员电影履历的目标记录：",
+      "count": 1
+    },
+    {
+      "source": "This annotation works with both records and regular Java classes.",
+      "translation": "此注解既适用于记录类，也适用于普通的 Java 类。",
+      "count": 1
+    },
+    {
+      "source": "The following models currently support native structured output:",
+      "translation": "以下模型目前支持原生结构化输出：",
+      "count": 1
+    },
+    {
+      "source": "Use one of these alternatives instead:",
+      "translation": "请使用以下替代方案之一：",
+      "count": 1
+    },
+    {
+      "source": "Some AI Models provide dedicated configuration options to generate structured (usually JSON) output.",
+      "translation": "某些人工智能模型提供专用配置选项，以生成结构化（通常为 JSON）的输出。",
+      "count": 1
+    },
+    {
+      "source": "Apache®, Apache Tomcat®, Apache Kafka®, Apache Cassandra™, and Apache Geode™ are trademarks or registered trademarks of the Apache Software Foundation in the United States and/or other countries. Java™, Java™ SE, Java™ EE, and OpenJDK™ are trademarks of Oracle and/or its affiliates. Kubernetes® is a registered trademark of the Linux Foundation in the United States and other countries. Linux® is the registered trademark of Linus Torvalds in the United States and other countries. Windows® and Microsoft® Azure are registered trademarks of Microsoft Corporation. “AWS” and “Amazon Web Services” are trademarks or registered trademarks of Amazon.com Inc. or its affiliates. All other trademarks and copyrights are property of their respective owners and are only mentioned for informative purposes. Other names may be trademarks of their respective owners.",
+      "translation": "Apache®、Apache Tomcat®、Apache Kafka®、Apache Cassandra™ 和 Apache Geode™ 是 Apache 软件基金会在美国和其他/或某些国家的商标或注册商标。Java™、Java™ SE、Java™ EE 和 OpenJDK™ 是 Oracle 公司和/或其关联公司的商标。Kubernetes® 是 Linux 基金会在美国和其他/或某些国家的注册商标。Linux® 是 Linus Torvalds 在美国和其他/或某些国家的注册商标。Windows® 和 Microsoft® Azure 是微软公司的注册商标。\"AWS\"和\"Amazon Web Services\"是 Amazon.com Inc. 或其关联公司的商标或注册商标。所有其他商标和版权均归各自所有者所有，仅用于说明目的。其他名称可能是其各自所有者的商标。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/projects\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-boot\">Spring Boot</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-framework\">Spring Framework</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud\">Spring Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud-dataflow\">Spring Cloud Data Flow</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-data\">Spring Data</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-integration\">Spring Integration</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-batch\">Spring Batch</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-security\">Spring Security</a>\n            <a class=\"navbar-item navbar-item-special\" href=\"https://spring.io/projects\">View all projects</a>\n            <li class=\"navbar-item navbar-item-special-3\">DEVELOPMENT TOOLS</li>\n            <a class=\"navbar-item\" href=\"https://spring.io/tools\">Spring Tools 4</a>\n            <a class=\"navbar-item navbar-item-special-2\" href=\"https://start.spring.io\">Spring Initializr\n              <svg id=\"svg-stash-f15b5668\"></svg></a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/projects\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-boot\">Spring Boot</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-framework\">Spring Framework</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud\">Spring Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud-dataflow\">Spring Cloud Data Flow</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-data\">Spring Data</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-integration\">Spring Integration</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-batch\">Spring Batch</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-security\">Spring Security</a>\n            <a class=\"navbar-item navbar-item-special\" href=\"https://spring.io/projects\">查看所有项目</a>\n            <li class=\"navbar-item navbar-item-special-3\">开发工具</li>\n            <a class=\"navbar-item\" href=\"https://spring.io/tools\">Spring Tools 4</a>\n            <a class=\"navbar-item navbar-item-special-2\" href=\"https://start.spring.io\">Spring Initializr\n              <svg id=\"svg-stash-f15b5668\"></svg></a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/why-spring\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/microservices\">Microservices</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/reactive\">Reactive</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/event-driven\">Event\n              Driven</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/cloud\">Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/web-applications\">Web\n              Applications</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/serverless\">Serverless</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/batch\">Batch</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/why-spring\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/microservices\">微服务</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/reactive\">响应式</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/event-driven\">事件驱动</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/cloud\">云</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/web-applications\">Web 应用</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/serverless\">无服务器</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/batch\">批处理</a>",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/structured-output-converter.adoc\">\n          <svg id=\"svg-stash-05b5c46b\"></svg>\n          Edit this Page\n        </a>\n        <a href=\"https://github.com/spring-projects/spring-ai\" title=\"GitHub\">\n          <svg id=\"svg-stash-28d888b7\"></svg>\n          GitHub Project\n        </a>",
+      "translation": "<a href=\"file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/structured-output-converter.adoc\">\n          <svg id=\"svg-stash-05b5c46b\"></svg>\n          编辑此页面\n        </a>\n        <a href=\"https://github.com/spring-projects/spring-ai\" title=\"GitHub\">\n          <svg id=\"svg-stash-28d888b7\"></svg>\n          GitHub 项目\n        </a>",
+      "count": 1
+    },
+    {
+      "source": "<nav aria-label=\"breadcrumbs\" class=\"breadcrumbs\">\n    <ul>\n      <li><a href=\"../index.html\">Spring AI</a></li>\n      <li>Reference</li>\n      <li><a href=\"structured-output-converter.html\">Structured Output</a></li>\n    </ul>\n  </nav>",
+      "translation": "<nav aria-label=\"面包屑\" class=\"breadcrumbs\">\n    <ul>\n      <li><a href=\"../index.html\">Spring AI</a></li>\n      <li>参考</li>\n      <li><a href=\"structured-output-converter.html\">结构化输出</a></li>\n    </ul>\n  </nav>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/solutions\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/support\">Spring Runtime</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/consulting\">Spring Consulting</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/teams\">Spring Academy For Teams</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/security\">Security Advisories</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/solutions\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/support\">Spring 运行时</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/consulting\">Spring 咨询</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/teams\">Spring Academy 团队培训</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/security\">安全公告</a>",
+      "count": 1
+    },
+    {
+      "source": "<ul class=\"projects\">\n  <li>\n    Related Spring Documentation\n    <ul class=\"projects-list\">\n    </ul>\n  </li><a href=\"../spring-projects.html\">All Docs...</a>\n</ul>",
+      "translation": "<ul class=\"projects\">\n  <li>\n    相关 Spring 文档\n    <ul class=\"projects-list\">\n    </ul>\n  </li><a href=\"../spring-projects.html\">所有文档...</a>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.academy/courses\">Courses</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/learning-path\">Get Certified</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.academy/courses\">课程</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/learning-path\">获取认证</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"title\" href=\"../index.html\">Spring AI</a>",
+      "translation": "<a class=\"title\" href=\"../index.html\">Spring AI</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"search-link\" href=\"../search.html\">Search in all Spring Docs</a>",
+      "translation": "<a class=\"search-link\" href=\"../search.html\">在全部 Spring 文档中搜索</a>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"vectordbs.html\">Vector Databases</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/azure.html\">Azure AI Service</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/azure-cosmos-db.html\">Azure Cosmos DB</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/bedrock-knowledge-base.html\">Amazon Bedrock Knowledge Base</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/apache-cassandra.html\">Apache Cassandra Vector Store</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/chroma.html\">Chroma</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/couchbase.html\">Couchbase</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/elasticsearch.html\">Elasticsearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/gemfire.html\">GemFire</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/mariadb.html\">MariaDB Vector Store</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/milvus.html\">Milvus</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/mongodb.html\">MongoDB Atlas</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/neo4j.html\">Neo4j</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/opensearch.html\">OpenSearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/oracle.html\">Oracle</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/pgvector.html\">PGvector</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/pinecone.html\">Pinecone</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/qdrant.html\">Qdrant</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/redis.html\">Redis</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/typesense.html\">Typesense</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/weaviate.html\">Weaviate</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/s3-vector-store.html\">S3 Vector Store</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"vectordbs.html\">向量数据库</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/azure.html\">Azure AI 服务</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/azure-cosmos-db.html\">Azure Cosmos DB</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/bedrock-knowledge-base.html\">Amazon Bedrock 知识库</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/apache-cassandra.html\">Apache Cassandra 向量存储</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/chroma.html\">Chroma</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/couchbase.html\">Couchbase</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/elasticsearch.html\">Elasticsearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/gemfire.html\">GemFire</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/mariadb.html\">MariaDB 向量存储</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/milvus.html\">Milvus</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/mongodb.html\">MongoDB Atlas</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/neo4j.html\">Neo4j</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/opensearch.html\">OpenSearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/oracle.html\">Oracle</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/pgvector.html\">PGvector</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/pinecone.html\">Pinecone</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/qdrant.html\">Qdrant</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/redis.html\">Redis</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/typesense.html\">Typesense</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/weaviate.html\">Weaviate</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/s3-vector-store.html\">S3 向量存储</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"embeddings.html\">Embedding Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"bedrock.html\">Amazon Bedrock</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/bedrock-cohere-embedding.html\">Cohere</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/bedrock-titan-embedding.html\">Titan</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/azure-openai-embeddings.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/google-genai-embeddings-text.html\">Google GenAI Text Embedding</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/mistralai-embeddings.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/oci-genai-embeddings.html\">OCI GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/ollama-embeddings.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/onnx.html\">(ONNX) Transformers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/openai-embeddings.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/postgresml-embeddings.html\">PostgresML</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">VertexAI</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/vertexai-embeddings-text.html\">Text Embedding</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/vertexai-embeddings-multimodal.html\">Multimodal Embedding</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"embeddings.html\">嵌入模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"bedrock.html\">Amazon Bedrock</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/bedrock-cohere-embedding.html\">Cohere</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/bedrock-titan-embedding.html\">Titan</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/azure-openai-embeddings.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/google-genai-embeddings-text.html\">Google GenAI 文本嵌入</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/mistralai-embeddings.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/oci-genai-embeddings.html\">OCI GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/ollama-embeddings.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/onnx.html\">(ONNX) Transformers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/openai-embeddings.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/postgresml-embeddings.html\">PostgresML</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">VertexAI</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/vertexai-embeddings-text.html\">文本嵌入</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/vertexai-embeddings-multimodal.html\">多模态嵌入</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"chatmodel.html\">Chat Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/comparison.html\">Chat Models Comparison</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/bedrock-converse.html\">Amazon Bedrock Converse</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/anthropic-chat.html\">Anthropic</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/azure-openai-chat.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/deepseek-chat.html\">DeepSeek</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/dmr-chat.html\">Docker Model Runner</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/google-genai-chat.html\">Google GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/groq-chat.html\">Groq</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/mistralai-chat.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/minimax-chat.html\">MiniMax</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/nvidia-chat.html\">NVIDIA</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/ollama-chat.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/perplexity-chat.html\">Perplexity AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/oci-genai-chat.html\">OCI Generative AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/openai-chat.html\">OpenAI</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"chatmodel.html\">对话模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/comparison.html\">对话模型对比</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/bedrock-converse.html\">Amazon Bedrock Converse</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/anthropic-chat.html\">Anthropic</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/azure-openai-chat.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/deepseek-chat.html\">DeepSeek</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/dmr-chat.html\">Docker Model Runner</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/google-genai-chat.html\">Google GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/groq-chat.html\">Groq</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/mistralai-chat.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/minimax-chat.html\">MiniMax</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/nvidia-chat.html\">NVIDIA</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/ollama-chat.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/perplexity-chat.html\">Perplexity AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/oci-genai-chat.html\">OCI Generative AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/openai-chat.html\">OpenAI</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-overview.html\">Model Context Protocol (MCP)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mcp/mcp-client-boot-starter-docs.html\">MCP Client Boot Starters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-server-boot-starter-docs.html\">MCP Server Boot Starters</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-stdio-sse-server-boot-starter-docs.html\">STDIO and SSE MCP Servers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-streamable-http-server-boot-starter-docs.html\">Streamable-HTTP MCP Servers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-stateless-server-boot-starter-docs.html\">Stateless Streamable-HTTP MCP Servers</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mcp/mcp-security.html\">MCP Security (WIP)</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-overview.html\">MCP Annotations</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-client.html\">Client Annotations</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-server.html\">Server Annotations</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-special-params.html\">Special Parameters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-examples.html\">MCP Annotations Examples</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"mcp/mcp-overview.html\">模型上下文协议 (MCP)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mcp/mcp-client-boot-starter-docs.html\">MCP 客户端启动器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-server-boot-starter-docs.html\">MCP 服务器启动器</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-stdio-sse-server-boot-starter-docs.html\">STDIO 和 SSE MCP 服务器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-streamable-http-server-boot-starter-docs.html\">可流式 HTTP MCP 服务器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-stateless-server-boot-starter-docs.html\">无状态可流式 HTTP MCP 服务器</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mcp/mcp-security.html\">MCP 安全 (进行中)</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-overview.html\">MCP 注解</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-client.html\">客户端注解</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-server.html\">服务器注解</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-special-params.html\">特殊参数</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-examples.html\">MCP 注解示例</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">Guides</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/spring-ai-community/awesome-spring-ai\">Awesome Spring AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/getting-started-mcp.html\">Getting Started with MCP</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/dynamic-tool-search.html\">Dynamic Tool Discovery</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/llm-as-judge.html\">LLM-as-a-Judge Evaluation</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"chat/prompt-engineering-patterns.html\">Prompt Engineering Patterns</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"effective-agents.html\">Building Effective Agents</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agents\">Building agents with Spring AI by AWS</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agentcore\">Building agents with Spring AI and AgentCore by AWS</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/microsoft/Spring-AI-for-Beginners\">Spring AI for Beginners by Microsoft</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<span class=\"nav-text\">指南</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/spring-ai-community/awesome-spring-ai\">Awesome Spring AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/getting-started-mcp.html\">MCP 入门</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/dynamic-tool-search.html\">动态工具发现</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/llm-as-judge.html\">LLM 作为裁判的评估</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"chat/prompt-engineering-patterns.html\">提示工程模式</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"effective-agents.html\">构建高效智能体</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agents\">AWS 使用 Spring AI 构建智能体</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agentcore\">AWS 使用 Spring AI 和 AgentCore 构建智能体</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/microsoft/Spring-AI-for-Beginners\">Microsoft 的 Spring AI 初学者指南</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio.html\">Audio Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio/transcriptions.html\">Transcription API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/transcriptions/azure-openai-transcriptions.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/transcriptions/openai-transcriptions.html\">OpenAI</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio/speech.html\">Text-To-Speech (TTS) API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/speech/openai-speech.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/speech/elevenlabs-speech.html\">ElevenLabs</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio.html\">音频模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio/transcriptions.html\">转录 API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/transcriptions/azure-openai-transcriptions.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/transcriptions/openai-transcriptions.html\">OpenAI</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio/speech.html\">文本转语音 (TTS) API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/speech/openai-speech.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/speech/elevenlabs-speech.html\">ElevenLabs</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"chatclient.html\">Chat Client API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"advisors.html\">Advisors</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"advisors-recursive.html\">Recursive Advisors</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"chatclient.html\">聊天客户端 API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"advisors.html\">顾问</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"advisors-recursive.html\">递归顾问</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"imageclient.html\">Image Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/azure-openai-image.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/openai-image.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/stabilityai-image.html\">Stability</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"imageclient.html\">图像模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/azure-openai-image.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/openai-image.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/stabilityai-image.html\">Stability</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"moderation.html\">Moderation Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"moderation/openai-moderation.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"moderation/mistral-ai-moderation.html\">Mistral AI</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"moderation.html\">内容审核模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"moderation/openai-moderation.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"moderation/mistral-ai-moderation.html\">Mistral AI</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../upgrade-notes.html\">Upgrade Notes</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"tools-migration.html\">Migrating FunctionCallback to ToolCallback API</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"chat/anthropic-migration.html\">Migrating the Anthropic Module to the Official Java SDK</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"../upgrade-notes.html\">升级说明</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"tools-migration.html\">将 FunctionCallback 迁移至 ToolCallback API</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"chat/anthropic-migration.html\">将 Anthropic 模块迁移至官方 Java SDK</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nAs more AI models natively support structured outputs, you can leverage this capability using the <a class=\"xref page\" href=\"chatclient.html#_native_structured_output\">Native Structured Output</a> feature with <code>AdvisorParams.ENABLE_NATIVE_STRUCTURED_OUTPUT</code>. This approach uses the generated JSON schema directly with the model’s native structured output API, eliminating the need for pre-prompt formatting instructions and providing more reliable results.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n随着越来越多的 AI 模型原生支持结构化输出，您可以利用 <a class=\"xref page\" href=\"chatclient.html#_native_structured_output\">Native Structured Output</a> 功能配合 <code>AdvisorParams.ENABLE_NATIVE_STRUCTURED_OUTPUT</code> 来发挥这一能力。这种方法直接使用生成的 JSON Schema 与模型的原生结构化输出 API，无需预先编写提示词格式指令，从而提供更可靠的结果。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\nThe <code>StructuredOutputConverter</code> is not used for LLM <a class=\"xref page\" href=\"tools.html\">Tool Calling</a>, as this feature inherently provides structured outputs by default.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"提示\"></i>\n</td>\n<td class=\"content\">\n<code>StructuredOutputConverter</code> 不用于 LLM <a class=\"xref page\" href=\"tools.html\">工具调用</a>，因为该功能默认本身就提供结构化输出。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\nThe <code>StructuredOutputConverter</code> is a best effort to convert the model output into a structured output.\nThe AI Model is not guaranteed to return the structured output as requested.\nThe model may not understand the prompt or be unable to generate the structured output as requested.\nConsider implementing a validation mechanism to ensure the model output is as expected.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"提示\"></i>\n</td>\n<td class=\"content\">\n<code>StructuredOutputConverter</code> 会尽力将模型输出转换为结构化输出。\nAI 模型并不保证能返回按请求的结构化输出。\n模型可能无法理解提示，或无法生成按请求的结构化输出。\n建议实现验证机制，以确保模型输出符合预期。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-warning\" title=\"Warning\"></i>\n</td>\n<td class=\"content\">\nNative structured output is <strong>not enabled by default</strong> because support varies significantly across models and providers.\nThe prompt-based approach (default) works consistently across all models.\nEnable native structured output only when you need the stronger API-level schema enforcement it provides, and always test with your specific model version.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-warning\" title=\"Warning\"></i>\n</td>\n<td class=\"content\">\n原生结构化输出<strong>默认未启用</strong>，因为不同模型和提供商的支持程度差异显著。基于提示词的方法（默认方式）在所有模型中表现一致。仅在需要其提供的更强 API 级模式强制约束时才启用原生结构化输出，并始终针对您的具体模型版本进行测试。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../index.html\">Overview</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../concepts.html\">AI Concepts</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"../index.html\">概述</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../concepts.html\">AI 概念</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"retrieval-augmented-generation.html\">Retrieval Augmented Generation (RAG)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"etl-pipeline.html\">ETL Pipeline</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"retrieval-augmented-generation.html\">检索增强生成 (RAG)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"etl-pipeline.html\">ETL 管道</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../getting-started.html\">Getting Started</a>",
+      "translation": "<a class=\"nav-link\" href=\"../getting-started.html\">入门指南</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"structured-output-converter.html\">Structured Output</a>",
+      "translation": "<a class=\"nav-link\" href=\"structured-output-converter.html\">结构化输出</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"chat-memory.html\">Chat Memory</a>",
+      "translation": "<a class=\"nav-link\" href=\"chat-memory.html\">对话记忆</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"tools.html\">Tool Calling</a>",
+      "translation": "<a class=\"nav-link\" href=\"tools.html\">工具调用</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"testing.html\">Model Evaluation</a>",
+      "translation": "<a class=\"nav-link\" href=\"testing.html\">模型评估</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"docker-compose.html\">Development-time Services</a>",
+      "translation": "<a class=\"nav-link\" href=\"docker-compose.html\">开发时服务</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_structured_output_api\"></a>Structured Output API",
+      "translation": "<a class=\"anchor\" href=\"#_structured_output_api\"></a>结构化输出 API",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_available_converters\"></a>Available Converters",
+      "translation": "<a class=\"anchor\" href=\"#_available_converters\"></a>可用转换器",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_using_converters\"></a>Using Converters",
+      "translation": "<a class=\"anchor\" href=\"#_using_converters\"></a>使用转换器",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_bean_output_converter\"></a>Bean Output Converter",
+      "translation": "<a class=\"anchor\" href=\"#_bean_output_converter\"></a>Bean 输出转换器",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_property_ordering_in_generated_schema\"></a>Property Ordering in Generated Schema",
+      "translation": "<a class=\"anchor\" href=\"#_property_ordering_in_generated_schema\"></a>生成模式中的属性排序",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_generic_bean_types\"></a>Generic Bean Types",
+      "translation": "<a class=\"anchor\" href=\"#_generic_bean_types\"></a>通用 Bean 类型",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_map_output_converter\"></a>Map Output Converter",
+      "translation": "<a class=\"anchor\" href=\"#_map_output_converter\"></a>Map 输出转换器",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_list_output_converter\"></a>List Output Converter",
+      "translation": "<a class=\"anchor\" href=\"#_list_output_converter\"></a>列表输出转换器",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_native_structured_output\"></a>Native Structured Output",
+      "translation": "<a class=\"anchor\" href=\"#_native_structured_output\"></a>原生结构化输出",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_using_native_structured_output\"></a>Using Native Structured Output",
+      "translation": "<a class=\"anchor\" href=\"#_using_native_structured_output\"></a>使用原生结构化输出",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_supported_models_for_native_structured_output\"></a>Supported Models for Native Structured Output",
+      "translation": "<a class=\"anchor\" href=\"#_supported_models_for_native_structured_output\"></a>支持原生结构化输出的模型",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_known_limitations\"></a>Known Limitations",
+      "translation": "<a class=\"anchor\" href=\"#_known_limitations\"></a>已知局限性",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_ollama_model_specific_instability\"></a>Ollama: Model-Specific Instability",
+      "translation": "<a class=\"anchor\" href=\"#_ollama_model_specific_instability\"></a>Ollama：模型特定不稳定性",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_openai_no_top_level_array_support\"></a>OpenAI: No Top-Level Array Support",
+      "translation": "<a class=\"anchor\" href=\"#_openai_no_top_level_array_support\"></a>OpenAI：不支持顶层数组",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_built_in_json_mode\"></a>Built-in JSON mode",
+      "translation": "<a class=\"anchor\" href=\"#_built_in_json_mode\"></a>内置 JSON 模式",
+      "count": 1
+    },
+    {
+      "source": "Why Spring",
+      "translation": "为何是春天",
+      "count": 1
+    },
+    {
+      "source": "Spring AI",
+      "translation": "Spring AI",
+      "count": 1
+    },
+    {
+      "source": "Structured Output Converter",
+      "translation": "结构化输出转换器",
+      "count": 1
+    }
+  ]
+}

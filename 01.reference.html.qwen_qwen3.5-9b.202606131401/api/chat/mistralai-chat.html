@@ -1,0 +1,1646 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width,initial-scale=1" name="viewport"/>
+    <title>Mistral AI 聊天 :: Spring AI 参考</title>
+    <link href="https://docs.spring.io/spring-ai/reference/api/chat/mistralai-chat.html" rel="canonical"/>
+    <link href="groq-chat.html" rel="prev"/>
+    <link href="minimax-chat.html" rel="next"/>
+    <meta content="Antora 3.1.15" name="generator"/>
+    <script>
+!function (theme, navWidth) {
+  if (theme === 'dark') document.documentElement.classList.add('dark-theme')
+  if (navWidth) document.documentElement.style.setProperty('--nav-width', `${navWidth}px`)
+}(localStorage && localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)')?.matches && 'dark'),
+  localStorage && localStorage.getItem('nav-width'))
+    </script>
+    <link href="../../_/css/site.css" rel="stylesheet"/>
+    <link href="../../_/css/vendor/search.css" rel="stylesheet"/>
+    <link href="../../_/css/vendor/page-search.css" rel="stylesheet"/>
+    <link href="../../_/css/vendor/asciidoctor-tabs.css" rel="stylesheet"/>
+
+    <meta content="v0.4.17" name="antora-ui-version"/> 
+    <meta content="2.0.0" name="version"/>
+    <meta content="ai" name="component"/>
+    <meta content="false" name="latest-version"/>
+    <link href="../../_/img/favicon.ico" rel="icon" type="image/vnd.microsoft.icon"/>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://spring.io">
+        <img alt="Spring" class="block" id="springlogo" src="../../_/img/spring-logo.svg"/>
+      </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="navbar-menu" id="topbar-nav">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">为何是春天</a>
+          <div class="navbar-dropdown"><a class="navbar-item" href="https://spring.io/why-spring">概览</a>
+<a class="navbar-item" href="https://spring.io/microservices">微服务</a>
+<a class="navbar-item" href="https://spring.io/reactive">响应式</a>
+<a class="navbar-item" href="https://spring.io/event-driven">事件驱动</a>
+<a class="navbar-item" href="https://spring.io/cloud">云</a>
+<a class="navbar-item" href="https://spring.io/web-applications">Web 应用</a>
+<a class="navbar-item" href="https://spring.io/serverless">无服务器</a>
+<a class="navbar-item" href="https://spring.io/batch">批处理</a></div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Learn</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://spring.io/learn">Overview</a>
+            <a class="navbar-item" href="https://spring.io/quickstart">Quickstart</a>
+            <a class="navbar-item" href="https://spring.io/guides">Guides</a>
+            <a class="navbar-item" href="https://spring.io/blog">Blog</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Projects</a>
+          <div class="navbar-dropdown" style="min-width: 280px"><a class="navbar-item" href="https://spring.io/projects">概览</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-boot">Spring Boot</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-framework">Spring Framework</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-cloud">Spring Cloud</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-cloud-dataflow">Spring Cloud Data Flow</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-data">Spring Data</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-integration">Spring Integration</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-batch">Spring Batch</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-security">Spring Security</a>
+<a class="navbar-item navbar-item-special" href="https://spring.io/projects">查看所有项目</a>
+<li class="navbar-item navbar-item-special-3">开发工具</li>
+<a class="navbar-item" href="https://spring.io/tools">Spring Tools 4</a>
+<a class="navbar-item navbar-item-special-2" href="https://start.spring.io">Spring Initializr
+              <svg class="external-link-icon" viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><polyline fill="none" points="15 10.94 15 15 1 15 1 1 5.06 1" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"></polyline><polyline fill="none" points="8.93 1 15 1 15 7.07" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"></polyline><line fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" x1="15" x2="8" y1="1" y2="8"></line></svg></a></div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Academy</a>
+          <div class="navbar-dropdown"><a class="navbar-item" href="https://spring.academy/courses">课程</a>
+<a class="navbar-item" href="https://spring.academy/learning-path">获取认证</a></div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Solutions</a>
+          <div class="navbar-dropdown lg"><a class="navbar-item" href="https://spring.io/solutions">概览</a>
+<a class="navbar-item" href="https://spring.io/support">Spring 运行时</a>
+<a class="navbar-item" href="https://spring.io/consulting">Spring 咨询</a>
+<a class="navbar-item" href="https://spring.academy/teams">Spring Academy 团队培训</a>
+<a class="navbar-item" href="https://spring.io/security">安全公告</a></div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable is-community">
+          <a class="navbar-link" href="#">Community</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://spring.io/community">Overview</a>
+            <a class="navbar-item" href="https://spring.io/events">Events</a>
+            <a class="navbar-item" href="https://spring.io/team">Team</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <label class="theme-toggler">
+      <input id="switch-theme-checkbox" name="switch-theme-checkbox" type="checkbox"/>
+      <span class="icon"><svg aria-hidden="true" class="svg-inline--fa fa-moon moon" data-icon="moon" data-prefix="fas" focusable="false" role="img" viewbox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z" fill="currentColor"></path>
+</svg>
+        <svg aria-hidden="true" class="svg-inline--fa fa-sun sun" data-icon="sun" data-prefix="fas" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z" fill="currentColor"></path>
+</svg></span>
+      <span class="text">light</span>
+    </label>
+  </nav>
+</header>
+<script>
+!function (theme) {
+  if (theme === 'dark') {
+    document.getElementById('switch-theme-checkbox').parentElement.classList.add('active')
+  }
+}(localStorage && localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)')?.matches && 'dark'))
+</script>
+<div class="body">
+<div class="nav-container" data-component="ai" data-version="2.0.0">
+  <aside class="nav">
+    <div class="panels">
+      <div class="nav-panel-menu is-active" data-panel="menu">
+        <nav class="nav-menu">
+<div class="context">
+  <span class="title">Spring AI</span>
+  <span class="version">2.0.0</span>
+  <button class="browse-version" id="browse-version">
+    <svg height="24px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewbox="0 0 512 512" width="24px" xml:space="preserve"><g><path d="M256,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S273.7,224,256,224L256,224z"></path><path d="M128.4,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S146,224,128.4,224L128.4,224z"></path><path d="M384,224c-17.7,0-32,14.3-32,32s14.3,32,32,32s32-14.3,32-32S401.7,224,384,224L384,224z"></path></g></svg>
+  </button>
+  <div class="search">
+  <button class="DocSearch-Button search-button">
+    <svg enable-background="new 0 0 32 32" id="Glyph" version="1.1" viewbox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M27.414,24.586l-5.077-5.077C23.386,17.928,24,16.035,24,14c0-5.514-4.486-10-10-10S4,8.486,4,14  s4.486,10,10,10c2.035,0,3.928-0.614,5.509-1.663l5.077,5.077c0.78,0.781,2.048,0.781,2.828,0  C28.195,26.633,28.195,25.367,27.414,24.586z M7,14c0-3.86,3.14-7,7-7s7,3.14,7,7s-3.14,7-7,7S7,17.86,7,14z" id="XMLID_223_"></path>
+</svg>
+    <span>Search</span>
+    <span class="search-key"></span>
+  </button>
+</div>
+</div><ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../../index.html">概览</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../../concepts.html">AI 概念</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="1"><a class="nav-link" href="../../getting-started.html">入门指南</a></li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Reference</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../chatclient.html">聊天客户端 API</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="../advisors.html">顾问</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../advisors-recursive.html">递归顾问</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../prompt.html">Prompts</a>
+  </li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="../structured-output-converter.html">结构化输出</a></li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../multimodality.html">Multimodality</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../index.html">Models</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../chatmodel.html">对话模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="comparison.html">对话模型对比</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="bedrock-converse.html">Amazon Bedrock Converse</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="anthropic-chat.html">Anthropic</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="azure-openai-chat.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="deepseek-chat.html">DeepSeek</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="dmr-chat.html">Docker Model Runner</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="google-genai-chat.html">Google GenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="groq-chat.html">Groq</a>
+</li>
+<li class="nav-item is-current-page" data-depth="4">
+<a class="nav-link" href="mistralai-chat.html">Mistral AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="minimax-chat.html">MiniMax</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="nvidia-chat.html">NVIDIA</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="ollama-chat.html">Ollama</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="perplexity-chat.html">Perplexity AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="oci-genai-chat.html">OCI Generative AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="openai-chat.html">OpenAI</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../embeddings.html">嵌入模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="../bedrock.html">Amazon Bedrock</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="../embeddings/bedrock-cohere-embedding.html">Cohere</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="../embeddings/bedrock-titan-embedding.html">Titan</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../embeddings/azure-openai-embeddings.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../embeddings/google-genai-embeddings-text.html">Google GenAI 文本嵌入</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../embeddings/mistralai-embeddings.html">Mistral AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../embeddings/oci-genai-embeddings.html">OCI GenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../embeddings/ollama-embeddings.html">Ollama</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../embeddings/onnx.html">(ONNX) Transformers</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../embeddings/openai-embeddings.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../embeddings/postgresml-embeddings.html">PostgresML</a>
+</li>
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<span class="nav-text">VertexAI</span>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="../embeddings/vertexai-embeddings-text.html">文本嵌入</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="../embeddings/vertexai-embeddings-multimodal.html">多模态嵌入</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../imageclient.html">图像模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../image/azure-openai-image.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../image/openai-image.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../image/stabilityai-image.html">Stability</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../audio.html">音频模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="../audio/transcriptions.html">转录 API</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="../audio/transcriptions/azure-openai-transcriptions.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="../audio/transcriptions/openai-transcriptions.html">OpenAI</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="../audio/speech.html">文本转语音 (TTS) API</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="../audio/speech/openai-speech.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="../audio/speech/elevenlabs-speech.html">ElevenLabs</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../moderation.html">内容审核模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../moderation/openai-moderation.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../moderation/mistral-ai-moderation.html">Mistral AI</a>
+</li>
+</ul></li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="../chat-memory.html">对话记忆</a></li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="../tools.html">工具调用</a></li>
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../mcp/mcp-overview.html">模型上下文协议 (MCP)</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../mcp/mcp-client-boot-starter-docs.html">MCP 客户端启动器</a>
+</li>
+<li class="nav-item" data-depth="3">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="../mcp/mcp-server-boot-starter-docs.html">MCP 服务器启动器</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../mcp/mcp-stdio-sse-server-boot-starter-docs.html">STDIO 和 SSE MCP 服务器</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../mcp/mcp-streamable-http-server-boot-starter-docs.html">流式 HTTP MCP 服务器</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../mcp/mcp-stateless-server-boot-starter-docs.html">无状态流式 HTTP MCP 服务器</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../mcp/mcp-security.html">MCP 安全性 (进行中)</a>
+</li>
+<li class="nav-item" data-depth="3">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="../mcp/mcp-annotations-overview.html">MCP 注解</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../mcp/mcp-annotations-client.html">客户端注解</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../mcp/mcp-annotations-server.html">服务器注解</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../mcp/mcp-annotations-special-params.html">特殊参数</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="../mcp/mcp-annotations-examples.html">MCP 注解示例</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../retrieval-augmented-generation.html">检索增强生成 (RAG)</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../etl-pipeline.html">ETL 管道</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="../testing.html">模型评估</a></li>
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../vectordbs.html">向量数据库</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/azure.html">Azure AI 服务</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/azure-cosmos-db.html">Azure Cosmos DB</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/bedrock-knowledge-base.html">Amazon Bedrock 知识库</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/apache-cassandra.html">Apache Cassandra 向量存储</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/chroma.html">Chroma</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/couchbase.html">Couchbase</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/elasticsearch.html">Elasticsearch</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/gemfire.html">GemFire</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/mariadb.html">MariaDB 向量存储</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/milvus.html">Milvus</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/mongodb.html">MongoDB Atlas</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/neo4j.html">Neo4j</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/opensearch.html">OpenSearch</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/oracle.html">Oracle</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/pgvector.html">PGvector</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/pinecone.html">Pinecone</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/qdrant.html">Qdrant</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/redis.html">Redis</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/typesense.html">Typesense</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/weaviate.html">Weaviate</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="../vectordbs/s3-vector-store.html">S3 向量存储</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../observability/index.html">Observability</a>
+  </li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="../docker-compose.html">开发时服务</a></li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Testing</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../testcontainers.html">Testcontainers</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1"><button class="nav-item-toggle"></button>
+<span class="nav-text">指南</span>
+<ul class="nav-list">
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://github.com/spring-ai-community/awesome-spring-ai">Awesome Spring AI</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../../guides/getting-started-mcp.html">MCP 入门</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../../guides/dynamic-tool-search.html">动态工具发现</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../../guides/llm-as-judge.html">LLM-as-a-Judge 评估</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="prompt-engineering-patterns.html">提示工程模式</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../effective-agents.html">构建高效智能体</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://catalog.workshops.aws/java-spring-ai-agents">AWS 使用 Spring AI 构建智能体</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://catalog.workshops.aws/java-spring-ai-agentcore">AWS 使用 Spring AI 和 AgentCore 构建智能体</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://github.com/microsoft/Spring-AI-for-Beginners">Microsoft 的 Spring AI 初学者指南</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="1"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../../upgrade-notes.html">升级说明</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../tools-migration.html">将 FunctionCallback 迁移至 ToolCallback API</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="anthropic-migration.html">将 Anthropic 模块迁移至官方 Java SDK</a>
+</li>
+</ul></li>
+</ul>
+  </li>
+</ul>
+          <div class="toggle-sm">
+            <button class="nav-toggle" id="nav-toggle-2"></button>
+          </div>
+        </nav>
+      </div>
+      <div class="nav-collapse">
+        <button id="nav-collapse-toggle"><span></span></button>        
+      </div>
+    </div>
+    <div class="nav-resize"></div>
+  </aside>
+</div>
+<script>
+!function (sidebar) {
+  if (sidebar) {
+    document.body.classList.add('nav-sm')
+  }
+}(localStorage && localStorage.getItem('sidebar') === 'close')
+</script><main class="article">
+<div class="toolbar" role="navigation">
+  <button class="nav-toggle" id="nav-toggle-1"></button>
+<div class="search">
+  <button class="DocSearch-Button search-button">
+    <svg id="svg-stash-de15fb15"></svg>
+    <span>Search</span>
+    <span class="search-key"></span>
+  </button>
+</div>
+</div>
+  <div class="content">
+<aside class="sidebar">
+  <div class="content">
+    <div class="toc" data-levels="2" data-title="Mistral AI Chat">
+      <div class="toc-menu"></div>
+    </div>
+    <div class="sidebar-links"><a href="file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/chat/mistralai-chat.adoc">
+<svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m16 2.012 3 3L16.713 7.3l-3-3zM4 14v3h3l8.299-8.287-3-3zm0 6h16v2H4z"></path></svg>
+          编辑此页面
+        </a>
+<a href="https://github.com/spring-projects/spring-ai" title="GitHub">
+<svg height="512px" id="Layer_1" version="1.1" viewbox="0 0 512 512" width="512px" xmlns="http://www.w3.org/2000/svg"><style type="text/css">
+              .st0{fill-rule:evenodd;clip-rule:evenodd;} </style><g><path class="st0" d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"></path></g></svg>
+          GitHub 项目
+        </a></div>
+  </div>
+</aside>
+<article class="doc">
+<div class="breadcrumbs-container"><nav aria-label="面包屑" class="breadcrumbs">
+<ul>
+<li><a href="../../index.html">Spring AI</a></li>
+<li>参考</li>
+<li><a href="../index.html">模型</a></li>
+<li><a href="../chatmodel.html">聊天模型</a></li>
+<li><a href="mistralai-chat.html">Mistral AI</a></li>
+</ul>
+</nav></div><h1 class="page" id="page-title">Mistral AI 聊天</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Spring AI 支持来自 Mistral AI 的各种人工智能语言模型。您可以与 Mistral AI 语言模型进行交互，并基于 Mistral 模型创建多语言对话助手。</p>
+</div>
+<div class="admonitionblock tip">
+<table><tr>
+<td class="icon">
+<i class="fa icon-tip" title="提示"></i>
+</td>
+<td class="content">
+Mistral AI 也提供与 OpenAI API 兼容的端点。请查看<a href="#_openai_api_compatibility">OpenAI API 兼容性</a>部分，了解如何使用<a class="xref page" href="openai-chat.html">Spring AI OpenAI</a>集成来与 Mistral 端点进行通信。
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prerequisites"><a class="anchor" href="#_prerequisites"></a>Prerequisites</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>您需要创建一个与 Mistral AI 的 API，以访问 Mistral AI 的语言模型。</p>
+</div>
+<div class="paragraph">
+<p>在<a href="https://auth.mistral.ai/ui/registration">Mistral AI 注册页面</a>创建账户，并在<a href="https://console.mistral.ai/api-keys/">API 密钥页面</a>生成令牌。</p>
+</div>
+<div class="paragraph">
+<p>Spring AI 项目定义了一个名为 <code>spring.ai.mistralai.api-key</code> 的配置属性，您应将其设置为从 console.mistral.ai 获取的<code>API Key</code>的值。</p>
+</div>
+<div class="paragraph">
+<p>您可以在 <code>application.properties</code> 文件中设置此配置属性：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties">spring.ai.mistralai.api-key=&lt;your-mistralai-api-key&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>为在处理敏感信息（如 API 密钥）时增强安全性，您可以使用 Spring 表达式语言（SpEL）来引用自定义环境变量：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml"># In application.yml
+spring:
+  ai:
+    mistralai:
+      api-key: ${MISTRALAI_API_KEY}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># In your environment or .env file
+export MISTRALAI_API_KEY=&lt;your-mistralai-api-key&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>您也可以在应用程序代码中通过编程方式设置此配置：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">// Retrieve API key from a secure source or environment variable
+String apiKey = System.getenv("MISTRALAI_API_KEY");</code></pre>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_add_repositories_and_bom"><a class="anchor" href="#_add_repositories_and_bom"></a>添加仓库和物料清单</h3>
+<div class="paragraph">
+<p>Spring AI 的构件发布在 Maven Central 和 Spring Snapshot 仓库中。请参考<a class="xref page" href="../../getting-started.html#artifact-repositories">构件仓库</a>部分，以将这些仓库添加到您的构建系统中。</p>
+</div>
+<div class="paragraph">
+<p>为便于依赖管理，Spring AI 提供了一个 BOM（物料清单），以确保整个项目中使用的 Spring AI 版本保持一致。请参考<a class="xref page" href="../../getting-started.html#dependency-management">依赖管理</a>部分，将 Spring AI BOM 添加到您的构建系统中。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_auto_configuration"><a class="anchor" href="#_auto_configuration"></a>Auto-configuration</h2>
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Spring AI 的自动配置中，starter 模块的构件名称已发生重大变更。
+有关更多信息，请参阅<a href="https://docs.spring.io/spring-ai/reference/upgrade-notes.html">升级说明</a>。</p>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="paragraph">
+<p>Spring AI 为 Mistral AI 聊天客户端提供了 Spring Boot 自动配置功能。  
+要启用该功能，请将以下依赖添加到项目的 Maven `<code>pom.xml</code>` 文件中：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-ai-starter-model-mistral-ai&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>或者将其添加到您的 Gradle `<code>build.gradle</code>` 构建文件中。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">dependencies {
+    implementation 'org.springframework.ai:spring-ai-starter-model-mistral-ai'
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table><tr>
+<td class="icon">
+<i class="fa icon-tip" title="提示"></i>
+</td>
+<td class="content">
+请参考<a class="xref page" href="../../getting-started.html#dependency-management">依赖管理</a>部分，将 Spring AI BOM 添加到您的构建文件中。
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_chat_properties"><a class="anchor" href="#_chat_properties"></a>聊天属性</h3>
+<div class="sect3">
+<h4 id="_retry_properties"><a class="anchor" href="#_retry_properties"></a>重试属性</h4>
+<div class="paragraph">
+<p>前缀 `<code>spring.ai.retry</code>` 用作属性前缀，允许您为 Mistral AI 聊天模型配置重试机制。</p>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 33.3333%;"/>
+<col style="width: 55.5555%;"/>
+<col style="width: 11.1112%;"/>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Property</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.retry.max-attempts</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">最大重试尝试次数。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.retry.backoff.initial-interval</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">指数退避策略的初始睡眠时长。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2 秒。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.retry.backoff.multiplier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">退避间隔倍数。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.retry.backoff.max-interval</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">最大退避时长。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3 分钟。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.retry.on-client-errors</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">如果为假，则抛出 NonTransientAiException 异常，并且不要针对 `<code>4xx` 客户端错误代码进行重试。</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.retry.exclude-on-http-codes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">不应触发重试的 HTTP 状态码列表（例如，用于抛出 NonTransientAiException）。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">empty</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.retry.on-http-codes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">应触发重试的 HTTP 状态码列表（例如，用于抛出 TransientAiException）。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">empty</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_connection_properties"><a class="anchor" href="#_connection_properties"></a>连接属性</h4>
+<div class="paragraph">
+<p>前缀 `<code>spring.ai.mistralai</code>` 用作属性前缀，使您能够连接到 Mistral AI。</p>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 33.3333%;"/>
+<col style="width: 55.5555%;"/>
+<col style="width: 11.1112%;"/>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Property</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.mistralai.base-url</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">连接使用的 URL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a class="bare" href="https://api.mistral.ai">api.mistral.ai</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.mistralai.api-key</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">API 密钥</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_configuration_properties"><a class="anchor" href="#_configuration_properties"></a>配置属性</h4>
+<div class="admonitionblock note">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>启用和禁用聊天自动配置现在通过带有前缀<code>spring.ai.model.chat</code>的顶层属性进行配置。</p>
+</div>
+<div class="paragraph">
+<p>要启用它，请设置 spring.ai.model.chat=mistral（默认已启用）。</p>
+</div>
+<div class="paragraph">
+<p>要禁用，请将 spring.ai.model.chat 设置为 none（或任何不匹配 mistral 的值）。</p>
+</div>
+<div class="paragraph">
+<p>此更改旨在支持配置多个模型。</p>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="paragraph">
+<p>前缀 `<code>spring.ai.mistralai.chat</code>` 是用于配置 Mistral AI 聊天模型实现的属性前缀。</p>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 33.3333%;"/>
+<col style="width: 55.5555%;"/>
+<col style="width: 11.1112%;"/>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Property</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.mistralai.chat.enabled（已移除且不再有效）</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">启用 Mistral AI 聊天模型。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.model.chat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">启用 Mistral AI 聊天模型。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mistral</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.mistralai.chat.base-url</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">可选覆盖项，用于为 `<code>spring.ai.mistralai.base-url</code>` 属性提供特定于聊天的 URL。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.mistralai.chat.api-key</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">可选覆盖项，用于为聊天提供特定的 API 密钥 `<code>spring.ai.mistralai.api-key</code>`。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.mistralai.chat.model</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">这是要使用的 Mistral AI 聊天模型。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>open-mistral-7b</code>, <code>open-mixtral-8x7b</code>, <code>open-mixtral-8x22b</code>, <code>mistral-small-latest</code>, <code>mistral-large-latest</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.mistralai.chat.temperature</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">用于控制生成补全结果表面创造力的采样温度。较高的值会使输出更加随机，而较低的值则使结果更加聚焦和确定性。不建议对同一补全请求同时修改 <code>temperature</code> 和 <code>top_p</code>，因为这两个设置的交互作用难以预测。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.8</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.mistralai.chat.max-tokens</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">生成式对话补全的最大 token 数量。输入 token 总数与生成 token 总数之和受限于模型的上下文长度。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.mistralai.chat.safe-prompt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">指示是否在开始所有对话之前注入安全提示。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">false</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.mistralai.chat.random-seed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">此功能处于测试版。如果指定了种子值，我们的系统将尽最大努力进行确定性采样，确保使用相同种子和参数的重复请求返回相同结果。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.mistralai.chat.stop</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">检测到此令牌时停止生成。或者，在提供数组时，如果检测到这些令牌之一，则停止生成。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.mistralai.chat.top-p</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">另一种替代温度采样的方法称为核采样（nucleus sampling），模型在此模式下仅考虑概率质量排名前 p 的 token 结果。例如，0.1 表示只考虑占据前 10% 概率质量的 token。我们通常建议调整此参数或 <code>temperature</code>，但不同时调整两者。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.mistralai.chat.response-format</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">指定模型必须输出的格式的物体。设置为 `<code>{ "type": "json_object" }</code>` 可启用 JSON 模式，确保模型生成的消息是有效的 JSON。设置为 `<code>{ "type": "json_schema" }</code>` 并附带提供的架构时，可启用原生结构化输出，确保模型将匹配您提供的 JSON 架构。有关更多详细信息，请参阅<a href="#structured-output">结构化输出</a>部分。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.mistralai.chat.reasoning-effort</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">控制可调推理模型的推理努力程度。有效值包括 <code>high</code> 或 <code>none</code>。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.mistralai.chat.tools</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">模型可能调用的工具列表。目前仅支持函数作为工具。使用此功能提供模型可生成 JSON 输入的函数列表。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.mistralai.chat.tool-choice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">控制模型调用哪个（如果有）函数。<code>none</code> 表示模型不会调用函数，而是生成一条消息。<code>auto</code> 表示模型可以在生成消息或调用函数之间进行选择。通过指定特定函数 <code>{"type": "function", "function": {"name": "my_function"}}</code> 会强制模型调用该函数。如果没有定义函数，默认值为 <code>none</code>；如果定义了函数，默认值为 <code>auto</code>。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spring.ai.mistralai.chat.tool-callbacks</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">用于与 ChatModel 注册的回调工具。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table><td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+您可以为 <code>ChatModel</code> 和 <code>EmbeddingModel</code> 实现类覆盖通用的 <code>spring.ai.mistralai.base-url</code> 和 <code>spring.ai.mistralai.api-key</code>。如果设置了 <code>spring.ai.mistralai.chat.base-url</code> 和 <code>spring.ai.mistralai.chat.api-key</code> 属性，它们将优先于通用属性生效。如果您希望为不同的模型使用不同的 Mistral AI 账户以及不同的模型端点，此功能非常有用。
+</td>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table><tr>
+<td class="icon">
+<i class="fa icon-tip" title="提示"></i>
+</td>
+<td class="content">
+所有以 <code>spring.ai.mistralai.chat</code> 开头的属性都可以通过向 <code>Prompt</code> 调用添加特定请求的<a href="#chat-options">运行时选项</a>在运行时进行覆盖。
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="chat-options"><a class="anchor" href="#chat-options"></a>运行时选项</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-mistral-ai/src/main/java/org/springframework/ai/mistralai/MistralAiChatOptions.java">MistralAiChatOptions.java</a> 提供了模型配置，例如使用的模型、温度值、频率惩罚等。</p>
+</div>
+<div class="paragraph">
+<p>启动时，默认选项可以通过 `<code>MistralAiChatModel(api, options)</code>` 构造函数或 `<code>spring.ai.mistralai.chat.*</code>` 属性进行配置。</p>
+</div>
+<div class="paragraph">
+<p>在运行时，您可以通过向 `<code>Prompt</code>` 调用添加新的、特定于请求的选项来覆盖默认选项。
+例如，若要为特定请求覆盖默认的模型和温度：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatResponse response = chatModel.call(
+    new Prompt(
+        "Generate the names of 5 famous pirates.",
+        MistralAiChatOptions.builder()
+            .model(MistralAiApi.ChatModel.MISTRAL_LARGE.getValue())
+            .temperature(0.5)
+        .build()
+    ));</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>除了针对特定模型的 <a href="https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-mistral-ai/src/main/java/org/springframework/ai/mistralai/MistralAiChatOptions.java">MistralAiChatOptions</a> 之外，您还可以使用一个可移植的 <a href="https://github.com/spring-projects/spring-ai/blob/main/spring-ai-model/src/main/java/org/springframework/ai/chat/prompt/ChatOptions.java">ChatOptions</a> 实例，该实例可通过 <a href="https://github.com/spring-projects/spring-ai/blob/main/spring-ai-model/src/main/java/org/springframework/ai/chat/prompt/DefaultChatOptionsBuilder.java">ChatOptions#builder()</a> 创建。</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_function_calling"><a class="anchor" href="#_function_calling"></a>函数调用</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>您可以使用 <code>MistralAiChatModel</code> 注册自定义 Java 函数，并让 Mistral AI 模型智能地选择输出一个包含调用一个或多个已注册函数所需参数的 JSON 对象。  
+这是一种将大语言模型能力与外部工具和 API 连接起来的强大技术。  
+有关工具调用的更多信息，请阅读 <a class="xref page" href="../tools.html">工具调用</a>。</p>
+</div>
+<div class="paragraph">
+<p><mistralaichatmodel> 不会在内部执行工具调用。  
+必须使用以下两种支持的方法之一在外部处理工具执行：</mistralaichatmodel></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><a class="xref page" href="../tools.html#_chatclient_tool_execution">使用 ToolCallingAdvisor 的 ChatClient</a></strong>——这是大多数用例的推荐方法。<code>ToolCallingAdvisor</code> 会自动注册并透明地管理工具调用循环。</p>
+</li>
+<li>
+<p><strong><a class="xref page" href="../tools.html#_user_controlled_tool_execution">用户控制的工具执行</a></strong>——当您需要对循环进行完全控制时，直接使用 <code>DefaultToolCallingManager</code>。</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_tool_calling_via_chatclient_recommended"><a class="anchor" href="#_tool_calling_via_chatclient_recommended"></a>通过 ChatClient 进行工具调用（推荐）</h3>
+<div class="paragraph">
+<p>使用 <code>ChatClient</code> 配合 <code>ToolCallingAdvisor</code> 来实现同步和流式工具执行。  
+当存在工具时，<code>ToolCallingAdvisor</code> 会自动注册，因此无需显式配置顾问。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ToolCallback weatherCallback = FunctionToolCallback.builder("getCurrentWeather", new WeatherService())
+    .description("Get the weather in location")
+    .inputType(WeatherService.Request.class)
+    .build();
+
+// Synchronous
+String response = ChatClient.create(chatModel)
+    .prompt()
+    .user("What's the weather in Paris, Tokyo, and New York?")
+    .tools(weatherCallback)
+    .call()
+    .content();
+
+// Streaming
+Flux&lt;String&gt; stream = ChatClient.create(chatModel)
+    .prompt()
+    .user("What's the weather in Paris, Tokyo, and New York?")
+    .tools(weatherCallback)
+    .stream()
+    .content();</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_user_controlled_tool_execution"><a class="anchor" href="#_user_controlled_tool_execution"></a>用户控制的工具执行</h3>
+<div class="paragraph">
+<p>当您需要直接访问<code>ChatModel</code> API 并希望完全控制工具调用循环时，请使用此模式。  
+直接调用<code>ChatModel</code>而无需使用<code>ToolCallingAdvisor</code>；自行检查工具调用情况，并使用<code>ToolCallingManager</code>驱动循环。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ToolCallingManager toolCallingManager = ToolCallingManager.builder().build();
+
+MistralAiChatOptions options = MistralAiChatOptions.builder()
+    .toolCallbacks(ToolCallbacks.from(new WeatherService()))
+    .build();
+
+Prompt prompt = new Prompt("What's the weather in Paris, Tokyo, and New York?", options);
+ChatResponse response = chatModel.call(prompt);
+
+while (response.hasToolCalls()) {
+    ToolExecutionResult result = toolCallingManager.executeToolCalls(prompt, response);
+    prompt = new Prompt(result.conversationHistory(), options);
+    response = chatModel.call(prompt);
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="structured-output"><a class="anchor" href="#structured-output"></a>结构化输出</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Mistral AI 支持通过 JSON Schema 实现原生结构化输出，确保模型生成的响应严格符合您指定的结构。  
+此功能适用于 Mistral Small 及更新版本的模型。</p>
+</div>
+<div class="sect2">
+<h3 id="_using_chatclient_with_native_structured_output"><a class="anchor" href="#_using_chatclient_with_native_structured_output"></a>使用 ChatClient 与原生结构化输出</h3>
+<div class="paragraph">
+<p>使用结构化输出的最简单方法是结合<code>ChatClient</code>高级API和<code>ENABLE_NATIVE_STRUCTURED_OUTPUT</code>顾问：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">record ActorsFilms(String actor, List&lt;String&gt; movies) {}
+
+ActorsFilms actorsFilms = ChatClient.create(chatModel).prompt()
+    .advisors(AdvisorParams.ENABLE_NATIVE_STRUCTURED_OUTPUT)
+    .user("Generate the filmography of 5 movies for Tom Hanks.")
+    .call()
+    .entity(ActorsFilms.class);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>此方法可自动：
+- 从您的 Java 类生成 JSON Schema
+- 配置模型以使用原生结构化输出
+- 将响应解析为您指定的类型</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_using_responseformat_directly"><a class="anchor" href="#_using_responseformat_directly"></a>直接使用 ResponseFormat</h3>
+<div class="paragraph">
+<p>如需更精细的控制，您可以使用 <code>ResponseFormat</code> 类配合 <code>MistralAiChatOptions</code>：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">record MovieRecommendation(String title, String director, int year, String plotSummary) {}
+
+var options = MistralAiChatOptions.builder()
+    .model(MistralAiApi.ChatModel.MISTRAL_SMALL.getValue())
+    .responseFormat(ResponseFormat.jsonSchema(MovieRecommendation.class))
+    .build();
+
+ChatResponse response = chatModel.call(
+    new Prompt("Recommend a classic science fiction movie.", options));</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>`ResponseFormat` 类提供了多个工厂方法：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>ResponseFormat.text()</code> - 返回纯文本输出（默认）</p>
+</li>
+<li>
+<p><code>ResponseFormat.jsonObject()</code> - 返回有效的 JSON（不强制模式）</p>
+</li>
+<li>
+<p><code>ResponseFormat.jsonSchema(Class<? >)</code> - 从 Java 类生成模式</p>
+</li>
+<li>
+<p><code>ResponseFormat.jsonSchema(String)</code> - 使用 JSON Schema 字符串</p>
+</li>
+<li>
+<p><code>ResponseFormat.jsonSchema(Map)</code> - 使用 JSON Schema 映射</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_json_mode_vs_structured_output"><a class="anchor" href="#_json_mode_vs_structured_output"></a>JSON 模式与结构化输出</h3>
+<div class="paragraph">
+<p>Mistral AI 支持两种与 JSON 相关的模式：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>JSON 模式</strong>（<code>json_object</code>）：确保输出为有效的 JSON，但不强制特定的结构。</p>
+</li>
+<li>
+<p><strong>结构化输出</strong> (<code>json_schema</code>)：确保输出符合您的 JSON 模式。</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">// JSON Mode - any valid JSON
+var jsonMode = MistralAiChatOptions.builder()
+    .responseFormat(ResponseFormat.jsonObject())
+    .build();
+
+// Structured Output - specific schema enforced
+var structuredOutput = MistralAiChatOptions.builder()
+    .responseFormat(ResponseFormat.jsonSchema(MyClass.class))
+    .build();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>有关结构化输出的更多信息，请参阅<a class="xref page" href="../structured-output-converter.html">结构化输出转换器</a>文档。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_reasoning_models"><a class="anchor" href="#_reasoning_models"></a>推理模型</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Mistral 提供了两种推理方法：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>可调整：适用于 Mistral Small 4 和 Mistral Medium 3.5，通过 `<code>reasoning_effort</code>` 参数实现。该功能使模型能够以不同程度的深度进行思考。</p>
+</li>
+<li>
+<p>适用于 Magistral 模型系列。这些模型始终生成推理轨迹，专为深度推理任务而设计。</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_reasoning_effort"><a class="anchor" href="#_reasoning_effort"></a>推理努力</h3>
+<div class="paragraph">
+<p>您可以使用 <code>MistralAiChatOptions</code> 中的 <code>reasoningEffort</code> 属性来配置推理努力程度。这允许您调整模型在生成响应之前用于推理的计算资源量。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">var options = MistralAiChatOptions.builder()
+    .model(MistralAiApi.ChatModel.MISTRAL_SMALL.getValue()) // Or any adjustable reasoning model
+    .reasoningEffort(MistralAiApi.ChatCompletionRequest.ReasoningEffort.HIGH)
+    .build();
+
+ChatResponse response = chatModel.call(
+    new Prompt("Solve this complex math problem...", options));</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_reasoning_content"><a class="anchor" href="#_reasoning_content"></a>推理内容</h3>
+<div class="paragraph">
+<p>Mistral 推理模型会暴露其内部思维链和引用信息。  
+Spring AI 将这些内容从 API 响应映射到消息元数据中。</p>
+</div>
+<div class="paragraph">
+<p>您可以从<code>AssistantMessage</code>访问以下元数据键：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>用于追溯和引用的唯一键，将模型响应与其源文档关联起来。</p>
+</li>
+<li>
+<p><thinking_content>：模型得出最终答案的逐步推理过程（仅对推理模型开放）。</thinking_content></p>
+</li>
+<li>
+<p>用于将模型的推理步骤与其源文档关联起来的唯一键，以实现可追溯性和引用（可能仅对推理模型可用）。</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatResponse response = chatModel.call(new Prompt("Solve this complex math problem..."));
+
+AssistantMessage message = response.getResult().getOutput();
+
+// Access the thinking content from metadata
+String thinking = (String) message.getMetadata().get(MistralAiChatModel.THINKING_CONTENT_METADATA);
+if (thinking != null &amp;&amp; !thinking.isEmpty()) {
+    System.out.println("Model's thinking process:");
+    System.out.println(thinking);
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_multimodal"><a class="anchor" href="#_multimodal"></a>Multimodal</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>多模态是指模型同时理解和处理来自多种来源信息的能力，包括文本、图像、音频及其他数据格式。  
+Mistral AI 支持文本和视觉模态。</p>
+</div>
+<div class="sect2">
+<h3 id="_vision"><a class="anchor" href="#_vision"></a>Vision</h3>
+<div class="paragraph">
+<p>Mistral AI 模型支持视觉多模态功能。有关更多信息，请参阅<a href="https://docs.mistral.ai/capabilities/vision/">视觉</a>指南。</p>
+</div>
+<div class="paragraph">
+<p>Mistral AI 的<a href="https://docs.mistral.ai/api/#tag/chat/operation/chat_completion_v1_chat_completions_post">用户消息 API</a>可以在消息中嵌入一组 base64 编码的图片或图片 URL。  
+Spring AI 的<a href="https://github.com/spring-projects/spring-ai/blob/main/spring-ai-client-chat/src/main/java/org/springframework/ai/chat/messages/Message.java">Message</a>接口通过引入<a href="https://github.com/spring-projects/spring-ai/blob/main/spring-ai-commons/src/main/java/org/springframework/ai/content/Media.java">Media</a>类型，为多模态 AI 模型提供了支持。  
+该类型涵盖了消息中媒体附件的数据和详细信息，利用 Spring 的<code>org.springframework.util.MimeType</code>以及<code>org.springframework.core.io.Resource</code>来处理原始媒体数据。</p>
+</div>
+<div class="paragraph">
+<p>以下是从<code>MistralAiChatModelIT.java</code>中摘录的代码示例，展示了用户文本与图像的融合。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">var imageResource = new ClassPathResource("/multimodal.test.png");
+
+var userMessage = new UserMessage("Explain what do you see on this picture?",
+        new Media(MimeTypeUtils.IMAGE_PNG, this.imageResource));
+
+ChatResponse response = chatModel.call(new Prompt(this.userMessage,
+        ChatOptions.builder().model(MistralAiApi.ChatModel.MISTRAL_LARGE.getValue()).build()));</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>或等效的图像 URL：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">var userMessage = new UserMessage("Explain what do you see on this picture?",
+        new Media(MimeTypeUtils.IMAGE_PNG,
+                URI.create("https://docs.spring.io/spring-ai/reference/_images/multimodal.test.png")));
+
+ChatResponse response = chatModel.call(new Prompt(this.userMessage,
+        ChatOptions.builder().model(MistralAiApi.ChatModel.MISTRAL_LARGE.getValue()).build()));</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table><tr>
+<td class="icon">
+<i class="fa icon-tip" title="提示"></i>
+</td>
+<td class="content">
+您也可以传入多张图片。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>示例展示了模型以<code>multimodal.test.png</code>图像作为输入：</p>
+</div>
+<div class="imageblock text-left">
+<div class="content">
+<img alt="Multimodal Test Image" height="200" src="../../_images/multimodal.test.png" width="200"/>
+</div>
+</div>
+<div class="paragraph">
+<p>附带短信“请解释你在图片中看到了什么？”，并生成如下回复：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>This is an image of a fruit bowl with a simple design. The bowl is made of metal with curved wire edges that
+create an open structure, allowing the fruit to be visible from all angles. Inside the bowl, there are two
+yellow bananas resting on top of what appears to be a red apple. The bananas are slightly overripe, as
+indicated by the brown spots on their peels. The bowl has a metal ring at the top, likely to serve as a handle
+for carrying. The bowl is placed on a flat surface with a neutral-colored background that provides a clear
+view of the fruit inside.</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_openai_api_compatibility"><a class="anchor" href="#_openai_api_compatibility"></a>OpenAI API 兼容性</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Mistral 与 OpenAI API 兼容，您可以使用 <a class="xref page" href="openai-chat.html">Spring AI OpenAI</a> 客户端来与 Mistral 进行交互。为此，您需要将 OpenAI 基础 URL 配置为 Mistral AI 平台：<code>spring.ai.openai.chat.base-url=https://api.mistral.ai/v1</code>，并选择一个 Mistral 模型：<code>spring.ai.openai.chat.model=mistral-small-latest</code>，同时设置 Mistral AI API 密钥：<code>spring.ai.openai.chat.api-key=&lt;YOUR MISTRAL API KEY</code>。</p>
+</div>
+<div class="paragraph">
+<p>检查 <a href="https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-openai/src/test/java/org/springframework/ai/openai/chat/proxy/MistralWithOpenAiChatModelIT.java">MistralWithOpenAiChatModelIT.java</a> 测试，以获取在 Spring AI OpenAI 中使用 Mistral 的示例。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_sample_controller_auto_configuration"><a class="anchor" href="#_sample_controller_auto_configuration"></a>示例控制器（自动配置）</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://start.spring.io/">创建</a>一个新的 Spring Boot 项目，并在您的 pom（或 gradle）依赖中添加 <code>spring-ai-starter-model-mistral-ai</code>。</p>
+</div>
+<div class="paragraph">
+<p>在 `src/main/resources` 目录下添加一个 `<code>application.properties</code>` 文件以启用并配置 Mistral AI 聊天模型：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-application.properties hljs" data-lang="application.properties">spring.ai.mistralai.api-key=YOUR_API_KEY
+spring.ai.mistralai.chat.model=mistral-small-latest
+spring.ai.mistralai.chat.temperature=0.7</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table><tr>
+<td class="icon">
+<i class="fa icon-tip" title="提示"></i>
+</td>
+<td class="content">
+将 <code>api-key</code> 替换为您的 Mistral AI 凭据。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>这将创建一个 `<code>MistralAiChatModel</code>` 实现，您可以将其注入到类中。
+以下是一个使用聊天模型进行文本生成的简单 `<code>@RestController</code>` 类的示例。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@RestController
+public class ChatController {
+
+    private final MistralAiChatModel chatModel;
+
+    @Autowired
+    public ChatController(MistralAiChatModel chatModel) {
+        this.chatModel = chatModel;
+    }
+
+    @GetMapping("/ai/generate")
+    public Map&lt;String,String&gt; generate(@RequestParam(value = "message", defaultValue = "Tell me a joke") String message) {
+        return Map.of("generation", this.chatModel.call(message));
+    }
+
+    @GetMapping("/ai/generateStream")
+	public Flux&lt;ChatResponse&gt; generateStream(@RequestParam(value = "message", defaultValue = "Tell me a joke") String message) {
+        var prompt = new Prompt(new UserMessage(message));
+        return this.chatModel.stream(prompt);
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_manual_configuration"><a class="anchor" href="#_manual_configuration"></a>手动配置</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-mistral-ai/src/main/java/org/springframework/ai/mistralai/MistralAiChatModel.java">MistralAiChatModel</a> 实现了 <code>ChatModel</code> 和 <code>StreamingChatModel</code>，并使用<a href="#low-level-api">低级 MistralAiApi 客户端</a>连接到 Mistral AI 服务。</p>
+</div>
+<div class="paragraph">
+<p>将 `<code>spring-ai-mistral-ai</code>` 依赖添加到您的项目的 Maven `<code>pom.xml</code>` 文件中：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-ai-mistral-ai&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>或者将其添加到您的 Gradle `<code>build.gradle</code>` 构建文件中。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">dependencies {
+    implementation 'org.springframework.ai:spring-ai-mistral-ai'
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table><tr>
+<td class="icon">
+<i class="fa icon-tip" title="提示"></i>
+</td>
+<td class="content">
+请参考<a class="xref page" href="../../getting-started.html#dependency-management">依赖管理</a>部分，将 Spring AI BOM 添加到您的构建文件中。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>接下来，创建一个 `<code>MistralAiChatModel` 并用于文本生成：</code></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">var mistralAiApi = new MistralAiApi(System.getenv("MISTRAL_AI_API_KEY"));
+
+var chatModel = new MistralAiChatModel(this.mistralAiApi, MistralAiChatOptions.builder()
+                .model(MistralAiApi.ChatModel.MISTRAL_LARGE.getValue())
+                .temperature(0.4)
+                .maxTokens(200)
+                .build());
+
+ChatResponse response = this.chatModel.call(
+    new Prompt("Generate the names of 5 famous pirates."));
+
+// Or with streaming responses
+Flux&lt;ChatResponse&gt; response = this.chatModel.stream(
+    new Prompt("Generate the names of 5 famous pirates."));</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>`MistralAiChatOptions` 提供聊天请求的配置信息。  
+`MistralAiChatOptions.Builder` 是一个流式选项构建器。</p>
+</div>
+<div class="sect2">
+<h3 id="low-level-api"><a class="anchor" href="#low-level-api"></a>低级 MistralAiApi 客户端</h3>
+<div class="paragraph">
+<p><a href="https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-mistral-ai/src/main/java/org/springframework/ai/mistralai/api/MistralAiApi">MistralAiApi</a> 提供了一个轻量级的 Java 客户端，用于访问 <a href="https://docs.mistral.ai/api/">Mistral AI API</a>。</p>
+</div>
+<div class="paragraph">
+<p>下面是一个简单的代码片段，展示了如何通过编程方式使用该 API：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">MistralAiApi mistralAiApi = new MistralAiApi(System.getenv("MISTRAL_AI_API_KEY"));
+
+ChatCompletionMessage chatCompletionMessage =
+    new ChatCompletionMessage("Hello world", Role.USER);
+
+// Sync request
+ResponseEntity&lt;ChatCompletion&gt; response = this.mistralAiApi.chatCompletionEntity(
+    new ChatCompletionRequest(List.of(this.chatCompletionMessage), MistralAiApi.ChatModel.MISTRAL_LARGE.getValue(), 0.8, false));
+
+// Streaming request
+Flux&lt;ChatCompletionChunk&gt; streamResponse = this.mistralAiApi.chatCompletionStream(
+        new ChatCompletionRequest(List.of(this.chatCompletionMessage), MistralAiApi.ChatModel.MISTRAL_LARGE.getValue(), 0.8, true));</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>有关更多信息，请遵循<a href="https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-mistral-ai/src/main/java/org/springframework/ai/mistralai/api/MistralAiApi.java">MistralAiApi.java</a>的JavaDoc。</p>
+</div>
+<div class="sect3">
+<h4 id="_mistralaiapi_samples"><a class="anchor" href="#_mistralaiapi_samples"></a>MistralAiApi 示例</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-mistral-ai/src/test/java/org/springframework/ai/mistralai/api/MistralAiApiIT.java">MistralAiApiIT.java</a> 测试提供了一些如何使用该轻量级库的通用示例。</p>
+</li>
+<li>
+<p><a href="https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-mistral-ai/src/test/java/org/springframework/ai/mistralai/api/tool/PaymentStatusFunctionCallingIT.java">PaymentStatusFunctionCallingIT.java</a> 测试展示了如何使用低级 API 调用工具函数。
+基于 <a href="https://docs.mistral.ai/guides/function-calling/">Mistral AI 函数调用</a> 教程。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_mistral_ai_ocr"><a class="anchor" href="#_mistral_ai_ocr"></a>Mistral AI 光学字符识别</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Spring AI 支持使用 Mistral AI 进行光学字符识别（OCR）。这使您能够从文档中提取文本和图像数据。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prerequisites_2"><a class="anchor" href="#_prerequisites_2"></a>Prerequisites</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>您需要创建一个 Mistral AI API 以访问 Mistral AI 的语言模型。请在<a href="https://auth.mistral.ai/ui/registration">Mistral AI 注册页面</a>创建账户，并在<a href="https://console.mistral.ai/api-keys/">API 密钥页面</a>生成令牌。</p>
+</div>
+<div class="sect2">
+<h3 id="_add_dependencies"><a class="anchor" href="#_add_dependencies"></a>添加依赖项</h3>
+<div class="paragraph">
+<p>要使用 Mistral AI OCR API，您需要将 <code>spring-ai-mistral-ai</code> 依赖添加到您的项目中。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-ai-mistral-ai&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>或者将其添加到您的 Gradle `<code>build.gradle</code>` 构建文件中。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="groovy">dependencies {
+    implementation 'org.springframework.ai:spring-ai-mistral-ai'
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_low_level_mistralocrapi_client"><a class="anchor" href="#_low_level_mistralocrapi_client"></a>低级 MistralOcrApi 客户端</h3>
+<div class="paragraph">
+<p><a href="https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-mistral-ai/src/main/java/org/springframework/ai/mistralai/api/MistralOcrApi.java">MistralOcrApi</a> 为 <a href="https://docs.mistral.ai/api/#tag/OCR">Mistral AI OCR API</a> 提供了一个轻量级的 Java 客户端。</p>
+</div>
+<div class="paragraph">
+<p>下面是一个简单的代码片段，展示了如何通过编程方式使用该 API：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">MistralOcrApi mistralAiApi = new MistralOcrApi(System.getenv("MISTRAL_AI_API_KEY"));
+
+String documentUrl = "https://arxiv.org/pdf/2201.04234";
+MistralOcrApi.OCRRequest request = new MistralOcrApi.OCRRequest(
+        MistralOcrApi.OCRModel.MISTRAL_OCR_LATEST.getValue(), "test_id",
+        new MistralOcrApi.OCRRequest.DocumentURLChunk(documentUrl), List.of(0, 1, 2), true, 5, 50);
+
+ResponseEntity&lt;MistralOcrApi.OCRResponse&gt; response = mistralAiApi.ocr(request);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>有关更多信息，请遵循<a href="https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-mistral-ai/src/main/java/org/springframework/ai/mistralai/api/MistralOcrApi.java">MistralOcrApi.java</a>的JavaDoc。</p>
+</div>
+<div class="sect3">
+<h4 id="_mistralocrapi_sample"><a class="anchor" href="#_mistralocrapi_sample"></a>MistralOcrApi 示例</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-mistral-ai/src/test/java/org/springframework/ai/mistralai/api/MistralOcrApiIT.java">MistralOcrApiIT.java</a> 测试提供了一些如何使用该轻量级库的通用示例。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="groq-chat.html">Groq</a></span>
+  <span class="next"><a href="minimax-chat.html">MiniMax</a></span>
+</nav>
+</article>  </div>
+</main>
+<div aria-hidden="true" class="modal micromodal-slide" id="modal-versions">
+    <div class="modal__overlay" data-micromodal-close="" tabindex="-1">
+        <div aria-modal="true" class="modal__container" role="dialog">
+            <main class="modal__content" id="modal-versions-content">
+              <button class="modal-versions-close" data-micromodal-close="">
+                <svg height="28px" viewbox="0 0 32 32" width="28px" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1h{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title></title><g id="cross"><line class="cls-1h" x1="7" x2="25" y1="7" y2="25"></line><line class="cls-1h" x1="7" x2="25" y1="25" y2="7"></line></g></svg>
+              </button>
+              <div class="colset">
+                <div class="col-left">
+
+                  <ul class="nav-versions">
+                      <li class="component">
+                        <div><a class="title" href="../../index.html">Spring AI</a></div>                        <div class="version-item is-active">
+                          <div>
+                            <button class="version-toggle" type="button">
+                              <span></span>
+                              Stable
+                            </button>
+                          </div>
+                          <ul class="versions">
+  <li class="version">
+    <a href="../../index.html">
+      2.0.0
+    </a>
+  </li>
+</ul>                        </div>
+                        
+                      </li>
+                  </ul>
+                </div>
+                <div class="col-right"><ul class="projects">
+<li>
+    相关 Spring 文档
+    <ul class="projects-list">
+</ul>
+</li><a href="../../spring-projects.html">所有文档...</a>
+</ul></div>
+              </div>
+            </main>
+        </div>
+    </div>
+</div>
+
+</div>
+<footer class="footer flex">
+    <div id="spring-links flex">
+        <img alt="Spring" id="springlogo" src="../../_/img/spring-logo.svg"/>
+        <p class="smallest antialiased">版权所有 © 2005 - <script>var d = new Date(); document.write(d.getFullYear());</script> Broadcom。保留所有权利。“Broadcom”指 Broadcom Inc. 及其/或其子公司。<br/><a href="https://www.vmware.com/help/legal.html">使用条款</a> • <a href="https://www.vmware.com/help/privacy.html" rel="noopener noreferrer">隐私政策</a> • <a href="https://spring.io/trademarks">商标指南</a> <span id="thank-you-mobile">• <a href="https://spring.io/thank-you">致谢</a></span> • <a href="https://www.vmware.com/help/privacy/california-privacy-rights.html">您的加州隐私权利</a> • <a class="ot-sdk-show-settings">Cookie 设置</a> <span id="teconsent"></span></p>
+        <p class="smallest antialiased has-gray-text">Apache®、Apache Tomcat®、Apache Kafka®、Apache Cassandra™ 和 Apache Geode™ 是 Apache 软件基金会在美国和其他/或某些国家的商标或注册商标。Java™、Java™ SE、Java™ EE 和 OpenJDK™ 是 Oracle 公司和/或其关联公司的商标。Kubernetes® 是 Linux 基金会在美国和其他/或某些国家的注册商标。Linux® 是 Linus Torvalds 在美国和其他/或某些国家的注册商标。Windows® 和 Microsoft® Azure 是微软公司的注册商标。"AWS"和"Amazon Web Services"是 Amazon.com Inc. 或其关联公司的商标或注册商标。所有其他商标和版权均归各自所有者所有，仅用于说明目的。其他名称可能是其各自所有者的商标。</p>
+    </div>
+    <div class="flex jc-between" id="social-icons">
+        <a href="https://www.youtube.com/user/SpringSourceDev" title="Youtube"><svg id="youtube-icon" viewbox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><circle class="cls-1" cx="20" cy="20" r="20"></circle><path class="cls-2" d="M30.91,14.53a2.89,2.89,0,0,0-2-2C27.12,12,20,12,20,12s-7.12,0-8.9.47a2.9,2.9,0,0,0-2,2A30.56,30.56,0,0,0,8.63,20a30.44,30.44,0,0,0,.46,5.47,2.89,2.89,0,0,0,2,2C12.9,28,20,28,20,28s7.12,0,8.9-.47a2.87,2.87,0,0,0,2-2A30.56,30.56,0,0,0,31.37,20,28.88,28.88,0,0,0,30.91,14.53ZM17.73,23.41V16.59L23.65,20Z"></path></svg></a>
+        <a href="https://github.com/spring-projects" title="GitHub"><svg id="github-icon" viewbox="0 0 75.93 75.93" xmlns="http://www.w3.org/2000/svg"><path class="cls-1" d="M38,0a38,38,0,1,0,38,38A38,38,0,0,0,38,0Z"></path><path class="cls-2" d="M38,15.59A22.95,22.95,0,0,0,30.71,60.3c1.15.21,1.57-.5,1.57-1.11s0-2,0-3.9c-6.38,1.39-7.73-3.07-7.73-3.07A6.09,6.09,0,0,0,22,48.86c-2.09-1.42.15-1.39.15-1.39a4.81,4.81,0,0,1,3.52,2.36c2,3.5,5.37,2.49,6.67,1.91a4.87,4.87,0,0,1,1.46-3.07c-5.09-.58-10.45-2.55-10.45-11.34a8.84,8.84,0,0,1,2.36-6.15,8.29,8.29,0,0,1,.23-6.07s1.92-.62,6.3,2.35a21.82,21.82,0,0,1,11.49,0c4.38-3,6.3-2.35,6.3-2.35a8.29,8.29,0,0,1,.23,6.07,8.84,8.84,0,0,1,2.36,6.15c0,8.81-5.37,10.75-10.48,11.32a5.46,5.46,0,0,1,1.56,4.25c0,3.07,0,5.54,0,6.29s.42,1.33,1.58,1.1A22.94,22.94,0,0,0,38,15.59Z"></path></svg></a>
+        <a href="https://twitter.com/springcentral" title="Twitter"><svg id="twitter-icon" viewbox="0 0 75.93 75.93" xmlns="http://www.w3.org/2000/svg"><circle class="cls-1" cx="37.97" cy="37.97" r="37.97"></circle><path class="cls-2" d="M55.2,22.73a15.43,15.43,0,0,1-4.88,1.91,7.56,7.56,0,0,0-5.61-2.49A7.78,7.78,0,0,0,37,30a7.56,7.56,0,0,0,.2,1.79,21.63,21.63,0,0,1-15.84-8.23,8,8,0,0,0,2.37,10.52,7.66,7.66,0,0,1-3.48-1v.09A7.84,7.84,0,0,0,26.45,41a7.54,7.54,0,0,1-2,.28A7.64,7.64,0,0,1,23,41.09a7.71,7.71,0,0,0,7.18,5.47,15.21,15.21,0,0,1-9.55,3.37,15.78,15.78,0,0,1-1.83-.11,21.41,21.41,0,0,0,11.78,3.54c14.13,0,21.86-12,21.86-22.42,0-.34,0-.68,0-1a15.67,15.67,0,0,0,3.83-4.08,14.9,14.9,0,0,1-4.41,1.24A7.8,7.8,0,0,0,55.2,22.73Z" data-name="Twitter" id="Twitter-2"></path></svg></a>
+    </div>
+</footer>
+<script src="../../_/js/vendor/import.js"></script>
+<script src="../../_/js/site.js"></script>
+<script async="" src="../../_/js/vendor/highlight.js"></script>
+<script async="" data-sync-storage-key="docs:preferred-tab" src="../../_/js/vendor/asciidoctor-tabs.js"></script>
+
+<div aria-hidden="true" class="modal micromodal-slide" id="modal-1">
+    <div class="modal__overlay" data-micromodal-close="" tabindex="-1">
+        <div aria-labelledby="modal-1-title" aria-modal="true" class="modal__container" role="dialog">
+            <main class="modal__content" id="modal-1-content">
+                <div id="searchbox"></div>
+                <div id="counter"></div>
+                <div class="search-link-box"><a class="search-link" href="../../search.html">在全部 Spring 文档中搜索</a></div>
+                <div class="search-by">
+                    <a aria-label="Search by Algolia" href="https://www.algolia.com/" rel="noopener noreferrer" target="_blank">
+                        <img class="light" src="../../_/img/algolia-light.svg" width="140"/>
+                        <img class="dark" src="../../_/img/algolia-dark.svg" width="140"/>
+                    </a>
+                </div>
+                <div id="hits"></div>
+            </main>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
+<script crossorigin="anonymous" integrity="sha256-Lf9DrpGmcRip6OQzbcL6lnvNmoZNSKpyQX5pMlwatWE=" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.17.0/dist/algoliasearch-lite.umd.js"></script>
+<script crossorigin="anonymous" integrity="sha256-xYsZPDeNjYNTBWLvqD2Lxe98hOxcDgOHyMPfz4tVAbk=" src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.54.1/dist/instantsearch.production.min.js"></script>
+<script async="" data-api-key="c2e84f15fa630d534f1c62b1c413bb77" data-app-id="WB1FQYI187" data-index-name="springdocs" data-page-component="ai" data-page-version="2.0.0" data-stylesheet="../../_/css/vendor/search.css" id="search-script" src="../../_/js/vendor/search.js"></script>
+  
+
+</body></html>

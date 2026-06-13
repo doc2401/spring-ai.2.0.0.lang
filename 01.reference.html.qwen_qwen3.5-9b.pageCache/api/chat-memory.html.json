@@ -1,0 +1,851 @@
+{
+  "created_at": "2026-06-13 14:14:52",
+  "updated_at": "2026-06-13 14:14:52",
+  "stats": {
+    "total_entries": 167,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 175,
+    "entries_with_hits": 167,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0479041916167664,
+    "usage_percentage": 0.0167
+  },
+  "items": [
+    {
+      "source": "Default Value",
+      "translation": "默认值",
+      "count": 5
+    },
+    {
+      "source": "First, add the following dependency to your project:",
+      "translation": "首先，将以下依赖项添加到您的项目中：",
+      "count": 4
+    },
+    {
+      "source": "Messages are retrieved in ascending timestamp order (oldest-to-newest), which is the expected format for LLM conversation history.",
+      "translation": "消息按时间戳升序（从旧到新）检索，这是大型语言模型对话历史所需的预期格式。",
+      "count": 2
+    },
+    {
+      "source": "Copyright © 2005 - <script>var d = new Date();\n        document.write(d.getFullYear());</script> Broadcom. All Rights Reserved. The term \"Broadcom\" refers to Broadcom Inc. and/or its subsidiaries.<br/><a href=\"https://www.vmware.com/help/legal.html\">Terms of Use</a> • <a href=\"https://www.vmware.com/help/privacy.html\" rel=\"noopener noreferrer\">Privacy</a> • <a href=\"https://spring.io/trademarks\">Trademark Guidelines</a> <span id=\"thank-you-mobile\">• <a href=\"https://spring.io/thank-you\">Thank you</a></span> • <a href=\"https://www.vmware.com/help/privacy/california-privacy-rights.html\">Your California Privacy Rights</a> • <a class=\"ot-sdk-show-settings\">Cookie Settings</a> <span id=\"teconsent\"></span>",
+      "translation": "版权所有 © 2005 - <script>var d = new Date(); document.write(d.getFullYear());</script> Broadcom。保留所有权利。“Broadcom”指 Broadcom Inc. 及其/或其子公司。<br/><a href=\"https://www.vmware.com/help/legal.html\">使用条款</a> • <a href=\"https://www.vmware.com/help/privacy.html\" rel=\"noopener noreferrer\">隐私政策</a> • <a href=\"https://spring.io/trademarks\">商标指南</a> <span id=\"thank-you-mobile\">• <a href=\"https://spring.io/thank-you\">致谢</a></span> • <a href=\"https://www.vmware.com/help/privacy/california-privacy-rights.html\">您的加州隐私权利</a> • <a class=\"ot-sdk-show-settings\">Cookie 设置</a> <span id=\"teconsent\"></span>",
+      "count": 1
+    },
+    {
+      "source": "<strong><code>JdbcChatMemoryRepository</code> does not support tool call messages.</strong>\n<code>AssistantMessage</code> instances containing tool calls and <code>ToolResponseMessage</code> instances are silently filtered out on save and will not appear in the retrieved conversation history.\nIf your application uses tool calling, consider the <a href=\"https://spring-ai-community.github.io/spring-ai-session/latest/\">Spring AI Session</a> project and the <a href=\"https://spring-ai-community.github.io/spring-ai-session/latest/session-jdbc/\">JDBC session store</a>, which properly persist all message types.",
+      "translation": "<strong><code>JdbcChatMemoryRepository</code> 不支持工具调用消息。</strong>\n包含工具调用的 <code>AssistantMessage</code> 实例和 <code>ToolResponseMessage</code> 实例在保存时会被静默过滤，不会出现在检索到的对话历史中。\n如果您的应用程序使用工具调用功能，请考虑 <a href=\"https://spring-ai-community.github.io/spring-ai-session/latest/\">Spring AI Session</a> 项目及其 <a href=\"https://spring-ai-community.github.io/spring-ai-session/latest/session-jdbc/\">JDBC 会话存储</a>，它们能够正确持久化所有消息类型。",
+      "count": 1
+    },
+    {
+      "source": "<strong><code>CassandraChatMemoryRepository</code> does not support tool call messages.</strong>\n<code>AssistantMessage</code> instances containing tool calls and <code>ToolResponseMessage</code> instances are silently filtered out on save and will not appear in the retrieved conversation history.\nIf your application uses tool calling, consider the <a href=\"https://spring-ai-community.github.io/spring-ai-session/latest/\">Spring AI Session</a> project and the <a href=\"https://spring-ai-community.github.io/spring-ai-session/latest/session-jdbc/\">JDBC session store</a>, which properly persist all message types.",
+      "translation": "<strong><code>CassandraChatMemoryRepository</code> 不支持工具调用消息。</strong>\n包含工具调用的 <code>AssistantMessage</code> 实例和 <code>ToolResponseMessage</code> 实例在保存时会被静默过滤，不会出现在检索到的对话历史中。\n如果您的应用程序使用工具调用功能，请考虑 <a href=\"https://spring-ai-community.github.io/spring-ai-session/latest/\">Spring AI Session</a> 项目和 <a href=\"https://spring-ai-community.github.io/spring-ai-session/latest/session-jdbc/\">JDBC 会话存储</a>，它们能够正确持久化所有消息类型。",
+      "count": 1
+    },
+    {
+      "source": "<strong><code>MongoChatMemoryRepository</code> does not support tool call messages.</strong>\n<code>AssistantMessage</code> instances containing tool calls and <code>ToolResponseMessage</code> instances are silently filtered out on save and will not appear in the retrieved conversation history.\nIf your application uses tool calling, consider the <a href=\"https://spring-ai-community.github.io/spring-ai-session/latest/\">Spring AI Session</a> project and the <a href=\"https://spring-ai-community.github.io/spring-ai-session/latest/session-jdbc/\">JDBC session store</a>, which properly persist all message types.",
+      "translation": "<strong><code>MongoChatMemoryRepository</code> 不支持工具调用消息。</strong>\n包含工具调用的 <code>AssistantMessage</code> 实例和 <code>ToolResponseMessage</code> 实例在保存时会被静默过滤，不会出现在检索到的对话历史中。\n如果您的应用程序使用工具调用功能，请考虑 <a href=\"https://spring-ai-community.github.io/spring-ai-session/latest/\">Spring AI Session</a> 项目和 <a href=\"https://spring-ai-community.github.io/spring-ai-session/latest/session-jdbc/\">JDBC 会话存储</a>，它们能够正确持久化所有消息类型。",
+      "count": 1
+    },
+    {
+      "source": "When eviction is needed, <code>MessageWindowChatMemory</code> always removes whole turns rather than cutting mid-turn. A <em>turn</em> starts at a <code>UserMessage</code> and includes all subsequent assistant replies, tool calls, and tool responses up to the next <code>UserMessage</code>. If the raw eviction point lands on a non-user message (for example, an assistant reply in the middle of a tool-calling exchange), the cut is advanced forward to the next <code>UserMessage</code> so that the kept window always begins at a complete turn.",
+      "translation": "当需要驱逐时，<code>MessageWindowChatMemory</code> 总是移除整个回合，而不是在回合中间截断。一个<em>回合</em>始于一个<code>UserMessage</code>，并包含直到下一个<code>UserMessage</code>之前的所有后续助手回复、工具调用和工具响应。如果原始驱逐点落在非用户消息上（例如，处于工具调用交换过程中的助手回复），则会将截断点向前推进到下一个<code>UserMessage</code>，以确保保留的窗口始终从完整的回合开始。",
+      "count": 1
+    },
+    {
+      "source": "Messages are retrieved in ascending order (oldest-to-newest), which is the expected format for LLM conversation history. Ordering is maintained by a <code>sequence_id</code> column that records each message’s position within its conversation. Each message also stores a creation <code>timestamp</code>, exposed in the message metadata under the <code>JdbcChatMemoryRepository.CONVERSATION_TS</code> key as a <code>java.time.Instant</code>, so applications can display when a message was created.",
+      "translation": "消息按升序（从旧到新）检索，这是 LLM 对话历史预期的格式。顺序由记录每条消息在其对话中位置的 `<code>sequence_id`</code> 列维护。每条消息还存储一个创建时间戳 `<code>timestamp`</code>，该时间戳在消息元数据下通过 `<code>JdbcChatMemoryRepository.CONVERSATION_TS`</code> 键暴露为 `<code>java.time.Instant`</code>，以便应用程序可以显示消息的创建时间。",
+      "count": 1
+    },
+    {
+      "source": "The custom <code>PromptTemplate</code> can use any <code>TemplateRenderer</code> implementation (by default, it uses <code>StPromptTemplate</code> based on the <a href=\"https://www.stringtemplate.org/\">StringTemplate</a> engine). The important requirement is that the template must contain the following two placeholders:",
+      "translation": "自定义的 <code>PromptTemplate</code> 可以使用任何 <code>TemplateRenderer</code> 实现（默认情况下，它基于 <a href=\"https://www.stringtemplate.org/\">StringTemplate</a> 引擎使用 <code>StPromptTemplate</code>）。关键要求是模板必须包含以下两个占位符：",
+      "count": 1
+    },
+    {
+      "source": "The <code>ChatMemory</code> abstraction allows you to implement various types of memory to support different use cases. The underlying storage of the messages is handled by the <code>ChatMemoryRepository</code>, whose sole responsibility is to store and retrieve messages. It’s up to the <code>ChatMemory</code> implementation to decide which messages to keep and when to remove them. Examples of strategies could include keeping the last N messages, keeping messages for a certain time period, or keeping messages up to a certain token limit.",
+      "translation": "`ChatMemory` 抽象允许您实现各种类型的内存以支持不同的使用场景。消息的底层存储由 `ChatMemoryRepository` 处理，其唯一职责是存储和检索消息。具体保留哪些消息以及何时移除它们，则由 `ChatMemory` 的实现来决定。策略示例包括保留最后 N 条消息、保留特定时间段内的消息，或保留直到达到某个令牌限制的消息。",
+      "count": 1
+    },
+    {
+      "source": "The <code>ChatMemory</code> abstraction is designed to manage the <em>chat memory</em>. It allows you to store and retrieve messages that are relevant to the current conversation context. However, it is not the best fit for storing the <em>chat history</em>. If you need to maintain a complete record of all the messages exchanged, you should consider using a different approach, such as relying on Spring Data for efficient storage and retrieval of the complete chat history.",
+      "translation": "`ChatMemory` 抽象类旨在管理<em>对话记忆</em>，允许您存储和检索与当前对话上下文相关的消息。然而，它并非存储<em>对话历史</em>的最佳选择。如果您需要维护所有交换消息的完整记录，应考虑采用其他方法，例如依赖 Spring Data 来高效地存储和检索完整的对话历史。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI auto-configures a <code>ChatMemory</code> bean that you can use directly in your application. By default, it uses an in-memory repository to store messages (<code>InMemoryChatMemoryRepository</code>) and a <code>MessageWindowChatMemory</code> implementation to manage the conversation history. If a different repository is already configured (e.g., Cassandra, JDBC, or Neo4j), Spring AI will use that instead.",
+      "translation": "Spring AI 会自动配置一个<code>ChatMemory</code> Bean，您可以直接在应用程序中使用它。默认情况下，它会使用内存存储库来保存消息（<code>InMemoryChatMemoryRepository</code>），并使用<code>MessageWindowChatMemory</code>实现来管理对话历史。如果已经配置了不同的存储库（例如 Cassandra、JDBC 或 Neo4j），Spring AI 将使用该存储库。",
+      "count": 1
+    },
+    {
+      "source": "If you’d rather create the <code>JdbcChatMemoryRepository</code> manually, you can do so by providing a <code>JdbcTemplate</code> instance and a <code>JdbcChatMemoryRepositoryDialect</code>:",
+      "translation": "如果您更愿意手动创建<code>JdbcChatMemoryRepository</code>，可以通过提供一个<code>JdbcTemplate</code>实例和一个<code>JdbcChatMemoryRepositoryDialect</code>来实现：",
+      "count": 1
+    },
+    {
+      "source": "Controls when to initialize the schema. Values: <code>embedded</code> (default), <code>always</code>, <code>never</code>.",
+      "translation": "控制初始化架构的时机。取值：<code>embedded</code>（默认值）、<code>always</code>、<code>never</code>。",
+      "count": 1
+    },
+    {
+      "source": "Supported field types are: <code>tag</code> (for exact match filtering), <code>text</code> (for full-text search), and <code>numeric</code> (for range queries).",
+      "translation": "支持的字段类型包括：<code>tag</code>（用于精确匹配过滤）、<code>text</code>（用于全文搜索）和<code>numeric</code>（用于范围查询）。",
+      "count": 1
+    },
+    {
+      "source": "The <code>VectorStoreChatMemoryAdvisor</code> uses a default template to augment the system message with the retrieved conversation memory. You can customize this behavior by providing your own <code>PromptTemplate</code> object via the <code>.promptTemplate()</code> builder method.",
+      "translation": "`VectorStoreChatMemoryAdvisor` 使用默认模板将检索到的对话记忆附加到系统消息中。您可以通过 `.promptTemplate()` 构建器方法提供自己的 `PromptTemplate` 对象来自定义此行为。",
+      "count": 1
+    },
+    {
+      "source": "<code>MessageWindowChatMemory</code> maintains a sliding window of messages up to a specified maximum size. When the number of messages exceeds the maximum, older messages are evicted while always preserving <code>SystemMessage</code> instances. The default window size is 20 messages.",
+      "translation": "`MessageWindowChatMemory` 维护一个消息滑动窗口，其大小不超过指定的最大值。当消息数量超过最大值时，会移除较旧的消息，同时始终保留 `SystemMessage` 实例。默认窗口大小为 20 条消息。",
+      "count": 1
+    },
+    {
+      "source": "This means <code>maxMessages</code> is an <em>upper bound</em> on the number of messages stored — the actual count may be somewhat lower when snapping is needed to find the next turn boundary.",
+      "translation": "这意味着<code>maxMessages</code>是存储消息数量的<em>上限</em>——当需要取整以找到下一个回合边界时，实际数量可能会略低。",
+      "count": 1
+    },
+    {
+      "source": "<code>InMemoryChatMemoryRepository</code> stores messages in memory using a <code>ConcurrentHashMap</code>.",
+      "translation": "InMemoryChatMemoryRepository 使用 ConcurrentHashMap 在内存中存储消息。",
+      "count": 1
+    },
+    {
+      "source": "By default, if no other repository is already configured, Spring AI auto-configures a <code>ChatMemoryRepository</code> bean of type <code>InMemoryChatMemoryRepository</code> that you can use directly in your application.",
+      "translation": "默认情况下，如果未配置其他存储库，Spring AI 会自动配置一个类型为 <code>InMemoryChatMemoryRepository</code> 的 <code>ChatMemoryRepository</code> Bean，您可以直接在应用程序中使用它。",
+      "count": 1
+    },
+    {
+      "source": "Each stored message records when it was created. The timestamp is available in the message metadata under the <code>JdbcChatMemoryRepository.CONVERSATION_TS</code> key as a <code>java.time.Instant</code>, which is useful for displaying message times in a UI:",
+      "translation": "每条存储的消息都记录了其创建时间。该时间戳可在消息元数据中的 `<code>JdbcChatMemoryRepository.CONVERSATION_TS</code>` 键下以 `<code>java.time.Instant</code>` 格式获取，这对于在用户界面中显示消息时间非常有用：",
+      "count": 1
+    },
+    {
+      "source": "The correct dialect can be auto-detected from the JDBC URL when using <code>JdbcChatMemoryRepositoryDialect.from(DataSource)</code>. You can extend support for other databases by implementing the <code>JdbcChatMemoryRepositoryDialect</code> interface.",
+      "translation": "使用 `<code>JdbcChatMemoryRepositoryDialect.from(DataSource)</code>` 时，正确的方言可以从 JDBC URL 中自动检测。您可以通过实现 `<code>JdbcChatMemoryRepositoryDialect</code>` 接口来扩展对其他数据库的支持。",
+      "count": 1
+    },
+    {
+      "source": "If you’d rather create the <code>CassandraChatMemoryRepository</code> manually, you can do so by providing a <code>CassandraChatMemoryRepositoryConfig</code> instance:",
+      "translation": "如果您更倾向于手动创建 <code>CassandraChatMemoryRepository</code>，可以通过提供一个 <code>CassandraChatMemoryRepositoryConfig</code> 实例来实现：",
+      "count": 1
+    },
+    {
+      "source": "You can disable the schema initialization by setting the property <code>spring.ai.chat.memory.repository.cassandra.initialize-schema</code> to <code>false</code>.",
+      "translation": "您可以通过将属性<code>spring.ai.chat.memory.repository.cassandra.initialize-schema</code>设置为<code>false</code>来禁用模式初始化。",
+      "count": 1
+    },
+    {
+      "source": "If you’d rather create the <code>Neo4jChatMemoryRepository</code> manually, you can do so by providing a Neo4j <code>Driver</code> instance:",
+      "translation": "如果您更倾向于手动创建<code>Neo4jChatMemoryRepository</code>，可以通过提供一个 Neo4j <code>Driver</code> 实例来实现：",
+      "count": 1
+    },
+    {
+      "source": "If you’d rather create the <code>MongoChatMemoryRepository</code> manually, you can do so by providing a <code>MongoTemplate</code> instance:",
+      "translation": "如果您更愿意手动创建 <code>MongoChatMemoryRepository</code>，可以通过提供一个 <code>MongoTemplate</code> 实例来实现：",
+      "count": 1
+    },
+    {
+      "source": "If you’d rather create the <code>RedisChatMemoryRepository</code> manually, you can do so by providing a <code>RedisClient</code> client:",
+      "translation": "如果您更倾向于手动创建<code>RedisChatMemoryRepository</code>，可以通过提供一个<code>RedisClient</code>客户端来实现：",
+      "count": 1
+    },
+    {
+      "source": "Time to live for chat memory entries (e.g., <code>24h</code>, <code>30d</code>)",
+      "translation": "聊天记忆条目的存活时间（例如：<code>24h</code>、<code>30d</code>）",
+      "count": 1
+    },
+    {
+      "source": "The <code>RedisChatMemoryRepository</code> also implements <code>AdvancedRedisChatMemoryRepository</code>, which provides extended query capabilities:",
+      "translation": "<code>RedisChatMemoryRepository</code> 还实现了 <code>AdvancedRedisChatMemoryRepository</code>，后者提供了扩展的查询功能：",
+      "count": 1
+    },
+    {
+      "source": "<code>MessageChatMemoryAdvisor</code>. This advisor manages the conversation memory using the provided <code>ChatMemory</code> implementation. On each interaction, it retrieves the conversation history from the memory and includes it in the prompt as a collection of messages.",
+      "translation": "`MessageChatMemoryAdvisor`。该顾问使用提供的 `ChatMemory` 实现来管理对话记忆。在每次交互中，它会从记忆中检索对话历史，并将其作为消息集合包含在提示中。",
+      "count": 1
+    },
+    {
+      "source": "<code>VectorStoreChatMemoryAdvisor</code>. This advisor manages the conversation memory using the provided <code>VectorStore</code> implementation. On each interaction, it retrieves the conversation history from the vector store and appends it to the system message as plain text.",
+      "translation": "<code>VectorStoreChatMemoryAdvisor</code>。该顾问使用提供的 <code>VectorStore</code> 实现来管理对话记忆。在每次交互中，它从向量存储中检索对话历史，并将其作为纯文本附加到系统消息中。",
+      "count": 1
+    },
+    {
+      "source": "For example, if you want to use <code>MessageWindowChatMemory</code> with the <code>MessageChatMemoryAdvisor</code>, you can configure it as follows:",
+      "translation": "例如，如果您想使用 `<code>MessageWindowChatMemory</code>` 与 `<code>MessageChatMemoryAdvisor</code>` 配合，可以按以下方式配置：",
+      "count": 1
+    },
+    {
+      "source": "When performing a call to the <code>ChatClient</code>, the memory will be automatically managed by the <code>MessageChatMemoryAdvisor</code>. The conversation history will be retrieved from the memory based on the specified conversation ID.",
+      "translation": "调用<code>ChatClient</code>时，内存将由<code>MessageChatMemoryAdvisor</code>自动管理。对话历史将根据指定的会话ID从内存中检索。",
+      "count": 1
+    },
+    {
+      "source": "If you’re working directly with a <code>ChatModel</code> instead of a <code>ChatClient</code>, you can manage the memory explicitly:",
+      "translation": "如果您直接使用 `<code>ChatModel</code>` 而非 `<code>ChatClient</code>，则可以显式管理内存：",
+      "count": 1
+    },
+    {
+      "source": "<strong>Chat Memory</strong>. The information that a large-language model retains and uses to maintain contextual awareness throughout a conversation.",
+      "translation": "<strong>对话记忆</strong>。大型语言模型在对话过程中保留并利用的信息，以维持上下文感知能力。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Chat History</strong>. The entire conversation history, including all messages exchanged between the user and the model.",
+      "translation": "<strong>聊天记录</strong>。包含用户与模型之间交换的所有消息的完整对话历史。",
+      "count": 1
+    },
+    {
+      "source": "The <code>ChatMemory</code> abstraction allows you to implement various types of memory to suit different use cases. The choice of memory type can significantly impact the performance and behavior of your application. This section describes the built-in memory types provided by Spring AI and their characteristics.",
+      "translation": "`ChatMemory` 抽象允许您实现各种类型的内存以适应不同的使用场景。内存类型的选择会显著影响应用程序的性能和行为。本节介绍 Spring AI 提供的内置内存类型及其特性。",
+      "count": 1
+    },
+    {
+      "source": "This is the default message type used by Spring AI to auto-configure a <code>ChatMemory</code> bean.",
+      "translation": "这是 Spring AI 用于自动配置 `<code>ChatMemory`</code> Bean 的默认消息类型。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI offers the <code>ChatMemoryRepository</code> abstraction for storing chat memory. This section describes the built-in repositories provided by Spring AI and how to use them, but you can also implement your own repository if needed.",
+      "translation": "Spring AI 提供了用于存储聊天记忆的 `<code>ChatMemoryRepository`</code> 抽象。本节介绍了 Spring AI 提供的内置仓库及其使用方法，但如有需要，您也可以自行实现自己的仓库。",
+      "count": 1
+    },
+    {
+      "source": "If you’d rather create the <code>InMemoryChatMemoryRepository</code> manually, you can do so as follows:",
+      "translation": "如果您更倾向于手动创建<code>InMemoryChatMemoryRepository</code>，可以按以下方式操作：",
+      "count": 1
+    },
+    {
+      "source": "<code>JdbcChatMemoryRepository</code> is a built-in implementation that uses JDBC to store messages in a relational database. It supports multiple databases out-of-the-box and is suitable for applications that require persistent storage of chat memory.",
+      "translation": "JdbcChatMemoryRepository 是一个内置实现，使用 JDBC 将消息存储到关系型数据库中。它开箱即支持多种数据库，适用于需要持久化存储聊天记忆的应用程序。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI provides auto-configuration for the <code>JdbcChatMemoryRepository</code>, that you can use directly in your application.",
+      "translation": "Spring AI 为<code>JdbcChatMemoryRepository</code>提供了自动配置功能，您可以直接在应用程序中使用它。",
+      "count": 1
+    },
+    {
+      "source": "Location of the schema script to use for initialization. Supports <code>classpath:</code> URLs and platform placeholders.",
+      "translation": "初始化时使用的模式脚本位置。支持 `classpath:` URL 和平台占位符。",
+      "count": 1
+    },
+    {
+      "source": "The auto-configuration will automatically create the <code>SPRING_AI_CHAT_MEMORY</code> table on startup, using a vendor-specific SQL script for your database. By default, schema initialization runs only for embedded databases (H2, HSQL, Derby, etc.).",
+      "translation": "自动配置将在启动时自动创建 `<code>SPRING_AI_CHAT_MEMORY</code>` 表，并使用针对您数据库的特定供应商 SQL 脚本。默认情况下，模式初始化仅针对嵌入式数据库（如 H2、HSQL、Derby 等）运行。",
+      "count": 1
+    },
+    {
+      "source": "You can control schema initialization using the <code>spring.ai.chat.memory.repository.jdbc.initialize-schema</code> property:",
+      "translation": "您可以使用 `<code>spring.ai.chat.memory.repository.jdbc.initialize-schema</code>` 属性来控制模式初始化：",
+      "count": 1
+    },
+    {
+      "source": "To add support for a new database, implement the <code>JdbcChatMemoryRepositoryDialect</code> interface and provide SQL for selecting, inserting, and deleting messages. You can then pass your custom dialect to the repository builder.",
+      "translation": "要支持新数据库，请实现 <code>JdbcChatMemoryRepositoryDialect</code> 接口并提供用于选择、插入和删除消息的 SQL 语句。然后，您可以将自定义方言传递给仓库构建器。",
+      "count": 1
+    },
+    {
+      "source": "<code>CassandraChatMemoryRepository</code> uses Apache Cassandra to store messages.  It is suitable for applications that require persistent storage of chat memory, especially for availability, durability, scale, and when taking advantage of time-to-live (TTL) feature.",
+      "translation": "CassandraChatMemoryRepository 使用 Apache Cassandra 存储消息。它适用于需要持久化存储聊天记忆的应用程序，特别是在对可用性、耐久性、可扩展性以及利用时间到活（TTL）功能有需求时。",
+      "count": 1
+    },
+    {
+      "source": "<code>CassandraChatMemoryRepository</code> has a time-series schema, keeping record of all past chat windows, valuable for governance and auditing.  Setting time-to-live to some value, for example three years, is recommended.",
+      "translation": "`CassandraChatMemoryRepository` 采用时间序列架构，用于保存所有历史聊天窗口的记录，这对于治理和审计至关重要。建议将生存时间（time-to-live）设置为某个值，例如三年。",
+      "count": 1
+    },
+    {
+      "source": "To use <code>CassandraChatMemoryRepository</code> first, add the dependency to your project:",
+      "translation": "要使用 <code>CassandraChatMemoryRepository</code>，首先请在您的项目中添加该依赖：",
+      "count": 1
+    },
+    {
+      "source": "Spring AI provides auto-configuration for the <code>CassandraChatMemoryRepository</code> that you can use directly in your application.",
+      "translation": "Spring AI 为 `<code>CassandraChatMemoryRepository</code>` 提供了自动配置功能，您可以直接在应用程序中使用它。",
+      "count": 1
+    },
+    {
+      "source": "The auto-configuration will automatically create the <code>ai_chat_memory</code> table.",
+      "translation": "自动配置将自动创建 `<code>ai_chat_memory</code>` 表。",
+      "count": 1
+    },
+    {
+      "source": "<code>Neo4jChatMemoryRepository</code> is a built-in implementation that uses Neo4j to store chat messages as nodes and relationships in a property graph database. It is suitable for applications that want to leverage Neo4j’s graph capabilities for chat memory persistence.",
+      "translation": "<code>Neo4jChatMemoryRepository</code> 是一个内置实现，它利用 Neo4j 将聊天消息存储为属性图数据库中的节点和关系。该实现适用于希望利用 Neo4j 的图能力进行聊天记忆持久化的应用程序。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI provides auto-configuration for the <code>Neo4jChatMemoryRepository</code>, which you can use directly in your application.",
+      "translation": "Spring AI 为 `<code>Neo4jChatMemoryRepository`》提供了自动配置功能，您可以直接在应用程序中使用它。",
+      "count": 1
+    },
+    {
+      "source": "<code>MongoChatMemoryRepository</code> is a built-in implementation that uses MongoDB to store messages. It is suitable for applications that require a flexible, document-oriented database for chat memory persistence.",
+      "translation": "MongoChatMemoryRepository 是一个内置实现，使用 MongoDB 存储消息。它适用于需要灵活文档型数据库来持久化聊天记忆的应用程序。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI provides auto-configuration for the <code>MongoChatMemoryRepository</code>, which you can use directly in your application.",
+      "translation": "Spring AI 为 `<code>MongoChatMemoryRepository</code>` 提供了自动配置，您可以直接在应用程序中使用它。",
+      "count": 1
+    },
+    {
+      "source": "The auto-configuration will automatically create the <code>ai_chat_memory</code> collection on startup if it does not already exist.",
+      "translation": "自动配置会在启动时自动创建 `<code>ai_chat_memory</code>` 集合，如果该集合尚不存在。",
+      "count": 1
+    },
+    {
+      "source": "<code>RedisChatMemoryRepository</code> is a built-in implementation that uses Redis Stack (with Redis Query Engine and RedisJSON) to store chat messages.\nIt is suitable for applications that require high-performance, low-latency chat memory persistence with optional TTL (time-to-live) support and advanced querying capabilities.",
+      "translation": "<code>RedisChatMemoryRepository</code> 是一个内置实现，利用 Redis Stack（包含 Redis Query Engine 和 RedisJSON）来存储聊天消息。它适用于需要高性能、低延迟聊天记忆持久化的应用程序，并支持可选的 TTL（生存时间）功能和高级查询能力。",
+      "count": 1
+    },
+    {
+      "source": "The repository stores messages as JSON documents and creates a search index for efficient querying.\nIt also provides extended query capabilities through the <code>AdvancedRedisChatMemoryRepository</code> interface for searching messages by content, type, time range, and metadata.",
+      "translation": "该仓库以 JSON 文档形式存储消息，并创建搜索索引以实现高效查询。此外，它通过 `AdvancedRedisChatMemoryRepository` 接口提供扩展的查询功能，支持按内容、类型、时间范围和元数据搜索消息。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI provides auto-configuration for the <code>RedisChatMemoryRepository</code>, which you can use directly in your application.",
+      "translation": "Spring AI 为 `<code>RedisChatMemoryRepository</code>` 提供了自动配置功能，您可以直接在应用程序中使用它。",
+      "count": 1
+    },
+    {
+      "source": "<em>no expiration</em>",
+      "translation": "<em>无有效期</em>",
+      "count": 1
+    },
+    {
+      "source": "The auto-configuration will automatically create the Redis search index on startup if it does not already exist.\nYou can disable this behavior by setting <code>spring.ai.chat.memory.redis.initialize-schema=false</code>.",
+      "translation": "自动配置会在启动时自动创建 Redis 搜索索引（如果尚不存在）。  \n您可以通过设置 `<code>spring.ai.chat.memory.redis.initialize-schema=false</code>` 来禁用此行为。",
+      "count": 1
+    },
+    {
+      "source": "When using the ChatClient API, you can provide a <code>ChatMemory</code> implementation to maintain conversation context across multiple interactions.",
+      "translation": "在使用 ChatClient API 时，您可以提供一个 <code>ChatMemory</code> 实现来在多次交互之间维护对话上下文。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI provides a few built-in Advisors that you can use to configure the memory behavior of the <code>ChatClient</code>, based on your needs.",
+      "translation": "Spring AI 提供了一些内置的 Advisor，您可以根据需求使用它们来配置 <code>ChatClient</code> 的记忆行为。",
+      "count": 1
+    },
+    {
+      "source": "an <code>instructions</code> placeholder to receive the original system message.",
+      "translation": "一个用于接收原始系统消息的 `<code>instructions</code>` 占位符。",
+      "count": 1
+    },
+    {
+      "source": "a <code>long_term_memory</code> placeholder to receive the retrieved conversation memory.",
+      "translation": "一个 `<code>long_term_memory</code>` 占位符，用于接收检索到的对话记忆。",
+      "count": 1
+    },
+    {
+      "source": "Large language models (LLMs) are stateless, meaning they do not retain information about previous interactions. This can be a limitation when you want to maintain context or state across multiple interactions. To address this, Spring AI provides chat memory features that allow you to store and retrieve information across multiple interactions with the LLM.",
+      "translation": "大型语言模型（LLMs）是无状态的，这意味着它们不会保留之前交互的信息。当需要在多次交互之间保持上下文或状态时，这可能成为一个限制。为了解决这个问题，Spring AI 提供了聊天记忆功能，允许您在与大型语言模型的多次交互中存储和检索信息。",
+      "count": 1
+    },
+    {
+      "source": "Before choosing a memory type, it’s essential to understand the difference between chat memory and chat history.",
+      "translation": "在选择记忆类型之前，必须理解聊天记忆与聊天历史之间的区别。",
+      "count": 1
+    },
+    {
+      "source": "The following sections will describe further the different memory types and repositories available in Spring AI.",
+      "translation": "以下章节将进一步介绍 Spring AI 中可用的不同类型内存和存储库。",
+      "count": 1
+    },
+    {
+      "source": "The timestamp is preserved when a conversation is saved again, so a message keeps its original creation time for the lifetime of the conversation.",
+      "translation": "当对话被再次保存时，时间戳会被保留，因此消息在其整个对话生命周期内保持其原始创建时间。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI supports multiple relational databases via a dialect abstraction. The following databases are supported out-of-the-box:",
+      "translation": "Spring AI 通过方言抽象支持多种关系型数据库。以下数据库开箱即用：",
+      "count": 1
+    },
+    {
+      "source": "SQL Server",
+      "translation": "SQL Server",
+      "count": 1
+    },
+    {
+      "source": "Oracle Database",
+      "translation": "Oracle 数据库",
+      "count": 1
+    },
+    {
+      "source": "Platform to use in initialization scripts if the @@platform@@ placeholder is used.",
+      "translation": "初始化脚本中使用的平台，当使用 @@platform@@ 占位符时。",
+      "count": 1
+    },
+    {
+      "source": "To override the schema script location, use:",
+      "translation": "要覆盖模式脚本位置，请使用：",
+      "count": 1
+    },
+    {
+      "source": "Host(s) to initiate cluster discovery",
+      "translation": "发起集群发现的主机",
+      "count": 1
+    },
+    {
+      "source": "Cassandra native protocol port to connect to",
+      "translation": "用于连接 Cassandra 原生协议的端口。",
+      "count": 1
+    },
+    {
+      "source": "Cassandra datacenter to connect to",
+      "translation": "Cassandra 要连接的数据中心",
+      "count": 1
+    },
+    {
+      "source": "Time to live (TTL) for messages written in Cassandra",
+      "translation": "Cassandra 中写入消息的生存时间（TTL）",
+      "count": 1
+    },
+    {
+      "source": "Cassandra keyspace",
+      "translation": "Cassandra 键空间",
+      "count": 1
+    },
+    {
+      "source": "Cassandra column name for messages",
+      "translation": "消息的 Cassandra 列名",
+      "count": 1
+    },
+    {
+      "source": "Cassandra table",
+      "translation": "Cassandra 表",
+      "count": 1
+    },
+    {
+      "source": "Whether to initialize the schema on startup.",
+      "translation": "启动时是否初始化架构。",
+      "count": 1
+    },
+    {
+      "source": "Messages are retrieved in ascending message index order (oldest-to-newest), which is the expected format for LLM conversation history.",
+      "translation": "消息按消息索引升序（从旧到新）获取，这是大语言模型对话历史所需的预期格式。",
+      "count": 1
+    },
+    {
+      "source": "The label for the nodes that store conversation sessions",
+      "translation": "存储会话节点的标签",
+      "count": 1
+    },
+    {
+      "source": "The label for the nodes that store messages",
+      "translation": "存储消息的节点的标签",
+      "count": 1
+    },
+    {
+      "source": "The label for nodes that store tool calls (e.g. in Assistant Messages)",
+      "translation": "存储工具调用（例如在助手消息中）的节点的标签",
+      "count": 1
+    },
+    {
+      "source": "The label for nodes that store message metadata",
+      "translation": "存储消息元数据的节点标签",
+      "count": 1
+    },
+    {
+      "source": "The label for the nodes that store tool responses",
+      "translation": "存储工具响应的节点的标签",
+      "count": 1
+    },
+    {
+      "source": "The label for the nodes that store media associated with a message",
+      "translation": "存储与消息关联的媒体内容的节点标签",
+      "count": 1
+    },
+    {
+      "source": "The Neo4j repository will automatically ensure that indexes are created for conversation IDs and message indices to optimize performance. If you use custom labels, indexes will be created for those labels as well. No schema initialization is required, but you should ensure your Neo4j instance is accessible to your application.",
+      "translation": "Neo4j 存储库将自动为对话 ID 和消息索引创建索引以优化性能。如果您使用自定义标签，也将为这些标签创建索引。无需执行模式初始化，但请确保您的 Neo4j 实例可被应用程序访问。",
+      "count": 1
+    },
+    {
+      "source": "Messages are retrieved in ascending timestamp order (oldest-to-newest), which is the expected format for LLM conversation history. This ordering is consistent across all chat memory repository implementations.",
+      "translation": "消息按时间戳升序（从旧到新）检索，这是大型语言模型对话历史所需的预期格式。此排序在所有聊天记忆存储库实现中均保持一致。",
+      "count": 1
+    },
+    {
+      "source": "Should indices be created or recreated automatically on startup. Note: Changing the\n* TTL value will drop the TTL index and recreate it",
+      "translation": "启动时是否应自动创建或重建索引。注意：更改 *TTL 值将删除 TTL 索引并重新创建它。",
+      "count": 1
+    },
+    {
+      "source": "Time to live (TTL) for messages written in MongoDB, in seconds. If not set, messages will be stored indefinitely.",
+      "translation": "MongoDB 中写入消息的生存时间（TTL），单位为秒。如果未设置，消息将永久存储。",
+      "count": 1
+    },
+    {
+      "source": "Redis server host",
+      "translation": "Redis 服务器主机",
+      "count": 1
+    },
+    {
+      "source": "Redis server port",
+      "translation": "Redis 服务器端口",
+      "count": 1
+    },
+    {
+      "source": "Name of the Redis search index",
+      "translation": "Redis 搜索索引的名称",
+      "count": 1
+    },
+    {
+      "source": "Key prefix for chat memory entries",
+      "translation": "聊天记忆条目的关键前缀",
+      "count": 1
+    },
+    {
+      "source": "Whether to initialize the Redis schema on startup",
+      "translation": "启动时是否初始化 Redis 模式",
+      "count": 1
+    },
+    {
+      "source": "Maximum number of conversation IDs to return",
+      "translation": "要返回的对话 ID 的最大数量",
+      "count": 1
+    },
+    {
+      "source": "Maximum number of messages to return per conversation",
+      "translation": "每对话返回的最大消息数",
+      "count": 1
+    },
+    {
+      "source": "To enable efficient querying on custom metadata fields, you can configure metadata field definitions:",
+      "translation": "若要实现对自定义元数据字段的高效查询，您可以配置元数据字段定义：",
+      "count": 1
+    },
+    {
+      "source": "Redis Stack 7.0 or higher (includes Redis Query Engine and RedisJSON modules)",
+      "translation": "Redis Stack 7.0 或更高版本（包含 Redis 查询引擎和 RedisJSON 模块）",
+      "count": 1
+    },
+    {
+      "source": "Jedis client library (included as a dependency)",
+      "translation": "Jedis 客户端库（作为依赖项包含）",
+      "count": 1
+    },
+    {
+      "source": "Apache®, Apache Tomcat®, Apache Kafka®, Apache Cassandra™, and Apache Geode™ are trademarks or registered trademarks of the Apache Software Foundation in the United States and/or other countries. Java™, Java™ SE, Java™ EE, and OpenJDK™ are trademarks of Oracle and/or its affiliates. Kubernetes® is a registered trademark of the Linux Foundation in the United States and other countries. Linux® is the registered trademark of Linus Torvalds in the United States and other countries. Windows® and Microsoft® Azure are registered trademarks of Microsoft Corporation. “AWS” and “Amazon Web Services” are trademarks or registered trademarks of Amazon.com Inc. or its affiliates. All other trademarks and copyrights are property of their respective owners and are only mentioned for informative purposes. Other names may be trademarks of their respective owners.",
+      "translation": "Apache®、Apache Tomcat®、Apache Kafka®、Apache Cassandra™ 和 Apache Geode™ 是 Apache 软件基金会在美国和其他/或某些国家的商标或注册商标。Java™、Java™ SE、Java™ EE 和 OpenJDK™ 是 Oracle 公司和/或其关联公司的商标。Kubernetes® 是 Linux 基金会在美国和其他/或某些国家的注册商标。Linux® 是 Linus Torvalds 在美国和其他/或某些国家的注册商标。Windows® 和 Microsoft® Azure 是微软公司的注册商标。\"AWS\"和\"Amazon Web Services\"是 Amazon.com Inc. 或其关联公司的商标或注册商标。所有其他商标和版权均归各自所有者所有，仅用于说明目的。其他名称可能是其各自所有者的商标。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/projects\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-boot\">Spring Boot</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-framework\">Spring Framework</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud\">Spring Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud-dataflow\">Spring Cloud Data Flow</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-data\">Spring Data</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-integration\">Spring Integration</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-batch\">Spring Batch</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-security\">Spring Security</a>\n            <a class=\"navbar-item navbar-item-special\" href=\"https://spring.io/projects\">View all projects</a>\n            <li class=\"navbar-item navbar-item-special-3\">DEVELOPMENT TOOLS</li>\n            <a class=\"navbar-item\" href=\"https://spring.io/tools\">Spring Tools 4</a>\n            <a class=\"navbar-item navbar-item-special-2\" href=\"https://start.spring.io\">Spring Initializr\n              <svg id=\"svg-stash-f15b5668\"></svg></a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/projects\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-boot\">Spring Boot</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-framework\">Spring Framework</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud\">Spring Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud-dataflow\">Spring Cloud Data Flow</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-data\">Spring Data</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-integration\">Spring Integration</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-batch\">Spring Batch</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-security\">Spring Security</a>\n            <a class=\"navbar-item navbar-item-special\" href=\"https://spring.io/projects\">查看所有项目</a>\n            <li class=\"navbar-item navbar-item-special-3\">开发工具</li>\n            <a class=\"navbar-item\" href=\"https://spring.io/tools\">Spring Tools 4</a>\n            <a class=\"navbar-item navbar-item-special-2\" href=\"https://start.spring.io\">Spring Initializr\n              <svg id=\"svg-stash-f15b5668\"></svg></a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/why-spring\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/microservices\">Microservices</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/reactive\">Reactive</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/event-driven\">Event\n              Driven</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/cloud\">Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/web-applications\">Web\n              Applications</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/serverless\">Serverless</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/batch\">Batch</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/why-spring\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/microservices\">微服务</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/reactive\">响应式</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/event-driven\">事件驱动</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/cloud\">云</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/web-applications\">Web 应用</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/serverless\">无服务器</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/batch\">批处理</a>",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/chat-memory.adoc\">\n          <svg id=\"svg-stash-05b5c46b\"></svg>\n          Edit this Page\n        </a>\n        <a href=\"https://github.com/spring-projects/spring-ai\" title=\"GitHub\">\n          <svg id=\"svg-stash-28d888b7\"></svg>\n          GitHub Project\n        </a>",
+      "translation": "<a href=\"file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/chat-memory.adoc\">\n          <svg id=\"svg-stash-05b5c46b\"></svg>\n          编辑此页面\n        </a>\n        <a href=\"https://github.com/spring-projects/spring-ai\" title=\"GitHub\">\n          <svg id=\"svg-stash-28d888b7\"></svg>\n          GitHub 项目\n        </a>",
+      "count": 1
+    },
+    {
+      "source": "<nav aria-label=\"breadcrumbs\" class=\"breadcrumbs\">\n    <ul>\n      <li><a href=\"../index.html\">Spring AI</a></li>\n      <li>Reference</li>\n      <li><a href=\"chat-memory.html\">Chat Memory</a></li>\n    </ul>\n  </nav>",
+      "translation": "<nav aria-label=\"面包屑\" class=\"breadcrumbs\">\n    <ul>\n      <li><a href=\"../index.html\">Spring AI</a></li>\n      <li>参考</li>\n      <li><a href=\"chat-memory.html\">聊天记忆</a></li>\n    </ul>\n  </nav>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/solutions\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/support\">Spring Runtime</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/consulting\">Spring Consulting</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/teams\">Spring Academy For Teams</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/security\">Security Advisories</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/solutions\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/support\">Spring 运行时</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/consulting\">Spring 咨询</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/teams\">Spring Academy 团队培训</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/security\">安全公告</a>",
+      "count": 1
+    },
+    {
+      "source": "<ul class=\"projects\">\n  <li>\n    Related Spring Documentation\n    <ul class=\"projects-list\">\n    </ul>\n  </li><a href=\"../spring-projects.html\">All Docs...</a>\n</ul>",
+      "translation": "<ul class=\"projects\">\n  <li>\n    相关 Spring 文档\n    <ul class=\"projects-list\">\n    </ul>\n  </li><a href=\"../spring-projects.html\">所有文档...</a>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.academy/courses\">Courses</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/learning-path\">Get Certified</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.academy/courses\">课程</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/learning-path\">获取认证</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"title\" href=\"../index.html\">Spring AI</a>",
+      "translation": "<a class=\"title\" href=\"../index.html\">Spring AI</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"search-link\" href=\"../search.html\">Search in all Spring Docs</a>",
+      "translation": "<a class=\"search-link\" href=\"../search.html\">在全部 Spring 文档中搜索</a>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"vectordbs.html\">Vector Databases</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/azure.html\">Azure AI Service</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/azure-cosmos-db.html\">Azure Cosmos DB</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/bedrock-knowledge-base.html\">Amazon Bedrock Knowledge Base</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/apache-cassandra.html\">Apache Cassandra Vector Store</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/chroma.html\">Chroma</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/couchbase.html\">Couchbase</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/elasticsearch.html\">Elasticsearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/gemfire.html\">GemFire</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/mariadb.html\">MariaDB Vector Store</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/milvus.html\">Milvus</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/mongodb.html\">MongoDB Atlas</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/neo4j.html\">Neo4j</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/opensearch.html\">OpenSearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/oracle.html\">Oracle</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/pgvector.html\">PGvector</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/pinecone.html\">Pinecone</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/qdrant.html\">Qdrant</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/redis.html\">Redis</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/typesense.html\">Typesense</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/weaviate.html\">Weaviate</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/s3-vector-store.html\">S3 Vector Store</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"vectordbs.html\">向量数据库</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/azure.html\">Azure AI 服务</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/azure-cosmos-db.html\">Azure Cosmos DB</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/bedrock-knowledge-base.html\">Amazon Bedrock 知识库</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/apache-cassandra.html\">Apache Cassandra 向量存储</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/chroma.html\">Chroma</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/couchbase.html\">Couchbase</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/elasticsearch.html\">Elasticsearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/gemfire.html\">GemFire</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/mariadb.html\">MariaDB 向量存储</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/milvus.html\">Milvus</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/mongodb.html\">MongoDB Atlas</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/neo4j.html\">Neo4j</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/opensearch.html\">OpenSearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/oracle.html\">Oracle</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/pgvector.html\">PGvector</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/pinecone.html\">Pinecone</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/qdrant.html\">Qdrant</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/redis.html\">Redis</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/typesense.html\">Typesense</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/weaviate.html\">Weaviate</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/s3-vector-store.html\">S3 向量存储</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"embeddings.html\">Embedding Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"bedrock.html\">Amazon Bedrock</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/bedrock-cohere-embedding.html\">Cohere</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/bedrock-titan-embedding.html\">Titan</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/azure-openai-embeddings.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/google-genai-embeddings-text.html\">Google GenAI Text Embedding</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/mistralai-embeddings.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/oci-genai-embeddings.html\">OCI GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/ollama-embeddings.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/onnx.html\">(ONNX) Transformers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/openai-embeddings.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/postgresml-embeddings.html\">PostgresML</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">VertexAI</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/vertexai-embeddings-text.html\">Text Embedding</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/vertexai-embeddings-multimodal.html\">Multimodal Embedding</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"embeddings.html\">嵌入模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"bedrock.html\">Amazon Bedrock</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/bedrock-cohere-embedding.html\">Cohere</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/bedrock-titan-embedding.html\">Titan</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/azure-openai-embeddings.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/google-genai-embeddings-text.html\">Google GenAI 文本嵌入</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/mistralai-embeddings.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/oci-genai-embeddings.html\">OCI GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/ollama-embeddings.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/onnx.html\">(ONNX) Transformers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/openai-embeddings.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/postgresml-embeddings.html\">PostgresML</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">VertexAI</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/vertexai-embeddings-text.html\">文本嵌入</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/vertexai-embeddings-multimodal.html\">多模态嵌入</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"chatmodel.html\">Chat Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/comparison.html\">Chat Models Comparison</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/bedrock-converse.html\">Amazon Bedrock Converse</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/anthropic-chat.html\">Anthropic</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/azure-openai-chat.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/deepseek-chat.html\">DeepSeek</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/dmr-chat.html\">Docker Model Runner</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/google-genai-chat.html\">Google GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/groq-chat.html\">Groq</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/mistralai-chat.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/minimax-chat.html\">MiniMax</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/nvidia-chat.html\">NVIDIA</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/ollama-chat.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/perplexity-chat.html\">Perplexity AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/oci-genai-chat.html\">OCI Generative AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/openai-chat.html\">OpenAI</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"chatmodel.html\">对话模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/comparison.html\">对话模型对比</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/bedrock-converse.html\">Amazon Bedrock Converse</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/anthropic-chat.html\">Anthropic</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/azure-openai-chat.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/deepseek-chat.html\">DeepSeek</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/dmr-chat.html\">Docker Model Runner</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/google-genai-chat.html\">Google GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/groq-chat.html\">Groq</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/mistralai-chat.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/minimax-chat.html\">MiniMax</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/nvidia-chat.html\">NVIDIA</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/ollama-chat.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/perplexity-chat.html\">Perplexity AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/oci-genai-chat.html\">OCI Generative AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/openai-chat.html\">OpenAI</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-overview.html\">Model Context Protocol (MCP)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mcp/mcp-client-boot-starter-docs.html\">MCP Client Boot Starters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-server-boot-starter-docs.html\">MCP Server Boot Starters</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-stdio-sse-server-boot-starter-docs.html\">STDIO and SSE MCP Servers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-streamable-http-server-boot-starter-docs.html\">Streamable-HTTP MCP Servers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-stateless-server-boot-starter-docs.html\">Stateless Streamable-HTTP MCP Servers</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mcp/mcp-security.html\">MCP Security (WIP)</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-overview.html\">MCP Annotations</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-client.html\">Client Annotations</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-server.html\">Server Annotations</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-special-params.html\">Special Parameters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-examples.html\">MCP Annotations Examples</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"mcp/mcp-overview.html\">模型上下文协议 (MCP)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mcp/mcp-client-boot-starter-docs.html\">MCP 客户端启动器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-server-boot-starter-docs.html\">MCP 服务器启动器</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-stdio-sse-server-boot-starter-docs.html\">STDIO 和 SSE MCP 服务器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-streamable-http-server-boot-starter-docs.html\">可流式 HTTP MCP 服务器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-stateless-server-boot-starter-docs.html\">无状态可流式 HTTP MCP 服务器</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mcp/mcp-security.html\">MCP 安全 (进行中)</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-overview.html\">MCP 注解</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-client.html\">客户端注解</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-server.html\">服务器注解</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-special-params.html\">特殊参数</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-examples.html\">MCP 注解示例</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">Guides</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/spring-ai-community/awesome-spring-ai\">Awesome Spring AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/getting-started-mcp.html\">Getting Started with MCP</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/dynamic-tool-search.html\">Dynamic Tool Discovery</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/llm-as-judge.html\">LLM-as-a-Judge Evaluation</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"chat/prompt-engineering-patterns.html\">Prompt Engineering Patterns</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"effective-agents.html\">Building Effective Agents</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agents\">Building agents with Spring AI by AWS</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agentcore\">Building agents with Spring AI and AgentCore by AWS</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/microsoft/Spring-AI-for-Beginners\">Spring AI for Beginners by Microsoft</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<span class=\"nav-text\">指南</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/spring-ai-community/awesome-spring-ai\">Awesome Spring AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/getting-started-mcp.html\">MCP 入门</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/dynamic-tool-search.html\">动态工具发现</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/llm-as-judge.html\">LLM 作为裁判的评估</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"chat/prompt-engineering-patterns.html\">提示工程模式</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"effective-agents.html\">构建高效智能体</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agents\">AWS 使用 Spring AI 构建智能体</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agentcore\">AWS 使用 Spring AI 和 AgentCore 构建智能体</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/microsoft/Spring-AI-for-Beginners\">Microsoft 的 Spring AI 初学者指南</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio.html\">Audio Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio/transcriptions.html\">Transcription API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/transcriptions/azure-openai-transcriptions.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/transcriptions/openai-transcriptions.html\">OpenAI</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio/speech.html\">Text-To-Speech (TTS) API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/speech/openai-speech.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/speech/elevenlabs-speech.html\">ElevenLabs</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio.html\">音频模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio/transcriptions.html\">转录 API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/transcriptions/azure-openai-transcriptions.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/transcriptions/openai-transcriptions.html\">OpenAI</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio/speech.html\">文本转语音 (TTS) API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/speech/openai-speech.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/speech/elevenlabs-speech.html\">ElevenLabs</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nThe <code>PromptTemplate</code> provided here customizes how the advisor merges retrieved memory with the system message. This is distinct from configuring a <code>TemplateRenderer</code> on the <code>ChatClient</code> itself (using <code>.templateRenderer()</code>), which affects the rendering of the initial user/system prompt content <strong>before</strong> the advisor runs. See <a class=\"xref page\" href=\"chatclient.html#_prompt_templates\">ChatClient Prompt Templates</a> for more details on client-level template rendering.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n此处提供的 <code>PromptTemplate</code> 自定义了顾问如何将检索到的记忆与系统消息合并。这与在 <code>ChatClient</code> 本身配置 <code>TemplateRenderer</code>（使用 <code>.templateRenderer()</code>）不同，后者影响的是在顾问运行<strong>之前</strong>对初始用户/系统提示内容的渲染。有关客户端级模板渲染的更多详细信息，请参阅<a class=\"xref page\" href=\"chatclient.html#_prompt_templates\">ChatClient 提示模板</a>。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"chatclient.html\">Chat Client API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"advisors.html\">Advisors</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"advisors-recursive.html\">Recursive Advisors</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"chatclient.html\">聊天客户端 API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"advisors.html\">顾问</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"advisors-recursive.html\">递归顾问</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"imageclient.html\">Image Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/azure-openai-image.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/openai-image.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/stabilityai-image.html\">Stability</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"imageclient.html\">图像模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/azure-openai-image.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/openai-image.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/stabilityai-image.html\">Stability</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nIf <code>maxMessages</code> is smaller than a single complete turn (for example, a multi-step tool-calling exchange that exceeds the window size), all non-system messages may be evicted until a new <code>UserMessage</code> is added. Size <code>maxMessages</code> generously enough to hold at least one representative turn for your use case.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n如果 <code>maxMessages</code> 小于单个完整轮次（例如，超过窗口大小的多步工具调用交互），所有非系统消息都可能会被驱逐，直到添加一个新的 <code>UserMessage</code>。请根据您的需求，将 <code>maxMessages</code> 设置得足够大，以确保至少能容纳一个代表性的轮次。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nAs of 2.0.0, the schema adds a <code>sequence_id</code> column that determines message ordering, alongside the existing <code>timestamp</code> column (now exposed via message metadata). Upgrading an existing application requires adding the new column; see <a class=\"xref page\" href=\"../upgrade-notes.html\">Upgrade Notes</a> for the migration steps.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n自 2.0.0 版本起，架构新增了一个 <code>sequence_id</code> 列用于确定消息顺序，同时保留了现有的 <code>timestamp</code> 列（现已通过消息元数据暴露）。升级现有应用程序需要添加此新列；迁移步骤请参阅<a class=\"xref page\" href=\"../upgrade-notes.html\">升级说明</a>。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-important\" title=\"Important\"></i>\n</td>\n<td class=\"content\">\nThe <code>ChatMemory.CONVERSATION_ID</code> parameter is <strong>required</strong> for all memory advisors. Calls that omit this parameter will throw an <code>IllegalArgumentException</code> at runtime. There is no default conversation ID.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-important\" title=\"Important\"></i>\n</td>\n<td class=\"content\">\n对于所有记忆顾问，<code>ChatMemory.CONVERSATION_ID</code> 参数是<strong>必需</strong>的。如果调用时省略此参数，将在运行时抛出 <code>IllegalArgumentException</code> 异常。不存在默认的会话 ID。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"moderation.html\">Moderation Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"moderation/openai-moderation.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"moderation/mistral-ai-moderation.html\">Mistral AI</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"moderation.html\">内容审核模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"moderation/openai-moderation.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"moderation/mistral-ai-moderation.html\">Mistral AI</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../upgrade-notes.html\">Upgrade Notes</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"tools-migration.html\">Migrating FunctionCallback to ToolCallback API</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"chat/anthropic-migration.html\">Migrating the Anthropic Module to the Official Java SDK</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"../upgrade-notes.html\">升级说明</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"tools-migration.html\">将 FunctionCallback 迁移至 ToolCallback API</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"chat/anthropic-migration.html\">将 Anthropic 模块迁移至官方 Java SDK</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nAzure Cosmos DB chat memory repository support is available as an external module maintained by the Azure Cosmos DB team.\nSee <a class=\"bare\" href=\"https://azurecosmosdb.github.io/spring-ai/docs/index.html\">azurecosmosdb.github.io/spring-ai/docs/index.html</a> for more information.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nAzure Cosmos DB 聊天记忆存储库支持作为由 Azure Cosmos DB 团队维护的外部模块提供。有关更多信息，请参阅 <a class=\"bare\" href=\"https://azurecosmosdb.github.io/spring-ai/docs/index.html\">azurecosmosdb.github.io/spring-ai/docs/index.html</a>。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-warning\" title=\"Warning\"></i>\n</td>\n<td class=\"content\">\nCurrently, the intermediate messages exchanged with a large-language model when performing tool calls are not stored in the memory. This is a limitation of the current implementation and will be addressed in future releases. If you need to store these messages, refer to the instructions for the <a class=\"xref page\" href=\"tools.html#_user_controlled_tool_execution\">User Controlled Tool Execution</a>.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-warning\" title=\"Warning\"></i>\n</td>\n<td class=\"content\">\n目前，在执行工具调用时与大语言模型交换的中间消息不会存储在内存中。这是当前实现的局限性，将在未来的版本中解决。如果您需要存储这些消息，请参考<a class=\"xref page\" href=\"tools.html#_user_controlled_tool_execution\">用户控制的工具执行</a>中的说明。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../index.html\">Overview</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../concepts.html\">AI Concepts</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"../index.html\">概述</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../concepts.html\">AI 概念</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"retrieval-augmented-generation.html\">Retrieval Augmented Generation (RAG)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"etl-pipeline.html\">ETL Pipeline</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"retrieval-augmented-generation.html\">检索增强生成 (RAG)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"etl-pipeline.html\">ETL 管道</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"prev\"><a href=\"moderation/mistral-ai-moderation.html\">Mistral AI</a></span>\n  <span class=\"next\"><a href=\"tools.html\">Tool Calling</a></span>",
+      "translation": "<span class=\"prev\"><a href=\"moderation/mistral-ai-moderation.html\">Mistral AI</a></span>\n  <span class=\"next\"><a href=\"tools.html\">工具调用</a></span>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../getting-started.html\">Getting Started</a>",
+      "translation": "<a class=\"nav-link\" href=\"../getting-started.html\">入门指南</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"structured-output-converter.html\">Structured Output</a>",
+      "translation": "<a class=\"nav-link\" href=\"structured-output-converter.html\">结构化输出</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"chat-memory.html\">Chat Memory</a>",
+      "translation": "<a class=\"nav-link\" href=\"chat-memory.html\">对话记忆</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"tools.html\">Tool Calling</a>",
+      "translation": "<a class=\"nav-link\" href=\"tools.html\">工具调用</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"testing.html\">Model Evaluation</a>",
+      "translation": "<a class=\"nav-link\" href=\"testing.html\">模型评估</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"docker-compose.html\">Development-time Services</a>",
+      "translation": "<a class=\"nav-link\" href=\"docker-compose.html\">开发时服务</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_quick_start\"></a>Quick Start",
+      "translation": "<a class=\"anchor\" href=\"#_quick_start\"></a>快速开始",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_memory_types\"></a>Memory Types",
+      "translation": "<a class=\"anchor\" href=\"#_memory_types\"></a>内存类型",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_message_window_chat_memory\"></a>Message Window Chat Memory",
+      "translation": "<a class=\"anchor\" href=\"#_message_window_chat_memory\"></a>消息窗口聊天记忆",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_turn_boundary_eviction\"></a>Turn-boundary eviction",
+      "translation": "<a class=\"anchor\" href=\"#_turn_boundary_eviction\"></a>轮次边界驱逐",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_memory_storage\"></a>Memory Storage",
+      "translation": "<a class=\"anchor\" href=\"#_memory_storage\"></a>内存存储",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_in_memory_repository\"></a>In-Memory Repository",
+      "translation": "<a class=\"anchor\" href=\"#_in_memory_repository\"></a>内存存储库",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_reading_message_timestamps\"></a>Reading Message Timestamps",
+      "translation": "<a class=\"anchor\" href=\"#_reading_message_timestamps\"></a>阅读消息时间戳",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_supported_databases_and_dialect_abstraction\"></a>Supported Databases and Dialect Abstraction",
+      "translation": "<a class=\"anchor\" href=\"#_supported_databases_and_dialect_abstraction\"></a>支持的数据库和方言抽象",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_configuration_properties\"></a>Configuration Properties",
+      "translation": "<a class=\"anchor\" href=\"#_configuration_properties\"></a>配置属性",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_schema_initialization\"></a>Schema Initialization",
+      "translation": "<a class=\"anchor\" href=\"#_schema_initialization\"></a>模式初始化",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_extending_dialects\"></a>Extending Dialects",
+      "translation": "<a class=\"anchor\" href=\"#_extending_dialects\"></a>扩展方言",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_configuration_properties_2\"></a>Configuration Properties",
+      "translation": "<a class=\"anchor\" href=\"#_configuration_properties_2\"></a>配置属性",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_schema_initialization_2\"></a>Schema Initialization",
+      "translation": "<a class=\"anchor\" href=\"#_schema_initialization_2\"></a>模式初始化",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_neo4j_chatmemoryrepository\"></a>Neo4j ChatMemoryRepository",
+      "translation": "<a class=\"anchor\" href=\"#_neo4j_chatmemoryrepository\"></a>Neo4j 聊天记忆存储库",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_configuration_properties_3\"></a>Configuration Properties",
+      "translation": "<a class=\"anchor\" href=\"#_configuration_properties_3\"></a>配置属性",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_index_initialization\"></a>Index Initialization",
+      "translation": "<a class=\"anchor\" href=\"#_index_initialization\"></a>索引初始化",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_configuration_properties_4\"></a>Configuration Properties",
+      "translation": "<a class=\"anchor\" href=\"#_configuration_properties_4\"></a>配置属性",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_collection_initialization\"></a>Collection Initialization",
+      "translation": "<a class=\"anchor\" href=\"#_collection_initialization\"></a>集合初始化",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_configuration_properties_5\"></a>Configuration Properties",
+      "translation": "<a class=\"anchor\" href=\"#_configuration_properties_5\"></a>配置属性",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_advanced_querying\"></a>Advanced Querying",
+      "translation": "<a class=\"anchor\" href=\"#_advanced_querying\"></a>高级查询",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_metadata_field_indexing\"></a>Metadata Field Indexing",
+      "translation": "<a class=\"anchor\" href=\"#_metadata_field_indexing\"></a>元数据字段索引",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_schema_initialization_3\"></a>Schema Initialization",
+      "translation": "<a class=\"anchor\" href=\"#_schema_initialization_3\"></a>模式初始化",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_memory_in_chat_client\"></a>Memory in Chat Client",
+      "translation": "<a class=\"anchor\" href=\"#_memory_in_chat_client\"></a>聊天客户端中的记忆",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_custom_template\"></a>Custom Template",
+      "translation": "<a class=\"anchor\" href=\"#_custom_template\"></a>自定义模板",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_memory_in_chat_model\"></a>Memory in Chat Model",
+      "translation": "<a class=\"anchor\" href=\"#_memory_in_chat_model\"></a>聊天模型中的记忆",
+      "count": 1
+    },
+    {
+      "source": "Why Spring",
+      "translation": "为何是春天",
+      "count": 1
+    },
+    {
+      "source": "Spring AI",
+      "translation": "Spring AI",
+      "count": 1
+    },
+    {
+      "source": "Chat Memory",
+      "translation": "聊天记忆",
+      "count": 1
+    }
+  ]
+}

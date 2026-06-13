@@ -1,0 +1,1251 @@
+{
+  "created_at": "2026-06-13 14:43:15",
+  "updated_at": "2026-06-13 14:43:15",
+  "stats": {
+    "total_entries": 247,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 258,
+    "entries_with_hits": 247,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0445344129554657,
+    "usage_percentage": 0.0247
+  },
+  "items": [
+    {
+      "source": "❌ Not supported",
+      "translation": "❌ 不支持",
+      "count": 7
+    },
+    {
+      "source": "Use <code>thinkingLevel</code> with any level including <code>MINIMAL</code> and <code>MEDIUM</code>.",
+      "translation": "请使用<code>thinkingLevel</code>设置任意级别，包括<code>MINIMAL</code>和<code>MEDIUM</code>。",
+      "count": 2
+    },
+    {
+      "source": "Use <code>thinkingBudget</code>. Set to 0 to disable, -1 for dynamic.",
+      "translation": "使用 `<code>thinkingBudget</code>`。设置为 0 以禁用，-1 表示动态。",
+      "count": 2
+    },
+    {
+      "source": "Or programmatically at runtime:",
+      "translation": "或在运行时通过编程方式：",
+      "count": 2
+    },
+    {
+      "source": "✅ All levels",
+      "translation": "✅ 所有级别",
+      "count": 2
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\nRefer to the <a class=\"xref page\" href=\"../../getting-started.html#dependency-management\">Dependency Management</a> section to add the Spring AI BOM to your build file.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"提示\"></i>\n</td>\n<td class=\"content\">\n请参考<a class=\"xref page\" href=\"../../getting-started.html#dependency-management\">依赖管理</a>部分，将 Spring AI BOM 添加到您的构建文件中。\n</td>\n</tr>\n</tbody>",
+      "count": 2
+    },
+    {
+      "source": "Copyright © 2005 - <script>var d = new Date();\n        document.write(d.getFullYear());</script> Broadcom. All Rights Reserved. The term \"Broadcom\" refers to Broadcom Inc. and/or its subsidiaries.<br/><a href=\"https://www.vmware.com/help/legal.html\">Terms of Use</a> • <a href=\"https://www.vmware.com/help/privacy.html\" rel=\"noopener noreferrer\">Privacy</a> • <a href=\"https://spring.io/trademarks\">Trademark Guidelines</a> <span id=\"thank-you-mobile\">• <a href=\"https://spring.io/thank-you\">Thank you</a></span> • <a href=\"https://www.vmware.com/help/privacy/california-privacy-rights.html\">Your California Privacy Rights</a> • <a class=\"ot-sdk-show-settings\">Cookie Settings</a> <span id=\"teconsent\"></span>",
+      "translation": "版权所有 © 2005 - <script>var d = new Date(); document.write(d.getFullYear());</script> Broadcom。保留所有权利。“Broadcom”指 Broadcom Inc. 及其/或其子公司。<br/><a href=\"https://www.vmware.com/help/legal.html\">使用条款</a> • <a href=\"https://www.vmware.com/help/privacy.html\" rel=\"noopener noreferrer\">隐私政策</a> • <a href=\"https://spring.io/trademarks\">商标指南</a> <span id=\"thank-you-mobile\">• <a href=\"https://spring.io/thank-you\">致谢</a></span> • <a href=\"https://www.vmware.com/help/privacy/california-privacy-rights.html\">您的加州隐私权利</a> • <a class=\"ot-sdk-show-settings\">Cookie 设置</a> <span id=\"teconsent\"></span>",
+      "count": 1
+    },
+    {
+      "source": "Use <code>thinkingLevel</code> for <strong>Gemini 3.x</strong> models. Gemini 3 Pro only supports <code>LOW</code> and <code>HIGH</code>; Gemini 3 Flash models support all levels (<code>MINIMAL</code>, <code>LOW</code>, <code>MEDIUM</code>, <code>HIGH</code>).",
+      "translation": "请使用 `<code>thinkingLevel</code>` 参数为<strong>Gemini 3.x</strong> 系列模型。Gemini 3 Pro 仅支持`<code>LOW</code>`和`<code>HIGH</code>`两个级别；而 Gemini 3 Flash 系列模型则支持所有级别（`<code>MINIMAL</code>`、`<code>LOW</code>`、`<code>MEDIUM</code>`、`<code>HIGH</code>`）。",
+      "count": 1
+    },
+    {
+      "source": "Supported <a href=\"https://ai.google.dev/gemini-api/docs/models\">Google GenAI Chat models</a> to use, includes <code>gemini-2.5-flash</code>, <code>gemini-2.5-flash-lite</code>, <code>gemini-2.5-pro</code>, <code>gemini-3.1-pro-preview</code>, <code>gemini-3.1-flash-lite</code> and <code>gemini-3.5-flash</code>.",
+      "translation": "支持使用的<a href=\"https://ai.google.dev/gemini-api/docs/models\">Google GenAI 对话模型</a>包括：<code>gemini-2.5-flash</code>、<code>gemini-2.5-flash-lite</code>、<code>gemini-2.5-pro</code>、<code>gemini-3.1-pro-preview</code>、<code>gemini-3.1-flash-lite</code>和<code>gemini-3.5-flash</code>。",
+      "count": 1
+    },
+    {
+      "source": "The level of thinking tokens the model should generate. Valid values: <code>LOW</code>, <code>HIGH</code>, <code>THINKING_LEVEL_UNSPECIFIED</code>. See <a href=\"#thinking-config\">Thinking Configuration</a>.",
+      "translation": "模型应生成的思维 token 级别。有效值：<code>LOW</code>、<code>HIGH</code>、<code>THINKING_LEVEL_UNSPECIFIED</code>。请参阅<a href=\"#thinking-config\">思维配置</a>。",
+      "count": 1
+    },
+    {
+      "source": "Use this pattern when you need direct access to the <code>ChatModel</code> API and want full control over the tool-call loop.\nInvoke <code>ChatModel</code> directly without <code>ToolCallingAdvisor</code>; check for tool calls yourself and drive the loop using <code>ToolCallingManager</code>.",
+      "translation": "当您需要直接访问<code>ChatModel</code> API 并希望完全控制工具调用循环时，请使用此模式。  \n直接调用<code>ChatModel</code>而无需使用<code>ToolCallingAdvisor</code>；自行检查工具调用情况，并使用<code>ToolCallingManager</code>驱动循环。",
+      "count": 1
+    },
+    {
+      "source": "The type of server-side tool (e.g., <code>GOOGLE_SEARCH_WEB</code>, <code>GOOGLE_SEARCH_IMAGE</code>, <code>URL_CONTEXT</code>, <code>GOOGLE_MAPS</code>)",
+      "translation": "服务器端工具的类型（例如：<code>GOOGLE_SEARCH_WEB</code>、<code>GOOGLE_SEARCH_IMAGE</code>、<code>URL_CONTEXT</code>、<code>GOOGLE_MAPS</code>）",
+      "count": 1
+    },
+    {
+      "source": "Gemini models support a \"thinking\" capability that allows the model to perform deeper reasoning before generating responses. This is controlled through the <code>ThinkingConfig</code> which includes three related options: <code>thinkingBudget</code>, <code>thinkingLevel</code>, and <code>includeThoughts</code>.",
+      "translation": "Gemini 模型支持“思考”功能，使模型能够在生成回复之前进行更深入的推理。该功能通过<code>ThinkingConfig</code>进行控制，其中包括三个相关选项：<code>thinkingBudget</code>、<code>thinkingLevel</code>和<code>includeThoughts</code>。",
+      "count": 1
+    },
+    {
+      "source": "Multimodality refers to a model’s ability to simultaneously understand and process information from various (input) sources, including <code>text</code>, <code>pdf</code>, <code>images</code>, <code>audio</code>, and other data formats.",
+      "translation": "多模态是指模型同时理解和处理来自多种（输入）来源信息的能力，包括<code>text</code>、<code>pdf</code>、<code>images</code>、<code>audio</code>以及其他数据格式。",
+      "count": 1
+    },
+    {
+      "source": "The service tier to use for the request. Valid values: <code>STANDARD</code>, <code>PRIORITY</code>, <code>FLEX</code>.",
+      "translation": "请求要使用的服务等级。有效值：<code>STANDARD</code>、<code>PRIORITY</code>、<code>FLEX</code>。",
+      "count": 1
+    },
+    {
+      "source": "<strong><code>thinkingLevel</code> and <code>thinkingBudget</code> are mutually exclusive.</strong> You cannot use both in the same request - doing so will result in an API error.",
+      "translation": "<strong><code>thinkingLevel</code> 和 <code>thinkingBudget</code> 是互斥的。</strong> 您不能在同一个请求中同时使用两者，否则会导致 API 错误。",
+      "count": 1
+    },
+    {
+      "source": "You can combine <code>includeThoughts</code> with either <code>thinkingLevel</code> or <code>thinkingBudget</code> (but not both):",
+      "translation": "您可以将 `<code>includeThoughts</code>` 与 `<code>thinkingLevel</code>` 或 `<code>thinkingBudget</code>` 中的任意一个结合使用（但不能同时使用两者）：",
+      "count": 1
+    },
+    {
+      "source": "Using <code>MINIMAL</code> or <code>MEDIUM</code> with Gemini 3 Pro models will result in an <code>IllegalArgumentException</code>.",
+      "translation": "使用 <code>MINIMAL</code> 或 <code>MEDIUM</code> 与 Gemini 3 Pro 模型配合将导致抛出 <code>IllegalArgumentException</code>。",
+      "count": 1
+    },
+    {
+      "source": "Gemini 3 Pro Preview is only available on <strong>global</strong> endpoints. Set <code>spring.ai.google.genai.location=global</code> or <code>GOOGLE_CLOUD_LOCATION=global</code>.",
+      "translation": "Gemini 3 Pro Preview 仅在<strong>全球</strong>端点可用。请设置<code>spring.ai.google.genai.location=global</code>或<code>GOOGLE_CLOUD_LOCATION=global</code>。",
+      "count": 1
+    },
+    {
+      "source": "<strong>IMPORTANT</strong>: Thought signature validation only applies to the <strong>current turn</strong> - specifically during the tool-call loop when the model makes function calls (both parallel and sequential). The API does <strong>not</strong> validate thought signatures for previous turns in conversation history.",
+      "translation": "<strong>重要提示</strong>：思维签名验证仅适用于<strong>当前轮次</strong>——具体而言，是在模型执行函数调用（包括并行和顺序调用）的工具调用循环期间。API <strong>不会</strong>对对话历史中先前轮次的思维签名进行验证。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI’s <code>Message</code> interface supports multimodal AI models by introducing the Media type.\nThis type contains data and information about media attachments in messages, using Spring’s <code>org.springframework.util.MimeType</code> and a <code>java.lang.Object</code> for the raw media data.",
+      "translation": "Spring AI 的 `<code>Message`接口通过引入 Media 类型来支持多模态 AI 模型。该类型包含消息中媒体附件的数据和信息，使用 Spring 的 `<code>org.springframework.util.MimeType</code>`以及一个 `<code>java.lang.Object</code>`来表示原始媒体数据。",
+      "count": 1
+    },
+    {
+      "source": "The <a href=\"https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-google-genai/src/main/java/org/springframework/ai/google/genai/GoogleGenAiChatModel.java\">GoogleGenAiChatModel</a> implements the <code>ChatModel</code> and uses the <code>com.google.genai.Client</code> to connect to the Google GenAI service.",
+      "translation": "<a href=\"https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-google-genai/src/main/java/org/springframework/ai/google/genai/GoogleGenAiChatModel.java\">GoogleGenAiChatModel</a> 实现了 <code>ChatModel</code>，并使用 <code>com.google.genai.Client</code> 连接到 Google GenAI 服务。",
+      "count": 1
+    },
+    {
+      "source": "<strong>SDK</strong>: Google GenAI uses the new <code>com.google.genai.Client</code> instead of <code>com.google.cloud.vertexai.VertexAI</code>",
+      "translation": "<strong>SDK</strong>：Google GenAI 现已改用新的 <code>com.google.genai.Client</code>，而不再使用 <code>com.google.cloud.vertexai.VertexAI</code>。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Package Names</strong>: Classes are in <code>org.springframework.ai.google.genai</code> instead of <code>org.springframework.ai.vertexai.gemini</code>",
+      "translation": "<strong>包名</strong>：类位于 <code>org.springframework.ai.google.genai</code>，而非 <code>org.springframework.ai.vertexai.gemini</code>",
+      "count": 1
+    },
+    {
+      "source": "<strong>Property Prefix</strong>: Uses <code>spring.ai.google.genai</code> instead of <code>spring.ai.vertex.ai.gemini</code>",
+      "translation": "<strong>属性前缀</strong>：使用 <code>spring.ai.google.genai</code> 而非 <code>spring.ai.vertex.ai.gemini</code>",
+      "count": 1
+    },
+    {
+      "source": "Authenticate by running the following command.\nReplace <code>PROJECT_ID</code> with your Google Cloud project ID and <code>ACCOUNT</code> with your Google Cloud username.",
+      "translation": "运行以下命令进行身份验证。将 `<code>PROJECT_ID</code>` 替换为您的 Google Cloud 项目 ID，将 `<code>ACCOUNT</code>` 替换为您的 Google Cloud 用户名。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI provides Spring Boot auto-configuration for the Google GenAI Chat Client.\nTo enable it add the following dependency to your project’s Maven <code>pom.xml</code> or Gradle <code>build.gradle</code> build files:",
+      "translation": "Spring AI 为 Google GenAI 聊天客户端提供了 Spring Boot 自动配置功能。\n要启用此功能，请在项目的 Maven `<code>pom.xml</code>` 或 Gradle `<code>build.gradle</code>` 构建文件中添加以下依赖：",
+      "count": 1
+    },
+    {
+      "source": "<code>text/plain</code>: (default) Text output or <code>application/json</code>: JSON response.",
+      "translation": "<code>text/plain</code>：（默认）文本输出，或<code>application/json</code>：JSON 响应。",
+      "count": 1
+    },
+    {
+      "source": "Enable thought signatures for function calling. <strong>Required</strong> for Gemini 3 Pro to avoid validation errors during the tool-call loop. See <a href=\"#thought-signatures\">Thought Signatures</a>.",
+      "translation": "启用函数调用的思维签名。<strong>必需</strong>，以避免 Gemini 3 Pro 在工具调用循环期间出现验证错误。请参阅<a href=\"#thought-signatures\">思维签名</a>。",
+      "count": 1
+    },
+    {
+      "source": "The name of cached content to use for this request. When set along with <code>use-cached-content=true</code>, the cached content will be used as context. See <a href=\"#cached-content\">Cached Content</a>.",
+      "translation": "此请求要使用的缓存内容名称。当与<code>use-cached-content=true</code>一起设置时，将使用缓存的内容作为上下文。请参阅<a href=\"#cached-content\">缓存内容</a>。",
+      "count": 1
+    },
+    {
+      "source": "On start-up, the default options can be configured with the <code>GoogleGenAiChatModel(client, options)</code> constructor or the <code>spring.ai.google.genai.chat.*</code> properties.",
+      "translation": "启动时，默认选项可以通过 `<code>GoogleGenAiChatModel(client, options)</code>` 构造函数或 `<code>spring.ai.google.genai.chat.*</code>` 属性进行配置。",
+      "count": 1
+    },
+    {
+      "source": "The recommended approach is to use <code>ChatClient</code> with the <code>ToolCallingAdvisor</code>, which is automatically registered and manages the tool-call loop transparently for both synchronous and streaming scenarios.",
+      "translation": "建议使用带有<code>ToolCallingAdvisor</code>的<code>ChatClient</code>，该组件会自动注册并透明地管理同步和流式场景下的工具调用循环。",
+      "count": 1
+    },
+    {
+      "source": "When Google Search or other server-side tools are enabled via <code>googleSearchRetrieval(true)</code>, the model executes these tools on the server. By default, these invocations are invisible to the client — you only see the final text response. Setting <code>includeServerSideToolInvocations(true)</code> makes the API include the server’s tool calls and responses in the response content, allowing you to observe what the model searched for and what results it received.",
+      "translation": "当通过 `<code>googleSearchRetrieval(true)</code>` 启用 Google 搜索或其他服务端工具时，模型会在服务端执行这些工具。默认情况下，这些调用对客户端不可见——您只能看到最终的文本响应。设置 `<code>includeServerSideToolInvocations(true)</code>` 可使 API 将服务端的工具调用和响应包含在响应内容中，从而让您能够观察模型搜索的内容以及接收到的结果。",
+      "count": 1
+    },
+    {
+      "source": "This feature is only supported with the <strong>Gemini Developer API</strong> (MLDev / API key authentication). It is <strong>not supported</strong> on Vertex AI.",
+      "translation": "此功能仅支持<strong>Gemini 开发者 API</strong>（使用 MLDev/API 密钥进行身份验证）。它<strong>不支持</strong>Vertex AI。",
+      "count": 1
+    },
+    {
+      "source": "Either <code>\"toolCall\"</code> (the model’s invocation request) or <code>\"toolResponse\"</code> (the server’s result)",
+      "translation": "要么是 `<code>\"toolCall\"</code>`（模型的调用请求），要么是 `<code>\"toolResponse\"</code>`（服务器的响应结果）。",
+      "count": 1
+    },
+    {
+      "source": "Unique identifier linking a <code>toolCall</code> to its corresponding <code>toolResponse</code>",
+      "translation": "用于将 `<code>toolCall</code>` 与其对应的 `<code>toolResponse</code>` 关联起来的唯一标识符。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Positive value</strong>: Maximum number of tokens for thinking (e.g., <code>8192</code>)",
+      "translation": "<strong>正值</strong>：思考的最大 token 数量（例如：<code>8192</code>）",
+      "count": 1
+    },
+    {
+      "source": "<strong>Zero (<code>0</code>)</strong>: Disables thinking entirely",
+      "translation": "<strong>零 (<code>0</code>)</strong>：完全禁用思考功能",
+      "count": 1
+    },
+    {
+      "source": "Use <code>thinkingBudget</code> (token count) for <strong>Gemini 2.5</strong> series models.",
+      "translation": "请使用 `<code>thinkingBudget</code>`（令牌数）为<strong>Gemini 2.5</strong>系列模型。",
+      "count": 1
+    },
+    {
+      "source": "Use <code>thinkingLevel</code>. Cannot disable thinking. Requires <strong>global</strong> endpoint.",
+      "translation": "<code>thinkingLevel</code>。无法禁用思考。需要<strong>全局</strong>端点。",
+      "count": 1
+    },
+    {
+      "source": "Gemini 3 Pro introduces thought signatures, which are opaque byte arrays that preserve the model’s reasoning context during function calling. When <code>includeThoughts</code> is enabled, the model returns thought signatures that must be passed back within the <strong>same turn</strong> during the tool-call loop.",
+      "translation": "Gemini 3 Pro 引入了思维签名，这是一种不透明的字节数组，可在函数调用期间保留模型的推理上下文。当启用<code>includeThoughts</code>时，模型将返回思维签名，这些签名必须在工具调用循环的<strong>同一轮次</strong>中回传。",
+      "count": 1
+    },
+    {
+      "source": "When using <code>ChatClient</code> with <code>ToolCallingAdvisor</code> (the recommended approach), Spring AI automatically handles thought signatures:",
+      "translation": "在使用 <code>ChatClient</code> 与 <code>ToolCallingAdvisor</code>（推荐方法）时，Spring AI 会自动处理思维签名：",
+      "count": 1
+    },
+    {
+      "source": "<strong>Attaches</strong> them to the correct <code>functionCall</code> parts when sending back function responses",
+      "translation": "在返回函数响应时，将它们附加到正确的 `functionCall` 部分。",
+      "count": 1
+    },
+    {
+      "source": "When using a manual tool execution loop, you must preserve thought signatures by keeping the original <code>AssistantMessage</code> (with its metadata) in the conversation history. Spring AI automatically attaches the signatures to the correct <code>functionCall</code> parts when converting messages.",
+      "translation": "在使用手动工具执行循环时，必须通过保留原始<code>AssistantMessage</code>（包含其元数据）来维护思维签名。Spring AI 在转换消息时会自动将签名附加到正确的<code>functionCall</code>部分。",
+      "count": 1
+    },
+    {
+      "source": "When sending back function responses, include the original <code>AssistantMessage</code> with its metadata intact in your message history. Spring AI will automatically attach the thought signatures to the correct <code>functionCall</code> parts.",
+      "translation": "在返回函数响应时，请在消息历史中包含原始的 `<code>AssistantMessage</code>` 及其完整的元数据。Spring AI 将自动将思维签名附加到正确的 `<code>functionCall</code>` 部分。",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"https://start.spring.io/\">Create</a> a new Spring Boot project and add the <code>spring-ai-starter-model-google-genai</code> to your pom (or gradle) dependencies.",
+      "translation": "<a href=\"https://start.spring.io/\">创建</a>一个新的 Spring Boot 项目，并在您的 pom（或 gradle）依赖中添加<code>spring-ai-starter-model-google-genai</code>。",
+      "count": 1
+    },
+    {
+      "source": "Add a <code>application.properties</code> file, under the <code>src/main/resources</code> directory, to enable and configure the Google GenAI chat model:",
+      "translation": "在 `src/main/resources` 目录下添加一个 `<code>application.properties</code>` 文件，以启用并配置 Google GenAI 聊天模型：",
+      "count": 1
+    },
+    {
+      "source": "This will create a <code>GoogleGenAiChatModel</code> implementation that you can inject into your class.\nHere is an example of a simple <code>@Controller</code> class that uses the chat model for text generations.",
+      "translation": "这将创建一个 <code>GoogleGenAiChatModel</code> 实现，您可以将其注入到您的类中。以下是一个使用聊天模型进行文本生成的简单 <code>@Controller</code> 类的示例。",
+      "count": 1
+    },
+    {
+      "source": "Add the <code>spring-ai-google-genai</code> dependency to your project’s Maven <code>pom.xml</code> file:",
+      "translation": "将 `<code>spring-ai-google-genai</code>` 依赖添加到您的项目的 Maven `<code>pom.xml</code>` 文件中：",
+      "count": 1
+    },
+    {
+      "source": "The <code>GoogleGenAiChatOptions</code> provides the configuration information for the chat requests.\nThe <code>GoogleGenAiChatOptions.Builder</code> is fluent options builder.",
+      "translation": "<code>GoogleGenAiChatOptions</code> 提供聊天请求的配置信息。\n<code>GoogleGenAiChatOptions.Builder</code> 是一个流式选项构建器。",
+      "count": 1
+    },
+    {
+      "source": "The <a href=\"https://ai.google.dev/gemini-api/docs\">Google GenAI API</a> allows developers to build generative AI applications using Google’s Gemini models through either the Gemini Developer API or Vertex AI.\nThe Google GenAI API supports multimodal prompts as input and outputs text or code.\nA multimodal model is capable of processing information from multiple modalities, including images, videos, and text. For example, you can send the model a photo of a plate of cookies and ask it to give you a recipe for those cookies.",
+      "translation": "Google GenAI API 允许开发者通过 Gemini Developer API 或 Vertex AI，利用 Google 的 Gemini 模型构建生成式人工智能应用程序。  \nGoogle GenAI API 支持以多模态提示作为输入，并输出文本或代码。  \n多模态模型能够处理来自多种模态的信息，包括图像、视频和文本。例如，您可以向模型发送一盘曲奇饼干的图片，并要求它提供制作这些饼干的方法。",
+      "count": 1
+    },
+    {
+      "source": "Gemini is a family of generative AI models developed by Google DeepMind that is designed for multimodal use cases. The Gemini API gives you access to <a href=\"https://ai.google.dev/gemini-api/docs/models\">various models</a> like Gemini Flash-Lite, Gemini Flash or Gemini Pro.",
+      "translation": "Gemini 是由 Google DeepMind 开发的一系列生成式 AI 模型，专为多模态应用场景而设计。Gemini API 让您能够访问各种模型，例如 Gemini Flash-Lite、Gemini Flash 或 Gemini Pro。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Gemini Developer API</strong>: Use an API key for quick prototyping and development",
+      "translation": "<strong>Gemini 开发者 API</strong>：使用 API 密钥进行快速原型开发和开发工作。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Vertex AI</strong>: Use Google Cloud credentials for production deployments with enterprise features",
+      "translation": "<strong>Vertex AI</strong>：使用 Google Cloud 凭据进行具有企业功能的生产部署",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"https://ai.google.dev/api\">Gemini API Reference</a>",
+      "translation": "<a href=\"https://ai.google.dev/api\">Gemini API 参考文档</a>",
+      "count": 1
+    },
+    {
+      "source": "Obtain an API key from the <a href=\"https://aistudio.google.com/app/apikey\">Google AI Studio</a>",
+      "translation": "从<a href=\"https://aistudio.google.com/app/apikey\">Google AI Studio</a>获取 API 密钥。",
+      "count": 1
+    },
+    {
+      "source": "Install the <a href=\"https://cloud.google.com/sdk/docs/install\">gcloud</a> CLI, appropriate for your OS.",
+      "translation": "安装适用于您操作系统的 <a href=\"https://cloud.google.com/sdk/docs/install\">gcloud</a> 命令行接口 (CLI)。",
+      "count": 1
+    },
+    {
+      "source": "There has been a significant change in the Spring AI auto-configuration, starter modules' artifact names.\nPlease refer to the <a href=\"https://docs.spring.io/spring-ai/reference/upgrade-notes.html\">upgrade notes</a> for more information.",
+      "translation": "Spring AI 的自动配置中，starter 模块的构件名称已发生重大变更。\n有关更多信息，请参阅<a href=\"https://docs.spring.io/spring-ai/reference/upgrade-notes.html\">升级说明</a>。",
+      "count": 1
+    },
+    {
+      "source": "Enabling and disabling of the chat auto-configurations are now configured via top level properties with the prefix <code>spring.ai.model.chat</code>.",
+      "translation": "启用和禁用聊天自动配置现在通过带有前缀<code>spring.ai.model.chat</code>的顶层属性进行配置。",
+      "count": 1
+    },
+    {
+      "source": "The prefix <code>spring.ai.google.genai</code> is used as the property prefix that lets you connect to Google GenAI.",
+      "translation": "<code>spring.ai.google.genai</code> 前缀用作属性前缀，用于连接 Google GenAI。",
+      "count": 1
+    },
+    {
+      "source": "URI to Google Cloud credentials. When provided it is used to create a <code>GoogleCredentials</code> instance for authentication.",
+      "translation": "将 URI 转换为 Google Cloud 凭据。如果提供该参数，则用于创建用于身份验证的 <code>GoogleCredentials</code> 实例。",
+      "count": 1
+    },
+    {
+      "source": "The prefix <code>spring.ai.google.genai.chat</code> is the property prefix that lets you configure the chat model implementation for Google GenAI Chat.",
+      "translation": "<code>spring.ai.google.genai.chat</code> 前缀是用于配置 Google GenAI Chat 聊天模型实现的属性前缀。",
+      "count": 1
+    },
+    {
+      "source": "When true, the API response includes server-side tool calls and responses (e.g., Google Search invocations) in the response metadata, allowing observation of the server’s tool usage. Only supported with Gemini Developer API (MLDev), not Vertex AI. See <a href=\"#server-side-tool-invocations\">Server-Side Tool Invocations</a>.",
+      "translation": "当为真时，API 响应会在响应元数据中包含服务器端工具调用和响应（例如 Google 搜索调用），从而允许观察服务器的工具使用情况。此功能仅支持 Gemini Developer API (MLDev)，不支持 Vertex AI。请参阅 <a href=\"#server-side-tool-invocations\">服务器端工具调用</a>。",
+      "count": 1
+    },
+    {
+      "source": "Thinking budget for the thinking process. See <a href=\"#thinking-config\">Thinking Configuration</a>.",
+      "translation": "思考预算用于思考过程。请参阅<a href=\"#thinking-config\">思考配置</a>。",
+      "count": 1
+    },
+    {
+      "source": "List of safety settings to control safety filters, as defined by <a href=\"https://ai.google.dev/gemini-api/docs/safety-settings\">Google GenAI Safety Settings</a>. Each safety setting can have a method, threshold, and category.",
+      "translation": "用于控制安全过滤器的安全设置列表，定义方式参考<a href=\"https://ai.google.dev/gemini-api/docs/safety-settings\">Google GenAI 安全设置</a>。每个安全设置均可包含方法、阈值和类别。",
+      "count": 1
+    },
+    {
+      "source": "Whether to use cached content if available. When true and <code>cached-content-name</code> is set, the system will use the cached content.",
+      "translation": "是否使用可用的缓存内容。当设置为 true 且已设置 `<code>cached-content-name</code>` 时，系统将使用缓存的内容。",
+      "count": 1
+    },
+    {
+      "source": "Time-to-live (Duration) for auto-cached content in ISO-8601 format (e.g., <code>PT1H</code> for 1 hour). Used when auto-caching is enabled.",
+      "translation": "自动缓存内容的生存时间（持续时间），格式为 ISO-8601（例如，<code>PT1H</code> 表示 1 小时）。仅在启用自动缓存时使用。",
+      "count": 1
+    },
+    {
+      "source": "Enable the <code>GoogleGenAiCachedContentService</code> bean for managing cached content.",
+      "translation": "启用用于管理缓存内容的<code>GoogleGenAiCachedContentService</code>Bean。",
+      "count": 1
+    },
+    {
+      "source": "The <a href=\"https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-google-genai/src/main/java/org/springframework/ai/google/genai/GoogleGenAiChatOptions.java\">GoogleGenAiChatOptions.java</a> provides model configurations, such as the temperature, the topK, etc.",
+      "translation": "<a href=\"https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-google-genai/src/main/java/org/springframework/ai/google/genai/GoogleGenAiChatOptions.java\">GoogleGenAiChatOptions.java</a> 提供了模型配置，例如温度（temperature）、topK 等。",
+      "count": 1
+    },
+    {
+      "source": "At runtime, you can override the default options by adding new, request specific, options to the <code>Prompt</code> call.\nFor example, to override the default temperature for a specific request:",
+      "translation": "在运行时，您可以通过向 `<code>Prompt</code>` 调用添加新的、特定于请求的选项来覆盖默认选项。\n例如，要覆盖特定请求的默认温度：",
+      "count": 1
+    },
+    {
+      "source": "<code>GoogleGenAiChatModel</code> does not execute tool calls internally.\nTool execution must be handled externally using one of the two supported approaches below.",
+      "translation": "<code>GoogleGenAiChatModel</code> 不会在内部执行工具调用。  \n必须使用以下两种支持的方法之一在外部处理工具执行。",
+      "count": 1
+    },
+    {
+      "source": "You can also register a <code>ToolCallback</code> bean and pass it directly:",
+      "translation": "您还可以注册一个 `<code>ToolCallback</code>` 圈并将其直接传递：",
+      "count": 1
+    },
+    {
+      "source": "Find more in <a class=\"xref page\" href=\"../tools.html\">Tools</a> documentation.",
+      "translation": "有关更多信息，请参阅<a class=\"xref page\" href=\"../tools.html\">工具</a>文档。",
+      "count": 1
+    },
+    {
+      "source": "When enabled, server-side tool invocations are available in the response message metadata under the <code>serverSideToolInvocations</code> key:",
+      "translation": "启用后，服务端工具调用将出现在响应消息元数据的 `<code>serverSideToolInvocations</code>` 键下：",
+      "count": 1
+    },
+    {
+      "source": "The <code>thinkingLevel</code> option controls the depth of reasoning tokens the model generates. This is available for models that support thinking (e.g., Gemini 3 Pro Preview).",
+      "translation": "`thinkingLevel` 选项控制模型生成的推理 token 的深度。此功能适用于支持思考的模型（例如 Gemini 3 Pro Preview）。",
+      "count": 1
+    },
+    {
+      "source": "The <code>thinkingBudget</code> option sets a token budget for the thinking process:",
+      "translation": "`thinkingBudget` 选项为思考过程设置了一个令牌预算：",
+      "count": 1
+    },
+    {
+      "source": "<strong>Not set</strong>: Model decides automatically based on query complexity",
+      "translation": "<strong>未设置</strong>：模型将根据查询复杂度自动决定",
+      "count": 1
+    },
+    {
+      "source": "Thinking disabled by default. Set <code>thinkingBudget</code> to enable.",
+      "translation": "默认禁用思考。设置 <code>thinkingBudget</code> 以启用。",
+      "count": 1
+    },
+    {
+      "source": "Using <code>thinkingLevel</code> with unsupported models (e.g., Gemini 2.5 or earlier) will result in an API error.",
+      "translation": "在不受支持的模型（例如 Gemini 2.5 或更早版本）中使用<code>thinkingLevel</code>将导致 API 错误。",
+      "count": 1
+    },
+    {
+      "source": "Check the <a href=\"https://ai.google.dev/gemini-api/docs/thinking\">Google GenAI Thinking documentation</a> for the latest model capabilities.",
+      "translation": "请查看<a href=\"https://ai.google.dev/gemini-api/docs/thinking\">Google GenAI 思考功能文档</a>以了解最新的模型能力。",
+      "count": 1
+    },
+    {
+      "source": "Per <a href=\"https://ai.google.dev/gemini-api/docs/thought-signatures\">Google’s documentation</a>:",
+      "translation": "根据<a href=\"https://ai.google.dev/gemini-api/docs/thought-signatures\">Google 的文档</a>：",
+      "count": 1
+    },
+    {
+      "source": "For parallel function calls, only the first <code>functionCall</code> part carries the signature",
+      "translation": "对于并行函数调用，仅第一个 `<code>functionCall</code>` 部分携带签名。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Extracts</strong> thought signatures from model responses",
+      "translation": "<strong>提取</strong>模型响应中的思维签名",
+      "count": 1
+    },
+    {
+      "source": "<strong>Propagates</strong> them correctly during function calls within a single turn (both parallel and sequential)",
+      "translation": "在单次轮次内的函数调用中正确传播它们（包括并行和顺序调用）",
+      "count": 1
+    },
+    {
+      "source": "<strong>Requirements for manual tool execution with thought signatures:</strong>",
+      "translation": "<strong>使用思维签名执行手动工具的要求：</strong>",
+      "count": 1
+    },
+    {
+      "source": "Google’s Gemini AI models support this capability by comprehending and integrating text, code, audio, images, and video.\nFor more details, refer to the blog post <a href=\"https://blog.google/technology/ai/google-gemini-ai/#introducing-gemini\">Introducing Gemini</a>.",
+      "translation": "Google 的 Gemini AI 模型通过理解并整合文本、代码、音频、图像和视频来支持这一功能。\n如需了解更多详情，请参阅博客文章 <a href=\"https://blog.google/technology/ai/google-gemini-ai/#introducing-gemini\">介绍 Gemini</a>。",
+      "count": 1
+    },
+    {
+      "source": "Below is a simple code example extracted from <a href=\"https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-google-genai/src/test/java/org/springframework/ai/google/genai/GoogleGenAiChatModelIT.java\">GoogleGenAiChatModelIT.java</a>, demonstrating the combination of user text with an image.",
+      "translation": "下面是一个从<a href=\"https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-google-genai/src/test/java/org/springframework/ai/google/genai/GoogleGenAiChatModelIT.java\">GoogleGenAiChatModelIT.java</a>中提取的简单代码示例，展示了如何将用户文本与图像相结合。",
+      "count": 1
+    },
+    {
+      "source": "Google GenAI provides support for PDF input types.\nUse the <code>application/pdf</code> media type to attach a PDF file to the message:",
+      "translation": "Google GenAI 支持 PDF 输入类型。使用 `application/pdf` 媒体类型将 PDF 文件附加到消息中：",
+      "count": 1
+    },
+    {
+      "source": "Google GenAI’s <a href=\"https://ai.google.dev/gemini-api/docs/caching\">Context Caching</a> allows you to cache large amounts of content (such as long documents, code repositories, or media) and reuse it across multiple requests. This significantly reduces API costs and improves response latency for repeated queries on the same content.",
+      "translation": "Google GenAI 的<a href=\"https://ai.google.dev/gemini-api/docs/caching\">上下文缓存</a>功能允许您缓存大量内容（如长文档、代码库或媒体），并在多个请求中重复使用。这显著降低了 API 成本，并提高了对相同内容的重复查询的响应延迟。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Cost Reduction</strong>: Cached tokens are billed at a much lower rate than regular input tokens (typically 75-90% cheaper)",
+      "translation": "<strong>降低成本</strong>：缓存 token 的计费费率远低于普通输入 token（通常便宜 75%-90%）",
+      "count": 1
+    },
+    {
+      "source": "<strong>Improved Performance</strong>: Reusing cached content reduces processing time for large contexts",
+      "translation": "<strong>性能提升</strong>：复用缓存内容可缩短大上下文的处理时间。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Consistency</strong>: Same cached context ensures consistent responses across multiple requests",
+      "translation": "<strong>一致性</strong>：相同的缓存上下文确保多次请求之间响应的一致性。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI provides <code>GoogleGenAiCachedContentService</code> for programmatic cache management. The service is automatically configured when using the Spring Boot auto-configuration.",
+      "translation": "Spring AI 提供了 `GoogleGenAiCachedContentService` 用于程序化缓存管理。在使用 Spring Boot 自动配置时，该服务会自动进行配置。",
+      "count": 1
+    },
+    {
+      "source": "The <code>GoogleGenAiCachedContentService</code> provides comprehensive cache management:",
+      "translation": "<code>GoogleGenAiCachedContentService</code> 提供全面的缓存管理功能：",
+      "count": 1
+    },
+    {
+      "source": "<strong>Cache Lifetime</strong>: Set appropriate TTL based on your use case. Shorter TTLs for frequently changing content, longer for static content.",
+      "translation": "<strong>缓存有效期</strong>：根据您的使用场景设置适当的 TTL。对于频繁更新的内容，使用较短的 TTL；对于静态内容，使用较长的 TTL。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Cache Naming</strong>: Use descriptive display names to identify cached content easily.",
+      "translation": "<strong>缓存命名</strong>：使用描述性显示名称以便轻松识别缓存内容。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Cleanup</strong>: Periodically clean up expired caches to maintain organization.",
+      "translation": "<strong>清理</strong>：定期清理过期的缓存以保持有序。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Token Threshold</strong>: Only cache content that exceeds the minimum threshold (32,768 tokens).",
+      "translation": "<strong>令牌阈值</strong>：仅缓存超过最低阈值（32,768 个令牌）的内容。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Cost Optimization</strong>: Reuse cached content across multiple requests to maximize cost savings.",
+      "translation": "<strong>成本优化</strong>：跨多个请求复用缓存内容，以最大化节省成本。",
+      "count": 1
+    },
+    {
+      "source": "or to your Gradle <code>build.gradle</code> build file.",
+      "translation": "或者将其添加到您的 Gradle `<code>build.gradle</code>` 构建文件中。",
+      "count": 1
+    },
+    {
+      "source": "Next, create a <code>GoogleGenAiChatModel</code> and use it for text generations:",
+      "translation": "接下来，创建一个 <code>GoogleGenAiChatModel</code> 并用于文本生成：",
+      "count": 1
+    },
+    {
+      "source": "If you were previously using the Vertex AI Gemini implementation (<code>spring-ai-vertex-ai-gemini</code>), which has been removed, migrate to Google GenAI:",
+      "translation": "如果您之前使用的是已被移除的 Vertex AI Gemini 实现（<code>spring-ai-vertex-ai-gemini</code>），请迁移到 Google GenAI：",
+      "count": 1
+    },
+    {
+      "source": "<strong>Authentication</strong>: Supports both API key and Google Cloud credentials (Vertex AI mode)",
+      "translation": "<strong>身份验证</strong>：支持 API 密钥和 Google Cloud 凭据（Vertex AI 模式）",
+      "count": 1
+    },
+    {
+      "source": "This implementation provides two authentication modes:",
+      "translation": "此实现提供两种身份验证模式：",
+      "count": 1
+    },
+    {
+      "source": "Choose one of the following authentication methods:",
+      "translation": "请选择以下认证方法之一：",
+      "count": 1
+    },
+    {
+      "source": "Set the API key as an environment variable or in your application properties",
+      "translation": "将 API 密钥设置为环境变量或在您的应用程序属性中配置。",
+      "count": 1
+    },
+    {
+      "source": "To enable, spring.ai.model.chat=google-genai (It is enabled by default)",
+      "translation": "要启用该功能，请设置 spring.ai.model.chat=google-genai（默认已启用）。",
+      "count": 1
+    },
+    {
+      "source": "To disable, spring.ai.model.chat=none (or any value which doesn’t match google-genai)",
+      "translation": "要禁用该功能，请将 spring.ai.model.chat 设置为 none（或任何不等于 google-genai 的值）。",
+      "count": 1
+    },
+    {
+      "source": "This change is done to allow configuration of multiple models.",
+      "translation": "此更改旨在支持配置多个模型。",
+      "count": 1
+    },
+    {
+      "source": "Enable Chat Model client",
+      "translation": "启用聊天模型客户端",
+      "count": 1
+    },
+    {
+      "source": "API key for Gemini Developer API. When provided, the client uses the Gemini Developer API instead of Vertex AI.",
+      "translation": "Gemini 开发者 API 的 API 密钥。提供该密钥时，客户端将使用 Gemini 开发者 API 而非 Vertex AI。",
+      "count": 1
+    },
+    {
+      "source": "Google Cloud Platform project ID (required for Vertex AI mode)",
+      "translation": "Vertex AI 模式所需的 Google Cloud Platform 项目 ID",
+      "count": 1
+    },
+    {
+      "source": "Google Cloud region (required for Vertex AI mode)",
+      "translation": "Vertex AI 模式所需的 Google Cloud 区域",
+      "count": 1
+    },
+    {
+      "source": "Output response mimetype of the generated candidate text.",
+      "translation": "text/plain",
+      "count": 1
+    },
+    {
+      "source": "Use Google search Grounding feature",
+      "translation": "使用 Google 搜索 grounding 功能。",
+      "count": 1
+    },
+    {
+      "source": "Controls the randomness of the output. Values can range over [0.0,1.0], inclusive. A value closer to 1.0 will produce responses that are more varied, while a value closer to 0.0 will typically result in less surprising responses from the generative.",
+      "translation": "控制输出的随机性。取值范围为 [0.0, 1.0]，包含端点值。越接近 1.0 的值会产生更多样化的回复，而越接近 0.0 的值通常会导致生成结果更加不可预测性较低。",
+      "count": 1
+    },
+    {
+      "source": "The maximum number of tokens to consider when sampling. The generative uses combined Top-k and nucleus sampling. Top-k sampling considers the set of topK most probable tokens.",
+      "translation": "采样时考虑的最大 token 数量。生成过程结合了 Top-k 和核采样（nucleus sampling）。Top-k 采样会考虑概率最高的前 K 个 token 集合。",
+      "count": 1
+    },
+    {
+      "source": "The maximum cumulative probability of tokens to consider when sampling. The generative uses combined Top-k and nucleus sampling. Nucleus sampling considers the smallest set of tokens whose probability sum is at least topP.",
+      "translation": "采样时考虑的最大累积概率。生成过程结合了 Top-k 和核采样（nucleus sampling）。核采样会选取概率总和至少为 topP 的最小 token 集合。",
+      "count": 1
+    },
+    {
+      "source": "The number of generated response messages to return. This value must be between [1, 8], inclusive. Defaults to 1.",
+      "translation": "要返回的生成响应消息数量。该值必须在 [1, 8] 范围内（包含边界），默认为 1。",
+      "count": 1
+    },
+    {
+      "source": "The maximum number of tokens to generate.",
+      "translation": "生成 token 的最大数量。",
+      "count": 1
+    },
+    {
+      "source": "Frequency penalties for reducing repetition.",
+      "translation": "降低重复率的频率惩罚。",
+      "count": 1
+    },
+    {
+      "source": "Presence penalties for reducing repetition.",
+      "translation": "用于减少重复的惩罚项。",
+      "count": 1
+    },
+    {
+      "source": "Tool Callbacks to register with the ChatModel.",
+      "translation": "用于与 ChatModel 注册的回调工具。",
+      "count": 1
+    },
+    {
+      "source": "Automatically cache prompts that exceed this token threshold. When set, prompts larger than this value will be automatically cached for reuse. Set to null to disable auto-caching.",
+      "translation": "自动缓存超过此令牌阈值的提示。启用后，大于此值的提示将自动缓存以供重用。设置为 null 可禁用自动缓存。",
+      "count": 1
+    },
+    {
+      "source": "Enable via application properties:",
+      "translation": "通过应用程序属性启用：",
+      "count": 1
+    },
+    {
+      "source": "Each entry in the list contains:",
+      "translation": "列表中的每个条目包含：",
+      "count": 1
+    },
+    {
+      "source": "(toolCall only) The arguments passed to the tool",
+      "translation": "(toolCall 仅) 传递给工具的参数",
+      "count": 1
+    },
+    {
+      "source": "(toolResponse only) The results returned by the tool",
+      "translation": "工具返回的结果。",
+      "count": 1
+    },
+    {
+      "source": "Server-side tool invocations work alongside client-side function calling. You can enable both Google Search (server-side) and custom functions (client-side) in the same request:",
+      "translation": "服务器端工具调用与客户端函数调用协同工作。您可以在同一请求中同时启用 Google 搜索（服务器端）和自定义函数（客户端）：",
+      "count": 1
+    },
+    {
+      "source": "The model uses its default behavior.",
+      "translation": "该模型使用其默认行为。",
+      "count": 1
+    },
+    {
+      "source": "Matches the \"no thinking\" setting for most queries. Minimizes latency.",
+      "translation": "符合大多数查询的“无思考”设置，最小化延迟。",
+      "count": 1
+    },
+    {
+      "source": "Low thinking. Minimal reasoning tokens.",
+      "translation": "低阶思维。推理 token 最少。",
+      "count": 1
+    },
+    {
+      "source": "Balanced thinking for most tasks.",
+      "translation": "大多数任务需要平衡的思维。",
+      "count": 1
+    },
+    {
+      "source": "Extensive thinking. Use for complex problems requiring deep analysis and step-by-step reasoning.",
+      "translation": "深入思考。适用于需要深度分析和逐步推理的复杂问题。",
+      "count": 1
+    },
+    {
+      "source": "The thinking configuration options are model-specific:",
+      "translation": "思考配置选项因模型而异：",
+      "count": 1
+    },
+    {
+      "source": "Gemini 3 Pro Preview",
+      "translation": "Gemini 3 Pro 预览版",
+      "count": 1
+    },
+    {
+      "source": "⚠️ Backwards compatible only",
+      "translation": "⚠️ 仅向后兼容",
+      "count": 1
+    },
+    {
+      "source": "Gemini 3.5 Flash",
+      "translation": "Gemini 3.5 Flash",
+      "count": 1
+    },
+    {
+      "source": "Gemini 3.1 Flash-Lite",
+      "translation": "Gemini 3.1 Flash-Lite",
+      "count": 1
+    },
+    {
+      "source": "Gemini 2.5 Pro",
+      "translation": "Gemini 2.5 Pro",
+      "count": 1
+    },
+    {
+      "source": "Gemini 2.5 Flash",
+      "translation": "Gemini 2.5 Flash",
+      "count": 1
+    },
+    {
+      "source": "Gemini 2.5 Flash-Lite",
+      "translation": "Gemini 2.5 Flash-Lite",
+      "count": 1
+    },
+    {
+      "source": "Gemini 2.0 Flash",
+      "translation": "Gemini 2.0 Flash",
+      "count": 1
+    },
+    {
+      "source": "Thinking not available.",
+      "translation": "无法提供思考过程。",
+      "count": 1
+    },
+    {
+      "source": "Validation is enforced for function calls within the current turn only",
+      "translation": "仅对当前回合内的函数调用强制执行验证。",
+      "count": 1
+    },
+    {
+      "source": "Previous turn signatures do not need to be preserved",
+      "translation": "无需保留之前的签名。",
+      "count": 1
+    },
+    {
+      "source": "Missing signatures in the current turn’s function calls result in HTTP 400 errors for Gemini 3 Pro",
+      "translation": "当前轮次函数调用中缺少签名会导致 Gemini 3 Pro 返回 HTTP 400 错误。",
+      "count": 1
+    },
+    {
+      "source": "For Gemini 2.5 Pro and earlier models, thought signatures are optional and the API is lenient.",
+      "translation": "对于 Gemini 2.5 Pro 及更早版本的模型，思维签名是可选的，API 对此较为宽松。",
+      "count": 1
+    },
+    {
+      "source": "Enable thought signatures using configuration properties:",
+      "translation": "使用配置属性启用思维签名：",
+      "count": 1
+    },
+    {
+      "source": "Extract thought signatures from the response metadata:",
+      "translation": "从响应元数据中提取思维签名：",
+      "count": 1
+    },
+    {
+      "source": "For Gemini 3 Pro, failing to preserve thought signatures during the current turn will result in HTTP 400 errors from the API.",
+      "translation": "对于 Gemini 3 Pro，若在当前轮次中未保留思维签名，将导致 API 返回 HTTP 400 错误。",
+      "count": 1
+    },
+    {
+      "source": "Minimum cache size: 32,768 tokens (approximately 25,000 words)",
+      "translation": "最小缓存大小：32,768 个 token（约 25,000 词）",
+      "count": 1
+    },
+    {
+      "source": "Maximum cache duration: 1 hour by default (configurable via TTL)",
+      "translation": "最大缓存时长：默认为 1 小时（可通过 TTL 配置）",
+      "count": 1
+    },
+    {
+      "source": "Cached content must include either system instructions or conversation history",
+      "translation": "缓存内容必须包含系统指令或对话历史。",
+      "count": 1
+    },
+    {
+      "source": "Once you’ve created cached content, reference it in your chat requests:",
+      "translation": "创建缓存内容后，请在聊天请求中引用它：",
+      "count": 1
+    },
+    {
+      "source": "Or via configuration properties:",
+      "translation": "或通过配置属性：",
+      "count": 1
+    },
+    {
+      "source": "All operations have asynchronous variants:",
+      "translation": "所有操作都有异步变体：",
+      "count": 1
+    },
+    {
+      "source": "Spring AI can automatically cache large prompts when they exceed a specified token threshold:",
+      "translation": "当提示超过指定的令牌阈值时，Spring AI 可以自动缓存大型提示：",
+      "count": 1
+    },
+    {
+      "source": "Or programmatically:",
+      "translation": "或者通过编程方式：",
+      "count": 1
+    },
+    {
+      "source": "Cached content includes usage metadata accessible via the service:",
+      "translation": "缓存内容包含可通过服务访问的使用元数据：",
+      "count": 1
+    },
+    {
+      "source": "Complete configuration example:",
+      "translation": "完整配置示例：",
+      "count": 1
+    },
+    {
+      "source": "Each model has its own set of supported regions, you can find the list of supported regions in the model page.",
+      "translation": "每个模型都有其支持的特定区域列表，您可以在模型页面中找到该列表。",
+      "count": 1
+    },
+    {
+      "source": "Key Differences:",
+      "translation": "主要区别：",
+      "count": 1
+    },
+    {
+      "source": "Google GenAI supports both quick prototyping with API keys and production deployments using Vertex AI through Google Cloud credentials.",
+      "translation": "Google GenAI 既支持使用 API 密钥进行快速原型开发，也支持通过 Google Cloud 凭据在 Vertex AI 上进行生产部署。",
+      "count": 1
+    },
+    {
+      "source": "The Google GenAI implementation is built on the new Google GenAI Java SDK, which provides a modern, streamlined API for accessing Gemini models.",
+      "translation": "Google GenAI 的实现基于新的 Google GenAI Java SDK，该 SDK 为访问 Gemini 模型提供了现代化且简化的 API。",
+      "count": 1
+    },
+    {
+      "source": "Apache®, Apache Tomcat®, Apache Kafka®, Apache Cassandra™, and Apache Geode™ are trademarks or registered trademarks of the Apache Software Foundation in the United States and/or other countries. Java™, Java™ SE, Java™ EE, and OpenJDK™ are trademarks of Oracle and/or its affiliates. Kubernetes® is a registered trademark of the Linux Foundation in the United States and other countries. Linux® is the registered trademark of Linus Torvalds in the United States and other countries. Windows® and Microsoft® Azure are registered trademarks of Microsoft Corporation. “AWS” and “Amazon Web Services” are trademarks or registered trademarks of Amazon.com Inc. or its affiliates. All other trademarks and copyrights are property of their respective owners and are only mentioned for informative purposes. Other names may be trademarks of their respective owners.",
+      "translation": "Apache®、Apache Tomcat®、Apache Kafka®、Apache Cassandra™ 和 Apache Geode™ 是 Apache 软件基金会在美国和其他/或某些国家的商标或注册商标。Java™、Java™ SE、Java™ EE 和 OpenJDK™ 是 Oracle 公司和/或其关联公司的商标。Kubernetes® 是 Linux 基金会在美国和其他/或某些国家的注册商标。Linux® 是 Linus Torvalds 在美国和其他/或某些国家的注册商标。Windows® 和 Microsoft® Azure 是微软公司的注册商标。\"AWS\"和\"Amazon Web Services\"是 Amazon.com Inc. 或其关联公司的商标或注册商标。所有其他商标和版权均归各自所有者所有，仅用于说明目的。其他名称可能是其各自所有者的商标。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/projects\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-boot\">Spring Boot</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-framework\">Spring Framework</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud\">Spring Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud-dataflow\">Spring Cloud Data Flow</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-data\">Spring Data</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-integration\">Spring Integration</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-batch\">Spring Batch</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-security\">Spring Security</a>\n            <a class=\"navbar-item navbar-item-special\" href=\"https://spring.io/projects\">View all projects</a>\n            <li class=\"navbar-item navbar-item-special-3\">DEVELOPMENT TOOLS</li>\n            <a class=\"navbar-item\" href=\"https://spring.io/tools\">Spring Tools 4</a>\n            <a class=\"navbar-item navbar-item-special-2\" href=\"https://start.spring.io\">Spring Initializr\n              <svg id=\"svg-stash-f15b5668\"></svg></a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/projects\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-boot\">Spring Boot</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-framework\">Spring Framework</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud\">Spring Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud-dataflow\">Spring Cloud Data Flow</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-data\">Spring Data</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-integration\">Spring Integration</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-batch\">Spring Batch</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-security\">Spring Security</a>\n            <a class=\"navbar-item navbar-item-special\" href=\"https://spring.io/projects\">查看所有项目</a>\n            <li class=\"navbar-item navbar-item-special-3\">开发工具</li>\n            <a class=\"navbar-item\" href=\"https://spring.io/tools\">Spring Tools 4</a>\n            <a class=\"navbar-item navbar-item-special-2\" href=\"https://start.spring.io\">Spring Initializr\n              <svg id=\"svg-stash-f15b5668\"></svg></a>",
+      "count": 1
+    },
+    {
+      "source": "<nav aria-label=\"breadcrumbs\" class=\"breadcrumbs\">\n    <ul>\n      <li><a href=\"../../index.html\">Spring AI</a></li>\n      <li>Reference</li>\n      <li><a href=\"../index.html\">Models</a></li>\n      <li><a href=\"../chatmodel.html\">Chat Models</a></li>\n      <li><a href=\"google-genai-chat.html\">Google GenAI</a></li>\n    </ul>\n  </nav>",
+      "translation": "<nav aria-label=\"面包屑\" class=\"breadcrumbs\">\n    <ul>\n      <li><a href=\"../../index.html\">Spring AI</a></li>\n      <li>参考</li>\n      <li><a href=\"../index.html\">模型</a></li>\n      <li><a href=\"../chatmodel.html\">聊天模型</a></li>\n      <li><a href=\"google-genai-chat.html\">Google GenAI</a></li>\n    </ul>\n  </nav>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/why-spring\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/microservices\">Microservices</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/reactive\">Reactive</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/event-driven\">Event\n              Driven</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/cloud\">Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/web-applications\">Web\n              Applications</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/serverless\">Serverless</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/batch\">Batch</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/why-spring\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/microservices\">微服务</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/reactive\">响应式</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/event-driven\">事件驱动</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/cloud\">云</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/web-applications\">Web 应用</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/serverless\">无服务器</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/batch\">批处理</a>",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/chat/google-genai-chat.adoc\">\n          <svg id=\"svg-stash-05b5c46b\"></svg>\n          Edit this Page\n        </a>\n        <a href=\"https://github.com/spring-projects/spring-ai\" title=\"GitHub\">\n          <svg id=\"svg-stash-28d888b7\"></svg>\n          GitHub Project\n        </a>",
+      "translation": "<a href=\"file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/chat/google-genai-chat.adoc\">\n          <svg id=\"svg-stash-05b5c46b\"></svg>\n          编辑此页面\n        </a>\n        <a href=\"https://github.com/spring-projects/spring-ai\" title=\"GitHub\">\n          <svg id=\"svg-stash-28d888b7\"></svg>\n          GitHub 项目\n        </a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/solutions\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/support\">Spring Runtime</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/consulting\">Spring Consulting</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/teams\">Spring Academy For Teams</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/security\">Security Advisories</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/solutions\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/support\">Spring 运行时</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/consulting\">Spring 咨询</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/teams\">Spring Academy 团队培训</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/security\">安全公告</a>",
+      "count": 1
+    },
+    {
+      "source": "<ul class=\"projects\">\n  <li>\n    Related Spring Documentation\n    <ul class=\"projects-list\">\n    </ul>\n  </li><a href=\"../../spring-projects.html\">All Docs...</a>\n</ul>",
+      "translation": "<ul class=\"projects\">\n  <li>\n    相关 Spring 文档\n    <ul class=\"projects-list\">\n    </ul>\n  </li><a href=\"../../spring-projects.html\">所有文档...</a>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.academy/courses\">Courses</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/learning-path\">Get Certified</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.academy/courses\">课程</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/learning-path\">获取认证</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"title\" href=\"../../index.html\">Spring AI</a>",
+      "translation": "<a class=\"title\" href=\"../../index.html\">Spring AI</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"search-link\" href=\"../../search.html\">Search in all Spring Docs</a>",
+      "translation": "<a class=\"search-link\" href=\"../../search.html\">在全部 Spring 文档中搜索</a>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../vectordbs.html\">Vector Databases</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/azure.html\">Azure AI Service</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/azure-cosmos-db.html\">Azure Cosmos DB</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/bedrock-knowledge-base.html\">Amazon Bedrock Knowledge Base</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/apache-cassandra.html\">Apache Cassandra Vector Store</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/chroma.html\">Chroma</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/couchbase.html\">Couchbase</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/elasticsearch.html\">Elasticsearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/gemfire.html\">GemFire</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/mariadb.html\">MariaDB Vector Store</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/milvus.html\">Milvus</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/mongodb.html\">MongoDB Atlas</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/neo4j.html\">Neo4j</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/opensearch.html\">OpenSearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/oracle.html\">Oracle</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/pgvector.html\">PGvector</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/pinecone.html\">Pinecone</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/qdrant.html\">Qdrant</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/redis.html\">Redis</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/typesense.html\">Typesense</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/weaviate.html\">Weaviate</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/s3-vector-store.html\">S3 Vector Store</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"../vectordbs.html\">向量数据库</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/azure.html\">Azure AI 服务</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/azure-cosmos-db.html\">Azure Cosmos DB</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/bedrock-knowledge-base.html\">Amazon Bedrock 知识库</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/apache-cassandra.html\">Apache Cassandra 向量存储</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/chroma.html\">Chroma</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/couchbase.html\">Couchbase</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/elasticsearch.html\">Elasticsearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/gemfire.html\">GemFire</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/mariadb.html\">MariaDB 向量存储</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/milvus.html\">Milvus</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/mongodb.html\">MongoDB Atlas</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/neo4j.html\">Neo4j</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/opensearch.html\">OpenSearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/oracle.html\">Oracle</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/pgvector.html\">PGvector</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/pinecone.html\">Pinecone</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/qdrant.html\">Qdrant</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/redis.html\">Redis</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/typesense.html\">Typesense</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/weaviate.html\">Weaviate</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/s3-vector-store.html\">S3 向量存储</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../embeddings.html\">Embedding Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../bedrock.html\">Amazon Bedrock</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/bedrock-cohere-embedding.html\">Cohere</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/bedrock-titan-embedding.html\">Titan</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/azure-openai-embeddings.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/google-genai-embeddings-text.html\">Google GenAI Text Embedding</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/mistralai-embeddings.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/oci-genai-embeddings.html\">OCI GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/ollama-embeddings.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/onnx.html\">(ONNX) Transformers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/openai-embeddings.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/postgresml-embeddings.html\">PostgresML</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">VertexAI</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/vertexai-embeddings-text.html\">Text Embedding</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/vertexai-embeddings-multimodal.html\">Multimodal Embedding</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../embeddings.html\">嵌入模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../bedrock.html\">Amazon Bedrock</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/bedrock-cohere-embedding.html\">Cohere</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/bedrock-titan-embedding.html\">Titan</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/azure-openai-embeddings.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/google-genai-embeddings-text.html\">Google GenAI 文本嵌入</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/mistralai-embeddings.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/oci-genai-embeddings.html\">OCI GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/ollama-embeddings.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/onnx.html\">(ONNX) Transformers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/openai-embeddings.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/postgresml-embeddings.html\">PostgresML</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">VertexAI</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/vertexai-embeddings-text.html\">文本嵌入</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/vertexai-embeddings-multimodal.html\">多模态嵌入</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../chatmodel.html\">Chat Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"comparison.html\">Chat Models Comparison</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"bedrock-converse.html\">Amazon Bedrock Converse</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"anthropic-chat.html\">Anthropic</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"azure-openai-chat.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"deepseek-chat.html\">DeepSeek</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"dmr-chat.html\">Docker Model Runner</a>\n  </li>\n  <li class=\"nav-item is-current-page\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"google-genai-chat.html\">Google GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"groq-chat.html\">Groq</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mistralai-chat.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"minimax-chat.html\">MiniMax</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"nvidia-chat.html\">NVIDIA</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"ollama-chat.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"perplexity-chat.html\">Perplexity AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"oci-genai-chat.html\">OCI Generative AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"openai-chat.html\">OpenAI</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"../chatmodel.html\">对话模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"comparison.html\">对话模型对比</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"bedrock-converse.html\">Amazon Bedrock Converse</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"anthropic-chat.html\">Anthropic</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"azure-openai-chat.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"deepseek-chat.html\">DeepSeek</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"dmr-chat.html\">Docker Model Runner</a>\n  </li>\n  <li class=\"nav-item is-current-page\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"google-genai-chat.html\">Google GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"groq-chat.html\">Groq</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mistralai-chat.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"minimax-chat.html\">MiniMax</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"nvidia-chat.html\">NVIDIA</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"ollama-chat.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"perplexity-chat.html\">Perplexity AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"oci-genai-chat.html\">OCI Generative AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"openai-chat.html\">OpenAI</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-overview.html\">Model Context Protocol (MCP)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-client-boot-starter-docs.html\">MCP Client Boot Starters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-server-boot-starter-docs.html\">MCP Server Boot Starters</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-stdio-sse-server-boot-starter-docs.html\">STDIO and SSE MCP Servers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-streamable-http-server-boot-starter-docs.html\">Streamable-HTTP MCP Servers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-stateless-server-boot-starter-docs.html\">Stateless Streamable-HTTP MCP Servers</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-security.html\">MCP Security (WIP)</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-overview.html\">MCP Annotations</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-client.html\">Client Annotations</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-server.html\">Server Annotations</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-special-params.html\">Special Parameters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-examples.html\">MCP Annotations Examples</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"../mcp/mcp-overview.html\">模型上下文协议 (MCP)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-client-boot-starter-docs.html\">MCP 客户端启动器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-server-boot-starter-docs.html\">MCP 服务器启动器</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-stdio-sse-server-boot-starter-docs.html\">STDIO 和 SSE MCP 服务器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-streamable-http-server-boot-starter-docs.html\">流式 HTTP MCP 服务器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-stateless-server-boot-starter-docs.html\">无状态流式 HTTP MCP 服务器</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-security.html\">MCP 安全性 (进行中)</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-overview.html\">MCP 注解</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-client.html\">客户端注解</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-server.html\">服务器注解</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-special-params.html\">特殊参数</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-examples.html\">MCP 注解示例</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">Guides</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/spring-ai-community/awesome-spring-ai\">Awesome Spring AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/getting-started-mcp.html\">Getting Started with MCP</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/dynamic-tool-search.html\">Dynamic Tool Discovery</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/llm-as-judge.html\">LLM-as-a-Judge Evaluation</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"prompt-engineering-patterns.html\">Prompt Engineering Patterns</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../effective-agents.html\">Building Effective Agents</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agents\">Building agents with Spring AI by AWS</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agentcore\">Building agents with Spring AI and AgentCore by AWS</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/microsoft/Spring-AI-for-Beginners\">Spring AI for Beginners by Microsoft</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<span class=\"nav-text\">指南</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/spring-ai-community/awesome-spring-ai\">Awesome Spring AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/getting-started-mcp.html\">MCP 入门</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/dynamic-tool-search.html\">动态工具发现</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/llm-as-judge.html\">LLM-as-a-Judge 评估</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"prompt-engineering-patterns.html\">提示工程模式</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../effective-agents.html\">构建高效智能体</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agents\">AWS 使用 Spring AI 构建智能体</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agentcore\">AWS 使用 Spring AI 和 AgentCore 构建智能体</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/microsoft/Spring-AI-for-Beginners\">Microsoft 的 Spring AI 初学者指南</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio.html\">Audio Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio/transcriptions.html\">Transcription API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/transcriptions/azure-openai-transcriptions.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/transcriptions/openai-transcriptions.html\">OpenAI</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio/speech.html\">Text-To-Speech (TTS) API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/speech/openai-speech.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/speech/elevenlabs-speech.html\">ElevenLabs</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio.html\">音频模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio/transcriptions.html\">转录 API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/transcriptions/azure-openai-transcriptions.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/transcriptions/openai-transcriptions.html\">OpenAI</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio/speech.html\">文本转语音 (TTS) API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/speech/openai-speech.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/speech/elevenlabs-speech.html\">ElevenLabs</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../chatclient.html\">Chat Client API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../advisors.html\">Advisors</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../advisors-recursive.html\">Recursive Advisors</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"../chatclient.html\">聊天客户端 API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../advisors.html\">顾问</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../advisors-recursive.html\">递归顾问</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../imageclient.html\">Image Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/azure-openai-image.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/openai-image.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/stabilityai-image.html\">Stability</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"../imageclient.html\">图像模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/azure-openai-image.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/openai-image.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/stabilityai-image.html\">Stability</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\nReplace the <code>project-id</code> with your Google Cloud Project ID and <code>location</code> is Google Cloud Region\nlike <code>us-central1</code>, <code>europe-west1</code>, etc…​\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"提示\"></i>\n</td>\n<td class=\"content\">\n将 <code>project-id</code> 替换为您的 Google Cloud 项目 ID，<code>location</code> 为 Google Cloud 区域，例如 <code>us-central1</code>、<code>europe-west1</code> 等……\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\nAll properties prefixed with <code>spring.ai.google.genai.chat</code> can be overridden at runtime by adding a request specific <a href=\"#chat-options\">Runtime options</a> to the <code>Prompt</code> call.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\n所有以 <code>spring.ai.google.genai.chat</code> 开头的属性都可以通过在 <code>Prompt</code> 调用中添加特定于请求的<a href=\"#chat-options\">运行时选项</a>来在运行时进行覆盖。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\nIn addition to the model specific <code>GoogleGenAiChatOptions</code> you can use a portable <a href=\"https://github.com/spring-projects/spring-ai/blob/main/spring-ai-model/src/main/java/org/springframework/ai/chat/prompt/ChatOptions.java\">ChatOptions</a> instance, created with the <a href=\"https://github.com/spring-projects/spring-ai/blob/main/spring-ai-model/src/main/java/org/springframework/ai/chat/prompt/DefaultChatOptionsBuilder.java\">ChatOptions#builder()</a>.\n</td>\n</tr>\n</tbody>",
+      "translation": "除了针对特定模型的 <code>GoogleGenAiChatOptions</code> 之外，您还可以使用可移植的 <a href=\"https://github.com/spring-projects/spring-ai/blob/main/spring-ai-model/src/main/java/org/springframework/ai/chat/prompt/ChatOptions.java\">ChatOptions</a> 实例，该实例可通过 <a href=\"https://github.com/spring-projects/spring-ai/blob/main/spring-ai-model/src/main/java/org/springframework/ai/chat/prompt/DefaultChatOptionsBuilder.java\">ChatOptions#builder()</a> 创建。",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../moderation.html\">Moderation Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../moderation/openai-moderation.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../moderation/mistral-ai-moderation.html\">Mistral AI</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../moderation.html\">内容审核模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../moderation/openai-moderation.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../moderation/mistral-ai-moderation.html\">Mistral AI</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../../upgrade-notes.html\">Upgrade Notes</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../tools-migration.html\">Migrating FunctionCallback to ToolCallback API</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"anthropic-migration.html\">Migrating the Anthropic Module to the Official Java SDK</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"../../upgrade-notes.html\">升级说明</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../tools-migration.html\">将 FunctionCallback 迁移至 ToolCallback API</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"anthropic-migration.html\">将 Anthropic 模块迁移至官方 Java SDK</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<tr>\n<th class=\"tableblock halign-left valign-top\">Model</th>\n<th class=\"tableblock halign-left valign-top\">Model ID</th>\n<th class=\"tableblock halign-left valign-top\">thinkingLevel</th>\n<th class=\"tableblock halign-left valign-top\">thinkingBudget</th>\n<th class=\"tableblock halign-left valign-top\">Notes</th>\n</tr>",
+      "translation": "<tr>\n<th class=\"tableblock halign-left valign-top\">模型</th>\n<th class=\"tableblock halign-left valign-top\">模型 ID</th>\n<th class=\"tableblock halign-left valign-top\">thinkingLevel</th>\n<th class=\"tableblock halign-left valign-top\">thinkingBudget</th>\n<th class=\"tableblock halign-left valign-top\">备注</th>\n</tr>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nEnabling <code>includeThoughts</code> increases token usage as thought processes are included in responses. This impacts API costs but provides better reasoning transparency.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n启用 <code>includeThoughts</code> 会增加 token 用量，因为思考过程会被包含在响应中。这会影响 API 成本，但能提供更好的推理透明度。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../../index.html\">Overview</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../concepts.html\">AI Concepts</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../../index.html\">概览</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../concepts.html\">AI 概念</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../retrieval-augmented-generation.html\">Retrieval Augmented Generation (RAG)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../etl-pipeline.html\">ETL Pipeline</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"../retrieval-augmented-generation.html\">检索增强生成 (RAG)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../etl-pipeline.html\">ETL 管道</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nServer-side tool invocations are observational only — the client does not execute them. They are surfaced in metadata separately from client-side function calls to avoid interfering with the tool execution loop.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n服务端工具调用仅用于观测——客户端不会执行它们。为了避免干扰工具执行循环，这些调用在元数据中与客户端函数调用分开展示。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nEnabling thinking features increases token usage and API costs. Use appropriately based on the complexity of your queries.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n启用思考功能会增加 token 用量和 API 成本。请根据查询的复杂度合理使用。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-important\" title=\"Important\"></i>\n</td>\n<td class=\"content\">\nOnly the current turn’s function calls require thought signatures. When starting a new conversation turn (after completing a function calling round), you do not need to preserve the previous turn’s signatures.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-important\" title=\"Important\"></i>\n</td>\n<td class=\"content\">\n仅当前回合的函数调用需要思维签名。在开始新的对话回合（即完成一个函数调用轮次后），无需保留上一回合的签名。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nAuto-caching is useful for one-time large contexts. For repeated use of the same context, manually creating and referencing cached content is more efficient.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n自动缓存适用于一次性的大规模上下文。对于重复使用相同上下文的情况，手动创建和引用缓存内容更为高效。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"prev\"><a href=\"dmr-chat.html\">Docker Model Runner</a></span>\n  <span class=\"next\"><a href=\"groq-chat.html\">Groq</a></span>",
+      "translation": "<span class=\"prev\"><a href=\"dmr-chat.html\">Docker 模型运行器</a></span>\n  <span class=\"next\"><a href=\"groq-chat.html\">Groq</a></span>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../../getting-started.html\">Getting Started</a>",
+      "translation": "<a class=\"nav-link\" href=\"../../getting-started.html\">入门指南</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../structured-output-converter.html\">Structured Output</a>",
+      "translation": "<a class=\"nav-link\" href=\"../structured-output-converter.html\">结构化输出</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../chat-memory.html\">Chat Memory</a>",
+      "translation": "<a class=\"nav-link\" href=\"../chat-memory.html\">对话记忆</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../tools.html\">Tool Calling</a>",
+      "translation": "<a class=\"nav-link\" href=\"../tools.html\">工具调用</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../testing.html\">Model Evaluation</a>",
+      "translation": "<a class=\"nav-link\" href=\"../testing.html\">模型评估</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../docker-compose.html\">Development-time Services</a>",
+      "translation": "<a class=\"nav-link\" href=\"../docker-compose.html\">开发时服务</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_option_1_gemini_developer_api_api_key\"></a>Option 1: Gemini Developer API (API Key)",
+      "translation": "<a class=\"anchor\" href=\"#_option_1_gemini_developer_api_api_key\"></a>选项 1：Gemini 开发者 API（API 密钥）",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_option_2_vertex_ai_google_cloud\"></a>Option 2: Vertex AI (Google Cloud)",
+      "translation": "<a class=\"anchor\" href=\"#_option_2_vertex_ai_google_cloud\"></a>选项 2：Vertex AI（Google Cloud）",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_chat_properties\"></a>Chat Properties",
+      "translation": "<a class=\"anchor\" href=\"#_chat_properties\"></a>聊天属性",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_connection_properties\"></a>Connection Properties",
+      "translation": "<a class=\"anchor\" href=\"#_connection_properties\"></a>连接属性",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_chat_model_properties\"></a>Chat Model Properties",
+      "translation": "<a class=\"anchor\" href=\"#_chat_model_properties\"></a>聊天模型属性",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#chat-options\"></a>Runtime options",
+      "translation": "<a class=\"anchor\" href=\"#chat-options\"></a>运行时选项",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_tool_calling\"></a>Tool Calling",
+      "translation": "<a class=\"anchor\" href=\"#_tool_calling\"></a>工具调用",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_tool_calling_via_chatclient_recommended\"></a>Tool Calling via ChatClient (Recommended)",
+      "translation": "<a class=\"anchor\" href=\"#_tool_calling_via_chatclient_recommended\"></a>通过 ChatClient 进行工具调用（推荐）",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_user_controlled_tool_execution\"></a>User-Controlled Tool Execution",
+      "translation": "<a class=\"anchor\" href=\"#_user_controlled_tool_execution\"></a>用户控制的工具执行",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#server-side-tool-invocations\"></a>Server-Side Tool Invocations",
+      "translation": "<a class=\"anchor\" href=\"#server-side-tool-invocations\"></a>服务端工具调用",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_accessing_server_side_tool_invocation_metadata\"></a>Accessing Server-Side Tool Invocation Metadata",
+      "translation": "<a class=\"anchor\" href=\"#_accessing_server_side_tool_invocation_metadata\"></a>访问服务器端工具调用元数据",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_combined_with_function_calling\"></a>Combined with Function Calling",
+      "translation": "<a class=\"anchor\" href=\"#_combined_with_function_calling\"></a>结合函数调用",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#thinking-config\"></a>Thinking Configuration",
+      "translation": "<a class=\"anchor\" href=\"#thinking-config\"></a>思考配置",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_thinking_level\"></a>Thinking Level",
+      "translation": "<a class=\"anchor\" href=\"#_thinking_level\"></a>思考层级",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_configuration_via_properties\"></a>Configuration via Properties",
+      "translation": "<a class=\"anchor\" href=\"#_configuration_via_properties\"></a>通过属性进行配置",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_programmatic_configuration\"></a>Programmatic Configuration",
+      "translation": "<a class=\"anchor\" href=\"#_programmatic_configuration\"></a>程序化配置",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_thinking_budget\"></a>Thinking Budget",
+      "translation": "<a class=\"anchor\" href=\"#_thinking_budget\"></a>思考预算",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_option_compatibility\"></a>Option Compatibility",
+      "translation": "<a class=\"anchor\" href=\"#_option_compatibility\"></a>选项兼容性",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_model_support\"></a>Model Support",
+      "translation": "<a class=\"anchor\" href=\"#_model_support\"></a>模型支持",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#thought-signatures\"></a>Thought Signatures",
+      "translation": "<a class=\"anchor\" href=\"#thought-signatures\"></a>思维签名",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_when_thought_signatures_matter\"></a>When Thought Signatures Matter",
+      "translation": "<a class=\"anchor\" href=\"#_when_thought_signatures_matter\"></a>当思维签名至关重要时",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_automatic_handling_via_chatclient_recommended\"></a>Automatic Handling via ChatClient (Recommended)",
+      "translation": "<a class=\"anchor\" href=\"#_automatic_handling_via_chatclient_recommended\"></a>通过 ChatClient 自动处理（推荐）",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_user_controlled_tool_execution_with_thought_signatures\"></a>User-Controlled Tool Execution with Thought Signatures",
+      "translation": "<a class=\"anchor\" href=\"#_user_controlled_tool_execution_with_thought_signatures\"></a>基于思维签名的用户可控工具执行",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#cached-content\"></a>Cached Content",
+      "translation": "<a class=\"anchor\" href=\"#cached-content\"></a>缓存内容",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_cache_requirements\"></a>Cache Requirements",
+      "translation": "<a class=\"anchor\" href=\"#_cache_requirements\"></a>缓存要求",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_using_cached_content_service\"></a>Using Cached Content Service",
+      "translation": "<a class=\"anchor\" href=\"#_using_cached_content_service\"></a>使用缓存内容服务",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_creating_cached_content\"></a>Creating Cached Content",
+      "translation": "<a class=\"anchor\" href=\"#_creating_cached_content\"></a>创建缓存内容",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_using_cached_content_in_chat_requests\"></a>Using Cached Content in Chat Requests",
+      "translation": "<a class=\"anchor\" href=\"#_using_cached_content_in_chat_requests\"></a>在聊天请求中使用缓存内容",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_managing_cached_content\"></a>Managing Cached Content",
+      "translation": "<a class=\"anchor\" href=\"#_managing_cached_content\"></a>管理缓存内容",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_asynchronous_operations\"></a>Asynchronous Operations",
+      "translation": "<a class=\"anchor\" href=\"#_asynchronous_operations\"></a>异步操作",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_monitoring_cache_usage\"></a>Monitoring Cache Usage",
+      "translation": "<a class=\"anchor\" href=\"#_monitoring_cache_usage\"></a>监控缓存使用情况",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_best_practices\"></a>Best Practices",
+      "translation": "<a class=\"anchor\" href=\"#_best_practices\"></a>最佳实践",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_configuration_example\"></a>Configuration Example",
+      "translation": "<a class=\"anchor\" href=\"#_configuration_example\"></a>配置示例",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_sample_controller\"></a>Sample Controller",
+      "translation": "<a class=\"anchor\" href=\"#_sample_controller\"></a>示例控制器",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_using_gemini_developer_api_api_key\"></a>Using Gemini Developer API (API Key)",
+      "translation": "<a class=\"anchor\" href=\"#_using_gemini_developer_api_api_key\"></a>使用 Gemini 开发者 API（API 密钥）",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_using_vertex_ai\"></a>Using Vertex AI",
+      "translation": "<a class=\"anchor\" href=\"#_using_vertex_ai\"></a>使用 Vertex AI",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_manual_configuration\"></a>Manual Configuration",
+      "translation": "<a class=\"anchor\" href=\"#_manual_configuration\"></a>手动配置",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_using_api_key\"></a>Using API Key",
+      "translation": "<a class=\"anchor\" href=\"#_using_api_key\"></a>使用 API 密钥",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_using_vertex_ai_2\"></a>Using Vertex AI",
+      "translation": "<a class=\"anchor\" href=\"#_using_vertex_ai_2\"></a>使用 Vertex AI",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_migration_from_vertex_ai_gemini\"></a>Migration from Vertex AI Gemini",
+      "translation": "<a class=\"anchor\" href=\"#_migration_from_vertex_ai_gemini\"></a>从 Vertex AI Gemini 迁移",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#low-level-api\"></a>Low-level Java Client",
+      "translation": "<a class=\"anchor\" href=\"#low-level-api\"></a>低级 Java 客户端",
+      "count": 1
+    },
+    {
+      "source": "Why Spring",
+      "translation": "为何是春天",
+      "count": 1
+    },
+    {
+      "source": "Spring AI",
+      "translation": "Spring AI",
+      "count": 1
+    },
+    {
+      "source": "Google GenAI Chat",
+      "translation": "Google 生成式 AI 聊天",
+      "count": 1
+    }
+  ]
+}

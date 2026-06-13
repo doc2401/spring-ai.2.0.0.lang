@@ -1,0 +1,1161 @@
+{
+  "created_at": "2026-06-13 14:16:42",
+  "updated_at": "2026-06-13 14:16:42",
+  "stats": {
+    "total_entries": 229,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 229,
+    "entries_with_hits": 229,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.0229
+  },
+  "items": [
+    {
+      "source": "Copyright © 2005 - <script>var d = new Date();\n        document.write(d.getFullYear());</script> Broadcom. All Rights Reserved. The term \"Broadcom\" refers to Broadcom Inc. and/or its subsidiaries.<br/><a href=\"https://www.vmware.com/help/legal.html\">Terms of Use</a> • <a href=\"https://www.vmware.com/help/privacy.html\" rel=\"noopener noreferrer\">Privacy</a> • <a href=\"https://spring.io/trademarks\">Trademark Guidelines</a> <span id=\"thank-you-mobile\">• <a href=\"https://spring.io/thank-you\">Thank you</a></span> • <a href=\"https://www.vmware.com/help/privacy/california-privacy-rights.html\">Your California Privacy Rights</a> • <a class=\"ot-sdk-show-settings\">Cookie Settings</a> <span id=\"teconsent\"></span>",
+      "translation": "版权所有 © 2005 - <script>var d = new Date(); document.write(d.getFullYear());</script> Broadcom。保留所有权利。“Broadcom”指 Broadcom Inc. 及其/或其子公司。<br/><a href=\"https://www.vmware.com/help/legal.html\">使用条款</a> • <a href=\"https://www.vmware.com/help/privacy.html\" rel=\"noopener noreferrer\">隐私政策</a> • <a href=\"https://spring.io/trademarks\">商标指南</a> <span id=\"thank-you-mobile\">• <a href=\"https://spring.io/thank-you\">致谢</a></span> • <a href=\"https://www.vmware.com/help/privacy/california-privacy-rights.html\">您的加州隐私权利</a> • <a class=\"ot-sdk-show-settings\">Cookie 设置</a> <span id=\"teconsent\"></span>",
+      "count": 1
+    },
+    {
+      "source": "When multiple <code>ChatModel</code> beans are present in the application context, Spring cannot resolve the <code>ChatModel</code> dependency of the auto-configured <code>ChatClient.Builder</code> bean without ambiguity.\nTo resolve this, you can mark one of your <code>ChatClient</code> beans as <code>@Primary</code>. You may also need to mark one of your <code>ChatModel</code> beans as <code>@Primary</code> if you are defining them manually, or alternatively, define your own <code>ChatClient.Builder</code> bean to override the auto-configured one.",
+      "translation": "当应用程序上下文中存在多个<code>ChatModel</code> Bean 时，Spring 无法无歧义地解析自动配置的<code>ChatClient.Builder</code> Bean 的<code>ChatModel</code> 依赖。  \n为了解决此问题，您可以将其中一个<code>ChatClient</code> Bean 标记为<code>@Primary</code>。如果您手动定义了<code>ChatModel</code> Bean，可能还需要将其中的一个标记为<code>@Primary</code>；或者，您也可以定义自己的<code>ChatClient.Builder</code> Bean 来覆盖自动配置的 Bean。",
+      "count": 1
+    },
+    {
+      "source": "The <code>MessageWindowChatMemory</code> is backed by the <code>ChatMemoryRepository</code> abstraction which provides storage implementations for the chat conversation memory.\nThere are several implementations available, including the <code>InMemoryChatMemoryRepository</code>, <code>JdbcChatMemoryRepository</code>, <code>CassandraChatMemoryRepository</code>, <code>Neo4jChatMemoryRepository</code>, <code>MongoChatMemoryRepository</code>, and <code>RedisChatMemoryRepository</code>.",
+      "translation": "`MessageWindowChatMemory` 由 `ChatMemoryRepository` 抽象层支持，该抽象层提供了用于存储聊天会话记忆的多种实现。  \n可用的实现包括 `InMemoryChatMemoryRepository`、`JdbcChatMemoryRepository`、`CassandraChatMemoryRepository`、`Neo4jChatMemoryRepository`、`MongoChatMemoryRepository` 和 `RedisChatMemoryRepository`。",
+      "count": 1
+    },
+    {
+      "source": "<code>defaultAdvisors(Consumer&lt;AdvisorSpec&gt; advisorSpecConsumer)</code>: This method allows you to define a <code>Consumer</code> to configure multiple advisors using the <code>AdvisorSpec</code>. Advisors can modify the data used to create the final <code>Prompt</code>.\nThe <code>Consumer&lt;AdvisorSpec&gt;</code> lets you specify a lambda to add advisors, such as <code>QuestionAnswerAdvisor</code>, which supports <code>Retrieval Augmented Generation</code> by appending the prompt with relevant context information based on the user text.",
+      "translation": "<code>defaultAdvisors(Consumer&lt;AdvisorSpec&gt; advisorSpecConsumer)</code>：此方法允许您定义一个 <code>Consumer</code>，使用 <code>AdvisorSpec</code> 配置多个顾问。顾问可以修改用于创建最终 <code>Prompt</code> 的数据。\n<code>Consumer&lt;AdvisorSpec&gt;</code> 使您可以指定一个 lambda 表达式来添加顾问，例如 <code>QuestionAnswerAdvisor</code>，该顾问支持 <code>Retrieval Augmented Generation</code>，它会根据用户文本将相关上下文信息附加到提示中。",
+      "count": 1
+    },
+    {
+      "source": "When working with multiple AI models, you might be tempted to define separate <code>ChatClient</code> beans by using <code>ChatClient.create(chatModel)</code> or <code>ChatClient.builder(chatModel)</code>.\nHowever, doing so bypasses the auto-configured <code>ChatClient.Builder</code>, which means observability and <code>ChatClientBuilderCustomizer</code> beans are ignored.",
+      "translation": "在使用多个 AI 模型时，您可能倾向于通过 `ChatClient.create(chatModel)` 或 `ChatClient.builder(chatModel)` 来定义独立的 `<code>ChatClient` Bean。  \n然而，这样做会绕过自动配置的 `<code>ChatClient.Builder`，从而导致可观测性和 `<code>ChatClientBuilderCustomizer` Bean 被忽略。",
+      "count": 1
+    },
+    {
+      "source": "<code>defaultAdvisors(Advisor…​ advisor)</code>, <code>defaultAdvisors(List&lt;Advisor&gt; advisors)</code>: Advisors allow modification of the data used to create the <code>Prompt</code>.\nThe <code>QuestionAnswerAdvisor</code> implementation enables the pattern of <code>Retrieval Augmented Generation</code> by appending the prompt with context information related to the user text.",
+      "translation": "<code>defaultAdvisors(Advisor… advisor)</code>、<code>defaultAdvisors(List&lt;Advisor&gt; advisors)</code>：Advisor 允许修改用于创建 <code>Prompt</code> 的数据。<code>QuestionAnswerAdvisor</code> 实现支持“检索增强生成”（Retrieval Augmented Generation）模式，通过将用户文本相关的上下文信息附加到提示中来实现该模式。",
+      "count": 1
+    },
+    {
+      "source": "The <code>ChatClient</code> is created using a <code>ChatClient.Builder</code> object.\nYou can obtain an autoconfigured <code>ChatClient.Builder</code> instance for any <a class=\"xref page\" href=\"chatmodel.html\">ChatModel</a> Spring Boot autoconfiguration or create one programmatically.",
+      "translation": "<code>ChatClient</code> 是通过 <code>ChatClient.Builder</code> 对象创建的。您可以为任何 <a class=\"xref page\" href=\"chatmodel.html\">ChatModel</a> Spring Boot 自动配置获取一个自动配置的 <code>ChatClient.Builder</code> 实例，也可以程序化地创建一个。",
+      "count": 1
+    },
+    {
+      "source": "Internally, the ChatClient uses the <code>PromptTemplate</code> class to handle the user and system text and replace the variables with the values provided at runtime relying on a given <code>TemplateRenderer</code> implementation.\nBy default, Spring AI uses the <code>StTemplateRenderer</code> implementation, which is based on the open-source <a href=\"https://www.stringtemplate.org/\">StringTemplate</a> engine developed by Terence Parr.",
+      "translation": "内部，ChatClient 使用 <code>PromptTemplate</code> 类来处理用户和系统文本，并依赖给定的 <code>TemplateRenderer</code> 实现将变量替换为运行时提供的值。  \n默认情况下，Spring AI 使用 <code>StTemplateRenderer</code> 实现，该实现基于 Terence Parr 开发的开源 <a href=\"https://www.stringtemplate.org/\">StringTemplate</a> 引擎。",
+      "count": 1
+    },
+    {
+      "source": "<code>responseEntity(ParameterizedTypeReference&lt;T&gt; type)</code>: used to return a <code>ResponseEntity</code> containing both the complete <code>ChatResponse</code> object and a <code>Collection</code> of entity types.",
+      "translation": "<code>responseEntity(ParameterizedTypeReference<T> type)</code>：用于返回一个包含完整 <code>ChatResponse</code> 对象以及实体类型集合的 <code>ResponseEntity</code>。",
+      "count": 1
+    },
+    {
+      "source": "<code>responseEntity(StructuredOutputConverter&lt;T&gt; structuredOutputConverter)</code>: used to return a <code>ResponseEntity</code> containing both the complete <code>ChatResponse</code> object and an entity converted using a specified <code>StructuredOutputConverter</code>.",
+      "translation": "<code>responseEntity(StructuredOutputConverter&lt;T&gt; structuredOutputConverter)</code>: 用于返回一个包含完整 <code>ChatResponse</code> 对象以及使用指定 <code>StructuredOutputConverter</code> 转换后的实体的 <code>ResponseEntity</code>。",
+      "count": 1
+    },
+    {
+      "source": "<code>Flux&lt;ChatClientResponse&gt; chatClientResponse()</code>: returns a <code>Flux</code> of the <code>ChatClientResponse</code> object that contains the <code>ChatResponse</code> object and the ChatClient execution context, giving you access to additional data used during the execution of advisors (e.g. the relevant documents retrieved in a RAG flow).",
+      "translation": "<code>Flux&lt;ChatClientResponse&gt; chatClientResponse()</code>：返回一个包含 <code>ChatClientResponse</code> 对象的 <code>Flux</code>，该对象中包含了 <code>ChatResponse</code> 对象以及 ChatClient 执行上下文，从而让您能够访问在顾问执行过程中使用的额外数据（例如 RAG 流程中检索的相关文档）。",
+      "count": 1
+    },
+    {
+      "source": "<code>defaultOptions(ChatOptions chatOptions)</code>: Pass in either portable options defined in the <code>ChatOptions</code> class or model-specific options such as those in <code>OpenAiChatOptions</code>.\nFor more information on model-specific <code>ChatOptions</code> implementations, refer to the JavaDocs.",
+      "translation": "<code>defaultOptions(ChatOptions chatOptions)</code>: 传入在 <code>ChatOptions</code> 类中定义的通用选项，或特定于模型的选项（例如 <code>OpenAiChatOptions</code> 中的选项）。有关特定于模型的 <code>ChatOptions</code> 实现的更多信息，请参阅 JavaDocs。",
+      "count": 1
+    },
+    {
+      "source": "<code>defaultTools(Object…​ tools)</code>: Register one or more default tools that will be available to every request. Accepts a heterogeneous mix of <code>ToolCallback</code>, <code>ToolCallbackProvider</code>, or POJOs with <code>@Tool</code> annotated methods.",
+      "translation": "<code>defaultTools(Object…​ tools)</code>：注册一个或多个默认工具，这些工具将适用于每个请求。接受混合类型的参数，包括 <code>ToolCallback</code>、<code>ToolCallbackProvider</code> 或带有 <code>@Tool</code> 注解方法的 POJO。",
+      "count": 1
+    },
+    {
+      "source": "<code>defaultUser(String text)</code>, <code>defaultUser(Resource text)</code>, <code>defaultUser(Consumer&lt;UserSpec&gt; userSpecConsumer)</code>: These methods let you define the user text.\nThe <code>Consumer&lt;UserSpec&gt;</code> allows you to use a lambda to specify the user text and any default parameters.",
+      "translation": "<code>defaultUser(String text)</code>、<code>defaultUser(Resource text)</code> 和 <code>defaultUser(Consumer&lt;UserSpec&gt; userSpecConsumer)</code>：这些方法允许您定义用户文本。  \n<code>Consumer&lt;UserSpec&gt;</code> 允许您使用 lambda 表达式来指定用户文本及任何默认参数。",
+      "count": 1
+    },
+    {
+      "source": "The <code>SimpleLoggerAdvisor</code> is an advisor that logs the <code>request</code> and <code>response</code> data of the <code>ChatClient</code>.\nThis can be useful for debugging and monitoring your AI interactions.",
+      "translation": "<code>SimpleLoggerAdvisor</code> 是一个顾问，用于记录 <code>ChatClient</code> 的 <code>request</code> 和 <code>response</code> 数据。  \n这对于调试和监控您的 AI 交互非常有用。",
+      "count": 1
+    },
+    {
+      "source": "In this simple example, the user input sets the contents of the user message.\nThe <code>call()</code> method sends a request to the AI model, and the <code>content()</code> method returns the AI model’s response as a <code>String</code>.",
+      "translation": "在这个简单的示例中，用户输入用于设置用户消息的内容。\n`call()` 方法向 AI 模型发送请求，而 `content()` 方法将 AI 模型的响应返回为 `<code>String</code>`。",
+      "count": 1
+    },
+    {
+      "source": "To retain observability and customizers, you should inject <code>ChatClientBuilderConfigurer</code> to create custom builders.\nThe <code>ChatClientBuilderConfigurer</code> applies all registered <code>ChatClientBuilderCustomizer</code> beans and wires up observability, mirroring what the auto-configuration does internally.",
+      "translation": "为了保留可观测性和自定义功能，您应该注入 `<code>ChatClientBuilderConfigurer</code>` 以创建自定义构建器。  \n`<code>ChatClientBuilderConfigurer</code>` 会应用所有已注册的 `<code>ChatClientBuilderCustomizer</code>` Bean，并配置可观测性，其方式与自动配置内部执行的操作相同。",
+      "count": 1
+    },
+    {
+      "source": "<code>prompt(Prompt prompt)</code>: This method accepts a <code>Prompt</code> argument, letting you pass in a <code>Prompt</code> instance that you have created using the Prompt’s non-fluent APIs.",
+      "translation": "<code>prompt(Prompt prompt)</code>：此方法接受一个 <code>Prompt</code> 参数，允许您传入使用 Prompt 的非流式 API 创建的 <code>Prompt</code> 实例。",
+      "count": 1
+    },
+    {
+      "source": "The response from the AI model is a rich structure defined by the type <code><a class=\"xref page\" href=\"chatmodel.html#ChatResponse\">ChatResponse</a></code>.\nIt includes metadata about how the response was generated and can also contain multiple responses, known as <a class=\"xref page\" href=\"chatmodel.html#Generation\">Generation</a>s, each with its own metadata.\nThe metadata includes the number of tokens (each token is approximately 3/4 of a word) used to create the response.\nThis information is important because hosted AI models charge based on the number of tokens used per request.",
+      "translation": "AI 模型的响应由 <code><a class=\"xref page\" href=\"chatmodel.html#ChatResponse\">ChatResponse</a></code> 类型定义的结构组成。它包含关于响应生成方式的元数据，并可包含多个称为 <a class=\"xref page\" href=\"chatmodel.html#Generation\">Generation</a> 的响应，每个响应都拥有自己的元数据。这些元数据包括用于创建响应的 token 数量（每个 token 大约相当于一个词的 3/4）。此信息非常重要，因为托管的 AI 模型会根据每次请求所使用的 token 数量进行计费。",
+      "count": 1
+    },
+    {
+      "source": "An example to return the <code>ChatResponse</code> object that contains the metadata is shown below by invoking <code>chatResponse()</code> after the <code>call()</code> method.",
+      "translation": "下面是一个示例，通过调用 `call()` 方法后执行 `chatResponse()` 来返回包含元数据的 `<code>ChatResponse</code>` 对象。",
+      "count": 1
+    },
+    {
+      "source": "By default, the JSON schema is appended to the user message as text instructions.\nWhen <code>useProviderStructuredOutput()</code> is set, the schema is instead passed directly to the AI provider API as a structured constraint (equivalent to setting <code>AdvisorParams.ENABLE_NATIVE_STRUCTURED_OUTPUT</code>).\nThis requires the underlying model to support <code>StructuredOutputChatOptions</code>.",
+      "translation": "默认情况下，JSON 模式会作为文本指令附加到用户消息中。\n当设置 <code>useProviderStructuredOutput()</code> 时，该模式将直接作为结构化约束传递给 AI 提供商 API（相当于设置 <code>AdvisorParams.ENABLE_NATIVE_STRUCTURED_OUTPUT</code>）。\n这要求底层模型支持 <code>StructuredOutputChatOptions</code>。",
+      "count": 1
+    },
+    {
+      "source": "<code>validateSchema()</code> validates the model’s JSON response against the entity schema before returning it.\nIf validation fails, the error message is appended to the user prompt and the model is retried, up to <code>maxRepeatAttempts</code> times (default: 3).\nThis uses <a class=\"xref page\" href=\"advisors-recursive.html#structured-output-validation-advisor\">StructuredOutputValidationAdvisor</a> internally.",
+      "translation": "`validateSchema()` 在返回模型生成的 JSON 响应之前，会将其与实体模式进行验证。\n如果验证失败，错误消息将被追加到用户提示中，并且模型将重试，最多重试 <code>maxRepeatAttempts</code> 次（默认值：3）。\n此功能内部使用了 <a class=\"xref page\" href=\"advisors-recursive.html#structured-output-validation-advisor\">StructuredOutputValidationAdvisor</a>。",
+      "count": 1
+    },
+    {
+      "source": "For example, by default, template variables are identified by the <code>{}</code> syntax.\nIf you’re planning to include JSON in your prompt, you might want to use a different syntax to avoid conflicts with JSON syntax. For example, you can use the <code>&lt;</code> and <code>&gt;</code> delimiters.",
+      "translation": "例如，默认情况下，模板变量由 <code>{}</code> 语法标识。如果您计划在提示词中包含 JSON，可能需要使用不同的语法以避免与 JSON 语法冲突。例如，您可以使用 <code>&lt;</code> 和 <code>&gt;</code> 作为分隔符。",
+      "count": 1
+    },
+    {
+      "source": "<code>ChatClientResponse chatClientResponse()</code>: returns a <code>ChatClientResponse</code> object that contains the <code>ChatResponse</code> object and the ChatClient execution context, giving you access to additional data used during the execution of advisors (e.g. the relevant documents retrieved in a RAG flow).",
+      "translation": "<code>ChatClientResponse chatClientResponse()</code>：返回一个包含 <code>ChatResponse</code> 对象和 ChatClient 执行上下文的 <code>ChatClientResponse</code> 对象，使您能够访问顾问执行期间使用的附加数据（例如在 RAG 流程中检索的相关文档）。",
+      "count": 1
+    },
+    {
+      "source": "<code>entity(StructuredOutputConverter&lt;T&gt; structuredOutputConverter)</code>: used to specify an instance of a <code>StructuredOutputConverter</code> to convert a <code>String</code> to an entity type.",
+      "translation": "<code>entity(StructuredOutputConverter&lt;T&gt; structuredOutputConverter)</code>：用于指定一个 <code>StructuredOutputConverter</code> 实例，以将 <code>String</code> 转换为实体类型。",
+      "count": 1
+    },
+    {
+      "source": "<code>responseEntity(Class&lt;T&gt; type)</code>: used to return a <code>ResponseEntity</code> containing both the complete <code>ChatResponse</code> object and a specific entity type.",
+      "translation": "<code>responseEntity(Class&lt;T&gt; type)</code>：用于返回一个包含完整 <code>ChatResponse</code> 对象和特定实体类型的 <code>ResponseEntity</code>。",
+      "count": 1
+    },
+    {
+      "source": "<code>Flux&lt;ChatResponse&gt; chatResponse()</code>: Returns a <code>Flux</code> of the <code>ChatResponse</code> object, which contains additional metadata about the response.",
+      "translation": "`Flux<ChatResponse> chatResponse()`：返回一个包含响应额外元数据的 `ChatResponse` 对象的 `Flux`。",
+      "count": 1
+    },
+    {
+      "source": "Creating a <code>ChatClient</code> with a default system text in an <code>@Configuration</code> class simplifies runtime code.\nBy setting defaults, you only need to specify the user text when calling <code>ChatClient</code>, eliminating the need to set a system text for each request in your runtime code path.",
+      "translation": "在 `@Configuration` 类中创建一个带有默认系统文本的 `<code>ChatClient</code>` 可以简化运行时代码。通过设置默认值，您在调用 `<code>ChatClient</code>` 时只需指定用户文本，从而无需在运行时代码路径中的每个请求都设置系统文本。",
+      "count": 1
+    },
+    {
+      "source": "<code>defaultSystem(String text)</code>, <code>defaultSystem(Resource text)</code>, <code>defaultSystem(Consumer&lt;PromptSystemSpec&gt; systemSpecConsumer)</code>: These methods let you define the default system text.",
+      "translation": "<code>defaultSystem(String text)</code>、<code>defaultSystem(Resource text)</code>、<code>defaultSystem(Consumer&lt;PromptSystemSpec&gt; systemSpecConsumer)</code>：这些方法允许您定义默认的系统文本。",
+      "count": 1
+    },
+    {
+      "source": "You can create a new <code>ChatClient</code> (or <code>ChatClientRequestSpec</code>) with settings replicated from an existing one using the <code>mutate()</code> method:",
+      "translation": "您可以使用 `mutate()` 方法，基于现有的配置创建一个新的 `<code>ChatClient</code>`（或 `<code>ChatClientRequestSpec</code>`），并复制其设置：",
+      "count": 1
+    },
+    {
+      "source": "On <code>ChatClient</code>: <code>Builder mutate()</code> returns a <code>ChatClient.Builder</code> initialized with the client’s default settings.",
+      "translation": "在 `ChatClient` 上：`Builder mutate()` 返回一个使用客户端默认设置初始化的 `ChatClient.Builder`。",
+      "count": 1
+    },
+    {
+      "source": "On <code>ChatClientRequestSpec</code>: <code>Builder mutate()</code> returns a <code>ChatClient.Builder</code> initialized with the request’s current settings.",
+      "translation": "在 `ChatClientRequestSpec` 上：`Builder mutate()` 返回一个已初始化了请求当前设置的 `ChatClient.Builder`。",
+      "count": 1
+    },
+    {
+      "source": "Or you can provide your own <code>ToolCallingAdvisor</code> (or any other advisor implementing <code>ToolAdvisor</code>) — in that case auto-registration is suppressed automatically because the chain already contains a <code>ToolAdvisor</code>.",
+      "translation": "或者您可以提供自己的 `<code>ToolCallingAdvisor`（或任何实现 `<code>ToolAdvisor`》的其他顾问）——在这种情况下，由于链中已经包含了一个 `<code>ToolAdvisor`》，自动注册将被自动抑制。",
+      "count": 1
+    },
+    {
+      "source": "The value must be lower than the order of any advisor that should run <em>inside</em> the tool-call loop (i.e., repeated on every iteration), and higher than any advisor that should run <em>outside</em> it (i.e., executed only once per user request).\nThe default is <code>ToolCallingAdvisor.DEFAULT_ORDER</code>.",
+      "translation": "该值必须低于应在工具调用循环内运行（即在每次迭代中重复执行）的任何顾问的优先级，同时高于应在循环外运行（即每个用户请求仅执行一次）的任何顾问的优先级。  \n默认值为 <code>ToolCallingAdvisor.DEFAULT_ORDER</code>。",
+      "count": 1
+    },
+    {
+      "source": "For deeper customization — for example to supply a custom <code>ToolCallingManager</code> — declare a <code>ToolCallingAdvisor.Builder&lt;?&gt;</code> bean.\nSpring Boot’s <code>@ConditionalOnMissingBean</code> on the auto-configured bean means your bean takes precedence:",
+      "translation": "若要实现更深入的自定义（例如提供自定义的 <code>ToolCallingManager</code>），请声明一个 <code>ToolCallingAdvisor.Builder&lt;?&gt;</code> 类型的 Bean。Spring Boot 自动配置 Bean 上的 <code>@ConditionalOnMissingBean</code> 注解意味着您的 Bean 具有优先权：",
+      "count": 1
+    },
+    {
+      "source": "<code>ToolAdvisor</code> is a marker interface that signals to the <code>ChatClient</code> that the advisor chain already handles tool execution. Implementing this interface on a custom advisor prevents the auto-registration of a second <code>ToolCallingAdvisor</code>.",
+      "translation": "`ToolAdvisor` 是一个标记接口，用于向 `ChatClient` 表明该顾问链已经处理了工具执行。在自定义顾问上实现此接口可防止自动注册第二个 `ToolCallingAdvisor`。",
+      "count": 1
+    },
+    {
+      "source": "<code>MemoryAdvisor</code> is a marker interface extended by <code>BaseChatMemoryAdvisor</code>.\n<code>DefaultChatClient</code> uses this marker to detect downstream memory advisors in the auto-registration logic.",
+      "translation": "`MemoryAdvisor` 是一个由 `BaseChatMemoryAdvisor` 扩展的标记接口。  \n`DefaultChatClient` 利用此标记在自动注册逻辑中检测下游记忆顾问。",
+      "count": 1
+    },
+    {
+      "source": "See the <a href=\"#_implementation_notes\">Implementation Notes</a> at the bottom of this document related to the combined use of imperative and reactive programming models in <code>ChatClient</code>",
+      "translation": "请参阅本文档底部的<a href=\"#_implementation_notes\">实现说明</a>，其中涉及在<code>ChatClient</code>中结合使用命令式和响应式编程模型。",
+      "count": 1
+    },
+    {
+      "source": "The fluent API has methods for building up the constituent parts of a <a class=\"xref page\" href=\"prompt.html#_prompt\">Prompt</a> that is passed to the AI model as input.\nThe <code>Prompt</code> contains the instructional text to guide the AI model’s output and behavior. From the API point of view, prompts consist of a collection of messages.",
+      "translation": "流式 API 提供了构建传递给 AI 模型作为输入的<a class=\"xref page\" href=\"prompt.html#_prompt\">Prompt</a>组成部分的方法。  \n<code>Prompt</code>包含指导 AI 模型输出和行为的指令文本。从 API 的角度来看，提示由一系列消息组成。",
+      "count": 1
+    },
+    {
+      "source": "In the most simple use case, Spring AI provides Spring Boot autoconfiguration, creating a prototype <code>ChatClient.Builder</code> bean for you to inject into your class.\nHere is a simple example of retrieving a <code>String</code> response to a simple user request.",
+      "translation": "在最简单的使用场景中，Spring AI 提供 Spring Boot 自动配置功能，为您创建一个原型 `ChatClient.Builder` Bean，以便您在类中进行注入。\n以下是一个简单示例，展示如何获取针对简单用户请求的 `String` 响应。",
+      "count": 1
+    },
+    {
+      "source": "The <code>ChatClient</code> fluent API allows you to create a prompt in three distinct ways using an overloaded <code>prompt</code> method to initiate the fluent API:",
+      "translation": "`ChatClient` 流式 API 允许您通过重载的 `prompt` 方法以三种不同的方式创建提示，从而启动流式 API：",
+      "count": 1
+    },
+    {
+      "source": "You often want to return an entity class that is mapped from the returned <code>String</code>.\nThe <code>entity()</code> method provides this functionality.",
+      "translation": "您经常希望返回一个从返回的 `<code>String</code>` 映射而来的实体类。`<code>entity()</code>` 方法提供了此功能。",
+      "count": 1
+    },
+    {
+      "source": "There is also an overloaded <code>entity</code> method with the signature <code>entity(ParameterizedTypeReference&lt;T&gt; type)</code> that lets you specify types such as generic Lists:",
+      "translation": "还有一个重载的 `entity` 方法，其签名为 `entity(ParameterizedTypeReference<T> type)`，允许您指定诸如泛型列表之类的类型：",
+      "count": 1
+    },
+    {
+      "source": "All three <code>entity()</code> overloads accept an optional <code>Consumer&lt;EntityParamSpec&gt;</code> that enables two independent behaviours:",
+      "translation": "所有三个 `<code>entity()</code>` 重载都接受一个可选的 `<code>Consumer&lt;EntityParamSpec&gt;</code>`，该参数支持两种独立的行为：",
+      "count": 1
+    },
+    {
+      "source": "You can also stream the <code>ChatResponse</code> using the method <code>Flux&lt;ChatResponse&gt; chatResponse()</code>.",
+      "translation": "您还可以使用方法 `Flux<ChatResponse> chatResponse()` 来流式传输 `<code>ChatResponse</code>`。",
+      "count": 1
+    },
+    {
+      "source": "In the future, we will offer a convenience method that will let you return a Java entity with the reactive <code>stream()</code> method.\nIn the meantime, you should use the <a class=\"xref page\" href=\"structured-output-converter.html#StructuredOutputConverter\">Structured Output Converter</a> to convert the aggregated response explicitly as shown below.\nThis also demonstrates the use of parameters in the fluent API that will be discussed in more detail in a later section of the documentation.",
+      "translation": "未来，我们将提供一种便捷方法，允许您通过反应式的 <code>stream()</code> 方法返回 Java 实体。  \n在此期间，您应使用<a class=\"xref page\" href=\"structured-output-converter.html#StructuredOutputConverter\">结构化输出转换器</a>显式转换聚合响应，如下所示。  \n这也展示了流式 API 中参数的用法，相关内容将在文档的后续章节中详细讨论。",
+      "count": 1
+    },
+    {
+      "source": "If you’d rather use a different template engine, you can provide a custom implementation of the <code>TemplateRenderer</code> interface directly to the ChatClient. You can also keep using the default <code>StTemplateRenderer</code>, but with a custom configuration.",
+      "translation": "如果您更倾向于使用其他模板引擎，可以直接向 ChatClient 提供自定义的 <code>TemplateRenderer</code> 接口实现。您也可以继续使用默认的 <code>StTemplateRenderer</code>，但采用自定义配置。",
+      "count": 1
+    },
+    {
+      "source": "After specifying the <code>call()</code> method on <code>ChatClient</code>, there are a few different options for the response type.",
+      "translation": "在指定了 `ChatClient` 上的 `call()` 方法后，对于响应类型有几种不同的选项。",
+      "count": 1
+    },
+    {
+      "source": "<code>ChatResponse chatResponse()</code>: returns the <code>ChatResponse</code> object that contains multiple generations and also metadata about the response, for example how many token were used to create the response.",
+      "translation": "`ChatResponse chatResponse()`：返回包含多个生成结果以及响应元数据（例如用于创建该响应所使用的令牌数量）的 `ChatResponse` 对象。",
+      "count": 1
+    },
+    {
+      "source": "<code>entity(ParameterizedTypeReference&lt;T&gt; type)</code>: used to return a <code>Collection</code> of entity types.",
+      "translation": "<code>entity(ParameterizedTypeReference<T> type)</code>：用于返回实体类型的<code>Collection</code>。",
+      "count": 1
+    },
+    {
+      "source": "<code>entity(ParameterizedTypeReference&lt;T&gt; type, Consumer&lt;EntityParamSpec&gt; spec)</code>: like above, with optional <a href=\"#_entityparamspec\">EntityParamSpec</a> configuration.",
+      "translation": "<code>entity(ParameterizedTypeReference<T> type, Consumer<EntityParamSpec> spec)</code>：与上述方法类似，但可选地支持<a href=\"#_entityparamspec\">EntityParamSpec</a>配置。",
+      "count": 1
+    },
+    {
+      "source": "<code>entity(Class&lt;T&gt; type, Consumer&lt;EntityParamSpec&gt; spec)</code>: like above, with optional <a href=\"#_entityparamspec\">EntityParamSpec</a> configuration.",
+      "translation": "`entity(Class<T> type, Consumer<EntityParamSpec> spec)`：与上述方法类似，但可选地配置 `<a href=\"#_entityparamspec\">EntityParamSpec</a>`。",
+      "count": 1
+    },
+    {
+      "source": "<code>entity(StructuredOutputConverter&lt;T&gt; converter, Consumer&lt;EntityParamSpec&gt; spec)</code>: like above, with optional <a href=\"#_entityparamspec\">EntityParamSpec</a> configuration.",
+      "translation": "`entity(StructuredOutputConverter<T> converter, Consumer<EntityParamSpec> spec)`：与上述方法类似，但可选地配置 `<a href=\"#_entityparamspec\">EntityParamSpec</a>`。",
+      "count": 1
+    },
+    {
+      "source": "<code>responseEntity()</code> to return both the <code>ChatResponse</code> and a Java type. This is useful when you need access to both the complete AI model response (with metadata and generations) and the structured output entity in a single call.",
+      "translation": "使用<code>responseEntity()</code>返回<code>ChatResponse</code>和一个 Java 类型。这在需要同时获取完整的 AI 模型响应（包含元数据和生成内容）以及结构化输出实体时非常有用，只需一次调用即可完成。",
+      "count": 1
+    },
+    {
+      "source": "<code>responseEntity(Class&lt;T&gt; type, Consumer&lt;EntityParamSpec&gt; spec)</code>: like above, with optional <a href=\"#_entityparamspec\">EntityParamSpec</a> configuration.",
+      "translation": "`responseEntity(Class<T> type, Consumer<EntityParamSpec> spec)`：与上述方法类似，但可选地配置 `<a href=\"#_entityparamspec\">EntityParamSpec</a>`。",
+      "count": 1
+    },
+    {
+      "source": "<code>responseEntity(ParameterizedTypeReference&lt;T&gt; type, Consumer&lt;EntityParamSpec&gt; spec)</code>: like above, with optional <a href=\"#_entityparamspec\">EntityParamSpec</a> configuration.",
+      "translation": "<code>responseEntity(ParameterizedTypeReference<T> type, Consumer<EntityParamSpec> spec)</code>：与上述方法类似，但可选地配置 <a href=\"#_entityparamspec\">EntityParamSpec</a>。",
+      "count": 1
+    },
+    {
+      "source": "<code>responseEntity(StructuredOutputConverter&lt;T&gt; converter, Consumer&lt;EntityParamSpec&gt; spec)</code>: like above, with optional <a href=\"#_entityparamspec\">EntityParamSpec</a> configuration.",
+      "translation": "`responseEntity(StructuredOutputConverter<T> converter, Consumer<EntityParamSpec> spec)`：与上述方法类似，但可选地配置 `<a href=\"#_entityparamspec\">EntityParamSpec</a>`。",
+      "count": 1
+    },
+    {
+      "source": "You can also invoke the <code>stream()</code> method instead of <code>call()</code>.",
+      "translation": "您也可以调用 `stream()` 方法而不是 `call()`。",
+      "count": 1
+    },
+    {
+      "source": "After specifying the <code>stream()</code> method on <code>ChatClient</code>, there are a few options for the response type:",
+      "translation": "在指定了 `ChatClient` 上的 `<code>stream()</code>` 方法后，响应类型有几种选择：",
+      "count": 1
+    },
+    {
+      "source": "<code>Flux&lt;String&gt; content()</code>: Returns a <code>Flux</code> of the string being generated by the AI model.",
+      "translation": "`Flux<String> content()`：返回由 AI 模型生成的字符串的 `Flux`。",
+      "count": 1
+    },
+    {
+      "source": "In the following example, we will configure the system text to always reply in a pirate’s voice.\nTo avoid repeating the system text in runtime code, we will create a <code>ChatClient</code> instance in a <code>@Configuration</code> class.",
+      "translation": "在以下示例中，我们将配置系统文本以始终使用海盗的口吻进行回复。为了避免在运行时代码中重复系统文本，我们将在一个<code>@Configuration</code>类中创建一个<code>ChatClient</code>实例。",
+      "count": 1
+    },
+    {
+      "source": "<code>defaultTemplateRenderer(TemplateRenderer templateRenderer)</code>: Set a default <code>TemplateRenderer</code> for prompt templates.",
+      "translation": "`defaultTemplateRenderer(TemplateRenderer templateRenderer)`：为提示模板设置默认的 `TemplateRenderer`。",
+      "count": 1
+    },
+    {
+      "source": "In this configuration, the <code>MessageChatMemoryAdvisor</code> will be executed first, adding the conversation history to the prompt.\nThen, the <code>QuestionAnswerAdvisor</code> will perform its search based on the user’s question and the added conversation history, potentially providing more relevant results.",
+      "translation": "在此配置中，<code>MessageChatMemoryAdvisor</code> 将首先执行，将对话历史添加到提示中。随后，<code>QuestionAnswerAdvisor</code> 将基于用户的问题及已添加的对话历史执行搜索，从而可能提供更相关的结果。",
+      "count": 1
+    },
+    {
+      "source": "Add this to your <code>application.properties</code> or <code>application.yaml</code> file.",
+      "translation": "将其添加到您的 `<code>application.properties</code>` 或 `<code>application.yaml</code>` 文件中。",
+      "count": 1
+    },
+    {
+      "source": "You can customize what data from <code>AdvisedRequest</code> and <code>ChatResponse</code> is logged by using the following constructor:",
+      "translation": "您可以使用以下构造函数来自定义记录来自<code>AdvisedRequest</code>和<code>ChatResponse</code>的数据：",
+      "count": 1
+    },
+    {
+      "source": "The <code>ChatClient</code> always auto-registers a <code>ToolCallingAdvisor</code> in the advisor chain unless auto-registration is explicitly disabled (see below).\nThis ensures that tools injected dynamically at runtime by another advisor are handled correctly, even when no static tools are configured on the call.",
+      "translation": "<code>ChatClient</code> 始终会在顾问链中自动注册一个 <code>ToolCallingAdvisor</code>，除非明确禁用了自动注册（见下文）。这确保了即使调用时未配置任何静态工具，由另一个顾问在运行时动态注入的工具也能得到正确处理。",
+      "count": 1
+    },
+    {
+      "source": "The <code>ToolCallingAdvisor</code> is registered at <code>Ordered.HIGHEST_PRECEDENCE + 300</code> by default.",
+      "translation": "<code>ToolCallingAdvisor</code>默认注册在<code>Ordered.HIGHEST_PRECEDENCE + 300</code>。",
+      "count": 1
+    },
+    {
+      "source": "Set <code>spring.ai.chat.client.tool-calling.enabled=false</code> to disable auto-registration for every call made from the auto-configured <code>ChatClient</code>:",
+      "translation": "将<code>spring.ai.chat.client.tool-calling.enabled=false</code>设置为禁用由自动配置的<code>ChatClient</code>发出的每次调用的自动注册：",
+      "count": 1
+    },
+    {
+      "source": "The <code>spring.ai.chat.client.tool-calling.*</code> properties control the auto-configured <code>ToolCallingAdvisor</code>:",
+      "translation": "<code>spring.ai.chat.client.tool-calling.*</code> 属性控制自动配置的 <code>ToolCallingAdvisor</code>：",
+      "count": 1
+    },
+    {
+      "source": "Set to <code>false</code> to disable <code>ToolCallingAdvisor</code> auto-registration for all calls. Tools are still sent to the model, but tool calls are not executed automatically.",
+      "translation": "设置为 `<code>false</code>` 可禁用所有调用中的 `ToolCallingAdvisor` 自动注册。工具仍会发送给模型，但不会自动执行工具调用。",
+      "count": 1
+    },
+    {
+      "source": "The simplest way to tune the auto-registered advisor is through the <code>spring.ai.chat.client.tool-calling.advisor-order</code> property.\nIt controls where in the advisor chain the <code>ToolCallingAdvisor</code> is inserted:",
+      "translation": "最简单的方法是通过 `<code>spring.ai.chat.client.tool-calling.advisor-order</code>` 属性来调整自动注册的顾问。它控制着 `<code>ToolCallingAdvisor</code>` 在顾问链中的插入位置：",
+      "count": 1
+    },
+    {
+      "source": "To observe each iteration of the tool-calling loop — for example to forward intermediate chunks to a UI — disable the auto-registered advisor per-call and drive the loop yourself using <code>AdvisorParams.toolCallingAdvisorAutoRegister(false)</code>.\nSee <a class=\"xref page\" href=\"tools.html#_with_chatclient\">User-Controlled Tool Execution — With ChatClient</a> for a complete example.",
+      "translation": "若要观察工具调用循环的每一次迭代——例如将中间结果块转发到 UI——请禁用每次调用的自动注册顾问，并使用 <code>AdvisorParams.toolCallingAdvisorAutoRegister(false)</code> 自行驱动该循环。\n有关完整示例，请参阅<a class=\"xref page\" href=\"tools.html#_with_chatclient\">用户控制工具执行 — 使用 ChatClient</a>。",
+      "count": 1
+    },
+    {
+      "source": "When not using Spring Boot auto-configuration, pass a pre-configured <code>ToolCallingAdvisor.Builder</code> directly to <code>ChatClient.builder()</code>:",
+      "translation": "当不使用 Spring Boot 自动配置时，直接将预配置的 <code>ToolCallingAdvisor.Builder</code> 传递给 <code>ChatClient.builder()</code>：",
+      "count": 1
+    },
+    {
+      "source": "Custom memory advisors that do not extend <code>BaseChatMemoryAdvisor</code> but should participate in this detection should implement <code>MemoryAdvisor</code>.",
+      "translation": "自定义内存顾问若未继承<code>BaseChatMemoryAdvisor</code>但应参与此检测，则需实现<code>MemoryAdvisor</code>。",
+      "count": 1
+    },
+    {
+      "source": "The <code>ChatClient</code> offers a fluent API for communicating with an AI Model.\nIt supports both a synchronous and streaming programming model.",
+      "translation": "`ChatClient` 提供了一个流式 API，用于与 AI 模型进行通信。它同时支持同步和流式编程模型。",
+      "count": 1
+    },
+    {
+      "source": "By default, Spring AI autoconfigures a single <code>ChatClient.Builder</code> bean.\nHowever, you may need to work with multiple chat models in your application.\nHere’s how to handle this scenario:",
+      "translation": "默认情况下，Spring AI 会自动配置一个 <code>ChatClient.Builder</code> Bean。\n然而，您可能需要在应用程序中使用多个聊天模型。\n以下是处理此场景的方法：",
+      "count": 1
+    },
+    {
+      "source": "This section covers a common use case where you need to create multiple ChatClient instances that all use the same underlying model type but with different configurations.\nYou can use the auto-configured <code>ChatClient.Builder</code> as it is prototype-scoped, meaning a new instance is created for each injection point:",
+      "translation": "本节涵盖一种常见的使用场景：您需要创建多个 ChatClient 实例，这些实例使用相同的底层模型类型，但配置不同。  \n您可以使用自动配置的 <code>ChatClient.Builder</code>，因为它是原型作用域的，这意味着每个注入点都会创建一个新实例：",
+      "count": 1
+    },
+    {
+      "source": "You can then inject these beans into your application components using the <code>@Qualifier</code> annotation:",
+      "translation": "然后，您可以使用<code>@Qualifier</code>注解将这些 Bean 注入到您的应用程序组件中：",
+      "count": 1
+    },
+    {
+      "source": "You can create multiple <code>OpenAiChatModel</code> instances using their builders to connect to different OpenAI-compatible APIs.\nThis is particularly useful when you need to work with multiple providers.",
+      "translation": "您可以使用其构建器创建多个<code>OpenAiChatModel</code>实例，以连接到不同的 OpenAI 兼容 API。这在需要与多个提供商协作时特别有用。",
+      "count": 1
+    },
+    {
+      "source": "<code>prompt()</code>: This method with no arguments lets you start using the fluent API, allowing you to build up user, system, and other parts of the prompt.",
+      "translation": "<prompt()>：此无参方法可启动流式 API 的使用，使您能够构建提示的用户部分、系统部分及其他组成部分。",
+      "count": 1
+    },
+    {
+      "source": "<code>prompt(String content)</code>: This is a convenience method similar to the previous overload. It takes the user’s text content.",
+      "translation": "<code>prompt(String content)</code>：这是一个与之前重载方法类似的便捷方法，它接收用户的文本内容。",
+      "count": 1
+    },
+    {
+      "source": "The <code>ChatClient</code> API offers several ways to format the response from the AI Model using the fluent API.",
+      "translation": "<code>ChatClient</code> API 提供多种方法，可通过流式 API 格式化来自 AI 模型的响应。",
+      "count": 1
+    },
+    {
+      "source": "You can easily map the AI model’s output to this record using the <code>entity()</code> method, as shown below:",
+      "translation": "您可以使用 <code>entity()</code> 方法轻松地将 AI 模型的输出映射到此记录，如下所示：",
+      "count": 1
+    },
+    {
+      "source": "The <code>stream()</code> method lets you get an asynchronous response as shown below:",
+      "translation": "`stream()` 方法可让您获取如下所示的异步响应：",
+      "count": 1
+    },
+    {
+      "source": "The <code>ChatClient</code> fluent API lets you provide user and system text as templates with variables that are replaced at runtime.",
+      "translation": "`ChatClient` 流式 API 允许您提供用户和系统文本作为模板，其中包含在运行时被替换的变量。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI also provides a <code>NoOpTemplateRenderer</code> for cases where no template processing is desired.",
+      "translation": "Spring AI 还提供了<code>NoOpTemplateRenderer</code>，用于不需要模板处理的场景。",
+      "count": 1
+    },
+    {
+      "source": "<code>String content()</code>: returns the String content of the response",
+      "translation": "<code>String content()</code>：返回响应的字符串内容",
+      "count": 1
+    },
+    {
+      "source": "<code>entity()</code> to return a Java type",
+      "translation": "<code>entity()</code> 返回一个 Java 类型",
+      "count": 1
+    },
+    {
+      "source": "<code>entity(Class&lt;T&gt; type)</code>:  used to return a specific entity type.",
+      "translation": "<code>entity(Class<T> type)</code>：用于返回特定的实体类型。",
+      "count": 1
+    },
+    {
+      "source": "You can add metadata to user messages using the <code>metadata()</code> methods:",
+      "translation": "您可以使用 `<code>metadata()</code>` 方法为用户消息添加元数据：",
+      "count": 1
+    },
+    {
+      "source": "The metadata is included in the generated UserMessage and SystemMessage objects and can be accessed through the message’s <code>getMetadata()</code> method.\nThis is particularly useful when processing messages in advisors or when examining the conversation history.",
+      "translation": "元数据包含在生成的 UserMessage 和 SystemMessage 对象中，可通过消息的<code>getMetadata()</code>方法访问。这在顾问处理消息或检查对话历史时特别有用。",
+      "count": 1
+    },
+    {
+      "source": "and a <code>@RestController</code> to invoke it:",
+      "translation": "以及一个用于调用它的 `<code>@RestController</code>`：",
+      "count": 1
+    },
+    {
+      "source": "At the <code>ChatClient.Builder</code> level, you can specify the default prompt configuration.",
+      "translation": "在<code>ChatClient.Builder</code>级别，您可以指定默认的提示配置。",
+      "count": 1
+    },
+    {
+      "source": "<code>defaultToolContext(Map&lt;String, Object&gt; toolContext)</code>: Set a default context for tool executions.",
+      "translation": "`defaultToolContext(Map<String, Object> toolContext)`：为工具执行设置默认上下文。",
+      "count": 1
+    },
+    {
+      "source": "You can override these defaults at runtime using the corresponding methods without the <code>default</code> prefix.",
+      "translation": "您可以在运行时使用不带<code>default</code>前缀的相应方法来覆盖这些默认值。",
+      "count": 1
+    },
+    {
+      "source": "The <a class=\"xref page\" href=\"advisors.html\">Advisors API</a> provides a flexible and powerful way to intercept, modify, and enhance AI-driven interactions in your Spring applications.",
+      "translation": "<a class=\"xref page\" href=\"advisors.html\">顾问 API</a> 提供了一种灵活而强大的方式，用于拦截、修改并增强您 Spring 应用中的 AI 驱动交互。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Your own data</strong>: This is data the AI model hasn’t been trained on.\nEven if the model has seen similar data, the appended contextual data takes precedence in generating the response.",
+      "translation": "<strong>您自己的数据</strong>：这是人工智能模型未曾接受过训练的数据。即使模型曾接触过类似数据，附加的上下文数据在生成回复时将具有优先权。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Conversational history</strong>: The chat model’s API is stateless.\nIf you tell the AI model your name, it won’t remember it in subsequent interactions.\nConversational history must be sent with each request to ensure previous interactions are considered when generating a response.",
+      "translation": "<strong>对话历史</strong>：聊天模型的 API 是无状态的。  \n如果您告诉 AI 模型您的名字，它在后续的交互中不会记住该信息。  \n每次请求都必须包含对话历史，以确保在生成响应时能够考虑之前的交互内容。",
+      "count": 1
+    },
+    {
+      "source": "The ChatClient fluent API provides an <code>AdvisorSpec</code> interface for configuring advisors.\nThis interface offers methods to add parameters, set multiple parameters at once, and add one or more advisors to the chain.",
+      "translation": "ChatClient 流式 API 提供了一个 `AdvisorSpec` 接口用于配置顾问。该接口提供了添加参数、一次性设置多个参数以及向链中添加一个或多个顾问的方法。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"xref page\" href=\"retrieval-augmented-generation.html#_questionansweradvisor\">Learn about Question Answer Advisor</a>",
+      "translation": "<a class=\"xref page\" href=\"retrieval-augmented-generation.html#_questionansweradvisor\">了解问答顾问</a>",
+      "count": 1
+    },
+    {
+      "source": "Refer to the <a class=\"xref page\" href=\"retrieval-augmented-generation.html\">Retrieval Augmented Generation</a> guide.",
+      "translation": "参考<a class=\"xref page\" href=\"retrieval-augmented-generation.html\">检索增强生成</a>指南。",
+      "count": 1
+    },
+    {
+      "source": "To enable logging, add the <code>SimpleLoggerAdvisor</code> to the advisor chain when creating your ChatClient.\nIt’s recommended to add it toward the end of the chain:",
+      "translation": "要启用日志记录，在创建 ChatClient 时将<code>SimpleLoggerAdvisor</code>添加到顾问链中。建议将其添加在链的末尾：",
+      "count": 1
+    },
+    {
+      "source": "To see the logs, set the logging level for the advisor package to <code>DEBUG</code>:",
+      "translation": "要查看日志，请将顾问包的日志级别设置为<code>DEBUG</code>：",
+      "count": 1
+    },
+    {
+      "source": "When this property is set, tools are still sent to the AI model as definitions, but tool calls in the response are not executed automatically.\nUse <a class=\"xref page\" href=\"tools.html#_user_controlled_tool_execution\">user-controlled tool execution</a> to drive the loop yourself.",
+      "translation": "设置此属性后，工具仍会以定义的形式发送给 AI 模型，但响应中的工具调用不会自动执行。请使用 <a class=\"xref page\" href=\"tools.html#_user_controlled_tool_execution\">用户控制的工具执行</a> 自行驱动循环。",
+      "count": 1
+    },
+    {
+      "source": "You can disable auto-registration for a single call using <code>AdvisorParams.toolCallingAdvisorAutoRegister(false)</code>:",
+      "translation": "您可以使用 <code>AdvisorParams.toolCallingAdvisorAutoRegister(false)</code> 禁用单个调用的自动注册：",
+      "count": 1
+    },
+    {
+      "source": "You can pass a custom advisor via <code>.advisors()</code>:",
+      "translation": "您可以通过 `.advisors()` 传入自定义顾问：",
+      "count": 1
+    },
+    {
+      "source": "Position of the auto-registered <code>ToolCallingAdvisor</code> in the advisor chain.",
+      "translation": "自动注册的<code>ToolCallingAdvisor</code>在顾问链中的位置。",
+      "count": 1
+    },
+    {
+      "source": "The <code>ChatClient.Builder</code> bean is then automatically wired with this custom builder.",
+      "translation": "随后，该自定义构建器会自动与 `<code>ChatClient.Builder</code>` Bean 进行注入。",
+      "count": 1
+    },
+    {
+      "source": "For more details see <a class=\"xref page\" href=\"tools.html#_advisor_controlled_tool_execution_with_toolcallingadvisor\">Advisor-Controlled Tool Execution</a>.",
+      "translation": "有关详细信息，请参阅<a class=\"xref page\" href=\"tools.html#_advisor_controlled_tool_execution_with_toolcallingadvisor\">顾问控制的工具执行</a>。",
+      "count": 1
+    },
+    {
+      "source": "The interface <code>ChatMemory</code> represents a storage for chat conversation memory.\nIt provides methods to add messages to a conversation, retrieve messages from a conversation, and clear the conversation history.",
+      "translation": "`ChatMemory` 接口代表聊天对话记忆的存储。它提供了向对话中添加消息、从对话中检索消息以及清除对话历史的方法。",
+      "count": 1
+    },
+    {
+      "source": "There is currently one built-in implementation: <code>MessageWindowChatMemory</code>.",
+      "translation": "目前有一个内置实现：<code>MessageWindowChatMemory</code>。",
+      "count": 1
+    },
+    {
+      "source": "<code>MessageWindowChatMemory</code> is a chat memory implementation that maintains a window of messages up to a specified maximum size (default: 20 messages).\nWhen the number of messages exceeds this limit, older messages are evicted, but system messages are preserved.\nIf a new system message is added, all previous system messages are removed from memory.\nThis ensures that the most recent context is always available for the conversation while keeping memory usage bounded.",
+      "translation": "`MessageWindowChatMemory` 是一种聊天记忆实现，它维护一个消息窗口，最大大小由指定值决定（默认：20 条消息）。当消息数量超过此限制时，旧消息会被移除，但系统消息会被保留。如果添加了新的系统消息，则内存中所有之前的系统消息都会被删除。这确保了对话始终拥有最新的上下文，同时将内存使用量控制在有界范围内。",
+      "count": 1
+    },
+    {
+      "source": "For more details and usage examples, see the <a class=\"xref page\" href=\"chat-memory.html\">Chat Memory</a> documentation.",
+      "translation": "有关更多详细信息和使用示例，请参阅<a class=\"xref page\" href=\"chat-memory.html\">对话记忆</a>文档。",
+      "count": 1
+    },
+    {
+      "source": "The combined use of imperative and reactive programming models in <code>ChatClient</code> is a unique aspect of the API.\nOften an application will be either reactive or imperative, but not both.",
+      "translation": "在 `<code>ChatClient</code>` 中结合使用命令式和响应式编程模型是该 API 的一个独特之处。通常，应用程序要么是响应式的，要么是命令式的，而不会同时具备两者。",
+      "count": 1
+    },
+    {
+      "source": "The AI model processes two main types of messages: user messages, which are direct inputs from the user, and system messages, which are generated by the system to guide the conversation.",
+      "translation": "AI 模型处理两种主要类型的消息：用户消息，即来自用户的直接输入；以及系统消息，由系统生成以引导对话。",
+      "count": 1
+    },
+    {
+      "source": "These messages often contain placeholders that are substituted at runtime based on user input to customize the response of the AI model to the user input.",
+      "translation": "这些消息通常包含占位符，在运行时根据用户输入进行替换，以定制 AI 模型对用户输入的响应。",
+      "count": 1
+    },
+    {
+      "source": "There are also Prompt options that can be specified, such as the name of the AI Model to use and the temperature setting that controls the randomness or creativity of the generated output.",
+      "translation": "此外，还可以指定提示选项，例如要使用的 AI 模型名称以及控制生成输出随机性或创造性的温度设置。",
+      "count": 1
+    },
+    {
+      "source": "There are several scenarios where you might need to work with multiple chat models in a single application:",
+      "translation": "在某些情况下，您可能需要在单个应用程序中同时使用多个聊天模型：",
+      "count": 1
+    },
+    {
+      "source": "Using different models for different types of tasks (e.g., a powerful model for complex reasoning and a faster, cheaper model for simpler tasks)",
+      "translation": "针对不同任务类型采用不同的模型（例如，对复杂推理任务使用强大的模型，对简单任务使用更快、更便宜的模型）",
+      "count": 1
+    },
+    {
+      "source": "Implementing fallback mechanisms when one model service is unavailable",
+      "translation": "在某个模型服务不可用时实现备用机制。",
+      "count": 1
+    },
+    {
+      "source": "A/B testing different models or configurations",
+      "translation": "对不同的模型或配置进行 A/B 测试",
+      "count": 1
+    },
+    {
+      "source": "Providing users with a choice of models based on their preferences",
+      "translation": "根据用户偏好提供模型选择。",
+      "count": 1
+    },
+    {
+      "source": "Combining specialized models (one for code generation, another for creative content, etc.)",
+      "translation": "结合专用模型（一个用于代码生成，另一个用于创意内容等）",
+      "count": 1
+    },
+    {
+      "source": "For example, given the Java record:",
+      "translation": "例如，给定以下 Java 记录：",
+      "count": 1
+    },
+    {
+      "source": "You can still set this globally for all calls via the advisor parameter:",
+      "translation": "您仍可通过 advisor 参数在所有调用中全局设置此选项：",
+      "count": 1
+    },
+    {
+      "source": "Both options can be combined:",
+      "translation": "两种选项可以结合使用：",
+      "count": 1
+    },
+    {
+      "source": "The ChatClient supports adding metadata to both user and system messages.\nMetadata provides additional context and information about messages that can be used by the AI model or downstream processing.",
+      "translation": "ChatClient 支持为用户消息和系统消息添加元数据。元数据提供了关于消息的额外上下文和信息，可供 AI 模型或下游处理使用。",
+      "count": 1
+    },
+    {
+      "source": "Similarly, you can add metadata to system messages:",
+      "translation": "同样，您可以向系统消息添加元数据：",
+      "count": 1
+    },
+    {
+      "source": "You can also configure default metadata at the ChatClient builder level:",
+      "translation": "此外，您还可在 ChatClient 构建器级别配置默认元数据：",
+      "count": 1
+    },
+    {
+      "source": "The ChatClient validates metadata to ensure data integrity:",
+      "translation": "ChatClient 验证元数据以确保数据完整性：",
+      "count": 1
+    },
+    {
+      "source": "Metadata keys cannot be null or empty",
+      "translation": "元数据键不能为 null 或空字符串。",
+      "count": 1
+    },
+    {
+      "source": "Metadata values cannot be null",
+      "translation": "元数据值不能为空。",
+      "count": 1
+    },
+    {
+      "source": "When passing a Map, neither keys nor values can contain null elements",
+      "translation": "传递 Map 时，键和值都不能包含 null 元素。",
+      "count": 1
+    },
+    {
+      "source": "When calling the application endpoint via curl, the result is:",
+      "translation": "通过 curl 调用应用端点时，结果如下：",
+      "count": 1
+    },
+    {
+      "source": "In the following example, we will use a placeholder in the system text to specify the voice of the completion at runtime instead of design time.",
+      "translation": "在以下示例中，我们将在系统文本中使用占位符来在运行时而非设计时指定完成的语音。",
+      "count": 1
+    },
+    {
+      "source": "When calling the application endpoint via httpie, the result is:",
+      "translation": "通过 httpie 调用应用端点时，结果如下：",
+      "count": 1
+    },
+    {
+      "source": "This is useful for creating derivative clients or requests without redefining all options.",
+      "translation": "这有助于在无需重新定义所有选项的情况下创建派生客户端或请求。",
+      "count": 1
+    },
+    {
+      "source": "A common pattern when calling an AI model with user text is to append or augment the prompt with contextual data.",
+      "translation": "调用 AI 模型处理用户文本时，一种常见模式是在提示词中追加或增强上下文数据。",
+      "count": 1
+    },
+    {
+      "source": "This contextual data can be of different types. Common types include:",
+      "translation": "此类上下文数据可具有不同的类型。常见类型包括：",
+      "count": 1
+    },
+    {
+      "source": "Example usage:",
+      "translation": "使用示例：",
+      "count": 1
+    },
+    {
+      "source": "This allows you to tailor the logged information to your specific needs.",
+      "translation": "这使您能够根据具体需求定制日志信息。",
+      "count": 1
+    },
+    {
+      "source": "When customizing the HTTP client interactions of a Model implementation, both the RestClient and the WebClient must be configured.",
+      "translation": "在自定义模型实现的 HTTP 客户端交互时，必须同时配置 RestClient 和 WebClient。",
+      "count": 1
+    },
+    {
+      "source": "Streaming is only supported via the Reactive stack.\nImperative applications must include the Reactive stack for this reason (e.g. spring-boot-starter-webflux).",
+      "translation": "仅通过响应式栈支持流式处理。\n由于此原因，命令式应用程序必须包含响应式栈（例如 spring-boot-starter-webflux）。",
+      "count": 1
+    },
+    {
+      "source": "Non-streaming is only supportive via the Servlet stack.\nReactive applications must include the Servlet stack for this reason (e.g. spring-boot-starter-web) and expect some calls to be blocking.",
+      "translation": "非流式处理仅通过 Servlet 堆栈提供支持。因此，反应式应用程序必须包含 Servlet 堆栈（例如 spring-boot-starter-web），并预期某些调用将是阻塞的。",
+      "count": 1
+    },
+    {
+      "source": "Tool calling is imperative, leading to blocking workflows.\nThis also results in partial/interrupted Micrometer observations (e.g. the ChatClient spans and the tool calling spans are not connected, with the first one remaining incomplete for that reason).",
+      "translation": "工具调用是强制性的，导致工作流被阻塞。\n这也导致了部分/中断的 Micrometer 观测结果（例如，ChatClient 跨度与工具调用跨度未连接，因此前者保持不完整）。",
+      "count": 1
+    },
+    {
+      "source": "The built-in advisors perform blocking operations for standards calls, and non-blocking operations for streaming calls.\nThe Reactor Scheduler used for the advisor streaming calls can be configured via the Builder on each Advisor class.",
+      "translation": "内置顾问对标准调用执行阻塞操作，而对流式调用执行非阻塞操作。  \n用于顾问流式调度的反应堆调度器可通过每个顾问类上的构建器进行配置。",
+      "count": 1
+    },
+    {
+      "source": "Apache®, Apache Tomcat®, Apache Kafka®, Apache Cassandra™, and Apache Geode™ are trademarks or registered trademarks of the Apache Software Foundation in the United States and/or other countries. Java™, Java™ SE, Java™ EE, and OpenJDK™ are trademarks of Oracle and/or its affiliates. Kubernetes® is a registered trademark of the Linux Foundation in the United States and other countries. Linux® is the registered trademark of Linus Torvalds in the United States and other countries. Windows® and Microsoft® Azure are registered trademarks of Microsoft Corporation. “AWS” and “Amazon Web Services” are trademarks or registered trademarks of Amazon.com Inc. or its affiliates. All other trademarks and copyrights are property of their respective owners and are only mentioned for informative purposes. Other names may be trademarks of their respective owners.",
+      "translation": "Apache®、Apache Tomcat®、Apache Kafka®、Apache Cassandra™ 和 Apache Geode™ 是 Apache 软件基金会在美国和其他/或某些国家的商标或注册商标。Java™、Java™ SE、Java™ EE 和 OpenJDK™ 是 Oracle 公司和/或其关联公司的商标。Kubernetes® 是 Linux 基金会在美国和其他/或某些国家的注册商标。Linux® 是 Linus Torvalds 在美国和其他/或某些国家的注册商标。Windows® 和 Microsoft® Azure 是微软公司的注册商标。\"AWS\"和\"Amazon Web Services\"是 Amazon.com Inc. 或其关联公司的商标或注册商标。所有其他商标和版权均归各自所有者所有，仅用于说明目的。其他名称可能是其各自所有者的商标。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/projects\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-boot\">Spring Boot</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-framework\">Spring Framework</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud\">Spring Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud-dataflow\">Spring Cloud Data Flow</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-data\">Spring Data</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-integration\">Spring Integration</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-batch\">Spring Batch</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-security\">Spring Security</a>\n            <a class=\"navbar-item navbar-item-special\" href=\"https://spring.io/projects\">View all projects</a>\n            <li class=\"navbar-item navbar-item-special-3\">DEVELOPMENT TOOLS</li>\n            <a class=\"navbar-item\" href=\"https://spring.io/tools\">Spring Tools 4</a>\n            <a class=\"navbar-item navbar-item-special-2\" href=\"https://start.spring.io\">Spring Initializr\n              <svg id=\"svg-stash-f15b5668\"></svg></a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/projects\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-boot\">Spring Boot</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-framework\">Spring Framework</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud\">Spring Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud-dataflow\">Spring Cloud Data Flow</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-data\">Spring Data</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-integration\">Spring Integration</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-batch\">Spring Batch</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-security\">Spring Security</a>\n            <a class=\"navbar-item navbar-item-special\" href=\"https://spring.io/projects\">查看所有项目</a>\n            <li class=\"navbar-item navbar-item-special-3\">开发工具</li>\n            <a class=\"navbar-item\" href=\"https://spring.io/tools\">Spring Tools 4</a>\n            <a class=\"navbar-item navbar-item-special-2\" href=\"https://start.spring.io\">Spring Initializr\n              <svg id=\"svg-stash-f15b5668\"></svg></a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/why-spring\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/microservices\">Microservices</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/reactive\">Reactive</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/event-driven\">Event\n              Driven</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/cloud\">Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/web-applications\">Web\n              Applications</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/serverless\">Serverless</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/batch\">Batch</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/why-spring\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/microservices\">微服务</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/reactive\">响应式</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/event-driven\">事件驱动</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/cloud\">云</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/web-applications\">Web 应用</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/serverless\">无服务器</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/batch\">批处理</a>",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/chatclient.adoc\">\n          <svg id=\"svg-stash-05b5c46b\"></svg>\n          Edit this Page\n        </a>\n        <a href=\"https://github.com/spring-projects/spring-ai\" title=\"GitHub\">\n          <svg id=\"svg-stash-28d888b7\"></svg>\n          GitHub Project\n        </a>",
+      "translation": "<a href=\"file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/chatclient.adoc\">\n          <svg id=\"svg-stash-05b5c46b\"></svg>\n          编辑此页面\n        </a>\n        <a href=\"https://github.com/spring-projects/spring-ai\" title=\"GitHub\">\n          <svg id=\"svg-stash-28d888b7\"></svg>\n          GitHub 项目\n        </a>",
+      "count": 1
+    },
+    {
+      "source": "<nav aria-label=\"breadcrumbs\" class=\"breadcrumbs\">\n    <ul>\n      <li><a href=\"../index.html\">Spring AI</a></li>\n      <li>Reference</li>\n      <li><a href=\"chatclient.html\">Chat Client API</a></li>\n    </ul>\n  </nav>",
+      "translation": "<nav aria-label=\"面包屑\" class=\"breadcrumbs\">\n    <ul>\n      <li><a href=\"../index.html\">Spring AI</a></li>\n      <li>参考</li>\n      <li><a href=\"chatclient.html\">聊天客户端 API</a></li>\n    </ul>\n  </nav>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/solutions\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/support\">Spring Runtime</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/consulting\">Spring Consulting</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/teams\">Spring Academy For Teams</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/security\">Security Advisories</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/solutions\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/support\">Spring 运行时</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/consulting\">Spring 咨询</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/teams\">Spring Academy 团队培训</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/security\">安全公告</a>",
+      "count": 1
+    },
+    {
+      "source": "<ul class=\"projects\">\n  <li>\n    Related Spring Documentation\n    <ul class=\"projects-list\">\n    </ul>\n  </li><a href=\"../spring-projects.html\">All Docs...</a>\n</ul>",
+      "translation": "<ul class=\"projects\">\n  <li>\n    相关 Spring 文档\n    <ul class=\"projects-list\">\n    </ul>\n  </li><a href=\"../spring-projects.html\">所有文档...</a>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.academy/courses\">Courses</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/learning-path\">Get Certified</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.academy/courses\">课程</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/learning-path\">获取认证</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"title\" href=\"../index.html\">Spring AI</a>",
+      "translation": "<a class=\"title\" href=\"../index.html\">Spring AI</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"search-link\" href=\"../search.html\">Search in all Spring Docs</a>",
+      "translation": "<a class=\"search-link\" href=\"../search.html\">在全部 Spring 文档中搜索</a>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"vectordbs.html\">Vector Databases</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/azure.html\">Azure AI Service</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/azure-cosmos-db.html\">Azure Cosmos DB</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/bedrock-knowledge-base.html\">Amazon Bedrock Knowledge Base</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/apache-cassandra.html\">Apache Cassandra Vector Store</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/chroma.html\">Chroma</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/couchbase.html\">Couchbase</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/elasticsearch.html\">Elasticsearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/gemfire.html\">GemFire</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/mariadb.html\">MariaDB Vector Store</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/milvus.html\">Milvus</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/mongodb.html\">MongoDB Atlas</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/neo4j.html\">Neo4j</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/opensearch.html\">OpenSearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/oracle.html\">Oracle</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/pgvector.html\">PGvector</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/pinecone.html\">Pinecone</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/qdrant.html\">Qdrant</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/redis.html\">Redis</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/typesense.html\">Typesense</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/weaviate.html\">Weaviate</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/s3-vector-store.html\">S3 Vector Store</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"vectordbs.html\">向量数据库</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/azure.html\">Azure AI 服务</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/azure-cosmos-db.html\">Azure Cosmos DB</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/bedrock-knowledge-base.html\">Amazon Bedrock 知识库</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/apache-cassandra.html\">Apache Cassandra 向量存储</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/chroma.html\">Chroma</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/couchbase.html\">Couchbase</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/elasticsearch.html\">Elasticsearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/gemfire.html\">GemFire</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/mariadb.html\">MariaDB 向量存储</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/milvus.html\">Milvus</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/mongodb.html\">MongoDB Atlas</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/neo4j.html\">Neo4j</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/opensearch.html\">OpenSearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/oracle.html\">Oracle</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/pgvector.html\">PGvector</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/pinecone.html\">Pinecone</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/qdrant.html\">Qdrant</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/redis.html\">Redis</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/typesense.html\">Typesense</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/weaviate.html\">Weaviate</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/s3-vector-store.html\">S3 向量存储</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"embeddings.html\">Embedding Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"bedrock.html\">Amazon Bedrock</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/bedrock-cohere-embedding.html\">Cohere</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/bedrock-titan-embedding.html\">Titan</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/azure-openai-embeddings.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/google-genai-embeddings-text.html\">Google GenAI Text Embedding</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/mistralai-embeddings.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/oci-genai-embeddings.html\">OCI GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/ollama-embeddings.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/onnx.html\">(ONNX) Transformers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/openai-embeddings.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/postgresml-embeddings.html\">PostgresML</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">VertexAI</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/vertexai-embeddings-text.html\">Text Embedding</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/vertexai-embeddings-multimodal.html\">Multimodal Embedding</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"embeddings.html\">嵌入模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"bedrock.html\">Amazon Bedrock</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/bedrock-cohere-embedding.html\">Cohere</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/bedrock-titan-embedding.html\">Titan</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/azure-openai-embeddings.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/google-genai-embeddings-text.html\">Google GenAI 文本嵌入</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/mistralai-embeddings.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/oci-genai-embeddings.html\">OCI GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/ollama-embeddings.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/onnx.html\">(ONNX) Transformers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/openai-embeddings.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/postgresml-embeddings.html\">PostgresML</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">VertexAI</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/vertexai-embeddings-text.html\">文本嵌入</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/vertexai-embeddings-multimodal.html\">多模态嵌入</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"chatmodel.html\">Chat Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/comparison.html\">Chat Models Comparison</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/bedrock-converse.html\">Amazon Bedrock Converse</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/anthropic-chat.html\">Anthropic</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/azure-openai-chat.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/deepseek-chat.html\">DeepSeek</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/dmr-chat.html\">Docker Model Runner</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/google-genai-chat.html\">Google GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/groq-chat.html\">Groq</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/mistralai-chat.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/minimax-chat.html\">MiniMax</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/nvidia-chat.html\">NVIDIA</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/ollama-chat.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/perplexity-chat.html\">Perplexity AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/oci-genai-chat.html\">OCI Generative AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/openai-chat.html\">OpenAI</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"chatmodel.html\">对话模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/comparison.html\">对话模型对比</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/bedrock-converse.html\">Amazon Bedrock Converse</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/anthropic-chat.html\">Anthropic</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/azure-openai-chat.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/deepseek-chat.html\">DeepSeek</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/dmr-chat.html\">Docker Model Runner</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/google-genai-chat.html\">Google GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/groq-chat.html\">Groq</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/mistralai-chat.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/minimax-chat.html\">MiniMax</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/nvidia-chat.html\">NVIDIA</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/ollama-chat.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/perplexity-chat.html\">Perplexity AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/oci-genai-chat.html\">OCI Generative AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/openai-chat.html\">OpenAI</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-overview.html\">Model Context Protocol (MCP)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mcp/mcp-client-boot-starter-docs.html\">MCP Client Boot Starters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-server-boot-starter-docs.html\">MCP Server Boot Starters</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-stdio-sse-server-boot-starter-docs.html\">STDIO and SSE MCP Servers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-streamable-http-server-boot-starter-docs.html\">Streamable-HTTP MCP Servers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-stateless-server-boot-starter-docs.html\">Stateless Streamable-HTTP MCP Servers</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mcp/mcp-security.html\">MCP Security (WIP)</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-overview.html\">MCP Annotations</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-client.html\">Client Annotations</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-server.html\">Server Annotations</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-special-params.html\">Special Parameters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-examples.html\">MCP Annotations Examples</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"mcp/mcp-overview.html\">模型上下文协议 (MCP)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mcp/mcp-client-boot-starter-docs.html\">MCP 客户端启动器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-server-boot-starter-docs.html\">MCP 服务器启动器</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-stdio-sse-server-boot-starter-docs.html\">STDIO 和 SSE MCP 服务器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-streamable-http-server-boot-starter-docs.html\">可流式 HTTP MCP 服务器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-stateless-server-boot-starter-docs.html\">无状态可流式 HTTP MCP 服务器</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mcp/mcp-security.html\">MCP 安全 (进行中)</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-overview.html\">MCP 注解</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-client.html\">客户端注解</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-server.html\">服务器注解</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-special-params.html\">特殊参数</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-examples.html\">MCP 注解示例</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">Guides</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/spring-ai-community/awesome-spring-ai\">Awesome Spring AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/getting-started-mcp.html\">Getting Started with MCP</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/dynamic-tool-search.html\">Dynamic Tool Discovery</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/llm-as-judge.html\">LLM-as-a-Judge Evaluation</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"chat/prompt-engineering-patterns.html\">Prompt Engineering Patterns</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"effective-agents.html\">Building Effective Agents</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agents\">Building agents with Spring AI by AWS</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agentcore\">Building agents with Spring AI and AgentCore by AWS</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/microsoft/Spring-AI-for-Beginners\">Spring AI for Beginners by Microsoft</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<span class=\"nav-text\">指南</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/spring-ai-community/awesome-spring-ai\">Awesome Spring AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/getting-started-mcp.html\">MCP 入门</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/dynamic-tool-search.html\">动态工具发现</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/llm-as-judge.html\">LLM 作为裁判的评估</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"chat/prompt-engineering-patterns.html\">提示工程模式</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"effective-agents.html\">构建高效智能体</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agents\">AWS 使用 Spring AI 构建智能体</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agentcore\">AWS 使用 Spring AI 和 AgentCore 构建智能体</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/microsoft/Spring-AI-for-Beginners\">Microsoft 的 Spring AI 初学者指南</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio.html\">Audio Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio/transcriptions.html\">Transcription API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/transcriptions/azure-openai-transcriptions.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/transcriptions/openai-transcriptions.html\">OpenAI</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio/speech.html\">Text-To-Speech (TTS) API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/speech/openai-speech.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/speech/elevenlabs-speech.html\">ElevenLabs</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio.html\">音频模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio/transcriptions.html\">转录 API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/transcriptions/azure-openai-transcriptions.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/transcriptions/openai-transcriptions.html\">OpenAI</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio/speech.html\">文本转语音 (TTS) API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/speech/openai-speech.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/speech/elevenlabs-speech.html\">ElevenLabs</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nThe <code>TemplateRenderer</code> configured directly on the <code>ChatClient</code> (via <code>.templateRenderer()</code>) applies only to the prompt content defined directly in the <code>ChatClient</code> builder chain (e.g., via <code>.user()</code>, <code>.system()</code>).\nIt does <strong>not</strong> affect templates used internally by <a class=\"xref page\" href=\"retrieval-augmented-generation.html#_questionansweradvisor\">Advisors</a> like <code>QuestionAnswerAdvisor</code>, which have their own template customization mechanisms (see <a class=\"xref page\" href=\"retrieval-augmented-generation.html#_custom_template\">Custom Advisor Templates</a>).\n</td>\n</tr>\n</tbody>",
+      "translation": "直接配置在 `ChatClient` 上的 `TemplateRenderer`（通过 `.templateRenderer()`）仅适用于直接在 `ChatClient` 构建器链中定义的提示内容（例如，通过 `.user()`、`.system()`）。它不会影响 `<strong>`Advisors</strong>（如 `QuestionAnswerAdvisor`）内部使用的模板，这些 Advisors 拥有自己的模板自定义机制（请参阅<a class=\"xref page\" href=\"retrieval-augmented-generation.html#_custom_template\">自定义 Advisor 模板</a>）。",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"chatclient.html\">Chat Client API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"advisors.html\">Advisors</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"advisors-recursive.html\">Recursive Advisors</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"chatclient.html\">聊天客户端 API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"advisors.html\">顾问</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"advisors-recursive.html\">递归顾问</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"imageclient.html\">Image Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/azure-openai-image.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/openai-image.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/stabilityai-image.html\">Stability</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"imageclient.html\">图像模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/azure-openai-image.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/openai-image.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/stabilityai-image.html\">Stability</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nCalling the <code>call()</code> method does not actually trigger the AI model execution. Instead, it only instructs Spring AI whether to use synchronous or streaming calls.\nThe actual AI model invocation occurs when methods such as <code>content()</code>, <code>chatResponse()</code>, and <code>responseEntity()</code> are called.\n</td>\n</tr>\n</tbody>",
+      "translation": "<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n调用 <code>call()</code> 方法并不会真正触发 AI 模型的执行，它仅指示 Spring AI 使用同步还是流式调用。实际的 AI 模型调用发生在调用诸如 <code>content()</code>、<code>chatResponse()</code> 和 <code>responseEntity()</code> 等方法时。\n</td>\n</tr>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-important\" title=\"Important\"></i>\n</td>\n<td class=\"content\">\nThe <code>ChatMemory.CONVERSATION_ID</code> parameter is <strong>required</strong> for all memory advisors. It must be supplied on every call via <code>.advisors(a → a.param(ChatMemory.CONVERSATION_ID, conversationId))</code>. Omitting it throws an <code>IllegalArgumentException</code>. There is no default conversation ID.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-important\" title=\"Important\"></i>\n</td>\n<td class=\"content\">\n对于所有记忆顾问，<code>ChatMemory.CONVERSATION_ID</code> 参数是<strong>必需</strong>的。它必须通过 <code>.advisors(a → a.param(ChatMemory.CONVERSATION_ID, conversationId))</code> 在每次调用时提供。省略该参数会抛出 <code>IllegalArgumentException</code>。不存在默认的会话 ID。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n<code>ChatMemory.CONVERSATION_ID</code> must be supplied via <code>.param()</code> on every call that uses a memory advisor. Omitting it throws an <code>IllegalArgumentException</code> at runtime.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n每次调用记忆顾问时，都必须通过 <code>.param()</code> 提供 <code>ChatMemory.CONVERSATION_ID</code>。若省略该参数，将在运行时抛出 <code>IllegalArgumentException</code>。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"moderation.html\">Moderation Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"moderation/openai-moderation.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"moderation/mistral-ai-moderation.html\">Mistral AI</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"moderation.html\">内容审核模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"moderation/openai-moderation.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"moderation/mistral-ai-moderation.html\">Mistral AI</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../upgrade-notes.html\">Upgrade Notes</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"tools-migration.html\">Migrating FunctionCallback to ToolCallback API</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"chat/anthropic-migration.html\">Migrating the Anthropic Module to the Official Java SDK</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"../upgrade-notes.html\">升级说明</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"tools-migration.html\">将 FunctionCallback 迁移至 ToolCallback API</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"chat/anthropic-migration.html\">将 Anthropic 模块迁移至官方 Java SDK</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-important\" title=\"Important\"></i>\n</td>\n<td class=\"content\">\nNative structured output is <strong>not enabled by default</strong> because support varies significantly across models and providers.\nNotable limitations include Ollama models with reasoning/thinking mode (which may return plain text instead of JSON) and OpenAI’s lack of support for top-level array schemas.\nSee <a class=\"xref page\" href=\"structured-output-converter.html#_known_limitations\">Known Limitations</a> for details and workarounds.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-important\" title=\"Important\"></i>\n</td>\n<td class=\"content\">\n原生结构化输出<strong>默认未启用</strong>，因为不同模型和提供商的支持程度差异显著。\n主要限制包括：具有推理/思考模式的 Ollama 模型（可能返回纯文本而非 JSON），以及 OpenAI 不支持顶层数组模式。\n有关详细信息和变通方法，请参阅<a class=\"xref page\" href=\"structured-output-converter.html#_known_limitations\">已知限制</a>。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nStreaming is not supported when <code>validateSchema()</code> is active.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n当启用 <code>validateSchema()</code> 时，不支持流式处理。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\nSpring AI supports observability for LLM and vector store interactions.\nRefer to the <a class=\"xref page\" href=\"../observability/index.html\">Observability</a> guide for more information.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"提示\"></i>\n</td>\n<td class=\"content\">\nSpring AI 支持对 LLM 和向量存储交互的可观测性。有关更多信息，请参阅<a class=\"xref page\" href=\"../observability/index.html\">可观测性</a>指南。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../index.html\">Overview</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../concepts.html\">AI Concepts</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"../index.html\">概述</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../concepts.html\">AI 概念</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"retrieval-augmented-generation.html\">Retrieval Augmented Generation (RAG)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"etl-pipeline.html\">ETL Pipeline</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"retrieval-augmented-generation.html\">检索增强生成 (RAG)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"etl-pipeline.html\">ETL 管道</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-important\" title=\"Important\"></i>\n</td>\n<td class=\"content\">\nThe order in which advisors are added to the chain is crucial, as it determines the sequence of their execution.\nEach advisor modifies the prompt or the context in some way, and the changes made by one advisor are passed on to the next in the chain.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-important\" title=\"Important\"></i>\n</td>\n<td class=\"content\">\n顾问添加到链中的顺序至关重要，因为它决定了它们的执行顺序。\n每个顾问都会以某种方式修改提示或上下文，而一个顾问所做的更改会传递给链中的下一个顾问。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\nBe cautious about logging sensitive information in production environments.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"提示\"></i>\n</td>\n<td class=\"content\">\n在生产环境中记录敏感信息时要格外小心。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"prev\"><a href=\"../getting-started.html\">Getting Started</a></span>\n  <span class=\"next\"><a href=\"advisors.html\">Advisors</a></span>",
+      "translation": "<span class=\"prev\"><a href=\"../getting-started.html\">入门指南</a></span>\n  <span class=\"next\"><a href=\"advisors.html\">顾问</a></span>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_spring_boot_custom_toolcallingadvisor_builder_bean\"></a>Spring Boot: custom <code>ToolCallingAdvisor.Builder</code> bean",
+      "translation": "<a class=\"anchor\" href=\"#_spring_boot_custom_toolcallingadvisor_builder_bean\"></a>Spring Boot：自定义 `ToolCallingAdvisor.Builder` Bean",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../getting-started.html\">Getting Started</a>",
+      "translation": "<a class=\"nav-link\" href=\"../getting-started.html\">入门指南</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"structured-output-converter.html\">Structured Output</a>",
+      "translation": "<a class=\"nav-link\" href=\"structured-output-converter.html\">结构化输出</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"chat-memory.html\">Chat Memory</a>",
+      "translation": "<a class=\"nav-link\" href=\"chat-memory.html\">对话记忆</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"tools.html\">Tool Calling</a>",
+      "translation": "<a class=\"nav-link\" href=\"tools.html\">工具调用</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"testing.html\">Model Evaluation</a>",
+      "translation": "<a class=\"nav-link\" href=\"testing.html\">模型评估</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"docker-compose.html\">Development-time Services</a>",
+      "translation": "<a class=\"nav-link\" href=\"docker-compose.html\">开发时服务</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_creating_a_chatclient\"></a>Creating a ChatClient",
+      "translation": "<a class=\"anchor\" href=\"#_creating_a_chatclient\"></a>创建 ChatClient",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_using_an_autoconfigured_chatclient_builder\"></a>Using an autoconfigured ChatClient.Builder",
+      "translation": "<a class=\"anchor\" href=\"#_using_an_autoconfigured_chatclient_builder\"></a>使用自动配置的 ChatClient.Builder",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_working_with_multiple_chat_models\"></a>Working with Multiple Chat Models",
+      "translation": "<a class=\"anchor\" href=\"#_working_with_multiple_chat_models\"></a>与多个聊天模型协同工作",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_multiple_chatclients_with_a_single_model_type\"></a>Multiple ChatClients with a Single Model Type",
+      "translation": "<a class=\"anchor\" href=\"#_multiple_chatclients_with_a_single_model_type\"></a>使用单一模型类型的多个 ChatClient",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_chatclients_for_different_model_types\"></a>ChatClients for Different Model Types",
+      "translation": "<a class=\"anchor\" href=\"#_chatclients_for_different_model_types\"></a>针对不同模型类型的 ChatClients",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_multiple_openai_compatible_api_endpoints\"></a>Multiple OpenAI-Compatible API Endpoints",
+      "translation": "<a class=\"anchor\" href=\"#_multiple_openai_compatible_api_endpoints\"></a>多个兼容 OpenAI 的 API 端点",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_chatclient_fluent_api\"></a>ChatClient Fluent API",
+      "translation": "<a class=\"anchor\" href=\"#_chatclient_fluent_api\"></a>ChatClient 流式 API",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_chatclient_responses\"></a>ChatClient Responses",
+      "translation": "<a class=\"anchor\" href=\"#_chatclient_responses\"></a>ChatClient 响应",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_returning_a_chatresponse\"></a>Returning a ChatResponse",
+      "translation": "<a class=\"anchor\" href=\"#_returning_a_chatresponse\"></a>返回 ChatResponse",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_returning_an_entity\"></a>Returning an Entity",
+      "translation": "<a class=\"anchor\" href=\"#_returning_an_entity\"></a>返回实体",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_provider_native_structured_output\"></a>Provider-Native Structured Output",
+      "translation": "<a class=\"anchor\" href=\"#_provider_native_structured_output\"></a>原生结构化输出",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_schema_validation_with_retry\"></a>Schema Validation with Retry",
+      "translation": "<a class=\"anchor\" href=\"#_schema_validation_with_retry\"></a>带重试的架构验证",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_streaming_responses\"></a>Streaming Responses",
+      "translation": "<a class=\"anchor\" href=\"#_streaming_responses\"></a>流式响应",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_prompt_templates\"></a>Prompt Templates",
+      "translation": "<a class=\"anchor\" href=\"#_prompt_templates\"></a>提示模板",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_call_return_values\"></a>call() return values",
+      "translation": "<a class=\"anchor\" href=\"#_call_return_values\"></a>call() 返回值",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_stream_return_values\"></a>stream() return values",
+      "translation": "<a class=\"anchor\" href=\"#_stream_return_values\"></a>stream() 返回值",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_message_metadata\"></a>Message Metadata",
+      "translation": "<a class=\"anchor\" href=\"#_message_metadata\"></a>消息元数据",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_adding_metadata_to_user_messages\"></a>Adding Metadata to User Messages",
+      "translation": "<a class=\"anchor\" href=\"#_adding_metadata_to_user_messages\"></a>为用户消息添加元数据",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_adding_metadata_to_system_messages\"></a>Adding Metadata to System Messages",
+      "translation": "<a class=\"anchor\" href=\"#_adding_metadata_to_system_messages\"></a>为系统消息添加元数据",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_default_metadata_support\"></a>Default Metadata Support",
+      "translation": "<a class=\"anchor\" href=\"#_default_metadata_support\"></a>默认元数据支持",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_metadata_validation\"></a>Metadata Validation",
+      "translation": "<a class=\"anchor\" href=\"#_metadata_validation\"></a>元数据验证",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_accessing_metadata\"></a>Accessing Metadata",
+      "translation": "<a class=\"anchor\" href=\"#_accessing_metadata\"></a>访问元数据",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_using_defaults\"></a>Using Defaults",
+      "translation": "<a class=\"anchor\" href=\"#_using_defaults\"></a>使用默认值",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_default_system_text\"></a>Default System Text",
+      "translation": "<a class=\"anchor\" href=\"#_default_system_text\"></a>默认系统文本",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_default_system_text_with_parameters\"></a>Default System Text with parameters",
+      "translation": "<a class=\"anchor\" href=\"#_default_system_text_with_parameters\"></a>带参数的默认系统文本",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_other_defaults\"></a>Other defaults",
+      "translation": "<a class=\"anchor\" href=\"#_other_defaults\"></a>其他默认值",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_mutating_the_chatclient\"></a>Mutating the ChatClient",
+      "translation": "<a class=\"anchor\" href=\"#_mutating_the_chatclient\"></a>修改 ChatClient",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_advisor_configuration_in_chatclient\"></a>Advisor Configuration in ChatClient",
+      "translation": "<a class=\"anchor\" href=\"#_advisor_configuration_in_chatclient\"></a>ChatClient 中的顾问配置",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_retrieval_augmented_generation\"></a>Retrieval Augmented Generation",
+      "translation": "<a class=\"anchor\" href=\"#_retrieval_augmented_generation\"></a>检索增强生成",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_tool_calling\"></a>Tool Calling",
+      "translation": "<a class=\"anchor\" href=\"#_tool_calling\"></a>工具调用",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_disabling_auto_registration\"></a>Disabling Auto-Registration",
+      "translation": "<a class=\"anchor\" href=\"#_disabling_auto_registration\"></a>禁用自动注册",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_globally_all_calls\"></a>Globally (all calls)",
+      "translation": "<a class=\"anchor\" href=\"#_globally_all_calls\"></a>全局（所有调用）",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_per_call\"></a>Per call",
+      "translation": "<a class=\"anchor\" href=\"#_per_call\"></a>按次计费",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_customizing_the_default_toolcallingadvisor\"></a>Customizing the Default ToolCallingAdvisor",
+      "translation": "<a class=\"anchor\" href=\"#_customizing_the_default_toolcallingadvisor\"></a>自定义默认工具调用顾问",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_spring_boot_advisor_order_property\"></a>Spring Boot: advisor order property",
+      "translation": "<a class=\"anchor\" href=\"#_spring_boot_advisor_order_property\"></a>Spring Boot：advisor 顺序属性",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_spring_boot_user_controlled_tool_execution\"></a>Spring Boot: user-controlled tool execution",
+      "translation": "<a class=\"anchor\" href=\"#_spring_boot_user_controlled_tool_execution\"></a>Spring Boot：用户控制的工具执行",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_without_spring_boot\"></a>Without Spring Boot",
+      "translation": "<a class=\"anchor\" href=\"#_without_spring_boot\"></a>不使用 Spring Boot",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_tooladvisor_marker_interface\"></a>ToolAdvisor Marker Interface",
+      "translation": "<a class=\"anchor\" href=\"#_tooladvisor_marker_interface\"></a>ToolAdvisor 标记接口",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_chat_memory\"></a>Chat Memory",
+      "translation": "<a class=\"anchor\" href=\"#_chat_memory\"></a>对话记忆",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_memoryadvisor_marker_interface\"></a>MemoryAdvisor Marker Interface",
+      "translation": "<a class=\"anchor\" href=\"#_memoryadvisor_marker_interface\"></a>MemoryAdvisor 标记接口",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_implementation_notes\"></a>Implementation Notes",
+      "translation": "<a class=\"anchor\" href=\"#_implementation_notes\"></a>实现说明",
+      "count": 1
+    },
+    {
+      "source": "Why Spring",
+      "translation": "为何是春天",
+      "count": 1
+    },
+    {
+      "source": "Spring AI",
+      "translation": "Spring AI",
+      "count": 1
+    },
+    {
+      "source": "Chat Client API",
+      "translation": "聊天客户端 API",
+      "count": 1
+    }
+  ]
+}

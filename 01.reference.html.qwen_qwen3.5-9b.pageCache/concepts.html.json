@@ -1,0 +1,511 @@
+{
+  "created_at": "2026-06-13 14:03:05",
+  "updated_at": "2026-06-13 14:03:05",
+  "stats": {
+    "total_entries": 99,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 99,
+    "entries_with_hits": 99,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.009899999999999999
+  },
+  "items": [
+    {
+      "source": "Copyright © 2005 - <script>var d = new Date();\n        document.write(d.getFullYear());</script> Broadcom. All Rights Reserved. The term \"Broadcom\" refers to Broadcom Inc. and/or its subsidiaries.<br/><a href=\"https://www.vmware.com/help/legal.html\">Terms of Use</a> • <a href=\"https://www.vmware.com/help/privacy.html\" rel=\"noopener noreferrer\">Privacy</a> • <a href=\"https://spring.io/trademarks\">Trademark Guidelines</a> <span id=\"thank-you-mobile\">• <a href=\"https://spring.io/thank-you\">Thank you</a></span> • <a href=\"https://www.vmware.com/help/privacy/california-privacy-rights.html\">Your California Privacy Rights</a> • <a class=\"ot-sdk-show-settings\">Cookie Settings</a> <span id=\"teconsent\"></span>",
+      "translation": "版权所有 © 2005 - <script>var d = new Date(); document.write(d.getFullYear());</script> Broadcom。保留所有权利。“Broadcom”指 Broadcom Inc. 及其/或其子公司。<br/><a href=\"https://www.vmware.com/help/legal.html\">使用条款</a> • <a href=\"https://www.vmware.com/help/privacy.html\" rel=\"noopener noreferrer\">隐私政策</a> • <a href=\"https://spring.io/trademarks\">商标指南</a> <span id=\"thank-you-mobile\">• <a href=\"https://spring.io/thank-you\">致谢</a></span> • <a href=\"https://www.vmware.com/help/privacy/california-privacy-rights.html\">您的加州隐私权利</a> • <a class=\"ot-sdk-show-settings\">Cookie 设置</a> <span id=\"teconsent\"></span>",
+      "count": 1
+    },
+    {
+      "source": "<strong><a href=\"#concept-fc\">Tool Calling</a></strong>: This technique allows registering tools (user-defined services) that connect the large language models to the APIs of external systems.\nSpring AI greatly simplifies code you need to write to support <a class=\"xref page\" href=\"api/tools.html\">tool calling</a>.",
+      "translation": "<strong><a href=\"#concept-fc\">工具调用</a></strong>：该技术允许注册工具（用户定义的服务），将大语言模型与外部系统的 API 连接起来。Spring AI 极大地简化了您需要编写以支持<a class=\"xref page\" href=\"api/tools.html\">工具调用</a>的代码。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Prompt Stuffing</strong>: A more practical alternative involves embedding your data within the prompt provided to the model. Given a model’s token limits, techniques are required to present relevant data within the model’s context window.\nThis approach is colloquially referred to as “stuffing the prompt.”\nThe Spring AI library helps you implement solutions based on the “stuffing the prompt” technique otherwise known as <a href=\"#concept-rag\">Retrieval Augmented Generation (RAG)</a>.",
+      "translation": "<strong>提示词填充</strong>：一种更实用的替代方案是将您的数据嵌入到提供给模型的系统提示中。鉴于模型的令牌限制，需要采用特定技术将相关数据呈现于模型的上下文窗口内。这种方法在通俗语境中被称为“填充提示词”。Spring AI 库可帮助您实现基于“填充提示词”技术的解决方案，该技术亦称为<a href=\"#concept-rag\">检索增强生成（RAG）</a>。",
+      "count": 1
+    },
+    {
+      "source": "The <a class=\"xref page\" href=\"api/chatclient.html#_retrieval_augmented_generation\">ChatClient - RAG</a> explains how to use the <code>QuestionAnswerAdvisor</code> to enable the RAG capability in your application.",
+      "translation": "<a class=\"xref page\" href=\"api/chatclient.html#_retrieval_augmented_generation\">ChatClient - 检索增强生成</a> 解释了如何使用 <code>QuestionAnswerAdvisor</code> 在您的应用程序中启用 RAG 功能。",
+      "count": 1
+    },
+    {
+      "source": "The Spring AI project provides an <code>Evaluator</code> API which currently gives access to basic strategies to evaluate model responses.\nFollow the <a class=\"xref page\" href=\"api/testing.html\">Evaluation Testing</a> documentation for further information.",
+      "translation": "Spring AI 项目提供了一个 `<code>Evaluator</code>` API，目前可访问用于评估模型响应的基本策略。有关更多信息，请遵循<a class=\"xref page\" href=\"api/testing.html\">评估测试</a>文档。",
+      "count": 1
+    },
+    {
+      "source": "Sharing prompts has become a communal practice, and there is active academic research being done on this subject.\nAs an example of how counter-intuitive it can be to create an effective prompt (for example, contrasting with SQL), a <a href=\"https://arxiv.org/abs/2205.11916\">recent research paper</a> found that one of the most effective prompts you can use starts with the phrase, “Take a deep breath and work on this step by step.”\nThat should give you an indication of why language is so important.\nWe do not yet fully understand how to make the most effective use of previous iterations of this technology, such as ChatGPT 3.5, let alone new versions that are being developed.",
+      "translation": "分享提示词已成为一种集体实践，学术界也在积极研究这一主题。  \n以创建有效提示词可能违背直觉为例（例如与 SQL 对比），一篇<a href=\"https://arxiv.org/abs/2205.11916\">近期研究论文</a>发现，最有效的提示之一是以“深吸一口气，逐步完成此任务”开头。  \n这足以说明语言为何如此重要。  \n我们尚未完全掌握如何最有效地利用该技术的前代版本（如 ChatGPT 3.5），更不用说那些正在开发中的新版本了。",
+      "count": 1
+    },
+    {
+      "source": "This process uses traditional text-based template engines for prompt creation and management.\nSpring AI employs the OSS library <a href=\"https://www.stringtemplate.org/\">StringTemplate</a> for this purpose.",
+      "translation": "该流程使用传统的基于文本的模板引擎来创建和管理提示。Spring AI 采用开源库 <a href=\"https://www.stringtemplate.org/\">StringTemplate</a> 来实现此功能。",
+      "count": 1
+    },
+    {
+      "source": "In Spring AI, prompt templates can be likened to the \"View\" in Spring MVC architecture.\nA model object, typically a <code>java.util.Map</code>, is provided to populate placeholders within the template.\nThe \"rendered\" string becomes the content of the prompt supplied to the AI model.",
+      "translation": "在 Spring AI 中，提示模板可以类比为 Spring MVC 架构中的“视图”。\n通常提供一个模型对象（一般为 <code>java.util.Map</code>）来填充模板中的占位符。\n渲染后的字符串将成为提供给 AI 模型的提示内容。",
+      "count": 1
+    },
+    {
+      "source": "The output of AI models traditionally arrives as a <code>java.lang.String</code>, even if you ask for the reply to be in JSON.\nIt may be a correct JSON, but it is not a JSON data structure. It is just a string.\nAlso, asking “for JSON” as part of the prompt is not 100% accurate.",
+      "translation": "AI 模型的输出传统上以 <code>java.lang.String</code> 形式呈现，即使你要求回复为 JSON 格式。  \n它可能是一个正确的 JSON，但它并不是一个 JSON 数据结构，而仅仅是一个字符串。  \n此外，在提示词中要求“JSON\"也并非百分之百准确。",
+      "count": 1
+    },
+    {
+      "source": "The <a class=\"xref page\" href=\"api/structured-output-converter.html#StructuredOutputConverter\">Structured output conversion</a> employs meticulously crafted prompts, often necessitating multiple interactions with the model to achieve the desired formatting.",
+      "translation": "<a class=\"xref page\" href=\"api/structured-output-converter.html#StructuredOutputConverter\">结构化输出转换</a>采用精心设计的提示词，通常需要与模型进行多次交互才能实现所需的格式。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Fine Tuning</strong>: This traditional machine learning technique involves tailoring the model and changing its internal weighting.\nHowever, it is a challenging process for machine learning experts and extremely resource-intensive for models like GPT due to their size. Additionally, some models might not offer this option.",
+      "translation": "<strong>微调</strong>：这是一种传统的机器学习技术，涉及调整模型并改变其内部权重。然而，对于机器学习专家而言，这是一个具有挑战性的过程；而对于像 GPT 这样的大型模型来说，由于模型规模庞大，该过程极其消耗资源。此外，某些模型可能并不提供此选项。",
+      "count": 1
+    },
+    {
+      "source": "The <a class=\"xref page\" href=\"api/etl-pipeline.html\">ETL Pipeline</a> provides further information about orchestrating the flow of extracting data from data sources and storing it in a structured vector store, ensuring data is in the optimal format for retrieval when passing it to the AI model.",
+      "translation": "<a class=\"xref page\" href=\"api/etl-pipeline.html\">ETL Pipeline</a> 提供了关于编排从数据源提取数据并将其存储到结构化向量存储中的流程的更多信息，确保在将数据传递给 AI 模型时，数据处于检索所需的最佳格式。",
+      "count": 1
+    },
+    {
+      "source": "The <a class=\"xref page\" href=\"api/tools.html\">Tool Calling</a> mechanism addresses these shortcomings.\nIt allows you to register your own services as tools to connect the large language models to the APIs of external systems.\nThese systems can provide LLMs with real-time data and perform data processing actions on their behalf.",
+      "translation": "<a class=\"xref page\" href=\"api/tools.html\">工具调用</a>机制解决了这些不足。它允许您将自定义服务注册为工具，从而将大语言模型与外部系统的 API 连接起来。这些系统可以为 LLM 提供实时数据，并代表其执行数据处理操作。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI greatly simplifies code you need to write to support tool invocation.\nIt handles the tool invocation conversation for you.\nYou can provide your tool as a <code>@Tool</code>-annotated method and provide it in your prompt options to make it available to the model.\nAdditionally, you can define and reference multiple tools in a single prompt.",
+      "translation": "Spring AI 极大地简化了编写支持工具调用的代码。它会自动处理工具调用的对话流程。您只需提供一个带有<code>@Tool</code>注解的方法，并将其添加到提示选项中以供模型使用。此外，您可以在单个提示中定义并引用多个工具。",
+      "count": 1
+    },
+    {
+      "source": "Follow the <a class=\"xref page\" href=\"api/tools.html\">Tool Calling</a> documentation for further information on how to use this feature with different AI models.",
+      "translation": "有关如何使用此功能与不同的 AI 模型，请遵循<a class=\"xref page\" href=\"api/tools.html\">工具调用</a>文档以获取更多信息。",
+      "count": 1
+    },
+    {
+      "source": "This section describes core concepts that Spring AI uses. We recommend reading it closely to understand the ideas behind how Spring AI is implemented.",
+      "translation": "本节介绍了 Spring AI 使用的核心概念。我们建议您仔细阅读，以深入理解 Spring AI 的实现原理。",
+      "count": 1
+    },
+    {
+      "source": "AI models are algorithms designed to process and generate information, often mimicking human cognitive functions.\nBy learning patterns and insights from large datasets, these models can make predictions, text, images, or other outputs, enhancing various applications across industries.",
+      "translation": "人工智能模型是旨在处理和生成信息的算法，通常模仿人类的认知功能。通过从大型数据集中学习模式和见解，这些模型能够进行预测、生成文本、图像或其他输出，从而增强各行业中的各种应用。",
+      "count": 1
+    },
+    {
+      "source": "There are many different types of AI models, each suited for a specific use case.\nWhile ChatGPT and its generative AI capabilities have captivated users through text input and output, many models and companies offer diverse inputs and outputs.\nBefore ChatGPT, many people were fascinated by text-to-image generation models such as Midjourney and Stable Diffusion.",
+      "translation": "存在多种不同类型的 AI 模型，每种都适用于特定的使用场景。虽然 ChatGPT 及其生成式 AI 能力通过文本输入和输出吸引了大量用户，但许多模型和公司提供了多样化的输入与输出方式。在 ChatGPT 出现之前，许多人就对文生图模型如 Midjourney 和 Stable Diffusion 着迷不已。",
+      "count": 1
+    },
+    {
+      "source": "The following table categorizes several models based on their input and output types:",
+      "translation": "下表根据模型的输入和输出类型对多个模型进行了分类：",
+      "count": 1
+    },
+    {
+      "source": "Spring AI currently supports models that process input and output as language, image, and audio.\nThe last row in the previous table, which accepts text as input and outputs numbers, is more commonly known as embedding text and represents the internal data structures used in an AI model.\nSpring AI has support for embeddings to enable more advanced use cases.",
+      "translation": "Spring AI 目前支持将输入和输出处理为语言、图像和音频的模型。  \n前一张表格的最后一行，其输入为文本并输出数字，通常被称为嵌入（embedding）文本，它代表了 AI 模型中使用的内部数据结构。  \nSpring AI 已支持嵌入功能，以启用更高级的使用场景。",
+      "count": 1
+    },
+    {
+      "source": "What sets models like GPT apart is their pre-trained nature, as indicated by the \"P\" in GPT—Chat Generative Pre-trained Transformer.\nThis pre-training feature transforms AI into a general developer tool that does not require an extensive machine learning or model training background.",
+      "translation": "与 GPT 等模型的区别在于其预训练特性，正如\"GPT\"中的\"P\"所示——即“生成式预训练Transformer\"（Generative Pre-trained Transformer）。这一预训练功能将人工智能转变为一种通用开发工具，无需具备广泛的机器学习或模型训练背景即可使用。",
+      "count": 1
+    },
+    {
+      "source": "Prompts serve as the foundation for the language-based inputs that guide an AI model to produce specific outputs.\nFor those familiar with ChatGPT, a prompt might seem like merely the text entered into a dialog box that is sent to the API.\nHowever, it encompasses much more than that.\nIn many AI Models, the text for the prompt is not just a simple string.",
+      "translation": "提示是引导人工智能模型生成特定输出的基于语言的输入的基础。  \n对于熟悉 ChatGPT 的人来说，提示可能看起来只是输入到对话框中并发送到 API 的文本。  \n然而，它包含的内容远不止于此。  \n在许多人工智能模型中，提示的文本不仅仅是一个简单的字符串。",
+      "count": 1
+    },
+    {
+      "source": "ChatGPT’s API has multiple text inputs within a prompt, with each text input being assigned a role.\nFor example, there is the system role, which tells the model how to behave and sets the context for the interaction.\nThere is also the user role, which is typically the input from the user.",
+      "translation": "ChatGPT 的 API 在提示词中包含多个文本输入，每个文本输入都会被分配一个角色。例如，有系统角色（system role），它告诉模型如何行为并为交互设定上下文；还有用户角色（user role），这通常是用户的输入。",
+      "count": 1
+    },
+    {
+      "source": "Crafting effective prompts is both an art and a science.\nChatGPT was designed for human conversations.\nThis is quite a departure from using something like SQL to \"ask a question\".\nOne must communicate with the AI model akin to conversing with another person.",
+      "translation": "编写有效的提示词既是一门艺术，也是一门科学。  \nChatGPT 是为人类对话而设计的。  \n这与使用类似 SQL 的“提问”方式截然不同。  \n必须像与另一个人交谈一样与人工智能模型进行交流。",
+      "count": 1
+    },
+    {
+      "source": "Such is the importance of this interaction style that the term \"Prompt Engineering\" has emerged as its own discipline.\nThere is a burgeoning collection of techniques that improve the effectiveness of prompts.\nInvesting time in crafting a prompt can drastically improve the resulting output.",
+      "translation": "这种交互方式的重要性催生了“提示工程”这一独立学科。  \n涌现出大量旨在提升提示有效性的技术方法。  \n投入时间精心构建提示，可显著改善最终输出结果。",
+      "count": 1
+    },
+    {
+      "source": "Creating effective prompts involves establishing the context of the request and substituting parts of the request with values specific to the user’s input.",
+      "translation": "创建有效的提示词需要明确请求的上下文，并将请求中的部分内容替换为用户输入的具体值。",
+      "count": 1
+    },
+    {
+      "source": "For instance, consider the simple prompt template:",
+      "translation": "例如，考虑以下简单的提示模板：",
+      "count": 1
+    },
+    {
+      "source": "There is considerable variability in the specific data format of the prompt sent to the model.\nInitially starting as simple strings, prompts have evolved to include multiple messages, where each string in each message represents a distinct role for the model.",
+      "translation": "发送给模型的具体提示数据格式存在相当大的差异。最初，提示仅为简单的字符串，随后已演变为包含多条消息的格式，其中每条消息中的每个字符串都代表模型的一个不同角色。",
+      "count": 1
+    },
+    {
+      "source": "Embeddings are numerical representations of text, images, or videos that capture relationships between inputs.",
+      "translation": "嵌入（Embeddings）是文本、图像或视频的数值表示形式，能够捕捉输入之间的关系。",
+      "count": 1
+    },
+    {
+      "source": "Embeddings work by converting text, image, and video into arrays of floating point numbers, called vectors.\nThese vectors are designed to capture the meaning of the text, images, and videos.\nThe length of the embedding array is called the vector’s dimensionality.",
+      "translation": "嵌入通过将文本、图像和视频转换为浮点数数组（称为向量）来工作。这些向量旨在捕捉文本、图像和视频的含义。嵌入数组的长度被称为向量的维度。",
+      "count": 1
+    },
+    {
+      "source": "By calculating the numerical distance between the vector representations of two pieces of text, an application can determine the similarity between the objects used to generate the embedding vectors.",
+      "translation": "通过计算两个文本片段的向量表示之间的数值距离，应用程序可以确定用于生成嵌入向量的对象之间的相似性。",
+      "count": 1
+    },
+    {
+      "source": "As a Java developer exploring AI, it’s not necessary to comprehend the intricate mathematical theories or the specific implementations behind these vector representations.\nA basic understanding of their role and function within AI systems suffices, particularly when you’re integrating AI functionalities into your applications.",
+      "translation": "作为探索人工智能的 Java 开发者，无需深入理解这些向量表示背后复杂的数学理论或具体实现。只需对其在人工智能系统中的角色和功能有基本了解即可，尤其是在将人工智能功能集成到您的应用程序时。",
+      "count": 1
+    },
+    {
+      "source": "Embeddings are particularly relevant in practical applications like the Retrieval Augmented Generation (RAG) pattern.\nThey enable the representation of data as points in a semantic space, which is akin to the 2-D space of Euclidean geometry, but in higher dimensions.\nThis means just like how points on a plane in Euclidean geometry can be close or far based on their coordinates, in a semantic space, the proximity of points reflects the similarity in meaning.\nSentences about similar topics are positioned closer in this multi-dimensional space, much like points lying close to each other on a graph.\nThis proximity aids in tasks like text classification, semantic search, and even product recommendations, as it allows the AI to discern and group related concepts based on their \"location\" in this expanded semantic landscape.",
+      "translation": "嵌入向量在诸如检索增强生成（RAG）等实际应用中尤为重要。它们能够将数据表示为语义空间中的点，这类似于欧几里得几何中的二维空间，但处于更高维度。这意味着，正如欧几里得几何中平面上的点根据其坐标的远近而彼此接近或遥远一样，在语义空间中，点的邻近程度反映了其含义的相似性。关于相似主题的语句在该多维空间中位置更为接近，就像图表上彼此靠近的点一样。这种邻近性有助于文本分类、语义搜索甚至产品推荐等任务，因为它使人工智能能够根据这些概念在此扩展语义景观中的“位置”来识别和归类相关概念。",
+      "count": 1
+    },
+    {
+      "source": "You can think of this semantic space as a vector.",
+      "translation": "您可以将这个语义空间视为一个向量。",
+      "count": 1
+    },
+    {
+      "source": "Tokens serve as the building blocks of how an AI model works.\nOn input, models convert words to tokens. On output, they convert tokens back to words.",
+      "translation": "Token 是人工智能模型运作的基本构建单元。在输入阶段，模型将单词转换为 token；在输出阶段，它们再将 token 转换回单词。",
+      "count": 1
+    },
+    {
+      "source": "In English, one token roughly corresponds to 75% of a word. For reference, Shakespeare’s complete works, totaling around 900,000 words, translate to approximately 1.2 million tokens.",
+      "translation": "在英语中，一个 token 大约对应一个单词的 75%。作为参考，莎士比亚的全部作品总字数约为 90 万词，换算成 token 则约为 120 万个。",
+      "count": 1
+    },
+    {
+      "source": "Perhaps more important is that Tokens = Money.\nIn the context of hosted AI models, your charges are determined by the number of tokens used. Both input and output contribute to the overall token count.",
+      "translation": "更为重要的是，Tokens 等同于货币。  \n在托管的 AI 模型语境下，您的费用取决于所使用的 Token 数量。输入和输出均计入总 Token 数。",
+      "count": 1
+    },
+    {
+      "source": "Also, models are subject to token limits, which restrict the amount of text processed in a single API call.\nThis threshold is often referred to as the \"context window\". The model does not process any text that exceeds this limit.",
+      "translation": "此外，模型还受到令牌数量限制，这限制了单次 API 调用中可处理的文本量。该阈值通常被称为“上下文窗口”。超出此限制的文本不会被模型处理。",
+      "count": 1
+    },
+    {
+      "source": "For instance, ChatGPT3 has a 4K token limit, while GPT4 offers varying options, such as 8K, 16K, and 32K.\nAnthropic’s Claude AI model features a 100K token limit, and Meta’s recent research yielded a 1M token limit model.",
+      "translation": "例如，ChatGPT-3 的上下文窗口限制为 4K 个 token，而 GPT-4 则提供多种选项，包括 8K、16K 和 32K。Anthropic 的 Claude AI 模型拥有 100K token 的限制，而 Meta 最近的研究成果则推出了一款支持 1M token 限制的模型。",
+      "count": 1
+    },
+    {
+      "source": "To summarize the collected works of Shakespeare with GPT4, you need to devise software engineering strategies to chop up the data and present the data within the model’s context window limits.\nThe Spring AI project helps you with this task.",
+      "translation": "要使用 GPT-4 总结莎士比亚的著作，你需要制定软件工程策略来分割数据，并在模型的上下文窗口限制内呈现这些数据。Spring AI 项目可以帮助你完成这项任务。",
+      "count": 1
+    },
+    {
+      "source": "This intricacy has led to the emergence of a specialized field involving the creation of prompts to yield the intended output, followed by converting the resulting simple string into a usable data structure for application integration.",
+      "translation": "这种复杂性催生了一个专门领域，即创建提示以生成预期输出，随后将生成的简单字符串转换为可应用集成的可用数据结构。",
+      "count": 1
+    },
+    {
+      "source": "How can you equip the AI model with information on which it has not been trained?",
+      "translation": "如何为尚未接受过训练的 AI 模型提供相关信息？",
+      "count": 1
+    },
+    {
+      "source": "Note that the GPT 3.5/4.0 dataset extends only until September 2021.\nConsequently, the model says that it does not know the answer to questions that require knowledge beyond that date.\nAn interesting bit of trivia is that this dataset is around 650GB.",
+      "translation": "请注意，GPT 3.5/4.0 的数据集仅更新至 2021 年 9 月。因此，对于需要该日期之后知识的问题，模型会表示不知道答案。一个有趣的冷知识是，该数据集的容量约为 650GB。",
+      "count": 1
+    },
+    {
+      "source": "Three techniques exist for customizing the AI model to incorporate your data:",
+      "translation": "有三种技术可用于定制 AI 模型以融入您的数据：",
+      "count": 1
+    },
+    {
+      "source": "A technique termed Retrieval Augmented Generation (RAG) has emerged to address the challenge of incorporating relevant data into prompts for accurate AI model responses.",
+      "translation": "一种称为检索增强生成（Retrieval Augmented Generation，简称 RAG）的技术应运而生，旨在解决将相关数据整合到提示中以生成准确人工智能模型响应这一挑战。",
+      "count": 1
+    },
+    {
+      "source": "The approach involves a batch processing style programming model, where the job reads unstructured data from your documents, transforms it, and then writes it into a vector database.\nAt a high level, this is an ETL (Extract, Transform and Load) pipeline.\nThe vector database is used in the retrieval part of RAG technique.",
+      "translation": "该方法采用批处理风格的编程模型，其中任务从文档中读取非结构化数据，对其进行转换，然后将其写入向量数据库。\n从高层来看，这是一个 ETL（提取、转换和加载）管道。\n该向量数据库用于 RAG 技术中的检索部分。",
+      "count": 1
+    },
+    {
+      "source": "As part of loading the unstructured data into the vector database, one of the most important transformations is to split the original document into smaller pieces.\nThe procedure of splitting the original document into smaller pieces has two important steps:",
+      "translation": "作为将非结构化数据加载到向量数据库的一部分，最重要的转换之一是将原始文档拆分为更小的片段。\n将原始文档拆分为更小片段的程序包含两个关键步骤：",
+      "count": 1
+    },
+    {
+      "source": "Split the document into parts while preserving the semantic boundaries of the content.\nFor example, for a document with paragraphs and tables, one should avoid splitting the document in the middle of a paragraph or table.\nFor code, avoid splitting the code in the middle of a method’s implementation.",
+      "translation": "将文档按语义边界拆分为多个部分。例如，对于包含段落和表格的文档，应避免在段落或表格中间进行拆分。对于代码，应避免在方法的实现过程中进行拆分。",
+      "count": 1
+    },
+    {
+      "source": "Split the document’s parts further into parts whose size is a small percentage of the AI Model’s token limit.",
+      "translation": "将文档的各个部分进一步拆分为大小仅为 AI 模型令牌限制一小百分比的部分。",
+      "count": 1
+    },
+    {
+      "source": "The next phase in RAG is processing user input.\nWhen a user’s question is to be answered by an AI model, the question and all the “similar” document pieces are placed into the prompt that is sent to the AI model.\nThis is the reason to use a vector database. It is very good at finding similar content.",
+      "translation": "RAG 的下一阶段是处理用户输入。\n当需要由 AI 模型回答用户问题时，会将该问题以及所有“相似”的文档片段放入发送给 AI 模型的提示词中。\n这正是使用向量数据库的原因，它在查找相似内容方面表现出色。",
+      "count": 1
+    },
+    {
+      "source": "Large Language Models (LLMs) are frozen after training, leading to stale knowledge, and they are unable to access or modify external data.",
+      "translation": "大语言模型（LLM）在训练完成后即被冻结，导致其知识过时，且无法访问或修改外部数据。",
+      "count": 1
+    },
+    {
+      "source": "When we want to make a tool available to the model, we include its definition in the chat request. Each tool definition comprises of a name, a description, and the schema of the input parameters.",
+      "translation": "当我们要向模型提供工具时，会在聊天请求中包含该工具的定义。每个工具定义包括名称、描述以及输入参数的模式（schema）。",
+      "count": 1
+    },
+    {
+      "source": "When the model decides to call a tool, it sends a response with the tool name and the input parameters modeled after the defined schema.",
+      "translation": "当模型决定调用工具时，它会发送一个响应，其中包含工具名称和按照定义的模式构建的输入参数。",
+      "count": 1
+    },
+    {
+      "source": "The application is responsible for using the tool name to identify and execute the tool with the provided input parameters.",
+      "translation": "该应用程序负责使用工具名称来识别并执行带有所提供输入参数的工具。",
+      "count": 1
+    },
+    {
+      "source": "The result of the tool call is processed by the application.",
+      "translation": "应用程序处理工具调用的结果。",
+      "count": 1
+    },
+    {
+      "source": "The application sends the tool call result back to the model.",
+      "translation": "应用程序将工具调用结果返回给模型。",
+      "count": 1
+    },
+    {
+      "source": "The model generates the final response using the tool call result as additional context.",
+      "translation": "模型利用工具调用的结果作为额外上下文来生成最终响应。",
+      "count": 1
+    },
+    {
+      "source": "Effectively evaluating the output of an AI system in response to user requests is very important to ensuring the accuracy and usefulness of the final application.\nSeveral emerging techniques enable the use of the pre-trained model itself for this purpose.",
+      "translation": "有效评估人工智能系统对用户请求的响应，对于确保最终应用的准确性和实用性至关重要。  \n几种新兴技术使得利用预训练模型本身来实现这一目的成为可能。",
+      "count": 1
+    },
+    {
+      "source": "This evaluation process involves analyzing whether the generated response aligns with the user’s intent and the context of the query. Metrics such as relevance, coherence, and factual correctness are used to gauge the quality of the AI-generated response.",
+      "translation": "该评估过程涉及分析生成的回复是否与用户意图及查询上下文相一致。相关性、连贯性和事实准确性等指标用于衡量人工智能生成回复的质量。",
+      "count": 1
+    },
+    {
+      "source": "One approach involves presenting both the user’s request and the AI model’s response to the model, querying whether the response aligns with the provided data.",
+      "translation": "一种方法是将用户的请求和 AI 模型的响应同时呈现给模型，以查询该响应是否与提供的数据一致。",
+      "count": 1
+    },
+    {
+      "source": "Furthermore, leveraging the information stored in the vector database as supplementary data can enhance the evaluation process, aiding in the determination of response relevance.",
+      "translation": "此外，利用向量数据库中存储的信息作为补充数据，可以增强评估过程，有助于确定响应的相关性。",
+      "count": 1
+    },
+    {
+      "source": "Apache®, Apache Tomcat®, Apache Kafka®, Apache Cassandra™, and Apache Geode™ are trademarks or registered trademarks of the Apache Software Foundation in the United States and/or other countries. Java™, Java™ SE, Java™ EE, and OpenJDK™ are trademarks of Oracle and/or its affiliates. Kubernetes® is a registered trademark of the Linux Foundation in the United States and other countries. Linux® is the registered trademark of Linus Torvalds in the United States and other countries. Windows® and Microsoft® Azure are registered trademarks of Microsoft Corporation. “AWS” and “Amazon Web Services” are trademarks or registered trademarks of Amazon.com Inc. or its affiliates. All other trademarks and copyrights are property of their respective owners and are only mentioned for informative purposes. Other names may be trademarks of their respective owners.",
+      "translation": "Apache®、Apache Tomcat®、Apache Kafka®、Apache Cassandra™ 和 Apache Geode™ 是 Apache 软件基金会在美国和其他/或某些国家的商标或注册商标。Java™、Java™ SE、Java™ EE 和 OpenJDK™ 是 Oracle 公司和/或其关联公司的商标。Kubernetes® 是 Linux 基金会在美国和其他/或某些国家的注册商标。Linux® 是 Linus Torvalds 在美国和其他/或某些国家的注册商标。Windows® 和 Microsoft® Azure 是微软公司的注册商标。\"AWS\"和\"Amazon Web Services\"是 Amazon.com Inc. 或其关联公司的商标或注册商标。所有其他商标和版权均归各自所有者所有，仅用于说明目的。其他名称可能是其各自所有者的商标。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/projects\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-boot\">Spring Boot</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-framework\">Spring Framework</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud\">Spring Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud-dataflow\">Spring Cloud Data Flow</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-data\">Spring Data</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-integration\">Spring Integration</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-batch\">Spring Batch</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-security\">Spring Security</a>\n            <a class=\"navbar-item navbar-item-special\" href=\"https://spring.io/projects\">View all projects</a>\n            <li class=\"navbar-item navbar-item-special-3\">DEVELOPMENT TOOLS</li>\n            <a class=\"navbar-item\" href=\"https://spring.io/tools\">Spring Tools 4</a>\n            <a class=\"navbar-item navbar-item-special-2\" href=\"https://start.spring.io\">Spring Initializr\n              <svg id=\"svg-stash-f15b5668\"></svg></a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/projects\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-boot\">Spring Boot</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-framework\">Spring Framework</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud\">Spring Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud-dataflow\">Spring Cloud Data Flow</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-data\">Spring Data</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-integration\">Spring Integration</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-batch\">Spring Batch</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-security\">Spring Security</a>\n            <a class=\"navbar-item navbar-item-special\" href=\"https://spring.io/projects\">查看所有项目</a>\n            <li class=\"navbar-item navbar-item-special-3\">开发工具</li>\n            <a class=\"navbar-item\" href=\"https://spring.io/tools\">Spring Tools 4</a>\n            <a class=\"navbar-item navbar-item-special-2\" href=\"https://start.spring.io\">Spring Initializr\n              <svg id=\"svg-stash-f15b5668\"></svg></a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/why-spring\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/microservices\">Microservices</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/reactive\">Reactive</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/event-driven\">Event\n              Driven</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/cloud\">Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/web-applications\">Web\n              Applications</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/serverless\">Serverless</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/batch\">Batch</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/why-spring\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/microservices\">微服务</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/reactive\">响应式</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/event-driven\">事件驱动</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/cloud\">云</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/web-applications\">Web 应用</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/serverless\">无服务器</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/batch\">批处理</a>",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/concepts.adoc\">\n          <svg id=\"svg-stash-05b5c46b\"></svg>\n          Edit this Page\n        </a>\n        <a href=\"https://github.com/spring-projects/spring-ai\" title=\"GitHub\">\n          <svg id=\"svg-stash-28d888b7\"></svg>\n          GitHub Project\n        </a>",
+      "translation": "<a href=\"file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/concepts.adoc\">\n          <svg id=\"svg-stash-05b5c46b\"></svg>\n          编辑此页面\n        </a>\n        <a href=\"https://github.com/spring-projects/spring-ai\" title=\"GitHub\">\n          <svg id=\"svg-stash-28d888b7\"></svg>\n          GitHub 项目\n        </a>",
+      "count": 1
+    },
+    {
+      "source": "<nav aria-label=\"breadcrumbs\" class=\"breadcrumbs\">\n    <ul>\n      <li><a href=\"index.html\">Spring AI</a></li>\n      <li><a href=\"index.html\">Overview</a></li>\n      <li><a href=\"concepts.html\">AI Concepts</a></li>\n    </ul>\n  </nav>",
+      "translation": "<nav aria-label=\"面包屑\" class=\"breadcrumbs\">\n    <ul>\n      <li><a href=\"index.html\">Spring AI</a></li>\n      <li><a href=\"index.html\">概述</a></li>\n      <li><a href=\"concepts.html\">AI 概念</a></li>\n    </ul>\n  </nav>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/solutions\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/support\">Spring Runtime</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/consulting\">Spring Consulting</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/teams\">Spring Academy For Teams</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/security\">Security Advisories</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/solutions\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/support\">Spring 运行时</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/consulting\">Spring 咨询</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/teams\">Spring Academy 团队培训</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/security\">安全公告</a>",
+      "count": 1
+    },
+    {
+      "source": "<ul class=\"projects\">\n  <li>\n    Related Spring Documentation\n    <ul class=\"projects-list\">\n    </ul>\n  </li><a href=\"spring-projects.html\">All Docs...</a>\n</ul>",
+      "translation": "<ul class=\"projects\">\n  <li>\n    相关 Spring 文档\n    <ul class=\"projects-list\">\n    </ul>\n  </li><a href=\"spring-projects.html\">所有文档...</a>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.academy/courses\">Courses</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/learning-path\">Get Certified</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.academy/courses\">课程</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/learning-path\">获取认证</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"title\" href=\"index.html\">Spring AI</a>",
+      "translation": "<a class=\"title\" href=\"index.html\">Spring AI</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"search-link\" href=\"search.html\">Search in all Spring Docs</a>",
+      "translation": "<a class=\"search-link\" href=\"search.html\">在所有的 Spring 文档中搜索</a>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"api/vectordbs.html\">Vector Databases</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/azure.html\">Azure AI Service</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/azure-cosmos-db.html\">Azure Cosmos DB</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/bedrock-knowledge-base.html\">Amazon Bedrock Knowledge Base</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/apache-cassandra.html\">Apache Cassandra Vector Store</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/chroma.html\">Chroma</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/couchbase.html\">Couchbase</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/elasticsearch.html\">Elasticsearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/gemfire.html\">GemFire</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/mariadb.html\">MariaDB Vector Store</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/milvus.html\">Milvus</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/mongodb.html\">MongoDB Atlas</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/neo4j.html\">Neo4j</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/opensearch.html\">OpenSearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/oracle.html\">Oracle</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/pgvector.html\">PGvector</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/pinecone.html\">Pinecone</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/qdrant.html\">Qdrant</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/redis.html\">Redis</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/typesense.html\">Typesense</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/weaviate.html\">Weaviate</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/s3-vector-store.html\">S3 Vector Store</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"api/vectordbs.html\">向量数据库</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/azure.html\">Azure AI 服务</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/azure-cosmos-db.html\">Azure Cosmos DB</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/bedrock-knowledge-base.html\">Amazon Bedrock 知识库</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/apache-cassandra.html\">Apache Cassandra 向量存储</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/chroma.html\">Chroma</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/couchbase.html\">Couchbase</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/elasticsearch.html\">Elasticsearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/gemfire.html\">GemFire</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/mariadb.html\">MariaDB 向量存储</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/milvus.html\">Milvus</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/mongodb.html\">MongoDB Atlas</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/neo4j.html\">Neo4j</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/opensearch.html\">OpenSearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/oracle.html\">Oracle</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/pgvector.html\">PGvector</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/pinecone.html\">Pinecone</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/qdrant.html\">Qdrant</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/redis.html\">Redis</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/typesense.html\">Typesense</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/weaviate.html\">Weaviate</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/vectordbs/s3-vector-store.html\">S3 向量存储</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"api/embeddings.html\">Embedding Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"api/bedrock.html\">Amazon Bedrock</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"api/embeddings/bedrock-cohere-embedding.html\">Cohere</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"api/embeddings/bedrock-titan-embedding.html\">Titan</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/embeddings/azure-openai-embeddings.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/embeddings/google-genai-embeddings-text.html\">Google GenAI Text Embedding</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/embeddings/mistralai-embeddings.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/embeddings/oci-genai-embeddings.html\">OCI GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/embeddings/ollama-embeddings.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/embeddings/onnx.html\">(ONNX) Transformers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/embeddings/openai-embeddings.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/embeddings/postgresml-embeddings.html\">PostgresML</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">VertexAI</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"api/embeddings/vertexai-embeddings-text.html\">Text Embedding</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"api/embeddings/vertexai-embeddings-multimodal.html\">Multimodal Embedding</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"api/embeddings.html\">嵌入模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"api/bedrock.html\">Amazon Bedrock</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"api/embeddings/bedrock-cohere-embedding.html\">Cohere</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"api/embeddings/bedrock-titan-embedding.html\">Titan</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/embeddings/azure-openai-embeddings.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/embeddings/google-genai-embeddings-text.html\">Google GenAI 文本嵌入</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/embeddings/mistralai-embeddings.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/embeddings/oci-genai-embeddings.html\">OCI GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/embeddings/ollama-embeddings.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/embeddings/onnx.html\">(ONNX) Transformers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/embeddings/openai-embeddings.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/embeddings/postgresml-embeddings.html\">PostgresML</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">VertexAI</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"api/embeddings/vertexai-embeddings-text.html\">文本嵌入</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"api/embeddings/vertexai-embeddings-multimodal.html\">多模态嵌入</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"api/chatmodel.html\">Chat Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/chat/comparison.html\">Chat Models Comparison</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/chat/bedrock-converse.html\">Amazon Bedrock Converse</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/chat/anthropic-chat.html\">Anthropic</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/chat/azure-openai-chat.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/chat/deepseek-chat.html\">DeepSeek</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/chat/dmr-chat.html\">Docker Model Runner</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/chat/google-genai-chat.html\">Google GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/chat/groq-chat.html\">Groq</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/chat/mistralai-chat.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/chat/minimax-chat.html\">MiniMax</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/chat/nvidia-chat.html\">NVIDIA</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/chat/ollama-chat.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/chat/perplexity-chat.html\">Perplexity AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/chat/oci-genai-chat.html\">OCI Generative AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/chat/openai-chat.html\">OpenAI</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"api/chatmodel.html\">对话模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/chat/comparison.html\">对话模型对比</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/chat/bedrock-converse.html\">Amazon Bedrock Converse</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/chat/anthropic-chat.html\">Anthropic</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/chat/azure-openai-chat.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/chat/deepseek-chat.html\">DeepSeek</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/chat/dmr-chat.html\">Docker Model Runner</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/chat/google-genai-chat.html\">Google GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/chat/groq-chat.html\">Groq</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/chat/mistralai-chat.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/chat/minimax-chat.html\">MiniMax</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/chat/nvidia-chat.html\">NVIDIA</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/chat/ollama-chat.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/chat/perplexity-chat.html\">Perplexity AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/chat/oci-genai-chat.html\">OCI Generative AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/chat/openai-chat.html\">OpenAI</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"api/mcp/mcp-overview.html\">Model Context Protocol (MCP)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/mcp/mcp-client-boot-starter-docs.html\">MCP Client Boot Starters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"api/mcp/mcp-server-boot-starter-docs.html\">MCP Server Boot Starters</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/mcp/mcp-stdio-sse-server-boot-starter-docs.html\">STDIO and SSE MCP Servers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/mcp/mcp-streamable-http-server-boot-starter-docs.html\">Streamable-HTTP MCP Servers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/mcp/mcp-stateless-server-boot-starter-docs.html\">Stateless Streamable-HTTP MCP Servers</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/mcp/mcp-security.html\">MCP Security (WIP)</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"api/mcp/mcp-annotations-overview.html\">MCP Annotations</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/mcp/mcp-annotations-client.html\">Client Annotations</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/mcp/mcp-annotations-server.html\">Server Annotations</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/mcp/mcp-annotations-special-params.html\">Special Parameters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/mcp/mcp-annotations-examples.html\">MCP Annotations Examples</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"api/mcp/mcp-overview.html\">模型上下文协议 (MCP)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/mcp/mcp-client-boot-starter-docs.html\">MCP 客户端启动器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"api/mcp/mcp-server-boot-starter-docs.html\">MCP 服务器启动器</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/mcp/mcp-stdio-sse-server-boot-starter-docs.html\">STDIO 和 SSE MCP 服务器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/mcp/mcp-streamable-http-server-boot-starter-docs.html\">可流式 HTTP MCP 服务器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/mcp/mcp-stateless-server-boot-starter-docs.html\">无状态可流式 HTTP MCP 服务器</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/mcp/mcp-security.html\">MCP 安全性 (进行中)</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"api/mcp/mcp-annotations-overview.html\">MCP 注解</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/mcp/mcp-annotations-client.html\">客户端注解</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/mcp/mcp-annotations-server.html\">服务器注解</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/mcp/mcp-annotations-special-params.html\">特殊参数</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/mcp/mcp-annotations-examples.html\">MCP 注解示例</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">Guides</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/spring-ai-community/awesome-spring-ai\">Awesome Spring AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"guides/getting-started-mcp.html\">Getting Started with MCP</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"guides/dynamic-tool-search.html\">Dynamic Tool Discovery</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"guides/llm-as-judge.html\">LLM-as-a-Judge Evaluation</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"api/chat/prompt-engineering-patterns.html\">Prompt Engineering Patterns</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"api/effective-agents.html\">Building Effective Agents</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agents\">Building agents with Spring AI by AWS</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agentcore\">Building agents with Spring AI and AgentCore by AWS</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/microsoft/Spring-AI-for-Beginners\">Spring AI for Beginners by Microsoft</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<span class=\"nav-text\">指南</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/spring-ai-community/awesome-spring-ai\">Awesome Spring AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"guides/getting-started-mcp.html\">MCP 入门</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"guides/dynamic-tool-search.html\">动态工具发现</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"guides/llm-as-judge.html\">LLM-as-a-Judge 评估</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"api/chat/prompt-engineering-patterns.html\">提示工程模式</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"api/effective-agents.html\">构建高效智能体</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agents\">AWS 使用 Spring AI 构建智能体</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agentcore\">AWS 使用 Spring AI 和 AgentCore 构建智能体</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/microsoft/Spring-AI-for-Beginners\">Microsoft 的 Spring AI 初学者指南</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"api/audio.html\">Audio Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"api/audio/transcriptions.html\">Transcription API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"api/audio/transcriptions/azure-openai-transcriptions.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"api/audio/transcriptions/openai-transcriptions.html\">OpenAI</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"api/audio/speech.html\">Text-To-Speech (TTS) API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"api/audio/speech/openai-speech.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"api/audio/speech/elevenlabs-speech.html\">ElevenLabs</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"api/audio.html\">音频模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"api/audio/transcriptions.html\">转录 API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"api/audio/transcriptions/azure-openai-transcriptions.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"api/audio/transcriptions/openai-transcriptions.html\">OpenAI</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"api/audio/speech.html\">文本转语音 (TTS) API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"api/audio/speech/openai-speech.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"api/audio/speech/elevenlabs-speech.html\">ElevenLabs</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"api/chatclient.html\">Chat Client API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"api/advisors.html\">Advisors</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/advisors-recursive.html\">Recursive Advisors</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"api/chatclient.html\">聊天客户端 API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"api/advisors.html\">顾问</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/advisors-recursive.html\">递归顾问</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"api/imageclient.html\">Image Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/image/azure-openai-image.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/image/openai-image.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/image/stabilityai-image.html\">Stability</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"api/imageclient.html\">图像模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/image/azure-openai-image.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/image/openai-image.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/image/stabilityai-image.html\">Stability</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"api/moderation.html\">Moderation Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/moderation/openai-moderation.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/moderation/mistral-ai-moderation.html\">Mistral AI</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"api/moderation.html\">内容审核模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/moderation/openai-moderation.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"api/moderation/mistral-ai-moderation.html\">Mistral AI</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"upgrade-notes.html\">Upgrade Notes</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"api/tools-migration.html\">Migrating FunctionCallback to ToolCallback API</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"api/chat/anthropic-migration.html\">Migrating the Anthropic Module to the Official Java SDK</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"upgrade-notes.html\">升级说明</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"api/tools-migration.html\">将 FunctionCallback 迁移至 ToolCallback API</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"api/chat/anthropic-migration.html\">将 Anthropic 模块迁移至官方 Java SDK</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"index.html\">Overview</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item is-current-page\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"concepts.html\">AI Concepts</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"index.html\">概览</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item is-current-page\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"concepts.html\">AI 概念</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"api/retrieval-augmented-generation.html\">Retrieval Augmented Generation (RAG)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/etl-pipeline.html\">ETL Pipeline</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"api/retrieval-augmented-generation.html\">检索增强生成 (RAG)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"api/etl-pipeline.html\">ETL 管道</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"prev\"><a href=\"index.html\">Overview</a></span>\n  <span class=\"next\"><a href=\"getting-started.html\">Getting Started</a></span>",
+      "translation": "<span class=\"prev\"><a href=\"index.html\">概览</a></span>\n  <span class=\"next\"><a href=\"getting-started.html\">入门指南</a></span>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"getting-started.html\">Getting Started</a>",
+      "translation": "<a class=\"nav-link\" href=\"getting-started.html\">入门指南</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"api/structured-output-converter.html\">Structured Output</a>",
+      "translation": "<a class=\"nav-link\" href=\"api/structured-output-converter.html\">结构化输出</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"api/chat-memory.html\">Chat Memory</a>",
+      "translation": "<a class=\"nav-link\" href=\"api/chat-memory.html\">对话记忆</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"api/tools.html\">Tool Calling</a>",
+      "translation": "<a class=\"nav-link\" href=\"api/tools.html\">工具调用</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"api/testing.html\">Model Evaluation</a>",
+      "translation": "<a class=\"nav-link\" href=\"api/testing.html\">模型评估</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"api/docker-compose.html\">Development-time Services</a>",
+      "translation": "<a class=\"nav-link\" href=\"api/docker-compose.html\">开发时服务</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_prompt_templates\"></a>Prompt Templates",
+      "translation": "<a class=\"anchor\" href=\"#_prompt_templates\"></a>提示模板",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_structured_output\"></a>Structured Output",
+      "translation": "<a class=\"anchor\" href=\"#_structured_output\"></a>结构化输出",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_bringing_your_data_apis_to_the_ai_model\"></a>Bringing Your Data &amp; APIs to the AI Model",
+      "translation": "<a class=\"anchor\" href=\"#_bringing_your_data_apis_to_the_ai_model\"></a>将您的数据与 API 引入 AI 模型",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#concept-rag\"></a>Retrieval Augmented Generation",
+      "translation": "<a class=\"anchor\" href=\"#concept-rag\"></a>检索增强生成",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#concept-fc\"></a>Tool Calling",
+      "translation": "<a class=\"anchor\" href=\"#concept-fc\"></a>工具调用",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#concept-evaluating-ai-responses\"></a>Evaluating AI responses",
+      "translation": "<a class=\"anchor\" href=\"#concept-evaluating-ai-responses\"></a>评估人工智能的回复",
+      "count": 1
+    },
+    {
+      "source": "Why Spring",
+      "translation": "为何是春天",
+      "count": 1
+    },
+    {
+      "source": "Spring AI",
+      "translation": "Spring AI",
+      "count": 1
+    },
+    {
+      "source": "AI Concepts",
+      "translation": "人工智能概念",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,596 @@
+{
+  "created_at": "2026-06-13 14:43:50",
+  "updated_at": "2026-06-13 14:43:50",
+  "stats": {
+    "total_entries": 116,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 118,
+    "entries_with_hits": 116,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0172413793103448,
+    "usage_percentage": 0.0116
+  },
+  "items": [
+    {
+      "source": "Enable OpenAI chat model.",
+      "translation": "启用 OpenAI 聊天模型。",
+      "count": 2
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\nRefer to the <a class=\"xref page\" href=\"../../getting-started.html#dependency-management\">Dependency Management</a> section to add the Spring AI BOM to your build file.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"提示\"></i>\n</td>\n<td class=\"content\">\n请参考<a class=\"xref page\" href=\"../../getting-started.html#dependency-management\">依赖管理</a>部分，将 Spring AI BOM 添加到您的构建文件中。\n</td>\n</tr>\n</tbody>",
+      "count": 2
+    },
+    {
+      "source": "Copyright © 2005 - <script>var d = new Date();\n        document.write(d.getFullYear());</script> Broadcom. All Rights Reserved. The term \"Broadcom\" refers to Broadcom Inc. and/or its subsidiaries.<br/><a href=\"https://www.vmware.com/help/legal.html\">Terms of Use</a> • <a href=\"https://www.vmware.com/help/privacy.html\" rel=\"noopener noreferrer\">Privacy</a> • <a href=\"https://spring.io/trademarks\">Trademark Guidelines</a> <span id=\"thank-you-mobile\">• <a href=\"https://spring.io/thank-you\">Thank you</a></span> • <a href=\"https://www.vmware.com/help/privacy/california-privacy-rights.html\">Your California Privacy Rights</a> • <a class=\"ot-sdk-show-settings\">Cookie Settings</a> <span id=\"teconsent\"></span>",
+      "translation": "版权所有 © 2005 - <script>var d = new Date(); document.write(d.getFullYear());</script> Broadcom。保留所有权利。“Broadcom”指 Broadcom Inc. 及其/或其子公司。<br/><a href=\"https://www.vmware.com/help/legal.html\">使用条款</a> • <a href=\"https://www.vmware.com/help/privacy.html\" rel=\"noopener noreferrer\">隐私政策</a> • <a href=\"https://spring.io/trademarks\">商标指南</a> <span id=\"thank-you-mobile\">• <a href=\"https://spring.io/thank-you\">致谢</a></span> • <a href=\"https://www.vmware.com/help/privacy/california-privacy-rights.html\">您的加州隐私权利</a> • <a class=\"ot-sdk-show-settings\">Cookie 设置</a> <span id=\"teconsent\"></span>",
+      "count": 1
+    },
+    {
+      "source": "Spring AI integrates with the <a href=\"https://groq.com/\">Groq</a> by reusing the existing <a class=\"xref page\" href=\"openai-chat.html\">OpenAI</a> client.\nFor this you need to obtain a <a href=\"https://console.groq.com/keys\">Groq Api Key</a>, set the base-url to <a class=\"bare\" href=\"https://api.groq.com/openai/v1\">api.groq.com/openai/v1</a> and select one of the\nprovided <a href=\"https://console.groq.com/docs/models\">Groq models</a>.",
+      "translation": "Spring AI 通过复用现有的<a class=\"xref page\" href=\"openai-chat.html\">OpenAI</a>客户端与<a href=\"https://groq.com/\">Groq</a>进行集成。为此，您需要获取一个<a href=\"https://console.groq.com/keys\">Groq API 密钥</a>，将基础 URL 设置为<a class=\"bare\" href=\"https://api.groq.com/openai/v1\">api.groq.com/openai/v1</a>，并从提供的<a href=\"https://console.groq.com/docs/models\">Groq 模型</a>中选择一个。",
+      "count": 1
+    },
+    {
+      "source": "The <a href=\"https://console.groq.com/docs/models\">available model</a> names are <code>llama3-8b-8192</code>, <code>llama3-70b-8192</code>, <code>mixtral-8x7b-32768</code>, <code>gemma2-9b-it</code>.",
+      "translation": "可用的<a href=\"https://console.groq.com/docs/models\">模型</a>名称为<code>llama3-8b-8192</code>、<code>llama3-70b-8192</code>、<code>mixtral-8x7b-32768</code>和<code>gemma2-9b-it</code>。",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"https://groq.com/\">Groq</a> is an extremely fast,  LPU™ based, AI Inference Engine that support various <a href=\"https://console.groq.com/docs/models\">AI Models</a>,\nsupports <code>Tool/Function Calling</code> and exposes a <code>OpenAI API</code> compatible endpoint.",
+      "translation": "<a href=\"https://groq.com/\">Groq</a> 是一款基于 LPU™ 的极速 AI 推理引擎，支持多种 <a href=\"https://console.groq.com/docs/models\">AI 模型</a>，支持<code>工具/函数调用</code>，并提供兼容<code>OpenAI API</code>的接口。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Create an API Key</strong>:\nVisit <a href=\"https://console.groq.com/keys\">here</a> to create an API Key.\nThe Spring AI project defines a configuration property named <code>spring.ai.openai.api-key</code> that you should set to the value of the <code>API Key</code> obtained from groq.com.",
+      "translation": "<strong>创建 API 密钥</strong>：\n请访问 <a href=\"https://console.groq.com/keys\">此处</a> 创建 API 密钥。\nSpring AI 项目定义了一个名为 <code>spring.ai.openai.api-key</code> 的配置属性，您应将其设置为从 groq.com 获取的 <code>API 密钥</code> 的值。",
+      "count": 1
+    },
+    {
+      "source": "The <a href=\"https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-openai/src/main/java/org/springframework/ai/openai/OpenAiChatModel.java\">OpenAiChatModel</a> implements the <code>ChatModel</code> and <code>StreamingChatModel</code> and uses the <a href=\"#low-level-api\">[low-level-api]</a> to connect to the OpenAI service.",
+      "translation": "<a href=\"https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-openai/src/main/java/org/springframework/ai/openai/OpenAiChatModel.java\">OpenAiChatModel</a> 实现了 <code>ChatModel</code> 和 <code>StreamingChatModel</code>，并使用 <a href=\"#low-level-api\">[低层 API]</a> 连接到 OpenAI 服务。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Set the Groq URL</strong>:\nYou have to set the <code>spring.ai.openai.base-url</code> property to <code>https://api.groq.com/openai/v1</code>.",
+      "translation": "<strong>设置 Groq 的 URL</strong>：\n您需要将 <code>spring.ai.openai.base-url</code> 属性设置为 <code>https://api.groq.com/openai/v1</code>。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Select a Groq Model</strong>:\nUse the <code>spring.ai.openai.chat.model=&lt;model name&gt;</code> property to select from the available <a href=\"https://console.groq.com/docs/models\">Groq Models</a>.",
+      "translation": "<strong>选择 Groq 模型</strong>：\n使用 <code>spring.ai.openai.chat.model=&lt;模型名称&gt;</code> 属性从可用的<a href=\"https://console.groq.com/docs/models\">Groq 模型</a>中进行选择。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI provides Spring Boot auto-configuration for the OpenAI Chat Client.\nTo enable it add the following dependency to your project’s Maven <code>pom.xml</code> or Gradle <code>build.gradle</code> build files:",
+      "translation": "Spring AI 为 OpenAI 聊天客户端提供了 Spring Boot 自动配置功能。\n要在项目的 Maven `<code>pom.xml</code>` 或 Gradle `<code>build.gradle</code>` 构建文件中启用它，请添加以下依赖：",
+      "count": 1
+    },
+    {
+      "source": "On start-up, the default options can be configured with the <code>OpenAiChatModel(api, options)</code> constructor or the <code>spring.ai.openai.chat.*</code> properties.",
+      "translation": "启动时，可以通过 `<code>OpenAiChatModel(api, options)</code>` 构造函数或 `<code>spring.ai.openai.chat.*</code>` 属性来配置默认选项。",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"https://start.spring.io/\">Create</a> a new Spring Boot project and add the <code>spring-ai-starter-model-openai</code> to your pom (or gradle) dependencies.",
+      "translation": "<a href=\"https://start.spring.io/\">创建</a>一个新的 Spring Boot 项目，并在您的 pom（或 gradle）依赖中添加<code>spring-ai-starter-model-openai</code>。",
+      "count": 1
+    },
+    {
+      "source": "Add a <code>application.properties</code> file, under the <code>src/main/resources</code> directory, to enable and configure the OpenAi chat model:",
+      "translation": "在 `src/main/resources` 目录下添加一个 `<code>application.properties</code>` 文件，以启用并配置 OpenAI 聊天模型：",
+      "count": 1
+    },
+    {
+      "source": "This will create a <code>OpenAiChatModel</code> implementation that you can inject into your class.\nHere is an example of a simple <code>@Controller</code> class that uses the chat model for text generations.",
+      "translation": "这将创建一个 `<code>OpenAiChatModel</code>` 实现，您可以将其注入到您的类中。以下是一个使用聊天模型进行文本生成的简单 `<code>@Controller</code>` 类的示例。",
+      "count": 1
+    },
+    {
+      "source": "Add the <code>spring-ai-openai</code> dependency to your project’s Maven <code>pom.xml</code> file:",
+      "translation": "将 `<code>spring-ai-openai</code>` 依赖添加到您的项目的 Maven `<code>pom.xml</code>` 文件中：",
+      "count": 1
+    },
+    {
+      "source": "The <code>OpenAiChatOptions</code> provides the configuration information for the chat requests.\nThe <code>OpenAiChatOptions.Builder</code> is fluent options builder.",
+      "translation": "<code>OpenAiChatOptions</code> 提供聊天请求的配置信息。\n<code>OpenAiChatOptions.Builder</code> 是一个流式选项构建器。",
+      "count": 1
+    },
+    {
+      "source": "Check the <a href=\"https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-openai/src/test/java/org/springframework/ai/openai/chat/proxy/GroqWithOpenAiChatModelIT.java\">GroqWithOpenAiChatModelIT.java</a> tests\nfor examples of using Groq with Spring AI.",
+      "translation": "检查 <a href=\"https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-openai/src/test/java/org/springframework/ai/openai/chat/proxy/GroqWithOpenAiChatModelIT.java\">GroqWithOpenAiChatModelIT.java</a> 测试，以了解使用 Groq 与 Spring AI 的示例。",
+      "count": 1
+    },
+    {
+      "source": "You can set these configuration properties in your <code>application.properties</code> file:",
+      "translation": "您可以在 `application.properties` 文件中设置这些配置属性：",
+      "count": 1
+    },
+    {
+      "source": "Spring AI artifacts are published in Maven Central and Spring Snapshot repositories.\nRefer to the <a class=\"xref page\" href=\"../../getting-started.html#artifact-repositories\">Artifact Repositories</a> section to add these repositories to your build system.",
+      "translation": "Spring AI 的构件发布在 Maven Central 和 Spring Snapshot 仓库中。请参考<a class=\"xref page\" href=\"../../getting-started.html#artifact-repositories\">构件仓库</a>部分，以将这些仓库添加到您的构建系统中。",
+      "count": 1
+    },
+    {
+      "source": "To help with dependency management, Spring AI provides a BOM (bill of materials) to ensure that a consistent version of Spring AI is used throughout the entire project. Refer to the <a class=\"xref page\" href=\"../../getting-started.html#dependency-management\">Dependency Management</a> section to add the Spring AI BOM to your build system.",
+      "translation": "为便于依赖管理，Spring AI 提供了一个 BOM（物料清单），以确保整个项目中使用的 Spring AI 版本保持一致。请参考<a class=\"xref page\" href=\"../../getting-started.html#dependency-management\">依赖管理</a>部分，将 Spring AI BOM 添加到您的构建系统中。",
+      "count": 1
+    },
+    {
+      "source": "There has been a significant change in the Spring AI auto-configuration, starter modules' artifact names.\nPlease refer to the <a href=\"https://docs.spring.io/spring-ai/reference/upgrade-notes.html\">upgrade notes</a> for more information.",
+      "translation": "Spring AI 的自动配置中，starter 模块的构件名称已发生重大变更。\n有关更多信息，请参阅<a href=\"https://docs.spring.io/spring-ai/reference/upgrade-notes.html\">升级说明</a>。",
+      "count": 1
+    },
+    {
+      "source": "The prefix <code>spring.ai.retry</code> is used as the property prefix that lets you configure the retry mechanism for the OpenAI chat model.",
+      "translation": "前缀 `spring.ai.retry` 用作属性前缀，允许您为 OpenAI 聊天模型配置重试机制。",
+      "count": 1
+    },
+    {
+      "source": "If false, throw a NonTransientAiException, and do not attempt retry for <code>4xx</code> client error codes",
+      "translation": "如果为假，则抛出 NonTransientAiException 异常，并且不要针对 `<code>4xx` 客户端错误代码进行重试。",
+      "count": 1
+    },
+    {
+      "source": "The prefix <code>spring.ai.openai</code> is used as the property prefix that lets you connect to OpenAI.",
+      "translation": "<code>spring.ai.openai</code> 前缀用作连接 OpenAI 的属性前缀。",
+      "count": 1
+    },
+    {
+      "source": "The URL to connect to. Must be set to <code>https://api.groq.com/openai/v1</code>",
+      "translation": "要连接的 URL。必须设置为<code>https://api.groq.com/openai/v1</code>",
+      "count": 1
+    },
+    {
+      "source": "Enabling and disabling of the chat auto-configurations are now configured via top level properties with the prefix <code>spring.ai.model.chat</code>.",
+      "translation": "启用和禁用聊天自动配置现在通过带有前缀<code>spring.ai.model.chat</code>的顶层属性进行配置。",
+      "count": 1
+    },
+    {
+      "source": "The prefix <code>spring.ai.openai.chat</code> is the property prefix that lets you configure the chat model implementation for OpenAI.",
+      "translation": "<code>spring.ai.openai.chat</code> 前缀是用于配置 OpenAI 聊天模型实现的属性前缀。",
+      "count": 1
+    },
+    {
+      "source": "Optional overrides the spring.ai.openai.base-url to provide chat specific url. Must be set to <code>https://api.groq.com/openai/v1</code>",
+      "translation": "可选的覆盖项，用于提供特定于聊天的 URL 以替代 spring.ai.openai.base-url。必须设置为<code>https://api.groq.com/openai/v1</code>。",
+      "count": 1
+    },
+    {
+      "source": "An object specifying the format that the model must output. Setting to <code>{ \"type\": \"json_object\" }</code> enables JSON mode, which guarantees the message the model generates is valid JSON.",
+      "translation": "指定模型必须输出的格式的物体。设置为 `<code>{ \"type\": \"json_object\" }</code>` 可启用 JSON 模式，确保模型生成的消息是有效的 JSON。",
+      "count": 1
+    },
+    {
+      "source": "(For streaming only) Set to add an additional chunk with token usage statistics for the entire request. The <code>choices</code> field for this chunk is an empty array and all other chunks will also include a usage field, but with a null value.",
+      "translation": "（仅适用于流式传输）设置为添加一个包含整个请求的令牌使用统计信息的额外块。此块的<code>choices</code>字段为空数组，而所有其他块也将包含一个使用字段，但其值为 null。",
+      "count": 1
+    },
+    {
+      "source": "The <a href=\"https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-openai/src/main/java/org/springframework/ai/openai/OpenAiChatOptions.java\">OpenAiChatOptions.java</a> provides model configurations, such as the model to use, the temperature, the frequency penalty, etc.",
+      "translation": "<a href=\"https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-openai/src/main/java/org/springframework/ai/openai/OpenAiChatOptions.java\">OpenAiChatOptions.java</a> 提供了模型配置，例如要使用的模型、温度、频率惩罚等。",
+      "count": 1
+    },
+    {
+      "source": "At run-time you can override the default options by adding new, request specific, options to the <code>Prompt</code> call.\nFor example to override the default model and temperature for a specific request:",
+      "translation": "在运行时，您可以通过向 `<code>Prompt</code>` 调用添加新的、特定于请求的选项来覆盖默认选项。\n例如，若要针对特定请求覆盖默认的模型和温度：",
+      "count": 1
+    },
+    {
+      "source": "Groq API endpoints support <a href=\"https://console.groq.com/docs/tool-use\">tool/function calling</a> when selecting one of the Tool/Function supporting models.",
+      "translation": "Groq API 端点在选用支持工具/函数的模型时，支持<a href=\"https://console.groq.com/docs/tool-use\">工具/函数调用</a>。",
+      "count": 1
+    },
+    {
+      "source": "In this example, when the model needs weather information, it will automatically call the <code>WeatherService</code>, which can then fetch real-time weather data.\nThe expected response looks like this: \"The weather in Amsterdam is currently 20 degrees Celsius, and the weather in Paris is currently 25 degrees Celsius.\"",
+      "translation": "在此示例中，当模型需要天气信息时，会自动调用<code>WeatherService</code>，从而获取实时天气数据。\n预期的响应如下：“阿姆斯特丹当前气温为 20 摄氏度，巴黎当前气温为 25 摄氏度。”",
+      "count": 1
+    },
+    {
+      "source": "Read more about <a class=\"xref page\" href=\"../tools.html\">Tool Calling</a>.",
+      "translation": "了解更多关于<a class=\"xref page\" href=\"../tools.html\">工具调用</a>的信息。",
+      "count": 1
+    },
+    {
+      "source": "or to your Gradle <code>build.gradle</code> build file.",
+      "translation": "或者将其添加到您的 Gradle `<code>build.gradle</code>` 构建文件中。",
+      "count": 1
+    },
+    {
+      "source": "Next, create a <code>OpenAiChatModel</code> and use it for text generations:",
+      "translation": "接下来，创建一个 `<code>OpenAiChatModel</code>` 并用于文本生成：",
+      "count": 1
+    },
+    {
+      "source": "For enhanced security when handling sensitive information like API keys, you can use Spring Expression Language (SpEL) to reference custom environment variables:",
+      "translation": "为在安全处理敏感信息（如 API 密钥）时提供增强的安全性，您可以使用 Spring 表达式语言（SpEL）来引用自定义环境变量：",
+      "count": 1
+    },
+    {
+      "source": "You can also set these configurations programmatically in your application code:",
+      "translation": "您还可以在应用程序代码中通过编程方式设置这些配置：",
+      "count": 1
+    },
+    {
+      "source": "Maximum number of retry attempts.",
+      "translation": "最大重试尝试次数。",
+      "count": 1
+    },
+    {
+      "source": "Initial sleep duration for the exponential backoff policy.",
+      "translation": "指数退避策略的初始睡眠时长。",
+      "count": 1
+    },
+    {
+      "source": "2 sec.",
+      "translation": "2 秒。",
+      "count": 1
+    },
+    {
+      "source": "Backoff interval multiplier.",
+      "translation": "退避间隔倍数。",
+      "count": 1
+    },
+    {
+      "source": "Maximum backoff duration.",
+      "translation": "最大退避时长。",
+      "count": 1
+    },
+    {
+      "source": "3 min.",
+      "translation": "3 分钟。",
+      "count": 1
+    },
+    {
+      "source": "List of HTTP status codes that should not trigger a retry (e.g. to throw NonTransientAiException).",
+      "translation": "不应触发重试的 HTTP 状态码列表（例如，用于抛出 NonTransientAiException）。",
+      "count": 1
+    },
+    {
+      "source": "List of HTTP status codes that should trigger a retry (e.g. to throw TransientAiException).",
+      "translation": "应触发重试的 HTTP 状态码列表（例如，用于抛出 TransientAiException）。",
+      "count": 1
+    },
+    {
+      "source": "The Groq API Key",
+      "translation": "Groq API 密钥",
+      "count": 1
+    },
+    {
+      "source": "To enable, spring.ai.model.chat=openai (It is enabled by default)",
+      "translation": "要启用该功能，请设置 spring.ai.model.chat=openai（默认已启用）。",
+      "count": 1
+    },
+    {
+      "source": "To disable, spring.ai.model.chat=none (or any value which doesn’t match openai)",
+      "translation": "要禁用该功能，请将 spring.ai.model.chat 设置为 none（或任何不等于 openai 的值）。",
+      "count": 1
+    },
+    {
+      "source": "This change is done to allow configuration of multiple models.",
+      "translation": "此更改旨在支持配置多个模型。",
+      "count": 1
+    },
+    {
+      "source": "spring.ai.openai.chat.enabled (Removed and no longer valid)",
+      "translation": "spring.ai.openai.chat.enabled（已移除且不再有效）",
+      "count": 1
+    },
+    {
+      "source": "Optional overrides the spring.ai.openai.api-key to provide chat specific api-key",
+      "translation": "可选参数用于覆盖 spring.ai.openai.api-key，以提供特定于聊天的 API 密钥。",
+      "count": 1
+    },
+    {
+      "source": "The sampling temperature to use that controls the apparent creativity of generated completions. Higher values will make output more random while lower values will make results more focused and deterministic. It is not recommended to modify temperature and top_p for the same completions request as the interaction of these two settings is difficult to predict.",
+      "translation": "用于控制生成补全结果表面创造力的采样温度。较高的值会使输出更加随机，而较低的值则使结果更加聚焦和确定性。不建议在同一补全请求中修改温度和 top_p，因为这两个设置的交互作用难以预测。",
+      "count": 1
+    },
+    {
+      "source": "Number between -2.0 and 2.0. Positive values penalize new tokens based on their existing frequency in the text so far, decreasing the model’s likelihood to repeat the same line verbatim.",
+      "translation": "介于 -2.0 和 2.0 之间的数字。正值会根据文本中现有 token 的频率对新 token 进行惩罚，从而降低模型逐字重复相同内容的概率。",
+      "count": 1
+    },
+    {
+      "source": "The maximum number of tokens to generate in the chat completion. The total length of input tokens and generated tokens is limited by the model’s context length.",
+      "translation": "生成式对话补全的最大 token 数量。输入 token 总数与生成 token 总数之和受限于模型的上下文长度。",
+      "count": 1
+    },
+    {
+      "source": "How many chat completion choices to generate for each input message. Note that you will be charged based on the number of generated tokens across all of the choices. Keep n as 1 to minimize costs.",
+      "translation": "为每个输入消息生成的聊天完成选项数量。请注意，您将根据所有选项中生成的 token 总数被收费。请将 n 设置为 1 以最小化成本。",
+      "count": 1
+    },
+    {
+      "source": "Number between -2.0 and 2.0. Positive values penalize new tokens based on whether they appear in the text so far, increasing the model’s likelihood to talk about new topics.",
+      "translation": "-2.0 到 2.0 之间的数字。正值会根据新词是否出现在当前文本中对其进行惩罚，从而提高模型讨论新话题的可能性。",
+      "count": 1
+    },
+    {
+      "source": "This feature is in Beta. If specified, our system will make a best effort to sample deterministically, such that repeated requests with the same seed and parameters should return the same result.",
+      "translation": "此功能处于测试版。如果指定了种子值，我们的系统将尽最大努力进行确定性采样，确保使用相同种子和参数的重复请求返回相同结果。",
+      "count": 1
+    },
+    {
+      "source": "Up to 4 sequences where the API will stop generating further tokens.",
+      "translation": "最多 4 个序列，在此序列中 API 将停止生成更多 token。",
+      "count": 1
+    },
+    {
+      "source": "An alternative to sampling with temperature, called nucleus sampling, where the model considers the results of the tokens with top_p probability mass. So 0.1 means only the tokens comprising the top 10% probability mass are considered. We generally recommend altering this or temperature but not both.",
+      "translation": "另一种替代温度采样的方法是核采样（nucleus sampling），该模型会考虑概率质量排名前 p 的 token 结果。例如，0.1 表示仅考虑占据前 10% 概率质量的 token。我们通常建议调整此参数或温度参数，但不同时调整两者。",
+      "count": 1
+    },
+    {
+      "source": "A list of tools the model may call. Currently, only functions are supported as a tool. Use this to provide a list of functions the model may generate JSON inputs for.",
+      "translation": "模型可能调用的工具列表。目前仅支持函数作为工具。使用此功能提供模型可生成 JSON 输入的函数列表。",
+      "count": 1
+    },
+    {
+      "source": "Controls which (if any) function is called by the model. none means the model will not call a function and instead generates a message. auto means the model can pick between generating a message or calling a function. Specifying a particular function via {\"type: \"function\", \"function\": {\"name\": \"my_function\"}} forces the model to call that function. none is the default when no functions are present. auto is the default if functions are present.",
+      "translation": "控制模型调用哪个（如果有）函数。none 表示模型不会调用函数，而是生成消息；auto 表示模型可以在生成消息或调用函数之间进行选择。通过指定特定函数 {\"type\": \"function\", \"function\": {\"name\": \"my_function\"}} 会强制模型调用该函数。如果没有函数存在，默认值为 none；如果存在函数，默认值为 auto。",
+      "count": 1
+    },
+    {
+      "source": "A unique identifier representing your end-user, which can help OpenAI to monitor and detect abuse.",
+      "translation": "代表您最终用户的唯一标识符，有助于 OpenAI 监控和检测滥用行为。",
+      "count": 1
+    },
+    {
+      "source": "Tool Callbacks to register with the ChatModel.",
+      "translation": "用于与 ChatModel 注册的回调工具。",
+      "count": 1
+    },
+    {
+      "source": "You can register custom Java functions with your ChatModel and have the provided Groq model intelligently choose to output a JSON object containing arguments to call one or many of the registered functions.\nThis is a powerful technique to connect the LLM capabilities with external tools and APIs.",
+      "translation": "您可以将自定义的 Java 函数注册到您的 ChatModel，并让提供的 Groq 模型智能地选择输出一个 JSON 对象，其中包含调用一个或多个已注册函数的参数。这是一种将大语言模型的能力与外部工具和 API 连接起来的强大技术。",
+      "count": 1
+    },
+    {
+      "source": "Here’s a simple example of how to use Groq tool calling with Spring AI:",
+      "translation": "以下是使用 Spring AI 调用 Groq 工具的简单示例：",
+      "count": 1
+    },
+    {
+      "source": "Apache®, Apache Tomcat®, Apache Kafka®, Apache Cassandra™, and Apache Geode™ are trademarks or registered trademarks of the Apache Software Foundation in the United States and/or other countries. Java™, Java™ SE, Java™ EE, and OpenJDK™ are trademarks of Oracle and/or its affiliates. Kubernetes® is a registered trademark of the Linux Foundation in the United States and other countries. Linux® is the registered trademark of Linus Torvalds in the United States and other countries. Windows® and Microsoft® Azure are registered trademarks of Microsoft Corporation. “AWS” and “Amazon Web Services” are trademarks or registered trademarks of Amazon.com Inc. or its affiliates. All other trademarks and copyrights are property of their respective owners and are only mentioned for informative purposes. Other names may be trademarks of their respective owners.",
+      "translation": "Apache®、Apache Tomcat®、Apache Kafka®、Apache Cassandra™ 和 Apache Geode™ 是 Apache 软件基金会在美国和其他/或某些国家的商标或注册商标。Java™、Java™ SE、Java™ EE 和 OpenJDK™ 是 Oracle 公司和/或其关联公司的商标。Kubernetes® 是 Linux 基金会在美国和其他/或某些国家的注册商标。Linux® 是 Linus Torvalds 在美国和其他/或某些国家的注册商标。Windows® 和 Microsoft® Azure 是微软公司的注册商标。\"AWS\"和\"Amazon Web Services\"是 Amazon.com Inc. 或其关联公司的商标或注册商标。所有其他商标和版权均归各自所有者所有，仅用于说明目的。其他名称可能是其各自所有者的商标。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/projects\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-boot\">Spring Boot</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-framework\">Spring Framework</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud\">Spring Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud-dataflow\">Spring Cloud Data Flow</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-data\">Spring Data</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-integration\">Spring Integration</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-batch\">Spring Batch</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-security\">Spring Security</a>\n            <a class=\"navbar-item navbar-item-special\" href=\"https://spring.io/projects\">View all projects</a>\n            <li class=\"navbar-item navbar-item-special-3\">DEVELOPMENT TOOLS</li>\n            <a class=\"navbar-item\" href=\"https://spring.io/tools\">Spring Tools 4</a>\n            <a class=\"navbar-item navbar-item-special-2\" href=\"https://start.spring.io\">Spring Initializr\n              <svg id=\"svg-stash-f15b5668\"></svg></a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/projects\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-boot\">Spring Boot</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-framework\">Spring Framework</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud\">Spring Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud-dataflow\">Spring Cloud Data Flow</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-data\">Spring Data</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-integration\">Spring Integration</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-batch\">Spring Batch</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-security\">Spring Security</a>\n            <a class=\"navbar-item navbar-item-special\" href=\"https://spring.io/projects\">查看所有项目</a>\n            <li class=\"navbar-item navbar-item-special-3\">开发工具</li>\n            <a class=\"navbar-item\" href=\"https://spring.io/tools\">Spring Tools 4</a>\n            <a class=\"navbar-item navbar-item-special-2\" href=\"https://start.spring.io\">Spring Initializr\n              <svg id=\"svg-stash-f15b5668\"></svg></a>",
+      "count": 1
+    },
+    {
+      "source": "<nav aria-label=\"breadcrumbs\" class=\"breadcrumbs\">\n    <ul>\n      <li><a href=\"../../index.html\">Spring AI</a></li>\n      <li>Reference</li>\n      <li><a href=\"../index.html\">Models</a></li>\n      <li><a href=\"../chatmodel.html\">Chat Models</a></li>\n      <li><a href=\"groq-chat.html\">Groq</a></li>\n    </ul>\n  </nav>",
+      "translation": "<nav aria-label=\"面包屑\" class=\"breadcrumbs\">\n    <ul>\n      <li><a href=\"../../index.html\">Spring AI</a></li>\n      <li>参考</li>\n      <li><a href=\"../index.html\">模型</a></li>\n      <li><a href=\"../chatmodel.html\">聊天模型</a></li>\n      <li><a href=\"groq-chat.html\">Groq</a></li>\n    </ul>\n  </nav>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/why-spring\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/microservices\">Microservices</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/reactive\">Reactive</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/event-driven\">Event\n              Driven</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/cloud\">Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/web-applications\">Web\n              Applications</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/serverless\">Serverless</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/batch\">Batch</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/why-spring\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/microservices\">微服务</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/reactive\">响应式</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/event-driven\">事件驱动</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/cloud\">云</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/web-applications\">Web 应用</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/serverless\">无服务器</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/batch\">批处理</a>",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/chat/groq-chat.adoc\">\n          <svg id=\"svg-stash-05b5c46b\"></svg>\n          Edit this Page\n        </a>\n        <a href=\"https://github.com/spring-projects/spring-ai\" title=\"GitHub\">\n          <svg id=\"svg-stash-28d888b7\"></svg>\n          GitHub Project\n        </a>",
+      "translation": "<a href=\"file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/chat/groq-chat.adoc\">\n          <svg id=\"svg-stash-05b5c46b\"></svg>\n          编辑此页面\n        </a>\n        <a href=\"https://github.com/spring-projects/spring-ai\" title=\"GitHub\">\n          <svg id=\"svg-stash-28d888b7\"></svg>\n          GitHub 项目\n        </a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/solutions\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/support\">Spring Runtime</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/consulting\">Spring Consulting</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/teams\">Spring Academy For Teams</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/security\">Security Advisories</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/solutions\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/support\">Spring 运行时</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/consulting\">Spring 咨询</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/teams\">Spring Academy 团队培训</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/security\">安全公告</a>",
+      "count": 1
+    },
+    {
+      "source": "<ul class=\"projects\">\n  <li>\n    Related Spring Documentation\n    <ul class=\"projects-list\">\n    </ul>\n  </li><a href=\"../../spring-projects.html\">All Docs...</a>\n</ul>",
+      "translation": "<ul class=\"projects\">\n  <li>\n    相关 Spring 文档\n    <ul class=\"projects-list\">\n    </ul>\n  </li><a href=\"../../spring-projects.html\">所有文档...</a>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.academy/courses\">Courses</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/learning-path\">Get Certified</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.academy/courses\">课程</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/learning-path\">获取认证</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"title\" href=\"../../index.html\">Spring AI</a>",
+      "translation": "<a class=\"title\" href=\"../../index.html\">Spring AI</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"search-link\" href=\"../../search.html\">Search in all Spring Docs</a>",
+      "translation": "<a class=\"search-link\" href=\"../../search.html\">在全部 Spring 文档中搜索</a>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../vectordbs.html\">Vector Databases</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/azure.html\">Azure AI Service</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/azure-cosmos-db.html\">Azure Cosmos DB</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/bedrock-knowledge-base.html\">Amazon Bedrock Knowledge Base</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/apache-cassandra.html\">Apache Cassandra Vector Store</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/chroma.html\">Chroma</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/couchbase.html\">Couchbase</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/elasticsearch.html\">Elasticsearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/gemfire.html\">GemFire</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/mariadb.html\">MariaDB Vector Store</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/milvus.html\">Milvus</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/mongodb.html\">MongoDB Atlas</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/neo4j.html\">Neo4j</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/opensearch.html\">OpenSearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/oracle.html\">Oracle</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/pgvector.html\">PGvector</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/pinecone.html\">Pinecone</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/qdrant.html\">Qdrant</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/redis.html\">Redis</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/typesense.html\">Typesense</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/weaviate.html\">Weaviate</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/s3-vector-store.html\">S3 Vector Store</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"../vectordbs.html\">向量数据库</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/azure.html\">Azure AI 服务</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/azure-cosmos-db.html\">Azure Cosmos DB</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/bedrock-knowledge-base.html\">Amazon Bedrock 知识库</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/apache-cassandra.html\">Apache Cassandra 向量存储</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/chroma.html\">Chroma</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/couchbase.html\">Couchbase</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/elasticsearch.html\">Elasticsearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/gemfire.html\">GemFire</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/mariadb.html\">MariaDB 向量存储</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/milvus.html\">Milvus</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/mongodb.html\">MongoDB Atlas</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/neo4j.html\">Neo4j</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/opensearch.html\">OpenSearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/oracle.html\">Oracle</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/pgvector.html\">PGvector</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/pinecone.html\">Pinecone</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/qdrant.html\">Qdrant</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/redis.html\">Redis</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/typesense.html\">Typesense</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/weaviate.html\">Weaviate</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../vectordbs/s3-vector-store.html\">S3 向量存储</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../embeddings.html\">Embedding Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../bedrock.html\">Amazon Bedrock</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/bedrock-cohere-embedding.html\">Cohere</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/bedrock-titan-embedding.html\">Titan</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/azure-openai-embeddings.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/google-genai-embeddings-text.html\">Google GenAI Text Embedding</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/mistralai-embeddings.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/oci-genai-embeddings.html\">OCI GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/ollama-embeddings.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/onnx.html\">(ONNX) Transformers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/openai-embeddings.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/postgresml-embeddings.html\">PostgresML</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">VertexAI</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/vertexai-embeddings-text.html\">Text Embedding</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/vertexai-embeddings-multimodal.html\">Multimodal Embedding</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../embeddings.html\">嵌入模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../bedrock.html\">Amazon Bedrock</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/bedrock-cohere-embedding.html\">Cohere</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/bedrock-titan-embedding.html\">Titan</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/azure-openai-embeddings.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/google-genai-embeddings-text.html\">Google GenAI 文本嵌入</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/mistralai-embeddings.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/oci-genai-embeddings.html\">OCI GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/ollama-embeddings.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/onnx.html\">(ONNX) Transformers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/openai-embeddings.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../embeddings/postgresml-embeddings.html\">PostgresML</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">VertexAI</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/vertexai-embeddings-text.html\">文本嵌入</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../embeddings/vertexai-embeddings-multimodal.html\">多模态嵌入</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../chatmodel.html\">Chat Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"comparison.html\">Chat Models Comparison</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"bedrock-converse.html\">Amazon Bedrock Converse</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"anthropic-chat.html\">Anthropic</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"azure-openai-chat.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"deepseek-chat.html\">DeepSeek</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"dmr-chat.html\">Docker Model Runner</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"google-genai-chat.html\">Google GenAI</a>\n  </li>\n  <li class=\"nav-item is-current-page\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"groq-chat.html\">Groq</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mistralai-chat.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"minimax-chat.html\">MiniMax</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"nvidia-chat.html\">NVIDIA</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"ollama-chat.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"perplexity-chat.html\">Perplexity AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"oci-genai-chat.html\">OCI Generative AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"openai-chat.html\">OpenAI</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../chatmodel.html\">对话模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"comparison.html\">对话模型对比</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"bedrock-converse.html\">Amazon Bedrock Converse</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"anthropic-chat.html\">Anthropic</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"azure-openai-chat.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"deepseek-chat.html\">DeepSeek</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"dmr-chat.html\">Docker Model Runner</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"google-genai-chat.html\">Google GenAI</a>\n  </li>\n  <li class=\"nav-item is-current-page\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"groq-chat.html\">Groq</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mistralai-chat.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"minimax-chat.html\">MiniMax</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"nvidia-chat.html\">NVIDIA</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"ollama-chat.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"perplexity-chat.html\">Perplexity AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"oci-genai-chat.html\">OCI Generative AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"openai-chat.html\">OpenAI</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-overview.html\">Model Context Protocol (MCP)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-client-boot-starter-docs.html\">MCP Client Boot Starters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-server-boot-starter-docs.html\">MCP Server Boot Starters</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-stdio-sse-server-boot-starter-docs.html\">STDIO and SSE MCP Servers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-streamable-http-server-boot-starter-docs.html\">Streamable-HTTP MCP Servers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-stateless-server-boot-starter-docs.html\">Stateless Streamable-HTTP MCP Servers</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-security.html\">MCP Security (WIP)</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-overview.html\">MCP Annotations</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-client.html\">Client Annotations</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-server.html\">Server Annotations</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-special-params.html\">Special Parameters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-examples.html\">MCP Annotations Examples</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"../mcp/mcp-overview.html\">模型上下文协议 (MCP)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-client-boot-starter-docs.html\">MCP 客户端启动器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-server-boot-starter-docs.html\">MCP 服务器启动器</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-stdio-sse-server-boot-starter-docs.html\">STDIO 和 SSE MCP 服务器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-streamable-http-server-boot-starter-docs.html\">流式 HTTP MCP 服务器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-stateless-server-boot-starter-docs.html\">无状态流式 HTTP MCP 服务器</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-security.html\">MCP 安全性 (进行中)</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-overview.html\">MCP 注解</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-client.html\">客户端注解</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-server.html\">服务器注解</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-special-params.html\">特殊参数</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../mcp/mcp-annotations-examples.html\">MCP 注解示例</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">Guides</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/spring-ai-community/awesome-spring-ai\">Awesome Spring AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/getting-started-mcp.html\">Getting Started with MCP</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/dynamic-tool-search.html\">Dynamic Tool Discovery</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/llm-as-judge.html\">LLM-as-a-Judge Evaluation</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"prompt-engineering-patterns.html\">Prompt Engineering Patterns</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../effective-agents.html\">Building Effective Agents</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agents\">Building agents with Spring AI by AWS</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agentcore\">Building agents with Spring AI and AgentCore by AWS</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/microsoft/Spring-AI-for-Beginners\">Spring AI for Beginners by Microsoft</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<span class=\"nav-text\">指南</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/spring-ai-community/awesome-spring-ai\">Awesome Spring AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/getting-started-mcp.html\">MCP 入门</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/dynamic-tool-search.html\">动态工具发现</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../guides/llm-as-judge.html\">LLM-as-a-Judge 评估</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"prompt-engineering-patterns.html\">提示工程模式</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../effective-agents.html\">构建高效智能体</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agents\">AWS 使用 Spring AI 构建智能体</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agentcore\">AWS 使用 Spring AI 和 AgentCore 构建智能体</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/microsoft/Spring-AI-for-Beginners\">Microsoft 的 Spring AI 初学者指南</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio.html\">Audio Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio/transcriptions.html\">Transcription API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/transcriptions/azure-openai-transcriptions.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/transcriptions/openai-transcriptions.html\">OpenAI</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio/speech.html\">Text-To-Speech (TTS) API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/speech/openai-speech.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/speech/elevenlabs-speech.html\">ElevenLabs</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio.html\">音频模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio/transcriptions.html\">转录 API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/transcriptions/azure-openai-transcriptions.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/transcriptions/openai-transcriptions.html\">OpenAI</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../audio/speech.html\">文本转语音 (TTS) API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/speech/openai-speech.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"../audio/speech/elevenlabs-speech.html\">ElevenLabs</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../chatclient.html\">Chat Client API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../advisors.html\">Advisors</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../advisors-recursive.html\">Recursive Advisors</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"../chatclient.html\">聊天客户端 API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../advisors.html\">顾问</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../advisors-recursive.html\">递归顾问</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../imageclient.html\">Image Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/azure-openai-image.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/openai-image.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/stabilityai-image.html\">Stability</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"../imageclient.html\">图像模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/azure-openai-image.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/openai-image.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../image/stabilityai-image.html\">Stability</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\nAll properties prefixed with <code>spring.ai.openai.chat</code> can be overridden at runtime by adding a request specific <a href=\"#chat-options\">Runtime Options</a> to the <code>Prompt</code> call.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"提示\"></i>\n</td>\n<td class=\"content\">\n所有以 <code>spring.ai.openai.chat</code> 开头的属性都可以通过向 <code>Prompt</code> 调用添加特定的请求级<a href=\"#chat-options\">运行时选项</a>来在运行时覆盖。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\nIn addition to the model specific <a href=\"https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-openai/src/main/java/org/springframework/ai/openai/OpenAiChatOptions.java\">OpenAiChatOptions</a> you can use a portable <a href=\"https://github.com/spring-projects/spring-ai/blob/main/spring-ai-model/src/main/java/org/springframework/ai/chat/prompt/ChatOptions.java\">ChatOptions</a> instance, created with the <a href=\"https://github.com/spring-projects/spring-ai/blob/main/spring-ai-model/src/main/java/org/springframework/ai/chat/prompt/DefaultChatOptionsBuilder.java\">ChatOptions#builder()</a>.\n</td>\n</tr>\n</tbody>",
+      "translation": "除了针对特定模型的<a href=\"https://github.com/spring-projects/spring-ai/blob/main/models/spring-ai-openai/src/main/java/org/springframework/ai/openai/OpenAiChatOptions.java\">OpenAiChatOptions</a>之外，您还可以使用通过<a href=\"https://github.com/spring-projects/spring-ai/blob/main/spring-ai-model/src/main/java/org/springframework/ai/chat/prompt/DefaultChatOptionsBuilder.java\">ChatOptions#builder()</a>创建的便携式<a href=\"https://github.com/spring-projects/spring-ai/blob/main/spring-ai-model/src/main/java/org/springframework/ai/chat/prompt/ChatOptions.java\">ChatOptions</a>实例。",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../moderation.html\">Moderation Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../moderation/openai-moderation.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../moderation/mistral-ai-moderation.html\">Mistral AI</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../moderation.html\">内容审核模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../moderation/openai-moderation.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"../moderation/mistral-ai-moderation.html\">Mistral AI</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../../upgrade-notes.html\">Upgrade Notes</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../tools-migration.html\">Migrating FunctionCallback to ToolCallback API</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"anthropic-migration.html\">Migrating the Anthropic Module to the Official Java SDK</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"../../upgrade-notes.html\">升级说明</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../tools-migration.html\">将 FunctionCallback 迁移至 ToolCallback API</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"anthropic-migration.html\">将 Anthropic 模块迁移至官方 Java SDK</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nThe Groq API is not fully compatible with the OpenAI API.\nBe aware for the following <a href=\"https://console.groq.com/docs/openai\">compatibility constrains</a>.\nAdditionally, currently Groq doesn’t support multimodal messages.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nGroq API 与 OpenAI API 不完全兼容。请注意以下<a href=\"https://console.groq.com/docs/openai\">兼容性限制</a>。此外，目前 Groq 不支持多模态消息。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\nCheck the Tool <a href=\"https://console.groq.com/docs/tool-use\">Supported Models</a>.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"提示\"></i>\n</td>\n<td class=\"content\">\n请检查工具<a href=\"https://console.groq.com/docs/tool-use\">支持的模型</a>。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"Tip\"></i>\n</td>\n<td class=\"content\">\nreplace the <code>api-key</code> with your OpenAI credentials.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-tip\" title=\"提示\"></i>\n</td>\n<td class=\"content\">\n将 <code>api-key</code> 替换为您的 OpenAI 凭据。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../../index.html\">Overview</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../concepts.html\">AI Concepts</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../../index.html\">概览</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../../concepts.html\">AI 概念</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../retrieval-augmented-generation.html\">Retrieval Augmented Generation (RAG)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../etl-pipeline.html\">ETL Pipeline</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"../retrieval-augmented-generation.html\">检索增强生成 (RAG)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"../etl-pipeline.html\">ETL 管道</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\nCurrently the Groq API doesn’t support media content.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-note\" title=\"Note\"></i>\n</td>\n<td class=\"content\">\n目前，Groq API 尚不支持媒体内容。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"prev\"><a href=\"google-genai-chat.html\">Google GenAI</a></span>\n  <span class=\"next\"><a href=\"mistralai-chat.html\">Mistral AI</a></span>",
+      "translation": "<span class=\"prev\"><a href=\"google-genai-chat.html\">Google GenAI</a></span>\n  <span class=\"next\"><a href=\"mistralai-chat.html\">Mistral AI</a></span>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../../getting-started.html\">Getting Started</a>",
+      "translation": "<a class=\"nav-link\" href=\"../../getting-started.html\">入门指南</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../structured-output-converter.html\">Structured Output</a>",
+      "translation": "<a class=\"nav-link\" href=\"../structured-output-converter.html\">结构化输出</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../chat-memory.html\">Chat Memory</a>",
+      "translation": "<a class=\"nav-link\" href=\"../chat-memory.html\">对话记忆</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../tools.html\">Tool Calling</a>",
+      "translation": "<a class=\"nav-link\" href=\"../tools.html\">工具调用</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../testing.html\">Model Evaluation</a>",
+      "translation": "<a class=\"nav-link\" href=\"../testing.html\">模型评估</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../docker-compose.html\">Development-time Services</a>",
+      "translation": "<a class=\"nav-link\" href=\"../docker-compose.html\">开发时服务</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_add_repositories_and_bom\"></a>Add Repositories and BOM",
+      "translation": "<a class=\"anchor\" href=\"#_add_repositories_and_bom\"></a>添加仓库和物料清单",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_chat_properties\"></a>Chat Properties",
+      "translation": "<a class=\"anchor\" href=\"#_chat_properties\"></a>聊天属性",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_retry_properties\"></a>Retry Properties",
+      "translation": "<a class=\"anchor\" href=\"#_retry_properties\"></a>重试属性",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_connection_properties\"></a>Connection Properties",
+      "translation": "<a class=\"anchor\" href=\"#_connection_properties\"></a>连接属性",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_configuration_properties\"></a>Configuration Properties",
+      "translation": "<a class=\"anchor\" href=\"#_configuration_properties\"></a>配置属性",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#chat-options\"></a>Runtime Options",
+      "translation": "<a class=\"anchor\" href=\"#chat-options\"></a>运行时选项",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_function_calling\"></a>Function Calling",
+      "translation": "<a class=\"anchor\" href=\"#_function_calling\"></a>函数调用",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_tool_example\"></a>Tool Example",
+      "translation": "<a class=\"anchor\" href=\"#_tool_example\"></a>工具示例",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_sample_controller\"></a>Sample Controller",
+      "translation": "<a class=\"anchor\" href=\"#_sample_controller\"></a>示例控制器",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_manual_configuration\"></a>Manual Configuration",
+      "translation": "<a class=\"anchor\" href=\"#_manual_configuration\"></a>手动配置",
+      "count": 1
+    },
+    {
+      "source": "Why Spring",
+      "translation": "为何是春天",
+      "count": 1
+    },
+    {
+      "source": "Spring AI",
+      "translation": "Spring AI",
+      "count": 1
+    },
+    {
+      "source": "Groq Chat",
+      "translation": "Groq 聊天",
+      "count": 1
+    }
+  ]
+}

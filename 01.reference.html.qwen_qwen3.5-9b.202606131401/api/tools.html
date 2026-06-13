@@ -1,0 +1,3446 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width,initial-scale=1" name="viewport"/>
+    <title>工具调用::Spring AI 参考文档</title>
+    <link href="https://docs.spring.io/spring-ai/reference/api/tools.html" rel="canonical"/>
+    <link href="chat-memory.html" rel="prev"/>
+    <link href="mcp/mcp-overview.html" rel="next"/>
+    <meta content="Antora 3.1.15" name="generator"/>
+    <script>
+!function (theme, navWidth) {
+  if (theme === 'dark') document.documentElement.classList.add('dark-theme')
+  if (navWidth) document.documentElement.style.setProperty('--nav-width', `${navWidth}px`)
+}(localStorage && localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)')?.matches && 'dark'),
+  localStorage && localStorage.getItem('nav-width'))
+    </script>
+    <link href="../_/css/site.css" rel="stylesheet"/>
+    <link href="../_/css/vendor/search.css" rel="stylesheet"/>
+    <link href="../_/css/vendor/page-search.css" rel="stylesheet"/>
+    <link href="../_/css/vendor/asciidoctor-tabs.css" rel="stylesheet"/>
+
+    <meta content="v0.4.17" name="antora-ui-version"/> 
+    <meta content="2.0.0" name="version"/>
+    <meta content="ai" name="component"/>
+    <meta content="false" name="latest-version"/>
+    <link href="../_/img/favicon.ico" rel="icon" type="image/vnd.microsoft.icon"/>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://spring.io">
+        <img alt="Spring" class="block" id="springlogo" src="../_/img/spring-logo.svg"/>
+      </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="navbar-menu" id="topbar-nav">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">为何是春天</a>
+          <div class="navbar-dropdown"><a class="navbar-item" href="https://spring.io/why-spring">概览</a>
+<a class="navbar-item" href="https://spring.io/microservices">微服务</a>
+<a class="navbar-item" href="https://spring.io/reactive">响应式</a>
+<a class="navbar-item" href="https://spring.io/event-driven">事件驱动</a>
+<a class="navbar-item" href="https://spring.io/cloud">云</a>
+<a class="navbar-item" href="https://spring.io/web-applications">Web 应用</a>
+<a class="navbar-item" href="https://spring.io/serverless">无服务器</a>
+<a class="navbar-item" href="https://spring.io/batch">批处理</a></div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Learn</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://spring.io/learn">Overview</a>
+            <a class="navbar-item" href="https://spring.io/quickstart">Quickstart</a>
+            <a class="navbar-item" href="https://spring.io/guides">Guides</a>
+            <a class="navbar-item" href="https://spring.io/blog">Blog</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Projects</a>
+          <div class="navbar-dropdown" style="min-width: 280px"><a class="navbar-item" href="https://spring.io/projects">概览</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-boot">Spring Boot</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-framework">Spring Framework</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-cloud">Spring Cloud</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-cloud-dataflow">Spring Cloud Data Flow</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-data">Spring Data</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-integration">Spring Integration</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-batch">Spring Batch</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-security">Spring Security</a>
+<a class="navbar-item navbar-item-special" href="https://spring.io/projects">查看所有项目</a>
+<li class="navbar-item navbar-item-special-3">开发工具</li>
+<a class="navbar-item" href="https://spring.io/tools">Spring Tools 4</a>
+<a class="navbar-item navbar-item-special-2" href="https://start.spring.io">Spring Initializr
+              <svg class="external-link-icon" viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><polyline fill="none" points="15 10.94 15 15 1 15 1 1 5.06 1" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"></polyline><polyline fill="none" points="8.93 1 15 1 15 7.07" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"></polyline><line fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" x1="15" x2="8" y1="1" y2="8"></line></svg></a></div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Academy</a>
+          <div class="navbar-dropdown"><a class="navbar-item" href="https://spring.academy/courses">课程</a>
+<a class="navbar-item" href="https://spring.academy/learning-path">获取认证</a></div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Solutions</a>
+          <div class="navbar-dropdown lg"><a class="navbar-item" href="https://spring.io/solutions">概览</a>
+<a class="navbar-item" href="https://spring.io/support">Spring 运行时</a>
+<a class="navbar-item" href="https://spring.io/consulting">Spring 咨询</a>
+<a class="navbar-item" href="https://spring.academy/teams">Spring Academy 团队培训</a>
+<a class="navbar-item" href="https://spring.io/security">安全公告</a></div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable is-community">
+          <a class="navbar-link" href="#">Community</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://spring.io/community">Overview</a>
+            <a class="navbar-item" href="https://spring.io/events">Events</a>
+            <a class="navbar-item" href="https://spring.io/team">Team</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <label class="theme-toggler">
+      <input id="switch-theme-checkbox" name="switch-theme-checkbox" type="checkbox"/>
+      <span class="icon"><svg aria-hidden="true" class="svg-inline--fa fa-moon moon" data-icon="moon" data-prefix="fas" focusable="false" role="img" viewbox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z" fill="currentColor"></path>
+</svg>
+        <svg aria-hidden="true" class="svg-inline--fa fa-sun sun" data-icon="sun" data-prefix="fas" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z" fill="currentColor"></path>
+</svg></span>
+      <span class="text">light</span>
+    </label>
+  </nav>
+</header>
+<script>
+!function (theme) {
+  if (theme === 'dark') {
+    document.getElementById('switch-theme-checkbox').parentElement.classList.add('active')
+  }
+}(localStorage && localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)')?.matches && 'dark'))
+</script>
+<div class="body">
+<div class="nav-container" data-component="ai" data-version="2.0.0">
+  <aside class="nav">
+    <div class="panels">
+      <div class="nav-panel-menu is-active" data-panel="menu">
+        <nav class="nav-menu">
+<div class="context">
+  <span class="title">Spring AI</span>
+  <span class="version">2.0.0</span>
+  <button class="browse-version" id="browse-version">
+    <svg height="24px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewbox="0 0 512 512" width="24px" xml:space="preserve"><g><path d="M256,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S273.7,224,256,224L256,224z"></path><path d="M128.4,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S146,224,128.4,224L128.4,224z"></path><path d="M384,224c-17.7,0-32,14.3-32,32s14.3,32,32,32s32-14.3,32-32S401.7,224,384,224L384,224z"></path></g></svg>
+  </button>
+  <div class="search">
+  <button class="DocSearch-Button search-button">
+    <svg enable-background="new 0 0 32 32" id="Glyph" version="1.1" viewbox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M27.414,24.586l-5.077-5.077C23.386,17.928,24,16.035,24,14c0-5.514-4.486-10-10-10S4,8.486,4,14  s4.486,10,10,10c2.035,0,3.928-0.614,5.509-1.663l5.077,5.077c0.78,0.781,2.048,0.781,2.828,0  C28.195,26.633,28.195,25.367,27.414,24.586z M7,14c0-3.86,3.14-7,7-7s7,3.14,7,7s-3.14,7-7,7S7,17.86,7,14z" id="XMLID_223_"></path>
+</svg>
+    <span>Search</span>
+    <span class="search-key"></span>
+  </button>
+</div>
+</div><ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../index.html">概述</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../concepts.html">AI 概念</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="1"><a class="nav-link" href="../getting-started.html">入门指南</a></li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Reference</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="chatclient.html">聊天客户端 API</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="advisors.html">顾问</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="advisors-recursive.html">递归顾问</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="prompt.html">Prompts</a>
+  </li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="structured-output-converter.html">结构化输出</a></li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="multimodality.html">Multimodality</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">Models</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="chatmodel.html">对话模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/comparison.html">对话模型对比</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/bedrock-converse.html">Amazon Bedrock Converse</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/anthropic-chat.html">Anthropic</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/azure-openai-chat.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/deepseek-chat.html">DeepSeek</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/dmr-chat.html">Docker Model Runner</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/google-genai-chat.html">Google GenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/groq-chat.html">Groq</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/mistralai-chat.html">Mistral AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/minimax-chat.html">MiniMax</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/nvidia-chat.html">NVIDIA</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/ollama-chat.html">Ollama</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/perplexity-chat.html">Perplexity AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/oci-genai-chat.html">OCI Generative AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/openai-chat.html">OpenAI</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="embeddings.html">嵌入模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="bedrock.html">Amazon Bedrock</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="embeddings/bedrock-cohere-embedding.html">Cohere</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="embeddings/bedrock-titan-embedding.html">Titan</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/azure-openai-embeddings.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/google-genai-embeddings-text.html">Google GenAI 文本嵌入</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/mistralai-embeddings.html">Mistral AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/oci-genai-embeddings.html">OCI GenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/ollama-embeddings.html">Ollama</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/onnx.html">(ONNX) Transformers</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/openai-embeddings.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/postgresml-embeddings.html">PostgresML</a>
+</li>
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<span class="nav-text">VertexAI</span>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="embeddings/vertexai-embeddings-text.html">文本嵌入</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="embeddings/vertexai-embeddings-multimodal.html">多模态嵌入</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="imageclient.html">图像模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="image/azure-openai-image.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="image/openai-image.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="image/stabilityai-image.html">Stability</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="audio.html">音频模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="audio/transcriptions.html">转录 API</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="audio/transcriptions/azure-openai-transcriptions.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="audio/transcriptions/openai-transcriptions.html">OpenAI</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="audio/speech.html">文本转语音 (TTS) API</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="audio/speech/openai-speech.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="audio/speech/elevenlabs-speech.html">ElevenLabs</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="moderation.html">内容审核模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="moderation/openai-moderation.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="moderation/mistral-ai-moderation.html">Mistral AI</a>
+</li>
+</ul></li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="chat-memory.html">对话记忆</a></li>
+  <li class="nav-item is-current-page" data-depth="2"><a class="nav-link" href="tools.html">工具调用</a></li>
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="mcp/mcp-overview.html">模型上下文协议 (MCP)</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="mcp/mcp-client-boot-starter-docs.html">MCP 客户端启动器</a>
+</li>
+<li class="nav-item" data-depth="3">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="mcp/mcp-server-boot-starter-docs.html">MCP 服务器启动器</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-stdio-sse-server-boot-starter-docs.html">STDIO 和 SSE MCP 服务器</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-streamable-http-server-boot-starter-docs.html">可流式 HTTP MCP 服务器</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-stateless-server-boot-starter-docs.html">无状态可流式 HTTP MCP 服务器</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="mcp/mcp-security.html">MCP 安全 (进行中)</a>
+</li>
+<li class="nav-item" data-depth="3">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="mcp/mcp-annotations-overview.html">MCP 注解</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-annotations-client.html">客户端注解</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-annotations-server.html">服务器注解</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-annotations-special-params.html">特殊参数</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-annotations-examples.html">MCP 注解示例</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="retrieval-augmented-generation.html">检索增强生成 (RAG)</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="etl-pipeline.html">ETL 管道</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="testing.html">模型评估</a></li>
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="vectordbs.html">向量数据库</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/azure.html">Azure AI 服务</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/azure-cosmos-db.html">Azure Cosmos DB</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/bedrock-knowledge-base.html">Amazon Bedrock 知识库</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/apache-cassandra.html">Apache Cassandra 向量存储</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/chroma.html">Chroma</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/couchbase.html">Couchbase</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/elasticsearch.html">Elasticsearch</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/gemfire.html">GemFire</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/mariadb.html">MariaDB 向量存储</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/milvus.html">Milvus</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/mongodb.html">MongoDB Atlas</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/neo4j.html">Neo4j</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/opensearch.html">OpenSearch</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/oracle.html">Oracle</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/pgvector.html">PGvector</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/pinecone.html">Pinecone</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/qdrant.html">Qdrant</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/redis.html">Redis</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/typesense.html">Typesense</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/weaviate.html">Weaviate</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/s3-vector-store.html">S3 向量存储</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../observability/index.html">Observability</a>
+  </li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="docker-compose.html">开发时服务</a></li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Testing</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="testcontainers.html">Testcontainers</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1"><button class="nav-item-toggle"></button>
+<span class="nav-text">指南</span>
+<ul class="nav-list">
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://github.com/spring-ai-community/awesome-spring-ai">Awesome Spring AI</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../guides/getting-started-mcp.html">MCP 入门</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../guides/dynamic-tool-search.html">动态工具发现</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../guides/llm-as-judge.html">LLM 作为裁判的评估</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="chat/prompt-engineering-patterns.html">提示工程模式</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="effective-agents.html">构建高效智能体</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://catalog.workshops.aws/java-spring-ai-agents">AWS 使用 Spring AI 构建智能体</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://catalog.workshops.aws/java-spring-ai-agentcore">AWS 使用 Spring AI 和 AgentCore 构建智能体</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://github.com/microsoft/Spring-AI-for-Beginners">Microsoft 的 Spring AI 初学者指南</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="1"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../upgrade-notes.html">升级说明</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="tools-migration.html">将 FunctionCallback 迁移至 ToolCallback API</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="chat/anthropic-migration.html">将 Anthropic 模块迁移至官方 Java SDK</a>
+</li>
+</ul></li>
+</ul>
+  </li>
+</ul>
+          <div class="toggle-sm">
+            <button class="nav-toggle" id="nav-toggle-2"></button>
+          </div>
+        </nav>
+      </div>
+      <div class="nav-collapse">
+        <button id="nav-collapse-toggle"><span></span></button>        
+      </div>
+    </div>
+    <div class="nav-resize"></div>
+  </aside>
+</div>
+<script>
+!function (sidebar) {
+  if (sidebar) {
+    document.body.classList.add('nav-sm')
+  }
+}(localStorage && localStorage.getItem('sidebar') === 'close')
+</script><main class="article">
+<div class="toolbar" role="navigation">
+  <button class="nav-toggle" id="nav-toggle-1"></button>
+<div class="search">
+  <button class="DocSearch-Button search-button">
+    <svg id="svg-stash-de15fb15"></svg>
+    <span>Search</span>
+    <span class="search-key"></span>
+  </button>
+</div>
+</div>
+  <div class="content">
+<aside class="sidebar">
+  <div class="content">
+    <div class="toc" data-levels="2" data-title="Tool Calling">
+      <div class="toc-menu"></div>
+    </div>
+    <div class="sidebar-links"><a href="file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/tools.adoc">
+<svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m16 2.012 3 3L16.713 7.3l-3-3zM4 14v3h3l8.299-8.287-3-3zm0 6h16v2H4z"></path></svg>
+          编辑此页面
+        </a>
+<a href="https://github.com/spring-projects/spring-ai" title="GitHub">
+<svg height="512px" id="Layer_1" version="1.1" viewbox="0 0 512 512" width="512px" xmlns="http://www.w3.org/2000/svg"><style type="text/css">
+              .st0{fill-rule:evenodd;clip-rule:evenodd;} </style><g><path class="st0" d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"></path></g></svg>
+          GitHub 项目
+        </a></div>
+  </div>
+</aside>
+<article class="doc">
+<div class="breadcrumbs-container"><nav aria-label="面包屑" class="breadcrumbs">
+<ul>
+<li><a href="../index.html">Spring AI</a></li>
+<li>参考</li>
+<li><a href="tools.html">工具调用</a></li>
+</ul>
+</nav></div><h1 class="page" id="page-title">工具调用</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>工具调用</em>（也称为<em>函数调用</em>）是人工智能应用中的一种常见模式，它允许模型与一组 API 或<em>工具</em>进行交互，从而增强其能力。</p>
+</div>
+<div class="paragraph">
+<p>工具主要用于：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>信息检索</strong>。此类工具可用于从外部来源（如数据库、网络服务、文件系统或网络搜索引擎）检索信息。其目标是增强模型的知识储备，使其能够回答原本无法回答的问题。因此，它们可应用于检索增强生成（RAG）场景。例如，可使用工具检索特定地点的当前天气、获取最新新闻文章，或查询数据库中的特定记录。</p>
+</li>
+<li>
+<p><strong>执行操作</strong>。此类工具可用于在软件系统中执行具体操作，例如发送邮件、在数据库中创建新记录、提交表单或触发工作流。其目标是自动化那些原本需要人工干预或显式编程才能完成的任务。例如，工具可用于为与聊天机器人交互的客户预订航班、填写网页上的表单，或在代码生成场景中根据自动化测试（TDD）实现 Java 类。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>尽管我们通常将<em>工具调用</em>视为模型的一项能力，但实际上提供工具调用逻辑的是客户端应用程序。模型仅能请求工具调用并提供输入参数，而由应用程序负责根据这些输入参数执行工具调用并返回结果。模型无法访问任何作为工具提供的 API，这是至关重要的安全考量。</p>
+</div>
+<div class="paragraph">
+<p>Spring AI 提供了便捷的 API，用于定义工具、解析来自模型的工具体调用请求并执行这些调用。以下部分概述了 Spring AI 中的工具体调用功能。</p>
+</div>
+<div class="admonitionblock note">
+<table><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+请查看<a class="xref page" href="chat/comparison.html">Chat Model Comparisons</a>，以了解哪些 AI 模型支持工具调用。
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table><tr>
+<td class="icon">
+<i class="fa icon-tip" title="提示"></i>
+</td>
+<td class="content">
+请按照指南，从已弃用的 <a class="xref page" href="tools-migration.html">FunctionCallback 迁移至 ToolCallback API</a>。
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_quick_start"><a class="anchor" href="#_quick_start"></a>快速开始</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>让我们看看如何在 Spring AI 中开始使用工具调用。我们将实现两个简单的工具：一个用于信息检索，另一个用于执行操作。信息检索工具将用于获取用户时区的当前日期和时间，而操作工具将用于在指定时间设置闹钟。</p>
+</div>
+<div class="sect2">
+<h3 id="_information_retrieval"><a class="anchor" href="#_information_retrieval"></a>信息检索</h3>
+<div class="paragraph">
+<p>AI 模型无法访问实时信息。任何假设模型知晓当前日期或天气预报等信息的问题，都无法由该模型回答。然而，我们可以提供一个用于检索此类信息的工具，并在需要获取实时信息时让模型调用该工具。</p>
+</div>
+<div class="paragraph">
+<p>让我们实现一个工具，在 `<code>DateTimeTools</code>` 类中获取用户时区的当前日期和时间。该工具不接受任何参数。Spring Framework 中的 `<code>LocaleContextHolder` 可以提供用户的时区信息。我们将将该工具定义为一个带有 `<code>@Tool</code>` 注解的方法。为了帮助模型理解何时以及是否调用此工具，我们将提供关于该工具功能的详细描述。</code></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java"><span class="fold-block is-hidden-folded">import java.time.LocalDateTime;
+import org.springframework.ai.tool.annotation.Tool;
+import org.springframework.context.i18n.LocaleContextHolder;
+
+</span><span class="fold-block">class DateTimeTools {
+
+    @Tool(description = "Get the current date and time in the user's timezone")
+    String getCurrentDateTime() {
+        return LocalDateTime.now().atZone(LocaleContextHolder.getTimeZone().toZoneId()).toString();
+    }
+
+}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>接下来，让我们将该工具提供给模型。在本示例中，我们将使用<code>ChatClient</code>与模型进行交互。通过<code>tools()</code>方法传递一个<code>DateTimeTools</code>实例来向模型提供该工具。当模型需要知道当前日期和时间时，它将请求调用该工具。内部地，<code>ChatClient</code>将调用该工具并将结果返回给模型，然后模型将使用该工具调用的结果生成对原始问题的最终响应。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatModel chatModel = ...
+
+String response = ChatClient.create(chatModel)
+        .prompt("What day is tomorrow?")
+        .tools(new DateTimeTools())
+        .call()
+        .content();
+
+System.out.println(response);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>输出将类似于以下内容：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">Tomorrow is 2015-10-21.</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>您可以重新提出相同的问题。这次，不要向模型提供工具。输出结果将类似于：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">I am an AI and do not have access to real-time information. Please provide the current date so I can accurately determine what day tomorrow will be.</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>没有该工具，模型无法回答问题，因为它不具备确定当前日期和时间的能力。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_taking_actions"><a class="anchor" href="#_taking_actions"></a>采取行动</h3>
+<div class="paragraph">
+<p>AI 模型可用于生成实现特定目标的计划。例如，一个模型可以生成预订丹麦之旅的计划。然而，该模型不具备执行该计划的能力。这就需要工具发挥作用：它们可用于执行模型生成的计划。</p>
+</div>
+<div class="paragraph">
+<p>在前面的示例中，我们使用了一个工具来确定当前的日期和时间。在本例中，我们将定义第二个工具，用于在特定时间设置闹钟。目标是设置一个 10 分钟后的闹钟，因此我们需要向模型提供这两个工具以完成此任务。</p>
+</div>
+<div class="paragraph">
+<p>我们将把新工具添加到与之前相同的<code>DateTimeTools</code>类中。该新工具将接受一个参数，即 ISO-8601 格式的时间。随后，工具将在控制台输出一条消息，表明闹钟已设置为指定时间。与之前一样，该工具被定义为一个带有<code>@Tool</code>注解的方法，我们同样使用该注解提供详细描述，以帮助模型理解何时以及如何使用该工具。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java"><span class="fold-block is-hidden-folded">import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import org.springframework.ai.tool.annotation.Tool;
+import org.springframework.context.i18n.LocaleContextHolder;
+
+</span><span class="fold-block">class DateTimeTools {
+
+    @Tool(description = "Get the current date and time in the user's timezone")
+    String getCurrentDateTime() {
+        return LocalDateTime.now().atZone(LocaleContextHolder.getTimeZone().toZoneId()).toString();
+    }
+
+    @Tool(description = "Set a user alarm for the given time, provided in ISO-8601 format")
+    void setAlarm(String time) {
+        LocalDateTime alarmTime = LocalDateTime.parse(time, DateTimeFormatter.ISO_DATE_TIME);
+        System.out.println("Alarm set for " + alarmTime);
+    }
+
+}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>接下来，让我们使这两个工具对模型可用。我们将使用<code>ChatClient</code>与模型进行交互。通过<code>tools()</code>方法传递一个<code>DateTimeTools</code>实例来向模型提供这些工具。当我们要求设置一个10分钟后的闹钟时，模型首先需要知道当前的日期和时间。然后，它将利用当前日期和时间来计算闹钟时间。最后，它将使用闹钟工具来设置闹钟。内部地，<code>ChatClient</code>将处理来自模型的任何工具调用请求，并将工具调用的执行结果返回给模型，以便模型生成最终响应。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatModel chatModel = ...
+
+String response = ChatClient.create(chatModel)
+        .prompt("Can you set an alarm 10 minutes from now?")
+        .tools(new DateTimeTools())
+        .call()
+        .content();
+
+System.out.println(response);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>在应用日志中，您可以检查警报是否已在正确的时间设置。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_overview"><a class="anchor" href="#_overview"></a>Overview</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Spring AI 通过一组灵活的抽象支持工具调用，使您能够以一致的方式定义、解析和执行工具。本节概述了 Spring AI 中工具调用的主要概念和组件。</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img alt="The main sequence of actions for tool calling" src="../_images/tools/tool-calling-01.jpg" width="700"/>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>当我们要向模型提供工具时，会在聊天请求中包含该工具的定义。每个工具定义包括名称、描述以及输入参数的模式（schema）。</p>
+</li>
+<li>
+<p>当模型决定调用工具时，它会发送一个响应，其中包含工具名称和按照定义的模式构建的输入参数。</p>
+</li>
+<li>
+<p>该应用程序负责使用工具名称来识别并执行带有所提供输入参数的工具。</p>
+</li>
+<li>
+<p>应用程序处理工具调用的结果。</p>
+</li>
+<li>
+<p>应用程序将工具调用结果返回给模型。</p>
+</li>
+<li>
+<p>模型利用工具调用的结果作为额外上下文来生成最终响应。</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>工具是工具调用的基本构建块，并通过<code>ToolCallback</code>接口进行建模。Spring AI 提供了对从方法和函数中指定<code>ToolCallback</code>(s)的原生支持，但您始终可以定义自己的<code>ToolCallback</code>实现以支持更多用例。</p>
+</div>
+<div class="paragraph">
+<p>在使用<code>ChatClient</code>时，工具调用请求由<code>ToolCallingAdvisor</code>自动处理。该 Advisor 已注册到顾问链中，并通过<code>ToolCallingManager</code>接口管理完整的工具执行生命周期。</p>
+</div>
+<div class="admonitionblock note">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<code>ChatModel</code> 实现此前在内部处理工具执行。自 2.0.0 版本起，该方式已被弃用，并将在 3.0.0 版本中移除。建议使用 <code>ChatClient</code> 配合 <code>ToolCallingAdvisor</code> 替代。
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="paragraph">
+<p>`ChatClient` 和 `ChatModel` 均接受一个 `ToolCallback` 对象列表，以便将工具提供给模型以及最终执行这些工具的 `ToolCallingManager`。</p>
+</div>
+<div class="paragraph">
+<p>除了直接传递<code>ToolCallback</code>对象外，您还可以传递一个工具名称列表，该列表将通过<code>ToolCallbackResolver</code>接口动态解析。</p>
+</div>
+<div class="paragraph">
+<p>以下章节将详细介绍所有这些概念和 API，包括如何对其进行定制和扩展以支持更多用例。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_methods_as_tools"><a class="anchor" href="#_methods_as_tools"></a>方法作为工具</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Spring AI 提供了两种内置方式来指定工具（即<code>ToolCallback</code>(s)）：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>以声明式方式，使用 `<code>@Tool</code>` 注解。</p>
+</li>
+<li>
+<p>通过底层 `MethodToolCallback` 实现进行程序化操作。</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_declarative_specification_tool"><a class="anchor" href="#_declarative_specification_tool"></a>声明式规范：<code>@Tool</code></h3>
+<div class="paragraph">
+<p>您可以通过使用 <code>@Tool</code> 注解将方法转换为工具。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">class DateTimeTools {
+
+    @Tool(description = "Get the current date and time in the user's timezone")
+    String getCurrentDateTime() {
+        return LocalDateTime.now().atZone(LocaleContextHolder.getTimeZone().toZoneId()).toString();
+    }
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>@Tool</code> 注解允许您提供有关该工具的关键信息：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>name</code>：工具的名称。如果未提供，则使用方法名称。AI 模型在调用工具时使用此名称来识别该工具。因此，同一类中不允许存在两个名称相同的工具。该名称必须在模型针对特定聊天请求可用的所有工具中具有唯一性。</p>
+</li>
+<li>
+<p><code>description</code>：工具的描述，模型可据此理解何时以及如何调用该工具。若未提供，则使用方法名作为工具描述。但强烈建议提供详细描述，因为这对于模型理解工具的目的及使用方法至关重要。若未能提供良好的描述，可能导致模型在应当使用时未使用该工具，或错误地使用它。</p>
+</li>
+<li>
+<p>`returnDirect`：工具结果是直接返回给客户端还是回传给模型。有关更多详细信息，请参阅<a href="#_return_direct">直接返回</a>。</p>
+</li>
+<li>
+<p><code>resultConverter</code>：用于将工具调用的结果转换为要发送回 AI 模型的<code>String object</code>的<code>ToolCallResultConverter</code>实现。有关更多详细信息，请参阅<a href="#_result_conversion">结果转换</a>。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>该方法可以是静态方法或实例方法，其可见性可以是任意级别（public、protected、包私有或 private）。包含该方法类可以是顶层类或嵌套类，且该类也可以具有任意可见性（只要在其计划进行实例化的位置可访问即可）。</p>
+</div>
+<div class="admonitionblock note">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Spring AI 为使用 <code>@Tool</code> 注解的方法提供了内置的 AOT 编译支持，前提是包含这些方法的类是一个 Spring Bean（例如 <code>@Component</code>）。否则，您需要向 GraalVM 编译器提供必要的配置。例如，可以通过使用 <code>@RegisterReflection(memberCategories = MemberCategory.INVOKE_DECLARED_METHODS)</code> 注解该类来实现。
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="paragraph">
+<p>您可以为方法定义任意数量的参数（包括无参数），适用于大多数类型（基本类型、POJO、枚举、列表、数组、映射等）。同样，方法的返回值也可以是大多数类型，包括 <code>void</code>。如果方法返回一个值，其返回类型必须是可序列化的类型，因为结果将被序列化并发送回模型。</p>
+</div>
+<div class="admonitionblock note">
+<table><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+部分类型不受支持。有关详细信息，请参阅<a href="#_method_tool_limitations">方法工具限制</a>。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Spring AI 将自动为 `<code>@Tool</code>` 注解的方法生成输入参数的 JSON Schema。该 Schema 供模型使用，以理解如何调用工具并准备工具请求。<code>@ToolParam</code> 注解可用于提供有关输入参数的额外信息，例如描述或参数是否为必需或可选。默认情况下，所有输入参数均被视为必需。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java"><span class="fold-block is-hidden-folded">import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import org.springframework.ai.tool.annotation.Tool;
+import org.springframework.ai.tool.annotation.ToolParam;
+
+</span><span class="fold-block">class DateTimeTools {
+
+    @Tool(description = "Set a user alarm for the given time")
+    void setAlarm(@ToolParam(description = "Time in ISO-8601 format") String time) {
+        LocalDateTime alarmTime = LocalDateTime.parse(time, DateTimeFormatter.ISO_DATE_TIME);
+        System.out.println("Alarm set for " + alarmTime);
+    }
+
+}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>@ToolParam</code> 注解允许您提供有关工具参数的关键信息：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>description</code>：参数的描述，模型可借此更好地理解如何使用该参数。例如，参数应采用的格式、允许的值等。</p>
+</li>
+<li>
+<p><code>required</code>：参数是否为必需或可选。默认情况下，所有参数均被视为必需。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>如果参数被注解为<code>@Nullable</code>，除非使用<code>@ToolParam</code>注解明确标记为必需，否则该参数将被视为可选。</p>
+</div>
+<div class="paragraph">
+<p>除了使用 `<code>@ToolParam</code>` 注解外，您还可以使用来自 Swagger 的 `<code>@Schema</code>` 注解或来自 Jackson 的 `<code>@JsonProperty</code>` 注解。有关更多详细信息，请参阅 <a href="#_json_schema">JSON Schema</a>。</p>
+</div>
+<div class="sect3">
+<h4 id="_adding_tools_to_chatclient"><a class="anchor" href="#_adding_tools_to_chatclient"></a>为 <code>ChatClient</code> 添加工具</h4>
+<div class="paragraph">
+<p>在使用声明式规范方法时，您可以在调用<code>ChatClient</code>时将工具类实例传递给<code>tools()</code>方法。这些工具仅对它们被添加到的特定聊天请求可用。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatClient.create(chatModel)
+    .prompt("What day is tomorrow?")
+    .tools(new DateTimeTools())
+    .call()
+    .content();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>在底层，<code>ChatClient</code> 会从工具类实例中的每个带有 <code>@Tool</code> 注解的方法生成一个 <code>ToolCallback</code>，并将其传递给模型。如果您更倾向于自行生成 <code>ToolCallback</code>(s)，可以使用 <code>ToolCallbacks</code> 工具类，并将它们直接传递给 <code>tools()</code>。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ToolCallback[] dateTimeTools = ToolCallbacks.from(new DateTimeTools());
+
+ChatClient.create(chatModel)
+    .prompt("What day is tomorrow?")
+    .tools(dateTimeTools)
+    .call()
+    .content();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>`tools()` 也直接接受 `ToolCallback` 和 `ToolCallbackProvider` 实例，以及带有 `@Tool` 注解的 POJO 实例和这些类型的集合。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_adding_default_tools_to_chatclient"><a class="anchor" href="#_adding_default_tools_to_chatclient"></a>为<code>ChatClient</code>添加默认工具</h4>
+<div class="paragraph">
+<p>在使用声明式规范方法时，您可以通过将工具类实例传递给 `defaultTools()` 方法来向 `<code>ChatClient.Builder</code>` 添加默认工具。如果同时提供了默认工具和运行时工具，则运行时工具将完全覆盖默认工具。</p>
+</div>
+<div class="admonitionblock warning">
+<table><tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+默认工具由所有通过同一个 <code>ChatClient.Builder</code> 构建的 <code>ChatClient</code> 实例共享。这些工具适用于在不同聊天请求中广泛使用的场景，但若使用不当则可能带来风险，导致在不该提供时提供了它们。
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatModel chatModel = ...
+ChatClient chatClient = ChatClient.builder(chatModel)
+    .defaultTools(new DateTimeTools())
+    .build();</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_adding_tools_to_chatmodel"><a class="anchor" href="#_adding_tools_to_chatmodel"></a>为<code>ChatModel</code>添加工具</h4>
+<div class="paragraph">
+<p>在使用声明式规范方法时，您可以将工具类实例传递给用于调用<code>ChatModel</code>的<code>ToolCallingChatOptions</code>的<code>toolCallbacks()</code>方法。这些工具仅对它们被添加到的特定聊天请求可用。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatModel chatModel = ...
+ToolCallback[] dateTimeTools = ToolCallbacks.from(new DateTimeTools());
+ChatOptions chatOptions = ToolCallingChatOptions.builder()
+    .toolCallbacks(dateTimeTools)
+    .build();
+Prompt prompt = new Prompt("What day is tomorrow?", chatOptions);
+chatModel.call(prompt);</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+直接调用 <code>ChatModel</code> 会将工具定义发送给 AI 模型，但响应中的工具调用<strong>不会</strong>自动执行。请使用 <code>ChatClient</code>（它会自动注册 <code>ToolCallingAdvisor</code>）以实现自动执行，或者实现<a href="#_user_controlled_tool_execution">用户控制的工具执行</a>来自行驱动循环。
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_adding_default_tools_to_chatmodel"><a class="anchor" href="#_adding_default_tools_to_chatmodel"></a>为<code>ChatModel</code>添加默认工具</h4>
+<div class="paragraph">
+<p>在使用声明式规范方法时，您可以在构建 `ChatModel` 时通过向用于创建 `ChatModel` 的 `ToolCallingChatOptions` 实例的 `toolCallbacks()` 方法传递工具类实例来添加默认工具。  
+如果同时提供了默认工具和运行时工具，则运行时工具将完全覆盖默认工具。</p>
+</div>
+<div class="admonitionblock warning">
+<table><tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+默认工具会被该 <code>ChatModel</code> 实例执行的所有聊天请求共享。这些工具对于在不同聊天请求中常用的功能非常有用，但如果使用不当也可能带来危险，可能导致在不应该提供时提供了这些工具。
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ToolCallback[] dateTimeTools = ToolCallbacks.from(new DateTimeTools());
+ChatModel chatModel = OllamaChatModel.builder()
+    .ollamaApi(OllamaApi.builder().build())
+    .options(ToolCallingChatOptions.builder()
+            .toolCallbacks(dateTimeTools)
+            .build())
+    .build();</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_programmatic_specification_methodtoolcallback"><a class="anchor" href="#_programmatic_specification_methodtoolcallback"></a>程序化规范：<code>MethodToolCallback</code></h3>
+<div class="paragraph">
+<p>您可以通过编程方式构建一个<code>MethodToolCallback</code>，将方法转换为工具。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">class DateTimeTools {
+
+    String getCurrentDateTime() {
+        return LocalDateTime.now().atZone(LocaleContextHolder.getTimeZone().toZoneId()).toString();
+    }
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>`MethodToolCallback.Builder` 允许您构建一个 `MethodToolCallback` 实例，并提供有关该工具的关键信息：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>toolDefinition</code>：定义工具名称、描述和输入模式的 <code>ToolDefinition</code> 实例。您可以使用 <code>ToolDefinition.Builder</code> 类构建它。必需。</p>
+</li>
+<li>
+<p><code>toolMetadata</code>：定义额外设置的 <code>ToolMetadata</code> 实例，例如是否直接将结果返回给客户端以及要使用的结果转换器。您可以使用 <code>ToolMetadata.Builder</code> 类来构建它。</p>
+</li>
+<li>
+<p><code>toolMethod</code>：代表工具方法的 <code>Method</code> 实例。必需。</p>
+</li>
+<li>
+<p><code>toolObject</code>：包含工具方法的对象实例。如果方法是静态的，可以省略此参数。</p>
+</li>
+<li>
+<p><code>toolCallResultConverter</code>：用于将工具调用的结果转换为要发送回 AI 模型的 <code>String</code> 对象的 <code>ToolCallResultConverter</code> 实例。如果未提供，则使用默认转换器（<code>DefaultToolCallResultConverter</code>）。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><code>ToolDefinition.Builder</code> 允许您构建一个 <code>ToolDefinition</code> 实例，并定义工具名称、描述和输入模式：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>name</code>：工具的名称。如果未提供，则使用方法名称。AI 模型在调用工具时使用此名称来识别该工具。因此，同一类中不允许存在两个名称相同的工具。该名称必须在模型针对特定聊天请求可用的所有工具中具有唯一性。</p>
+</li>
+<li>
+<p><code>description</code>：工具的描述，模型可据此理解何时以及如何调用该工具。若未提供，则使用方法名作为工具描述。但强烈建议提供详细描述，因为这对于模型理解工具的目的及使用方法至关重要。若未能提供良好的描述，可能导致模型在应当使用时未使用该工具，或错误地使用它。</p>
+</li>
+<li>
+<p><code>inputSchema</code>：工具输入参数的 JSON 模式。如果未提供，将根据方法参数自动生成该模式。您可以使用 <code>@ToolParam</code> 注解为输入参数提供额外信息，例如描述或参数是否为必需/可选。默认情况下，所有输入参数均被视为必需。有关更多详细信息，请参阅<a href="#_json_schema">JSON Schema</a>。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><code>ToolMetadata.Builder</code> 允许您构建一个 <code>ToolMetadata</code> 实例，并为工具定义额外的设置：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>`returnDirect`：工具结果是直接返回给客户端还是回传给模型。有关更多详细信息，请参阅<a href="#_return_direct">直接返回</a>。</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">Method method = ReflectionUtils.findMethod(DateTimeTools.class, "getCurrentDateTime");
+ToolCallback toolCallback = MethodToolCallback.builder()
+    .toolDefinition(ToolDefinitions.builder(method)
+            .description("Get the current date and time in the user's timezone")
+            .build())
+    .toolMethod(method)
+    .toolObject(new DateTimeTools())
+    .build();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>该方法可以是静态方法或实例方法，其可见性可以是任意级别（public、protected、包私有或 private）。包含该方法类可以是顶层类或嵌套类，且该类也可以具有任意可见性（只要在其计划进行实例化的位置可访问即可）。</p>
+</div>
+<div class="admonitionblock note">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Spring AI 为工具方法的 AOT 编译提供了内置支持，前提是包含这些方法的类是一个 Spring Bean（例如 <code>@Component</code>）。否则，您需要向 GraalVM 编译器提供必要的配置。例如，可以通过使用 <code>@RegisterReflection(memberCategories = MemberCategory.INVOKE_DECLARED_METHODS)</code> 注解该类来实现。
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="paragraph">
+<p>您可以为方法定义任意数量的参数（包括无参数），适用于大多数类型（基本类型、POJO、枚举、列表、数组、映射等）。同样，方法的返回值也可以是大多数类型，包括 <code>void</code>。如果方法返回一个值，其返回类型必须是可序列化的类型，因为结果将被序列化并发送回模型。</p>
+</div>
+<div class="admonitionblock note">
+<table><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+部分类型不受支持。有关详细信息，请参阅<a href="#_method_tool_limitations">方法工具限制</a>。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>如果方法是静态的，可以省略<code>toolObject()</code>方法，因为它不需要。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">class DateTimeTools {
+
+    static String getCurrentDateTime() {
+        return LocalDateTime.now().atZone(LocaleContextHolder.getTimeZone().toZoneId()).toString();
+    }
+
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">Method method = ReflectionUtils.findMethod(DateTimeTools.class, "getCurrentDateTime");
+ToolCallback toolCallback = MethodToolCallback.builder()
+    .toolDefinition(ToolDefinitions.builder(method)
+            .description("Get the current date and time in the user's timezone")
+            .build())
+    .toolMethod(method)
+    .build();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Spring AI 将自动生成方法输入参数的 JSON Schema。模型使用该 Schema 来理解如何调用工具并准备工具请求。<code>@ToolParam</code> 注解可用于提供有关输入参数的额外信息，例如描述或参数是否为必需或可选。默认情况下，所有输入参数均被视为必需。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java"><span class="fold-block is-hidden-folded">import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import org.springframework.ai.tool.annotation.ToolParam;
+
+</span><span class="fold-block">class DateTimeTools {
+
+    void setAlarm(@ToolParam(description = "Time in ISO-8601 format") String time) {
+        LocalDateTime alarmTime = LocalDateTime.parse(time, DateTimeFormatter.ISO_DATE_TIME);
+        System.out.println("Alarm set for " + alarmTime);
+    }
+
+}</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>@ToolParam</code> 注解允许您提供有关工具参数的关键信息：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>description</code>：参数的描述，模型可借此更好地理解如何使用该参数。例如，参数应采用的格式、允许的值等。</p>
+</li>
+<li>
+<p><code>required</code>：参数是否为必需或可选。默认情况下，所有参数均被视为必需。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>如果参数被注解为<code>@Nullable</code>，除非使用<code>@ToolParam</code>注解明确标记为必需，否则该参数将被视为可选。</p>
+</div>
+<div class="paragraph">
+<p>除了使用 `<code>@ToolParam</code>` 注解外，您还可以使用来自 Swagger 的 `<code>@Schema</code>` 注解或来自 Jackson 的 `<code>@JsonProperty</code>` 注解。有关更多详细信息，请参阅 <a href="#_json_schema">JSON Schema</a>。</p>
+</div>
+<div class="sect3">
+<h4 id="_adding_tools_to_chatclient_and_chatmodel"><a class="anchor" href="#_adding_tools_to_chatclient_and_chatmodel"></a>向 <code>ChatClient</code> 和 <code>ChatModel</code> 添加工具</h4>
+<div class="paragraph">
+<p>在使用程序化规范方法时，您可以直接将 `<code>MethodToolCallback</code>` 实例传递给 `<code>ChatClient</code>` 上的 `<code>tools()</code>` 方法。
+该工具仅对其添加到的特定聊天请求可用。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ToolCallback toolCallback = ...
+ChatClient.create(chatModel)
+    .prompt("What day is tomorrow?")
+    .tools(toolCallback)
+    .call()
+    .content();</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_adding_default_tools_to_chatclient_2"><a class="anchor" href="#_adding_default_tools_to_chatclient_2"></a>为 <code>ChatClient</code> 添加默认工具</h4>
+<div class="paragraph">
+<p>在使用程序化规范方法时，您可以将<code>MethodToolCallback</code>实例直接传递给<code>defaultTools()</code>，以向<code>ChatClient.Builder</code>添加默认工具。  
+如果同时提供了默认工具和运行时工具，则运行时工具将完全覆盖默认工具。</p>
+</div>
+<div class="admonitionblock warning">
+<table><tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+默认工具由所有通过同一个 <code>ChatClient.Builder</code> 构建的 <code>ChatClient</code> 实例共享。这些工具适用于在不同聊天请求中广泛使用的场景，但若使用不当则可能带来风险，导致在不该提供时提供了它们。
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatModel chatModel = ...
+ToolCallback toolCallback = ...
+ChatClient chatClient = ChatClient.builder(chatModel)
+    .defaultTools(toolCallback)
+    .build();</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_adding_tools_to_chatmodel_2"><a class="anchor" href="#_adding_tools_to_chatmodel_2"></a>为<code>ChatModel</code>添加工具</h4>
+<div class="paragraph">
+<p>在使用程序化规范方法时，您可以将 `<code>MethodToolCallback</code>` 实例传递给用于调用 `<code>ChatModel` 的 `<code>ToolCallingChatOptions</code>` 的 `<code>toolCallbacks()</code>` 方法。该工具仅对添加它的特定聊天请求可用。</code></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatModel chatModel = ...
+ToolCallback toolCallback = ...
+ChatOptions chatOptions = ToolCallingChatOptions.builder()
+    .toolCallbacks(toolCallback)
+    .build();
+Prompt prompt = new Prompt("What day is tomorrow?", chatOptions);
+chatModel.call(prompt);</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+直接调用 <code>ChatModel</code> 会将工具定义发送给 AI 模型，但响应中的工具调用<strong>不会</strong>自动执行。请使用 <code>ChatClient</code>（它会自动注册 <code>ToolCallingAdvisor</code>）以实现自动执行，或者实现<a href="#_user_controlled_tool_execution">用户控制的工具执行</a>来自行驱动循环。
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_adding_default_tools_to_chatmodel_2"><a class="anchor" href="#_adding_default_tools_to_chatmodel_2"></a>为<code>ChatModel</code>添加默认工具</h4>
+<div class="paragraph">
+<p>在使用程序化规范方法时，您可以在构建 `ChatModel` 时通过向用于创建该 `ChatModel` 的 `ToolCallingChatOptions` 实例的 `toolCallbacks()` 方法传递 `MethodToolCallback` 实例来添加默认工具。  
+如果同时提供了默认工具和运行时工具，则运行时工具将完全覆盖默认工具。</p>
+</div>
+<div class="admonitionblock warning">
+<table><tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+默认工具会被该 <code>ChatModel</code> 实例执行的所有聊天请求共享。这些工具对于在不同聊天请求中常用的功能非常有用，但如果使用不当也可能带来危险，可能导致在不应该提供时提供了这些工具。
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ToolCallback toolCallback = ...
+ChatModel chatModel = OllamaChatModel.builder()
+    .ollamaApi(OllamaApi.builder().build())
+    .options(ToolCallingChatOptions.builder()
+            .toolCallbacks(toolCallback)
+            .build())
+    .build();</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_method_tool_limitations"><a class="anchor" href="#_method_tool_limitations"></a>方法工具局限性</h3>
+<div class="paragraph">
+<p>以下类型当前不支持作为工具所用方法的参数或返回类型：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Optional</code></p>
+</li>
+<li>
+<p>异步类型（例如 <code>CompletableFuture</code>、<code>Future</code>）</p>
+</li>
+<li>
+<p>响应式类型（例如 <code>Flow</code>、<code>Mono</code>、<code>Flux</code>）</p>
+</li>
+<li>
+<p>函数类型（例如<code>Function</code>、<code>Supplier</code>、<code>Consumer</code>）。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>支持使用基于函数的工具规范方法来实现功能类型。有关更多详细信息，请参阅<a href="#_functions_as_tools">函数作为工具</a>。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_functions_as_tools"><a class="anchor" href="#_functions_as_tools"></a>函数作为工具</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Spring AI 提供内置支持，用于通过函数指定工具：既可以通过底层 `<code>FunctionToolCallback` 实现以编程方式指定，也可以动态地作为运行时解析的 `<code>@Bean</code>` 进行指定。</code></p>
+</div>
+<div class="sect2">
+<h3 id="_programmatic_specification_functiontoolcallback"><a class="anchor" href="#_programmatic_specification_functiontoolcallback"></a>程序化规范：<code>FunctionToolCallback</code></h3>
+<div class="paragraph">
+<p>您可以通过程序化构建一个<code>FunctionToolCallback</code>，将功能类型（如<code>Function</code>、<code>Supplier</code>、<code>Consumer</code>或<code>BiFunction</code>）转换为工具。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public class WeatherService implements Function&lt;WeatherRequest, WeatherResponse&gt; {
+    public WeatherResponse apply(WeatherRequest request) {
+        return new WeatherResponse(30.0, Unit.C);
+    }
+}
+
+public enum Unit { C, F }
+public record WeatherRequest(String location, Unit unit) {}
+public record WeatherResponse(double temp, Unit unit) {}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>FunctionToolCallback.Builder</code> 允许您构建一个 <code>FunctionToolCallback</code> 实例，并提供有关该工具的关键信息：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>name</code>：工具的名称。AI 模型在调用工具时使用此名称来识别该工具，因此在同一上下文中不允许存在两个同名工具。该名称必须在模型针对特定聊天请求可用的所有工具中保持唯一性。必填项。</p>
+</li>
+<li>
+<p><code>toolFunction</code>：表示工具方法的函数对象（<code>Function</code>、<code>Supplier</code>、<code>Consumer</code> 或 <code>BiFunction</code>）。必需。</p>
+</li>
+<li>
+<p><code>description</code>：工具的描述，模型可据此理解何时以及如何调用该工具。若未提供，则使用方法名作为工具描述。但强烈建议提供详细描述，因为这对于模型理解工具的目的及使用方法至关重要。若未能提供良好的描述，可能导致模型在应当使用时未使用该工具，或错误地使用它。</p>
+</li>
+<li>
+<p><code>inputType</code>：函数输入的类型。必填项。</p>
+</li>
+<li>
+<p><code>inputSchema</code>：工具输入参数的 JSON 模式。如果未提供，将根据 <code>inputType</code> 自动生成该模式。您可以使用 <code>@ToolParam</code> 注解为输入参数提供额外信息，例如描述或参数是否为必需/可选。默认情况下，所有输入参数均被视为必需。有关更多详细信息，请参阅<a href="#_json_schema">JSON Schema</a>。</p>
+</li>
+<li>
+<p><code>toolMetadata</code>：定义额外设置的 <code>ToolMetadata</code> 实例，例如是否直接将结果返回给客户端以及要使用的结果转换器。您可以使用 <code>ToolMetadata.Builder</code> 类来构建它。</p>
+</li>
+<li>
+<p><code>toolCallResultConverter</code>：用于将工具调用的结果转换为要发送回 AI 模型的 <code>String</code> 对象的 <code>ToolCallResultConverter</code> 实例。如果未提供，则使用默认转换器（<code>DefaultToolCallResultConverter</code>）。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><code>ToolMetadata.Builder</code> 允许您构建一个 <code>ToolMetadata</code> 实例，并为工具定义额外的设置：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>`returnDirect`：工具结果是直接返回给客户端还是回传给模型。有关更多详细信息，请参阅<a href="#_return_direct">直接返回</a>。</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ToolCallback toolCallback = FunctionToolCallback
+    .builder("currentWeather", new WeatherService())
+    .description("Get the weather in location")
+    .inputType(WeatherRequest.class)
+    .build();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>函数输入和输出可以是 `<code>Void</code>` 或 POJO。输入和输出的 POJO 必须是可序列化的，因为结果将被序列化并返回给模型。此外，函数以及输入和输出类型都必须是公开的。</p>
+</div>
+<div class="admonitionblock note">
+<table><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+部分类型不受支持。有关详细信息，请参阅<a href="#_function_tool_limitations">函数工具限制</a>。
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_adding_tools_to_chatclient_2"><a class="anchor" href="#_adding_tools_to_chatclient_2"></a>为 <code>ChatClient</code> 添加工具</h4>
+<div class="paragraph">
+<p>在使用程序化规范方法时，您可以直接将 `<code>FunctionToolCallback</code>` 实例传递给 `<code>ChatClient</code>` 上的 `<code>tools()</code>` 方法。该工具仅对添加它的特定聊天请求可用。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ToolCallback toolCallback = ...
+ChatClient.create(chatModel)
+    .prompt("What's the weather like in Copenhagen?")
+    .tools(toolCallback)
+    .call()
+    .content();</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_adding_default_tools_to_chatclient_3"><a class="anchor" href="#_adding_default_tools_to_chatclient_3"></a>为 <code>ChatClient</code> 添加默认工具</h4>
+<div class="paragraph">
+<p>在使用程序化规范方法时，您可以将<code>FunctionToolCallback</code>实例直接传递给<code>defaultTools()</code>，以向<code>ChatClient.Builder</code>添加默认工具。如果同时提供了默认工具和运行时工具，则运行时工具将完全覆盖默认工具。</p>
+</div>
+<div class="admonitionblock warning">
+<table><tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+默认工具由所有通过同一个 <code>ChatClient.Builder</code> 构建的 <code>ChatClient</code> 实例共享。这些工具适用于在不同聊天请求中广泛使用的场景，但若使用不当则可能带来风险，导致在不该提供时提供了它们。
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatModel chatModel = ...
+ToolCallback toolCallback = ...
+ChatClient chatClient = ChatClient.builder(chatModel)
+    .defaultTools(toolCallback)
+    .build();</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_adding_tools_to_chatmodel_3"><a class="anchor" href="#_adding_tools_to_chatmodel_3"></a>为 <code>ChatModel</code> 添加工具</h4>
+<div class="paragraph">
+<p>在使用程序化规范方法时，您可以将 `<code>FunctionToolCallback`</code> 实例传递给 `<code>ToolCallingChatOptions</code>` 的 `<code>toolCallbacks()</code>` 方法。该工具仅对其添加到的特定聊天请求可用。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatModel chatModel = ...
+ToolCallback toolCallback = ...
+ChatOptions chatOptions = ToolCallingChatOptions.builder()
+    .toolCallbacks(toolCallback)
+    .build();
+Prompt prompt = new Prompt("What's the weather like in Copenhagen?", chatOptions);
+chatModel.call(prompt);</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+直接调用 <code>ChatModel</code> 会将工具定义发送给 AI 模型，但响应中的工具调用<strong>不会</strong>自动执行。请使用 <code>ChatClient</code>（它会自动注册 <code>ToolCallingAdvisor</code>）以实现自动执行，或者实现<a href="#_user_controlled_tool_execution">用户控制的工具执行</a>来自行驱动循环。
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_adding_default_tools_to_chatmodel_3"><a class="anchor" href="#_adding_default_tools_to_chatmodel_3"></a>为 <code>ChatModel</code> 添加默认工具</h4>
+<div class="paragraph">
+<p>在使用程序化规范方法时，您可以在构建 `ChatModel` 时通过向用于创建该 `ChatModel` 的 `ToolCallingChatOptions` 实例的 `toolCallbacks()` 方法传递 `FunctionToolCallback` 实例来添加默认工具。  
+如果同时提供了默认工具和运行时工具，则运行时工具将完全覆盖默认工具。</p>
+</div>
+<div class="admonitionblock warning">
+<table><tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+默认工具会被该 <code>ChatModel</code> 实例执行的所有聊天请求共享。这些工具对于在不同聊天请求中常用的功能非常有用，但如果使用不当也可能带来危险，可能导致在不应该提供时提供了这些工具。
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ToolCallback toolCallback = ...
+ChatModel chatModel = OllamaChatModel.builder()
+    .ollamaApi(OllamaApi.builder().build())
+    .options(ToolCallingChatOptions.builder()
+            .toolCallbacks(toolCallback)
+            .build())
+    .build();</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_toolcallback_beans"><a class="anchor" href="#_toolcallback_beans"></a><code>ToolCallback</code> Beans</h3>
+<div class="paragraph">
+<p>Spring AI 可以自动发现应用程序上下文中定义的 `<code>ToolCallback` Bean，并使其可通过名称进行解析。这允许您使用 `<code>FunctionToolCallback.builder()</code>` 或 `<code>MethodToolCallback.builder()</code>` 将工具定义为 Spring Bean，并在聊天请求中显式注入它们。</code></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Configuration(proxyBeanMethods = false)
+class WeatherTools {
+
+    WeatherService weatherService = new WeatherService();
+
+	@Bean
+	ToolCallback currentWeather() {
+		return FunctionToolCallback.builder("currentWeather", weatherService::getWeather)
+			.description("Get the weather in location")
+			.inputType(WeatherRequest.class)
+			.build();
+	}
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>当聊天请求需要 `<code>ToolCallback`  Bean 时，直接注入它：</code></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Autowired
+ToolCallback currentWeather;
+
+// Pass it to ChatClient at request time
+ChatClient.create(chatModel)
+    .prompt("What's the weather like in Copenhagen?")
+    .tools(currentWeather)
+    .call()
+    .content();
+
+// Or register as a default tool for all requests via the builder
+ChatClient chatClient = ChatClient.builder(chatModel)
+    .defaultTools(currentWeather)
+    .build();</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+直接调用 <code>ChatModel</code> 会将工具定义发送给 AI 模型，但响应中的工具调用<strong>不会</strong>自动执行。请使用 <code>ChatClient</code>（它会自动注册 <code>ToolCallingAdvisor</code>）以实现自动执行，或者实现<a href="#_user_controlled_tool_execution">用户控制的工具执行</a>来自行驱动循环。
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_function_tool_limitations"><a class="anchor" href="#_function_tool_limitations"></a>函数工具限制</h3>
+<div class="paragraph">
+<p>以下类型目前不支持作为用作工具的函数的输入或输出类型：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>基本数据类型</p>
+</li>
+<li>
+<p><code>Optional</code></p>
+</li>
+<li>
+<p>集合类型（例如 <code>List</code>、<code>Map</code>、<code>Array</code>、<code>Set</code>）</p>
+</li>
+<li>
+<p>异步类型（例如 <code>CompletableFuture</code>、<code>Future</code>）</p>
+</li>
+<li>
+<p>响应式类型（例如 <code>Flow</code>、<code>Mono</code>、<code>Flux</code>）。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>使用基于方法的工具规范方法支持基本类型和集合。有关更多详细信息，请参阅<a href="#_methods_as_tools">作为工具的 Method</a>。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tool_specification"><a class="anchor" href="#_tool_specification"></a>工具规格</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>在 Spring AI 中，工具通过 `<code>ToolCallback` 接口进行建模。在前面的章节中，我们已经了解了如何使用 Spring AI 提供的内置支持，从方法和函数定义工具（参见<a href="#_methods_as_tools">方法作为工具</a>和<a href="#_functions_as_tools">函数作为工具</a>）。本节将深入探讨工具规范，并介绍如何对其进行定制和扩展以支持更多用例。</code></p>
+</div>
+<div class="sect2">
+<h3 id="_tool_callback"><a class="anchor" href="#_tool_callback"></a>工具回调</h3>
+<div class="paragraph">
+<p>`ToolCallback` 接口提供了一种定义可由 AI 模型调用的工具的方法，包括其定义和执行逻辑。当您希望从头开始定义一个工具时，这是需要实现的主要接口。例如，您可以从 MCP 客户端（使用模型上下文协议）或 `ChatClient`（用于构建模块化代理应用程序）中定义一个 `ToolCallback`。</p>
+</div>
+<div class="paragraph">
+<p>该接口提供以下方法：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public interface ToolCallback {
+
+	/**
+	 * Definition used by the AI model to determine when and how to call the tool.
+	 */
+	ToolDefinition getToolDefinition();
+
+	/**
+	 * Metadata providing additional information on how to handle the tool.
+	 */
+	ToolMetadata getToolMetadata();
+
+    /**
+	 * Execute tool with the given input and return the result to send back to the AI model.
+	 */
+	String call(String toolInput);
+
+    /**
+	 * Execute tool with the given input and context, and return the result to send back to the AI model.
+	 */
+	String call(String toolInput, ToolContext tooContext);
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Spring AI 提供了针对工具方法（<code>MethodToolCallback</code>）和工具函数（<code>FunctionToolCallback</code>）的内置实现。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_tool_definition"><a class="anchor" href="#_tool_definition"></a>工具定义</h3>
+<div class="paragraph">
+<p>`ToolDefinition` 接口提供了 AI 模型了解工具可用性的必要信息，包括工具名称、描述和输入模式。每个 `ToolCallback` 实现都必须提供一个 `ToolDefinition` 实例来定义该工具。</p>
+</div>
+<div class="paragraph">
+<p>该接口提供以下方法：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public interface ToolDefinition {
+
+	/**
+	 * The tool name. Unique within the tool set provided to a model.
+	 */
+	String name();
+
+	/**
+	 * The tool description, used by the AI model to determine what the tool does.
+	 */
+	String description();
+
+	/**
+	 * The schema of the parameters used to call the tool.
+	 */
+	String inputSchema();
+
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+有关输入架构的详细信息，请参阅<a href="#_json_schema">JSON Schema</a>。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><code>ToolDefinition.Builder</code> 允许您使用默认实现（<code>DefaultToolDefinition</code>）构建一个 <code>ToolDefinition</code> 实例。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ToolDefinition toolDefinition = ToolDefinition.builder()
+    .name("currentWeather")
+    .description("Get the weather in location")
+    .inputSchema("""
+        {
+            "type": "object",
+            "properties": {
+                "location": {
+                    "type": "string"
+                },
+                "unit": {
+                    "type": "string",
+                    "enum": ["C", "F"]
+                }
+            },
+            "required": ["location", "unit"]
+        }
+    """)
+    .build();</code></pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_method_tool_definition"><a class="anchor" href="#_method_tool_definition"></a>方法工具定义</h4>
+<div class="paragraph">
+<p>从方法构建工具时，<code>ToolDefinition</code> 会自动为您生成。如果您更倾向于自行生成 <code>ToolDefinition</code>，可以使用此便捷的构建器。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">Method method = ReflectionUtils.findMethod(DateTimeTools.class, "getCurrentDateTime");
+ToolDefinition toolDefinition = ToolDefinitions.from(method);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>从方法生成的<code>ToolDefinition</code>包含：以方法名为工具名，以方法名为工具描述，以及方法输入参数的 JSON Schema。如果该方法标注了<code>@Tool</code>，则工具名和描述将取自该注解（如果已设置）。</p>
+</div>
+<div class="admonitionblock note">
+<table><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+详见<a href="#_methods_as_tools">方法作为工具</a>。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>如果您更愿意显式提供部分或全部属性，可以使用 <code>ToolDefinition.Builder</code> 来构建自定义的 <code>ToolDefinition</code> 实例。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">Method method = ReflectionUtils.findMethod(DateTimeTools.class, "getCurrentDateTime");
+ToolDefinition toolDefinition = ToolDefinitions.builder(method)
+    .name("currentDateTime")
+    .description("Get the current date and time in the user's timezone")
+    .inputSchema(JsonSchemaGenerator.generateForMethodInput(method))
+    .build();</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_function_tool_definition"><a class="anchor" href="#_function_tool_definition"></a>函数工具定义</h4>
+<div class="paragraph">
+<p>从函数构建工具时，<code>ToolDefinition</code> 会自动为您生成。当您使用 <code>FunctionToolCallback.Builder</code> 构建 <code>FunctionToolCallback</code> 实例时，可以提供用于生成 <code>ToolDefinition</code> 的工具名称、描述和输入模式。有关更多详细信息，请参阅<a href="#_functions_as_tools">将函数作为工具</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_json_schema"><a class="anchor" href="#_json_schema"></a>JSON 模式</h3>
+<div class="paragraph">
+<p>当向 AI 模型提供工具时，模型需要知道用于调用该工具的输入类型的模式（schema）。该模式用于理解如何调用工具并准备工具请求。Spring AI 通过 <code>JsonSchemaGenerator</code> 类提供了内置支持，可生成工具输入类型的 JSON Schema。该模式作为 <code>ToolDefinition</code> 的一部分提供。</p>
+</div>
+<div class="admonitionblock note">
+<table><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+有关 <code>ToolDefinition</code> 的更多详细信息以及如何向其传递输入模式，请参阅<a href="#_tool_definition">工具定义</a>。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>`JsonSchemaGenerator` 类在底层用于生成方法或函数输入参数的 JSON Schema，支持<a href="#_methods_as_tools">方法作为工具</a>和<a href="#_functions_as_tools">函数作为工具</a>中描述的任意策略。JSON Schema 生成逻辑支持一系列注解，您可以将这些注解应用于方法和函数的输入参数，以定制生成的 Schema。</p>
+</div>
+<div class="paragraph">
+<p>本节介绍了在生成工具输入参数的 JSON Schema 时，您可以自定义的两个主要选项：描述和必填状态。</p>
+</div>
+<div class="sect3">
+<h4 id="_description"><a class="anchor" href="#_description"></a>Description</h4>
+<div class="paragraph">
+<p>除了为工具本身提供描述外，您还可以为工具的输入参数提供描述。该描述可用于提供有关输入参数的关键信息，例如参数应采用的格式、允许的值等。这有助于模型理解输入模式及其使用方法。Spring AI 支持使用以下注解之一自动生成输入参数的描述：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>来自 Spring AI 的 <code>@ToolParam(description = "…​")</code></p>
+</li>
+<li>
+<p>Jackson 中的 <code>@JsonClassDescription(description = "…​")</code></p>
+</li>
+<li>
+<p>Jackson 中的 <code>@JsonPropertyDescription(description = "…​")</code></p>
+</li>
+<li>
+<p>Swagger 中的 <code>@Schema(description = "…​")</code>。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>此方法适用于方法和函数，并且您可以递归地使用它来处理嵌套类型。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java"><span class="fold-block is-hidden-folded">import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import org.springframework.ai.tool.annotation.Tool;
+import org.springframework.ai.tool.annotation.ToolParam;
+import org.springframework.context.i18n.LocaleContextHolder;
+
+</span><span class="fold-block">class DateTimeTools {
+
+    @Tool(description = "Set a user alarm for the given time")
+    void setAlarm(@ToolParam(description = "Time in ISO-8601 format") String time) {
+        LocalDateTime alarmTime = LocalDateTime.parse(time, DateTimeFormatter.ISO_DATE_TIME);
+        System.out.println("Alarm set for " + alarmTime);
+    }
+
+}</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_requiredoptional"><a class="anchor" href="#_requiredoptional"></a>Required/Optional</h4>
+<div class="paragraph">
+<p>默认情况下，每个输入参数都被视为必需参数，这会强制 AI 模型在调用工具时为其提供值。然而，您可以通过使用以下注解之一将输入参数设为可选，其优先级顺序如下：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Spring AI 中的 <code>@ToolParam(required = false)</code></p>
+</li>
+<li>
+<p>Jackson 的 <code>@JsonProperty(required = false)</code></p>
+</li>
+<li>
+<p>Swagger 中的 <code>@Schema(required = false)</code></p>
+</li>
+<li>
+<p>Spring 框架中的 <code>@Nullable</code>。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>此方法适用于方法和函数，并且您可以递归地使用它来处理嵌套类型。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">class CustomerTools {
+
+    @Tool(description = "Update customer information")
+    void updateCustomerInfo(Long id, String name, @ToolParam(required = false) String email) {
+        System.out.println("Updated info for customer with id: " + id);
+    }
+
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock warning">
+<table><tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+为输入参数定义正确的必需状态对于降低幻觉风险并确保模型在调用工具时提供正确的输入至关重要。在前面的示例中，<code>email</code> 参数是可选的，这意味着模型可以在不提供其值的情况下调用该工具。如果该参数是必需的，则模型在调用工具时必须为其提供一个值。如果没有现成的值，模型很可能会编造一个，从而导致幻觉。
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_result_conversion"><a class="anchor" href="#_result_conversion"></a>结果转换</h3>
+<div class="paragraph">
+<p>工具调用的结果通过 `<code>ToolCallResultConverter</code>` 进行序列化，随后发送回 AI 模型。<code>ToolCallResultConverter</code> 接口提供了一种将工具调用结果转换为 `<code>String</code>` 对象的方法。</p>
+</div>
+<div class="paragraph">
+<p>该接口提供以下方法：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@FunctionalInterface
+public interface ToolCallResultConverter {
+
+	/**
+	 * Given an Object returned by a tool, convert it to a String compatible with the
+	 * given class type.
+	 */
+	String convert(@Nullable Object result, @Nullable Type returnType);
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>结果必须是可序列化的类型。默认情况下，使用 Jackson 将结果序列化为 JSON（<code>DefaultToolCallResultConverter</code>），但您可以通过提供自己的 <code>ToolCallResultConverter</code> 实现来自定义序列化过程。</p>
+</div>
+<div class="paragraph">
+<p>Spring AI 在方法工具和函数工具中均依赖<code>ToolCallResultConverter</code>。</p>
+</div>
+<div class="sect3">
+<h4 id="_method_tool_call_result_conversion"><a class="anchor" href="#_method_tool_call_result_conversion"></a>方法工具调用结果转换</h4>
+<div class="paragraph">
+<p>在使用声明式方法构建工具时，您可以通过设置 `@Tool` 注解的 `resultConverter()` 属性来提供自定义的 `<code>ToolCallResultConverter</code>` 供该工具使用。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">class CustomerTools {
+
+    @Tool(description = "Retrieve customer information", resultConverter = CustomToolCallResultConverter.class)
+    Customer getCustomerInfo(Long id) {
+        return customerRepository.findById(id);
+    }
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>如果使用编程方式，可以通过设置<code>MethodToolCallback.Builder</code>的<code>resultConverter()</code>属性来提供自定义的<code>ToolCallResultConverter</code>供工具使用。</p>
+</div>
+<div class="paragraph">
+<p>有关更多详细信息，请参阅<a href="#_methods_as_tools">方法作为工具</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_function_tool_call_result_conversion"><a class="anchor" href="#_function_tool_call_result_conversion"></a>函数工具调用结果转换</h4>
+<div class="paragraph">
+<p>使用编程方式从函数构建工具时，您可以通过设置<code>FunctionToolCallback.Builder</code>的<code>resultConverter()</code>属性来提供自定义的<code>ToolCallResultConverter</code>供该工具使用。</p>
+</div>
+<div class="paragraph">
+<p>有关更多详细信息，请参阅<a href="#_functions_as_tools">作为工具的函数</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_tool_context"><a class="anchor" href="#_tool_context"></a>工具上下文</h3>
+<div class="paragraph">
+<p>Spring AI 支持通过 <code>ToolContext</code> API 向工具传递额外的上下文信息。此功能允许您提供用户提供的附加数据，这些数据可与 AI 模型传递的工具参数一同在工具执行过程中使用。</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img alt="Providing additional contextual info to tools" src="../_images/tools/tool-context.jpg" width="700"/>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">class CustomerTools {
+
+    @Tool(description = "Retrieve customer information")
+    Customer getCustomerInfo(Long id, ToolContext toolContext) {
+        return customerRepository.findById(id, toolContext.getContext().get("tenantId"));
+    }
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>ToolContext</code> 会在调用 <code>ChatClient</code> 时由用户提供的数据填充。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatModel chatModel = ...
+
+String response = ChatClient.create(chatModel)
+        .prompt("Tell me more about the customer with ID 42")
+        .tools(new CustomerTools())
+        .toolContext(Map.of("tenantId", "acme"))
+        .call()
+        .content();
+
+System.out.println(response);</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<code>ToolContext</code> 中提供的任何数据都不会发送给 AI 模型。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>同样，您也可以直接调用<code>ChatModel</code>时定义工具上下文数据。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatModel chatModel = ...
+ToolCallback[] customerTools = ToolCallbacks.from(new CustomerTools());
+ChatOptions chatOptions = ToolCallingChatOptions.builder()
+    .toolCallbacks(customerTools)
+    .toolContext(Map.of("tenantId", "acme"))
+    .build();
+Prompt prompt = new Prompt("Tell me more about the customer with ID 42", chatOptions);
+chatModel.call(prompt);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>如果 `toolContext` 选项同时存在于默认选项和运行时选项中，则生成的 `<code>ToolContext` 将是两者的合并结果，其中运行时选项的优先级高于默认选项。</code></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_return_direct"><a class="anchor" href="#_return_direct"></a>直接返回</h3>
+<div class="paragraph">
+<p>默认情况下，工具调用的结果会作为响应返回给模型，然后模型可以利用该结果继续对话。</p>
+</div>
+<div class="paragraph">
+<p>在某些情况下，您可能更希望直接将结果返回给调用者，而不是将其发回模型。例如，如果您构建了一个依赖 RAG 工具的代理，可能希望直接将结果返回给调用者，以避免将结果发回模型进行不必要的后处理。或者，您可能拥有某些应终止代理推理循环的工具。</p>
+</div>
+<div class="paragraph">
+<p>每个 `<code>ToolCallback` 实现都可以定义工具调用的结果是直接返回给调用者，还是发送回模型。默认情况下，结果会发送回模型。但您可以针对每个工具更改此行为。</code></p>
+</div>
+<div class="paragraph">
+<p><code>ToolCallingManager</code> 负责管理工具执行的生命周期，并处理与工具关联的 <code>returnDirect</code> 属性。如果该属性设置为 <code>true</code>，则工具调用的结果将直接返回给调用者；否则，结果将被发送回模型。</p>
+</div>
+<div class="admonitionblock note">
+<table><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+如果同时请求多个工具调用，则必须将所有工具的 <code>returnDirect</code> 属性设置为 <code>true</code>，以便直接返回结果给调用者。否则，结果将被发送回模型。
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img alt="Returning tool call results directly to the caller" src="../_images/tools/return-direct.jpg" width="700"/>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>当我们要向模型提供工具时，需在其聊天请求中包含该工具的定义。如果希望将工具执行的结果直接返回给调用者，则将<code>returnDirect</code>属性设置为<code>true</code>。</p>
+</li>
+<li>
+<p>当模型决定调用工具时，它会发送一个响应，其中包含工具名称和按照定义的模式构建的输入参数。</p>
+</li>
+<li>
+<p>该应用程序负责使用工具名称来识别并执行带有所提供输入参数的工具。</p>
+</li>
+<li>
+<p>应用程序处理工具调用的结果。</p>
+</li>
+<li>
+<p>应用程序直接将工具调用结果发送给调用方，而不是将其返回给模型。</p>
+</li>
+</ol>
+</div>
+<div class="sect3">
+<h4 id="_method_return_direct"><a class="anchor" href="#_method_return_direct"></a>方法直接返回</h4>
+<div class="paragraph">
+<p>在使用声明式方法构建工具时，可以通过将 `@Tool` 注解的 `returnDirect` 属性设置为 `true`，来标记该工具直接将结果返回给调用者。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">class CustomerTools {
+
+    @Tool(description = "Retrieve customer information", returnDirect = true)
+    Customer getCustomerInfo(Long id) {
+        return customerRepository.findById(id);
+    }
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>如果使用编程方式，您可以通过 `ToolMetadata` 接口设置 `<code>returnDirect</code>` 属性，并将其传递给 `<code>MethodToolCallback.Builder</code>`。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ToolMetadata toolMetadata = ToolMetadata.builder()
+    .returnDirect(true)
+    .build();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>有关更多详细信息，请参阅<a href="#_methods_as_tools">方法作为工具</a>。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_function_return_direct"><a class="anchor" href="#_function_return_direct"></a>函数直接返回</h4>
+<div class="paragraph">
+<p>在使用编程方式从函数构建工具时，您可以通过 `ToolMetadata` 接口设置 `<code>returnDirect</code>` 属性，并将其传递给 `<code>FunctionToolCallback.Builder</code>`。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ToolMetadata toolMetadata = ToolMetadata.builder()
+    .returnDirect(true)
+    .build();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>有关更多详细信息，请参阅<a href="#_functions_as_tools">作为工具的函数</a>。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tool_execution"><a class="anchor" href="#_tool_execution"></a>工具执行</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>工具执行是指使用提供的输入参数调用工具并返回结果的过程。该过程由 `<code>ToolCallingManager</code>` 接口处理，负责管理工具执行的生命周期。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public interface ToolCallingManager {
+
+	/**
+	 * Resolve the tool definitions from the model's tool calling options.
+	 */
+	List&lt;ToolDefinition&gt; resolveToolDefinitions(ToolCallingChatOptions chatOptions);
+
+	/**
+	 * Execute the tool calls requested by the model.
+	 */
+	ToolExecutionResult executeToolCalls(Prompt prompt, ChatResponse chatResponse);
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>如果您正在使用任何 Spring AI Spring Boot Starter，<code>DefaultToolCallingManager</code> 是 <code>ToolCallingManager</code> 接口的自动配置实现。您可以通过提供自己的 <code>ToolCallingManager</code> Bean 来自定义工具执行行为。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Bean
+ToolCallingManager toolCallingManager() {
+    return ToolCallingManager.builder().build();
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Spring AI 支持三种工具执行生命周期管理方法。推荐的方法是通过 `<code>ChatClient`》实现<a href="#_framework_controlled_tool_execution">框架控制的工具执行</a>，该方法可自动处理工具调用循环。对于需要自定义工具调用循环的情况，可使用<a href="#_advisor_controlled_tool_execution_with_toolcallingadvisor">顾问控制的工具执行</a>。当您需要完全手动控制时，也可采用<a href="#_user_controlled_tool_execution">用户控制的工具执行</a>模式。</code></p>
+</div>
+<div class="sect2">
+<h3 id="_framework_controlled_tool_execution"><a class="anchor" href="#_framework_controlled_tool_execution"></a>框架控制的工具执行</h3>
+<div class="paragraph">
+<p>在使用 <code>ChatClient</code> 时，Spring AI 通过 <code>ToolCallingAdvisor</code> 自动处理整个工具调用生命周期，该 advisor 始终会自动注册到 advisor 链中（除非被显式禁用）。这意味着不仅支持在调用时静态声明的工具，还支持由另一个 advisor 在运行时动态注入的工具。所有这些操作都是透明进行的——您只需提供工具并提出问题，框架将负责其余部分。</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img alt="Framework-controlled tool execution lifecycle" src="../_images/tools/framework-manager.jpg" width="700"/>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>当我们要向模型提供工具时，会在聊天请求中包含其定义，并调用 `<code>ChatClient</code>` API，该 API 会将请求发送至 AI 模型。</p>
+</li>
+<li>
+<p>当模型决定调用工具时，它会发送一个包含工具名称和输入参数的响应。</p>
+</li>
+<li>
+<p>advisor 链中的<code>ToolCallingAdvisor</code>拦截响应，并将工具调用请求发送至<code>ToolCallingManager</code>。</p>
+</li>
+<li>
+<p><code>ToolCallingManager</code> 会识别并使用提供的输入参数执行相应的工具。</p>
+</li>
+<li>
+<p>工具执行结果被返回给<code>ToolCallingManager</code>。</p>
+</li>
+<li>
+<p><code>ToolCallingManager</code> 将结果返回给 <code>ToolCallingAdvisor</code>。</p>
+</li>
+<li>
+<p><code>ToolCallingAdvisor</code> 将工具执行结果作为 <code>ToolResponseMessage</code> 发送回 AI 模型。</p>
+</li>
+<li>
+<p>AI 模型利用工具结果作为额外上下文生成最终响应，并通过<code>ChatClient</code>返回给调用方。</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">String response = ChatClient.create(chatModel)
+    .prompt("What day is tomorrow?")
+    .tools(new DateTimeTools())
+    .call()
+    .content();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>若要全局禁用所有来自自动配置的 `<code>ChatClient` 的自动注册，请设置以下属性：</code></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties">spring.ai.chat.client.tool-calling.enabled=false</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>若要仅针对单次调用禁用该功能：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">chatClient.prompt("What day is tomorrow?")
+    .tools(new DateTimeTools())
+    .advisors(AdvisorParams.toolCallingAdvisorAutoRegister(false))
+    .call()
+    .content();</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_advisor_controlled_tool_execution_with_toolcallingadvisor"><a class="anchor" href="#_advisor_controlled_tool_execution_with_toolcallingadvisor"></a>使用 ToolCallingAdvisor 实现的顾问控制工具执行</h3>
+<div class="paragraph">
+<p>对于需要自定义工具调用循环的情况，您可以显式配置<code>ToolCallingAdvisor</code>。<code>ToolCallingAdvisor</code>作为<a class="xref page" href="chatclient.html#_advisors">顾问链</a>的一部分实现工具调用循环，并暴露了多个扩展点：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>可观测性</strong>：链中的其他顾问可以拦截并观察每个工具调用的迭代过程。</p>
+</li>
+<li>
+<p><strong>与聊天记忆集成</strong>：可与聊天记忆顾问无缝协作，实现对话历史管理。</p>
+</li>
+<li>
+<p><strong>可扩展性</strong>：自定义 <code>ToolExecutionEligibilityChecker</code> 和钩子方法允许对循环进行细粒度控制。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>当模型请求工具调用时，<code>ToolCallingAdvisor</code> 通过 <code>ToolCallingManager</code> 执行该工具并将结果返回给模型，循环此过程直到不再需要进一步的工具调用。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">var toolCallingAdvisor = ToolCallingAdvisor.builder()
+    .toolCallingManager(toolCallingManager)
+    .advisorOrder(BaseAdvisor.HIGHEST_PRECEDENCE + 300)
+    .build();
+
+var chatClient = ChatClient.builder(chatModel)
+    .defaultAdvisors(toolCallingAdvisor)
+    .build();
+
+String response = chatClient.prompt("What day is tomorrow?")
+    .tools(new DateTimeTools())
+    .call()
+    .content();</code></pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_configuration_options"><a class="anchor" href="#_configuration_options"></a>配置选项</h4>
+<div class="paragraph">
+<p><code>ToolCallingAdvisor.Builder</code> 支持以下配置选项：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>toolCallingManager</code>：用于执行工具调用的 <code>ToolCallingManager</code> 实例。如果未提供，则使用默认实例。</p>
+</li>
+<li>
+<p><code>advisorOrder</code>：顾问在链中应用的顺序。必须在 <code>BaseAdvisor.HIGHEST_PRECEDENCE</code> 和 <code>BaseAdvisor.LOWEST_PRECEDENCE</code> 之间。</p>
+</li>
+<li>
+<p><code>conversationHistoryEnabled</code>：控制顾问在工具调用迭代期间是否内部维护对话历史。默认值为 <code>true</code>。</p>
+</li>
+<li>
+<p><code>toolExecutionEligibilityChecker</code>：一个 <code>Function&lt;ChatResponse, Boolean&gt;</code>，用于决定是否应触发模型的下一个工具调用迭代。默认情况下会检查 <code>chatResponse.hasToolCalls()</code>。可重写此函数以应用特定于提供方的停止原因逻辑（例如，除了检查是否存在工具调用外，还需检查完成原因字段）。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_conversation_history_management"><a class="anchor" href="#_conversation_history_management"></a>对话历史管理</h4>
+<div class="paragraph">
+<p>默认情况下（<code>conversationHistoryEnabled=true</code>），<code>ToolCallingAdvisor</code> 会在工具调用迭代过程中在内部维护完整的对话历史。每次后续的 LLM 调用都会包含所有之前的消息。</p>
+</div>
+<div class="paragraph">
+<p>默认排序将内存顾问置于工具调用循环之外：<code>DEFAULT_CHAT_MEMORY_PRECEDENCE_ORDER</code> 为 <code>HIGHEST_PRECEDENCE + 200</code>，低于 <code>ToolCallingAdvisor.DEFAULT_ORDER</code>（<code>HIGHEST_PRECEDENCE + 300</code>）。内存顾问在循环开始前一次性加载历史记录，并在之后仅持久化最终的用户/助手交互。由于工具调用消息从未写入存储库，此方案可与所有 <code>ChatMemoryRepository</code> 实现兼容。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">// Default: memory advisor outside the tool-call loop; ToolCallingAdvisor manages intermediate history
+var chatMemoryAdvisor = MessageChatMemoryAdvisor.builder(chatMemory).build();
+
+var chatClient = ChatClient.builder(chatModel)
+    .defaultAdvisors(chatMemoryAdvisor)
+    .build();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>仅在将记忆顾问置于循环内部（即位于<code>ToolCallingAdvisor.DEFAULT_ORDER</code>之前）时使用<code>.disableInternalConversationHistory()</code>。随后，记忆顾问将在每次迭代中处理历史记录。这需要一个支持工具调用消息的<code>ChatMemoryRepository</code>（例如<code>InMemoryChatMemoryRepository</code>）。</p>
+</div>
+<div class="admonitionblock tip">
+<table><tbody><tr>
+<td class="icon">
+<i class="fa icon-tip" title="提示"></i>
+</td>
+<td class="content">
+<a href="https://github.com/spring-ai-community/spring-ai-session">spring-ai-session</a> 社区项目提供了一个支持会话记忆的内存实现，完全支持工具调用消息，并可与任何后端安全地在工具调用循环中使用。请参阅 <a href="https://spring-ai-community.github.io/spring-ai-session/latest-snapshot/">spring-ai-session 文档</a>。
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">var toolCallingAdvisor = ToolCallingAdvisor.builder()
+    .toolCallingManager(toolCallingManager)
+    .disableInternalConversationHistory()  // Memory advisor inside the loop handles history
+    .advisorOrder(BaseAdvisor.HIGHEST_PRECEDENCE + 300)
+    .build();
+
+var chatMemoryAdvisor = MessageChatMemoryAdvisor.builder(chatMemory)
+    .advisorOrder(BaseAdvisor.HIGHEST_PRECEDENCE + 400)  // Inside (after) ToolCallingAdvisor
+    .build();
+
+var chatClient = ChatClient.builder(chatModel)
+    .defaultAdvisors(chatMemoryAdvisor, toolCallingAdvisor)
+    .build();</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_return_direct_2"><a class="anchor" href="#_return_direct_2"></a>直接返回</h4>
+<div class="paragraph">
+<p><code>ToolCallingAdvisor</code> 支持“直接返回”功能，允许工具绕过 LLM 直接将结果返回给客户端。当工具执行的 <code>returnDirect=true</code> 时，advisor 会跳出工具调用循环并直接返回工具结果。</p>
+</div>
+<div class="paragraph">
+<p>有关<code>ToolCallingAdvisor</code>的更多详细信息，请参阅<a class="xref page" href="advisors-recursive.html#_toolcallingadvisor">递归顾问 - ToolCallingAdvisor</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_user_controlled_tool_execution"><a class="anchor" href="#_user_controlled_tool_execution"></a>用户控制的工具执行</h3>
+<div class="paragraph">
+<p>在某些情况下，您可能更希望自行控制工具的执行生命周期——例如，将中间进度流式传输到用户界面、添加自定义的可观测性机制，或在迭代之间应用条件逻辑。</p>
+</div>
+<div class="paragraph">
+<p>`ChatClient` 和 `ChatModel` 均支持用户控制的工具执行。
+在这两种情况下，您都负责在 `ChatResponse` 中检测工具调用，并使用 `ToolCallingManager` 执行它们。</p>
+</div>
+<div class="sect3">
+<h4 id="_with_chatclient"><a class="anchor" href="#_with_chatclient"></a>使用 ChatClient</h4>
+<div class="paragraph">
+<p>在使用 <code>ChatClient</code> 时，可通过调用 <code>AdvisorParams.toolCallingAdvisorAutoRegister(false)</code> 禁用单次调用的自动注册 <code>ToolCallingAdvisor</code>，然后自行驱动工具调用循环。</p>
+</div>
+<div class="paragraph">
+<p>以下示例展示了通过 `<code>call()</code>` 路径实现的用户控制工具执行：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatClient chatClient = ...
+ToolCallingManager toolCallingManager = ToolCallingManager.builder().build();
+
+ToolCallback[] tools = ToolCallbacks.from(new WeatherTools());
+ChatOptions chatOptions = ToolCallingChatOptions.builder()
+    .toolCallbacks(tools)
+    .build();
+
+String question = "What is the weather in Amsterdam and Paris?";
+
+// ToolCallingAdvisor is disabled — no tool loop runs automatically
+ChatClientResponse response = chatClient.prompt()
+    .user(question)
+    .options(chatOptions)
+    .advisors(AdvisorParams.toolCallingAdvisorAutoRegister(false))
+    .call()
+    .chatClientResponse();
+
+Prompt prompt = new Prompt(List.of(new UserMessage(question)), chatOptions);
+
+// Drive the tool-call loop manually
+while (response.chatResponse() != null &amp;&amp; response.chatResponse().hasToolCalls()) {
+    ToolExecutionResult result = toolCallingManager.executeToolCalls(prompt, response.chatResponse());
+    prompt = new Prompt(result.conversationHistory(), chatOptions);
+    response = chatClient.prompt()
+        .messages(result.conversationHistory())
+        .options(chatOptions)
+        .advisors(AdvisorParams.toolCallingAdvisorAutoRegister(false))
+        .call()
+        .chatClientResponse();
+}
+
+System.out.println(response.chatResponse().getResult().getOutput().getText());</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>相同的模式也适用于流式 API。  
+由于工具调用跨越多个流块，因此在检查工具调用之前，必须使用 <code>ChatClientMessageAggregator</code> 对每个流式调用进行聚合。  
+每次迭代产生的流块 <code>Flux</code> 可以在聚合过程中转发给订阅者（例如 SSE 端点），从而让您完全控制每一步中发射的内容：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatClient chatClient = ...
+ToolCallingManager toolCallingManager = ToolCallingManager.builder().build();
+
+ToolCallback[] tools = ToolCallbacks.from(new WeatherTools());
+ChatOptions chatOptions = ToolCallingChatOptions.builder()
+    .toolCallbacks(tools)
+    .build();
+
+String question = "What is the weather in Amsterdam and Paris?";
+Prompt prompt = new Prompt(List.of(new UserMessage(question)), chatOptions);
+
+AtomicReference&lt;ChatClientResponse&gt; ref = new AtomicReference&lt;&gt;();
+new ChatClientMessageAggregator().aggregateChatClientResponse(
+    chatClient.prompt()
+        .messages(prompt.getInstructions())
+        .options(chatOptions)
+        .advisors(AdvisorParams.toolCallingAdvisorAutoRegister(false))
+        .stream()
+        .chatClientResponse(),
+    ref::set
+).blockLast();
+
+ChatClientResponse response = ref.get();
+
+while (response != null &amp;&amp; response.chatResponse() != null &amp;&amp; response.chatResponse().hasToolCalls()) {
+    ToolExecutionResult result = toolCallingManager.executeToolCalls(prompt, response.chatResponse());
+    prompt = new Prompt(result.conversationHistory(), chatOptions);
+
+    ref.set(null);
+    new ChatClientMessageAggregator().aggregateChatClientResponse(
+        chatClient.prompt()
+            .messages(prompt.getInstructions())
+            .options(chatOptions)
+            .advisors(AdvisorParams.toolCallingAdvisorAutoRegister(false))
+            .stream()
+            .chatClientResponse(),
+        ref::set
+    ).blockLast();
+    response = ref.get();
+}
+
+System.out.println(response.chatResponse().getResult().getOutput().getText());</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_with_chatmodel"><a class="anchor" href="#_with_chatmodel"></a>使用 ChatModel</h4>
+<div class="paragraph">
+<p>使用 <code>ChatModel</code> 驱动工具调用循环时，请在链中直接调用它（不使用 <code>ToolCallingAdvisor</code>），并通过 <code>ToolCallingManager</code> 执行工具调用。</p>
+</div>
+<div class="admonitionblock note">
+<table><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+在选择用户控制的工具执行方式时，我们建议使用 <code>ToolCallingManager</code> 来管理工具调用操作。这样，您可以利用 Spring AI 为工具执行提供的内置支持。不过，您也可以自行实现工具执行逻辑。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>以下示例展示了用户控制工具执行方法的最小化实现：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatModel chatModel = ...
+ToolCallingManager toolCallingManager = ToolCallingManager.builder().build();
+
+ChatOptions chatOptions = ToolCallingChatOptions.builder()
+    .toolCallbacks(ToolCallbacks.from(new CustomerTools()))
+    .build();
+Prompt prompt = new Prompt("Tell me more about the customer with ID 42", chatOptions);
+
+ChatResponse chatResponse = chatModel.call(prompt);
+
+while (chatResponse.hasToolCalls()) {
+    ToolExecutionResult toolExecutionResult = toolCallingManager.executeToolCalls(prompt, chatResponse);
+
+    prompt = new Prompt(toolExecutionResult.conversationHistory(), chatOptions);
+
+    chatResponse = chatModel.call(prompt);
+}
+
+System.out.println(chatResponse.getResult().getOutput().getText());</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>相同的模式也适用于流式 API。由于工具调用会跨越多个流块，因此在使用 `<code>MessageAggregator` 检查工具调用之前，必须先对每个流式调用进行聚合：</code></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatModel chatModel = ...
+ToolCallingManager toolCallingManager = ToolCallingManager.builder().build();
+
+ChatOptions chatOptions = ToolCallingChatOptions.builder()
+    .toolCallbacks(ToolCallbacks.from(new CustomerTools()))
+    .build();
+Prompt prompt = new Prompt("Tell me more about the customer with ID 42", chatOptions);
+
+AtomicReference&lt;ChatResponse&gt; aggregatedResponseRef = new AtomicReference&lt;&gt;();
+new MessageAggregator()
+    .aggregate(chatModel.stream(prompt), aggregatedResponseRef::set)
+    .collectList().block();
+
+while (aggregatedResponseRef.get().hasToolCalls()) {
+    ToolExecutionResult toolExecutionResult = toolCallingManager.executeToolCalls(prompt, aggregatedResponseRef.get());
+
+    prompt = new Prompt(toolExecutionResult.conversationHistory(), chatOptions);
+
+    aggregatedResponseRef.set(null);
+    new MessageAggregator()
+        .aggregate(chatModel.stream(prompt), aggregatedResponseRef::set)
+        .collectList().block();
+}
+
+System.out.println(aggregatedResponseRef.get().getResult().getOutput().getText());</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>接下来的示例展示了用户控制的工具执行方法与 `<code>ChatMemory` API 的用法相结合的最小化实现：</code></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ToolCallingManager toolCallingManager = DefaultToolCallingManager.builder().build();
+ChatMemory chatMemory = MessageWindowChatMemory.builder().build();
+String conversationId = UUID.randomUUID().toString();
+
+ChatOptions chatOptions = ToolCallingChatOptions.builder()
+    .toolCallbacks(ToolCallbacks.from(new MathTools()))
+    .build();
+Prompt prompt = new Prompt(
+        List.of(new SystemMessage("You are a helpful assistant."), new UserMessage("What is 6 * 8?")),
+        chatOptions);
+chatMemory.add(conversationId, prompt.getInstructions());
+
+Prompt promptWithMemory = new Prompt(chatMemory.get(conversationId), chatOptions);
+ChatResponse chatResponse = chatModel.call(promptWithMemory);
+chatMemory.add(conversationId, chatResponse.getResult().getOutput());
+
+while (chatResponse.hasToolCalls()) {
+    ToolExecutionResult toolExecutionResult = toolCallingManager.executeToolCalls(promptWithMemory,
+            chatResponse);
+    chatMemory.add(conversationId, toolExecutionResult.conversationHistory()
+        .get(toolExecutionResult.conversationHistory().size() - 1));
+    promptWithMemory = new Prompt(chatMemory.get(conversationId), chatOptions);
+    chatResponse = chatModel.call(promptWithMemory);
+    chatMemory.add(conversationId, chatResponse.getResult().getOutput());
+}
+
+UserMessage newUserMessage = new UserMessage("What did I ask you earlier?");
+chatMemory.add(conversationId, newUserMessage);
+
+ChatResponse newResponse = chatModel.call(new Prompt(chatMemory.get(conversationId)));</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_exception_handling"><a class="anchor" href="#_exception_handling"></a>异常处理</h3>
+<div class="paragraph">
+<p>当工具调用失败时，异常会作为<code>ToolExecutionException</code>进行传播，可以捕获该异常以处理错误。  
+可以使用<code>ToolExecutionExceptionProcessor</code>来处理<code>ToolExecutionException</code>，其结果有两种：要么生成一条错误消息返回给 AI 模型，要么抛出异常由调用方处理。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@FunctionalInterface
+public interface ToolExecutionExceptionProcessor {
+
+	/**
+	 * Convert an exception thrown by a tool to a String that can be sent back to the AI
+	 * model or throw an exception to be handled by the caller.
+	 */
+	String process(ToolExecutionException exception);
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>如果您正在使用任何 Spring AI Spring Boot Starter，<code>DefaultToolExecutionExceptionProcessor</code> 是 <code>ToolExecutionExceptionProcessor</code> 接口的自动配置实现。默认情况下，<code>RuntimeException</code> 的错误消息会被发送回模型，而受检异常和 Error（例如 <code>IOException</code>、<code>OutOfMemoryError</code>）则始终被抛出。<code>DefaultToolExecutionExceptionProcessor</code> 的构造函数允许您将 <code>alwaysThrow</code> 属性设置为 <code>true</code> 或 <code>false</code>。如果设置为 <code>true</code>，将抛出异常而不是将错误消息发送回模型。</p>
+</div>
+<div class="paragraph">
+<p>您可以使用 `<code>`spring.ai.tools.throw-exception-on-error</code>` 属性来控制 `<code>DefaultToolExecutionExceptionProcessor</code>` Bean 的行为：</p>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 60%;"/>
+<col style="width: 30%;"/>
+<col style="width: 10%;"/>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Property</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.tools.throw-exception-on-error</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">如果为<code>true</code>，工具调用错误将作为异常抛出，由调用者进行处理。如果为<code>false</code>，错误将被转换为消息并返回给 AI 模型，使其能够处理该错误并作出响应。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>false</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Bean
+ToolExecutionExceptionProcessor toolExecutionExceptionProcessor() {
+    return new DefaultToolExecutionExceptionProcessor(true);
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+如果您自定义了 <code>ToolCallback</code> 实现，请确保在工具执行逻辑的 <code>call()</code> 方法中发生错误时抛出 <code>ToolExecutionException</code>。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><code>ToolExecutionExceptionProcessor</code> 由默认的 <code>ToolCallingManager</code>（即 <code>DefaultToolCallingManager</code>）内部使用，用于处理工具执行期间的异常。有关工具执行生命周期的更多详细信息，请参阅<a href="#_tool_execution">工具执行</a>。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tool_resolution"><a class="anchor" href="#_tool_resolution"></a>工具解析</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>向模型传递工具的主要方法是在调用<code>ChatClient</code>或<code>ChatModel</code>时提供<code>ToolCallback</code>(s)，并采用<a href="#_methods_as_tools">方法作为工具</a>和<a href="#_functions_as_tools">函数作为工具</a>中描述的任一策略。</p>
+</div>
+<div class="paragraph">
+<p>然而，Spring AI 也支持在运行时通过<code>ToolCallbackResolver</code>接口动态解析工具。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public interface ToolCallbackResolver {
+
+	/**
+	 * Resolve the {@link ToolCallback} for the given tool name.
+	 */
+	@Nullable
+	ToolCallback resolve(String toolName);
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>在使用此方法时，<code>ToolCallbackResolver</code> 实现负责将工具名称解析为对应的 <code>ToolCallback</code> 实例。</p>
+</div>
+<div class="paragraph">
+<p>默认情况下，Spring AI 依赖一个<code>StaticToolCallbackResolver</code>，该解析器从静态的<code>ToolCallback</code>实例列表中解析工具。在使用 Spring Boot 自动配置时，该解析器会自动与应用程序上下文中定义的所有类型为<code>ToolCallback</code>的 Bean 进行配置。</p>
+</div>
+<div class="paragraph">
+<p>如果您依赖 Spring Boot 自动配置，可以通过提供自定义的 `<code>ToolCallbackResolver` Bean 来自定义解析逻辑。</code></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Bean
+ToolCallbackResolver toolCallbackResolver(List&lt;ToolCallback&gt; toolCallbacks) {
+    return new StaticToolCallbackResolver(toolCallbacks);
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><code>ToolCallbackResolver</code> 由 <code>ToolCallingManager</code> 在内部使用，用于在运行时动态解析工具，同时支持<a href="#_advisor_controlled_tool_execution_with_toolcallingadvisor">借助 ToolCallingAdvisor 实现的顾问控制工具执行</a>和<a href="#_user_controlled_tool_execution">用户控制工具执行</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="tool-argument-augmentation"><a class="anchor" href="#tool-argument-augmentation"></a>工具参数增强</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Spring AI 提供了一个用于<strong>动态增强工具输入模式</strong>的实用工具，可添加额外参数。这使得能够从模型中捕获额外信息（例如推理过程或元数据），而无需修改底层工具实现。</p>
+</div>
+<div class="paragraph">
+<p>常见用例包括：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>内部思考/推理</strong>：在执行工具之前，捕获模型的逐步推理过程。</p>
+</li>
+<li>
+<p><strong>记忆增强</strong>：提取洞察并存储到长期记忆中</p>
+</li>
+<li>
+<p><strong>分析与追踪</strong>：收集元数据、用户意图或使用模式</p>
+</li>
+<li>
+<p><strong>多智能体协调</strong>：传递智能体标识符或协调信号</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_quick_start_2"><a class="anchor" href="#_quick_start_2"></a>快速开始</h3>
+<div class="paragraph">
+<p>将<strong>增强参数</strong>定义为 Java 记录：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public record AgentThinking(
+    @ToolParam(description = "Your reasoning for calling this tool", required = true)
+    String innerThought,
+
+    @ToolParam(description = "Confidence level (low, medium, high)", required = false)
+    String confidence
+) {}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>使用 <code>AugmentedToolCallbackProvider</code> 包装您的工具：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">AugmentedToolCallbackProvider&lt;AgentThinking&gt; provider = AugmentedToolCallbackProvider
+    .&lt;AgentThinking&gt;builder()
+    .toolObject(new MyTools())  // Your @Tool annotated class
+    .argumentType(AgentThinking.class)
+    .argumentConsumer(event -&gt; {
+        AgentThinking thinking = event.arguments();
+        log.info("Tool: {} | Reasoning: {}", event.toolDefinition().name(), thinking.innerThought());
+    })
+    .removeExtraArgumentsAfterProcessing(true)
+    .build();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>与 ChatClient 配合使用：</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">ChatClient chatClient = ChatClient.builder(chatModel)
+    .defaultTools(provider)
+    .build();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>LLM 会看到包含您新增字段的增强模式。您的消费者将收到 `<code>AgentThinking</code>` 记录，而原始工具仅接收其预期的参数。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_core_components"><a class="anchor" href="#_core_components"></a>核心组件</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><code>AugmentedToolCallbackProvider&lt;T&gt;</code> - 封装工具对象或提供者，将所有工具增强为指定的 Record 类型。</p>
+</li>
+<li>
+<p><code>AugmentedToolCallback&lt;T&gt;</code> - 封装单个 <code>ToolCallback</code> 实例</p>
+</li>
+<li>
+<p><code>AugmentedArgumentEvent&lt;T&gt;</code> - 包含供消费者使用的 <code>toolDefinition()</code>、<code>rawInput()</code> 和 <code>arguments()</code></p>
+</li>
+<li>
+<p><code>ToolInputSchemaAugmenter</code> - 用于模式操作的底层工具</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_configuration"><a class="anchor" href="#_configuration"></a>Configuration</h3>
+<div class="paragraph">
+<p>`removeExtraArgumentsAfterProcessing` 选项控制是否在处理后将增强后的参数传递给原始工具：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>true</code>（默认值）- 在调用工具之前移除增强参数</p>
+</li>
+<li>
+<p><code>false</code> - 保留输入中的增强参数（如果工具可以忽略额外字段）</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_observability"><a class="anchor" href="#_observability"></a>Observability</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>工具调用支持可观测性，通过 spring.ai.tool 观察指标来测量完成时间并传播追踪信息。请参阅<a class="xref page" href="../observability/index.html#_tool_calling">工具调用可观测性</a>。</p>
+</div>
+<div class="paragraph">
+<p>可选地，Spring AI 可以将工具调用参数和结果导出为 Span 属性，但出于敏感性考虑默认处于禁用状态。详情： <a class="xref page" href="../observability/index.html#_tool_call_arguments_and_result_data">工具调用参数与结果数据</a>。</p>
+</div>
+<div class="sect2">
+<h3 id="_logging"><a class="anchor" href="#_logging"></a>Logging</h3>
+<div class="paragraph">
+<p>工具调用功能的所有主要操作均在<code>DEBUG</code>级别记录日志。您可以通过将<code>org.springframework.ai</code>包的日志级别设置为<code>DEBUG</code>来启用日志记录。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="tool-search-tool"><a class="anchor" href="#tool-search-tool"></a>工具搜索工具</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>随着 AI 代理连接到更多服务（如 Slack、GitHub、Jira、MCP 服务器），工具库迅速膨胀。
+典型的跨服务器部署在对话开始前，就可能轻松拥有 50 多个工具，消耗超过<strong>55,000 个 token</strong>。
+当模型面对 30 多个名称相似的工具时，工具选择的准确性也会下降。</p>
+</div>
+<div class="paragraph">
+<p><strong>工具搜索工具</strong>模式通过实现按需工具发现来解决此问题：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>模型最初仅接收一个搜索工具——以最小化令牌使用量。</p>
+</li>
+<li>
+<p>当需要特定能力时，模型会使用自然语言查询调用搜索工具。</p>
+</li>
+<li>
+<p>匹配工具定义会动态扩展至上下文中。</p>
+</li>
+<li>
+<p>随后，模型可以正常调用已发现的工具。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>这实现了显著的令牌节省，同时仍能访问大型工具目录。</p>
+</div>
+<div class="sect2">
+<h3 id="_how_it_works"><a class="anchor" href="#_how_it_works"></a>工作原理</h3>
+<div class="paragraph">
+<p><code>ToolSearchToolCallingAdvisor</code> 扩展了 Spring AI 的 <code>ToolCallingAdvisor</code>，以实行动态工具发现。</p>
+</div>
+<div class="paragraph">
+<p>运行时的流程如下：</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>索引</strong>——在对话开始时，所有已注册的工具都会在 <code>ToolIndex</code> 中进行索引，但<strong>不会</strong>发送给 LLM。</p>
+</li>
+<li>
+<p><strong>初始请求</strong>——仅向 LLM 发送内置的<code>toolSearchTool</code>定义。</p>
+</li>
+<li>
+<p><strong>发现调用</strong>——当 LLM 需要某种能力时，它会使用搜索查询调用<code>toolSearchTool</code>。</p>
+</li>
+<li>
+<p><strong>搜索与扩展</strong> — <code>ToolIndex</code> 查找匹配的工具；它们的定义将被添加到下一个请求中。</p>
+</li>
+<li>
+<p><strong>工具调用</strong>——LLM 能够同时看到 <code>toolSearchTool</code> 和已发现的工具定义，并可以调用实际的工具。</p>
+</li>
+<li>
+<p><strong>工具执行</strong>——执行已发现的工具，并将其结果返回给大语言模型。</p>
+</li>
+<li>
+<p><strong>响应</strong>——大语言模型利用工具结果生成最终答案。</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_installation"><a class="anchor" href="#_installation"></a>Installation</h3>
+<div class="paragraph">
+<p>使用最简化的 Spring Boot Starter 进行设置（包含 Lucene 和自动配置）：</p>
+</div>
+<div class="openblock tabs is-sync is-loading" id="_tabs_1">
+<div class="content">
+<div class="ulist tablist">
+<ul>
+<li class="tab" id="_tabs_1_maven">
+<p>Maven</p>
+</li>
+<li class="tab" id="_tabs_1_gradle">
+<p>Gradle</p>
+</li>
+</ul>
+</div>
+<div aria-labelledby="_tabs_1_maven" class="tabpanel" id="_tabs_1_maven--panel">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-ai-starter-tool-search-advisor&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+<div aria-labelledby="_tabs_1_gradle" class="tabpanel" id="_tabs_1_gradle--panel">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-gradle hljs" data-lang="gradle">dependencies {
+    implementation 'org.springframework.ai:spring-ai-starter-tool-search-advisor'
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>或直接使用库进行手动配置：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-ai-tool-search-advisor&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_quick_start_3"><a class="anchor" href="#_quick_start_3"></a>快速开始</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">// 1. Configure a ToolIndex (e.g., VectorToolIndex for semantic search)
+@Bean
+ToolIndex toolIndex(VectorStore vectorStore) {
+    return new VectorToolIndex(vectorStore);
+}
+
+// 2. Create the advisor
+var smartToolRetrieverAdvisor = ToolSearchToolCallingAdvisor.builder()
+    .toolIndex(toolIndex)
+    .maxResults(5)
+    .build();
+
+// 3. Use with ChatClient — tools are registered but NOT sent to the LLM initially
+ChatClient chatClient = ChatClient.builder(chatModel)
+    .defaultTools(new MyTools())
+    .defaultAdvisors(smartToolRetrieverAdvisor)
+    .build();
+
+// 4. Make requests — tools are discovered on-demand
+String answer = chatClient.prompt("What's the weather in Amsterdam?")
+    .call()
+    .content();</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_search_strategies"><a class="anchor" href="#_search_strategies"></a>搜索策略</h3>
+<div class="paragraph">
+<p>`ToolIndex` 接口抽象了搜索实现。  
+开箱即用提供了三种策略：</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;"/>
+<col style="width: 40%;"/>
+<col style="width: 40%;"/>
+</colgroup>
+<thead><tr>
+<th class="tableblock halign-left valign-top">策略</th>
+<th class="tableblock halign-left valign-top">实现方式</th>
+<th class="tableblock halign-left valign-top">最佳适用场景</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Semantic</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>VectorToolIndex</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">自然语言查询，模糊匹配</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Keyword</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>LuceneToolIndex</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">精确术语匹配，已知工具名称</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Regex</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RegexToolIndex</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">工具名称模式（<code>get_*_data</code>）</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect3">
+<h4 id="_vectortoolindex_semantic"><a class="anchor" href="#_vectortoolindex_semantic"></a>VectorToolIndex (Semantic)</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Bean
+ToolIndex vectorToolIndex(VectorStore vectorStore) {
+    return new VectorToolIndex(vectorStore);
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>采用基于嵌入的相似性搜索。最适合用户用自然语言描述其需求的场景。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_lucenetoolindex_keyword"><a class="anchor" href="#_lucenetoolindex_keyword"></a>LuceneToolIndex (Keyword)</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Bean
+ToolIndex luceneToolIndex() {
+    return new LuceneToolIndex();        // default threshold of 0.25
+    // return new LuceneToolIndex(0.4f); // custom minimum score threshold
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>使用 Apache Lucene 进行基于关键词的搜索。对于精确术语匹配，快速且高效。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_regextoolindex_pattern"><a class="anchor" href="#_regextoolindex_pattern"></a>RegexToolIndex (Pattern)</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Bean
+ToolIndex regexToolIndex() {
+    return new RegexToolIndex();
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>使用正则表达式模式匹配。当工具名称遵循已知的命名约定（例如 `<code>get_*</code>` 或 `<code><strong><em>database</em></strong></code>`）时非常有用。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_configuration_2"><a class="anchor" href="#_configuration_2"></a>Configuration</h3>
+<div class="paragraph">
+<p><code>ToolSearchToolCallingAdvisor.Builder</code> 提供以下选项：</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;"/>
+<col style="width: 33.3333%;"/>
+<col style="width: 33.3334%;"/>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Option</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>toolIndex(ToolIndex)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">要使用的搜索实现。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Required</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>maxResults(Integer)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">每次搜索返回的最大工具引用数。当为<code>null</code>时，由 LLM 决定（受 5 个工具描述提示的引导）。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>null</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>systemMessageSuffix(String)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">附加到系统消息中的自定义提示后缀，用于指导模型如何使用<code>toolSearchTool</code>。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">内置模板</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>referenceToolNameAccumulation(boolean)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">当为<code>true</code>时，会累积并注入所有先前搜索调用中发现的工具名称；当为<code>false</code>时，仅使用最新的搜索结果。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>sessionIdKeyName(String)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">用于查找会话/会话 ID 的上下文键。如果您的应用程序将会话 ID 存储在自定义键下，请更改此设置。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>"chat_memory_conversation_id"</code> (<code>ChatMemory.CONVERSATION_ID</code>)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>evictionStrategy(ToolIndexEvictionStrategy)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">确定何时释放会话工具索引。请参阅下方的<a href="#_index_eviction">索引驱逐</a>。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>LruEvictionStrategy(1000)</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>advisorOrder(int)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">该顾问在顾问链中的位置。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>HIGHEST_PRECEDENCE + 300</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_toolindex_api"><a class="anchor" href="#_toolindex_api"></a>工具索引 API</h3>
+<div class="paragraph">
+<p>`ToolIndex` 接口及其配套类型（`ToolSearchRequest`、`ToolSearchResponse`、`ToolReference`）位于 `spring-ai-tool-search-tool` 模块的 `org.springframework.ai.tool.toolsearch` 包中。该模块还提供了内置的索引实现（`LuceneToolIndex`、`VectorToolIndex`、`RegexToolIndex`）。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.ai&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-ai-tool-search-tool&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public interface ToolIndex {
+    void indexTool(String sessionId, ToolReference toolReference);
+    void indexTools(String sessionId, List&lt;ToolReference&gt; toolReferences); // default: loops over indexTool
+    ToolSearchResponse search(ToolSearchRequest request);
+    void clearIndex(String sessionId);
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>每次调用均通过 <code>sessionId</code> 进行作用域限定，从而确保并发对话之间的工具索引相互隔离。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_index_eviction"><a class="anchor" href="#_index_eviction"></a>索引驱逐</h3>
+<div class="paragraph">
+<p>默认情况下（<code>LruEvictionStrategy(1000)</code>），最多保留 1,000 个活跃会话，当达到上限时，会淘汰最近最少使用的会话。  
+调用 <code>advisor.evictSession(sessionId)</code> 可主动释放某个会话（例如在用户登出时）。  
+提供了五种内置策略：</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 40%;"/>
+<col style="width: 60%;"/>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Strategy</th>
+<th class="tableblock halign-left valign-top">Behaviour</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>LruEvictionStrategy(maxSessions)</code> (<strong>default</strong>)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">当活动会话数超过 `<code>maxSessions</code>` 时，驱逐最近最少使用的会话。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>NeverEvictStrategy.INSTANCE</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">永远不会自动驱逐；索引会一直保留，直到显式调用<code>evictSession()</code>。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>AlwaysEvictStrategy.INSTANCE</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">在每次请求之前清除会话的索引，强制每轮进行完整重新索引。适用于测试或工具集在每次请求时发生变化的场景。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>TtlEvictionStrategy(duration)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">驱逐最后访问时间超过给定TTL的会话。在每次请求时惰性评估。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>CompositeEvictionStrategy(strategies…​)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">委托给多个策略，如果<em>任何</em>一个委托请求驱逐会话，则执行驱逐。</p></td>
+</tr>
+</tbody>
+</table>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">// Default: LRU cap of 1000 sessions (no configuration needed)
+var advisor = ToolSearchToolCallingAdvisor.builder()
+    .toolIndex(toolIndex)
+    .build();
+
+// Never evict — manage session lifetime yourself
+ToolIndexEvictionStrategy eviction = NeverEvictStrategy.INSTANCE;
+
+// Always evict — re-index every request (useful for testing)
+ToolIndexEvictionStrategy eviction = AlwaysEvictStrategy.INSTANCE;
+
+// Evict least-recently-used session when more than 200 are active
+ToolIndexEvictionStrategy eviction = new LruEvictionStrategy(200);
+
+// Evict sessions idle for more than 30 minutes
+ToolIndexEvictionStrategy eviction = new TtlEvictionStrategy(Duration.ofMinutes(30));
+
+// Combine: TTL + LRU cap
+ToolIndexEvictionStrategy eviction = new CompositeEvictionStrategy(
+    new TtlEvictionStrategy(Duration.ofMinutes(30)),
+    new LruEvictionStrategy(200));
+
+var advisor = ToolSearchToolCallingAdvisor.builder()
+    .toolIndex(toolIndex)
+    .evictionStrategy(eviction)
+    .build();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>驱逐操作在每次请求时惰性评估——无需后台线程。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_when_to_use"><a class="anchor" href="#_when_to_use"></a>何时使用</h3>
+<div class="paragraph">
+<p><strong>合身：</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>系统中有 10 个或更多工具。</p>
+</li>
+<li>
+<p>工具定义消耗的令牌数已超过 10K。</p>
+</li>
+<li>
+<p>构建由多个服务器支持的 MCP 驱动系统。</p>
+</li>
+<li>
+<p>在使用大型工具集时，遇到工具选择准确性问题。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>传统方法可能更好：</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>小型工具库（少于 10 个工具）。</p>
+</li>
+<li>
+<p>所有工具在每次会话中都会频繁使用。</p>
+</li>
+<li>
+<p>工具定义非常紧凑。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_spring_boot_auto_configuration"><a class="anchor" href="#_spring_boot_auto_configuration"></a>Spring Boot 自动配置</h3>
+<div class="paragraph">
+<p><code>spring-ai-starter-tool-search-advisor</code> 启动器提供了零样板配置。只需设置一个属性即可启用：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties">spring.ai.chat.client.tool-search-advisor.enabled=true</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>启用后，自动配置会注册一个 `<code>ToolSearchToolCallingAdvisor.Builder</code>` Bean，该 Bean 会透明地替换默认的 `<code>ToolCallingAdvisor`——无需修改任何代码。此外，除非应用程序显式声明了某个 Bean，否则它还会自动注册一个 `<code>ToolIndex</code>` Bean。</code></p>
+</div>
+<div class="sect3">
+<h4 id="_toolindex_auto_selection"><a class="anchor" href="#_toolindex_auto_selection"></a>工具索引自动选择</h4>
+<div class="paragraph">
+<p>将 `<code>spring.ai.chat.client.tool-search-advisor.tool-index-type</code>` 设置为选择实现：</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;"/>
+<col style="width: 40%;"/>
+<col style="width: 40%;"/>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Value</th>
+<th class="tableblock halign-left valign-top">Implementation</th>
+<th class="tableblock halign-left valign-top">Requirements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>regex</code> (<strong>default</strong>)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>RegexToolIndex</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">无需额外依赖</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>lucene</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>LuceneToolIndex</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">classpath 中包含 org.apache.lucene:lucene-core（已包含在 starter 中）</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>vector</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>VectorToolIndex</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">应用程序上下文中的 <code>VectorStore</code> 圈豆</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>应用程序声明的自定义 <code>ToolIndex</code> 圈始终具有最高优先级。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_configuration_properties_reference"><a class="anchor" href="#_configuration_properties_reference"></a>配置属性参考</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;"/>
+<col style="width: 50%;"/>
+<col style="width: 16.6667%;"/>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Property</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.client.tool-search-advisor.enabled</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">启用顾问。当设置为`true`时，将替换默认的 `<code>ToolCallingAdvisor</code>`。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>false</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.client.tool-search-advisor.tool-index-type</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">要使用的 ToolIndex 实现：<code>regex</code>、<code>lucene</code> 或 <code>vector</code>。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>regex</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.client.tool-search-advisor.max-results</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">每次搜索调用返回的最大工具引用数。<code>null</code> 使用内置默认值。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>null</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.client.tool-search-advisor.system-message-suffix</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">附加到系统消息的自定义提示后缀。<code>null</code> 使用内置模板。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>null</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.client.tool-search-advisor.reference-tool-name-accumulation</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">在单次对话中，汇总所有搜索调用中发现的工具名称。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>true</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.client.tool-search-advisor.session-id-key-name</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">承载会话/会话 ID 的顾问上下文键。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>"chat_memory_conversation_id"</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.client.tool-search-advisor.advisor-order</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">该顾问在顾问链中的位置。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>HIGHEST_PRECEDENCE + 300</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.client.tool-search-advisor.eviction.lru-max-sessions</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LRU 驱逐策略保留的最大活跃会话数。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>1000</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.client.tool-search-advisor.eviction.ttl</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">空闲会话的生存时间。设置后，将使用复合的 LRU+TTL 策略。接受一个 `<code>java.time.Duration</code>` 字符串（例如 `<code>30m</code>`、`<code>1h</code>`）。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>null</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>spring.ai.chat.client.tool-search-advisor.lucene.min-score-threshold</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">包含命中的最小 Lucene 分数。当 `<code>tool-index-type=lucene</code>` 时适用。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0.25</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>示例——带有自定义阈值的 Lucene：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties">spring.ai.chat.client.tool-search-advisor.enabled=true
+spring.ai.chat.client.tool-search-advisor.tool-index-type=lucene
+spring.ai.chat.client.tool-search-advisor.lucene.min-score-threshold=0.4
+spring.ai.chat.client.tool-search-advisor.eviction.ttl=30m</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>示例——向量搜索（需要 <code>VectorStore</code> 类型的 Bean，例如来自 <code>spring-ai-starter-vector-store-pgvector</code>）：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-properties hljs" data-lang="properties">spring.ai.chat.client.tool-search-advisor.enabled=true
+spring.ai.chat.client.tool-search-advisor.tool-index-type=vector</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nav class="pagination"><span class="prev"><a href="chat-memory.html">对话记忆</a></span>
+<span class="next"><a href="mcp/mcp-overview.html">模型上下文协议 (MCP)</a></span></nav>
+</article>  </div>
+</main>
+<div aria-hidden="true" class="modal micromodal-slide" id="modal-versions">
+    <div class="modal__overlay" data-micromodal-close="" tabindex="-1">
+        <div aria-modal="true" class="modal__container" role="dialog">
+            <main class="modal__content" id="modal-versions-content">
+              <button class="modal-versions-close" data-micromodal-close="">
+                <svg height="28px" viewbox="0 0 32 32" width="28px" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1h{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title></title><g id="cross"><line class="cls-1h" x1="7" x2="25" y1="7" y2="25"></line><line class="cls-1h" x1="7" x2="25" y1="25" y2="7"></line></g></svg>
+              </button>
+              <div class="colset">
+                <div class="col-left">
+
+                  <ul class="nav-versions">
+                      <li class="component">
+                        <div><a class="title" href="../index.html">Spring AI</a></div>                        <div class="version-item is-active">
+                          <div>
+                            <button class="version-toggle" type="button">
+                              <span></span>
+                              Stable
+                            </button>
+                          </div>
+                          <ul class="versions">
+  <li class="version">
+    <a href="../index.html">
+      2.0.0
+    </a>
+  </li>
+</ul>                        </div>
+                        
+                      </li>
+                  </ul>
+                </div>
+                <div class="col-right"><ul class="projects">
+<li>
+    相关 Spring 文档
+    <ul class="projects-list">
+</ul>
+</li><a href="../spring-projects.html">所有文档...</a>
+</ul></div>
+              </div>
+            </main>
+        </div>
+    </div>
+</div>
+
+</div>
+<footer class="footer flex">
+    <div id="spring-links flex">
+        <img alt="Spring" id="springlogo" src="../_/img/spring-logo.svg"/>
+        <p class="smallest antialiased">版权所有 © 2005 - <script>var d = new Date(); document.write(d.getFullYear());</script> Broadcom。保留所有权利。“Broadcom”指 Broadcom Inc. 及其/或其子公司。<br/><a href="https://www.vmware.com/help/legal.html">使用条款</a> • <a href="https://www.vmware.com/help/privacy.html" rel="noopener noreferrer">隐私政策</a> • <a href="https://spring.io/trademarks">商标指南</a> <span id="thank-you-mobile">• <a href="https://spring.io/thank-you">致谢</a></span> • <a href="https://www.vmware.com/help/privacy/california-privacy-rights.html">您的加州隐私权利</a> • <a class="ot-sdk-show-settings">Cookie 设置</a> <span id="teconsent"></span></p>
+        <p class="smallest antialiased has-gray-text">Apache®、Apache Tomcat®、Apache Kafka®、Apache Cassandra™ 和 Apache Geode™ 是 Apache 软件基金会在美国和其他/或某些国家的商标或注册商标。Java™、Java™ SE、Java™ EE 和 OpenJDK™ 是 Oracle 公司和/或其关联公司的商标。Kubernetes® 是 Linux 基金会在美国和其他/或某些国家的注册商标。Linux® 是 Linus Torvalds 在美国和其他/或某些国家的注册商标。Windows® 和 Microsoft® Azure 是微软公司的注册商标。"AWS"和"Amazon Web Services"是 Amazon.com Inc. 或其关联公司的商标或注册商标。所有其他商标和版权均归各自所有者所有，仅用于说明目的。其他名称可能是其各自所有者的商标。</p>
+    </div>
+    <div class="flex jc-between" id="social-icons">
+        <a href="https://www.youtube.com/user/SpringSourceDev" title="Youtube"><svg id="youtube-icon" viewbox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><circle class="cls-1" cx="20" cy="20" r="20"></circle><path class="cls-2" d="M30.91,14.53a2.89,2.89,0,0,0-2-2C27.12,12,20,12,20,12s-7.12,0-8.9.47a2.9,2.9,0,0,0-2,2A30.56,30.56,0,0,0,8.63,20a30.44,30.44,0,0,0,.46,5.47,2.89,2.89,0,0,0,2,2C12.9,28,20,28,20,28s7.12,0,8.9-.47a2.87,2.87,0,0,0,2-2A30.56,30.56,0,0,0,31.37,20,28.88,28.88,0,0,0,30.91,14.53ZM17.73,23.41V16.59L23.65,20Z"></path></svg></a>
+        <a href="https://github.com/spring-projects" title="GitHub"><svg id="github-icon" viewbox="0 0 75.93 75.93" xmlns="http://www.w3.org/2000/svg"><path class="cls-1" d="M38,0a38,38,0,1,0,38,38A38,38,0,0,0,38,0Z"></path><path class="cls-2" d="M38,15.59A22.95,22.95,0,0,0,30.71,60.3c1.15.21,1.57-.5,1.57-1.11s0-2,0-3.9c-6.38,1.39-7.73-3.07-7.73-3.07A6.09,6.09,0,0,0,22,48.86c-2.09-1.42.15-1.39.15-1.39a4.81,4.81,0,0,1,3.52,2.36c2,3.5,5.37,2.49,6.67,1.91a4.87,4.87,0,0,1,1.46-3.07c-5.09-.58-10.45-2.55-10.45-11.34a8.84,8.84,0,0,1,2.36-6.15,8.29,8.29,0,0,1,.23-6.07s1.92-.62,6.3,2.35a21.82,21.82,0,0,1,11.49,0c4.38-3,6.3-2.35,6.3-2.35a8.29,8.29,0,0,1,.23,6.07,8.84,8.84,0,0,1,2.36,6.15c0,8.81-5.37,10.75-10.48,11.32a5.46,5.46,0,0,1,1.56,4.25c0,3.07,0,5.54,0,6.29s.42,1.33,1.58,1.1A22.94,22.94,0,0,0,38,15.59Z"></path></svg></a>
+        <a href="https://twitter.com/springcentral" title="Twitter"><svg id="twitter-icon" viewbox="0 0 75.93 75.93" xmlns="http://www.w3.org/2000/svg"><circle class="cls-1" cx="37.97" cy="37.97" r="37.97"></circle><path class="cls-2" d="M55.2,22.73a15.43,15.43,0,0,1-4.88,1.91,7.56,7.56,0,0,0-5.61-2.49A7.78,7.78,0,0,0,37,30a7.56,7.56,0,0,0,.2,1.79,21.63,21.63,0,0,1-15.84-8.23,8,8,0,0,0,2.37,10.52,7.66,7.66,0,0,1-3.48-1v.09A7.84,7.84,0,0,0,26.45,41a7.54,7.54,0,0,1-2,.28A7.64,7.64,0,0,1,23,41.09a7.71,7.71,0,0,0,7.18,5.47,15.21,15.21,0,0,1-9.55,3.37,15.78,15.78,0,0,1-1.83-.11,21.41,21.41,0,0,0,11.78,3.54c14.13,0,21.86-12,21.86-22.42,0-.34,0-.68,0-1a15.67,15.67,0,0,0,3.83-4.08,14.9,14.9,0,0,1-4.41,1.24A7.8,7.8,0,0,0,55.2,22.73Z" data-name="Twitter" id="Twitter-2"></path></svg></a>
+    </div>
+</footer>
+<script src="../_/js/vendor/import.js"></script>
+<script src="../_/js/site.js"></script>
+<script async="" src="../_/js/vendor/highlight.js"></script>
+<script async="" data-sync-storage-key="docs:preferred-tab" src="../_/js/vendor/asciidoctor-tabs.js"></script>
+
+<div aria-hidden="true" class="modal micromodal-slide" id="modal-1">
+    <div class="modal__overlay" data-micromodal-close="" tabindex="-1">
+        <div aria-labelledby="modal-1-title" aria-modal="true" class="modal__container" role="dialog">
+            <main class="modal__content" id="modal-1-content">
+                <div id="searchbox"></div>
+                <div id="counter"></div>
+                <div class="search-link-box"><a class="search-link" href="../search.html">在全部 Spring 文档中搜索</a></div>
+                <div class="search-by">
+                    <a aria-label="Search by Algolia" href="https://www.algolia.com/" rel="noopener noreferrer" target="_blank">
+                        <img class="light" src="../_/img/algolia-light.svg" width="140"/>
+                        <img class="dark" src="../_/img/algolia-dark.svg" width="140"/>
+                    </a>
+                </div>
+                <div id="hits"></div>
+            </main>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
+<script crossorigin="anonymous" integrity="sha256-Lf9DrpGmcRip6OQzbcL6lnvNmoZNSKpyQX5pMlwatWE=" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.17.0/dist/algoliasearch-lite.umd.js"></script>
+<script crossorigin="anonymous" integrity="sha256-xYsZPDeNjYNTBWLvqD2Lxe98hOxcDgOHyMPfz4tVAbk=" src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.54.1/dist/instantsearch.production.min.js"></script>
+<script async="" data-api-key="c2e84f15fa630d534f1c62b1c413bb77" data-app-id="WB1FQYI187" data-index-name="springdocs" data-page-component="ai" data-page-version="2.0.0" data-stylesheet="../_/css/vendor/search.css" id="search-script" src="../_/js/vendor/search.js"></script>
+  
+
+</body></html>

@@ -1,0 +1,1266 @@
+{
+  "created_at": "2026-06-13 14:19:40",
+  "updated_at": "2026-06-13 14:19:40",
+  "stats": {
+    "total_entries": 250,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 255,
+    "entries_with_hits": 250,
+    "entries_without_hits": 0,
+    "hit_rate": 1.02,
+    "usage_percentage": 0.025
+  },
+  "items": [
+    {
+      "source": "Add the dependency to your project using Maven or Gradle.",
+      "translation": "使用 Maven 或 Gradle 将依赖添加到您的项目中。",
+      "count": 5
+    },
+    {
+      "source": "The enriched documents are returned.",
+      "translation": "已返回增强后的文档。",
+      "count": 2
+    },
+    {
+      "source": "Copyright © 2005 - <script>var d = new Date();\n        document.write(d.getFullYear());</script> Broadcom. All Rights Reserved. The term \"Broadcom\" refers to Broadcom Inc. and/or its subsidiaries.<br/><a href=\"https://www.vmware.com/help/legal.html\">Terms of Use</a> • <a href=\"https://www.vmware.com/help/privacy.html\" rel=\"noopener noreferrer\">Privacy</a> • <a href=\"https://spring.io/trademarks\">Trademark Guidelines</a> <span id=\"thank-you-mobile\">• <a href=\"https://spring.io/thank-you\">Thank you</a></span> • <a href=\"https://www.vmware.com/help/privacy/california-privacy-rights.html\">Your California Privacy Rights</a> • <a class=\"ot-sdk-show-settings\">Cookie Settings</a> <span id=\"teconsent\"></span>",
+      "translation": "版权所有 © 2005 - <script>var d = new Date(); document.write(d.getFullYear());</script> Broadcom。保留所有权利。“Broadcom”指 Broadcom Inc. 及其/或其子公司。<br/><a href=\"https://www.vmware.com/help/legal.html\">使用条款</a> • <a href=\"https://www.vmware.com/help/privacy.html\" rel=\"noopener noreferrer\">隐私政策</a> • <a href=\"https://spring.io/trademarks\">商标指南</a> <span id=\"thank-you-mobile\">• <a href=\"https://spring.io/thank-you\">致谢</a></span> • <a href=\"https://www.vmware.com/help/privacy/california-privacy-rights.html\">您的加州隐私权利</a> • <a class=\"ot-sdk-show-settings\">Cookie 设置</a> <span id=\"teconsent\"></span>",
+      "count": 1
+    },
+    {
+      "source": "The <code>TokenTextSplitter</code> is an implementation of <code>TextSplitter</code> that splits text into chunks based on token count. It supports configurable encoding types (e.g., <code>CL100K_BASE</code>, <code>P50K_BASE</code>, <code>O200K_BASE</code>) and defaults to <code>CL100K_BASE</code>.",
+      "translation": "`TokenTextSplitter` 是 `TextSplitter` 的一个实现，它根据 token 数量将文本分割成块。它支持可配置的编码类型（例如 `CL100K_BASE`、`P50K_BASE`、`O200K_BASE`），默认使用 `CL100K_BASE`。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Custom Punctuation Marks</strong>: The default punctuation marks (<code>.</code>, <code>?</code>, <code>!</code>, <code>\\n</code>) work well for English text. For other languages or specialized content, customize the punctuation marks using the builder’s <code>withPunctuationMarks()</code> method.",
+      "translation": "<strong>自定义标点符号</strong>：默认标点符号（<code>.</code>、<code>?</code>、<code>!</code>、<code>\\n</code>）适用于英文文本。对于其他语言或专业内容，可使用构建器的 <code>withPunctuationMarks()</code> 方法自定义标点符号。",
+      "count": 1
+    },
+    {
+      "source": "<code>allElements</code>:  If <code>true</code>, extracts all text from the <code>&lt;body&gt;</code> element, ignoring the <code>selector</code> (defaults to <code>false</code>).",
+      "translation": "<code>allElements</code>：如果为 <code>true</code>，则从 <code>&lt;body&gt;</code> 元素中提取所有文本，忽略 <code>selector</code>（默认为 <code>false</code>）。",
+      "count": 1
+    },
+    {
+      "source": "<code>groupByElement</code>: If <code>true</code>, creates a separate <code>Document</code> for each element matched by the <code>selector</code> (defaults to <code>false</code>).",
+      "translation": "`groupByElement`：如果为 `true`，则为每个由 `selector` 匹配的元素创建一个单独的 `Document`（默认为 `false`）。",
+      "count": 1
+    },
+    {
+      "source": "If neither <code>allElements</code> nor <code>groupByElement</code> is <code>true</code>, text from all elements matching the <code>selector</code> is joined using the <code>separator</code>.",
+      "translation": "如果 `allElements` 和 `groupByElement` 均不为 `true`，则使用 `separator` 连接所有匹配 `<code>selector</code>` 的元素中的文本。",
+      "count": 1
+    },
+    {
+      "source": "<code>includeCodeBlock</code>: When set to <code>true</code>, code blocks will be included in the same <code>Document</code> as the surrounding text. When <code>false</code>, code blocks create separate <code>Document</code> objects.",
+      "translation": "<code>includeCodeBlock</code>：当设置为 <code>true</code> 时，代码块将与周围的文本包含在同一个 <code>Document</code> 中。当设置为 <code>false</code> 时，代码块将创建独立的 <code>Document</code> 对象。",
+      "count": 1
+    },
+    {
+      "source": "<code>includeBlockquote</code>: When set to <code>true</code>, blockquotes will be included in the same <code>Document</code> as the surrounding text. When <code>false</code>, blockquotes create separate <code>Document</code> objects.",
+      "translation": "<code>includeBlockquote</code>：当设置为 <code>true</code> 时，引用块将与周围的文本包含在同一个 <code>Document</code> 中。当设置为 <code>false</code> 时，引用块会创建独立的 <code>Document</code> 对象。",
+      "count": 1
+    },
+    {
+      "source": "<code>encodingType</code>: The tokenizer encoding type to use (default: <code>CL100K_BASE</code>). Supported values include <code>CL100K_BASE</code>, <code>P50K_BASE</code>, and <code>O200K_BASE</code>.",
+      "translation": "<code>encodingType</code>：要使用的分词器编码类型（默认值：<code>CL100K_BASE</code>）。支持的值包括 <code>CL100K_BASE</code>、<code>P50K_BASE</code> 和 <code>O200K_BASE</code>。",
+      "count": 1
+    },
+    {
+      "source": "<code>punctuationMarks</code>: List of characters to use as sentence boundaries for splitting (default: <code>.</code>, <code>?</code>, <code>!</code>, <code>\\n</code>).",
+      "translation": "<punctuationMarks>：用于分割句子的标点符号列表（默认值：<code>.</code>、<code>?</code>、<code>!</code>、<code>\\n</code>）。",
+      "count": 1
+    },
+    {
+      "source": "Most <code>DocumentReader</code> and <code>DocumentWriter</code> implementations described below\nare constructed using a <code>Resource</code> or resource pattern and internally use a\n<code>DefaultResourceLoader</code> or variation of it to access storage. Care should be taken not to construct such instances using directly user supplied URLs, as there are security implications to this.",
+      "translation": "下面描述的绝大多数 <code>DocumentReader</code> 和 <code>DocumentWriter</code> 实现均基于 <code>Resource</code> 或资源模式构建，并在内部使用 <code>DefaultResourceLoader</code> 或其变体来访问存储。在构造此类实例时，切勿直接使用用户提供的 URL，因为这会带来安全风险。",
+      "count": 1
+    },
+    {
+      "source": "In this example, if the <code>JsonReader</code> is configured with <code>\"description\"</code> as the <code>jsonKeysToUse</code>, it will create <code>Document</code> objects where the content is the value of the \"description\" field for each bike in the array.",
+      "translation": "在此示例中，如果将 <code>JsonReader</code> 配置为使用 <code>\"description\"</code> 作为 <code>jsonKeysToUse</code>，它将创建 <code>Document</code> 对象，其中每个对象的 content 是数组中每辆自行车的 \"description\" 字段的值。",
+      "count": 1
+    },
+    {
+      "source": "If <code>allElements</code> is <code>true</code>, all text within the <code>&lt;body&gt;</code> is extracted into a single <code>Document</code>.",
+      "translation": "如果 <code>allElements</code> 为 <code>true</code>，则会将 <code>&lt;body&gt;</code> 内的所有文本提取到一个单独的 <code>Document</code> 中。",
+      "count": 1
+    },
+    {
+      "source": "If <code>groupByElement</code> is <code>true</code>, each element matching the <code>selector</code> creates a separate <code>Document</code>.",
+      "translation": "如果 <code>groupByElement</code> 为 <code>true</code>，则每个匹配 <code>selector</code> 的元素都会创建一个独立的 <code>Document</code>。",
+      "count": 1
+    },
+    {
+      "source": "<code>jsonMetadataGenerator</code>: An optional <code>JsonMetadataGenerator</code> to create metadata for each <code>Document</code>.",
+      "translation": "<code>jsonMetadataGenerator</code>：一个可选的 <code>JsonMetadataGenerator</code>，用于为每个 <code>Document</code> 生成元数据。",
+      "count": 1
+    },
+    {
+      "source": "<code>includeLinkUrls</code>:  If <code>true</code>, extracts absolute link URLs and adds them to the metadata (defaults to <code>false</code>).",
+      "translation": "`includeLinkUrls`：如果为 `true`，则提取绝对链接 URL 并将其添加到元数据中（默认为 `false`）。",
+      "count": 1
+    },
+    {
+      "source": "<code>metadataTags</code>:  A list of <code>&lt;meta&gt;</code> tag names to extract content from (defaults to <code>[\"description\", \"keywords\"]</code>).",
+      "translation": "`metadataTags`: 要从中提取内容的 `<meta>` 标签名称列表（默认为 `[\"description\", \"keywords\"]`）。",
+      "count": 1
+    },
+    {
+      "source": "<code>horizontalRuleCreateDocument</code>: When set to <code>true</code>, horizontal rules in the Markdown will create new <code>Document</code> objects.",
+      "translation": "<code>horizontalRuleCreateDocument</code>：当设置为 <code>true</code> 时，Markdown 中的水平线将创建新的 <code>Document</code> 对象。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Only if the total token count exceeds the chunk size</strong>, it attempts to find a suitable break point (using the configured <code>punctuationMarks</code>) after the <code>minChunkSizeChars</code>.",
+      "translation": "<strong>仅当总 token 数超过块大小时</strong>，它才会尝试在 <code>minChunkSizeChars</code> 之后寻找合适的断点（使用配置的 <code>punctuationMarks</code>）。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Extensibility</strong>: The <code>getLastPunctuationIndex(String)</code> method is <code>protected</code>, allowing subclasses to override the punctuation detection logic for specialized use cases.",
+      "translation": "<strong>可扩展性</strong>：<code>getLastPunctuationIndex(String)</code> 方法为 <code>protected</code>，允许子类针对特定用例重写标点符号检测逻辑。",
+      "count": 1
+    },
+    {
+      "source": "The <code>FileDocumentWriter</code> is a <code>DocumentWriter</code> implementation that writes the content of a list of <code>Document</code> objects into a file.",
+      "translation": "`FileDocumentWriter` 是 `DocumentWriter` 的一个实现，它将一组 `Document` 对象的内容写入文件。",
+      "count": 1
+    },
+    {
+      "source": "<code>DocumentReader</code> that implements <code>Supplier&lt;List&lt;Document&gt;&gt;</code>",
+      "translation": "实现 `Supplier<List<Document>>` 的 `<code>DocumentReader</code>`",
+      "count": 1
+    },
+    {
+      "source": "<code>DocumentTransformer</code> that implements <code>Function&lt;List&lt;Document&gt;, List&lt;Document&gt;&gt;</code>",
+      "translation": "实现 `Function<List<Document>, List<Document>>` 接口的 `DocumentTransformer`。",
+      "count": 1
+    },
+    {
+      "source": "<code>DocumentWriter</code> that implements <code>Consumer&lt;List&lt;Document&gt;&gt;</code>",
+      "translation": "实现 `Consumer<List<Document>>` 接口的 `DocumentWriter`",
+      "count": 1
+    },
+    {
+      "source": "The <code>Document</code> class content is created from PDFs, text files and other document types with the help of <code>DocumentReader</code>.",
+      "translation": "`Document` 类的内容是通过 `DocumentReader` 的帮助，从 PDF、文本文件和其他文档类型中创建的。",
+      "count": 1
+    },
+    {
+      "source": "<code>PagePdfDocumentReader</code> an implementation of <code>DocumentReader</code>",
+      "translation": "<code>PagePdfDocumentReader</code> 是 <code>DocumentReader</code> 的一个实现。",
+      "count": 1
+    },
+    {
+      "source": "<code>TokenTextSplitter</code> an implementation of <code>DocumentTransformer</code>",
+      "translation": "<code>TokenTextSplitter</code> 是 <code>DocumentTransformer</code> 的一个实现。",
+      "count": 1
+    },
+    {
+      "source": "<code>VectorStore</code> an implementation of <code>DocumentWriter</code>",
+      "translation": "<code>VectorStore</code> 是 <code>DocumentWriter</code> 的一个实现。",
+      "count": 1
+    },
+    {
+      "source": "The <code>JsonReader</code> processes JSON documents, converting them into a list of <code>Document</code> objects.",
+      "translation": "<code>JsonReader</code> 处理 JSON 文档，将其转换为 <code>Document</code> 对象的列表。",
+      "count": 1
+    },
+    {
+      "source": "<code>resource</code>: A Spring <code>Resource</code> object pointing to the JSON file.",
+      "translation": "<code>resource</code>：指向 JSON 文件的 Spring <code>Resource</code> 对象。",
+      "count": 1
+    },
+    {
+      "source": "<code>jsonKeysToUse</code>: An array of keys from the JSON that should be used as the text content in the resulting <code>Document</code> objects.",
+      "translation": "<code>jsonKeysToUse</code>：一个数组，包含应从 JSON 中提取并用作结果 <code>Document</code> 对象文本内容的键。",
+      "count": 1
+    },
+    {
+      "source": "The reader is flexible and can be adapted to various JSON structures by customizing the <code>jsonKeysToUse</code> and <code>JsonMetadataGenerator</code>.",
+      "translation": "读者具有灵活性，可以通过自定义<code>jsonKeysToUse</code>和<code>JsonMetadataGenerator</code>来适应各种JSON结构。",
+      "count": 1
+    },
+    {
+      "source": "The <code>TextReader</code> processes plain text documents, converting them into a list of <code>Document</code> objects.",
+      "translation": "`TextReader` 处理纯文本文档，将其转换为 `Document` 对象列表。",
+      "count": 1
+    },
+    {
+      "source": "<code>resource</code>: A Spring <code>Resource</code> object pointing to the text file.",
+      "translation": "<code>resource</code>：指向文本文件的 Spring <code>Resource</code> 对象。",
+      "count": 1
+    },
+    {
+      "source": "Any custom metadata added via <code>getCustomMetadata()</code> is included in the <code>Document</code>.",
+      "translation": "通过 `getCustomMetadata()` 添加的任何自定义元数据均包含在 `Document` 中。",
+      "count": 1
+    },
+    {
+      "source": "The <code>JsoupDocumentReader</code> processes HTML documents, converting them into a list of <code>Document</code> objects using the JSoup library.",
+      "translation": "<code>JsoupDocumentReader</code> 处理 HTML 文档，利用 JSoup 库将其转换为 <code>Document</code> 对象列表。",
+      "count": 1
+    },
+    {
+      "source": "The <code>JsoupDocumentReaderConfig</code> allows you to customize the behavior of the <code>JsoupDocumentReader</code>:",
+      "translation": "<code>JsoupDocumentReaderConfig</code> 允许您自定义 <code>JsoupDocumentReader</code> 的行为：",
+      "count": 1
+    },
+    {
+      "source": "<code>additionalMetadata</code>:  Allows you to add custom metadata to all created <code>Document</code> objects.",
+      "translation": "<code>additionalMetadata</code>：允许您为所有创建的 <code>Document</code> 对象添加自定义元数据。",
+      "count": 1
+    },
+    {
+      "source": "The <code>JsoupDocumentReader</code> processes the HTML content and creates <code>Document</code> objects based on the configuration:",
+      "translation": "<code>JsoupDocumentReader</code> 处理 HTML 内容，并根据配置创建 <code>Document</code> 对象：",
+      "count": 1
+    },
+    {
+      "source": "The document title, content from specified <code>&lt;meta&gt;</code> tags, and (optionally) link URLs are added to the <code>Document</code> metadata.",
+      "translation": "文档标题、指定 `<code>&lt;meta&gt;</code>` 标签的内容以及（可选的）链接 URL 会被添加到 `<code>Document</code>` 元数据中。",
+      "count": 1
+    },
+    {
+      "source": "The <code>MarkdownDocumentReader</code> processes Markdown documents, converting them into a list of <code>Document</code> objects.",
+      "translation": "<code>MarkdownDocumentReader</code> 处理 Markdown 文档，将其转换为 <code>Document</code> 对象的列表。",
+      "count": 1
+    },
+    {
+      "source": "<code>additionalMetadata</code>: Allows you to add custom metadata to all created <code>Document</code> objects.",
+      "translation": "<code>additionalMetadata</code>：允许您为所有创建的 <code>Document</code> 对象添加自定义元数据。",
+      "count": 1
+    },
+    {
+      "source": "The <code>ParagraphPdfDocumentReader</code> uses the PDF catalog (e.g. TOC) information to split the input PDF into text paragraphs and output a single <code>Document</code> per paragraph.\nNOTE: Not all PDF documents contain the PDF catalog.",
+      "translation": "<code>ParagraphPdfDocumentReader</code> 利用 PDF 目录（例如目录）信息将输入 PDF 拆分为文本段落，并为每个段落输出一个单独的 <code>Document</code>。  \n注意：并非所有 PDF 文档都包含 PDF 目录。",
+      "count": 1
+    },
+    {
+      "source": "The <code>TikaDocumentReader</code> uses Apache Tika to extract text from a variety of document formats, such as PDF, DOC/DOCX, PPT/PPTX, and HTML. For a comprehensive list of supported formats, refer to the  <a href=\"https://tika.apache.org/3.1.0/formats.html\">Tika documentation</a>.",
+      "translation": "<TikaDocumentReader>使用 Apache Tika 从多种文档格式（如 PDF、DOC/DOCX、PPT/PPTX 和 HTML）中提取文本。有关支持格式的完整列表，请参阅 <a href=\"https://tika.apache.org/3.1.0/formats.html\">Tika 文档</a>。",
+      "count": 1
+    },
+    {
+      "source": "The <code>TokenTextSplitter</code> uses the CL100K_BASE encoding from the <code>jtokkit</code> library, which is compatible with newer OpenAI models.",
+      "translation": "`TokenTextSplitter` 使用来自 `jtokkit` 库的 CL100K_BASE 编码，该编码与较新的 OpenAI 模型兼容。",
+      "count": 1
+    },
+    {
+      "source": "The content formatter (if set) from the original document is also copied to the derived chunks if <code>copyContentFormatter</code> is set to <code>true</code> (default behavior).",
+      "translation": "如果设置了原始文档的内容格式化器，并且将<code>copyContentFormatter</code>设置为<code>true</code>（默认行为），该格式化器也会被复制到派生片段中。",
+      "count": 1
+    },
+    {
+      "source": "The <code>KeywordMetadataEnricher</code> is a <code>DocumentTransformer</code> that uses a generative AI model to extract keywords from document content and add them as metadata.",
+      "translation": "<code>KeywordMetadataEnricher</code> 是一个 <code>DocumentTransformer</code>，它使用生成式人工智能模型从文档内容中提取关键词，并将其添加为元数据。",
+      "count": 1
+    },
+    {
+      "source": "Where <code>{context_str}</code> is replaced with the document content, and <code>%s</code> is replaced with the specified keyword count.",
+      "translation": "其中<code>{context_str}</code>将被文档内容替换，而<code>%s</code>将被指定的关键词数量替换。",
+      "count": 1
+    },
+    {
+      "source": "The <code>KeywordMetadataEnricher</code> requires a functioning <code>ChatModel</code> to generate keywords.",
+      "translation": "<code>KeywordMetadataEnricher</code> 需要一个功能正常的 <code>ChatModel</code> 来生成关键词。",
+      "count": 1
+    },
+    {
+      "source": "In the Builder pattern, if the <code>keywordsTemplate</code> parameter is set, the <code>keywordCount</code> parameter will be ignored.",
+      "translation": "在建造者模式中，如果设置了 `<code>keywordsTemplate</code>` 参数，则 `<code>keywordCount</code>` 参数将被忽略。",
+      "count": 1
+    },
+    {
+      "source": "The <code>SummaryMetadataEnricher</code> is a <code>DocumentTransformer</code> that uses a generative AI model to create summaries for documents and add them as metadata. It can generate summaries for the current document, as well as adjacent documents (previous and next).",
+      "translation": "<code>SummaryMetadataEnricher</code> 是一个 <code>DocumentTransformer</code>，它利用生成式 AI 模型为文档创建摘要并将其添加为元数据。它可以为当前文档以及相邻文档（前一个和后一个）生成摘要。",
+      "count": 1
+    },
+    {
+      "source": "<code>summaryTypes</code>: A list of <code>SummaryType</code> enum values indicating which summaries to generate (PREVIOUS, CURRENT, NEXT).",
+      "translation": "<code>summaryTypes</code>：一个包含 <code>SummaryType</code> 枚举值的列表，用于指示要生成哪些摘要（PREVIOUS、CURRENT、NEXT）。",
+      "count": 1
+    },
+    {
+      "source": "The first document receives a <code>next_section_summary</code> but no <code>prev_section_summary</code>.",
+      "translation": "第一个文档接收 `<code>next_section_summary</code>`，但不接收 `<code>prev_section_summary</code>`。",
+      "count": 1
+    },
+    {
+      "source": "The second document receives a <code>prev_section_summary</code> but no <code>next_section_summary</code>.",
+      "translation": "第二个文档接收 `<code>prev_section_summary</code>`，但不接收 `<code>next_section_summary</code>`。",
+      "count": 1
+    },
+    {
+      "source": "The <code>section_summary</code> of the first document matches the <code>prev_section_summary</code> of the second document.",
+      "translation": "第一个文档的 `<code>section_summary</code>` 与第二个文档的 `<code>prev_section_summary</code>` 相匹配。",
+      "count": 1
+    },
+    {
+      "source": "The <code>next_section_summary</code> of the first document matches the <code>section_summary</code> of the second document.",
+      "translation": "第一个文档的<code>next_section_summary</code>与第二个文档的<code>section_summary</code>相匹配。",
+      "count": 1
+    },
+    {
+      "source": "The <code>SummaryMetadataEnricher</code> requires a functioning <code>ChatModel</code> to generate summaries.",
+      "translation": "<code>SummaryMetadataEnricher</code> 需要一个功能正常的 <code>ChatModel</code> 来生成摘要。",
+      "count": 1
+    },
+    {
+      "source": "The ETL pipelines creates, transforms and stores <code>Document</code> instances.",
+      "translation": "ETL 管道负责创建、转换并存储 `<code>Document</code>` 实例。",
+      "count": 1
+    },
+    {
+      "source": "The <code>Document</code> class contains text, metadata and optionally additional media types like images, audio and video.",
+      "translation": "`Document` 类包含文本、元数据，以及可选的附加媒体类型，如图像、音频和视频。",
+      "count": 1
+    },
+    {
+      "source": "The ETL pipeline is composed of the following interfaces and implementations.\nDetailed ETL class diagram is shown in the <a href=\"#etl-class-diagram\">ETL Class Diagram</a> section.",
+      "translation": "ETL 管道由以下接口和实现组成。详细的 ETL 类图请参阅<a href=\"#etl-class-diagram\">ETL 类图</a>部分。",
+      "count": 1
+    },
+    {
+      "source": "The <code>JsonReader</code> provides several constructor options:",
+      "translation": "`JsonReader` 提供了多种构造函数选项：",
+      "count": 1
+    },
+    {
+      "source": "The <code>JsonReader</code> processes JSON content as follows:",
+      "translation": "<code>JsonReader</code> 处理 JSON 内容的方式如下：",
+      "count": 1
+    },
+    {
+      "source": "It extracts the content based on the specified <code>jsonKeysToUse</code>.",
+      "translation": "它根据指定的 `<code>jsonKeysToUse</code>` 提取内容。",
+      "count": 1
+    },
+    {
+      "source": "It generates metadata using the provided <code>JsonMetadataGenerator</code> (or an empty one if not provided).",
+      "translation": "它使用提供的<code>JsonMetadataGenerator</code>生成元数据（如果未提供，则使用空生成器）。",
+      "count": 1
+    },
+    {
+      "source": "It creates a <code>Document</code> object with the extracted content and metadata.",
+      "translation": "它创建一个包含提取内容和元数据的`Document` 对象。",
+      "count": 1
+    },
+    {
+      "source": "The <code>JsonReader</code> now supports retrieving specific parts of a JSON document using JSON Pointers. This feature allows you to easily extract nested data from complex JSON structures.",
+      "translation": "<code>JsonReader</code> 现在支持使用 JSON Pointer 检索 JSON 文档的特定部分。此功能可让您轻松从复杂的 JSON 结构中提取嵌套数据。",
+      "count": 1
+    },
+    {
+      "source": "<code>pointer</code>: A JSON Pointer string (as defined in RFC 6901) to locate the desired element within the JSON structure.",
+      "translation": "<code>pointer</code>：一个 JSON Pointer 字符串（根据 RFC 6901 定义），用于在 JSON 结构中定位所需元素。",
+      "count": 1
+    },
+    {
+      "source": "Returns a <code>List&lt;Document&gt;</code> containing the documents parsed from the JSON element located by the pointer.",
+      "translation": "返回一个包含由指针定位的 JSON 元素中解析出的文档的 `<code>List&lt;Document&gt;</code>`。",
+      "count": 1
+    },
+    {
+      "source": "If the pointer is invalid or points to a non-existent element, it throws an <code>IllegalArgumentException</code>.",
+      "translation": "如果指针无效或指向不存在的元素，则抛出 <code>IllegalArgumentException</code>。",
+      "count": 1
+    },
+    {
+      "source": "The <code>JsonReader</code> uses Jackson for JSON parsing.",
+      "translation": "<code>JsonReader</code> 使用 Jackson 进行 JSON 解析。",
+      "count": 1
+    },
+    {
+      "source": "If multiple keys are specified in <code>jsonKeysToUse</code>, the content will be a concatenation of the values for those keys.",
+      "translation": "如果 `<code>jsonKeysToUse</code>` 中指定了多个键，则内容将是这些键对应值的拼接结果。",
+      "count": 1
+    },
+    {
+      "source": "The <code>TextReader</code> provides two constructor options:",
+      "translation": "`TextReader` 提供两种构造函数选项：",
+      "count": 1
+    },
+    {
+      "source": "<code>resourceUrl</code>: A string representing the URL of the resource to be read.",
+      "translation": "<code>resourceUrl</code>：表示要读取的资源 URL 的字符串。",
+      "count": 1
+    },
+    {
+      "source": "<code>setCharset(Charset charset)</code>: Sets the character set used for reading the text file. Default is UTF-8.",
+      "translation": "<code>setCharset(Charset charset)</code>：设置用于读取文本文件的字符集。默认为 UTF-8。",
+      "count": 1
+    },
+    {
+      "source": "<code>getCustomMetadata()</code>: Returns a mutable map where you can add custom metadata for the documents.",
+      "translation": "`getCustomMetadata()`：返回一个可变映射，您可以在其中为文档添加自定义元数据。",
+      "count": 1
+    },
+    {
+      "source": "The <code>TextReader</code> processes text content as follows:",
+      "translation": "`TextReader` 处理文本内容的方式如下：",
+      "count": 1
+    },
+    {
+      "source": "It reads the entire content of the text file into a single <code>Document</code> object.",
+      "translation": "它将整个文本文件的内容读取到一个单一的 `<code>Document</code>` 对象中。",
+      "count": 1
+    },
+    {
+      "source": "The content of the file becomes the content of the <code>Document</code>.",
+      "translation": "文件的内容将成为 `<code>Document</code>` 的内容。",
+      "count": 1
+    },
+    {
+      "source": "Metadata is automatically added to the <code>Document</code>:",
+      "translation": "元数据会自动添加到 `<code>Document</code>`：",
+      "count": 1
+    },
+    {
+      "source": "<code>charset</code>: The character set used to read the file (default: \"UTF-8\").",
+      "translation": "<code>charset</code>：用于读取文件的字符集（默认值：\"UTF-8\"）。",
+      "count": 1
+    },
+    {
+      "source": "<code>source</code>: The filename of the source text file.",
+      "translation": "<code>source</code>：源文本文件的文件名。",
+      "count": 1
+    },
+    {
+      "source": "The <code>TextReader</code> reads the entire file content into memory, so it may not be suitable for very large files.",
+      "translation": "`TextReader` 会将整个文件内容读入内存，因此可能不适用于非常大的文件。",
+      "count": 1
+    },
+    {
+      "source": "If you need to split the text into smaller chunks, you can use a text splitter like <code>TokenTextSplitter</code> after reading the document:",
+      "translation": "如果需要将文本拆分为更小的块，可以在读取文档后使用文本分割器（如<code>TokenTextSplitter</code>）：",
+      "count": 1
+    },
+    {
+      "source": "The reader uses Spring’s <code>Resource</code> abstraction, allowing it to read from various sources (classpath, file system, URL, etc.).",
+      "translation": "读者使用 Spring 的 `<code>Resource`</code> 抽象，使其能够从多种来源（如类路径、文件系统、URL 等）读取资源。",
+      "count": 1
+    },
+    {
+      "source": "Custom metadata can be added to all documents created by the reader using the <code>getCustomMetadata()</code> method.",
+      "translation": "可以使用 `getCustomMetadata()` 方法为阅读器创建的所有文档添加自定义元数据。",
+      "count": 1
+    },
+    {
+      "source": "<code>charset</code>:  Specifies the character encoding of the HTML document (defaults to \"UTF-8\").",
+      "translation": "<code>charset</code>：指定 HTML 文档的字符编码（默认为\"UTF-8\"）。",
+      "count": 1
+    },
+    {
+      "source": "<code>selector</code>:  A JSoup CSS selector to specify which elements to extract text from (defaults to \"body\").",
+      "translation": "<code>selector</code>：用于指定要提取文本的元素的 JSoup CSS 选择器（默认为\"body\"）。",
+      "count": 1
+    },
+    {
+      "source": "<code>separator</code>:  The string used to join text from multiple selected elements (defaults to \"\\n\").",
+      "translation": "<code>separator</code>：用于连接多个选中元素文本的字符串（默认为\"\\n\"）。",
+      "count": 1
+    },
+    {
+      "source": "The <code>selector</code> determines which elements are used for text extraction.",
+      "translation": "<code>selector</code> 用于确定哪些元素将用于文本提取。",
+      "count": 1
+    },
+    {
+      "source": "The <code>MarkdownDocumentReaderConfig</code> allows you to customize the behavior of the MarkdownDocumentReader:",
+      "translation": "<code>MarkdownDocumentReaderConfig</code> 允许您自定义 MarkdownDocumentReader 的行为：",
+      "count": 1
+    },
+    {
+      "source": "The <code>PagePdfDocumentReader</code> uses Apache PdfBox library to parse PDF documents.",
+      "translation": "<code>PagePdfDocumentReader</code> 使用 Apache PdfBox 库来解析 PDF 文档。",
+      "count": 1
+    },
+    {
+      "source": "The <code>TextSplitter</code> an abstract base class that helps divides documents to fit the AI model’s context window.",
+      "translation": "`TextSplitter` 是一个抽象基类，用于帮助将文档分割以适配 AI 模型的上下文窗口。",
+      "count": 1
+    },
+    {
+      "source": "Use <code>TokenTextSplitter.builder()</code> to create instances. All constructors are deprecated in favor of the builder.",
+      "translation": "使用 `<code>TokenTextSplitter.builder()</code>` 创建实例。所有构造函数均已弃用，改用构建器模式。",
+      "count": 1
+    },
+    {
+      "source": "<code>chunkSize</code>: The target size of each text chunk in tokens (default: 800).",
+      "translation": "`chunkSize`: 每个文本块的目标 token 数（默认值：800）。",
+      "count": 1
+    },
+    {
+      "source": "<code>minChunkSizeChars</code>: The minimum size of each text chunk in characters (default: 350).",
+      "translation": "<code>minChunkSizeChars</code>：每个文本块的最小字符数（默认值：350）。",
+      "count": 1
+    },
+    {
+      "source": "<code>minChunkLengthToEmbed</code>: The minimum length of a chunk to be included (default: 5).",
+      "translation": "<code>minChunkLengthToEmbed</code>：包含该分块的最低长度（默认值：5）。",
+      "count": 1
+    },
+    {
+      "source": "<code>maxNumChunks</code>: The maximum number of chunks to generate from a text (default: 10000).",
+      "translation": "<code>maxNumChunks</code>：从文本中生成的最大块数（默认值：10000）。",
+      "count": 1
+    },
+    {
+      "source": "<code>keepSeparator</code>: Whether to keep separators (like newlines) in the chunks (default: true).",
+      "translation": "<code>keepSeparator</code>：是否保留块中的分隔符（如换行符）（默认值：true）。",
+      "count": 1
+    },
+    {
+      "source": "The <code>TokenTextSplitter</code> processes text content as follows:",
+      "translation": "`TokenTextSplitter` 处理文本内容的方式如下：",
+      "count": 1
+    },
+    {
+      "source": "It splits the encoded text into chunks based on the <code>chunkSize</code>.",
+      "translation": "它根据 `<code>chunkSize</code>` 将编码后的文本分割成块。",
+      "count": 1
+    },
+    {
+      "source": "It trims the chunk and optionally removes newline characters based on the <code>keepSeparator</code> setting.",
+      "translation": "它会对代码块进行修剪，并可根据 `<code>keepSeparator</code>` 设置选择性地移除换行符。",
+      "count": 1
+    },
+    {
+      "source": "If the resulting chunk is longer than <code>minChunkLengthToEmbed</code>, it’s added to the output.",
+      "translation": "如果生成的片段长度大于 `<code>minChunkLengthToEmbed</code>`，则将其添加到输出中。",
+      "count": 1
+    },
+    {
+      "source": "This process continues until all tokens are processed or <code>maxNumChunks</code> is reached.",
+      "translation": "该过程持续进行，直到所有 token 都被处理或达到<code>maxNumChunks</code>限制。",
+      "count": 1
+    },
+    {
+      "source": "Any remaining text is added as a final chunk if it’s longer than <code>minChunkLengthToEmbed</code>.",
+      "translation": "如果剩余文本的长度大于<code>minChunkLengthToEmbed</code>，则将其作为最后一个块添加。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Performance Consideration</strong>: While the splitter can handle any number of punctuation marks, it’s recommended to keep the list reasonably small (under 20 characters) for optimal performance, as each mark is checked for every chunk.",
+      "translation": "<strong>性能考量</strong>：虽然分隔符可以处理任意数量的标点符号，但为了获得最佳性能，建议将列表保持在一个合理的较小规模（少于 20 个字符），因为每个标记都会对每个分块进行检查。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Small Text Handling</strong>: As of version 2.0, small texts (with token count at or below the chunk size) are no longer split at punctuation marks, preventing unnecessary fragmentation of content that already fits within the size limits.",
+      "translation": "<strong>小文本处理</strong>：自 2.0 版本起，对于 token 数量小于或等于分块大小的小文本，不再在标点符号处进行分割，从而避免了本已符合尺寸限制的内容出现不必要的碎片化。",
+      "count": 1
+    },
+    {
+      "source": "The <code>KeywordMetadataEnricher</code> provides two constructor options:",
+      "translation": "<code>KeywordMetadataEnricher</code> 提供两种构造函数选项：",
+      "count": 1
+    },
+    {
+      "source": "<code>KeywordMetadataEnricher(ChatModel chatModel, int keywordCount)</code>: To use the default template and extract a specified number of keywords.",
+      "translation": "<code>KeywordMetadataEnricher(ChatModel chatModel, int keywordCount)</code>：使用默认模板并提取指定数量的关键词。",
+      "count": 1
+    },
+    {
+      "source": "<code>KeywordMetadataEnricher(ChatModel chatModel, PromptTemplate keywordsTemplate)</code>: To use a custom template for keyword extraction.",
+      "translation": "<code>KeywordMetadataEnricher(ChatModel chatModel, PromptTemplate keywordsTemplate)</code>：用于使用自定义模板进行关键词提取。",
+      "count": 1
+    },
+    {
+      "source": "The <code>KeywordMetadataEnricher</code> processes documents as follows:",
+      "translation": "<code>KeywordMetadataEnricher</code> 处理文档的方式如下：",
+      "count": 1
+    },
+    {
+      "source": "It sends this prompt to the provided <code>ChatModel</code> to generate keywords.",
+      "translation": "它向提供的 `<code>ChatModel` 发送此提示以生成关键词。",
+      "count": 1
+    },
+    {
+      "source": "The <code>SummaryMetadataEnricher</code> provides two constructors:",
+      "translation": "<code>SummaryMetadataEnricher</code> 提供了两个构造函数：",
+      "count": 1
+    },
+    {
+      "source": "<code>chatModel</code>: The AI model used for generating summaries.",
+      "translation": "<code>chatModel</code>：用于生成摘要的 AI 模型。",
+      "count": 1
+    },
+    {
+      "source": "<code>summaryTemplate</code>: A custom template for summary generation (optional).",
+      "translation": "<code>summaryTemplate</code>：用于生成摘要的自定义模板（可选）。",
+      "count": 1
+    },
+    {
+      "source": "<code>metadataMode</code>: Specifies how to handle document metadata when generating summaries (optional).",
+      "translation": "<code>metadataMode</code>：指定在生成摘要时如何处理文档元数据（可选）。",
+      "count": 1
+    },
+    {
+      "source": "The <code>SummaryMetadataEnricher</code> processes documents as follows:",
+      "translation": "<code>SummaryMetadataEnricher</code> 处理文档的方式如下：",
+      "count": 1
+    },
+    {
+      "source": "It sends this prompt to the provided <code>ChatModel</code> to generate a summary.",
+      "translation": "它向提供的 `<code>ChatModel` 发送此提示以生成摘要。",
+      "count": 1
+    },
+    {
+      "source": "Depending on the specified <code>summaryTypes</code>, it adds the following metadata to each document:",
+      "translation": "根据指定的 `<code>summaryTypes`，它会在每个文档中添加以下元数据：",
+      "count": 1
+    },
+    {
+      "source": "<code>section_summary</code>: Summary of the current document.",
+      "translation": "<code>section_summary</code>：当前文档的摘要。",
+      "count": 1
+    },
+    {
+      "source": "<code>prev_section_summary</code>: Summary of the previous document (if available and requested).",
+      "translation": "<code>prev_section_summary</code>：上一份文档的摘要（如可用且已请求）。",
+      "count": 1
+    },
+    {
+      "source": "<code>next_section_summary</code>: Summary of the next document (if available and requested).",
+      "translation": "<code>next_section_summary</code>：下一部分的摘要（如果可用且已请求）。",
+      "count": 1
+    },
+    {
+      "source": "The summary generation prompt can be customized by providing a custom <code>summaryTemplate</code>. The default template is:",
+      "translation": "可以通过提供自定义的 `<code>summaryTemplate` 来定制摘要生成提示。默认模板为：",
+      "count": 1
+    },
+    {
+      "source": "For a list of two documents, both documents receive a <code>section_summary</code>.",
+      "translation": "对于包含两个文档的列表，每个文档都会获得一个 `<code>section_summary</code>`。",
+      "count": 1
+    },
+    {
+      "source": "The <code>MetadataMode</code> parameter allows control over how existing metadata is incorporated into the summary generation process.",
+      "translation": "`MetadataMode` 参数允许控制现有元数据如何被纳入摘要生成过程。",
+      "count": 1
+    },
+    {
+      "source": "The <code>FileDocumentWriter</code> provides three constructors:",
+      "translation": "`FileDocumentWriter` 提供了三个构造函数：",
+      "count": 1
+    },
+    {
+      "source": "<code>fileName</code>: The name of the file to write the documents to.",
+      "translation": "<code>fileName</code>: 用于写入文档的文件名。",
+      "count": 1
+    },
+    {
+      "source": "<code>withDocumentMarkers</code>: Whether to include document markers in the output (default: false).",
+      "translation": "`withDocumentMarkers`：是否在输出中包含文档标记（默认值：false）。",
+      "count": 1
+    },
+    {
+      "source": "<code>metadataMode</code>: Specifies what document content to be written to the file (default: MetadataMode.NONE).",
+      "translation": "<code>metadataMode</code>：指定要写入文件的文档内容（默认值：MetadataMode.NONE）。",
+      "count": 1
+    },
+    {
+      "source": "<code>append</code>: If true, data will be written to the end of the file rather than the beginning (default: false).",
+      "translation": "<code>append</code>：如果为 true，数据将写入文件末尾而不是开头（默认值：false）。",
+      "count": 1
+    },
+    {
+      "source": "The <code>FileDocumentWriter</code> processes documents as follows:",
+      "translation": "`FileDocumentWriter` 处理文档的方式如下：",
+      "count": 1
+    },
+    {
+      "source": "If <code>withDocumentMarkers</code> is true, it writes a document marker including the document index and page numbers.",
+      "translation": "如果 <code>withDocumentMarkers</code> 为 true，它将写入包含文档索引和页码的文档标记。",
+      "count": 1
+    },
+    {
+      "source": "It writes the formatted content of the document based on the specified <code>metadataMode</code>.",
+      "translation": "它根据指定的 `<code>metadataMode`</code> 编写文档的格式化内容。",
+      "count": 1
+    },
+    {
+      "source": "When <code>withDocumentMarkers</code> is set to true, the writer includes markers for each document in the following format:",
+      "translation": "当 `withDocumentMarkers` 设置为 true 时，写入器将以以下格式为每个文档包含标记：",
+      "count": 1
+    },
+    {
+      "source": "<code>page_number</code>: Represents the starting page number of the document.",
+      "translation": "<code>page_number</code>：表示文档的起始页码。",
+      "count": 1
+    },
+    {
+      "source": "<code>end_page_number</code>: Represents the ending page number of the document.",
+      "translation": "<code>end_page_number</code>：表示文档的结束页码。",
+      "count": 1
+    },
+    {
+      "source": "The writer uses <code>FileWriter</code>, so it writes text files with the default character encoding of the operating system.",
+      "translation": "作者使用了`FileWriter`，因此它会以操作系统的默认字符编码写入文本文件。",
+      "count": 1
+    },
+    {
+      "source": "If an error occurs during writing, a <code>RuntimeException</code> is thrown with the original exception as its cause.",
+      "translation": "如果在写入过程中发生错误，将抛出带有原始异常作为原因的 <code>RuntimeException</code>。",
+      "count": 1
+    },
+    {
+      "source": "The <code>metadataMode</code> parameter allows control over how existing metadata is incorporated into the written content.",
+      "translation": "`metadataMode` 参数允许控制如何将现有元数据整合到生成的内容中。",
+      "count": 1
+    },
+    {
+      "source": "Provides integration with various vector stores.\nSee <a class=\"xref page\" href=\"vectordbs.html\">Vector DB Documentation</a> for a full listing.",
+      "translation": "支持与多种向量存储库集成。完整列表请参阅<a class=\"xref page\" href=\"vectordbs.html\">向量数据库文档</a>。",
+      "count": 1
+    },
+    {
+      "source": "The Extract, Transform, and Load (ETL) framework serves as the backbone of data processing within the Retrieval Augmented Generation (RAG) use case.",
+      "translation": "提取、转换和加载（ETL）框架是检索增强生成（RAG）用例中数据处理的核心支柱。",
+      "count": 1
+    },
+    {
+      "source": "The ETL pipeline orchestrates the flow from raw data sources to a structured vector store, ensuring data is in the optimal format for retrieval by the AI model.",
+      "translation": "ETL 管道负责协调从原始数据源到结构化向量存储的数据流，确保数据处于适合 AI 模型检索的最佳格式。",
+      "count": 1
+    },
+    {
+      "source": "The RAG use case is text to augment the capabilities of generative models by retrieving relevant information from a body of data to enhance the quality and relevance of the generated output.",
+      "translation": "检索增强生成（RAG）用例旨在通过从数据集中检索相关信息来增强生成模型的能力，从而提高生成输出的质量和相关性。",
+      "count": 1
+    },
+    {
+      "source": "There are three main components of the ETL pipeline,",
+      "translation": "ETL 管道主要包括三个核心组件，",
+      "count": 1
+    },
+    {
+      "source": "To construct a simple ETL pipeline, you can chain together an instance of each type.",
+      "translation": "要构建一个简单的 ETL 管道，可以将每种类型的实例连接在一起。",
+      "count": 1
+    },
+    {
+      "source": "Let’s say we have the following instances of those three ETL types",
+      "translation": "假设有以下这三种 ETL 类型的实例：",
+      "count": 1
+    },
+    {
+      "source": "To perform the basic loading of data into a Vector Database for use with the Retrieval Augmented Generation pattern, use the following code in Java function style syntax.",
+      "translation": "要将数据基本加载到向量数据库中以用于检索增强生成（RAG）模式，请使用以下 Java 函数风格的代码。",
+      "count": 1
+    },
+    {
+      "source": "Alternatively, you can use method names that are more naturally expressive for the domain",
+      "translation": "或者，您可以使用在特定领域中更自然、更具表达力的方法名。",
+      "count": 1
+    },
+    {
+      "source": "Provides a source of documents from diverse origins.",
+      "translation": "提供来自不同来源的文档。",
+      "count": 1
+    },
+    {
+      "source": "Transforms a batch of documents as part of the processing workflow.",
+      "translation": "作为处理工作流的一部分，批量转换一批文档。",
+      "count": 1
+    },
+    {
+      "source": "Manages the final stage of the ETL process, preparing documents for storage.",
+      "translation": "负责 ETL 流程的最后阶段，为数据存储做准备。",
+      "count": 1
+    },
+    {
+      "source": "The following class diagram illustrates the ETL interfaces and implementations.",
+      "translation": "以下类图展示了 ETL 接口及其实现。",
+      "count": 1
+    },
+    {
+      "source": "It can handle both JSON arrays and single JSON objects.",
+      "translation": "它可以同时处理 JSON 数组和单个 JSON 对象。",
+      "count": 1
+    },
+    {
+      "source": "For each JSON object (either in an array or a single object):",
+      "translation": "对于每个 JSON 对象（无论是数组中的对象还是单个对象）：",
+      "count": 1
+    },
+    {
+      "source": "If no keys are specified, it uses the entire JSON object as content.",
+      "translation": "如果未指定键，则使用整个 JSON 对象作为内容。",
+      "count": 1
+    },
+    {
+      "source": "This method allows you to use a JSON Pointer to retrieve a specific part of the JSON document.",
+      "translation": "该方法允许您使用 JSON 指针检索 JSON 文档的特定部分。",
+      "count": 1
+    },
+    {
+      "source": "The method uses the provided JSON Pointer to navigate to a specific location in the JSON structure.",
+      "translation": "该方法使用提供的 JSON 指针导航到 JSON 结构中的特定位置。",
+      "count": 1
+    },
+    {
+      "source": "If the pointer is valid and points to an existing element:",
+      "translation": "如果指针有效且指向一个已存在的元素：",
+      "count": 1
+    },
+    {
+      "source": "For a JSON object: it returns a list with a single Document.",
+      "translation": "对于 JSON 对象：它返回包含单个 Document 的列表。",
+      "count": 1
+    },
+    {
+      "source": "For a JSON array: it returns a list of Documents, one for each element in the array.",
+      "translation": "对于 JSON 数组：它返回一个文档列表，数组中的每个元素对应一个文档。",
+      "count": 1
+    },
+    {
+      "source": "It can handle large JSON files efficiently by using streaming for arrays.",
+      "translation": "它可以通过流式处理数组来高效地处理大型 JSON 文件。",
+      "count": 1
+    },
+    {
+      "source": "The base URI, for resolving relative links, will be extracted from URL resources.",
+      "translation": "用于解析相对链接的基础 URI 将从 URL 资源中提取。",
+      "count": 1
+    },
+    {
+      "source": "The reader preserves the text content of the selected elements, but removes any HTML tags within them.",
+      "translation": "readers 保留所选元素的文本内容，但会移除其中的所有 HTML 标签。",
+      "count": 1
+    },
+    {
+      "source": "Behavior: The MarkdownDocumentReader processes the Markdown content and creates Document objects based on the configuration:",
+      "translation": "行为：MarkdownDocumentReader 处理 Markdown 内容，并根据配置创建 Document 对象：",
+      "count": 1
+    },
+    {
+      "source": "Headers become metadata in the Document objects.",
+      "translation": "标题在文档对象中转换为元数据。",
+      "count": 1
+    },
+    {
+      "source": "Paragraphs become the content of Document objects.",
+      "translation": "段落是文档对象的内容。",
+      "count": 1
+    },
+    {
+      "source": "Code blocks can be separated into their own Document objects or included with surrounding text.",
+      "translation": "代码块可以独立为文档对象，也可以与周围文本包含在一起。",
+      "count": 1
+    },
+    {
+      "source": "Blockquotes can be separated into their own Document objects or included with surrounding text.",
+      "translation": "块引用可以独立成为文档对象，也可以与周围的文本合并在一起。",
+      "count": 1
+    },
+    {
+      "source": "Horizontal rules can be used to split the content into separate Document objects.",
+      "translation": "水平线可用于将内容分割为独立的文档对象。",
+      "count": 1
+    },
+    {
+      "source": "The reader preserves formatting like inline code, lists, and text styling within the content of the Document objects.",
+      "translation": "阅读器会保留文档对象内容中的格式，如内联代码、列表和文本样式。",
+      "count": 1
+    },
+    {
+      "source": "You can configure the encoding type used for tokenization. This is useful when working with models that use different tokenizers:",
+      "translation": "您可以配置用于分词的编码类型。这在处理使用不同分词器的模型时非常有用：",
+      "count": 1
+    },
+    {
+      "source": "You can customize the punctuation marks used for splitting text into semantically meaningful chunks. This is particularly useful for internationalization:",
+      "translation": "您可以自定义用于将文本拆分为语义意义块的分隔标点符号。这对于国际化尤其有用：",
+      "count": 1
+    },
+    {
+      "source": "It encodes the input text into tokens using the CL100K_BASE encoding.",
+      "translation": "它使用 CL100K_BASE 编码将输入文本编码为 token。",
+      "count": 1
+    },
+    {
+      "source": "For each chunk:",
+      "translation": "对于每个片段：",
+      "count": 1
+    },
+    {
+      "source": "It decodes the chunk back into text.",
+      "translation": "它将数据块解码回文本。",
+      "count": 1
+    },
+    {
+      "source": "If a break point is found, it truncates the chunk at that point.",
+      "translation": "如果找到断点，则在该点截断该块。",
+      "count": 1
+    },
+    {
+      "source": "The splitter attempts to create semantically meaningful chunks by breaking at sentence boundaries where possible.",
+      "translation": "分割器会尝试在可能的句子边界处进行拆分，以创建具有语义意义的文本块。",
+      "count": 1
+    },
+    {
+      "source": "Metadata from the original documents is preserved and copied to all chunks derived from that document.",
+      "translation": "原始文档的元数据将被保留并复制到由此文档生成的所有片段中。",
+      "count": 1
+    },
+    {
+      "source": "This splitter is particularly useful for preparing text for large language models that have token limits, ensuring that each chunk is within the model’s processing capacity.",
+      "translation": "该分词器特别适用于为大语言模型准备文本，确保每个片段都在模型的处理能力范围内。",
+      "count": 1
+    },
+    {
+      "source": "Ensures uniform content formats across all documents.",
+      "translation": "确保所有文档的内容格式统一。",
+      "count": 1
+    },
+    {
+      "source": "For each input document, it creates a prompt using the document’s content.",
+      "translation": "对于每个输入文档，它会根据文档内容生成一个提示。",
+      "count": 1
+    },
+    {
+      "source": "The generated keywords are added to the document’s metadata under the key \"excerpt_keywords\".",
+      "translation": "生成的关键词已添加到文档的元数据中，键名为\"excerpt_keywords\"。",
+      "count": 1
+    },
+    {
+      "source": "You can use the default template or customize the template through the keywordsTemplate parameter.\nThe default template is:",
+      "translation": "您可以使用默认模板，或通过 keywordsTemplate 参数自定义模板。\n默认模板如下：",
+      "count": 1
+    },
+    {
+      "source": "The keyword count must be 1 or greater.",
+      "translation": "关键词数量必须大于或等于 1。",
+      "count": 1
+    },
+    {
+      "source": "The enricher adds the \"excerpt_keywords\" metadata field to each processed document.",
+      "translation": "Enricher 会为每个处理后的文档添加\"excerpt_keywords\"元数据字段。",
+      "count": 1
+    },
+    {
+      "source": "The generated keywords are returned as a comma-separated string.",
+      "translation": "生成的关键词以逗号分隔的字符串形式返回。",
+      "count": 1
+    },
+    {
+      "source": "This enricher is particularly useful for improving document searchability and for generating tags or categories for documents.",
+      "translation": "该增强器特别适用于提高文档的可搜索性，并为文档生成标签或类别。",
+      "count": 1
+    },
+    {
+      "source": "For each input document, it creates a prompt using the document’s content and the specified summary template.",
+      "translation": "对于每个输入文档，它会根据文档内容和指定的摘要模板生成提示。",
+      "count": 1
+    },
+    {
+      "source": "The provided example demonstrates the expected behavior:",
+      "translation": "提供的示例展示了预期的行为：",
+      "count": 1
+    },
+    {
+      "source": "The enricher can handle document lists of any size, properly handling edge cases for the first and last documents.",
+      "translation": "增强器能够处理任意规模的文档列表，并正确应对首尾文档的边缘情况。",
+      "count": 1
+    },
+    {
+      "source": "This enricher is particularly useful for creating context-aware summaries, allowing for better understanding of document relationships in a sequence.",
+      "translation": "该增强器特别适用于创建上下文感知的摘要，从而更好地理解序列中文档之间的关系。",
+      "count": 1
+    },
+    {
+      "source": "It opens a FileWriter for the specified file name.",
+      "translation": "它打开一个用于指定文件名的 FileWriter。",
+      "count": 1
+    },
+    {
+      "source": "For each document in the input list:",
+      "translation": "对于输入列表中的每个文档：",
+      "count": 1
+    },
+    {
+      "source": "The file is closed after all documents have been written.",
+      "translation": "所有文档写入完成后，文件将被关闭。",
+      "count": 1
+    },
+    {
+      "source": "The writer uses two specific metadata keys:",
+      "translation": "作者使用了两个特定的元数据键：",
+      "count": 1
+    },
+    {
+      "source": "These are used when writing document markers.",
+      "translation": "这些用于编写文档标记。",
+      "count": 1
+    },
+    {
+      "source": "This will write all documents to \"output.txt\", including document markers, using all available metadata, and appending to the file if it already exists.",
+      "translation": "这将把所有文档（包括文档标记）写入\"output.txt\"，使用所有可用的元数据，并在文件已存在时追加内容。",
+      "count": 1
+    },
+    {
+      "source": "This writer is particularly useful for debugging or creating human-readable outputs of document collections.",
+      "translation": "该写入器特别适用于调试或生成文档集合的可读输出。",
+      "count": 1
+    },
+    {
+      "source": "Apache®, Apache Tomcat®, Apache Kafka®, Apache Cassandra™, and Apache Geode™ are trademarks or registered trademarks of the Apache Software Foundation in the United States and/or other countries. Java™, Java™ SE, Java™ EE, and OpenJDK™ are trademarks of Oracle and/or its affiliates. Kubernetes® is a registered trademark of the Linux Foundation in the United States and other countries. Linux® is the registered trademark of Linus Torvalds in the United States and other countries. Windows® and Microsoft® Azure are registered trademarks of Microsoft Corporation. “AWS” and “Amazon Web Services” are trademarks or registered trademarks of Amazon.com Inc. or its affiliates. All other trademarks and copyrights are property of their respective owners and are only mentioned for informative purposes. Other names may be trademarks of their respective owners.",
+      "translation": "Apache®、Apache Tomcat®、Apache Kafka®、Apache Cassandra™ 和 Apache Geode™ 是 Apache 软件基金会在美国和其他/或某些国家的商标或注册商标。Java™、Java™ SE、Java™ EE 和 OpenJDK™ 是 Oracle 公司和/或其关联公司的商标。Kubernetes® 是 Linux 基金会在美国和其他/或某些国家的注册商标。Linux® 是 Linus Torvalds 在美国和其他/或某些国家的注册商标。Windows® 和 Microsoft® Azure 是微软公司的注册商标。\"AWS\"和\"Amazon Web Services\"是 Amazon.com Inc. 或其关联公司的商标或注册商标。所有其他商标和版权均归各自所有者所有，仅用于说明目的。其他名称可能是其各自所有者的商标。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/projects\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-boot\">Spring Boot</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-framework\">Spring Framework</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud\">Spring Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud-dataflow\">Spring Cloud Data Flow</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-data\">Spring Data</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-integration\">Spring Integration</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-batch\">Spring Batch</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-security\">Spring Security</a>\n            <a class=\"navbar-item navbar-item-special\" href=\"https://spring.io/projects\">View all projects</a>\n            <li class=\"navbar-item navbar-item-special-3\">DEVELOPMENT TOOLS</li>\n            <a class=\"navbar-item\" href=\"https://spring.io/tools\">Spring Tools 4</a>\n            <a class=\"navbar-item navbar-item-special-2\" href=\"https://start.spring.io\">Spring Initializr\n              <svg id=\"svg-stash-f15b5668\"></svg></a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/projects\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-boot\">Spring Boot</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-framework\">Spring Framework</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud\">Spring Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-cloud-dataflow\">Spring Cloud Data Flow</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-data\">Spring Data</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-integration\">Spring Integration</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-batch\">Spring Batch</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/projects/spring-security\">Spring Security</a>\n            <a class=\"navbar-item navbar-item-special\" href=\"https://spring.io/projects\">查看所有项目</a>\n            <li class=\"navbar-item navbar-item-special-3\">开发工具</li>\n            <a class=\"navbar-item\" href=\"https://spring.io/tools\">Spring Tools 4</a>\n            <a class=\"navbar-item navbar-item-special-2\" href=\"https://start.spring.io\">Spring Initializr\n              <svg id=\"svg-stash-f15b5668\"></svg></a>",
+      "count": 1
+    },
+    {
+      "source": "<nav aria-label=\"breadcrumbs\" class=\"breadcrumbs\">\n    <ul>\n      <li><a href=\"../index.html\">Spring AI</a></li>\n      <li>Reference</li>\n      <li><a href=\"retrieval-augmented-generation.html\">Retrieval Augmented Generation (RAG)</a></li>\n      <li><a href=\"etl-pipeline.html\">ETL Pipeline</a></li>\n    </ul>\n  </nav>",
+      "translation": "<nav aria-label=\"面包屑\" class=\"breadcrumbs\">\n    <ul>\n      <li><a href=\"../index.html\">Spring AI</a></li>\n      <li>参考</li>\n      <li><a href=\"retrieval-augmented-generation.html\">检索增强生成 (RAG)</a></li>\n      <li><a href=\"etl-pipeline.html\">ETL 管道</a></li>\n    </ul>\n  </nav>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/why-spring\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/microservices\">Microservices</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/reactive\">Reactive</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/event-driven\">Event\n              Driven</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/cloud\">Cloud</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/web-applications\">Web\n              Applications</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/serverless\">Serverless</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/batch\">Batch</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/why-spring\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/microservices\">微服务</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/reactive\">响应式</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/event-driven\">事件驱动</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/cloud\">云</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/web-applications\">Web 应用</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/serverless\">无服务器</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/batch\">批处理</a>",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/etl-pipeline.adoc\">\n          <svg id=\"svg-stash-05b5c46b\"></svg>\n          Edit this Page\n        </a>\n        <a href=\"https://github.com/spring-projects/spring-ai\" title=\"GitHub\">\n          <svg id=\"svg-stash-28d888b7\"></svg>\n          GitHub Project\n        </a>",
+      "translation": "<a href=\"file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/etl-pipeline.adoc\">\n          <svg id=\"svg-stash-05b5c46b\"></svg>\n          编辑此页面\n        </a>\n        <a href=\"https://github.com/spring-projects/spring-ai\" title=\"GitHub\">\n          <svg id=\"svg-stash-28d888b7\"></svg>\n          GitHub 项目\n        </a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.io/solutions\">Overview</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/support\">Spring Runtime</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/consulting\">Spring Consulting</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/teams\">Spring Academy For Teams</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/security\">Security Advisories</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.io/solutions\">概览</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/support\">Spring 运行时</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/consulting\">Spring 咨询</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/teams\">Spring Academy 团队培训</a>\n            <a class=\"navbar-item\" href=\"https://spring.io/security\">安全公告</a>",
+      "count": 1
+    },
+    {
+      "source": "<ul class=\"projects\">\n  <li>\n    Related Spring Documentation\n    <ul class=\"projects-list\">\n    </ul>\n  </li><a href=\"../spring-projects.html\">All Docs...</a>\n</ul>",
+      "translation": "<ul class=\"projects\">\n  <li>\n    相关 Spring 文档\n    <ul class=\"projects-list\">\n    </ul>\n  </li><a href=\"../spring-projects.html\">所有文档...</a>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"navbar-item\" href=\"https://spring.academy/courses\">Courses</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/learning-path\">Get Certified</a>",
+      "translation": "<a class=\"navbar-item\" href=\"https://spring.academy/courses\">课程</a>\n            <a class=\"navbar-item\" href=\"https://spring.academy/learning-path\">获取认证</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"title\" href=\"../index.html\">Spring AI</a>",
+      "translation": "<a class=\"title\" href=\"../index.html\">Spring AI</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"search-link\" href=\"../search.html\">Search in all Spring Docs</a>",
+      "translation": "<a class=\"search-link\" href=\"../search.html\">在全部 Spring 文档中搜索</a>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"vectordbs.html\">Vector Databases</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/azure.html\">Azure AI Service</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/azure-cosmos-db.html\">Azure Cosmos DB</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/bedrock-knowledge-base.html\">Amazon Bedrock Knowledge Base</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/apache-cassandra.html\">Apache Cassandra Vector Store</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/chroma.html\">Chroma</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/couchbase.html\">Couchbase</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/elasticsearch.html\">Elasticsearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/gemfire.html\">GemFire</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/mariadb.html\">MariaDB Vector Store</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/milvus.html\">Milvus</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/mongodb.html\">MongoDB Atlas</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/neo4j.html\">Neo4j</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/opensearch.html\">OpenSearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/oracle.html\">Oracle</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/pgvector.html\">PGvector</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/pinecone.html\">Pinecone</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/qdrant.html\">Qdrant</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/redis.html\">Redis</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/typesense.html\">Typesense</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/weaviate.html\">Weaviate</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/s3-vector-store.html\">S3 Vector Store</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"vectordbs.html\">向量数据库</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/azure.html\">Azure AI 服务</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/azure-cosmos-db.html\">Azure Cosmos DB</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/bedrock-knowledge-base.html\">Amazon Bedrock 知识库</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/apache-cassandra.html\">Apache Cassandra 向量存储</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/chroma.html\">Chroma</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/couchbase.html\">Couchbase</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/elasticsearch.html\">Elasticsearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/gemfire.html\">GemFire</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/mariadb.html\">MariaDB 向量存储</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/milvus.html\">Milvus</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/mongodb.html\">MongoDB Atlas</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/neo4j.html\">Neo4j</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/opensearch.html\">OpenSearch</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/oracle.html\">Oracle</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/pgvector.html\">PGvector</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/pinecone.html\">Pinecone</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/qdrant.html\">Qdrant</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/redis.html\">Redis</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/typesense.html\">Typesense</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/weaviate.html\">Weaviate</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"vectordbs/s3-vector-store.html\">S3 向量存储</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"embeddings.html\">Embedding Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"bedrock.html\">Amazon Bedrock</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/bedrock-cohere-embedding.html\">Cohere</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/bedrock-titan-embedding.html\">Titan</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/azure-openai-embeddings.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/google-genai-embeddings-text.html\">Google GenAI Text Embedding</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/mistralai-embeddings.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/oci-genai-embeddings.html\">OCI GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/ollama-embeddings.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/onnx.html\">(ONNX) Transformers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/openai-embeddings.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/postgresml-embeddings.html\">PostgresML</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">VertexAI</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/vertexai-embeddings-text.html\">Text Embedding</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/vertexai-embeddings-multimodal.html\">Multimodal Embedding</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"embeddings.html\">嵌入模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"bedrock.html\">Amazon Bedrock</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/bedrock-cohere-embedding.html\">Cohere</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/bedrock-titan-embedding.html\">Titan</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/azure-openai-embeddings.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/google-genai-embeddings-text.html\">Google GenAI 文本嵌入</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/mistralai-embeddings.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/oci-genai-embeddings.html\">OCI GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/ollama-embeddings.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/onnx.html\">(ONNX) Transformers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/openai-embeddings.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"embeddings/postgresml-embeddings.html\">PostgresML</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">VertexAI</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/vertexai-embeddings-text.html\">文本嵌入</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"embeddings/vertexai-embeddings-multimodal.html\">多模态嵌入</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"chatmodel.html\">Chat Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/comparison.html\">Chat Models Comparison</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/bedrock-converse.html\">Amazon Bedrock Converse</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/anthropic-chat.html\">Anthropic</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/azure-openai-chat.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/deepseek-chat.html\">DeepSeek</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/dmr-chat.html\">Docker Model Runner</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/google-genai-chat.html\">Google GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/groq-chat.html\">Groq</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/mistralai-chat.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/minimax-chat.html\">MiniMax</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/nvidia-chat.html\">NVIDIA</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/ollama-chat.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/perplexity-chat.html\">Perplexity AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/oci-genai-chat.html\">OCI Generative AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/openai-chat.html\">OpenAI</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"chatmodel.html\">对话模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/comparison.html\">对话模型对比</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/bedrock-converse.html\">Amazon Bedrock Converse</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/anthropic-chat.html\">Anthropic</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/azure-openai-chat.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/deepseek-chat.html\">DeepSeek</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/dmr-chat.html\">Docker Model Runner</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/google-genai-chat.html\">Google GenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/groq-chat.html\">Groq</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/mistralai-chat.html\">Mistral AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/minimax-chat.html\">MiniMax</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/nvidia-chat.html\">NVIDIA</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/ollama-chat.html\">Ollama</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/perplexity-chat.html\">Perplexity AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/oci-genai-chat.html\">OCI Generative AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"chat/openai-chat.html\">OpenAI</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-overview.html\">Model Context Protocol (MCP)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mcp/mcp-client-boot-starter-docs.html\">MCP Client Boot Starters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-server-boot-starter-docs.html\">MCP Server Boot Starters</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-stdio-sse-server-boot-starter-docs.html\">STDIO and SSE MCP Servers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-streamable-http-server-boot-starter-docs.html\">Streamable-HTTP MCP Servers</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-stateless-server-boot-starter-docs.html\">Stateless Streamable-HTTP MCP Servers</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mcp/mcp-security.html\">MCP Security (WIP)</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-overview.html\">MCP Annotations</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-client.html\">Client Annotations</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-server.html\">Server Annotations</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-special-params.html\">Special Parameters</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-examples.html\">MCP Annotations Examples</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"mcp/mcp-overview.html\">模型上下文协议 (MCP)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mcp/mcp-client-boot-starter-docs.html\">MCP 客户端启动器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-server-boot-starter-docs.html\">MCP 服务器启动器</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-stdio-sse-server-boot-starter-docs.html\">STDIO 和 SSE MCP 服务器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-streamable-http-server-boot-starter-docs.html\">可流式 HTTP MCP 服务器</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-stateless-server-boot-starter-docs.html\">无状态可流式 HTTP MCP 服务器</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"mcp/mcp-security.html\">MCP 安全 (进行中)</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-overview.html\">MCP 注解</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-client.html\">客户端注解</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-server.html\">服务器注解</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-special-params.html\">特殊参数</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"mcp/mcp-annotations-examples.html\">MCP 注解示例</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <span class=\"nav-text\">Guides</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/spring-ai-community/awesome-spring-ai\">Awesome Spring AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/getting-started-mcp.html\">Getting Started with MCP</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/dynamic-tool-search.html\">Dynamic Tool Discovery</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/llm-as-judge.html\">LLM-as-a-Judge Evaluation</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"chat/prompt-engineering-patterns.html\">Prompt Engineering Patterns</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"effective-agents.html\">Building Effective Agents</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agents\">Building agents with Spring AI by AWS</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agentcore\">Building agents with Spring AI and AgentCore by AWS</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/microsoft/Spring-AI-for-Beginners\">Spring AI for Beginners by Microsoft</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<span class=\"nav-text\">指南</span>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/spring-ai-community/awesome-spring-ai\">Awesome Spring AI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/getting-started-mcp.html\">MCP 入门</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/dynamic-tool-search.html\">动态工具发现</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../guides/llm-as-judge.html\">LLM 作为裁判的评估</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"chat/prompt-engineering-patterns.html\">提示工程模式</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"effective-agents.html\">构建高效智能体</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agents\">AWS 使用 Spring AI 构建智能体</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://catalog.workshops.aws/java-spring-ai-agentcore\">AWS 使用 Spring AI 和 AgentCore 构建智能体</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"https://github.com/microsoft/Spring-AI-for-Beginners\">Microsoft 的 Spring AI 初学者指南</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio.html\">Audio Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio/transcriptions.html\">Transcription API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/transcriptions/azure-openai-transcriptions.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/transcriptions/openai-transcriptions.html\">OpenAI</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio/speech.html\">Text-To-Speech (TTS) API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/speech/openai-speech.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/speech/elevenlabs-speech.html\">ElevenLabs</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio.html\">音频模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio/transcriptions.html\">转录 API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/transcriptions/azure-openai-transcriptions.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/transcriptions/openai-transcriptions.html\">OpenAI</a>\n  </li>\n</ul>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"audio/speech.html\">文本转语音 (TTS) API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/speech/openai-speech.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"5\">\n    <a class=\"nav-link\" href=\"audio/speech/elevenlabs-speech.html\">ElevenLabs</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"chatclient.html\">Chat Client API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"advisors.html\">Advisors</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"advisors-recursive.html\">Recursive Advisors</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"chatclient.html\">聊天客户端 API</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"3\">\n    <button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"advisors.html\">顾问</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"advisors-recursive.html\">递归顾问</a>\n  </li>\n</ul>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"imageclient.html\">Image Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/azure-openai-image.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/openai-image.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/stabilityai-image.html\">Stability</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"imageclient.html\">图像模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/azure-openai-image.html\">Azure OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/openai-image.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"image/stabilityai-image.html\">Stability</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"moderation.html\">Moderation Models</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"moderation/openai-moderation.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"moderation/mistral-ai-moderation.html\">Mistral AI</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"moderation.html\">内容审核模型</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"moderation/openai-moderation.html\">OpenAI</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"4\">\n    <a class=\"nav-link\" href=\"moderation/mistral-ai-moderation.html\">Mistral AI</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../upgrade-notes.html\">Upgrade Notes</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"tools-migration.html\">Migrating FunctionCallback to ToolCallback API</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"chat/anthropic-migration.html\">Migrating the Anthropic Module to the Official Java SDK</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"../upgrade-notes.html\">升级说明</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"tools-migration.html\">将 FunctionCallback 迁移至 ToolCallback API</a>\n  </li>\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"chat/anthropic-migration.html\">将 Anthropic 模块迁移至官方 Java SDK</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"../index.html\">Overview</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../concepts.html\">AI Concepts</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"../index.html\">概述</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item\" data-depth=\"2\">\n    <a class=\"nav-link\" href=\"../concepts.html\">AI 概念</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<button class=\"nav-item-toggle\"></button>\n    <a class=\"nav-link\" href=\"retrieval-augmented-generation.html\">Retrieval Augmented Generation (RAG)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item is-current-page\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"etl-pipeline.html\">ETL Pipeline</a>\n  </li>\n</ul>",
+      "translation": "<button class=\"nav-item-toggle\"></button>\n<a class=\"nav-link\" href=\"retrieval-augmented-generation.html\">检索增强生成 (RAG)</a>\n<ul class=\"nav-list\">\n  <li class=\"nav-item is-current-page\" data-depth=\"3\">\n    <a class=\"nav-link\" href=\"etl-pipeline.html\">ETL 管道</a>\n  </li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<tbody><tr>\n<td class=\"icon\">\n<i class=\"fa icon-important\" title=\"Important\"></i>\n</td>\n<td class=\"content\">\nPunctuation-based splitting only applies when the token count exceeds the chunk size. Text that exactly matches or is smaller than the chunk size is returned as a single chunk without punctuation-based truncation. This prevents unnecessary splitting of small texts.\n</td>\n</tr>\n</tbody>",
+      "translation": "<tr>\n<td class=\"icon\">\n<i class=\"fa icon-important\" title=\"Important\"></i>\n</td>\n<td class=\"content\">\n基于标点的分割仅在令牌数量超过块大小时生效。与块大小完全匹配或小于该大小的文本将作为单个块返回，不进行基于标点的截断。这避免了不必要的短文本分割。\n</td>\n</tr>\n</tbody>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"prev\"><a href=\"retrieval-augmented-generation.html\">Retrieval Augmented Generation (RAG)</a></span>\n  <span class=\"next\"><a href=\"testing.html\">Model Evaluation</a></span>",
+      "translation": "<span class=\"prev\"><a href=\"retrieval-augmented-generation.html\">检索增强生成（RAG）</a></span>\n  <span class=\"next\"><a href=\"testing.html\">模型评估</a></span>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"../getting-started.html\">Getting Started</a>",
+      "translation": "<a class=\"nav-link\" href=\"../getting-started.html\">入门指南</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"structured-output-converter.html\">Structured Output</a>",
+      "translation": "<a class=\"nav-link\" href=\"structured-output-converter.html\">结构化输出</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"chat-memory.html\">Chat Memory</a>",
+      "translation": "<a class=\"nav-link\" href=\"chat-memory.html\">对话记忆</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"tools.html\">Tool Calling</a>",
+      "translation": "<a class=\"nav-link\" href=\"tools.html\">工具调用</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"testing.html\">Model Evaluation</a>",
+      "translation": "<a class=\"nav-link\" href=\"testing.html\">模型评估</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"nav-link\" href=\"docker-compose.html\">Development-time Services</a>",
+      "translation": "<a class=\"nav-link\" href=\"docker-compose.html\">开发时服务</a>",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_api_overview\"></a>API Overview",
+      "translation": "<a class=\"anchor\" href=\"#_api_overview\"></a>API 概述",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_etl_interfaces\"></a>ETL Interfaces",
+      "translation": "<a class=\"anchor\" href=\"#_etl_interfaces\"></a>ETL 接口",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#etl-class-diagram\"></a>ETL Class Diagram",
+      "translation": "<a class=\"anchor\" href=\"#etl-class-diagram\"></a>ETL 类图",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_constructor_options\"></a>Constructor Options",
+      "translation": "<a class=\"anchor\" href=\"#_constructor_options\"></a>构造函数选项",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_using_json_pointers\"></a>Using JSON Pointers",
+      "translation": "<a class=\"anchor\" href=\"#_using_json_pointers\"></a>使用 JSON 指针",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_return_value\"></a>Return Value",
+      "translation": "<a class=\"anchor\" href=\"#_return_value\"></a>返回值",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_example_json_structure\"></a>Example JSON Structure",
+      "translation": "<a class=\"anchor\" href=\"#_example_json_structure\"></a>示例 JSON 结构",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_constructor_options_2\"></a>Constructor Options",
+      "translation": "<a class=\"anchor\" href=\"#_constructor_options_2\"></a>构造函数选项",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_sample_document_my_page_html\"></a>Sample Document: my-page.html",
+      "translation": "<a class=\"anchor\" href=\"#_sample_document_my_page_html\"></a>示例文档：my-page.html",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_sample_document_code_md\"></a>Sample Document: code.md",
+      "translation": "<a class=\"anchor\" href=\"#_sample_document_code_md\"></a>示例文档：code.md",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_pdf_page\"></a>PDF Page",
+      "translation": "<a class=\"anchor\" href=\"#_pdf_page\"></a>PDF 页面",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_pdf_paragraph\"></a>PDF Paragraph",
+      "translation": "<a class=\"anchor\" href=\"#_pdf_paragraph\"></a>PDF 段落",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_basic_usage\"></a>Basic Usage",
+      "translation": "<a class=\"anchor\" href=\"#_basic_usage\"></a>基本用法",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_custom_encoding_type\"></a>Custom Encoding Type",
+      "translation": "<a class=\"anchor\" href=\"#_custom_encoding_type\"></a>自定义编码类型",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_custom_punctuation_marks\"></a>Custom Punctuation Marks",
+      "translation": "<a class=\"anchor\" href=\"#_custom_punctuation_marks\"></a>自定义标点符号",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_constructor_options_3\"></a>Constructor Options",
+      "translation": "<a class=\"anchor\" href=\"#_constructor_options_3\"></a>构造函数选项",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_document_markers\"></a>Document Markers",
+      "translation": "<a class=\"anchor\" href=\"#_document_markers\"></a>文档标记",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"anchor\" href=\"#_metadata_handling\"></a>Metadata Handling",
+      "translation": "<a class=\"anchor\" href=\"#_metadata_handling\"></a>元数据处理",
+      "count": 1
+    },
+    {
+      "source": "Why Spring",
+      "translation": "为何是春天",
+      "count": 1
+    },
+    {
+      "source": "Spring AI",
+      "translation": "Spring AI",
+      "count": 1
+    },
+    {
+      "source": "ETL Pipeline",
+      "translation": "ETL 管道",
+      "count": 1
+    }
+  ]
+}

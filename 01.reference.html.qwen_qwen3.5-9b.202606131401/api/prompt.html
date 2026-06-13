@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width,initial-scale=1" name="viewport"/>
+    <title>提示：Spring AI 参考</title>
+    <link href="https://docs.spring.io/spring-ai/reference/api/prompt.html" rel="canonical"/>
+    <link href="advisors-recursive.html" rel="prev"/>
+    <link href="structured-output-converter.html" rel="next"/>
+    <meta content="Antora 3.1.15" name="generator"/>
+    <script>
+!function (theme, navWidth) {
+  if (theme === 'dark') document.documentElement.classList.add('dark-theme')
+  if (navWidth) document.documentElement.style.setProperty('--nav-width', `${navWidth}px`)
+}(localStorage && localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)')?.matches && 'dark'),
+  localStorage && localStorage.getItem('nav-width'))
+    </script>
+    <link href="../_/css/site.css" rel="stylesheet"/>
+    <link href="../_/css/vendor/search.css" rel="stylesheet"/>
+    <link href="../_/css/vendor/page-search.css" rel="stylesheet"/>
+    <link href="../_/css/vendor/asciidoctor-tabs.css" rel="stylesheet"/>
+
+    <meta content="v0.4.17" name="antora-ui-version"/> 
+    <meta content="2.0.0" name="version"/>
+    <meta content="ai" name="component"/>
+    <meta content="false" name="latest-version"/>
+    <link href="../_/img/favicon.ico" rel="icon" type="image/vnd.microsoft.icon"/>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://spring.io">
+        <img alt="Spring" class="block" id="springlogo" src="../_/img/spring-logo.svg"/>
+      </a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="navbar-menu" id="topbar-nav">
+      <div class="navbar-end">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">为何是春天</a>
+          <div class="navbar-dropdown"><a class="navbar-item" href="https://spring.io/why-spring">概览</a>
+<a class="navbar-item" href="https://spring.io/microservices">微服务</a>
+<a class="navbar-item" href="https://spring.io/reactive">响应式</a>
+<a class="navbar-item" href="https://spring.io/event-driven">事件驱动</a>
+<a class="navbar-item" href="https://spring.io/cloud">云</a>
+<a class="navbar-item" href="https://spring.io/web-applications">Web 应用</a>
+<a class="navbar-item" href="https://spring.io/serverless">无服务器</a>
+<a class="navbar-item" href="https://spring.io/batch">批处理</a></div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Learn</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://spring.io/learn">Overview</a>
+            <a class="navbar-item" href="https://spring.io/quickstart">Quickstart</a>
+            <a class="navbar-item" href="https://spring.io/guides">Guides</a>
+            <a class="navbar-item" href="https://spring.io/blog">Blog</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Projects</a>
+          <div class="navbar-dropdown" style="min-width: 280px"><a class="navbar-item" href="https://spring.io/projects">概览</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-boot">Spring Boot</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-framework">Spring Framework</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-cloud">Spring Cloud</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-cloud-dataflow">Spring Cloud Data Flow</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-data">Spring Data</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-integration">Spring Integration</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-batch">Spring Batch</a>
+<a class="navbar-item" href="https://spring.io/projects/spring-security">Spring Security</a>
+<a class="navbar-item navbar-item-special" href="https://spring.io/projects">查看所有项目</a>
+<li class="navbar-item navbar-item-special-3">开发工具</li>
+<a class="navbar-item" href="https://spring.io/tools">Spring Tools 4</a>
+<a class="navbar-item navbar-item-special-2" href="https://start.spring.io">Spring Initializr
+              <svg class="external-link-icon" viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><polyline fill="none" points="15 10.94 15 15 1 15 1 1 5.06 1" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"></polyline><polyline fill="none" points="8.93 1 15 1 15 7.07" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"></polyline><line fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" x1="15" x2="8" y1="1" y2="8"></line></svg></a></div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Academy</a>
+          <div class="navbar-dropdown"><a class="navbar-item" href="https://spring.academy/courses">课程</a>
+<a class="navbar-item" href="https://spring.academy/learning-path">获取认证</a></div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Solutions</a>
+          <div class="navbar-dropdown lg"><a class="navbar-item" href="https://spring.io/solutions">概览</a>
+<a class="navbar-item" href="https://spring.io/support">Spring 运行时</a>
+<a class="navbar-item" href="https://spring.io/consulting">Spring 咨询</a>
+<a class="navbar-item" href="https://spring.academy/teams">Spring Academy 团队培训</a>
+<a class="navbar-item" href="https://spring.io/security">安全公告</a></div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable is-community">
+          <a class="navbar-link" href="#">Community</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://spring.io/community">Overview</a>
+            <a class="navbar-item" href="https://spring.io/events">Events</a>
+            <a class="navbar-item" href="https://spring.io/team">Team</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <label class="theme-toggler">
+      <input id="switch-theme-checkbox" name="switch-theme-checkbox" type="checkbox"/>
+      <span class="icon"><svg aria-hidden="true" class="svg-inline--fa fa-moon moon" data-icon="moon" data-prefix="fas" focusable="false" role="img" viewbox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z" fill="currentColor"></path>
+</svg>
+        <svg aria-hidden="true" class="svg-inline--fa fa-sun sun" data-icon="sun" data-prefix="fas" focusable="false" role="img" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z" fill="currentColor"></path>
+</svg></span>
+      <span class="text">light</span>
+    </label>
+  </nav>
+</header>
+<script>
+!function (theme) {
+  if (theme === 'dark') {
+    document.getElementById('switch-theme-checkbox').parentElement.classList.add('active')
+  }
+}(localStorage && localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)')?.matches && 'dark'))
+</script>
+<div class="body">
+<div class="nav-container" data-component="ai" data-version="2.0.0">
+  <aside class="nav">
+    <div class="panels">
+      <div class="nav-panel-menu is-active" data-panel="menu">
+        <nav class="nav-menu">
+<div class="context">
+  <span class="title">Spring AI</span>
+  <span class="version">2.0.0</span>
+  <button class="browse-version" id="browse-version">
+    <svg height="24px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewbox="0 0 512 512" width="24px" xml:space="preserve"><g><path d="M256,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S273.7,224,256,224L256,224z"></path><path d="M128.4,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S146,224,128.4,224L128.4,224z"></path><path d="M384,224c-17.7,0-32,14.3-32,32s14.3,32,32,32s32-14.3,32-32S401.7,224,384,224L384,224z"></path></g></svg>
+  </button>
+  <div class="search">
+  <button class="DocSearch-Button search-button">
+    <svg enable-background="new 0 0 32 32" id="Glyph" version="1.1" viewbox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M27.414,24.586l-5.077-5.077C23.386,17.928,24,16.035,24,14c0-5.514-4.486-10-10-10S4,8.486,4,14  s4.486,10,10,10c2.035,0,3.928-0.614,5.509-1.663l5.077,5.077c0.78,0.781,2.048,0.781,2.828,0  C28.195,26.633,28.195,25.367,27.414,24.586z M7,14c0-3.86,3.14-7,7-7s7,3.14,7,7s-3.14,7-7,7S7,17.86,7,14z" id="XMLID_223_"></path>
+</svg>
+    <span>Search</span>
+    <span class="search-key"></span>
+  </button>
+</div>
+</div><ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../index.html">概述</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../concepts.html">AI 概念</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="1"><a class="nav-link" href="../getting-started.html">入门指南</a></li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Reference</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="chatclient.html">聊天客户端 API</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="advisors.html">顾问</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="advisors-recursive.html">递归顾问</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="prompt.html">Prompts</a>
+  </li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="structured-output-converter.html">结构化输出</a></li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="multimodality.html">Multimodality</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">Models</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="chatmodel.html">对话模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/comparison.html">对话模型对比</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/bedrock-converse.html">Amazon Bedrock Converse</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/anthropic-chat.html">Anthropic</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/azure-openai-chat.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/deepseek-chat.html">DeepSeek</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/dmr-chat.html">Docker Model Runner</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/google-genai-chat.html">Google GenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/groq-chat.html">Groq</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/mistralai-chat.html">Mistral AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/minimax-chat.html">MiniMax</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/nvidia-chat.html">NVIDIA</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/ollama-chat.html">Ollama</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/perplexity-chat.html">Perplexity AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/oci-genai-chat.html">OCI Generative AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="chat/openai-chat.html">OpenAI</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="embeddings.html">嵌入模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="bedrock.html">Amazon Bedrock</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="embeddings/bedrock-cohere-embedding.html">Cohere</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="embeddings/bedrock-titan-embedding.html">Titan</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/azure-openai-embeddings.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/google-genai-embeddings-text.html">Google GenAI 文本嵌入</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/mistralai-embeddings.html">Mistral AI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/oci-genai-embeddings.html">OCI GenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/ollama-embeddings.html">Ollama</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/onnx.html">(ONNX) Transformers</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/openai-embeddings.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="embeddings/postgresml-embeddings.html">PostgresML</a>
+</li>
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<span class="nav-text">VertexAI</span>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="embeddings/vertexai-embeddings-text.html">文本嵌入</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="embeddings/vertexai-embeddings-multimodal.html">多模态嵌入</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="imageclient.html">图像模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="image/azure-openai-image.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="image/openai-image.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="image/stabilityai-image.html">Stability</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="audio.html">音频模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="audio/transcriptions.html">转录 API</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="audio/transcriptions/azure-openai-transcriptions.html">Azure OpenAI</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="audio/transcriptions/openai-transcriptions.html">OpenAI</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="4">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="audio/speech.html">文本转语音 (TTS) API</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="audio/speech/openai-speech.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="5">
+<a class="nav-link" href="audio/speech/elevenlabs-speech.html">ElevenLabs</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="3"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="moderation.html">内容审核模型</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="moderation/openai-moderation.html">OpenAI</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="moderation/mistral-ai-moderation.html">Mistral AI</a>
+</li>
+</ul></li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="chat-memory.html">对话记忆</a></li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="tools.html">工具调用</a></li>
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="mcp/mcp-overview.html">模型上下文协议 (MCP)</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="mcp/mcp-client-boot-starter-docs.html">MCP 客户端启动器</a>
+</li>
+<li class="nav-item" data-depth="3">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="mcp/mcp-server-boot-starter-docs.html">MCP 服务器启动器</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-stdio-sse-server-boot-starter-docs.html">STDIO 和 SSE MCP 服务器</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-streamable-http-server-boot-starter-docs.html">可流式 HTTP MCP 服务器</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-stateless-server-boot-starter-docs.html">无状态可流式 HTTP MCP 服务器</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="mcp/mcp-security.html">MCP 安全 (进行中)</a>
+</li>
+<li class="nav-item" data-depth="3">
+<button class="nav-item-toggle"></button>
+<a class="nav-link" href="mcp/mcp-annotations-overview.html">MCP 注解</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-annotations-client.html">客户端注解</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-annotations-server.html">服务器注解</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-annotations-special-params.html">特殊参数</a>
+</li>
+<li class="nav-item" data-depth="4">
+<a class="nav-link" href="mcp/mcp-annotations-examples.html">MCP 注解示例</a>
+</li>
+</ul>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="retrieval-augmented-generation.html">检索增强生成 (RAG)</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="etl-pipeline.html">ETL 管道</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="testing.html">模型评估</a></li>
+  <li class="nav-item" data-depth="2"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="vectordbs.html">向量数据库</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/azure.html">Azure AI 服务</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/azure-cosmos-db.html">Azure Cosmos DB</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/bedrock-knowledge-base.html">Amazon Bedrock 知识库</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/apache-cassandra.html">Apache Cassandra 向量存储</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/chroma.html">Chroma</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/couchbase.html">Couchbase</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/elasticsearch.html">Elasticsearch</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/gemfire.html">GemFire</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/mariadb.html">MariaDB 向量存储</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/milvus.html">Milvus</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/mongodb.html">MongoDB Atlas</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/neo4j.html">Neo4j</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/opensearch.html">OpenSearch</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/oracle.html">Oracle</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/pgvector.html">PGvector</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/pinecone.html">Pinecone</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/qdrant.html">Qdrant</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/redis.html">Redis</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/typesense.html">Typesense</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/weaviate.html">Weaviate</a>
+</li>
+<li class="nav-item" data-depth="3">
+<a class="nav-link" href="vectordbs/s3-vector-store.html">S3 向量存储</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../observability/index.html">Observability</a>
+  </li>
+  <li class="nav-item" data-depth="2"><a class="nav-link" href="docker-compose.html">开发时服务</a></li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Testing</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="testcontainers.html">Testcontainers</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1"><button class="nav-item-toggle"></button>
+<span class="nav-text">指南</span>
+<ul class="nav-list">
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://github.com/spring-ai-community/awesome-spring-ai">Awesome Spring AI</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../guides/getting-started-mcp.html">MCP 入门</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../guides/dynamic-tool-search.html">动态工具发现</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="../guides/llm-as-judge.html">LLM 作为裁判的评估</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="chat/prompt-engineering-patterns.html">提示工程模式</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="effective-agents.html">构建高效智能体</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://catalog.workshops.aws/java-spring-ai-agents">AWS 使用 Spring AI 构建智能体</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://catalog.workshops.aws/java-spring-ai-agentcore">AWS 使用 Spring AI 和 AgentCore 构建智能体</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="https://github.com/microsoft/Spring-AI-for-Beginners">Microsoft 的 Spring AI 初学者指南</a>
+</li>
+</ul></li>
+  <li class="nav-item" data-depth="1"><button class="nav-item-toggle"></button>
+<a class="nav-link" href="../upgrade-notes.html">升级说明</a>
+<ul class="nav-list">
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="tools-migration.html">将 FunctionCallback 迁移至 ToolCallback API</a>
+</li>
+<li class="nav-item" data-depth="2">
+<a class="nav-link" href="chat/anthropic-migration.html">将 Anthropic 模块迁移至官方 Java SDK</a>
+</li>
+</ul></li>
+</ul>
+  </li>
+</ul>
+          <div class="toggle-sm">
+            <button class="nav-toggle" id="nav-toggle-2"></button>
+          </div>
+        </nav>
+      </div>
+      <div class="nav-collapse">
+        <button id="nav-collapse-toggle"><span></span></button>        
+      </div>
+    </div>
+    <div class="nav-resize"></div>
+  </aside>
+</div>
+<script>
+!function (sidebar) {
+  if (sidebar) {
+    document.body.classList.add('nav-sm')
+  }
+}(localStorage && localStorage.getItem('sidebar') === 'close')
+</script><main class="article">
+<div class="toolbar" role="navigation">
+  <button class="nav-toggle" id="nav-toggle-1"></button>
+<div class="search">
+  <button class="DocSearch-Button search-button">
+    <svg id="svg-stash-de15fb15"></svg>
+    <span>Search</span>
+    <span class="search-key"></span>
+  </button>
+</div>
+</div>
+  <div class="content">
+<aside class="sidebar">
+  <div class="content">
+    <div class="toc" data-levels="2" data-title="Prompts">
+      <div class="toc-menu"></div>
+    </div>
+    <div class="sidebar-links"><a href="file:///workspaces/spring-ai/spring-ai-docs/src/main/antora/modules/ROOT/pages/api/prompt.adoc">
+<svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m16 2.012 3 3L16.713 7.3l-3-3zM4 14v3h3l8.299-8.287-3-3zm0 6h16v2H4z"></path></svg>
+          编辑此页面
+        </a>
+<a href="https://github.com/spring-projects/spring-ai" title="GitHub">
+<svg height="512px" id="Layer_1" version="1.1" viewbox="0 0 512 512" width="512px" xmlns="http://www.w3.org/2000/svg"><style type="text/css">
+              .st0{fill-rule:evenodd;clip-rule:evenodd;} </style><g><path class="st0" d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"></path></g></svg>
+          GitHub 项目
+        </a></div>
+  </div>
+</aside>
+<article class="doc">
+<div class="breadcrumbs-container"><nav aria-label="面包屑" class="breadcrumbs">
+<ul>
+<li><a href="../index.html">Spring AI</a></li>
+<li>参考</li>
+<li><a href="prompt.html">提示词</a></li>
+</ul>
+</nav></div><h1 class="page" id="page-title">Prompts</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>提示是引导人工智能模型生成特定输出的输入。这些提示的设计和措辞会显著影响模型的响应。</p>
+</div>
+<div class="paragraph">
+<p>在 Spring AI 中与 AI 模型进行最低级别的交互时，处理提示（prompts）的方式与 Spring MVC 中管理“视图”有些相似。  
+这涉及创建包含动态内容占位符的长文本。  
+这些占位符随后会根据用户请求或应用程序中的其他代码进行替换。  
+另一个类比是包含特定表达式占位符的 SQL 语句。</p>
+</div>
+<div class="paragraph">
+<p>随着 Spring AI 的发展，它将引入更高层次的抽象来与 AI 模型进行交互。  
+本节中描述的基础类在角色和功能上可以比作 JDBC。  
+例如，<code>ChatModel</code> 类类似于 JDK 中的核心 JDBC 库。  
+<code>ChatClient</code> 类则建立在 <code>ChatModel</code> 之上，可类比于 <code>JdbcClient</code>，并通过 <code>Advisor</code> 提供更高级的构建能力，以考虑与模型的过往交互、通过附加上下文文档增强提示，并引入代理行为。</p>
+</div>
+<div class="paragraph">
+<p>提示的结构在人工智能领域随时间不断演变。  
+最初，提示只是简单的字符串。  
+随着时间的推移，它们逐渐发展为包含特定输入占位符的形式，例如 AI 模型能够识别的"USER:"。  
+OpenAI 通过在使用前将多条消息字符串划分为不同的角色，为提示引入了更丰富的结构。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_api_overview"><a class="anchor" href="#_api_overview"></a>API 概述</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_prompt"><a class="anchor" href="#_prompt"></a>Prompt</h3>
+<div class="paragraph">
+<p>通常使用 `ChatModel` 的 `call()` 方法，该方法接收一个 `Prompt` 实例并返回一个 `ChatResponse`。</p>
+</div>
+<div class="paragraph">
+<p>`Prompt` 类作为容器，用于组织一系列 `Message` 对象和一个请求 `ChatOptions`。  
+每个 `Message` 在提示中代表一个独特的角色，其内容和意图各不相同。  
+这些角色可以涵盖多种元素，从用户提问到 AI 生成的回复，再到相关的背景信息。  
+这种结构使得与 AI 模型的交互变得复杂而细致，因为提示由多个消息组成，每条消息都被分配了特定的对话角色。</p>
+</div>
+<div class="paragraph">
+<p>以下是省略了构造函数和实用方法以简化篇幅的 Prompt 类的截断版本：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public class Prompt implements ModelRequest&lt;List&lt;Message&gt;&gt; {
+
+    private final List&lt;Message&gt; messages;
+
+    private ChatOptions chatOptions;
+}</code></pre>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_convenience_methods"><a class="anchor" href="#_convenience_methods"></a>便捷方法</h4>
+<div class="paragraph">
+<p>`Prompt` 类提供了多种便捷方法，可根据角色访问消息：</p>
+</div>
+<div class="paragraph">
+<p><strong>单条消息访问：</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>`getUserMessage()`：返回提示中的最后一条用户消息，若不存在则返回空的 `UserMessage`。</p>
+</li>
+<li>
+<p><code>getSystemMessage()</code>：返回提示中的第一个系统消息，如果不存在则返回空的 <code>SystemMessage</code>。</p>
+</li>
+<li>
+<p>`getLastUserOrToolResponseMessage()`：返回最后一条用户或工具响应消息，有助于保持对话的连贯性。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>多消息访问：</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>getUserMessages()</code>：返回提示中所有用户消息的列表，并保持其顺序。</p>
+</li>
+<li>
+<p><code>getSystemMessages()</code>：返回提示中所有系统消息的列表，并保持其顺序。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>这些方法在处理多轮对话或需要按角色处理消息时特别有用。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_message"><a class="anchor" href="#_message"></a>Message</h3>
+<div class="paragraph">
+<p>`Message` 接口封装了 `Prompt` 文本内容、一组元数据属性以及一个名为 `MessageType` 的分类。</p>
+</div>
+<div class="paragraph">
+<p>接口定义如下：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public interface Content {
+
+	String getContent();
+
+	Map&lt;String, Object&gt; getMetadata();
+}
+
+public interface Message extends Content {
+
+	MessageType getMessageType();
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>多模态消息类型同样实现了<code>MediaContent</code>接口，提供一份<code>Media</code>内容对象列表。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public interface MediaContent extends Content {
+
+	Collection&lt;Media&gt; getMedia();
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>`Message` 接口的各种实现对应于 AI 模型可以处理的不同类别的消息。  
+模型根据对话角色来区分消息类别。</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img alt="Spring AI Message API" src="../_images/spring-ai-message-api.jpg" width="800"/>
+</div>
+</div>
+<div class="paragraph">
+<p>这些角色通过下文讨论的 `<code>MessageType</code>` 进行有效映射。</p>
+</div>
+<div class="sect3">
+<h4 id="_roles"><a class="anchor" href="#_roles"></a>Roles</h4>
+<div class="paragraph">
+<p>每条消息都被分配了特定的角色。  
+这些角色对消息进行分类，阐明提示中每个部分的情境和目的，以便人工智能模型理解。  
+这种结构化方法增强了与人工智能沟通的细微差别和有效性，因为提示中的每一部分在交互中都扮演着独特且明确的角色。</p>
+</div>
+<div class="paragraph">
+<p>主要职责如下：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>系统角色：指导 AI 的行为和响应风格，设定 AI 解释和回复输入的参数或规则。这类似于在开始对话之前向 AI 提供指令。</p>
+</li>
+<li>
+<p>用户角色：代表用户的输入，包括其向 AI 提出的问题、命令或陈述。该角色至关重要，因为它是 AI 生成回复的基础。</p>
+</li>
+<li>
+<p>助手角色：AI 对用户输入的回应。  
+这不仅仅是提供一个答案或做出反应，对于保持对话的流畅性至关重要。  
+通过追踪 AI 之前的回应（即“助手角色”消息），系统能够确保交互具有连贯性和上下文相关性。  
+助手消息可能还包含函数工具调用请求信息。  
+这就像是 AI 的一项特殊功能，在需要执行特定任务时使用，例如计算、获取数据或超出单纯对话范围的其他操作。</p>
+</li>
+<li>
+<p>工具/函数角色：该工具/函数角色专注于响应工具调用助手消息，返回附加信息。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>在 Spring AI 中，角色以枚举形式表示，如下所示：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public enum MessageType {
+
+	USER("user"),
+
+	ASSISTANT("assistant"),
+
+	SYSTEM("system"),
+
+	TOOL("tool");
+
+    ...
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_prompttemplate"><a class="anchor" href="#_prompttemplate"></a>PromptTemplate</h3>
+<div class="paragraph">
+<p>Spring AI 中用于提示词模板化的关键组件是 `<code>PromptTemplate` 类，它旨在促进结构化提示词的创建，以便随后将这些提示词发送给 AI 模型进行处理。</code></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public class PromptTemplate implements PromptTemplateActions, PromptTemplateMessageActions {
+
+    // Other methods to be discussed later
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>该类使用 <code>TemplateRenderer</code> API 来渲染模板。默认情况下，Spring AI 使用基于 Terence Parr 开发的开源 <a href="https://www.stringtemplate.org/">StringTemplate</a> 引擎的 <code>StTemplateRenderer</code> 实现。模板变量通过 <code>{}</code> 语法进行标识，但您也可以配置分隔符以使用其他语法。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public interface TemplateRenderer extends BiFunction&lt;String, Map&lt;String, Object&gt;, String&gt; {
+
+	@Override
+	String apply(String template, Map&lt;String, Object&gt; variables);
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Spring AI 使用 `<code>TemplateRenderer`接口来处理将变量实际替换到模板字符串中的操作。默认实现使用了<a href="#StringTemplate">[StringTemplate]</a>。如果您需要自定义逻辑，可以提供自己的 `<code>TemplateRenderer`实现。对于不需要模板渲染的场景（例如模板字符串已经完整），您可以使用提供的 `<code>NoOpTemplateRenderer`。</code></code></code></p>
+</div>
+<div class="listingblock">
+<div class="title">使用自定义的 StringTemplate 渲染器，并采用'&lt;'和'&gt;'作为分隔符的示例。</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">PromptTemplate promptTemplate = PromptTemplate.builder()
+    .renderer(StTemplateRenderer.builder().startDelimiterToken('&lt;').endDelimiterToken('&gt;').build())
+    .template("""
+            Tell me the names of 5 movies whose soundtrack was composed by &lt;composer&gt;.
+            """)
+    .build();
+
+String prompt = promptTemplate.render(Map.of("composer", "John Williams"));</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>该类实现的接口支持提示词创建的不同方面：</p>
+</div>
+<div class="paragraph">
+<p><prompttemplatestringactions></prompttemplatestringactions> 专注于创建和渲染提示字符串，代表了最基础的提示生成形式。</p>
+</div>
+<div class="paragraph">
+<p><prompttemplatemessageactions>专为通过生成和操纵<message>对象来创建提示而设计。</message></prompttemplatemessageactions></p>
+</div>
+<div class="paragraph">
+<p><prompttemplateactions>旨在返回<prompt>对象，该对象可传递给<chatmodel>以生成响应。</chatmodel></prompt></prompttemplateactions></p>
+</div>
+<div class="paragraph">
+<p>尽管这些接口在许多项目中可能不会被广泛使用，但它们展示了提示词创建的不同方法。</p>
+</div>
+<div class="paragraph">
+<p>已实现的接口为</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public interface PromptTemplateStringActions {
+
+	String render();
+
+	String render(Map&lt;String, Object&gt; model);
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>`String render()` 方法：将提示模板渲染为最终字符串格式，无需外部输入，适用于不包含占位符或动态内容的模板。</p>
+</div>
+<div class="paragraph">
+<p>`String render(Map<string, object=""> model)` 方法：增强渲染功能以支持动态内容。该方法使用一个 `Map<string, object="">`，其中映射键为提示模板中的占位符名称，值是要插入的动态内容。</string,></string,></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public interface PromptTemplateMessageActions {
+
+	Message createMessage();
+
+    Message createMessage(List&lt;Media&gt; mediaList);
+
+	Message createMessage(Map&lt;String, Object&gt; model);
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>`Message createMessage()` 方法：创建一个不包含额外数据的 `Message` 对象，用于静态或预定义的消息内容。</p>
+</div>
+<div class="paragraph">
+<p>`Message createMessage(List<media> mediaList)` 方法：创建一个包含静态文本和媒体内容的 `Message` 对象。</media></p>
+</div>
+<div class="paragraph">
+<p>`Message createMessage(Map<string, object=""> model)` 方法：扩展消息创建功能以集成动态内容，接受一个 `Map<string, object="">`，其中每个条目代表消息模板中的占位符及其对应的动态值。</string,></string,></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">public interface PromptTemplateActions extends PromptTemplateStringActions {
+
+	Prompt create();
+
+	Prompt create(ChatOptions modelOptions);
+
+	Prompt create(Map&lt;String, Object&gt; model);
+
+	Prompt create(Map&lt;String, Object&gt; model, ChatOptions modelOptions);
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>`Prompt create()` 方法：在不依赖外部数据输入的情况下生成 `Prompt` 对象，适用于静态或预定义的提示。</p>
+</div>
+<div class="paragraph">
+<p>`Prompt create(ChatOptions modelOptions)` 方法：生成一个 `Prompt` 对象，无需外部数据输入，并针对聊天请求指定特定选项。</p>
+</div>
+<div class="paragraph">
+<p>`Prompt create(Map<string, object=""> model)` 方法：将提示词创建能力扩展至包含动态内容，接收一个 `Map<string, object="">`，其中每个映射项代表提示词模板中的占位符及其关联的动态值。</string,></string,></p>
+</div>
+<div class="paragraph">
+<p>`Prompt create(Map<string, object=""> model, ChatOptions modelOptions)` 方法：将提示词创建能力扩展至包含动态内容，接收一个 `Map<string, object="">`，其中每个映射项代表提示词模板中的占位符及其关联的动态值，以及针对聊天请求的具体选项。</string,></string,></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_example_usage"><a class="anchor" href="#_example_usage"></a>使用示例</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>下面展示了一个取自<a href="https://github.com/Azure-Samples/spring-ai-azure-workshop/blob/main/2-README-prompt-templating.md">提示模板 AI 工作坊</a>的简单示例。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">PromptTemplate promptTemplate = new PromptTemplate("Tell me a {adjective} joke about {topic}");
+
+Prompt prompt = promptTemplate.create(Map.of("adjective", adjective, "topic", topic));
+
+return chatModel.call(prompt).getResult();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>下面展示了从<a href="https://github.com/Azure-Samples/spring-ai-azure-workshop/blob/main/3-README-prompt-roles.md">角色 AI 研讨会</a>中选取的另一个示例。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">String userText = """
+    Tell me about three famous pirates from the Golden Age of Piracy and why they did.
+    Write at least a sentence for each pirate.
+    """;
+
+Message userMessage = new UserMessage(userText);
+
+String systemText = """
+  You are a helpful AI assistant that helps people find information.
+  Your name is {name}
+  You should reply to the user's request with your name and also in the style of a {voice}.
+  """;
+
+SystemPromptTemplate systemPromptTemplate = new SystemPromptTemplate(systemText);
+Message systemMessage = systemPromptTemplate.createMessage(Map.of("name", name, "voice", voice));
+
+Prompt prompt = new Prompt(List.of(userMessage, systemMessage));
+
+List&lt;Generation&gt; response = chatModel.call(prompt).getResults();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>这展示了如何使用 `SystemPromptTemplate` 构建 `<code>Prompt&gt;` 实例，通过传入占位符值创建一个带有系统角色的 `<code>Message</code>`。  
+随后，将角色为 `<code>user</code>` 的消息与角色为 `<code>system</code>` 的消息组合，形成最终的提示（prompt）。  
+最后，将该提示传递给 ChatModel 以获取生成式响应。</code></p>
+</div>
+<div class="sect2">
+<h3 id="_using_a_custom_template_renderer"><a class="anchor" href="#_using_a_custom_template_renderer"></a>使用自定义模板渲染器</h3>
+<div class="paragraph">
+<p>您可以通过实现<code>TemplateRenderer</code>接口并将其传递给<code>PromptTemplate</code>构造函数来使用自定义模板渲染器。您也可以继续使用默认的<code>StTemplateRenderer</code>，但使用自定义配置。</p>
+</div>
+<div class="paragraph">
+<p>默认情况下，模板变量由 <code>{}</code> 语法标识。如果您计划在提示词中包含 JSON，可能需要使用不同的语法以避免与 JSON 语法冲突。例如，您可以使用 <code>&lt;</code> 和 <code>&gt;</code> 作为分隔符。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">PromptTemplate promptTemplate = PromptTemplate.builder()
+    .renderer(StTemplateRenderer.builder().startDelimiterToken('&lt;').endDelimiterToken('&gt;').build())
+    .template("""
+            Tell me the names of 5 movies whose soundtrack was composed by &lt;composer&gt;.
+            """)
+    .build();
+
+String prompt = promptTemplate.render(Map.of("composer", "John Williams"));</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_using_resources_instead_of_raw_strings"><a class="anchor" href="#_using_resources_instead_of_raw_strings"></a>使用资源而非原始字符串</h3>
+<div class="paragraph">
+<p>Spring AI 支持 `org.springframework.core.io.Resource` 抽象，因此您可以将提示数据存储在文件中，并直接在 `PromptTemplate` 中使用。  
+例如，您可以在 Spring 管理的组件中定义一个字段来检索该 `Resource`。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">@Value("classpath:/prompts/system-message.st")
+private Resource systemResource;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>然后将该资源直接传递给 `<code>SystemPromptTemplate</code>`。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java hljs" data-lang="java">SystemPromptTemplate systemPromptTemplate = new SystemPromptTemplate(systemResource);</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prompt_engineering"><a class="anchor" href="#_prompt_engineering"></a>提示工程</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>在生成式人工智能中，提示词的设计是开发人员的一项关键任务。这些提示词的质量和结构会显著影响人工智能输出效果的好坏。投入时间和精力精心设计提示词，可以极大地提升人工智能的产出结果。</p>
+</div>
+<div class="paragraph">
+<p>在人工智能社区中，分享和讨论提示词是一种常见做法。这种协作方式不仅营造了共同学习的氛围，还促进了高效提示词的发现与应用。</p>
+</div>
+<div class="paragraph">
+<p>该领域的研究通常涉及分析并比较不同的提示，以评估其在各种情境下的有效性。例如，一项重要研究表明，在提示开头加入“深呼吸，然后逐步解决这个问题”能显著提高解决问题的效率。这凸显了精心选择的语言对生成式人工智能系统性能的影响。</p>
+</div>
+<div class="paragraph">
+<p>掌握提示词的最佳用法，尤其是在人工智能技术飞速发展的背景下，始终是一项持续的挑战。  
+您应认识到提示工程的重要性，并考虑借鉴社区和研究的见解，以优化提示词的创建策略。</p>
+</div>
+<div class="sect2">
+<h3 id="_creating_effective_prompts"><a class="anchor" href="#_creating_effective_prompts"></a>创建有效的提示</h3>
+<div class="paragraph">
+<p>在开发提示词时，整合几个关键要素对于确保其清晰度和有效性至关重要：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>说明</strong>：向人工智能提供清晰直接的指令，就像与人交流一样。这种清晰度对于帮助人工智能“理解”期望至关重要。</p>
+</li>
+<li>
+<p><strong>外部背景</strong>：在必要时，请包含相关的背景信息或针对 AI 回复的具体指导。此“外部背景”用于界定提示词的范围，并帮助 AI 理解整体情境。</p>
+</li>
+<li>
+<p><strong>用户输入</strong>：这是直截了当的部分——用户的直接请求或问题，构成了提示的核心。</p>
+</li>
+<li>
+<p><strong>输出指示</strong>：这一方面可能颇具挑战性。它涉及指定 AI 响应所需的格式，例如 JSON。然而，请注意 AI 未必能始终严格遵循该格式。例如，它可能会在真正的 JSON 数据之前添加诸如“这是您的 JSON"之类的短语，或者有时生成看似 JSON 但结构不准确的伪 JSON 内容。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>为人工智能提供预期的问答格式示例，在构建提示词时非常有益。这种做法有助于人工智能“理解”您查询的结构和意图，从而产生更精确和相关的回答。虽然本文档并未深入探讨这些技术，但它们为人工智能提示工程领域的进一步探索提供了起点。</p>
+</div>
+<div class="paragraph">
+<p>以下为进一步调查的资源列表。</p>
+</div>
+<div class="sect3">
+<h4 id="_simple_techniques"><a class="anchor" href="#_simple_techniques"></a>简单技巧</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><a href="https://www.promptingguide.ai/introduction/examples.en#text-summarization">文本摘要</a></strong>：<br/>
+将冗长的文本精简为简洁的摘要，在保留关键要点和核心思想的同时，省略次要细节。</p>
+</li>
+<li>
+<p><strong><a href="https://www.promptingguide.ai/introduction/examples.en#question-answering">问答</a></strong>：<br/>
+专注于根据用户提出的问题，从提供的文本中得出具体答案。其核心在于精准定位并提取与查询相关的信息。</p>
+</li>
+<li>
+<p><strong><a href="https://www.promptingguide.ai/introduction/examples.en#text-classification">文本分类</a></strong>：<br/>
+系统地将文本划分为预定义的类别或组，通过分析文本内容并将其归入最合适的类别。</p>
+</li>
+<li>
+<p><strong><a href="https://www.promptingguide.ai/introduction/examples.en#conversation">对话</a></strong>：<br/>
+创建交互式对话，使 AI 能够与用户进行来回交流，模拟自然的对话流程。</p>
+</li>
+<li>
+<p><strong><a href="https://www.promptingguide.ai/introduction/examples.en#code-generation">代码生成</a></strong>：<br/>
+根据特定的用户要求或描述生成功能性代码片段，将自然语言指令转换为可执行的代码。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_advanced_techniques"><a class="anchor" href="#_advanced_techniques"></a>高级技巧</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><a href="https://www.promptingguide.ai/techniques/zeroshot">零样本</a>、<a href="https://www.promptingguide.ai/techniques/fewshot">少样本学习</a></strong>：<br/>
+使模型能够在几乎没有特定问题类型的先例情况下，做出准确的预测或响应，并通过已习得的泛化能力来理解并执行新任务。</p>
+</li>
+<li>
+<p><strong><a href="https://www.promptingguide.ai/techniques/cot">思维链</a></strong>：<br/>
+将多个 AI 响应链接起来，以创建连贯且具备上下文感知能力的对话。它有助于 AI 保持讨论的脉络，确保相关性和连续性。</p>
+</li>
+<li>
+<p><strong><a href="https://www.promptingguide.ai/techniques/react">ReAct（推理 + 行动）</a></strong>：<br/>
+在此方法中，AI 首先对输入进行分析（进行推理），然后确定最合适的行动方案或回应。它将理解与决策相结合。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_microsoft_guidance"><a class="anchor" href="#_microsoft_guidance"></a>微软指导方针</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><a href="https://github.com/microsoft/guidance">提示词创建与优化框架</a></strong>：<br/>
+微软提供了一套结构化的方法，用于开发和优化提示词。该框架指导用户创建能有效引发 AI 模型期望响应的提示词，从而优化交互的清晰度与效率。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tokens"><a class="anchor" href="#_tokens"></a>Tokens</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Token 是人工智能模型处理文本的核心要素，它充当桥梁，将人类理解的词汇转换为 AI 模型可处理的格式。  
+这一转换分为两个阶段：输入时将词汇转换为 Token，输出时再将 Token 还原为词汇。</p>
+</div>
+<div class="paragraph">
+<p>分词是将文本分解为词元的过程，这是人工智能模型理解和处理语言的基础。
+人工智能模型利用这种分词格式来理解并响应提示。</p>
+</div>
+<div class="paragraph">
+<p>为了更好地理解 token，可以将其视为单词的片段。通常，一个 token 大约代表一个单词的四分之三。例如，莎士比亚的全部作品总字数约为 90 万词，换算成 token 则大约有 120 万个。</p>
+</div>
+<div class="paragraph">
+<p>尝试使用<a href="https://platform.openai.com/tokenizer">OpenAI 分词器界面</a>，查看单词是如何被转换为 token 的。</p>
+</div>
+<div class="paragraph">
+<p>Token 不仅具有技术层面的意义，在人工智能处理中扮演着关键角色，其实际影响还延伸至计费模式和模型能力等方面：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>计费：AI 模型服务通常按 Token 使用量计费。输入（提示词）和输出（响应）均计入总 Token 数量，因此更短的提示词更具成本效益。</p>
+</li>
+<li>
+<p>模型限制：不同的 AI 模型具有不同的令牌（token）限制，这定义了它们的“上下文窗口”——即它们一次能够处理的最大信息量。例如，GPT-3 的限制为 4K 个令牌，而像 Claude 2 和 Meta Llama 2 等其他模型的限制为 100K 个令牌，某些研究模型甚至可以处理高达 100 万个令牌。</p>
+</li>
+<li>
+<p>上下文窗口：模型的令牌限制决定了其上下文窗口的大小。超出此限制的输入不会被模型处理。因此，发送用于处理的最小有效信息集至关重要。例如，在询问《哈姆雷特》时，无需包含莎士比亚其他作品中的令牌。</p>
+</li>
+<li>
+<p>响应元数据：AI 模型响应的元数据包括所使用的 token 数量，这是管理使用量和成本的关键信息。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<nav class="pagination"><span class="prev"><a href="advisors-recursive.html">递归顾问</a></span>
+<span class="next"><a href="structured-output-converter.html">结构化输出</a></span></nav>
+</article>  </div>
+</main>
+<div aria-hidden="true" class="modal micromodal-slide" id="modal-versions">
+    <div class="modal__overlay" data-micromodal-close="" tabindex="-1">
+        <div aria-modal="true" class="modal__container" role="dialog">
+            <main class="modal__content" id="modal-versions-content">
+              <button class="modal-versions-close" data-micromodal-close="">
+                <svg height="28px" viewbox="0 0 32 32" width="28px" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1h{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title></title><g id="cross"><line class="cls-1h" x1="7" x2="25" y1="7" y2="25"></line><line class="cls-1h" x1="7" x2="25" y1="25" y2="7"></line></g></svg>
+              </button>
+              <div class="colset">
+                <div class="col-left">
+
+                  <ul class="nav-versions">
+                      <li class="component">
+                        <div><a class="title" href="../index.html">Spring AI</a></div>                        <div class="version-item is-active">
+                          <div>
+                            <button class="version-toggle" type="button">
+                              <span></span>
+                              Stable
+                            </button>
+                          </div>
+                          <ul class="versions">
+  <li class="version">
+    <a href="../index.html">
+      2.0.0
+    </a>
+  </li>
+</ul>                        </div>
+                        
+                      </li>
+                  </ul>
+                </div>
+                <div class="col-right"><ul class="projects">
+<li>
+    相关 Spring 文档
+    <ul class="projects-list">
+</ul>
+</li><a href="../spring-projects.html">所有文档...</a>
+</ul></div>
+              </div>
+            </main>
+        </div>
+    </div>
+</div>
+
+</div>
+<footer class="footer flex">
+    <div id="spring-links flex">
+        <img alt="Spring" id="springlogo" src="../_/img/spring-logo.svg"/>
+        <p class="smallest antialiased">版权所有 © 2005 - <script>var d = new Date(); document.write(d.getFullYear());</script> Broadcom。保留所有权利。“Broadcom”指 Broadcom Inc. 及其/或其子公司。<br/><a href="https://www.vmware.com/help/legal.html">使用条款</a> • <a href="https://www.vmware.com/help/privacy.html" rel="noopener noreferrer">隐私政策</a> • <a href="https://spring.io/trademarks">商标指南</a> <span id="thank-you-mobile">• <a href="https://spring.io/thank-you">致谢</a></span> • <a href="https://www.vmware.com/help/privacy/california-privacy-rights.html">您的加州隐私权利</a> • <a class="ot-sdk-show-settings">Cookie 设置</a> <span id="teconsent"></span></p>
+        <p class="smallest antialiased has-gray-text">Apache®、Apache Tomcat®、Apache Kafka®、Apache Cassandra™ 和 Apache Geode™ 是 Apache 软件基金会在美国和其他/或某些国家的商标或注册商标。Java™、Java™ SE、Java™ EE 和 OpenJDK™ 是 Oracle 公司和/或其关联公司的商标。Kubernetes® 是 Linux 基金会在美国和其他/或某些国家的注册商标。Linux® 是 Linus Torvalds 在美国和其他/或某些国家的注册商标。Windows® 和 Microsoft® Azure 是微软公司的注册商标。"AWS"和"Amazon Web Services"是 Amazon.com Inc. 或其关联公司的商标或注册商标。所有其他商标和版权均归各自所有者所有，仅用于说明目的。其他名称可能是其各自所有者的商标。</p>
+    </div>
+    <div class="flex jc-between" id="social-icons">
+        <a href="https://www.youtube.com/user/SpringSourceDev" title="Youtube"><svg id="youtube-icon" viewbox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><circle class="cls-1" cx="20" cy="20" r="20"></circle><path class="cls-2" d="M30.91,14.53a2.89,2.89,0,0,0-2-2C27.12,12,20,12,20,12s-7.12,0-8.9.47a2.9,2.9,0,0,0-2,2A30.56,30.56,0,0,0,8.63,20a30.44,30.44,0,0,0,.46,5.47,2.89,2.89,0,0,0,2,2C12.9,28,20,28,20,28s7.12,0,8.9-.47a2.87,2.87,0,0,0,2-2A30.56,30.56,0,0,0,31.37,20,28.88,28.88,0,0,0,30.91,14.53ZM17.73,23.41V16.59L23.65,20Z"></path></svg></a>
+        <a href="https://github.com/spring-projects" title="GitHub"><svg id="github-icon" viewbox="0 0 75.93 75.93" xmlns="http://www.w3.org/2000/svg"><path class="cls-1" d="M38,0a38,38,0,1,0,38,38A38,38,0,0,0,38,0Z"></path><path class="cls-2" d="M38,15.59A22.95,22.95,0,0,0,30.71,60.3c1.15.21,1.57-.5,1.57-1.11s0-2,0-3.9c-6.38,1.39-7.73-3.07-7.73-3.07A6.09,6.09,0,0,0,22,48.86c-2.09-1.42.15-1.39.15-1.39a4.81,4.81,0,0,1,3.52,2.36c2,3.5,5.37,2.49,6.67,1.91a4.87,4.87,0,0,1,1.46-3.07c-5.09-.58-10.45-2.55-10.45-11.34a8.84,8.84,0,0,1,2.36-6.15,8.29,8.29,0,0,1,.23-6.07s1.92-.62,6.3,2.35a21.82,21.82,0,0,1,11.49,0c4.38-3,6.3-2.35,6.3-2.35a8.29,8.29,0,0,1,.23,6.07,8.84,8.84,0,0,1,2.36,6.15c0,8.81-5.37,10.75-10.48,11.32a5.46,5.46,0,0,1,1.56,4.25c0,3.07,0,5.54,0,6.29s.42,1.33,1.58,1.1A22.94,22.94,0,0,0,38,15.59Z"></path></svg></a>
+        <a href="https://twitter.com/springcentral" title="Twitter"><svg id="twitter-icon" viewbox="0 0 75.93 75.93" xmlns="http://www.w3.org/2000/svg"><circle class="cls-1" cx="37.97" cy="37.97" r="37.97"></circle><path class="cls-2" d="M55.2,22.73a15.43,15.43,0,0,1-4.88,1.91,7.56,7.56,0,0,0-5.61-2.49A7.78,7.78,0,0,0,37,30a7.56,7.56,0,0,0,.2,1.79,21.63,21.63,0,0,1-15.84-8.23,8,8,0,0,0,2.37,10.52,7.66,7.66,0,0,1-3.48-1v.09A7.84,7.84,0,0,0,26.45,41a7.54,7.54,0,0,1-2,.28A7.64,7.64,0,0,1,23,41.09a7.71,7.71,0,0,0,7.18,5.47,15.21,15.21,0,0,1-9.55,3.37,15.78,15.78,0,0,1-1.83-.11,21.41,21.41,0,0,0,11.78,3.54c14.13,0,21.86-12,21.86-22.42,0-.34,0-.68,0-1a15.67,15.67,0,0,0,3.83-4.08,14.9,14.9,0,0,1-4.41,1.24A7.8,7.8,0,0,0,55.2,22.73Z" data-name="Twitter" id="Twitter-2"></path></svg></a>
+    </div>
+</footer>
+<script src="../_/js/vendor/import.js"></script>
+<script src="../_/js/site.js"></script>
+<script async="" src="../_/js/vendor/highlight.js"></script>
+<script async="" data-sync-storage-key="docs:preferred-tab" src="../_/js/vendor/asciidoctor-tabs.js"></script>
+
+<div aria-hidden="true" class="modal micromodal-slide" id="modal-1">
+    <div class="modal__overlay" data-micromodal-close="" tabindex="-1">
+        <div aria-labelledby="modal-1-title" aria-modal="true" class="modal__container" role="dialog">
+            <main class="modal__content" id="modal-1-content">
+                <div id="searchbox"></div>
+                <div id="counter"></div>
+                <div class="search-link-box"><a class="search-link" href="../search.html">在全部 Spring 文档中搜索</a></div>
+                <div class="search-by">
+                    <a aria-label="Search by Algolia" href="https://www.algolia.com/" rel="noopener noreferrer" target="_blank">
+                        <img class="light" src="../_/img/algolia-light.svg" width="140"/>
+                        <img class="dark" src="../_/img/algolia-dark.svg" width="140"/>
+                    </a>
+                </div>
+                <div id="hits"></div>
+            </main>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
+<script crossorigin="anonymous" integrity="sha256-Lf9DrpGmcRip6OQzbcL6lnvNmoZNSKpyQX5pMlwatWE=" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.17.0/dist/algoliasearch-lite.umd.js"></script>
+<script crossorigin="anonymous" integrity="sha256-xYsZPDeNjYNTBWLvqD2Lxe98hOxcDgOHyMPfz4tVAbk=" src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.54.1/dist/instantsearch.production.min.js"></script>
+<script async="" data-api-key="c2e84f15fa630d534f1c62b1c413bb77" data-app-id="WB1FQYI187" data-index-name="springdocs" data-page-component="ai" data-page-version="2.0.0" data-stylesheet="../_/css/vendor/search.css" id="search-script" src="../_/js/vendor/search.js"></script>
+  
+
+</body></html>
