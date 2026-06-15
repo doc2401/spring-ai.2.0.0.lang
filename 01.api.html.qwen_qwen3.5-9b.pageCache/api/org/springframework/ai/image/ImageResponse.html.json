@@ -1,0 +1,121 @@
+{
+  "created_at": "2026-06-15 07:29:44",
+  "updated_at": "2026-06-15 07:29:44",
+  "stats": {
+    "total_entries": 21,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 26,
+    "entries_with_hits": 21,
+    "entries_without_hits": 0,
+    "hit_rate": 1.2380952380952381,
+    "usage_percentage": 0.0021
+  },
+  "items": [
+    {
+      "source": "Construct a new <a href=\"ImageResponse.html\" title=\"class in org.springframework.ai.image\"><code>ImageResponse</code></a> instance without metadata.",
+      "translation": "不带元数据构建一个新的<a href=\"ImageResponse.html\" title=\"org.springframework.ai.image 中的类\"><code>ImageResponse</code></a>实例。",
+      "count": 2
+    },
+    {
+      "source": "Construct a new <a href=\"ImageResponse.html\" title=\"class in org.springframework.ai.image\"><code>ImageResponse</code></a> instance.",
+      "translation": "构建一个新的<a href=\"ImageResponse.html\" title=\"org.springframework.ai.image 中的类\"><code>ImageResponse</code></a>实例。",
+      "count": 2
+    },
+    {
+      "source": "Retrieves the response metadata associated with the AI model's response.",
+      "translation": "检索与 AI 模型响应相关的响应元数据。",
+      "count": 2
+    },
+    {
+      "source": "Retrieves the (first) result of the AI model.",
+      "translation": "检索 AI 模型的首个结果。",
+      "count": 2
+    },
+    {
+      "source": "<code>generations</code> - the <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"class or interface in java.util\"><code>List</code></a> of <a href=\"ImageGeneration.html\" title=\"class in org.springframework.ai.image\"><code>ImageGeneration</code></a> returned by the AI\nprovider.",
+      "translation": "<code>generations</code> - 由 AI 提供者返回的包含 <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"class or interface in java.util\"><code>List</code></a> 的 <a href=\"ImageGeneration.html\" title=\"class in org.springframework.ai.image\"><code>ImageGeneration</code></a> 列表。",
+      "count": 2
+    },
+    {
+      "source": "It is a <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"class or interface in java.util\"><code>List</code></a> of <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"class or interface in java.util\"><code>lists</code></a> because the Prompt could request\nmultiple output <a href=\"ImageGeneration.html\" title=\"class in org.springframework.ai.image\"><code>generations</code></a>.",
+      "translation": "它是一个<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"java.util 中的类或接口\"><code>List</code></a>，包含多个<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"java.util 中的类或接口\"><code>lists</code></a>，因为 Prompt 可能会请求多个输出<a href=\"ImageGeneration.html\" title=\"org.springframework.ai.image 中的类\"><code>generations</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../model/ModelResponse.html#getResult()\">ModelResponse</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../model/ModelResponse.html#getResult()\">ModelResponse</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../model/ModelResponse.html#getMetadata()\">ModelResponse</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../model/ModelResponse.html#getMetadata()\">ModelResponse</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "The image completion (e.g. imageGeneration) response returned by an AI provider.",
+      "translation": "AI 提供商返回的图像补全（例如图像生成）响应。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../model/ModelResponse.html#getResults()\">getResults</a></code> in interface <code><a href=\"../model/ModelResponse.html\" title=\"interface in org.springframework.ai.model\">ModelResponse</a>&lt;<a href=\"ImageGeneration.html\" title=\"class in org.springframework.ai.image\">ImageGeneration</a>&gt;</code>",
+      "translation": "<a href=\"../model/ModelResponse.html#getResults()\">getResults</a> 接口 <code><a href=\"../model/ModelResponse.html\" title=\"interface in org.springframework.ai.model\">ModelResponse</a>&lt;<a href=\"ImageGeneration.html\" title=\"class in org.springframework.ai.image\">ImageGeneration</a>&gt;</code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../model/ModelResponse.html#getResult()\">getResult</a></code> in interface <code><a href=\"../model/ModelResponse.html\" title=\"interface in org.springframework.ai.model\">ModelResponse</a>&lt;<a href=\"ImageGeneration.html\" title=\"class in org.springframework.ai.image\">ImageGeneration</a>&gt;</code>",
+      "translation": "接口 <code><a href=\"../model/ModelResponse.html\" title=\"interface in org.springframework.ai.model\">ModelResponse</a>&lt;<a href=\"ImageGeneration.html\" title=\"class in org.springframework.ai.image\">ImageGeneration</a>&gt;</code> 中的 <code><a href=\"../model/ModelResponse.html#getResult()\">getResult</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../model/ModelResponse.html#getMetadata()\">getMetadata</a></code> in interface <code><a href=\"../model/ModelResponse.html\" title=\"interface in org.springframework.ai.model\">ModelResponse</a>&lt;<a href=\"ImageGeneration.html\" title=\"class in org.springframework.ai.image\">ImageGeneration</a>&gt;</code>",
+      "translation": "<a href=\"../model/ModelResponse.html#getMetadata()\">getMetadata</a> 接口 <code><a href=\"../model/ModelResponse.html\" title=\"interface in org.springframework.ai.model\">ModelResponse</a>&lt;<a href=\"ImageGeneration.html\" title=\"class in org.springframework.ai.image\">ImageGeneration</a>&gt;</code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#toString()\" title=\"class or interface in java.lang\">toString</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"class or interface in java.lang\">Object</a></code>",
+      "translation": "类 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"java.lang 中的类或接口\">Object</a></code> 中的 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#toString()\" title=\"java.lang 中的类或接口\">toString</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)\" title=\"class or interface in java.lang\">equals</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"class or interface in java.lang\">Object</a></code>",
+      "translation": "`Object` 类中的 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)\" title=\"class or interface in java.lang\">equals</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#hashCode()\" title=\"class or interface in java.lang\">hashCode</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"class or interface in java.lang\">Object</a></code>",
+      "translation": "类 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"java.lang 中的类或接口\">Object</a></code> 中的 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#hashCode()\" title=\"java.lang 中的类或接口\">hashCode</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code>imageResponseMetadata</code> - <a href=\"ImageResponseMetadata.html\" title=\"class in org.springframework.ai.image\"><code>ImageResponseMetadata</code></a> containing information\nabout the use of the AI provider's API.",
+      "translation": "<code>imageResponseMetadata</code> - 包含有关使用 AI 提供商 API 信息的<a href=\"ImageResponseMetadata.html\" title=\"class in org.springframework.ai.image\"><code>ImageResponseMetadata</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Returns the first <a href=\"ImageGeneration.html\" title=\"class in org.springframework.ai.image\"><code>ImageGeneration</code></a> in the generations list.",
+      "translation": "返回列表中的第一个<a href=\"ImageGeneration.html\" title=\"org.springframework.ai.image 包中的类\"><code>ImageGeneration</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Returns <a href=\"ImageResponseMetadata.html\" title=\"class in org.springframework.ai.image\"><code>ImageResponseMetadata</code></a> containing information about the use\nof the AI provider's API.",
+      "translation": "返回包含有关使用 AI 提供商 API 信息的<a href=\"ImageResponseMetadata.html\" title=\"class in org.springframework.ai.image\"><code>ImageResponseMetadata</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Mark Pollack, Christian Tzolov, Hyunjoon Choi",
+      "translation": "马克·波拉克，克里斯蒂安·茨洛夫，玄俊勋",
+      "count": 1
+    },
+    {
+      "source": "The <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"class or interface in java.util\"><code>List</code></a> of <a href=\"ImageGeneration.html\" title=\"class in org.springframework.ai.image\"><code>generated outputs</code></a>.",
+      "translation": "包含<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"java.util 中的类或接口\"><code>List</code></a>的<a href=\"ImageGeneration.html\" title=\"org.springframework.ai.image 中的类\"><code>生成的输出</code></a>。",
+      "count": 1
+    }
+  ]
+}

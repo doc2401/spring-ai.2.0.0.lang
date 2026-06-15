@@ -1,0 +1,406 @@
+{
+  "created_at": "2026-06-15 07:30:38",
+  "updated_at": "2026-06-15 07:30:38",
+  "stats": {
+    "total_entries": 78,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 123,
+    "entries_with_hits": 78,
+    "entries_without_hits": 0,
+    "hit_rate": 1.5769230769230769,
+    "usage_percentage": 0.0078
+  },
+  "items": [
+    {
+      "source": "Converts a Spring AI tool callback to an MCP asynchronous tool specification.",
+      "translation": "将 Spring AI 工具回调转换为 MCP 异步工具规范。",
+      "count": 4
+    },
+    {
+      "source": "a list of tool callbacks from all provided clients",
+      "translation": "所有提供客户端的工具回调列表",
+      "count": 4
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/RuntimeException.html\" title=\"class or interface in java.lang\">RuntimeException</a></code> - if there's an error during the function execution",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/RuntimeException.html\" title=\"java.lang 中的类或接口\">RuntimeException</a></code> - 如果函数执行期间发生错误",
+      "count": 3
+    },
+    {
+      "source": "<code>toolCallback</code> - the Spring AI function callback to convert",
+      "translation": "<code>toolCallback</code> - 用于转换的 Spring AI 函数回调。",
+      "count": 3
+    },
+    {
+      "source": "<code>mimeType</code> - the MIME type of the output content",
+      "translation": "<code>mimeType</code> - 输出内容的 MIME 类型",
+      "count": 3
+    },
+    {
+      "source": "This method enables Spring AI tools to be exposed as asynchronous MCP tools that\ncan be discovered and invoked by language models. The conversion process:",
+      "translation": "该方法使 Spring AI 工具能够作为异步 MCP 工具暴露，供语言模型发现并调用。转换过程如下：",
+      "count": 2
+    },
+    {
+      "source": "The resulting async specification will:",
+      "translation": "生成的异步规范将：",
+      "count": 2
+    },
+    {
+      "source": "This method:",
+      "translation": "该方法：",
+      "count": 2
+    },
+    {
+      "source": "The name of tool context key used to store the MCP exchange object.",
+      "translation": "用于存储 MCP 交换对象的工具上下文键名称。",
+      "count": 2
+    },
+    {
+      "source": "Creates a Spring AI ToolDefinition from an MCP Tool.",
+      "translation": "从 MCP 工具创建 Spring AI ToolDefinition。",
+      "count": 2
+    },
+    {
+      "source": "Retrieves the MCP exchange object from the provided tool context if it exists.",
+      "translation": "如果存在，则从提供的工具上下文中检索 MCP 交换对象。",
+      "count": 2
+    },
+    {
+      "source": "Convenience method to get tool callbacks from multiple asynchronous MCP clients.",
+      "translation": "从多个异步 MCP 客户端获取工具回调的便捷方法。",
+      "count": 2
+    },
+    {
+      "source": "Gets tool callbacks from a list of asynchronous MCP clients.",
+      "translation": "从异步 MCP 客户端列表中获取工具回调。",
+      "count": 2
+    },
+    {
+      "source": "Convenience method to get tool callbacks from multiple synchronous MCP clients.",
+      "translation": "从多个同步 MCP 客户端获取工具回调的便捷方法。",
+      "count": 2
+    },
+    {
+      "source": "Gets tool callbacks from a list of synchronous MCP clients.",
+      "translation": "从同步 MCP 客户端列表中获取工具回调。",
+      "count": 2
+    },
+    {
+      "source": "Converts a list of Spring AI tool callbacks to MCP asynchronous tool specification.",
+      "translation": "将一组 Spring AI 工具回调转换为 MCP 异步工具规范。",
+      "count": 2
+    },
+    {
+      "source": "Convenience method to convert a variable number of tool callbacks to MCP\nasynchronous tool specification.",
+      "translation": "将可变数量的工具回调转换为 MCP 异步工具规范的便捷方法。",
+      "count": 2
+    },
+    {
+      "source": "Converts a list of Spring AI tool callbacks to MCP synchronous tool specification.",
+      "translation": "将一组 Spring AI 工具回调转换为 MCP 同步工具规范。",
+      "count": 2
+    },
+    {
+      "source": "Converts a Spring AI ToolCallback to an MCP SyncToolSpecification.",
+      "translation": "将 Spring AI 的 ToolCallback 转换为 MCP SyncToolSpecification。",
+      "count": 2
+    },
+    {
+      "source": "Convenience method to convert a variable number of tool callbacks to MCP\nsynchronous tool specification.",
+      "translation": "将可变数量的工具回调转换为 MCP 同步工具规范的便捷方法。",
+      "count": 2
+    },
+    {
+      "source": "Converts a Spring AI ToolCallback to an MCP SyncToolSpecification. This enables\nSpring AI functions to be exposed as MCP tools that can be discovered and invoked\nby language models.",
+      "translation": "将 Spring AI 的 ToolCallback 转换为 MCP SyncToolSpecification。这使得 Spring AI 函数能够作为 MCP 工具暴露出来，供语言模型发现并调用。",
+      "count": 2
+    },
+    {
+      "source": "<code>toolCallbacks</code> - the list of tool callbacks to convert",
+      "translation": "<code>toolCallbacks</code> - 待转换的工具回调列表",
+      "count": 2
+    },
+    {
+      "source": "<code>toolCallbacks</code> - the tool callbacks to convert",
+      "translation": "<code>toolCallbacks</code> - 待转换的工具回调函数",
+      "count": 2
+    },
+    {
+      "source": "<code>toolCallback</code> - the Spring AI tool callback to convert",
+      "translation": "<code>toolCallback</code> - 用于转换的 Spring AI 工具回调。",
+      "count": 2
+    },
+    {
+      "source": "First converts the callback to a synchronous specification",
+      "translation": "首先将回调转换为同步规范。",
+      "count": 2
+    },
+    {
+      "source": "Wraps the synchronous execution in a reactive Mono",
+      "translation": "将同步执行包装为响应式 Mono",
+      "count": 2
+    },
+    {
+      "source": "Configures execution on a bounded elastic scheduler for non-blocking\noperation",
+      "translation": "为非阻塞操作配置在有界弹性调度器上的执行。",
+      "count": 2
+    },
+    {
+      "source": "Execute the tool without blocking the calling thread",
+      "translation": "在不阻塞调用线程的情况下执行工具。",
+      "count": 2
+    },
+    {
+      "source": "Handle errors and results asynchronously",
+      "translation": "异步处理错误和结果",
+      "count": 2
+    },
+    {
+      "source": "Provide backpressure through Project Reactor",
+      "translation": "通过 Project Reactor 实现背压机制。",
+      "count": 2
+    },
+    {
+      "source": "Creates a provider for each client",
+      "translation": "为每个客户端创建一个提供者。",
+      "count": 2
+    },
+    {
+      "source": "Retrieves and combines all tool callbacks into a single list",
+      "translation": "检索并合并所有工具回调到一个列表中。",
+      "count": 2
+    },
+    {
+      "source": "a list of MCP synchronous tool specification",
+      "translation": "MCP 同步工具规范列表",
+      "count": 2
+    },
+    {
+      "source": "an MCP SyncToolSpecification that wraps the function callback",
+      "translation": "一个封装函数回调的 MCP SyncToolSpecification。",
+      "count": 2
+    },
+    {
+      "source": "a list of MCP asynchronous tool specifications",
+      "translation": "MCP 异步工具规范列表",
+      "count": 2
+    },
+    {
+      "source": "an MCP asynchronous tool specification that wraps the tool callback",
+      "translation": "一个封装工具回调的 MCP 异步工具规范。",
+      "count": 2
+    },
+    {
+      "source": "<ul>\n<li>首先将回调转换为同步规范。</li>\n<li>将同步执行包装为响应式 Mono</li>\n<li>为非阻塞操作配置在有界弹性调度器上的执行。</li>\n</ul>",
+      "translation": "<ul>\n<li>首先，将回调转换为同步规范。</li>\n<li>将同步执行包装为响应式 Mono。</li>\n<li>为非阻塞操作配置在有限弹性调度器上的执行。</li>\n</ul>",
+      "count": 2
+    },
+    {
+      "source": "<ul>\n<li>在不阻塞调用线程的情况下执行工具。</li>\n<li>异步处理错误和结果</li>\n<li>通过 Project Reactor 实现背压机制。</li>\n</ul>",
+      "translation": "<ul>\n<li>在不阻塞调用线程的情况下执行工具。</li>\n<li>异步处理错误和结果</li>\n<li>通过 Project Reactor 实现背压机制。</li>\n</ul>",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This is a varargs wrapper around <a href=\"#toSyncToolSpecification(java.util.List)\"><code>toSyncToolSpecification(List)</code></a> for easier\nusage when working with individual callbacks.",
+      "translation": "这是针对<a href=\"#toSyncToolSpecification(java.util.List)\"><code>toSyncToolSpecification(List)</code></a>的变长参数包装器，便于在处理单个回调时更轻松地使用。",
+      "count": 1
+    },
+    {
+      "source": "This is a varargs wrapper around <a href=\"#toAsyncToolSpecifications(java.util.List)\"><code>toAsyncToolSpecifications(List)</code></a> for\neasier usage when working with individual callbacks.",
+      "translation": "这是针对<a href=\"#toAsyncToolSpecifications(java.util.List)\"><code>toAsyncToolSpecifications(List)</code></a>的变长参数包装器，便于在处理单个回调时更轻松地使用。",
+      "count": 1
+    },
+    {
+      "source": "This is a varargs wrapper around <a href=\"#getToolCallbacksFromSyncClients(java.util.List)\"><code>getToolCallbacksFromSyncClients(List)</code></a> for\neasier usage when working with individual clients.",
+      "translation": "这是针对<a href=\"#getToolCallbacksFromSyncClients(java.util.List)\"><code>getToolCallbacksFromSyncClients(List)</code></a>的变长参数包装器，便于在与单个客户端协作时使用。",
+      "count": 1
+    },
+    {
+      "source": "This is a varargs wrapper around <a href=\"#getToolCallbacksFromAsyncClients(java.util.List)\"><code>getToolCallbacksFromAsyncClients(List)</code></a>\nfor easier usage when working with individual clients.",
+      "translation": "这是针对<a href=\"#getToolCallbacksFromAsyncClients(java.util.List)\"><code>getToolCallbacksFromAsyncClients(List)</code></a>的变长参数包装器，便于在与单个客户端协作时使用。",
+      "count": 1
+    },
+    {
+      "source": "The MCP tool system enables servers to expose executable functionality to language\nmodels, allowing them to interact with external systems, perform computations, and take\nactions in the real world. Each tool is uniquely identified by a name and includes\nmetadata describing its schema.",
+      "translation": "MCP 工具系统使服务器能够向语言模型暴露可执行的功能，使其能够与外部系统交互、执行计算并在现实世界中采取行动。每个工具都由一个唯一名称标识，并包含描述其模式的元数据。",
+      "count": 1
+    },
+    {
+      "source": "This helper class provides methods to:",
+      "translation": "此辅助类提供以下方法：",
+      "count": 1
+    },
+    {
+      "source": "This method processes multiple tool callbacks in bulk, converting each one to its\ncorresponding MCP tool specification while maintaining synchronous execution\nsemantics.",
+      "translation": "该方法批量处理多个工具回调，将其转换为相应的 MCP 工具规范，同时保持同步执行的语义。",
+      "count": 1
+    },
+    {
+      "source": "The conversion process:",
+      "translation": "转换过程：",
+      "count": 1
+    },
+    {
+      "source": "This method processes multiple tool callbacks in bulk, converting each one to its\ncorresponding MCP tool specification while adding asynchronous execution\ncapabilities. The resulting specifications will execute their tools on a bounded\nelastic scheduler.",
+      "translation": "该方法批量处理多个工具回调，将其转换为相应的 MCP 工具规范，并添加异步执行能力。生成的规范将在有界弹性调度器上执行其工具。",
+      "count": 1
+    },
+    {
+      "source": "Converts a Spring AI ToolCallback to an MCP StatelessSyncToolSpecification.",
+      "translation": "将 Spring AI 的 ToolCallback 转换为无状态同步 MCP 工具规范。",
+      "count": 1
+    },
+    {
+      "source": "Converts a Spring AI ToolCallback to an MCP StatelessSyncToolSpecification. This\nenables Spring AI functions to be exposed as MCP tools that can be discovered and\ninvoked by language models.\n\nYou can use the ToolCallback builder to create a new instance of ToolCallback using\neither java.util.function.Function or Method reference.",
+      "translation": "将 Spring AI 的 ToolCallback 转换为无状态同步 MCP 工具规范（MCP StatelessSyncToolSpecification）。这使得 Spring AI 函数能够作为 MCP 工具暴露出来，供语言模型发现和调用。\n\n您可以使用 ToolCallback 构建器来创建新的 ToolCallback 实例，该构建器支持通过 java.util.function.Function 或方法引用来进行创建。",
+      "count": 1
+    },
+    {
+      "source": "Convert Spring AI's <a href=\"../tool/ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a> instances to MCP tool specification",
+      "translation": "将 Spring AI 的<a href=\"../tool/ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a>实例转换为 MCP 工具规范。",
+      "count": 1
+    },
+    {
+      "source": "<code>prefix</code> - Client name, combination of client info name and the 'server'\nconnection name.",
+      "translation": "<code>prefix</code> - 客户端名称，由客户端信息名称与“服务器”连接名组合而成。",
+      "count": 1
+    },
+    {
+      "source": "<code>title</code> - Server connection name",
+      "translation": "<code>title</code> - 服务器连接名称",
+      "count": 1
+    },
+    {
+      "source": "<code>toolName</code> - original MCP server tool name.",
+      "translation": "<code>toolName</code> - 原始 MCP 服务器工具名称。",
+      "count": 1
+    },
+    {
+      "source": "<code>prefixedToolName</code> - the prefixed name for the tool",
+      "translation": "<code>prefixedToolName</code> - 工具的带前缀名称",
+      "count": 1
+    },
+    {
+      "source": "<code>tool</code> - the MCP tool",
+      "translation": "<code>tool</code> - MCP 工具",
+      "count": 1
+    },
+    {
+      "source": "<code>toolContext</code> - the tool context from which to retrieve the MCP exchange",
+      "translation": "<code>toolContext</code> - 用于检索 MCP 交换的工具上下文",
+      "count": 1
+    },
+    {
+      "source": "<code>mcpClients</code> - the synchronous MCP clients to get callbacks from",
+      "translation": "<mcpClients> - 用于获取回调的同步 MCP 客户端",
+      "count": 1
+    },
+    {
+      "source": "<code>mcpClients</code> - the list of synchronous MCP clients to get callbacks from",
+      "translation": "<mcpClients> - 用于获取回调的同步 MCP 客户端列表",
+      "count": 1
+    },
+    {
+      "source": "<code>asyncMcpClients</code> - the asynchronous MCP clients to get callbacks from",
+      "translation": "<code>asyncMcpClients</code> - 用于获取回调的异步 MCP 客户端",
+      "count": 1
+    },
+    {
+      "source": "<code>asyncMcpClients</code> - the list of asynchronous MCP clients to get callbacks from",
+      "translation": "<code>asyncMcpClients</code> - 用于获取回调的异步 MCP 客户端列表",
+      "count": 1
+    },
+    {
+      "source": "Generate JSON schemas for tool input validation",
+      "translation": "为工具输入验证生成 JSON 模式。",
+      "count": 1
+    },
+    {
+      "source": "Creates an MCP Tool with the function's name and input schema",
+      "translation": "使用函数的名称和输入模式创建一个 MCP 工具。",
+      "count": 1
+    },
+    {
+      "source": "Wraps the function's execution in a SyncToolSpecification that handles the MCP\nprotocol",
+      "translation": "将函数的执行包装在 SyncToolSpecification 中，以处理 MCP 协议。",
+      "count": 1
+    },
+    {
+      "source": "Provides error handling and result formatting according to MCP\nspecifications",
+      "translation": "根据 MCP 规范提供错误处理和结果格式化。",
+      "count": 1
+    },
+    {
+      "source": "Takes a list of synchronous MCP clients",
+      "translation": "接收同步 MCP 客户端列表",
+      "count": 1
+    },
+    {
+      "source": "Takes a list of asynchronous MCP clients",
+      "translation": "接收异步 MCP 客户端列表",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Ilayaperumal Gopinathan",
+      "translation": "克里斯蒂安·茨洛夫，伊拉亚佩鲁马勒·戈皮纳坦",
+      "count": 1
+    },
+    {
+      "source": "the prefix to use for the tool to avoid name collisions.",
+      "translation": "用于避免名称冲突的工具前缀。",
+      "count": 1
+    },
+    {
+      "source": "an MCP StatelessSyncToolSpecification that wraps the function callback",
+      "translation": "一个封装函数回调的无状态 MCP 同步工具规范。",
+      "count": 1
+    },
+    {
+      "source": "a ToolDefinition with normalized input schema",
+      "translation": "具有规范化输入模式的工具定义",
+      "count": 1
+    },
+    {
+      "source": "the MCP exchange object, or null if not present in the context",
+      "translation": "MCP 交换对象，若上下文中不存在则为 null",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "Utility class that provides helper methods for working with Model Context Protocol\n(MCP) tools in a Spring AI environment. This class facilitates the integration between\nSpring AI's tool callbacks and MCP's tool system.",
+      "translation": "这是一个用于在 Spring AI 环境中操作模型上下文协议（MCP）工具的实用类。该类促进了 Spring AI 的工具回调与 MCP 工具系统之间的集成。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>将 Spring AI 的<a href=\"../tool/ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a>实例转换为 MCP 工具规范。</li>\n<li>为工具输入验证生成 JSON 模式。</li>\n</ul>",
+      "translation": "<ul>\n<li>将 Spring AI 的<a href=\"../tool/ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a>实例转换为 MCP 工具规范。</li>\n<li>为工具输入验证生成 JSON Schema。</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>使用函数的名称和输入模式创建一个 MCP 工具。</li>\n<li>将函数的执行包装在 SyncToolSpecification 中，以处理 MCP 协议。</li>\n<li>根据 MCP 规范提供错误处理和结果格式化。</li>\n</ul>\n\nYou can use the ToolCallback builder to create a new instance of ToolCallback using\neither java.util.function.Function or Method reference.",
+      "translation": "<ul>\n<li>使用函数名称和输入模式创建一个 MCP 工具。</li>\n<li>将函数的执行包装在 SyncToolSpecification 中，以处理 MCP 协议。</li>\n<li>根据 MCP 规范提供错误处理和结果格式化。</li>\n</ul>\n\n您可以使用 ToolCallback 构建器通过 java.util.function.Function 或方法引用来创建新的 ToolCallback 实例。",
+      "count": 1
+    },
+    {
+      "source": "<ol>\n<li>接收同步 MCP 客户端列表</li>\n<li>为每个客户端创建一个提供者。</li>\n<li>检索并合并所有工具回调到一个列表中。</li>\n</ol>",
+      "translation": "<ol>\n<li>接收同步的 MCP 客户端列表</li>\n<li>为每个客户端创建一个提供者。</li>\n<li>检索并合并所有工具回调到一个列表中。</li>\n</ol>",
+      "count": 1
+    },
+    {
+      "source": "<ol>\n<li>接收异步 MCP 客户端列表</li>\n<li>为每个客户端创建一个提供者。</li>\n<li>检索并合并所有工具回调到一个列表中。</li>\n</ol>",
+      "translation": "<ol>\n<li>接收异步 MCP 客户端列表</li>\n<li>为每个客户端创建一个提供者。</li>\n<li>检索并合并所有工具回调到一个列表中。</li>\n</ol>",
+      "count": 1
+    }
+  ]
+}

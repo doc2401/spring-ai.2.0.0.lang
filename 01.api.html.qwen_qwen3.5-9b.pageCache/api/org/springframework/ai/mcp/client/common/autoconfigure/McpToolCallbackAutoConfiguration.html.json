@@ -1,0 +1,61 @@
+{
+  "created_at": "2026-06-15 08:25:36",
+  "updated_at": "2026-06-15 08:25:36",
+  "stats": {
+    "total_entries": 9,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 10,
+    "entries_with_hits": 9,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1111111111111112,
+    "usage_percentage": 0.0009
+  },
+  "items": [
+    {
+      "source": "Creates tool callbacks for all configured MCP clients.",
+      "translation": "为所有配置的 MCP 客户端创建工具回调。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "These callbacks enable integration with Spring AI's tool execution framework,\nallowing MCP tools to be used as part of AI interactions.",
+      "translation": "这些回调机制实现了与 Spring AI 工具执行框架的集成，使得 MCP 工具能够作为 AI 交互的一部分被使用。",
+      "count": 1
+    },
+    {
+      "source": "Responsible to convert MCP (sync and async) clients into Spring AI\nToolCallbacksProviders. These providers are used by Spring AI to discover and execute\ntools.",
+      "translation": "负责将 MCP（同步和异步）客户端转换为 Spring AI 的 ToolCallbacksProviders。这些提供者由 Spring AI 用于发现和执行工具。",
+      "count": 1
+    },
+    {
+      "source": "<code>syncClientsToolFilter</code> - list of <a href=\"../../../McpToolFilter.html\" title=\"interface in org.springframework.ai.mcp\"><code>McpToolFilter</code></a>s for the sync client to\nfilter the discovered tools",
+      "translation": "<code>syncClientsToolFilter</code> - 同步客户端用于过滤发现工具的 <a href=\"../../../McpToolFilter.html\" title=\"interface in org.springframework.ai.mcp\"><code>McpToolFilter</code></a> 列表",
+      "count": 1
+    },
+    {
+      "source": "<code>syncMcpClients</code> - provider of MCP sync clients",
+      "translation": "<code>syncMcpClients</code> - 提供 MCP 同步客户端的提供者",
+      "count": 1
+    },
+    {
+      "source": "<code>mcpToolNamePrefixGenerator</code> - the tool name prefix generator",
+      "translation": "<code>mcpToolNamePrefixGenerator</code> - 工具名称前缀生成器",
+      "count": 1
+    },
+    {
+      "source": "list of tool callbacks for MCP integration",
+      "translation": "MCP 集成的工具回调列表",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    }
+  ]
+}

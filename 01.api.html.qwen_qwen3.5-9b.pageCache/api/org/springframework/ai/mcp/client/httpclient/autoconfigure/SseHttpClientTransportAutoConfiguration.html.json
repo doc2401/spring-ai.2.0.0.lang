@@ -1,0 +1,121 @@
+{
+  "created_at": "2026-06-15 08:25:05",
+  "updated_at": "2026-06-15 08:25:05",
+  "stats": {
+    "total_entries": 21,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 23,
+    "entries_with_hits": 21,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0952380952380953,
+    "usage_percentage": 0.0021
+  },
+  "items": [
+    {
+      "source": "<span class=\"deprecated-label\">Deprecated, for removal: This API element is subject to removal in a future version.</span>",
+      "translation": "<code class=\"deprecated-label\">已弃用，即将移除：此 API 元素将在未来版本中被移除。</code>",
+      "count": 2
+    },
+    {
+      "source": "Creates a list of HTTP client-based SSE transports for MCP communication.",
+      "translation": "为 MCP 通信创建基于 HTTP 客户端的 SSE 传输列表。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This configuration class sets up the necessary beans for SSE-based HTTP client\ntransport. It provides HTTP client-based SSE transport implementation for MCP client\ncommunication.",
+      "translation": "该配置类为基于 SSE 的 HTTP 客户端传输设置所需的 Bean。它为 MCP 客户端通信提供基于 HTTP 客户端的 SSE 传输实现。",
+      "count": 1
+    },
+    {
+      "source": "Key features:",
+      "translation": "主要功能：",
+      "count": 1
+    },
+    {
+      "source": "Each transport is configured with:",
+      "translation": "每个运输单元均配置有：",
+      "count": 1
+    },
+    {
+      "source": "<code>transportCustomizers</code> - provider for\n<code><a href=\"../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;io.modelcontextprotocol.client.transport.HttpClientSseClientTransport.Builder&gt;</code> beans",
+      "translation": "<code>transportCustomizers</code> - 提供 <code><a href=\"../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;io.modelcontextprotocol.client.transport.HttpClientSseClientTransport.Builder&gt;</code> 类型 Bean 的提供者",
+      "count": 1
+    },
+    {
+      "source": "Applies <code><a href=\"../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;io.modelcontextprotocol.client.transport.HttpClientSseClientTransport.Builder&gt;</code> beans to\neach transport builder.",
+      "translation": "将 `<code><a href=\"../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;io.modelcontextprotocol.client.transport.HttpClientSseClientTransport.Builder&gt;</code>` 类型的 Bean 应用于每个传输构建器。",
+      "count": 1
+    },
+    {
+      "source": "<code>connectionDetails</code> - the SSE client connection details containing server\nconfigurations",
+      "translation": "<code>connectionDetails</code> - 包含服务器配置的 SSE 客户端连接详情",
+      "count": 1
+    },
+    {
+      "source": "<code>jsonMapperProvider</code> - the provider for JsonMapper or a new instance if not\navailable",
+      "translation": "<code>jsonMapperProvider</code> - JsonMapper 的提供者，若不可用则提供新实例。",
+      "count": 1
+    },
+    {
+      "source": "Creates HTTP client-based SSE transports for configured MCP server connections",
+      "translation": "为配置的 MCP 服务器连接创建基于 HTTP 客户端的 SSE 传输。",
+      "count": 1
+    },
+    {
+      "source": "Configures JsonMapper for JSON serialization/deserialization",
+      "translation": "配置 JsonMapper 用于 JSON 的序列化/反序列化。",
+      "count": 1
+    },
+    {
+      "source": "Supports multiple named server connections with different URLs",
+      "translation": "支持使用不同 URL 连接多个命名服务器。",
+      "count": 1
+    },
+    {
+      "source": "A new HttpClient instance",
+      "translation": "新的 HttpClient 实例",
+      "count": 1
+    },
+    {
+      "source": "Server URL from properties",
+      "translation": "从属性中获取服务器 URL",
+      "count": 1
+    },
+    {
+      "source": "JsonMapper for JSON processing",
+      "translation": "用于 JSON 处理的 JsonMapper",
+      "count": 1
+    },
+    {
+      "source": "A sync or async HTTP request customizer. Sync takes precedence.",
+      "translation": "同步或异步 HTTP 请求自定义器。同步优先。",
+      "count": 1
+    },
+    {
+      "source": "list of named MCP transports",
+      "translation": "MCP 传输的命名列表",
+      "count": 1
+    },
+    {
+      "source": "Auto-configuration for Server-Sent Events (SSE) HTTP client transport in the Model\nContext Protocol (MCP).",
+      "translation": "模型上下文协议（MCP）中针对服务器发送事件（SSE）HTTP 客户端传输的自动配置。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>为配置的 MCP 服务器连接创建基于 HTTP 客户端的 SSE 传输。</li><li>配置 JsonMapper 用于 JSON 的序列化/反序列化。</li><li>支持使用不同 URL 连接多个命名服务器。</li><li>将 `<code><a href=\"../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;io.modelcontextprotocol.client.transport.HttpClientSseClientTransport.Builder&gt;</code>` 类型的 Bean 应用于每个传输构建器。</li></ul>",
+      "translation": "<ul>\n<li>为配置的 MCP 服务器连接创建基于 HTTP 客户端的 SSE 传输。</li><li>配置 JsonMapper 用于 JSON 的序列化/反序列化。</li><li>支持使用不同的 URL 连接多个命名服务器。</li><li>将类型为 `<code><a href=\"../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;io.modelcontextprotocol.client.transport.HttpClientSseClientTransport.Builder&gt;</code>` 的 Bean 应用于每个传输构建器。</li></ul>",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>新的 HttpClient 实例</li><li>从属性中获取服务器 URL</li><li>用于 JSON 处理的 JsonMapper</li><li>同步或异步 HTTP 请求自定义器。同步优先。</li></ul>",
+      "translation": "<ul>\n<li>新的 HttpClient 实例</li>\n<li>从属性中获取服务器 URL</li>\n<li>用于 JSON 处理的 JsonMapper</li>\n<li>同步或异步 HTTP 请求自定义器，默认优先使用同步方式。</li>\n</ul>",
+      "count": 1
+    }
+  ]
+}

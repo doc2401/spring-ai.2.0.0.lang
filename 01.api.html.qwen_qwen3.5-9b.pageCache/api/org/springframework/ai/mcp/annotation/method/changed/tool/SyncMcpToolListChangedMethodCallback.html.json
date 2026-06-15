@@ -1,0 +1,101 @@
+{
+  "created_at": "2026-06-15 08:35:45",
+  "updated_at": "2026-06-15 08:35:45",
+  "stats": {
+    "total_entries": 17,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 20,
+    "entries_with_hits": 17,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1764705882352942,
+    "usage_percentage": 0.0017
+  },
+  "items": [
+    {
+      "source": "Accept the tool list change notification and process it.",
+      "translation": "接受工具列表变更通知并处理该通知。",
+      "count": 2
+    },
+    {
+      "source": "Create a new builder.",
+      "translation": "创建一个新的构建器。",
+      "count": 2
+    },
+    {
+      "source": "Validates that the method return type is compatible with the tool list changed\nconsumer callback.",
+      "translation": "验证方法返回类型是否与工具列表变更的消费者回调兼容。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This method builds the arguments for the method call and invokes the method.",
+      "translation": "该方法构建方法调用的参数并调用该方法。",
+      "count": 1
+    },
+    {
+      "source": "Class for creating Consumer callbacks around tool list changed consumer methods.\n\nThis class provides a way to convert methods annotated with <a href=\"../../../McpToolListChanged.html\" title=\"annotation interface in org.springframework.ai.mcp.annotation\"><code>McpToolListChanged</code></a>\ninto callback functions that can be used to handle tool list change notifications. It\nsupports methods with a single List&lt;McpSchema.Tool&gt; parameter.",
+      "translation": "用于围绕工具列表变更的消费者方法创建 Consumer 回调的类。\n\n该类提供了一种将带有 <a href=\"../../../McpToolListChanged.html\" title=\"org.springframework.ai.mcp.annotation 中的注解接口\"><code>McpToolListChanged</code></a> 注解的方法转换为可用于处理工具列表变更通知的回调函数的方法。它支持具有单个 List&lt;McpSchema.Tool&gt; 参数的方法。",
+      "count": 1
+    },
+    {
+      "source": "Builder for creating SyncMcpToolListChangedMethodCallback instances.",
+      "translation": "用于创建 SyncMcpToolListChangedMethodCallback 实例的构建器。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Consumer.html#accept(T)\" title=\"class or interface in java.util.function\">accept</a></code> in interface <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Consumer.html\" title=\"class or interface in java.util.function\">Consumer</a>&lt;<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"class or interface in java.util\">List</a>&lt;io.modelcontextprotocol.spec.McpSchema.Tool&gt;&gt;</code>",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Consumer.html#accept(T)\" title=\"类或接口 java.util.function\">accept</a></code> 在接口 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Consumer.html\" title=\"类或接口 java.util.function\">Consumer</a>&lt;<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"类或接口 java.util\">List</a>&lt;io.modelcontextprotocol.spec.McpSchema.Tool&gt;&gt;</code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"AbstractMcpToolListChangedMethodCallback.html#validateReturnType(java.lang.reflect.Method)\">validateReturnType</a></code> in class <code><a href=\"AbstractMcpToolListChangedMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.changed.tool\">AbstractMcpToolListChangedMethodCallback</a></code>",
+      "translation": "<code><a href=\"AbstractMcpToolListChangedMethodCallback.html#validateReturnType(java.lang.reflect.Method)\">validateReturnType</a></code> 类 <code><a href=\"AbstractMcpToolListChangedMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.changed.tool\">AbstractMcpToolListChangedMethodCallback</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"AbstractMcpToolListChangedMethodCallback.McpToolListChangedConsumerMethodException.html\" title=\"class in org.springframework.ai.mcp.annotation.method.changed.tool\">AbstractMcpToolListChangedMethodCallback.McpToolListChangedConsumerMethodException</a></code> - if there is an error invoking the\ntool list changed consumer method",
+      "translation": "<code><a href=\"AbstractMcpToolListChangedMethodCallback.McpToolListChangedConsumerMethodException.html\" title=\"class in org.springframework.ai.mcp.annotation.method.changed.tool\">AbstractMcpToolListChangedMethodCallback.McpToolListChangedConsumerMethodException</a></code> - 如果在调用工具列表变更的消费者方法时发生错误",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if the updatedTools is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果 updatedTools 为 null",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if the return type is not compatible",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果返回类型不兼容",
+      "count": 1
+    },
+    {
+      "source": "<code>updatedTools</code> - The updated list of tools, must not be null",
+      "translation": "<code>updatedTools</code> - 已更新的工具列表，不得为 null",
+      "count": 1
+    },
+    {
+      "source": "<code>method</code> - The method to validate",
+      "translation": "<code>method</code> - 待验证的方法",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "A new builder instance",
+      "translation": "一个新的构建器实例",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "created_at": "2026-06-15 08:54:53",
+  "updated_at": "2026-06-15 08:54:53",
+  "stats": {
+    "total_entries": 49,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 52,
+    "entries_with_hits": 49,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0612244897959184,
+    "usage_percentage": 0.0049
+  },
+  "items": [
+    {
+      "source": "Returns a <a href=\"../../client/ResponseEntity.html\" title=\"class in org.springframework.ai.chat.client\"><code>ResponseEntity</code></a> containing both the complete\n<a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> object and a specific entity type, with behaviour\nconfigured via the <code>entityParamSpecConsumer</code>.",
+      "translation": "返回一个包含完整 <a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> 对象和特定实体类型的 <a href=\"../../client/ResponseEntity.html\" title=\"class in org.springframework.ai.chat.client\"><code>ResponseEntity</code></a>，其行为通过 <code>entityParamSpecConsumer</code> 进行配置。",
+      "count": 2
+    },
+    {
+      "source": "Internal method to handle synchronous chat completion calls with tool execution\nsupport.",
+      "translation": "用于支持工具执行的同步聊天完成调用的内部方法。",
+      "count": 2
+    },
+    {
+      "source": "Internal method to handle streaming chat completion calls with tool execution\nsupport.",
+      "translation": "用于支持工具执行的流式聊天完成调用的内部方法。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Returns a <a href=\"../../client/ResponseEntity.html\" title=\"class in org.springframework.ai.chat.client\"><code>ResponseEntity</code></a> containing both the complete\n<a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> object and an entity converted using a specified\n<a href=\"../../../converter/StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a>, with behaviour configured via the\n<code>entityParamSpecConsumer</code>.",
+      "translation": "返回一个 <a href=\"../../client/ResponseEntity.html\" title=\"class in org.springframework.ai.chat.client\"><code>ResponseEntity</code></a>，其中包含完整的 <a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> 对象以及使用指定的 <a href=\"../../../converter/StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a> 转换后的实体，其行为通过 <code>entityParamSpecConsumer</code> 进行配置。",
+      "count": 1
+    },
+    {
+      "source": "Returns a <a href=\"../../client/ResponseEntity.html\" title=\"class in org.springframework.ai.chat.client\"><code>ResponseEntity</code></a> containing both the complete\n<a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> object and an entity converted using a specified\n<a href=\"../../../converter/StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a>.",
+      "translation": "返回一个包含完整 <a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> 对象以及使用指定的 <a href=\"../../../converter/StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a> 转换后的实体的 <a href=\"../../client/ResponseEntity.html\" title=\"class in org.springframework.ai.chat.client\"><code>ResponseEntity</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Returns a <a href=\"../../client/ResponseEntity.html\" title=\"class in org.springframework.ai.chat.client\"><code>ResponseEntity</code></a> containing both the complete\n<a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> object and a <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html\" title=\"class or interface in java.util\"><code>Collection</code></a> of entity types.",
+      "translation": "返回一个包含完整 <a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> 对象以及实体类型 <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html\" title=\"class or interface in java.util\"><code>Collection</code></a> 集合的 <a href=\"../../client/ResponseEntity.html\" title=\"class in org.springframework.ai.chat.client\"><code>ResponseEntity</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Returns a <a href=\"../../client/ResponseEntity.html\" title=\"class in org.springframework.ai.chat.client\"><code>ResponseEntity</code></a> containing both the complete\n<a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> object and a specific entity type.",
+      "translation": "返回一个包含完整 <a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> 对象和特定实体类型的 <a href=\"../../client/ResponseEntity.html\" title=\"class in org.springframework.ai.chat.client\"><code>ResponseEntity</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Streams the chat completion as a <code>Flux</code> of <a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> events.",
+      "translation": "以<code>Flux</code>流的形式流式传输聊天完成结果，其中包含<a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a>事件。",
+      "count": 1
+    },
+    {
+      "source": "Returns the value of the <a href=\"../../../../../../org/springframework/ai/chat/client/ChatClientResponse.html#param-chatResponse\"><code>chatResponse</code></a> record component.",
+      "translation": "返回<a href=\"../../../../../../org/springframework/ai/chat/client/ChatClientResponse.html#param-chatResponse\"><code>chatResponse</code></a>记录组件的值。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI integration with Anthropic's Claude models using the official\n<a href=\"https://github.com/anthropics/anthropic-sdk-java\">Anthropic Java SDK</a>.",
+      "translation": "使用官方 <a href=\"https://github.com/anthropics/anthropic-sdk-java\">Anthropic Java SDK</a> 将 Spring AI 与 Anthropic 的 Claude 模型集成。",
+      "count": 1
+    },
+    {
+      "source": "Creates an instance of a <code>ChatClientResponse</code> record class.",
+      "translation": "创建一个 `<code>ChatClientResponse`</code> 记录类的实例。",
+      "count": 1
+    },
+    {
+      "source": "Chat client API.",
+      "translation": "聊天客户端 API。",
+      "count": 1
+    },
+    {
+      "source": "Provides classes for advising chat clients.",
+      "translation": "提供用于建议聊天客户端的类。",
+      "count": 1
+    },
+    {
+      "source": "Provides the API for chat observations.",
+      "translation": "提供聊天观察的 API。",
+      "count": 1
+    },
+    {
+      "source": "Download all files from a Skills response to a target directory.",
+      "translation": "从技能响应下载所有文件到目标目录。",
+      "count": 1
+    },
+    {
+      "source": "Extract container ID from a chat response for multi-turn conversation reuse.",
+      "translation": "从多轮对话的回复中提取容器 ID，以便后续复用。",
+      "count": 1
+    },
+    {
+      "source": "Extract all file IDs from a chat response.",
+      "translation": "从聊天响应中提取所有文件 ID。",
+      "count": 1
+    },
+    {
+      "source": "Invoke the model and return the response.",
+      "translation": "调用模型并返回响应。",
+      "count": 1
+    },
+    {
+      "source": "Invoke the model and return the response stream.",
+      "translation": "调用模型并返回响应流。",
+      "count": 1
+    },
+    {
+      "source": "Invoke the model and return the chat response stream.",
+      "translation": "调用模型并返回聊天响应流。",
+      "count": 1
+    },
+    {
+      "source": "Retrieves a cached response for a semantically similar query.",
+      "translation": "检索语义相似查询的缓存响应。",
+      "count": 1
+    },
+    {
+      "source": "Retrieves a cached response for a semantically similar query, filtered by context.",
+      "translation": "根据上下文过滤后，检索语义相似查询的缓存响应。",
+      "count": 1
+    },
+    {
+      "source": "Stores a query and its corresponding chat response in the cache.",
+      "translation": "将查询及其对应的聊天响应存储到缓存中。",
+      "count": 1
+    },
+    {
+      "source": "Stores a query and its corresponding chat response in the cache with an optional\ncontext identifier for isolation.",
+      "translation": "将查询及其对应的聊天响应存储到缓存中，并可选择使用上下文标识符以实现隔离。",
+      "count": 1
+    },
+    {
+      "source": "Stores a query and response in the cache with a specified time-to-live duration.",
+      "translation": "将查询和响应存储到缓存中，并指定其生存时间（TTL）。",
+      "count": 1
+    },
+    {
+      "source": "Context used to store metadata for chat model exchanges.",
+      "translation": "用于存储聊天模型交互元数据的上下文。",
+      "count": 1
+    },
+    {
+      "source": "Executes tool calls by delegating to the underlying tool calling manager.",
+      "translation": "通过委托给底层工具调用管理器来执行工具调用。",
+      "count": 1
+    },
+    {
+      "source": "Interface for determining when tool execution should be performed based on model\nresponses.",
+      "translation": "用于根据模型响应确定何时执行工具调用的接口。",
+      "count": 1
+    },
+    {
+      "source": "Execute the tool calls requested by the model.",
+      "translation": "执行模型请求的工具调用。",
+      "count": 1
+    },
+    {
+      "source": "Determines if the response is a tool call message response.",
+      "translation": "判断响应是否为工具调用消息响应。",
+      "count": 1
+    },
+    {
+      "source": "Accumulate usage tokens from the previous chat response to the current usage\ntokens.",
+      "translation": "将上一轮聊天响应的使用令牌累积到当前使用令牌中。",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> in <a href=\"../../../anthropic/package-summary.html\">org.springframework.ai.anthropic</a>",
+      "translation": "<a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> 在 <a href=\"../../../anthropic/package-summary.html\">org.springframework.ai.anthropic</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> in <a href=\"../../../bedrock/converse/package-summary.html\">org.springframework.ai.bedrock.converse</a>",
+      "translation": "<a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> 在 <a href=\"../../../bedrock/converse/package-summary.html\">org.springframework.ai.bedrock.converse</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> in <a href=\"../../../bedrock/converse/api/package-summary.html\">org.springframework.ai.bedrock.converse.api</a>",
+      "translation": "<a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> 在 <a href=\"../../../bedrock/converse/api/package-summary.html\">org.springframework.ai.bedrock.converse.api</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> in <a href=\"../../cache/semantic/package-summary.html\">org.springframework.ai.chat.cache.semantic</a>",
+      "translation": "<a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> 在 <a href=\"../../cache/semantic/package-summary.html\">org.springframework.ai.chat.cache.semantic</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> in <a href=\"../../client/package-summary.html\">org.springframework.ai.chat.client</a>",
+      "translation": "<a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> 在 <a href=\"../../client/package-summary.html\">org.springframework.ai.chat.client</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> in <a href=\"../../client/advisor/package-summary.html\">org.springframework.ai.chat.client.advisor</a>",
+      "translation": "<a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> 在 <a href=\"../../client/advisor/package-summary.html\">org.springframework.ai.chat.client.advisor</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> in <a href=\"../package-summary.html\">org.springframework.ai.chat.model</a>",
+      "translation": "<a href=\"../ChatResponse.html\" title=\"类 org.springframework.ai.chat.model.ChatResponse\">ChatResponse</a> 在 <a href=\"../package-summary.html\">org.springframework.ai.chat.model</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> in <a href=\"../../observation/package-summary.html\">org.springframework.ai.chat.observation</a>",
+      "translation": "<a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> 在 <a href=\"../../observation/package-summary.html\">org.springframework.ai.chat.observation</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> in <a href=\"../../../deepseek/package-summary.html\">org.springframework.ai.deepseek</a>",
+      "translation": "<a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> 在 <a href=\"../../../deepseek/package-summary.html\">org.springframework.ai.deepseek</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> in <a href=\"../../../google/genai/package-summary.html\">org.springframework.ai.google.genai</a>",
+      "translation": "<a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> 在 <a href=\"../../../google/genai/package-summary.html\">org.springframework.ai.google.genai</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> in <a href=\"../../../google/genai/schema/package-summary.html\">org.springframework.ai.google.genai.schema</a>",
+      "translation": "<a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> 在 <a href=\"../../../google/genai/schema/package-summary.html\">org.springframework.ai.google.genai.schema</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> in <a href=\"../../../mistralai/package-summary.html\">org.springframework.ai.mistralai</a>",
+      "translation": "<a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> 在 <a href=\"../../../mistralai/package-summary.html\">org.springframework.ai.mistralai</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> in <a href=\"../../../model/tool/package-summary.html\">org.springframework.ai.model.tool</a>",
+      "translation": "<a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> 在 <a href=\"../../../model/tool/package-summary.html\">org.springframework.ai.model.tool</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> in <a href=\"../../../ollama/package-summary.html\">org.springframework.ai.ollama</a>",
+      "translation": "<a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> 在 <a href=\"../../../ollama/package-summary.html\">org.springframework.ai.ollama</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> in <a href=\"../../../openai/package-summary.html\">org.springframework.ai.openai</a>",
+      "translation": "<a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> 在 <a href=\"../../../openai/package-summary.html\">org.springframework.ai.openai</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> in <a href=\"../../../support/package-summary.html\">org.springframework.ai.support</a>",
+      "translation": "<a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> 在 <a href=\"../../../support/package-summary.html\">org.springframework.ai.support</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> in <a href=\"../../../vectorstore/redis/cache/semantic/package-summary.html\">org.springframework.ai.vectorstore.redis.cache.semantic</a>",
+      "translation": "<a href=\"../ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a> 在 <a href=\"../../../vectorstore/redis/cache/semantic/package-summary.html\">org.springframework.ai.vectorstore.redis.cache.semantic</a> 中的用途",
+      "count": 1
+    }
+  ]
+}

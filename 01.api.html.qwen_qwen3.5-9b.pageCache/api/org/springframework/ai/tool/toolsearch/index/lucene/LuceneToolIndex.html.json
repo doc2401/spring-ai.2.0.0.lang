@@ -1,0 +1,236 @@
+{
+  "created_at": "2026-06-15 08:00:19",
+  "updated_at": "2026-06-15 08:00:19",
+  "stats": {
+    "total_entries": 44,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 55,
+    "entries_with_hits": 44,
+    "entries_without_hits": 0,
+    "hit_rate": 1.25,
+    "usage_percentage": 0.0044
+  },
+  "items": [
+    {
+      "source": "Creates a new LuceneToolIndex with default settings.",
+      "translation": "使用默认设置创建一个新的 LuceneToolIndex。",
+      "count": 2
+    },
+    {
+      "source": "Adds a single tool to the index for the specified session.",
+      "translation": "为指定会话的索引添加单个工具。",
+      "count": 2
+    },
+    {
+      "source": "Clears all indexed tools for the specified session.",
+      "translation": "清除指定会话中的所有索引工具。",
+      "count": 2
+    },
+    {
+      "source": "Deletes a tool from the index for the specified session by its ID.",
+      "translation": "根据指定会话的 ID 从索引中删除工具。",
+      "count": 2
+    },
+    {
+      "source": "Registers a tool in the search index for the specified session.",
+      "translation": "为指定会话在搜索索引中注册工具。",
+      "count": 2
+    },
+    {
+      "source": "Registers multiple tools in the search index for the specified session in a single\nbatch operation.",
+      "translation": "在单个批量操作中，为指定的会话注册多个工具到搜索索引中。",
+      "count": 2
+    },
+    {
+      "source": "Searches for tools matching the given request criteria.",
+      "translation": "搜索符合给定请求条件的工具。",
+      "count": 2
+    },
+    {
+      "source": "Returns the number of documents in the index for the specified session.",
+      "translation": "返回指定会话中索引的文档数量。",
+      "count": 2
+    },
+    {
+      "source": "Returns the total number of documents across all session indexes.",
+      "translation": "返回所有会话索引中的文档总数。",
+      "count": 2
+    },
+    {
+      "source": "<code>sessionId</code> - the session identifier for tool isolation",
+      "translation": "<code>sessionId</code> - 用于工具隔离的会话标识符",
+      "count": 2
+    },
+    {
+      "source": "<code>sessionId</code> - the session ID",
+      "translation": "<code>sessionId</code> - 会话 ID",
+      "count": 2
+    },
+    {
+      "source": "<b>Thread-safety note:</b> a narrow write-after-close race exists when\n<a href=\"#clearIndex(java.lang.String)\"><code>clearIndex(String)</code></a> is called concurrently for the same session from a\ndifferent thread. The advisor's built-in flow prevents this via the atomic\nfingerprint-check in <code>initializeSession()</code>. Direct callers must ensure that\nno concurrent <code>clearIndex()</code> runs for the same session; if one does, the\ndocument is silently dropped (the session was cleared anyway).",
+      "translation": "<b>线程安全说明：</b> 当从不同线程并发调用<a href=\"#clearIndex(java.lang.String)\"><code>clearIndex(String)</code></a>以处理同一会话时，存在一个窄范围的关闭后写竞争。顾问的内置流程通过<code>initializeSession()</code>中的原子指纹检查来防止此问题。直接调用者必须确保不会针对同一会话并发运行多个<code>clearIndex()</code>；如果确实发生了这种情况，文档将被静默丢弃（因为会话无论如何都会被清除）。",
+      "count": 1
+    },
+    {
+      "source": "Implementations should override this method when a batch operation is more\nefficient than repeated <a href=\"../../ToolIndex.html#indexTool(java.lang.String,org.springframework.ai.tool.toolsearch.ToolReference)\"><code>ToolIndex.indexTool(String, ToolReference)</code></a> calls (e.g. a single embedding API call\nor a single write transaction). The default implementation simply iterates and\ndelegates to <a href=\"../../ToolIndex.html#indexTool(java.lang.String,org.springframework.ai.tool.toolsearch.ToolReference)\"><code>ToolIndex.indexTool(String, ToolReference)</code></a>.",
+      "translation": "实现类应在批量操作比重复调用<a href=\"../../ToolIndex.html#indexTool(java.lang.String,org.springframework.ai.tool.toolsearch.ToolReference)\"><code>ToolIndex.indexTool(String, ToolReference)</code></a>更高效时（例如单次嵌入 API 调用或单次写入事务）重写此方法。默认实现仅迭代并委托给<a href=\"../../ToolIndex.html#indexTool(java.lang.String,org.springframework.ai.tool.toolsearch.ToolReference)\"><code>ToolIndex.indexTool(String, ToolReference)</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This class provides full-text search capabilities for tool metadata using Apache\nLucene's in-memory index. Entries are grouped by sessionId and retrieval is filtered by\nthe provided sessionId.",
+      "translation": "该类利用 Apache Lucene 的内存索引为工具元数据提供全文搜索功能。条目按会话 ID（sessionId）进行分组，检索结果将根据提供的会话 ID 进行过滤。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../ToolIndex.html#clearIndex(java.lang.String)\">ToolIndex</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../ToolIndex.html#clearIndex(java.lang.String)\">ToolIndex</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../ToolIndex.html#indexTool(java.lang.String,org.springframework.ai.tool.toolsearch.ToolReference)\">ToolIndex</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../ToolIndex.html#indexTool(java.lang.String,org.springframework.ai.tool.toolsearch.ToolReference)\">ToolIndex</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../ToolIndex.html#indexTools(java.lang.String,java.util.List)\">ToolIndex</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../ToolIndex.html#indexTools(java.lang.String,java.util.List)\">ToolIndex</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../ToolIndex.html#search(org.springframework.ai.tool.toolsearch.ToolSearchRequest)\">ToolIndex</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../ToolIndex.html#search(org.springframework.ai.tool.toolsearch.ToolSearchRequest)\">ToolIndex</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Commits all pending changes to all session indexes.",
+      "translation": "提交所有会话索引的待处理更改。",
+      "count": 1
+    },
+    {
+      "source": "Commits all pending changes to the index for the specified session.",
+      "translation": "将指定会话的所有待提交更改添加到索引中。",
+      "count": 1
+    },
+    {
+      "source": "Commits all pending changes to all session indexes. Call this after batch additions\nfor better performance.",
+      "translation": "提交所有会话索引的待处理更改。在批量添加后调用此方法以获得更好的性能。",
+      "count": 1
+    },
+    {
+      "source": "Commits all pending changes to the index for the specified session. Call this after\nbatch additions for better performance.",
+      "translation": "提交指定会话中所有待处理的更改到索引。在批量添加后调用此方法可获得更好的性能。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../ToolIndex.html#clearIndex(java.lang.String)\">clearIndex</a></code> in interface <code><a href=\"../../ToolIndex.html\" title=\"interface in org.springframework.ai.tool.toolsearch\">ToolIndex</a></code>",
+      "translation": "<code><a href=\"../../ToolIndex.html#clearIndex(java.lang.String)\">clearIndex</a></code> 接口 <code><a href=\"../../ToolIndex.html\" title=\"org.springframework.ai.tool.toolsearch 中的接口\">ToolIndex</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../ToolIndex.html#indexTool(java.lang.String,org.springframework.ai.tool.toolsearch.ToolReference)\">indexTool</a></code> in interface <code><a href=\"../../ToolIndex.html\" title=\"interface in org.springframework.ai.tool.toolsearch\">ToolIndex</a></code>",
+      "translation": "接口 <code><a href=\"../../ToolIndex.html\" title=\"org.springframework.ai.tool.toolsearch 中的接口\">ToolIndex</a></code> 中的方法 <code><a href=\"../../ToolIndex.html#indexTool(java.lang.String,org.springframework.ai.tool.toolsearch.ToolReference)\">indexTool</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../ToolIndex.html#indexTools(java.lang.String,java.util.List)\">indexTools</a></code> in interface <code><a href=\"../../ToolIndex.html\" title=\"interface in org.springframework.ai.tool.toolsearch\">ToolIndex</a></code>",
+      "translation": "<code><a href=\"../../ToolIndex.html#indexTools(java.lang.String,java.util.List)\">indexTools</a></code> 接口 <code><a href=\"../../ToolIndex.html\" title=\"interface in org.springframework.ai.tool.toolsearch\">ToolIndex</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../ToolIndex.html#search(org.springframework.ai.tool.toolsearch.ToolSearchRequest)\">search</a></code> in interface <code><a href=\"../../ToolIndex.html\" title=\"interface in org.springframework.ai.tool.toolsearch\">ToolIndex</a></code>",
+      "translation": "<code><a href=\"../../ToolIndex.html#search(org.springframework.ai.tool.toolsearch.ToolSearchRequest)\">search</a></code> 接口 <code><a href=\"../../ToolIndex.html\" title=\"interface in org.springframework.ai.tool.toolsearch\">ToolIndex</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/AutoCloseable.html#close()\" title=\"class or interface in java.lang\">close</a></code> in interface <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/AutoCloseable.html\" title=\"class or interface in java.lang\">AutoCloseable</a></code>",
+      "translation": "`AutoCloseable` 接口中的 `close()` 方法。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Closeable.html#close()\" title=\"class or interface in java.io\">close</a></code> in interface <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Closeable.html\" title=\"class or interface in java.io\">Closeable</a></code>",
+      "translation": "接口 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Closeable.html\" title=\"java.io 中的类或接口\">Closeable</a></code> 中的 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Closeable.html#close()\" title=\"java.io 中的类或接口\">close</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code>sessionId</code> - the session identifier",
+      "translation": "<code>sessionId</code> - 会话标识符",
+      "count": 1
+    },
+    {
+      "source": "<code>toolReference</code> - the reference to the tool being indexed",
+      "translation": "<code>toolReference</code> - 被索引工具的引用",
+      "count": 1
+    },
+    {
+      "source": "<code>toolReferences</code> - the tools to register",
+      "translation": "<code>toolReferences</code> - 要注册的工具",
+      "count": 1
+    },
+    {
+      "source": "<code>toolSearchRequest</code> - the search request containing query and parameters",
+      "translation": "<code>toolSearchRequest</code> - 包含查询和参数的搜索请求",
+      "count": 1
+    },
+    {
+      "source": "<code>sessionId</code> - the session ID associated with the tool",
+      "translation": "<code>sessionId</code> - 与工具关联的会话 ID",
+      "count": 1
+    },
+    {
+      "source": "<code>id</code> - unique identifier for the tool",
+      "translation": "<code>id</code> - 工具的唯一定位标识符",
+      "count": 1
+    },
+    {
+      "source": "<code>toolName</code> - name of the tool",
+      "translation": "<code>toolName</code> - 工具名称",
+      "count": 1
+    },
+    {
+      "source": "<code>toolDescription</code> - description of the tool (searchable)",
+      "translation": "<code>toolDescription</code> - 工具描述（可搜索）",
+      "count": 1
+    },
+    {
+      "source": "<code>sessionId</code> - the session ID to commit changes for",
+      "translation": "<code>sessionId</code> - 用于提交更改的会话 ID",
+      "count": 1
+    },
+    {
+      "source": "<code>id</code> - the tool ID to delete",
+      "translation": "<code>id</code> - 要删除的工具 ID",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "a response containing matching tool references",
+      "translation": "包含匹配工具引用的响应",
+      "count": 1
+    },
+    {
+      "source": "document count, or 0 if session not found",
+      "translation": "文档数量，若未找到会话则返回 0",
+      "count": 1
+    },
+    {
+      "source": "total document count",
+      "translation": "文档总数",
+      "count": 1
+    },
+    {
+      "source": "Lucene-based tool searcher for indexing and searching tool descriptions.",
+      "translation": "基于 Lucene 的工具搜索器，用于索引和搜索工具描述。",
+      "count": 1
+    }
+  ]
+}

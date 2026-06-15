@@ -1,0 +1,171 @@
+{
+  "created_at": "2026-06-15 08:44:37",
+  "updated_at": "2026-06-15 08:44:37",
+  "stats": {
+    "total_entries": 31,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 43,
+    "entries_with_hits": 31,
+    "entries_without_hits": 0,
+    "hit_rate": 1.3870967741935485,
+    "usage_percentage": 0.0031000000000000003
+  },
+  "items": [
+    {
+      "source": "Create a new chat completion api.",
+      "translation": "创建一个新的聊天完成 API。",
+      "count": 4
+    },
+    {
+      "source": "Creates a streaming chat response for the given chat conversation.",
+      "translation": "为给定的聊天对话创建流式聊天响应。",
+      "count": 4
+    },
+    {
+      "source": "Creates a model response for the given chat conversation.",
+      "translation": "为给定的聊天对话生成模型回复。",
+      "count": 3
+    },
+    {
+      "source": "<code>completionsPath</code> - the path to the chat completions endpoint.",
+      "translation": "<code>completionsPath</code> - 聊天补全端点的路径。",
+      "count": 2
+    },
+    {
+      "source": "<code>betaPrefixPath</code> - the prefix path to the beta feature endpoint.",
+      "translation": "<code>betaPrefixPath</code> - 指向 Beta 功能端点的前缀路径。",
+      "count": 2
+    },
+    {
+      "source": "<code>chatRequest</code> - The chat completion request. Must have the stream property set\nto true.",
+      "translation": "<code>chatRequest</code> - 聊天补全请求。必须将 stream 属性设置为 true。",
+      "count": 2
+    },
+    {
+      "source": "Returns a <code>Flux</code> stream from chat completion chunks.",
+      "translation": "从聊天完成块返回一个 `<code>Flux</code>` 流。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Single class implementation of the <a href=\"https://api-docs.deepseek.com/\">DeepSeek\nChat Completion API</a>.",
+      "translation": "DeepSeek 聊天补全 API 的单一类实现。",
+      "count": 1
+    },
+    {
+      "source": "DeepSeek Chat Completion\n<a href=\"https://api-docs.deepseek.com/quick_start/pricing\">Models</a>",
+      "translation": "DeepSeek 聊天补全  \n<a href=\"https://api-docs.deepseek.com/quick_start/pricing\">模型</a>",
+      "count": 1
+    },
+    {
+      "source": "Represents a chat completion response returned by model, based on the provided\ninput.",
+      "translation": "代表由模型根据提供的输入返回的聊天补全响应。",
+      "count": 1
+    },
+    {
+      "source": "Represents a streamed chunk of a chat completion response returned by model, based\non the provided input.",
+      "translation": "代表由模型根据提供的输入返回的聊天完成响应的流式数据块。",
+      "count": 1
+    },
+    {
+      "source": "The reason the model stopped generating tokens.",
+      "translation": "模型停止生成 token 的原因。",
+      "count": 1
+    },
+    {
+      "source": "Message comprising the conversation.",
+      "translation": "包含对话的消息。",
+      "count": 1
+    },
+    {
+      "source": "Represents a tool the model may call.",
+      "translation": "代表模型可能调用的工具。",
+      "count": 1
+    },
+    {
+      "source": "Log probability information for the choice.",
+      "translation": "选择对应的对数概率信息。",
+      "count": 1
+    },
+    {
+      "source": "Usage statistics for the completion request.",
+      "translation": "完成请求的使用统计。",
+      "count": 1
+    },
+    {
+      "source": "Entity response with <a href=\"DeepSeekApi.ChatCompletion.html\" title=\"class in org.springframework.ai.deepseek.api\"><code>DeepSeekApi.ChatCompletion</code></a> as a body and HTTP status code\nand headers.",
+      "translation": "实体响应包含 `<a href=\"DeepSeekApi.ChatCompletion.html\" title=\"class in org.springframework.ai.deepseek.api\"><code>DeepSeekApi.ChatCompletion</code></a>` 作为正文，以及 HTTP 状态码和标头。",
+      "count": 1
+    },
+    {
+      "source": "<code>baseUrl</code> - api base URL.",
+      "translation": "<code>baseUrl</code> - API 基础 URL。",
+      "count": 1
+    },
+    {
+      "source": "<code>apiKey</code> - DeepSeek apiKey.",
+      "translation": "<code>apiKey</code> - DeepSeek API 密钥。",
+      "count": 1
+    },
+    {
+      "source": "<code>headers</code> - the http headers to use.",
+      "translation": "<code>headers</code> - 要使用的 HTTP 标头。",
+      "count": 1
+    },
+    {
+      "source": "<code>restClientBuilder</code> - RestClient builder.",
+      "translation": "<code>restClientBuilder</code> - RestClient 构建器。",
+      "count": 1
+    },
+    {
+      "source": "<code>webClientBuilder</code> - WebClient builder.",
+      "translation": "<code>webClientBuilder</code> - WebClient 构建器。",
+      "count": 1
+    },
+    {
+      "source": "<code>responseErrorHandler</code> - Response error handler.",
+      "translation": "<code>responseErrorHandler</code> - 响应错误处理器。",
+      "count": 1
+    },
+    {
+      "source": "<code>restClient</code> - RestClient instance.",
+      "translation": "<code>restClient</code> - RestClient 实例。",
+      "count": 1
+    },
+    {
+      "source": "<code>webClient</code> - WebClient instance.",
+      "translation": "<code>webClient</code> - WebClient 实例。",
+      "count": 1
+    },
+    {
+      "source": "<code>chatRequest</code> - The chat completion request.",
+      "translation": "<code>chatRequest</code> - 聊天补全请求。",
+      "count": 1
+    },
+    {
+      "source": "<code>additionalHttpHeader</code> - Optional, additional HTTP headers to be added to the\nrequest.",
+      "translation": "<code>additionalHttpHeader</code> - 可选，要添加到请求中的额外 HTTP 标头。",
+      "count": 1
+    },
+    {
+      "source": "Geng Rong, Sebastien Deleuze",
+      "translation": "耿荣，塞巴斯蒂安·德洛兹",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    }
+  ]
+}

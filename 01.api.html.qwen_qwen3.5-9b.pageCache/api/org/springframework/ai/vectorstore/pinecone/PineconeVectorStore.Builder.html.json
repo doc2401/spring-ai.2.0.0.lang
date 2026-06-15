@@ -1,0 +1,106 @@
+{
+  "created_at": "2026-06-15 07:45:44",
+  "updated_at": "2026-06-15 07:45:44",
+  "stats": {
+    "total_entries": 18,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 23,
+    "entries_with_hits": 18,
+    "entries_without_hits": 0,
+    "hit_rate": 1.2777777777777777,
+    "usage_percentage": 0.0018
+  },
+  "items": [
+    {
+      "source": "The builder instance",
+      "translation": "构建器实例",
+      "count": 3
+    },
+    {
+      "source": "Builds a new PineconeVectorStore instance with the configured properties.",
+      "translation": "使用配置的属性构建一个新的 PineconeVectorStore 实例。",
+      "count": 2
+    },
+    {
+      "source": "Sets the content field name.",
+      "translation": "设置内容字段名称。",
+      "count": 2
+    },
+    {
+      "source": "Sets the distance metadata field name.",
+      "translation": "设置距离元数据字段名称。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Builder class for creating <a href=\"PineconeVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.pinecone\"><code>PineconeVectorStore</code></a> instances. This implements a\ntype-safe step builder pattern to ensure all required fields are provided in a\nspecific order before optional configuration.\n\nThe required fields must be provided in this sequence: 1. embeddingModel (via\nbuilder method) 2. apiKey 3. indexName\n\nAfter all required fields are set, optional configurations can be provided using\nthe fluent builder pattern.\n\nExample usage: <pre><code>PineconeVectorStore store = PineconeVectorStore.builder(embeddingModel)\n    .apiKey(\"your-api-key\")\n    .indexName(\"your-index\")\n    .namespace(\"optional\")  // optional configuration\n    .build();\n</code></pre>",
+      "translation": "用于创建 <a href=\"PineconeVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.pinecone\"><code>PineconeVectorStore</code></a> 实例的构建器类。该类实现了类型安全的分步构建模式，以确保在提供可选配置之前，所有必需字段按特定顺序被设置。\n\n必需字段必须按以下顺序提供：1. embeddingModel（通过 builder 方法）2. apiKey 3. indexName\n\n在所有必需字段设置完成后，可以使用流式构建模式提供可选配置。\n\n使用示例：<pre><code>PineconeVectorStore store = PineconeVectorStore.builder(embeddingModel)\n    .apiKey(\"your-api-key\")\n    .indexName(\"your-index\")\n    .namespace(\"optional\")  // 可选配置\n    .build();\n</code></pre>",
+      "count": 1
+    },
+    {
+      "source": "First step interface requiring API key configuration.",
+      "translation": "需要配置 API 密钥的第一步界面。",
+      "count": 1
+    },
+    {
+      "source": "Final step interface requiring index name configuration.",
+      "translation": "需要配置索引名称的最终步骤界面。",
+      "count": 1
+    },
+    {
+      "source": "Internal implementation of the step builder pattern using records for\nimmutability.",
+      "translation": "使用记录（records）实现不可变性的步骤构建器模式内部实现。",
+      "count": 1
+    },
+    {
+      "source": "Sets the Pinecone namespace.",
+      "translation": "设置 Pinecone 命名空间。",
+      "count": 1
+    },
+    {
+      "source": "Sets the Pinecone namespace. Note: The free-tier (gcp-starter) doesn't support\nNamespaces.",
+      "translation": "设置 Pinecone 命名空间。注意：免费套餐（gcp-starter）不支持命名空间。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html\" title=\"class or interface in java.lang\">IllegalStateException</a></code> - if the builder is in an invalid state",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html\" title=\"class or interface in java.lang\">IllegalStateException</a></code> - 当构建器处于无效状态时",
+      "count": 1
+    },
+    {
+      "source": "<code>namespace</code> - The namespace to use (leave empty for free tier)",
+      "translation": "<code>namespace</code> - 要使用的命名空间（免费层级留空）",
+      "count": 1
+    },
+    {
+      "source": "<code>contentFieldName</code> - The content field name to use",
+      "translation": "<code>contentFieldName</code> - 要使用的内容字段名称",
+      "count": 1
+    },
+    {
+      "source": "<code>distanceMetadataFieldName</code> - The distance metadata field name to use",
+      "translation": "<code>distanceMetadataFieldName</code> - 要使用的距离元数据字段名称",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Adam Bchouti, Soby Chacko, Thomas Vitale, Ilayaperumal Gopinathan, chabinhwang",
+      "translation": "Christian Tzolov, Adam Bchouti, Soby Chacko, Thomas Vitale, Ilayaperumal Gopinathan, chabinhwang",
+      "count": 1
+    },
+    {
+      "source": "A new PineconeVectorStore instance",
+      "translation": "一个新的 PineconeVectorStore 实例",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    }
+  ]
+}

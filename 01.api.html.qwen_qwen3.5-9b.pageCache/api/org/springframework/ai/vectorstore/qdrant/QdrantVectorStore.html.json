@@ -1,0 +1,286 @@
+{
+  "created_at": "2026-06-15 07:46:06",
+  "updated_at": "2026-06-15 07:46:06",
+  "stats": {
+    "total_entries": 54,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 60,
+    "entries_with_hits": 54,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1111111111111112,
+    "usage_percentage": 0.005399999999999999
+  },
+  "items": [
+    {
+      "source": "Create a new <a href=\"../observation/VectorStoreObservationContext.Builder.html\" title=\"class in org.springframework.ai.vectorstore.observation\"><code>VectorStoreObservationContext.Builder</code></a> instance.",
+      "translation": "创建一个新的<a href=\"../observation/VectorStoreObservationContext.Builder.html\" title=\"class in org.springframework.ai.vectorstore.observation\"><code>VectorStoreObservationContext.Builder</code></a>实例。",
+      "count": 2
+    },
+    {
+      "source": "Protected constructor for creating a QdrantVectorStore instance using the builder\npattern.",
+      "translation": "使用构建器模式创建 QdrantVectorStore 实例的受保护构造函数。",
+      "count": 2
+    },
+    {
+      "source": "Adds a list of documents to the vector store.",
+      "translation": "向向量存储中添加文档列表。",
+      "count": 2
+    },
+    {
+      "source": "Deletes a list of documents by their IDs.",
+      "translation": "根据 ID 删除文档列表。",
+      "count": 2
+    },
+    {
+      "source": "Template method for concrete implementations to provide filter-based deletion\nlogic.",
+      "translation": "为基于过滤器的删除逻辑提供具体实现的模板方法。",
+      "count": 2
+    },
+    {
+      "source": "Performs a similarity search on the vector store.",
+      "translation": "在向量存储中执行相似度搜索。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "The store uses Qdrant's vector search functionality to persist and query vector\nembeddings along with their associated document content and metadata. The\nimplementation leverages Qdrant's HNSW (Hierarchical Navigable Small World) algorithm\nfor efficient k-NN search operations.",
+      "translation": "该商店利用 Qdrant 的向量搜索功能来持久化并查询向量嵌入及其关联的文档内容和元数据。实现过程中采用了 Qdrant 的 HNSW（分层可导航小世界）算法，以实现高效的 k-NN 搜索操作。",
+      "count": 1
+    },
+    {
+      "source": "Basic usage example:",
+      "translation": "基本使用示例：",
+      "count": 1
+    },
+    {
+      "source": "Advanced configuration example:",
+      "translation": "高级配置示例：",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../VectorStore.html#getNativeClient()\">VectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../VectorStore.html#getNativeClient()\">VectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Builder for creating instances of <a href=\"QdrantVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.qdrant\"><code>QdrantVectorStore</code></a>.",
+      "translation": "用于创建<a href=\"QdrantVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.qdrant\"><code>QdrantVectorStore</code></a>实例的构建器。",
+      "count": 1
+    },
+    {
+      "source": "Returns the native client if available in this vector store implementation.\n\nNote on usage: 1. Returns empty Optional when no native client is available 2. Due\nto Java type erasure, runtime type checking is not possible\n\nExample usage: When working with implementation with known native client:\nOptional<nativeclienttype> client = vectorStore.getNativeClient();\n\nNote: Using Optional<span class=\"invalid-tag\">invalid input: '&lt;'</span>?&gt; will return the native client if one exists, rather than an\nempty Optional. For type safety, prefer using the specific client type.</nativeclienttype>",
+      "translation": "返回当前向量存储实现中可用的原生客户端。\n\n使用注意事项：1. 若无可用原生客户端，则返回空 Optional；2. 由于 Java 类型擦除，无法进行运行时类型检查。\n\n使用示例：在与已知原生客户端的实现协作时：Optional<nativeclienttype> client = vectorStore.getNativeClient();\n\n注意：使用 Optional<span class=\"invalid-tag\">无效输入：'&lt;'</span>?&gt; 将返回存在的原生客户端，而非空 Optional。为确保类型安全，建议使用特定的客户端类型。</nativeclienttype>",
+      "count": 1
+    },
+    {
+      "source": "Creates a new QdrantBuilder instance.",
+      "translation": "创建一个新的 QdrantBuilder 实例。",
+      "count": 1
+    },
+    {
+      "source": "Returns the native client if available in this vector store implementation.",
+      "translation": "如果此向量存储实现中可用，则返回原生客户端。",
+      "count": 1
+    },
+    {
+      "source": "Creates a new QdrantBuilder instance. This is the recommended way to instantiate a\nQdrantVectorStore.",
+      "translation": "创建一个新 QdrantBuilder 实例。这是实例化 QdrantVectorStore 的推荐方式。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">doAdd</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">doAdd</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">doDelete</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">doDelete</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">doDelete</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">doDelete</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">doSimilaritySearch</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">doSimilaritySearch</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">createObservationContextBuilder</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">createObservationContextBuilder</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../VectorStore.html#getNativeClient()\">getNativeClient</a></code> in interface <code><a href=\"../VectorStore.html\" title=\"interface in org.springframework.ai.vectorstore\">VectorStore</a></code>",
+      "translation": "接口 <code><a href=\"../VectorStore.html\" title=\"org.springframework.ai.vectorstore 中的接口\">VectorStore</a></code> 中的方法 <code><a href=\"../VectorStore.html#getNativeClient()\">getNativeClient</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code>builder</code> - the <a href=\"QdrantVectorStore.Builder.html\" title=\"class in org.springframework.ai.vectorstore.qdrant\"><code>QdrantVectorStore.Builder</code></a> containing all configuration settings",
+      "translation": "<code>builder</code> - 包含所有配置设置的 <a href=\"QdrantVectorStore.Builder.html\" title=\"class in org.springframework.ai.vectorstore.qdrant\"><code>QdrantVectorStore.Builder</code></a>",
+      "count": 1
+    },
+    {
+      "source": "<code>request</code> - The <a href=\"../SearchRequest.html\" title=\"class in org.springframework.ai.vectorstore\"><code>SearchRequest</code></a> object containing the query and other\nsearch parameters.",
+      "translation": "<code>request</code> - 包含查询和其他搜索参数的 <a href=\"../SearchRequest.html\" title=\"class in org.springframework.ai.vectorstore\"><code>SearchRequest</code></a> 对象。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if qdrant client is missing",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果缺少 qdrant 客户端",
+      "count": 1
+    },
+    {
+      "source": "<code>afterPropertiesSet</code> in interface <code>org.springframework.beans.factory.InitializingBean</code>",
+      "translation": "接口 <code>org.springframework.beans.factory.InitializingBean</code> 中的 <code>afterPropertiesSet</code>",
+      "count": 1
+    },
+    {
+      "source": "<span id=\"getNativeClient()-type-param-T\"><code>T</code> - The type of the native client</span>",
+      "translation": "<span id=\"getNativeClient()-type-param-T\"><code>T</code> - 原生客户端的类型</span>",
+      "count": 1
+    },
+    {
+      "source": "<code>qdrantClient</code> - the client for interfacing with Qdrant",
+      "translation": "<code>qdrantClient</code> - 用于与 Qdrant 交互的客户端",
+      "count": 1
+    },
+    {
+      "source": "<code>documents</code> - The list of documents to be added.",
+      "translation": "<code>documents</code> - 待添加的文档列表。",
+      "count": 1
+    },
+    {
+      "source": "<code>documentIds</code> - The list of document IDs to be deleted.",
+      "translation": "<code>documentIds</code> - 待删除的文档 ID 列表。",
+      "count": 1
+    },
+    {
+      "source": "<code>filterExpression</code> - Filter expression to identify documents to delete",
+      "translation": "<code>filterExpression</code> - 用于标识要删除的文档的过滤表达式",
+      "count": 1
+    },
+    {
+      "source": "<code>operationName</code> - the operation name",
+      "translation": "<code>operationName</code> - 操作名称",
+      "count": 1
+    },
+    {
+      "source": "Automatic schema initialization with configurable collection creation",
+      "translation": "支持可配置集合创建的自动模式初始化",
+      "count": 1
+    },
+    {
+      "source": "Support for cosine similarity distance metric",
+      "translation": "支持余弦相似度距离度量",
+      "count": 1
+    },
+    {
+      "source": "Metadata filtering using Qdrant's filter expressions",
+      "translation": "使用 Qdrant 的过滤表达式进行元数据过滤",
+      "count": 1
+    },
+    {
+      "source": "Configurable similarity thresholds for search results",
+      "translation": "可配置的搜索结果相似度阈值",
+      "count": 1
+    },
+    {
+      "source": "Batch processing support with configurable strategies",
+      "translation": "支持可配置策略的批量处理",
+      "count": 1
+    },
+    {
+      "source": "Observation and metrics support through Micrometer",
+      "translation": "通过 Micrometer 进行观测与指标支持",
+      "count": 1
+    },
+    {
+      "source": "Running Qdrant instance accessible via gRPC",
+      "translation": "通过 gRPC 访问的 Qdrant 实例运行中",
+      "count": 1
+    },
+    {
+      "source": "Collection with vector size matching the embedding model dimensions",
+      "translation": "与嵌入模型维度匹配的向量集合",
+      "count": 1
+    },
+    {
+      "source": "Anush Shetty, Christian Tzolov, Eddú Meléndez, Josh Long, Soby Chacko, Thomas Vitale, chabinhwang",
+      "translation": "Anush Shetty，Christian Tzolov，Eddú Meléndez，Josh Long，Soby Chacko，Thomas Vitale，chabinhwang",
+      "count": 1
+    },
+    {
+      "source": "a new QdrantBuilder instance",
+      "translation": "一个新的 QdrantBuilder 实例",
+      "count": 1
+    },
+    {
+      "source": "A list of documents that are similar to the query.",
+      "translation": "与查询相似的文档列表。",
+      "count": 1
+    },
+    {
+      "source": "the observation context builder",
+      "translation": "观察上下文构建器",
+      "count": 1
+    },
+    {
+      "source": "Optional containing native client if available, empty Optional otherwise",
+      "translation": "如有可用的本机客户端，则包含该客户端的 Optional；否则为空 Optional。",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "Qdrant vectorStore implementation. This store supports creating, updating, deleting,\nand similarity searching of documents in a Qdrant collection.",
+      "translation": "Qdrant 向量存储实现。该存储支持在 Qdrant 集合中创建、更新、删除文档以及执行相似度搜索。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>支持可配置集合创建的自动模式初始化</li>\n<li>支持余弦相似度距离度量</li>\n<li>使用 Qdrant 的过滤表达式进行元数据过滤</li>\n<li>可配置的搜索结果相似度阈值</li>\n<li>支持可配置策略的批量处理</li>\n<li>通过 Micrometer 进行观测与指标支持</li>\n</ul>",
+      "translation": "<ul>\n<li>支持自动模式初始化可配置集合创建</li>\n<li>支持余弦相似度距离度量</li>\n<li>使用 Qdrant 的过滤表达式进行元数据过滤</li>\n<li>支持可配置的搜索结果相似度阈值</li>\n<li>支持基于可配置策略的批量处理</li>\n<li>通过 Micrometer 提供观测与指标支持</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>QdrantVectorStore vectorStore = QdrantVectorStore.builder(qdrantClient)\n    .embeddingModel(embeddingModel)\n    .initializeSchema(true)\n    .build();\n\n// Add documents\nvectorStore.add(List.of(\n    new Document(\"content1\", Map.of(\"key1\", \"value1\")),\n    new Document(\"content2\", Map.of(\"key2\", \"value2\"))\n));\n\n// Search with filters\nList&lt;Document&gt; results = vectorStore.similaritySearch(\n    SearchRequest.query(\"search text\")\n        .withTopK(5)\n        .withSimilarityThreshold(0.7)\n        .withFilterExpression(\"key1 == 'value1'\")\n);\n</code></pre>",
+      "translation": "<pre><code>QdrantVectorStore vectorStore = QdrantVectorStore.builder(qdrantClient)\n    .embeddingModel(embeddingModel)\n    .initializeSchema(true)\n    .build();\n\n// 添加文档\nvectorStore.add(List.of(\n    new Document(\"content1\", Map.of(\"key1\", \"value1\")),\n    new Document(\"content2\", Map.of(\"key2\", \"value2\"))\n));\n\n// 使用过滤器进行搜索\nList&lt;Document&gt; results = vectorStore.similaritySearch(\n    SearchRequest.query(\"搜索文本\")\n        .withTopK(5)\n        .withSimilarityThreshold(0.7)\n        .withFilterExpression(\"key1 == 'value1'\")\n);\n</code></pre>",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>QdrantVectorStore vectorStore = QdrantVectorStore.builder(qdrantClient, embeddingModel)\n    .collectionName(\"custom-collection\")\n    .initializeSchema(true)\n    .batchingStrategy(new TokenCountBatchingStrategy())\n    .observationRegistry(observationRegistry)\n    .customObservationConvention(customConvention)\n    .build();\n</code></pre>",
+      "translation": "<pre><code>QdrantVectorStore vectorStore = QdrantVectorStore.builder(qdrantClient, embeddingModel)\n    .collectionName(\"custom-collection\")\n    .initializeSchema(true)\n    .batchingStrategy(new TokenCountBatchingStrategy())\n    .observationRegistry(observationRegistry)\n    .customObservationConvention(customConvention)\n    .build();\n</code></pre>",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>通过 gRPC 访问的 Qdrant 实例运行中</li>\n<li>与嵌入模型维度匹配的向量集合</li>\n</ul>",
+      "translation": "<ul>\n<li>Qdrant 实例正在通过 gRPC 运行</li>\n<li>具有与嵌入模型维度匹配的向量集合</li>\n</ul>",
+      "count": 1
+    }
+  ]
+}

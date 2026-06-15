@@ -1,0 +1,121 @@
+{
+  "created_at": "2026-06-15 07:30:44",
+  "updated_at": "2026-06-15 07:30:44",
+  "stats": {
+    "total_entries": 21,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 26,
+    "entries_with_hits": 21,
+    "entries_without_hits": 0,
+    "hit_rate": 1.2380952380952381,
+    "usage_percentage": 0.0021
+  },
+  "items": [
+    {
+      "source": "Creates a builder for constructing <code>SyncMcpToolCallback</code> instances.",
+      "translation": "创建一个用于构建<code>SyncMcpToolCallback</code>实例的构建器。",
+      "count": 2
+    },
+    {
+      "source": "Execute tool with the given input and return the result to send back to the AI\nmodel.",
+      "translation": "使用给定输入执行工具，并将结果返回给AI模型。",
+      "count": 2
+    },
+    {
+      "source": "Execute tool with the given input and context, and return the result to send back\nto the AI model.",
+      "translation": "使用给定输入和上下文执行工具，并将结果返回给AI模型。",
+      "count": 2
+    },
+    {
+      "source": "Returns the original MCP tool name without prefixing.",
+      "translation": "返回原始 MCP 工具名称，不带前缀。",
+      "count": 2
+    },
+    {
+      "source": "Definition used by the AI model to determine when and how to call the tool.",
+      "translation": "AI 模型用于确定何时以及如何调用工具的指令。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../tool/ToolCallback.html#getToolDefinition()\">ToolCallback</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../tool/ToolCallback.html#getToolDefinition()\">ToolCallback</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../tool/ToolCallback.html#call(java.lang.String)\">ToolCallback</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../tool/ToolCallback.html#call(java.lang.String)\">ToolCallback</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../tool/ToolCallback.html#call(java.lang.String,org.springframework.ai.chat.model.ToolContext)\">ToolCallback</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../tool/ToolCallback.html#call(java.lang.String,org.springframework.ai.chat.model.ToolContext)\">ToolCallback</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Synchronous adapter bridging MCP tools to Spring AI's <a href=\"../tool/ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a> interface.\nHandles tool execution and data conversion between MCP and Spring AI.",
+      "translation": "同步适配器桥接 MCP 工具与 Spring AI 的<a href=\"../tool/ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a>接口。  \n负责处理工具执行以及 MCP 与 Spring AI 之间的数据转换。",
+      "count": 1
+    },
+    {
+      "source": "Builder for <code>SyncMcpToolCallback</code> instances.",
+      "translation": "用于构建<code>SyncMcpToolCallback</code>实例的构造器。",
+      "count": 1
+    },
+    {
+      "source": "Creates a callback with default settings.",
+      "translation": "使用默认设置创建回调。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../tool/ToolCallback.html#getToolDefinition()\">getToolDefinition</a></code> in interface <code><a href=\"../tool/ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a></code>",
+      "translation": "接口 <code><a href=\"../tool/ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a></code> 中的 <code><a href=\"../tool/ToolCallback.html#getToolDefinition()\">getToolDefinition</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../tool/ToolCallback.html#call(java.lang.String)\">call</a></code> in interface <code><a href=\"../tool/ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a></code>",
+      "translation": "接口 <code><a href=\"../tool/ToolCallback.html\" title=\"org.springframework.ai.tool 中的接口\">ToolCallback</a></code> 中的 <code><a href=\"../tool/ToolCallback.html#call(java.lang.String)\">call</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../tool/ToolCallback.html#call(java.lang.String,org.springframework.ai.chat.model.ToolContext)\">call</a></code> in interface <code><a href=\"../tool/ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a></code>",
+      "translation": "接口 <code><a href=\"../tool/ToolCallback.html\" title=\"org.springframework.ai.tool 中的接口\">ToolCallback</a></code> 中的方法 <code><a href=\"../tool/ToolCallback.html#call(java.lang.String,org.springframework.ai.chat.model.ToolContext)\">call</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code>mcpClient</code> - the MCP client for tool execution",
+      "translation": "<code>mcpClient</code> - 用于工具执行的 MCP 客户端",
+      "count": 1
+    },
+    {
+      "source": "<code>tool</code> - the MCP tool to adapt",
+      "translation": "<code>tool</code> - 需要适配的 MCP 工具",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, YunKui Lu, Ilayaperumal Gopinathan",
+      "translation": "Christian Tzolov，陆云魁，Ilayaperumal Gopinathan",
+      "count": 1
+    },
+    {
+      "source": "the original tool name",
+      "translation": "原始工具名称",
+      "count": 1
+    },
+    {
+      "source": "a new builder",
+      "translation": "一位新建筑商",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    }
+  ]
+}

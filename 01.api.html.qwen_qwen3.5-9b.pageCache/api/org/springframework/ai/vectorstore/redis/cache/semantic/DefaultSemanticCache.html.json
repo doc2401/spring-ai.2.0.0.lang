@@ -1,0 +1,226 @@
+{
+  "created_at": "2026-06-15 07:48:08",
+  "updated_at": "2026-06-15 07:48:08",
+  "stats": {
+    "total_entries": 42,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 47,
+    "entries_with_hits": 42,
+    "entries_without_hits": 0,
+    "hit_rate": 1.119047619047619,
+    "usage_percentage": 0.0042
+  },
+  "items": [
+    {
+      "source": "<code>query</code> - The original query text to be cached",
+      "translation": "<code>query</code> - 待缓存的原始查询文本",
+      "count": 3
+    },
+    {
+      "source": "<code>response</code> - The chat response associated with the query",
+      "translation": "<code>response</code> - 与查询关联的聊天响应",
+      "count": 3
+    },
+    {
+      "source": "<code>query</code> - The query to find similar responses for",
+      "translation": "<code>query</code> - 用于查找相似回复的查询语句",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Retrieves a cached response for a semantically similar query. The implementation\nshould:\n<ul>\n<li>Convert the input query to a vector embedding</li>\n<li>Search for similar query embeddings in the cache</li>\n<li>Return the response associated with the most similar query if it meets the\nsimilarity threshold</li>\n</ul>",
+      "translation": "检索语义相似查询的缓存响应。实现应：\n<ul>\n<li>将输入查询转换为向量嵌入</li>\n<li>在缓存中搜索相似的查询嵌入</li>\n<li>如果相似度满足阈值，则返回与最相似查询关联的响应</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../../../chat/cache/semantic/SemanticCache.html#getStore()\">SemanticCache</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../../../chat/cache/semantic/SemanticCache.html#getStore()\">SemanticCache</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../../../chat/cache/semantic/SemanticCache.html#set(java.lang.String,org.springframework.ai.chat.model.ChatResponse)\">SemanticCache</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../../../chat/cache/semantic/SemanticCache.html#set(java.lang.String,org.springframework.ai.chat.model.ChatResponse)\">SemanticCache</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../../../chat/cache/semantic/SemanticCache.html#set(java.lang.String,org.springframework.ai.chat.model.ChatResponse,java.time.Duration)\">SemanticCache</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../../../chat/cache/semantic/SemanticCache.html#set(java.lang.String,org.springframework.ai.chat.model.ChatResponse,java.time.Duration)\">SemanticCache</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../../../chat/cache/semantic/SemanticCache.html#get(java.lang.String)\">SemanticCache</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../../../chat/cache/semantic/SemanticCache.html#get(java.lang.String)\">SemanticCache</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../../../chat/cache/semantic/SemanticCache.html#set(java.lang.String,org.springframework.ai.chat.model.ChatResponse,java.lang.String)\">SemanticCache</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../../../chat/cache/semantic/SemanticCache.html#set(java.lang.String,org.springframework.ai.chat.model.ChatResponse,java.lang.String)\">SemanticCache</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../../../chat/cache/semantic/SemanticCache.html#get(java.lang.String,java.lang.String)\">SemanticCache</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../../../chat/cache/semantic/SemanticCache.html#get(java.lang.String,java.lang.String)\">SemanticCache</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../../../chat/cache/semantic/SemanticCache.html#clear()\">SemanticCache</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../../../chat/cache/semantic/SemanticCache.html#clear()\">SemanticCache</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Default implementation of SemanticCache using Redis as the backing store. This\nimplementation uses vector similarity search to find cached responses for semantically\nsimilar queries.",
+      "translation": "使用 Redis 作为后端存储的 SemanticCache 默认实现。该实现利用向量相似度搜索来查找语义相似查询的缓存响应。",
+      "count": 1
+    },
+    {
+      "source": "Builder for creating DefaultSemanticCache instances.",
+      "translation": "用于创建 DefaultSemanticCache 实例的构建器。",
+      "count": 1
+    },
+    {
+      "source": "Removes all entries from the cache.",
+      "translation": "清除缓存中的所有条目。",
+      "count": 1
+    },
+    {
+      "source": "Retrieves a cached response for a semantically similar query.",
+      "translation": "检索语义相似查询的缓存响应。",
+      "count": 1
+    },
+    {
+      "source": "Retrieves a cached response for a semantically similar query, filtered by context.",
+      "translation": "根据上下文过滤后，检索语义相似查询的缓存响应。",
+      "count": 1
+    },
+    {
+      "source": "Returns the underlying vector store used by this cache implementation.",
+      "translation": "返回此缓存实现所使用的基础向量存储。",
+      "count": 1
+    },
+    {
+      "source": "Stores a query and its corresponding chat response in the cache.",
+      "translation": "将查询及其对应的聊天响应存储到缓存中。",
+      "count": 1
+    },
+    {
+      "source": "Stores a query and its corresponding chat response in the cache with an optional\ncontext identifier for isolation.",
+      "translation": "将查询及其对应的聊天响应存储到缓存中，并可选择使用上下文标识符以实现隔离。",
+      "count": 1
+    },
+    {
+      "source": "Stores a query and response in the cache with a specified time-to-live duration.",
+      "translation": "将查询和响应存储到缓存中，并指定其生存时间（TTL）。",
+      "count": 1
+    },
+    {
+      "source": "Returns the underlying vector store used by this cache implementation. This allows\naccess to lower-level vector operations if needed.",
+      "translation": "返回此缓存实现所使用的基础向量存储。如有需要，这允许访问底层的向量操作。",
+      "count": 1
+    },
+    {
+      "source": "Stores a query and its corresponding chat response in the cache. Implementations\nshould handle vector embedding of the query and proper storage of both the query\nembedding and response.",
+      "translation": "将查询及其对应的聊天响应存储到缓存中。实现应处理查询的向量嵌入，并正确存储查询嵌入和响应。",
+      "count": 1
+    },
+    {
+      "source": "Stores a query and response in the cache with a specified time-to-live duration.\nAfter the TTL expires, the entry should be automatically removed from the cache.",
+      "translation": "将查询和响应存储到缓存中，并指定生存时间（TTL）。TTL 过期后，该条目应自动从缓存中移除。",
+      "count": 1
+    },
+    {
+      "source": "Stores a query and its corresponding chat response in the cache with an optional\ncontext identifier for isolation. The context hash ensures that cached responses\nare only returned for queries with matching context (e.g., same system prompt).",
+      "translation": "将查询及其对应的聊天响应存储到缓存中，并可选择提供上下文标识符以实现隔离。上下文哈希确保仅当查询的上下文匹配（例如相同的系统提示）时，才会返回缓存的响应。",
+      "count": 1
+    },
+    {
+      "source": "Retrieves a cached response for a semantically similar query, filtered by context.\nOnly returns responses that were stored with the same context hash, ensuring\nisolation between different contexts (e.g., different system prompts).",
+      "translation": "根据上下文过滤检索语义相似查询的缓存响应。  \n仅返回使用相同上下文哈希存储的响应，确保不同上下文（例如不同的系统提示）之间的隔离。",
+      "count": 1
+    },
+    {
+      "source": "Removes all entries from the cache. This operation should be atomic and\nthread-safe.",
+      "translation": "从缓存中移除所有条目。此操作必须是原子的且线程安全的。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../../../chat/cache/semantic/SemanticCache.html#getStore()\">getStore</a></code> in interface <code><a href=\"../../../../chat/cache/semantic/SemanticCache.html\" title=\"interface in org.springframework.ai.chat.cache.semantic\">SemanticCache</a></code>",
+      "translation": "接口 <code><a href=\"../../../../chat/cache/semantic/SemanticCache.html\" title=\"interface in org.springframework.ai.chat.cache.semantic\">SemanticCache</a></code> 中的 <code><a href=\"../../../../chat/cache/semantic/SemanticCache.html#getStore()\">getStore</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../../../chat/cache/semantic/SemanticCache.html#set(java.lang.String,org.springframework.ai.chat.model.ChatResponse)\">set</a></code> in interface <code><a href=\"../../../../chat/cache/semantic/SemanticCache.html\" title=\"interface in org.springframework.ai.chat.cache.semantic\">SemanticCache</a></code>",
+      "translation": "<a href=\"../../../../chat/cache/semantic/SemanticCache.html#set(java.lang.String,org.springframework.ai.chat.model.ChatResponse)\">set</a> 接口 <code><a href=\"../../../../chat/cache/semantic/SemanticCache.html\" title=\"interface in org.springframework.ai.chat.cache.semantic\">SemanticCache</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../../../chat/cache/semantic/SemanticCache.html#set(java.lang.String,org.springframework.ai.chat.model.ChatResponse,java.time.Duration)\">set</a></code> in interface <code><a href=\"../../../../chat/cache/semantic/SemanticCache.html\" title=\"interface in org.springframework.ai.chat.cache.semantic\">SemanticCache</a></code>",
+      "translation": "<a href=\"../../../../chat/cache/semantic/SemanticCache.html#set(java.lang.String,org.springframework.ai.chat.model.ChatResponse,java.time.Duration)\">set</a> 接口 <code><a href=\"../../../../chat/cache/semantic/SemanticCache.html\" title=\"interface in org.springframework.ai.chat.cache.semantic\">SemanticCache</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../../../chat/cache/semantic/SemanticCache.html#get(java.lang.String)\">get</a></code> in interface <code><a href=\"../../../../chat/cache/semantic/SemanticCache.html\" title=\"interface in org.springframework.ai.chat.cache.semantic\">SemanticCache</a></code>",
+      "translation": "接口 <code><a href=\"../../../../chat/cache/semantic/SemanticCache.html\" title=\"interface in org.springframework.ai.chat.cache.semantic\">SemanticCache</a></code> 中的<code><a href=\"../../../../chat/cache/semantic/SemanticCache.html#get(java.lang.String)\">get</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../../../chat/cache/semantic/SemanticCache.html#set(java.lang.String,org.springframework.ai.chat.model.ChatResponse,java.lang.String)\">set</a></code> in interface <code><a href=\"../../../../chat/cache/semantic/SemanticCache.html\" title=\"interface in org.springframework.ai.chat.cache.semantic\">SemanticCache</a></code>",
+      "translation": "接口 <code><a href=\"../../../../chat/cache/semantic/SemanticCache.html\" title=\"interface in org.springframework.ai.chat.cache.semantic\">SemanticCache</a></code> 中的方法 <code><a href=\"../../../../chat/cache/semantic/SemanticCache.html#set(java.lang.String,org.springframework.ai.chat.model.ChatResponse,java.lang.String)\">set</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../../../chat/cache/semantic/SemanticCache.html#get(java.lang.String,java.lang.String)\">get</a></code> in interface <code><a href=\"../../../../chat/cache/semantic/SemanticCache.html\" title=\"interface in org.springframework.ai.chat.cache.semantic\">SemanticCache</a></code>",
+      "translation": "接口 <code><a href=\"../../../../chat/cache/semantic/SemanticCache.html\" title=\"interface in org.springframework.ai.chat.cache.semantic\">SemanticCache</a></code> 中的 <code><a href=\"../../../../chat/cache/semantic/SemanticCache.html#get(java.lang.String,java.lang.String)\">get</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../../../chat/cache/semantic/SemanticCache.html#clear()\">clear</a></code> in interface <code><a href=\"../../../../chat/cache/semantic/SemanticCache.html\" title=\"interface in org.springframework.ai.chat.cache.semantic\">SemanticCache</a></code>",
+      "translation": "接口 <code><a href=\"../../../../chat/cache/semantic/SemanticCache.html\" title=\"interface in org.springframework.ai.chat.cache.semantic\">SemanticCache</a></code> 中的<code><a href=\"../../../../chat/cache/semantic/SemanticCache.html#clear()\">clear</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code>contextHash</code> - Optional hash identifier for context isolation (e.g., system\nprompt hash). If null, behaves the same as <a href=\"../../../../chat/cache/semantic/SemanticCache.html#set(java.lang.String,org.springframework.ai.chat.model.ChatResponse)\"><code>SemanticCache.set(String, ChatResponse)</code></a>.",
+      "translation": "<code>contextHash</code> - 用于上下文隔离的可选哈希标识符（例如，系统提示词哈希）。如果为 null，其行为与 <a href=\"../../../../chat/cache/semantic/SemanticCache.html#set(java.lang.String,org.springframework.ai.chat.model.ChatResponse)\"><code>SemanticCache.set(String, ChatResponse)</code></a> 相同。",
+      "count": 1
+    },
+    {
+      "source": "<code>contextHash</code> - Optional hash identifier for context filtering. If null, behaves\nthe same as <a href=\"../../../../chat/cache/semantic/SemanticCache.html#get(java.lang.String)\"><code>SemanticCache.get(String)</code></a>.",
+      "translation": "<code>contextHash</code> - 用于上下文过滤的可选哈希标识符。如果为 null，其行为与 <a href=\"../../../../chat/cache/semantic/SemanticCache.html#get(java.lang.String)\"><code>SemanticCache.get(String)</code></a> 相同。",
+      "count": 1
+    },
+    {
+      "source": "<code>ttl</code> - The duration after which the cache entry should expire",
+      "translation": "<code>ttl</code> - 缓存条目应过期的持续时间",
+      "count": 1
+    },
+    {
+      "source": "Brian Sam-Bodden, Soby Chacko, Yanming Zhou",
+      "translation": "布莱恩·萨姆 - 博登，索比·查科，杨明周",
+      "count": 1
+    },
+    {
+      "source": "The VectorStore instance used by this cache",
+      "translation": "此缓存使用的 VectorStore 实例",
+      "count": 1
+    },
+    {
+      "source": "Optional containing the most similar cached response if found and meets\nsimilarity threshold, empty Optional otherwise",
+      "translation": "若找到且相似度满足阈值，则包含最相似的缓存响应；否则为空 Optional。",
+      "count": 1
+    },
+    {
+      "source": "Optional containing the most similar cached response if found, matches\ncontext, and meets similarity threshold; empty Optional otherwise",
+      "translation": "若找到最相似的缓存响应且上下文匹配并满足相似度阈值，则包含该响应的 Optional；否则为空 Optional。",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    }
+  ]
+}

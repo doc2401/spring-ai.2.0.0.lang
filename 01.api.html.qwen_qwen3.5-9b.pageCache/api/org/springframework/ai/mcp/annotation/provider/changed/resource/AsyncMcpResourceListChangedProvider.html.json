@@ -1,0 +1,81 @@
+{
+  "created_at": "2026-06-15 08:29:32",
+  "updated_at": "2026-06-15 08:29:32",
+  "stats": {
+    "total_entries": 13,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 16,
+    "entries_with_hits": 13,
+    "entries_without_hits": 0,
+    "hit_rate": 1.2307692307692308,
+    "usage_percentage": 0.0013
+  },
+  "items": [
+    {
+      "source": "Create a new AsyncMcpResourceListChangedProvider.",
+      "translation": "创建一个新的 AsyncMcpResourceListChangedProvider。",
+      "count": 2
+    },
+    {
+      "source": "Returns the methods of the given bean class.",
+      "translation": "返回给定 Bean 类的方法。",
+      "count": 2
+    },
+    {
+      "source": "Get the list of resource list changed consumer specifications.",
+      "translation": "获取已更改的资源列表消费者规范列表。",
+      "count": 2
+    },
+    {
+      "source": "This class scans a list of objects for methods annotated with\n<a href=\"../../../McpResourceListChanged.html\" title=\"annotation interface in org.springframework.ai.mcp.annotation\"><code>McpResourceListChanged</code></a> and creates <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Function.html\" title=\"class or interface in java.util.function\"><code>Function</code></a> callbacks for them. These\ncallbacks can be used to handle resource list change notifications from MCP servers in\na reactive way.",
+      "translation": "该类会扫描对象列表，查找带有 <a href=\"../../../McpResourceListChanged.html\" title=\"annotation interface in org.springframework.ai.mcp.annotation\"><code>McpResourceListChanged</code></a> 注解的方法，并为其创建 <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Function.html\" title=\"class or interface in java.util.function\"><code>Function</code></a> 回调。这些回调可用于以响应式方式处理来自 MCP 服务器的资源列表变更通知。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Example usage:",
+      "translation": "使用示例：",
+      "count": 1
+    },
+    {
+      "source": "<code>resourceListChangedConsumerObjects</code> - the objects containing methods annotated\nwith <a href=\"../../../McpResourceListChanged.html\" title=\"annotation interface in org.springframework.ai.mcp.annotation\"><code>McpResourceListChanged</code></a>",
+      "translation": "<code>resourceListChangedConsumerObjects</code> - 包含用 <a href=\"../../../McpResourceListChanged.html\" title=\"org.springframework.ai.mcp.annotation 中的注解接口\"><code>McpResourceListChanged</code></a> 注解的方法的对象。",
+      "count": 1
+    },
+    {
+      "source": "<code>bean</code> - the bean instance",
+      "translation": "<code>bean</code> - 实例",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "the list of resource list changed consumer specifications",
+      "translation": "资源列表变更了消费者规范。",
+      "count": 1
+    },
+    {
+      "source": "the methods of the bean class",
+      "translation": "Bean 类的方法",
+      "count": 1
+    },
+    {
+      "source": "Provider for asynchronous resource list changed consumer callbacks.",
+      "translation": "异步资源列表的提供者已更改消费者回调。",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>// Create a provider with a list of objects containing @McpResourceListChanged methods\nAsyncMcpResourceListChangedProvider provider = new AsyncMcpResourceListChangedProvider(List.of(resourceListHandler));\n\n// Get the list of resource list changed consumer callbacks\nList&lt;AsyncResourceListChangedSpecification&gt; specifications = provider.getResourceListChangedSpecifications();\n\n// Add the consumers to the client features\nMcpClientFeatures.Async clientFeatures = new McpClientFeatures.Async(\n    clientInfo, clientCapabilities, roots,\n    toolsChangeConsumers, resourcesChangeConsumers, promptsChangeConsumers,\n    loggingConsumers, samplingHandler);\n</code></pre>",
+      "translation": "<pre><code>// 创建一个提供程序，其中包含带有 @McpResourceListChanged 方法的对象列表\nAsyncMcpResourceListChangedProvider provider = new AsyncMcpResourceListChangedProvider(List.of(resourceListHandler));\n\n// 获取资源列表更改消费者回调的列表\nList&lt;AsyncResourceListChangedSpecification&gt; specifications = provider.getResourceListChangedSpecifications();\n\n// 将消费者添加到客户端功能中\nMcpClientFeatures.Async clientFeatures = new McpClientFeatures.Async(\n    clientInfo, clientCapabilities, roots,\n    toolsChangeConsumers, resourcesChangeConsumers, promptsChangeConsumers,\n    loggingConsumers, samplingHandler);\n</code></pre>",
+      "count": 1
+    }
+  ]
+}

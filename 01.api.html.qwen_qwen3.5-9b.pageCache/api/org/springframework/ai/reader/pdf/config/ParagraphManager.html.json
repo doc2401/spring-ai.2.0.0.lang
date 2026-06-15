@@ -1,0 +1,71 @@
+{
+  "created_at": "2026-06-15 08:03:01",
+  "updated_at": "2026-06-15 08:03:01",
+  "stats": {
+    "total_entries": 11,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 11,
+    "entries_with_hits": 11,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.0011
+  },
+  "items": [
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "For given <code>PDOutlineNode</code> bookmark convert all sibling <code>PDOutlineItem</code>\nitems into <a href=\"ParagraphManager.Paragraph.html\" title=\"class in org.springframework.ai.reader.pdf.config\"><code>ParagraphManager.Paragraph</code></a> instances under the parentParagraph. For each\n<code>PDOutlineItem</code> item, recursively call\n<a href=\"#generateParagraphs(org.springframework.ai.reader.pdf.config.ParagraphManager.Paragraph,org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineNode,java.lang.Integer)\"><code>generateParagraphs(ParagraphManager.Paragraph, PDOutlineNode, Integer)</code></a> to process its children items.",
+      "translation": "对于给定的 <code>PDOutlineNode</code> 书签，将其所有兄弟 <code>PDOutlineItem</code> 项转换为父段落 <a href=\"ParagraphManager.Paragraph.html\" title=\"class in org.springframework.ai.reader.pdf.config\"><code>ParagraphManager.Paragraph</code></a> 下的实例。对于每个 <code>PDOutlineItem</code> 项，递归调用 <a href=\"#generateParagraphs(org.springframework.ai.reader.pdf.config.ParagraphManager.Paragraph,org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineNode,java.lang.Integer)\"><code>generateParagraphs(ParagraphManager.Paragraph, PDOutlineNode, Integer)</code></a> 以处理其子项。",
+      "count": 1
+    },
+    {
+      "source": "For given <code>PDOutlineNode</code> bookmark convert all sibling <code>PDOutlineItem</code>\nitems into <a href=\"ParagraphManager.Paragraph.html\" title=\"class in org.springframework.ai.reader.pdf.config\"><code>ParagraphManager.Paragraph</code></a> instances under the parentParagraph.",
+      "translation": "对于给定的<code>PDOutlineNode</code>书签，将其所有兄弟<code>PDOutlineItem</code>项转换为<a href=\"ParagraphManager.Paragraph.html\" title=\"class in org.springframework.ai.reader.pdf.config\"><code>ParagraphManager.Paragraph</code></a>实例，并置于父段落下。",
+      "count": 1
+    },
+    {
+      "source": "The ParagraphManager class is responsible for managing the paragraphs and hierarchy of\na PDF document. It can process bookmarks and generate a structured tree of paragraphs,\nrepresenting the table of contents (TOC) of the PDF document.",
+      "translation": "ParagraphManager 类负责管理 PDF 文档中的段落及其层级结构。它可以处理书签并生成一个结构化的段落树，以表示该 PDF 文档的目录（TOC）。",
+      "count": 1
+    },
+    {
+      "source": "Represents a document paragraph metadata and hierarchy.",
+      "translation": "表示文档段落元数据及其层次结构。",
+      "count": 1
+    },
+    {
+      "source": "Returns a tree of <a href=\"ParagraphManager.Paragraph.html\" title=\"class in org.springframework.ai.reader.pdf.config\"><code>ParagraphManager.Paragraph</code></a>s that represent the PDF document TOC.",
+      "translation": "返回一个由代表 PDF 文档目录的<a href=\"ParagraphManager.Paragraph.html\" title=\"class in org.springframework.ai.reader.pdf.config\"><code>ParagraphManager.Paragraph</code></a>组成的树。",
+      "count": 1
+    },
+    {
+      "source": "<code>parentParagraph</code> - Root paragraph that the bookmark sibling items should be\nadded to.",
+      "translation": "<code>parentParagraph</code> - 书签同级项应添加到的根段落。",
+      "count": 1
+    },
+    {
+      "source": "<code>bookmark</code> - TOC paragraphs to process.",
+      "translation": "<code>bookmark</code> - 待处理的目录段落。",
+      "count": 1
+    },
+    {
+      "source": "<code>level</code> - Current TOC deepness level.",
+      "translation": "<code>level</code> - 当前目录大纲的嵌套深度级别。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    }
+  ]
+}

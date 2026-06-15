@@ -1,0 +1,411 @@
+{
+  "created_at": "2026-06-15 09:04:24",
+  "updated_at": "2026-06-15 09:04:24",
+  "stats": {
+    "total_entries": 79,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 89,
+    "entries_with_hits": 79,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1265822784810127,
+    "usage_percentage": 0.007899999999999999
+  },
+  "items": [
+    {
+      "source": "Use this when:",
+      "translation": "使用场景：",
+      "count": 5
+    },
+    {
+      "source": "If you use this strategy with an unsupported model, AWS will return a\nValidationException. Use <a href=\"#SYSTEM_ONLY\"><code>SYSTEM_ONLY</code></a> instead for Amazon Nova models.",
+      "translation": "如果您在不受支持的模型上使用此策略，AWS 将返回 ValidationException。对于 Amazon Nova 模型，请使用 <a href=\"#SYSTEM_ONLY\"><code>SYSTEM_ONLY</code></a>。",
+      "count": 2
+    },
+    {
+      "source": "<strong>Important Model Compatibility:</strong>",
+      "translation": "<strong>重要模型兼容性：</strong>",
+      "count": 2
+    },
+    {
+      "source": "Returns an array containing the constants of this enum class, in\nthe order they are declared.",
+      "translation": "返回一个包含此枚举类常量的数组，这些常量按照声明顺序排列。",
+      "count": 2
+    },
+    {
+      "source": "<strong>Supported:</strong> Claude 3.x and Claude 4.x models (all\nvariants)",
+      "translation": "<strong>支持：</strong>Claude 3.x 和 Claude 4.x 模型（所有变体）",
+      "count": 2
+    },
+    {
+      "source": "<strong>Not Supported:</strong> Amazon Nova models (Nova Micro, Lite, Pro,\nPremier) - these models only support caching for system and messages, not\ntools",
+      "translation": "<strong>不支持：</strong>Amazon Nova 模型（Nova Micro、Lite、Pro、Premier）——这些模型仅支持系统和消息的缓存，不支持工具缓存。",
+      "count": 2
+    },
+    {
+      "source": "<ul>\n<li><strong>支持：</strong>Claude 3.x 和 Claude 4.x 模型（所有变体）</li>\n<li><strong>不支持：</strong>Amazon Nova 模型（Nova Micro、Lite、Pro、Premier）——这些模型仅支持系统和消息的缓存，不支持工具缓存。</li>\n</ul>",
+      "translation": "<ul>\n<li><strong>支持：</strong>Claude 3.x 和 Claude 4.x 模型（所有变体）</li>\n<li><strong>不支持：</strong>Amazon Nova 模型（Nova Micro、Lite、Pro、Premier）——这些模型仅支持系统和消息的缓存，不支持工具缓存。</li>\n</ul>",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "<strong>Note:</strong> Changing tools will invalidate the cache since tools are\npart of the cache prefix (they appear before system in the request hierarchy).",
+      "translation": "<strong>注意：</strong>更换工具将导致缓存失效，因为工具是缓存前缀的一部分（它们在请求层级中出现在\"system\"之前）。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Note:</strong> If no tools are present in the request, this strategy is\nequivalent to NONE (no caching occurs).",
+      "translation": "<strong>注意：</strong>如果请求中不存在任何工具，则该策略等同于 NONE（不会发生缓存）。",
+      "count": 1
+    },
+    {
+      "source": "<strong>Cache Invalidation:</strong>",
+      "translation": "<strong>缓存失效：</strong>",
+      "count": 1
+    },
+    {
+      "source": "<strong>Model Compatibility:</strong>",
+      "translation": "<strong>模型兼容性：</strong>",
+      "count": 1
+    },
+    {
+      "source": "<strong>How it works:</strong>",
+      "translation": "<strong>工作原理：</strong>",
+      "count": 1
+    },
+    {
+      "source": "<strong>Example conversation flow:</strong>",
+      "translation": "<strong>示例对话流程：</strong>",
+      "count": 1
+    },
+    {
+      "source": "<strong>Cache behavior:</strong>",
+      "translation": "<strong>缓存行为：</strong>",
+      "count": 1
+    },
+    {
+      "source": "Prompt caching reduces latency and costs by reusing previously processed prompt\ncontent. Cached content has a 5-minute Time To Live (TTL) that resets with each cache\nhit.",
+      "translation": "提示缓存通过复用先前处理的提示内容来降低延迟和成本。缓存内容的生存时间（TTL）为 5 分钟，每次命中缓存时该计时器会重置。",
+      "count": 1
+    },
+    {
+      "source": "This is the recommended starting point for most use cases as it provides the best\nbalance of simplicity and effectiveness.",
+      "translation": "这是大多数用例的推荐起点，因为它在简洁性和有效性之间提供了最佳平衡。",
+      "count": 1
+    },
+    {
+      "source": "This provides the most comprehensive caching but uses more cache breakpoints.",
+      "translation": "此方案提供最全面的缓存，但会占用更多的缓存断点。",
+      "count": 1
+    },
+    {
+      "source": "A cache breakpoint is placed on the last user message in the conversation. This\nenables incremental caching where each conversation turn builds on the previous\ncached prefix, providing significant cost savings and performance improvements.",
+      "translation": "在对话中的最后一条用户消息处设置缓存断点。这实现了增量缓存，即每个对话轮次都基于之前缓存的前缀进行构建，从而显著降低成本并提升性能。",
+      "count": 1
+    },
+    {
+      "source": "Returns the enum constant of this class with the specified name.\nThe string must match <i>exactly</i> an identifier used to declare an\nenum constant in this class.  (Extraneous whitespace characters are \nnot permitted.)",
+      "translation": "返回此类的具有指定名称的枚举常量。该字符串必须与用于在此类中声明枚举常量的标识符完全匹配。（不允许存在多余的空白字符。）",
+      "count": 1
+    },
+    {
+      "source": "Cache the entire conversation history up to and including the current user\nquestion.",
+      "translation": "将当前用户提问之前的整个对话历史（包括该问题）进行缓存。",
+      "count": 1
+    },
+    {
+      "source": "No caching (default behavior).",
+      "translation": "不启用缓存（默认行为）。",
+      "count": 1
+    },
+    {
+      "source": "Cache both tool definitions and system instructions.",
+      "translation": "同时缓存工具定义和系统指令。",
+      "count": 1
+    },
+    {
+      "source": "Cache system instructions only.",
+      "translation": "仅缓存系统指令。",
+      "count": 1
+    },
+    {
+      "source": "Cache tool definitions only.",
+      "translation": "仅缓存工具定义。",
+      "count": 1
+    },
+    {
+      "source": "Returns the enum constant of this class with the specified name.",
+      "translation": "返回此类的具有指定名称的枚举常量。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if this enum class has no constant with the specified name",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果此枚举类没有指定名称的常量，则抛出此异常。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/NullPointerException.html\" title=\"class or interface in java.lang\">NullPointerException</a></code> - if the argument is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/NullPointerException.html\" title=\"java.lang 中的类或接口\">NullPointerException</a></code> - 如果参数为 null",
+      "count": 1
+    },
+    {
+      "source": "<strong>Verified:</strong> Claude 3.x and Claude 4.x models (all variants)",
+      "translation": "<strong>已验证：</strong>Claude 3.x 和 Claude 4.x 模型（所有变体）",
+      "count": 1
+    },
+    {
+      "source": "<strong>Note:</strong> Amazon Nova models theoretically support conversation\ncaching, but have not been verified in integration tests",
+      "translation": "<strong>注意：</strong>Amazon Nova 模型理论上支持对话缓存，但尚未在集成测试中得到验证。",
+      "count": 1
+    },
+    {
+      "source": "<code>name</code> - the name of the enum constant to be returned.",
+      "translation": "<code>name</code> - 要返回的枚举常量的名称。",
+      "count": 1
+    },
+    {
+      "source": "Requests are one-off or highly variable",
+      "translation": "请求是单次性的或高度多变的。",
+      "count": 1
+    },
+    {
+      "source": "Content doesn't meet minimum token requirements (1024+ tokens for most\nmodels)",
+      "translation": "内容未达到最低令牌要求（大多数模型需要 1024 个以上的令牌）。",
+      "count": 1
+    },
+    {
+      "source": "You want to avoid caching overhead",
+      "translation": "您希望避免缓存开销。",
+      "count": 1
+    },
+    {
+      "source": "System prompts are large and stable (1024+ tokens)",
+      "translation": "系统提示词规模较大且稳定（1024 个 token 以上）",
+      "count": 1
+    },
+    {
+      "source": "Tool definitions are relatively small (&lt;20 tools)",
+      "translation": "工具定义相对较少（少于 20 个工具）。",
+      "count": 1
+    },
+    {
+      "source": "You want simple, single-breakpoint caching",
+      "translation": "您想要简单且仅需单一断点的缓存方案。",
+      "count": 1
+    },
+    {
+      "source": "You have many tool definitions (20+ tools, 1024+ tokens total)",
+      "translation": "您拥有大量工具定义（超过 20 个工具，总计超过 1024 个 token）。",
+      "count": 1
+    },
+    {
+      "source": "Tools are stable but system prompts change frequently",
+      "translation": "工具保持稳定，但系统提示词频繁变更。",
+      "count": 1
+    },
+    {
+      "source": "You want to cache tool schemas without caching system instructions",
+      "translation": "您希望缓存工具模式，但不缓存系统指令。",
+      "count": 1
+    },
+    {
+      "source": "Both tools and system prompts are large and stable (1024+ tokens each)",
+      "translation": "工具和系统提示均较大且稳定（每个超过 1024 个 token）。",
+      "count": 1
+    },
+    {
+      "source": "You want maximum cache coverage",
+      "translation": "您希望获得最大的缓存覆盖率。",
+      "count": 1
+    },
+    {
+      "source": "You're willing to use 2 of your 4 available cache breakpoints",
+      "translation": "您愿意使用 4 个可用缓存断点中的 2 个。",
+      "count": 1
+    },
+    {
+      "source": "Changing tools invalidates both cache breakpoints (tools are the prefix)",
+      "translation": "更改工具会同时使缓存断点失效（工具为前缀）。",
+      "count": 1
+    },
+    {
+      "source": "Changing system prompts only invalidates the system cache (tools remain\ncached)",
+      "translation": "更改系统提示词仅会使系统缓存失效（工具仍保留在缓存中）",
+      "count": 1
+    },
+    {
+      "source": "Building multi-turn conversational applications (chatbots, assistants)",
+      "translation": "构建多轮对话应用（聊天机器人、助手）",
+      "count": 1
+    },
+    {
+      "source": "Conversation history is substantial (1024+ tokens)",
+      "translation": "对话历史非常长（超过 1024 个 token）。",
+      "count": 1
+    },
+    {
+      "source": "Users are asking follow-up questions that require context from earlier\nmessages",
+      "translation": "用户正在提出需要结合之前消息上下文的后续问题。",
+      "count": 1
+    },
+    {
+      "source": "You want to reduce latency and costs for ongoing conversations",
+      "translation": "您希望降低持续对话的延迟和成本。",
+      "count": 1
+    },
+    {
+      "source": "Identifies the last user message in the conversation",
+      "translation": "识别对话中的最后一条用户消息。",
+      "count": 1
+    },
+    {
+      "source": "Places cache breakpoint as the last content block on that message",
+      "translation": "将该消息中的断点缓存作为最后一个内容块。",
+      "count": 1
+    },
+    {
+      "source": "All messages up to and including the last user message are cached (system,\nprevious user/assistant turns, and current user question)",
+      "translation": "包括最后一条用户消息在内的所有消息均会被缓存（系统消息、之前的用户/助手对话轮次以及当前用户的问题）。",
+      "count": 1
+    },
+    {
+      "source": "On the next turn, the cached context is reused and a new cache is created\nincluding the assistant response and new user question",
+      "translation": "在下一轮中，将复用缓存的上下文，并创建一个新的缓存，其中包含助手的回复和新用户的问题。",
+      "count": 1
+    },
+    {
+      "source": "First request: Creates cache (cacheWriteInputTokens &gt; 0)",
+      "translation": "首次请求：创建缓存（cacheWriteInputTokens > 0）",
+      "count": 1
+    },
+    {
+      "source": "Subsequent requests: Reads from cache (cacheReadInputTokens &gt; 0)",
+      "translation": "后续请求：从缓存读取（cacheReadInputTokens > 0）",
+      "count": 1
+    },
+    {
+      "source": "Cache TTL: 5 minutes (resets on each cache hit)",
+      "translation": "缓存过期时间：5 分钟（每次命中缓存时重置）",
+      "count": 1
+    },
+    {
+      "source": "Minimum content: 1024+ tokens required for caching to activate",
+      "translation": "缓存激活所需的最小内容为 1024 个 token。",
+      "count": 1
+    },
+    {
+      "source": "Soby Chacko",
+      "translation": "索比·查科",
+      "count": 1
+    },
+    {
+      "source": "an array containing the constants of this enum class, in the order they are declared",
+      "translation": "包含此枚举类常量的数组，按声明顺序排列。",
+      "count": 1
+    },
+    {
+      "source": "the enum constant with the specified name",
+      "translation": "具有指定名称的枚举常量",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Enum Constant Summary",
+      "translation": "枚举常量摘要",
+      "count": 1
+    },
+    {
+      "source": "Enum Constant Details",
+      "translation": "枚举常量详情",
+      "count": 1
+    },
+    {
+      "source": "Defines the caching strategy for AWS Bedrock prompt caching. Bedrock allows up to 4\ncache breakpoints per request, and the cache hierarchy follows the order: tools →\nsystem → messages.",
+      "translation": "定义了用于 AWS Bedrock 提示缓存的缓存策略。Bedrock 每个请求最多支持 4 个缓存断点，且缓存层级遵循以下顺序：工具 → 系统 → 消息。",
+      "count": 1
+    },
+    {
+      "source": "No caching (default behavior). All content is processed fresh on each request.",
+      "translation": "不启用缓存（默认行为）。每次请求都会对所有内容进行全新处理。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>请求是单次性的或高度多变的。</li>\n<li>内容未达到最低令牌要求（大多数模型需要 1024 个以上的令牌）。</li>\n<li>您希望避免缓存开销。</li>\n</ul>",
+      "translation": "<ul>\n<li>请求为单次性或高度多变。</li>\n<li>内容未满足最低令牌要求（大多数模型需要超过 1024 个令牌）。</li>\n<li>您希望避免缓存开销。</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "Cache system instructions only. Places a cache breakpoint on the system message\ncontent. Tools are cached implicitly via Bedrock's automatic ~20-block lookback\nmechanism (content before the cache breakpoint is included in the cache).",
+      "translation": "仅缓存系统指令。在系统消息内容处设置缓存断点。工具会通过 Bedrock 的自动约 20 块回溯机制隐式缓存（缓存断点之前的内容会被包含在缓存中）。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>系统提示词规模较大且稳定（1024 个 token 以上）</li>\n<li>工具定义相对较少（少于 20 个工具）。</li>\n<li>您想要简单且仅需单一断点的缓存方案。</li>\n</ul>",
+      "translation": "<ul>\n<li>系统提示词规模较大且稳定（超过 1024 个 token）</li>\n<li>工具定义相对较少（少于 20 个工具）。</li>\n<li>您需要一种简单且仅需单一断点的缓存方案。</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "Cache tool definitions only. Places a cache breakpoint after the last tool\ndefinition. System messages and conversation history are not cached.",
+      "translation": "仅缓存工具定义。在最后一个工具定义之后放置一个缓存断点。系统消息和对话历史不会被缓存。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>您拥有大量工具定义（超过 20 个工具，总计超过 1024 个 token）。</li>\n<li>工具保持稳定，但系统提示词频繁变更。</li>\n<li>您希望缓存工具模式，但不缓存系统指令。</li>\n</ul>",
+      "translation": "<ul>\n<li>您拥有大量工具定义（超过 20 个工具，总计超过 1024 个 token）。</li>\n<li>工具保持稳定，但系统提示词频繁变更。</li>\n<li>您希望缓存工具模式，但不缓存系统指令。</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "Cache both tool definitions and system instructions. Places two cache breakpoints:\none after the last tool definition, and one after the last system message.",
+      "translation": "同时缓存工具定义和系统指令。设置两个缓存断点：一个位于最后一个工具定义之后，另一个位于最后一个系统消息之后。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>工具和系统提示均较大且稳定（每个超过 1024 个 token）。</li>\n<li>您希望获得最大的缓存覆盖率。</li>\n<li>您愿意使用 4 个可用缓存断点中的 2 个。</li>\n</ul>",
+      "translation": "<ul>\n<li>工具和系统提示均较大且稳定（每个超过 1024 个 token）。</li>\n<li>您希望获得最大的缓存覆盖率。</li>\n<li>您愿意使用 4 个可用缓存断点中的 2 个。</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>更改工具会同时使缓存断点失效（工具为前缀）。</li>\n<li>更改系统提示词仅会使系统缓存失效（工具仍保留在缓存中）</li>\n</ul>",
+      "translation": "<ul>\n<li>修改工具将同时使缓存断点失效（工具作为前缀）。</li>\n<li>修改系统提示词仅会使系统缓存失效（工具仍保留在缓存中）。</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "Cache the entire conversation history up to and including the current user\nquestion. This is ideal for multi-turn conversations where you want to reuse the\nconversation context while asking new questions.",
+      "translation": "将当前用户提问之前的整个对话历史（包括该问题）进行缓存。这对于多轮对话非常理想，因为您可以在提出新问题时复用对话上下文。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>构建多轮对话应用（聊天机器人、助手）</li>\n<li>对话历史非常长（超过 1024 个 token）。</li>\n<li>用户正在提出需要结合之前消息上下文的后续问题。</li>\n<li>您希望降低持续对话的延迟和成本。</li>\n</ul>",
+      "translation": "<ul>\n<li>构建多轮对话应用（聊天机器人、助手）</li>\n<li>对话历史非常长（超过 1024 个 token）。</li>\n<li>用户正在提出需要结合之前消息上下文的后续问题。</li>\n<li>您希望降低持续对话的延迟和成本。</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li><strong>已验证：</strong>Claude 3.x 和 Claude 4.x 模型（所有变体）</li>\n<li><strong>注意：</strong>Amazon Nova 模型理论上支持对话缓存，但尚未在集成测试中得到验证。</li>\n</ul>",
+      "translation": "<ul>\n<li><strong>已验证：</strong>Claude 3.x 和 Claude 4.x 模型（所有变体）</li>\n<li><strong>注意：</strong>Amazon Nova 模型理论上支持对话缓存，但尚未在集成测试中得到验证。</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<ol>\n<li>识别对话中的最后一条用户消息。</li>\n<li>将该消息中的断点缓存作为最后一个内容块。</li>\n<li>包括最后一条用户消息在内的所有消息均会被缓存（系统消息、之前的用户/助手对话轮次以及当前用户的问题）。</li>\n<li>在下一轮中，将复用缓存的上下文，并创建一个新的缓存，其中包含助手的回复和新用户的问题。</li>\n</ol>",
+      "translation": "<ol>\n<li>识别对话中的最后一条用户消息。</li>\n<li>将该消息中的断点缓存作为最后一个内容块。</li>\n<li>包括最后一条用户消息在内的所有消息均会被缓存（系统消息、之前的用户/助手对话轮次以及当前用户的问题）。</li>\n<li>在下一轮中，将复用缓存的上下文，并创建一个新的缓存，其中包含助手的回复和新用户的问题。</li>\n</ol>",
+      "count": 1
+    },
+    {
+      "source": "<pre>Turn 1: \"My name is Alice\" → Response cached\nTurn 2: \"I work as a data scientist\" → Response cached\nTurn 3: \"What career advice would you give me?\" ← Cache applies here\n        (Turns 1-2 are read from cache, Turn 3 question is fresh)\n</pre>",
+      "translation": "<pre>第 1 轮：“我的名字是 Alice\"→响应已缓存\n第 2 轮：“我是一名数据科学家”→响应已缓存\n第 3 轮：“你会给我什么职业建议？”←此处应用缓存\n        （第 1-2 轮从缓存读取，第 3 轮问题为新鲜输入）\n</pre>",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>首次请求：创建缓存（cacheWriteInputTokens &gt; 0）</li>\n<li>后续请求：从缓存读取（cacheReadInputTokens &gt; 0）</li>\n<li>缓存过期时间：5 分钟（每次命中缓存时重置）</li>\n<li>缓存激活所需的最小内容为 1024 个 token。</li>\n</ul>",
+      "translation": "<ul>\n<li>首次请求：创建缓存（cacheWriteInputTokens > 0）</li>\n<li>后续请求：从缓存读取（cacheReadInputTokens > 0）</li>\n<li>缓存过期时间：5 分钟（每次命中缓存时重置）</li>\n<li>激活缓存所需的最小内容为 1024 个 token。</li>\n</ul>",
+      "count": 1
+    }
+  ]
+}

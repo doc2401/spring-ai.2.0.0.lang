@@ -1,0 +1,86 @@
+{
+  "created_at": "2026-06-15 08:59:38",
+  "updated_at": "2026-06-15 08:59:38",
+  "stats": {
+    "total_entries": 14,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 18,
+    "entries_with_hits": 14,
+    "entries_without_hits": 0,
+    "hit_rate": 1.2857142857142858,
+    "usage_percentage": 0.0014
+  },
+  "items": [
+    {
+      "source": "Logic to be executed after the rest of the advisor chain is called.",
+      "translation": "在调用顾问链其余部分后执行的逻辑。",
+      "count": 2
+    },
+    {
+      "source": "Logic to be executed before the rest of the advisor chain is called.",
+      "translation": "在调用顾问链其余部分之前执行的逻辑。",
+      "count": 2
+    },
+    {
+      "source": "Return the name of the advisor.",
+      "translation": "返回顾问的姓名。",
+      "count": 2
+    },
+    {
+      "source": "Scheduler used for processing the advisor logic when streaming.",
+      "translation": "用于流处理时执行顾问逻辑的调度器。",
+      "count": 2
+    },
+    {
+      "source": "It provides default implementations for the\n<a href=\"#adviseCall(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.CallAdvisorChain)\"><code>adviseCall(ChatClientRequest, CallAdvisorChain)</code></a> and\n<a href=\"#adviseStream(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.StreamAdvisorChain)\"><code>adviseStream(ChatClientRequest, StreamAdvisorChain)</code></a> methods, delegating the\nactual logic to the <a href=\"#before(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.AdvisorChain)\"><code>before(ChatClientRequest, AdvisorChain advisorChain)</code></a> and\n<a href=\"#after(org.springframework.ai.chat.client.ChatClientResponse,org.springframework.ai.chat.client.advisor.api.AdvisorChain)\"><code>after(ChatClientResponse, AdvisorChain advisorChain)</code></a> methods.",
+      "translation": "它提供了对 <a href=\"#adviseCall(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.CallAdvisorChain)\"><code>adviseCall(ChatClientRequest, CallAdvisorChain)</code></a> 和 <a href=\"#adviseStream(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.StreamAdvisorChain)\"><code>adviseStream(ChatClientRequest, StreamAdvisorChain)</code></a> 方法的默认实现，并将实际逻辑委托给 <a href=\"#before(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.AdvisorChain)\"><code>before(ChatClientRequest, AdvisorChain advisorChain)</code></a> 和 <a href=\"#after(org.springframework.ai.chat.client.ChatClientResponse,org.springframework.ai.chat.client.advisor.api.AdvisorChain)\"><code>after(ChatClientResponse, AdvisorChain advisorChain)</code></a> 方法。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"Advisor.html#getName()\">Advisor</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"Advisor.html#getName()\">Advisor</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"CallAdvisor.html#adviseCall(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.CallAdvisorChain)\">adviseCall</a></code> in interface <code><a href=\"CallAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">CallAdvisor</a></code>",
+      "translation": "<code><a href=\"CallAdvisor.html#adviseCall(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.CallAdvisorChain)\">adviseCall</a></code> 接口 <code><a href=\"CallAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">CallAdvisor</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"StreamAdvisor.html#adviseStream(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.StreamAdvisorChain)\">adviseStream</a></code> in interface <code><a href=\"StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">StreamAdvisor</a></code>",
+      "translation": "<code><a href=\"StreamAdvisor.html#adviseStream(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.StreamAdvisorChain)\">adviseStream</a></code> 接口 <code><a href=\"StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">StreamAdvisor</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"Advisor.html#getName()\">getName</a></code> in interface <code><a href=\"Advisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">Advisor</a></code>",
+      "translation": "接口 <code><a href=\"Advisor.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\">Advisor</a></code> 中的 <code><a href=\"Advisor.html#getName()\">getName</a></code>",
+      "count": 1
+    },
+    {
+      "source": "Thomas Vitale",
+      "translation": "托马斯·维塔莱",
+      "count": 1
+    },
+    {
+      "source": "the advisor name.",
+      "translation": "顾问姓名。",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "Base advisor that implements common aspects of the <a href=\"CallAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>CallAdvisor</code></a> and\n<a href=\"StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>StreamAdvisor</code></a>, reducing the boilerplate code needed to implement an advisor.",
+      "translation": "基础顾问，实现了 <a href=\"CallAdvisor.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\"><code>CallAdvisor</code></a> 和 <a href=\"StreamAdvisor.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\"><code>StreamAdvisor</code></a> 的通用方面，从而减少了实现顾问所需的样板代码。",
+      "count": 1
+    }
+  ]
+}

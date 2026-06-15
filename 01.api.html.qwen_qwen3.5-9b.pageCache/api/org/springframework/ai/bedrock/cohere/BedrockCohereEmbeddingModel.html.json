@@ -1,0 +1,71 @@
+{
+  "created_at": "2026-06-15 09:03:01",
+  "updated_at": "2026-06-15 09:03:01",
+  "stats": {
+    "total_entries": 11,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 13,
+    "entries_with_hits": 11,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1818181818181819,
+    "usage_percentage": 0.0011
+  },
+  "items": [
+    {
+      "source": "Executes a method call to the AI model.",
+      "translation": "执行对 AI 模型的方法调用。",
+      "count": 2
+    },
+    {
+      "source": "Embeds the given document's content into a vector.",
+      "translation": "将给定文档的内容嵌入向量中。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../embedding/EmbeddingModel.html#embed(org.springframework.ai.document.Document)\">EmbeddingModel</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../embedding/EmbeddingModel.html#embed(org.springframework.ai.document.Document)\">EmbeddingModel</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../model/Model.html#call(TReq)\">Model</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../model/Model.html#call(TReq)\">Model</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"../../embedding/EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\"><code>EmbeddingModel</code></a> implementation that uses the\nBedrock Cohere Embedding API. Note: The invocation metrics are not exposed by AWS for\nthis API. If this change in the future we will add it as metadata.",
+      "translation": "使用 Bedrock Cohere 嵌入 API 的<a href=\"../../embedding/EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\"><code>EmbeddingModel</code></a>实现。注意：AWS 不会为此 API 公开调用指标。如果未来此情况发生变化，我们将将其添加为元数据。",
+      "count": 1
+    },
+    {
+      "source": "<code>document</code> - the document to embed.",
+      "translation": "<code>document</code> - 要嵌入的文档。",
+      "count": 1
+    },
+    {
+      "source": "<code>request</code> - the request object to be sent to the AI model",
+      "translation": "<code>request</code> - 要发送给 AI 模型的请求对象",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Soby Chacko, Sebastien Deleuze",
+      "translation": "克里斯蒂安·茨洛夫，索比·查科，塞巴斯蒂安·德洛兹",
+      "count": 1
+    },
+    {
+      "source": "the embedded vector.",
+      "translation": "嵌入向量。",
+      "count": 1
+    },
+    {
+      "source": "the response from the AI model",
+      "translation": "AI 模型的回复",
+      "count": 1
+    }
+  ]
+}

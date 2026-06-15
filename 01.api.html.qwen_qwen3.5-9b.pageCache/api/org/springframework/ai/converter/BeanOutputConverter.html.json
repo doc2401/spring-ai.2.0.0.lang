@@ -1,0 +1,166 @@
+{
+  "created_at": "2026-06-15 07:27:04",
+  "updated_at": "2026-06-15 07:27:04",
+  "stats": {
+    "total_entries": 30,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 48,
+    "entries_with_hits": 30,
+    "entries_without_hits": 0,
+    "hit_rate": 1.6,
+    "usage_percentage": 0.003
+  },
+  "items": [
+    {
+      "source": "<code>clazz</code> - The target type's class.",
+      "translation": "<code>clazz</code> - 目标类型的类。",
+      "count": 3
+    },
+    {
+      "source": "<code>typeRef</code> - The target class type reference.",
+      "translation": "<code>typeRef</code> - 目标类的类型引用。",
+      "count": 3
+    },
+    {
+      "source": "Constructor to initialize with the target type's class.",
+      "translation": "构造函数，用于使用目标类型的类进行初始化。",
+      "count": 2
+    },
+    {
+      "source": "Constructor to initialize with the target type's class, a custom JSON mapper, and a\nline endings normalizer to ensure consistent line endings on any platform.",
+      "translation": "构造函数，用于初始化目标类型的类、自定义 JSON 映射器以及换行符规范化器，以确保在任何平台上具有一致的换行符。",
+      "count": 2
+    },
+    {
+      "source": "Constructor to initialize with the target type's class, a custom JSON mapper, and a\ncustom text cleaner.",
+      "translation": "构造函数，用于初始化目标类型的类、自定义 JSON 映射器和自定义文本清理器。",
+      "count": 2
+    },
+    {
+      "source": "Constructor to initialize with the target class type reference.",
+      "translation": "构造函数，用于以目标类类型引用进行初始化。",
+      "count": 2
+    },
+    {
+      "source": "Constructor to initialize with the target class type reference, a custom JSON\nmapper, and a line endings normalizer to ensure consistent line endings on any\nplatform.",
+      "translation": "构造函数，用于初始化目标类类型引用、自定义 JSON 映射器以及换行符规范化器，以确保在任何平台上具有一致的换行符。",
+      "count": 2
+    },
+    {
+      "source": "Constructor to initialize with the target class type reference, a custom JSON\nmapper, and a custom text cleaner.",
+      "translation": "构造函数，用于初始化目标类类型引用、自定义 JSON 映射器和自定义文本清理器。",
+      "count": 2
+    },
+    {
+      "source": "Parses the given text to transform it to the desired target type.",
+      "translation": "将给定文本解析并转换为目标类型。",
+      "count": 2
+    },
+    {
+      "source": "Generates the JSON schema for the target type.",
+      "translation": "为目标类型生成 JSON 模式。",
+      "count": 2
+    },
+    {
+      "source": "Provides the expected format of the response, instructing that it should adhere to\nthe generated JSON schema.",
+      "translation": "提供响应预期格式，指示其应遵循生成的 JSON 架构。",
+      "count": 2
+    },
+    {
+      "source": "Configures and returns a JSON mapper for JSON operations.",
+      "translation": "配置并返回用于 JSON 操作的 JSON 映射器。",
+      "count": 2
+    },
+    {
+      "source": "Provides the generated JSON schema for the target type.",
+      "translation": "为目标类型提供生成的 JSON 架构。",
+      "count": 2
+    },
+    {
+      "source": "<code>jsonMapper</code> - Custom JSON mapper for JSON operations. endings.",
+      "translation": "<code>jsonMapper</code> - 用于 JSON 操作的自定义 JSON 映射器。结尾。",
+      "count": 2
+    },
+    {
+      "source": "<code>jsonMapper</code> - Custom JSON mapper for JSON operations.",
+      "translation": "<code>jsonMapper</code> - 用于 JSON 操作的自定义 JSON 映射器。",
+      "count": 2
+    },
+    {
+      "source": "<code>textCleaner</code> - Custom text cleaner for preprocessing responses.",
+      "translation": "<code>textCleaner</code> - 用于预处理响应的自定义文本清理器。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This method can be overridden in subclasses to customize the JSON schema generation\nlogic.",
+      "translation": "此方法可在子类中重写，以自定义 JSON 模式生成逻辑。",
+      "count": 1
+    },
+    {
+      "source": "An implementation of <a href=\"StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a> that transforms the LLM output\nto a specific object type using JSON schema. This converter works by generating a JSON\nschema based on a given Java class or parameterized type reference, which is then used\nto validate and transform the LLM output into the desired type.",
+      "translation": "这是一个实现了 <a href=\"StructuredOutputConverter.html\" title=\"org.springframework.ai.converter 中的接口\"><code>StructuredOutputConverter</code></a> 的转换器，它利用 JSON Schema 将大语言模型（LLM）的输出转换为特定对象类型。该转换器的工作原理是：根据给定的 Java 类或参数化类型引用生成一个 JSON Schema，随后使用该 Schema 来验证并将 LLM 的输出转换为所需的类型。",
+      "count": 1
+    },
+    {
+      "source": "<code>convert</code> in interface <code>org.springframework.core.convert.converter.Converter&lt;<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html\" title=\"class or interface in java.lang\">String</a>,<wbr/><a href=\"#type-param-T\" title=\"type parameter in BeanOutputConverter\">T</a>&gt;</code>",
+      "translation": "接口 <code>org.springframework.core.convert.converter.Converter&lt;<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html\" title=\"java.lang 中的类或接口\">String</a>,<wbr/><a href=\"#type-param-T\" title=\"BeanOutputConverter 中的类型参数\">T</a>&gt;</code> 中的 <code>convert</code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"StructuredOutputConverter.html#getJsonSchema()\">getJsonSchema</a></code> in interface <code><a href=\"StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\">StructuredOutputConverter</a>&lt;<a href=\"#type-param-T\" title=\"type parameter in BeanOutputConverter\">T</a>&gt;</code>",
+      "translation": "<a href=\"StructuredOutputConverter.html#getJsonSchema()\">getJsonSchema</a> 接口 <code><a href=\"StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\">StructuredOutputConverter</a>&lt;<a href=\"#type-param-T\" title=\"type parameter in BeanOutputConverter\">T</a>&gt;</code> 中的方法",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"FormatProvider.html#getFormat()\">getFormat</a></code> in interface <code><a href=\"FormatProvider.html\" title=\"interface in org.springframework.ai.converter\">FormatProvider</a></code>",
+      "translation": "<code><a href=\"FormatProvider.html#getFormat()\">getFormat</a></code> 接口 <code><a href=\"FormatProvider.html\" title=\"interface in org.springframework.ai.converter\">FormatProvider</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<span id=\"type-param-T\"><code>T</code> - The target type to which the output will be converted.</span>",
+      "translation": "<span id=\"type-param-T\"><code>T</code> - 输出将转换到的目标类型。</span>",
+      "count": 1
+    },
+    {
+      "source": "<code>text</code> - The LLM output in string format.",
+      "translation": "<code>text</code> - 以字符串格式呈现的大语言模型输出。",
+      "count": 1
+    },
+    {
+      "source": "Mark Pollack, Christian Tzolov, Sebastian Ullrich, Kirk Lund, Josh Long, Sebastien Deleuze, Soby Chacko, Thomas Vitale, liugddx",
+      "translation": "Mark Pollack，Christian Tzolov，Sebastian Ullrich，Kirk Lund，Josh Long，Sebastien Deleuze，Soby Chacko，Thomas Vitale，liugddx",
+      "count": 1
+    },
+    {
+      "source": "the generated JSON schema",
+      "translation": "生成的 JSON 架构",
+      "count": 1
+    },
+    {
+      "source": "The parsed output in the desired target type.",
+      "translation": "解析后的输出，目标类型为所需类型。",
+      "count": 1
+    },
+    {
+      "source": "Configured JSON mapper.",
+      "translation": "已配置 JSON 映射器。",
+      "count": 1
+    },
+    {
+      "source": "The instruction format string.",
+      "translation": "指令格式字符串。",
+      "count": 1
+    },
+    {
+      "source": "The generated JSON schema.",
+      "translation": "生成的 JSON 架构。",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "created_at": "2026-06-15 07:31:56",
+  "updated_at": "2026-06-15 07:31:56",
+  "stats": {
+    "total_entries": 9,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 10,
+    "entries_with_hits": 9,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1111111111111112,
+    "usage_percentage": 0.0009
+  },
+  "items": [
+    {
+      "source": "Executes a method call to the AI model.",
+      "translation": "执行对 AI 模型的方法调用。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../model/Model.html#call(TReq)\">Model</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../model/Model.html#call(TReq)\">Model</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "The ModerationModel interface defines a generic AI model for moderation. It extends the\nModel interface to handle the interaction with various types of AI models. It provides\na single method, call, which takes a ModerationPrompt as input and returns a\nModerationResponse.",
+      "translation": "ModerationModel 接口定义了一个通用的内容审核 AI 模型。它扩展了 Model 接口，以处理与各种类型 AI 模型的交互。该接口提供了一个名为 call 的单一方法，该方法接收 ModerationPrompt 作为输入，并返回一个 ModerationResponse。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../model/Model.html#call(TReq)\">call</a></code> in interface <code><a href=\"../model/Model.html\" title=\"interface in org.springframework.ai.model\">Model</a>&lt;<a href=\"ModerationPrompt.html\" title=\"class in org.springframework.ai.moderation\">ModerationPrompt</a>, <a href=\"ModerationResponse.html\" title=\"class in org.springframework.ai.moderation\">ModerationResponse</a>&gt;</code>",
+      "translation": "<a href=\"../model/Model.html#call(TReq)\">call</a> 接口中的<code><a href=\"../model/Model.html\" title=\"interface in org.springframework.ai.model\">Model</a>&lt;<a href=\"ModerationPrompt.html\" title=\"class in org.springframework.ai.moderation\">ModerationPrompt</a>, <a href=\"ModerationResponse.html\" title=\"class in org.springframework.ai.moderation\">ModerationResponse</a>&gt;</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>request</code> - the request object to be sent to the AI model",
+      "translation": "<code>request</code> - 要发送给 AI 模型的请求对象",
+      "count": 1
+    },
+    {
+      "source": "This is a functional interface and can therefore be used as the assignment target for a lambda expression or method reference.",
+      "translation": "这是一个函数式接口，因此可用作 Lambda 表达式或方法引用的赋值目标。",
+      "count": 1
+    },
+    {
+      "source": "Ahmed Yousri",
+      "translation": "艾哈迈德·尤斯里",
+      "count": 1
+    },
+    {
+      "source": "the response from the AI model",
+      "translation": "AI 模型的回复",
+      "count": 1
+    }
+  ]
+}

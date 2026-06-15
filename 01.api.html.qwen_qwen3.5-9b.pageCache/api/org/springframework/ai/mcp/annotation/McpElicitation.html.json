@@ -1,0 +1,66 @@
+{
+  "created_at": "2026-06-15 08:21:04",
+  "updated_at": "2026-06-15 08:21:04",
+  "stats": {
+    "total_entries": 10,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 11,
+    "entries_with_hits": 10,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1,
+    "usage_percentage": 0.001
+  },
+  "items": [
+    {
+      "source": "Used as connection or client identifier to select the MCP clients, the elicitation\nmethod is associated with.",
+      "translation": "用作连接或客户端标识符以选择与提示方法关联的 MCP 客户端。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "For synchronous handlers, the method must return <code>ElicitResult</code>. For asynchronous\nhandlers, the method must return <code>Mono&lt;ElicitResult&gt;</code>.",
+      "translation": "对于同步处理器，该方法必须返回 `<code>ElicitResult</code>`。对于异步处理器，该方法必须返回 `<code>Mono&lt;ElicitResult&gt;</code>`。",
+      "count": 1
+    },
+    {
+      "source": "Methods annotated with this annotation can be used to process elicitation requests from\nMCP servers.",
+      "translation": "带有此注解的方法可用于处理来自 MCP 服务器的提示请求。",
+      "count": 1
+    },
+    {
+      "source": "Example usage:",
+      "translation": "使用示例：",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "Required Element Summary",
+      "translation": "所需元素摘要",
+      "count": 1
+    },
+    {
+      "source": "Element Details",
+      "translation": "元素详情",
+      "count": 1
+    },
+    {
+      "source": "Annotation for methods that handle elicitation requests from MCP servers. This\nannotation is applicable only for MCP clients.",
+      "translation": "用于处理来自 MCP 服务器请求的标注方法。此注解仅适用于 MCP 客户端。",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>&amp;#64;McpElicitation(clients = \"my-client-id\")\npublic ElicitResult handleElicitationRequest(ElicitRequest request) {\n    return ElicitResult.builder()\n        .message(\"Generated response\")\n        .requestedSchema(\n            Map.of(\"type\", \"object\", \"properties\", Map.of(\"message\", Map.of(\"type\", \"string\"))))\n        .build();\n}\n\n&amp;#64;McpElicitation(clients = \"my-client-id\")\npublic Mono&lt;ElicitResult&gt; handleAsyncElicitationRequest(ElicitRequest request) {\n    return Mono.just(ElicitResult.builder()\n        .message(\"Generated response\")\n        .requestedSchema(\n            Map.of(\"type\", \"object\", \"properties\", Map.of(\"message\", Map.of(\"type\", \"string\"))))\n        .build());\n}\n</code></pre>",
+      "translation": "<pre><code>&#64;McpElicitation(clients = \"my-client-id\")\npublic ElicitResult handleElicitationRequest(ElicitRequest request) {\n    return ElicitResult.builder()\n        .message(\"Generated response\")\n        .requestedSchema(\n            Map.of(\"type\", \"object\", \"properties\", Map.of(\"message\", Map.of(\"type\", \"string\"))))\n        .build();\n}\n\n&#64;McpElicitation(clients = \"my-client-id\")\npublic Mono&lt;ElicitResult&gt; handleAsyncElicitationRequest(ElicitRequest request) {\n    return Mono.just(ElicitResult.builder()\n        .message(\"Generated response\")\n        .requestedSchema(\n            Map.of(\"type\", \"object\", \"properties\", Map.of(\"message\", Map.of(\"type\", \"string\"))))\n        .build());\n}\n</code></pre>",
+      "count": 1
+    }
+  ]
+}

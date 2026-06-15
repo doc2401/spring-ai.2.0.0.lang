@@ -1,0 +1,101 @@
+{
+  "created_at": "2026-06-15 08:21:43",
+  "updated_at": "2026-06-15 08:21:43",
+  "stats": {
+    "total_entries": 17,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 18,
+    "entries_with_hits": 17,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0588235294117647,
+    "usage_percentage": 0.0017
+  },
+  "items": [
+    {
+      "source": "Registers runtime hints for MCP schema classes.",
+      "translation": "为 MCP 模式类注册运行时提示。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This class provides GraalVM native image hints for MCP schema classes to ensure proper\nreflection access in native images. It:",
+      "translation": "该类为 MCP 模式类提供 GraalVM 原生镜像提示，以确保在原生镜像中能够正确进行反射访问。它：",
+      "count": 1
+    },
+    {
+      "source": "This method:",
+      "translation": "该方法：",
+      "count": 1
+    },
+    {
+      "source": "<code>registerHints</code> in interface <code>org.springframework.aot.hint.RuntimeHintsRegistrar</code>",
+      "translation": "接口 <code>org.springframework.aot.hint.RuntimeHintsRegistrar</code> 中的 <code>registerHints</code>",
+      "count": 1
+    },
+    {
+      "source": "Registers all nested classes of <code>McpSchema</code> for reflection",
+      "translation": "注册 `<code>McpSchema</code>` 的所有嵌套类以供反射使用。",
+      "count": 1
+    },
+    {
+      "source": "Discovers all nested classes within <code>McpSchema</code>",
+      "translation": "发现 `<code>McpSchema</code>` 中的所有嵌套类。",
+      "count": 1
+    },
+    {
+      "source": "<code>hints</code> - the hints instance to register hints with",
+      "translation": "<hints> - 用于注册提示的 hints 实例",
+      "count": 1
+    },
+    {
+      "source": "<code>classLoader</code> - the classloader to use (may be null)",
+      "translation": "<code>classLoader</code> - 要使用的类加载器（可为 null）",
+      "count": 1
+    },
+    {
+      "source": "Enables all member categories (fields, methods, etc.) for registered types",
+      "translation": "启用已注册类型的所有成员类别（字段、方法等）。",
+      "count": 1
+    },
+    {
+      "source": "Ensures proper serialization/deserialization in native images",
+      "translation": "确保原生镜像中的正确序列化/反序列化。",
+      "count": 1
+    },
+    {
+      "source": "Registers each discovered class for reflection access",
+      "translation": "为反射访问注册每个发现的类",
+      "count": 1
+    },
+    {
+      "source": "Enables all member categories for complete reflection support",
+      "translation": "启用所有成员类别以提供完整的反射支持。",
+      "count": 1
+    },
+    {
+      "source": "Josh Long",
+      "translation": "乔什·朗",
+      "count": 1
+    },
+    {
+      "source": "Runtime hints registrar for Model Context Protocol (MCP) schema classes.",
+      "translation": "Model 上下文协议（MCP）模式类的运行时提示注册器。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>注册 `<code>McpSchema</code>` 的所有嵌套类以供反射使用。</li>\n<li>启用已注册类型的所有成员类别（字段、方法等）。</li>\n<li>确保原生镜像中的正确序列化/反序列化。</li>\n</ul>",
+      "translation": "<ul>\n<li>注册 `<code>McpSchema`</code> 的所有嵌套类以供反射使用。</li>\n<li>启用已注册类型的所有成员类别（字段、方法等）。</li>\n<li>确保原生镜像中的正确序列化/反序列化。</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<ol>\n<li>发现 `<code>McpSchema</code>` 中的所有嵌套类。</li>\n<li>为反射访问注册每个发现的类</li>\n<li>启用所有成员类别以提供完整的反射支持。</li>\n</ol>",
+      "translation": "<ol>\n<li>发现 `<code>McpSchema`</code> 中的所有嵌套类。</li>\n<li>为每个发现的类注册反射访问。</li>\n<li>启用所有成员类别以提供完整的反射支持。</li>\n</ol>",
+      "count": 1
+    }
+  ]
+}

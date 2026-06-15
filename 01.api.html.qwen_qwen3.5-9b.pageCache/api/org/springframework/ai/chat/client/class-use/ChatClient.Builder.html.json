@@ -1,0 +1,131 @@
+{
+  "created_at": "2026-06-15 08:58:42",
+  "updated_at": "2026-06-15 08:58:42",
+  "stats": {
+    "total_entries": 23,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 30,
+    "entries_with_hits": 23,
+    "entries_without_hits": 0,
+    "hit_rate": 1.3043478260869565,
+    "usage_percentage": 0.0023
+  },
+  "items": [
+    {
+      "source": "Return a <a href=\"../ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient.Builder</code></a> to create a new <a href=\"../ChatClient.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient</code></a> whose\nsettings are replicated from this <a href=\"../ChatClientRequest.html\" title=\"class in org.springframework.ai.chat.client\"><code>ChatClientRequest</code></a>.",
+      "translation": "返回一个<a href=\"../ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient.Builder</code></a>，用于创建一个新的<a href=\"../ChatClient.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient</code></a>，其设置将从此<a href=\"../ChatClientRequest.html\" title=\"class in org.springframework.ai.chat.client\"><code>ChatClientRequest</code></a>复制。",
+      "count": 3
+    },
+    {
+      "source": "as of 2.0.0, in favor of <a href=\"../ChatClient.Builder.html#defaultTools(java.lang.Object...)\"><code>ChatClient.Builder.defaultTools(Object...)</code></a>.",
+      "translation": "自 2.0.0 版本起，推荐使用<a href=\"../ChatClient.Builder.html#defaultTools(java.lang.Object...)\"><code>ChatClient.Builder.defaultTools(Object...)</code></a>。",
+      "count": 3
+    },
+    {
+      "source": "as of 2.0.0, in favor of \n<details class=\"invalid-tag\">\n<summary>invalid reference</summary>\n<pre><code>#defaultTools(Consumer)</code></pre>\n</details>\n.",
+      "translation": "自 2.0.0 版本起，推荐使用  \n<details class=\"invalid-tag\">\n<summary>无效引用</summary>\n<pre><code>#defaultTools(Consumer)</code></pre>\n</details>\n。",
+      "count": 2
+    },
+    {
+      "source": "Callback to customize a <a href=\"../ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient.Builder</code></a> instance.",
+      "translation": "回调方法，用于自定义<a href=\"../ChatClient.Builder.html\" title=\"org.springframework.ai.chat.client 中的接口\"><code>ChatClient.Builder</code></a>实例。",
+      "count": 2
+    },
+    {
+      "source": "Configure the specified <a href=\"../ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient.Builder</code></a>.",
+      "translation": "配置指定的<a href=\"../ChatClient.Builder.html\" title=\"org.springframework.ai.chat.client 中的接口\"><code>ChatClient.Builder</code></a>。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Return a <a href=\"../ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient.Builder</code></a> to create a new <a href=\"../ChatClient.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient</code></a> whose\nsettings are replicated from the default <a href=\"../ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient.ChatClientRequestSpec</code></a> of this\nclient.",
+      "translation": "返回一个<a href=\"../ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient.Builder</code></a>，用于创建一个新的<a href=\"../ChatClient.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient</code></a>，该客户端的设置将从此客户端的默认<a href=\"../ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient.ChatClientRequestSpec</code></a>中复制。",
+      "count": 1
+    },
+    {
+      "source": "Creates a <a href=\"../ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient.Builder</code></a> for constructing a <a href=\"../ChatClient.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient</code></a>.",
+      "translation": "创建一个<a href=\"../ChatClient.Builder.html\" title=\"org.springframework.ai.chat.client 中的接口\"><code>ChatClient.Builder</code></a>，用于构建一个<a href=\"../ChatClient.html\" title=\"org.springframework.ai.chat.client 中的接口\"><code>ChatClient</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "as of 2.0.0, in favor of <a href=\"../DefaultChatClientBuilder.html#defaultTools(java.lang.Object...)\"><code>DefaultChatClientBuilder.defaultTools(Object...)</code></a>.",
+      "translation": "自 2.0.0 版本起，推荐使用<a href=\"../DefaultChatClientBuilder.html#defaultTools(java.lang.Object...)\"><code>DefaultChatClientBuilder.defaultTools(Object...)</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Register one or more default tools that will be available to every request\nbuilt from this <a href=\"../ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient.Builder</code></a>.",
+      "translation": "注册一个或多个默认工具，这些工具将向从此<a href=\"../ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient.Builder</code></a>构建的所有请求提供。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"deprecated-label\">Deprecated, for removal: This API element is subject to removal in a future version.</span>",
+      "translation": "<code class=\"deprecated-label\">已弃用，即将移除：此 API 元素将在未来版本中被移除。</code>",
+      "count": 1
+    },
+    {
+      "source": "Chat client API.",
+      "translation": "聊天客户端 API。",
+      "count": 1
+    },
+    {
+      "source": "The org.sf.ai.chat package represents the bounded context for the Chat Model within the\nAI generative model domain.",
+      "translation": "org.sf.ai.chat 包代表了 AI 生成模型领域中聊天模型的限界上下文。",
+      "count": 1
+    },
+    {
+      "source": "RAG Sub-Module: Query Expansion.",
+      "translation": "RAG 子模块：查询扩展。",
+      "count": 1
+    },
+    {
+      "source": "RAG Sub-Module: Query Transformation.",
+      "translation": "检索增强生成子模块：查询转换。",
+      "count": 1
+    },
+    {
+      "source": "DefaultChatClientBuilder is a builder class for creating a ChatClient.",
+      "translation": "DefaultChatClientBuilder 是一个用于创建 ChatClient 的构建器类。",
+      "count": 1
+    },
+    {
+      "source": "Creates a FactCheckingEvaluator configured for use with the Bespoke Minicheck\nmodel.",
+      "translation": "创建一个专为 Bespoke Minicheck 模型配置的 FactCheckingEvaluator。",
+      "count": 1
+    },
+    {
+      "source": "Constructs a new FactCheckingEvaluator with the provided ChatClient.Builder and\nevaluation prompt.",
+      "translation": "使用提供的 ChatClient.Builder 和评估提示构建一个新的 FactCheckingEvaluator。",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a> in <a href=\"../package-summary.html\">org.springframework.ai.chat.client</a>",
+      "translation": "<a href=\"../ChatClient.Builder.html\" title=\"org.springframework.ai.chat.client 中的接口\">ChatClient.Builder</a> 在 <a href=\"../package-summary.html\">org.springframework.ai.chat.client</a> 包中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a> in <a href=\"../../evaluation/package-summary.html\">org.springframework.ai.chat.evaluation</a>",
+      "translation": "<a href=\"../ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a> 在 <a href=\"../../evaluation/package-summary.html\">org.springframework.ai.chat.evaluation</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a> in <a href=\"../../../model/chat/client/autoconfigure/package-summary.html\">org.springframework.ai.model.chat.client.autoconfigure</a>",
+      "translation": "<a href=\"../ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a> 在 <a href=\"../../../model/chat/client/autoconfigure/package-summary.html\">org.springframework.ai.model.chat.client.autoconfigure</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a> in <a href=\"../../../rag/preretrieval/query/expansion/package-summary.html\">org.springframework.ai.rag.preretrieval.query.expansion</a>",
+      "translation": "<a href=\"../ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a> 在 <a href=\"../../../rag/preretrieval/query/expansion/package-summary.html\">org.springframework.ai.rag.preretrieval.query.expansion</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a> in <a href=\"../../../rag/preretrieval/query/transformation/package-summary.html\">org.springframework.ai.rag.preretrieval.query.transformation</a>",
+      "translation": "<a href=\"../ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a> 在 <a href=\"../../../rag/preretrieval/query/transformation/package-summary.html\">org.springframework.ai.rag.preretrieval.query.transformation</a> 中的用途",
+      "count": 1
+    }
+  ]
+}

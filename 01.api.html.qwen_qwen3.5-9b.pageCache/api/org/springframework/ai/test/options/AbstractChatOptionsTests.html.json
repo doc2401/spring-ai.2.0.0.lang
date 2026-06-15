@@ -1,0 +1,51 @@
+{
+  "created_at": "2026-06-15 08:01:26",
+  "updated_at": "2026-06-15 08:01:26",
+  "stats": {
+    "total_entries": 7,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 8,
+    "entries_with_hits": 7,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1428571428571428,
+    "usage_percentage": 0.0007
+  },
+  "items": [
+    {
+      "source": "Return the concrete options class being tested.",
+      "translation": "返回正在测试的具体选项类。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Abstract base class for testing <a href=\"../../chat/prompt/ChatOptions.html\" title=\"interface in org.springframework.ai.chat.prompt\"><code>ChatOptions</code></a> subclasses.",
+      "translation": "用于测试<a href=\"../../chat/prompt/ChatOptions.html\" title=\"org.springframework.ai.chat.prompt 中的接口\"><code>ChatOptions</code></a>子类的抽象基类。",
+      "count": 1
+    },
+    {
+      "source": "Return an instance of a builder that should not error when calling\n<a href=\"../../chat/prompt/ChatOptions.Builder.html#build()\"><code>ChatOptions.Builder.build()</code></a>.",
+      "translation": "返回一个构建器实例，调用 <a href=\"../../chat/prompt/ChatOptions.Builder.html#build()\"><code>ChatOptions.Builder.build()</code></a> 时不应抛出错误。",
+      "count": 1
+    },
+    {
+      "source": "Return an instance of a builder that should not error when calling\n<a href=\"../../chat/prompt/ChatOptions.Builder.html#build()\"><code>ChatOptions.Builder.build()</code></a>. This may mean setting some required fields, depending on\nthe semantics of the particular options class.\n\nThis convenience method helps reduce repetitive boilerplate code used in each and\nevery test.",
+      "translation": "返回一个构建器实例，调用<a href=\"../../chat/prompt/ChatOptions.Builder.html#build()\"><code>ChatOptions.Builder.build()</code></a>时不应抛出错误。这可能需要设置某些必需字段，具体取决于特定选项类的语义。\n\n此便捷方法有助于减少每个测试中重复使用的样板代码。",
+      "count": 1
+    },
+    {
+      "source": "<span id=\"type-param-O\"><code>O</code> - the concrete type of ChatOptions</span>",
+      "translation": "<span id=\"type-param-O\"><code>O</code> - ChatOptions 的具体类型</span>",
+      "count": 1
+    },
+    {
+      "source": "<span id=\"type-param-B\"><code>B</code> - the type of the builder for O</span>",
+      "translation": "<span id=\"type-param-B\"><code>B</code> - 用于构建 O 的构建器类型</span>",
+      "count": 1
+    }
+  ]
+}

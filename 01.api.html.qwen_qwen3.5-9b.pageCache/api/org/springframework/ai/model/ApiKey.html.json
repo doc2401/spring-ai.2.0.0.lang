@@ -1,0 +1,46 @@
+{
+  "created_at": "2026-06-15 07:31:22",
+  "updated_at": "2026-06-15 07:31:22",
+  "stats": {
+    "total_entries": 6,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 6,
+    "entries_with_hits": 6,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.0006000000000000001
+  },
+  "items": [
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Some model providers API leverage short-lived api keys which must be renewed at regular\nintervals using another credential. For example, a GCP service account can be exchanged\nfor an api key to call Vertex AI.\n\nModel clients use the ApiKey interface to get an api key before they make any request\nto the model provider. Implementations of this interface can cache the api key and\nperform a key refresh when it is required.",
+      "translation": "某些模型提供商的 API 利用短期有效的 API 密钥，必须使用其他凭据定期更新。例如，可以使用 GCP 服务账号交换为 API 密钥来调用 Vertex AI。\n\n模型客户端在向模型提供商发出任何请求之前，使用 ApiKey 接口获取 API 密钥。该接口的实现可以缓存 API 密钥，并在需要时执行密钥刷新。",
+      "count": 1
+    },
+    {
+      "source": "Returns an api key to use for a making request.",
+      "translation": "返回一个用于发起请求的 API 密钥。",
+      "count": 1
+    },
+    {
+      "source": "Returns an api key to use for a making request. Users of this method should NOT\ncache the returned api key, instead call this method whenever you need an api key.\nImplementors of this method MUST ensure that the returned key is not expired.",
+      "translation": "返回一个用于发起请求的 API 密钥。使用此方法的用户不应缓存返回的 API 密钥，而应在每次需要 API 密钥时调用此方法。此方法的实现者必须确保返回的密钥未过期。",
+      "count": 1
+    },
+    {
+      "source": "Adib Saikali",
+      "translation": "阿迪布·赛卡利",
+      "count": 1
+    },
+    {
+      "source": "the current value of the api key",
+      "translation": "API 密钥的当前值",
+      "count": 1
+    }
+  ]
+}

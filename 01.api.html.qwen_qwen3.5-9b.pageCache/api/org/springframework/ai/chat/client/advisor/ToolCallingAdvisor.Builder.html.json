@@ -1,0 +1,211 @@
+{
+  "created_at": "2026-06-15 08:58:22",
+  "updated_at": "2026-06-15 08:58:22",
+  "stats": {
+    "total_entries": 39,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 50,
+    "entries_with_hits": 39,
+    "entries_without_hits": 0,
+    "hit_rate": 1.2820512820512822,
+    "usage_percentage": 0.0039
+  },
+  "items": [
+    {
+      "source": "this Builder instance for method chaining",
+      "translation": "此构建器实例用于方法链式调用。",
+      "count": 5
+    },
+    {
+      "source": "Sets the order of the advisor in the advisor chain.",
+      "translation": "设置顾问链中顾问的顺序。",
+      "count": 2
+    },
+    {
+      "source": "Builds and returns a new ToolCallingAdvisor instance with the configured\nproperties.",
+      "translation": "构建并返回一个具有配置属性的新 ToolCallingAdvisor 实例。",
+      "count": 2
+    },
+    {
+      "source": "Returns the configured advisor order.",
+      "translation": "返回配置的顾问订单。",
+      "count": 2
+    },
+    {
+      "source": "Returns the configured ToolCallingManager.",
+      "translation": "返回配置的 ToolCallingManager。",
+      "count": 2
+    },
+    {
+      "source": "Returns the configured ToolExecutionEligibilityChecker.",
+      "translation": "返回配置的 ToolExecutionEligibilityChecker。",
+      "count": 2
+    },
+    {
+      "source": "Returns whether internal conversation history is enabled.",
+      "translation": "返回是否启用了内部对话历史。",
+      "count": 2
+    },
+    {
+      "source": "Sets the ToolCallingManager to be used by the advisor.",
+      "translation": "将 Advisor 使用的 ToolCallingManager 设置为指定值。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Subclasses must override <a href=\"#newCopy()\"><code>newCopy()</code></a> to return an instance of their own\ntype, and override this method to copy their additional fields into it.",
+      "translation": "子类必须重写<a href=\"#newCopy()\"><code>newCopy()</code></a>以返回其自身类型的实例，并在此方法中重写以将其额外字段复制到该实例中。",
+      "count": 1
+    },
+    {
+      "source": "This builder uses the self-referential generic pattern to support extensibility.",
+      "translation": "该构建器采用自引用泛型模式以支持可扩展性。",
+      "count": 1
+    },
+    {
+      "source": "Factory method called by <a href=\"#copy()\"><code>copy()</code></a> to create the blank builder instance\nthat will receive the copied fields. Subclasses must override this to return an\ninstance of their own builder type so that <a href=\"#copy()\"><code>copy()</code></a> preserves the full\nsubtype.",
+      "translation": "由<a href=\"#copy()\"><code>copy()</code></a>调用的工厂方法，用于创建将接收已复制字段的空白构建器实例。子类必须重写此方法以返回其自身构建器类型的实例，从而使<a href=\"#copy()\"><code>copy()</code></a>能够完整保留子类型。",
+      "count": 1
+    },
+    {
+      "source": "Factory method called by <a href=\"#copy()\"><code>copy()</code></a> to create the blank builder instance\nthat will receive the copied fields.",
+      "translation": "由 `<a href=\"#copy()\"><code>copy()</code></a>` 调用的工厂方法，用于创建将接收已复制字段的空白构建器实例。",
+      "count": 1
+    },
+    {
+      "source": "Sets the checker that determines whether a model response should trigger tool\nexecution. Defaults to\n<code>chatResponse -&gt; chatResponse != null &amp;&amp; chatResponse.hasToolCalls()</code>.\nOverride to apply provider-specific stop-reason logic.",
+      "translation": "设置用于判断模型响应是否应触发工具执行的检查器。默认为 `<code>chatResponse -> chatResponse != null && chatResponse.hasToolCalls()</code>`。可重写此方法以应用特定于提供方的停止原因逻辑。",
+      "count": 1
+    },
+    {
+      "source": "Sets whether internal conversation history is enabled.",
+      "translation": "设置是否启用内部对话历史。",
+      "count": 1
+    },
+    {
+      "source": "Creates a shallow copy of this builder with all current settings.",
+      "translation": "创建此构建器的浅拷贝，包含所有当前设置。",
+      "count": 1
+    },
+    {
+      "source": "Disables internal conversation history.",
+      "translation": "禁用内部对话历史。",
+      "count": 1
+    },
+    {
+      "source": "Returns this builder cast to the appropriate type for method chaining.",
+      "translation": "返回此构建器，并将其转换为适合方法链式调用的相应类型。",
+      "count": 1
+    },
+    {
+      "source": "Sets the checker that determines whether a model response should trigger tool\nexecution.",
+      "translation": "设置用于判断模型响应是否应触发工具执行的检查器。",
+      "count": 1
+    },
+    {
+      "source": "Returns this builder cast to the appropriate type for method chaining.\nSubclasses should override this method to return the correct type.",
+      "translation": "返回此构建器转换为适合方法链式调用的适当类型。子类应重写此方法以返回正确的类型。",
+      "count": 1
+    },
+    {
+      "source": "Sets whether internal conversation history is enabled. If false, you need a\nChatMemory Advisor registered next in the chain.",
+      "translation": "设置是否启用内部对话历史。如果为 false，则需要在链中注册 ChatMemory Advisor。",
+      "count": 1
+    },
+    {
+      "source": "Disables internal conversation history. You need a ChatMemory Advisor\nregistered next in the chain.",
+      "translation": "禁用内部对话历史。需要在链中注册一个 ChatMemory Advisor。",
+      "count": 1
+    },
+    {
+      "source": "<span id=\"type-param-T\"><code>T</code> - the builder type, used for self-referential generics to support method\nchaining in subclasses</span>",
+      "translation": "<span id=\"type-param-T\"><code>T</code> - 构建器类型，用于自引用泛型以支持子类的链式调用</span>",
+      "count": 1
+    },
+    {
+      "source": "a new <a href=\"ToolCallingAdvisor.Builder.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor.Builder</code></a> with the same configuration",
+      "translation": "一个具有相同配置的新的<a href=\"ToolCallingAdvisor.Builder.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor.Builder</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if toolCallingManager is null or advisorOrder\nis out of valid range",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果 toolCallingManager 为 null 或 advisorOrder 超出有效范围",
+      "count": 1
+    },
+    {
+      "source": "<code>toolCallingManager</code> - the ToolCallingManager instance",
+      "translation": "<code>toolCallingManager</code> - toolCallingManager 实例",
+      "count": 1
+    },
+    {
+      "source": "<code>toolExecutionEligibilityChecker</code> - the checker",
+      "translation": "<code>toolExecutionEligibilityChecker</code> - 检查器",
+      "count": 1
+    },
+    {
+      "source": "<code>advisorOrder</code> - the order value, must be between HIGHEST_PRECEDENCE and\nLOWEST_PRECEDENCE",
+      "translation": "<code>advisorOrder</code> - 订单值，必须在 HIGHEST_PRECEDENCE 和 LOWEST_PRECEDENCE 之间。",
+      "count": 1
+    },
+    {
+      "source": "<code>conversationHistoryEnabled</code> - true to enable, false to disable",
+      "translation": "<code>conversationHistoryEnabled</code> - 启用为 true，禁用为 false",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "this builder instance",
+      "translation": "此构建器实例",
+      "count": 1
+    },
+    {
+      "source": "the ToolCallingManager instance",
+      "translation": "ToolCallingManager 实例",
+      "count": 1
+    },
+    {
+      "source": "the advisor order value",
+      "translation": "顾问订单金额",
+      "count": 1
+    },
+    {
+      "source": "the ToolExecutionEligibilityChecker instance",
+      "translation": "ToolExecutionEligibilityChecker 实例",
+      "count": 1
+    },
+    {
+      "source": "a new, unconfigured builder of the same concrete type",
+      "translation": "同类型的新未配置构建器",
+      "count": 1
+    },
+    {
+      "source": "true if internal conversation history is enabled, false if disabled",
+      "translation": "如果启用了内部对话历史，则为 true；如果已禁用，则为 false。",
+      "count": 1
+    },
+    {
+      "source": "a new ToolCallingAdvisor instance",
+      "translation": "一个新的 ToolCallingAdvisor 实例",
+      "count": 1
+    },
+    {
+      "source": "Builder for creating instances of ToolCallingAdvisor.",
+      "translation": "用于创建 ToolCallingAdvisor 实例的构建器。",
+      "count": 1
+    },
+    {
+      "source": "Creates a shallow copy of this builder with all current settings. The copy can\nbe used as a template from which per-call overrides (e.g.\n<code>conversationHistoryEnabled</code>) are applied without mutating the original.",
+      "translation": "创建此构建器的浅拷贝，包含所有当前设置。该拷贝可用作模板，在此之上应用每次调用的覆盖（例如 <code>conversationHistoryEnabled</code>），而不会修改原始构建器。",
+      "count": 1
+    }
+  ]
+}

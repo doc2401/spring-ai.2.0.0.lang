@@ -1,0 +1,76 @@
+{
+  "created_at": "2026-06-15 08:00:04",
+  "updated_at": "2026-06-15 08:00:04",
+  "stats": {
+    "total_entries": 12,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 14,
+    "entries_with_hits": 12,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1666666666666667,
+    "usage_percentage": 0.0012000000000000001
+  },
+  "items": [
+    {
+      "source": "Called after a session's tool index has been cleared — either because this strategy\nreturned it from <a href=\"#onAccess(java.lang.String)\"><code>onAccess(String)</code></a>, or because of an explicit eviction request.",
+      "translation": "在会话的工具索引被清除后调用——无论是因为该策略通过<a href=\"#onAccess(java.lang.String)\"><code>onAccess(String)</code></a>返回了它，还是因为显式的驱逐请求。",
+      "count": 2
+    },
+    {
+      "source": "Called each time a session is accessed at the start of request processing.",
+      "translation": "每次在请求处理开始时访问会话时都会调用。",
+      "count": 2
+    },
+    {
+      "source": "<a href=\"#onAccess(java.lang.String)\"><code>onAccess(String)</code></a> is called at the start of every request. Any session IDs it\nreturns are cleared from the <a href=\"../ToolIndex.html\" title=\"interface in org.springframework.ai.tool.toolsearch\"><code>ToolIndex</code></a>, after which <a href=\"#onRemoved(java.lang.String)\"><code>onRemoved(String)</code></a>\nis called so the strategy can drop its own internal tracking state.",
+      "translation": "<a href=\"#onAccess(java.lang.String)\"><code>onAccess(String)</code></a> 会在每个请求开始时被调用。它返回的任何会话 ID 都将从 <a href=\"../ToolIndex.html\" title=\"interface in org.springframework.ai.tool.toolsearch\"><code>ToolIndex</code></a> 中清除，随后会调用 <a href=\"#onRemoved(java.lang.String)\"><code>onRemoved(String)</code></a>，以便该策略能够清理其内部跟踪状态。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Implementations should update their internal tracking state for <code>sessionId</code>\nand return the set of session IDs whose tool indexes must now be cleared. The\nreturned set must never include the currently-accessed <code>sessionId</code>.",
+      "translation": "实现应更新其内部跟踪状态以处理<code>sessionId</code>，并返回必须清除工具索引的会话 ID 集合。该返回集合绝不能包含当前正在访问的<code>sessionId</code>。",
+      "count": 1
+    },
+    {
+      "source": "Common strategies include: never evicting (indexes persist until explicitly removed),\nalways evicting (fresh re-index on every request), LRU eviction (cap on active session\ncount), TTL eviction (idle sessions expire after a configured duration), and composite\neviction (union of multiple strategies).",
+      "translation": "常见策略包括：永不驱逐（索引在显式删除前一直保留）、总是驱逐（每次请求时重新建立索引）、LRU 驱逐（限制活跃会话数量）、TTL 驱逐（空闲会话在配置时长后过期），以及复合驱逐（多种策略的组合）。",
+      "count": 1
+    },
+    {
+      "source": "Implementations should remove any internal tracking state for the evicted session.",
+      "translation": "实现应移除被驱逐会话的任何内部跟踪状态。",
+      "count": 1
+    },
+    {
+      "source": "<code>sessionId</code> - the session being accessed",
+      "translation": "<code>sessionId</code> - 正在访问的会话",
+      "count": 1
+    },
+    {
+      "source": "session IDs to evict; never <code>null</code>, may be empty",
+      "translation": "待驱逐的会话 ID；永远不会为<code>null</code>，可能为空。",
+      "count": 1
+    },
+    {
+      "source": "<code>sessionId</code> - the session that was evicted",
+      "translation": "<code>sessionId</code> - 被驱逐的会话",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "Strategy that decides which session tool indexes should be evicted.",
+      "translation": "决定应驱逐哪些会话工具索引的策略。",
+      "count": 1
+    }
+  ]
+}

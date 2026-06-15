@@ -1,0 +1,76 @@
+{
+  "created_at": "2026-06-15 07:27:21",
+  "updated_at": "2026-06-15 07:27:21",
+  "stats": {
+    "total_entries": 12,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 13,
+    "entries_with_hits": 12,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0833333333333333,
+    "usage_percentage": 0.0012000000000000001
+  },
+  "items": [
+    {
+      "source": "Converts the (raw) LLM output into a structured responses of type.",
+      "translation": "将（原始）LLM 输出转换为指定类型的结构化响应。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Abstract <a href=\"StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a> implementation that uses a pre-configured\n<code>DefaultConversionService</code> to convert the LLM output into the desired type\nformat.",
+      "translation": "使用预配置的 <code>DefaultConversionService</code> 将 LLM 输出转换为所需类型格式的 <a href=\"StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a> 实现摘要。",
+      "count": 1
+    },
+    {
+      "source": "Abstract <a href=\"StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a> implementation that uses a pre-configured\n<code>MessageConverter</code> to convert the LLM output into the desired type format.",
+      "translation": "使用预配置的 <code>MessageConverter</code> 将 LLM 输出转换为所需类型格式的 <a href=\"StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a> 实现摘要。",
+      "count": 1
+    },
+    {
+      "source": "A composite <a href=\"ResponseTextCleaner.html\" title=\"interface in org.springframework.ai.converter\"><code>ResponseTextCleaner</code></a> that applies multiple cleaners in sequence.",
+      "translation": "一个复合的<a href=\"ResponseTextCleaner.html\" title=\"org.springframework.ai.converter 中的接口\"><code>ResponseTextCleaner</code></a>，按顺序应用多个清理器。",
+      "count": 1
+    },
+    {
+      "source": "Builder for <a href=\"CompositeResponseTextCleaner.html\" title=\"class in org.springframework.ai.converter\"><code>CompositeResponseTextCleaner</code></a>.",
+      "translation": "<code>CompositeResponseTextCleaner</code> 的构建器。",
+      "count": 1
+    },
+    {
+      "source": "A <a href=\"ResponseTextCleaner.html\" title=\"interface in org.springframework.ai.converter\"><code>ResponseTextCleaner</code></a> that removes thinking tags from LLM responses.",
+      "translation": "一个用于从大语言模型响应中移除思考标签的<a href=\"ResponseTextCleaner.html\" title=\"org.springframework.ai.converter 中的接口\"><code>ResponseTextCleaner</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Builder for <a href=\"ThinkingTagCleaner.html\" title=\"class in org.springframework.ai.converter\"><code>ThinkingTagCleaner</code></a>.",
+      "translation": "<thinking>用户要求我翻译一段技术文档内容，需要遵循以下规则：\n1. 只输出翻译内容，不添加任何解释或额外内容\n2. 保持与原文相同的段落数和格式\n3. 处理HTML标签时要保持流畅性\n4. 不应翻译的内容（如专有名词、代码等）保持原文\n\n这段文本是一个Java/Spring AI的技术文档片段，包含：\n- HTML链接标签\n- 代码标记 <code>ThinkingTagCleaner</code>\n- 类名和包名\n\n我需要保持HTML结构不变，只翻译文字部分。\"Builder for\"应该翻译为\"构建器用于\"或更自然的\"ThinkingTagCleaner 的构建器\"。\n\n让我组织翻译：\n- \"Builder for\" → \"ThinkingTagCleaner 的构建器\"\n- 保持 <a>标签和<code>标签不变\n- 包名 org.springframework.ai.converter 保持原文\n</thinking>\n\n<a href=\"ThinkingTagCleaner.html\" title=\"org.springframework.ai.converter 中的类\"><code>ThinkingTagCleaner</code></a>的构建器。",
+      "count": 1
+    },
+    {
+      "source": "Chat client API.",
+      "translation": "聊天客户端 API。",
+      "count": 1
+    },
+    {
+      "source": "Provides converters for transforming AI model text outputs into structured Java types.",
+      "translation": "提供转换器，用于将 AI 模型文本输出转换为结构化的 Java 类型。",
+      "count": 1
+    },
+    {
+      "source": "Implementations of this interface provide instructions for how the output of a language\ngenerative should be formatted.",
+      "translation": "该接口的实现提供了关于语言生成输出应如何格式化的指令。",
+      "count": 1
+    },
+    {
+      "source": "Strategy interface for cleaning LLM response text before parsing.",
+      "translation": "用于在解析之前清理 LLM 响应文本的策略接口。",
+      "count": 1
+    }
+  ]
+}

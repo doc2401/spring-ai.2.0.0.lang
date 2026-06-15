@@ -1,0 +1,461 @@
+{
+  "created_at": "2026-06-15 08:43:20",
+  "updated_at": "2026-06-15 08:43:20",
+  "stats": {
+    "total_entries": 89,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 116,
+    "entries_with_hits": 89,
+    "entries_without_hits": 0,
+    "hit_rate": 1.303370786516854,
+    "usage_percentage": 0.0089
+  },
+  "items": [
+    {
+      "source": "Provides the API for embedding observations.",
+      "translation": "提供用于嵌入观测数据的 API。",
+      "count": 19
+    },
+    {
+      "source": "EmbeddingModel implementations can call this method to optimize embedding tokens.",
+      "translation": "EmbeddingModel 实现可以调用此方法来优化嵌入令牌。",
+      "count": 2
+    },
+    {
+      "source": "A component for post-processing retrieved documents based on a query, addressing\nchallenges such as \"lost-in-the-middle\", context length restrictions from the model,\nand the need to reduce noise and redundancy in the retrieved information.",
+      "translation": "一种用于基于查询对检索到的文档进行后处理的组件，旨在解决诸如“中间丢失”、模型上下文长度限制以及减少检索信息中的噪声和冗余等挑战。",
+      "count": 2
+    },
+    {
+      "source": "A component for combining documents retrieved based on multiple queries and from\nmultiple data sources into a single collection of documents.",
+      "translation": "一种组件，用于将基于多个查询从多个数据源检索到的文档合并为单个文档集合。",
+      "count": 2
+    },
+    {
+      "source": "Joins documents retrieved across multiple queries and daa sources.",
+      "translation": "跨多个查询和数据源检索的文档进行合并。",
+      "count": 2
+    },
+    {
+      "source": "Post process documents chunked from loader.",
+      "translation": "对由加载器分块处理的文档进行后处理。",
+      "count": 2
+    },
+    {
+      "source": "Adds a list of documents to the vector store.",
+      "translation": "向向量存储中添加文档列表。",
+      "count": 2
+    },
+    {
+      "source": "Search for documents within a specific radius (distance) from the query embedding.",
+      "translation": "在查询嵌入的特定半径（距离）内搜索文档。",
+      "count": 2
+    },
+    {
+      "source": "Search for documents within a specific radius (distance) from the query embedding,\nwith optional filter expression to narrow down results.",
+      "translation": "在查询嵌入的指定半径（距离）内搜索文档，并可选择使用过滤表达式来缩小结果范围。",
+      "count": 2
+    },
+    {
+      "source": "Search for documents matching a text query.",
+      "translation": "搜索与文本查询匹配的文件。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Embeds a batch of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a>s into vectors based on a\n<a href=\"../../embedding/BatchingStrategy.html\" title=\"interface in org.springframework.ai.embedding\"><code>BatchingStrategy</code></a>.",
+      "translation": "根据 <a href=\"../../embedding/BatchingStrategy.html\" title=\"interface in org.springframework.ai.embedding\"><code>BatchingStrategy</code></a> 将一批 <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a> 嵌入到向量中。",
+      "count": 1
+    },
+    {
+      "source": "Write a list of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a> instances.",
+      "translation": "列出 <a href=\"../Document.html\" title=\"org.springframework.ai.document 中的类\"><code>Document</code></a> 实例。",
+      "count": 1
+    },
+    {
+      "source": "Extracts the text content from a <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a> to be used for embedding.",
+      "translation": "从<a href=\"../Document.html\" title=\"org.springframework.ai.document 中的类\"><code>Document</code></a>提取用于嵌入的文本内容。",
+      "count": 1
+    },
+    {
+      "source": "Component responsible for retrieving <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a>s from an underlying data source,\nsuch as a search engine, a vector store, a database, or a knowledge graph.",
+      "translation": "负责从底层数据源（如搜索引擎、向量存储、数据库或知识图谱）检索<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a>的组件。",
+      "count": 1
+    },
+    {
+      "source": "Retrieves documents by query embedding similarity using the default\n<a href=\"../../vectorstore/SearchRequest.html\" title=\"class in org.springframework.ai.vectorstore\"><code>SearchRequest</code></a>'s search criteria.",
+      "translation": "使用默认 <a href=\"../../vectorstore/SearchRequest.html\" title=\"class in org.springframework.ai.vectorstore\"><code>SearchRequest</code></a> 的搜索条件，通过查询嵌入相似度检索文档。",
+      "count": 1
+    },
+    {
+      "source": "Adds list of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a>s to the vector store.",
+      "translation": "向向量存储添加<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a>列表。",
+      "count": 1
+    },
+    {
+      "source": "Create a new <a href=\"../../vectorstore/observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\"><code>AbstractObservationVectorStore</code></a> instance.",
+      "translation": "创建一个新的<a href=\"../../vectorstore/observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\"><code>AbstractObservationVectorStore</code></a>实例。",
+      "count": 1
+    },
+    {
+      "source": "RAG Sub-Module: Query Augmentation.",
+      "translation": "检索增强生成子模块：查询增强。",
+      "count": 1
+    },
+    {
+      "source": "RAG Sub-Module: Document Join.",
+      "translation": "RAG 子模块：文档合并。",
+      "count": 1
+    },
+    {
+      "source": "RAG Sub-Module: Document Search.",
+      "translation": "RAG 子模块：文档搜索。",
+      "count": 1
+    },
+    {
+      "source": "Provides interfaces and implementations for working with vector databases in Spring AI.",
+      "translation": "为 Spring AI 中处理向量数据库提供接口和实现。",
+      "count": 1
+    },
+    {
+      "source": "Provides the Amazon Bedrock Knowledge Base vector store implementation.",
+      "translation": "提供 Amazon Bedrock 知识库向量存储实现。",
+      "count": 1
+    },
+    {
+      "source": "Provides classes for observing and storing vector data.",
+      "translation": "提供用于观察和存储矢量数据的类。",
+      "count": 1
+    },
+    {
+      "source": "S3 Vector Store implementation for Spring AI.",
+      "translation": "Spring AI 中的 S3 向量存储实现。",
+      "count": 1
+    },
+    {
+      "source": "Represents a request to embed a list of documents.",
+      "translation": "表示嵌入文档列表的请求。",
+      "count": 1
+    },
+    {
+      "source": "Embeds the given document's content into a vector.",
+      "translation": "将给定文档的内容嵌入向量中。",
+      "count": 1
+    },
+    {
+      "source": "A component for augmenting an input query with additional data, useful to provide a\nlarge language model with the necessary context to answer the user query.",
+      "translation": "一种用于增强输入查询并补充额外数据的组件，其有助于为大语言模型提供回答用户查询所需的上下文信息。",
+      "count": 1
+    },
+    {
+      "source": "Augments the user query with contextual data.",
+      "translation": "根据上下文数据增强用户查询。",
+      "count": 1
+    },
+    {
+      "source": "Retrieves relevant documents from an underlying data source based on the given\nquery.",
+      "translation": "根据给定查询从底层数据源检索相关文档。",
+      "count": 1
+    },
+    {
+      "source": "Retrieves documents from the JSON resource using a JSON Pointer.",
+      "translation": "使用 JSON 指针从 JSON 资源中检索文档。",
+      "count": 1
+    },
+    {
+      "source": "Extracts and returns a list of documents from the resource.",
+      "translation": "从资源中提取并返回文档列表。",
+      "count": 1
+    },
+    {
+      "source": "Reads and processes the PDF document to extract paragraphs.",
+      "translation": "读取并处理 PDF 文档以提取段落。",
+      "count": 1
+    },
+    {
+      "source": "Extracts and returns the list of documents from the resource.",
+      "translation": "从资源中提取并返回文档列表。",
+      "count": 1
+    },
+    {
+      "source": "Retrieves documents by query embedding similarity and metadata filters to retrieve\nexactly the number of nearest-neighbor results that match the request criteria.",
+      "translation": "通过查询嵌入相似度和元数据过滤器检索文档，以精确获取与请求条件匹配的最近邻结果数量。",
+      "count": 1
+    },
+    {
+      "source": "Perform the actual similarity search operation.",
+      "translation": "执行实际的相似度搜索操作。",
+      "count": 1
+    },
+    {
+      "source": "Perform the actual add operation.",
+      "translation": "执行实际的加法操作。",
+      "count": 1
+    },
+    {
+      "source": "Adds a list of documents to the vector store based on the namespace.",
+      "translation": "根据命名空间向向量存储添加文档列表。",
+      "count": 1
+    },
+    {
+      "source": "Performs a similarity search on the vector store.",
+      "translation": "在向量存储中执行相似度搜索。",
+      "count": 1
+    },
+    {
+      "source": "Search for documents matching a text query with optional filter expression.",
+      "translation": "搜索与文本查询匹配的文档，并可选择使用过滤表达式。",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../bedrock/cohere/package-summary.html\">org.springframework.ai.bedrock.cohere</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../bedrock/cohere/package-summary.html\">org.springframework.ai.bedrock.cohere</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../bedrock/titan/package-summary.html\">org.springframework.ai.bedrock.titan</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../bedrock/titan/package-summary.html\">org.springframework.ai.bedrock.titan</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../chroma/vectorstore/package-summary.html\">org.springframework.ai.chroma.vectorstore</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../chroma/vectorstore/package-summary.html\">org.springframework.ai.chroma.vectorstore</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../package-summary.html\">org.springframework.ai.document</a>",
+      "translation": "org.springframework.ai.document 包中<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a>的用法",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../embedding/package-summary.html\">org.springframework.ai.embedding</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../embedding/package-summary.html\">org.springframework.ai.embedding</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../evaluation/package-summary.html\">org.springframework.ai.evaluation</a>",
+      "translation": "org.springframework.ai.evaluation 包中 <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 的用法",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../google/genai/text/package-summary.html\">org.springframework.ai.google.genai.text</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../google/genai/text/package-summary.html\">org.springframework.ai.google.genai.text</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../mistralai/package-summary.html\">org.springframework.ai.mistralai</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../mistralai/package-summary.html\">org.springframework.ai.mistralai</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../model/transformer/package-summary.html\">org.springframework.ai.model.transformer</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../model/transformer/package-summary.html\">org.springframework.ai.model.transformer</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../ollama/package-summary.html\">org.springframework.ai.ollama</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../ollama/package-summary.html\">org.springframework.ai.ollama</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../openai/package-summary.html\">org.springframework.ai.openai</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../openai/package-summary.html\">org.springframework.ai.openai</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../postgresml/package-summary.html\">org.springframework.ai.postgresml</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../postgresml/package-summary.html\">org.springframework.ai.postgresml</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../rag/generation/augmentation/package-summary.html\">org.springframework.ai.rag.generation.augmentation</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../rag/generation/augmentation/package-summary.html\">org.springframework.ai.rag.generation.augmentation</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../rag/postretrieval/document/package-summary.html\">org.springframework.ai.rag.postretrieval.document</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../rag/postretrieval/document/package-summary.html\">org.springframework.ai.rag.postretrieval.document</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../rag/retrieval/join/package-summary.html\">org.springframework.ai.rag.retrieval.join</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../rag/retrieval/join/package-summary.html\">org.springframework.ai.rag.retrieval.join</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../rag/retrieval/search/package-summary.html\">org.springframework.ai.rag.retrieval.search</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../rag/retrieval/search/package-summary.html\">org.springframework.ai.rag.retrieval.search</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../reader/package-summary.html\">org.springframework.ai.reader</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../reader/package-summary.html\">org.springframework.ai.reader</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../reader/jsoup/package-summary.html\">org.springframework.ai.reader.jsoup</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../reader/jsoup/package-summary.html\">org.springframework.ai.reader.jsoup</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../reader/markdown/package-summary.html\">org.springframework.ai.reader.markdown</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../reader/markdown/package-summary.html\">org.springframework.ai.reader.markdown</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../reader/pdf/package-summary.html\">org.springframework.ai.reader.pdf</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../reader/pdf/package-summary.html\">org.springframework.ai.reader.pdf</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../reader/tika/package-summary.html\">org.springframework.ai.reader.tika</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../reader/tika/package-summary.html\">org.springframework.ai.reader.tika</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../test/vectorstore/package-summary.html\">org.springframework.ai.test.vectorstore</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../test/vectorstore/package-summary.html\">org.springframework.ai.test.vectorstore</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../transformer/package-summary.html\">org.springframework.ai.transformer</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../transformer/package-summary.html\">org.springframework.ai.transformer</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../transformer/splitter/package-summary.html\">org.springframework.ai.transformer.splitter</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../transformer/splitter/package-summary.html\">org.springframework.ai.transformer.splitter</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../transformers/package-summary.html\">org.springframework.ai.transformers</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../transformers/package-summary.html\">org.springframework.ai.transformers</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../vectorstore/package-summary.html\">org.springframework.ai.vectorstore</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../vectorstore/package-summary.html\">org.springframework.ai.vectorstore</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../vectorstore/azure/package-summary.html\">org.springframework.ai.vectorstore.azure</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../vectorstore/azure/package-summary.html\">org.springframework.ai.vectorstore.azure</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../vectorstore/bedrockknowledgebase/package-summary.html\">org.springframework.ai.vectorstore.bedrockknowledgebase</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../vectorstore/bedrockknowledgebase/package-summary.html\">org.springframework.ai.vectorstore.bedrockknowledgebase</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../vectorstore/cassandra/package-summary.html\">org.springframework.ai.vectorstore.cassandra</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../vectorstore/cassandra/package-summary.html\">org.springframework.ai.vectorstore.cassandra</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../vectorstore/coherence/package-summary.html\">org.springframework.ai.vectorstore.coherence</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../vectorstore/coherence/package-summary.html\">org.springframework.ai.vectorstore.coherence</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../vectorstore/couchbase/package-summary.html\">org.springframework.ai.vectorstore.couchbase</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../vectorstore/couchbase/package-summary.html\">org.springframework.ai.vectorstore.couchbase</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../vectorstore/elasticsearch/package-summary.html\">org.springframework.ai.vectorstore.elasticsearch</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../vectorstore/elasticsearch/package-summary.html\">org.springframework.ai.vectorstore.elasticsearch</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../vectorstore/gemfire/package-summary.html\">org.springframework.ai.vectorstore.gemfire</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../vectorstore/gemfire/package-summary.html\">org.springframework.ai.vectorstore.gemfire</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../vectorstore/mariadb/package-summary.html\">org.springframework.ai.vectorstore.mariadb</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../vectorstore/mariadb/package-summary.html\">org.springframework.ai.vectorstore.mariadb</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../vectorstore/milvus/package-summary.html\">org.springframework.ai.vectorstore.milvus</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../vectorstore/milvus/package-summary.html\">org.springframework.ai.vectorstore.milvus</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../vectorstore/mongodb/atlas/package-summary.html\">org.springframework.ai.vectorstore.mongodb.atlas</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../vectorstore/mongodb/atlas/package-summary.html\">org.springframework.ai.vectorstore.mongodb.atlas</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../vectorstore/neo4j/package-summary.html\">org.springframework.ai.vectorstore.neo4j</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../vectorstore/neo4j/package-summary.html\">org.springframework.ai.vectorstore.neo4j</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../vectorstore/observation/package-summary.html\">org.springframework.ai.vectorstore.observation</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../vectorstore/observation/package-summary.html\">org.springframework.ai.vectorstore.observation</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../vectorstore/opensearch/package-summary.html\">org.springframework.ai.vectorstore.opensearch</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../vectorstore/opensearch/package-summary.html\">org.springframework.ai.vectorstore.opensearch</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../vectorstore/oracle/package-summary.html\">org.springframework.ai.vectorstore.oracle</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../vectorstore/oracle/package-summary.html\">org.springframework.ai.vectorstore.oracle</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../vectorstore/pgvector/package-summary.html\">org.springframework.ai.vectorstore.pgvector</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../vectorstore/pgvector/package-summary.html\">org.springframework.ai.vectorstore.pgvector</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../vectorstore/pinecone/package-summary.html\">org.springframework.ai.vectorstore.pinecone</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../vectorstore/pinecone/package-summary.html\">org.springframework.ai.vectorstore.pinecone</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../vectorstore/qdrant/package-summary.html\">org.springframework.ai.vectorstore.qdrant</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../vectorstore/qdrant/package-summary.html\">org.springframework.ai.vectorstore.qdrant</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../vectorstore/redis/package-summary.html\">org.springframework.ai.vectorstore.redis</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../vectorstore/redis/package-summary.html\">org.springframework.ai.vectorstore.redis</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../vectorstore/s3/package-summary.html\">org.springframework.ai.vectorstore.s3</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../vectorstore/s3/package-summary.html\">org.springframework.ai.vectorstore.s3</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../vectorstore/typesense/package-summary.html\">org.springframework.ai.vectorstore.typesense</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../vectorstore/typesense/package-summary.html\">org.springframework.ai.vectorstore.typesense</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../vectorstore/weaviate/package-summary.html\">org.springframework.ai.vectorstore.weaviate</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../vectorstore/weaviate/package-summary.html\">org.springframework.ai.vectorstore.weaviate</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../vertexai/embedding/text/package-summary.html\">org.springframework.ai.vertexai.embedding.text</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../vertexai/embedding/text/package-summary.html\">org.springframework.ai.vertexai.embedding.text</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> in <a href=\"../../writer/package-summary.html\">org.springframework.ai.writer</a>",
+      "translation": "<a href=\"../Document.html\" title=\"class in org.springframework.ai.document\">Document</a> 在 <a href=\"../../writer/package-summary.html\">org.springframework.ai.writer</a> 中的用途",
+      "count": 1
+    }
+  ]
+}

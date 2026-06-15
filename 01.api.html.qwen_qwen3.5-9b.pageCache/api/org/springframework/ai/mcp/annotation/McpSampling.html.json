@@ -1,0 +1,81 @@
+{
+  "created_at": "2026-06-15 08:21:30",
+  "updated_at": "2026-06-15 08:21:30",
+  "stats": {
+    "total_entries": 13,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 14,
+    "entries_with_hits": 13,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0769230769230769,
+    "usage_percentage": 0.0013
+  },
+  "items": [
+    {
+      "source": "Used as connection or client identifier to select the MCP client, the sampling\nmethod is associated with.",
+      "translation": "用作连接或客户端标识符以选择与采样方法关联的 MCP 客户端。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "For synchronous handlers, the method must return <code>CreateMessageResult</code>. For\nasynchronous handlers, the method must return <code>Mono&lt;CreateMessageResult&gt;</code>.",
+      "translation": "对于同步处理器，该方法必须返回<code>CreateMessageResult</code>。对于异步处理器，该方法必须返回<code>Mono&lt;CreateMessageResult&gt;</code>。",
+      "count": 1
+    },
+    {
+      "source": "Methods annotated with this annotation can be used to process sampling requests from\nMCP servers. The methods can have one of two signatures:",
+      "translation": "带有此注解的方法可用于处理来自 MCP 服务器的采样请求。这些方法的签名可以是以下两种之一：",
+      "count": 1
+    },
+    {
+      "source": "Example usage:",
+      "translation": "使用示例：",
+      "count": 1
+    },
+    {
+      "source": "A single parameter of type <code>CreateMessageRequest</code>",
+      "translation": "类型为 `<code>CreateMessageRequest</code>` 的单个参数",
+      "count": 1
+    },
+    {
+      "source": "Multiple parameters corresponding to the fields of <code>CreateMessageRequest</code>",
+      "translation": "与 `<code>CreateMessageRequest</code>` 字段对应的多个参数",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "Required Element Summary",
+      "translation": "所需元素摘要",
+      "count": 1
+    },
+    {
+      "source": "Element Details",
+      "translation": "元素详情",
+      "count": 1
+    },
+    {
+      "source": "Annotation for methods that handle sampling requests from MCP servers. This annotation\nis applicable only for MCP clients.",
+      "translation": "用于处理来自 MCP 服务器的采样请求的方法注解。此注解仅适用于 MCP 客户端。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>类型为 `<code>CreateMessageRequest</code>` 的单个参数</li><li>与 `<code>CreateMessageRequest</code>` 字段对应的多个参数</li></ul>",
+      "translation": "<ul>\n<li>单个类型为 `<code>CreateMessageRequest</code>` 的参数</li><li>多个与 `<code>CreateMessageRequest</code>` 字段对应的参数</li></ul>",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>&amp;#64;McpSampling(clients = \"test-client\")\npublic CreateMessageResult handleSamplingRequest(CreateMessageRequest request) {\n    // Process the request and return a result\n    return CreateMessageResult.builder()\n        .message(\"Generated response\")\n        .build();\n}\n\n&amp;#64;McpSampling(clients = \"test-client\")\npublic Mono&lt;CreateMessageResult&gt; handleAsyncSamplingRequest(CreateMessageRequest request) {\n    // Process the request asynchronously and return a result\n    return Mono.just(CreateMessageResult.builder()\n        .message(\"Generated response\")\n        .build());\n}\n</code></pre>",
+      "translation": "<pre><code>&#64;McpSampling(clients = \"test-client\")\npublic CreateMessageResult handleSamplingRequest(CreateMessageRequest request) {\n    // 处理请求并返回结果\n    return CreateMessageResult.builder()\n        .message(\"生成的响应\")\n        .build();\n}\n\n&#64;McpSampling(clients = \"test-client\")\npublic Mono&lt;CreateMessageResult&gt; handleAsyncSamplingRequest(CreateMessageRequest request) {\n    // 异步处理请求并返回结果\n    return Mono.just(CreateMessageResult.builder()\n        .message(\"生成的响应\")\n        .build());\n}\n</code></pre>",
+      "count": 1
+    }
+  ]
+}

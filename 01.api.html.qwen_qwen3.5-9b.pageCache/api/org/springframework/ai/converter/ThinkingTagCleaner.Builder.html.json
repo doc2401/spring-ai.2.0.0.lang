@@ -1,0 +1,71 @@
+{
+  "created_at": "2026-06-15 07:27:24",
+  "updated_at": "2026-06-15 07:27:24",
+  "stats": {
+    "total_entries": 11,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 16,
+    "entries_with_hits": 11,
+    "entries_without_hits": 0,
+    "hit_rate": 1.4545454545454546,
+    "usage_percentage": 0.0011
+  },
+  "items": [
+    {
+      "source": "this builder",
+      "translation": "此构建器",
+      "count": 3
+    },
+    {
+      "source": "Add a custom pattern string.",
+      "translation": "添加自定义模式字符串。",
+      "count": 2
+    },
+    {
+      "source": "Add a custom pattern.",
+      "translation": "添加自定义图案。",
+      "count": 2
+    },
+    {
+      "source": "Build the thinking tag cleaner.",
+      "translation": "构建思维标签清理器。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Disable default patterns. Only custom patterns added via\n<a href=\"#addPattern(java.lang.String)\"><code>addPattern(String)</code></a> or <a href=\"#addPattern(java.util.regex.Pattern)\"><code>addPattern(Pattern)</code></a> will be used.",
+      "translation": "禁用默认模式。仅将通过 <a href=\"#addPattern(java.lang.String)\"><code>addPattern(String)</code></a> 或 <a href=\"#addPattern(java.util.regex.Pattern)\"><code>addPattern(Pattern)</code></a> 添加的自定义模式将被使用。",
+      "count": 1
+    },
+    {
+      "source": "Builder for <a href=\"ThinkingTagCleaner.html\" title=\"class in org.springframework.ai.converter\"><code>ThinkingTagCleaner</code></a>.",
+      "translation": "<thinking>用户要求我翻译一段技术文档内容，需要遵循以下规则：\n1. 只输出翻译内容，不添加任何解释或额外内容\n2. 保持与原文相同的段落数和格式\n3. 处理HTML标签时要保持流畅性\n4. 不应翻译的内容（如专有名词、代码等）保持原文\n\n这段文本是一个Java/Spring AI的技术文档片段，包含：\n- HTML链接标签\n- 代码标记 <code>ThinkingTagCleaner</code>\n- 类名和包名\n\n我需要保持HTML结构不变，只翻译文字部分。\"Builder for\"应该翻译为\"构建器用于\"或更自然的\"ThinkingTagCleaner 的构建器\"。\n\n让我组织翻译：\n- \"Builder for\" → \"ThinkingTagCleaner 的构建器\"\n- 保持 <a>标签和<code>标签不变\n- 包名 org.springframework.ai.converter 保持原文\n</thinking>\n\n<a href=\"ThinkingTagCleaner.html\" title=\"org.springframework.ai.converter 中的类\"><code>ThinkingTagCleaner</code></a>的构建器。",
+      "count": 1
+    },
+    {
+      "source": "Disable default patterns.",
+      "translation": "禁用默认模式。",
+      "count": 1
+    },
+    {
+      "source": "<code>patternString</code> - the regex pattern string",
+      "translation": "<code>patternString</code> - 正则表达式模式字符串",
+      "count": 1
+    },
+    {
+      "source": "<code>pattern</code> - the regex pattern",
+      "translation": "<code>pattern</code> - 正则表达式模式",
+      "count": 1
+    },
+    {
+      "source": "a new thinking tag cleaner instance",
+      "translation": "一个新的思考标签清理实例",
+      "count": 1
+    }
+  ]
+}

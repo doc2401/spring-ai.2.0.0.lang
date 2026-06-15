@@ -1,0 +1,66 @@
+{
+  "created_at": "2026-06-15 08:23:43",
+  "updated_at": "2026-06-15 08:23:43",
+  "stats": {
+    "total_entries": 10,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 11,
+    "entries_with_hits": 10,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1,
+    "usage_percentage": 0.001
+  },
+  "items": [
+    {
+      "source": "Creates a configured <code>JsonMapper</code> for MCP server JSON serialization.",
+      "translation": "为 MCP 服务器 JSON 序列化创建已配置的<code>JsonMapper</code>。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This bean can be overridden by providing a custom <code>JsonMapper</code> bean with the\nname \"mcpServerJsonMapper\".",
+      "translation": "可以通过提供名为\"mcpServerJsonMapper\"的自定义<code>JsonMapper</code>Bean来覆盖此 Bean。",
+      "count": 1
+    },
+    {
+      "source": "This JsonMapper is specifically configured for MCP protocol compliance with:",
+      "translation": "此 JsonMapper 专门配置为符合 MCP 协议，包括：",
+      "count": 1
+    },
+    {
+      "source": "configured <code>JsonMapper</code> instance for MCP server operations",
+      "translation": "为 MCP 服务器操作配置了<code>JsonMapper</code>实例",
+      "count": 1
+    },
+    {
+      "source": "Lenient deserialization that doesn't fail on unknown properties",
+      "translation": "允许未知属性而不失败的宽松反序列化",
+      "count": 1
+    },
+    {
+      "source": "Proper handling of empty beans during serialization",
+      "translation": "序列化过程中对空 Bean 的正确处理",
+      "count": 1
+    },
+    {
+      "source": "Exclusion of null values from JSON output",
+      "translation": "JSON 输出中排除空值",
+      "count": 1
+    },
+    {
+      "source": "Jackson modules via service loader",
+      "translation": "通过 ServiceLoader 的 Jackson 模块",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>允许未知属性而不失败的宽松反序列化</li>\n<li>序列化过程中对空 Bean 的正确处理</li>\n<li>JSON 输出中排除空值</li>\n<li>通过 ServiceLoader 的 Jackson 模块</li>\n</ul>",
+      "translation": "<ul>\n<li>宽松反序列化，允许未知属性而不会失败</li>\n<li>在序列化过程中正确处理空 Bean</li>\n<li>从 JSON 输出中排除空值</li>\n<li>通过 ServiceLoader 加载的 Jackson 模块</li>\n</ul>",
+      "count": 1
+    }
+  ]
+}

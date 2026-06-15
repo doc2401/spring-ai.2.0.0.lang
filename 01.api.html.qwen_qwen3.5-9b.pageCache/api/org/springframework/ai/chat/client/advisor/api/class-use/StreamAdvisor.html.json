@@ -1,0 +1,166 @@
+{
+  "created_at": "2026-06-15 09:02:13",
+  "updated_at": "2026-06-15 09:02:13",
+  "stats": {
+    "total_entries": 30,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 30,
+    "entries_with_hits": 30,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.003
+  },
+  "items": [
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "A <a href=\"../StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>StreamAdvisor</code></a> that uses a <a href=\"../../../../model/ChatModel.html\" title=\"interface in org.springframework.ai.chat.model\"><code>ChatModel</code></a> to generate a streaming response.",
+      "translation": "一个使用 <a href=\"../../../../model/ChatModel.html\" title=\"interface in org.springframework.ai.chat.model\"><code>ChatModel</code></a> 来生成流式响应的 <a href=\"../StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>StreamAdvisor</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Base advisor that implements common aspects of the <a href=\"../CallAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>CallAdvisor</code></a> and\n<a href=\"../StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>StreamAdvisor</code></a>, reducing the boilerplate code needed to implement an advisor.",
+      "translation": "基础顾问，实现了 <a href=\"../CallAdvisor.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\"><code>CallAdvisor</code></a> 和 <a href=\"../StreamAdvisor.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\"><code>StreamAdvisor</code></a> 的通用方面，从而减少了实现顾问所需的样板代码。",
+      "count": 1
+    },
+    {
+      "source": "since 2.0.0 in favor of <a href=\"../../ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor</code></a>.",
+      "translation": "自 2.0.0 版本起，推荐使用<a href=\"../../ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Returns the list of all the <a href=\"../StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>StreamAdvisor</code></a> instances included in this chain\nat the time of its creation.",
+      "translation": "返回在创建此链时包含的所有<a href=\"../StreamAdvisor.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\"><code>StreamAdvisor</code></a>实例的列表。",
+      "count": 1
+    },
+    {
+      "source": "Advisor that implements common Retrieval Augmented Generation (RAG) flows using the\nbuilding blocks defined in the <a href=\"../../../../../rag/package-summary.html\"><code>org.springframework.ai.rag</code></a> package and following\nthe Modular RAG Architecture.",
+      "translation": "实现通用检索增强生成（RAG）流程的顾问，该流程基于<a href=\"../../../../../rag/package-summary.html\"><code>org.springframework.ai.rag</code></a>包中定义的构建块，并遵循模块化 RAG 架构。",
+      "count": 1
+    },
+    {
+      "source": "Provides classes for advising chat clients.",
+      "translation": "提供用于建议聊天客户端的类。",
+      "count": 1
+    },
+    {
+      "source": "Provides the API for chat client advisors.",
+      "translation": "为聊天客户端顾问提供 API。",
+      "count": 1
+    },
+    {
+      "source": "Tool Search Tool Advisor package for dynamic tool discovery and search capabilities.",
+      "translation": "工具搜索工具顾问包，用于动态工具发现与搜索功能。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI chat client advisors package.",
+      "translation": "Spring AI 聊天客户端顾问包。",
+      "count": 1
+    },
+    {
+      "source": "Test support classes for ChatClient advisor integration tests.",
+      "translation": "ChatClient 顾问集成测试的测试支持类。",
+      "count": 1
+    },
+    {
+      "source": "An advisor implementation that provides semantic caching capabilities for chat\nresponses.",
+      "translation": "一种为聊天响应提供语义缓存功能的顾问实现。",
+      "count": 1
+    },
+    {
+      "source": "Memory is retrieved added as a collection of messages to the prompt",
+      "translation": "记忆被检索并作为消息集合添加到提示中。",
+      "count": 1
+    },
+    {
+      "source": "An advisor that blocks the call to the model provider if the user input contains any of\nthe sensitive words.",
+      "translation": "一个顾问，如果用户输入包含任何敏感词，则阻止调用模型提供商。",
+      "count": 1
+    },
+    {
+      "source": "A simple logger advisor that logs the request and response messages.",
+      "translation": "一个简单的日志记录顾问，用于记录请求和响应消息。",
+      "count": 1
+    },
+    {
+      "source": "Advisor that validates the structured JSON output of a chat client response against a\nJSON schema derived from the configured output type or a pre-supplied schema string.",
+      "translation": "用于验证聊天客户端响应中的结构化 JSON 输出是否符合由配置的输出类型派生的 JSON Schema，或符合预提供的 Schema 字符串的顾问。",
+      "count": 1
+    },
+    {
+      "source": "Recursive Advisor that disables the internal tool execution flow and instead implements\nthe tool calling loop as part of the advisor chain.",
+      "translation": "递归顾问，该顾问禁用内部工具执行流程，并将工具调用循环作为顾问链的一部分实现。",
+      "count": 1
+    },
+    {
+      "source": "Base interface for chat memory advisors.",
+      "translation": "聊天记忆顾问的基础接口。",
+      "count": 1
+    },
+    {
+      "source": "Creates a new StreamAdvisorChain copy that contains all advisors after the\nspecified advisor.",
+      "translation": "创建一个包含指定顾问之后所有顾问的新 StreamAdvisorChain 副本。",
+      "count": 1
+    },
+    {
+      "source": "CallAdvisor that integrates a tool search mechanism into the tool calling workflow.",
+      "translation": "将工具搜索机制集成到工具调用工作流中的 CallAdvisor。",
+      "count": 1
+    },
+    {
+      "source": "Context for the question is retrieved from a Vector Store and added to the prompt's\nuser text.",
+      "translation": "从向量存储中检索的问题上下文已添加到提示的用户文本中。",
+      "count": 1
+    },
+    {
+      "source": "Memory is retrieved from a VectorStore added into the prompt's system text.",
+      "translation": "记忆是从添加到提示系统文本中的向量存储中检索的。",
+      "count": 1
+    },
+    {
+      "source": "Counts how many times the advisor chain passes through this advisor.",
+      "translation": "统计顾问链经过此顾问的次数。",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">StreamAdvisor</a> in <a href=\"../../../../cache/semantic/package-summary.html\">org.springframework.ai.chat.cache.semantic</a>",
+      "translation": "<a href=\"../StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">StreamAdvisor</a> 在 <a href=\"../../../../cache/semantic/package-summary.html\">org.springframework.ai.chat.cache.semantic</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">StreamAdvisor</a> in <a href=\"../../package-summary.html\">org.springframework.ai.chat.client.advisor</a>",
+      "translation": "<a href=\"../StreamAdvisor.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\">StreamAdvisor</a> 在 <a href=\"../../package-summary.html\">org.springframework.ai.chat.client.advisor</a> 包中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">StreamAdvisor</a> in <a href=\"../package-summary.html\">org.springframework.ai.chat.client.advisor.api</a>",
+      "translation": "<a href=\"../StreamAdvisor.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\">StreamAdvisor</a> 在 <a href=\"../package-summary.html\">org.springframework.ai.chat.client.advisor.api</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">StreamAdvisor</a> in <a href=\"../../toolsearch/package-summary.html\">org.springframework.ai.chat.client.advisor.toolsearch</a>",
+      "translation": "<a href=\"../StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">StreamAdvisor</a> 在 <a href=\"../../toolsearch/package-summary.html\">org.springframework.ai.chat.client.advisor.toolsearch</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">StreamAdvisor</a> in <a href=\"../../vectorstore/package-summary.html\">org.springframework.ai.chat.client.advisor.vectorstore</a>",
+      "translation": "<a href=\"../StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">StreamAdvisor</a> 在 <a href=\"../../vectorstore/package-summary.html\">org.springframework.ai.chat.client.advisor.vectorstore</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">StreamAdvisor</a> in <a href=\"../../../../../rag/advisor/package-summary.html\">org.springframework.ai.rag.advisor</a>",
+      "translation": "<a href=\"../StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">StreamAdvisor</a> 在 <a href=\"../../../../../rag/advisor/package-summary.html\">org.springframework.ai.rag.advisor</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">StreamAdvisor</a> in <a href=\"../../../../../test/chat/client/advisor/package-summary.html\">org.springframework.ai.test.chat.client.advisor</a>",
+      "translation": "<a href=\"../StreamAdvisor.html\" title=\"接口在 org.springframework.ai.chat.client.advisor.api 中\">StreamAdvisor</a> 在 <a href=\"../../../../../test/chat/client/advisor/package-summary.html\">org.springframework.ai.test.chat.client.advisor</a> 中的用法",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "created_at": "2026-06-15 07:45:05",
+  "updated_at": "2026-06-15 07:45:05",
+  "stats": {
+    "total_entries": 46,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 51,
+    "entries_with_hits": 46,
+    "entries_without_hits": 0,
+    "hit_rate": 1.108695652173913,
+    "usage_percentage": 0.0046
+  },
+  "items": [
+    {
+      "source": "Create a new <a href=\"../observation/VectorStoreObservationContext.Builder.html\" title=\"class in org.springframework.ai.vectorstore.observation\"><code>VectorStoreObservationContext.Builder</code></a> instance.",
+      "translation": "创建一个新的<a href=\"../observation/VectorStoreObservationContext.Builder.html\" title=\"class in org.springframework.ai.vectorstore.observation\"><code>VectorStoreObservationContext.Builder</code></a>实例。",
+      "count": 2
+    },
+    {
+      "source": "Perform the actual add operation.",
+      "translation": "执行实际的加法操作。",
+      "count": 2
+    },
+    {
+      "source": "Perform the actual delete operation.",
+      "translation": "执行实际的删除操作。",
+      "count": 2
+    },
+    {
+      "source": "Template method for concrete implementations to provide filter-based deletion\nlogic.",
+      "translation": "为基于过滤器的删除逻辑提供具体实现的模板方法。",
+      "count": 2
+    },
+    {
+      "source": "Perform the actual similarity search operation.",
+      "translation": "执行实际的相似度搜索操作。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Integration of Oracle database 23ai as a Vector Store.",
+      "translation": "将 Oracle 数据库 23ai 集成作为向量存储。",
+      "count": 1
+    },
+    {
+      "source": "With the release 23ai (23.4), the Oracle database provides numerous features useful for\nartificial intelligence such as Vectors, Similarity search, Vector indexes, ONNX\nmodels...",
+      "translation": "随着 23ai（23.4）版本的发布，Oracle 数据库提供了众多对人工智能有用的功能，例如向量、相似性搜索、向量索引和 ONNX 模型等。",
+      "count": 1
+    },
+    {
+      "source": "This Spring AI Vector store supports the following features:",
+      "translation": "本年春季的 AI 向量存储支持以下功能：",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../VectorStore.html#getNativeClient()\">VectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../VectorStore.html#getNativeClient()\">VectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Builder class for creating <a href=\"OracleVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.oracle\"><code>OracleVectorStore</code></a> instances.",
+      "translation": "用于创建<a href=\"OracleVectorStore.html\" title=\"org.springframework.ai.vectorstore.oracle 中的类\"><code>OracleVectorStore</code></a>实例的构建器类。",
+      "count": 1
+    },
+    {
+      "source": "Returns the native client if available in this vector store implementation.\n\nNote on usage: 1. Returns empty Optional when no native client is available 2. Due\nto Java type erasure, runtime type checking is not possible\n\nExample usage: When working with implementation with known native client:\nOptional<nativeclienttype> client = vectorStore.getNativeClient();\n\nNote: Using Optional<span class=\"invalid-tag\">invalid input: '&lt;'</span>?&gt; will return the native client if one exists, rather than an\nempty Optional. For type safety, prefer using the specific client type.</nativeclienttype>",
+      "translation": "返回当前向量存储实现中可用的原生客户端。\n\n使用注意事项：1. 若无可用原生客户端，则返回空 Optional；2. 由于 Java 类型擦除，无法进行运行时类型检查。\n\n使用示例：在与已知原生客户端的实现协作时：Optional<nativeclienttype> client = vectorStore.getNativeClient();\n\n注意：使用 Optional<span class=\"invalid-tag\">无效输入：'&lt;'</span>?&gt; 将返回存在的原生客户端，而非空 Optional。为确保类型安全，建议使用特定的客户端类型。</nativeclienttype>",
+      "count": 1
+    },
+    {
+      "source": "Protected constructor that accepts a builder instance.",
+      "translation": "接受构建器实例的受保护构造函数。",
+      "count": 1
+    },
+    {
+      "source": "Returns the native client if available in this vector store implementation.",
+      "translation": "如果此向量存储实现中可用，则返回原生客户端。",
+      "count": 1
+    },
+    {
+      "source": "Protected constructor that accepts a builder instance. This is the preferred way to\ncreate new OracleVectorStore instances.",
+      "translation": "受保护的构造函数，接受一个构建器实例。这是创建新 OracleVectorStore 实例的首选方式。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">doAdd</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">doAdd</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">doDelete</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">doDelete</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">doDelete</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">doDelete</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">doSimilaritySearch</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">doSimilaritySearch</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">createObservationContextBuilder</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">createObservationContextBuilder</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../VectorStore.html#getNativeClient()\">getNativeClient</a></code> in interface <code><a href=\"../VectorStore.html\" title=\"interface in org.springframework.ai.vectorstore\">VectorStore</a></code>",
+      "translation": "接口 <code><a href=\"../VectorStore.html\" title=\"org.springframework.ai.vectorstore 中的接口\">VectorStore</a></code> 中的方法 <code><a href=\"../VectorStore.html#getNativeClient()\">getNativeClient</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code>afterPropertiesSet</code> in interface <code>org.springframework.beans.factory.InitializingBean</code>",
+      "translation": "接口 <code>org.springframework.beans.factory.InitializingBean</code> 中的 <code>afterPropertiesSet</code>",
+      "count": 1
+    },
+    {
+      "source": "<span id=\"getNativeClient()-type-param-T\"><code>T</code> - The type of the native client</span>",
+      "translation": "<span id=\"getNativeClient()-type-param-T\"><code>T</code> - 原生客户端的类型</span>",
+      "count": 1
+    },
+    {
+      "source": "<code>builder</code> - the configured builder instance",
+      "translation": "<code>builder</code> - 已配置的构建器实例",
+      "count": 1
+    },
+    {
+      "source": "<code>documents</code> - the documents to add",
+      "translation": "<code>documents</code> - 要添加的文档",
+      "count": 1
+    },
+    {
+      "source": "<code>idList</code> - the list of document IDs to delete",
+      "translation": "<code>idList</code> - 要删除的文档 ID 列表",
+      "count": 1
+    },
+    {
+      "source": "<code>filterExpression</code> - Filter expression to identify documents to delete",
+      "translation": "<code>filterExpression</code> - 用于标识要删除的文档的过滤表达式",
+      "count": 1
+    },
+    {
+      "source": "<code>request</code> - the search request",
+      "translation": "<code>request</code> - 搜索请求",
+      "count": 1
+    },
+    {
+      "source": "<code>operationName</code> - the operation name",
+      "translation": "<code>operationName</code> - 操作名称",
+      "count": 1
+    },
+    {
+      "source": "Vectors with unspecified or fixed dimensions",
+      "translation": "维度未指定或固定的向量",
+      "count": 1
+    },
+    {
+      "source": "Distance type for similarity search (note that similarity threshold can be used\nonly with distance type COSINE and DOT when ingested vectors are normalized, see\nforcedNormalization)",
+      "translation": "相似度搜索的距离类型（请注意，当摄入的向量已归一化时，仅在使用 COSINE 和 DOT 距离类型时才能使用相似度阈值，参见 forcedNormalization）。",
+      "count": 1
+    },
+    {
+      "source": "Vector indexes (use IVF as of 23.4)",
+      "translation": "向量索引（自 23.4 版本起使用 IVF）",
+      "count": 1
+    },
+    {
+      "source": "Exact and Approximate similarity search",
+      "translation": "精确与近似相似性搜索",
+      "count": 1
+    },
+    {
+      "source": "Filter expression as SQL/JSON Path expression evaluation",
+      "translation": "作为 SQL 或 JSONPath 表达式求值的过滤表达式",
+      "count": 1
+    },
+    {
+      "source": "Loïc Lefèvre, Christian Tzolov, Soby Chacko, Thomas Vitale, chabinhwang",
+      "translation": "Loïc Lefèvre，Christian Tzolov，Soby Chacko，Thomas Vitale，chabinhwang",
+      "count": 1
+    },
+    {
+      "source": "the list of documents that match the query request conditions",
+      "translation": "与查询请求条件匹配的文件列表",
+      "count": 1
+    },
+    {
+      "source": "the observation context builder",
+      "translation": "观察上下文构建器",
+      "count": 1
+    },
+    {
+      "source": "Optional containing native client if available, empty Optional otherwise",
+      "translation": "如有可用的本机客户端，则包含该客户端的 Optional；否则为空 Optional。",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>维度未指定或固定的向量</li>\n<li>相似度搜索的距离类型（请注意，当摄入的向量已归一化时，仅在使用 COSINE 和 DOT 距离类型时才能使用相似度阈值，参见 forcedNormalization）。</li>\n<li>向量索引（自 23.4 版本起使用 IVF）</li>\n<li>精确与近似相似性搜索</li>\n<li>作为 SQL 或 JSONPath 表达式求值的过滤表达式</li>\n</ul>",
+      "translation": "<ul>\n<li>维度未指定或固定的向量</li>\n<li>相似度搜索的距离类型（请注意，当摄入的向量已归一化时，仅在使用 COSINE 和 DOT 距离类型时才能使用相似度阈值，参见 forcedNormalization）。</li>\n<li>向量索引（自 23.4 版本起使用 IVF）</li>\n<li>精确与近似相似性搜索</li>\n<li>作为 SQL 或 JSONPath 表达式求值的过滤表达式</li>\n</ul>",
+      "count": 1
+    }
+  ]
+}

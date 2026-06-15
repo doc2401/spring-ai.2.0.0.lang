@@ -1,0 +1,141 @@
+{
+  "created_at": "2026-06-15 07:33:21",
+  "updated_at": "2026-06-15 07:33:21",
+  "stats": {
+    "total_entries": 25,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 28,
+    "entries_with_hits": 25,
+    "entries_without_hits": 0,
+    "hit_rate": 1.12,
+    "usage_percentage": 0.0025
+  },
+  "items": [
+    {
+      "source": "Build the <a href=\"../chat/prompt/ChatOptions.html\" title=\"interface in org.springframework.ai.chat.prompt\"><code>ChatOptions</code></a>.",
+      "translation": "构建<a href=\"../chat/prompt/ChatOptions.html\" title=\"org.springframework.ai.chat.prompt 中的接口\"><code>ChatOptions</code></a>。",
+      "count": 2
+    },
+    {
+      "source": "Mutate this builder by taking all <code>other</code>'s values that are non-null,\nretaining <code>this</code> other values.",
+      "translation": "通过保留所有非空的 `<code>other</code>` 值，同时保持 `<code>this</code>` 的其他值，来变异此构建器。",
+      "count": 2
+    },
+    {
+      "source": "Builds with the maximum number of tokens to use for the chat.",
+      "translation": "使用最大数量的 token 构建聊天。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Sets the API key using an <a href=\"../model/ApiKey.html\" title=\"interface in org.springframework.ai.model\"><code>ApiKey</code></a> instance. Pass a <a href=\"../model/NoopApiKey.html\" title=\"class in org.springframework.ai.model\"><code>NoopApiKey</code></a> to\ndisable authentication (no <code>Authorization</code> header will be sent), which is\nthe same behavior as setting an empty string via <a href=\"#apiKey(java.lang.String)\"><code>apiKey(String)</code></a>.",
+      "translation": "使用 <a href=\"../model/ApiKey.html\" title=\"interface in org.springframework.ai.model\"><code>ApiKey</code></a> 实例设置 API 密钥。传递一个 <a href=\"../model/NoopApiKey.html\" title=\"class in org.springframework.ai.model\"><code>NoopApiKey</code></a> 以禁用身份验证（不会发送 <code>Authorization</code> 标头），其行为与通过 <a href=\"#apiKey(java.lang.String)\"><code>apiKey(String)</code></a> 设置空字符串相同。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../chat/prompt/ChatOptions.Builder.html#maxTokens(java.lang.Integer)\">ChatOptions.Builder</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../chat/prompt/ChatOptions.Builder.html#maxTokens(java.lang.Integer)\">ChatOptions.Builder</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../chat/prompt/ChatOptions.Builder.html#combineWith(org.springframework.ai.chat.prompt.ChatOptions.Builder)\">ChatOptions.Builder</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../chat/prompt/ChatOptions.Builder.html#combineWith(org.springframework.ai.chat.prompt.ChatOptions.Builder)\">ChatOptions.Builder</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../chat/prompt/ChatOptions.Builder.html#build()\">ChatOptions.Builder</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../chat/prompt/ChatOptions.Builder.html#build()\">ChatOptions.Builder</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Sets the API key using an <a href=\"../model/ApiKey.html\" title=\"interface in org.springframework.ai.model\"><code>ApiKey</code></a> instance.",
+      "translation": "使用 <a href=\"../model/ApiKey.html\" title=\"org.springframework.ai.model 中的接口\"><code>ApiKey</code></a> 实例设置 API 密钥。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../chat/prompt/ChatOptions.Builder.html#clone()\">clone</a></code> in interface <code><a href=\"../chat/prompt/ChatOptions.Builder.html\" title=\"interface in org.springframework.ai.chat.prompt\">ChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a> extends <a href=\"OpenAiChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.openai\">OpenAiChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code>",
+      "translation": "<code><a href=\"../chat/prompt/ChatOptions.Builder.html#clone()\">clone()</a></code> 在接口 <code><a href=\"../chat/prompt/ChatOptions.Builder.html\" title=\"interface in org.springframework.ai.chat.prompt\">ChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a> extends <a href=\"OpenAiChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.openai\">OpenAiChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../model/tool/DefaultToolCallingChatOptions.Builder.html#clone()\">clone</a></code> in class <code><a href=\"../model/tool/DefaultToolCallingChatOptions.Builder.html\" title=\"class in org.springframework.ai.model.tool\">DefaultToolCallingChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a> extends <a href=\"OpenAiChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.openai\">OpenAiChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code>",
+      "translation": "<code><a href=\"../model/tool/DefaultToolCallingChatOptions.Builder.html#clone()\">clone()</a></code> 方法位于类 <code><a href=\"../model/tool/DefaultToolCallingChatOptions.Builder.html\" title=\"class in org.springframework.ai.model.tool\">DefaultToolCallingChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a> extends <a href=\"OpenAiChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.openai\">OpenAiChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code> 中。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../chat/prompt/ChatOptions.Builder.html#maxTokens(java.lang.Integer)\">maxTokens</a></code> in interface <code><a href=\"../chat/prompt/ChatOptions.Builder.html\" title=\"interface in org.springframework.ai.chat.prompt\">ChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a> extends <a href=\"OpenAiChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.openai\">OpenAiChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code>",
+      "translation": "<code><a href=\"../chat/prompt/ChatOptions.Builder.html#maxTokens(java.lang.Integer)\">maxTokens</a></code> 接口 <code><a href=\"../chat/prompt/ChatOptions.Builder.html\" title=\"interface in org.springframework.ai.chat.prompt\">ChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a> extends <a href=\"OpenAiChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.openai\">OpenAiChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../model/tool/ToolCallingChatOptions.Builder.html#maxTokens(java.lang.Integer)\">maxTokens</a></code> in interface <code><a href=\"../model/tool/ToolCallingChatOptions.Builder.html\" title=\"interface in org.springframework.ai.model.tool\">ToolCallingChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a> extends <a href=\"OpenAiChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.openai\">OpenAiChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code>",
+      "translation": "<code><a href=\"../model/tool/ToolCallingChatOptions.Builder.html#maxTokens(java.lang.Integer)\">maxTokens</a></code> 接口 <code><a href=\"../model/tool/ToolCallingChatOptions.Builder.html\" title=\"interface in org.springframework.ai.model.tool\">ToolCallingChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"类型参数 OpenAiChatOptions.AbstractBuilder\">B</a> extends <a href=\"OpenAiChatOptions.AbstractBuilder.html\" title=\"类 org.springframework.ai.openai\">OpenAiChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"类型参数 OpenAiChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../chat/prompt/DefaultChatOptionsBuilder.html#maxTokens(java.lang.Integer)\">maxTokens</a></code> in class <code><a href=\"../chat/prompt/DefaultChatOptionsBuilder.html\" title=\"class in org.springframework.ai.chat.prompt\">DefaultChatOptionsBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a> extends <a href=\"OpenAiChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.openai\">OpenAiChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code>",
+      "translation": "<code><a href=\"../chat/prompt/DefaultChatOptionsBuilder.html#maxTokens(java.lang.Integer)\">maxTokens</a></code> 类 <code><a href=\"../chat/prompt/DefaultChatOptionsBuilder.html\" title=\"class in org.springframework.ai.chat.prompt\">DefaultChatOptionsBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a> extends <a href=\"OpenAiChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.openai\">OpenAiChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../model/tool/StructuredOutputChatOptions.Builder.html#outputSchema(java.lang.String)\">outputSchema</a></code> in interface <code><a href=\"../model/tool/StructuredOutputChatOptions.Builder.html\" title=\"interface in org.springframework.ai.model.tool\">StructuredOutputChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a> extends <a href=\"OpenAiChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.openai\">OpenAiChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code>",
+      "translation": "<code><a href=\"../model/tool/StructuredOutputChatOptions.Builder.html#outputSchema(java.lang.String)\">outputSchema</a></code> 接口 <code><a href=\"../model/tool/StructuredOutputChatOptions.Builder.html\" title=\"interface in org.springframework.ai.model.tool\">StructuredOutputChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"类型参数 OpenAiChatOptions.AbstractBuilder\">B</a> extends <a href=\"OpenAiChatOptions.AbstractBuilder.html\" title=\"类 org.springframework.ai.openai\">OpenAiChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"类型参数 OpenAiChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../chat/prompt/ChatOptions.Builder.html#combineWith(org.springframework.ai.chat.prompt.ChatOptions.Builder)\">combineWith</a></code> in interface <code><a href=\"../chat/prompt/ChatOptions.Builder.html\" title=\"interface in org.springframework.ai.chat.prompt\">ChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a> extends <a href=\"OpenAiChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.openai\">OpenAiChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code>",
+      "translation": "<code><a href=\"../chat/prompt/ChatOptions.Builder.html#combineWith(org.springframework.ai.chat.prompt.ChatOptions.Builder)\">combineWith</a></code> 接口 <code><a href=\"../chat/prompt/ChatOptions.Builder.html\" title=\"interface in org.springframework.ai.chat.prompt\">ChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a> extends <a href=\"OpenAiChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.openai\">OpenAiChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../model/tool/DefaultToolCallingChatOptions.Builder.html#combineWith(org.springframework.ai.chat.prompt.ChatOptions.Builder)\">combineWith</a></code> in class <code><a href=\"../model/tool/DefaultToolCallingChatOptions.Builder.html\" title=\"class in org.springframework.ai.model.tool\">DefaultToolCallingChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a> extends <a href=\"OpenAiChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.openai\">OpenAiChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code>",
+      "translation": "<code><a href=\"../model/tool/DefaultToolCallingChatOptions.Builder.html#combineWith(org.springframework.ai.chat.prompt.ChatOptions.Builder)\">combineWith</a></code> 类 <code><a href=\"../model/tool/DefaultToolCallingChatOptions.Builder.html\" title=\"class in org.springframework.ai.model.tool\">DefaultToolCallingChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a> extends <a href=\"OpenAiChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.openai\">OpenAiChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../chat/prompt/ChatOptions.Builder.html#build()\">build</a></code> in interface <code><a href=\"../chat/prompt/ChatOptions.Builder.html\" title=\"interface in org.springframework.ai.chat.prompt\">ChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a> extends <a href=\"OpenAiChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.openai\">OpenAiChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code>",
+      "translation": "<code><a href=\"../chat/prompt/ChatOptions.Builder.html#build()\">build</a></code> 接口 <code><a href=\"../chat/prompt/ChatOptions.Builder.html\" title=\"interface in org.springframework.ai.chat.prompt\">ChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a> extends <a href=\"OpenAiChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.openai\">OpenAiChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../model/tool/ToolCallingChatOptions.Builder.html#build()\">build</a></code> in interface <code><a href=\"../model/tool/ToolCallingChatOptions.Builder.html\" title=\"interface in org.springframework.ai.model.tool\">ToolCallingChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a> extends <a href=\"OpenAiChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.openai\">OpenAiChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code>",
+      "translation": "<code><a href=\"../model/tool/ToolCallingChatOptions.Builder.html#build()\">build</a></code> 接口 <code><a href=\"../model/tool/ToolCallingChatOptions.Builder.html\" title=\"interface in org.springframework.ai.model.tool\">ToolCallingChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a> extends <a href=\"OpenAiChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.openai\">OpenAiChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../model/tool/DefaultToolCallingChatOptions.Builder.html#build()\">build</a></code> in class <code><a href=\"../model/tool/DefaultToolCallingChatOptions.Builder.html\" title=\"class in org.springframework.ai.model.tool\">DefaultToolCallingChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a> extends <a href=\"OpenAiChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.openai\">OpenAiChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code>",
+      "translation": "<code><a href=\"../model/tool/DefaultToolCallingChatOptions.Builder.html#build()\">build</a></code> 方法位于类 <code><a href=\"../model/tool/DefaultToolCallingChatOptions.Builder.html\" title=\"class in org.springframework.ai.model.tool\">DefaultToolCallingChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a> extends <a href=\"OpenAiChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.openai\">OpenAiChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in OpenAiChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>apiKey</code> - the API key instance; if <code>null</code>, the key is cleared",
+      "translation": "<code>apiKey</code> - API 密钥实例；如果为 <code>null</code>，则清除该密钥",
+      "count": 1
+    },
+    {
+      "source": "Julien Dubois, Christian Tzolov, Thomas Vitale, Mariusz Bernacki, lambochen, Ilayaperumal Gopinathan, Sebastien Deleuze, guan xu",
+      "translation": "Julien Dubois，Christian Tzolov，Thomas Vitale，Mariusz Bernacki，lambochen，Ilayaperumal Gopinathan，Sebastien Deleuze，guan xu",
+      "count": 1
+    },
+    {
+      "source": "the builder.",
+      "translation": "建造者。",
+      "count": 1
+    },
+    {
+      "source": "the Chat options.",
+      "translation": "聊天选项。",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    }
+  ]
+}

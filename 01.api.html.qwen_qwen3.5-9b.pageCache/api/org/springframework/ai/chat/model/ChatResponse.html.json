@@ -1,0 +1,136 @@
+{
+  "created_at": "2026-06-15 08:51:53",
+  "updated_at": "2026-06-15 08:51:53",
+  "stats": {
+    "total_entries": 24,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 31,
+    "entries_with_hits": 24,
+    "entries_without_hits": 0,
+    "hit_rate": 1.2916666666666667,
+    "usage_percentage": 0.0024000000000000002
+  },
+  "items": [
+    {
+      "source": "Construct a new <a href=\"ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> instance without metadata.",
+      "translation": "在不包含元数据的情况下，构建一个新的<a href=\"ChatResponse.html\" title=\"org.springframework.ai.chat.model 中的类\"><code>ChatResponse</code></a>实例。",
+      "count": 2
+    },
+    {
+      "source": "Construct a new <a href=\"ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> instance.",
+      "translation": "构建一个新的<a href=\"ChatResponse.html\" title=\"org.springframework.ai.chat.model 中的类\"><code>ChatResponse</code></a>实例。",
+      "count": 2
+    },
+    {
+      "source": "Retrieves the response metadata associated with the AI model's response.",
+      "translation": "检索与 AI 模型响应相关的响应元数据。",
+      "count": 2
+    },
+    {
+      "source": "Retrieves the (first) result of the AI model.",
+      "translation": "检索 AI 模型的首个结果。",
+      "count": 2
+    },
+    {
+      "source": "Whether the model has finished with any of the given finish reasons.",
+      "translation": "模型是否已完成任何给定的结束原因。",
+      "count": 2
+    },
+    {
+      "source": "Whether the model has requested the execution of a tool.",
+      "translation": "模型是否已请求执行工具。",
+      "count": 2
+    },
+    {
+      "source": "<code>generations</code> - the <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"class or interface in java.util\"><code>List</code></a> of <a href=\"Generation.html\" title=\"class in org.springframework.ai.chat.model\"><code>Generation</code></a> returned by the AI\nprovider.",
+      "translation": "<code>generations</code> - 由 AI 提供者返回的包含<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"class or interface in java.util\"><code>List</code></a>的<a href=\"Generation.html\" title=\"class in org.springframework.ai.chat.model\"><code>Generation</code></a>列表。",
+      "count": 2
+    },
+    {
+      "source": "It is a <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"class or interface in java.util\"><code>List</code></a> of <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"class or interface in java.util\"><code>lists</code></a> because the Prompt could request\nmultiple output <a href=\"Generation.html\" title=\"class in org.springframework.ai.chat.model\"><code>generations</code></a>.",
+      "translation": "它是一个包含多个输出<a href=\"Generation.html\" title=\"org.springframework.ai.chat.model 中的类\"><code>generations</code></a>的<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"java.util 中的类或接口\"><code>List</code></a>，因为 Prompt 可能会请求多个输出。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../model/ModelResponse.html#getResult()\">ModelResponse</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../model/ModelResponse.html#getResult()\">ModelResponse</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../model/ModelResponse.html#getMetadata()\">ModelResponse</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../model/ModelResponse.html#getMetadata()\">ModelResponse</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "The chat completion (e.g. generation) response returned by an AI provider.",
+      "translation": "AI 提供商返回的聊天补全（例如生成）响应。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../model/ModelResponse.html#getResults()\">getResults</a></code> in interface <code><a href=\"../../model/ModelResponse.html\" title=\"interface in org.springframework.ai.model\">ModelResponse</a>&lt;<a href=\"Generation.html\" title=\"class in org.springframework.ai.chat.model\">Generation</a>&gt;</code>",
+      "translation": "<code><a href=\"../../model/ModelResponse.html#getResults()\">getResults</a></code> 接口 <code><a href=\"../../model/ModelResponse.html\" title=\"interface in org.springframework.ai.model\">ModelResponse</a>&lt;<a href=\"Generation.html\" title=\"class in org.springframework.ai.chat.model\">Generation</a>&gt;</code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../model/ModelResponse.html#getResult()\">getResult</a></code> in interface <code><a href=\"../../model/ModelResponse.html\" title=\"interface in org.springframework.ai.model\">ModelResponse</a>&lt;<a href=\"Generation.html\" title=\"class in org.springframework.ai.chat.model\">Generation</a>&gt;</code>",
+      "translation": "接口 <code><a href=\"../../model/ModelResponse.html\" title=\"org.springframework.ai.model 中的接口\">ModelResponse</a>&lt;<a href=\"Generation.html\" title=\"org.springframework.ai.chat.model 中的类\">Generation</a>&gt;</code> 中的 <code><a href=\"../../model/ModelResponse.html#getResult()\">getResult</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../model/ModelResponse.html#getMetadata()\">getMetadata</a></code> in interface <code><a href=\"../../model/ModelResponse.html\" title=\"interface in org.springframework.ai.model\">ModelResponse</a>&lt;<a href=\"Generation.html\" title=\"class in org.springframework.ai.chat.model\">Generation</a>&gt;</code>",
+      "translation": "<code><a href=\"../../model/ModelResponse.html#getMetadata()\">getMetadata</a></code> 在接口 <code><a href=\"../../model/ModelResponse.html\" title=\"interface in org.springframework.ai.model\">ModelResponse</a>&lt;<a href=\"Generation.html\" title=\"class in org.springframework.ai.chat.model\">Generation</a>&gt;</code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#toString()\" title=\"class or interface in java.lang\">toString</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"class or interface in java.lang\">Object</a></code>",
+      "translation": "类 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"java.lang 中的类或接口\">Object</a></code> 中的 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#toString()\" title=\"java.lang 中的类或接口\">toString</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)\" title=\"class or interface in java.lang\">equals</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"class or interface in java.lang\">Object</a></code>",
+      "translation": "`Object` 类中的 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)\" title=\"class or interface in java.lang\">equals</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#hashCode()\" title=\"class or interface in java.lang\">hashCode</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"class or interface in java.lang\">Object</a></code>",
+      "translation": "类 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"java.lang 中的类或接口\">Object</a></code> 中的 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#hashCode()\" title=\"java.lang 中的类或接口\">hashCode</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code>chatResponseMetadata</code> - <a href=\"../metadata/ChatResponseMetadata.html\" title=\"class in org.springframework.ai.chat.metadata\"><code>ChatResponseMetadata</code></a> containing information\nabout the use of the AI provider's API.",
+      "translation": "<code>chatResponseMetadata</code> - 包含有关使用 AI 提供商 API 信息的<a href=\"../metadata/ChatResponseMetadata.html\" title=\"class in org.springframework.ai.chat.metadata\"><code>ChatResponseMetadata</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Returns the first <a href=\"Generation.html\" title=\"class in org.springframework.ai.chat.model\"><code>Generation</code></a> in the generations list.",
+      "translation": "返回列表中的第一个<a href=\"Generation.html\" title=\"org.springframework.ai.chat.model 中的类\"><code>Generation</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Returns <a href=\"../metadata/ChatResponseMetadata.html\" title=\"class in org.springframework.ai.chat.metadata\"><code>ChatResponseMetadata</code></a> containing information about the use\nof the AI provider's API.",
+      "translation": "返回包含有关使用 AI 提供商 API 信息的<a href=\"../metadata/ChatResponseMetadata.html\" title=\"class in org.springframework.ai.chat.metadata\"><code>ChatResponseMetadata</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Mark Pollack, Soby Chacko, John Blum, Alexandros Pappas, Thomas Vitale",
+      "translation": "Christian Tzolov，Mark Pollack，Soby Chacko，John Blum，Alexandros Pappas，Thomas Vitale",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "The <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"class or interface in java.util\"><code>List</code></a> of <a href=\"Generation.html\" title=\"class in org.springframework.ai.chat.model\"><code>generated outputs</code></a>.",
+      "translation": "包含<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"java.util 中的类或接口\"><code>List</code></a>的<a href=\"Generation.html\" title=\"org.springframework.ai.chat.model 中的类\"><code>生成输出</code></a>。",
+      "count": 1
+    }
+  ]
+}

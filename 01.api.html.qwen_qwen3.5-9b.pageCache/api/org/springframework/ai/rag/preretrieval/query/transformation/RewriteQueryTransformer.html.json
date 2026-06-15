@@ -1,0 +1,66 @@
+{
+  "created_at": "2026-06-15 08:04:39",
+  "updated_at": "2026-06-15 08:04:39",
+  "stats": {
+    "total_entries": 10,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 11,
+    "entries_with_hits": 10,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1,
+    "usage_percentage": 0.001
+  },
+  "items": [
+    {
+      "source": "Transforms the given query according to the implemented strategy.",
+      "translation": "根据已实施的策略转换给定查询。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This transformer is useful when the user query is verbose, ambiguous, or contains\nirrelevant information that may affect the quality of the search results.",
+      "translation": "当用户查询冗长、模糊或包含可能影响搜索结果质量的不相关信息时，此转换器非常有用。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"QueryTransformer.html#transform(org.springframework.ai.rag.Query)\">QueryTransformer</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"QueryTransformer.html#transform(org.springframework.ai.rag.Query)\">QueryTransformer</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"QueryTransformer.html#transform(org.springframework.ai.rag.Query)\">transform</a></code> in interface <code><a href=\"QueryTransformer.html\" title=\"interface in org.springframework.ai.rag.preretrieval.query.transformation\">QueryTransformer</a></code>",
+      "translation": "接口 <code><a href=\"QueryTransformer.html\" title=\"org.springframework.ai.rag.preretrieval.query.transformation 中的接口\">QueryTransformer</a></code> 中的方法 <code><a href=\"QueryTransformer.html#transform(org.springframework.ai.rag.Query)\">transform</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code>query</code> - The original query to transform",
+      "translation": "<code>query</code> - 要转换的原始查询",
+      "count": 1
+    },
+    {
+      "source": "Thomas Vitale",
+      "translation": "托马斯·维塔莱",
+      "count": 1
+    },
+    {
+      "source": "The transformed query",
+      "translation": "转换后的查询",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Uses a large language model to rewrite a user query to provide better results when\nquerying a target system, such as a vector store or a web search engine.",
+      "translation": "利用大型语言模型重写用户查询，以便在查询目标系统（如向量存储或网络搜索引擎）时获得更优结果。",
+      "count": 1
+    }
+  ]
+}

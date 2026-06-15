@@ -1,0 +1,171 @@
+{
+  "created_at": "2026-06-15 07:45:02",
+  "updated_at": "2026-06-15 07:45:02",
+  "stats": {
+    "total_entries": 31,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 48,
+    "entries_with_hits": 31,
+    "entries_without_hits": 0,
+    "hit_rate": 1.5483870967741935,
+    "usage_percentage": 0.0031000000000000003
+  },
+  "items": [
+    {
+      "source": "the builder instance",
+      "translation": "构建器实例",
+      "count": 8
+    },
+    {
+      "source": "Sets the JdbcTemplate to be used for database operations.",
+      "translation": "设置用于数据库操作的 JdbcTemplate。",
+      "count": 2
+    },
+    {
+      "source": "Builds and returns a new VectorStore instance with the configured settings.",
+      "translation": "构建并返回一个具有配置设置的新 VectorStore 实例。",
+      "count": 2
+    },
+    {
+      "source": "Sets the number of dimensions for the vector space.",
+      "translation": "设置向量空间的维度数。",
+      "count": 2
+    },
+    {
+      "source": "Sets the distance type for vector similarity calculations.",
+      "translation": "设置向量相似度计算的度量类型。",
+      "count": 2
+    },
+    {
+      "source": "Sets whether to force vector normalization.",
+      "translation": "设置是否强制向量归一化。",
+      "count": 2
+    },
+    {
+      "source": "Sets the vector index type.",
+      "translation": "设置向量索引类型。",
+      "count": 2
+    },
+    {
+      "source": "Sets whether to initialize the database schema.",
+      "translation": "设置是否初始化数据库模式。",
+      "count": 2
+    },
+    {
+      "source": "Sets whether to remove existing vector store table before initialization.",
+      "translation": "设置是否在初始化之前删除现有的向量存储表。",
+      "count": 2
+    },
+    {
+      "source": "Sets the search accuracy parameter.",
+      "translation": "设置搜索精度参数。",
+      "count": 2
+    },
+    {
+      "source": "Sets the table name for vector storage.",
+      "translation": "设置向量存储的表名。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Provides a fluent API for configuring all aspects of the Oracle vector store,\nincluding database connection, schema initialization, vector dimensions, and search\nparameters.",
+      "translation": "提供用于配置 Oracle 向量存储所有方面的流畅 API，包括数据库连接、模式初始化、向量维度以及搜索参数。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../VectorStore.Builder.html#build()\">VectorStore.Builder</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../VectorStore.Builder.html#build()\">VectorStore.Builder</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if indexType is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果 indexType 为 null",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if distanceType is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果 distanceType 为 null",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if dimensions is not within valid range",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果维度不在有效范围内",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if searchAccuracy is not within valid range",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果 searchAccuracy 不在有效范围内",
+      "count": 1
+    },
+    {
+      "source": "<code>jdbcTemplate</code> - the JdbcTemplate instance",
+      "translation": "<jdbcTemplate> - JdbcTemplate 实例",
+      "count": 1
+    },
+    {
+      "source": "<code>embeddingModel</code> - the Embedding Model to be used",
+      "translation": "<code>embeddingModel</code> - 要使用的嵌入模型",
+      "count": 1
+    },
+    {
+      "source": "<code>tableName</code> - the name of the table to use",
+      "translation": "<code>tableName</code> - 要使用的表名",
+      "count": 1
+    },
+    {
+      "source": "<code>indexType</code> - the index type to use",
+      "translation": "<code>indexType</code> - 要使用的索引类型",
+      "count": 1
+    },
+    {
+      "source": "<code>distanceType</code> - the distance type to use",
+      "translation": "<code>distanceType</code> - 要使用的距离类型",
+      "count": 1
+    },
+    {
+      "source": "<code>dimensions</code> - the number of dimensions (must be between 1 and 65535)",
+      "translation": "<code>dimensions</code> - 维度数量（必须在 1 到 65535 之间）",
+      "count": 1
+    },
+    {
+      "source": "<code>searchAccuracy</code> - the search accuracy value (must be between 1 and 100)",
+      "translation": "<code>searchAccuracy</code> - 搜索准确度值（必须在 1 到 100 之间）",
+      "count": 1
+    },
+    {
+      "source": "<code>initializeSchema</code> - true to initialize schema, false otherwise",
+      "translation": "<code>initializeSchema</code> - 用于初始化架构，true 表示启用，false 表示禁用",
+      "count": 1
+    },
+    {
+      "source": "<code>removeExistingVectorStoreTable</code> - true to remove existing table, false\notherwise",
+      "translation": "<code>removeExistingVectorStoreTable</code> - 设置为 true 以删除现有表，否则为 false",
+      "count": 1
+    },
+    {
+      "source": "<code>forcedNormalization</code> - true to force normalization, false otherwise",
+      "translation": "<code>forcedNormalization</code> - 强制归一化为 true，否则为 false",
+      "count": 1
+    },
+    {
+      "source": "Loïc Lefèvre, Christian Tzolov, Soby Chacko, Thomas Vitale, chabinhwang",
+      "translation": "Loïc Lefèvre，Christian Tzolov，Soby Chacko，Thomas Vitale，chabinhwang",
+      "count": 1
+    },
+    {
+      "source": "a new VectorStore instance",
+      "translation": "一个新的向量存储实例",
+      "count": 1
+    },
+    {
+      "source": "Builder class for creating <a href=\"OracleVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.oracle\"><code>OracleVectorStore</code></a> instances.",
+      "translation": "用于创建<a href=\"OracleVectorStore.html\" title=\"org.springframework.ai.vectorstore.oracle 中的类\"><code>OracleVectorStore</code></a>实例的构建器类。",
+      "count": 1
+    }
+  ]
+}

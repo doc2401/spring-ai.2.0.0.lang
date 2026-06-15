@@ -1,0 +1,271 @@
+{
+  "created_at": "2026-06-15 08:49:42",
+  "updated_at": "2026-06-15 08:49:42",
+  "stats": {
+    "total_entries": 51,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 54,
+    "entries_with_hits": 51,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0588235294117647,
+    "usage_percentage": 0.0051
+  },
+  "items": [
+    {
+      "source": "as of 2.0.0, in favor of \n<details class=\"invalid-tag\">\n<summary>invalid reference</summary>\n<pre><code>#defaultTools(Consumer)</code></pre>\n</details>\n.",
+      "translation": "自 2.0.0 版本起，推荐使用  \n<details class=\"invalid-tag\">\n<summary>无效引用</summary>\n<pre><code>#defaultTools(Consumer)</code></pre>\n</details>\n。",
+      "count": 2
+    },
+    {
+      "source": "as of 2.0.0, in favor of \n<details class=\"invalid-tag\">\n<summary>invalid reference</summary>\n<pre><code>#defaultTools(Consumer)</code></pre>\n</details>\n. To be removed\nin 3.0.0.",
+      "translation": "自 2.0.0 版本起，推荐使用  \n<details class=\"invalid-tag\">\n<summary>无效引用</summary>\n<pre><code>#defaultTools(Consumer)</code></pre>\n</details>  \n将在 3.0.0 版本中移除。",
+      "count": 2
+    },
+    {
+      "source": "Creates a new <a href=\"DefaultChatClientBuilder.html\" title=\"class in org.springframework.ai.chat.client\"><code>DefaultChatClientBuilder</code></a>.",
+      "translation": "创建一个新的<a href=\"DefaultChatClientBuilder.html\" title=\"org.springframework.ai.chat.client 中的类\"><code>DefaultChatClientBuilder</code></a>。",
+      "count": 2
+    },
+    {
+      "source": "When <code>toolCallingAdvisorBuilder</code> is <code>null</code>, a default\n<a href=\"advisor/ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor</code></a> is created\nwith a <a href=\"../../model/tool/ToolCallingManager.html\" title=\"interface in org.springframework.ai.model.tool\"><code>ToolCallingManager</code></a> backed by the supplied\n<code>observationRegistry</code>.",
+      "translation": "当 <code>toolCallingAdvisorBuilder</code> 为 <code>null</code> 时，会创建一个默认的\n<a href=\"advisor/ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor</code></a>，该 Advisor 由一个基于提供的\n<code>observationRegistry</code> 的\n<a href=\"../../model/tool/ToolCallingManager.html\" title=\"interface in org.springframework.ai.model.tool\"><code>ToolCallingManager</code></a> 支持。",
+      "count": 1
+    },
+    {
+      "source": "When <code>toolCallingAdvisorBuilder</code> is non-null it is used as-is. The caller is\nthen responsible for configuring the builder's <a href=\"../../model/tool/ToolCallingManager.html\" title=\"interface in org.springframework.ai.model.tool\"><code>ToolCallingManager</code></a>,\nincluding any <code>ObservationRegistry</code>, since the\nsupplied <code>observationRegistry</code> will not be automatically applied to it.",
+      "translation": "当<code>toolCallingAdvisorBuilder</code>不为 null 时，将直接使用它。调用方随后负责配置该构建器的<a href=\"../../model/tool/ToolCallingManager.html\" title=\"interface in org.springframework.ai.model.tool\"><code>ToolCallingManager</code></a>，包括任何<code>ObservationRegistry</code>，因为所提供的<code>observationRegistry</code>不会自动应用其中。",
+      "count": 1
+    },
+    {
+      "source": "Default tools are shared across all requests produced by <a href=\"ChatClient.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient</code></a>\ninstances built from this builder. If a request also provides its own tools via\n<a href=\"ChatClient.ChatClientRequestSpec.html#tools(java.lang.Object...)\"><code>ChatClient.ChatClientRequestSpec.tools(Object...)</code></a>, those runtime tools completely\noverride the defaults for that request.",
+      "translation": "默认工具由通过此构建器创建的 <a href=\"ChatClient.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient</code></a> 实例所生成的所有请求共享。如果某个请求还通过 <a href=\"ChatClient.ChatClientRequestSpec.html#tools(java.lang.Object...)\"><code>ChatClient.ChatClientRequestSpec.tools(Object...)</code></a> 提供了自己的工具，则这些运行时工具将完全覆盖该请求的默认工具。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "It provides methods to set default values for various properties of the ChatClient.",
+      "translation": "它提供了设置 ChatClient 各种属性默认值的方法。",
+      "count": 1
+    },
+    {
+      "source": "WARNING: Because default tools are shared, be careful not to register tools\nthat should only be available in specific contexts.",
+      "translation": "警告：由于默认工具是共享的，请小心不要注册那些应仅在特定上下文中可用的工具。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"ChatClient.Builder.html#defaultTools(java.lang.Object...)\">ChatClient.Builder</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"ChatClient.Builder.html#defaultTools(java.lang.Object...)\">ChatClient.Builder</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "as of 2.0.0, in favor of <a href=\"#defaultTools(java.lang.Object...)\"><code>defaultTools(Object...)</code></a>.",
+      "translation": "自 2.0.0 版本起，推荐使用<a href=\"#defaultTools(java.lang.Object...)\"><code>defaultTools(Object...)</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "as of 2.0.0, in favor of <a href=\"#defaultTools(java.lang.Object...)\"><code>defaultTools(Object...)</code></a>. To be\nremoved in 3.0.0.",
+      "translation": "自 2.0.0 版本起，推荐使用<a href=\"#defaultTools(java.lang.Object...)\"><code>defaultTools(Object...)</code></a>。该功能将在 3.0.0 版本中移除。",
+      "count": 1
+    },
+    {
+      "source": "Register one or more default tools that will be available to every request\nbuilt from this <a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient.Builder</code></a>.",
+      "translation": "注册一个或多个默认工具，这些工具将可供从此<a href=\"ChatClient.Builder.html\" title=\"org.springframework.ai.chat.client 中的接口\"><code>ChatClient.Builder</code></a>构建的所有请求使用。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"deprecated-label\">Deprecated, for removal: This API element is subject to removal in a future version.</span>",
+      "translation": "<code class=\"deprecated-label\">已弃用，即将移除：此 API 元素将在未来版本中被移除。</code>",
+      "count": 1
+    },
+    {
+      "source": "Any other object — treated as a <code>@Tool</code>-annotated POJO; a\n<a href=\"../../tool/ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a> is generated for each\n<a href=\"../../tool/annotation/Tool.html\" title=\"annotation interface in org.springframework.ai.tool.annotation\"><code>Tool</code></a>-annotated method it\ncontains.",
+      "translation": "任何其他对象——被视为带有 <code>@Tool</code> 注解的 POJO；对于其包含的每个带有 <a href=\"../../tool/annotation/Tool.html\" title=\"annotation interface in org.springframework.ai.tool.annotation\"><code>Tool</code></a> 注解的方法，都会生成一个 <a href=\"../../tool/ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "<code>observationRegistry</code> - the observation registry for client-level observations;\nalso used to configure the default <code>ToolCallingManager</code> when\n<code>toolCallingAdvisorBuilder</code> is <code>null</code>",
+      "translation": "<code>observationRegistry</code> - 用于客户端级观测的观测注册表；  \n当 <code>toolCallingAdvisorBuilder</code> 为 <code>null</code> 时，也用于配置默认的 <code>ToolCallingManager</code>。",
+      "count": 1
+    },
+    {
+      "source": "<code>toolCallingAdvisorBuilder</code> - optional builder for the\n<a href=\"advisor/ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor</code></a>; when\n<code>null</code> a default is created",
+      "translation": "<code>toolCallingAdvisorBuilder</code> - 可选的 <a href=\"advisor/ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor</code></a> 构建器；当为 <code>null</code> 时，将创建默认实例。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.Builder.html#build()\">build</a></code> in interface <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code>",
+      "translation": "<code><a href=\"ChatClient.Builder.html#build()\">build()</a></code> 在接口 <code><a href=\"ChatClient.Builder.html\" title=\"org.springframework.ai.chat.client 中的接口\">ChatClient.Builder</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.Builder.html#clone()\">clone</a></code> in interface <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code>",
+      "translation": "<code><a href=\"ChatClient.Builder.html#clone()\">clone()</a></code> 在接口 <code><a href=\"ChatClient.Builder.html\" title=\"org.springframework.ai.chat.client 中的接口\">ChatClient.Builder</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#clone()\" title=\"class or interface in java.lang\">clone</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"class or interface in java.lang\">Object</a></code>",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#clone()\" title=\"类或接口在 java.lang 中\">clone</a></code> 方法位于 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"类或接口在 java.lang 中\">Object</a></code> 类中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.Builder.html#defaultAdvisors(org.springframework.ai.chat.client.advisor.api.Advisor...)\">defaultAdvisors</a></code> in interface <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code>",
+      "translation": "<code><a href=\"ChatClient.Builder.html#defaultAdvisors(org.springframework.ai.chat.client.advisor.api.Advisor...)\">defaultAdvisors</a></code> 接口 <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.Builder.html#defaultAdvisors(java.util.function.Consumer)\">defaultAdvisors</a></code> in interface <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code>",
+      "translation": "<code><a href=\"ChatClient.Builder.html#defaultAdvisors(java.util.function.Consumer)\">defaultAdvisors</a></code> 接口 <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.Builder.html#defaultAdvisors(java.util.List)\">defaultAdvisors</a></code> in interface <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code>",
+      "translation": "<code><a href=\"ChatClient.Builder.html#defaultAdvisors(java.util.List)\">defaultAdvisors</a></code> 在接口 <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.Builder.html#defaultOptions(org.springframework.ai.chat.prompt.ChatOptions.Builder)\">defaultOptions</a></code> in interface <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code>",
+      "translation": "<code><a href=\"ChatClient.Builder.html#defaultOptions(org.springframework.ai.chat.prompt.ChatOptions.Builder)\">defaultOptions</a></code> 接口 <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.Builder.html#defaultUser(java.lang.String)\">defaultUser</a></code> in interface <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code>",
+      "translation": "<code><a href=\"ChatClient.Builder.html#defaultUser(java.lang.String)\">defaultUser</a></code> 接口 <code><a href=\"ChatClient.Builder.html\" title=\"org.springframework.ai.chat.client 中的接口\">ChatClient.Builder</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.Builder.html#defaultUser(org.springframework.core.io.Resource,java.nio.charset.Charset)\">defaultUser</a></code> in interface <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code>",
+      "translation": "<code><a href=\"ChatClient.Builder.html#defaultUser(org.springframework.core.io.Resource,java.nio.charset.Charset)\">defaultUser</a></code> 接口 <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.Builder.html#defaultUser(org.springframework.core.io.Resource)\">defaultUser</a></code> in interface <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code>",
+      "translation": "<code><a href=\"ChatClient.Builder.html#defaultUser(org.springframework.core.io.Resource)\">defaultUser</a></code> 接口 <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.Builder.html#defaultUser(java.util.function.Consumer)\">defaultUser</a></code> in interface <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code>",
+      "translation": "<code><a href=\"ChatClient.Builder.html#defaultUser(java.util.function.Consumer)\">defaultUser</a></code> 接口 <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.Builder.html#defaultSystem(java.lang.String)\">defaultSystem</a></code> in interface <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code>",
+      "translation": "<code><a href=\"ChatClient.Builder.html#defaultSystem(java.lang.String)\">defaultSystem</a></code> 在接口 <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.Builder.html#defaultSystem(org.springframework.core.io.Resource,java.nio.charset.Charset)\">defaultSystem</a></code> in interface <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code>",
+      "translation": "<code><a href=\"ChatClient.Builder.html#defaultSystem(org.springframework.core.io.Resource,java.nio.charset.Charset)\">defaultSystem</a></code> 接口 <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.Builder.html#defaultSystem(org.springframework.core.io.Resource)\">defaultSystem</a></code> in interface <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code>",
+      "translation": "<code><a href=\"ChatClient.Builder.html#defaultSystem(org.springframework.core.io.Resource)\">defaultSystem</a></code> 接口 <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.Builder.html#defaultSystem(java.util.function.Consumer)\">defaultSystem</a></code> in interface <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code>",
+      "translation": "<code><a href=\"ChatClient.Builder.html#defaultSystem(java.util.function.Consumer)\">defaultSystem</a></code> 接口 <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.Builder.html#defaultTools(java.lang.Object...)\">defaultTools</a></code> in interface <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code>",
+      "translation": "<code><a href=\"ChatClient.Builder.html#defaultTools(java.lang.Object...)\">defaultTools</a></code> 接口 <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.Builder.html#defaultToolCallbacks(org.springframework.ai.tool.ToolCallback...)\">defaultToolCallbacks</a></code> in interface <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code>",
+      "translation": "<code><a href=\"ChatClient.Builder.html#defaultToolCallbacks(org.springframework.ai.tool.ToolCallback...)\">defaultToolCallbacks</a></code> 接口 <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.Builder.html#defaultToolCallbacks(java.util.List)\">defaultToolCallbacks</a></code> in interface <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code>",
+      "translation": "<code><a href=\"ChatClient.Builder.html#defaultToolCallbacks(java.util.List)\">defaultToolCallbacks</a></code> 接口 <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.Builder.html#defaultToolCallbacks(org.springframework.ai.tool.ToolCallbackProvider...)\">defaultToolCallbacks</a></code> in interface <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code>",
+      "translation": "<code><a href=\"ChatClient.Builder.html#defaultToolCallbacks(org.springframework.ai.tool.ToolCallbackProvider...)\">defaultToolCallbacks</a></code> 接口 <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.Builder.html#defaultToolContext(java.util.Map)\">defaultToolContext</a></code> in interface <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code>",
+      "translation": "<code><a href=\"ChatClient.Builder.html#defaultToolContext(java.util.Map)\">defaultToolContext</a></code> 接口 <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.Builder.html#defaultTemplateRenderer(org.springframework.ai.template.TemplateRenderer)\">defaultTemplateRenderer</a></code> in interface <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code>",
+      "translation": "<code><a href=\"ChatClient.Builder.html#defaultTemplateRenderer(org.springframework.ai.template.TemplateRenderer)\">defaultTemplateRenderer</a></code> 接口 <code><a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.Builder</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>toolObjects</code> - tool objects to register; must not be <code>null</code> and must not\ncontain <code>null</code> elements",
+      "translation": "<code>toolObjects</code> - 要注册的工具对象；不能为 <code>null</code>，且不能包含 <code>null</code> 元素",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"../../tool/ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a> — registered directly as a\ncallback.",
+      "translation": "<a href=\"../../tool/ToolCallback.html\" title=\"org.springframework.ai.tool 中的接口\"><code>ToolCallback</code></a>——直接注册为回调。",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"../../tool/ToolCallbackProvider.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallbackProvider</code></a> — registered\ndirectly as a provider; its callbacks are resolved lazily at request time.",
+      "translation": "<a href=\"../../tool/ToolCallbackProvider.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallbackProvider</code></a> — 直接注册为提供者；其回调在请求时懒式解析。",
+      "count": 1
+    },
+    {
+      "source": "<code>ToolCallback[]</code> or <code>ToolCallbackProvider[]</code> — every element of\nthe array is registered as above.",
+      "translation": "<code>ToolCallback[]</code> 或 <code>ToolCallbackProvider[]</code>——数组中的每个元素均按上述方式注册。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html\" title=\"class or interface in java.util\"><code>Collection</code></a> — iterated and each element is dispatched by\nthe same rules.",
+      "translation": "<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html\" title=\"java.util 中的类或接口\"><code>Collection</code></a>——对其进行迭代，且每个元素均按相同规则进行分发。",
+      "count": 1
+    },
+    {
+      "source": "<code>chatModel</code> - the chat model to use",
+      "translation": "<code>chatModel</code> - 要使用的聊天模型",
+      "count": 1
+    },
+    {
+      "source": "<code>chatClientObservationConvention</code> - optional custom observation convention for\nthe chat client",
+      "translation": "<code>chatClientObservationConvention</code> - 聊天客户端的可选自定义观察约定",
+      "count": 1
+    },
+    {
+      "source": "<code>advisorObservationConvention</code> - optional custom observation convention for\nadvisors",
+      "translation": "<code>advisorObservationConvention</code> - 用于 Advisor 的可选自定义观察约定",
+      "count": 1
+    },
+    {
+      "source": "Mark Pollack, Christian Tzolov, Josh Long, Arjen Poutsma, Thomas Vitale",
+      "translation": "Mark Pollack，Christian Tzolov，Josh Long，Arjen Poutsma，Thomas Vitale",
+      "count": 1
+    },
+    {
+      "source": "this builder for chaining",
+      "translation": "用于链式调用的构建器",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "DefaultChatClientBuilder is a builder class for creating a ChatClient.",
+      "translation": "DefaultChatClientBuilder 是一个用于创建 ChatClient 的构建器类。",
+      "count": 1
+    },
+    {
+      "source": "Register one or more default tools that will be available to every request\nbuilt from this <a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient.Builder</code></a>. The method accepts the same heterogeneous mix\nof tool representations as <a href=\"ChatClient.ChatClientRequestSpec.html#tools(java.lang.Object...)\"><code>ChatClient.ChatClientRequestSpec.tools(Object...)</code></a> and\napplies the same automatic dispatch rules:\n\n<ul>\n<li><a href=\"../../tool/ToolCallback.html\" title=\"org.springframework.ai.tool 中的接口\"><code>ToolCallback</code></a>——直接注册为回调。</li>\n<li><a href=\"../../tool/ToolCallbackProvider.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallbackProvider</code></a> — 直接注册为提供者；其回调在请求时懒式解析。</li>\n<li><code>ToolCallback[]</code> 或 <code>ToolCallbackProvider[]</code>——数组中的每个元素均按上述方式注册。</li>\n<li><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html\" title=\"java.util 中的类或接口\"><code>Collection</code></a>——对其进行迭代，且每个元素均按相同规则进行分发。</li>\n<li>任何其他对象——被视为带有 <code>@Tool</code> 注解的 POJO；对于其包含的每个带有 <a href=\"../../tool/annotation/Tool.html\" title=\"annotation interface in org.springframework.ai.tool.annotation\"><code>Tool</code></a> 注解的方法，都会生成一个 <a href=\"../../tool/ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a>。</li>\n</ul>",
+      "translation": "注册一个或多个默认工具，这些工具将可供从此<a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient.Builder</code></a>构建的每个请求使用。该方法接受与<a href=\"ChatClient.ChatClientRequestSpec.html#tools(java.lang.Object...)\"><code>ChatClient.ChatClientRequestSpec.tools(Object...)</code></a>相同的异构工具表示形式，并应用相同的自动分发规则：\n\n<ul>\n<li><a href=\"../../tool/ToolCallback.html\" title=\"org.springframework.ai.tool 中的接口\"><code>ToolCallback</code></a>——直接注册为回调。</li>\n<li><a href=\"../../tool/ToolCallbackProvider.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallbackProvider</code></a> — 直接注册为提供者；其回调在请求时懒式解析。</li>\n<li><code>ToolCallback[]</code> 或 <code>ToolCallbackProvider[]</code>——数组中的每个元素均按上述方式注册。</li>\n<li><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html\" title=\"java.util 中的类或接口\"><code>Collection</code></a>——对其进行迭代，且每个元素均按相同规则进行分发。</li>\n<li>任何其他对象——被视为带有 <code>@Tool</code> 注解的 POJO；对于其包含的每个带有 <a href=\"../../tool/annotation/Tool.html\" title=\"annotation interface in org.springframework.ai.tool.annotation\"><code>Tool</code></a> 注解的方法，都会生成一个 <a href=\"../../tool/ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a>。</li>\n</ul>",
+      "count": 1
+    }
+  ]
+}

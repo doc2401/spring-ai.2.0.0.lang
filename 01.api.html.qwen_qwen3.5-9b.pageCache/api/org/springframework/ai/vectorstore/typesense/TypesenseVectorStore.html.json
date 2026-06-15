@@ -1,0 +1,246 @@
+{
+  "created_at": "2026-06-15 07:46:59",
+  "updated_at": "2026-06-15 07:46:59",
+  "stats": {
+    "total_entries": 46,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 51,
+    "entries_with_hits": 46,
+    "entries_without_hits": 0,
+    "hit_rate": 1.108695652173913,
+    "usage_percentage": 0.0046
+  },
+  "items": [
+    {
+      "source": "Create a new <a href=\"../observation/VectorStoreObservationContext.Builder.html\" title=\"class in org.springframework.ai.vectorstore.observation\"><code>VectorStoreObservationContext.Builder</code></a> instance.",
+      "translation": "创建一个新的<a href=\"../observation/VectorStoreObservationContext.Builder.html\" title=\"class in org.springframework.ai.vectorstore.observation\"><code>VectorStoreObservationContext.Builder</code></a>实例。",
+      "count": 2
+    },
+    {
+      "source": "Perform the actual add operation.",
+      "translation": "执行实际的加法操作。",
+      "count": 2
+    },
+    {
+      "source": "Perform the actual delete operation.",
+      "translation": "执行实际的删除操作。",
+      "count": 2
+    },
+    {
+      "source": "Template method for concrete implementations to provide filter-based deletion\nlogic.",
+      "translation": "为基于过滤器的删除逻辑提供具体实现的模板方法。",
+      "count": 2
+    },
+    {
+      "source": "Perform the actual similarity search operation.",
+      "translation": "执行实际的相似度搜索操作。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Example usage:",
+      "translation": "使用示例：",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../VectorStore.html#getNativeClient()\">VectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../VectorStore.html#getNativeClient()\">VectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Returns the native client if available in this vector store implementation.\n\nNote on usage: 1. Returns empty Optional when no native client is available 2. Due\nto Java type erasure, runtime type checking is not possible\n\nExample usage: When working with implementation with known native client:\nOptional<nativeclienttype> client = vectorStore.getNativeClient();\n\nNote: Using Optional<span class=\"invalid-tag\">invalid input: '&lt;'</span>?&gt; will return the native client if one exists, rather than an\nempty Optional. For type safety, prefer using the specific client type.</nativeclienttype>",
+      "translation": "返回当前向量存储实现中可用的原生客户端。\n\n使用注意事项：1. 若无可用原生客户端，则返回空 Optional；2. 由于 Java 类型擦除，无法进行运行时类型检查。\n\n使用示例：在与已知原生客户端的实现协作时：Optional<nativeclienttype> client = vectorStore.getNativeClient();\n\n注意：使用 Optional<span class=\"invalid-tag\">无效输入：'&lt;'</span>?&gt; 将返回存在的原生客户端，而非空 Optional。为确保类型安全，建议使用特定的客户端类型。</nativeclienttype>",
+      "count": 1
+    },
+    {
+      "source": "The name of the field that contains the document ID.",
+      "translation": "包含文档 ID 的字段名称。",
+      "count": 1
+    },
+    {
+      "source": "Protected constructor for creating a TypesenseVectorStore instance using the\nbuilder pattern.",
+      "translation": "使用构建器模式创建 TypesenseVectorStore 实例的受保护构造函数。",
+      "count": 1
+    },
+    {
+      "source": "Creates a new TypesenseBuilder instance.",
+      "translation": "创建一个新的 TypesenseBuilder 实例。",
+      "count": 1
+    },
+    {
+      "source": "Returns the native client if available in this vector store implementation.",
+      "translation": "如果此向量存储实现中可用，则返回原生客户端。",
+      "count": 1
+    },
+    {
+      "source": "The name of the field that contains the document ID. It is mandatory to set \"id\" as\nthe field name because that is the name that typesense is going to look for.",
+      "translation": "包含文档 ID 的字段名称。必须将字段名设置为\"id\"，因为这是 TypeSearch 将会查找的名称。",
+      "count": 1
+    },
+    {
+      "source": "Protected constructor for creating a TypesenseVectorStore instance using the\nbuilder pattern. This constructor initializes the vector store with the configured\nsettings from the builder and performs necessary validations.",
+      "translation": "用于通过构建器模式创建 TypesenseVectorStore 实例的受保护构造函数。该构造函数会从构建器中初始化向量存储的配置设置，并执行必要的验证。",
+      "count": 1
+    },
+    {
+      "source": "Creates a new TypesenseBuilder instance. This is the recommended way to instantiate\na TypesenseVectorStore.",
+      "translation": "创建一个新类型的 TypesenseBuilder 实例。这是实例化 TypesenseVectorStore 的推荐方式。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">doAdd</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">doAdd</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">doDelete</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">doDelete</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">doDelete</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">doDelete</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">doSimilaritySearch</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">doSimilaritySearch</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">createObservationContextBuilder</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">createObservationContextBuilder</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../VectorStore.html#getNativeClient()\">getNativeClient</a></code> in interface <code><a href=\"../VectorStore.html\" title=\"interface in org.springframework.ai.vectorstore\">VectorStore</a></code>",
+      "translation": "接口 <code><a href=\"../VectorStore.html\" title=\"org.springframework.ai.vectorstore 中的接口\">VectorStore</a></code> 中的方法 <code><a href=\"../VectorStore.html#getNativeClient()\">getNativeClient</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code>builder</code> - the <a href=\"TypesenseVectorStore.Builder.html\" title=\"class in org.springframework.ai.vectorstore.typesense\"><code>TypesenseVectorStore.Builder</code></a> containing all configuration settings",
+      "translation": "<code>builder</code> - 包含所有配置设置的<a href=\"TypesenseVectorStore.Builder.html\" title=\"class in org.springframework.ai.vectorstore.typesense\"><code>TypesenseVectorStore.Builder</code></a>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if the client is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果客户端为 null",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if the embeddingModel is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果 embeddingModel 为 null",
+      "count": 1
+    },
+    {
+      "source": "<code>afterPropertiesSet</code> in interface <code>org.springframework.beans.factory.InitializingBean</code>",
+      "translation": "接口 <code>org.springframework.beans.factory.InitializingBean</code> 中的 <code>afterPropertiesSet</code>",
+      "count": 1
+    },
+    {
+      "source": "<span id=\"getNativeClient()-type-param-T\"><code>T</code> - The type of the native client</span>",
+      "translation": "<span id=\"getNativeClient()-type-param-T\"><code>T</code> - 原生客户端的类型</span>",
+      "count": 1
+    },
+    {
+      "source": "<code>documents</code> - the documents to add",
+      "translation": "<code>documents</code> - 要添加的文档",
+      "count": 1
+    },
+    {
+      "source": "<code>idList</code> - the list of document IDs to delete",
+      "translation": "<code>idList</code> - 要删除的文档 ID 列表",
+      "count": 1
+    },
+    {
+      "source": "<code>filterExpression</code> - Filter expression to identify documents to delete",
+      "translation": "<code>filterExpression</code> - 用于标识要删除的文档的过滤表达式",
+      "count": 1
+    },
+    {
+      "source": "<code>request</code> - the search request",
+      "translation": "<code>request</code> - 搜索请求",
+      "count": 1
+    },
+    {
+      "source": "<code>operationName</code> - the operation name",
+      "translation": "<code>operationName</code> - 操作名称",
+      "count": 1
+    },
+    {
+      "source": "Dhanush Anumula, Christian Tzolov, Eddú Meléndez, Mark Pollack, Soby Chacko, chabinhwang",
+      "translation": "Dhanush Anumula，Christian Tzolov，Eddú Meléndez，Mark Pollack，Soby Chacko，chabinhwang",
+      "count": 1
+    },
+    {
+      "source": "a new TypesenseBuilder instance",
+      "translation": "一个新的 TypesenseBuilder 实例",
+      "count": 1
+    },
+    {
+      "source": "the list of documents that match the query request conditions",
+      "translation": "与查询请求条件匹配的文件列表",
+      "count": 1
+    },
+    {
+      "source": "the observation context builder",
+      "translation": "观察上下文构建器",
+      "count": 1
+    },
+    {
+      "source": "Optional containing native client if available, empty Optional otherwise",
+      "translation": "如有可用的本机客户端，则包含该客户端的 Optional；否则为空 Optional。",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "A vector store implementation that uses Typesense as the backend. This implementation\nsupports storing and searching document embeddings using Typesense's vector search\ncapabilities.",
+      "translation": "这是一个使用 Typesense 作为后端的向量存储实现。该实现支持利用 Typesense 的向量搜索功能来存储和检索文档嵌入。",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>TypesenseVectorStore vectorStore = TypesenseVectorStore.builder(client, embeddingModel)\n    .collectionName(\"my_collection\")\n    .embeddingDimension(1536)\n    .initializeSchema(true)\n    .build();\n</code></pre>",
+      "translation": "<pre><code>TypesenseVectorStore vectorStore = TypesenseVectorStore.builder(client, embeddingModel)\n    .collectionName(\"my_collection\")\n    .embeddingDimension(1536)\n    .initializeSchema(true)\n    .build();\n</code></pre>",
+      "count": 1
+    }
+  ]
+}

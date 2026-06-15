@@ -1,0 +1,101 @@
+{
+  "created_at": "2026-06-15 07:30:43",
+  "updated_at": "2026-06-15 07:30:43",
+  "stats": {
+    "total_entries": 17,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 23,
+    "entries_with_hits": 17,
+    "entries_without_hits": 0,
+    "hit_rate": 1.3529411764705883,
+    "usage_percentage": 0.0017
+  },
+  "items": [
+    {
+      "source": "this builder",
+      "translation": "此构建器",
+      "count": 4
+    },
+    {
+      "source": "Builds a <code>SyncMcpToolCallback</code> with the configured parameters.",
+      "translation": "使用配置的参数构建一个<code>SyncMcpToolCallback</code>。",
+      "count": 2
+    },
+    {
+      "source": "Sets the MCP client for tool execution.",
+      "translation": "设置用于工具执行的 MCP 客户端。",
+      "count": 2
+    },
+    {
+      "source": "Sets the MCP tool to adapt.",
+      "translation": "将 MCP 工具设置为自适应模式。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Sets the converter for tool context to MCP metadata transformation. Defaults to\n<a href=\"ToolContextToMcpMetaConverter.html#defaultConverter()\"><code>ToolContextToMcpMetaConverter.defaultConverter()</code></a>.",
+      "translation": "将工具上下文的转换器设置为 MCP 元数据转换。默认值为 <a href=\"ToolContextToMcpMetaConverter.html#defaultConverter()\"><code>ToolContextToMcpMetaConverter.defaultConverter()</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Builder for <code>SyncMcpToolCallback</code> instances.",
+      "translation": "用于构建<code>SyncMcpToolCallback</code>实例的构造器。",
+      "count": 1
+    },
+    {
+      "source": "Sets the prefixed tool name.",
+      "translation": "设置前缀工具名称。",
+      "count": 1
+    },
+    {
+      "source": "Sets the converter for tool context to MCP metadata transformation.",
+      "translation": "将工具上下文的转换器设置为 MCP 元数据转换。",
+      "count": 1
+    },
+    {
+      "source": "Sets the prefixed tool name. If not specified, a default prefix is generated.",
+      "translation": "设置前缀工具名称。如果未指定，则生成默认前缀。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if required parameters are missing",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果缺少必需参数",
+      "count": 1
+    },
+    {
+      "source": "<code>mcpClient</code> - the MCP client (required)",
+      "translation": "<code>mcpClient</code> - MCP 客户端（必需）",
+      "count": 1
+    },
+    {
+      "source": "<code>tool</code> - the MCP tool (required)",
+      "translation": "<code>tool</code> - MCP 工具（必需）",
+      "count": 1
+    },
+    {
+      "source": "<code>prefixedToolName</code> - the prefixed tool name",
+      "translation": "<code>prefixedToolName</code> - 带前缀的工具名称",
+      "count": 1
+    },
+    {
+      "source": "<code>toolContextToMcpMetaConverter</code> - the converter",
+      "translation": "<code>toolContextToMcpMetaConverter</code> - 转换器",
+      "count": 1
+    },
+    {
+      "source": "a new <code>SyncMcpToolCallback</code>",
+      "translation": "一个新的<code>SyncMcpToolCallback</code>",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, YunKui Lu, Ilayaperumal Gopinathan",
+      "translation": "Christian Tzolov，陆云魁，Ilayaperumal Gopinathan",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "created_at": "2026-06-15 09:07:30",
+  "updated_at": "2026-06-15 09:07:30",
+  "stats": {
+    "total_entries": 7,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 8,
+    "entries_with_hits": 7,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1428571428571428,
+    "usage_percentage": 0.0007
+  },
+  "items": [
+    {
+      "source": "Customize the <a href=\"SpringAiAnthropicHttpClient.Builder.html\" title=\"class in org.springframework.ai.anthropic.http.okhttp\"><code>SpringAiAnthropicHttpClient.Builder</code></a> prior to building the\nunderlying OkHttp client.",
+      "translation": "在构建底层的 OkHttp 客户端之前，自定义 <a href=\"SpringAiAnthropicHttpClient.Builder.html\" title=\"class in org.springframework.ai.anthropic.http.okhttp\"><code>SpringAiAnthropicHttpClient.Builder</code></a>。",
+      "count": 2
+    },
+    {
+      "source": "This method is called <em>twice</em> per\n<a href=\"../../AnthropicChatModel.html\" title=\"class in org.springframework.ai.anthropic\"><code>AnthropicChatModel</code></a> instance — once for the\nsynchronous client and once for the asynchronous client. Implementations must be\nidempotent; side effects that must fire exactly once (for example, registering an\n<code>EventListenerFactory</code> or binding external state) should guard against\nre-execution.",
+      "translation": "此方法在 <a href=\"../../AnthropicChatModel.html\" title=\"class in org.springframework.ai.anthropic\"><code>AnthropicChatModel</code></a> 实例上被调用两次——一次用于同步客户端，另一次用于异步客户端。实现必须满足幂等性；对于必须恰好执行一次的副作用（例如注册 <code>EventListenerFactory</code> 或绑定外部状态），应采取措施防止重复执行。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Callback for customizing the <a href=\"SpringAiAnthropicHttpClient.Builder.html\" title=\"class in org.springframework.ai.anthropic.http.okhttp\"><code>SpringAiAnthropicHttpClient.Builder</code></a> used by\n<a href=\"../../AnthropicChatModel.html\" title=\"class in org.springframework.ai.anthropic\"><code>AnthropicChatModel</code></a> before the underlying\n<code>OkHttpClient</code> is built. Implement this interface to register OkHttp interceptors\n(for example, a Spring Security OAuth2 client-credentials interceptor), swap the\ndispatcher <code>ExecutorService</code>, or tweak any other OkHttp setting exposed by the\nbuilder.",
+      "translation": "回调方法，用于自定义由<a href=\"../../AnthropicChatModel.html\" title=\"class in org.springframework.ai.anthropic\"><code>AnthropicChatModel</code></a>使用的<a href=\"SpringAiAnthropicHttpClient.Builder.html\" title=\"class in org.springframework.ai.anthropic.http.okhttp\"><code>SpringAiAnthropicHttpClient.Builder</code></a>，在底层构建<code>OkHttpClient</code>之前执行。实现此接口可注册 OkHttp 拦截器（例如 Spring Security OAuth2 客户端凭证拦截器）、替换分发器 <code>ExecutorService</code>，或调整 builder 暴露的任何其他 OkHttp 设置。",
+      "count": 1
+    },
+    {
+      "source": "<code>builder</code> - the builder to customize",
+      "translation": "<code>builder</code> - 用于自定义的构建器",
+      "count": 1
+    },
+    {
+      "source": "This is a functional interface and can therefore be used as the assignment target for a lambda expression or method reference.",
+      "translation": "这是一个函数式接口，因此可用作 Lambda 表达式或方法引用的赋值目标。",
+      "count": 1
+    },
+    {
+      "source": "Ilayaperumal Gopinathan",
+      "translation": "伊拉佩鲁马·戈皮纳坦",
+      "count": 1
+    }
+  ]
+}

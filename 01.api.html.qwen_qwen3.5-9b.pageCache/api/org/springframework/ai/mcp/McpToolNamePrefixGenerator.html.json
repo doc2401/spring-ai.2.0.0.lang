@@ -1,0 +1,51 @@
+{
+  "created_at": "2026-06-15 07:30:15",
+  "updated_at": "2026-06-15 07:30:15",
+  "stats": {
+    "total_entries": 7,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 8,
+    "entries_with_hits": 7,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1428571428571428,
+    "usage_percentage": 0.0007
+  },
+  "items": [
+    {
+      "source": "Static factory method to create a no-op prefix generator that returns the tool name",
+      "translation": "静态工厂方法，用于创建一个无操作的前缀生成器，该生成器返回工具名称。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Implementations of this interface can define custom logic to create meaningful and\nunique prefixes for tools, useful for avoiding name collisions in environments where\nmultiple MCP Servers provide tools.",
+      "translation": "该接口的实现可以定义自定义逻辑，为工具生成有意义且唯一的名称前缀，这在多个 MCP 服务器提供工具的同一环境中有助于避免名称冲突。",
+      "count": 1
+    },
+    {
+      "source": "The prefix generation can take into account various aspects of the MCP client, server\nand tool, such as client capabilities, client information, and server initialization\nresults, as well as specific attributes of the tool itself.",
+      "translation": "前缀生成可综合考虑 MCP 客户端、服务器及工具的各个方面，例如客户端能力、客户端信息、服务器初始化结果，以及工具本身的特定属性。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "a prefix generator that returns the tool name as-is",
+      "translation": "一个前缀生成器，原样返回工具名称。",
+      "count": 1
+    },
+    {
+      "source": "Strategy interface for generating prefixed tool name based on MCP client/server and\nTool information.",
+      "translation": "用于基于 MCP 客户端/服务器和工具信息生成带前缀的工具名称的策略接口。",
+      "count": 1
+    }
+  ]
+}

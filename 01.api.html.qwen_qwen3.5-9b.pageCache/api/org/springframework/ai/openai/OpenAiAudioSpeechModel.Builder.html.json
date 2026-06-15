@@ -1,0 +1,86 @@
+{
+  "created_at": "2026-06-15 07:32:36",
+  "updated_at": "2026-06-15 07:32:36",
+  "stats": {
+    "total_entries": 14,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 18,
+    "entries_with_hits": 14,
+    "entries_without_hits": 0,
+    "hit_rate": 1.2857142857142858,
+    "usage_percentage": 0.0014
+  },
+  "items": [
+    {
+      "source": "Builds the OpenAiAudioSpeechModel instance.",
+      "translation": "构建 OpenAiAudioSpeechModel 实例。",
+      "count": 2
+    },
+    {
+      "source": "Sets the OpenAIClient.",
+      "translation": "设置 OpenAIClient。",
+      "count": 2
+    },
+    {
+      "source": "Sets the default options.",
+      "translation": "设置默认选项。",
+      "count": 2
+    },
+    {
+      "source": "This builder",
+      "translation": "此构建器",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Registers an <a href=\"http/okhttp/OpenAiHttpClientBuilderCustomizer.html\" title=\"interface in org.springframework.ai.openai.http.okhttp\"><code>OpenAiHttpClientBuilderCustomizer</code></a> that mutates the\nunderlying OkHttp client builder before the OpenAI clients are constructed.",
+      "translation": "注册一个 <a href=\"http/okhttp/OpenAiHttpClientBuilderCustomizer.html\" title=\"interface in org.springframework.ai.openai.http.okhttpClient\"><code>OpenAiHttpClientBuilderCustomizer</code></a>，该自定义器会在构建 OpenAI 客户端之前修改底层的 OkHttp 客户端构建器。",
+      "count": 1
+    },
+    {
+      "source": "Sets the full list of <a href=\"http/okhttp/OpenAiHttpClientBuilderCustomizer.html\" title=\"interface in org.springframework.ai.openai.http.okhttp\"><code>customizers</code></a> to\napply, replacing any customizers registered earlier on this builder.",
+      "translation": "设置要应用的<a href=\"http/okhttp/OpenAiHttpClientBuilderCustomizer.html\" title=\"interface in org.springframework.ai.openai.http.okhttpClientBuilderCustomizer\"><code>customizers</code></a>完整列表，替换在此构建器上之前注册的任何自定义器。",
+      "count": 1
+    },
+    {
+      "source": "Registers an <a href=\"http/okhttp/OpenAiHttpClientBuilderCustomizer.html\" title=\"interface in org.springframework.ai.openai.http.okhttp\"><code>OpenAiHttpClientBuilderCustomizer</code></a> that mutates the\nunderlying OkHttp client builder before the OpenAI clients are constructed. Use\nthis to attach OkHttp interceptors (e.g. OAuth2 bearer-token injection), swap\nthe dispatcher executor, or tweak any other OkHttp setting. Customizers are\napplied in the order they are registered, after Spring AI's own defaults, so\nuser code wins.",
+      "translation": "注册一个 <a href=\"http/okhttp/OpenAiHttpClientBuilderCustomizer.html\" title=\"interface in org.springframework.ai.openai.http.okhttp\"><code>OpenAiHttpClientBuilderCustomizer</code></a>，该自定义器会在构建 OpenAI 客户端之前修改底层的 OkHttp 客户端构建器。您可以使用此功能附加 OkHttp 拦截器（例如注入 OAuth2 访问令牌）、替换分发器执行器，或调整任何其他 OkHttp 设置。自定义器按注册顺序应用，在 Spring AI 自身的默认配置之后生效，因此用户代码具有最高优先级。",
+      "count": 1
+    },
+    {
+      "source": "Sets the full list of <a href=\"http/okhttp/OpenAiHttpClientBuilderCustomizer.html\" title=\"interface in org.springframework.ai.openai.http.okhttp\"><code>customizers</code></a> to\napply, replacing any customizers registered earlier on this builder. The order\nof the list is preserved when invoking the customizers.",
+      "translation": "设置要应用的<a href=\"http/okhttp/OpenAiHttpClientBuilderCustomizer.html\" title=\"interface in org.springframework.ai.openai.http.okhttpClient\"><code>customizers</code></a>完整列表，替换在此构建器上先前注册的任意自定义器。调用自定义器时保留列表的顺序。",
+      "count": 1
+    },
+    {
+      "source": "Builder for creating OpenAiAudioSpeechModel instances.",
+      "translation": "用于创建 OpenAiAudioSpeechModel 实例的构建器。",
+      "count": 1
+    },
+    {
+      "source": "<code>openAiClient</code> - The OpenAIClient to use",
+      "translation": "<code>openAiClient</code> - 要使用的 OpenAIClient",
+      "count": 1
+    },
+    {
+      "source": "<code>options</code> - The default options to use",
+      "translation": "<code>options</code> - 要使用的默认选项",
+      "count": 1
+    },
+    {
+      "source": "Ahmed Yousri, Hyunjoon Choi, Thomas Vitale, Jonghoon Park, Ilayaperumal Gopinathan, Sebastien Deleuze",
+      "translation": "Ahmed Yousri，Hyunjoon Choi，Thomas Vitale，Jonghoon Park，Ilayaperumal Gopinathan，Sebastien Deleuze",
+      "count": 1
+    },
+    {
+      "source": "A new OpenAiAudioSpeechModel instance",
+      "translation": "一个新的 OpenAiAudioSpeechModel 实例",
+      "count": 1
+    }
+  ]
+}

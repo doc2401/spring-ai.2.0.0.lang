@@ -1,0 +1,296 @@
+{
+  "created_at": "2026-06-15 07:44:13",
+  "updated_at": "2026-06-15 07:44:13",
+  "stats": {
+    "total_entries": 56,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 61,
+    "entries_with_hits": 56,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0892857142857142,
+    "usage_percentage": 0.0056
+  },
+  "items": [
+    {
+      "source": "Create a new <a href=\"../observation/VectorStoreObservationContext.Builder.html\" title=\"class in org.springframework.ai.vectorstore.observation\"><code>VectorStoreObservationContext.Builder</code></a> instance.",
+      "translation": "创建一个新的<a href=\"../observation/VectorStoreObservationContext.Builder.html\" title=\"class in org.springframework.ai.vectorstore.observation\"><code>VectorStoreObservationContext.Builder</code></a>实例。",
+      "count": 2
+    },
+    {
+      "source": "Perform the actual add operation.",
+      "translation": "执行实际的加法操作。",
+      "count": 2
+    },
+    {
+      "source": "Perform the actual delete operation.",
+      "translation": "执行实际的删除操作。",
+      "count": 2
+    },
+    {
+      "source": "Template method for concrete implementations to provide filter-based deletion\nlogic.",
+      "translation": "为基于过滤器的删除逻辑提供具体实现的模板方法。",
+      "count": 2
+    },
+    {
+      "source": "Perform the actual similarity search operation.",
+      "translation": "执行实际的相似度搜索操作。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Key features include:",
+      "translation": "主要功能包括：",
+      "count": 1
+    },
+    {
+      "source": "Example usage:",
+      "translation": "使用示例：",
+      "count": 1
+    },
+    {
+      "source": "The vector store supports various configuration options through its builder:",
+      "translation": "向量存储通过其构建器支持多种配置选项：",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../VectorStore.html#getNativeClient()\">VectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../VectorStore.html#getNativeClient()\">VectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Returns the native client if available in this vector store implementation.\n\nNote on usage: 1. Returns empty Optional when no native client is available 2. Due\nto Java type erasure, runtime type checking is not possible\n\nExample usage: When working with implementation with known native client:\nOptional<nativeclienttype> client = vectorStore.getNativeClient();\n\nNote: Using Optional<span class=\"invalid-tag\">invalid input: '&lt;'</span>?&gt; will return the native client if one exists, rather than an\nempty Optional. For type safety, prefer using the specific client type.</nativeclienttype>",
+      "translation": "返回当前向量存储实现中可用的原生客户端。\n\n使用注意事项：1. 若无可用原生客户端，则返回空 Optional；2. 由于 Java 类型擦除，无法进行运行时类型检查。\n\n使用示例：在与已知原生客户端的实现协作时：Optional<nativeclienttype> client = vectorStore.getNativeClient();\n\n注意：使用 Optional<span class=\"invalid-tag\">无效输入：'&lt;'</span>?&gt; 将返回存在的原生客户端，而非空 Optional。为确保类型安全，建议使用特定的客户端类型。</nativeclienttype>",
+      "count": 1
+    },
+    {
+      "source": "Creates a new MilvusBuilder instance with the specified Milvus client.",
+      "translation": "使用指定的 Milvus 客户端创建一个新的 MilvusBuilder 实例。",
+      "count": 1
+    },
+    {
+      "source": "Returns the native client if available in this vector store implementation.",
+      "translation": "如果此向量存储实现中可用，则返回原生客户端。",
+      "count": 1
+    },
+    {
+      "source": "Creates a new MilvusBuilder instance with the specified Milvus client. This is the\nrecommended way to instantiate a MilvusBuilder.",
+      "translation": "使用指定的 Milvus 客户端创建一个新的 MilvusBuilder 实例。这是实例化 MilvusBuilder 的推荐方式。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">doAdd</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">doAdd</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">doDelete</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">doDelete</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">doDelete</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">doDelete</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">doSimilaritySearch</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">doSimilaritySearch</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">createObservationContextBuilder</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">createObservationContextBuilder</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../VectorStore.html#getNativeClient()\">getNativeClient</a></code> in interface <code><a href=\"../VectorStore.html\" title=\"interface in org.springframework.ai.vectorstore\">VectorStore</a></code>",
+      "translation": "接口 <code><a href=\"../VectorStore.html\" title=\"org.springframework.ai.vectorstore 中的接口\">VectorStore</a></code> 中的方法 <code><a href=\"../VectorStore.html#getNativeClient()\">getNativeClient</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code>builder</code> - <a href=\"../VectorStore.Builder.html\" title=\"interface in org.springframework.ai.vectorstore\"><code>VectorStore.Builder</code></a> for chroma vector store",
+      "translation": "<code>builder</code> - 用于 Chroma 向量存储的<a href=\"../VectorStore.Builder.html\" title=\"interface in org.springframework.ai.vectorstore\"><code>VectorStore.Builder</code></a>接口",
+      "count": 1
+    },
+    {
+      "source": "<code>afterPropertiesSet</code> in interface <code>org.springframework.beans.factory.InitializingBean</code>",
+      "translation": "接口 <code>org.springframework.beans.factory.InitializingBean</code> 中的 <code>afterPropertiesSet</code>",
+      "count": 1
+    },
+    {
+      "source": "<span id=\"getNativeClient()-type-param-T\"><code>T</code> - The type of the native client</span>",
+      "translation": "<span id=\"getNativeClient()-type-param-T\"><code>T</code> - 原生客户端的类型</span>",
+      "count": 1
+    },
+    {
+      "source": "<code>milvusClient</code>: Required Milvus service client for database operations",
+      "translation": "<code>milvusClient</code>：执行数据库操作所需的 Milvus 服务客户端",
+      "count": 1
+    },
+    {
+      "source": "<code>embeddingModel</code>: Required model for generating embeddings",
+      "translation": "<code>embeddingModel</code>：用于生成嵌入向量的必需模型",
+      "count": 1
+    },
+    {
+      "source": "<code>metricType</code>: Similarity metric (COSINE, L2, IP)",
+      "translation": "<code>metricType</code>：相似度度量（COSINE、L2、IP）",
+      "count": 1
+    },
+    {
+      "source": "<code>indexType</code>: Type of index for search optimization",
+      "translation": "<code>indexType</code>：用于搜索优化的索引类型",
+      "count": 1
+    },
+    {
+      "source": "<code>databaseName</code>: Name of the Milvus database (default: \"default\")",
+      "translation": "<code>databaseName</code>：Milvus 数据库的名称（默认值：\"default\"）",
+      "count": 1
+    },
+    {
+      "source": "<code>collectionName</code>: Name of the collection (default: \"vector_store\")",
+      "translation": "<code>collectionName</code>：集合名称（默认值：\"vector_store\"）",
+      "count": 1
+    },
+    {
+      "source": "<code>initializeSchema</code>: Whether to automatically create the schema",
+      "translation": "<code>initializeSchema</code>：是否自动创建模式",
+      "count": 1
+    },
+    {
+      "source": "<code>documents</code> - the documents to add",
+      "translation": "<code>documents</code> - 要添加的文档",
+      "count": 1
+    },
+    {
+      "source": "<code>idList</code> - the list of document IDs to delete",
+      "translation": "<code>idList</code> - 要删除的文档 ID 列表",
+      "count": 1
+    },
+    {
+      "source": "<code>filterExpression</code> - Filter expression to identify documents to delete",
+      "translation": "<code>filterExpression</code> - 用于标识要删除的文档的过滤表达式",
+      "count": 1
+    },
+    {
+      "source": "<code>request</code> - the search request",
+      "translation": "<code>request</code> - 搜索请求",
+      "count": 1
+    },
+    {
+      "source": "<code>operationName</code> - the operation name",
+      "translation": "<code>operationName</code> - 操作名称",
+      "count": 1
+    },
+    {
+      "source": "Support for different similarity metrics (Cosine, L2, Inner Product)",
+      "translation": "支持不同的相似度度量（余弦、L2、内积）",
+      "count": 1
+    },
+    {
+      "source": "Configurable index types for performance optimization",
+      "translation": "用于性能优化的可配置索引类型",
+      "count": 1
+    },
+    {
+      "source": "Metadata filtering capabilities",
+      "translation": "元数据过滤功能",
+      "count": 1
+    },
+    {
+      "source": "Automatic schema initialization",
+      "translation": "自动模式初始化",
+      "count": 1
+    },
+    {
+      "source": "Batching strategy support for efficient operations",
+      "translation": "支持高效的批处理策略",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Soby Chacko, Thomas Vitale, Ilayaperumal Gopinathan, chabinhwang",
+      "translation": "Christian Tzolov, Soby Chacko, Thomas Vitale, Ilayaperumal Gopinathan, chabinhwang",
+      "count": 1
+    },
+    {
+      "source": "a new MilvusBuilder instance",
+      "translation": "一个新的 MilvusBuilder 实例",
+      "count": 1
+    },
+    {
+      "source": "the list of documents that match the query request conditions",
+      "translation": "与查询请求条件匹配的文件列表",
+      "count": 1
+    },
+    {
+      "source": "the observation context builder",
+      "translation": "观察上下文构建器",
+      "count": 1
+    },
+    {
+      "source": "Optional containing native client if available, empty Optional otherwise",
+      "translation": "如有可用的本机客户端，则包含该客户端的 Optional；否则为空 Optional。",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "Milvus implementation of the <a href=\"../VectorStore.html\" title=\"interface in org.springframework.ai.vectorstore\"><code>VectorStore</code></a>\ninterface. This implementation supports storing and searching document embeddings using\nMilvus, an open-source vector database optimized for similarity search and AI\napplications.",
+      "translation": "Milvus 对 <a href=\"../VectorStore.html\" title=\"org.springframework.ai.vectorstore 接口中的接口\"><code>VectorStore</code></a>接口的实现。该实现支持使用 Milvus（一个专为相似性搜索和人工智能应用优化的开源向量数据库）存储和搜索文档嵌入。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>支持不同的相似度度量（余弦、L2、内积）</li>\n<li>用于性能优化的可配置索引类型</li>\n<li>元数据过滤功能</li>\n<li>自动模式初始化</li>\n<li>支持高效的批处理策略</li>\n</ul>",
+      "translation": "<ul>\n<li>支持多种相似度度量（余弦、L2、内积）</li>\n<li>用于性能优化的可配置索引类型</li>\n<li>元数据过滤功能</li>\n<li>自动模式初始化</li>\n<li>支持高效的批处理策略</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>// Create a basic Milvus vector store\nMilvusVectorStore vectorStore = MilvusVectorStore.builder(milvusServiceClient, embeddingModel)\n    .initializeSchema(true)\n    .build();\n\n// Create a customized Milvus vector store\nMilvusVectorStore customVectorStore = MilvusVectorStore.builder(milvusServiceClient, embeddingModel)\n    .databaseName(\"my_database\")\n    .collectionName(\"my_collection\")\n    .metricType(MetricType.COSINE)\n    .indexType(IndexType.IVF_FLAT)\n    .indexParameters(\"{\\\"nlist\\\":1024}\")\n    .embeddingDimension(1536)\n    .batchingStrategy(new TokenCountBatchingStrategy())\n    .initializeSchema(true)\n    .build();\n\n// Add documents to the store\nList&lt;Document&gt; documents = List.of(\n    new Document(\"content1\", Map.of(\"meta1\", \"value1\")),\n    new Document(\"content2\", Map.of(\"meta2\", \"value2\"))\n);\nvectorStore.add(documents);\n\n// Perform similarity search\nList&lt;Document&gt; results = vectorStore.similaritySearch(\n    SearchRequest.query(\"search text\")\n        .withTopK(5)\n        .withSimilarityThreshold(0.7)\n        .withFilterExpression(\"meta1 == 'value1'\")\n);\n</code></pre>",
+      "translation": "<pre><code>// 创建基础的 Milvus 向量存储\nMilvusVectorStore vectorStore = MilvusVectorStore.builder(milvusServiceClient, embeddingModel)\n    .initializeSchema(true)\n    .build();\n\n// 创建自定义的 Milvus 向量存储\nMilvusVectorStore customVectorStore = MilvusVectorStore.builder(milvusServiceClient, embeddingModel)\n    .databaseName(\"my_database\")\n    .collectionName(\"my_collection\")\n    .metricType(MetricType.COSINE)\n    .indexType(IndexType.IVF_FLAT)\n    .indexParameters(\"{\\\"nlist\\\":1024}\")\n    .embeddingDimension(1536)\n    .batchingStrategy(new TokenCountBatchingStrategy())\n    .initializeSchema(true)\n    .build();\n\n// 向存储中添加文档\nList&lt;Document&gt; documents = List.of(\n    new Document(\"content1\", Map.of(\"meta1\", \"value1\")),\n    new Document(\"content2\", Map.of(\"meta2\", \"value2\"))\n);\nvectorStore.add(documents);\n\n// 执行相似度搜索\nList&lt;Document&gt; results = vectorStore.similaritySearch(\n    SearchRequest.query(\"search text\")\n        .withTopK(5)\n        .withSimilarityThreshold(0.7)\n        .withFilterExpression(\"meta1 == 'value1'\")\n);\n</code></pre>",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li><code>milvusClient</code>：执行数据库操作所需的 Milvus 服务客户端</li>\n<li><code>embeddingModel</code>：用于生成嵌入向量的必需模型</li>\n<li><code>metricType</code>：相似度度量（COSINE、L2、IP）</li>\n<li><code>indexType</code>：用于搜索优化的索引类型</li>\n<li><code>databaseName</code>：Milvus 数据库的名称（默认值：\"default\"）</li>\n<li><code>collectionName</code>：集合名称（默认值：\"vector_store\"）</li>\n<li><code>initializeSchema</code>：是否自动创建模式</li>\n</ul>",
+      "translation": "<ul>\n<li><code>milvusClient</code>：执行数据库操作所需的 Milvus 服务客户端</li>\n<li><code>embeddingModel</code>：用于生成嵌入向量的必需模型</li>\n<li><code>metricType</code>：相似度度量（COSINE、L2、IP）</li>\n<li><code>indexType</code>：用于搜索优化的索引类型</li>\n<li><code>databaseName</code>：Milvus 数据库的名称（默认值：\"default\"）</li>\n<li><code>collectionName</code>：集合名称（默认值：\"vector_store\"）</li>\n<li><code>initializeSchema</code>：是否自动创建模式</li>\n</ul>",
+      "count": 1
+    }
+  ]
+}

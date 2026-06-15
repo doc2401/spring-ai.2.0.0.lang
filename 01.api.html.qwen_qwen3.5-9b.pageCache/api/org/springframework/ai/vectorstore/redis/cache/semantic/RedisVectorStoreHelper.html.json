@@ -1,0 +1,66 @@
+{
+  "created_at": "2026-06-15 07:48:10",
+  "updated_at": "2026-06-15 07:48:10",
+  "stats": {
+    "total_entries": 10,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 15,
+    "entries_with_hits": 10,
+    "entries_without_hits": 0,
+    "hit_rate": 1.5,
+    "usage_percentage": 0.001
+  },
+  "items": [
+    {
+      "source": "Creates a pre-configured RedisVectorStore suitable for semantic caching.",
+      "translation": "创建一个适用于语义缓存的预配置 RedisVectorStore。",
+      "count": 2
+    },
+    {
+      "source": "Creates a pre-configured RedisVectorStore with custom index name and prefix.",
+      "translation": "创建一个具有自定义索引名称和前缀的预配置 RedisVectorStore。",
+      "count": 2
+    },
+    {
+      "source": "<code>jedisClient</code> - The Redis client to use",
+      "translation": "<jedisClient> - 要使用的 Redis 客户端",
+      "count": 2
+    },
+    {
+      "source": "<code>embeddingModel</code> - The embedding model to use for vectorization",
+      "translation": "<code>embeddingModel</code> - 用于向量化处理的嵌入模型",
+      "count": 2
+    },
+    {
+      "source": "A configured RedisVectorStore instance",
+      "translation": "已配置的 RedisVectorStore 实例",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Helper utility for creating and configuring Redis-based vector stores for semantic\ncaching.",
+      "translation": "用于创建和配置基于 Redis 的向量存储以支持语义缓存的辅助工具。",
+      "count": 1
+    },
+    {
+      "source": "<code>indexName</code> - The name of the search index to create",
+      "translation": "<code>indexName</code> - 要创建的搜索索引的名称",
+      "count": 1
+    },
+    {
+      "source": "<code>prefix</code> - The key prefix to use for Redis documents",
+      "translation": "<code>prefix</code> - 用于 Redis 文档的键前缀",
+      "count": 1
+    },
+    {
+      "source": "Brian Sam-Bodden, Yanming Zhou",
+      "translation": "布莱恩·萨姆 - 博登，周燕明",
+      "count": 1
+    }
+  ]
+}

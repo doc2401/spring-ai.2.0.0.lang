@@ -1,0 +1,296 @@
+{
+  "created_at": "2026-06-15 07:54:34",
+  "updated_at": "2026-06-15 07:54:34",
+  "stats": {
+    "total_entries": 56,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 98,
+    "entries_with_hits": 56,
+    "entries_without_hits": 0,
+    "hit_rate": 1.75,
+    "usage_percentage": 0.0056
+  },
+  "items": [
+    {
+      "source": "<code>context</code> - the context to append the string representation to",
+      "translation": "<code>context</code> - 要追加字符串表示形式的上下文",
+      "count": 12
+    },
+    {
+      "source": "Convert the given value range into a string representation.",
+      "translation": "将给定的值范围转换为字符串表示形式。",
+      "count": 6
+    },
+    {
+      "source": "Convert the given group into a string representation.",
+      "translation": "将给定组转换为字符串表示形式。",
+      "count": 6
+    },
+    {
+      "source": "Convert the given operand into a string representation.",
+      "translation": "将给定的操作数转换为字符串表示形式。",
+      "count": 4
+    },
+    {
+      "source": "Convert the given expression into a string representation.",
+      "translation": "将给定表达式转换为字符串表示形式。",
+      "count": 4
+    },
+    {
+      "source": "<code>expression</code> - the expression to convert",
+      "translation": "<code>expression</code> - 要转换的表达式",
+      "count": 3
+    },
+    {
+      "source": "<code>group</code> - the group to convert",
+      "translation": "<code>group</code> - 要转换的组",
+      "count": 3
+    },
+    {
+      "source": "<code>listValue</code> - the value range to convert",
+      "translation": "<code>listValue</code> - 要转换的值范围",
+      "count": 3
+    },
+    {
+      "source": "Convert the given <a href=\"../Filter.Expression.html\" title=\"class in org.springframework.ai.vectorstore.filter\"><code>Filter.Expression</code></a> into a <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html\" title=\"class or interface in java.lang\"><code>String</code></a> representation.",
+      "translation": "将<a href=\"../Filter.Expression.html\" title=\"class in org.springframework.ai.vectorstore.filter\"><code>Filter.Expression</code></a>转换为<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html\" title=\"class or interface in java.lang\"><code>String</code></a>表示形式。",
+      "count": 2
+    },
+    {
+      "source": "Formatter for parsing and normalizing ISO date strings.",
+      "translation": "用于解析和标准化 ISO 日期字符串的格式化程序。",
+      "count": 2
+    },
+    {
+      "source": "Pattern for ISO-8601 date strings in UTC (yyyy-MM-dd'T'HH:mm:ss'Z') used to\nrecognize and normalize date strings before passing to converters.",
+      "translation": "用于在传递给转换器之前识别和标准化日期字符串的 ISO-8601 日期字符串模式（UTC，格式为 yyyy-MM-dd'T'HH:mm:ss'Z'）。",
+      "count": 2
+    },
+    {
+      "source": "Create a new AbstractFilterExpressionConverter.",
+      "translation": "创建一个新的抽象过滤器表达式转换器。",
+      "count": 2
+    },
+    {
+      "source": "Convert the given key into a string representation.",
+      "translation": "将给定的键转换为字符串表示形式。",
+      "count": 2
+    },
+    {
+      "source": "Convert the given value into a string representation.",
+      "translation": "将给定值转换为字符串表示形式。",
+      "count": 2
+    },
+    {
+      "source": "Check if the given string has outer quotes.",
+      "translation": "检查给定字符串是否具有外层引号。",
+      "count": 2
+    },
+    {
+      "source": "Remove the outer quotes from the given string.",
+      "translation": "移除给定字符串的外层引号。",
+      "count": 2
+    },
+    {
+      "source": "<code>operand</code> - the operand to convert",
+      "translation": "<code>operand</code> - 要转换的操作数",
+      "count": 2
+    },
+    {
+      "source": "For convenience, implementations can use the provided static helper methods such as\n<a href=\"#emitJsonValue(java.lang.Object,java.lang.StringBuilder)\"><code>emitJsonValue(Object, StringBuilder)</code></a> for JSON-based filters,\n<a href=\"#emitLuceneString(java.lang.String,java.lang.StringBuilder)\"><code>emitLuceneString(String, StringBuilder)</code></a> for Lucene-based filters, or\nimplement their own format-specific escaping logic as needed.",
+      "translation": "为了方便起见，实现可以使用提供的静态辅助方法，例如基于 JSON 的过滤器可使用<a href=\"#emitJsonValue(java.lang.Object,java.lang.StringBuilder)\"><code>emitJsonValue(Object, StringBuilder)</code></a>，基于 Lucene 的过滤器可使用<a href=\"#emitLuceneString(java.lang.String,java.lang.StringBuilder)\"><code>emitLuceneString(String, StringBuilder)</code></a>，或者根据需要自行实现特定格式的转义逻辑。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Lucene/Elasticsearch query strings require backslash-escaping of special\ncharacters: <code>+ - = ! ( ) { } [ ] ^ \" ~ * ? : \\ / &amp; | &lt; &gt; </code> as well as spaces.",
+      "translation": "Lucene/Elasticsearch 查询字符串需要对特殊字符进行反斜杠转义：<code>+ - = ! ( ) { } [ ] ^ \" ~ * ? : \\ / &amp; | &lt; &gt; </code>以及空格。",
+      "count": 1
+    },
+    {
+      "source": "This method uses Jackson's ObjectMapper to properly serialize all value types:",
+      "translation": "该方法使用 Jackson 的 ObjectMapper 正确序列化所有值类型：",
+      "count": 1
+    },
+    {
+      "source": "If the value is a string matching the ISO date pattern, parse and return as\n<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Date.html\" title=\"class or interface in java.util\"><code>Date</code></a> so that all converters that handle <code>Date</code> automatically support\ndate strings.",
+      "translation": "如果该值是与 ISO 日期模式匹配的字符串，则将其解析并返回为<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Date.html\" title=\"class or interface in java.util\"><code>Date</code></a>，以便所有处理<code>Date</code>的转换器都能自动支持日期字符串。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../FilterExpressionConverter.html#convertExpression(org.springframework.ai.vectorstore.filter.Filter.Expression)\">FilterExpressionConverter</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../FilterExpressionConverter.html#convertExpression(org.springframework.ai.vectorstore.filter.Filter.Expression)\">FilterExpressionConverter</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "If the value is a string matching the ISO date pattern, parse and return as\n<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Date.html\" title=\"class or interface in java.util\"><code>Date</code></a> so that all converters that handle <code>Date</code> automatically support\ndate strings. Otherwise return the value unchanged.",
+      "translation": "如果该值是与 ISO 日期模式匹配的字符串，则将其解析并返回为<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Date.html\" title=\"class or interface in java.util\"><code>Date</code></a>，以便所有处理<code>Date</code>的转换器都能自动支持日期字符串；否则，原样返回该值。",
+      "count": 1
+    },
+    {
+      "source": "AbstractFilterExpressionConverter is an abstract class that implements the\nFilterExpressionConverter interface. It provides default implementations for converting\na Filter.Expression into a string representation. All specific filter expression\nconverters should extend this abstract class and implement the remaining abstract\nmethods. Note: The class cannot be directly instantiated as it is abstract.",
+      "translation": "AbstractFilterExpressionConverter 是一个抽象类，实现了 FilterExpressionConverter 接口。它提供了将 Filter.Expression 转换为字符串表示形式的默认实现。所有具体的过滤器表达式转换器都应扩展此抽象类并实现其余的抽象方法。注意：由于该类是抽象的，因此不能直接实例化。",
+      "count": 1
+    },
+    {
+      "source": "Convert the given single value into a string representation and append it to the\ncontext.",
+      "translation": "将给定单值转换为字符串表示形式，并将其附加到上下文中。",
+      "count": 1
+    },
+    {
+      "source": "Emit a value formatted as JSON by appending its JSON representation to the provided\ncontext.",
+      "translation": "将提供的上下文附加其 JSON 表示形式，以发出格式化为 JSON 的值。",
+      "count": 1
+    },
+    {
+      "source": "Emit a string value formatted for Lucene query syntax by appending escaped\ncharacters to the provided context.",
+      "translation": "通过向提供的上下文追加转义字符，生成符合 Lucene 查询语法的字符串值。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../FilterExpressionConverter.html#convertExpression(org.springframework.ai.vectorstore.filter.Filter.Expression)\">convertExpression</a></code> in interface <code><a href=\"../FilterExpressionConverter.html\" title=\"interface in org.springframework.ai.vectorstore.filter\">FilterExpressionConverter</a></code>",
+      "translation": "接口 <code><a href=\"../FilterExpressionConverter.html\" title=\"org.springframework.ai.vectorstore.filter 中的接口\">FilterExpressionConverter</a></code> 中的方法 <code><a href=\"../FilterExpressionConverter.html#convertExpression(org.springframework.ai.vectorstore.filter.Filter.Expression)\">convertExpression</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<ul class=\"tag-list-long\">\n<li><a href=\"https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html#_reserved_characters\">Elasticsearch\nReserved Characters</a></li>\n</ul>",
+      "translation": "<ul class=\"tag-list-long\">\n<li><a href=\"https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html#_reserved_characters\">Elasticsearch 保留字符</a></li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "Booleans: formatted as JSON literals <code>true</code> or <code>false</code>",
+      "translation": "布尔值：格式化为 JSON 字面量 <code>true</code> 或 <code>false</code>",
+      "count": 1
+    },
+    {
+      "source": "null: formatted as JSON literal <code>null</code>",
+      "translation": "null：以 JSON 字面量<code>null</code>格式呈现",
+      "count": 1
+    },
+    {
+      "source": "<code>filterKey</code> - the key to convert",
+      "translation": "<code>filterKey</code> - 要转换的键",
+      "count": 1
+    },
+    {
+      "source": "<code>filterValue</code> - the value to convert",
+      "translation": "<code>filterValue</code> - 要转换的值",
+      "count": 1
+    },
+    {
+      "source": "<code>value</code> - the value (possibly a date string)",
+      "translation": "<code>value</code> - 值（可能是日期字符串）",
+      "count": 1
+    },
+    {
+      "source": "the value, or a <code>Date</code> if the value was a parseable date string",
+      "translation": "值，或者如果该值是可解析的日期字符串，则为 `<code>Date`。",
+      "count": 1
+    },
+    {
+      "source": "<code>value</code> - the value to convert",
+      "translation": "<code>value</code> - 要转换的值",
+      "count": 1
+    },
+    {
+      "source": "<code>value</code> - the string value to format",
+      "translation": "<code>value</code> - 要格式化的字符串值",
+      "count": 1
+    },
+    {
+      "source": "<code>context</code> - the context to append the escaped string to",
+      "translation": "<code>context</code> - 用于追加转义字符串的上下文",
+      "count": 1
+    },
+    {
+      "source": "<code>value</code> - the value to format (can be any type)",
+      "translation": "<code>value</code> - 要格式化的值（可以是任何类型）",
+      "count": 1
+    },
+    {
+      "source": "<code>context</code> - the context to append the JSON representation to",
+      "translation": "<code>context</code> - 要追加 JSON 表示形式的上下文",
+      "count": 1
+    },
+    {
+      "source": "<code>str</code> - the string to check",
+      "translation": "<code>str</code> - 要检查的字符串",
+      "count": 1
+    },
+    {
+      "source": "<code>in</code> - the string to remove the outer quotes from",
+      "translation": "<code>in</code> - 要移除外层引号的字符串",
+      "count": 1
+    },
+    {
+      "source": "Strings: properly quoted and escaped with double quotes, backslashes, and\ncontrol characters handled",
+      "translation": "字符串：使用双引号正确引用和转义，并正确处理反斜杠和控制字符。",
+      "count": 1
+    },
+    {
+      "source": "Numbers: formatted without quotes (e.g., 42, 3.14)",
+      "translation": "数字：不带引号格式化（例如，42、3.14）",
+      "count": 1
+    },
+    {
+      "source": "Other types: handled according to Jackson's default serialization",
+      "translation": "其他类型：按照 Jackson 的默认序列化方式处理。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "the converted expression",
+      "translation": "转换后的表达式",
+      "count": 1
+    },
+    {
+      "source": "the string representation of the operand",
+      "translation": "操作数的字符串表示形式",
+      "count": 1
+    },
+    {
+      "source": "true if the string has outer quotes, false otherwise",
+      "translation": "如果字符串具有外层引号则返回 true，否则返回 false。",
+      "count": 1
+    },
+    {
+      "source": "the string without the outer quotes",
+      "translation": "不带外层引号的字符串",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "Convert the given single value into a string representation and append it to the\ncontext. This method handles all value types including String, Number, Boolean,\nDate, etc.",
+      "translation": "将给定的单个值转换为字符串表示形式并附加到上下文中。此方法处理所有值类型，包括 String、Number、Boolean、Date 等。",
+      "count": 1
+    },
+    {
+      "source": "Emit a string value formatted for Lucene query syntax by appending escaped\ncharacters to the provided context. Used by Elasticsearch, OpenSearch, and GemFire\nVectorDB query string filters.",
+      "translation": "将提供的上下文附加转义字符，以生成符合 Lucene 查询语法的字符串值。该功能由 Elasticsearch、OpenSearch 和 GemFire VectorDB 的查询字符串过滤器使用。",
+      "count": 1
+    },
+    {
+      "source": "Emit a value formatted as JSON by appending its JSON representation to the provided\ncontext. Used for PostgreSQL JSONPath, Neo4j Cypher, Weaviate GraphQL, and other\nJSON-based filter expressions.",
+      "translation": "通过将其 JSON 表示形式附加到提供的上下文中，以 JSON 格式发出值。此功能用于 PostgreSQL JSONPath、Neo4j Cypher、Weaviate GraphQL 及其他基于 JSON 的过滤表达式。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>字符串：使用双引号正确引用和转义，并正确处理反斜杠和控制字符。</li>\n<li>数字：不带引号格式化（例如，42、3.14）</li>\n<li>布尔值：格式化为 JSON 字面量 <code>true</code> 或 <code>false</code></li>\n<li>null：以 JSON 字面量<code>null</code>格式呈现</li>\n<li>其他类型：按照 Jackson 的默认序列化方式处理。</li>\n</ul>",
+      "translation": "<ul>\n<li>字符串：使用双引号正确引用和转义，并正确处理反斜杠和控制字符。</li>\n<li>数字：不带引号格式化（例如，42、3.14）</li>\n<li>布尔值：格式化为 JSON 字面量 <code>true</code> 或 <code>false</code></li>\n<li>null：以 JSON 字面量<code>null</code>格式呈现</li>\n<li>其他类型：按照 Jackson 的默认序列化方式处理。</li>\n</ul>",
+      "count": 1
+    }
+  ]
+}

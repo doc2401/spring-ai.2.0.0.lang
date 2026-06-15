@@ -1,0 +1,186 @@
+{
+  "created_at": "2026-06-15 07:43:09",
+  "updated_at": "2026-06-15 07:43:09",
+  "stats": {
+    "total_entries": 34,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 39,
+    "entries_with_hits": 34,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1470588235294117,
+    "usage_percentage": 0.0034
+  },
+  "items": [
+    {
+      "source": "Create a new <a href=\"../observation/VectorStoreObservationContext.Builder.html\" title=\"class in org.springframework.ai.vectorstore.observation\"><code>VectorStoreObservationContext.Builder</code></a> instance.",
+      "translation": "创建一个新的<a href=\"../observation/VectorStoreObservationContext.Builder.html\" title=\"class in org.springframework.ai.vectorstore.observation\"><code>VectorStoreObservationContext.Builder</code></a>实例。",
+      "count": 2
+    },
+    {
+      "source": "Perform the actual add operation.",
+      "translation": "执行实际的加法操作。",
+      "count": 2
+    },
+    {
+      "source": "Perform the actual delete operation.",
+      "translation": "执行实际的删除操作。",
+      "count": 2
+    },
+    {
+      "source": "Perform the actual similarity search operation.",
+      "translation": "执行实际的相似度搜索操作。",
+      "count": 2
+    },
+    {
+      "source": "Checks if the index exists in the GemFireVectorStore.",
+      "translation": "检查索引是否存在于 GemFireVectorStore 中。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Builder class for creating <a href=\"GemFireVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.gemfire\"><code>GemFireVectorStore</code></a> instances.",
+      "translation": "用于创建<a href=\"GemFireVectorStore.html\" title=\"org.springframework.ai.vectorstore.gemfire 中的类\"><code>GemFireVectorStore</code></a>实例的构建器类。",
+      "count": 1
+    },
+    {
+      "source": "A VectorStore implementation backed by GemFire. This store supports creating, updating,\ndeleting, and similarity searching of documents in a GemFire index.",
+      "translation": "这是一个由 GemFire 支持的 VectorStore 实现。该存储支持在 GemFire 索引中创建、更新、删除文档以及进行相似度搜索。",
+      "count": 1
+    },
+    {
+      "source": "Protected constructor that accepts a builder instance.",
+      "translation": "接受构建器实例的受保护构造函数。",
+      "count": 1
+    },
+    {
+      "source": "Initializes the GemFireVectorStore after properties are set.",
+      "translation": "在设置属性后初始化 GemFireVectorStore。",
+      "count": 1
+    },
+    {
+      "source": "Creates a new index in the GemFireVectorStore using specified parameters.",
+      "translation": "使用指定参数在 GemFireVectorStore 中创建新索引。",
+      "count": 1
+    },
+    {
+      "source": "Protected constructor that accepts a builder instance. This is the preferred way to\ncreate new GemFireVectorStore instances.",
+      "translation": "受保护的构造函数，接受一个构建器实例。这是创建新 GemFireVectorStore 实例的首选方式。",
+      "count": 1
+    },
+    {
+      "source": "Initializes the GemFireVectorStore after properties are set. This method is called\nafter all bean properties have been set and allows the bean to perform any\ninitialization it requires.",
+      "translation": "在设置属性后初始化 GemFireVectorStore。此方法在所有 Bean 属性设置完成后被调用，并允许 Bean 执行其所需的任何初始化操作。",
+      "count": 1
+    },
+    {
+      "source": "Creates a new index in the GemFireVectorStore using specified parameters. This\nmethod is invoked during initialization.",
+      "translation": "使用指定参数在 GemFireVectorStore 中创建新索引。此方法在初始化期间被调用。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">doAdd</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">doAdd</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">doDelete</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">doDelete</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">doSimilaritySearch</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">doSimilaritySearch</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">createObservationContextBuilder</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">createObservationContextBuilder</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>afterPropertiesSet</code> in interface <code>org.springframework.beans.factory.InitializingBean</code>",
+      "translation": "接口 <code>org.springframework.beans.factory.InitializingBean</code> 中的 <code>afterPropertiesSet</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>true</code> if the index exists, <code>false</code> otherwise",
+      "translation": "如果索引存在则返回 <code>true</code>，否则返回 <code>false</code>。",
+      "count": 1
+    },
+    {
+      "source": "<code>builder</code> - the configured builder instance",
+      "translation": "<code>builder</code> - 已配置的构建器实例",
+      "count": 1
+    },
+    {
+      "source": "<code>documents</code> - the documents to add",
+      "translation": "<code>documents</code> - 要添加的文档",
+      "count": 1
+    },
+    {
+      "source": "<code>idList</code> - the list of document IDs to delete",
+      "translation": "<code>idList</code> - 要删除的文档 ID 列表",
+      "count": 1
+    },
+    {
+      "source": "<code>request</code> - the search request",
+      "translation": "<code>request</code> - 搜索请求",
+      "count": 1
+    },
+    {
+      "source": "<code>operationName</code> - the operation name",
+      "translation": "<code>operationName</code> - 操作名称",
+      "count": 1
+    },
+    {
+      "source": "Geet Rawat, Christian Tzolov, Thomas Vitale, Soby Chacko, Sebastien Deleuze, chabinhwang",
+      "translation": "Geet Rawat，Christian Tzolov，Thomas Vitale，Soby Chacko，Sebastien Deleuze，chabinhwang",
+      "count": 1
+    },
+    {
+      "source": "the list of documents that match the query request conditions",
+      "translation": "与查询请求条件匹配的文件列表",
+      "count": 1
+    },
+    {
+      "source": "the observation context builder",
+      "translation": "观察上下文构建器",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    }
+  ]
+}

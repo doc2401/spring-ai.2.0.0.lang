@@ -1,0 +1,86 @@
+{
+  "created_at": "2026-06-15 08:02:51",
+  "updated_at": "2026-06-15 08:02:51",
+  "stats": {
+    "total_entries": 14,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 22,
+    "entries_with_hits": 14,
+    "entries_without_hits": 0,
+    "hit_rate": 1.5714285714285714,
+    "usage_percentage": 0.0014
+  },
+  "items": [
+    {
+      "source": "Constructs a ParagraphPdfDocumentReader using a resource URL.",
+      "translation": "使用资源 URL 构建一个 ParagraphPdfDocumentReader。",
+      "count": 2
+    },
+    {
+      "source": "Constructs a ParagraphPdfDocumentReader using a resource URL and a configuration.",
+      "translation": "使用资源 URL 和配置构建一个 ParagraphPdfDocumentReader。",
+      "count": 2
+    },
+    {
+      "source": "Constructs a ParagraphPdfDocumentReader using a resource.",
+      "translation": "使用资源构建一个 ParagraphPdfDocumentReader。",
+      "count": 2
+    },
+    {
+      "source": "Constructs a ParagraphPdfDocumentReader using a resource and a configuration.",
+      "translation": "使用资源（resource）和配置（configuration）构建一个 ParagraphPdfDocumentReader。",
+      "count": 2
+    },
+    {
+      "source": "Reads and processes the PDF document to extract paragraphs.",
+      "translation": "读取并处理 PDF 文档以提取段落。",
+      "count": 2
+    },
+    {
+      "source": "<code>resourceUrl</code> - The URL of the PDF resource.",
+      "translation": "<code>resourceUrl</code> - PDF 资源的 URL。",
+      "count": 2
+    },
+    {
+      "source": "<code>pdfResource</code> - The PDF resource.",
+      "translation": "<code>pdfResource</code> - PDF 资源。",
+      "count": 2
+    },
+    {
+      "source": "<code>config</code> - The configuration for PDF document processing.",
+      "translation": "<code>config</code> - PDF 文档处理的配置。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Uses the PDF catalog (e.g. TOC) information to split the input PDF into text paragraphs\nand output a single <a href=\"../../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a> per paragraph.\n\nThis class provides methods for reading and processing PDF documents. It uses the\nApache PDFBox library for parsing PDF content and converting it into text paragraphs.\nThe paragraphs are grouped into <a href=\"../../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a> objects.",
+      "translation": "使用 PDF 目录（例如 TOC）信息将输入 PDF 拆分为文本段落，并为每个段落输出一个<a href=\"../../document/Document.html\" title=\"org.springframework.ai.document 中的类\"><code>Document</code></a>。\n\n该类提供了读取和处理 PDF 文档的方法。它使用 Apache PDFBox 库来解析 PDF 内容并将其转换为文本段落。这些段落被分组到<a href=\"../../document/Document.html\" title=\"org.springframework.ai.document 中的类\"><code>Document</code></a>对象中。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html#get()\" title=\"class or interface in java.util.function\">get</a></code> in interface <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html\" title=\"class or interface in java.util.function\">Supplier</a>&lt;<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"class or interface in java.util\">List</a>&lt;<a href=\"../../document/Document.html\" title=\"class in org.springframework.ai.document\">Document</a>&gt;&gt;</code>",
+      "translation": "接口 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html\" title=\"类或 java.util.function 中的接口\">Supplier</a>&lt;<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"类或 java.util 中的接口\">List</a>&lt;<a href=\"../../document/Document.html\" title=\"org.springframework.ai.document 中的类\">Document</a>&gt;&gt;</code> 中的 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html#get()\" title=\"java.util.function 中的类或接口\">get</a></code>",
+      "count": 1
+    },
+    {
+      "source": "A list of <a href=\"../../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a> objects representing paragraphs.",
+      "translation": "代表段落的<a href=\"../../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a>对象列表。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Heonwoo Kim",
+      "translation": "克里斯蒂安·茨洛夫，金贤宇",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    }
+  ]
+}

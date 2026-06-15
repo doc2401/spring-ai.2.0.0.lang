@@ -1,0 +1,61 @@
+{
+  "created_at": "2026-06-15 08:44:45",
+  "updated_at": "2026-06-15 08:44:45",
+  "stats": {
+    "total_entries": 9,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 9,
+    "entries_with_hits": 9,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.0009
+  },
+  "items": [
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "References:\n<a href=\"https://api-docs.deepseek.com/api/create-chat-completion\">DeepSeek API -\nCreate Chat Completion</a>",
+      "translation": "参考资料：\n<a href=\"https://api-docs.deepseek.com/api/create-chat-completion\">DeepSeek API - 创建对话补全</a>",
+      "count": 1
+    },
+    {
+      "source": "Important: When using JSON Output, you must also instruct the model to produce JSON\nyourself via a system or user message. Without this, the model may generate an unending\nstream of whitespace until the generation reaches the token limit, resulting in a\nlong-running and seemingly \"stuck\" request. Also note that the message content may be\npartially cut off if finish_reason=\"length\", which indicates the generation exceeded\nmax_tokens or the conversation exceeded the max context length.",
+      "translation": "重要提示：在使用 JSON 输出时，您必须通过系统消息或用户消息指示模型自行生成 JSON。否则，模型可能会生成无尽的空白字符，直到达到 token 限制，从而导致请求长时间运行且看似“卡住”。此外，如果 finish_reason=\"length\"，则表明生成长度超过了 max_tokens 或对话超出了最大上下文长度，此时消息内容可能会被部分截断。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)\" title=\"class or interface in java.lang\">equals</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"class or interface in java.lang\">Object</a></code>",
+      "translation": "`Object` 类中的 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)\" title=\"class or interface in java.lang\">equals</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#hashCode()\" title=\"class or interface in java.lang\">hashCode</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"class or interface in java.lang\">Object</a></code>",
+      "translation": "类 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"java.lang 中的类或接口\">Object</a></code> 中的 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#hashCode()\" title=\"java.lang 中的类或接口\">hashCode</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#toString()\" title=\"class or interface in java.lang\">toString</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"class or interface in java.lang\">Object</a></code>",
+      "translation": "类 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"java.lang 中的类或接口\">Object</a></code> 中的 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#toString()\" title=\"java.lang 中的类或接口\">toString</a></code>",
+      "count": 1
+    },
+    {
+      "source": "Geng Rong",
+      "translation": "耿荣",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "An object specifying the format that the model must output. Setting to { \"type\":\n\"json_object\" } enables JSON Output, which guarantees the message the model generates\nis valid JSON.",
+      "translation": "指定模型必须输出的格式的物体。将其设置为{ \"type\": \"json_object\" }可启用 JSON 输出，从而保证模型生成的消息是有效的 JSON。",
+      "count": 1
+    }
+  ]
+}

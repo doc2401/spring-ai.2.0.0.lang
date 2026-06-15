@@ -1,0 +1,96 @@
+{
+  "created_at": "2026-06-15 08:58:01",
+  "updated_at": "2026-06-15 08:58:01",
+  "stats": {
+    "total_entries": 16,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 19,
+    "entries_with_hits": 16,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1875,
+    "usage_percentage": 0.0015999999999999999
+  },
+  "items": [
+    {
+      "source": "Builder for creating instances of ToolCallingAdvisor.",
+      "translation": "用于创建 ToolCallingAdvisor 实例的构建器。",
+      "count": 3
+    },
+    {
+      "source": "Recursive Advisor that disables the internal tool execution flow and instead implements\nthe tool calling loop as part of the advisor chain.",
+      "translation": "递归顾问，该顾问禁用内部工具执行流程，并将工具调用循环作为顾问链的一部分实现。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "A <a href=\"api/CallAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>CallAdvisor</code></a> that uses a <a href=\"../../model/ChatModel.html\" title=\"interface in org.springframework.ai.chat.model\"><code>ChatModel</code></a> to generate a response.",
+      "translation": "一个使用 <a href=\"../../model/ChatModel.html\" title=\"interface in org.springframework.ai.chat.model\"><code>ChatModel</code></a> 来生成响应的<a href=\"api/CallAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>CallAdvisor</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "A <a href=\"api/StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>StreamAdvisor</code></a> that uses a <a href=\"../../model/ChatModel.html\" title=\"interface in org.springframework.ai.chat.model\"><code>ChatModel</code></a> to generate a streaming response.",
+      "translation": "一个使用 <a href=\"../../model/ChatModel.html\" title=\"interface in org.springframework.ai.chat.model\"><code>ChatModel</code></a> 来生成流式响应的 <a href=\"api/StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>StreamAdvisor</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "since 2.0.0 in favor of <a href=\"ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor</code></a>.",
+      "translation": "自 2.0.0 版本起，推荐使用<a href=\"ToolCallingAdvisor.html\" title=\"org.springframework.ai.chat.client.advisor 中的类\"><code>ToolCallingAdvisor</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "since 2.0.0 in favor of <a href=\"ToolCallingAdvisor.Builder.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor.Builder</code></a>.",
+      "translation": "自 2.0.0 版本起，推荐使用<a href=\"ToolCallingAdvisor.Builder.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor.Builder</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Default implementation for the <a href=\"api/BaseAdvisorChain.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>BaseAdvisorChain</code></a>.",
+      "translation": "`BaseAdvisorChain` 接口的默认实现。",
+      "count": 1
+    },
+    {
+      "source": "Builder for <a href=\"StructuredOutputValidationAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>StructuredOutputValidationAdvisor</code></a>.",
+      "translation": "<code>StructuredOutputValidationAdvisor</code> 的构建器。<a href=\"StructuredOutputValidationAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\">StructuredOutputValidationAdvisor</a>。",
+      "count": 1
+    },
+    {
+      "source": "Chat client API.",
+      "translation": "聊天客户端 API。",
+      "count": 1
+    },
+    {
+      "source": "Provides classes for advising chat clients.",
+      "translation": "提供用于建议聊天客户端的类。",
+      "count": 1
+    },
+    {
+      "source": "Tool Search Tool Advisor package for dynamic tool discovery and search capabilities.",
+      "translation": "工具搜索工具顾问包，用于动态工具发现与搜索功能。",
+      "count": 1
+    },
+    {
+      "source": "Memory is retrieved added as a collection of messages to the prompt",
+      "translation": "记忆被检索并作为消息集合添加到提示中。",
+      "count": 1
+    },
+    {
+      "source": "An advisor that blocks the call to the model provider if the user input contains any of\nthe sensitive words.",
+      "translation": "一个顾问，如果用户输入包含任何敏感词，则阻止调用模型提供商。",
+      "count": 1
+    },
+    {
+      "source": "A simple logger advisor that logs the request and response messages.",
+      "translation": "一个简单的日志记录顾问，用于记录请求和响应消息。",
+      "count": 1
+    },
+    {
+      "source": "Advisor that validates the structured JSON output of a chat client response against a\nJSON schema derived from the configured output type or a pre-supplied schema string.",
+      "translation": "用于验证聊天客户端响应中的结构化 JSON 输出是否符合由配置的输出类型派生的 JSON Schema，或符合预提供的 Schema 字符串的顾问。",
+      "count": 1
+    }
+  ]
+}

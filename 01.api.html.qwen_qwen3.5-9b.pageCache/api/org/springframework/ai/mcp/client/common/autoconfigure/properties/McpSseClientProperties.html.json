@@ -1,0 +1,76 @@
+{
+  "created_at": "2026-06-15 08:25:58",
+  "updated_at": "2026-06-15 08:25:58",
+  "stats": {
+    "total_entries": 12,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 16,
+    "entries_with_hits": 12,
+    "entries_without_hits": 0,
+    "hit_rate": 1.3333333333333333,
+    "usage_percentage": 0.0012000000000000001
+  },
+  "items": [
+    {
+      "source": "<span class=\"deprecated-label\">Deprecated, for removal: This API element is subject to removal in a future version.</span>",
+      "translation": "<code class=\"deprecated-label\">已弃用，即将移除：此 API 元素将在未来版本中被移除。</code>",
+      "count": 4
+    },
+    {
+      "source": "Returns the map of configured SSE connections.",
+      "translation": "返回已配置的 SSE 连接映射。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "These properties allow configuration of multiple named SSE connections to MCP servers.\nEach connection is configured with a URL endpoint for SSE communication.",
+      "translation": "这些属性允许配置多个命名 SSE 连接到 MCP 服务器。每个连接都配置有用于 SSE 通信的 URL 端点。",
+      "count": 1
+    },
+    {
+      "source": "Example configurations:",
+      "translation": "示例配置：",
+      "count": 1
+    },
+    {
+      "source": "Parameters for configuring an SSE connection to an MCP server.",
+      "translation": "配置到 MCP 服务器的 SSE 连接的参数。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "map of connection names to their SSE parameters",
+      "translation": "连接名称到其 SSE 参数的映射图",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "Configuration properties for Server-Sent Events (SSE) based MCP client connections.",
+      "translation": "基于服务器发送事件（SSE）的 MCP 客户端连接的配置属性。",
+      "count": 1
+    },
+    {
+      "source": "<pre># Simple configuration with default SSE endpoint (/sse)\nspring.ai.mcp.client.sse:\n  connections:\n    server1:\n      url: http://localhost:8080\n\n# Custom SSE endpoints - split complex URLs correctly\nspring.ai.mcp.client.sse:\n  connections:\n    mcp-hub:\n      url: http://localhost:3000\n      sse-endpoint: /mcp-hub/sse/cf9ec4527e3c4a2cbb149a85ea45ab01\n    custom-server:\n      url: http://api.example.com\n      sse-endpoint: /v1/mcp/events?token=abc123&amp;format=json\n\n# How to split a full URL:\n# Full URL: http://localhost:3000/mcp-hub/sse/token123\n# Split as:  url: http://localhost:3000\n#           sse-endpoint: /mcp-hub/sse/token123\n</pre>",
+      "translation": "<pre># 使用默认 SSE 端点 (/sse) 的简单配置\nspring.ai.mcp.client.sse:\n  connections:\n    server1:\n      url: http://localhost:8080\n\n# 自定义 SSE 端点 - 正确拆分复杂 URL\nspring.ai.mcp.client.sse:\n  connections:\n    mcp-hub:\n      url: http://localhost:3000\n      sse-endpoint: /mcp-hub/sse/cf9ec4527e3c4a2cbb149a85ea45ab01\n    custom-server:\n      url: http://api.example.com\n      sse-endpoint: /v1/mcp/events?token=abc123&amp;format=json\n\n# 如何拆分完整 URL：\n# 完整 URL：http://localhost:3000/mcp-hub/sse/token123\n# 拆分为：url: http://localhost:3000\n#         sse-endpoint: /mcp-hub/sse/token123\n</pre>",
+      "count": 1
+    }
+  ]
+}

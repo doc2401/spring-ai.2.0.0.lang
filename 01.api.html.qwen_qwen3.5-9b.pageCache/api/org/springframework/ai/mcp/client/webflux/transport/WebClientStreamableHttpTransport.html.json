@@ -1,0 +1,101 @@
+{
+  "created_at": "2026-06-15 08:24:33",
+  "updated_at": "2026-06-15 08:24:33",
+  "stats": {
+    "total_entries": 17,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 18,
+    "entries_with_hits": 17,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0588235294117647,
+    "usage_percentage": 0.0017
+  },
+  "items": [
+    {
+      "source": "Create a stateful builder for creating <a href=\"WebClientStreamableHttpTransport.html\" title=\"class in org.springframework.ai.mcp.client.webflux.transport\"><code>WebClientStreamableHttpTransport</code></a>\ninstances.",
+      "translation": "创建一个用于构建<a href=\"WebClientStreamableHttpTransport.html\" title=\"org.springframework.ai.mcp.client.webflux.transport 中的类\"><code>WebClientStreamableHttpTransport</code></a>实例的状态感知构建器。",
+      "count": 2
+    },
+    {
+      "source": "This implementation does not handle backwards compatibility with the <a href=\"https://modelcontextprotocol.io/specification/2024-11-05/basic/transports#http-with-sse\">\"HTTP\nwith SSE\" transport</a>. In order to communicate over the phased-out\n<code>2024-11-05</code> protocol, use <code>HttpClientSseClientTransport</code> or\n<a href=\"WebFluxSseClientTransport.html\" title=\"class in org.springframework.ai.mcp.client.webflux.transport\"><code>WebFluxSseClientTransport</code></a>.",
+      "translation": "此实现不支持与<a href=\"https://modelcontextprotocol.io/specification/2024-11-05/basic/transports#http-with-sse\">\"HTTP with SSE\"传输</a>的向后兼容。若要使用已弃用的<code>2024-11-05</code>协议进行通信，请使用<code>HttpClientSseClientTransport</code>或<a href=\"WebFluxSseClientTransport.html\" title=\"class in org.springframework.ai.mcp.client.webflux.transport\"><code>WebFluxSseClientTransport</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "The transport is capable of resumability and reconnects. It reacts to transport-level\nsession invalidation and will propagate <code>appropriate exceptions</code> to the higher level abstraction layer when needed in order to\nallow proper state management. The implementation handles servers that are stateful and\nprovide session meta information, but can also communicate with stateless servers that\ndo not provide a session identifier and do not support SSE streams.",
+      "translation": "传输支持断点续传和重连功能。当检测到传输级会话失效时，它会在需要时将<code>适当的异常</code>传播到更高层的抽象层，以支持正确的状态管理。该实现能够处理提供会话元信息的有状态服务器，同时也支持与不提供会话标识符且不支持 SSE 流的状态无服务器进行通信。",
+      "count": 1
+    },
+    {
+      "source": "Builder for <a href=\"WebClientStreamableHttpTransport.html\" title=\"class in org.springframework.ai.mcp.client.webflux.transport\"><code>WebClientStreamableHttpTransport</code></a>.",
+      "translation": "用于构建<a href=\"WebClientStreamableHttpTransport.html\" title=\"class in org.springframework.ai.mcp.client.webflux.transport\"><code>WebClientStreamableHttpTransport</code></a>的类。",
+      "count": 1
+    },
+    {
+      "source": "a builder which will create an instance of\n<a href=\"WebClientStreamableHttpTransport.html\" title=\"class in org.springframework.ai.mcp.client.webflux.transport\"><code>WebClientStreamableHttpTransport</code></a> once <a href=\"WebClientStreamableHttpTransport.Builder.html#build()\"><code>WebClientStreamableHttpTransport.Builder.build()</code></a> is called",
+      "translation": "一个构建器，将在调用<a href=\"WebClientStreamableHttpTransport.Builder.html#build()\"><code>WebClientStreamableHttpTransport.Builder.build()</code></a>后创建一个<a href=\"WebClientStreamableHttpTransport.html\" title=\"class in org.springframework.ai.mcp.client.webflux.transport\"><code>WebClientStreamableHttpTransport</code></a>的实例。",
+      "count": 1
+    },
+    {
+      "source": "<ul class=\"tag-list-long\">\n<li><a href=\"https://modelcontextprotocol.io/specification/2025-03-26/basic/transports#streamable-http\">Streamable\nHTTP transport specification</a></li>\n</ul>",
+      "translation": "<ul class=\"tag-list-long\">\n<li><a href=\"https://modelcontextprotocol.io/specification/2025-03-26/basic/transports#streamable-http\">可流式传输的 HTTP 传输规范</a></li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<code>protocolVersions</code> in interface <code>io.modelcontextprotocol.spec.McpTransport</code>",
+      "translation": "McpTransport 接口中的 protocolVersions",
+      "count": 1
+    },
+    {
+      "source": "<code>webClientBuilder</code> - the <code>WebClient.Builder</code> to use",
+      "translation": "<code>webClientBuilder</code> - 要使用的 <code>WebClient.Builder</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>connect</code> in interface <code>io.modelcontextprotocol.spec.McpClientTransport</code>",
+      "translation": "接口 <code>io.modelcontextprotocol.spec.McpClientTransport</code> 中的 <code>connect</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>setExceptionHandler</code> in interface <code>io.modelcontextprotocol.spec.McpClientTransport</code>",
+      "translation": "接口 <code>io.modelcontextprotocol.spec.McpClientTransport</code> 中的 <code>setExceptionHandler</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>closeGracefully</code> in interface <code>io.modelcontextprotocol.spec.McpTransport</code>",
+      "translation": "接口 <code>io.modelcontextprotocol.spec.McpTransport</code> 中的 <code>closeGracefully</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>sendMessage</code> in interface <code>io.modelcontextprotocol.spec.McpTransport</code>",
+      "translation": "接口 <code>io.modelcontextprotocol.spec.McpTransport</code> 中的 <code>sendMessage</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>unmarshalFrom</code> in interface <code>io.modelcontextprotocol.spec.McpTransport</code>",
+      "translation": "接口 <code>io.modelcontextprotocol.spec.McpTransport</code> 中的 <code>unmarshalFrom</code>",
+      "count": 1
+    },
+    {
+      "source": "Dariusz Jędrzejczyk",
+      "translation": "达里乌什·耶德热伊奇克",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "An implementation of the Streamable HTTP protocol as defined by the\n<code>2025-03-26</code> version of the MCP specification.",
+      "translation": "作为由 <code>2025-03-26</code> 版本的 MCP 规范定义的流式 HTTP 协议的实现。",
+      "count": 1
+    }
+  ]
+}

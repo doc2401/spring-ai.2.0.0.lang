@@ -1,0 +1,46 @@
+{
+  "created_at": "2026-06-15 08:06:23",
+  "updated_at": "2026-06-15 08:06:23",
+  "stats": {
+    "total_entries": 6,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 7,
+    "entries_with_hits": 6,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1666666666666667,
+    "usage_percentage": 0.0006000000000000001
+  },
+  "items": [
+    {
+      "source": "Sets up a synchronous OpenAI client.",
+      "translation": "配置同步的 OpenAI 客户端。",
+      "count": 2
+    },
+    {
+      "source": "When <code>apiKey</code> is an empty string, the client is configured in no-auth mode:\nno <code>Authorization</code> header is sent with any request. This is useful for\nconnecting to custom OpenAI-compatible servers that use cookie-based or other\nnon-bearer-token authentication. To enable this mode, set\n<code>spring.ai.openai.api-key=</code> (empty value) in your application properties, or\npass a <a href=\"../../model/NoopApiKey.html\" title=\"class in org.springframework.ai.model\"><code>NoopApiKey</code></a> via\n<a href=\"../AbstractOpenAiOptions.AbstractBuilder.html#apiKey(org.springframework.ai.model.ApiKey)\"><code>AbstractOpenAiOptions.AbstractBuilder.apiKey(org.springframework.ai.model.ApiKey)</code></a>.",
+      "translation": "当 <code>apiKey</code> 为空字符串时，客户端将配置为无认证模式：\n任何请求都不会发送 <code>Authorization</code> 头。这对于连接使用基于 cookie 或其他非 Bearer Token 认证的自定义 OpenAI 兼容服务器非常有用。要启用此模式，请在应用程序属性中设置\n<code>spring.ai.openai.api-key=</code>（空值），或通过\n<a href=\"../../model/NoopApiKey.html\" title=\"class in org.springframework.ai.model\"><code>NoopApiKey</code></a> 传递\n<a href=\"../AbstractOpenAiOptions.AbstractBuilder.html#apiKey(org.springframework.ai.model.ApiKey)\"><code>AbstractOpenAiOptions.AbstractBuilder.apiKey(org.springframework.ai.model.ApiKey)</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Helps configure the OpenAI Java SDK, depending on the platform used. This code is\ninspired by LangChain4j's\n`dev.langchain4j.model.openaiofficial.InternalOpenAiOfficialHelper` class, which is\ncoded by the same author (Julien Dubois, from Microsoft).",
+      "translation": "根据所使用的平台，帮助配置 OpenAI Java SDK。此代码灵感来源于 LangChain4j 的 `dev.langchain4j.model.openaiofficial.InternalOpenAiOfficialHelper` 类，该类由同一作者（来自微软的 Julien Dubois）编写。",
+      "count": 1
+    },
+    {
+      "source": "Julien Dubois, Thomas Vitale",
+      "translation": "朱利安·杜瓦伊，托马斯·维塔莱",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    }
+  ]
+}

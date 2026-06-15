@@ -1,0 +1,66 @@
+{
+  "created_at": "2026-06-15 08:52:05",
+  "updated_at": "2026-06-15 08:52:05",
+  "stats": {
+    "total_entries": 10,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 12,
+    "entries_with_hits": 10,
+    "entries_without_hits": 0,
+    "hit_rate": 1.2,
+    "usage_percentage": 0.001
+  },
+  "items": [
+    {
+      "source": "Constructs a new ToolContext with the given context map.",
+      "translation": "使用给定的上下文映射创建一个新的 ToolContext。",
+      "count": 2
+    },
+    {
+      "source": "Returns the immutable context map.",
+      "translation": "返回不可变上下文映射。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "The context is typically populated from the <code>toolContext</code> field of\n<code>ToolCallingChatOptions</code> and is used in the function execution process.",
+      "translation": "上下文通常从 `ToolCallingChatOptions` 的 `<code>toolContext</code>` 字段中填充，并用于函数执行过程中。",
+      "count": 1
+    },
+    {
+      "source": "This class encapsulates a map of contextual information that can be passed to tools\n(functions) when they are called. It provides an immutable view of the context to\nensure thread-safety and prevent modification after creation.",
+      "translation": "该类封装了一个上下文信息映射，可在调用工具（函数）时传递。它提供上下文的不可变视图，以确保线程安全并防止创建后进行修改。",
+      "count": 1
+    },
+    {
+      "source": "The context map can contain any information that is relevant to the tool execution.",
+      "translation": "上下文映射可以包含任何与工具执行相关的信息。",
+      "count": 1
+    },
+    {
+      "source": "<code>context</code> - A map containing the tool context information. This map is wrapped\nin an unmodifiable view to prevent changes.",
+      "translation": "<code>context</code> - 包含工具上下文信息的映射。该映射被包装在一个不可变视图中，以防止对其进行修改。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "An unmodifiable view of the context map.",
+      "translation": "上下文映射的不可变视图。",
+      "count": 1
+    },
+    {
+      "source": "Represents the context for tool execution in a function calling scenario.",
+      "translation": "在函数调用场景中，表示工具执行的上下文。",
+      "count": 1
+    }
+  ]
+}

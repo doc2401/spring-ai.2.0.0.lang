@@ -1,0 +1,156 @@
+{
+  "created_at": "2026-06-15 08:32:31",
+  "updated_at": "2026-06-15 08:32:31",
+  "stats": {
+    "total_entries": 28,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 30,
+    "entries_with_hits": 28,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0714285714285714,
+    "usage_percentage": 0.0028
+  },
+  "items": [
+    {
+      "source": "Apply the callback to the given context and request.",
+      "translation": "将回调应用于给定的上下文和请求。",
+      "count": 2
+    },
+    {
+      "source": "Create a new builder.",
+      "translation": "创建一个新的构建器。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This method extracts URI variable values from the request URI, builds the arguments\nfor the method call, invokes the method, and converts the result to a\nReadResourceResult.",
+      "translation": "该方法从请求 URI 中提取 URI 变量值，构建方法调用参数，执行方法调用，并将结果转换为 ReadResourceResult。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"AbstractMcpResourceMethodCallback.html#validateReturnType(java.lang.reflect.Method)\">AbstractMcpResourceMethodCallback</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述已从类中复制：<code><a href=\"AbstractMcpResourceMethodCallback.html#validateReturnType(java.lang.reflect.Method)\">AbstractMcpResourceMethodCallback</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"AbstractMcpResourceMethodCallback.html#isExchangeOrContextType(java.lang.Class)\">AbstractMcpResourceMethodCallback</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述已从类复制：<code><a href=\"AbstractMcpResourceMethodCallback.html#isExchangeOrContextType(java.lang.Class)\">AbstractMcpResourceMethodCallback</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Class for creating BiFunction callbacks around resource methods for stateless contexts.\n\nThis class provides a way to convert methods annotated with <a href=\"../../McpResource.html\" title=\"annotation interface in org.springframework.ai.mcp.annotation\"><code>McpResource</code></a> into\ncallback functions that can be used to handle resource requests in stateless\nenvironments. It supports various method signatures and return types, and handles URI\ntemplate variables.",
+      "translation": "用于在无状态上下文中围绕资源方法创建 BiFunction 回调的类。\n\n该类提供了一种将带有 <a href=\"../../McpResource.html\" title=\"annotation interface in org.springframework.ai.mcp.annotation\"><code>McpResource</code></a> 注解的方法转换为回调函数的方法，这些回调函数可用于在无状态环境中处理资源请求。它支持多种方法签名和返回类型，并能够处理 URI 模板变量。",
+      "count": 1
+    },
+    {
+      "source": "Builder for creating SyncStatelessMcpResourceMethodCallback instances.",
+      "translation": "用于创建 SyncStatelessMcpResourceMethodCallback 实例的构建器。",
+      "count": 1
+    },
+    {
+      "source": "Checks if a parameter type is compatible with the exchange type.",
+      "translation": "检查参数类型是否与交换类型兼容。",
+      "count": 1
+    },
+    {
+      "source": "Validates that the method return type is compatible with the resource callback.",
+      "translation": "验证方法返回类型是否与资源回调兼容。",
+      "count": 1
+    },
+    {
+      "source": "Validates that the method return type is compatible with the resource callback.\nThis method should be implemented by subclasses to handle specific return type\nvalidation.",
+      "translation": "验证方法返回类型是否与资源回调兼容。  \n此方法应由子类实现，以处理特定的返回类型验证。",
+      "count": 1
+    },
+    {
+      "source": "Checks if a parameter type is compatible with the exchange type. This method should\nbe implemented by subclasses to handle specific exchange type checking.",
+      "translation": "检查参数类型是否与交换类型兼容。此方法应由子类实现，以处理特定交换类型的检查。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"AbstractMcpResourceMethodCallback.html#validateParamType(java.lang.Class)\">validateParamType</a></code> in class <code><a href=\"AbstractMcpResourceMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.resource\">AbstractMcpResourceMethodCallback</a></code>",
+      "translation": "<code><a href=\"AbstractMcpResourceMethodCallback.html#validateParamType(java.lang.Class)\">validateParamType</a></code> 类 <code><a href=\"AbstractMcpResourceMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.resource\">AbstractMcpResourceMethodCallback</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"AbstractMcpResourceMethodCallback.html#assignExchangeType(java.lang.Class,java.lang.Object)\">assignExchangeType</a></code> in class <code><a href=\"AbstractMcpResourceMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.resource\">AbstractMcpResourceMethodCallback</a></code>",
+      "translation": "<code><a href=\"AbstractMcpResourceMethodCallback.html#assignExchangeType(java.lang.Class,java.lang.Object)\">assignExchangeType</a></code> 类 <code><a href=\"AbstractMcpResourceMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.resource\">AbstractMcpResourceMethodCallback</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/BiFunction.html#apply(T,U)\" title=\"class or interface in java.util.function\">apply</a></code> in interface <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/BiFunction.html\" title=\"class or interface in java.util.function\">BiFunction</a>&lt;io.modelcontextprotocol.common.McpTransportContext, io.modelcontextprotocol.spec.McpSchema.ReadResourceRequest, io.modelcontextprotocol.spec.McpSchema.ReadResourceResult&gt;</code>",
+      "translation": "`apply` 方法在接口 `BiFunction<io.modelcontextprotocol.common.McpTransportContext, io.modelcontextprotocol.spec.McpSchema.ReadResourceRequest, io.modelcontextprotocol.spec.McpSchema.ReadResourceResult>` 中。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"AbstractMcpResourceMethodCallback.html#validateReturnType(java.lang.reflect.Method)\">validateReturnType</a></code> in class <code><a href=\"AbstractMcpResourceMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.resource\">AbstractMcpResourceMethodCallback</a></code>",
+      "translation": "<code><a href=\"AbstractMcpResourceMethodCallback.html#validateReturnType(java.lang.reflect.Method)\">validateReturnType</a></code> 类 <code><a href=\"AbstractMcpResourceMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.resource\">AbstractMcpResourceMethodCallback</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"AbstractMcpResourceMethodCallback.html#isExchangeOrContextType(java.lang.Class)\">isExchangeOrContextType</a></code> in class <code><a href=\"AbstractMcpResourceMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.resource\">AbstractMcpResourceMethodCallback</a></code>",
+      "translation": "<code><a href=\"AbstractMcpResourceMethodCallback.html#isExchangeOrContextType(java.lang.Class)\">isExchangeOrContextType</a></code> 类 <code><a href=\"AbstractMcpResourceMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.resource\">AbstractMcpResourceMethodCallback</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if the request is null or if URI variable\nextraction fails",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果请求为 null 或 URI 变量提取失败",
+      "count": 1
+    },
+    {
+      "source": "<code>context</code> - The transport context, may be null if the method doesn't require it",
+      "translation": "<code>context</code> - 传输上下文，如果该方法不需要它，则可能为 null",
+      "count": 1
+    },
+    {
+      "source": "<code>request</code> - The resource request, must not be null",
+      "translation": "<code>request</code> - 资源请求，不能为 null",
+      "count": 1
+    },
+    {
+      "source": "<code>io.modelcontextprotocol.spec.McpError</code> - if there is an error invoking the resource method",
+      "translation": "<code>io.modelcontextprotocol.spec.McpError</code> - 如果调用资源方法时发生错误",
+      "count": 1
+    },
+    {
+      "source": "<code>method</code> - The method to validate",
+      "translation": "<code>method</code> - 待验证的方法",
+      "count": 1
+    },
+    {
+      "source": "<code>paramType</code> - The parameter type to check",
+      "translation": "<code>paramType</code> - 要检查的参数类型",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Alexandros Pappas, Vadzim Shurmialiou, Craig Walls",
+      "translation": "克里斯蒂安·茨洛夫，亚历山德罗斯·帕帕斯，瓦季姆·舒尔米亚柳，克雷格·沃尔斯",
+      "count": 1
+    },
+    {
+      "source": "The resource result",
+      "translation": "资源结果",
+      "count": 1
+    },
+    {
+      "source": "true if the parameter type is compatible with the exchange type, false\notherwise",
+      "translation": "如果参数类型与交换类型兼容，则为 true；否则为 false。",
+      "count": 1
+    },
+    {
+      "source": "A new builder instance",
+      "translation": "一个新的构建器实例",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    }
+  ]
+}

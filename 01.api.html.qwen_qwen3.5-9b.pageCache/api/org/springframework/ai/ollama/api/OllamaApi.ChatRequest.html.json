@@ -1,0 +1,271 @@
+{
+  "created_at": "2026-06-15 08:07:01",
+  "updated_at": "2026-06-15 08:07:01",
+  "stats": {
+    "total_entries": 51,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 60,
+    "entries_with_hits": 51,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1764705882352942,
+    "usage_percentage": 0.0051
+  },
+  "items": [
+    {
+      "source": "Returns the value of the <a href=\"#param-format\"><code>format</code></a> record component.",
+      "translation": "返回 `<a href=\"#param-format\"><code>format</code></a>` 记录组件的值。",
+      "count": 2
+    },
+    {
+      "source": "Returns the value of the <a href=\"#param-keepAlive\"><code>keepAlive</code></a> record component.",
+      "translation": "返回 `<a href=\"#param-keepAlive\"><code>keepAlive</code></a>` 记录组件的值。",
+      "count": 2
+    },
+    {
+      "source": "Returns the value of the <a href=\"#param-messages\"><code>messages</code></a> record component.",
+      "translation": "返回 `<a href=\"#param-messages\"><code>messages</code></a>` 记录组件的值。",
+      "count": 2
+    },
+    {
+      "source": "Returns the value of the <a href=\"#param-model\"><code>model</code></a> record component.",
+      "translation": "返回 `<a href=\"#param-model\"><code>model</code></a>` 记录组件的值。",
+      "count": 2
+    },
+    {
+      "source": "Returns the value of the <a href=\"#param-options\"><code>options</code></a> record component.",
+      "translation": "返回 `<a href=\"#param-options\"><code>options</code></a>` 记录组件的值。",
+      "count": 2
+    },
+    {
+      "source": "Returns the value of the <a href=\"#param-stream\"><code>stream</code></a> record component.",
+      "translation": "返回 `<a href=\"#param-stream\"><code>stream</code></a>` 记录组件的值。",
+      "count": 2
+    },
+    {
+      "source": "Returns the value of the <a href=\"#param-think\"><code>think</code></a> record component.",
+      "translation": "返回 `<a href=\"#param-think\"><code>think</code></a>` 记录组件的值。",
+      "count": 2
+    },
+    {
+      "source": "Returns the value of the <a href=\"#param-tools\"><code>tools</code></a> record component.",
+      "translation": "返回 `<a href=\"#param-tools\"><code>tools</code></a>` 记录组件的值。",
+      "count": 2
+    },
+    {
+      "source": "Creates an instance of a <code>ChatRequest</code> record class.",
+      "translation": "创建一个 `<code>ChatRequest`</code> 记录类的实例。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Indicates whether some other object is \"equal to\" this one. The objects are equal if the other object is of the same class and if all the record components are equal. All components in this record class are compared with <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Objects.html#equals(java.lang.Object,java.lang.Object)\" title=\"class or interface in java.util\"><code>Objects::equals(Object,Object)</code></a>.",
+      "translation": "指示某些其他对象是否“等于”当前对象。如果另一个对象属于同一类，且所有记录组件均相等，则这两个对象相等。本记录类中的所有组件均使用 <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Objects.html#equals(java.lang.Object,java.lang.Object)\" title=\"class or interface in java.util\"><code>Objects::equals(Object,Object)</code></a> 进行比较。",
+      "count": 1
+    },
+    {
+      "source": "Chat request object.",
+      "translation": "聊天请求对象。",
+      "count": 1
+    },
+    {
+      "source": "Represents a tool the model may call.",
+      "translation": "代表模型可能调用的工具。",
+      "count": 1
+    },
+    {
+      "source": "Indicates whether some other object is \"equal to\" this one.",
+      "translation": "指示其他对象是否“等于”此对象。",
+      "count": 1
+    },
+    {
+      "source": "Returns a hash code value for this object.",
+      "translation": "返回此对象的哈希码值。",
+      "count": 1
+    },
+    {
+      "source": "Returns a string representation of this record class.",
+      "translation": "返回此记录类的字符串表示形式。",
+      "count": 1
+    },
+    {
+      "source": "Returns a string representation of this record class. The representation contains the name of the class, followed by the name and value of each of the record components.",
+      "translation": "返回此记录类的字符串表示形式。该表示形式包含类名，随后是各记录组件的名称和值。",
+      "count": 1
+    },
+    {
+      "source": "Returns a hash code value for this object. The value is derived from the hash code of each of the record components.",
+      "translation": "返回此对象的哈希码值。该值由每个记录组件的哈希码推导得出。",
+      "count": 1
+    },
+    {
+      "source": "<code><span id=\"param-think\">think</span></code> - Think controls whether thinking/reasoning models will think before responding.\nYou can use the <a href=\"OllamaChatOptions.html\" title=\"class in org.springframework.ai.ollama.api\"><code>OllamaChatOptions</code></a> builder to create the options then <a href=\"OllamaChatOptions.html#toMap()\"><code>OllamaChatOptions.toMap()</code></a> to convert the options into a map.",
+      "translation": "<code><span id=\"param-think\">think</span></code> - 控制思考/推理模型在响应前是否进行思考。  \n您可以使用 <a href=\"OllamaChatOptions.html\" title=\"class in org.springframework.ai.ollama.api\"><code>OllamaChatOptions</code></a> 构建器创建选项，然后使用 <a href=\"OllamaChatOptions.html#toMap()\"><code>OllamaChatOptions.toMap()</code></a> 将选项转换为 Map。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html#toString()\" title=\"class or interface in java.lang\">toString</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html\" title=\"class or interface in java.lang\">Record</a></code>",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html#toString()\" title=\"类或接口在 java.lang 中\">toString</a></code> 方法，位于 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html\" title=\"类或接口在 java.lang 中\">Record</a></code> 类中",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html#hashCode()\" title=\"class or interface in java.lang\">hashCode</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html\" title=\"class or interface in java.lang\">Record</a></code>",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html#hashCode()\" title=\"类或接口在 java.lang 中\">hashCode</a></code> 方法位于 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html\" title=\"类或接口在 java.lang 中\">Record</a></code> 类中",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html#equals(java.lang.Object)\" title=\"class or interface in java.lang\">equals</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html\" title=\"class or interface in java.lang\">Record</a></code>",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html#equals(java.lang.Object)\" title=\"类或接口在 java.lang 中\">equals</a></code> 方法位于 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html\" title=\"类或接口在 java.lang 中\">Record</a></code> 类中",
+      "count": 1
+    },
+    {
+      "source": "<code><span id=\"param-model\">model</span></code> - The model to use for completion. It should be a name familiar to Ollama from the <a href=\"https://ollama.com/library\">Library</a>.",
+      "translation": "<code><span id=\"param-model\">model</span></code> - 用于完成操作的模型。它应该是 Ollama 熟悉的名称，详见<a href=\"https://ollama.com/library\">库</a>。",
+      "count": 1
+    },
+    {
+      "source": "<code>model</code> - the value for the <a href=\"#param-model\"><code>model</code></a> record component",
+      "translation": "<code>model</code> - <a href=\"#param-model\"><code>model</code></a> 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "<code>messages</code> - the value for the <a href=\"#param-messages\"><code>messages</code></a> record component",
+      "translation": "<code>messages</code> - <a href=\"#param-messages\"><code>messages</code></a> 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "<code>stream</code> - the value for the <a href=\"#param-stream\"><code>stream</code></a> record component",
+      "translation": "`stream` - `<a href=\"#param-stream\"><code>stream</code></a>` 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "<code>format</code> - the value for the <a href=\"#param-format\"><code>format</code></a> record component",
+      "translation": "<code>format</code> - <a href=\"#param-format\"><code>format</code></a> 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "<code>keepAlive</code> - the value for the <a href=\"#param-keepAlive\"><code>keepAlive</code></a> record component",
+      "translation": "<code>keepAlive</code> - 用于<a href=\"#param-keepAlive\"><code>keepAlive</code></a>记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "<code>tools</code> - the value for the <a href=\"#param-tools\"><code>tools</code></a> record component",
+      "translation": "<code>tools</code> - <a href=\"#param-tools\"><code>tools</code></a> 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "<code>options</code> - the value for the <a href=\"#param-options\"><code>options</code></a> record component",
+      "translation": "<code>options</code> - <a href=\"#param-options\"><code>options</code></a> 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "<code>think</code> - the value for the <a href=\"#param-think\"><code>think</code></a> record component",
+      "translation": "`think` - `<a href=\"#param-think\"><code>think</code></a>` 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "<code>true</code> if this object is the same as the <code>o</code> argument; <code>false</code> otherwise.",
+      "translation": "如果该对象与参数 `o` 相同，则返回 `<code>true</code>`；否则返回 `<code>false</code>`。",
+      "count": 1
+    },
+    {
+      "source": "<code><span id=\"param-messages\">messages</span></code> - The list of messages in the chat. This can be used to keep a chat memory.",
+      "translation": "<code><span id=\"param-messages\">messages</span></code> - 聊天中的消息列表。可用于保存聊天记录。",
+      "count": 1
+    },
+    {
+      "source": "<code><span id=\"param-stream\">stream</span></code> - Whether to stream the response. If false, the response will be returned as a single response object rather than a stream of objects.",
+      "translation": "<code><span id=\"param-stream\">stream</span></code> - 是否流式传输响应。如果为 false，响应将作为单个响应对象返回，而不是对象流。",
+      "count": 1
+    },
+    {
+      "source": "<code><span id=\"param-format\">format</span></code> - The format to return the response in. It can either be the String \"json\" or a Map containing a JSON Schema definition.",
+      "translation": "<code><span id=\"param-format\">format</span></code> - 指定返回响应的格式。可以是字符串 \"json\"，或包含 JSON Schema 定义的 Map。",
+      "count": 1
+    },
+    {
+      "source": "<code><span id=\"param-keepAlive\">keepAlive</span></code> - Controls how long the model will stay loaded into memory following this request (default: 5m).",
+      "translation": "<code><span id=\"param-keepAlive\">keepAlive</span></code> - 控制模型在请求后保留在内存中的时长（默认：5 分钟）。",
+      "count": 1
+    },
+    {
+      "source": "<code><span id=\"param-tools\">tools</span></code> - List of tools the model has access to.",
+      "translation": "<code><span id=\"param-tools\">tools</span></code> - 模型可访问的工具列表。",
+      "count": 1
+    },
+    {
+      "source": "<code><span id=\"param-options\">options</span></code> - Model-specific options. For example, \"temperature\" can be set through this field, if the model supports it.",
+      "translation": "<code><span id=\"param-options\">options</span></code> - 模型特定的选项。例如，如果模型支持，可以通过此字段设置“temperature”。",
+      "count": 1
+    },
+    {
+      "source": "the value of the <a href=\"#param-model\"><code>model</code></a> record component",
+      "translation": "`<a href=\"#param-model\"><code>model</code></a>` 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "the value of the <a href=\"#param-messages\"><code>messages</code></a> record component",
+      "translation": "`<a href=\"#param-messages\"><code>messages</code></a>` 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "the value of the <a href=\"#param-stream\"><code>stream</code></a> record component",
+      "translation": "`<a href=\"#param-stream\"><code>stream</code></a>` 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "the value of the <a href=\"#param-format\"><code>format</code></a> record component",
+      "translation": "`<a href=\"#param-format\"><code>format</code></a>` 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "the value of the <a href=\"#param-keepAlive\"><code>keepAlive</code></a> record component",
+      "translation": "`<a href=\"#param-keepAlive\"><code>keepAlive</code></a>` 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "the value of the <a href=\"#param-tools\"><code>tools</code></a> record component",
+      "translation": "`<a href=\"#param-tools\"><code>tools</code></a>` 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "the value of the <a href=\"#param-options\"><code>options</code></a> record component",
+      "translation": "`<a href=\"#param-options\"><code>options</code></a>` 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "the value of the <a href=\"#param-think\"><code>think</code></a> record component",
+      "translation": "`<a href=\"#param-think\"><code>think</code></a>` 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "<code>o</code> - the object with which to compare",
+      "translation": "<code>o</code> - 用于比较的对象",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Thomas Vitale, Jonghoon Park, Alexandros Pappas",
+      "translation": "Christian Tzolov, Thomas Vitale, Jonghoon Park, Alexandros Pappas",
+      "count": 1
+    },
+    {
+      "source": "a string representation of this object",
+      "translation": "该对象的字符串表示形式",
+      "count": 1
+    },
+    {
+      "source": "a hash code value for this object",
+      "translation": "该对象的哈希码值",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    }
+  ]
+}

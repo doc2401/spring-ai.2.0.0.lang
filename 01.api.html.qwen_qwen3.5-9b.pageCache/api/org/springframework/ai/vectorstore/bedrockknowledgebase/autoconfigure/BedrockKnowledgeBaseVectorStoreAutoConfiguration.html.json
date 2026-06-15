@@ -1,0 +1,86 @@
+{
+  "created_at": "2026-06-15 07:56:55",
+  "updated_at": "2026-06-15 07:56:55",
+  "stats": {
+    "total_entries": 14,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 14,
+    "entries_with_hits": 14,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.0014
+  },
+  "items": [
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Provides auto-configuration for <a href=\"../BedrockKnowledgeBaseVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.bedrockknowledgebase\"><code>BedrockKnowledgeBaseVectorStore</code></a> when the\nrequired classes are on the classpath and the knowledge base ID is configured.",
+      "translation": "当所需类位于类路径中且已配置知识库 ID 时，为 <a href=\"../BedrockKnowledgeBaseVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.bedrockknowledgebase\"><code>BedrockKnowledgeBaseVectorStore</code></a> 提供自动配置。",
+      "count": 1
+    },
+    {
+      "source": "This configuration is activated when:",
+      "translation": "当满足以下条件时，将激活此配置：",
+      "count": 1
+    },
+    {
+      "source": "The auto-configuration creates:",
+      "translation": "自动配置会创建：",
+      "count": 1
+    },
+    {
+      "source": "Configuration properties:",
+      "translation": "配置属性：",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"../BedrockKnowledgeBaseVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.bedrockknowledgebase\"><code>BedrockKnowledgeBaseVectorStore</code></a> - configured from properties",
+      "translation": "<a href=\"../BedrockKnowledgeBaseVectorStore.html\" title=\"类 org.springframework.ai.vectorstore.bedrockknowledgebase\"><code>BedrockKnowledgeBaseVectorStore</code></a> - 从属性中配置",
+      "count": 1
+    },
+    {
+      "source": "<code>BedrockAgentRuntimeClient</code> class is on the classpath",
+      "translation": "类路径上存在 <code>BedrockAgentRuntimeClient</code> 类。",
+      "count": 1
+    },
+    {
+      "source": "<code>spring.ai.vectorstore.bedrock-knowledge-base.knowledge-base-id</code> property is\nset",
+      "translation": "已设置 <code>spring.ai.vectorstore.bedrock-knowledge-base.knowledge-base-id</code> 属性。",
+      "count": 1
+    },
+    {
+      "source": "<code>BedrockAgentRuntimeClient</code> - using default AWS credentials chain",
+      "translation": "<code>BedrockAgentRuntimeClient</code> - 使用默认 AWS 凭证链",
+      "count": 1
+    },
+    {
+      "source": "Yuriy Bezsonov",
+      "translation": "尤里·别松诺夫",
+      "count": 1
+    },
+    {
+      "source": "<code>Auto-configuration</code> for Amazon Bedrock Knowledge Base Vector\nStore.",
+      "translation": "Amazon Bedrock 知识库向量存储的自动配置。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>类路径上存在 <code>BedrockAgentRuntimeClient</code> 类。</li>\n<li>已设置 <code>spring.ai.vectorstore.bedrock-knowledge-base.knowledge-base-id</code> 属性。</li>\n</ul>",
+      "translation": "<ul>\n<li>类路径上存在 <code>BedrockAgentRuntimeClient</code> 类。</li>\n<li>已设置 <code>spring.ai.vectorstore.bedrock-knowledge-base.knowledge-base-id</code> 属性。</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li><code>BedrockAgentRuntimeClient</code> - 使用默认 AWS 凭证链</li>\n<li><a href=\"../BedrockKnowledgeBaseVectorStore.html\" title=\"类 org.springframework.ai.vectorstore.bedrockknowledgebase\"><code>BedrockKnowledgeBaseVectorStore</code></a> - 从属性中配置</li>\n</ul>",
+      "translation": "<ul>\n<li><code>BedrockAgentRuntimeClient</code> - 使用默认 AWS 凭证链</li>\n<li><a href=\"../BedrockKnowledgeBaseVectorStore.html\" title=\"类 org.springframework.ai.vectorstore.bedrockknowledgebase\"><code>BedrockKnowledgeBaseVectorStore</code></a> - 从属性中配置</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<pre>spring.ai.vectorstore.bedrock-knowledge-base.knowledge-base-id=your-kb-id\nspring.ai.vectorstore.bedrock-knowledge-base.region=us-east-1\nspring.ai.vectorstore.bedrock-knowledge-base.top-k=5\nspring.ai.vectorstore.bedrock-knowledge-base.similarity-threshold=0.0\nspring.ai.vectorstore.bedrock-knowledge-base.search-type=SEMANTIC\nspring.ai.vectorstore.bedrock-knowledge-base.reranking-model-arn=arn:aws:bedrock:...\n</pre>",
+      "translation": "<pre>spring.ai.vectorstore.bedrock-knowledge-base.knowledge-base-id=your-kb-id\nspring.ai.vectorstore.bedrock-knowledge-base.region=us-east-1\nspring.ai.vectorstore.bedrock-knowledge-base.top-k=5\nspring.ai.vectorstore.bedrock-knowledge-base.similarity-threshold=0.0\nspring.ai.vectorstore.bedrock-knowledge-base.search-type=SEMANTIC\nspring.ai.vectorstore.bedrock-knowledge-base.reranking-model-arn=arn:aws:bedrock:...\n</pre>",
+      "count": 1
+    }
+  ]
+}

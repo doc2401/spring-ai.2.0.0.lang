@@ -1,0 +1,106 @@
+{
+  "created_at": "2026-06-15 08:00:06",
+  "updated_at": "2026-06-15 08:00:06",
+  "stats": {
+    "total_entries": 18,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 21,
+    "entries_with_hits": 18,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1666666666666667,
+    "usage_percentage": 0.0018
+  },
+  "items": [
+    {
+      "source": "Called after a session's tool index has been cleared — either because this strategy\nreturned it from <a href=\"ToolIndexEvictionStrategy.html#onAccess(java.lang.String)\"><code>ToolIndexEvictionStrategy.onAccess(String)</code></a>, or because of an explicit eviction request.",
+      "translation": "在会话的工具索引被清除后调用——无论是因为该策略通过<a href=\"ToolIndexEvictionStrategy.html#onAccess(java.lang.String)\"><code>ToolIndexEvictionStrategy.onAccess(String)</code></a>返回了它，还是因为显式的驱逐请求。",
+      "count": 2
+    },
+    {
+      "source": "Creates a new TtlEvictionStrategy.",
+      "translation": "创建一个新的 TtlEvictionStrategy。",
+      "count": 2
+    },
+    {
+      "source": "Called each time a session is accessed at the start of request processing.",
+      "translation": "每次在请求处理开始时访问会话时都会调用。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Expiry is evaluated lazily on each <a href=\"#onAccess(java.lang.String)\"><code>onAccess(String)</code></a> call: all tracked sessions (other\nthan the one currently being accessed) are checked against the TTL, and any that have\nexceeded it are returned for eviction. No background thread is used.",
+      "translation": "过期检查在每次调用 <a href=\"#onAccess(java.lang.String)\"><code>onAccess(String)</code></a> 时惰性执行：所有被跟踪的会话（除当前正在访问的那个之外）都会与 TTL 进行比较，任何超过该期限的会话将被标记为待驱逐。此过程不使用后台线程。",
+      "count": 1
+    },
+    {
+      "source": "Implementations should update their internal tracking state for <code>sessionId</code>\nand return the set of session IDs whose tool indexes must now be cleared. The\nreturned set must never include the currently-accessed <code>sessionId</code>.",
+      "translation": "实现应更新其内部跟踪状态以处理<code>sessionId</code>，并返回必须清除工具索引的会话 ID 集合。该返回集合绝不能包含当前正在访问的<code>sessionId</code>。",
+      "count": 1
+    },
+    {
+      "source": "The TTL resets on every access, so a session that continues to receive requests will\nnot be evicted as long as the gap between consecutive requests stays below the TTL.",
+      "translation": "TTL 会在每次访问时重置，因此只要连续请求之间的间隔小于 TTL，持续接收请求的会话就不会被驱逐。",
+      "count": 1
+    },
+    {
+      "source": "Implementations should remove any internal tracking state for the evicted session.",
+      "translation": "实现应移除被驱逐会话的任何内部跟踪状态。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"ToolIndexEvictionStrategy.html#onAccess(java.lang.String)\">ToolIndexEvictionStrategy</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"ToolIndexEvictionStrategy.html#onAccess(java.lang.String)\">ToolIndexEvictionStrategy</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"ToolIndexEvictionStrategy.html#onRemoved(java.lang.String)\">ToolIndexEvictionStrategy</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"ToolIndexEvictionStrategy.html#onRemoved(java.lang.String)\">ToolIndexEvictionStrategy</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ToolIndexEvictionStrategy.html#onAccess(java.lang.String)\">onAccess</a></code> in interface <code><a href=\"ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\">ToolIndexEvictionStrategy</a></code>",
+      "translation": "接口 <code><a href=\"ToolIndexEvictionStrategy.html\" title=\"org.springframework.ai.tool.toolsearch.eviction 中的接口\">ToolIndexEvictionStrategy</a></code> 中的方法 <code><a href=\"ToolIndexEvictionStrategy.html#onAccess(java.lang.String)\">onAccess</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ToolIndexEvictionStrategy.html#onRemoved(java.lang.String)\">onRemoved</a></code> in interface <code><a href=\"ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\">ToolIndexEvictionStrategy</a></code>",
+      "translation": "<a href=\"ToolIndexEvictionStrategy.html#onRemoved(java.lang.String)\">onRemoved</a> 接口 <code><a href=\"ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\">ToolIndexEvictionStrategy</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>ttl</code> - maximum idle time before a session's index is evicted; must be positive",
+      "translation": "<code>ttl</code> - 会话索引在空闲状态下的最大存活时间，必须为正数。",
+      "count": 1
+    },
+    {
+      "source": "<code>sessionId</code> - the session being accessed",
+      "translation": "<code>sessionId</code> - 正在访问的会话",
+      "count": 1
+    },
+    {
+      "source": "session IDs to evict; never <code>null</code>, may be empty",
+      "translation": "待驱逐的会话 ID；永远不会为<code>null</code>，可能为空。",
+      "count": 1
+    },
+    {
+      "source": "<code>sessionId</code> - the session that was evicted",
+      "translation": "<code>sessionId</code> - 被驱逐的会话",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "A <a href=\"ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\"><code>ToolIndexEvictionStrategy</code></a> that evicts sessions whose last-access time is\nolder than a configured time-to-live (TTL).",
+      "translation": "一个 <a href=\"ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\"><code>ToolIndexEvictionStrategy</code></a>，用于驱逐最后访问时间早于配置的生存时间（TTL）的会话。",
+      "count": 1
+    }
+  ]
+}

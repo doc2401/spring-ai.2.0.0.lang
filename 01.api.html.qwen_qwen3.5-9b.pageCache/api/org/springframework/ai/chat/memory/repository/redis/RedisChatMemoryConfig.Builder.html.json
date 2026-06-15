@@ -1,0 +1,141 @@
+{
+  "created_at": "2026-06-15 08:56:35",
+  "updated_at": "2026-06-15 08:56:35",
+  "stats": {
+    "total_entries": 25,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 38,
+    "entries_with_hits": 25,
+    "entries_without_hits": 0,
+    "hit_rate": 1.52,
+    "usage_percentage": 0.0025
+  },
+  "items": [
+    {
+      "source": "the builder instance",
+      "translation": "构建器实例",
+      "count": 8
+    },
+    {
+      "source": "Builds a new RedisChatMemoryConfig instance.",
+      "translation": "构建一个新的 RedisChatMemoryConfig 实例。",
+      "count": 2
+    },
+    {
+      "source": "Sets the index name.",
+      "translation": "设置索引名称。",
+      "count": 2
+    },
+    {
+      "source": "Sets whether to initialize the schema.",
+      "translation": "设置是否初始化架构。",
+      "count": 2
+    },
+    {
+      "source": "Sets the Redis client.",
+      "translation": "设置 Redis 客户端。",
+      "count": 2
+    },
+    {
+      "source": "Sets the key prefix.",
+      "translation": "设置键前缀。",
+      "count": 2
+    },
+    {
+      "source": "Sets the time-to-live duration.",
+      "translation": "设置生存时间（TTL）的持续时间。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Sets the metadata field definitions for proper indexing. Format is compatible\nwith RedisVL schema format. Each map should contain \"name\" and \"type\" keys.\n\nExample: <pre>List.of(\n    Map.of(\"name\", \"priority\", \"type\", \"tag\"),\n    Map.of(\"name\", \"score\", \"type\", \"numeric\"),\n    Map.of(\"name\", \"category\", \"type\", \"tag\")\n)\n</pre>",
+      "translation": "设置元数据字段定义以支持正确索引。格式与 RedisVL 架构格式兼容。每个映射应包含\"name\"和\"type\"键。\n\n示例：<pre>List.of(\n    Map.of(\"name\", \"priority\", \"type\", \"tag\"),\n    Map.of(\"name\", \"score\", \"type\", \"numeric\"),\n    Map.of(\"name\", \"category\", \"type\", \"tag\")\n)</pre>",
+      "count": 1
+    },
+    {
+      "source": "Builder for RedisChatMemoryConfig.",
+      "translation": "RedisChatMemoryConfig 的构建器。",
+      "count": 1
+    },
+    {
+      "source": "Sets the maximum number of conversation IDs to return.",
+      "translation": "设置要返回的对话 ID 的最大数量。",
+      "count": 1
+    },
+    {
+      "source": "Sets the maximum number of messages to return per conversation.",
+      "translation": "设置每个对话中返回的最大消息数量。",
+      "count": 1
+    },
+    {
+      "source": "Sets the metadata field definitions for proper indexing.",
+      "translation": "设置元数据字段定义，以实现正确的索引。",
+      "count": 1
+    },
+    {
+      "source": "Sets the maximum number of conversation IDs to return. Default is 1000, which\nis Redis's default cursor read size.",
+      "translation": "设置要返回的对话 ID 的最大数量。默认为 1000，即 Redis 的默认游标读取大小。",
+      "count": 1
+    },
+    {
+      "source": "Sets the maximum number of messages to return per conversation. Default is\n1000, which is Redis's default cursor read size.",
+      "translation": "设置每次对话返回的最大消息数量。默认为 1000，即 Redis 的默认游标读取大小。",
+      "count": 1
+    },
+    {
+      "source": "<code>jedisClient</code> - the Redis client to use",
+      "translation": "<jedisClient> - 要使用的 Redis 客户端",
+      "count": 1
+    },
+    {
+      "source": "<code>indexName</code> - the index name to use",
+      "translation": "<code>indexName</code> - 要使用的索引名称",
+      "count": 1
+    },
+    {
+      "source": "<code>keyPrefix</code> - the key prefix to use",
+      "translation": "<code>keyPrefix</code> - 要使用的键前缀",
+      "count": 1
+    },
+    {
+      "source": "<code>ttl</code> - the time-to-live duration",
+      "translation": "<code>ttl</code> - 生存时间（time-to-live）的持续时间",
+      "count": 1
+    },
+    {
+      "source": "<code>initialize</code> - true to initialize schema, false otherwise",
+      "translation": "<code>initialize</code> - 用于初始化架构，true 表示初始化，false 表示不初始化",
+      "count": 1
+    },
+    {
+      "source": "<code>maxConversationIds</code> - maximum number of conversation IDs",
+      "translation": "<code>maxConversationIds</code> - 最大会话 ID 数量",
+      "count": 1
+    },
+    {
+      "source": "<code>maxMessagesPerConversation</code> - maximum number of messages",
+      "translation": "<code>maxMessagesPerConversation</code> - 每条对话的最大消息数",
+      "count": 1
+    },
+    {
+      "source": "<code>metadataFields</code> - list of field definitions",
+      "translation": "<code>metadataFields</code> - 字段定义列表",
+      "count": 1
+    },
+    {
+      "source": "Brian Sam-Bodden, Yanming Zhou",
+      "translation": "布莱恩·萨姆 - 博登，周燕明",
+      "count": 1
+    },
+    {
+      "source": "the new configuration instance",
+      "translation": "新的配置实例",
+      "count": 1
+    }
+  ]
+}

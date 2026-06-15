@@ -1,0 +1,531 @@
+{
+  "created_at": "2026-06-15 07:46:44",
+  "updated_at": "2026-06-15 07:46:44",
+  "stats": {
+    "total_entries": 103,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 131,
+    "entries_with_hits": 103,
+    "entries_without_hits": 0,
+    "hit_rate": 1.2718446601941749,
+    "usage_percentage": 0.0103
+  },
+  "items": [
+    {
+      "source": "Search for documents matching a text query.",
+      "translation": "搜索与文本查询匹配的文件。",
+      "count": 4
+    },
+    {
+      "source": "<code>query</code> - The text query to create an embedding from",
+      "translation": "<code>query</code> - 用于创建嵌入的文本查询",
+      "count": 4
+    },
+    {
+      "source": "Search for documents within a specific radius (distance) from the query embedding,\nwith optional filter expression to narrow down results.",
+      "translation": "在查询嵌入的指定半径（距离）内搜索文档，并可选择使用过滤表达式来缩小结果范围。",
+      "count": 3
+    },
+    {
+      "source": "<code>query</code> - The text to search for",
+      "translation": "<code>query</code> - 要搜索的文本",
+      "count": 3
+    },
+    {
+      "source": "<code>textField</code> - The field to search in (must be a TEXT field)",
+      "translation": "<code>textField</code> - 要搜索的字段（必须是文本字段）",
+      "count": 3
+    },
+    {
+      "source": "Create a new <a href=\"../observation/VectorStoreObservationContext.Builder.html\" title=\"class in org.springframework.ai.vectorstore.observation\"><code>VectorStoreObservationContext.Builder</code></a> instance.",
+      "translation": "创建一个新的<a href=\"../observation/VectorStoreObservationContext.Builder.html\" title=\"class in org.springframework.ai.vectorstore.observation\"><code>VectorStoreObservationContext.Builder</code></a>实例。",
+      "count": 2
+    },
+    {
+      "source": "Count all documents in the vector store.",
+      "translation": "统计向量存储中的所有文档。",
+      "count": 2
+    },
+    {
+      "source": "Count documents that match a filter expression string.",
+      "translation": "统计与筛选表达式字符串匹配的文件数量。",
+      "count": 2
+    },
+    {
+      "source": "Count documents that match a filter expression.",
+      "translation": "统计符合筛选条件的文档数量。",
+      "count": 2
+    },
+    {
+      "source": "Perform the actual add operation.",
+      "translation": "执行实际的加法操作。",
+      "count": 2
+    },
+    {
+      "source": "Perform the actual delete operation.",
+      "translation": "执行实际的删除操作。",
+      "count": 2
+    },
+    {
+      "source": "Template method for concrete implementations to provide filter-based deletion\nlogic.",
+      "translation": "为基于过滤器的删除逻辑提供具体实现的模板方法。",
+      "count": 2
+    },
+    {
+      "source": "Perform the actual similarity search operation.",
+      "translation": "执行实际的相似度搜索操作。",
+      "count": 2
+    },
+    {
+      "source": "Search for documents within a specific radius (distance) from the query embedding.",
+      "translation": "在查询嵌入的特定半径（距离）内搜索文档。",
+      "count": 2
+    },
+    {
+      "source": "Search for documents matching a text query with optional filter expression.",
+      "translation": "搜索与文本查询匹配的文档，并可选择使用过滤表达式。",
+      "count": 2
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html\" title=\"class or interface in java.lang\">IllegalStateException</a></code> - if no default range threshold is configured",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html\" title=\"class or interface in java.lang\">IllegalStateException</a></code> - 如果未配置默认范围阈值",
+      "count": 2
+    },
+    {
+      "source": "<code>limit</code> - Maximum number of results to return",
+      "translation": "<code>limit</code> - 返回结果的最大数量",
+      "count": 2
+    },
+    {
+      "source": "<code>radius</code> - The radius (maximum distance) to search within (0.0 to 1.0)",
+      "translation": "`radius` - 搜索范围（最大距离），取值范围为 0.0 到 1.0。",
+      "count": 2
+    },
+    {
+      "source": "<code>filterExpression</code> - Optional filter expression to narrow down results",
+      "translation": "<code>filterExpression</code> - 可选的过滤表达式，用于缩小结果范围",
+      "count": 2
+    },
+    {
+      "source": "List of matching documents",
+      "translation": "匹配文档列表",
+      "count": 2
+    },
+    {
+      "source": "the number of matching documents",
+      "translation": "匹配文档的数量",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "The store uses Redis JSON documents to persist vector embeddings along with their\nassociated document content and metadata. It leverages Redis Query Engine for creating\nand querying vector similarity indexes. The RedisVectorStore manages and queries vector\ndata, offering functionalities like adding, deleting, and performing similarity\nsearches on documents.",
+      "translation": "该商店使用 Redis JSON 文档来持久化向量嵌入及其关联的文档内容和元数据。它利用 Redis 查询引擎创建和查询向量相似度索引。RedisVectorStore 负责管理和查询向量数据，提供添加、删除以及对文档执行相似度搜索等功能。",
+      "count": 1
+    },
+    {
+      "source": "The store utilizes RedisJSON and RedisSearch to handle JSON documents and to index and\nsearch vector data. It supports various vector algorithms (e.g., FLAT, HNSW) for\nefficient similarity searches. Additionally, it allows for custom metadata fields in\nthe documents to be stored alongside the vector and content data.",
+      "translation": "该商店利用 RedisJSON 和 RedisSearch 来处理 JSON 文档，并对向量数据进行索引和搜索。它支持多种向量算法（例如 FLAT、HNSW），以实现高效的相似度搜索。此外，它还允许在文档中存储自定义元数据字段，与向量和内容数据一同保存。",
+      "count": 1
+    },
+    {
+      "source": "Basic usage example:",
+      "translation": "基本使用示例：",
+      "count": 1
+    },
+    {
+      "source": "Advanced configuration example:",
+      "translation": "高级配置示例：",
+      "count": 1
+    },
+    {
+      "source": "Count Query Examples:",
+      "translation": "计数查询示例：",
+      "count": 1
+    },
+    {
+      "source": "Range Query Examples:",
+      "translation": "范围查询示例：",
+      "count": 1
+    },
+    {
+      "source": "Database Requirements:",
+      "translation": "数据库需求：",
+      "count": 1
+    },
+    {
+      "source": "Vector Algorithms:",
+      "translation": "向量算法：",
+      "count": 1
+    },
+    {
+      "source": "HNSW Algorithm Configuration:",
+      "translation": "HNSW 算法配置：",
+      "count": 1
+    },
+    {
+      "source": "Metadata Field Types:",
+      "translation": "元数据字段类型：",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../VectorStore.html#getNativeClient()\">VectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../VectorStore.html#getNativeClient()\">VectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Returns the native client if available in this vector store implementation.\n\nNote on usage: 1. Returns empty Optional when no native client is available 2. Due\nto Java type erasure, runtime type checking is not possible\n\nExample usage: When working with implementation with known native client:\nOptional<nativeclienttype> client = vectorStore.getNativeClient();\n\nNote: Using Optional<span class=\"invalid-tag\">invalid input: '&lt;'</span>?&gt; will return the native client if one exists, rather than an\nempty Optional. For type safety, prefer using the specific client type.</nativeclienttype>",
+      "translation": "返回当前向量存储实现中可用的原生客户端。\n\n使用注意事项：1. 若无可用原生客户端，则返回空 Optional；2. 由于 Java 类型擦除，无法进行运行时类型检查。\n\n使用示例：在与已知原生客户端的实现协作时：Optional<nativeclienttype> client = vectorStore.getNativeClient();\n\n注意：使用 Optional<span class=\"invalid-tag\">无效输入：'&lt;'</span>?&gt; 将返回存在的原生客户端，而非空 Optional。为确保类型安全，建议使用特定的客户端类型。</nativeclienttype>",
+      "count": 1
+    },
+    {
+      "source": "Supported distance metrics for vector similarity in Redis.",
+      "translation": "Redis 中用于向量相似性的支持距离度量。",
+      "count": 1
+    },
+    {
+      "source": "Text scoring algorithms for text search in Redis.",
+      "translation": "Redis 中文本搜索的文本评分算法。",
+      "count": 1
+    },
+    {
+      "source": "Returns the native client if available in this vector store implementation.",
+      "translation": "如果此向量存储实现中可用，则返回原生客户端。",
+      "count": 1
+    },
+    {
+      "source": "Search for documents within a specific radius (distance) from the query embedding.\nUnlike KNN search which returns a fixed number of results, range search returns all\ndocuments that fall within the specified radius.",
+      "translation": "在查询嵌入的特定半径（距离）内搜索文档。  \n与返回固定数量结果的 KNN 搜索不同，范围搜索会返回所有落在指定半径内的文档。",
+      "count": 1
+    },
+    {
+      "source": "Search for documents within a specific radius (distance) from the query embedding.\nUses the configured default range threshold, if available.",
+      "translation": "在查询嵌入的特定半径（距离）内搜索文档。  \n如有可用，则使用配置的默认范围阈值。",
+      "count": 1
+    },
+    {
+      "source": "Search for documents within a specific radius (distance) from the query embedding,\nwith optional filter expression to narrow down results. Uses the configured default\nrange threshold, if available.",
+      "translation": "在查询嵌入的指定半径（距离）内搜索文档，并可选择使用过滤表达式来缩小结果范围。若可用，将使用配置的默认范围阈值。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">doAdd</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">doAdd</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">doDelete</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">doDelete</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">doDelete</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">doDelete</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">doSimilaritySearch</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">doSimilaritySearch</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">createObservationContextBuilder</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">createObservationContextBuilder</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../VectorStore.html#getNativeClient()\">getNativeClient</a></code> in interface <code><a href=\"../VectorStore.html\" title=\"interface in org.springframework.ai.vectorstore\">VectorStore</a></code>",
+      "translation": "接口 <code><a href=\"../VectorStore.html\" title=\"org.springframework.ai.vectorstore 中的接口\">VectorStore</a></code> 中的方法 <code><a href=\"../VectorStore.html#getNativeClient()\">getNativeClient</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code>afterPropertiesSet</code> in interface <code>org.springframework.beans.factory.InitializingBean</code>",
+      "translation": "接口 <code>org.springframework.beans.factory.InitializingBean</code> 中的 <code>afterPropertiesSet</code>",
+      "count": 1
+    },
+    {
+      "source": "<span id=\"getNativeClient()-type-param-T\"><code>T</code> - The type of the native client</span>",
+      "translation": "<span id=\"getNativeClient()-type-param-T\"><code>T</code> - 原生客户端的类型</span>",
+      "count": 1
+    },
+    {
+      "source": "<code>documents</code> - the documents to add",
+      "translation": "<code>documents</code> - 要添加的文档",
+      "count": 1
+    },
+    {
+      "source": "<code>idList</code> - the list of document IDs to delete",
+      "translation": "<code>idList</code> - 要删除的文档 ID 列表",
+      "count": 1
+    },
+    {
+      "source": "<code>filterExpression</code> - Filter expression to identify documents to delete",
+      "translation": "<code>filterExpression</code> - 用于标识要删除的文档的过滤表达式",
+      "count": 1
+    },
+    {
+      "source": "<code>request</code> - the search request",
+      "translation": "<code>request</code> - 搜索请求",
+      "count": 1
+    },
+    {
+      "source": "<code>operationName</code> - the operation name",
+      "translation": "<code>operationName</code> - 操作名称",
+      "count": 1
+    },
+    {
+      "source": "<code>filterExpression</code> - Optional filter expression",
+      "translation": "<code>filterExpression</code> - 可选的过滤表达式",
+      "count": 1
+    },
+    {
+      "source": "<code>filterExpression</code> - the filter expression string (using Redis query syntax)",
+      "translation": "<code>filterExpression</code> - 过滤表达式字符串（使用 Redis 查询语法）",
+      "count": 1
+    },
+    {
+      "source": "<code>filterExpression</code> - the filter expression to match documents against",
+      "translation": "<code>filterExpression</code> - 用于匹配文档的过滤表达式",
+      "count": 1
+    },
+    {
+      "source": "Automatic schema initialization with configurable index creation",
+      "translation": "支持可配置索引创建的自动模式初始化",
+      "count": 1
+    },
+    {
+      "source": "Support for HNSW and FLAT vector indexing algorithms",
+      "translation": "支持 HNSW 和 FLAT 向量索引算法",
+      "count": 1
+    },
+    {
+      "source": "Cosine similarity metric for vector comparisons",
+      "translation": "用于向量比较的余弦相似度度量",
+      "count": 1
+    },
+    {
+      "source": "Flexible metadata field types (TEXT, TAG, NUMERIC) for advanced filtering",
+      "translation": "支持高级过滤的灵活元数据字段类型（TEXT、TAG、NUMERIC）",
+      "count": 1
+    },
+    {
+      "source": "Configurable similarity thresholds for search results",
+      "translation": "可配置的搜索结果相似度阈值",
+      "count": 1
+    },
+    {
+      "source": "Batch processing support with configurable batching strategies",
+      "translation": "支持可配置批处理策略的批量处理功能",
+      "count": 1
+    },
+    {
+      "source": "Text search capabilities with various scoring algorithms",
+      "translation": "支持多种评分算法的文本搜索功能",
+      "count": 1
+    },
+    {
+      "source": "Range query support for documents within a specific similarity radius",
+      "translation": "支持在特定相似度半径内对文档进行范围查询",
+      "count": 1
+    },
+    {
+      "source": "Count query support for efficiently counting documents without retrieving\ncontent",
+      "translation": "支持计数查询，可高效统计文档数量而无需检索内容。",
+      "count": 1
+    },
+    {
+      "source": "Redis Stack with Redis Query Engine and RedisJSON modules",
+      "translation": "带有 Redis 查询引擎和 RedisJSON 模块的 Redis Stack",
+      "count": 1
+    },
+    {
+      "source": "Redis version 7.0 or higher",
+      "translation": "Redis 版本 7.0 或更高版本",
+      "count": 1
+    },
+    {
+      "source": "Sufficient memory for storing vectors and indexes",
+      "translation": "存储向量和索引所需的充足内存。",
+      "count": 1
+    },
+    {
+      "source": "HNSW: Default algorithm, provides better search performance with slightly higher\nmemory usage",
+      "translation": "HNSW：默认算法，在内存使用量略有增加的情况下提供更高的搜索性能。",
+      "count": 1
+    },
+    {
+      "source": "FLAT: Brute force algorithm, provides exact results but slower for large\ndatasets",
+      "translation": "扁平：暴力算法，可提供精确结果，但在处理大型数据集时速度较慢。",
+      "count": 1
+    },
+    {
+      "source": "M: Maximum number of connections per node in the graph. Higher values increase\nrecall but also memory usage. Typically between 5-100. Default: 16",
+      "translation": "M：图中每个节点的最大连接数。较高的值可提高召回率，但也会增加内存占用。通常取值范围为 5-100。默认值：16",
+      "count": 1
+    },
+    {
+      "source": "EF_CONSTRUCTION: Size of the dynamic candidate list during index building. Higher\nvalues lead to better recall but slower indexing. Typically between 50-500. Default:\n200",
+      "translation": "EF_CONSTRUCTION：索引构建期间动态候选列表的大小。较高的值会带来更好的召回率，但索引速度会变慢。通常取值范围为 50-500。默认值：200",
+      "count": 1
+    },
+    {
+      "source": "EF_RUNTIME: Size of the dynamic candidate list during search. Higher values lead to\nmore accurate but slower searches. Typically between 20-200. Default: 10",
+      "translation": "EF_RUNTIME：搜索期间动态候选列表的大小。较高的值会导致更准确但更慢的搜索。通常在 20-200 之间。默认值：10",
+      "count": 1
+    },
+    {
+      "source": "TAG: For exact match filtering on categorical data",
+      "translation": "标签：用于分类数据的精确匹配过滤",
+      "count": 1
+    },
+    {
+      "source": "TEXT: For full-text search capabilities",
+      "translation": "支持全文搜索功能",
+      "count": 1
+    },
+    {
+      "source": "NUMERIC: For range queries on numerical data",
+      "translation": "数值：用于对数值数据进行范围查询",
+      "count": 1
+    },
+    {
+      "source": "Julien Ruaux, Christian Tzolov, Eddú Meléndez, Thomas Vitale, Soby Chacko, Jihoon Kim, chabinhwang, Yanming Zhou",
+      "translation": "朱利安·鲁奥，克里斯蒂安·茨索洛夫，埃杜·梅伦德斯，托马斯·维塔莱，索比·查科，基勋·金，chabinhwang，周彦明",
+      "count": 1
+    },
+    {
+      "source": "the list of documents that match the query request conditions",
+      "translation": "与查询请求条件匹配的文件列表",
+      "count": 1
+    },
+    {
+      "source": "the observation context builder",
+      "translation": "观察上下文构建器",
+      "count": 1
+    },
+    {
+      "source": "Optional containing native client if available, empty Optional otherwise",
+      "translation": "如有可用的本机客户端，则包含该客户端的 Optional；否则为空 Optional。",
+      "count": 1
+    },
+    {
+      "source": "List of matching documents with default limit (10)",
+      "translation": "默认限制（10）的匹配文档列表",
+      "count": 1
+    },
+    {
+      "source": "A list of documents that fall within the specified radius",
+      "translation": "在指定半径范围内的文件列表",
+      "count": 1
+    },
+    {
+      "source": "A list of documents that fall within the default radius",
+      "translation": "默认半径范围内的文件列表",
+      "count": 1
+    },
+    {
+      "source": "A list of documents that fall within the default radius and match the\nfilter",
+      "translation": "包含在默认半径内且匹配过滤条件的文件列表",
+      "count": 1
+    },
+    {
+      "source": "A list of documents that fall within the specified radius and match the\nfilter",
+      "translation": "在指定半径内且符合过滤条件的文件列表",
+      "count": 1
+    },
+    {
+      "source": "the total number of documents",
+      "translation": "文档总数",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "Redis-based vector store implementation using Redis Stack with Redis Query Engine and\nRedisJSON.",
+      "translation": "基于 Redis 的向量存储实现，采用 Redis Stack、Redis Query Engine 和 RedisJSON。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>支持可配置索引创建的自动模式初始化</li>\n<li>支持 HNSW 和 FLAT 向量索引算法</li>\n<li>用于向量比较的余弦相似度度量</li>\n<li>支持高级过滤的灵活元数据字段类型（TEXT、TAG、NUMERIC）</li>\n<li>可配置的搜索结果相似度阈值</li>\n<li>支持可配置批处理策略的批量处理功能</li>\n<li>支持多种评分算法的文本搜索功能</li>\n<li>支持在特定相似度半径内对文档进行范围查询</li>\n<li>支持计数查询，可高效统计文档数量而无需检索内容。</li>\n</ul>",
+      "translation": "<ul>\n<li>支持自动模式初始化以配置索引创建</li>\n<li>支持 HNSW 和 FLAT 向量索引算法</li>\n<li>采用余弦相似度度量进行向量比较</li>\n<li>支持灵活元数据字段类型（TEXT、TAG、NUMERIC），并具备高级过滤能力</li>\n<li>支持可配置的搜索结果相似度阈值</li>\n<li>支持批量处理功能，并可配置批处理策略</li>\n<li>支持多种评分算法的文本搜索功能</li>\n<li>支持在特定相似度半径内对文档执行范围查询</li>\n<li>支持计数查询，可高效统计文档数量而无需检索内容。</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>RedisVectorStore vectorStore = RedisVectorStore.builder(jedisClient, embeddingModel)\n    .indexName(\"custom-index\")     // Optional: defaults to \"spring-ai-index\"\n    .prefix(\"custom-prefix\")       // Optional: defaults to \"embedding:\"\n    .vectorAlgorithm(Algorithm.HNSW)\n    .build();\n\n// Add documents\nvectorStore.add(List.of(\n    new Document(\"content1\", Map.of(\"meta1\", \"value1\")),\n    new Document(\"content2\", Map.of(\"meta2\", \"value2\"))\n));\n\n// Search with filters\nList&lt;Document&gt; results = vectorStore.similaritySearch(\n    SearchRequest.query(\"search text\")\n        .withTopK(5)\n        .withSimilarityThreshold(0.7)\n        .withFilterExpression(\"meta1 == 'value1'\")\n);\n\n// Count documents matching a filter\nlong count = vectorStore.count(Filter.builder().eq(\"category\", \"AI\").build());\n</code></pre>",
+      "translation": "<pre><code>RedisVectorStore vectorStore = RedisVectorStore.builder(jedisClient, embeddingModel)\n    .indexName(\"custom-index\")     // 可选：默认为 \"spring-ai-index\"\n    .prefix(\"custom-prefix\")       // 可选：默认为 \"embedding:\"\n    .vectorAlgorithm(Algorithm.HNSW)\n    .build();\n\n// 添加文档\nvectorStore.add(List.of(\n    new Document(\"content1\", Map.of(\"meta1\", \"value1\")),\n    new Document(\"content2\", Map.of(\"meta2\", \"value2\"))\n));\n\n// 使用过滤器进行搜索\nList&lt;Document&gt; results = vectorStore.similaritySearch(\n    SearchRequest.query(\"search text\")\n        .withTopK(5)\n        .withSimilarityThreshold(0.7)\n        .withFilterExpression(\"meta1 == 'value1'\")\n);\n\n// 统计匹配过滤器的文档数量\nlong count = vectorStore.count(Filter.builder().eq(\"category\", \"AI\").build());\n</code></pre>",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>RedisVectorStore vectorStore = RedisVectorStore.builder()\n    .jedisClient(jedisClient)\n    .embeddingModel(embeddingModel)\n    .indexName(\"custom-index\")\n    .prefix(\"custom-prefix\")\n    .contentFieldName(\"custom_content\")\n    .embeddingFieldName(\"custom_embedding\")\n    .vectorAlgorithm(Algorithm.HNSW)\n    .hnswM(32)                      // HNSW parameter for max connections per node\n    .hnswEfConstruction(100)        // HNSW parameter for index building accuracy\n    .hnswEfRuntime(50)              // HNSW parameter for search accuracy\n    .metadataFields(\n        MetadataField.tag(\"category\"),\n        MetadataField.numeric(\"year\"),\n        MetadataField.text(\"description\"))\n    .initializeSchema(true)\n    .batchingStrategy(new TokenCountBatchingStrategy())\n    .build();\n</code></pre>",
+      "translation": "<pre><code>RedisVectorStore vectorStore = RedisVectorStore.builder()\n    .jedisClient(jedisClient)\n    .embeddingModel(embeddingModel)\n    .indexName(\"custom-index\")\n    .prefix(\"custom-prefix\")\n    .contentFieldName(\"custom_content\")\n    .embeddingFieldName(\"custom_embedding\")\n    .vectorAlgorithm(Algorithm.HNSW)\n    .hnswM(32)                      // HNSW 参数，表示每个节点的最大连接数\n    .hnswEfConstruction(100)        // HNSW 参数，用于索引构建的准确性\n    .hnswEfRuntime(50)              // HNSW 参数，用于搜索的准确性\n    .metadataFields(\n        MetadataField.tag(\"category\"),\n        MetadataField.numeric(\"year\"),\n        MetadataField.text(\"description\"))\n    .initializeSchema(true)\n    .batchingStrategy(new TokenCountBatchingStrategy())\n    .build();\n</code></pre>",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>// Count all documents\nlong totalDocuments = vectorStore.count();\n\n// Count with raw Redis query string\nlong aiDocuments = vectorStore.count(\"@category:{AI}\");\n\n// Count with filter expression\nFilter.Expression yearFilter = new Filter.Expression(\n    Filter.ExpressionType.EQ,\n    new Filter.Key(\"year\"),\n    new Filter.Value(2023)\n);\nlong docs2023 = vectorStore.count(yearFilter);\n\n// Count with complex filter\nlong aiDocsFrom2023 = vectorStore.count(\n    Filter.builder().eq(\"category\", \"AI\").and().eq(\"year\", 2023).build()\n);\n</code></pre>",
+      "translation": "<pre><code>// 统计所有文档数量\nlong totalDocuments = vectorStore.count();\n\n// 使用原始 Redis 查询字符串进行计数\nlong aiDocuments = vectorStore.count(\"@category:{AI}\");\n\n// 使用过滤表达式进行计数\nFilter.Expression yearFilter = new Filter.Expression(\n    Filter.ExpressionType.EQ,\n    new Filter.Key(\"year\"),\n    new Filter.Value(2023)\n);\nlong docs2023 = vectorStore.count(yearFilter);\n\n// 使用复杂过滤器进行计数\nlong aiDocsFrom2023 = vectorStore.count(\n    Filter.builder().eq(\"category\", \"AI\").and().eq(\"year\", 2023).build()\n);\n</code></pre>",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>// Search for similar documents within a radius\nList&lt;Document&gt; results = vectorStore.searchByRange(\"AI technology\", 0.8);\n\n// Search with radius and filter\nList&lt;Document&gt; filteredResults = vectorStore.searchByRange(\n    \"AI technology\", 0.8, \"category == 'research'\"\n);\n</code></pre>",
+      "translation": "<pre><code>// 在指定半径内搜索相似文档\nList&lt;Document&gt; results = vectorStore.searchByRange(\"AI technology\", 0.8);\n\n// 使用半径和过滤器进行搜索\nList&lt;Document&gt; filteredResults = vectorStore.searchByRange(\n    \"AI technology\", 0.8, \"category == 'research'\"\n);\n</code></pre>",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>带有 Redis 查询引擎和 RedisJSON 模块的 Redis Stack</li>\n<li>Redis 版本 7.0 或更高版本</li>\n<li>存储向量和索引所需的充足内存。</li>\n</ul>",
+      "translation": "<ul>\n<li>配备 Redis 查询引擎和 RedisJSON 模块的 Redis Stack</li>\n<li>Redis 版本 7.0 或更高版本</li>\n<li>充足的内存以存储向量和索引所需的数据。</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>HNSW：默认算法，在内存使用量略有增加的情况下提供更高的搜索性能。</li>\n<li>扁平：暴力算法，可提供精确结果，但在处理大型数据集时速度较慢。</li>\n</ul>",
+      "translation": "<ul>\n<li>HNSW：默认算法，在略微增加内存使用的情况下提供更高的搜索性能。</li>\n<li>Flat：暴力算法，可提供精确结果，但在处理大型数据集时速度较慢。</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>M：图中每个节点的最大连接数。较高的值可提高召回率，但也会增加内存占用。通常取值范围为 5-100。默认值：16</li>\n<li>EF_CONSTRUCTION：索引构建期间动态候选列表的大小。较高的值会带来更好的召回率，但索引速度会变慢。通常取值范围为 50-500。默认值：200</li>\n<li>EF_RUNTIME：搜索期间动态候选列表的大小。较高的值会导致更准确但更慢的搜索。通常在 20-200 之间。默认值：10</li>\n</ul>",
+      "translation": "<ul>\n<li>M：图中每个节点的最大连接数。较高的值可提高召回率，但也会增加内存占用。通常取值范围为 5-100。默认值：16</li>\n<li>EF_CONSTRUCTION：索引构建期间动态候选列表的大小。较高的值会带来更好的召回率，但索引速度会变慢。通常取值范围为 50-500。默认值：200</li>\n<li>EF_RUNTIME：搜索期间动态候选列表的大小。较高的值会导致更准确但更慢的搜索。通常在 20-200 之间。默认值：10</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>标签：用于分类数据的精确匹配过滤</li>\n<li>支持全文搜索功能</li>\n<li>数值：用于对数值数据进行范围查询</li>\n</ul>",
+      "translation": "<ul>\n<li>标签：用于对分类数据进行精确匹配过滤</li>\n<li>支持全文搜索功能</li>\n<li>数值：用于对数值数据进行范围查询</li>\n</ul>",
+      "count": 1
+    }
+  ]
+}

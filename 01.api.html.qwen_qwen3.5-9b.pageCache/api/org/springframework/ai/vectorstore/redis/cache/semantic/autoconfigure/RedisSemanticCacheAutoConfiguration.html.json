@@ -1,0 +1,106 @@
+{
+  "created_at": "2026-06-15 07:48:13",
+  "updated_at": "2026-06-15 07:48:13",
+  "stats": {
+    "total_entries": 18,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 21,
+    "entries_with_hits": 18,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1666666666666667,
+    "usage_percentage": 0.0018
+  },
+  "items": [
+    {
+      "source": "Creates a RedisClient client for Redis connections, honoring the SSL, password,\nclient name, and timeout settings from the <code>JedisConnectionFactory</code>.",
+      "translation": "为 Redis 连接创建 RedisClient 客户端，并遵循 `<code>JedisConnectionFactory</code>` 中的 SSL、密码、客户端名称和超时设置。",
+      "count": 2
+    },
+    {
+      "source": "Creates the semantic cache instance.",
+      "translation": "创建语义缓存实例。",
+      "count": 2
+    },
+    {
+      "source": "Creates the semantic cache advisor for ChatClient integration.",
+      "translation": "为 ChatClient 集成创建语义缓存顾问。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Auto-configuration for Redis semantic cache.",
+      "translation": "Redis 语义缓存的自动配置。",
+      "count": 1
+    },
+    {
+      "source": "Provides a default EmbeddingModel using the redis/langcache-embed-v1 model.",
+      "translation": "使用 redis/langcache-embed-v1 模型提供默认的 EmbeddingModel。",
+      "count": 1
+    },
+    {
+      "source": "Provides a default EmbeddingModel using the redis/langcache-embed-v1 model. This\nmodel is specifically designed for semantic caching and provides 768-dimensional\nembeddings. It matches the default model used by RedisVL Python library.",
+      "translation": "使用 redis/langcache-embed-v1 模型提供默认的 EmbeddingModel。该模型专为语义缓存设计，提供 768 维的嵌入向量，与 RedisVL Python 库使用的默认模型相匹配。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Exception.html\" title=\"class or interface in java.lang\">Exception</a></code> - if model initialization fails",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Exception.html\" title=\"java.lang 中的类或接口\">Exception</a></code> - 如果模型初始化失败",
+      "count": 1
+    },
+    {
+      "source": "<code>jedisConnectionFactory</code> - the Jedis connection factory",
+      "translation": "<jedisConnectionFactory> - Jedis 连接工厂",
+      "count": 1
+    },
+    {
+      "source": "<code>jedisClient</code> - the Jedis client",
+      "translation": "<code>jedisClient</code> - Jedis 客户端",
+      "count": 1
+    },
+    {
+      "source": "<code>embeddingModel</code> - the embedding model",
+      "translation": "<code>embeddingModel</code> - 嵌入模型",
+      "count": 1
+    },
+    {
+      "source": "<code>properties</code> - the semantic cache properties",
+      "translation": "<code>properties</code> - 语义缓存属性",
+      "count": 1
+    },
+    {
+      "source": "<code>semanticCache</code> - the semantic cache",
+      "translation": "<code>semanticCache</code> - 语义缓存",
+      "count": 1
+    },
+    {
+      "source": "Brian Sam-Bodden, Eddú Meléndez, Yanming Zhou",
+      "translation": "布莱恩·萨姆 - 博登，埃杜·梅伦德斯，周燕明",
+      "count": 1
+    },
+    {
+      "source": "the embedding model for semantic caching",
+      "translation": "用于语义缓存的嵌入模型",
+      "count": 1
+    },
+    {
+      "source": "the RedisClient client",
+      "translation": "RedisClient 客户端",
+      "count": 1
+    },
+    {
+      "source": "the configured semantic cache",
+      "translation": "已配置的语义缓存",
+      "count": 1
+    },
+    {
+      "source": "the semantic cache advisor",
+      "translation": "语义缓存顾问",
+      "count": 1
+    }
+  ]
+}

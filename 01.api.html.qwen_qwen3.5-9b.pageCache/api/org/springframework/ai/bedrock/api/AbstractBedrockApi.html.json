@@ -1,0 +1,206 @@
+{
+  "created_at": "2026-06-15 09:02:58",
+  "updated_at": "2026-06-15 09:02:58",
+  "stats": {
+    "total_entries": 38,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 68,
+    "entries_with_hits": 38,
+    "entries_without_hits": 0,
+    "hit_rate": 1.7894736842105263,
+    "usage_percentage": 0.0038000000000000004
+  },
+  "items": [
+    {
+      "source": "<code>modelId</code> - The model id to use.",
+      "translation": "<code>modelId</code> - 要使用的模型 ID。",
+      "count": 5
+    },
+    {
+      "source": "<code>region</code> - The AWS region to use.",
+      "translation": "<code>region</code> - 要使用的 AWS 区域。",
+      "count": 5
+    },
+    {
+      "source": "Create a new AbstractBedrockApi instance using default credentials provider and object mapper.",
+      "translation": "使用默认凭证提供程序和对象映射器创建一个新的 AbstractBedrockApi 实例。",
+      "count": 4
+    },
+    {
+      "source": "Create a new AbstractBedrockApi instance using the provided credentials provider, region and object mapper.",
+      "translation": "使用提供的凭证提供程序、区域和对象映射器创建一个新的 AbstractBedrockApi 实例。",
+      "count": 4
+    },
+    {
+      "source": "<code>credentialsProvider</code> - The credentials provider to connect to AWS.",
+      "translation": "<code>credentialsProvider</code> - 用于连接到 AWS 的凭证提供程序。",
+      "count": 3
+    },
+    {
+      "source": "<code>jsonMapper</code> - The JSON mapper to use for JSON serialization and deserialization.",
+      "translation": "<code>jsonMapper</code> - 用于 JSON 序列化和反序列化的 JSON 映射器。",
+      "count": 3
+    },
+    {
+      "source": "Default emit failure handler.",
+      "translation": "默认的事件发射失败处理器。",
+      "count": 2
+    },
+    {
+      "source": "Create a new AbstractBedrockApi instance using the provided credentials provider, region and JSON mapper.",
+      "translation": "使用提供的凭证提供程序、区域和 JSON 映射器创建一个新的 AbstractBedrockApi 实例。",
+      "count": 2
+    },
+    {
+      "source": "Chat completion invocation.",
+      "translation": "聊天补全调用。",
+      "count": 2
+    },
+    {
+      "source": "Chat completion invocation with streaming response.",
+      "translation": "使用流式响应调用聊天补全。",
+      "count": 2
+    },
+    {
+      "source": "Compute the embedding for the given text.",
+      "translation": "计算给定文本的嵌入表示。",
+      "count": 2
+    },
+    {
+      "source": "Get the model id.",
+      "translation": "获取模型 ID。",
+      "count": 2
+    },
+    {
+      "source": "Get the AWS region.",
+      "translation": "获取 AWS 区域。",
+      "count": 2
+    },
+    {
+      "source": "Internal method to invoke the model and return the response.\nhttps://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters.html\nhttps://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModel.html\nhttps://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/bedrockruntime/BedrockRuntimeClient.html#invokeModel",
+      "translation": "内部方法用于调用模型并返回响应。\nhttps://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters.html\nhttps://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModel.html\nhttps://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/bedrockruntime/BedrockRuntimeClient.html#invokeModel",
+      "count": 2
+    },
+    {
+      "source": "Internal method to invoke the model and return the response stream.",
+      "translation": "内部方法用于调用模型并返回响应流。",
+      "count": 2
+    },
+    {
+      "source": "<code>timeout</code> - Configure the amount of time to allow the client to complete the execution of an API call.\nThis timeout covers the entire client execution except for marshalling. This includes request handler execution,\nall HTTP requests including retries, unmarshalling, etc. This value should always be positive, if present.",
+      "translation": "<code>timeout</code> - 配置允许客户端完成 API 调用执行的时间。  \n此超时时间涵盖整个客户端执行过程（除反序列化外），包括请求处理器执行、所有 HTTP 请求（含重试）、反序列化等。如果存在该值，它必须始终为正数。",
+      "count": 2
+    },
+    {
+      "source": "<code>request</code> - The chat completion request.",
+      "translation": "<code>request</code> - 聊天补全请求。",
+      "count": 2
+    },
+    {
+      "source": "<code>request</code> - Model invocation request.",
+      "translation": "<code>request</code> - 模型调用请求。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Encapsulates the metrics about the model invocation.\nhttps://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-claude.html",
+      "translation": "封装了模型调用的指标。\nhttps://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-claude.html",
+      "count": 1
+    },
+    {
+      "source": "<span id=\"type-param-I\"><code>I</code> - The input request type.</span>",
+      "translation": "<span id=\"type-param-I\"><code>I</code> - 输入请求类型。</span>",
+      "count": 1
+    },
+    {
+      "source": "<span id=\"type-param-O\"><code>O</code> - The output response type.</span>",
+      "translation": "<span id=\"type-param-O\"><code>O</code> - 输出响应类型。</span>",
+      "count": 1
+    },
+    {
+      "source": "<span id=\"type-param-SO\"><code>SO</code> - The streaming response type. For some models this type can be the same as the output response type.</span>",
+      "translation": "<span id=\"type-param-SO\"><code>SO</code> - 流式响应类型。对于某些模型，此类型可能与输出响应类型相同。</span>",
+      "count": 1
+    },
+    {
+      "source": "<code>timeout</code> - The timeout to use.",
+      "translation": "<code>timeout</code> - 要使用的超时时间。",
+      "count": 1
+    },
+    {
+      "source": "<code>request</code> - The embedding request.",
+      "translation": "<code>request</code> - 嵌入请求。",
+      "count": 1
+    },
+    {
+      "source": "<code>clazz</code> - The response class type",
+      "translation": "<code>clazz</code> - 响应类类型",
+      "count": 1
+    },
+    {
+      "source": "<code>clazz</code> - Response class type.",
+      "translation": "<code>clazz</code> - 响应类类型。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Wei Jiang",
+      "translation": "克里斯蒂安·茨洛夫，魏江",
+      "count": 1
+    },
+    {
+      "source": "The model id.",
+      "translation": "模型 ID。",
+      "count": 1
+    },
+    {
+      "source": "The AWS region.",
+      "translation": "AWS 区域。",
+      "count": 1
+    },
+    {
+      "source": "Returns the embedding response.",
+      "translation": "返回嵌入响应。",
+      "count": 1
+    },
+    {
+      "source": "The chat completion response.",
+      "translation": "聊天补全响应。",
+      "count": 1
+    },
+    {
+      "source": "The chat completion response stream.",
+      "translation": "聊天补全响应流。",
+      "count": 1
+    },
+    {
+      "source": "The model invocation response.",
+      "translation": "模型调用响应。",
+      "count": 1
+    },
+    {
+      "source": "The model invocation response stream.",
+      "translation": "模型调用响应流。",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "Abstract class for the Bedrock API. It provides the basic functionality to invoke the chat completion model and\nreceive the response for streaming and non-streaming requests.",
+      "translation": "Bedrock API 的抽象类。它提供了调用聊天补全模型的基本功能，并支持接收流式和非流式请求的响应。",
+      "count": 1
+    }
+  ]
+}

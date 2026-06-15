@@ -1,0 +1,61 @@
+{
+  "created_at": "2026-06-15 07:57:08",
+  "updated_at": "2026-06-15 07:57:08",
+  "stats": {
+    "total_entries": 9,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 11,
+    "entries_with_hits": 9,
+    "entries_without_hits": 0,
+    "hit_rate": 1.2222222222222223,
+    "usage_percentage": 0.0009
+  },
+  "items": [
+    {
+      "source": "Extract the description from the tool-param annotation for the given member, or\nreturn <code>null</code> if the annotation is absent or its description is blank.",
+      "translation": "从给定成员的 tool-param 注解中提取描述，或者如果注解不存在或其描述为空，则返回 <code>null</code>。",
+      "count": 2
+    },
+    {
+      "source": "Extract the required flag from the tool-param annotation for the given member, or\nreturn <code>null</code> if the annotation is absent.",
+      "translation": "从给定成员的 tool-param 注解中提取所需的标志，或者如果该注解不存在则返回 <code>null</code>。",
+      "count": 2
+    },
+    {
+      "source": "Provides shared logic for description resolution and required-field determination,\ndelegating annotation-specific lookups to subclasses via\n<a href=\"#resolveToolParamDescription(com.github.victools.jsonschema.generator.MemberScope)\"><code>resolveToolParamDescription(MemberScope)</code></a> and <a href=\"#resolveToolParamRequired(com.github.victools.jsonschema.generator.MemberScope)\"><code>resolveToolParamRequired(MemberScope)</code></a>.",
+      "translation": "提供描述解析和必填字段确定的共享逻辑，并通过<a href=\"#resolveToolParamDescription(com.github.victools.jsonschema.generator.MemberScope)\"><code>resolveToolParamDescription(MemberScope)</code></a>和<a href=\"#resolveToolParamRequired(com.github.victools.jsonschema.generator.MemberScope)\"><code>resolveToolParamRequired(MemberScope)</code></a>将特定注解的查找工作委托给子类。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Options for customizing the behavior of the module.",
+      "translation": "自定义模块行为的选项。",
+      "count": 1
+    },
+    {
+      "source": "<code>applyToConfigBuilder</code> in interface <code>com.github.victools.jsonschema.generator.Module</code>",
+      "translation": "接口 <code>com.github.victools.jsonschema.generator.Module</code> 中的 <code>applyToConfigBuilder</code>",
+      "count": 1
+    },
+    {
+      "source": "Thomas Vitale, Christian Tzolov",
+      "translation": "托马斯·维塔莱，克里斯蒂安·茨佐洛夫",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Abstract base for JSON Schema Generator Modules in Spring AI.",
+      "translation": "Spring AI 中用于生成 JSON Schema 模块的抽象基类。",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "created_at": "2026-06-15 07:59:00",
+  "updated_at": "2026-06-15 07:59:00",
+  "stats": {
+    "total_entries": 25,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 41,
+    "entries_with_hits": 25,
+    "entries_without_hits": 0,
+    "hit_rate": 1.64,
+    "usage_percentage": 0.0025
+  },
+  "items": [
+    {
+      "source": "Retrieves the class of a specific argument in a given function class.",
+      "translation": "获取给定函数类中特定参数的类型。",
+      "count": 4
+    },
+    {
+      "source": "Returns the input class of a given function class.",
+      "translation": "返回给定函数类的输入类。",
+      "count": 4
+    },
+    {
+      "source": "<code>functionClass</code> - The function class.",
+      "translation": "<code>functionClass</code> - 函数类。",
+      "count": 3
+    },
+    {
+      "source": "Resolve bean type, either directly with <code>BeanDefinition.getResolvableType()</code>\nor by resolving the factory method (duplicating\n<code>ConstructorResolver#resolveFactoryMethodIfPossible</code> logic as it is not\npublic).",
+      "translation": "解析 Bean 类型，可以直接通过 `<code>BeanDefinition.getResolvableType()</code>` 实现，或者通过解析工厂方法（由于 `ConstructorResolver#resolveFactoryMethodIfPossible` 不是公开的，因此需要复制其逻辑）。",
+      "count": 2
+    },
+    {
+      "source": "Returns the input class of a given Consumer class.",
+      "translation": "返回给定 Consumer 类的输入类。",
+      "count": 2
+    },
+    {
+      "source": "Retrieves the type of a specific argument in a given function class.",
+      "translation": "获取给定函数类中特定参数的类型。",
+      "count": 2
+    },
+    {
+      "source": "Returns the output class of a given function class.",
+      "translation": "返回给定函数类的输出类。",
+      "count": 2
+    },
+    {
+      "source": "<code>biFunctionClass</code> - The function class.",
+      "translation": "<code>biFunctionClass</code> - 函数类。",
+      "count": 2
+    },
+    {
+      "source": "<code>argumentIndex</code> - The index of the argument whose class should be retrieved.",
+      "translation": "<code>argumentIndex</code> - 要获取其类的参数的索引。",
+      "count": 2
+    },
+    {
+      "source": "The input class of the function.",
+      "translation": "函数的输入类。",
+      "count": 2
+    },
+    {
+      "source": "The class of the specified function argument.",
+      "translation": "指定函数参数的类型。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "A utility class that provides methods for resolving types and classes related to\nfunctions.",
+      "translation": "一个提供用于解析函数相关类型和类的实用工具类。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if the type of the bean definition is not\nresolvable.",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - 如果无法解析 bean 定义的类型，则抛出此异常。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if functionType is not a supported type",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果 functionType 不是支持的类型",
+      "count": 1
+    },
+    {
+      "source": "<code>consumerClass</code> - The consumer class.",
+      "translation": "<code>consumerClass</code> - 消费者类。",
+      "count": 1
+    },
+    {
+      "source": "<code>applicationContext</code> - The application context.",
+      "translation": "<code>applicationContext</code> - 应用程序上下文。",
+      "count": 1
+    },
+    {
+      "source": "<code>beanName</code> - The name of the bean to find a definition for.",
+      "translation": "<code>beanName</code> - 要查找其定义的字段的名称。",
+      "count": 1
+    },
+    {
+      "source": "<code>functionType</code> - The function type.",
+      "translation": "<code>functionType</code> - 函数类型。",
+      "count": 1
+    },
+    {
+      "source": "<code>argumentIndex</code> - The index of the argument whose type should be retrieved.",
+      "translation": "<code>argumentIndex</code> - 要获取其类型的参数的索引。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Sebastien Dekeuze",
+      "translation": "克里斯蒂安·茨洛夫，塞巴斯蒂安·德克兹",
+      "count": 1
+    },
+    {
+      "source": "The input class of the consumer.",
+      "translation": "消费者的输入类。",
+      "count": 1
+    },
+    {
+      "source": "The output class of the function.",
+      "translation": "函数的输出类。",
+      "count": 1
+    },
+    {
+      "source": "The resolved type.",
+      "translation": "解析后的类型。",
+      "count": 1
+    },
+    {
+      "source": "The type of the specified function argument.",
+      "translation": "指定函数参数的类型。",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "created_at": "2026-06-15 07:27:09",
+  "updated_at": "2026-06-15 07:27:09",
+  "stats": {
+    "total_entries": 16,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 21,
+    "entries_with_hits": 16,
+    "entries_without_hits": 0,
+    "hit_rate": 1.3125,
+    "usage_percentage": 0.0015999999999999999
+  },
+  "items": [
+    {
+      "source": "Creates a composite cleaner with the given cleaners.",
+      "translation": "使用给定的清洁器创建一个组合清洁器。",
+      "count": 4
+    },
+    {
+      "source": "Creates a builder for constructing a composite cleaner.",
+      "translation": "创建一个用于构建复合清洁器的构建器。",
+      "count": 2
+    },
+    {
+      "source": "Clean the given text by removing unwanted patterns, tags, or formatting.",
+      "translation": "请提供需要清理的文本内容，我将按照您的要求去除不需要的模式、标签或格式。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"ResponseTextCleaner.html#clean(java.lang.String)\">ResponseTextCleaner</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"ResponseTextCleaner.html#clean(java.lang.String)\">ResponseTextCleaner</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "A composite <a href=\"ResponseTextCleaner.html\" title=\"interface in org.springframework.ai.converter\"><code>ResponseTextCleaner</code></a> that applies multiple cleaners in sequence.\nThis allows for a flexible pipeline of text cleaning operations.",
+      "translation": "一个复合的<a href=\"ResponseTextCleaner.html\" title=\"org.springframework.ai.converter 中的接口\"><code>ResponseTextCleaner</code></a>，按顺序应用多个清理器。这允许构建灵活的多步骤文本清理流水线。",
+      "count": 1
+    },
+    {
+      "source": "Builder for <a href=\"CompositeResponseTextCleaner.html\" title=\"class in org.springframework.ai.converter\"><code>CompositeResponseTextCleaner</code></a>.",
+      "translation": "<code>CompositeResponseTextCleaner</code> 的构建器。",
+      "count": 1
+    },
+    {
+      "source": "Creates a composite cleaner with no cleaners.",
+      "translation": "创建一个不包含任何清洁器的复合清洁器。",
+      "count": 1
+    },
+    {
+      "source": "Creates a composite cleaner with no cleaners. Text will be returned unchanged.",
+      "translation": "创建一个不包含任何清洁器的组合式清洁器。文本将原样返回。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ResponseTextCleaner.html#clean(java.lang.String)\">clean</a></code> in interface <code><a href=\"ResponseTextCleaner.html\" title=\"interface in org.springframework.ai.converter\">ResponseTextCleaner</a></code>",
+      "translation": "<code><a href=\"ResponseTextCleaner.html#clean(java.lang.String)\">clean</a></code> 接口 <code><a href=\"ResponseTextCleaner.html\" title=\"org.springframework.ai.converter 中的接口\">ResponseTextCleaner</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>cleaners</code> - the list of cleaners to apply in order",
+      "translation": "<code>cleaners</code> - 按顺序应用的清洁器列表",
+      "count": 1
+    },
+    {
+      "source": "<code>cleaners</code> - the cleaners to apply in order",
+      "translation": "<code>cleaners</code> - 按顺序应用的清理器",
+      "count": 1
+    },
+    {
+      "source": "<code>text</code> - the raw text from LLM response",
+      "translation": "<code>text</code> - 来自 LLM 响应的原始文本",
+      "count": 1
+    },
+    {
+      "source": "the cleaned text ready for parsing",
+      "translation": "已清理完毕，准备解析。",
+      "count": 1
+    },
+    {
+      "source": "a new builder instance",
+      "translation": "一个新的构建器实例",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    }
+  ]
+}

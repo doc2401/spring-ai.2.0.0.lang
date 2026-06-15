@@ -1,0 +1,181 @@
+{
+  "created_at": "2026-06-15 07:26:32",
+  "updated_at": "2026-06-15 07:26:32",
+  "stats": {
+    "total_entries": 33,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 33,
+    "entries_with_hits": 33,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.0033000000000000004
+  },
+  "items": [
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This package provides a <a href=\"../chat/model/ChatModel.html\" title=\"interface in org.springframework.ai.chat.model\"><code>ChatModel</code></a>\nimplementation that enables interaction with Claude models through Anthropic's Messages\nAPI. The integration supports both synchronous and streaming conversations,\ntool/function calling, and full observability through Micrometer.",
+      "translation": "该包提供了一个<a href=\"../chat/model/ChatModel.html\" title=\"interface in org.springframework.ai.chat.model\"><code>ChatModel</code></a>实现，支持通过 Anthropic 的消息 API 与 Claude 模型进行交互。此集成同时支持同步和流式对话、工具/函数调用，并通过 Micrometer 提供完整的可观测性。",
+      "count": 1
+    },
+    {
+      "source": "<b>Key Classes:</b>",
+      "translation": "<b>关键类：</b>",
+      "count": 1
+    },
+    {
+      "source": "<b>Quick Start:</b>",
+      "translation": "<b>快速入门：</b>",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"../chat/model/ChatModel.html\" title=\"interface in org.springframework.ai.chat.model\"><code>ChatModel</code></a> and <a href=\"../chat/model/StreamingChatModel.html\" title=\"interface in org.springframework.ai.chat.model\"><code>StreamingChatModel</code></a> implementation using the official\n<a href=\"https://github.com/anthropics/anthropic-sdk-java\">Anthropic Java SDK</a>.",
+      "translation": "使用官方 <a href=\"https://github.com/anthropics/anthropic-sdk-java\">Anthropic Java SDK</a> 实现 <a href=\"../chat/model/ChatModel.html\" title=\"interface in org.springframework.ai.chat.model\"><code>ChatModel</code></a> 和 <a href=\"../chat/model/StreamingChatModel.html\" title=\"interface in org.springframework.ai.chat.model\"><code>StreamingChatModel</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Builder for creating <a href=\"AnthropicChatModel.html\" title=\"class in org.springframework.ai.anthropic\"><code>AnthropicChatModel</code></a> instances.",
+      "translation": "用于创建<a href=\"AnthropicChatModel.html\" title=\"org.springframework.ai.anthropic 中的类\"><code>AnthropicChatModel</code></a>实例的构建器。",
+      "count": 1
+    },
+    {
+      "source": "Chat options for <a href=\"AnthropicChatModel.html\" title=\"class in org.springframework.ai.anthropic\"><code>AnthropicChatModel</code></a>.",
+      "translation": "AnthropicChatModel 类的聊天选项。",
+      "count": 1
+    },
+    {
+      "source": "Builder for creating <a href=\"AnthropicChatOptions.html\" title=\"class in org.springframework.ai.anthropic\"><code>AnthropicChatOptions</code></a> instances.",
+      "translation": "用于创建<a href=\"AnthropicChatOptions.html\" title=\"org.springframework.ai.anthropic 中的类\"><code>AnthropicChatOptions</code></a>实例的构建器。",
+      "count": 1
+    },
+    {
+      "source": "Resolves cache eligibility for messages based on the provided\n<a href=\"AnthropicCacheOptions.html\" title=\"class in org.springframework.ai.anthropic\"><code>AnthropicCacheOptions</code></a>.",
+      "translation": "根据提供的 <a href=\"AnthropicCacheOptions.html\" title=\"class in org.springframework.ai.anthropic\"><code>AnthropicCacheOptions</code></a> 解决消息的缓存资格问题。",
+      "count": 1
+    },
+    {
+      "source": "Metadata support classes for the Anthropic chat model.",
+      "translation": "Anthropic 聊天模型的元数据支持类。",
+      "count": 1
+    },
+    {
+      "source": "Anthropic cache options for configuring prompt caching behavior with the Anthropic Java\nSDK.",
+      "translation": "Anthropic 缓存选项，用于配置使用 Anthropic Java SDK 时的提示词缓存行为。",
+      "count": 1
+    },
+    {
+      "source": "Defines the caching strategy for Anthropic prompt caching.",
+      "translation": "定义用于 Anthropic 提示缓存的缓存策略。",
+      "count": 1
+    },
+    {
+      "source": "Anthropic cache TTL (time-to-live) options for specifying how long cached prompts\nremain valid.",
+      "translation": "Anthropic 缓存的 TTL（生存时间）选项，用于指定缓存提示保持有效的时间长度。",
+      "count": 1
+    },
+    {
+      "source": "Builder class for creating citation-enabled documents using the Anthropic Java SDK.",
+      "translation": "用于使用 Anthropic Java SDK 创建支持引用的文档的构建器类。",
+      "count": 1
+    },
+    {
+      "source": "Builder class for AnthropicCitationDocument.",
+      "translation": "AnthropicCitationDocument 的构建器类。",
+      "count": 1
+    },
+    {
+      "source": "Document types supported by Anthropic Citations API.",
+      "translation": "Anthropic 引用 API 支持的文件类型。",
+      "count": 1
+    },
+    {
+      "source": "Service tier for controlling capacity routing on Anthropic API requests.",
+      "translation": "Anthropic API 请求中用于控制容量路由的服务层级。",
+      "count": 1
+    },
+    {
+      "source": "Factory class for creating and configuring Anthropic SDK client instances.",
+      "translation": "用于创建和配置 Anthropic SDK 客户端实例的工厂类。",
+      "count": 1
+    },
+    {
+      "source": "Enum representing the pre-built Anthropic Skills available for Claude.",
+      "translation": "表示可用于 Claude 的预构建 Anthropic 技能的枚举。",
+      "count": 1
+    },
+    {
+      "source": "Container for Claude Skills in a chat completion request.",
+      "translation": "用于聊天补全请求中的 Claude 技能容器。",
+      "count": 1
+    },
+    {
+      "source": "Represents a Claude Skill - either pre-built Anthropic skill or custom skill.",
+      "translation": "代表一个 Claude 技能——即预建的 Anthropic 技能或自定义技能。",
+      "count": 1
+    },
+    {
+      "source": "Helper utilities for working with Anthropic Claude Skills responses and files.",
+      "translation": "用于处理 Anthropic Claude 技能响应和文件的辅助工具。",
+      "count": 1
+    },
+    {
+      "source": "Enum representing the type of a Claude Skill.",
+      "translation": "表示 Claude 技能类型的枚举。",
+      "count": 1
+    },
+    {
+      "source": "Represents an individual web search result returned by Anthropic's built-in web search\ntool.",
+      "translation": "代表由 Anthropic 内置网络搜索工具返回的单个网页搜索结果。",
+      "count": 1
+    },
+    {
+      "source": "Configuration for Anthropic's built-in web search tool.",
+      "translation": "Anthropic 内置网络搜索工具的配置文件。",
+      "count": 1
+    },
+    {
+      "source": "Approximate user location for localizing web search results.",
+      "translation": "用于本地化网页搜索结果的近似用户位置。",
+      "count": 1
+    },
+    {
+      "source": "Represents a citation reference in a Claude response.",
+      "translation": "代表 Claude 响应中的引用参考。",
+      "count": 1
+    },
+    {
+      "source": "Types of citation locations based on document format.",
+      "translation": "基于文档格式的引用位置类型。",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"AnthropicChatModel.html\" title=\"class in org.springframework.ai.anthropic\"><code>AnthropicChatModel</code></a> - Main chat model\nimplementation",
+      "translation": "<a href=\"AnthropicChatModel.html\" title=\"class in org.springframework.ai.anthropic\"><code>AnthropicChatModel</code></a> - 主聊天模型实现",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"AnthropicChatOptions.html\" title=\"class in org.springframework.ai.anthropic\"><code>AnthropicChatOptions</code></a> - Configuration\noptions for chat requests",
+      "translation": "<a href=\"AnthropicChatOptions.html\" title=\"class in org.springframework.ai.anthropic\"><code>AnthropicChatOptions</code></a> - 聊天请求的配置选项",
+      "count": 1
+    },
+    {
+      "source": "Spring AI integration with Anthropic's Claude models using the official\n<a href=\"https://github.com/anthropics/anthropic-sdk-java\">Anthropic Java SDK</a>.",
+      "translation": "使用官方 <a href=\"https://github.com/anthropics/anthropic-sdk-java\">Anthropic Java SDK</a> 将 Spring AI 与 Anthropic 的 Claude 模型集成。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li><a href=\"AnthropicChatModel.html\" title=\"class in org.springframework.ai.anthropic\"><code>AnthropicChatModel</code></a> - 主聊天模型实现</li>\n<li><a href=\"AnthropicChatOptions.html\" title=\"class in org.springframework.ai.anthropic\"><code>AnthropicChatOptions</code></a> - 聊天请求的配置选项</li>\n</ul>",
+      "translation": "<ul>\n<li><a href=\"AnthropicChatModel.html\" title=\"class in org.springframework.ai.anthropic\"><code>AnthropicChatModel</code></a> - 主聊天模型实现</li>\n<li><a href=\"AnthropicChatOptions.html\" title=\"class in org.springframework.ai.anthropic\"><code>AnthropicChatOptions</code></a> - 聊天请求的配置选项</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>AnthropicChatModel chatModel = new AnthropicChatModel(\n    AnthropicChatOptions.builder()\n        .model(\"claude-sonnet-4-20250514\")\n        .maxTokens(1024)\n        .build());\n\nChatResponse response = chatModel.call(new Prompt(\"Hello, Claude!\"));\n</code></pre>",
+      "translation": "<pre><code>AnthropicChatModel chatModel = new AnthropicChatModel(\n    AnthropicChatOptions.builder()\n        .model(\"claude-sonnet-4-20250514\")\n        .maxTokens(1024)\n        .build());\n\nChatResponse response = chatModel.call(new Prompt(\"Hello, Claude!\"));\n</code></pre>",
+      "count": 1
+    }
+  ]
+}

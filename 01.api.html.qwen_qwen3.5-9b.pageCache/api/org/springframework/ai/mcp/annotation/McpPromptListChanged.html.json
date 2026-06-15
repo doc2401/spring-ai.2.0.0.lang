@@ -1,0 +1,81 @@
+{
+  "created_at": "2026-06-15 08:21:18",
+  "updated_at": "2026-06-15 08:21:18",
+  "stats": {
+    "total_entries": 13,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 13,
+    "entries_with_hits": 13,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.0013
+  },
+  "items": [
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "The annotated method must have a void return type for synchronous consumers, or can\nreturn <code>Mono&lt;Void&gt;</code> for asynchronous consumers. The method should accept a single\nparameter of type <code>List&lt;McpSchema.Prompt&gt;</code> that represents the updated list of\nprompts after the change notification.",
+      "translation": "注释方法对于同步消费者必须具有 void 返回类型，或者对于异步消费者可以返回 `<code>Mono&lt;Void&gt;</code>`。该方法应接受一个类型为 `<code>List&lt;McpSchema.Prompt&gt;</code>` 的单个参数，该参数表示变更通知后更新的提示列表。",
+      "count": 1
+    },
+    {
+      "source": "Methods annotated with this annotation are used to listen for notifications when the\nlist of available prompts changes on an MCP server. According to the MCP specification,\nservers that declare the <code>listChanged</code> capability will send notifications when\ntheir prompt list is modified.",
+      "translation": "使用此注解标注的方法用于监听 MCP 服务器上的可用提示列表变更时的通知。根据 MCP 规范，声明了 `<code>listChanged</code>` 能力的服务器会在其提示列表被修改时发送通知。",
+      "count": 1
+    },
+    {
+      "source": "Example usage:",
+      "translation": "使用示例：",
+      "count": 1
+    },
+    {
+      "source": "Used as connection or client identifier to select the MCP client that the prompt\nchange listener is associated with.",
+      "translation": "用作连接或客户端标识符，以选择提示变更监听器所关联的 MCP 客户端。",
+      "count": 1
+    },
+    {
+      "source": "Used as connection or client identifier to select the MCP client that the prompt\nchange listener is associated with. At least one client identifier must be\nspecified.",
+      "translation": "用作连接或客户端标识符，以选择提示变更监听器关联的 MCP 客户端。必须至少指定一个客户端标识符。",
+      "count": 1
+    },
+    {
+      "source": "<ul class=\"tag-list-long\">\n<li><a href=\"https://modelcontextprotocol.io/specification/2025-06-18/server/prompts#list-changed-notification\">MCP\nPrompt List Changed Notification</a></li>\n</ul>",
+      "translation": "<ul class=\"tag-list-long\">\n<li><a href=\"https://modelcontextprotocol.io/specification/2025-06-18/server/prompts#list-changed-notification\">MCP 提示词列表变更通知</a></li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "the client identifier, or empty string to listen to all clients",
+      "translation": "客户端标识符，或留空字符串以监听所有客户端。",
+      "count": 1
+    },
+    {
+      "source": "Required Element Summary",
+      "translation": "所需元素摘要",
+      "count": 1
+    },
+    {
+      "source": "Element Details",
+      "translation": "元素详情",
+      "count": 1
+    },
+    {
+      "source": "Annotation for methods that handle prompt list change notifications from MCP servers.\nThis annotation is applicable only for MCP clients.",
+      "translation": "用于处理来自 MCP 服务器的提示列表变更通知的方法注解。  \n此注解仅适用于 MCP 客户端。",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>&amp;#64;McpPromptListChanged(clients = \"test-client\")\npublic void onPromptListChanged(List&lt;McpSchema.Prompt&gt; updatedPrompts) {\n    // Handle prompt list change notification with the updated prompts\n    logger.info(\"Prompt list updated, now contains {} prompts\", updatedPrompts.size());\n    // Process the updated prompt list\n}\n\n&amp;#64;McpPromptListChanged(clients = \"test-client\")\npublic Mono&lt;Void&gt; onPromptListChangedAsync(List&lt;McpSchema.Prompt&gt; updatedPrompts) {\n    // Handle prompt list change notification asynchronously\n    return processUpdatedPrompts(updatedPrompts);\n}\n</code></pre>",
+      "translation": "<pre><code>&#64;McpPromptListChanged(clients = \"test-client\")\npublic void onPromptListChanged(List&lt;McpSchema.Prompt&gt; updatedPrompts) {\n    // 处理提示词列表变更通知，包含已更新的提示词\n    logger.info(\"提示词列表已更新，现在包含 {} 个提示词\", updatedPrompts.size());\n    // 处理已更新的提示词列表\n}\n\n&#64;McpPromptListChanged(clients = \"test-client\")\npublic Mono&lt;Void&gt; onPromptListChangedAsync(List&lt;McpSchema.Prompt&gt; updatedPrompts) {\n    // 异步处理提示词列表变更通知\n    return processUpdatedPrompts(updatedPrompts);\n}\n</code></pre>",
+      "count": 1
+    }
+  ]
+}

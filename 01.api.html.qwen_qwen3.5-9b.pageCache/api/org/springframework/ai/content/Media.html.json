@@ -1,0 +1,166 @@
+{
+  "created_at": "2026-06-15 07:26:53",
+  "updated_at": "2026-06-15 07:26:53",
+  "stats": {
+    "total_entries": 30,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 39,
+    "entries_with_hits": 30,
+    "entries_without_hits": 0,
+    "hit_rate": 1.3,
+    "usage_percentage": 0.003
+  },
+  "items": [
+    {
+      "source": "Create a new Media instance.",
+      "translation": "创建一个新的媒体实例。",
+      "count": 4
+    },
+    {
+      "source": "Creates a new Media builder.",
+      "translation": "创建一个新的媒体构建器。",
+      "count": 2
+    },
+    {
+      "source": "Get the media data object",
+      "translation": "获取媒体数据对象",
+      "count": 2
+    },
+    {
+      "source": "Get the media data as a byte array",
+      "translation": "将媒体数据获取为字节数组",
+      "count": 2
+    },
+    {
+      "source": "Get the media id",
+      "translation": "获取媒体 ID",
+      "count": 2
+    },
+    {
+      "source": "Get the media MIME type",
+      "translation": "获取媒体 MIME 类型",
+      "count": 2
+    },
+    {
+      "source": "<code>mimeType</code> - the media MIME type",
+      "translation": "<code>mimeType</code> - 媒体 MIME 类型",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This class includes a <a href=\"Media.Format.html\" title=\"class in org.springframework.ai.content\"><code>Media.Format</code></a> inner class that provides commonly used MIME types\nas constants, organized by content category (documents, videos, images). These formats\ncan be used when constructing Media objects to ensure correct MIME type specification.",
+      "translation": "该类包含一个 <a href=\"Media.Format.html\" title=\"class in org.springframework.ai.content\"><code>Media.Format</code></a> 内部类，该内部类按内容类别（文档、视频、图像）组织常用的 MIME 类型常量。在构建 Media 对象时，可以使用这些格式来确保正确指定 MIME 类型。",
+      "count": 1
+    },
+    {
+      "source": "If no name is provided, one will be automatically generated using the pattern:\n<code>{mimeType.subtype}-{UUID}</code>",
+      "translation": "如果未提供名称，将自动生成一个名称，模式如下：\n<code>{mimeType.subtype}-{UUID}</code>",
+      "count": 1
+    },
+    {
+      "source": "Media objects can be used in the UserMessage class to attach various types of content\nlike images, documents, or videos. When interacting with AI models, the id and name\nfields help track and reference specific media objects.",
+      "translation": "Media 对象可用于 UserMessage 类中，以附加各种类型的内容，如图像、文档或视频。在与 AI 模型交互时，id 和 name 字段有助于跟踪和引用特定的媒体对象。",
+      "count": 1
+    },
+    {
+      "source": "The id field is typically assigned by AI models when they reference previously provided\nmedia.",
+      "translation": "id 字段通常由 AI 模型在引用先前提供的媒体时分配。",
+      "count": 1
+    },
+    {
+      "source": "The name field can be used to provide a descriptive identifier to the model, though\ncare should be taken to avoid prompt injection vulnerabilities. For amazon AWS the name\nmust only contain:",
+      "translation": "名称字段可用于为模型提供描述性标识符，但需注意避免提示注入漏洞。对于 Amazon AWS，名称只能包含以下内容：",
+      "count": 1
+    },
+    {
+      "source": "This class is used as a parameter in the constructor of the UserMessage class.",
+      "translation": "该类用作 UserMessage 类构造函数的参数。",
+      "count": 1
+    },
+    {
+      "source": "Builder class for Media.",
+      "translation": "Media 的构建器类。",
+      "count": 1
+    },
+    {
+      "source": "Common media formats.",
+      "translation": "常见媒体格式。",
+      "count": 1
+    },
+    {
+      "source": "<code>uri</code> - the URI for the media data",
+      "translation": "<code>uri</code> - 媒体数据的 URI",
+      "count": 1
+    },
+    {
+      "source": "<code>resource</code> - the media resource",
+      "translation": "<code>resource</code> - 媒体资源",
+      "count": 1
+    },
+    {
+      "source": "Alphanumeric characters",
+      "translation": "字母数字字符",
+      "count": 1
+    },
+    {
+      "source": "Whitespace characters (no more than one in a row)",
+      "translation": "空白字符（每行不超过一个）",
+      "count": 1
+    },
+    {
+      "source": "Square brackets",
+      "translation": "方括号",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Mark Pollack, Thomas Vitale",
+      "translation": "克里斯蒂安·茨洛夫，马克·波拉克，托马斯·维塔莱",
+      "count": 1
+    },
+    {
+      "source": "a new Media builder instance",
+      "translation": "一个新的媒体构建器实例",
+      "count": 1
+    },
+    {
+      "source": "the media MIME type",
+      "translation": "媒体 MIME 类型",
+      "count": 1
+    },
+    {
+      "source": "a java.net.URI.toString() or a byte[]",
+      "translation": "java.net.URI.toString() 或 byte[]",
+      "count": 1
+    },
+    {
+      "source": "the media data as a byte array",
+      "translation": "媒体数据作为字节数组",
+      "count": 1
+    },
+    {
+      "source": "the media id",
+      "translation": "媒体 ID",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "The Media class represents the data and metadata of a media attachment in a message. It\nconsists of a MIME type, raw data, and optional metadata such as id and name.",
+      "translation": "Media 类表示消息中媒体附件的数据和元数据。它由 MIME 类型、原始数据以及可选的元数据（如 id 和名称）组成。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>字母数字字符</li><li>空白字符（每行不超过一个）</li><li>Hyphens\n</li><li>Parentheses\n</li><li>方括号</li></ul>\nNote, this class does not directly enforce that restriction.",
+      "translation": "<ul>\n<li>字母数字字符</li><li>空白字符（每行不超过一个）</li><li>连字符</li><li>圆括号</li><li>方括号</li></ul>\n请注意，该类并不直接强制执行此限制。",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "created_at": "2026-06-15 07:27:21",
+  "updated_at": "2026-06-15 07:27:21",
+  "stats": {
+    "total_entries": 18,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 18,
+    "entries_with_hits": 18,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.0018
+  },
+  "items": [
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "The output of AI models traditionally arrives as a <code>String</code>, even if you ask for\nthe reply to be in JSON. This package provides specialized converters that employ\nmeticulously crafted prompts and parsing logic to convert text responses into usable\ndata structures for application integration.",
+      "translation": "AI 模型的输出传统上以 `<code>String</code>` 形式呈现，即使您要求回复为 JSON 格式也是如此。本包提供了专门的转换器，利用精心设计的提示词和解析逻辑，将文本响应转换为应用程序集成所需的数据结构。",
+      "count": 1
+    },
+    {
+      "source": "For detailed documentation and usage examples, see the <a href=\"https://docs.spring.io/spring-ai/reference/api/structured-output-converter.html\">Structured\nOutput Converter Reference Guide</a>.",
+      "translation": "有关详细文档和使用示例，请参阅<a href=\"https://docs.spring.io/spring-ai/reference/api/structured-output-converter.html\">结构化输出转换器参考指南</a>。",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a> implementation that uses a\n<code>DefaultConversionService</code> to convert the LLM output into a\n<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"class or interface in java.util\"><code>List</code></a> instance.",
+      "translation": "使用 <code>DefaultConversionService</code> 将 LLM 输出转换为 <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"class or interface in java.util\"><code>List</code></a> 实例的 <a href=\"StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a> 实现。",
+      "count": 1
+    },
+    {
+      "source": "Abstract <a href=\"StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a> implementation that uses a pre-configured\n<code>DefaultConversionService</code> to convert the LLM output into the desired type\nformat.",
+      "translation": "使用预配置的 <code>DefaultConversionService</code> 将 LLM 输出转换为所需类型格式的 <a href=\"StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a> 实现摘要。",
+      "count": 1
+    },
+    {
+      "source": "Abstract <a href=\"StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a> implementation that uses a pre-configured\n<code>MessageConverter</code> to convert the LLM output into the desired type format.",
+      "translation": "使用预配置的 <code>MessageConverter</code> 将 LLM 输出转换为所需类型格式的 <a href=\"StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a> 实现摘要。",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a> implementation that uses a pre-configured\n<code>JacksonJsonMessageConverter</code> to convert the LLM output into a\njava.util.Map&lt;String, Object&gt; instance.",
+      "translation": "使用预配置的 <code>JacksonJsonMessageConverter</code> 将 LLM 输出转换为 <a href=\"StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a> 接口的实现，生成一个 java.util.Map&lt;String, Object&gt; 实例。",
+      "count": 1
+    },
+    {
+      "source": "An implementation of <a href=\"StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a> that transforms the LLM output\nto a specific object type using JSON schema.",
+      "translation": "一个实现了<a href=\"StructuredOutputConverter.html\" title=\"org.springframework.ai.converter 中的接口\"><code>StructuredOutputConverter</code></a>的转换器，它使用 JSON Schema 将 LLM 输出转换为特定对象类型。",
+      "count": 1
+    },
+    {
+      "source": "A composite <a href=\"ResponseTextCleaner.html\" title=\"interface in org.springframework.ai.converter\"><code>ResponseTextCleaner</code></a> that applies multiple cleaners in sequence.",
+      "translation": "一个复合的<a href=\"ResponseTextCleaner.html\" title=\"org.springframework.ai.converter 中的接口\"><code>ResponseTextCleaner</code></a>，按顺序应用多个清理器。",
+      "count": 1
+    },
+    {
+      "source": "Builder for <a href=\"CompositeResponseTextCleaner.html\" title=\"class in org.springframework.ai.converter\"><code>CompositeResponseTextCleaner</code></a>.",
+      "translation": "<code>CompositeResponseTextCleaner</code> 的构建器。",
+      "count": 1
+    },
+    {
+      "source": "A <a href=\"ResponseTextCleaner.html\" title=\"interface in org.springframework.ai.converter\"><code>ResponseTextCleaner</code></a> that removes markdown code block formatting from LLM\nresponses.",
+      "translation": "一个<a href=\"ResponseTextCleaner.html\" title=\"org.springframework.ai.converter 中的接口\"><code>ResponseTextCleaner</code></a>，用于从 LLM 响应中移除 Markdown 代码块格式。",
+      "count": 1
+    },
+    {
+      "source": "A <a href=\"ResponseTextCleaner.html\" title=\"interface in org.springframework.ai.converter\"><code>ResponseTextCleaner</code></a> that removes thinking tags from LLM responses.",
+      "translation": "一个用于从大语言模型响应中移除思考标签的<a href=\"ResponseTextCleaner.html\" title=\"org.springframework.ai.converter 中的接口\"><code>ResponseTextCleaner</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Builder for <a href=\"ThinkingTagCleaner.html\" title=\"class in org.springframework.ai.converter\"><code>ThinkingTagCleaner</code></a>.",
+      "translation": "<thinking>用户要求我翻译一段技术文档内容，需要遵循以下规则：\n1. 只输出翻译内容，不添加任何解释或额外内容\n2. 保持与原文相同的段落数和格式\n3. 处理HTML标签时要保持流畅性\n4. 不应翻译的内容（如专有名词、代码等）保持原文\n\n这段文本是一个Java/Spring AI的技术文档片段，包含：\n- HTML链接标签\n- 代码标记 <code>ThinkingTagCleaner</code>\n- 类名和包名\n\n我需要保持HTML结构不变，只翻译文字部分。\"Builder for\"应该翻译为\"构建器用于\"或更自然的\"ThinkingTagCleaner 的构建器\"。\n\n让我组织翻译：\n- \"Builder for\" → \"ThinkingTagCleaner 的构建器\"\n- 保持 <a>标签和<code>标签不变\n- 包名 org.springframework.ai.converter 保持原文\n</thinking>\n\n<a href=\"ThinkingTagCleaner.html\" title=\"org.springframework.ai.converter 中的类\"><code>ThinkingTagCleaner</code></a>的构建器。",
+      "count": 1
+    },
+    {
+      "source": "A <a href=\"ResponseTextCleaner.html\" title=\"interface in org.springframework.ai.converter\"><code>ResponseTextCleaner</code></a> that trims leading and trailing whitespace from text.",
+      "translation": "一个用于修剪文本首尾空白的<a href=\"ResponseTextCleaner.html\" title=\"org.springframework.ai.converter 中的接口\"><code>ResponseTextCleaner</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Implementations of this interface provide instructions for how the output of a language\ngenerative should be formatted.",
+      "translation": "该接口的实现提供了关于语言生成输出应如何格式化的指令。",
+      "count": 1
+    },
+    {
+      "source": "Strategy interface for cleaning LLM response text before parsing.",
+      "translation": "用于在解析之前清理 LLM 响应文本的策略接口。",
+      "count": 1
+    },
+    {
+      "source": "Converts the (raw) LLM output into a structured responses of type.",
+      "translation": "将（原始）LLM 输出转换为指定类型的结构化响应。",
+      "count": 1
+    },
+    {
+      "source": "Provides converters for transforming AI model text outputs into structured Java types.",
+      "translation": "提供转换器，用于将 AI 模型文本输出转换为结构化的 Java 类型。",
+      "count": 1
+    }
+  ]
+}

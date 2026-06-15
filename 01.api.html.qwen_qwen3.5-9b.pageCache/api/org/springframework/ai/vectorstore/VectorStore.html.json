@@ -1,0 +1,116 @@
+{
+  "created_at": "2026-06-15 07:36:24",
+  "updated_at": "2026-06-15 07:36:24",
+  "stats": {
+    "total_entries": 20,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 24,
+    "entries_with_hits": 20,
+    "entries_without_hits": 0,
+    "hit_rate": 1.2,
+    "usage_percentage": 0.002
+  },
+  "items": [
+    {
+      "source": "Adds list of <a href=\"../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a>s to the vector store.",
+      "translation": "向向量存储添加<a href=\"../document/Document.html\" title=\"org.springframework.ai.document 中的类\"><code>Document</code></a>列表。",
+      "count": 2
+    },
+    {
+      "source": "Deletes documents from the vector store.",
+      "translation": "从向量存储中删除文档。",
+      "count": 2
+    },
+    {
+      "source": "Deletes documents from the vector store based on filter criteria.",
+      "translation": "根据筛选条件从向量存储中删除文档。",
+      "count": 2
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html\" title=\"class or interface in java.lang\">IllegalStateException</a></code> - if the underlying delete causes an exception",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html\" title=\"class or interface in java.lang\">IllegalStateException</a></code> - 如果底层删除操作引发异常",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "The <code>VectorStore</code> interface defines the operations for managing and querying\ndocuments in a vector database. It extends <a href=\"../document/DocumentWriter.html\" title=\"interface in org.springframework.ai.document\"><code>DocumentWriter</code></a> to support document\nwriting operations. Vector databases are specialized for AI applications, performing\nsimilarity searches based on vector representations of data rather than exact matches.\nThis interface allows for adding, deleting, and searching documents based on their\nsimilarity to a given query.",
+      "translation": "`VectorStore` 接口定义了管理和查询向量数据库中文档的操作。它扩展了 <a href=\"../document/DocumentWriter.html\" title=\"interface in org.springframework.ai.document\"><code>DocumentWriter</code></a> 以支持文档写入操作。向量数据库专为 AI 应用设计，基于数据的向量表示执行相似度搜索，而非精确匹配。该接口允许根据与给定查询的相似度来添加、删除和搜索文档。",
+      "count": 1
+    },
+    {
+      "source": "Deletes documents from the vector store using a string filter expression. Converts\nthe string filter to an Expression object and delegates to\n<a href=\"#delete(org.springframework.ai.vectorstore.filter.Filter.Expression)\"><code>delete(Filter.Expression)</code></a>.",
+      "translation": "使用字符串过滤表达式从向量存储中删除文档。将字符串过滤器转换为 Expression 对象，并委托给 <a href=\"#delete(org.springframework.ai.vectorstore.filter.Filter.Expression)\"><code>delete(Filter.Expression)</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Returns the native client if available in this vector store implementation.\n\nNote on usage: 1. Returns empty Optional when no native client is available 2. Due\nto Java type erasure, runtime type checking is not possible\n\nExample usage: When working with implementation with known native client:\nOptional<nativeclienttype> client = vectorStore.getNativeClient();\n\nNote: Using Optional<span class=\"invalid-tag\">invalid input: '&lt;'</span>?&gt; will return the native client if one exists, rather than an\nempty Optional. For type safety, prefer using the specific client type.</nativeclienttype>",
+      "translation": "返回当前向量存储实现中可用的原生客户端。\n\n使用注意事项：1. 若无可用原生客户端，则返回空 Optional；2. 由于 Java 类型擦除，无法进行运行时类型检查。\n\n使用示例：在与已知原生客户端的实现协作时：Optional<nativeclienttype> client = vectorStore.getNativeClient();\n\n注意：使用 Optional<span class=\"invalid-tag\">无效输入：'&lt;'</span>?&gt; 将返回存在的原生客户端，而非空 Optional。为确保类型安全，建议使用特定的客户端类型。</nativeclienttype>",
+      "count": 1
+    },
+    {
+      "source": "Builder interface for creating VectorStore instances.",
+      "translation": "用于创建 VectorStore 实例的构建器接口。",
+      "count": 1
+    },
+    {
+      "source": "Deletes documents from the vector store using a string filter expression.",
+      "translation": "使用字符串过滤表达式从向量存储中删除文档。",
+      "count": 1
+    },
+    {
+      "source": "Returns the native client if available in this vector store implementation.",
+      "translation": "如果此向量存储实现中可用，则返回原生客户端。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Consumer.html#accept(T)\" title=\"class or interface in java.util.function\">accept</a></code> in interface <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Consumer.html\" title=\"class or interface in java.util.function\">Consumer</a>&lt;<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"class or interface in java.util\">List</a>&lt;<a href=\"../document/Document.html\" title=\"class in org.springframework.ai.document\">Document</a>&gt;&gt;</code>",
+      "translation": "接口 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Consumer.html\" title=\"类或 java.util.function 中的接口\">Consumer</a>&lt;<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"类或 java.util 中的类或接口\">List</a>&lt;<a href=\"../document/Document.html\" title=\"org.springframework.ai.document 中的类\">Document</a>&gt;&gt;</code> 中的 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Consumer.html#accept(T)\" title=\"java.util.function 中的类或接口\">accept</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if the filter expression is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果过滤表达式为 null",
+      "count": 1
+    },
+    {
+      "source": "<span id=\"getNativeClient()-type-param-T\"><code>T</code> - The type of the native client</span>",
+      "translation": "<span id=\"getNativeClient()-type-param-T\"><code>T</code> - 原生客户端的类型</span>",
+      "count": 1
+    },
+    {
+      "source": "<code>documents</code> - the list of documents to store. Throws an exception if the\nunderlying provider checks for duplicate IDs.",
+      "translation": "<code>documents</code> - 要存储的文档列表。如果底层提供者检查重复 ID，则抛出异常。",
+      "count": 1
+    },
+    {
+      "source": "<code>idList</code> - list of document ids for which documents will be removed.",
+      "translation": "<code>idList</code> - 将被删除文档的文档 ID 列表。",
+      "count": 1
+    },
+    {
+      "source": "<code>filterExpression</code> - Filter expression to identify documents to delete",
+      "translation": "<code>filterExpression</code> - 用于标识要删除的文档的过滤表达式",
+      "count": 1
+    },
+    {
+      "source": "<code>filterExpression</code> - String representation of the filter criteria",
+      "translation": "<code>filterExpression</code> - 过滤条件的字符串表示形式",
+      "count": 1
+    },
+    {
+      "source": "Optional containing native client if available, empty Optional otherwise",
+      "translation": "如有可用的本机客户端，则包含该客户端的 Optional；否则为空 Optional。",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    }
+  ]
+}

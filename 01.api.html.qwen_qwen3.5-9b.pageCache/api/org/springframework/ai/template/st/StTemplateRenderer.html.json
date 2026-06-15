@@ -1,0 +1,91 @@
+{
+  "created_at": "2026-06-15 08:02:03",
+  "updated_at": "2026-06-15 08:02:03",
+  "stats": {
+    "total_entries": 15,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 16,
+    "entries_with_hits": 15,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0666666666666667,
+    "usage_percentage": 0.0015
+  },
+  "items": [
+    {
+      "source": "Constructs a new <code>StTemplateRenderer</code> with the specified delimiter tokens,\nvalidation mode, and function validation flag.",
+      "translation": "使用指定的分隔符标记、验证模式和函数验证标志构建一个新的 <code>StTemplateRenderer</code>。",
+      "count": 2
+    },
+    {
+      "source": "<b>Thread safety:</b> This class is safe for concurrent use. Each call to\n<a href=\"#apply(java.lang.String,java.util.Map)\"><code>apply(String, Map)</code></a> creates a new StringTemplate instance, and no mutable state\nis shared between threads.",
+      "translation": "<b>线程安全：</b> 该类支持并发使用。每次调用<a href=\"#apply(java.lang.String,java.util.Map)\"><code>apply(String, Map)</code></a>都会创建一个新的 StringTemplate 实例，且线程之间不共享任何可变状态。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Use the <a href=\"#builder()\"><code>builder()</code></a> to create and configure instances.",
+      "translation": "使用<a href=\"#builder()\"><code>builder()</code></a>来创建和配置实例。",
+      "count": 1
+    },
+    {
+      "source": "This renderer allows customization of delimiters, validation behavior when template\nvariables are missing, and how StringTemplate's built-in functions are handled during\nvalidation.",
+      "translation": "该渲染器允许自定义分隔符、处理模板变量缺失时的验证行为，以及在验证期间如何处理 StringTemplate 的内置函数。",
+      "count": 1
+    },
+    {
+      "source": "Builder for configuring and creating <a href=\"StTemplateRenderer.html\" title=\"class in org.springframework.ai.template.st\"><code>StTemplateRenderer</code></a> instances.",
+      "translation": "用于配置和创建 <a href=\"StTemplateRenderer.html\" title=\"class in org.springframework.ai.template.st\"><code>StTemplateRenderer</code></a> 实例的构建器。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/BiFunction.html#apply(T,U)\" title=\"class or interface in java.util.function\">apply</a></code> in interface <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/BiFunction.html\" title=\"class or interface in java.util.function\">BiFunction</a>&lt;<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html\" title=\"class or interface in java.lang\">String</a>, <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html\" title=\"class or interface in java.util\">Map</a>&lt;<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html\" title=\"class or interface in java.lang\">String</a>, ? extends @Nullable <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"class or interface in java.lang\">Object</a>&gt;, <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html\" title=\"class or interface in java.lang\">String</a>&gt;</code>",
+      "translation": "<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/BiFunction.html#apply(T,U)\" title=\"类或接口 java.util.function 中的方法\">apply</a> 在接口 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/BiFunction.html\" title=\"类或接口 java.util.function 中的类或接口\">BiFunction</a>&lt;<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html\" title=\"类或接口 java.lang 中的类或接口\">String</a>, <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html\" title=\"类或接口 java.util 中的类或接口\">Map</a>&lt;<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html\" title=\"类或接口 java.lang 中的类或接口\">String</a>, ? extends @Nullable <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"类或接口 java.lang 中的类或接口\">Object</a>&gt;, <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html\" title=\"类或接口 java.lang 中的类或接口\">String</a>&gt;</code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../TemplateRenderer.html#apply(java.lang.String,java.util.Map)\">apply</a></code> in interface <code><a href=\"../TemplateRenderer.html\" title=\"interface in org.springframework.ai.template\">TemplateRenderer</a></code>",
+      "translation": "接口 <code><a href=\"../TemplateRenderer.html\" title=\"org.springframework.ai.template 中的接口\">TemplateRenderer</a></code> 中的 <code><a href=\"../TemplateRenderer.html#apply(java.lang.String,java.util.Map)\">apply</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code>startDelimiterToken</code> - the character used to denote the start of a template\nvariable (e.g., '{')",
+      "translation": "<code>startDelimiterToken</code> - 用于标识模板变量开头的字符（例如，'{'）",
+      "count": 1
+    },
+    {
+      "source": "<code>endDelimiterToken</code> - the character used to denote the end of a template\nvariable (e.g., '}')",
+      "translation": "<code>endDelimiterToken</code> - 用于表示模板变量结束的字符（例如，'}'）",
+      "count": 1
+    },
+    {
+      "source": "<code>validationMode</code> - the mode to use for template variable validation; must not be\nnull",
+      "translation": "<code>validationMode</code> - 用于模板变量验证的模式；不得为 null。",
+      "count": 1
+    },
+    {
+      "source": "<code>validateStFunctions</code> - whether to validate StringTemplate functions in the\ntemplate",
+      "translation": "<code>validateStFunctions</code> - 是否验证模板中的 StringTemplate 函数",
+      "count": 1
+    },
+    {
+      "source": "Thomas Vitale, Sun Yuhan",
+      "translation": "托马斯·维塔莱，孙雨涵",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Renders a template using the StringTemplate (ST) v4 library.",
+      "translation": "使用 StringTemplate (ST) v4 库渲染模板。",
+      "count": 1
+    }
+  ]
+}

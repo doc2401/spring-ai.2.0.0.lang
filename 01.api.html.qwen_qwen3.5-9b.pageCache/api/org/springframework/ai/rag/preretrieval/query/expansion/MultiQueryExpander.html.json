@@ -1,0 +1,71 @@
+{
+  "created_at": "2026-06-15 08:04:31",
+  "updated_at": "2026-06-15 08:04:31",
+  "stats": {
+    "total_entries": 11,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 12,
+    "entries_with_hits": 11,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0909090909090908,
+    "usage_percentage": 0.0011
+  },
+  "items": [
+    {
+      "source": "Expands the given query into a list of queries.",
+      "translation": "将给定的查询扩展为查询列表。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Example usage:",
+      "translation": "使用示例：",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"QueryExpander.html#expand(org.springframework.ai.rag.Query)\">QueryExpander</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"QueryExpander.html#expand(org.springframework.ai.rag.Query)\">QueryExpander</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"QueryExpander.html#expand(org.springframework.ai.rag.Query)\">expand</a></code> in interface <code><a href=\"QueryExpander.html\" title=\"interface in org.springframework.ai.rag.preretrieval.query.expansion\">QueryExpander</a></code>",
+      "translation": "<code><a href=\"QueryExpander.html#expand(org.springframework.ai.rag.Query)\">expand</a></code> 接口 <code><a href=\"QueryExpander.html\" title=\"interface in org.springframework.ai.rag.preretrieval.query.expansion\">QueryExpander</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>query</code> - The original query to be expanded",
+      "translation": "<code>query</code> - 待扩展的原始查询",
+      "count": 1
+    },
+    {
+      "source": "Thomas Vitale",
+      "translation": "托马斯·维塔莱",
+      "count": 1
+    },
+    {
+      "source": "A list of expanded queries",
+      "translation": "扩展查询列表",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Uses a large language model to expand a query into multiple semantically diverse\nvariations to capture different perspectives, useful for retrieving additional\ncontextual information and increasing the chances of finding relevant results.",
+      "translation": "利用大型语言模型将查询扩展为多个语义上多样化的变体，以捕捉不同的视角，有助于检索额外的上下文信息并提高找到相关结果的可能性。",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>MultiQueryExpander expander = MultiQueryExpander.builder()\n   .chatClientBuilder(chatClientBuilder)\n   .numberOfQueries(3)\n   .build();\nList&lt;Query&gt; queries = expander.expand(new Query(\"How to run a Spring Boot app?\"));\n</code></pre>",
+      "translation": "<pre><code>MultiQueryExpander expander = MultiQueryExpander.builder()\n   .chatClientBuilder(chatClientBuilder)\n   .numberOfQueries(3)\n   .build();\nList&lt;Query&gt; queries = expander.expand(new Query(\"如何运行 Spring Boot 应用？\"));\n</code></pre>",
+      "count": 1
+    }
+  ]
+}

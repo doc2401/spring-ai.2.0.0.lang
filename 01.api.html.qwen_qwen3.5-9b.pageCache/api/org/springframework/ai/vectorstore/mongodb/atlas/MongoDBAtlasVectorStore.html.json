@@ -1,0 +1,316 @@
+{
+  "created_at": "2026-06-15 07:50:33",
+  "updated_at": "2026-06-15 07:50:33",
+  "stats": {
+    "total_entries": 60,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 67,
+    "entries_with_hits": 60,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1166666666666667,
+    "usage_percentage": 0.006
+  },
+  "items": [
+    {
+      "source": "Create a new <a href=\"../../observation/VectorStoreObservationContext.Builder.html\" title=\"class in org.springframework.ai.vectorstore.observation\"><code>VectorStoreObservationContext.Builder</code></a> instance.",
+      "translation": "创建一个新的<a href=\"../../observation/VectorStoreObservationContext.Builder.html\" title=\"class in org.springframework.ai.vectorstore.observation\"><code>VectorStoreObservationContext.Builder</code></a>实例。",
+      "count": 2
+    },
+    {
+      "source": "Retrieves documents by query embedding similarity using the default\n<a href=\"../../SearchRequest.html\" title=\"class in org.springframework.ai.vectorstore\"><code>SearchRequest</code></a>'s search criteria.",
+      "translation": "使用默认 <a href=\"../../SearchRequest.html\" title=\"class in org.springframework.ai.vectorstore\"><code>SearchRequest</code></a> 的搜索条件，通过查询嵌入相似度检索文档。",
+      "count": 2
+    },
+    {
+      "source": "Creates a new builder instance for MongoDBAtlasVectorStore.",
+      "translation": "为 MongoDBAtlasVectorStore 创建一个新的构建器实例。",
+      "count": 2
+    },
+    {
+      "source": "Perform the actual add operation.",
+      "translation": "执行实际的加法操作。",
+      "count": 2
+    },
+    {
+      "source": "Perform the actual delete operation.",
+      "translation": "执行实际的删除操作。",
+      "count": 2
+    },
+    {
+      "source": "Template method for concrete implementations to provide filter-based deletion\nlogic.",
+      "translation": "为基于过滤器的删除逻辑提供具体实现的模板方法。",
+      "count": 2
+    },
+    {
+      "source": "Perform the actual similarity search operation.",
+      "translation": "执行实际的相似度搜索操作。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "The store uses a MongoDB collection to persist vector embeddings along with their\nassociated document content and metadata. By default, it uses the \"vector_store\"\ncollection with a vector search index for similarity search operations.",
+      "translation": "该商店使用 MongoDB 集合来持久化向量嵌入及其关联的文档内容和元数据。默认情况下，它使用名为\"vector_store\"的集合，并配备向量搜索索引以执行相似度搜索操作。",
+      "count": 1
+    },
+    {
+      "source": "Basic usage example:",
+      "translation": "基本使用示例：",
+      "count": 1
+    },
+    {
+      "source": "Advanced configuration example:",
+      "translation": "高级配置示例：",
+      "count": 1
+    },
+    {
+      "source": "Database Requirements:",
+      "translation": "数据库需求：",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../../observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../../observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../VectorStoreRetriever.html#similaritySearch(java.lang.String)\">VectorStoreRetriever</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../VectorStoreRetriever.html#similaritySearch(java.lang.String)\">VectorStoreRetriever</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../VectorStore.html#getNativeClient()\">VectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../VectorStore.html#getNativeClient()\">VectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "The representation of <a href=\"../../../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a> along with its embedding.",
+      "translation": "与嵌入向量一起表示的<a href=\"../../../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Returns the native client if available in this vector store implementation.\n\nNote on usage: 1. Returns empty Optional when no native client is available 2. Due\nto Java type erasure, runtime type checking is not possible\n\nExample usage: When working with implementation with known native client:\nOptional<nativeclienttype> client = vectorStore.getNativeClient();\n\nNote: Using Optional<span class=\"invalid-tag\">invalid input: '&lt;'</span>?&gt; will return the native client if one exists, rather than an\nempty Optional. For type safety, prefer using the specific client type.</nativeclienttype>",
+      "translation": "返回当前向量存储实现中可用的原生客户端。\n\n使用注意事项：1. 若无可用原生客户端，则返回空 Optional；2. 由于 Java 类型擦除，无法进行运行时类型检查。\n\n使用示例：在与已知原生客户端的实现协作时：Optional<nativeclienttype> client = vectorStore.getNativeClient();\n\n注意：使用 Optional<span class=\"invalid-tag\">无效输入：'&lt;'</span>?&gt; 将返回存在的原生客户端，而非空 Optional。为确保类型安全，建议使用特定的客户端类型。</nativeclienttype>",
+      "count": 1
+    },
+    {
+      "source": "Returns the native client if available in this vector store implementation.",
+      "translation": "如果此向量存储实现中可用，则返回原生客户端。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">doAdd</a></code> in class <code><a href=\"../../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">doAdd</a></code> 类 <code><a href=\"../../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">doDelete</a></code> in class <code><a href=\"../../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">doDelete</a></code> 类 <code><a href=\"../../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">doDelete</a></code> in class <code><a href=\"../../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../../observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">doDelete</a></code> 类 <code><a href=\"../../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../VectorStoreRetriever.html#similaritySearch(java.lang.String)\">similaritySearch</a></code> in interface <code><a href=\"../../VectorStoreRetriever.html\" title=\"interface in org.springframework.ai.vectorstore\">VectorStoreRetriever</a></code>",
+      "translation": "接口 <code><a href=\"../../VectorStoreRetriever.html\" title=\"interface in org.springframework.ai.vectorstore\">VectorStoreRetriever</a></code> 中的 <code><a href=\"../../VectorStoreRetriever.html#similaritySearch(java.lang.String)\">similaritySearch</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">doSimilaritySearch</a></code> in class <code><a href=\"../../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">doSimilaritySearch</a></code> 类 <code><a href=\"../../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">createObservationContextBuilder</a></code> in class <code><a href=\"../../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">createObservationContextBuilder</a></code> 类 <code><a href=\"../../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../VectorStore.html#getNativeClient()\">getNativeClient</a></code> in interface <code><a href=\"../../VectorStore.html\" title=\"interface in org.springframework.ai.vectorstore\">VectorStore</a></code>",
+      "translation": "接口 <code><a href=\"../../VectorStore.html\" title=\"interface in org.springframework.ai.vectorstore\">VectorStore</a></code> 中的 <code><a href=\"../../VectorStore.html#getNativeClient()\">getNativeClient</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code>afterPropertiesSet</code> in interface <code>org.springframework.beans.factory.InitializingBean</code>",
+      "translation": "接口 <code>org.springframework.beans.factory.InitializingBean</code> 中的 <code>afterPropertiesSet</code>",
+      "count": 1
+    },
+    {
+      "source": "<span id=\"getNativeClient()-type-param-T\"><code>T</code> - The type of the native client</span>",
+      "translation": "<span id=\"getNativeClient()-type-param-T\"><code>T</code> - 原生客户端的类型</span>",
+      "count": 1
+    },
+    {
+      "source": "<code>documents</code> - the documents to add",
+      "translation": "<code>documents</code> - 要添加的文档",
+      "count": 1
+    },
+    {
+      "source": "<code>idList</code> - the list of document IDs to delete",
+      "translation": "<code>idList</code> - 要删除的文档 ID 列表",
+      "count": 1
+    },
+    {
+      "source": "<code>filterExpression</code> - Filter expression to identify documents to delete",
+      "translation": "<code>filterExpression</code> - 用于标识要删除的文档的过滤表达式",
+      "count": 1
+    },
+    {
+      "source": "<code>query</code> - Text to use for embedding similarity comparison.",
+      "translation": "<code>query</code> - 用于嵌入相似度比较的文本。",
+      "count": 1
+    },
+    {
+      "source": "<code>request</code> - the search request",
+      "translation": "<code>request</code> - 搜索请求",
+      "count": 1
+    },
+    {
+      "source": "<code>operationName</code> - the operation name",
+      "translation": "<code>operationName</code> - 操作名称",
+      "count": 1
+    },
+    {
+      "source": "Automatic schema initialization with configurable collection and index\ncreation",
+      "translation": "支持可配置的集合与索引创建的自动模式初始化",
+      "count": 1
+    },
+    {
+      "source": "Support for cosine similarity search",
+      "translation": "支持余弦相似度搜索",
+      "count": 1
+    },
+    {
+      "source": "Metadata filtering using MongoDB Atlas Search syntax",
+      "translation": "使用 MongoDB Atlas Search 语法进行元数据过滤",
+      "count": 1
+    },
+    {
+      "source": "Configurable similarity thresholds for search results",
+      "translation": "可配置的搜索结果相似度阈值",
+      "count": 1
+    },
+    {
+      "source": "Batch processing support with configurable batching strategies",
+      "translation": "支持可配置批处理策略的批量处理功能",
+      "count": 1
+    },
+    {
+      "source": "Observation and metrics support through Micrometer",
+      "translation": "通过 Micrometer 进行观测与指标支持",
+      "count": 1
+    },
+    {
+      "source": "MongoDB Atlas cluster with Vector Search enabled",
+      "translation": "已启用向量搜索的 MongoDB Atlas 集群",
+      "count": 1
+    },
+    {
+      "source": "Collection with vector search index configured",
+      "translation": "已配置向量搜索索引的集合",
+      "count": 1
+    },
+    {
+      "source": "Collection schema with id (string), content (string), metadata (document), and\nembedding (vector) fields",
+      "translation": "包含 id（字符串）、content（字符串）、metadata（文档）和 embedding（向量）字段的集合架构。",
+      "count": 1
+    },
+    {
+      "source": "Proper access permissions for index and collection operations",
+      "translation": "索引和集合操作的适当访问权限",
+      "count": 1
+    },
+    {
+      "source": "Chris Smith, Soby Chacko, Christian Tzolov, Thomas Vitale, Ilayaperumal Gopinathan, chabinhwang",
+      "translation": "Chris Smith，Soby Chacko，Christian Tzolov，Thomas Vitale，Ilayaperumal Gopinathan，chabinhwang",
+      "count": 1
+    },
+    {
+      "source": "Returns a list of documents that have embeddings similar to the query text\nembedding.",
+      "translation": "返回与查询文本嵌入相似的文档列表。",
+      "count": 1
+    },
+    {
+      "source": "the list of documents that match the query request conditions",
+      "translation": "与查询请求条件匹配的文件列表",
+      "count": 1
+    },
+    {
+      "source": "the observation context builder",
+      "translation": "观察上下文构建器",
+      "count": 1
+    },
+    {
+      "source": "Optional containing native client if available, empty Optional otherwise",
+      "translation": "如有可用的本机客户端，则包含该客户端的 Optional；否则为空 Optional。",
+      "count": 1
+    },
+    {
+      "source": "a new MongoDBBuilder instance",
+      "translation": "一个新的 MongoDBBuilder 实例",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "MongoDB Atlas-based vector store implementation using the Atlas Vector Search.",
+      "translation": "基于 MongoDB Atlas 的向量存储实现，采用 Atlas 向量搜索功能。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>支持可配置的集合与索引创建的自动模式初始化</li>\n<li>支持余弦相似度搜索</li>\n<li>使用 MongoDB Atlas Search 语法进行元数据过滤</li>\n<li>可配置的搜索结果相似度阈值</li>\n<li>支持可配置批处理策略的批量处理功能</li>\n<li>通过 Micrometer 进行观测与指标支持</li>\n</ul>",
+      "translation": "<ul>\n<li>支持可配置的集合与索引创建的自动模式初始化</li>\n<li>支持余弦相似度搜索</li>\n<li>使用 MongoDB Atlas Search 语法进行元数据过滤</li>\n<li>支持可配置的搜索结果相似度阈值</li>\n<li>支持可配置批处理策略的批量处理功能</li>\n<li>通过 Micrometer 提供观测与指标支持</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>MongoDBAtlasVectorStore vectorStore = MongoDBAtlasVectorStore.builder(mongoTemplate, embeddingModel)\n    .collectionName(\"vector_store\")\n    .initializeSchema(true)\n    .build();\n\n// Add documents\nvectorStore.add(List.of(\n    new Document(\"content1\", Map.of(\"key1\", \"value1\")),\n    new Document(\"content2\", Map.of(\"key2\", \"value2\"))\n));\n\n// Search with filters\nList&lt;Document&gt; results = vectorStore.similaritySearch(\n    SearchRequest.query(\"search text\")\n        .withTopK(5)\n        .withSimilarityThreshold(0.7)\n        .withFilterExpression(\"key1 == 'value1'\")\n);\n</code></pre>",
+      "translation": "<pre><code>MongoDBAtlasVectorStore vectorStore = MongoDBAtlasVectorStore.builder(mongoTemplate, embeddingModel)\n    .collectionName(\"vector_store\")\n    .initializeSchema(true)\n    .build();\n\n// 添加文档\nvectorStore.add(List.of(\n    new Document(\"content1\", Map.of(\"key1\", \"value1\")),\n    new Document(\"content2\", Map.of(\"key2\", \"value2\"))\n));\n\n// 使用过滤器进行搜索\nList&lt;Document&gt; results = vectorStore.similaritySearch(\n    SearchRequest.query(\"搜索文本\")\n        .withTopK(5)\n        .withSimilarityThreshold(0.7)\n        .withFilterExpression(\"key1 == 'value1'\")\n);\n</code></pre>",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>MongoDBAtlasVectorStore vectorStore = MongoDBAtlasVectorStore.builder(mongoTemplate, embeddingModel)\n    .collectionName(\"custom_vectors\")\n    .vectorIndexName(\"custom_vector_index\")\n    .pathName(\"custom_embedding\")\n    .numCandidates(500)\n    .metadataFieldsToFilter(List.of(\"category\", \"author\"))\n    .initializeSchema(true)\n    .batchingStrategy(new TokenCountBatchingStrategy())\n    .build();\n</code></pre>",
+      "translation": "<pre><code>MongoDBAtlasVectorStore vectorStore = MongoDBAtlasVectorStore.builder(mongoTemplate, embeddingModel)\n    .collectionName(\"custom_vectors\")\n    .vectorIndexName(\"custom_vector_index\")\n    .pathName(\"custom_embedding\")\n    .numCandidates(500)\n    .metadataFieldsToFilter(List.of(\"category\", \"author\"))\n    .initializeSchema(true)\n    .batchingStrategy(new TokenCountBatchingStrategy())\n    .build();\n</code></pre>",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>已启用向量搜索的 MongoDB Atlas 集群</li>\n<li>已配置向量搜索索引的集合</li>\n<li>包含 id（字符串）、content（字符串）、metadata（文档）和 embedding（向量）字段的集合架构。</li>\n<li>索引和集合操作的适当访问权限</li>\n</ul>",
+      "translation": "<ul>\n<li>已启用向量搜索的 MongoDB Atlas 集群</li>\n<li>已配置向量搜索索引的集合</li>\n<li>包含 id（字符串）、content（字符串）、metadata（文档）和 embedding（向量）字段的集合架构。</li>\n<li>索引和集合操作的适当访问权限</li>\n</ul>",
+      "count": 1
+    }
+  ]
+}

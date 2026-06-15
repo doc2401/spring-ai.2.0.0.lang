@@ -1,0 +1,146 @@
+{
+  "created_at": "2026-06-15 08:56:26",
+  "updated_at": "2026-06-15 08:56:26",
+  "stats": {
+    "total_entries": 26,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 35,
+    "entries_with_hits": 26,
+    "entries_without_hits": 0,
+    "hit_rate": 1.3461538461538463,
+    "usage_percentage": 0.0026
+  },
+  "items": [
+    {
+      "source": "<code>limit</code> - Maximum number of results to return",
+      "translation": "<code>limit</code> - 返回结果的最大数量",
+      "count": 5
+    },
+    {
+      "source": "Execute a custom query using Redis Search syntax.",
+      "translation": "使用 Redis Search 语法执行自定义查询。",
+      "count": 2
+    },
+    {
+      "source": "Find messages by content across all conversations.",
+      "translation": "根据内容在所有对话中查找消息。",
+      "count": 2
+    },
+    {
+      "source": "Find messages with a specific metadata key-value pair.",
+      "translation": "查找具有特定元数据键值对的邮件。",
+      "count": 2
+    },
+    {
+      "source": "Find messages by timestamp range.",
+      "translation": "按时间戳范围查找消息。",
+      "count": 2
+    },
+    {
+      "source": "Find messages by type across all conversations.",
+      "translation": "按类型查找所有对话中的消息。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Note that the <code>executeQuery</code> method uses Redis Search syntax, which is specific\nto Redis implementations and not portable across different storage backends.",
+      "translation": "请注意，`executeQuery` 方法使用的是 Redis Search 语法，该语法专为 Redis 实现设计，无法跨不同的存储后端移植。",
+      "count": 1
+    },
+    {
+      "source": "This interface provides Redis Search-specific functionality and serves as inspiration\nfor potential future evolution of the core ChatMemoryRepository interface. Other\ndatabase implementations may provide similar capabilities through vendor-specific\nextensions.",
+      "translation": "该接口提供针对 Redis Search 的特定功能，并作为核心 ChatMemoryRepository 接口未来演进方向的参考。其他数据库实现可能通过供应商特定的扩展提供类似功能。",
+      "count": 1
+    },
+    {
+      "source": "A wrapper class to return messages with their conversation context.",
+      "translation": "一个用于返回消息及其对话上下文的包装类。",
+      "count": 1
+    },
+    {
+      "source": "<code>contentPattern</code> - The text pattern to search for in message content",
+      "translation": "<code>contentPattern</code> - 要在消息内容中搜索的文本模式",
+      "count": 1
+    },
+    {
+      "source": "<code>messageType</code> - The message type to filter by",
+      "translation": "<code>messageType</code> - 用于过滤的消息类型",
+      "count": 1
+    },
+    {
+      "source": "<code>conversationId</code> - Optional conversation ID to filter by (null for all\nconversations)",
+      "translation": "<code>conversationId</code> - 可选的会话 ID 用于过滤（为 null 时返回所有会话）",
+      "count": 1
+    },
+    {
+      "source": "<code>fromTime</code> - Start of time range (inclusive)",
+      "translation": "<code>fromTime</code> - 时间范围的起始点（包含）",
+      "count": 1
+    },
+    {
+      "source": "<code>toTime</code> - End of time range (inclusive)",
+      "translation": "<code>toTime</code> - 时间范围结束（包含）",
+      "count": 1
+    },
+    {
+      "source": "<code>metadataKey</code> - The metadata key to search for",
+      "translation": "<code>metadataKey</code> - 要搜索的元数据键",
+      "count": 1
+    },
+    {
+      "source": "<code>metadataValue</code> - The metadata value to match",
+      "translation": "<code>metadataValue</code> - 要匹配的元数据值",
+      "count": 1
+    },
+    {
+      "source": "<code>query</code> - The Redis Search query string",
+      "translation": "<code>query</code> - Redis Search 查询字符串",
+      "count": 1
+    },
+    {
+      "source": "Brian Sam-Bodden",
+      "translation": "布莱恩·萨姆 - 博登",
+      "count": 1
+    },
+    {
+      "source": "List of messages matching the pattern",
+      "translation": "与模式匹配的消息列表",
+      "count": 1
+    },
+    {
+      "source": "List of messages of the specified type",
+      "translation": "指定类型的消息列表",
+      "count": 1
+    },
+    {
+      "source": "List of messages within the time range",
+      "translation": "时间范围内的消息列表",
+      "count": 1
+    },
+    {
+      "source": "List of messages with matching metadata",
+      "translation": "与元数据匹配的消息列表",
+      "count": 1
+    },
+    {
+      "source": "List of messages matching the query",
+      "translation": "与查询匹配的消息列表",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Redis-specific extended interface for ChatMemoryRepository with advanced query\ncapabilities.",
+      "translation": "支持高级查询能力的 Redis 专用 ChatMemoryRepository 扩展接口。",
+      "count": 1
+    }
+  ]
+}

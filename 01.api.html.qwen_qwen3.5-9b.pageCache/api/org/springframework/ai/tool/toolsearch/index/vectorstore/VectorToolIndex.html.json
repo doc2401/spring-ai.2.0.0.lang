@@ -1,0 +1,156 @@
+{
+  "created_at": "2026-06-15 08:00:23",
+  "updated_at": "2026-06-15 08:00:23",
+  "stats": {
+    "total_entries": 28,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 34,
+    "entries_with_hits": 28,
+    "entries_without_hits": 0,
+    "hit_rate": 1.2142857142857142,
+    "usage_percentage": 0.0028
+  },
+  "items": [
+    {
+      "source": "Creates a new VectorToolIndex with the given vector store.",
+      "translation": "使用给定的向量存储创建一个新的 VectorToolIndex。",
+      "count": 2
+    },
+    {
+      "source": "Clears all indexed tools for the specified session.",
+      "translation": "清除指定会话中的所有索引工具。",
+      "count": 2
+    },
+    {
+      "source": "Registers a tool in the search index for the specified session.",
+      "translation": "为指定会话在搜索索引中注册工具。",
+      "count": 2
+    },
+    {
+      "source": "Registers multiple tools in the search index for the specified session in a single\nbatch operation.",
+      "translation": "在单个批量操作中，为指定的会话注册多个工具到搜索索引中。",
+      "count": 2
+    },
+    {
+      "source": "Searches for tools matching the given request criteria.",
+      "translation": "搜索符合给定请求条件的工具。",
+      "count": 2
+    },
+    {
+      "source": "<code>sessionId</code> - the session identifier for tool isolation",
+      "translation": "<code>sessionId</code> - 用于工具隔离的会话标识符",
+      "count": 2
+    },
+    {
+      "source": "Implementations should override this method when a batch operation is more\nefficient than repeated <a href=\"../../ToolIndex.html#indexTool(java.lang.String,org.springframework.ai.tool.toolsearch.ToolReference)\"><code>ToolIndex.indexTool(String, ToolReference)</code></a> calls (e.g. a single embedding API call\nor a single write transaction). The default implementation simply iterates and\ndelegates to <a href=\"../../ToolIndex.html#indexTool(java.lang.String,org.springframework.ai.tool.toolsearch.ToolReference)\"><code>ToolIndex.indexTool(String, ToolReference)</code></a>.",
+      "translation": "实现类应在批量操作比重复调用<a href=\"../../ToolIndex.html#indexTool(java.lang.String,org.springframework.ai.tool.toolsearch.ToolReference)\"><code>ToolIndex.indexTool(String, ToolReference)</code></a>更高效时（例如单次嵌入 API 调用或单次写入事务）重写此方法。默认实现仅迭代并委托给<a href=\"../../ToolIndex.html#indexTool(java.lang.String,org.springframework.ai.tool.toolsearch.ToolReference)\"><code>ToolIndex.indexTool(String, ToolReference)</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This class provides semantic search capabilities using vector embeddings, allowing for\nmore intelligent matching based on meaning rather than just keywords. Uses Spring AI's\nVectorStore for vector storage.",
+      "translation": "该类利用向量嵌入提供语义搜索功能，能够基于含义而非仅凭关键词实现更智能的匹配。它使用 Spring AI 的 VectorStore 进行向量存储。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../ToolIndex.html#clearIndex(java.lang.String)\">ToolIndex</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../ToolIndex.html#clearIndex(java.lang.String)\">ToolIndex</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../ToolIndex.html#indexTool(java.lang.String,org.springframework.ai.tool.toolsearch.ToolReference)\">ToolIndex</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../ToolIndex.html#indexTool(java.lang.String,org.springframework.ai.tool.toolsearch.ToolReference)\">ToolIndex</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../ToolIndex.html#indexTools(java.lang.String,java.util.List)\">ToolIndex</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../ToolIndex.html#indexTools(java.lang.String,java.util.List)\">ToolIndex</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../ToolIndex.html#search(org.springframework.ai.tool.toolsearch.ToolSearchRequest)\">ToolIndex</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../ToolIndex.html#search(org.springframework.ai.tool.toolsearch.ToolSearchRequest)\">ToolIndex</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../ToolIndex.html#clearIndex(java.lang.String)\">clearIndex</a></code> in interface <code><a href=\"../../ToolIndex.html\" title=\"interface in org.springframework.ai.tool.toolsearch\">ToolIndex</a></code>",
+      "translation": "<code><a href=\"../../ToolIndex.html#clearIndex(java.lang.String)\">clearIndex</a></code> 接口 <code><a href=\"../../ToolIndex.html\" title=\"org.springframework.ai.tool.toolsearch 中的接口\">ToolIndex</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../ToolIndex.html#indexTool(java.lang.String,org.springframework.ai.tool.toolsearch.ToolReference)\">indexTool</a></code> in interface <code><a href=\"../../ToolIndex.html\" title=\"interface in org.springframework.ai.tool.toolsearch\">ToolIndex</a></code>",
+      "translation": "接口 <code><a href=\"../../ToolIndex.html\" title=\"org.springframework.ai.tool.toolsearch 中的接口\">ToolIndex</a></code> 中的方法 <code><a href=\"../../ToolIndex.html#indexTool(java.lang.String,org.springframework.ai.tool.toolsearch.ToolReference)\">indexTool</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../ToolIndex.html#indexTools(java.lang.String,java.util.List)\">indexTools</a></code> in interface <code><a href=\"../../ToolIndex.html\" title=\"interface in org.springframework.ai.tool.toolsearch\">ToolIndex</a></code>",
+      "translation": "<code><a href=\"../../ToolIndex.html#indexTools(java.lang.String,java.util.List)\">indexTools</a></code> 接口 <code><a href=\"../../ToolIndex.html\" title=\"interface in org.springframework.ai.tool.toolsearch\">ToolIndex</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../ToolIndex.html#search(org.springframework.ai.tool.toolsearch.ToolSearchRequest)\">search</a></code> in interface <code><a href=\"../../ToolIndex.html\" title=\"interface in org.springframework.ai.tool.toolsearch\">ToolIndex</a></code>",
+      "translation": "<code><a href=\"../../ToolIndex.html#search(org.springframework.ai.tool.toolsearch.ToolSearchRequest)\">search</a></code> 接口 <code><a href=\"../../ToolIndex.html\" title=\"interface in org.springframework.ai.tool.toolsearch\">ToolIndex</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/AutoCloseable.html#close()\" title=\"class or interface in java.lang\">close</a></code> in interface <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/AutoCloseable.html\" title=\"class or interface in java.lang\">AutoCloseable</a></code>",
+      "translation": "`AutoCloseable` 接口中的 `close()` 方法。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Closeable.html#close()\" title=\"class or interface in java.io\">close</a></code> in interface <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Closeable.html\" title=\"class or interface in java.io\">Closeable</a></code>",
+      "translation": "接口 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Closeable.html\" title=\"java.io 中的类或接口\">Closeable</a></code> 中的 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Closeable.html#close()\" title=\"java.io 中的类或接口\">close</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code>vectorStore</code> - the vector store to use for storing and searching tool\nembeddings",
+      "translation": "<code>vectorStore</code> - 用于存储和搜索工具嵌入向量的向量存储库。",
+      "count": 1
+    },
+    {
+      "source": "<code>sessionId</code> - the session identifier",
+      "translation": "<code>sessionId</code> - 会话标识符",
+      "count": 1
+    },
+    {
+      "source": "<code>toolReference</code> - the reference to the tool being indexed",
+      "translation": "<code>toolReference</code> - 被索引工具的引用",
+      "count": 1
+    },
+    {
+      "source": "<code>toolReferences</code> - the tools to register",
+      "translation": "<code>toolReferences</code> - 要注册的工具",
+      "count": 1
+    },
+    {
+      "source": "<code>toolSearchRequest</code> - the search request containing query and parameters",
+      "translation": "<code>toolSearchRequest</code> - 包含查询和参数的搜索请求",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "a response containing matching tool references",
+      "translation": "包含匹配工具引用的响应",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "Vector-based tool searcher for semantic search of tool descriptions.",
+      "translation": "基于向量的工具搜索器，用于对工具描述进行语义搜索。",
+      "count": 1
+    }
+  ]
+}

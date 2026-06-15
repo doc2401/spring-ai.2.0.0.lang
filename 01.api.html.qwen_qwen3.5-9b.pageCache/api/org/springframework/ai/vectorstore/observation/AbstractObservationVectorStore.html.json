@@ -1,0 +1,186 @@
+{
+  "created_at": "2026-06-15 07:44:30",
+  "updated_at": "2026-06-15 07:44:30",
+  "stats": {
+    "total_entries": 34,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 45,
+    "entries_with_hits": 34,
+    "entries_without_hits": 0,
+    "hit_rate": 1.3235294117647058,
+    "usage_percentage": 0.0034
+  },
+  "items": [
+    {
+      "source": "Create a new <a href=\"AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\"><code>AbstractObservationVectorStore</code></a> instance.",
+      "translation": "创建一个新的<a href=\"AbstractObservationVectorStore.html\" title=\"类 org.springframework.ai.vectorstore.observation\"><code>AbstractObservationVectorStore</code></a> 实例。",
+      "count": 2
+    },
+    {
+      "source": "Create a new <a href=\"VectorStoreObservationContext.Builder.html\" title=\"class in org.springframework.ai.vectorstore.observation\"><code>VectorStoreObservationContext.Builder</code></a> instance.",
+      "translation": "创建一个新的<a href=\"VectorStoreObservationContext.Builder.html\" title=\"class in org.springframework.ai.vectorstore.observation\"><code>VectorStoreObservationContext.Builder</code></a>实例。",
+      "count": 2
+    },
+    {
+      "source": "Deletes documents from the vector store.",
+      "translation": "从向量存储中删除文档。",
+      "count": 2
+    },
+    {
+      "source": "Deletes documents from the vector store based on filter criteria.",
+      "translation": "根据筛选条件从向量存储中删除文档。",
+      "count": 2
+    },
+    {
+      "source": "Perform the actual add operation.",
+      "translation": "执行实际的加法操作。",
+      "count": 2
+    },
+    {
+      "source": "Perform the actual delete operation.",
+      "translation": "执行实际的删除操作。",
+      "count": 2
+    },
+    {
+      "source": "Template method for concrete implementations to provide filter-based deletion\nlogic.",
+      "translation": "为基于过滤器的删除逻辑提供具体实现的模板方法。",
+      "count": 2
+    },
+    {
+      "source": "Perform the actual similarity search operation.",
+      "translation": "执行实际的相似度搜索操作。",
+      "count": 2
+    },
+    {
+      "source": "Retrieves documents by query embedding similarity and metadata filters to retrieve\nexactly the number of nearest-neighbor results that match the request criteria.",
+      "translation": "通过查询嵌入相似度和元数据过滤器检索文档，以精确获取与请求条件匹配的最近邻结果数量。",
+      "count": 2
+    },
+    {
+      "source": "<code>documents</code> - the documents to add",
+      "translation": "<code>documents</code> - 要添加的文档",
+      "count": 2
+    },
+    {
+      "source": "<code>filterExpression</code> - Filter expression to identify documents to delete",
+      "translation": "<code>filterExpression</code> - 用于标识要删除的文档的过滤表达式",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../VectorStore.html#delete(java.util.List)\">VectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../VectorStore.html#delete(java.util.List)\">VectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../VectorStore.html#delete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">VectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../VectorStore.html#delete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">VectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../VectorStoreRetriever.html#similaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">VectorStoreRetriever</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../VectorStoreRetriever.html#similaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">VectorStoreRetriever</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Abstract base class for <a href=\"../VectorStore.html\" title=\"interface in org.springframework.ai.vectorstore\"><code>VectorStore</code></a> implementations that provides observation\ncapabilities.",
+      "translation": "为 `<a href=\"../VectorStore.html\" title=\"interface in org.springframework.ai.vectorstore\"><code>VectorStore</code></a>` 实现的抽象基类，提供可观测性能力。",
+      "count": 1
+    },
+    {
+      "source": "Creates a new AbstractObservationVectorStore instance with the specified builder\nsettings.",
+      "translation": "使用指定的构建器设置创建一个新的 AbstractObservationVectorStore 实例。",
+      "count": 1
+    },
+    {
+      "source": "Creates a new AbstractObservationVectorStore instance with the specified builder\nsettings. Initializes observation-related components and the embedding model.",
+      "translation": "使用指定的构建器设置创建一个新的 AbstractObservationVectorStore 实例，并初始化与观察相关的组件和嵌入模型。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../VectorStore.html#add(java.util.List)\">add</a></code> in interface <code><a href=\"../VectorStore.html\" title=\"interface in org.springframework.ai.vectorstore\">VectorStore</a></code>",
+      "translation": "接口 <code><a href=\"../VectorStore.html\" title=\"org.springframework.ai.vectorstore 中的接口\">VectorStore</a></code> 中的 <code><a href=\"../VectorStore.html#add(java.util.List)\">add</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../VectorStore.html#delete(java.util.List)\">delete</a></code> in interface <code><a href=\"../VectorStore.html\" title=\"interface in org.springframework.ai.vectorstore\">VectorStore</a></code>",
+      "translation": "接口 <code><a href=\"../VectorStore.html\" title=\"org.springframework.ai.vectorstore 中的接口\">VectorStore</a></code> 中的 <code><a href=\"../VectorStore.html#delete(java.util.List)\">delete</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../VectorStore.html#delete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">delete</a></code> in interface <code><a href=\"../VectorStore.html\" title=\"interface in org.springframework.ai.vectorstore\">VectorStore</a></code>",
+      "translation": "接口 <code><a href=\"../VectorStore.html\" title=\"org.springframework.ai.vectorstore 中的接口\">VectorStore</a></code> 中的 <code><a href=\"../VectorStore.html#delete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">delete</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../VectorStoreRetriever.html#similaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">similaritySearch</a></code> in interface <code><a href=\"../VectorStoreRetriever.html\" title=\"interface in org.springframework.ai.vectorstore\">VectorStoreRetriever</a></code>",
+      "translation": "接口 <code><a href=\"../VectorStoreRetriever.html\" title=\"org.springframework.ai.vectorstore 中的接口\">VectorStoreRetriever</a></code> 中的 <code><a href=\"../VectorStoreRetriever.html#similaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">similaritySearch</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code>builder</code> - the builder containing configuration settings",
+      "translation": "<code>builder</code> - 包含配置设置的构建器",
+      "count": 1
+    },
+    {
+      "source": "<code>deleteDocIds</code> - list of document ids for which documents will be removed.",
+      "translation": "<code>deleteDocIds</code> - 将被删除的文档 ID 列表。",
+      "count": 1
+    },
+    {
+      "source": "<code>request</code> - Search request for set search parameters, such as the query text,\ntopK, similarity threshold and metadata filter expressions.",
+      "translation": "<code>request</code> - 用于设置搜索参数的搜索请求，例如查询文本、topK、相似度阈值和元数据过滤表达式。",
+      "count": 1
+    },
+    {
+      "source": "<code>idList</code> - the list of document IDs to delete",
+      "translation": "<code>idList</code> - 要删除的文档 ID 列表",
+      "count": 1
+    },
+    {
+      "source": "<code>request</code> - the search request",
+      "translation": "<code>request</code> - 搜索请求",
+      "count": 1
+    },
+    {
+      "source": "<code>operationName</code> - the operation name",
+      "translation": "<code>operationName</code> - 操作名称",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Soby Chacko",
+      "translation": "克里斯蒂安·茨洛夫，索比·查科",
+      "count": 1
+    },
+    {
+      "source": "Returns documents that match the query request conditions.",
+      "translation": "返回与查询请求条件匹配的文档。",
+      "count": 1
+    },
+    {
+      "source": "the list of documents that match the query request conditions",
+      "translation": "与查询请求条件匹配的文件列表",
+      "count": 1
+    },
+    {
+      "source": "the observation context builder",
+      "translation": "观察上下文构建器",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    }
+  ]
+}

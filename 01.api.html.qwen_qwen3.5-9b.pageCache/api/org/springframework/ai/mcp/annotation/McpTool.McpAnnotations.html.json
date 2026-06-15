@@ -1,0 +1,81 @@
+{
+  "created_at": "2026-06-15 08:21:34",
+  "updated_at": "2026-06-15 08:21:34",
+  "stats": {
+    "total_entries": 13,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 15,
+    "entries_with_hits": 13,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1538461538461537,
+    "usage_percentage": 0.0013
+  },
+  "items": [
+    {
+      "source": "If true, the tool does not modify its environment.",
+      "translation": "如果为真，该工具不会修改其环境。",
+      "count": 2
+    },
+    {
+      "source": "A human-readable title for the tool.",
+      "translation": "工具的可读标题。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Additional properties describing a Tool to clients.\n\nall properties in ToolAnnotations are hints. They are not guaranteed to provide a\nfaithful description of tool behavior (including descriptive properties like\ntitle).\n\nClients should never make tool use decisions based on ToolAnnotations received from\nuntrusted servers.",
+      "translation": "描述工具附加属性的客户端信息。\n\nToolAnnotations 中的所有属性均为提示，不能保证能准确描述工具的行为（包括 title 等描述性属性）。\n\n客户端绝不应基于从不可信服务器接收到的 ToolAnnotations 来做出工具使用决策。",
+      "count": 1
+    },
+    {
+      "source": "If true, the tool may perform destructive updates to its environment.",
+      "translation": "如果属实，该工具可能会对其环境执行破坏性更新。",
+      "count": 1
+    },
+    {
+      "source": "If true, calling the tool repeatedly with the same arguments will have no\nadditional effect on the its environment.",
+      "translation": "如果为真，则重复以相同参数调用该工具将不会对其环境产生任何额外影响。",
+      "count": 1
+    },
+    {
+      "source": "If true, this tool may interact with an “open world” of external entities.",
+      "translation": "如果属实，该工具可能会与外部实体的“开放世界”进行交互。",
+      "count": 1
+    },
+    {
+      "source": "If true, the tool may perform destructive updates to its environment. If false,\nthe tool performs only additive updates.\n\n(This property is meaningful only when readOnlyHint == false)",
+      "translation": "如果为真，该工具可能会对其环境执行破坏性更新。如果为假，则仅执行增量更新。\n\n（此属性仅在 readOnlyHint == false 时具有意义）",
+      "count": 1
+    },
+    {
+      "source": "If true, calling the tool repeatedly with the same arguments will have no\nadditional effect on the its environment.\n\n(This property is meaningful only when readOnlyHint == false)",
+      "translation": "如果为真，则使用相同的参数反复调用该工具不会对其环境产生任何额外影响。\n\n（此属性仅在 readOnlyHint == false 时具有意义）",
+      "count": 1
+    },
+    {
+      "source": "If true, this tool may interact with an “open world” of external entities. If\nfalse, the tool’s domain of interaction is closed. For example, the world of a\nweb search tool is open, whereas that of a memory tool is not.",
+      "translation": "如果为真，该工具可能与外部实体的“开放世界”进行交互；如果为假，则该工具的交互领域是封闭的。例如，网络搜索工具的世界是开放的，而记忆工具的世界则是封闭的。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Alexandros Pappas, Vadzim Shurmialiou, Craig Walls",
+      "translation": "克里斯蒂安·茨洛夫，亚历山德罗斯·帕帕斯，瓦季姆·舒尔米亚柳，克雷格·沃尔斯",
+      "count": 1
+    },
+    {
+      "source": "Optional Element Summary",
+      "translation": "可选元素摘要",
+      "count": 1
+    },
+    {
+      "source": "Element Details",
+      "translation": "元素详情",
+      "count": 1
+    }
+  ]
+}

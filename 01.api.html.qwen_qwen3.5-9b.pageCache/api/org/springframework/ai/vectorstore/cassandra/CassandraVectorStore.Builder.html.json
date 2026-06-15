@@ -1,0 +1,216 @@
+{
+  "created_at": "2026-06-15 07:38:19",
+  "updated_at": "2026-06-15 07:38:19",
+  "stats": {
+    "total_entries": 40,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 66,
+    "entries_with_hits": 40,
+    "entries_without_hits": 0,
+    "hit_rate": 1.65,
+    "usage_percentage": 0.004
+  },
+  "items": [
+    {
+      "source": "the builder instance",
+      "translation": "构建器实例",
+      "count": 12
+    },
+    {
+      "source": "Builds and returns a new VectorStore instance with the configured settings.",
+      "translation": "构建并返回一个具有配置设置的新 VectorStore 实例。",
+      "count": 2
+    },
+    {
+      "source": "Sets the clustering keys.",
+      "translation": "设置聚类键。",
+      "count": 2
+    },
+    {
+      "source": "Adds a contact point to the session builder.",
+      "translation": "向会话构建器添加一个联系点。",
+      "count": 2
+    },
+    {
+      "source": "Sets the document ID translator.",
+      "translation": "设置文档 ID 转换器。",
+      "count": 2
+    },
+    {
+      "source": "Sets the filter expression converter.",
+      "translation": "设置过滤器表达式转换器。",
+      "count": 2
+    },
+    {
+      "source": "Sets the index name.",
+      "translation": "设置索引名称。",
+      "count": 2
+    },
+    {
+      "source": "Sets whether to initialize the schema.",
+      "translation": "设置是否初始化架构。",
+      "count": 2
+    },
+    {
+      "source": "Sets the keyspace name.",
+      "translation": "设置键空间名称。",
+      "count": 2
+    },
+    {
+      "source": "Sets the local datacenter for the session builder.",
+      "translation": "设置会话构建器的本地数据中心。",
+      "count": 2
+    },
+    {
+      "source": "Sets the partition keys.",
+      "translation": "设置分区键。",
+      "count": 2
+    },
+    {
+      "source": "Sets the primary key translator.",
+      "translation": "设置主键转换器。",
+      "count": 2
+    },
+    {
+      "source": "Sets the CQL session.",
+      "translation": "设置 CQL 会话。",
+      "count": 2
+    },
+    {
+      "source": "Sets the table name.",
+      "translation": "设置表名。",
+      "count": 2
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html\" title=\"class or interface in java.lang\">IllegalStateException</a></code> - if session is already set",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html\" title=\"class or interface in java.lang\">IllegalStateException</a></code> - 如果会话已经设置",
+      "count": 2
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if translator is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果转换器为 null",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../VectorStore.Builder.html#build()\">VectorStore.Builder</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../VectorStore.Builder.html#build()\">VectorStore.Builder</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Builder for the Cassandra vector store.\n\nAll metadata columns configured to the store will be fetched and added to all\nqueried documents.\n\nTo filter expression search against a metadata column configure it with\nSchemaColumnTags.INDEXED\n\nThe Cassandra Java Driver is configured via the application.conf resource found in\nthe classpath. See\nhttps://github.com/apache/cassandra-java-driver/tree/4.x/manual/core/configuration",
+      "translation": "Cassandra 向量存储的构建器。\n\n所有配置到存储中的元数据列将被获取并添加到所有查询文档中。\n\n若要针对元数据列过滤表达式搜索，请将其配置为 SchemaColumnTags.INDEXED。\n\nCassandra Java Driver 通过类路径中的 application.conf 资源进行配置。请参阅\nhttps://github.com/apache/cassandra-java-driver/tree/4.x/manual/core/configuration",
+      "count": 1
+    },
+    {
+      "source": "Executor to use when adding documents.",
+      "translation": "添加文档时使用的执行器。",
+      "count": 1
+    },
+    {
+      "source": "Executor to use when adding documents. The hotspot is the call to the\nembeddingModel. For remote transformers you probably want a higher value to\nutilize network. For local transformers you probably want a lower value to\navoid saturation.",
+      "translation": "添加文档时使用的执行器。热点在于对 embeddingModel 的调用。对于远程转换器，您可能需要设置较高的值以充分利用网络；而对于本地转换器，则可能需要设置较低的值以避免资源饱和。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if session is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果会话为 null",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if keyspace is null or empty",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果 keyspace 为 null 或为空",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if table is null or empty",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果表为 null 或为空",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if partitionKeys is null or empty",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果 partitionKeys 为 null 或为空",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if converter is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果转换器为 null",
+      "count": 1
+    },
+    {
+      "source": "<code>session</code> - the CQL session to use",
+      "translation": "<code>session</code> - 要使用的 CQL 会话",
+      "count": 1
+    },
+    {
+      "source": "<code>keyspace</code> - the keyspace name",
+      "translation": "<code>keyspace</code> - 键空间名称",
+      "count": 1
+    },
+    {
+      "source": "<code>contactPoint</code> - the contact point to add",
+      "translation": "<code>contactPoint</code> - 要添加的接触点",
+      "count": 1
+    },
+    {
+      "source": "<code>localDatacenter</code> - the local datacenter name",
+      "translation": "<code>localDatacenter</code> - 本地数据中心名称",
+      "count": 1
+    },
+    {
+      "source": "<code>table</code> - the table name",
+      "translation": "<table> - 表名",
+      "count": 1
+    },
+    {
+      "source": "<code>partitionKeys</code> - the partition keys",
+      "translation": "<code>partitionKeys</code> - 分区键",
+      "count": 1
+    },
+    {
+      "source": "<code>clusteringKeys</code> - the clustering keys",
+      "translation": "<code>clusteringKeys</code> - 聚类键",
+      "count": 1
+    },
+    {
+      "source": "<code>indexName</code> - the index name (will be auto-generated if null)",
+      "translation": "<code>indexName</code> - 索引名称（若为 null 将自动生成）",
+      "count": 1
+    },
+    {
+      "source": "<code>initializeSchema</code> - true to initialize schema, false otherwise",
+      "translation": "<code>initializeSchema</code> - 用于初始化架构，true 表示启用，false 表示禁用",
+      "count": 1
+    },
+    {
+      "source": "<code>converter</code> - the filter expression converter to use",
+      "translation": "<code>converter</code> - 要使用的过滤器表达式转换器",
+      "count": 1
+    },
+    {
+      "source": "<code>translator</code> - the document ID translator to use",
+      "translation": "<code>translator</code> - 要使用的文档 ID 转换器",
+      "count": 1
+    },
+    {
+      "source": "<code>translator</code> - the primary key translator to use",
+      "translation": "<code>translator</code> - 要使用的主键转换器",
+      "count": 1
+    },
+    {
+      "source": "Mick Semb Wever, Christian Tzolov, Thomas Vitale, Soby Chacko, chabinhwang",
+      "translation": "米克·森布·韦弗，克里斯蒂安·茨洛夫，托马斯·维塔莱，索比·查科，chabinhwang",
+      "count": 1
+    },
+    {
+      "source": "a new VectorStore instance",
+      "translation": "一个新的向量存储实例",
+      "count": 1
+    }
+  ]
+}

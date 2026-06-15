@@ -1,0 +1,136 @@
+{
+  "created_at": "2026-06-15 07:08:57",
+  "updated_at": "2026-06-15 07:08:57",
+  "stats": {
+    "total_entries": 24,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 71,
+    "entries_with_hits": 24,
+    "entries_without_hits": 0,
+    "hit_rate": 2.9583333333333335,
+    "usage_percentage": 0.0024000000000000002
+  },
+  "items": [
+    {
+      "source": "since 2.0.0-M3, use <a href=\"org/springframework/ai/transformer/splitter/TokenTextSplitter.html#builder()\"><code>TokenTextSplitter.builder()</code></a> instead.",
+      "translation": "自 2.0.0-M3 起，请使用<a href=\"org/springframework/ai/transformer/splitter/TokenTextSplitter.html#builder()\"><code>TokenTextSplitter.builder()</code></a>。",
+      "count": 10
+    },
+    {
+      "source": "in favor of <a href=\"org/springframework/ai/openai/OpenAiEmbeddingModel.html#builder()\"><code>OpenAiEmbeddingModel.builder()</code></a>",
+      "translation": "推荐使用<a href=\"org/springframework/ai/openai/OpenAiEmbeddingModel.html#builder()\"><code>OpenAiEmbeddingModel.builder()</code></a>",
+      "count": 9
+    },
+    {
+      "source": "as of 2.0.0, in favor of <a href=\"org/springframework/ai/chat/client/ChatClient.Builder.html#defaultTools(java.lang.Object...)\"><code>ChatClient.Builder.defaultTools(Object...)</code></a>. To be\nremoved in 3.0.0.",
+      "translation": "自 2.0.0 版本起，推荐使用<a href=\"org/springframework/ai/chat/client/ChatClient.Builder.html#defaultTools(java.lang.Object...)\"><code>ChatClient.Builder.defaultTools(Object...)</code></a>。将在 3.0.0 版本中移除。",
+      "count": 6
+    },
+    {
+      "source": "as of 2.0.0, in favor of <a href=\"org/springframework/ai/chat/client/ChatClient.ChatClientRequestSpec.html#tools(java.lang.Object...)\"><code>ChatClient.ChatClientRequestSpec.tools(Object...)</code></a>. To be removed\nin 3.0.0.",
+      "translation": "自 2.0.0 版本起，推荐使用<a href=\"org/springframework/ai/chat/client/ChatClient.ChatClientRequestSpec.html#tools(java.lang.Object...)\"><code>ChatClient.ChatClientRequestSpec.tools(Object...)</code></a>。将在 3.0.0 版本中移除。",
+      "count": 6
+    },
+    {
+      "source": "The SSE transport has been deprecated in the 2025-03-26 version of the\nspec, and should not be used anymore. We keep it for backwards compatibility.",
+      "translation": "SSE 传输已在 2025-03-26 版本的规范中被弃用，不应再使用。我们保留它仅用于向后兼容。",
+      "count": 6
+    },
+    {
+      "source": "as of 2.0.0, in favor of \n<details class=\"invalid-tag\">\n<summary>invalid reference</summary>\n<pre><code>#defaultTools(Consumer)</code></pre>\n</details>\n. To be removed\nin 3.0.0.",
+      "translation": "自 2.0.0 版本起，推荐使用  \n<details class=\"invalid-tag\">\n<summary>无效引用</summary>\n<pre><code>#defaultTools(Consumer)</code></pre>\n</details>  \n将在 3.0.0 版本中移除。",
+      "count": 4
+    },
+    {
+      "source": "since 2.0.0 for removal in 3.0.0 — internal tool execution in\n<a href=\"org/springframework/ai/anthropic/AnthropicChatModel.html\" title=\"class in org.springframework.ai.anthropic\"><code>AnthropicChatModel</code></a> is superseded by <code>ToolCallingAdvisor</code> used via\n<code>ChatClient</code>.",
+      "translation": "自 2.0.0 版本起，将在 3.0.0 版本中移除——内部工具执行在<a href=\"org/springframework/ai/anthropic/AnthropicChatModel.html\" title=\"class in org.springframework.ai.anthropic\"><code>AnthropicChatModel</code></a>中已被通过<code>ChatClient</code>使用的<code>ToolCallingAdvisor</code>所取代。",
+      "count": 2
+    },
+    {
+      "source": "since 2.0.0 for removal in 3.0.0 — internal tool execution in\n<a href=\"org/springframework/ai/bedrock/converse/BedrockProxyChatModel.html\" title=\"class in org.springframework.ai.bedrock.converse\"><code>BedrockProxyChatModel</code></a> is superseded by <code>ToolCallingAdvisor</code> used\nvia <code>ChatClient</code>.",
+      "translation": "自 2.0.0 版本起，将在 3.0.0 版本中移除——内部工具执行在<a href=\"org/springframework/ai/bedrock/converse/BedrockProxyChatModel.html\" title=\"class in org.springframework.ai.bedrock.converse\"><code>BedrockProxyChatModel</code></a>中已被通过<code>ChatClient</code>使用的<code>ToolCallingAdvisor</code>所取代。",
+      "count": 2
+    },
+    {
+      "source": "since 2.0.0 for removal in 3.0.0 — internal tool execution in\n<a href=\"org/springframework/ai/mistralai/MistralAiChatModel.html\" title=\"class in org.springframework.ai.mistralai\"><code>MistralAiChatModel</code></a> is superseded by <code>ToolCallingAdvisor</code> used via\n<code>ChatClient</code>.",
+      "translation": "自 2.0.0 版本起，将在 3.0.0 版本中移除——在<a href=\"org/springframework/ai/mistralai/MistralAiChatModel.html\" title=\"class in org.springframework.ai.mistralai\"><code>MistralAiChatModel</code></a> 中的内部工具执行功能已被通过<code>ChatClient</code>使用的<code>ToolCallingAdvisor</code>所取代。",
+      "count": 2
+    },
+    {
+      "source": "since 2.0.0 for removal in 3.0.0 — internal tool execution in\n<a href=\"org/springframework/ai/ollama/OllamaChatModel.html\" title=\"class in org.springframework.ai.ollama\"><code>OllamaChatModel</code></a> is superseded by <code>ToolCallingAdvisor</code> used via\n<code>ChatClient</code>.",
+      "translation": "自 2.0.0 版本起，将在 3.0.0 版本中移除——内部工具执行在<a href=\"org/springframework/ai/ollama/OllamaChatModel.html\" title=\"class in org.springframework.ai.ollama\"><code>OllamaChatModel</code></a>中已被通过<code>ChatClient</code>使用的<code>ToolCallingAdvisor</code>所取代。",
+      "count": 2
+    },
+    {
+      "source": "since 2.0.0 for removal in 3.0.0 — internal tool execution in\n<a href=\"org/springframework/ai/openai/OpenAiChatModel.html\" title=\"class in org.springframework.ai.openai\"><code>OpenAiChatModel</code></a> is superseded by <code>ToolCallingAdvisor</code> used via\n<code>ChatClient</code>.",
+      "translation": "自 2.0.0 版本起，将在 3.0.0 版本中移除——内部工具执行在<a href=\"org/springframework/ai/openai/OpenAiChatModel.html\" title=\"class in org.springframework.ai.openai\"><code>OpenAiChatModel</code></a>中已被<code>ToolCallingAdvisor</code>所取代，该 Advisor 通过<code>ChatClient</code>使用。",
+      "count": 2
+    },
+    {
+      "source": "since 2.0.0 in favor of <a href=\"org/springframework/ai/chat/client/advisor/ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor</code></a>. This is kept for\nbackward compatibility and will be removed in a future release.",
+      "translation": "自 2.0.0 版本起，推荐使用 <a href=\"org/springframework/ai/chat/client/advisor/ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor</code></a>。此保留是为了向后兼容，将在未来的版本中移除。",
+      "count": 2
+    },
+    {
+      "source": "since 2.0.0 in favor of <a href=\"org/springframework/ai/chat/client/advisor/ToolCallingAdvisor.html#builder()\"><code>ToolCallingAdvisor.builder()</code></a>.",
+      "translation": "自 2.0.0 版本起，推荐使用<a href=\"org/springframework/ai/chat/client/advisor/ToolCallingAdvisor.html#builder()\"><code>ToolCallingAdvisor.builder()</code></a>。",
+      "count": 2
+    },
+    {
+      "source": "since 2.0.0 in favor of <a href=\"org/springframework/ai/chat/client/advisor/ToolCallingAdvisor.Builder.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor.Builder</code></a>.",
+      "translation": "自 2.0.0 版本起，推荐使用 <a href=\"org/springframework/ai/chat/client/advisor/ToolCallingAdvisor.Builder.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor.Builder</code></a>。",
+      "count": 2
+    },
+    {
+      "source": "since 2.0.0 in favor of\n<a href=\"org/springframework/ai/chat/client/AdvisorParams.html#toolCallingAdvisorAutoRegister(boolean)\"><code>AdvisorParams.toolCallingAdvisorAutoRegister(boolean)</code></a>.",
+      "translation": "自 2.0.0 版本起，推荐使用\n<a href=\"org/springframework/ai/chat/client/AdvisorParams.html#toolCallingAdvisorAutoRegister(boolean)\"><code>AdvisorParams.toolCallingAdvisorAutoRegister(boolean)</code></a>。",
+      "count": 2
+    },
+    {
+      "source": "in favor of <a href=\"org/springframework/ai/chat/client/ChatClientBuilderCustomizer.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClientBuilderCustomizer</code></a>",
+      "translation": "支持<a href=\"org/springframework/ai/chat/client/ChatClientBuilderCustomizer.html\" title=\"org.springframework.ai.chat.client 中的接口\"><code>ChatClientBuilderCustomizer</code></a>",
+      "count": 2
+    },
+    {
+      "source": "as of 2.0.0, in favor of <a href=\"org/springframework/ai/chat/client/DefaultChatClientBuilder.html#defaultTools(java.lang.Object...)\"><code>DefaultChatClientBuilder.defaultTools(Object...)</code></a>. To be\nremoved in 3.0.0.",
+      "translation": "自 2.0.0 版本起，推荐使用<a href=\"org/springframework/ai/chat/client/DefaultChatClientBuilder.html#defaultTools(java.lang.Object...)\"><code>DefaultChatClientBuilder.defaultTools(Object...)</code></a>。将在 3.0.0 版本中移除。",
+      "count": 2
+    },
+    {
+      "source": "Use <a href=\"org/springframework/ai/mistralai/api/MistralAiApi.ChatCompletionRequest.ResponseFormat.html#builder()\"><code>MistralAiApi.ChatCompletionRequest.ResponseFormat.builder()</code></a> or factory methods instead.",
+      "translation": "请使用<a href=\"org/springframework/ai/mistralai/api/MistralAiApi.ChatCompletionRequest.ResponseFormat.html#builder()\"><code>MistralAiApi.ChatCompletionRequest.ResponseFormat.builder()</code></a>或工厂方法。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "DeepSeek has announced this legacy model name will be deprecated.\nPrefer <a href=\"org/springframework/ai/deepseek/api/DeepSeekApi.ChatModel.html#DEEPSEEK_V4_FLASH\"><code>DeepSeekApi.ChatModel.DEEPSEEK_V4_FLASH</code></a> or <a href=\"org/springframework/ai/deepseek/api/DeepSeekApi.ChatModel.html#DEEPSEEK_V4_PRO\"><code>DeepSeekApi.ChatModel.DEEPSEEK_V4_PRO</code></a>.",
+      "translation": "DeepSeek 已宣布此遗留模型名称将被弃用。\n建议使用 <a href=\"org/springframework/ai/deepseek/api/DeepSeekApi.ChatModel.html#DEEPSEEK_V4_FLASH\"><code>DeepSeekApi.ChatModel.DEEPSEEK_V4_FLASH</code></a> 或 <a href=\"org/springframework/ai/deepseek/api/DeepSeekApi.ChatModel.html#DEEPSEEK_V4_PRO\"><code>DeepSeekApi.ChatModel.DEEPSEEK_V4_PRO</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "DeepSeek has announced this legacy model name will be deprecated.\nPrefer <a href=\"org/springframework/ai/deepseek/api/DeepSeekApi.ChatModel.html#DEEPSEEK_V4_FLASH\"><code>DeepSeekApi.ChatModel.DEEPSEEK_V4_FLASH</code></a> / <a href=\"org/springframework/ai/deepseek/api/DeepSeekApi.ChatModel.html#DEEPSEEK_V4_PRO\"><code>DeepSeekApi.ChatModel.DEEPSEEK_V4_PRO</code></a> with\nprovider-specific reasoning configuration.",
+      "translation": "DeepSeek 已宣布此遗留模型名称将被弃用。\n请优先使用带有特定提供商推理配置的 <a href=\"org/springframework/ai/deepseek/api/DeepSeekApi.ChatModel.html#DEEPSEEK_V4_FLASH\"><code>DeepSeekApi.ChatModel.DEEPSEEK_V4_FLASH</code></a> / <a href=\"org/springframework/ai/deepseek/api/DeepSeekApi.ChatModel.html#DEEPSEEK_V4_PRO\"><code>DeepSeekApi.ChatModel.DEEPSEEK_V4_PRO</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "This method is not sufficient for security-sensitive URL validation and\nshould not be relied upon for security-critical checks. Use\n<a href=\"org/springframework/ai/bedrock/converse/api/URLValidator.html#isValidURLStrict(java.lang.String)\"><code>URLValidator.isValidURLStrict(String)</code></a> instead for robust validation.",
+      "translation": "此方法不足以用于对安全性敏感的 URL 验证，不应依赖它进行关键安全校验。请使用<a href=\"org/springframework/ai/bedrock/converse/api/URLValidator.html#isValidURLStrict(java.lang.String)\"><code>URLValidator.isValidURLStrict(String)</code></a>进行更稳健的验证。",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"#for-removal\">Terminally Deprecated</a>",
+      "translation": "<a href=\"#for-removal\">已终止维护</a>",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"#enum-constant\">Enum Constants</a>",
+      "translation": "<a href=\"#enum-constant\">枚举常量</a>",
+      "count": 1
+    }
+  ]
+}

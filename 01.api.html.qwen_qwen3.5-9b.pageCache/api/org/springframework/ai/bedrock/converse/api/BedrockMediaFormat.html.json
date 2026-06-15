@@ -1,0 +1,56 @@
+{
+  "created_at": "2026-06-15 09:04:26",
+  "updated_at": "2026-06-15 09:04:26",
+  "stats": {
+    "total_entries": 8,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 8,
+    "entries_with_hits": 8,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.0007999999999999999
+  },
+  "items": [
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Supported document formats include PDF, CSV, DOC, DOCX, XLS, XLSX, HTML, TXT, and MD.\nSupported image formats include JPEG, PNG, GIF, and WEBP. Supported video formats\ninclude MKV, MOV, MP4, WEBM, FLV, MPEG, MPG, WMV, and 3GP.",
+      "translation": "支持的文档格式包括 PDF、CSV、DOC、DOCX、XLS、XLSX、HTML、TXT 和 MD。支持的图片格式包括 JPEG、PNG、GIF 和 WEBP。支持的视频格式包括 MKV、MOV、MP4、WEBM、FLV、MPEG、MPG、WMV 和 3GP。",
+      "count": 1
+    },
+    {
+      "source": "Usage example:",
+      "translation": "使用示例：",
+      "count": 1
+    },
+    {
+      "source": "Throws IllegalArgumentException if the MIME type is unsupported.",
+      "translation": "如果 MIME 类型不受支持，则抛出 IllegalArgumentException。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "The BedrockMediaFormat class provides mappings between MIME types and their\ncorresponding Bedrock media formats for documents, images, and videos. It supports\nconversion of MIME types to specific formats used by the Bedrock runtime.",
+      "translation": "BedrockMediaFormat 类提供了 MIME 类型与其对应的 Bedrock 媒体格式（包括文档、图像和视频）之间的映射。它支持将 MIME 类型转换为 Bedrock 运行时所使用的特定格式。",
+      "count": 1
+    },
+    {
+      "source": "<pre>    String format = BedrockMediaFormat.getFormatAsString(Media.Format.DOC_PDF);\n</pre>",
+      "translation": "<pre>    String format = BedrockMediaFormat.getFormatAsString(Media.Format.DOC_PDF);\n</pre>",
+      "count": 1
+    }
+  ]
+}

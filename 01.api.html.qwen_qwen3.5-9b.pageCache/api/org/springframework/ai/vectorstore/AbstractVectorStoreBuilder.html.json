@@ -1,0 +1,126 @@
+{
+  "created_at": "2026-06-15 07:35:32",
+  "updated_at": "2026-06-15 07:35:32",
+  "stats": {
+    "total_entries": 22,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 24,
+    "entries_with_hits": 22,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0909090909090908,
+    "usage_percentage": 0.0022
+  },
+  "items": [
+    {
+      "source": "Sets the batching strategy.",
+      "translation": "设置批处理策略。",
+      "count": 2
+    },
+    {
+      "source": "the builder instance for method chaining",
+      "translation": "用于方法链式调用的构建器实例",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"VectorStore.Builder.html#observationRegistry(io.micrometer.observation.ObservationRegistry)\">VectorStore.Builder</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"VectorStore.Builder.html#observationRegistry(io.micrometer.observation.ObservationRegistry)\">VectorStore.Builder</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"VectorStore.Builder.html#customObservationConvention(org.springframework.ai.vectorstore.observation.VectorStoreObservationConvention)\">VectorStore.Builder</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"VectorStore.Builder.html#customObservationConvention(org.springframework.ai.vectorstore.observation.VectorStoreObservationConvention)\">VectorStore.Builder</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Abstract base builder implementing common builder functionality for\n<a href=\"VectorStore.html\" title=\"interface in org.springframework.ai.vectorstore\"><code>VectorStore</code></a>. Provides default implementations for observation-related settings.",
+      "translation": "实现通用构建器功能的抽象基础构建器，用于<a href=\"VectorStore.html\" title=\"org.springframework.ai.vectorstore 中的接口\"><code>VectorStore</code></a>。为观察相关设置提供默认实现。",
+      "count": 1
+    },
+    {
+      "source": "Sets a custom convention for creating observations. If not specified,\n<a href=\"observation/DefaultVectorStoreObservationConvention.html\" title=\"class in org.springframework.ai.vectorstore.observation\"><code>DefaultVectorStoreObservationConvention</code></a> will be used.",
+      "translation": "设置创建观测的自定义约定。如果未指定，将使用 <a href=\"observation/DefaultVectorStoreObservationConvention.html\" title=\"class in org.springframework.ai.vectorstore.observation\"><code>DefaultVectorStoreObservationConvention</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Sets the registry for collecting observations and metrics. Defaults to\n<code>ObservationRegistry.NOOP</code> if not specified.",
+      "translation": "设置用于收集观测值和指标的注册表。如果未指定，则默认为 <code>ObservationRegistry.NOOP</code>。",
+      "count": 1
+    },
+    {
+      "source": "Sets a custom convention for creating observations.",
+      "translation": "设置用于创建观测值的自定义约定。",
+      "count": 1
+    },
+    {
+      "source": "Sets the registry for collecting observations and metrics.",
+      "translation": "设置用于收集观测值和指标的注册表。",
+      "count": 1
+    },
+    {
+      "source": "Returns this builder cast to the concrete builder type.",
+      "translation": "将本构建器转换为具体构建器类型。",
+      "count": 1
+    },
+    {
+      "source": "Returns this builder cast to the concrete builder type. Used internally to enable\nproper method chaining in subclasses.",
+      "translation": "将本构建器转换为具体构建器类型。内部使用，以在子类中启用正确的方法链式调用。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"VectorStore.Builder.html#observationRegistry(io.micrometer.observation.ObservationRegistry)\">observationRegistry</a></code> in interface <code><a href=\"VectorStore.Builder.html\" title=\"interface in org.springframework.ai.vectorstore\">VectorStore.Builder</a>&lt;<a href=\"#type-param-T\" title=\"type parameter in AbstractVectorStoreBuilder\">T</a> extends <a href=\"AbstractVectorStoreBuilder.html\" title=\"class in org.springframework.ai.vectorstore\">AbstractVectorStoreBuilder</a>&lt;<a href=\"#type-param-T\" title=\"type parameter in AbstractVectorStoreBuilder\">T</a>&gt;&gt;</code>",
+      "translation": "<code><a href=\"VectorStore.Builder.html#observationRegistry(io.micrometer.observation.ObservationRegistry)\">observationRegistry</a></code> 在接口 <code><a href=\"VectorStore.Builder.html\" title=\"interface in org.springframework.ai.vectorstore\">VectorStore.Builder</a>&lt;<a href=\"#type-param-T\" title=\"type parameter in AbstractVectorStoreBuilder\">T</a> extends <a href=\"AbstractVectorStoreBuilder.html\" title=\"class in org.springframework.ai.vectorstore\">AbstractVectorStoreBuilder</a>&lt;<a href=\"#type-param-T\" title=\"type parameter in AbstractVectorStoreBuilder\">T</a>&gt;&gt;</code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"VectorStore.Builder.html#customObservationConvention(org.springframework.ai.vectorstore.observation.VectorStoreObservationConvention)\">customObservationConvention</a></code> in interface <code><a href=\"VectorStore.Builder.html\" title=\"interface in org.springframework.ai.vectorstore\">VectorStore.Builder</a>&lt;<a href=\"#type-param-T\" title=\"type parameter in AbstractVectorStoreBuilder\">T</a> extends <a href=\"AbstractVectorStoreBuilder.html\" title=\"class in org.springframework.ai.vectorstore\">AbstractVectorStoreBuilder</a>&lt;<a href=\"#type-param-T\" title=\"type parameter in AbstractVectorStoreBuilder\">T</a>&gt;&gt;</code>",
+      "translation": "<code><a href=\"VectorStore.Builder.html#customObservationConvention(org.springframework.ai.vectorstore.observation.VectorStoreObservationConvention)\">customObservationConvention</a></code> 为接口 <code><a href=\"VectorStore.Builder.html\" title=\"interface in org.springframework.ai.vectorstore\">VectorStore.Builder</a>&lt;<a href=\"#type-param-T\" title=\"type parameter in AbstractVectorStoreBuilder\">T</a> extends <a href=\"AbstractVectorStoreBuilder.html\" title=\"class in org.springframework.ai.vectorstore\">AbstractVectorStoreBuilder</a>&lt;<a href=\"#type-param-T\" title=\"type parameter in AbstractVectorStoreBuilder\">T</a>&gt;&gt;</code> 中的方法。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"VectorStore.Builder.html#batchingStrategy(org.springframework.ai.embedding.BatchingStrategy)\">batchingStrategy</a></code> in interface <code><a href=\"VectorStore.Builder.html\" title=\"interface in org.springframework.ai.vectorstore\">VectorStore.Builder</a>&lt;<a href=\"#type-param-T\" title=\"type parameter in AbstractVectorStoreBuilder\">T</a> extends <a href=\"AbstractVectorStoreBuilder.html\" title=\"class in org.springframework.ai.vectorstore\">AbstractVectorStoreBuilder</a>&lt;<a href=\"#type-param-T\" title=\"type parameter in AbstractVectorStoreBuilder\">T</a>&gt;&gt;</code>",
+      "translation": "<code><a href=\"VectorStore.Builder.html#batchingStrategy(org.springframework.ai.embedding.BatchingStrategy)\">batchingStrategy</a></code> 是接口 <code><a href=\"VectorStore.Builder.html\" title=\"interface in org.springframework.ai.vectorstore\">VectorStore.Builder</a>&lt;<a href=\"#type-param-T\" title=\"type parameter in AbstractVectorStoreBuilder\">T</a> extends <a href=\"AbstractVectorStoreBuilder.html\" title=\"class in org.springframework.ai.vectorstore\">AbstractVectorStoreBuilder</a>&lt;<a href=\"#type-param-T\" title=\"type parameter in AbstractVectorStoreBuilder\">T</a>&gt;&gt;</code> 中的内容。",
+      "count": 1
+    },
+    {
+      "source": "<span id=\"type-param-T\"><code>T</code> - the concrete builder type, enabling method chaining with the correct return\ntype</span>",
+      "translation": "<span id=\"type-param-T\"><code>T</code> - 具体构建器类型，支持具有正确返回类型的链式调用</span>",
+      "count": 1
+    },
+    {
+      "source": "<code>observationRegistry</code> - the registry to use for observations",
+      "translation": "<code>observationRegistry</code> - 用于观测的注册表",
+      "count": 1
+    },
+    {
+      "source": "<code>convention</code> - the custom observation convention to use",
+      "translation": "<code>convention</code> - 要使用的自定义观察约定",
+      "count": 1
+    },
+    {
+      "source": "<code>batchingStrategy</code> - the strategy to use",
+      "translation": "<code>batchingStrategy</code> - 要使用的策略",
+      "count": 1
+    },
+    {
+      "source": "this builder cast to the concrete type",
+      "translation": "该构建器被转换为具体类型。",
+      "count": 1
+    },
+    {
+      "source": "the builder instance",
+      "translation": "构建器实例",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    }
+  ]
+}

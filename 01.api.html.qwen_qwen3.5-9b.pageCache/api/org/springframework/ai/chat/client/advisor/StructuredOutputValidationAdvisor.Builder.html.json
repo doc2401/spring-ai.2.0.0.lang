@@ -1,0 +1,136 @@
+{
+  "created_at": "2026-06-15 08:58:08",
+  "updated_at": "2026-06-15 08:58:08",
+  "stats": {
+    "total_entries": 24,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 37,
+    "entries_with_hits": 24,
+    "entries_without_hits": 0,
+    "hit_rate": 1.5416666666666667,
+    "usage_percentage": 0.0024000000000000002
+  },
+  "items": [
+    {
+      "source": "this builder",
+      "translation": "此构建器",
+      "count": 7
+    },
+    {
+      "source": "Sets the expected output type; the JSON schema is derived automatically.\nMutually exclusive with <a href=\"#outputJsonSchema(java.lang.String)\"><code>outputJsonSchema(String)</code></a>.",
+      "translation": "设置预期的输出类型；JSON 模式将自动推导。\n与<a href=\"#outputJsonSchema(java.lang.String)\"><code>outputJsonSchema(String)</code></a>互斥。",
+      "count": 3
+    },
+    {
+      "source": "Sets the expected output type; the JSON schema is derived automatically.",
+      "translation": "设置预期的输出类型；JSON 架构将自动推导。",
+      "count": 3
+    },
+    {
+      "source": "<code>outputType</code> - the expected output type",
+      "translation": "<code>outputType</code> - 预期的输出类型",
+      "count": 3
+    },
+    {
+      "source": "Builds the StructuredOutputValidationAdvisor.",
+      "translation": "构建 StructuredOutputValidationAdvisor。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Sets the advisor order. Must be strictly between\n<code>Ordered.HIGHEST_PRECEDENCE</code> and\n<code>Ordered.LOWEST_PRECEDENCE</code>. Defaults to\n<code>LOWEST_PRECEDENCE - 2000</code>.",
+      "translation": "设置顾问顺序。必须严格介于 <code>Ordered.HIGHEST_PRECEDENCE</code> 和 <code>Ordered.LOWEST_PRECEDENCE</code> 之间。默认值为 <code>LOWEST_PRECEDENCE - 2000</code>。",
+      "count": 1
+    },
+    {
+      "source": "Sets the <code>JsonMapper</code> used for JSON parsing and validation. Defaults to\n<a href=\"../../../util/JacksonUtils.html#getDefaultJsonMapper()\"><code>JacksonUtils.getDefaultJsonMapper()</code></a>.",
+      "translation": "设置用于 JSON 解析和验证的<code>JsonMapper</code>。默认值为\n<a href=\"../../../util/JacksonUtils.html#getDefaultJsonMapper()\"><code>JacksonUtils.getDefaultJsonMapper()</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Builder for <a href=\"StructuredOutputValidationAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>StructuredOutputValidationAdvisor</code></a>.",
+      "translation": "<code>StructuredOutputValidationAdvisor</code> 的构建器。<a href=\"StructuredOutputValidationAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\">StructuredOutputValidationAdvisor</a>。",
+      "count": 1
+    },
+    {
+      "source": "Sets the <code>JsonMapper</code> used for JSON parsing and validation.",
+      "translation": "设置用于 JSON 解析和验证的<code>JsonMapper</code>。",
+      "count": 1
+    },
+    {
+      "source": "Sets a pre-generated JSON schema string to validate against. Mutually exclusive\nwith the <code>outputType</code> methods.",
+      "translation": "设置一个预生成的 JSON Schema 字符串用于验证。此方法与<code>outputType</code>方法互斥。",
+      "count": 1
+    },
+    {
+      "source": "Sets the advisor order.",
+      "translation": "设置顾问顺序。",
+      "count": 1
+    },
+    {
+      "source": "Sets the maximum number of retry attempts after a validation failure.",
+      "translation": "设置验证失败后的最大重试次数。",
+      "count": 1
+    },
+    {
+      "source": "Sets a pre-generated JSON schema string to validate against.",
+      "translation": "设置预生成的 JSON 模式字符串以进行验证。",
+      "count": 1
+    },
+    {
+      "source": "Sets the maximum number of retry attempts after a validation failure. Zero\nmeans no retries; the model is called exactly once. Defaults to 3.",
+      "translation": "设置验证失败后的最大重试次数。0 表示不重试，模型仅调用一次；默认值为 3。",
+      "count": 1
+    },
+    {
+      "source": "<span id=\"outputType(tools.jackson.core.type.TypeReference)-type-param-T\"><code>T</code> - the type parameter</span>",
+      "translation": "<span id=\"outputType(tools.jackson.core.type.TypeReference)-type-param-T\"><code>T</code> - 类型参数</span>",
+      "count": 1
+    },
+    {
+      "source": "<span id=\"outputType(org.springframework.core.ParameterizedTypeReference)-type-param-T\"><code>T</code> - the type parameter</span>",
+      "translation": "<span id=\"outputType(org.springframework.core.ParameterizedTypeReference)-type-param-T\"><code>T</code> - 类型参数</span>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if neither outputType nor outputJsonSchema is\nset, or if both are set",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果未设置 outputType 和 outputJsonSchema，或者两者均被设置时。",
+      "count": 1
+    },
+    {
+      "source": "<code>advisorOrder</code> - the advisor order",
+      "translation": "<code>advisorOrder</code> - 顾问订单",
+      "count": 1
+    },
+    {
+      "source": "<code>outputJsonSchema</code> - the JSON schema as a string",
+      "translation": "<code>outputJsonSchema</code> - 作为字符串的 JSON 模式",
+      "count": 1
+    },
+    {
+      "source": "<code>repeatAttempts</code> - the number of retry attempts, must be &gt;= 0",
+      "translation": "<code>repeatAttempts</code> - 重试次数，必须 >= 0",
+      "count": 1
+    },
+    {
+      "source": "<code>jsonMapper</code> - the JSON mapper",
+      "translation": "<code>jsonMapper</code> - JSON 映射器",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "a new StructuredOutputValidationAdvisor instance",
+      "translation": "一个新的 StructuredOutputValidationAdvisor 实例",
+      "count": 1
+    }
+  ]
+}

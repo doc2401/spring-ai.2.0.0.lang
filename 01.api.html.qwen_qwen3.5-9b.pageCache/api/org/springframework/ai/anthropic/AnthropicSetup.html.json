@@ -1,0 +1,246 @@
+{
+  "created_at": "2026-06-15 07:25:42",
+  "updated_at": "2026-06-15 07:25:42",
+  "stats": {
+    "total_entries": 46,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 74,
+    "entries_with_hits": 46,
+    "entries_without_hits": 0,
+    "hit_rate": 1.608695652173913,
+    "usage_percentage": 0.0046
+  },
+  "items": [
+    {
+      "source": "<code>baseUrl</code> - the base URL for the API (null to use default or environment\nvariable)",
+      "translation": "<code>baseUrl</code> - API 的基础 URL（为 null 时使用默认值或环境变量）",
+      "count": 4
+    },
+    {
+      "source": "<code>apiKey</code> - the API key (null to detect from environment)",
+      "translation": "<code>apiKey</code> - API 密钥（设为 null 则从环境变量中获取）",
+      "count": 4
+    },
+    {
+      "source": "<code>timeout</code> - the request timeout (null to use default of 60 seconds)",
+      "translation": "<code>timeout</code> - 请求超时时间（设为 null 则使用默认的 60 秒）",
+      "count": 4
+    },
+    {
+      "source": "<code>maxRetries</code> - the maximum number of retries (null to use default of 2)",
+      "translation": "<code>maxRetries</code> - 最大重试次数（为 null 时使用默认值 2）",
+      "count": 4
+    },
+    {
+      "source": "<code>proxy</code> - the proxy to use (null for no proxy)",
+      "translation": "<code>proxy</code> - 要使用的代理（无代理时为 null）",
+      "count": 4
+    },
+    {
+      "source": "<code>customHeaders</code> - additional HTTP headers to include in requests",
+      "translation": "<code>customHeaders</code> - 请求中需包含的额外 HTTP 标头",
+      "count": 4
+    },
+    {
+      "source": "a configured Anthropic client",
+      "translation": "已配置的 Anthropic 客户端",
+      "count": 4
+    },
+    {
+      "source": "a configured async Anthropic client",
+      "translation": "已配置的异步 Anthropic 客户端",
+      "count": 4
+    },
+    {
+      "source": "Creates a synchronous Anthropic client whose underlying OkHttp client is\ninstrumented with Micrometer: each HTTP attempt emits an observation (span + metric\n+ <code>traceparent</code> propagation), and, when a <code>MeterRegistry</code> is supplied,\nOkHttp connection-pool gauges are bound to it.",
+      "translation": "创建一个同步的 Anthropic 客户端，其底层的 OkHttp 客户端已使用 Micrometer 进行增强：每次 HTTP 请求都会发出观察结果（包含 span、metric 以及 `<code>traceparent</code>` 传播），并且当提供 `<code>MeterRegistry</code>` 时，OkHttp 连接池的仪表会被绑定到该注册表上。",
+      "count": 2
+    },
+    {
+      "source": "<code>observationRegistry</code> - the registry the OkHttp observation interceptor reports\nto; pass <code>ObservationRegistry.NOOP</code> to disable",
+      "translation": "<code>observationRegistry</code> - OkHttp 观察拦截器向其报告的注册表；传递 <code>ObservationRegistry.NOOP</code> 以禁用该功能。",
+      "count": 2
+    },
+    {
+      "source": "<code>dispatcherExecutor</code> - the OkHttp dispatcher executor; null to use the\nlibrary-managed default",
+      "translation": "<code>dispatcherExecutor</code> - OkHttp 的调度器执行器；若为 null，则使用库管理的默认值。",
+      "count": 2
+    },
+    {
+      "source": "<code>httpClientCustomizers</code> - customizers applied to the underlying OkHttp client\nbuilder after Spring AI's own defaults; useful for registering interceptors (e.g.\nOAuth2 bearer-token injection) or custom TLS configuration",
+      "translation": "`httpClientCustomizers` - 在应用 Spring AI 自身默认配置后，应用于底层 OkHttp 客户端构建器的自定义器；可用于注册拦截器（例如 OAuth2 访问令牌注入）或自定义 TLS 配置。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This utility class provides static factory methods for creating both synchronous\n(<code>AnthropicClient</code>) and asynchronous (<code>AnthropicClientAsync</code>) clients with\ncomprehensive configuration support. It handles API key detection from environment\nvariables and provides sensible defaults for timeouts and retry behavior.",
+      "translation": "此工具类提供了用于创建同步（<code>AnthropicClient</code>）和异步（<code>AnthropicClientAsync</code>）客户端的静态工厂方法，并支持全面的配置。它可从环境变量中检测 API 密钥，并为超时和重试行为提供合理的默认值。",
+      "count": 1
+    },
+    {
+      "source": "<b>Client Types:</b>",
+      "translation": "<b>客户类型：</b>",
+      "count": 1
+    },
+    {
+      "source": "<b>Environment Variable Support:</b>",
+      "translation": "<b>环境变量支持：</b>",
+      "count": 1
+    },
+    {
+      "source": "<b>Default Configuration:</b>",
+      "translation": "<b>默认配置：</b>",
+      "count": 1
+    },
+    {
+      "source": "This class is not intended to be instantiated directly. Use the static factory methods\nto create client instances.",
+      "translation": "本类不应直接实例化，请使用静态工厂方法来创建客户端实例。",
+      "count": 1
+    },
+    {
+      "source": "Creates a synchronous Anthropic client with the specified configuration. Delegates\nto\n<a href=\"#setupSyncClient(java.lang.String,java.lang.String,java.time.Duration,java.lang.Integer,java.net.Proxy,java.util.Map,io.micrometer.observation.ObservationRegistry,io.micrometer.core.instrument.MeterRegistry)\"><code>setupSyncClient(String, String, Duration, Integer, Proxy, Map, ObservationRegistry, MeterRegistry)</code></a>\nwith a <code>no-op</code> observation registry and no meter\nregistry — i.e. HTTP-layer observability is disabled.",
+      "translation": "创建一个具有指定配置的同步 Anthropic 客户端。该操作会委托给\n<a href=\"#setupSyncClient(java.lang.String,java.lang.String,java.time.Duration,java.lang.Integer,java.net.Proxy,java.util.Map,io.micrometer.observation.ObservationRegistry,io.micrometer.core.instrument.MeterRegistry)\"><code>setupSyncClient(String, String, Duration, Integer, Proxy, Map, ObservationRegistry, MeterRegistry)</code></a>\n方法，但使用一个无操作的观察注册表且没有度量注册表——即禁用 HTTP 层可观测性。",
+      "count": 1
+    },
+    {
+      "source": "Creates a synchronous Anthropic client backed by a caller-supplied dispatcher\nexecutor (e.g. one built around <code>Executors.newVirtualThreadPerTaskExecutor()</code>\non Java 21+). The caller owns the executor's lifecycle; closing the resulting\nclient will not shut it down. See\n<a href=\"#setupSyncClient(java.lang.String,java.lang.String,java.time.Duration,java.lang.Integer,java.net.Proxy,java.util.Map,io.micrometer.observation.ObservationRegistry,io.micrometer.core.instrument.MeterRegistry)\"><code>setupSyncClient(String, String, Duration, Integer, Proxy, Map, ObservationRegistry, MeterRegistry)</code></a>\nfor the remaining parameter semantics.",
+      "translation": "创建一个由调用者提供的调度器执行器支持的同步 Anthropic 客户端（例如，在 Java 21+ 上围绕 <code>Executors.newVirtualThreadPerTaskExecutor()</code> 构建的执行器）。调用者负责执行器的生命周期；关闭由此生成的客户端不会将其关闭。有关其余参数的语义，请参阅\n<a href=\"#setupSyncClient(java.lang.String,java.lang.String,java.time.Duration,java.lang.Integer,java.net.Proxy,java.util.Map,io.micrometer.observation.ObservationRegistry,io.micrometer.core.instrument.MeterRegistry)\"><code>setupSyncClient(String, String, Duration, Integer, Proxy, Map, ObservationRegistry, MeterRegistry)</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Creates an asynchronous Anthropic client with the specified configuration.\nDelegates to\n<a href=\"#setupAsyncClient(java.lang.String,java.lang.String,java.time.Duration,java.lang.Integer,java.net.Proxy,java.util.Map,io.micrometer.observation.ObservationRegistry,io.micrometer.core.instrument.MeterRegistry)\"><code>setupAsyncClient(String, String, Duration, Integer, Proxy, Map, ObservationRegistry, MeterRegistry)</code></a>\nwith a <code>no-op</code> observation registry and no meter\nregistry — i.e. HTTP-layer observability is disabled.",
+      "translation": "创建具有指定配置的异步 Anthropic 客户端。\n委托给\n<a href=\"#setupAsyncClient(java.lang.String,java.lang.String,java.time.Duration,java.lang.Integer,java.net.Proxy,java.util.Map,io.micrometer.observation.ObservationRegistry,io.micrometer.core.instrument.MeterRegistry)\"><code>setupAsyncClient(String, String, Duration, Integer, Proxy, Map, ObservationRegistry, MeterRegistry)</code></a>\n，使用无操作的观察注册表且没有度量注册表——即禁用 HTTP 层可观测性。",
+      "count": 1
+    },
+    {
+      "source": "Creates a synchronous Anthropic client backed by a caller-supplied dispatcher\nexecutor and with optional HTTP client customizers. See\n<a href=\"#setupSyncClient(java.lang.String,java.lang.String,java.time.Duration,java.lang.Integer,java.net.Proxy,java.util.Map,io.micrometer.observation.ObservationRegistry,io.micrometer.core.instrument.MeterRegistry,java.util.concurrent.ExecutorService)\"><code>setupSyncClient(String, String, Duration, Integer, Proxy, Map, ObservationRegistry, MeterRegistry, ExecutorService)</code></a>\nfor the remaining parameter semantics.",
+      "translation": "创建一个由调用者提供的调度器执行器支持的同步 Anthropic 客户端，并可选地配置 HTTP 客户端自定义器。有关其余参数的语义，请参阅\n<a href=\"#setupSyncClient(java.lang.String,java.lang.String,java.time.Duration,java.lang.Integer,java.net.Proxy,java.util.Map,io.micrometer.observation.ObservationRegistry,io.micrometer.core.instrument.MeterRegistry,java.util.concurrent.ExecutorService)\"><code>setupSyncClient(String, String, Duration, Integer, Proxy, Map, ObservationRegistry, MeterRegistry, ExecutorService)</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Creates an asynchronous Anthropic client whose underlying OkHttp client is\ninstrumented with Micrometer. See\n<a href=\"#setupSyncClient(java.lang.String,java.lang.String,java.time.Duration,java.lang.Integer,java.net.Proxy,java.util.Map,io.micrometer.observation.ObservationRegistry,io.micrometer.core.instrument.MeterRegistry)\"><code>setupSyncClient(String, String, Duration, Integer, Proxy, Map, ObservationRegistry, MeterRegistry)</code></a>\nfor parameter semantics.",
+      "translation": "创建一个异步 Anthropic 客户端，其底层的 OkHttp 客户端已使用 Micrometer 进行增强。有关参数语义，请参阅\n<a href=\"#setupSyncClient(java.lang.String,java.lang.String,java.time.Duration,java.lang.Integer,java.net.Proxy,java.util.Map,io.micrometer.observation.ObservationRegistry,io.micrometer.core.instrument.MeterRegistry)\"><code>setupSyncClient(String, String, Duration, Integer, Proxy, Map, ObservationRegistry, MeterRegistry)</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Creates an asynchronous Anthropic client backed by a caller-supplied dispatcher\nexecutor. The caller owns the executor's lifecycle; closing the resulting client\nwill not shut it down. See\n<a href=\"#setupSyncClient(java.lang.String,java.lang.String,java.time.Duration,java.lang.Integer,java.net.Proxy,java.util.Map,io.micrometer.observation.ObservationRegistry,io.micrometer.core.instrument.MeterRegistry,java.util.concurrent.ExecutorService)\"><code>setupSyncClient(String, String, Duration, Integer, Proxy, Map, ObservationRegistry, MeterRegistry, ExecutorService)</code></a>\nfor the dispatcher executor's role.",
+      "translation": "创建一个由调用者提供的调度器执行器支持的异步 Anthropic 客户端。调用者负责管理执行器的生命周期；关闭由此创建的客户端不会将其关闭。有关调度器执行器的作用，请参阅\n<a href=\"#setupSyncClient(java.lang.String,java.lang.String,java.time.Duration,java.lang.Integer,java.net.Proxy,java.util.Map,io.micrometer.observation.ObservationRegistry,io.micrometer.core.instrument.MeterRegistry,java.util.concurrent.ExecutorService)\"><code>setupSyncClient(String, String, Duration, Integer, Proxy, Map, ObservationRegistry, MeterRegistry, ExecutorService)</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Creates an asynchronous Anthropic client backed by a caller-supplied dispatcher\nexecutor and with optional HTTP client customizers. See\n<a href=\"#setupAsyncClient(java.lang.String,java.lang.String,java.time.Duration,java.lang.Integer,java.net.Proxy,java.util.Map,io.micrometer.observation.ObservationRegistry,io.micrometer.core.instrument.MeterRegistry,java.util.concurrent.ExecutorService)\"><code>setupAsyncClient(String, String, Duration, Integer, Proxy, Map, ObservationRegistry, MeterRegistry, ExecutorService)</code></a>\nfor the remaining parameter semantics.",
+      "translation": "创建一个由调用者提供的调度器执行器支持的异步 Anthropic 客户端，并可选地配置 HTTP 客户端自定义器。有关其余参数的语义，请参阅\n<a href=\"#setupAsyncClient(java.lang.String,java.lang.String,java.time.Duration,java.lang.Integer,java.net.Proxy,java.util.Map,io.micrometer.observation.ObservationRegistry,io.micrometer.core.instrument.MeterRegistry,java.util.concurrent.ExecutorService)\"><code>setupAsyncClient(String, String, Duration, Integer, Proxy, Map, ObservationRegistry, MeterRegistry, ExecutorService)</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Creates a synchronous Anthropic client backed by a caller-supplied dispatcher\nexecutor (e.g. one built around <code>Executors.newVirtualThreadPerTaskExecutor()</code>\non Java 21+).",
+      "translation": "创建一个由调用者提供的调度器执行器支持的同步 Anthropic 客户端（例如，在 Java 21+ 上围绕<code>Executors.newVirtualThreadPerTaskExecutor()</code>构建的执行器）。",
+      "count": 1
+    },
+    {
+      "source": "Creates an asynchronous Anthropic client with the specified configuration.",
+      "translation": "使用指定配置创建异步 Anthropic 客户端。",
+      "count": 1
+    },
+    {
+      "source": "Creates an asynchronous Anthropic client whose underlying OkHttp client is\ninstrumented with Micrometer.",
+      "translation": "创建一个异步的 Anthropic 客户端，其底层的 OkHttp 客户端已使用 Micrometer 进行增强。",
+      "count": 1
+    },
+    {
+      "source": "Creates an asynchronous Anthropic client backed by a caller-supplied dispatcher\nexecutor.",
+      "translation": "创建一个由调用者提供的调度器执行器支持的异步 Anthropic 客户端。",
+      "count": 1
+    },
+    {
+      "source": "Creates an asynchronous Anthropic client backed by a caller-supplied dispatcher\nexecutor and with optional HTTP client customizers.",
+      "translation": "创建一个由调用者提供的调度器执行器支持的异步 Anthropic 客户端，并可选地配置 HTTP 客户端自定义器。",
+      "count": 1
+    },
+    {
+      "source": "Creates a synchronous Anthropic client with the specified configuration.",
+      "translation": "使用指定配置创建同步的 Anthropic 客户端。",
+      "count": 1
+    },
+    {
+      "source": "Creates a synchronous Anthropic client backed by a caller-supplied dispatcher\nexecutor and with optional HTTP client customizers.",
+      "translation": "创建一个由调用者提供的调度器执行器支持的同步 Anthropic 客户端，并可选地配置 HTTP 客户端自定义器。",
+      "count": 1
+    },
+    {
+      "source": "<b>Synchronous Client:</b> Used for blocking API calls via\n<a href=\"#setupSyncClient(java.lang.String,java.lang.String,java.time.Duration,java.lang.Integer,java.net.Proxy,java.util.Map)\"><code>setupSyncClient(String, String, Duration, Integer, Proxy, Map)</code></a>",
+      "translation": "<b>同步客户端：</b> 用于通过 <a href=\"#setupSyncClient(java.lang.String,java.lang.String,java.time.Duration,java.lang.Integer,java.net.Proxy,java.util.Map)\"><code>setupSyncClient(String, String, Duration, Integer, Proxy, Map)</code></a> 执行阻塞式 API 调用。",
+      "count": 1
+    },
+    {
+      "source": "<b>Asynchronous Client:</b> Used for streaming responses via\n<a href=\"#setupAsyncClient(java.lang.String,java.lang.String,java.time.Duration,java.lang.Integer,java.net.Proxy,java.util.Map)\"><code>setupAsyncClient(String, String, Duration, Integer, Proxy, Map)</code></a>",
+      "translation": "<b>异步客户端：</b> 用于通过 <a href=\"#setupAsyncClient(java.lang.String,java.lang.String,java.time.Duration,java.lang.Integer,java.net.Proxy,java.util.Map)\"><code>setupAsyncClient(String, String, Duration, Integer, Proxy, Map)</code></a> 方法流式传输响应。",
+      "count": 1
+    },
+    {
+      "source": "<code>ANTHROPIC_API_KEY</code> - Primary API key for authentication",
+      "translation": "<code>ANTHROPIC_API_KEY</code> - 用于身份验证的主 API 密钥",
+      "count": 1
+    },
+    {
+      "source": "<code>ANTHROPIC_AUTH_TOKEN</code> - Alternative authentication token",
+      "translation": "<code>ANTHROPIC_AUTH_TOKEN</code> - 替代身份验证令牌",
+      "count": 1
+    },
+    {
+      "source": "<code>ANTHROPIC_BASE_URL</code> - Override the default API endpoint",
+      "translation": "<code>ANTHROPIC_BASE_URL</code> - 覆盖默认 API 端点",
+      "count": 1
+    },
+    {
+      "source": "<code>meterRegistry</code> - optional; when supplied, OkHttp connection-pool gauges\n(active/idle connections) are registered",
+      "translation": "<code>meterRegistry</code> - 可选；当提供时，OkHttp 连接池的指标（活动/空闲连接）将被注册。",
+      "count": 1
+    },
+    {
+      "source": "<code>meterRegistry</code> - optional; when supplied, OkHttp connection-pool gauges are\nregistered",
+      "translation": "<code>meterRegistry</code> - 可选；当提供时，会注册 OkHttp 连接池的指标。",
+      "count": 1
+    },
+    {
+      "source": "Timeout: 60 seconds",
+      "translation": "超时：60 秒",
+      "count": 1
+    },
+    {
+      "source": "Max Retries: 2",
+      "translation": "最大重试次数：2",
+      "count": 1
+    },
+    {
+      "source": "Soby Chacko",
+      "translation": "索比·查科",
+      "count": 1
+    },
+    {
+      "source": "Factory class for creating and configuring Anthropic SDK client instances.",
+      "translation": "用于创建和配置 Anthropic SDK 客户端实例的工厂类。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li><b>同步客户端：</b> 用于通过 <a href=\"#setupSyncClient(java.lang.String,java.lang.String,java.time.Duration,java.lang.Integer,java.net.Proxy,java.util.Map)\"><code>setupSyncClient(String, String, Duration, Integer, Proxy, Map)</code></a> 执行阻塞式 API 调用。</li>\n<li><b>异步客户端：</b> 用于通过 <a href=\"#setupAsyncClient(java.lang.String,java.lang.String,java.time.Duration,java.lang.Integer,java.net.Proxy,java.util.Map)\"><code>setupAsyncClient(String, String, Duration, Integer, Proxy, Map)</code></a> 方法流式传输响应。</li>\n</ul>",
+      "translation": "<ul>\n<li><b>同步客户端：</b> 用于通过 <a href=\"#setupSyncClient(java.lang.String,java.lang.String,java.time.Duration,java.lang.Integer,java.net.Proxy,java.util.Map)\"><code>setupSyncClient(String, String, Duration, Integer, Proxy, Map)</code></a> 执行阻塞式 API 调用。</li>\n<li><b>异步客户端：</b> 用于通过 <a href=\"#setupAsyncClient(java.lang.String,java.lang.String,java.time.Duration,java.lang.Integer,java.net.Proxy,java.util.Map)\"><code>setupAsyncClient(String, String, Duration, Integer, Proxy, Map)</code></a> 方法流式传输响应。</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li><code>ANTHROPIC_API_KEY</code> - 用于身份验证的主 API 密钥</li>\n<li><code>ANTHROPIC_AUTH_TOKEN</code> - 替代身份验证令牌</li>\n<li><code>ANTHROPIC_BASE_URL</code> - 覆盖默认 API 端点</li>\n</ul>",
+      "translation": "<ul>\n<li><code>ANTHROPIC_API_KEY</code> - 用于身份验证的主 API 密钥</li>\n<li><code>ANTHROPIC_AUTH_TOKEN</code> - 替代身份验证令牌</li>\n<li><code>ANTHROPIC_BASE_URL</code> - 覆盖默认 API 端点</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>超时：60 秒</li>\n<li>最大重试次数：2</li>\n<li>User-Agent: <code>spring-ai-anthropic-sdk</code></li>\n</ul>",
+      "translation": "<ul>\n<li>超时：60 秒</li>\n<li>最大重试次数：2</li>\n<li>User-Agent：<code>spring-ai-anthropic-sdk</code></li>\n</ul>",
+      "count": 1
+    }
+  ]
+}

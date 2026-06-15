@@ -1,0 +1,161 @@
+{
+  "created_at": "2026-06-15 08:30:24",
+  "updated_at": "2026-06-15 08:30:24",
+  "stats": {
+    "total_entries": 29,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 33,
+    "entries_with_hits": 29,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1379310344827587,
+    "usage_percentage": 0.0029
+  },
+  "items": [
+    {
+      "source": "Apply the callback to the given context and request.",
+      "translation": "将回调应用于给定的上下文和请求。",
+      "count": 2
+    },
+    {
+      "source": "Create a new builder.",
+      "translation": "创建一个新的构建器。",
+      "count": 2
+    },
+    {
+      "source": "Checks if a parameter type is compatible with the exchange type.",
+      "translation": "检查参数类型是否与交换类型兼容。",
+      "count": 2
+    },
+    {
+      "source": "Validates that the method return type is compatible with the complete callback.",
+      "translation": "验证方法返回类型是否与完整回调兼容。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This method builds the arguments for the method call, invokes the method, and\nconverts the result to a CompleteResult.",
+      "translation": "该方法构建方法调用的参数，调用该方法，并将结果转换为 CompleteResult。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"AbstractMcpCompleteMethodCallback.html#resolveTransportContext(java.lang.Object)\">AbstractMcpCompleteMethodCallback</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述已从类复制：<code><a href=\"AbstractMcpCompleteMethodCallback.html#resolveTransportContext(java.lang.Object)\">AbstractMcpCompleteMethodCallback</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Class for creating BiFunction callbacks around complete methods for stateless contexts.\n\nThis class provides a way to convert methods annotated with <a href=\"../../McpComplete.html\" title=\"annotation interface in org.springframework.ai.mcp.annotation\"><code>McpComplete</code></a> into\ncallback functions that can be used to handle completion requests in stateless\nenvironments. It supports various method signatures and return types, and handles both\nprompt and URI template completions.",
+      "translation": "用于在无状态上下文中围绕完整方法创建 BiFunction 回调的类。\n\n该类提供了一种将带有 <a href=\"../../McpComplete.html\" title=\"annotation interface in org.springframework.ai.mcp.annotation\"><code>McpComplete</code></a> 注解的方法转换为回调函数的方法，这些回调函数可用于在无状态环境中处理完成请求。它支持多种方法签名和返回类型，并能够处理提示词和 URI 模板的完成。",
+      "count": 1
+    },
+    {
+      "source": "Builder for creating SyncStatelessMcpCompleteMethodCallback instances.",
+      "translation": "用于创建 SyncStatelessMcpCompleteMethodCallback 实例的构建器。",
+      "count": 1
+    },
+    {
+      "source": "Resolves the transport context from the exchange or context object.",
+      "translation": "从交换或上下文对象中解析传输上下文。",
+      "count": 1
+    },
+    {
+      "source": "Resolves the transport context from the exchange or context object. This method\nshould be implemented by subclasses to extract the transport context from the\nappropriate exchange type.",
+      "translation": "从交换对象或上下文对象中解析传输上下文。此方法应由子类实现，以便从适当的交换类型中提取传输上下文。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/BiFunction.html#apply(T,U)\" title=\"class or interface in java.util.function\">apply</a></code> in interface <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/BiFunction.html\" title=\"class or interface in java.util.function\">BiFunction</a>&lt;io.modelcontextprotocol.common.McpTransportContext, io.modelcontextprotocol.spec.McpSchema.CompleteRequest, io.modelcontextprotocol.spec.McpSchema.CompleteResult&gt;</code>",
+      "translation": "`apply` 方法在接口 `<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/BiFunction.html\" title=\"class or interface in java.util.function\">BiFunction</a>&lt;io.modelcontextprotocol.common.McpTransportContext, io.modelcontextprotocol.spec.McpSchema.CompleteRequest, io.modelcontextprotocol.spec.McpSchema.CompleteResult&gt;</code> 中。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"AbstractMcpCompleteMethodCallback.html#validateReturnType(java.lang.reflect.Method)\">validateReturnType</a></code> in class <code><a href=\"AbstractMcpCompleteMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.complete\">AbstractMcpCompleteMethodCallback</a></code>",
+      "translation": "<code><a href=\"AbstractMcpCompleteMethodCallback.html#validateReturnType(java.lang.reflect.Method)\">validateReturnType</a></code> 类 <code><a href=\"AbstractMcpCompleteMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.complete\">AbstractMcpCompleteMethodCallback</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"AbstractMcpCompleteMethodCallback.html#resolveTransportContext(java.lang.Object)\">resolveTransportContext</a></code> in class <code><a href=\"AbstractMcpCompleteMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.complete\">AbstractMcpCompleteMethodCallback</a></code>",
+      "translation": "<code><a href=\"AbstractMcpCompleteMethodCallback.html#resolveTransportContext(java.lang.Object)\">resolveTransportContext</a></code> 类 <code><a href=\"AbstractMcpCompleteMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.complete\">AbstractMcpCompleteMethodCallback</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"AbstractMcpCompleteMethodCallback.html#isExchangeType(java.lang.Class)\">isExchangeType</a></code> in class <code><a href=\"AbstractMcpCompleteMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.complete\">AbstractMcpCompleteMethodCallback</a></code>",
+      "translation": "<code><a href=\"AbstractMcpCompleteMethodCallback.html#isExchangeType(java.lang.Class)\">isExchangeType</a></code> 类 <code><a href=\"AbstractMcpCompleteMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.complete\">AbstractMcpCompleteMethodCallback</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"AbstractMcpCompleteMethodCallback.McpCompleteMethodException.html\" title=\"class in org.springframework.ai.mcp.annotation.method.complete\">AbstractMcpCompleteMethodCallback.McpCompleteMethodException</a></code> - if there is an error invoking the complete\nmethod",
+      "translation": "<code><a href=\"AbstractMcpCompleteMethodCallback.McpCompleteMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.complete\">AbstractMcpCompleteMethodCallback.McpCompleteMethodException</a></code> - 如果调用完成方法时发生错误",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if the request is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果请求为 null",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if the return type is not compatible",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果返回类型不兼容",
+      "count": 1
+    },
+    {
+      "source": "<code>context</code> - The transport context, may be null if the method doesn't require it",
+      "translation": "<code>context</code> - 传输上下文，如果该方法不需要它，则可能为 null",
+      "count": 1
+    },
+    {
+      "source": "<code>request</code> - The complete request, must not be null",
+      "translation": "<code>request</code> - 完整的请求，不能为 null",
+      "count": 1
+    },
+    {
+      "source": "<code>method</code> - The method to validate",
+      "translation": "<code>method</code> - 待验证的方法",
+      "count": 1
+    },
+    {
+      "source": "<code>context</code> - The server exchange or transport context",
+      "translation": "<code>context</code> - 服务器交换或传输上下文",
+      "count": 1
+    },
+    {
+      "source": "<code>paramType</code> - The parameter type to check",
+      "translation": "<code>paramType</code> - 要检查的参数类型",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "The complete result",
+      "translation": "完整结果",
+      "count": 1
+    },
+    {
+      "source": "The resolved transport context",
+      "translation": "已解析的传输上下文",
+      "count": 1
+    },
+    {
+      "source": "true if the parameter type is compatible with the exchange type, false\notherwise",
+      "translation": "如果参数类型与交换类型兼容，则为 true；否则为 false。",
+      "count": 1
+    },
+    {
+      "source": "A new builder instance",
+      "translation": "一个新的构建器实例",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    }
+  ]
+}

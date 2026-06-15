@@ -1,0 +1,46 @@
+{
+  "created_at": "2026-06-15 07:49:01",
+  "updated_at": "2026-06-15 07:49:01",
+  "stats": {
+    "total_entries": 6,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 6,
+    "entries_with_hits": 6,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.0006000000000000001
+  },
+  "items": [
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This enables the non-AWS OpenSearch auto-configuration to be activated when the user\ndisables AWS support via property or when AWS SDKs are not present, ensuring correct\nfallback behavior for non-AWS OpenSearch usage.",
+      "translation": "这使得当用户通过属性禁用 AWS 支持或系统中不存在 AWS SDK 时，能够激活非 AWS OpenSearch 的自动配置，从而确保非 AWS OpenSearch 使用场景下的正确回退行为。",
+      "count": 1
+    },
+    {
+      "source": "The property <code>spring.ai.vectorstore.opensearch.aws.enabled</code> is\nexplicitly set to <code>false</code>.",
+      "translation": "属性 <code>spring.ai.vectorstore.opensearch.aws.enabled</code> 被显式设置为 <code>false</code>。",
+      "count": 1
+    },
+    {
+      "source": "<code>getMatchOutcome</code> in class <code>org.springframework.boot.autoconfigure.condition.SpringBootCondition</code>",
+      "translation": "SpringBootCondition 类中的 <code>getMatchOutcome</code>",
+      "count": 1
+    },
+    {
+      "source": "Required AWS SDK classes are missing from the classpath.",
+      "translation": "类路径中缺少必需的 AWS SDK 类。",
+      "count": 1
+    },
+    {
+      "source": "Condition that matches if either:\n<ul>\n<li>属性 <code>spring.ai.vectorstore.opensearch.aws.enabled</code> 被显式设置为 <code>false</code>。</li>\n<li>类路径中缺少必需的 AWS SDK 类。</li>\n</ul>",
+      "translation": "满足以下任一条件的情况：\n<ul>\n<li>属性 <code>spring.ai.vectorstore.opensearch.aws.enabled</code> 被显式设置为 <code>false</code>。</li>\n<li>类路径中缺少必需的 AWS SDK 类。</li>\n</ul>",
+      "count": 1
+    }
+  ]
+}

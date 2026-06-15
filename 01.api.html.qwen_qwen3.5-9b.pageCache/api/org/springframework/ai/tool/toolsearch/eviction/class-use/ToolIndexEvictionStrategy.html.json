@@ -1,0 +1,71 @@
+{
+  "created_at": "2026-06-15 08:00:30",
+  "updated_at": "2026-06-15 08:00:30",
+  "stats": {
+    "total_entries": 11,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 11,
+    "entries_with_hits": 11,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.0011
+  },
+  "items": [
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "A <a href=\"../ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\"><code>ToolIndexEvictionStrategy</code></a> that clears a session's tool index before every\nrequest, ensuring tools are always re-indexed on each conversation turn.",
+      "translation": "一个 <a href=\"../ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\"><code>ToolIndexEvictionStrategy</code></a>，它在每次请求之前清除会话的工具索引，确保工具在每次对话轮次中都会重新索引。",
+      "count": 1
+    },
+    {
+      "source": "A <a href=\"../ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\"><code>ToolIndexEvictionStrategy</code></a> that delegates to multiple strategies and unions\ntheir eviction decisions.",
+      "translation": "一个委托给多个策略并合并其驱逐决策的<a href=\"../ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\"><code>ToolIndexEvictionStrategy</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "A <a href=\"../ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\"><code>ToolIndexEvictionStrategy</code></a> that evicts the least-recently-used session when\nthe number of concurrently active sessions exceeds a configured maximum.",
+      "translation": "一个 <a href=\"../ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\"><code>ToolIndexEvictionStrategy</code></a>，当并发活跃会话数超过配置的最大值时，它会淘汰最近最少使用的会话。",
+      "count": 1
+    },
+    {
+      "source": "A <a href=\"../ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\"><code>ToolIndexEvictionStrategy</code></a> that never evicts sessions automatically.",
+      "translation": "一个永远不会自动驱逐会话的<a href=\"../ToolIndexEvictionStrategy.html\" title=\"org.springframework.ai.tool.toolsearch.eviction 中的接口\"><code>ToolIndexEvictionStrategy</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "A <a href=\"../ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\"><code>ToolIndexEvictionStrategy</code></a> that evicts sessions whose last-access time is\nolder than a configured time-to-live (TTL).",
+      "translation": "一个<a href=\"../ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\"><code>ToolIndexEvictionStrategy</code></a>，用于驱逐最后访问时间早于配置的生存时间（TTL）的会话。",
+      "count": 1
+    },
+    {
+      "source": "Tool Search Tool Advisor package for dynamic tool discovery and search capabilities.",
+      "translation": "工具搜索工具顾问包，用于动态工具发现与搜索功能。",
+      "count": 1
+    },
+    {
+      "source": "Sets the eviction strategy that determines when session tool indexes are\ncleared from the advisor's cache.",
+      "translation": "设置驱逐策略，该策略决定何时从顾问缓存中清除会话工具索引。",
+      "count": 1
+    },
+    {
+      "source": "Creates a composite strategy from the given delegates.",
+      "translation": "根据给定的委托创建复合策略。",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\">ToolIndexEvictionStrategy</a> in <a href=\"../../../../chat/client/advisor/toolsearch/package-summary.html\">org.springframework.ai.chat.client.advisor.toolsearch</a>",
+      "translation": "<a href=\"../ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\">ToolIndexEvictionStrategy</a> 在 <a href=\"../../../../chat/client/advisor/toolsearch/package-summary.html\">org.springframework.ai.chat.client.advisor.toolsearch</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\">ToolIndexEvictionStrategy</a> in <a href=\"../package-summary.html\">org.springframework.ai.tool.toolsearch.eviction</a>",
+      "translation": "<a href=\"../ToolIndexEvictionStrategy.html\" title=\"接口在 org.springframework.ai.tool.toolsearch.eviction 中\">ToolIndexEvictionStrategy</a> 在 <a href=\"../package-summary.html\">org.springframework.ai.tool.toolsearch.eviction</a> 中的用途",
+      "count": 1
+    }
+  ]
+}

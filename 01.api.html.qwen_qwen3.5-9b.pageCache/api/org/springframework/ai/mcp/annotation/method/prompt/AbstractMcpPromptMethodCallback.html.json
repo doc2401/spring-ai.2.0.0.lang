@@ -1,0 +1,181 @@
+{
+  "created_at": "2026-06-15 08:31:22",
+  "updated_at": "2026-06-15 08:31:22",
+  "stats": {
+    "total_entries": 33,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 43,
+    "entries_with_hits": 33,
+    "entries_without_hits": 0,
+    "hit_rate": 1.303030303030303,
+    "usage_percentage": 0.0033000000000000004
+  },
+  "items": [
+    {
+      "source": "<code>method</code> - The method to validate",
+      "translation": "<code>method</code> - 待验证的方法",
+      "count": 3
+    },
+    {
+      "source": "Constructor for AbstractMcpPromptMethodCallback.",
+      "translation": "AbstractMcpPromptMethodCallback 的构造函数。",
+      "count": 2
+    },
+    {
+      "source": "Builds the arguments array for invoking the method.",
+      "translation": "构建用于调用方法的参数数组。",
+      "count": 2
+    },
+    {
+      "source": "Converts an argument value to the expected parameter type.",
+      "translation": "将参数值转换为预期的参数类型。",
+      "count": 2
+    },
+    {
+      "source": "Converts a method result to a GetPromptResult.",
+      "translation": "将方法结果转换为 GetPromptResult。",
+      "count": 2
+    },
+    {
+      "source": "Checks if a parameter type is compatible with the exchange type.",
+      "translation": "检查参数类型是否与交换类型兼容。",
+      "count": 2
+    },
+    {
+      "source": "Validates that the method signature is compatible with the prompt callback.",
+      "translation": "验证方法签名是否与提示回调兼容。",
+      "count": 2
+    },
+    {
+      "source": "Validates method parameters.",
+      "translation": "验证方法参数。",
+      "count": 2
+    },
+    {
+      "source": "Validates that the method return type is compatible with the prompt callback.",
+      "translation": "验证方法返回类型是否与提示回调兼容。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This method constructs an array of arguments based on the method's parameter types\nand the available values (exchange, request, arguments).",
+      "translation": "该方法根据方法的参数类型和可用值（exchange、request、arguments）构建一个参数数组。",
+      "count": 1
+    },
+    {
+      "source": "Abstract base class for creating callbacks around prompt methods.\n\nThis class provides common functionality for both synchronous and asynchronous prompt\nmethod callbacks.",
+      "translation": "用于在提示方法周围创建回调的抽象基类。\n\n该类为同步和异步提示方法回调提供通用功能。",
+      "count": 1
+    },
+    {
+      "source": "Abstract builder for creating prompt method callback instances.",
+      "translation": "用于创建提示方法回调实例的抽象构建器。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if the method signature is not compatible",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果方法签名不兼容",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if the return type is not compatible",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果返回类型不兼容",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if the parameters are not compatible",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果参数不兼容。",
+      "count": 1
+    },
+    {
+      "source": "<code>method</code> - The method to create a callback for",
+      "translation": "<code>method</code> - 用于创建回调的方法",
+      "count": 1
+    },
+    {
+      "source": "<code>bean</code> - The bean instance that contains the method",
+      "translation": "<code>bean</code> - 包含该方法的 Bean 实例",
+      "count": 1
+    },
+    {
+      "source": "<code>prompt</code> - The prompt",
+      "translation": "<code>提示</code> - 提示",
+      "count": 1
+    },
+    {
+      "source": "<code>paramType</code> - The parameter type to check",
+      "translation": "<code>paramType</code> - 要检查的参数类型",
+      "count": 1
+    },
+    {
+      "source": "<code>method</code> - The method to build arguments for",
+      "translation": "<code>method</code> - 用于构建参数的方法",
+      "count": 1
+    },
+    {
+      "source": "<code>exchange</code> - The server exchange",
+      "translation": "<code>exchange</code> - 服务器交换机",
+      "count": 1
+    },
+    {
+      "source": "<code>request</code> - The prompt request",
+      "translation": "<code>request</code> - 提示请求",
+      "count": 1
+    },
+    {
+      "source": "<code>value</code> - The value to convert",
+      "translation": "<code>value</code> - 要转换的值",
+      "count": 1
+    },
+    {
+      "source": "<code>targetType</code> - The target type",
+      "translation": "<code>targetType</code> - 目标类型",
+      "count": 1
+    },
+    {
+      "source": "<code>result</code> - The result to convert",
+      "translation": "<code>result</code> - 要转换的结果",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "true if the parameter type is compatible with the exchange type, false\notherwise",
+      "translation": "如果参数类型与交换类型兼容，则为 true；否则为 false。",
+      "count": 1
+    },
+    {
+      "source": "An array of arguments for the method invocation",
+      "translation": "方法调用的参数数组",
+      "count": 1
+    },
+    {
+      "source": "The converted value",
+      "translation": "转换后的值",
+      "count": 1
+    },
+    {
+      "source": "The converted GetPromptResult",
+      "translation": "转换后的 GetPromptResult",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "created_at": "2026-06-15 08:59:51",
+  "updated_at": "2026-06-15 08:59:51",
+  "stats": {
+    "total_entries": 18,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 18,
+    "entries_with_hits": 18,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.0018
+  },
+  "items": [
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "A chain of <a href=\"CallAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>CallAdvisor</code></a> instances orchestrating the execution of a\n<a href=\"../../ChatClientRequest.html\" title=\"class in org.springframework.ai.chat.client\"><code>ChatClientRequest</code></a> on the next <a href=\"CallAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>CallAdvisor</code></a> in the chain.",
+      "translation": "一系列<a href=\"CallAdvisor.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\"><code>CallAdvisor</code></a>实例负责编排对下一个链中<a href=\"CallAdvisor.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\"><code>CallAdvisor</code></a>的<a href=\"../../ChatClientRequest.html\" title=\"org.springframework.ai.chat.client 中的类\"><code>ChatClientRequest</code></a>执行。",
+      "count": 1
+    },
+    {
+      "source": "A chain of <a href=\"StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>StreamAdvisor</code></a> instances orchestrating the execution of a\n<a href=\"../../ChatClientRequest.html\" title=\"class in org.springframework.ai.chat.client\"><code>ChatClientRequest</code></a> on the next <a href=\"StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>StreamAdvisor</code></a> in the chain.",
+      "translation": "一系列<a href=\"StreamAdvisor.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\"><code>StreamAdvisor</code></a>实例负责编排对下一个链中<a href=\"StreamAdvisor.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\"><code>StreamAdvisor</code></a>的<a href=\"../../ChatClientRequest.html\" title=\"org.springframework.ai.chat.client 中的类\"><code>ChatClientRequest</code></a>执行。",
+      "count": 1
+    },
+    {
+      "source": "Base advisor that implements common aspects of the <a href=\"CallAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>CallAdvisor</code></a> and\n<a href=\"StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>StreamAdvisor</code></a>, reducing the boilerplate code needed to implement an advisor.",
+      "translation": "基础顾问，实现了 <a href=\"CallAdvisor.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\"><code>CallAdvisor</code></a> 和 <a href=\"StreamAdvisor.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\"><code>StreamAdvisor</code></a> 的通用方面，从而减少了实现顾问所需的样板代码。",
+      "count": 1
+    },
+    {
+      "source": "Builder for creating a <a href=\"BaseAdvisorChain.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>BaseAdvisorChain</code></a> instance.",
+      "translation": "用于创建<a href=\"BaseAdvisorChain.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\"><code>BaseAdvisorChain</code></a>实例的构建器。",
+      "count": 1
+    },
+    {
+      "source": "Provides the API for chat client advisors.",
+      "translation": "为聊天客户端顾问提供 API。",
+      "count": 1
+    },
+    {
+      "source": "Provides classes for advising chat clients.",
+      "translation": "提供用于建议聊天客户端的类。",
+      "count": 1
+    },
+    {
+      "source": "Provides the API for chat client advisors observations.",
+      "translation": "提供聊天客户端顾问观察的 API。",
+      "count": 1
+    },
+    {
+      "source": "Tool Search Tool Advisor package for dynamic tool discovery and search capabilities.",
+      "translation": "工具搜索工具顾问包，用于动态工具发现与搜索功能。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI chat client advisors package.",
+      "translation": "Spring AI 聊天客户端顾问包。",
+      "count": 1
+    },
+    {
+      "source": "Parent advisor interface for all advisors.",
+      "translation": "所有顾问的家长顾问界面。",
+      "count": 1
+    },
+    {
+      "source": "Defines the context for executing a chain of advisors as part of processing a chat\nrequest.",
+      "translation": "定义在作为聊天请求处理的一部分执行顾问链时的上下文。",
+      "count": 1
+    },
+    {
+      "source": "A base interface for advisor chains that can be used to chain multiple advisors\ntogether, both for call and stream advisors.",
+      "translation": "用于将多个顾问（包括调用型顾问和流式顾问）串联在一起的顾问链基础接口。",
+      "count": 1
+    },
+    {
+      "source": "Base interface for chat memory advisors.",
+      "translation": "聊天记忆顾问的基础接口。",
+      "count": 1
+    },
+    {
+      "source": "Advisor for execution flows ultimately resulting in a call to an AI model",
+      "translation": "负责最终导致调用 AI 模型的执行流程的顾问。",
+      "count": 1
+    },
+    {
+      "source": "Marker interface for advisors that own the memory lifecycle.",
+      "translation": "拥有内存生命周期的顾问的标记接口。",
+      "count": 1
+    },
+    {
+      "source": "Advisor for execution flows ultimately resulting in a streaming call to an AI model.",
+      "translation": "负责执行流的顾问，最终将导致对 AI 模型的流式调用。",
+      "count": 1
+    },
+    {
+      "source": "Marker interface for advisors that own the tool-call lifecycle.",
+      "translation": "拥有工具调用生命周期的顾问的标记接口。",
+      "count": 1
+    }
+  ]
+}

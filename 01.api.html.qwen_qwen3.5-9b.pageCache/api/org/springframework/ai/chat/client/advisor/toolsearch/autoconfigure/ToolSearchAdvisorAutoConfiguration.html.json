@@ -1,0 +1,66 @@
+{
+  "created_at": "2026-06-15 09:01:08",
+  "updated_at": "2026-06-15 09:01:08",
+  "stats": {
+    "total_entries": 10,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 10,
+    "entries_with_hits": 10,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.001
+  },
+  "items": [
+    {
+      "source": "When <code>spring.ai.chat.client.tool-search-advisor.enabled=true</code> this configuration\nregisters a <a href=\"../ToolSearchToolCallingAdvisor.Builder.html\" title=\"class in org.springframework.ai.chat.client.advisor.toolsearch\"><code>ToolSearchToolCallingAdvisor.Builder</code></a> bean typed as\n<a href=\"../../ToolCallingAdvisor.Builder.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor.Builder</code></a>. Because <code>ChatClientAutoConfiguration</code> guards\nits own builder bean with <code>@ConditionalOnMissingBean</code>, the subtype registered\nhere satisfies that condition and the default <a href=\"../../ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor</code></a> is replaced\ntransparently.",
+      "translation": "当配置项 `<code>spring.ai.chat.client.tool-search-advisor.enabled=true</code>` 为真时，会注册一个类型为 <a href=\"../ToolSearchToolCallingAdvisor.Builder.html\" title=\"class in org.springframework.ai.chat.client.advisor.toolsearch\"><code>ToolSearchToolCallingAdvisor.Builder</code></a> 的 Bean。由于 <code>ChatClientAutoConfiguration</code> 使用 <code>@ConditionalOnMissingBean</code> 来保护其自身的构建器 Bean，此处注册的子类型满足该条件，从而透明地替换了默认的 <a href=\"../../ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "When no <a href=\"../../../../../tool/toolsearch/ToolIndex.html\" title=\"interface in org.springframework.ai.tool.toolsearch\"><code>ToolIndex</code></a> bean is declared by the application, one is registered\nautomatically. <a href=\"../../../../../tool/toolsearch/index/regex/RegexToolIndex.html\" title=\"class in org.springframework.ai.tool.toolsearch.index.regex\"><code>RegexToolIndex</code></a> is the default when\n<code>spring.ai.chat.client.tool-search-advisor.tool-index-type</code> is not set. Set the\nproperty explicitly to switch implementations:",
+      "translation": "当应用程序未声明 <a href=\"../../../../../tool/toolsearch/ToolIndex.html\" title=\"interface in org.springframework.ai.tool.toolsearch\"><code>ToolIndex</code></a> Bean 时，会自动注册一个。如果未设置 <code>spring.ai.chat.client.tool-search-advisor.tool-index-type</code>，则默认使用 <a href=\"../../../../../tool/toolsearch/index/regex/RegexToolIndex.html\" title=\"class in org.springframework.ai.tool.toolsearch.index.regex\"><code>RegexToolIndex</code></a>。请显式设置该属性以切换实现：",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "<code>tool-index-type=vector</code> — embedding-based semantic search; requires a\n<a href=\"../../../../../vectorstore/VectorStore.html\" title=\"interface in org.springframework.ai.vectorstore\"><code>VectorStore</code></a> bean and <code>spring-ai-vector-store</code> on the classpath.",
+      "translation": "<code>tool-index-type=vector</code> — 基于嵌入的语义搜索；需要 <a href=\"../../../../../vectorstore/VectorStore.html\" title=\"interface in org.springframework.ai.vectorstore\"><code>VectorStore</code></a> Bean 以及类路径上的 <code>spring-ai-vector-store</code>。",
+      "count": 1
+    },
+    {
+      "source": "<code>tool-index-type=lucene</code> — Apache Lucene keyword search; requires\n<code>org.apache.lucene:lucene-core</code> on the classpath.",
+      "translation": "<code>tool-index-type=lucene</code> — 使用 Apache Lucene 进行关键词搜索；需要在类路径中包含 <code>org.apache.lucene:lucene-core</code>。",
+      "count": 1
+    },
+    {
+      "source": "<code>afterPropertiesSet</code> in interface <code>org.springframework.beans.factory.InitializingBean</code>",
+      "translation": "接口 <code>org.springframework.beans.factory.InitializingBean</code> 中的 <code>afterPropertiesSet</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>tool-index-type=regex</code> — lightweight regex/keyword matching; no additional\ndependencies (default).",
+      "translation": "<code>tool-index-type=regex</code>——轻量级正则表达式/关键词匹配；无额外依赖（默认）。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "<code>Auto-configuration</code> for\n<a href=\"../ToolSearchToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor.toolsearch\"><code>ToolSearchToolCallingAdvisor</code></a>.",
+      "translation": "<code>自动配置</code> 用于\n<a href=\"../ToolSearchToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor.toolsearch\"><code>ToolSearchToolCallingAdvisor</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li><code>tool-index-type=regex</code>——轻量级正则表达式/关键词匹配；无额外依赖（默认）。</li>\n<li><code>tool-index-type=lucene</code> — 使用 Apache Lucene 进行关键词搜索；需要在类路径中包含 <code>org.apache.lucene:lucene-core</code>。</li>\n<li><code>tool-index-type=vector</code> — 基于嵌入的语义搜索；需要 <a href=\"../../../../../vectorstore/VectorStore.html\" title=\"interface in org.springframework.ai.vectorstore\"><code>VectorStore</code></a> Bean 以及类路径上的 <code>spring-ai-vector-store</code>。</li>\n</ul>",
+      "translation": "<ul>\n<li><code>tool-index-type=regex</code>——轻量级正则表达式/关键词匹配；无额外依赖（默认）。</li>\n<li><code>tool-index-type=lucene</code> — 使用 Apache Lucene 进行关键词搜索；需要在类路径中包含 <code>org.apache.lucene:lucene-core</code>。</li>\n<li><code>tool-index-type=vector</code> — 基于嵌入的语义搜索；需要 <a href=\"../../../../../vectorstore/VectorStore.html\" title=\"interface in org.springframework.ai.vectorstore\"><code>VectorStore</code></a> Bean 以及类路径上的 <code>spring-ai-vector-store</code>。</li>\n</ul>",
+      "count": 1
+    }
+  ]
+}

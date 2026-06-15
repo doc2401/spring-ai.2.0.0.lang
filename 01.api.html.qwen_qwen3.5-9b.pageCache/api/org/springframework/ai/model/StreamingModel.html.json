@@ -1,0 +1,56 @@
+{
+  "created_at": "2026-06-15 07:31:48",
+  "updated_at": "2026-06-15 07:31:48",
+  "stats": {
+    "total_entries": 8,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 9,
+    "entries_with_hits": 8,
+    "entries_without_hits": 0,
+    "hit_rate": 1.125,
+    "usage_percentage": 0.0007999999999999999
+  },
+  "items": [
+    {
+      "source": "Executes a method call to the AI model.",
+      "translation": "执行对 AI 模型的方法调用。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "The StreamingModel interface provides a generic API for invoking an AI models with\nstreaming response. It abstracts the process of sending requests and receiving a\nstreaming responses. The interface uses Java generics to accommodate different types of\nrequests and responses, enhancing flexibility and adaptability across different AI\nmodel implementations.",
+      "translation": "StreamingModel 接口提供了一个通用的 API，用于调用具有流式响应功能的 AI 模型。该接口抽象了发送请求和接收流式响应的过程。通过使用 Java 泛型，该接口能够适配不同类型的请求和响应，从而增强了在不同 AI 模型实现中的灵活性和适应性。",
+      "count": 1
+    },
+    {
+      "source": "<span id=\"type-param-TReq\"><code>TReq</code> - the generic type of the request to the AI model</span>",
+      "translation": "<span id=\"type-param-TReq\"><code>TReq</code> - AI 模型请求的泛型类型</span>",
+      "count": 1
+    },
+    {
+      "source": "<span id=\"type-param-TResChunk\"><code>TResChunk</code> - the generic type of a single item in the streaming response from the\nAI model</span>",
+      "translation": "<span id=\"type-param-TResChunk\"><code>TResChunk</code> - AI 模型流式响应中单个项目的泛型类型</span>",
+      "count": 1
+    },
+    {
+      "source": "<code>request</code> - the request object to be sent to the AI model",
+      "translation": "<code>request</code> - 要发送给 AI 模型的请求对象",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "the streaming response from the AI model",
+      "translation": "AI 模型的流式响应",
+      "count": 1
+    }
+  ]
+}

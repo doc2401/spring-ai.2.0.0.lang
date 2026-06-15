@@ -1,0 +1,91 @@
+{
+  "created_at": "2026-06-15 09:03:57",
+  "updated_at": "2026-06-15 09:03:57",
+  "stats": {
+    "total_entries": 15,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 17,
+    "entries_with_hits": 15,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1333333333333333,
+    "usage_percentage": 0.0015
+  },
+  "items": [
+    {
+      "source": "Creates a new builder for constructing BedrockCacheOptions.",
+      "translation": "创建一个用于构建 BedrockCacheOptions 的新构建器。",
+      "count": 2
+    },
+    {
+      "source": "Gets the caching strategy.",
+      "translation": "获取缓存策略。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Prompt caching allows you to reduce latency and costs by reusing previously processed\nprompt content. Cached content has a fixed 5-minute Time To Live (TTL) that resets with\neach cache hit.",
+      "translation": "提示缓存允许您通过重用先前处理的提示内容来降低延迟和成本。缓存内容具有固定的 5 分钟生存时间（TTL），每次命中缓存时都会重置该计时器。",
+      "count": 1
+    },
+    {
+      "source": "Example usage:",
+      "translation": "使用示例：",
+      "count": 1
+    },
+    {
+      "source": "Returns whether multi-block system message caching is enabled. When enabled, each\n<a href=\"../../../chat/messages/SystemMessage.html\" title=\"class in org.springframework.ai.chat.messages\"><code>SystemMessage</code></a> is emitted as a separate\n<code>SystemContentBlock</code> in the Bedrock Converse request, with a\n<code>CachePoint</code> placed after the second-to-last text block. This allows a static\nsystem prompt prefix to be cached while dynamic content (e.g., advisor-injected RAG\ncontext) in the last block can change freely without invalidating the cache. When\ndisabled (default), the cache point is placed after the last system block, so any\nchange to the last block invalidates the cache.",
+      "translation": "返回是否启用了多块系统消息缓存。启用时，每个 <a href=\"../../../chat/messages/SystemMessage.html\" title=\"class in org.springframework.ai.chat.messages\"><code>SystemMessage</code></a> 在 Bedrock Converse 请求中作为单独的 <code>SystemContentBlock</code> 发出，并在倒数第二个文本块后放置一个 <code>CachePoint</code>。这使得静态系统提示前缀可以被缓存，而最后一块中的动态内容（例如顾问注入的 RAG 上下文）可以自由更改而不会使缓存失效。禁用时（默认情况），缓存点放置在最后一个系统块之后，因此对最后一块的任何更改都会使缓存失效。",
+      "count": 1
+    },
+    {
+      "source": "Builder for constructing BedrockCacheOptions instances.",
+      "translation": "用于构建 BedrockCacheOptions 实例的构建器。",
+      "count": 1
+    },
+    {
+      "source": "Returns whether multi-block system message caching is enabled.",
+      "translation": "返回是否启用了多块系统消息缓存。",
+      "count": 1
+    },
+    {
+      "source": "<code>true</code> if each system message is emitted as a separate content block\nwith the cache point placed before the last block; <code>false</code> otherwise",
+      "translation": "如果每个系统消息都作为单独的内容块发出，并在最后一个块之前放置缓存点，则为 <code>true</code>；否则为 <code>false</code>。",
+      "count": 1
+    },
+    {
+      "source": "Soby Chacko, Sebastien Deleuze",
+      "translation": "Soby Chacko，Sebastien Deleuze",
+      "count": 1
+    },
+    {
+      "source": "a new Builder instance",
+      "translation": "一个新的 Builder 实例",
+      "count": 1
+    },
+    {
+      "source": "the configured BedrockCacheStrategy",
+      "translation": "已配置的 BedrockCacheStrategy",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "AWS Bedrock cache options for configuring prompt caching behavior.",
+      "translation": "AWS Bedrock 用于配置提示缓存行为的缓存选项。",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>BedrockCacheOptions cacheOptions = BedrockCacheOptions.builder()\n    .strategy(BedrockCacheStrategy.SYSTEM_ONLY)\n    .build();\n\nChatResponse response = chatModel.call(new Prompt(\n    List.of(new SystemMessage(largeSystemPrompt), new UserMessage(\"Question\")),\n    BedrockChatOptions.builder()\n        .cacheOptions(cacheOptions)\n        .build()\n));\n</code></pre>",
+      "translation": "<pre><code>BedrockCacheOptions cacheOptions = BedrockCacheOptions.builder()\n    .strategy(BedrockCacheStrategy.SYSTEM_ONLY)\n    .build();\n\nChatResponse response = chatModel.call(new Prompt(\n    List.of(new SystemMessage(largeSystemPrompt), new UserMessage(\"Question\")),\n    BedrockChatOptions.builder()\n        .cacheOptions(cacheOptions)\n        .build()\n));\n</code></pre>",
+      "count": 1
+    }
+  ]
+}

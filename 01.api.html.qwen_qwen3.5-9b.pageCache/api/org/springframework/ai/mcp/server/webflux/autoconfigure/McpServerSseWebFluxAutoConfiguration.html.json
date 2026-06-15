@@ -1,0 +1,81 @@
+{
+  "created_at": "2026-06-15 08:23:01",
+  "updated_at": "2026-06-15 08:23:01",
+  "stats": {
+    "total_entries": 13,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 15,
+    "entries_with_hits": 13,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1538461538461537,
+    "usage_percentage": 0.0013
+  },
+  "items": [
+    {
+      "source": "<span class=\"deprecated-label\">Deprecated, for removal: This API element is subject to removal in a future version.</span>",
+      "translation": "<code class=\"deprecated-label\">已弃用，即将移除：此 API 元素将在未来版本中被移除。</code>",
+      "count": 3
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This configuration class sets up the WebFlux-specific transport components for the MCP\nserver, providing reactive Server-Sent Events (SSE) communication through Spring\nWebFlux. It is activated when:",
+      "translation": "此配置类为 MCP 服务器设置 WebFlux 专用的传输组件，通过 Spring WebFlux 提供响应式的服务器发送事件（SSE）通信。它在以下情况被激活：",
+      "count": 1
+    },
+    {
+      "source": "The configuration provides:",
+      "translation": "该配置提供：",
+      "count": 1
+    },
+    {
+      "source": "The <code>spring.ai.mcp.server.transport</code> property is set to <code>WEBFLUX</code>",
+      "translation": "<code>spring.ai.mcp.server.transport</code> 属性被设置为 <code>WEBFLUX</code>",
+      "count": 1
+    },
+    {
+      "source": "The WebFluxSseServerTransportProvider class is on the classpath (from\nmcp-spring-webflux dependency)",
+      "translation": "WebFluxSseServerTransportProvider 类位于类路径中（来自 mcp-spring-webflux 依赖）。",
+      "count": 1
+    },
+    {
+      "source": "Spring WebFlux's RouterFunction class is available (from\nspring-boot-starter-webflux)",
+      "translation": "Spring WebFlux 的 RouterFunction 类现已可用（来自 spring-boot-starter-webflux）。",
+      "count": 1
+    },
+    {
+      "source": "A WebFluxSseServerTransportProvider bean for handling reactive SSE\ncommunication",
+      "translation": "用于处理响应式 SSE 通信的 WebFluxSseServerTransportProvider Bean。",
+      "count": 1
+    },
+    {
+      "source": "A RouterFunction bean that sets up the reactive SSE endpoint",
+      "translation": "用于配置响应式 SSE 端点的 RouterFunction Bean。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Yanming Zhou",
+      "translation": "克里斯蒂安·茨洛夫，周延明",
+      "count": 1
+    },
+    {
+      "source": "<code>Auto-configuration</code> for MCP WebFlux Server Transport.",
+      "translation": "MCP WebFlux 服务器传输的自动配置。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>WebFluxSseServerTransportProvider 类位于类路径中（来自 mcp-spring-webflux 依赖）。</li>\n<li>Spring WebFlux 的 RouterFunction 类现已可用（来自 spring-boot-starter-webflux）。</li>\n<li><code>spring.ai.mcp.server.transport</code> 属性被设置为 <code>WEBFLUX</code></li>\n</ul>",
+      "translation": "<ul>\n<li>WebFluxSseServerTransportProvider 类位于类路径中（来自 mcp-spring-webflux 依赖）。</li>\n<li>Spring WebFlux 的 RouterFunction 类现已可用（来自 spring-boot-starter-webflux）。</li>\n<li><code>spring.ai.mcp.server.transport</code> 属性被设置为 <code>WEBFLUX</code></li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>用于处理响应式 SSE 通信的 WebFluxSseServerTransportProvider Bean。</li>\n<li>用于配置响应式 SSE 端点的 RouterFunction Bean。</li>\n</ul>",
+      "translation": "<ul>\n<li>用于处理响应式 SSE 通信的 WebFluxSseServerTransportProvider Bean。</li>\n<li>用于配置响应式 SSE 端点的 RouterFunction Bean。</li>\n</ul>",
+      "count": 1
+    }
+  ]
+}

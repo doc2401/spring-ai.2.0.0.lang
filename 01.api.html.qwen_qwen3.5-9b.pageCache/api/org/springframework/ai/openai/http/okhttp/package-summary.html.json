@@ -1,0 +1,41 @@
+{
+  "created_at": "2026-06-15 08:06:31",
+  "updated_at": "2026-06-15 08:06:31",
+  "stats": {
+    "total_entries": 5,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 5,
+    "entries_with_hits": 5,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.0005
+  },
+  "items": [
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Spring AI's customized OkHttp-backed implementation of the OpenAi Java SDK's\n<code>HttpClient</code> contract. Exists to wire Micrometer HTTP-layer\nobservability (span + metric + <code>traceparent</code> propagation) onto the underlying\nOkHttp client, which the SDK's stock <code>OpenAiOkHttpClient.Builder</code> does not expose\na seam for. See the SDK's\n<a href=\"https://github.com/openai/openai-java#custom-http-client\">Custom HTTP\nclient</a> guide for the integration pattern.",
+      "translation": "Spring AI 提供了基于 OkHttp 的 OpenAI Java SDK `HttpClient` 合约的定制实现。该实现旨在将 Micrometer HTTP 层可观测性（包括 Span、指标以及 `<code>traceparent</code>` 传播）集成到底层 OkHttp 客户端中，而 SDK 默认的 `<code>OpenAiOkHttpClient.Builder</code>` 并未为此提供扩展点。有关集成模式，请参阅 SDK 的<a href=\"https://github.com/openai/openai-java#custom-http-client\">自定义 HTTP 客户端</a>指南。",
+      "count": 1
+    },
+    {
+      "source": "Callback for customizing the <a href=\"SpringAiOpenAiHttpClient.Builder.html\" title=\"class in org.springframework.ai.openai.http.okhttp\"><code>SpringAiOpenAiHttpClient.Builder</code></a> used by every\nOpenAI <code>*Model</code> before the underlying <code>OkHttpClient</code> is built.",
+      "translation": "回调函数，用于自定义每个 OpenAI `<code>*Model</code>` 在构建底层 `<code>OkHttpClient</code>` 之前所使用的 `<a href=\"SpringAiOpenAiHttpClient.Builder.html\" title=\"class in org.springframework.ai.openai.http.okhttp\"><code>SpringAiOpenAiHttpClient.Builder</code></a>`。",
+      "count": 1
+    },
+    {
+      "source": "OkHttp-backed <code>HttpClient</code> for the OpenAI Java SDK, with Micrometer's\n<code>OkHttpObservationInterceptor</code> attached so each HTTP attempt produces an\nobservation (span + metric + traceparent propagation).",
+      "translation": "由 OkHttp 支持的 OpenAI Java SDK <code>HttpClient</code>，已附加 Micrometer 的<code>OkHttpObservationInterceptor</code>，使得每次 HTTP 请求都会生成观测记录（包含 span、指标以及 traceparent 传播）。",
+      "count": 1
+    },
+    {
+      "source": "Builder for <a href=\"SpringAiOpenAiHttpClient.html\" title=\"class in org.springframework.ai.openai.http.okhttp\"><code>SpringAiOpenAiHttpClient</code></a>.",
+      "translation": "用于构建<a href=\"SpringAiOpenAiHttpClient.html\" title=\"类 org.springframework.ai.openai.http.okhttp\"><code>SpringAiOpenAiHttpClient</code></a>的构造器。",
+      "count": 1
+    }
+  ]
+}

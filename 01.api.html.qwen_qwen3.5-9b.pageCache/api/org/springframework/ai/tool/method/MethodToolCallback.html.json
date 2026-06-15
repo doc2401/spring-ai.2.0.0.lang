@@ -1,0 +1,101 @@
+{
+  "created_at": "2026-06-15 07:58:46",
+  "updated_at": "2026-06-15 07:58:46",
+  "stats": {
+    "total_entries": 17,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 21,
+    "entries_with_hits": 17,
+    "entries_without_hits": 0,
+    "hit_rate": 1.2352941176470589,
+    "usage_percentage": 0.0017
+  },
+  "items": [
+    {
+      "source": "Execute tool with the given input and return the result to send back to the AI\nmodel.",
+      "translation": "使用给定输入执行工具，并将结果返回给AI模型。",
+      "count": 2
+    },
+    {
+      "source": "Execute tool with the given input and context, and return the result to send back\nto the AI model.",
+      "translation": "使用给定输入和上下文执行工具，并将结果返回给AI模型。",
+      "count": 2
+    },
+    {
+      "source": "Definition used by the AI model to determine when and how to call the tool.",
+      "translation": "AI 模型用于确定何时以及如何调用工具的指令。",
+      "count": 2
+    },
+    {
+      "source": "Metadata providing additional information on how to handle the tool.",
+      "translation": "提供有关如何处理该工具的额外信息的元数据。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../ToolCallback.html#getToolDefinition()\">ToolCallback</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../ToolCallback.html#getToolDefinition()\">ToolCallback</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../ToolCallback.html#getToolMetadata()\">ToolCallback</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../ToolCallback.html#getToolMetadata()\">ToolCallback</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../ToolCallback.html#call(java.lang.String)\">ToolCallback</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../ToolCallback.html#call(java.lang.String)\">ToolCallback</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../ToolCallback.html#call(java.lang.String,org.springframework.ai.chat.model.ToolContext)\">ToolCallback</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../ToolCallback.html#call(java.lang.String,org.springframework.ai.chat.model.ToolContext)\">ToolCallback</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "A <a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a> implementation to invoke methods as tools.",
+      "translation": "一个<a href=\"../ToolCallback.html\" title=\"org.springframework.ai.tool 中的接口\"><code>ToolCallback</code></a>实现，用于将方法作为工具调用。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../ToolCallback.html#getToolDefinition()\">getToolDefinition</a></code> in interface <code><a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a></code>",
+      "translation": "<code><a href=\"../ToolCallback.html#getToolDefinition()\">getToolDefinition</a></code> 接口 <code><a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../ToolCallback.html#getToolMetadata()\">getToolMetadata</a></code> in interface <code><a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a></code>",
+      "translation": "接口 <code><a href=\"../ToolCallback.html\" title=\"org.springframework.ai.tool 中的接口\">ToolCallback</a></code> 中的 <code><a href=\"../ToolCallback.html#getToolMetadata()\">getToolMetadata</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../ToolCallback.html#call(java.lang.String)\">call</a></code> in interface <code><a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a></code>",
+      "translation": "接口 <code><a href=\"../ToolCallback.html\" title=\"org.springframework.ai.tool 中的接口\">ToolCallback</a></code> 中的 <code><a href=\"../ToolCallback.html#call(java.lang.String)\">call</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../ToolCallback.html#call(java.lang.String,org.springframework.ai.chat.model.ToolContext)\">call</a></code> in interface <code><a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a></code>",
+      "translation": "接口 <code><a href=\"../ToolCallback.html\" title=\"org.springframework.ai.tool 中的接口\">ToolCallback</a></code> 中的 <code><a href=\"../ToolCallback.html#call(java.lang.String,org.springframework.ai.chat.model.ToolContext)\">call</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#toString()\" title=\"class or interface in java.lang\">toString</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"class or interface in java.lang\">Object</a></code>",
+      "translation": "类 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"java.lang 中的类或接口\">Object</a></code> 中的 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#toString()\" title=\"java.lang 中的类或接口\">toString</a></code>",
+      "count": 1
+    },
+    {
+      "source": "Thomas Vitale",
+      "translation": "托马斯·维塔莱",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    }
+  ]
+}

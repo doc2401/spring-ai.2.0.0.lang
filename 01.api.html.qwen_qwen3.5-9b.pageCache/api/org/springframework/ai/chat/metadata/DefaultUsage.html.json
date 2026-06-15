@@ -1,0 +1,256 @@
+{
+  "created_at": "2026-06-15 08:50:58",
+  "updated_at": "2026-06-15 08:50:58",
+  "stats": {
+    "total_entries": 48,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 66,
+    "entries_with_hits": 48,
+    "entries_without_hits": 0,
+    "hit_rate": 1.375,
+    "usage_percentage": 0.0048000000000000004
+  },
+  "items": [
+    {
+      "source": "<code>promptTokens</code> - the number of tokens in the prompt, or <code>null</code> if not\navailable",
+      "translation": "<code>promptTokens</code> - 提示词中的 token 数量，若不可用则为 <code>null</code>",
+      "count": 4
+    },
+    {
+      "source": "<code>completionTokens</code> - the number of tokens in the generation, or <code>null</code> if\nnot available",
+      "translation": "<code>completionTokens</code> - 生成中的 token 数量，若不可用则为 <code>null</code>",
+      "count": 4
+    },
+    {
+      "source": "Create a new DefaultUsage with promptTokens, completionTokens, and totalTokens.",
+      "translation": "创建一个新的默认使用情况，包含提示词数、完成词数和总词数。",
+      "count": 3
+    },
+    {
+      "source": "<code>totalTokens</code> - the total number of tokens, or <code>null</code> to calculate from\npromptTokens and completionTokens",
+      "translation": "<code>totalTokens</code> - 令牌总数，或为 <code>null</code> 以根据 promptTokens 和 completionTokens 计算得出。",
+      "count": 3
+    },
+    {
+      "source": "Create a new DefaultUsage with promptTokens, completionTokens, totalTokens and\nnative <a href=\"Usage.html\" title=\"interface in org.springframework.ai.chat.metadata\"><code>Usage</code></a> object.",
+      "translation": "创建一个新的 DefaultUsage，包含 promptTokens、completionTokens、totalTokens 以及原生的 <a href=\"Usage.html\" title=\"org.springframework.ai.chat.metadata 中的接口\"><code>Usage</code></a> 对象。",
+      "count": 2
+    },
+    {
+      "source": "Create a new DefaultUsage with all fields including prompt cache metrics.",
+      "translation": "创建一个新的默认使用记录，包含所有字段及提示缓存指标。",
+      "count": 2
+    },
+    {
+      "source": "Create a new DefaultUsage with promptTokens and completionTokens.",
+      "translation": "创建一个新的默认使用记录，包含提示词 token 和完成 token。",
+      "count": 2
+    },
+    {
+      "source": "Returns the number of tokens returned in the generation (aka completion)\nof the AI's response.",
+      "translation": "返回 AI 响应（即生成/补全）中生成的 token 数量。",
+      "count": 2
+    },
+    {
+      "source": "Return the usage data from the underlying model API response.",
+      "translation": "返回底层模型 API 响应中的使用数据。",
+      "count": 2
+    },
+    {
+      "source": "Returns the number of tokens used in the prompt of the AI request.",
+      "translation": "返回 AI 请求提示中使用的 token 数量。",
+      "count": 2
+    },
+    {
+      "source": "Return the total number of tokens from both the prompt of an AI request\nand generation of the AI's response.",
+      "translation": "请返回 AI 请求提示词与 AI 生成回复的总 token 数。",
+      "count": 2
+    },
+    {
+      "source": "<code>nativeUsage</code> - the native usage object returned by the model provider, or\n<code>null</code> to return the map of prompt, completion and total tokens.",
+      "translation": "`nativeUsage` - 模型提供者返回的原生使用对象，或为 `null` 以返回提示词、完成和总 token 的映射。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"Usage.html#getPromptTokens()\">Usage</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"Usage.html#getPromptTokens()\">Usage</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"Usage.html#getCompletionTokens()\">Usage</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"Usage.html#getCompletionTokens()\">Usage</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"Usage.html#getTotalTokens()\">Usage</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"Usage.html#getTotalTokens()\">Usage</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"Usage.html#getNativeUsage()\">Usage</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"Usage.html#getNativeUsage()\">Usage</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"Usage.html#getCacheReadInputTokens()\">Usage</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"Usage.html#getCacheReadInputTokens()\">Usage</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"Usage.html#getCacheWriteInputTokens()\">Usage</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"Usage.html#getCacheWriteInputTokens()\">Usage</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Default implementation of the <a href=\"Usage.html\" title=\"interface in org.springframework.ai.chat.metadata\"><code>Usage</code></a> interface.",
+      "translation": "<a href=\"Usage.html\" title=\"org.springframework.ai.chat.metadata 中的接口\"><code>Usage</code></a>接口的默认实现。",
+      "count": 1
+    },
+    {
+      "source": "Returns the number of input tokens read from the prompt cache, if the provider\nsupports prompt caching.",
+      "translation": "如果提供者支持提示词缓存，则返回从提示词缓存中读取的输入 token 数量。",
+      "count": 1
+    },
+    {
+      "source": "Returns the number of input tokens written to the prompt cache, if the provider\nsupports prompt caching.",
+      "translation": "如果提供者支持提示词缓存，则返回写入提示词缓存的输入 token 数量。",
+      "count": 1
+    },
+    {
+      "source": "Create a new DefaultUsage with promptTokens, completionTokens, and totalTokens.\nThis constructor is used for JSON deserialization and handles both the new format\nwith completionTokens and the legacy format with generationTokens.",
+      "translation": "创建一个包含 promptTokens、completionTokens 和 totalTokens 的新 DefaultUsage。此构造函数用于 JSON 反序列化，并支持带有 completionTokens 的新格式以及带有 generationTokens 的旧格式。",
+      "count": 1
+    },
+    {
+      "source": "Returns the number of input tokens read from the prompt cache, if the provider\nsupports prompt caching. Cached tokens are tokens that were previously processed\nand stored by the provider, reducing cost and latency for repeated prompt prefixes.",
+      "translation": "返回从提示缓存中读取的输入 token 数量（如果提供者支持提示缓存）。缓存的 token 是先前由提供者处理并存储的 token，可减少重复提示前缀的成本和延迟。",
+      "count": 1
+    },
+    {
+      "source": "Returns the number of input tokens written to the prompt cache, if the provider\nsupports prompt caching. Cache writes occur when new prompt content is cached for\nthe first time.",
+      "translation": "返回写入提示缓存的输入 token 数量（如果提供者支持提示缓存）。缓存写入发生在首次缓存新提示内容时。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"Usage.html#getPromptTokens()\">getPromptTokens</a></code> in interface <code><a href=\"Usage.html\" title=\"interface in org.springframework.ai.chat.metadata\">Usage</a></code>",
+      "translation": "接口 <code><a href=\"Usage.html\" title=\"org.springframework.ai.chat.metadata 中的接口\">Usage</a></code> 中的方法 <code><a href=\"Usage.html#getPromptTokens()\">getPromptTokens</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"Usage.html#getCompletionTokens()\">getCompletionTokens</a></code> in interface <code><a href=\"Usage.html\" title=\"interface in org.springframework.ai.chat.metadata\">Usage</a></code>",
+      "translation": "接口 <code><a href=\"Usage.html\" title=\"org.springframework.ai.chat.metadata 中的接口\">Usage</a></code> 中的方法 <code><a href=\"Usage.html#getCompletionTokens()\">getCompletionTokens</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"Usage.html#getTotalTokens()\">getTotalTokens</a></code> in interface <code><a href=\"Usage.html\" title=\"interface in org.springframework.ai.chat.metadata\">Usage</a></code>",
+      "translation": "接口 <code><a href=\"Usage.html\" title=\"org.springframework.ai.chat.metadata 中的接口\">Usage</a></code> 中的方法 <code><a href=\"Usage.html#getTotalTokens()\">getTotalTokens</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"Usage.html#getNativeUsage()\">getNativeUsage</a></code> in interface <code><a href=\"Usage.html\" title=\"interface in org.springframework.ai.chat.metadata\">Usage</a></code>",
+      "translation": "<code><a href=\"Usage.html#getNativeUsage()\">getNativeUsage</a></code> 在接口 <code><a href=\"Usage.html\" title=\"org.springframework.ai.chat.metadata 中的接口\">Usage</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"Usage.html#getCacheReadInputTokens()\">getCacheReadInputTokens</a></code> in interface <code><a href=\"Usage.html\" title=\"interface in org.springframework.ai.chat.metadata\">Usage</a></code>",
+      "translation": "接口 <code><a href=\"Usage.html\" title=\"org.springframework.ai.chat.metadata 中的接口\">Usage</a></code> 中的方法 <code><a href=\"Usage.html#getCacheReadInputTokens()\">getCacheReadInputTokens</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"Usage.html#getCacheWriteInputTokens()\">getCacheWriteInputTokens</a></code> in interface <code><a href=\"Usage.html\" title=\"interface in org.springframework.ai.chat.metadata\">Usage</a></code>",
+      "translation": "接口 <code><a href=\"Usage.html\" title=\"org.springframework.ai.chat.metadata 中的接口\">Usage</a></code> 中的方法 <code><a href=\"Usage.html#getCacheWriteInputTokens()\">getCacheWriteInputTokens</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)\" title=\"class or interface in java.lang\">equals</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"class or interface in java.lang\">Object</a></code>",
+      "translation": "`Object` 类中的 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)\" title=\"class or interface in java.lang\">equals</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#hashCode()\" title=\"class or interface in java.lang\">hashCode</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"class or interface in java.lang\">Object</a></code>",
+      "translation": "类 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"java.lang 中的类或接口\">Object</a></code> 中的 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#hashCode()\" title=\"java.lang 中的类或接口\">hashCode</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#toString()\" title=\"class or interface in java.lang\">toString</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"class or interface in java.lang\">Object</a></code>",
+      "translation": "类 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"java.lang 中的类或接口\">Object</a></code> 中的 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#toString()\" title=\"java.lang 中的类或接口\">toString</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code>cacheReadInputTokens</code> - the number of input tokens read from prompt cache, or\n<code>null</code> if not available",
+      "translation": "<code>cacheReadInputTokens</code> - 从提示词缓存中读取的输入 token 数量，若不可用则为 <code>null</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>cacheWriteInputTokens</code> - the number of input tokens written to prompt cache, or\n<code>null</code> if not available",
+      "translation": "<code>cacheWriteInputTokens</code> - 写入提示词缓存的输入 token 数量，或不可用时为 <code>null</code>",
+      "count": 1
+    },
+    {
+      "source": "an <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html\" title=\"class or interface in java.lang\"><code>Integer</code></a> with the number of tokens used in the prompt\nof the AI request.",
+      "translation": "一个包含 AI 请求中使用的 token 数量的<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html\" title=\"class or interface in java.lang\"><code>Integer</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "an <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html\" title=\"class or interface in java.lang\"><code>Integer</code></a> with the number of tokens returned in the\ngeneration (aka completion) of the AI's response.",
+      "translation": "一个 <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html\" title=\"class or interface in java.lang\"><code>Integer</code></a>，表示 AI 响应（即生成或完成）中返回的 token 数量。",
+      "count": 1
+    },
+    {
+      "source": "<code>promptTokens</code> - the number of tokens in the prompt",
+      "translation": "<promptTokens> - 提示词中的 token 数量",
+      "count": 1
+    },
+    {
+      "source": "<code>completionTokens</code> - the number of tokens in the completion (new format)",
+      "translation": "<code>completionTokens</code> - 完成中的 token 数量（新格式）",
+      "count": 1
+    },
+    {
+      "source": "<code>totalTokens</code> - the total number of tokens",
+      "translation": "<code>totalTokens</code> - 令牌总数",
+      "count": 1
+    },
+    {
+      "source": "<code>nativeUsage</code> - the native usage object",
+      "translation": "<code>nativeUsage</code> - 原生使用对象",
+      "count": 1
+    },
+    {
+      "source": "the number of cached input tokens read, or <code>null</code> if the provider\ndoes not support prompt caching or no cache hit occurred.",
+      "translation": "已读取的缓存输入 token 数量，如果提供者不支持提示词缓存或未发生缓存命中，则为 <code>null</code>。",
+      "count": 1
+    },
+    {
+      "source": "the number of input tokens written to cache, or <code>null</code> if the\nprovider does not support prompt caching or no cache write occurred.",
+      "translation": "写入缓存的输入 token 数量，或者如果提供者不支持提示词缓存或未发生缓存写入，则为 <code>null</code>。",
+      "count": 1
+    },
+    {
+      "source": "Mark Pollack, Ilayaperumal Gopinathan",
+      "translation": "马克·波拉克，伊拉亚佩鲁马拉·戈皮纳坦",
+      "count": 1
+    },
+    {
+      "source": "a new DefaultUsage instance",
+      "translation": "一个新的 DefaultUsage 实例",
+      "count": 1
+    },
+    {
+      "source": "the total number of tokens from both the prompt of an AI request\nand generation of the AI's response.",
+      "translation": "AI 请求的提示词与 AI 响应生成所产生的 token 总数。",
+      "count": 1
+    },
+    {
+      "source": "the object of type inferred by the API response.",
+      "translation": "API 响应推断出的对象类型。",
+      "count": 1
+    }
+  ]
+}

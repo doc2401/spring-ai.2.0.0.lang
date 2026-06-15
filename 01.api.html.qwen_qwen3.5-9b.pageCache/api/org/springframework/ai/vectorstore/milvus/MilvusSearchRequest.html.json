@@ -1,0 +1,91 @@
+{
+  "created_at": "2026-06-15 07:43:51",
+  "updated_at": "2026-06-15 07:43:51",
+  "stats": {
+    "total_entries": 15,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 18,
+    "entries_with_hits": 15,
+    "entries_without_hits": 0,
+    "hit_rate": 1.2,
+    "usage_percentage": 0.0015
+  },
+  "items": [
+    {
+      "source": "Creates a new <a href=\"MilvusSearchRequest.MilvusBuilder.html\" title=\"class in org.springframework.ai.vectorstore.milvus\"><code>MilvusSearchRequest.MilvusBuilder</code></a> for constructing a <a href=\"MilvusSearchRequest.html\" title=\"class in org.springframework.ai.vectorstore.milvus\"><code>MilvusSearchRequest</code></a>.",
+      "translation": "创建一个<a href=\"MilvusSearchRequest.MilvusBuilder.html\" title=\"class in org.springframework.ai.vectorstore.milvus\"><code>MilvusSearchRequest.MilvusBuilder</code></a>，用于构建一个<a href=\"MilvusSearchRequest.html\" title=\"class in org.springframework.ai.vectorstore.milvus\"><code>MilvusSearchRequest</code></a>。",
+      "count": 2
+    },
+    {
+      "source": "Retrieves the native Milvus filter expression.",
+      "translation": "获取原生的 Milvus 过滤表达式。",
+      "count": 2
+    },
+    {
+      "source": "Retrieves the JSON-encoded search parameters.",
+      "translation": "检索以 JSON 编码格式的搜索参数。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Use the <a href=\"MilvusSearchRequest.MilvusBuilder.html\" title=\"class in org.springframework.ai.vectorstore.milvus\"><code>MilvusSearchRequest.MilvusBuilder</code></a> to construct instances of this class.",
+      "translation": "使用<a href=\"MilvusSearchRequest.MilvusBuilder.html\" title=\"class in org.springframework.ai.vectorstore.milvus\"><code>MilvusSearchRequest.MilvusBuilder</code></a>来构建此类的实例。",
+      "count": 1
+    },
+    {
+      "source": "This class introduces two additional fields:",
+      "translation": "本课程介绍两个额外的字段：",
+      "count": 1
+    },
+    {
+      "source": "Builder class for constructing instances of <a href=\"MilvusSearchRequest.html\" title=\"class in org.springframework.ai.vectorstore.milvus\"><code>MilvusSearchRequest</code></a>.",
+      "translation": "用于构建<a href=\"MilvusSearchRequest.html\" title=\"class in org.springframework.ai.vectorstore.milvus\"><code>MilvusSearchRequest</code></a>实例的 Builder 类。",
+      "count": 1
+    },
+    {
+      "source": "<code>nativeExpression</code> - A native Milvus filter expression (e.g.,\n<code>\"city LIKE\n'New%'\"</code>).",
+      "translation": "<code>nativeExpression</code> - 原生 Milvus 过滤表达式（例如，<code>\"city LIKE 'New%'\"</code>）。",
+      "count": 1
+    },
+    {
+      "source": "<code>searchParamsJson</code> - A JSON string containing search parameters (e.g.,\n<code>\"{\\\"nprobe\\\":128}\"</code>).",
+      "translation": "<code>searchParamsJson</code> - 包含搜索参数的 JSON 字符串（例如，<code>\"{\\\"nprobe\\\":128}\"</code>）。",
+      "count": 1
+    },
+    {
+      "source": "A new <a href=\"MilvusSearchRequest.MilvusBuilder.html\" title=\"class in org.springframework.ai.vectorstore.milvus\"><code>MilvusSearchRequest.MilvusBuilder</code></a> instance.",
+      "translation": "一个新的<a href=\"MilvusSearchRequest.MilvusBuilder.html\" title=\"类 org.springframework.ai.vectorstore.milvus 中的类\"><code>MilvusSearchRequest.MilvusBuilder</code></a>实例。",
+      "count": 1
+    },
+    {
+      "source": "A string representing the native Milvus expression, or <code>null</code> if not\nset.",
+      "translation": "表示原生 Milvus 表达式的字符串，如果未设置则为 <code>null</code>。",
+      "count": 1
+    },
+    {
+      "source": "A JSON string containing search parameters, or <code>null</code> if not set.",
+      "translation": "包含搜索参数的 JSON 字符串，或者如果未设置则为 <code>null</code>。",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "A specialized <a href=\"../SearchRequest.html\" title=\"class in org.springframework.ai.vectorstore\"><code>SearchRequest</code></a> for Milvus vector search, extending the base\nrequest with Milvus-specific parameters.",
+      "translation": "针对 Milvus 向量搜索的专用<a href=\"../SearchRequest.html\" title=\"class in org.springframework.ai.vectorstore\"><code>SearchRequest</code></a>，在基础请求之上扩展了特定于 Milvus 的参数。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li><code>nativeExpression</code> - 原生 Milvus 过滤表达式（例如，<code>\"city LIKE 'New%'\"</code>）。</li>\n<li><code>searchParamsJson</code> - 包含搜索参数的 JSON 字符串（例如，<code>\"{\\\"nprobe\\\":128}\"</code>）。</li>\n</ul>",
+      "translation": "<ul>\n<li><code>nativeExpression</code> - 原生 Milvus 过滤表达式（例如，<code>\"city LIKE 'New%'\"</code>）。</li>\n<li><code>searchParamsJson</code> - 包含搜索参数的 JSON 字符串（例如，<code>\"{\\\"nprobe\\\":128}\"</code>）。</li>\n</ul>",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "created_at": "2026-06-15 08:37:47",
+  "updated_at": "2026-06-15 08:37:47",
+  "stats": {
+    "total_entries": 37,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 61,
+    "entries_with_hits": 37,
+    "entries_without_hits": 0,
+    "hit_rate": 1.6486486486486487,
+    "usage_percentage": 0.0036999999999999997
+  },
+  "items": [
+    {
+      "source": "<code>name</code> - the cached content name",
+      "translation": "<code>name</code> - 缓存内容名称",
+      "count": 8
+    },
+    {
+      "source": "the updated cached content",
+      "translation": "已更新的缓存内容",
+      "count": 3
+    },
+    {
+      "source": "Removes all expired cached content.",
+      "translation": "删除所有已过期的缓存内容。",
+      "count": 2
+    },
+    {
+      "source": "Creates cached content from the given request.",
+      "translation": "根据给定请求创建缓存内容。",
+      "count": 2
+    },
+    {
+      "source": "Asynchronously creates cached content from the given request.",
+      "translation": "根据给定请求异步创建缓存内容。",
+      "count": 2
+    },
+    {
+      "source": "Deletes cached content by name.",
+      "translation": "按名称删除缓存内容。",
+      "count": 2
+    },
+    {
+      "source": "Asynchronously deletes cached content by name.",
+      "translation": "按名称异步删除缓存内容。",
+      "count": 2
+    },
+    {
+      "source": "Extends the TTL of cached content by the specified duration.",
+      "translation": "将缓存内容的 TTL 延长指定的时长。",
+      "count": 2
+    },
+    {
+      "source": "Retrieves cached content by name.",
+      "translation": "按名称检索缓存内容。",
+      "count": 2
+    },
+    {
+      "source": "Asynchronously retrieves cached content by name.",
+      "translation": "按名称异步检索缓存内容。",
+      "count": 2
+    },
+    {
+      "source": "Lists all cached content with optional pagination.",
+      "translation": "列出所有缓存内容，支持可选的分页。",
+      "count": 2
+    },
+    {
+      "source": "Lists all cached content without pagination.",
+      "translation": "列出所有缓存内容，不进行分页。",
+      "count": 2
+    },
+    {
+      "source": "Refreshes the expiration of cached content to the maximum TTL.",
+      "translation": "将缓存内容的过期时间刷新至最大 TTL。",
+      "count": 2
+    },
+    {
+      "source": "Updates cached content with new TTL or expiration.",
+      "translation": "使用新的 TTL 或过期时间更新缓存内容。",
+      "count": 2
+    },
+    {
+      "source": "Asynchronously updates cached content with new TTL or expiration.",
+      "translation": "异步更新缓存内容的新 TTL 或过期时间。",
+      "count": 2
+    },
+    {
+      "source": "<code>request</code> - the cached content creation request",
+      "translation": "<code>request</code> - 缓存的内容创建请求",
+      "count": 2
+    },
+    {
+      "source": "<code>request</code> - the update request",
+      "translation": "<code>request</code> - 更新请求",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Service for managing cached content in Google GenAI. Provides synchronous and\nasynchronous operations for creating, retrieving, updating, and deleting cached\ncontent.",
+      "translation": "用于管理 Google GenAI 中缓存内容的服务。提供创建、检索、更新和删除缓存内容的同步及异步操作。",
+      "count": 1
+    },
+    {
+      "source": "Exception thrown when cached content operations fail.",
+      "translation": "缓存内容操作失败时抛出异常。",
+      "count": 1
+    },
+    {
+      "source": "Result of listing cached content with pagination support.",
+      "translation": "支持分页的缓存内容列表结果。",
+      "count": 1
+    },
+    {
+      "source": "<code>pageSize</code> - the page size (null for default)",
+      "translation": "<code>pageSize</code> - 每页大小（默认值为 null）",
+      "count": 1
+    },
+    {
+      "source": "<code>pageToken</code> - the page token for pagination (null for first page)",
+      "translation": "<code>pageToken</code> - 用于分页的页面令牌（第一页为 null）",
+      "count": 1
+    },
+    {
+      "source": "<code>additionalTtl</code> - the additional TTL to add",
+      "translation": "<code>additionalTtl</code> - 要添加的附加 TTL",
+      "count": 1
+    },
+    {
+      "source": "<code>maxTtl</code> - the maximum TTL to set",
+      "translation": "<code>maxTtl</code> - 要设置的最大 TTL",
+      "count": 1
+    },
+    {
+      "source": "Dan Dobrin",
+      "translation": "丹·多布林",
+      "count": 1
+    },
+    {
+      "source": "the created cached content",
+      "translation": "已创建的缓存内容",
+      "count": 1
+    },
+    {
+      "source": "the cached content, or null if not found",
+      "translation": "缓存的内容，若未找到则为 null",
+      "count": 1
+    },
+    {
+      "source": "true if deleted successfully, false otherwise",
+      "translation": "如果删除成功则返回 true，否则返回 false。",
+      "count": 1
+    },
+    {
+      "source": "list of cached content",
+      "translation": "缓存内容列表",
+      "count": 1
+    },
+    {
+      "source": "list of all cached content",
+      "translation": "所有缓存内容的列表",
+      "count": 1
+    },
+    {
+      "source": "a future containing the created cached content",
+      "translation": "包含已创建缓存内容的未来",
+      "count": 1
+    },
+    {
+      "source": "a future containing the cached content",
+      "translation": "一个包含缓存内容的未来",
+      "count": 1
+    },
+    {
+      "source": "a future containing the updated cached content",
+      "translation": "包含已更新缓存内容的未来",
+      "count": 1
+    },
+    {
+      "source": "a future indicating success",
+      "translation": "预示成功的未来",
+      "count": 1
+    },
+    {
+      "source": "the number of expired items removed",
+      "translation": "已移除的过期物品数量",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    }
+  ]
+}

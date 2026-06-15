@@ -1,0 +1,121 @@
+{
+  "created_at": "2026-06-15 08:24:17",
+  "updated_at": "2026-06-15 08:24:17",
+  "stats": {
+    "total_entries": 21,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 22,
+    "entries_with_hits": 21,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0476190476190477,
+    "usage_percentage": 0.0021
+  },
+  "items": [
+    {
+      "source": "Creates a list of WebFlux-based Streamable HTTP transports for MCP communication.",
+      "translation": "为 MCP 通信创建基于 WebFlux 的可流式 HTTP 传输列表。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This configuration class sets up the necessary beans for Streamable HTTP-based WebFlux\ntransport, providing reactive transport implementation for MCP client communication\nwhen WebFlux is available on the classpath.",
+      "translation": "该配置类为基于流的 HTTP WebFlux 传输设置所需的 Bean，当类路径上存在 WebFlux 时，可为 MCP 客户端通信提供响应式传输实现。",
+      "count": 1
+    },
+    {
+      "source": "Key features:",
+      "translation": "主要功能：",
+      "count": 1
+    },
+    {
+      "source": "Each transport is configured with:",
+      "translation": "每个运输单元均配置有：",
+      "count": 1
+    },
+    {
+      "source": "<code>transportCustomizers</code> - provider for\n<code><a href=\"../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;<a href=\"../transport/WebClientStreamableHttpTransport.Builder.html\" title=\"class in org.springframework.ai.mcp.client.webflux.transport\">WebClientStreamableHttpTransport.Builder</a>&gt;</code> beans",
+      "translation": "<code>transportCustomizers</code> - 提供 <code><a href=\"../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;<a href=\"../transport/WebClientStreamableHttpTransport.Builder.html\" title=\"class in org.springframework.ai.mcp.client.webflux.transport\">WebClientStreamableHttpTransport.Builder</a>&gt;</code> 类型的 Bean",
+      "count": 1
+    },
+    {
+      "source": "Applies <code><a href=\"../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;<a href=\"../transport/WebClientStreamableHttpTransport.Builder.html\" title=\"class in org.springframework.ai.mcp.client.webflux.transport\">WebClientStreamableHttpTransport.Builder</a>&gt;</code> beans\nto each transport builder.",
+      "translation": "将 `<code><a href=\"../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;<a href=\"../transport/WebClientStreamableHttpTransport.Builder.html\" title=\"class in org.springframework.ai.mcp.client.webflux.transport\">WebClientStreamableHttpTransport.Builder</a>&gt;</code>` 类型的 Bean 应用到每个传输构建器中。",
+      "count": 1
+    },
+    {
+      "source": "<code>streamableProperties</code> - the Streamable HTTP client properties containing server\nconfigurations",
+      "translation": "<code>streamableProperties</code> - 包含服务器配置的流式 HTTP 客户端属性。",
+      "count": 1
+    },
+    {
+      "source": "<code>webClientBuilderProvider</code> - the provider for WebClient.Builder",
+      "translation": "<code>webClientBuilderProvider</code> - WebClient.Builder 的提供者",
+      "count": 1
+    },
+    {
+      "source": "<code>jsonMapperProvider</code> - the provider for JsonMapper or a new instance if not\navailable",
+      "translation": "<code>jsonMapperProvider</code> - JsonMapper 的提供者，若不可用则提供新实例。",
+      "count": 1
+    },
+    {
+      "source": "Creates WebFlux-based Streamable HTTP transports for configured MCP server\nconnections",
+      "translation": "为配置的 MCP 服务器连接创建基于 WebFlux 的可流式 HTTP 传输。",
+      "count": 1
+    },
+    {
+      "source": "Configures WebClient.Builder for HTTP client operations",
+      "translation": "配置 WebClient.Builder 以执行 HTTP 客户端操作。",
+      "count": 1
+    },
+    {
+      "source": "Sets up JsonMapper for JSON serialization/deserialization",
+      "translation": "配置 JsonMapper 用于 JSON 的序列化与反序列化。",
+      "count": 1
+    },
+    {
+      "source": "Supports multiple named server connections with different base URLs",
+      "translation": "支持多个具有不同基础 URL 的命名服务器连接。",
+      "count": 1
+    },
+    {
+      "source": "A cloned WebClient.Builder with server-specific base URL",
+      "translation": "带有服务器特定基础 URL 的克隆 WebClient.Builder",
+      "count": 1
+    },
+    {
+      "source": "JsonMapper for JSON processing",
+      "translation": "用于 JSON 处理的 JsonMapper",
+      "count": 1
+    },
+    {
+      "source": "Server connection parameters from properties",
+      "translation": "从属性中获取服务器连接参数",
+      "count": 1
+    },
+    {
+      "source": "list of named MCP transports",
+      "translation": "MCP 传输的命名列表",
+      "count": 1
+    },
+    {
+      "source": "Auto-configuration for WebFlux-based Streamable HTTP client transport in the Model\nContext Protocol (MCP).",
+      "translation": "Model Context 协议（MCP）中基于 WebFlux 的可流式 HTTP 客户端传输的自动配置。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>为配置的 MCP 服务器连接创建基于 WebFlux 的可流式 HTTP 传输。</li><li>配置 WebClient.Builder 以执行 HTTP 客户端操作。</li><li>配置 JsonMapper 用于 JSON 的序列化与反序列化。</li><li>支持多个具有不同基础 URL 的命名服务器连接。</li><li>将 `<code><a href=\"../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;<a href=\"../transport/WebClientStreamableHttpTransport.Builder.html\" title=\"class in org.springframework.ai.mcp.client.webflux.transport\">WebClientStreamableHttpTransport.Builder</a>&gt;</code>` 类型的 Bean 应用到每个传输构建器中。</li></ul>",
+      "translation": "<ul>\n<li>为配置的 MCP 服务器连接创建基于 WebFlux 的可流式 HTTP 传输。</li><li>配置 WebClient.Builder 以执行 HTTP 客户端操作。</li><li>配置 JsonMapper 用于 JSON 的序列化与反序列化。</li><li>支持多个具有不同基础 URL 的命名服务器连接。</li><li>将类型为 `<code><a href=\"../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;<a href=\"../transport/WebClientStreamableHttpTransport.Builder.html\" title=\"class in org.springframework.ai.mcp.client.webflux.transport\">WebClientStreamableHttpTransport.Builder</a>&gt;</code>` 的 Bean 应用到每个传输构建器中。</li></ul>",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>带有服务器特定基础 URL 的克隆 WebClient.Builder</li><li>用于 JSON 处理的 JsonMapper</li><li>从属性中获取服务器连接参数</li></ul>",
+      "translation": "<ul>\n<li>带有服务器特定基础 URL 的 WebClient.Builder 克隆体</li><li>用于 JSON 处理的 JsonMapper</li><li>从属性中获取服务器连接参数</li></ul>",
+      "count": 1
+    }
+  ]
+}

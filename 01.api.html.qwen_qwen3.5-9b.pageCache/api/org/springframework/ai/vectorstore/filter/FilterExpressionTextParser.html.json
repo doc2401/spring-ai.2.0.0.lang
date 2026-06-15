@@ -1,0 +1,36 @@
+{
+  "created_at": "2026-06-15 07:42:46",
+  "updated_at": "2026-06-15 07:42:46",
+  "stats": {
+    "total_entries": 4,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 4,
+    "entries_with_hits": 4,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.00039999999999999996
+  },
+  "items": [
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Parse a textual, vector-store agnostic, filter expression language into\n<a href=\"Filter.Expression.html\" title=\"class in org.springframework.ai.vectorstore.filter\"><code>Filter.Expression</code></a>.\n\nThe vector-store agnostic, filter expression language is defined by a formal ANTLR4\ngrammar (Filters.g4). The language looks and feels like a subset of the well known SQL\nWHERE filter expressions. For example, you can use the parser like this:\n\n<pre><code>\nvar parser = new FilterExpressionTextParser();\n\nexp1 = parser.parse(\"country == 'BG'\"); // creates:\n |\n +-&gt;\tnew Expression(EQ, new Key(\"country\"), new Value(\"BG\"));\n\nexp2 = parser.parse(\"genre == 'drama' &amp;&amp; year &gt;= 2020\"); // creates:\n |\n +-&gt;\tnew Expression(AND,\n\t\t\tnew Expression(EQ, new Key(\"genre\"), new Value(\"drama\")),\n\t\t\tnew Expression(GTE, new Key(\"year\"), new Value(2020)));\n\nexp3 = parser.parse(\"genre in ['comedy', 'documentary', 'drama']\");\n |\n +-&gt;\tnew Expression(IN, new Key(\"genre\"), new Value(List.of(\"comedy\", \"documentary\", \"drama\")));\n\nexp4 = parser.parse(\"year &gt;= 2020 || country == 'BG' &amp;&amp; city != 'Sofia'\");\n |\n +-&gt;\tnew Expression(OR,\n\t\t\tnew Expression(GTE, new Key(\"year\"), new Value(2020)),\n\t\t\tnew Expression(AND,\n\t\t\t\t\tnew Expression(EQ, new Key(\"country\"), new Value(\"BG\")),\n\t\t\t\t\tnew Expression(NE, new Key(\"city\"), new Value(\"Sofia\"))));\n\nexp5 = parser.parse(\"(year &gt;= 2020 || country == \\\"BG\\\") &amp;&amp; city NOT IN ['Sofia', \\\"Plovdiv\\\"]\"); // creates:\n |\n +-&gt;\tnew Expression(AND,\n\t\t\tnew Group(new Expression(OR, new Expression(EQ, new Key(\"country\"), new Value(\"BG\")),\n\t\t\t\tnew Expression(GTE, new Key(\"year\"), new Value(2020)))),\n\t\t\tnew Expression(NIN, new Key(\"city\"), new Value(List.of(\"Sofia\", \"Varna\"))));\n\nexp6 = parser.parse(\"isOpen == true &amp;&amp; year &gt;= 2020 &amp;&amp; country IN ['BG', 'NL', 'US']\"); // creates:\n |\n +-&gt;\tnew Expression(AND,\n\t\t\tnew Expression(EQ, new Key(\"isOpen\"), new Value(true)),\n\t\t\tnew Expression(AND,\n\t\t\t\tnew Expression(GTE, new Key(\"year\"), new Value(2020)),\n\t\t\t\tnew Expression(IN, new Key(\"country\"), new Value(List.of(\"BG\", \"NL\", \"US\")))));\n\nexp7 = parser.parse(\"price &gt;= 15.6 &amp;&amp; price &lt;= 20.13\"); // creates:\n |\n +-&gt;\tnew Expression(AND,\n\t\t\tnew Expression(GTE, new Key(\"price\"), new Value(15.6)),\n\t\t\tnew Expression(LTE, new Key(\"price\"), new Value(20.13)));\n\n</code></pre>",
+      "translation": "将文本化、面向向量存储无关的过滤表达式语言解析为<a href=\"Filter.Expression.html\" title=\"class in org.springframework.ai.vectorstore.filter\"><code>Filter.Expression</code></a>。\n\n该面向向量存储无关的过滤表达式语言由正式的 ANTLR4 语法（Filters.g4）定义。其外观和感觉类似于众所周知的 SQL WHERE 过滤表达式的子集。例如，您可以像这样使用解析器：\n\n<pre><code>\nvar parser = new FilterExpressionTextParser();\n\nexp1 = parser.parse(\"country == 'BG'\"); // 创建：\n |\n +-&gt;\tnew Expression(EQ, new Key(\"country\"), new Value(\"BG\"));\n\nexp2 = parser.parse(\"genre == 'drama' &amp;&amp; year &gt;= 2020\"); // 创建：\n |\n +-&gt;\tnew Expression(AND,\n\t\t\tnew Expression(EQ, new Key(\"genre\"), new Value(\"drama\")),\n\t\t\tnew Expression(GTE, new Key(\"year\"), new Value(2020)));\n\nexp3 = parser.parse(\"genre in ['comedy', 'documentary', 'drama']\");\n |\n +-&gt;\tnew Expression(IN, new Key(\"genre\"), new Value(List.of(\"comedy\", \"documentary\", \"drama\")));\n\nexp4 = parser.parse(\"year &gt;= 2020 || country == 'BG' &amp;&amp; city != 'Sofia'\");\n |\n +-&gt;\tnew Expression(OR,\n\t\t\tnew Expression(GTE, new Key(\"year\"), new Value(2020)),\n\t\t\tnew Expression(AND,\n\t\t\t\t\tnew Expression(EQ, new Key(\"country\"), new Value(\"BG\")),\n\t\t\t\t\tnew Expression(NE, new Key(\"city\"), new Value(\"Sofia\"))));\n\nexp5 = parser.parse(\"(year &gt;= 2020 || country == \\\"BG\\\") &amp;&amp; city NOT IN ['Sofia', \\\"Plovdiv\\\"]\"); // 创建：\n |\n +-&gt;\tnew Expression(AND,\n\t\t\tnew Group(new Expression(OR, new Expression(EQ, new Key(\"country\"), new Value(\"BG\")),\n\t\t\t\tnew Expression(GTE, new Key(\"year\"), new Value(2020)))),\n\t\t\tnew Expression(NIN, new Key(\"city\"), new Value(List.of(\"Sofia\", \"Varna\"))));\n\nexp6 = parser.parse(\"isOpen == true &amp;&amp; year &gt;= 2020 &amp;&amp; country IN ['BG', 'NL', 'US']\"); // 创建：\n |\n +-&gt;\tnew Expression(AND,\n\t\t\tnew Expression(EQ, new Key(\"isOpen\"), new Value(true)),\n\t\t\tnew Expression(AND,\n\t\t\t\tnew Expression(GTE, new Key(\"year\"), new Value(2020)),\n\t\t\t\tnew Expression(IN, new Key(\"country\"), new Value(List.of(\"BG\", \"NL\", \"US\")))));\n\nexp7 = parser.parse(\"price &gt;= 15.6 &amp;&amp; price &lt;= 20.13\"); // 创建：\n |\n +-&gt;\tnew Expression(AND,\n\t\t\tnew Expression(GTE, new Key(\"price\"), new Value(15.6)),\n\t\t\tnew Expression(LTE, new Key(\"price\"), new Value(20.13)));\n\n</code></pre>",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Sun Yuhan",
+      "translation": "克里斯蒂安·茨洛夫，孙雨涵",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    }
+  ]
+}

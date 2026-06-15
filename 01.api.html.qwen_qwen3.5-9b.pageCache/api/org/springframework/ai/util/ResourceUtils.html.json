@@ -1,0 +1,56 @@
+{
+  "created_at": "2026-06-15 07:35:21",
+  "updated_at": "2026-06-15 07:35:21",
+  "stats": {
+    "total_entries": 8,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 8,
+    "entries_with_hits": 8,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.0007999999999999999
+  },
+  "items": [
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Miscellaneous Resource utility methods. Mainly for use within Spring AI",
+      "translation": "杂项资源工具方法。主要用于 Spring AI 内部。",
+      "count": 1
+    },
+    {
+      "source": "Retrieves the content of a resource as a UTF-8 encoded string.",
+      "translation": "以 UTF-8 编码的字符串形式获取资源的内容。",
+      "count": 1
+    },
+    {
+      "source": "Retrieves the content of a resource as a UTF-8 encoded string.\n\nThis method uses Spring's DefaultResourceLoader to load the resource from the given\nURI and then reads its content as a string using UTF-8 encoding. If an IOException\noccurs during reading, it is wrapped in a RuntimeException.",
+      "translation": "以 UTF-8 编码的字符串形式获取资源内容。\n\n此方法使用 Spring 的 DefaultResourceLoader 从给定的 URI 加载资源，然后使用 UTF-8 编码读取其内容。如果在读取过程中发生 IOException，则将其包装为 RuntimeException。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/RuntimeException.html\" title=\"class or interface in java.lang\">RuntimeException</a></code> - If an error occurs while reading the resource. This\nexception wraps the original IOException.",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/RuntimeException.html\" title=\"java.lang 中的类或接口\">RuntimeException</a></code> - 如果在读取资源时发生错误，将抛出此异常。该异常会包装原始的 IOException。",
+      "count": 1
+    },
+    {
+      "source": "<code>uri</code> - The URI of the resource to be read. This can be any URI supported by\nSpring's ResourceLoader, such as \"classpath:\", \"file:\", or \"http:\".",
+      "translation": "<code>uri</code> - 要读取的资源的 URI。这可以是 Spring 的 ResourceLoader 支持的任何 URI，例如\"classpath:\"、\"file:\"或\"http:\"。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "The content of the resource as a string.",
+      "translation": "资源内容作为字符串。",
+      "count": 1
+    }
+  ]
+}

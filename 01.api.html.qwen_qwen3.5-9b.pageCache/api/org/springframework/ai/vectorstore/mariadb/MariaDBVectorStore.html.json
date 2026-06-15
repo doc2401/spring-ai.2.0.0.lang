@@ -1,0 +1,321 @@
+{
+  "created_at": "2026-06-15 07:43:28",
+  "updated_at": "2026-06-15 07:43:28",
+  "stats": {
+    "total_entries": 61,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 67,
+    "entries_with_hits": 61,
+    "entries_without_hits": 0,
+    "hit_rate": 1.098360655737705,
+    "usage_percentage": 0.0060999999999999995
+  },
+  "items": [
+    {
+      "source": "Create a new <a href=\"../observation/VectorStoreObservationContext.Builder.html\" title=\"class in org.springframework.ai.vectorstore.observation\"><code>VectorStoreObservationContext.Builder</code></a> instance.",
+      "translation": "创建一个新的<a href=\"../observation/VectorStoreObservationContext.Builder.html\" title=\"class in org.springframework.ai.vectorstore.observation\"><code>VectorStoreObservationContext.Builder</code></a>实例。",
+      "count": 2
+    },
+    {
+      "source": "Protected constructor for creating a MariaDBVectorStore instance using the builder\npattern.",
+      "translation": "使用构建器模式创建 MariaDBVectorStore 实例的受保护构造函数。",
+      "count": 2
+    },
+    {
+      "source": "Perform the actual add operation.",
+      "translation": "执行实际的加法操作。",
+      "count": 2
+    },
+    {
+      "source": "Perform the actual delete operation.",
+      "translation": "执行实际的删除操作。",
+      "count": 2
+    },
+    {
+      "source": "Template method for concrete implementations to provide filter-based deletion\nlogic.",
+      "translation": "为基于过滤器的删除逻辑提供具体实现的模板方法。",
+      "count": 2
+    },
+    {
+      "source": "Perform the actual similarity search operation.",
+      "translation": "执行实际的相似度搜索操作。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "The store uses MariaDB's vector search functionality to persist and query vector\nembeddings along with their associated document content and metadata. The\nimplementation leverages MariaDB's vector index for efficient k-NN search operations.",
+      "translation": "该商店利用 MariaDB 的向量搜索功能来持久化并查询向量嵌入及其关联的文档内容和元数据。实现过程借助 MariaDB 的向量索引，以高效执行 k-NN 搜索操作。",
+      "count": 1
+    },
+    {
+      "source": "Basic usage example:",
+      "translation": "基本使用示例：",
+      "count": 1
+    },
+    {
+      "source": "Advanced configuration example:",
+      "translation": "高级配置示例：",
+      "count": 1
+    },
+    {
+      "source": "Distance Functions:",
+      "translation": "距离函数：",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../VectorStore.html#getNativeClient()\">VectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../VectorStore.html#getNativeClient()\">VectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Builder for creating instances of <a href=\"MariaDBVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.mariadb\"><code>MariaDBVectorStore</code></a>.",
+      "translation": "用于创建<a href=\"MariaDBVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.mariadb\"><code>MariaDBVectorStore</code></a>实例的构建器。",
+      "count": 1
+    },
+    {
+      "source": "The representation of <a href=\"../../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a> along with its embedding.",
+      "translation": "Document 类及其嵌入的表示。",
+      "count": 1
+    },
+    {
+      "source": "Returns the native client if available in this vector store implementation.\n\nNote on usage: 1. Returns empty Optional when no native client is available 2. Due\nto Java type erasure, runtime type checking is not possible\n\nExample usage: When working with implementation with known native client:\nOptional<nativeclienttype> client = vectorStore.getNativeClient();\n\nNote: Using Optional<span class=\"invalid-tag\">invalid input: '&lt;'</span>?&gt; will return the native client if one exists, rather than an\nempty Optional. For type safety, prefer using the specific client type.</nativeclienttype>",
+      "translation": "返回当前向量存储实现中可用的原生客户端。\n\n使用注意事项：1. 若无可用原生客户端，则返回空 Optional；2. 由于 Java 类型擦除，无法进行运行时类型检查。\n\n使用示例：在与已知原生客户端的实现协作时：Optional<nativeclienttype> client = vectorStore.getNativeClient();\n\n注意：使用 Optional<span class=\"invalid-tag\">无效输入：'&lt;'</span>?&gt; 将返回存在的原生客户端，而非空 Optional。为确保类型安全，建议使用特定的客户端类型。</nativeclienttype>",
+      "count": 1
+    },
+    {
+      "source": "Creates a new MariaDBBuilder instance.",
+      "translation": "创建一个新 MariaDBBuilder 实例。",
+      "count": 1
+    },
+    {
+      "source": "Returns the native client if available in this vector store implementation.",
+      "translation": "如果此向量存储实现中可用，则返回原生客户端。",
+      "count": 1
+    },
+    {
+      "source": "Creates a new MariaDBBuilder instance. This is the recommended way to instantiate a\nMariaDBVectorStore.",
+      "translation": "创建一个新的大数据构建器实例。这是实例化大数据向量存储的推荐方式。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">doAdd</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">doAdd</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">doDelete</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">doDelete</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">doDelete</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">doDelete</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">doSimilaritySearch</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">doSimilaritySearch</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">createObservationContextBuilder</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">createObservationContextBuilder</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../VectorStore.html#getNativeClient()\">getNativeClient</a></code> in interface <code><a href=\"../VectorStore.html\" title=\"interface in org.springframework.ai.vectorstore\">VectorStore</a></code>",
+      "translation": "接口 <code><a href=\"../VectorStore.html\" title=\"org.springframework.ai.vectorstore 中的接口\">VectorStore</a></code> 中的方法 <code><a href=\"../VectorStore.html#getNativeClient()\">getNativeClient</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code>builder</code> - the <a href=\"MariaDBVectorStore.MariaDBBuilder.html\" title=\"class in org.springframework.ai.vectorstore.mariadb\"><code>MariaDBVectorStore.MariaDBBuilder</code></a> containing all configuration settings",
+      "translation": "<code>builder</code> - 包含所有配置设置的 <a href=\"MariaDBVectorStore.MariaDBBuilder.html\" title=\"class in org.springframework.ai.vectorstore.mariadb\"><code>MariaDBVectorStore.MariaDBBuilder</code></a>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if required parameters are missing or invalid",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果缺少必需参数或参数无效",
+      "count": 1
+    },
+    {
+      "source": "<code>afterPropertiesSet</code> in interface <code>org.springframework.beans.factory.InitializingBean</code>",
+      "translation": "接口 <code>org.springframework.beans.factory.InitializingBean</code> 中的 <code>afterPropertiesSet</code>",
+      "count": 1
+    },
+    {
+      "source": "<span id=\"getNativeClient()-type-param-T\"><code>T</code> - The type of the native client</span>",
+      "translation": "<span id=\"getNativeClient()-type-param-T\"><code>T</code> - 原生客户端的类型</span>",
+      "count": 1
+    },
+    {
+      "source": "<code>documents</code> - the documents to add",
+      "translation": "<code>documents</code> - 要添加的文档",
+      "count": 1
+    },
+    {
+      "source": "<code>idList</code> - the list of document IDs to delete",
+      "translation": "<code>idList</code> - 要删除的文档 ID 列表",
+      "count": 1
+    },
+    {
+      "source": "<code>filterExpression</code> - Filter expression to identify documents to delete",
+      "translation": "<code>filterExpression</code> - 用于标识要删除的文档的过滤表达式",
+      "count": 1
+    },
+    {
+      "source": "<code>request</code> - the search request",
+      "translation": "<code>request</code> - 搜索请求",
+      "count": 1
+    },
+    {
+      "source": "<code>operationName</code> - the operation name",
+      "translation": "<code>operationName</code> - 操作名称",
+      "count": 1
+    },
+    {
+      "source": "Automatic schema initialization with configurable index creation",
+      "translation": "支持可配置索引创建的自动模式初始化",
+      "count": 1
+    },
+    {
+      "source": "Support for multiple distance functions: Cosine and Euclidean",
+      "translation": "支持多种距离函数：余弦和欧几里得",
+      "count": 1
+    },
+    {
+      "source": "Metadata filtering using JSON path expressions",
+      "translation": "使用 JSON 路径表达式进行元数据过滤",
+      "count": 1
+    },
+    {
+      "source": "Configurable similarity thresholds for search results",
+      "translation": "可配置的搜索结果相似度阈值",
+      "count": 1
+    },
+    {
+      "source": "Batch processing support with configurable strategies",
+      "translation": "支持可配置策略的批量处理",
+      "count": 1
+    },
+    {
+      "source": "Observation and metrics support through Micrometer",
+      "translation": "通过 Micrometer 进行观测与指标支持",
+      "count": 1
+    },
+    {
+      "source": "MariaDB 11.3.0 or later",
+      "translation": "MariaDB 11.3.0 或更高版本",
+      "count": 1
+    },
+    {
+      "source": "Table schema with id (UUID), text (TEXT), metadata (JSON), and embedding (VECTOR)\nproperties",
+      "translation": "包含 id（UUID）、text（TEXT）、metadata（JSON）和 embedding（VECTOR）的表架构属性",
+      "count": 1
+    },
+    {
+      "source": "cosine: Default, suitable for most use cases. Measures cosine similarity between\nvectors.",
+      "translation": "余弦：默认选项，适用于大多数用例。用于衡量向量之间的余弦相似度。",
+      "count": 1
+    },
+    {
+      "source": "euclidean: Euclidean distance between vectors. Lower values indicate higher\nsimilarity.",
+      "translation": "欧几里得：向量之间的欧几里得距离。数值越低表示相似度越高。",
+      "count": 1
+    },
+    {
+      "source": "Diego Dupin, Ilayaperumal Gopinathan, Soby Chacko, chabinhwang",
+      "translation": "迭戈·杜平，伊拉亚佩鲁马勒·戈皮纳坦，索比·查科，chabinhwang",
+      "count": 1
+    },
+    {
+      "source": "a new MariaDBBuilder instance",
+      "translation": "一个新的 MariaDBBuilder 实例",
+      "count": 1
+    },
+    {
+      "source": "the list of documents that match the query request conditions",
+      "translation": "与查询请求条件匹配的文件列表",
+      "count": 1
+    },
+    {
+      "source": "the observation context builder",
+      "translation": "观察上下文构建器",
+      "count": 1
+    },
+    {
+      "source": "Optional containing native client if available, empty Optional otherwise",
+      "translation": "如有可用的本机客户端，则包含该客户端的 Optional；否则为空 Optional。",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "MariaDB-based vector store implementation using MariaDB's vector search capabilities.",
+      "translation": "基于 MariaDB 的向量存储实现，利用 MariaDB 的向量搜索功能。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>支持可配置索引创建的自动模式初始化</li>\n<li>支持多种距离函数：余弦和欧几里得</li>\n<li>使用 JSON 路径表达式进行元数据过滤</li>\n<li>可配置的搜索结果相似度阈值</li>\n<li>支持可配置策略的批量处理</li>\n<li>通过 Micrometer 进行观测与指标支持</li>\n</ul>",
+      "translation": "<ul>\n<li>支持自动模式初始化，可配置索引创建</li>\n<li>支持多种距离函数：余弦相似度和欧几里得距离</li>\n<li>使用 JSON 路径表达式进行元数据过滤</li>\n<li>支持可配置的搜索结果相似度阈值</li>\n<li>支持基于可配置策略的批量处理</li>\n<li>通过 Micrometer 提供观测与指标支持</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>MariaDBVectorStore vectorStore = MariaDBVectorStore.builder(jdbcTemplate, embeddingModel)\n    .initializeSchema(true)\n    .build();\n\n// Add documents\nvectorStore.add(List.of(\n    new Document(\"content1\", Map.of(\"key1\", \"value1\")),\n    new Document(\"content2\", Map.of(\"key2\", \"value2\"))\n));\n\n// Search with filters\nList&lt;Document&gt; results = vectorStore.similaritySearch(\n    SearchRequest.query(\"search text\")\n        .withTopK(5)\n        .withSimilarityThreshold(0.7)\n        .withFilterExpression(\"key1 == 'value1'\")\n);\n</code></pre>",
+      "translation": "<pre><code>MariaDBVectorStore vectorStore = MariaDBVectorStore.builder(jdbcTemplate, embeddingModel)\n    .initializeSchema(true)\n    .build();\n\n// 添加文档\nvectorStore.add(List.of(\n    new Document(\"content1\", Map.of(\"key1\", \"value1\")),\n    new Document(\"content2\", Map.of(\"key2\", \"value2\"))\n));\n\n// 使用过滤器进行搜索\nList&lt;Document&gt; results = vectorStore.similaritySearch(\n    SearchRequest.query(\"搜索文本\")\n        .withTopK(5)\n        .withSimilarityThreshold(0.7)\n        .withFilterExpression(\"key1 == 'value1'\")\n);\n</code></pre>",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>MariaDBVectorStore vectorStore = MariaDBVectorStore.builder(jdbcTemplate, embeddingModel)\n    .schemaName(\"mydb\")\n    .distanceType(MariaDBDistanceType.COSINE)\n    .dimensions(1536)\n    .vectorTableName(\"custom_vectors\")\n    .contentFieldName(\"text\")\n    .embeddingFieldName(\"embedding\")\n    .idFieldName(\"doc_id\")\n    .metadataFieldName(\"meta\")\n    .initializeSchema(true)\n    .batchingStrategy(new TokenCountBatchingStrategy())\n    .build();\n</code></pre>",
+      "translation": "<pre><code>MariaDBVectorStore vectorStore = MariaDBVectorStore.builder(jdbcTemplate, embeddingModel)\n    .schemaName(\"mydb\")\n    .distanceType(MariaDBDistanceType.COSINE)\n    .dimensions(1536)\n    .vectorTableName(\"custom_vectors\")\n    .contentFieldName(\"text\")\n    .embeddingFieldName(\"embedding\")\n    .idFieldName(\"doc_id\")\n    .metadataFieldName(\"meta\")\n    .initializeSchema(true)\n    .batchingStrategy(new TokenCountBatchingStrategy())\n    .build();\n</code></pre>",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>MariaDB 11.3.0 或更高版本</li>\n<li>包含 id（UUID）、text（TEXT）、metadata（JSON）和 embedding（VECTOR）的表架构属性</li>\n</ul>",
+      "translation": "<ul>\n<li>MariaDB 11.3.0 或更高版本</li>\n<li>包含 id（UUID）、text（TEXT）、metadata（JSON）和 embedding（VECTOR）的表架构属性</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>余弦：默认选项，适用于大多数用例。用于衡量向量之间的余弦相似度。</li>\n<li>欧几里得：向量之间的欧几里得距离。数值越低表示相似度越高。</li>\n</ul>",
+      "translation": "<ul>\n<li>余弦：默认选项，适用于大多数用例。用于衡量向量之间的余弦相似度。</li>\n<li>欧几里得：向量之间的欧几里得距离。数值越低表示相似度越高。</li>\n</ul>",
+      "count": 1
+    }
+  ]
+}

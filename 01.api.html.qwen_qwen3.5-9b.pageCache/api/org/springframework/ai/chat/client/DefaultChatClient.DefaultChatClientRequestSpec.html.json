@@ -1,0 +1,211 @@
+{
+  "created_at": "2026-06-15 08:48:50",
+  "updated_at": "2026-06-15 08:48:50",
+  "stats": {
+    "total_entries": 39,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 40,
+    "entries_with_hits": 39,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0256410256410255,
+    "usage_percentage": 0.0039
+  },
+  "items": [
+    {
+      "source": "Return a <a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient.Builder</code></a> to create a new <a href=\"ChatClient.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient</code></a> whose\nsettings are replicated from this <a href=\"ChatClientRequest.html\" title=\"class in org.springframework.ai.chat.client\"><code>ChatClientRequest</code></a>.",
+      "translation": "返回一个<a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient.Builder</code></a>以创建一个新的<a href=\"ChatClient.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient</code></a>，其设置将从此<a href=\"ChatClientRequest.html\" title=\"class in org.springframework.ai.chat.client\"><code>ChatClientRequest</code></a>复制。",
+      "count": 2
+    },
+    {
+      "source": "Tools registered here are available only for this specific request. Use\n<a href=\"ChatClient.Builder.html#defaultTools(java.lang.Object...)\"><code>ChatClient.Builder.defaultTools(Object...)</code></a> to register tools that apply to every\nrequest built from the same <a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient.Builder</code></a>.",
+      "translation": "在此处注册的仅适用于此特定请求。若要注册适用于由同一<a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient.Builder</code></a>构建的所有请求的工具，请使用<a href=\"ChatClient.Builder.html#defaultTools(java.lang.Object...)\"><code>ChatClient.Builder.defaultTools(Object...)</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Mixed calls are fully supported:",
+      "translation": "混合呼叫已完全支持：",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"ChatClient.ChatClientRequestSpec.html#tools(java.lang.Object...)\">ChatClient.ChatClientRequestSpec</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"ChatClient.ChatClientRequestSpec.html#tools(java.lang.Object...)\">ChatClient.ChatClientRequestSpec</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Register one or more tools for this chat request.",
+      "translation": "为此聊天请求注册一个或多个工具。",
+      "count": 1
+    },
+    {
+      "source": "Any other object — treated as a <code>@Tool</code>-annotated POJO; a\n<a href=\"../../tool/ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a> is generated for each\n<a href=\"../../tool/annotation/Tool.html\" title=\"annotation interface in org.springframework.ai.tool.annotation\"><code>Tool</code></a>-annotated method it\ncontains.",
+      "translation": "任何其他对象——被视为带有 <code>@Tool</code> 注解的 POJO；对于其包含的每个带有 <a href=\"../../tool/annotation/Tool.html\" title=\"annotation interface in org.springframework.ai.tool.annotation\"><code>Tool</code></a> 注解的方法，都会生成一个 <a href=\"../../tool/ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#mutate()\">mutate</a></code> in interface <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code>",
+      "translation": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#mutate()\">mutate</a></code> 接口 <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#advisors(java.util.function.Consumer)\">advisors</a></code> in interface <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code>",
+      "translation": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#advisors(java.util.function.Consumer)\">advisors</a></code> 接口 <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#advisors(org.springframework.ai.chat.client.advisor.api.Advisor...)\">advisors</a></code> in interface <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code>",
+      "translation": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#advisors(org.springframework.ai.chat.client.advisor.api.Advisor...)\">advisors</a></code> 接口 <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#advisors(java.util.List)\">advisors</a></code> in interface <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code>",
+      "translation": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#advisors(java.util.List)\">advisors</a></code> 在接口 <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#messages(org.springframework.ai.chat.messages.Message...)\">messages</a></code> in interface <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code>",
+      "translation": "<a href=\"ChatClient.ChatClientRequestSpec.html#messages(org.springframework.ai.chat.messages.Message...)\">messages</a> 接口 <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#messages(java.util.List)\">messages</a></code> in interface <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code>",
+      "translation": "<a href=\"ChatClient.ChatClientRequestSpec.html#messages(java.util.List)\">messages</a> 在接口 <a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#options(B)\">options</a></code> in interface <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code>",
+      "translation": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#options(B)\">options</a></code> 接口 <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#toolCallbacks(org.springframework.ai.tool.ToolCallback...)\">toolCallbacks</a></code> in interface <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code>",
+      "translation": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#toolCallbacks(org.springframework.ai.tool.ToolCallback...)\">toolCallbacks</a></code> 接口 <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#toolCallbacks(java.util.List)\">toolCallbacks</a></code> in interface <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code>",
+      "translation": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#toolCallbacks(java.util.List)\">toolCallbacks</a></code> 接口 <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#tools(java.lang.Object...)\">tools</a></code> in interface <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code>",
+      "translation": "<a href=\"ChatClient.ChatClientRequestSpec.html#tools(java.lang.Object...)\">tools</a> 在接口 <a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#toolCallbacks(org.springframework.ai.tool.ToolCallbackProvider...)\">toolCallbacks</a></code> in interface <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code>",
+      "translation": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#toolCallbacks(org.springframework.ai.tool.ToolCallbackProvider...)\">toolCallbacks</a></code> 接口 <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#toolContext(java.util.Map)\">toolContext</a></code> in interface <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code>",
+      "translation": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#toolContext(java.util.Map)\">toolContext</a></code> 在接口 <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#system(java.lang.String)\">system</a></code> in interface <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code>",
+      "translation": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#system(java.lang.String)\">system</a></code> 在接口 <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#system(org.springframework.core.io.Resource,java.nio.charset.Charset)\">system</a></code> in interface <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code>",
+      "translation": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#system(org.springframework.core.io.Resource,java.nio.charset.Charset)\">system</a></code> 接口 <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#system(org.springframework.core.io.Resource)\">system</a></code> in interface <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code>",
+      "translation": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#system(org.springframework.core.io.Resource)\">system</a></code> 在接口 <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#system(java.util.function.Consumer)\">system</a></code> in interface <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code>",
+      "translation": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#system(java.util.function.Consumer)\">system</a></code> 在接口 <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#user(java.lang.String)\">user</a></code> in interface <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code>",
+      "translation": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#user(java.lang.String)\">user</a></code> 在接口 <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#user(org.springframework.core.io.Resource,java.nio.charset.Charset)\">user</a></code> in interface <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code>",
+      "translation": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#user(org.springframework.core.io.Resource,java.nio.charset.Charset)\">user</a></code> 接口 <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#user(org.springframework.core.io.Resource)\">user</a></code> in interface <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code>",
+      "translation": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#user(org.springframework.core.io.Resource)\">user</a></code> 接口 <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#user(java.util.function.Consumer)\">user</a></code> in interface <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code>",
+      "translation": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#user(java.util.function.Consumer)\">user</a></code> 接口 <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#templateRenderer(org.springframework.ai.template.TemplateRenderer)\">templateRenderer</a></code> in interface <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code>",
+      "translation": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#templateRenderer(org.springframework.ai.template.TemplateRenderer)\">templateRenderer</a></code> 接口 <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#call()\">call</a></code> in interface <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code>",
+      "translation": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#call()\">call()</a></code> 接口 <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#stream()\">stream</a></code> in interface <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code>",
+      "translation": "<code><a href=\"ChatClient.ChatClientRequestSpec.html#stream()\">stream()</a></code> 接口 <code><a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.ChatClientRequestSpec</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>toolObjects</code> - tool objects to register; must not be <code>null</code> and must not\ncontain <code>null</code> elements",
+      "translation": "<code>toolObjects</code> - 要注册的工具对象；不能为 <code>null</code>，且不能包含 <code>null</code> 元素",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"../../tool/ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a> — registered directly as a\ncallback.",
+      "translation": "<a href=\"../../tool/ToolCallback.html\" title=\"org.springframework.ai.tool 中的接口\"><code>ToolCallback</code></a>——直接注册为回调。",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"../../tool/ToolCallbackProvider.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallbackProvider</code></a> — registered\ndirectly as a provider; its callbacks are resolved lazily at request time.",
+      "translation": "<a href=\"../../tool/ToolCallbackProvider.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallbackProvider</code></a> — 直接注册为提供者；其回调在请求时懒式解析。",
+      "count": 1
+    },
+    {
+      "source": "<code>ToolCallback[]</code> or <code>ToolCallbackProvider[]</code> — every element of\nthe array is registered as above.",
+      "translation": "<code>ToolCallback[]</code> 或 <code>ToolCallbackProvider[]</code>——数组中的每个元素均按上述方式注册。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html\" title=\"class or interface in java.util\"><code>Collection</code></a> — iterated and each element is dispatched by\nthe same rules.",
+      "translation": "<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html\" title=\"java.util 中的类或接口\"><code>Collection</code></a>——对其进行迭代，且每个元素均按相同规则进行分发。",
+      "count": 1
+    },
+    {
+      "source": "Mark Pollack, Christian Tzolov, Josh Long, Arjen Poutsma, Soby Chacko, Dariusz Jedrzejczyk, Thomas Vitale, Jonatan Ivanov, Wenli Tian, Sebastien Deleuze",
+      "translation": "Mark Pollack，Christian Tzolov，Josh Long，Arjen Poutsma，Soby Chacko，Dariusz Jedrzejczyk，Thomas Vitale，Jonatan Ivanov，Wenli Tian，Sebastien Deleuze",
+      "count": 1
+    },
+    {
+      "source": "this spec for chaining",
+      "translation": "此链式调用规范",
+      "count": 1
+    },
+    {
+      "source": "Register one or more tools for this chat request. The method accepts a\nheterogeneous mix of tool representations and routes each element to the\nappropriate internal list automatically:\n\n<ul>\n<li><a href=\"../../tool/ToolCallback.html\" title=\"org.springframework.ai.tool 中的接口\"><code>ToolCallback</code></a>——直接注册为回调。</li>\n<li><a href=\"../../tool/ToolCallbackProvider.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallbackProvider</code></a> — 直接注册为提供者；其回调在请求时懒式解析。</li>\n<li><code>ToolCallback[]</code> 或 <code>ToolCallbackProvider[]</code>——数组中的每个元素均按上述方式注册。</li>\n<li><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html\" title=\"java.util 中的类或接口\"><code>Collection</code></a>——对其进行迭代，且每个元素均按相同规则进行分发。</li>\n<li>任何其他对象——被视为带有 <code>@Tool</code> 注解的 POJO；对于其包含的每个带有 <a href=\"../../tool/annotation/Tool.html\" title=\"annotation interface in org.springframework.ai.tool.annotation\"><code>Tool</code></a> 注解的方法，都会生成一个 <a href=\"../../tool/ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a>。</li>\n</ul>",
+      "translation": "为此聊天请求注册一个或多个工具。该方法接受混合的工具表示形式，并自动将每个元素路由到相应的内部列表：\n\n<ul>\n<li><a href=\"../../tool/ToolCallback.html\" title=\"org.springframework.ai.tool 中的接口\"><code>ToolCallback</code></a>——直接注册为回调。</li>\n<li><a href=\"../../tool/ToolCallbackProvider.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallbackProvider</code></a> — 直接注册为提供者；其回调在请求时懒式解析。</li>\n<li><code>ToolCallback[]</code> 或 <code>ToolCallbackProvider[]</code>——数组中的每个元素均按上述方式注册。</li>\n<li><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html\" title=\"java.util 中的类或接口\"><code>Collection</code></a>——对其进行迭代，且每个元素均按相同规则进行分发。</li>\n<li>任何其他对象——被视为带有 <code>@Tool</code> 注解的 POJO；对于其包含的每个带有 <a href=\"../../tool/annotation/Tool.html\" title=\"annotation interface in org.springframework.ai.tool.annotation\"><code>Tool</code></a> 注解的方法，都会生成一个 <a href=\"../../tool/ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a>。</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>chatClient.prompt()\n    .tools(new DateTimeTools(), existingCallback, myProvider)\n    .toolContext(Map.of(\"tenantId\", \"acme\"))\n    .call().content();\n</code></pre>",
+      "translation": "<pre><code>chatClient.prompt()\n    .tools(new DateTimeTools(), existingCallback, myProvider)\n    .toolContext(Map.of(\"tenantId\", \"acme\"))\n    .call().content();\n</code></pre>",
+      "count": 1
+    }
+  ]
+}

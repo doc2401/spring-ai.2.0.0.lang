@@ -1,0 +1,111 @@
+{
+  "created_at": "2026-06-15 07:45:38",
+  "updated_at": "2026-06-15 07:45:38",
+  "stats": {
+    "total_entries": 19,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 21,
+    "entries_with_hits": 19,
+    "entries_without_hits": 0,
+    "hit_rate": 1.105263157894737,
+    "usage_percentage": 0.0019000000000000002
+  },
+  "items": [
+    {
+      "source": "Performs exact nearest neighbor search, which provides perfect recall.",
+      "translation": "执行精确最近邻搜索，提供完美的召回率。",
+      "count": 2
+    },
+    {
+      "source": "Returns an array containing the constants of this enum class, in\nthe order they are declared.",
+      "translation": "返回一个包含此枚举类常量的数组，这些常量按照声明顺序排列。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Returns the enum constant of this class with the specified name.\nThe string must match <i>exactly</i> an identifier used to declare an\nenum constant in this class.  (Extraneous whitespace characters are \nnot permitted.)",
+      "translation": "返回此类的具有指定名称的枚举常量。该字符串必须与用于在此类中声明枚举常量的标识符完全匹配。（不允许存在多余的空白字符。）",
+      "count": 1
+    },
+    {
+      "source": "By default, pgvector performs exact nearest neighbor search, which provides perfect\nrecall. You can add an index to use approximate nearest neighbor search, which\ntrades some recall for speed. Unlike typical indexes, you will see different\nresults for queries after adding an approximate index.",
+      "translation": "默认情况下，pgvector 执行精确最近邻搜索，可提供完美的召回率。您可以添加索引以使用近似最近邻搜索，这将牺牲部分召回率以换取速度。与典型索引不同，在添加近似索引后，查询结果可能会有所不同。",
+      "count": 1
+    },
+    {
+      "source": "An HNSW index creates a multilayer graph.",
+      "translation": "HNSW 索引会构建一个多层图。",
+      "count": 1
+    },
+    {
+      "source": "An IVFFlat index divides vectors into lists, and then searches a subset of\nthose lists that are closest to the query vector.",
+      "translation": "IVFFlat 索引将向量划分为多个列表，然后搜索与查询向量最接近的那些列表的子集。",
+      "count": 1
+    },
+    {
+      "source": "Returns the enum constant of this class with the specified name.",
+      "translation": "返回此类的具有指定名称的枚举常量。",
+      "count": 1
+    },
+    {
+      "source": "An IVFFlat index divides vectors into lists, and then searches a subset of\nthose lists that are closest to the query vector. It has faster build times and\nuses less memory than HNSW, but has lower query performance (in terms of\nspeed-recall tradeoff).",
+      "translation": "IVFFlat 索引将向量划分为多个列表，然后搜索与查询向量最接近的那些列表的子集。与 HNSW 相比，它具有更快的构建速度和更低的内存占用，但在速度 - 召回率权衡方面查询性能较低。",
+      "count": 1
+    },
+    {
+      "source": "An HNSW index creates a multilayer graph. It has slower build times and uses\nmore memory than IVFFlat, but has better query performance (in terms of\nspeed-recall tradeoff). There’s no training step like IVFFlat, so the index can\nbe created without any data in the table.",
+      "translation": "HNSW 索引会构建一个多层图。与 IVFFlat 相比，它的构建速度较慢且占用更多内存，但在查询性能方面（就速度与召回率的权衡而言）表现更佳。由于不像 IVFFlat 那样需要训练步骤，因此可以在表中没有任何数据的情况下创建该索引。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if this enum class has no constant with the specified name",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果此枚举类没有指定名称的常量，则抛出此异常。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/NullPointerException.html\" title=\"class or interface in java.lang\">NullPointerException</a></code> - if the argument is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/NullPointerException.html\" title=\"java.lang 中的类或接口\">NullPointerException</a></code> - 如果参数为 null",
+      "count": 1
+    },
+    {
+      "source": "<code>name</code> - the name of the enum constant to be returned.",
+      "translation": "<code>name</code> - 要返回的枚举常量的名称。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Josh Long, Muthukumaran Navaneethakrishnan, Thomas Vitale, Soby Chacko, Sebastien Deleuze, Jihoon Kim, YeongMin Song, Jonghoon Park, Yanming Zhou",
+      "translation": "Christian Tzolov，Josh Long，Muthukumaran Navaneethakrishnan，Thomas Vitale，Soby Chacko，Sebastien Deleuze，Jihoon Kim，YeongMin Song，Jonghoon Park，Yanming Zhou",
+      "count": 1
+    },
+    {
+      "source": "an array containing the constants of this enum class, in the order they are declared",
+      "translation": "包含此枚举类常量的数组，按声明顺序排列。",
+      "count": 1
+    },
+    {
+      "source": "the enum constant with the specified name",
+      "translation": "具有指定名称的枚举常量",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Enum Constant Summary",
+      "translation": "枚举常量摘要",
+      "count": 1
+    },
+    {
+      "source": "Enum Constant Details",
+      "translation": "枚举常量详情",
+      "count": 1
+    }
+  ]
+}

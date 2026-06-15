@@ -1,0 +1,101 @@
+{
+  "created_at": "2026-06-15 08:51:38",
+  "updated_at": "2026-06-15 08:51:38",
+  "stats": {
+    "total_entries": 17,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 21,
+    "entries_with_hits": 17,
+    "entries_without_hits": 0,
+    "hit_rate": 1.2352941176470589,
+    "usage_percentage": 0.0017
+  },
+  "items": [
+    {
+      "source": "Returns the number of tokens returned in the generation (aka completion)\nof the AI's response.",
+      "translation": "返回 AI 响应（即生成/补全）中生成的 token 数量。",
+      "count": 2
+    },
+    {
+      "source": "Return the usage data from the underlying model API response.",
+      "translation": "返回底层模型 API 响应中的使用数据。",
+      "count": 2
+    },
+    {
+      "source": "Returns the number of tokens used in the prompt of the AI request.",
+      "translation": "返回 AI 请求提示中使用的 token 数量。",
+      "count": 2
+    },
+    {
+      "source": "Return the total number of tokens from both the prompt of an AI request\nand generation of the AI's response.",
+      "translation": "请返回 AI 请求提示词与 AI 生成回复的总 token 数。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Abstract Data Type (ADT) encapsulating metadata on the usage of an AI provider's API\nper AI request.",
+      "translation": "封装了针对每个 AI 请求所用 AI 提供商 API 使用元数据的抽象数据类型（ADT）。",
+      "count": 1
+    },
+    {
+      "source": "Returns the number of input tokens read from the prompt cache, if the provider\nsupports prompt caching.",
+      "translation": "如果提供者支持提示词缓存，则返回从提示词缓存中读取的输入 token 数量。",
+      "count": 1
+    },
+    {
+      "source": "Returns the number of input tokens written to the prompt cache, if the provider\nsupports prompt caching.",
+      "translation": "如果提供者支持提示词缓存，则返回写入提示词缓存的输入 token 数量。",
+      "count": 1
+    },
+    {
+      "source": "Returns the number of input tokens read from the prompt cache, if the provider\nsupports prompt caching. Cached tokens are tokens that were previously processed\nand stored by the provider, reducing cost and latency for repeated prompt prefixes.",
+      "translation": "返回从提示缓存中读取的输入 token 数量（如果提供者支持提示缓存）。缓存的 token 是先前由提供者处理并存储的 token，可减少重复提示前缀的成本和延迟。",
+      "count": 1
+    },
+    {
+      "source": "Returns the number of input tokens written to the prompt cache, if the provider\nsupports prompt caching. Cache writes occur when new prompt content is cached for\nthe first time.",
+      "translation": "返回写入提示缓存的输入 token 数量（如果提供者支持提示缓存）。缓存写入发生在首次缓存新提示内容时。",
+      "count": 1
+    },
+    {
+      "source": "an <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html\" title=\"class or interface in java.lang\"><code>Integer</code></a> with the number of tokens used in the prompt\nof the AI request.",
+      "translation": "一个包含 AI 请求中使用的 token 数量的<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html\" title=\"class or interface in java.lang\"><code>Integer</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "an <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html\" title=\"class or interface in java.lang\"><code>Integer</code></a> with the number of tokens returned in the\ngeneration (aka completion) of the AI's response.",
+      "translation": "一个 <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html\" title=\"class or interface in java.lang\"><code>Integer</code></a>，表示 AI 响应（即生成或完成）中返回的 token 数量。",
+      "count": 1
+    },
+    {
+      "source": "the number of cached input tokens read, or <code>null</code> if the provider\ndoes not support prompt caching or no cache hit occurred.",
+      "translation": "已读取的缓存输入 token 数量，如果提供者不支持提示词缓存或未发生缓存命中，则为 <code>null</code>。",
+      "count": 1
+    },
+    {
+      "source": "the number of input tokens written to cache, or <code>null</code> if the\nprovider does not support prompt caching or no cache write occurred.",
+      "translation": "写入缓存的输入 token 数量，或者如果提供者不支持提示词缓存或未发生缓存写入，则为 <code>null</code>。",
+      "count": 1
+    },
+    {
+      "source": "John Blum, Ilayaperumal Gopinathan",
+      "translation": "约翰·布鲁姆，伊拉亚佩鲁马勒·戈皮纳坦",
+      "count": 1
+    },
+    {
+      "source": "the total number of tokens from both the prompt of an AI request\nand generation of the AI's response.",
+      "translation": "AI 请求的提示词与 AI 响应生成所产生的 token 总数。",
+      "count": 1
+    },
+    {
+      "source": "the object of type inferred by the API response.",
+      "translation": "API 响应推断出的对象类型。",
+      "count": 1
+    }
+  ]
+}

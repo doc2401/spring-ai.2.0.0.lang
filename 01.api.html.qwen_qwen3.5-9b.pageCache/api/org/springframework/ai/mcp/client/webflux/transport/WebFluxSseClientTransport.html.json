@@ -1,0 +1,326 @@
+{
+  "created_at": "2026-06-15 08:24:52",
+  "updated_at": "2026-06-15 08:24:52",
+  "stats": {
+    "total_entries": 62,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 89,
+    "entries_with_hits": 62,
+    "entries_without_hits": 0,
+    "hit_rate": 1.435483870967742,
+    "usage_percentage": 0.006200000000000001
+  },
+  "items": [
+    {
+      "source": "<span class=\"deprecated-label\">Deprecated, for removal: This API element is subject to removal in a future version.</span>",
+      "translation": "<code class=\"deprecated-label\">已弃用，即将移除：此 API 元素将在未来版本中被移除。</code>",
+      "count": 13
+    },
+    {
+      "source": "<code>webClientBuilder</code> - the WebClient.Builder to use for creating the WebClient\ninstance",
+      "translation": "<code>webClientBuilder</code> - 用于创建 WebClient 实例的 WebClient.Builder",
+      "count": 4
+    },
+    {
+      "source": "Constructs a new SseClientTransport with the specified WebClient builder and\nObjectMapper.",
+      "translation": "使用指定的 WebClient 构建器和 ObjectMapper 创建一个新的 SseClientTransport。",
+      "count": 3
+    },
+    {
+      "source": "Constructs a new SseClientTransport with the specified WebClient builder and\nObjectMapper. Initializes both inbound and outbound message processing pipelines.",
+      "translation": "使用指定的 WebClient 构建器和 ObjectMapper 创建新的 SseClientTransport，并初始化入站和出站消息处理管道。",
+      "count": 3
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if either parameter is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果任一参数为 null",
+      "count": 3
+    },
+    {
+      "source": "<code>jsonMapper</code> - the ObjectMapper to use for JSON processing",
+      "translation": "<code>jsonMapper</code> - 用于 JSON 处理的 ObjectMapper",
+      "count": 3
+    },
+    {
+      "source": "Creates a new builder for <a href=\"WebFluxSseClientTransport.html\" title=\"class in org.springframework.ai.mcp.client.webflux.transport\"><code>WebFluxSseClientTransport</code></a>.",
+      "translation": "为<a href=\"WebFluxSseClientTransport.html\" title=\"class in org.springframework.ai.mcp.client.webflux.transport\"><code>WebFluxSseClientTransport</code></a>创建一个新的构建器。",
+      "count": 2
+    },
+    {
+      "source": "Sends a JSON-RPC message to the server using the endpoint provided during\nconnection.",
+      "translation": "使用连接时提供的端点向服务器发送 JSON-RPC 消息。",
+      "count": 2
+    },
+    {
+      "source": "Unmarshalls data from a generic Object into the specified type using the configured\nObjectMapper.",
+      "translation": "使用配置的 ObjectMapper 将通用 Object 中的数据反序列化为指定类型。",
+      "count": 2
+    },
+    {
+      "source": "<code>sseEndpoint</code> - the SSE endpoint URI to use for establishing the connection",
+      "translation": "<sseEndpoint> - 用于建立连接的 SSE 端点 URI",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This transport establishes a bidirectional communication channel where:",
+      "translation": "该传输建立了一个双向通信通道，其中：",
+      "count": 1
+    },
+    {
+      "source": "The message flow follows these steps:",
+      "translation": "消息流程遵循以下步骤：",
+      "count": 1
+    },
+    {
+      "source": "The connection process follows these steps:",
+      "translation": "连接过程遵循以下步骤：",
+      "count": 1
+    },
+    {
+      "source": "The connection is considered established only after receiving the endpoint event\nfrom the server.",
+      "translation": "只有在收到来自服务器的端点事件后，才认为连接已建立。",
+      "count": 1
+    },
+    {
+      "source": "Messages are sent via HTTP POST requests to the server-provided endpoint URI. The\nmessage is serialized to JSON before transmission. If the transport is in the\nprocess of closing, the message send operation is skipped gracefully.",
+      "translation": "消息通过 HTTP POST 请求发送至服务器提供的端点 URI。在传输之前，消息会被序列化为 JSON 格式。如果传输过程正在关闭，则优雅地跳过消息发送操作。",
+      "count": 1
+    },
+    {
+      "source": "This method is particularly useful when working with JSON-RPC parameters or result\nobjects that need to be converted to specific Java types. It leverages Jackson's\ntype conversion capabilities to handle complex object structures.",
+      "translation": "此方法在处理需要将 JSON-RPC 参数或结果对象转换为特定 Java 类型的场景时尤为有用。它利用 Jackson 的类型转换功能来处理复杂的对象结构。",
+      "count": 1
+    },
+    {
+      "source": "Builder for <a href=\"WebFluxSseClientTransport.html\" title=\"class in org.springframework.ai.mcp.client.webflux.transport\"><code>WebFluxSseClientTransport</code></a>.",
+      "translation": "用于构建<a href=\"WebFluxSseClientTransport.html\" title=\"class in org.springframework.ai.mcp.client.webflux.transport\"><code>WebFluxSseClientTransport</code></a>的类。",
+      "count": 1
+    },
+    {
+      "source": "The SSE transport has been deprecated in the 2025-03-26 version of the\nspec, and should not be used anymore. We keep it for backwards compatibility.",
+      "translation": "SSE 传输已在 2025-03-26 版本的规范中被弃用，不应再使用。我们保留它仅用于向后兼容。",
+      "count": 1
+    },
+    {
+      "source": "JSON mapper for serializing outbound messages and deserializing inbound messages.",
+      "translation": "用于序列化出站消息和反序列化入站消息的 JSON 映射器。",
+      "count": 1
+    },
+    {
+      "source": "Sink for managing the message endpoint URI provided by the server.",
+      "translation": "用于管理服务器提供的消息端点 URI 的 Sink。",
+      "count": 1
+    },
+    {
+      "source": "Implements graceful shutdown of the transport.",
+      "translation": "优雅地关闭传输。",
+      "count": 1
+    },
+    {
+      "source": "Establishes a connection to the MCP server using Server-Sent Events (SSE).",
+      "translation": "使用服务器发送事件（SSE）建立与MCP服务器的连接。",
+      "count": 1
+    },
+    {
+      "source": "Initializes and starts the inbound SSE event processing.",
+      "translation": "初始化并启动入站 SSE 事件处理。",
+      "count": 1
+    },
+    {
+      "source": "JSON mapper for serializing outbound messages and deserializing inbound messages.\nHandles conversion between JSON-RPC messages and their string representation.",
+      "translation": "用于序列化出站消息和反序列化入站消息的 JSON 映射器。  \n负责在 JSON-RPC 消息与其字符串表示形式之间进行转换。",
+      "count": 1
+    },
+    {
+      "source": "Sink for managing the message endpoint URI provided by the server. Stores the most\nrecent endpoint URI and makes it available for outbound message processing.",
+      "translation": "用于管理服务器提供的消息端点 URI 的 Sink。存储最新的端点 URI，并将其提供给出站消息处理使用。",
+      "count": 1
+    },
+    {
+      "source": "Initializes and starts the inbound SSE event processing. Establishes the SSE\nconnection and sets up event handling for both message and endpoint events.\nIncludes automatic retry logic for handling transient connection failures.",
+      "translation": "初始化并启动入站 SSE 事件处理。建立 SSE 连接，并为消息和端点事件设置事件处理机制。包含用于处理瞬态连接失败的自动重试逻辑。",
+      "count": 1
+    },
+    {
+      "source": "Implements graceful shutdown of the transport. Cleans up all resources including\nsubscriptions and schedulers. Ensures orderly shutdown of both inbound and outbound\nmessage processing.",
+      "translation": "优雅地关闭传输。清理所有资源，包括订阅和调度器。确保入站和出站消息处理的有序关闭。",
+      "count": 1
+    },
+    {
+      "source": "<ul class=\"tag-list-long\">\n<li><a href=\"https://spec.modelcontextprotocol.io/specification/basic/transports/#http-with-sse\">MCP\nHTTP with SSE Transport Specification</a></li>\n<li><a href=\"https://modelcontextprotocol.io/specification/2025-11-25/basic/transports#backwards-compatibility\">Transports\nbackwards compatibility</a></li>\n</ul>",
+      "translation": "<ul class=\"tag-list-long\">\n<li><a href=\"https://spec.modelcontextprotocol.io/specification/basic/transports/#http-with-sse\">MCP 使用 SSE 的 HTTP 传输规范</a></li>\n<li><a href=\"https://modelcontextprotocol.io/specification/2025-11-25/basic/transports#backwards-compatibility\">传输向后兼容性</a></li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<code>protocolVersions</code> in interface <code>io.modelcontextprotocol.spec.McpTransport</code>",
+      "translation": "McpTransport 接口中的 protocolVersions",
+      "count": 1
+    },
+    {
+      "source": "<code>connect</code> in interface <code>io.modelcontextprotocol.spec.McpClientTransport</code>",
+      "translation": "接口 <code>io.modelcontextprotocol.spec.McpClientTransport</code> 中的 <code>connect</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>sendMessage</code> in interface <code>io.modelcontextprotocol.spec.McpTransport</code>",
+      "translation": "接口 <code>io.modelcontextprotocol.spec.McpTransport</code> 中的 <code>sendMessage</code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/RuntimeException.html\" title=\"class or interface in java.lang\">RuntimeException</a></code> - if message serialization fails",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/RuntimeException.html\" title=\"java.lang 中的类或接口\">RuntimeException</a></code> - 如果消息序列化失败",
+      "count": 1
+    },
+    {
+      "source": "<code>closeGracefully</code> in interface <code>io.modelcontextprotocol.spec.McpTransport</code>",
+      "translation": "接口 <code>io.modelcontextprotocol.spec.McpTransport</code> 中的 <code>closeGracefully</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>unmarshalFrom</code> in interface <code>io.modelcontextprotocol.spec.McpTransport</code>",
+      "translation": "接口 <code>io.modelcontextprotocol.spec.McpTransport</code> 中的 <code>unmarshalFrom</code>",
+      "count": 1
+    },
+    {
+      "source": "<span id=\"unmarshalFrom(java.lang.Object,io.modelcontextprotocol.json.TypeRef)-type-param-T\"><code>T</code> - the target type to convert the data into</span>",
+      "translation": "<span id=\"unmarshalFrom(java.lang.Object,io.modelcontextprotocol.json.TypeRef)-type-param-T\"><code>T</code> - 要转换数据的目标类型</span>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if the conversion cannot be performed",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果无法执行转换",
+      "count": 1
+    },
+    {
+      "source": "<code>messageEndpointValidator</code> - validator for the message endpoint",
+      "translation": "<code>messageEndpointValidator</code> - 消息端点验证器",
+      "count": 1
+    },
+    {
+      "source": "<code>handler</code> - a function that processes incoming JSON-RPC messages and returns\nresponses",
+      "translation": "`handler` - 一个处理传入的 JSON-RPC 消息并返回响应的函数",
+      "count": 1
+    },
+    {
+      "source": "<code>message</code> - the JSON-RPC message to send",
+      "translation": "<code>message</code> - 要发送的 JSON-RPC 消息",
+      "count": 1
+    },
+    {
+      "source": "<code>data</code> - the source object to convert",
+      "translation": "<code>data</code> - 要转换的源对象",
+      "count": 1
+    },
+    {
+      "source": "<code>typeRef</code> - the TypeRef describing the target type",
+      "translation": "<code>typeRef</code> - 描述目标类型的 TypeRef",
+      "count": 1
+    },
+    {
+      "source": "Inbound messages are received through an SSE connection from the server",
+      "translation": "入站消息通过服务器上的 SSE 连接接收。",
+      "count": 1
+    },
+    {
+      "source": "Outbound messages are sent via HTTP POST requests to a server-provided\nendpoint",
+      "translation": "出站消息通过 HTTP POST 请求发送至服务器提供的端点。",
+      "count": 1
+    },
+    {
+      "source": "The client establishes an SSE connection to the server's /sse endpoint",
+      "translation": "客户端与服务器上的/sse 端点建立 SSE 连接。",
+      "count": 1
+    },
+    {
+      "source": "The server sends an 'endpoint' event containing the URI for sending messages",
+      "translation": "服务器发送一个包含用于发送消息的 URI 的“endpoint”事件。",
+      "count": 1
+    },
+    {
+      "source": "Establishes an SSE connection to the server's /sse endpoint",
+      "translation": "在服务器的 `/sse` 端点建立 SSE 连接。",
+      "count": 1
+    },
+    {
+      "source": "Waits for the server to send an 'endpoint' event with the message posting\nURI",
+      "translation": "等待服务器发送带有消息发布 URI 的“endpoint\"事件。",
+      "count": 1
+    },
+    {
+      "source": "Sets up message handling for incoming JSON-RPC messages",
+      "translation": "配置用于处理传入的 JSON-RPC 消息的消息处理机制。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "a Mono that completes when the connection is fully established",
+      "translation": "一个在连接完全建立时完成的 Mono。",
+      "count": 1
+    },
+    {
+      "source": "a Mono that completes when the message has been sent successfully",
+      "translation": "一个在消息成功发送后完成的 Mono。",
+      "count": 1
+    },
+    {
+      "source": "a Mono that completes when shutdown is finished",
+      "translation": "一个在关闭完成后完成的 Mono。",
+      "count": 1
+    },
+    {
+      "source": "the unmarshalled object of type T",
+      "translation": "类型为 T 的反序列化对象",
+      "count": 1
+    },
+    {
+      "source": "a new builder instance",
+      "translation": "一个新的构建器实例",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "Server-Sent Events (SSE) implementation of the\n<code>McpTransport</code> that follows the MCP HTTP with SSE\ntransport specification.",
+      "translation": "遵循 MCP HTTP 带 SSE 传输规范的 `<code>McpTransport</code>` 的服务器发送事件（SSE）实现。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>入站消息通过服务器上的 SSE 连接接收。</li>\n<li>出站消息通过 HTTP POST 请求发送至服务器提供的端点。</li>\n</ul>",
+      "translation": "<ul>\n<li>Incoming messages are received via an SSE connection on the server.</li>\n<li>Outgoing messages are sent to a server-provided endpoint via an HTTP POST request.</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<ol>\n<li>客户端与服务器上的/sse 端点建立 SSE 连接。</li>\n<li>服务器发送一个包含用于发送消息的 URI 的“endpoint”事件。</li>\n</ol>\n\nThis implementation uses <code>WebClient</code> for HTTP communications and supports JSON\nserialization/deserialization of messages.",
+      "translation": "<ol>\n<li>客户端与服务器上的/sse 端点建立 SSE 连接。</li>\n<li>服务器发送一个包含用于发送消息的 URI 的\"endpoint\"事件。</li>\n</ol>\n\n此实现使用 <code>WebClient</code> 进行 HTTP 通信，并支持消息的 JSON 序列化/反序列化。",
+      "count": 1
+    },
+    {
+      "source": "Establishes a connection to the MCP server using Server-Sent Events (SSE). This\nmethod initiates the SSE connection and sets up the message processing pipeline.",
+      "translation": "使用服务器发送事件（SSE）建立与 MCP 服务器的连接。此方法启动 SSE 连接并设置消息处理管道。",
+      "count": 1
+    },
+    {
+      "source": "<ol>\n<li>在服务器的 `/sse` 端点建立 SSE 连接。</li>\n<li>等待服务器发送带有消息发布 URI 的“endpoint\"事件。</li>\n<li>配置用于处理传入的 JSON-RPC 消息的消息处理机制。</li>\n</ol>",
+      "translation": "<ol>\n<li>在服务器的 `/sse` 端点建立 SSE 连接。</li>\n<li>等待服务器发送带有消息发布 URI 的\"endpoint\"事件。</li>\n<li>配置用于处理传入 JSON-RPC 消息的消息处理机制。</li>\n</ol>",
+      "count": 1
+    }
+  ]
+}

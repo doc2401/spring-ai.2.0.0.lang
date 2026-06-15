@@ -1,0 +1,221 @@
+{
+  "created_at": "2026-06-15 08:52:03",
+  "updated_at": "2026-06-15 08:52:03",
+  "stats": {
+    "total_entries": 41,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 49,
+    "entries_with_hits": 41,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1951219512195121,
+    "usage_percentage": 0.0041
+  },
+  "items": [
+    {
+      "source": "Creates an instance of a <code>DefaultUsage</code> record class.",
+      "translation": "创建一个<code>DefaultUsage</code>记录类的实例。",
+      "count": 2
+    },
+    {
+      "source": "Returns the value of the <code>completionTokens</code> record component.",
+      "translation": "返回 `<code>completionTokens</code>` 记录组件的值。",
+      "count": 2
+    },
+    {
+      "source": "Returns the value of the <code>promptTokens</code> record component.",
+      "translation": "返回 `<code>promptTokens</code>` 记录组件的值。",
+      "count": 2
+    },
+    {
+      "source": "Returns the value of the <code>totalTokens</code> record component.",
+      "translation": "返回 `<code>totalTokens</code>` 记录组件的值。",
+      "count": 2
+    },
+    {
+      "source": "Returns the number of tokens returned in the generation (aka completion)\nof the AI's response.",
+      "translation": "返回 AI 响应（即生成/补全）中生成的 token 数量。",
+      "count": 2
+    },
+    {
+      "source": "Return the usage data from the underlying model API response.",
+      "translation": "返回底层模型 API 响应中的使用数据。",
+      "count": 2
+    },
+    {
+      "source": "Returns the number of tokens used in the prompt of the AI request.",
+      "translation": "返回 AI 请求提示中使用的 token 数量。",
+      "count": 2
+    },
+    {
+      "source": "Return the total number of tokens from both the prompt of an AI request\nand generation of the AI's response.",
+      "translation": "请返回 AI 请求提示词与 AI 生成回复的总 token 数。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../metadata/Usage.html#getPromptTokens()\">Usage</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../metadata/Usage.html#getPromptTokens()\">Usage</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../metadata/Usage.html#getCompletionTokens()\">Usage</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../metadata/Usage.html#getCompletionTokens()\">Usage</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../metadata/Usage.html#getTotalTokens()\">Usage</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../metadata/Usage.html#getTotalTokens()\">Usage</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../metadata/Usage.html#getNativeUsage()\">Usage</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../metadata/Usage.html#getNativeUsage()\">Usage</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Indicates whether some other object is \"equal to\" this one. The objects are equal if the other object is of the same class and if all the record components are equal. All components in this record class are compared with <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Objects.html#equals(java.lang.Object,java.lang.Object)\" title=\"class or interface in java.util\"><code>Objects::equals(Object,Object)</code></a>.",
+      "translation": "指示某些其他对象是否“等于”当前对象。如果另一个对象属于同一类，且所有记录组件均相等，则这两个对象相等。本记录类中的所有组件均使用 <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Objects.html#equals(java.lang.Object,java.lang.Object)\" title=\"class or interface in java.util\"><code>Objects::equals(Object,Object)</code></a> 进行比较。",
+      "count": 1
+    },
+    {
+      "source": "Indicates whether some other object is \"equal to\" this one.",
+      "translation": "指示其他对象是否“等于”此对象。",
+      "count": 1
+    },
+    {
+      "source": "Returns a hash code value for this object.",
+      "translation": "返回此对象的哈希码值。",
+      "count": 1
+    },
+    {
+      "source": "Returns a string representation of this record class.",
+      "translation": "返回此记录类的字符串表示形式。",
+      "count": 1
+    },
+    {
+      "source": "Returns a string representation of this record class. The representation contains the name of the class, followed by the name and value of each of the record components.",
+      "translation": "返回此记录类的字符串表示形式。该表示形式包含类名，随后是各记录组件的名称和值。",
+      "count": 1
+    },
+    {
+      "source": "Returns a hash code value for this object. The value is derived from the hash code of each of the record components.",
+      "translation": "返回此对象的哈希码值。该值由每个记录组件的哈希码推导得出。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../metadata/Usage.html#getPromptTokens()\">getPromptTokens</a></code> in interface <code><a href=\"../metadata/Usage.html\" title=\"interface in org.springframework.ai.chat.metadata\">Usage</a></code>",
+      "translation": "接口 <code><a href=\"../metadata/Usage.html\" title=\"org.springframework.ai.chat.metadata 中的接口\">Usage</a></code> 中的方法<code><a href=\"../metadata/Usage.html#getPromptTokens()\">getPromptTokens</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../metadata/Usage.html#getCompletionTokens()\">getCompletionTokens</a></code> in interface <code><a href=\"../metadata/Usage.html\" title=\"interface in org.springframework.ai.chat.metadata\">Usage</a></code>",
+      "translation": "接口 <code><a href=\"../metadata/Usage.html\" title=\"org.springframework.ai.chat.metadata 中的接口\">Usage</a></code> 中的方法 <code><a href=\"../metadata/Usage.html#getCompletionTokens()\">getCompletionTokens</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../metadata/Usage.html#getTotalTokens()\">getTotalTokens</a></code> in interface <code><a href=\"../metadata/Usage.html\" title=\"interface in org.springframework.ai.chat.metadata\">Usage</a></code>",
+      "translation": "<code><a href=\"../metadata/Usage.html#getTotalTokens()\">getTotalTokens</a></code> 接口 <code><a href=\"../metadata/Usage.html\" title=\"org.springframework.ai.chat.metadata 中的接口\">Usage</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../metadata/Usage.html#getNativeUsage()\">getNativeUsage</a></code> in interface <code><a href=\"../metadata/Usage.html\" title=\"interface in org.springframework.ai.chat.metadata\">Usage</a></code>",
+      "translation": "接口 <code><a href=\"../metadata/Usage.html\" title=\"org.springframework.ai.chat.metadata 中的接口\">Usage</a></code> 中的 <code><a href=\"../metadata/Usage.html#getNativeUsage()\">getNativeUsage</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html#toString()\" title=\"class or interface in java.lang\">toString</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html\" title=\"class or interface in java.lang\">Record</a></code>",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html#toString()\" title=\"类或接口在 java.lang 中\">toString</a></code> 方法，位于 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html\" title=\"类或接口在 java.lang 中\">Record</a></code> 类中",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html#hashCode()\" title=\"class or interface in java.lang\">hashCode</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html\" title=\"class or interface in java.lang\">Record</a></code>",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html#hashCode()\" title=\"类或接口在 java.lang 中\">hashCode</a></code> 方法位于 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html\" title=\"类或接口在 java.lang 中\">Record</a></code> 类中",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html#equals(java.lang.Object)\" title=\"class or interface in java.lang\">equals</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html\" title=\"class or interface in java.lang\">Record</a></code>",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html#equals(java.lang.Object)\" title=\"类或接口在 java.lang 中\">equals</a></code> 方法位于 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html\" title=\"类或接口在 java.lang 中\">Record</a></code> 类中",
+      "count": 1
+    },
+    {
+      "source": "<code>true</code> if this object is the same as the <code>o</code> argument; <code>false</code> otherwise.",
+      "translation": "如果该对象与参数 `o` 相同，则返回 `<code>true</code>`；否则返回 `<code>false</code>`。",
+      "count": 1
+    },
+    {
+      "source": "<code>promptTokens</code> - the value for the <code>promptTokens</code> record component",
+      "translation": "<code>promptTokens</code> - <code>promptTokens</code> 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "<code>completionTokens</code> - the value for the <code>completionTokens</code> record component",
+      "translation": "<code>completionTokens</code> - <code>completionTokens</code> 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "<code>totalTokens</code> - the value for the <code>totalTokens</code> record component",
+      "translation": "<code>totalTokens</code> - 用于 <code>totalTokens</code> 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "an <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html\" title=\"class or interface in java.lang\"><code>Integer</code></a> with the number of tokens used in the prompt\nof the AI request.",
+      "translation": "一个包含 AI 请求中使用的 token 数量的<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html\" title=\"class or interface in java.lang\"><code>Integer</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "an <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html\" title=\"class or interface in java.lang\"><code>Integer</code></a> with the number of tokens returned in the\ngeneration (aka completion) of the AI's response.",
+      "translation": "一个 <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html\" title=\"class or interface in java.lang\"><code>Integer</code></a>，表示 AI 响应（即生成或完成）中返回的 token 数量。",
+      "count": 1
+    },
+    {
+      "source": "<code>o</code> - the object with which to compare",
+      "translation": "<code>o</code> - 用于比较的对象",
+      "count": 1
+    },
+    {
+      "source": "the value of the <code>promptTokens</code> record component",
+      "translation": "`promptTokens` 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "the value of the <code>completionTokens</code> record component",
+      "translation": "<code>completionTokens</code> 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "the value of the <code>totalTokens</code> record component",
+      "translation": "`totalTokens` 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Alexandros Pappas, Thomas Vitale, Heonwoo Kim",
+      "translation": "Christian Tzolov，Alexandros Pappas，Thomas Vitale，Heonwoo Kim",
+      "count": 1
+    },
+    {
+      "source": "the total number of tokens from both the prompt of an AI request\nand generation of the AI's response.",
+      "translation": "AI 请求的提示词与 AI 响应生成所产生的 token 总数。",
+      "count": 1
+    },
+    {
+      "source": "the object of type inferred by the API response.",
+      "translation": "API 响应推断出的对象类型。",
+      "count": 1
+    },
+    {
+      "source": "a string representation of this object",
+      "translation": "该对象的字符串表示形式",
+      "count": 1
+    },
+    {
+      "source": "a hash code value for this object",
+      "translation": "该对象的哈希码值",
+      "count": 1
+    }
+  ]
+}

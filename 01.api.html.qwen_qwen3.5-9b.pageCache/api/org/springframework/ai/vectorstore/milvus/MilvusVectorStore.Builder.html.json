@@ -1,0 +1,181 @@
+{
+  "created_at": "2026-06-15 07:44:01",
+  "updated_at": "2026-06-15 07:44:01",
+  "stats": {
+    "total_entries": 33,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 56,
+    "entries_with_hits": 33,
+    "entries_without_hits": 0,
+    "hit_rate": 1.696969696969697,
+    "usage_percentage": 0.0033000000000000004
+  },
+  "items": [
+    {
+      "source": "this builder instance",
+      "translation": "此构建器实例",
+      "count": 12
+    },
+    {
+      "source": "Configures whether to use auto-generated IDs for documents.",
+      "translation": "配置是否使用为文档自动生成的 ID。",
+      "count": 2
+    },
+    {
+      "source": "Builds and returns a new MilvusVectorStore instance with the configured\nsettings.",
+      "translation": "构建并返回一个具有配置设置的新 MilvusVectorStore 实例。",
+      "count": 2
+    },
+    {
+      "source": "Configures the Milvus collection name.",
+      "translation": "配置 Milvus 集合名称。",
+      "count": 2
+    },
+    {
+      "source": "Configures the name of the field used for document content.",
+      "translation": "配置用于文档内容的字段名称。",
+      "count": 2
+    },
+    {
+      "source": "Configures the Milvus database name.",
+      "translation": "配置 Milvus 数据库名称。",
+      "count": 2
+    },
+    {
+      "source": "Configures the dimension size of the embedding vectors.",
+      "translation": "配置嵌入向量的维度大小。",
+      "count": 2
+    },
+    {
+      "source": "Configures the name of the field used for embedding vectors.",
+      "translation": "配置用于嵌入向量的字段名称。",
+      "count": 2
+    },
+    {
+      "source": "Configures the name of the field used for document IDs.",
+      "translation": "配置用于文档 ID 的字段名称。",
+      "count": 2
+    },
+    {
+      "source": "Configures the Milvus index parameters as a JSON string.",
+      "translation": "以 JSON 字符串形式配置 Milvus 索引参数。",
+      "count": 2
+    },
+    {
+      "source": "Configures the Milvus index type to use for vector search optimization.",
+      "translation": "配置用于向量搜索优化的 Milvus 索引类型。",
+      "count": 2
+    },
+    {
+      "source": "Configures whether to initialize the collection schema automatically.",
+      "translation": "配置是否自动初始化集合模式。",
+      "count": 2
+    },
+    {
+      "source": "Configures the name of the field used for document metadata.",
+      "translation": "配置用于文档元数据的字段名称。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Configures the Milvus metric type to use for similarity calculations.",
+      "translation": "配置用于相似度计算的 Milvus 度量类型。",
+      "count": 1
+    },
+    {
+      "source": "Configures the Milvus metric type to use for similarity calculations. See:\nhttps://milvus.io/docs/metric.md#floating for details on metric types.",
+      "translation": "配置用于相似度计算的 Milvus 度量类型。有关度量类型的详细信息，请参阅：https://milvus.io/docs/metric.md#floating",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if metricType is null or not one of IP, L2, or\nCOSINE",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - 如果 metricType 为 null，或不是 IP、L2 或 COSINE 之一",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if dimension is not between 1 and 32768",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果维度不在 1 到 32768 之间",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html\" title=\"class or interface in java.lang\">IllegalStateException</a></code> - if the builder configuration is invalid",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html\" title=\"class or interface in java.lang\">IllegalStateException</a></code> - 如果构建器配置无效",
+      "count": 1
+    },
+    {
+      "source": "<code>metricType</code> - the metric type to use (IP, L2, or COSINE)",
+      "translation": "<code>metricType</code> - 要使用的度量类型（IP、L2 或 COSINE）",
+      "count": 1
+    },
+    {
+      "source": "<code>indexType</code> - the index type to use (defaults to IVF_FLAT if not specified)",
+      "translation": "<code>indexType</code> - 使用的索引类型（若未指定则默认为 IVF_FLAT）",
+      "count": 1
+    },
+    {
+      "source": "<code>indexParameters</code> - the index parameters to use (defaults to {\"nlist\":1024}\nif not specified)",
+      "translation": "<code>indexParameters</code> - 要使用的索引参数（如果未指定，则默认为{\"nlist\":1024}）",
+      "count": 1
+    },
+    {
+      "source": "<code>databaseName</code> - the database name to use (defaults to DEFAULT_DATABASE_NAME\nif not specified)",
+      "translation": "<code>databaseName</code> - 要使用的数据库名称（如果未指定，则默认为 DEFAULT_DATABASE_NAME）",
+      "count": 1
+    },
+    {
+      "source": "<code>collectionName</code> - the collection name to use (defaults to\nDEFAULT_COLLECTION_NAME if not specified)",
+      "translation": "<code>collectionName</code> - 要使用的集合名称（如果未指定，则默认为 DEFAULT_COLLECTION_NAME）",
+      "count": 1
+    },
+    {
+      "source": "<code>newEmbeddingDimension</code> - The dimension of the embedding (must be between 1\nand 32768)",
+      "translation": "`newEmbeddingDimension` - 嵌入的维度（必须在 1 到 32768 之间）",
+      "count": 1
+    },
+    {
+      "source": "<code>idFieldName</code> - The name for the ID field (defaults to DOC_ID_FIELD_NAME)",
+      "translation": "<code>idFieldName</code> - ID 字段的名称（默认为 DOC_ID_FIELD_NAME）",
+      "count": 1
+    },
+    {
+      "source": "<code>isAutoId</code> - true to enable auto-generated IDs, false to use provided IDs",
+      "translation": "<code>isAutoId</code> - 设为 true 启用自动生成 ID，设为 false 则使用提供的 ID。",
+      "count": 1
+    },
+    {
+      "source": "<code>contentFieldName</code> - The name for the content field (defaults to\nCONTENT_FIELD_NAME)",
+      "translation": "<code>contentFieldName</code> - 内容字段的名称（默认为 CONTENT_FIELD_NAME）",
+      "count": 1
+    },
+    {
+      "source": "<code>metadataFieldName</code> - The name for the metadata field (defaults to\nMETADATA_FIELD_NAME)",
+      "translation": "<code>metadataFieldName</code> - 元数据字段的名称（默认为 METADATA_FIELD_NAME）",
+      "count": 1
+    },
+    {
+      "source": "<code>embeddingFieldName</code> - The name for the embedding field (defaults to\nEMBEDDING_FIELD_NAME)",
+      "translation": "`embeddingFieldName` - 嵌入字段的名称（默认为 EMBEDDING_FIELD_NAME）",
+      "count": 1
+    },
+    {
+      "source": "<code>initializeSchema</code> - true to initialize schema automatically, false to use\nexisting schema",
+      "translation": "<code>initializeSchema</code> - 自动初始化架构为 true，使用现有架构则为 false",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Soby Chacko, Thomas Vitale, Ilayaperumal Gopinathan, chabinhwang",
+      "translation": "Christian Tzolov, Soby Chacko, Thomas Vitale, Ilayaperumal Gopinathan, chabinhwang",
+      "count": 1
+    },
+    {
+      "source": "a new MilvusVectorStore instance",
+      "translation": "一个新的 MilvusVectorStore 实例",
+      "count": 1
+    }
+  ]
+}

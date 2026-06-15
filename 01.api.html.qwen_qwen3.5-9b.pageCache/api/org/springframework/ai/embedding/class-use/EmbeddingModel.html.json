@@ -1,0 +1,436 @@
+{
+  "created_at": "2026-06-15 08:40:00",
+  "updated_at": "2026-06-15 08:40:00",
+  "stats": {
+    "total_entries": 84,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 102,
+    "entries_with_hits": 84,
+    "entries_without_hits": 0,
+    "hit_rate": 1.2142857142857142,
+    "usage_percentage": 0.0084
+  },
+  "items": [
+    {
+      "source": "Provides the API for embedding observations.",
+      "translation": "提供用于嵌入观测数据的 API。",
+      "count": 19
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "<details class=\"invalid-tag\">\n<summary>invalid reference</summary>\n<pre><code>EmbeddingModel</code></pre>\n</details>\n implementation for Ollama.",
+      "translation": "<details class=\"invalid-tag\">\n<summary>无效引用</summary>\n<pre><code>EmbeddingModel</code></pre>\n</details>\n针对 Ollama 的实现。",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\"><code>EmbeddingModel</code></a> implementation that uses the\nBedrock Cohere Embedding API.",
+      "translation": "使用 Bedrock Cohere 嵌入 API 的 <a href=\"../EmbeddingModel.html\" title=\"org.springframework.ai.embedding 中的接口\"><code>EmbeddingModel</code></a> 实现。",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\"><code>EmbeddingModel</code></a> implementation that uses the\nBedrock Titan Embedding API.",
+      "translation": "使用 Bedrock Titan Embedding API 的 <a href=\"../EmbeddingModel.html\" title=\"org.springframework.ai.embedding 中的接口\"><code>EmbeddingModel</code></a> 实现。",
+      "count": 1
+    },
+    {
+      "source": "Abstract implementation of the <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\"><code>EmbeddingModel</code></a> interface that provides\ndimensions calculation caching.",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"org.springframework.ai.embedding 中的接口\"><code>EmbeddingModel</code></a>接口的抽象实现，提供维度计算缓存。",
+      "count": 1
+    },
+    {
+      "source": "Provides interfaces and implementations for working with vector databases in Spring AI.",
+      "translation": "为 Spring AI 中处理向量数据库提供接口和实现。",
+      "count": 1
+    },
+    {
+      "source": "Provides classes for observing and storing vector data.",
+      "translation": "提供用于观察和存储矢量数据的类。",
+      "count": 1
+    },
+    {
+      "source": "Auto-configuration for Redis Vector Store.",
+      "translation": "Redis 向量存储的自动配置。",
+      "count": 1
+    },
+    {
+      "source": "S3 Vector Store implementation for Spring AI.",
+      "translation": "Spring AI 中的 S3 向量存储实现。",
+      "count": 1
+    },
+    {
+      "source": "Return the dimension of the requested embedding generative name.",
+      "translation": "返回请求的生成式嵌入名称的维度。",
+      "count": 1
+    },
+    {
+      "source": "A class representing a Vertex AI Text Embedding Model using the new Google Gen AI SDK.",
+      "translation": "使用新的 Google Gen AI SDK 表示 Vertex AI 文本嵌入模型的类。",
+      "count": 1
+    },
+    {
+      "source": "Provides the Mistral AI Embedding Model.",
+      "translation": "提供 Mistral AI 嵌入模型。",
+      "count": 1
+    },
+    {
+      "source": "Embedding Model implementation using the OpenAI Java SDK.",
+      "translation": "使用 OpenAI Java SDK 实现嵌入模型。",
+      "count": 1
+    },
+    {
+      "source": "An implementation of the AbstractEmbeddingModel that uses ONNX-based Transformer models\nfor text embeddings.",
+      "translation": "一种使用基于 ONNX 的 Transformer 模型实现文本嵌入的抽象嵌入模型。",
+      "count": 1
+    },
+    {
+      "source": "Creates an instance of SimpleVectorStore builder.",
+      "translation": "创建 SimpleVectorStore 构建器的实例。",
+      "count": 1
+    },
+    {
+      "source": "Creates a new builder for configuring and creating CoherenceVectorStore instances.",
+      "translation": "创建一个用于配置和创建 CoherenceVectorStore 实例的新构建器。",
+      "count": 1
+    },
+    {
+      "source": "Creates a new builder instance for ElasticsearchVectorStore.",
+      "translation": "为 ElasticsearchVectorStore 创建一个新的构建器实例。",
+      "count": 1
+    },
+    {
+      "source": "Sets the Elasticsearch REST client.",
+      "translation": "设置 Elasticsearch REST 客户端。",
+      "count": 1
+    },
+    {
+      "source": "Creates a new MariaDBBuilder instance.",
+      "translation": "创建一个新 MariaDBBuilder 实例。",
+      "count": 1
+    },
+    {
+      "source": "Creates a new MilvusBuilder instance with the specified Milvus client.",
+      "translation": "使用指定的 Milvus 客户端创建一个新的 MilvusBuilder 实例。",
+      "count": 1
+    },
+    {
+      "source": "Creates a new builder instance for MongoDBAtlasVectorStore.",
+      "translation": "为 MongoDBAtlasVectorStore 创建一个新的构建器实例。",
+      "count": 1
+    },
+    {
+      "source": "Creates a new builder instance for configuring an OpenSearchVectorStore.",
+      "translation": "创建一个用于配置 OpenSearchVectorStore 的新构建器实例。",
+      "count": 1
+    },
+    {
+      "source": "Sets the JdbcTemplate to be used for database operations.",
+      "translation": "设置用于数据库操作的 JdbcTemplate。",
+      "count": 1
+    },
+    {
+      "source": "Creates a new builder for constructing a PineconeVectorStore instance.",
+      "translation": "创建一个用于构建 PineconeVectorStore 实例的新构建器。",
+      "count": 1
+    },
+    {
+      "source": "Creates a new QdrantBuilder instance.",
+      "translation": "创建一个新的 QdrantBuilder 实例。",
+      "count": 1
+    },
+    {
+      "source": "Creates a Redis vector store.",
+      "translation": "创建 Redis 向量存储。",
+      "count": 1
+    },
+    {
+      "source": "Creates a pre-configured RedisVectorStore suitable for semantic caching.",
+      "translation": "创建一个适用于语义缓存的预配置 RedisVectorStore。",
+      "count": 1
+    },
+    {
+      "source": "Creates a pre-configured RedisVectorStore with custom index name and prefix.",
+      "translation": "创建一个具有自定义索引名称和前缀的预配置 RedisVectorStore。",
+      "count": 1
+    },
+    {
+      "source": "Provides a default EmbeddingModel using the redis/langcache-embed-v1 model.",
+      "translation": "使用 redis/langcache-embed-v1 模型提供默认的 EmbeddingModel。",
+      "count": 1
+    },
+    {
+      "source": "Creates the semantic cache instance.",
+      "translation": "创建语义缓存实例。",
+      "count": 1
+    },
+    {
+      "source": "Creates a new TypesenseBuilder instance.",
+      "translation": "创建一个新的 TypesenseBuilder 实例。",
+      "count": 1
+    },
+    {
+      "source": "Constructs a new TypesenseBuilder instance.",
+      "translation": "构建一个新的 TypesenseBuilder 实例。",
+      "count": 1
+    },
+    {
+      "source": "Creates a new WeaviateBuilder instance.",
+      "translation": "创建一个新的 WeaviateBuilder 实例。",
+      "count": 1
+    },
+    {
+      "source": "A class representing a Vertex AI Text Embedding Model.",
+      "translation": "代表 Vertex AI 文本嵌入模型的类。",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../bedrock/cohere/package-summary.html\">org.springframework.ai.bedrock.cohere</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../bedrock/cohere/package-summary.html\">org.springframework.ai.bedrock.cohere</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../bedrock/titan/package-summary.html\">org.springframework.ai.bedrock.titan</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../bedrock/titan/package-summary.html\">org.springframework.ai.bedrock.titan</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../chroma/vectorstore/package-summary.html\">org.springframework.ai.chroma.vectorstore</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../chroma/vectorstore/package-summary.html\">org.springframework.ai.chroma.vectorstore</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../package-summary.html\">org.springframework.ai.embedding</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"org.springframework.ai.embedding 中的接口\">EmbeddingModel</a> 在 <a href=\"../package-summary.html\">org.springframework.ai.embedding</a> 包中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../google/genai/text/package-summary.html\">org.springframework.ai.google.genai.text</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../google/genai/text/package-summary.html\">org.springframework.ai.google.genai.text</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../mistralai/package-summary.html\">org.springframework.ai.mistralai</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../mistralai/package-summary.html\">org.springframework.ai.mistralai</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../ollama/package-summary.html\">org.springframework.ai.ollama</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../ollama/package-summary.html\">org.springframework.ai.ollama</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../openai/package-summary.html\">org.springframework.ai.openai</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../openai/package-summary.html\">org.springframework.ai.openai</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../postgresml/package-summary.html\">org.springframework.ai.postgresml</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../postgresml/package-summary.html\">org.springframework.ai.postgresml</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../transformers/package-summary.html\">org.springframework.ai.transformers</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../transformers/package-summary.html\">org.springframework.ai.transformers</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/package-summary.html\">org.springframework.ai.vectorstore</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/package-summary.html\">org.springframework.ai.vectorstore</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/azure/package-summary.html\">org.springframework.ai.vectorstore.azure</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/azure/package-summary.html\">org.springframework.ai.vectorstore.azure</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/azure/autoconfigure/package-summary.html\">org.springframework.ai.vectorstore.azure.autoconfigure</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/azure/autoconfigure/package-summary.html\">org.springframework.ai.vectorstore.azure.autoconfigure</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/cassandra/package-summary.html\">org.springframework.ai.vectorstore.cassandra</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/cassandra/package-summary.html\">org.springframework.ai.vectorstore.cassandra</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/cassandra/autoconfigure/package-summary.html\">org.springframework.ai.vectorstore.cassandra.autoconfigure</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/cassandra/autoconfigure/package-summary.html\">org.springframework.ai.vectorstore.cassandra.autoconfigure</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/chroma/autoconfigure/package-summary.html\">org.springframework.ai.vectorstore.chroma.autoconfigure</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/chroma/autoconfigure/package-summary.html\">org.springframework.ai.vectorstore.chroma.autoconfigure</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/coherence/package-summary.html\">org.springframework.ai.vectorstore.coherence</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/coherence/package-summary.html\">org.springframework.ai.vectorstore.coherence</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/couchbase/package-summary.html\">org.springframework.ai.vectorstore.couchbase</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/couchbase/package-summary.html\">org.springframework.ai.vectorstore.couchbase</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/couchbase/autoconfigure/package-summary.html\">org.springframework.ai.vectorstore.couchbase.autoconfigure</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/couchbase/autoconfigure/package-summary.html\">org.springframework.ai.vectorstore.couchbase.autoconfigure</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/elasticsearch/package-summary.html\">org.springframework.ai.vectorstore.elasticsearch</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/elasticsearch/package-summary.html\">org.springframework.ai.vectorstore.elasticsearch</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/gemfire/package-summary.html\">org.springframework.ai.vectorstore.gemfire</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/gemfire/package-summary.html\">org.springframework.ai.vectorstore.gemfire</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/gemfire/autoconfigure/package-summary.html\">org.springframework.ai.vectorstore.gemfire.autoconfigure</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/gemfire/autoconfigure/package-summary.html\">org.springframework.ai.vectorstore.gemfire.autoconfigure</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/mariadb/package-summary.html\">org.springframework.ai.vectorstore.mariadb</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/mariadb/package-summary.html\">org.springframework.ai.vectorstore.mariadb</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/mariadb/autoconfigure/package-summary.html\">org.springframework.ai.vectorstore.mariadb.autoconfigure</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/mariadb/autoconfigure/package-summary.html\">org.springframework.ai.vectorstore.mariadb.autoconfigure</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/milvus/package-summary.html\">org.springframework.ai.vectorstore.milvus</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/milvus/package-summary.html\">org.springframework.ai.vectorstore.milvus</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/milvus/autoconfigure/package-summary.html\">org.springframework.ai.vectorstore.milvus.autoconfigure</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/milvus/autoconfigure/package-summary.html\">org.springframework.ai.vectorstore.milvus.autoconfigure</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/mongodb/atlas/package-summary.html\">org.springframework.ai.vectorstore.mongodb.atlas</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/mongodb/atlas/package-summary.html\">org.springframework.ai.vectorstore.mongodb.atlas</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/neo4j/package-summary.html\">org.springframework.ai.vectorstore.neo4j</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/neo4j/package-summary.html\">org.springframework.ai.vectorstore.neo4j</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/neo4j/autoconfigure/package-summary.html\">org.springframework.ai.vectorstore.neo4j.autoconfigure</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/neo4j/autoconfigure/package-summary.html\">org.springframework.ai.vectorstore.neo4j.autoconfigure</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/observation/package-summary.html\">org.springframework.ai.vectorstore.observation</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/observation/package-summary.html\">org.springframework.ai.vectorstore.observation</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/opensearch/package-summary.html\">org.springframework.ai.vectorstore.opensearch</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/opensearch/package-summary.html\">org.springframework.ai.vectorstore.opensearch</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/oracle/package-summary.html\">org.springframework.ai.vectorstore.oracle</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/oracle/package-summary.html\">org.springframework.ai.vectorstore.oracle</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/oracle/autoconfigure/package-summary.html\">org.springframework.ai.vectorstore.oracle.autoconfigure</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/oracle/autoconfigure/package-summary.html\">org.springframework.ai.vectorstore.oracle.autoconfigure</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/pgvector/package-summary.html\">org.springframework.ai.vectorstore.pgvector</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/pgvector/package-summary.html\">org.springframework.ai.vectorstore.pgvector</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/pgvector/autoconfigure/package-summary.html\">org.springframework.ai.vectorstore.pgvector.autoconfigure</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/pgvector/autoconfigure/package-summary.html\">org.springframework.ai.vectorstore.pgvector.autoconfigure</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/pinecone/package-summary.html\">org.springframework.ai.vectorstore.pinecone</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/pinecone/package-summary.html\">org.springframework.ai.vectorstore.pinecone</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/pinecone/autoconfigure/package-summary.html\">org.springframework.ai.vectorstore.pinecone.autoconfigure</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/pinecone/autoconfigure/package-summary.html\">org.springframework.ai.vectorstore.pinecone.autoconfigure</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/qdrant/package-summary.html\">org.springframework.ai.vectorstore.qdrant</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/qdrant/package-summary.html\">org.springframework.ai.vectorstore.qdrant</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/qdrant/autoconfigure/package-summary.html\">org.springframework.ai.vectorstore.qdrant.autoconfigure</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/qdrant/autoconfigure/package-summary.html\">org.springframework.ai.vectorstore.qdrant.autoconfigure</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/redis/package-summary.html\">org.springframework.ai.vectorstore.redis</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/redis/package-summary.html\">org.springframework.ai.vectorstore.redis</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/redis/autoconfigure/package-summary.html\">org.springframework.ai.vectorstore.redis.autoconfigure</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/redis/autoconfigure/package-summary.html\">org.springframework.ai.vectorstore.redis.autoconfigure</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/redis/cache/semantic/package-summary.html\">org.springframework.ai.vectorstore.redis.cache.semantic</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/redis/cache/semantic/package-summary.html\">org.springframework.ai.vectorstore.redis.cache.semantic</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/redis/cache/semantic/autoconfigure/package-summary.html\">org.springframework.ai.vectorstore.redis.cache.semantic.autoconfigure</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/redis/cache/semantic/autoconfigure/package-summary.html\">org.springframework.ai.vectorstore.redis.cache.semantic.autoconfigure</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/s3/package-summary.html\">org.springframework.ai.vectorstore.s3</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/s3/package-summary.html\">org.springframework.ai.vectorstore.s3</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/typesense/package-summary.html\">org.springframework.ai.vectorstore.typesense</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/typesense/package-summary.html\">org.springframework.ai.vectorstore.typesense</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/typesense/autoconfigure/package-summary.html\">org.springframework.ai.vectorstore.typesense.autoconfigure</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/typesense/autoconfigure/package-summary.html\">org.springframework.ai.vectorstore.typesense.autoconfigure</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/weaviate/package-summary.html\">org.springframework.ai.vectorstore.weaviate</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/weaviate/package-summary.html\">org.springframework.ai.vectorstore.weaviate</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vectorstore/weaviate/autoconfigure/package-summary.html\">org.springframework.ai.vectorstore.weaviate.autoconfigure</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vectorstore/weaviate/autoconfigure/package-summary.html\">org.springframework.ai.vectorstore.weaviate.autoconfigure</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> in <a href=\"../../vertexai/embedding/text/package-summary.html\">org.springframework.ai.vertexai.embedding.text</a>",
+      "translation": "<a href=\"../EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a> 在 <a href=\"../../vertexai/embedding/text/package-summary.html\">org.springframework.ai.vertexai.embedding.text</a> 中的用途",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "created_at": "2026-06-15 08:31:11",
+  "updated_at": "2026-06-15 08:31:11",
+  "stats": {
+    "total_entries": 19,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 21,
+    "entries_with_hits": 19,
+    "entries_without_hits": 0,
+    "hit_rate": 1.105263157894737,
+    "usage_percentage": 0.0019000000000000002
+  },
+  "items": [
+    {
+      "source": "Apply the progress notification and process it asynchronously.",
+      "translation": "应用进度通知并异步处理。",
+      "count": 2
+    },
+    {
+      "source": "Create a new builder.",
+      "translation": "创建一个新的构建器。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This method builds the arguments for the method call and invokes the method,\nreturning a Mono<void>.</void>",
+      "translation": "该方法构建方法调用的参数并调用该方法，返回一个 Mono<Void>。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"AbstractMcpProgressMethodCallback.html#validateReturnType(java.lang.reflect.Method)\">AbstractMcpProgressMethodCallback</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述已从类复制：<code><a href=\"AbstractMcpProgressMethodCallback.html#validateReturnType(java.lang.reflect.Method)\">AbstractMcpProgressMethodCallback</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Asynchronous implementation of a progress method callback.\n\nThis class creates a Function that invokes a method annotated with @McpProgress\nasynchronously when a progress notification is received, returning a Mono<void>.</void>",
+      "translation": "异步实现进度方法回调。\n\n该类创建一个函数，当收到进度通知时，会异步调用带有 @McpProgress 注解的方法，并返回一个 Mono<void>。",
+      "count": 1
+    },
+    {
+      "source": "Builder for creating AsyncMcpProgressMethodCallback instances.",
+      "translation": "用于创建 AsyncMcpProgressMethodCallback 实例的构建器。",
+      "count": 1
+    },
+    {
+      "source": "Validates that the method return type is compatible with the progress callback.",
+      "translation": "验证方法返回类型是否与进度回调兼容。",
+      "count": 1
+    },
+    {
+      "source": "Validates that the method return type is compatible with the progress callback.\nThis method should be implemented by subclasses to handle specific return type\nvalidation.",
+      "translation": "验证方法返回类型是否与进度回调兼容。  \n此方法应由子类实现，以处理特定返回类型的验证。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Function.html#apply(T)\" title=\"class or interface in java.util.function\">apply</a></code> in interface <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Function.html\" title=\"class or interface in java.util.function\">Function</a>&lt;io.modelcontextprotocol.spec.McpSchema.ProgressNotification, reactor.core.publisher.Mono&lt;<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Void.html\" title=\"class or interface in java.lang\">Void</a>&gt;&gt;</code>",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Function.html#apply(T)\" title=\"class or interface in java.util.function\">apply</a></code> 在接口 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Function.html\" title=\"class or interface in java.util.function\">Function</a>&lt;io.modelcontextprotocol.spec.McpSchema.ProgressNotification, reactor.core.publisher.Mono&lt;<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Void.html\" title=\"class or interface in java.lang\">Void</a>&gt;&gt;</code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"AbstractMcpProgressMethodCallback.html#validateReturnType(java.lang.reflect.Method)\">validateReturnType</a></code> in class <code><a href=\"AbstractMcpProgressMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.progress\">AbstractMcpProgressMethodCallback</a></code>",
+      "translation": "<code><a href=\"AbstractMcpProgressMethodCallback.html#validateReturnType(java.lang.reflect.Method)\">validateReturnType</a></code> 类 <code><a href=\"AbstractMcpProgressMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.progress\">AbstractMcpProgressMethodCallback</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"AbstractMcpProgressMethodCallback.McpProgressMethodException.html\" title=\"class in org.springframework.ai.mcp.annotation.method.progress\">AbstractMcpProgressMethodCallback.McpProgressMethodException</a></code> - if there is an error invoking the progress\nmethod",
+      "translation": "<code><a href=\"AbstractMcpProgressMethodCallback.McpProgressMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.progress\">AbstractMcpProgressMethodCallback.McpProgressMethodException</a></code> - 如果调用进度方法时发生错误",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if the notification is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果通知为 null",
+      "count": 1
+    },
+    {
+      "source": "<code>method</code> - The method to validate",
+      "translation": "<code>method</code> - 待验证的方法",
+      "count": 1
+    },
+    {
+      "source": "<code>notification</code> - The progress notification, must not be null",
+      "translation": "<code>notification</code> - 进度通知，不能为 null",
+      "count": 1
+    },
+    {
+      "source": "A Mono<void> representing the asynchronous operation</void>",
+      "translation": "代表异步操作的 Mono<void></void>",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "A new builder instance",
+      "translation": "一个新的构建器实例",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    }
+  ]
+}

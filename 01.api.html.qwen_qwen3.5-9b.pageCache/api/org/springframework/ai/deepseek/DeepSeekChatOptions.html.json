@@ -1,0 +1,266 @@
+{
+  "created_at": "2026-06-15 07:27:52",
+  "updated_at": "2026-06-15 07:27:52",
+  "stats": {
+    "total_entries": 50,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 60,
+    "entries_with_hits": 50,
+    "entries_without_hits": 0,
+    "hit_rate": 1.2,
+    "usage_percentage": 0.005
+  },
+  "items": [
+    {
+      "source": "Returns the frequency penalty to use for the chat.",
+      "translation": "返回用于聊天的频率惩罚。",
+      "count": 2
+    },
+    {
+      "source": "Returns the maximum number of tokens to use for the chat.",
+      "translation": "返回用于聊天的最大令牌数。",
+      "count": 2
+    },
+    {
+      "source": "Returns the model to use for the chat.",
+      "translation": "返回用于聊天的模型。",
+      "count": 2
+    },
+    {
+      "source": "Returns the presence penalty to use for the chat.",
+      "translation": "返回用于聊天的惩罚值。",
+      "count": 2
+    },
+    {
+      "source": "Returns the stop sequences to use for the chat.",
+      "translation": "返回用于聊天的停止序列。",
+      "count": 2
+    },
+    {
+      "source": "Returns the temperature to use for the chat.",
+      "translation": "返回用于聊天的温度值。",
+      "count": 2
+    },
+    {
+      "source": "ToolCallbacks to be registered with the ChatModel.",
+      "translation": "需与 ChatModel 注册的 ToolCallbacks。",
+      "count": 2
+    },
+    {
+      "source": "Get the configured tool context.",
+      "translation": "获取配置的上下文工具。",
+      "count": 2
+    },
+    {
+      "source": "Returns the top K to use for the chat.",
+      "translation": "返回用于聊天的前 K 个。",
+      "count": 2
+    },
+    {
+      "source": "Returns the top P to use for the chat.",
+      "translation": "返回用于聊天的前 P 个。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Returns a new <a href=\"../model/tool/ToolCallingChatOptions.Builder.html\" title=\"interface in org.springframework.ai.model.tool\"><code>ToolCallingChatOptions.Builder</code></a> initialized with the values of\nthis <a href=\"../model/tool/ToolCallingChatOptions.html\" title=\"interface in org.springframework.ai.model.tool\"><code>ToolCallingChatOptions</code></a>.\n\nNarrows the return type of <a href=\"../chat/prompt/ChatOptions.html#mutate()\"><code>ChatOptions.mutate()</code></a> so generic tool calling\ncode can chain methods without casting.",
+      "translation": "返回一个新的<a href=\"../model/tool/ToolCallingChatOptions.Builder.html\" title=\"interface in org.springframework.ai.model.tool\"><code>ToolCallingChatOptions.Builder</code></a>，该对象已初始化为当前此<a href=\"../model/tool/ToolCallingChatOptions.html\" title=\"interface in org.springframework.ai.model.tool\"><code>ToolCallingChatOptions</code></a>的值。\n\n将<a href=\"../chat/prompt/ChatOptions.html#mutate()\"><code>ChatOptions.mutate()</code></a>的返回类型收窄，以便通用工具调用代码可以无需强制转换即可链式调用方法。",
+      "count": 1
+    },
+    {
+      "source": "Returns a new <a href=\"../model/tool/ToolCallingChatOptions.Builder.html\" title=\"interface in org.springframework.ai.model.tool\"><code>ToolCallingChatOptions.Builder</code></a> initialized with the values of\nthis <a href=\"../model/tool/ToolCallingChatOptions.html\" title=\"interface in org.springframework.ai.model.tool\"><code>ToolCallingChatOptions</code></a>.",
+      "translation": "返回一个新的<a href=\"../model/tool/ToolCallingChatOptions.Builder.html\" title=\"interface in org.springframework.ai.model.tool\"><code>ToolCallingChatOptions.Builder</code></a>，该对象已初始化为当前此<a href=\"../model/tool/ToolCallingChatOptions.html\" title=\"interface in org.springframework.ai.model.tool\"><code>ToolCallingChatOptions</code></a>的值。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../chat/prompt/ChatOptions.html#getModel()\">ChatOptions</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../chat/prompt/ChatOptions.html#getModel()\">ChatOptions</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../chat/prompt/ChatOptions.html#getFrequencyPenalty()\">ChatOptions</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../chat/prompt/ChatOptions.html#getFrequencyPenalty()\">ChatOptions</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../chat/prompt/ChatOptions.html#getMaxTokens()\">ChatOptions</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../chat/prompt/ChatOptions.html#getMaxTokens()\">ChatOptions</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../chat/prompt/ChatOptions.html#getPresencePenalty()\">ChatOptions</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../chat/prompt/ChatOptions.html#getPresencePenalty()\">ChatOptions</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../chat/prompt/ChatOptions.html#getStopSequences()\">ChatOptions</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../chat/prompt/ChatOptions.html#getStopSequences()\">ChatOptions</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../chat/prompt/ChatOptions.html#getTemperature()\">ChatOptions</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../chat/prompt/ChatOptions.html#getTemperature()\">ChatOptions</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../chat/prompt/ChatOptions.html#getTopP()\">ChatOptions</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../chat/prompt/ChatOptions.html#getTopP()\">ChatOptions</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../model/tool/ToolCallingChatOptions.html#getToolCallbacks()\">ToolCallingChatOptions</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../model/tool/ToolCallingChatOptions.html#getToolCallbacks()\">ToolCallingChatOptions</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../chat/prompt/ChatOptions.html#getTopK()\">ChatOptions</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../chat/prompt/ChatOptions.html#getTopK()\">ChatOptions</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../model/tool/ToolCallingChatOptions.html#getToolContext()\">ToolCallingChatOptions</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../model/tool/ToolCallingChatOptions.html#getToolContext()\">ToolCallingChatOptions</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../model/tool/ToolCallingChatOptions.html#mutate()\">ToolCallingChatOptions</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../model/tool/ToolCallingChatOptions.html#mutate()\">ToolCallingChatOptions</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Chat completions options for the DeepSeek chat API.\n<a href=\"https://platform.deepseek.com/api-docs/api/create-chat-completion\">DeepSeek\nchat completion</a>",
+      "translation": "DeepSeek 聊天 API 的完整对话选项。\n<a href=\"https://platform.deepseek.com/api-docs/api/create-chat-completion\">DeepSeek 聊天完成</a>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../chat/prompt/ChatOptions.html#getModel()\">getModel</a></code> in interface <code><a href=\"../chat/prompt/ChatOptions.html\" title=\"interface in org.springframework.ai.chat.prompt\">ChatOptions</a></code>",
+      "translation": "接口 <code><a href=\"../chat/prompt/ChatOptions.html\" title=\"org.springframework.ai.chat.prompt 中的接口\">ChatOptions</a></code> 中的 <code><a href=\"../chat/prompt/ChatOptions.html#getModel()\">getModel</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../chat/prompt/ChatOptions.html#getFrequencyPenalty()\">getFrequencyPenalty</a></code> in interface <code><a href=\"../chat/prompt/ChatOptions.html\" title=\"interface in org.springframework.ai.chat.prompt\">ChatOptions</a></code>",
+      "translation": "接口 <code><a href=\"../chat/prompt/ChatOptions.html\" title=\"org.springframework.ai.chat.prompt 中的接口\">ChatOptions</a></code> 中的方法 <code><a href=\"../chat/prompt/ChatOptions.html#getFrequencyPenalty()\">getFrequencyPenalty</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../chat/prompt/ChatOptions.html#getMaxTokens()\">getMaxTokens</a></code> in interface <code><a href=\"../chat/prompt/ChatOptions.html\" title=\"interface in org.springframework.ai.chat.prompt\">ChatOptions</a></code>",
+      "translation": "接口 <code><a href=\"../chat/prompt/ChatOptions.html\" title=\"org.springframework.ai.chat.prompt 中的接口\">ChatOptions</a></code> 中的 <code><a href=\"../chat/prompt/ChatOptions.html#getMaxTokens()\">getMaxTokens</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../chat/prompt/ChatOptions.html#getPresencePenalty()\">getPresencePenalty</a></code> in interface <code><a href=\"../chat/prompt/ChatOptions.html\" title=\"interface in org.springframework.ai.chat.prompt\">ChatOptions</a></code>",
+      "translation": "<code><a href=\"../chat/prompt/ChatOptions.html#getPresencePenalty()\">getPresencePenalty</a></code> 在接口 <code><a href=\"../chat/prompt/ChatOptions.html\" title=\"interface in org.springframework.ai.chat.prompt\">ChatOptions</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../chat/prompt/ChatOptions.html#getStopSequences()\">getStopSequences</a></code> in interface <code><a href=\"../chat/prompt/ChatOptions.html\" title=\"interface in org.springframework.ai.chat.prompt\">ChatOptions</a></code>",
+      "translation": "<code><a href=\"../chat/prompt/ChatOptions.html#getStopSequences()\">getStopSequences</a></code> 接口 <code><a href=\"../chat/prompt/ChatOptions.html\" title=\"interface in org.springframework.ai.chat.prompt\">ChatOptions</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../chat/prompt/ChatOptions.html#getTemperature()\">getTemperature</a></code> in interface <code><a href=\"../chat/prompt/ChatOptions.html\" title=\"interface in org.springframework.ai.chat.prompt\">ChatOptions</a></code>",
+      "translation": "接口 <code><a href=\"../chat/prompt/ChatOptions.html\" title=\"org.springframework.ai.chat.prompt 中的接口\">ChatOptions</a></code> 中的 <code><a href=\"../chat/prompt/ChatOptions.html#getTemperature()\">getTemperature</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../chat/prompt/ChatOptions.html#getTopP()\">getTopP</a></code> in interface <code><a href=\"../chat/prompt/ChatOptions.html\" title=\"interface in org.springframework.ai.chat.prompt\">ChatOptions</a></code>",
+      "translation": "接口 <code><a href=\"../chat/prompt/ChatOptions.html\" title=\"org.springframework.ai.chat.prompt 中的接口\">ChatOptions</a></code> 中的 <code><a href=\"../chat/prompt/ChatOptions.html#getTopP()\">getTopP</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../model/tool/ToolCallingChatOptions.html#getToolCallbacks()\">getToolCallbacks</a></code> in interface <code><a href=\"../model/tool/ToolCallingChatOptions.html\" title=\"interface in org.springframework.ai.model.tool\">ToolCallingChatOptions</a></code>",
+      "translation": "<code><a href=\"../model/tool/ToolCallingChatOptions.html#getToolCallbacks()\">getToolCallbacks</a></code> 在接口 <code><a href=\"../model/tool/ToolCallingChatOptions.html\" title=\"interface in org.springframework.ai.model.tool\">ToolCallingChatOptions</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../chat/prompt/ChatOptions.html#getTopK()\">getTopK</a></code> in interface <code><a href=\"../chat/prompt/ChatOptions.html\" title=\"interface in org.springframework.ai.chat.prompt\">ChatOptions</a></code>",
+      "translation": "接口 <code><a href=\"../chat/prompt/ChatOptions.html\" title=\"org.springframework.ai.chat.prompt 中的接口\">ChatOptions</a></code> 中的 <code><a href=\"../chat/prompt/ChatOptions.html#getTopK()\">getTopK</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../model/tool/ToolCallingChatOptions.html#getToolContext()\">getToolContext</a></code> in interface <code><a href=\"../model/tool/ToolCallingChatOptions.html\" title=\"interface in org.springframework.ai.model.tool\">ToolCallingChatOptions</a></code>",
+      "translation": "<code><a href=\"../model/tool/ToolCallingChatOptions.html#getToolContext()\">getToolContext</a></code> 接口 <code><a href=\"../model/tool/ToolCallingChatOptions.html\" title=\"interface in org.springframework.ai.model.tool\">ToolCallingChatOptions</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../chat/prompt/ChatOptions.html#mutate()\">mutate</a></code> in interface <code><a href=\"../chat/prompt/ChatOptions.html\" title=\"interface in org.springframework.ai.chat.prompt\">ChatOptions</a></code>",
+      "translation": "接口 <code><a href=\"../chat/prompt/ChatOptions.html\" title=\"org.springframework.ai.chat.prompt 中的接口\">ChatOptions</a></code> 中的 <code><a href=\"../chat/prompt/ChatOptions.html#mutate()\">mutate</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../model/tool/ToolCallingChatOptions.html#mutate()\">mutate</a></code> in interface <code><a href=\"../model/tool/ToolCallingChatOptions.html\" title=\"interface in org.springframework.ai.model.tool\">ToolCallingChatOptions</a></code>",
+      "translation": "接口 <code><a href=\"../model/tool/ToolCallingChatOptions.html\" title=\"org.springframework.ai.model.tool 中的接口\">ToolCallingChatOptions</a></code> 中的<code><a href=\"../model/tool/ToolCallingChatOptions.html#mutate()\">mutate</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#hashCode()\" title=\"class or interface in java.lang\">hashCode</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"class or interface in java.lang\">Object</a></code>",
+      "translation": "类 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"java.lang 中的类或接口\">Object</a></code> 中的 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#hashCode()\" title=\"java.lang 中的类或接口\">hashCode</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)\" title=\"class or interface in java.lang\">equals</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"class or interface in java.lang\">Object</a></code>",
+      "translation": "`Object` 类中的 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)\" title=\"class or interface in java.lang\">equals</a></code>",
+      "count": 1
+    },
+    {
+      "source": "Geng Rong, Sebastien Deleuze",
+      "translation": "耿荣，塞巴斯蒂安·德洛兹",
+      "count": 1
+    },
+    {
+      "source": "the model to use for the chat",
+      "translation": "用于聊天的模型",
+      "count": 1
+    },
+    {
+      "source": "the frequency penalty to use for the chat",
+      "translation": "聊天中应使用的频率惩罚值。",
+      "count": 1
+    },
+    {
+      "source": "the maximum number of tokens to use for the chat",
+      "translation": "用于聊天的最大 token 数量",
+      "count": 1
+    },
+    {
+      "source": "the presence penalty to use for the chat",
+      "translation": "用于聊天的存在惩罚值",
+      "count": 1
+    },
+    {
+      "source": "the stop sequences to use for the chat",
+      "translation": "用于聊天的停止序列",
+      "count": 1
+    },
+    {
+      "source": "the temperature to use for the chat",
+      "translation": "用于聊天的温度设置",
+      "count": 1
+    },
+    {
+      "source": "the top P to use for the chat",
+      "translation": "用于聊天的顶级 P 值",
+      "count": 1
+    },
+    {
+      "source": "the top K to use for the chat",
+      "translation": "用于聊天的最佳 K 值",
+      "count": 1
+    },
+    {
+      "source": "the tool context map.",
+      "translation": "工具上下文映射。",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    }
+  ]
+}

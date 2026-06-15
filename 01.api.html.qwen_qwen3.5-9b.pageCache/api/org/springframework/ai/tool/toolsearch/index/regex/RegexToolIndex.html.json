@@ -1,0 +1,201 @@
+{
+  "created_at": "2026-06-15 08:00:22",
+  "updated_at": "2026-06-15 08:00:22",
+  "stats": {
+    "total_entries": 37,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 46,
+    "entries_with_hits": 37,
+    "entries_without_hits": 0,
+    "hit_rate": 1.2432432432432432,
+    "usage_percentage": 0.0036999999999999997
+  },
+  "items": [
+    {
+      "source": "Clears all indexed tools for the specified session.",
+      "translation": "清除指定会话中的所有索引工具。",
+      "count": 2
+    },
+    {
+      "source": "Converts a natural-language query into a case-insensitive OR regex pattern.",
+      "translation": "将自然语言查询转换为不区分大小写的 OR 正则表达式模式。",
+      "count": 2
+    },
+    {
+      "source": "Registers a tool in the search index for the specified session.",
+      "translation": "为指定会话在搜索索引中注册工具。",
+      "count": 2
+    },
+    {
+      "source": "Registers multiple tools in the search index for the specified session in a single\nbatch operation.",
+      "translation": "在单个批量操作中，为指定的会话注册多个工具到搜索索引中。",
+      "count": 2
+    },
+    {
+      "source": "Validates a regex pattern without performing a search.",
+      "translation": "验证正则表达式模式，而不执行搜索。",
+      "count": 2
+    },
+    {
+      "source": "Searches for tools matching the given request criteria.",
+      "translation": "搜索符合给定请求条件的工具。",
+      "count": 2
+    },
+    {
+      "source": "Returns the number of tools in the index for the specified session.",
+      "translation": "返回指定会话中索引中的工具数量。",
+      "count": 2
+    },
+    {
+      "source": "Returns the total number of tools across all session indexes.",
+      "translation": "返回所有会话索引中工具的总数。",
+      "count": 2
+    },
+    {
+      "source": "<code>sessionId</code> - the session identifier for tool isolation",
+      "translation": "<code>sessionId</code> - 用于工具隔离的会话标识符",
+      "count": 2
+    },
+    {
+      "source": "Implementations should override this method when a batch operation is more\nefficient than repeated <a href=\"../../ToolIndex.html#indexTool(java.lang.String,org.springframework.ai.tool.toolsearch.ToolReference)\"><code>ToolIndex.indexTool(String, ToolReference)</code></a> calls (e.g. a single embedding API call\nor a single write transaction). The default implementation simply iterates and\ndelegates to <a href=\"../../ToolIndex.html#indexTool(java.lang.String,org.springframework.ai.tool.toolsearch.ToolReference)\"><code>ToolIndex.indexTool(String, ToolReference)</code></a>.",
+      "translation": "实现类应在批量操作比重复调用<a href=\"../../ToolIndex.html#indexTool(java.lang.String,org.springframework.ai.tool.toolsearch.ToolReference)\"><code>ToolIndex.indexTool(String, ToolReference)</code></a>更高效时（例如单次嵌入 API 调用或单次写入事务）重写此方法。默认实现仅迭代并委托给<a href=\"../../ToolIndex.html#indexTool(java.lang.String,org.springframework.ai.tool.toolsearch.ToolReference)\"><code>ToolIndex.indexTool(String, ToolReference)</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Stop words are filtered out and remaining tokens are escaped and joined into a pattern\nof the form <code>(?i)(token1|token2|...)</code>. Generated patterns are capped at 200\ncharacters. Tool-name matches are weighted 2× higher than description matches.",
+      "translation": "停用词被过滤掉，剩余的标记经过转义并连接成如下形式的模式：<code>(?i)(token1|token2|...)</code>。生成的模式长度上限为 200 个字符。工具名称匹配的权重是描述匹配的两倍。",
+      "count": 1
+    },
+    {
+      "source": "Tokens are lowercased, stop words removed, special regex characters escaped, and\njoined as <code>(?i)(token1|token2|...)</code>. The pattern is truncated if it would\nexceed 200 characters. Subclasses may override to apply a different conversion\nstrategy.",
+      "translation": "标记被转换为小写，移除停用词，转义特殊正则表达式字符，并连接为<code>(?i)(token1|token2|...)</code>。如果模式长度超过 200 个字符，则会被截断。子类可以重写此方法以应用不同的转换策略。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../ToolIndex.html#clearIndex(java.lang.String)\">ToolIndex</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../ToolIndex.html#clearIndex(java.lang.String)\">ToolIndex</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../ToolIndex.html#indexTool(java.lang.String,org.springframework.ai.tool.toolsearch.ToolReference)\">ToolIndex</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../ToolIndex.html#indexTool(java.lang.String,org.springframework.ai.tool.toolsearch.ToolReference)\">ToolIndex</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../ToolIndex.html#indexTools(java.lang.String,java.util.List)\">ToolIndex</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../ToolIndex.html#indexTools(java.lang.String,java.util.List)\">ToolIndex</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../ToolIndex.html#search(org.springframework.ai.tool.toolsearch.ToolSearchRequest)\">ToolIndex</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../ToolIndex.html#search(org.springframework.ai.tool.toolsearch.ToolSearchRequest)\">ToolIndex</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../ToolIndex.html#clearIndex(java.lang.String)\">clearIndex</a></code> in interface <code><a href=\"../../ToolIndex.html\" title=\"interface in org.springframework.ai.tool.toolsearch\">ToolIndex</a></code>",
+      "translation": "<code><a href=\"../../ToolIndex.html#clearIndex(java.lang.String)\">clearIndex</a></code> 接口 <code><a href=\"../../ToolIndex.html\" title=\"org.springframework.ai.tool.toolsearch 中的接口\">ToolIndex</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../ToolIndex.html#indexTool(java.lang.String,org.springframework.ai.tool.toolsearch.ToolReference)\">indexTool</a></code> in interface <code><a href=\"../../ToolIndex.html\" title=\"interface in org.springframework.ai.tool.toolsearch\">ToolIndex</a></code>",
+      "translation": "接口 <code><a href=\"../../ToolIndex.html\" title=\"org.springframework.ai.tool.toolsearch 中的接口\">ToolIndex</a></code> 中的方法 <code><a href=\"../../ToolIndex.html#indexTool(java.lang.String,org.springframework.ai.tool.toolsearch.ToolReference)\">indexTool</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../ToolIndex.html#indexTools(java.lang.String,java.util.List)\">indexTools</a></code> in interface <code><a href=\"../../ToolIndex.html\" title=\"interface in org.springframework.ai.tool.toolsearch\">ToolIndex</a></code>",
+      "translation": "<code><a href=\"../../ToolIndex.html#indexTools(java.lang.String,java.util.List)\">indexTools</a></code> 接口 <code><a href=\"../../ToolIndex.html\" title=\"interface in org.springframework.ai.tool.toolsearch\">ToolIndex</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../ToolIndex.html#search(org.springframework.ai.tool.toolsearch.ToolSearchRequest)\">search</a></code> in interface <code><a href=\"../../ToolIndex.html\" title=\"interface in org.springframework.ai.tool.toolsearch\">ToolIndex</a></code>",
+      "translation": "<code><a href=\"../../ToolIndex.html#search(org.springframework.ai.tool.toolsearch.ToolSearchRequest)\">search</a></code> 接口 <code><a href=\"../../ToolIndex.html\" title=\"interface in org.springframework.ai.tool.toolsearch\">ToolIndex</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/AutoCloseable.html#close()\" title=\"class or interface in java.lang\">close</a></code> in interface <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/AutoCloseable.html\" title=\"class or interface in java.lang\">AutoCloseable</a></code>",
+      "translation": "`AutoCloseable` 接口中的 `close()` 方法。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Closeable.html#close()\" title=\"class or interface in java.io\">close</a></code> in interface <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Closeable.html\" title=\"class or interface in java.io\">Closeable</a></code>",
+      "translation": "接口 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Closeable.html\" title=\"java.io 中的类或接口\">Closeable</a></code> 中的 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Closeable.html#close()\" title=\"java.io 中的类或接口\">close</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code>sessionId</code> - the session identifier",
+      "translation": "<code>sessionId</code> - 会话标识符",
+      "count": 1
+    },
+    {
+      "source": "<code>toolReference</code> - the reference to the tool being indexed",
+      "translation": "<code>toolReference</code> - 被索引工具的引用",
+      "count": 1
+    },
+    {
+      "source": "<code>toolReferences</code> - the tools to register",
+      "translation": "<code>toolReferences</code> - 要注册的工具",
+      "count": 1
+    },
+    {
+      "source": "<code>toolSearchRequest</code> - the search request containing query and parameters",
+      "translation": "<code>toolSearchRequest</code> - 包含查询和参数的搜索请求",
+      "count": 1
+    },
+    {
+      "source": "<code>query</code> - the natural-language query",
+      "translation": "<code>query</code> - 自然语言查询",
+      "count": 1
+    },
+    {
+      "source": "a valid regex pattern string; never <code>null</code>",
+      "translation": "一个有效的正则表达式模式字符串；永远不为 <code>null</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>sessionId</code> - the session ID",
+      "translation": "<code>sessionId</code> - 会话 ID",
+      "count": 1
+    },
+    {
+      "source": "<code>regexPattern</code> - the pattern to validate",
+      "translation": "<code>regexPattern</code> - 用于验证的模式",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "a response containing matching tool references",
+      "translation": "包含匹配工具引用的响应",
+      "count": 1
+    },
+    {
+      "source": "tool count, or 0 if session not found",
+      "translation": "工具数量，若未找到会话则返回 0",
+      "count": 1
+    },
+    {
+      "source": "total tool count",
+      "translation": "工具总数",
+      "count": 1
+    },
+    {
+      "source": "true if the pattern is valid, false otherwise",
+      "translation": "如果模式有效则为 true，否则为 false。",
+      "count": 1
+    },
+    {
+      "source": "Regex-based tool searcher that converts natural-language queries into case-insensitive\nOR patterns and matches them against tool names and descriptions.",
+      "translation": "基于正则表达式的工具搜索器，将自然语言查询转换为不区分大小写的 OR 模式，并匹配工具名称和描述。",
+      "count": 1
+    }
+  ]
+}

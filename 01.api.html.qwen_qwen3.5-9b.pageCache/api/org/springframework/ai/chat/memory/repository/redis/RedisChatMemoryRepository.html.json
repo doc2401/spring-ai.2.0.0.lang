@@ -1,0 +1,261 @@
+{
+  "created_at": "2026-06-15 08:56:50",
+  "updated_at": "2026-06-15 08:56:50",
+  "stats": {
+    "total_entries": 49,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 60,
+    "entries_with_hits": 49,
+    "entries_without_hits": 0,
+    "hit_rate": 1.2244897959183674,
+    "usage_percentage": 0.0049
+  },
+  "items": [
+    {
+      "source": "<code>limit</code> - Maximum number of results to return",
+      "translation": "<code>limit</code> - 返回结果的最大数量",
+      "count": 5
+    },
+    {
+      "source": "Execute a custom query using Redis Search syntax.",
+      "translation": "使用 Redis Search 语法执行自定义查询。",
+      "count": 2
+    },
+    {
+      "source": "Find messages by content across all conversations.",
+      "translation": "根据内容在所有对话中查找消息。",
+      "count": 2
+    },
+    {
+      "source": "Find messages with a specific metadata key-value pair.",
+      "translation": "查找具有特定元数据键值对的邮件。",
+      "count": 2
+    },
+    {
+      "source": "Find messages by timestamp range.",
+      "translation": "按时间戳范围查找消息。",
+      "count": 2
+    },
+    {
+      "source": "Find messages by type across all conversations.",
+      "translation": "按类型查找所有对话中的消息。",
+      "count": 2
+    },
+    {
+      "source": "Gets the index name used by this RedisChatMemory instance.",
+      "translation": "获取此 RedisChatMemory 实例使用的索引名称。",
+      "count": 2
+    },
+    {
+      "source": "Replaces all the existing messages for the given conversation ID with the provided\nmessages.",
+      "translation": "使用提供的消息替换给定对话 ID 的所有现有消息。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../ChatMemoryRepository.html#saveAll(java.lang.String,java.util.List)\">ChatMemoryRepository</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../ChatMemoryRepository.html#saveAll(java.lang.String,java.util.List)\">ChatMemoryRepository</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"AdvancedRedisChatMemoryRepository.html#findByContent(java.lang.String,int)\">AdvancedRedisChatMemoryRepository</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"AdvancedRedisChatMemoryRepository.html#findByContent(java.lang.String,int)\">AdvancedRedisChatMemoryRepository</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"AdvancedRedisChatMemoryRepository.html#findByType(org.springframework.ai.chat.messages.MessageType,int)\">AdvancedRedisChatMemoryRepository</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"AdvancedRedisChatMemoryRepository.html#findByType(org.springframework.ai.chat.messages.MessageType,int)\">AdvancedRedisChatMemoryRepository</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"AdvancedRedisChatMemoryRepository.html#findByTimeRange(java.lang.String,java.time.Instant,java.time.Instant,int)\">AdvancedRedisChatMemoryRepository</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"AdvancedRedisChatMemoryRepository.html#findByTimeRange(java.lang.String,java.time.Instant,java.time.Instant,int)\">AdvancedRedisChatMemoryRepository</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"AdvancedRedisChatMemoryRepository.html#findByMetadata(java.lang.String,java.lang.Object,int)\">AdvancedRedisChatMemoryRepository</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"AdvancedRedisChatMemoryRepository.html#findByMetadata(java.lang.String,java.lang.Object,int)\">AdvancedRedisChatMemoryRepository</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"AdvancedRedisChatMemoryRepository.html#executeQuery(java.lang.String,int)\">AdvancedRedisChatMemoryRepository</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"AdvancedRedisChatMemoryRepository.html#executeQuery(java.lang.String,int)\">AdvancedRedisChatMemoryRepository</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Redis implementation of <a href=\"../../ChatMemoryRepository.html\" title=\"interface in org.springframework.ai.chat.memory\"><code>ChatMemoryRepository</code></a> using Redis (JSON + Query Engine).\nStores chat messages as JSON documents and uses the Redis Query Engine for querying.",
+      "translation": "使用 Redis（JSON + 查询引擎）实现的<a href=\"../../ChatMemoryRepository.html\" title=\"org.springframework.ai.chat.memory 中的接口\"><code>ChatMemoryRepository</code></a>。  \n将聊天消息存储为 JSON 文档，并使用 Redis 查询引擎进行查询。",
+      "count": 1
+    },
+    {
+      "source": "Inner static builder class for constructing instances of\n<a href=\"RedisChatMemoryRepository.html\" title=\"class in org.springframework.ai.chat.memory.repository.redis\"><code>RedisChatMemoryRepository</code></a>.",
+      "translation": "内部静态构建器类，用于构建 <a href=\"RedisChatMemoryRepository.html\" title=\"class in org.springframework.ai.chat.memory.repository.redis\"><code>RedisChatMemoryRepository</code></a> 类的实例。",
+      "count": 1
+    },
+    {
+      "source": "Finds all messages for a given conversation ID.",
+      "translation": "查找给定对话 ID 的所有消息。",
+      "count": 1
+    },
+    {
+      "source": "Finds all unique conversation IDs using Redis aggregation.",
+      "translation": "使用 Redis 聚合功能查找所有唯一的会话 ID。",
+      "count": 1
+    },
+    {
+      "source": "Finds all unique conversation IDs using Redis aggregation. This method is optimized\nto perform the deduplication on the Redis server side.",
+      "translation": "使用 Redis 聚合功能查找所有唯一的会话 ID。此方法已针对在 Redis 服务器端执行去重进行了优化。",
+      "count": 1
+    },
+    {
+      "source": "Finds all messages for a given conversation ID. Uses the configured maximum\nmessages per conversation limit to avoid exceeding Redis limits.",
+      "translation": "查找给定对话 ID 的所有消息。使用配置的每对话最大消息数限制，以避免超过 Redis 的限制。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../ChatMemoryRepository.html#findConversationIds()\">findConversationIds</a></code> in interface <code><a href=\"../../ChatMemoryRepository.html\" title=\"interface in org.springframework.ai.chat.memory\">ChatMemoryRepository</a></code>",
+      "translation": "接口 <code><a href=\"../../ChatMemoryRepository.html\" title=\"org.springframework.ai.chat.memory 中的接口\">ChatMemoryRepository</a></code> 中的方法 <code><a href=\"../../ChatMemoryRepository.html#findConversationIds()\">findConversationIds</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../ChatMemoryRepository.html#findByConversationId(java.lang.String)\">findByConversationId</a></code> in interface <code><a href=\"../../ChatMemoryRepository.html\" title=\"interface in org.springframework.ai.chat.memory\">ChatMemoryRepository</a></code>",
+      "translation": "接口 <code><a href=\"../../ChatMemoryRepository.html\" title=\"org.springframework.ai.chat.memory 中的接口\">ChatMemoryRepository</a></code> 中的 <code><a href=\"../../ChatMemoryRepository.html#findByConversationId(java.lang.String)\">findByConversationId</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../ChatMemoryRepository.html#saveAll(java.lang.String,java.util.List)\">saveAll</a></code> in interface <code><a href=\"../../ChatMemoryRepository.html\" title=\"interface in org.springframework.ai.chat.memory\">ChatMemoryRepository</a></code>",
+      "translation": "接口 <code><a href=\"../../ChatMemoryRepository.html\" title=\"org.springframework.ai.chat.memory 中的接口\">ChatMemoryRepository</a></code> 中的 <code><a href=\"../../ChatMemoryRepository.html#saveAll(java.lang.String,java.util.List)\">saveAll</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../ChatMemoryRepository.html#deleteByConversationId(java.lang.String)\">deleteByConversationId</a></code> in interface <code><a href=\"../../ChatMemoryRepository.html\" title=\"interface in org.springframework.ai.chat.memory\">ChatMemoryRepository</a></code>",
+      "translation": "接口 <code><a href=\"../../ChatMemoryRepository.html\" title=\"org.springframework.ai.chat.memory 中的接口\">ChatMemoryRepository</a></code> 中的方法 <code><a href=\"../../ChatMemoryRepository.html#deleteByConversationId(java.lang.String)\">deleteByConversationId</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"AdvancedRedisChatMemoryRepository.html#findByContent(java.lang.String,int)\">findByContent</a></code> in interface <code><a href=\"AdvancedRedisChatMemoryRepository.html\" title=\"interface in org.springframework.ai.chat.memory.repository.redis\">AdvancedRedisChatMemoryRepository</a></code>",
+      "translation": "<code><a href=\"AdvancedRedisChatMemoryRepository.html#findByContent(java.lang.String,int)\">findByContent</a></code> 接口 <code><a href=\"AdvancedRedisChatMemoryRepository.html\" title=\"interface in org.springframework.ai.chat.memory.repository.redis\">AdvancedRedisChatMemoryRepository</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"AdvancedRedisChatMemoryRepository.html#findByType(org.springframework.ai.chat.messages.MessageType,int)\">findByType</a></code> in interface <code><a href=\"AdvancedRedisChatMemoryRepository.html\" title=\"interface in org.springframework.ai.chat.memory.repository.redis\">AdvancedRedisChatMemoryRepository</a></code>",
+      "translation": "<code><a href=\"AdvancedRedisChatMemoryRepository.html#findByType(org.springframework.ai.chat.messages.MessageType,int)\">findByType</a></code> 接口 <code><a href=\"AdvancedRedisChatMemoryRepository.html\" title=\"interface in org.springframework.ai.chat.memory.repository.redis\">AdvancedRedisChatMemoryRepository</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"AdvancedRedisChatMemoryRepository.html#findByTimeRange(java.lang.String,java.time.Instant,java.time.Instant,int)\">findByTimeRange</a></code> in interface <code><a href=\"AdvancedRedisChatMemoryRepository.html\" title=\"interface in org.springframework.ai.chat.memory.repository.redis\">AdvancedRedisChatMemoryRepository</a></code>",
+      "translation": "<code><a href=\"AdvancedRedisChatMemoryRepository.html#findByTimeRange(java.lang.String,java.time.Instant,java.time.Instant,int)\">findByTimeRange</a></code> 接口 <code><a href=\"AdvancedRedisChatMemoryRepository.html\" title=\"interface in org.springframework.ai.chat.memory.repository.redis\">AdvancedRedisChatMemoryRepository</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"AdvancedRedisChatMemoryRepository.html#findByMetadata(java.lang.String,java.lang.Object,int)\">findByMetadata</a></code> in interface <code><a href=\"AdvancedRedisChatMemoryRepository.html\" title=\"interface in org.springframework.ai.chat.memory.repository.redis\">AdvancedRedisChatMemoryRepository</a></code>",
+      "translation": "<code><a href=\"AdvancedRedisChatMemoryRepository.html#findByMetadata(java.lang.String,java.lang.Object,int)\">findByMetadata</a></code> 接口 <code><a href=\"AdvancedRedisChatMemoryRepository.html\" title=\"interface in org.springframework.ai.chat.memory.repository.redis\">AdvancedRedisChatMemoryRepository</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"AdvancedRedisChatMemoryRepository.html#executeQuery(java.lang.String,int)\">executeQuery</a></code> in interface <code><a href=\"AdvancedRedisChatMemoryRepository.html\" title=\"interface in org.springframework.ai.chat.memory.repository.redis\">AdvancedRedisChatMemoryRepository</a></code>",
+      "translation": "<code><a href=\"AdvancedRedisChatMemoryRepository.html#executeQuery(java.lang.String,int)\">executeQuery</a></code> 接口 <code><a href=\"AdvancedRedisChatMemoryRepository.html\" title=\"interface in org.springframework.ai.chat.memory.repository.redis\">AdvancedRedisChatMemoryRepository</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>conversationId</code> - the conversation ID to find messages for",
+      "translation": "<code>conversationId</code> - 用于查找消息的会话 ID",
+      "count": 1
+    },
+    {
+      "source": "<code>contentPattern</code> - The text pattern to search for in message content",
+      "translation": "<code>contentPattern</code> - 要在消息内容中搜索的文本模式",
+      "count": 1
+    },
+    {
+      "source": "<code>messageType</code> - The message type to filter by",
+      "translation": "<code>messageType</code> - 用于过滤的消息类型",
+      "count": 1
+    },
+    {
+      "source": "<code>conversationId</code> - Optional conversation ID to filter by (null for all\nconversations)",
+      "translation": "<code>conversationId</code> - 可选的会话 ID 用于过滤（为 null 时返回所有会话）",
+      "count": 1
+    },
+    {
+      "source": "<code>fromTime</code> - Start of time range (inclusive)",
+      "translation": "<code>fromTime</code> - 时间范围的起始点（包含）",
+      "count": 1
+    },
+    {
+      "source": "<code>toTime</code> - End of time range (inclusive)",
+      "translation": "<code>toTime</code> - 时间范围结束（包含）",
+      "count": 1
+    },
+    {
+      "source": "<code>metadataKey</code> - The metadata key to search for",
+      "translation": "<code>metadataKey</code> - 要搜索的元数据键",
+      "count": 1
+    },
+    {
+      "source": "<code>metadataValue</code> - The metadata value to match",
+      "translation": "<code>metadataValue</code> - 要匹配的元数据值",
+      "count": 1
+    },
+    {
+      "source": "<code>query</code> - The Redis Search query string",
+      "translation": "<code>query</code> - Redis Search 查询字符串",
+      "count": 1
+    },
+    {
+      "source": "Brian Sam-Bodden, Yanming Zhou",
+      "translation": "布莱恩·萨姆 - 博登，周燕明",
+      "count": 1
+    },
+    {
+      "source": "a list of unique conversation IDs",
+      "translation": "唯一会话 ID 列表",
+      "count": 1
+    },
+    {
+      "source": "a list of messages for the conversation",
+      "translation": "对话消息列表",
+      "count": 1
+    },
+    {
+      "source": "the index name",
+      "translation": "索引名称",
+      "count": 1
+    },
+    {
+      "source": "List of messages matching the pattern",
+      "translation": "与模式匹配的消息列表",
+      "count": 1
+    },
+    {
+      "source": "List of messages of the specified type",
+      "translation": "指定类型的消息列表",
+      "count": 1
+    },
+    {
+      "source": "List of messages within the time range",
+      "translation": "时间范围内的消息列表",
+      "count": 1
+    },
+    {
+      "source": "List of messages with matching metadata",
+      "translation": "与元数据匹配的消息列表",
+      "count": 1
+    },
+    {
+      "source": "List of messages matching the query",
+      "translation": "与查询匹配的消息列表",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    }
+  ]
+}

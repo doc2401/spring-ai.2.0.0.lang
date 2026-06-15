@@ -1,0 +1,226 @@
+{
+  "created_at": "2026-06-15 08:22:30",
+  "updated_at": "2026-06-15 08:22:30",
+  "stats": {
+    "total_entries": 42,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 58,
+    "entries_with_hits": 42,
+    "entries_without_hits": 0,
+    "hit_rate": 1.380952380952381,
+    "usage_percentage": 0.0042
+  },
+  "items": [
+    {
+      "source": "<span class=\"deprecated-label\">Deprecated, for removal: This API element is subject to removal in a future version.</span>",
+      "translation": "<code class=\"deprecated-label\">已弃用，即将移除：此 API 元素将在未来版本中被移除。</code>",
+      "count": 13
+    },
+    {
+      "source": "Default SSE endpoint path as specified by the MCP transport specification.",
+      "translation": "MCP 传输规范中指定的默认 SSE 端点路径。",
+      "count": 2
+    },
+    {
+      "source": "Event type for sending the message endpoint URI to clients.",
+      "translation": "发送消息端点 URI 给客户端的事件类型。",
+      "count": 2
+    },
+    {
+      "source": "Event type for JSON-RPC messages sent through the SSE connection.",
+      "translation": "通过 SSE 连接发送的 JSON-RPC 消息的事件类型。",
+      "count": 2
+    },
+    {
+      "source": "Creates a new Builder instance for configuring and creating instances of\nWebMvcSseServerTransportProvider.",
+      "translation": "创建一个用于配置和创建 WebMvcSseServerTransportProvider 实例的新 Builder 实例。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This implementation uses <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html\" title=\"class or interface in java.util.concurrent\"><code>ConcurrentHashMap</code></a> to safely manage multiple client\nsessions in a thread-safe manner. Each client session is assigned a unique ID and\nmaintains its own SSE connection.",
+      "translation": "此实现使用 <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html\" title=\"class or interface in java.util.concurrent\"><code>ConcurrentHashMap</code></a> 以线程安全的方式安全地管理多个客户端会话。每个客户端会话都被分配一个唯一 ID，并维护其自身的 SSE 连接。",
+      "count": 1
+    },
+    {
+      "source": "Key features:",
+      "translation": "主要功能：",
+      "count": 1
+    },
+    {
+      "source": "The transport operates on two main endpoints:",
+      "translation": "该运输系统在两个主要端点运行：",
+      "count": 1
+    },
+    {
+      "source": "Initiates a graceful shutdown of the transport. This method:\n<ul>\n<li>Sets the closing flag to prevent new connections</li>\n<li>Closes all active SSE connections</li>\n<li>Removes all session records</li>\n</ul>",
+      "translation": "启动传输的优雅关闭。此方法：\n<ul>\n<li>设置关闭标志以防止建立新连接</li>\n<li>关闭所有活动的 SSE 连接</li>\n<li>移除所有会话记录</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "Returns the RouterFunction that defines the HTTP endpoints for this transport. The\nrouter function handles two endpoints:\n<ul>\n<li>GET /sse - For establishing SSE connections</li>\n<li>POST [messageEndpoint] - For receiving JSON-RPC messages from clients</li>\n</ul>",
+      "translation": "返回定义此传输的 HTTP 端点的 RouterFunction。该路由函数处理两个端点：\n<ul>\n<li>GET /sse - 用于建立 SSE 连接</li>\n<li>POST [messageEndpoint] - 用于从客户端接收 JSON-RPC 消息</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "The SSE transport has been deprecated in the 2025-03-26 version of the\nspec, and should not be used anymore. We keep it for backwards compatibility.",
+      "translation": "SSE 传输已在 2025-03-26 版本的规范中被弃用，不应再使用。我们保留它仅用于向后兼容。",
+      "count": 1
+    },
+    {
+      "source": "Builder for creating instances of WebMvcSseServerTransportProvider.",
+      "translation": "用于创建 WebMvcSseServerTransportProvider 实例的构建器。",
+      "count": 1
+    },
+    {
+      "source": "Initiates a graceful shutdown of the transport.",
+      "translation": "优雅地终止传输。",
+      "count": 1
+    },
+    {
+      "source": "Returns the RouterFunction that defines the HTTP endpoints for this transport.",
+      "translation": "返回定义此传输的 HTTP 端点的 RouterFunction。",
+      "count": 1
+    },
+    {
+      "source": "Broadcasts a notification to all connected clients through their SSE connections.",
+      "translation": "通过 SSE 连接向所有已连接的客户端广播通知。",
+      "count": 1
+    },
+    {
+      "source": "Broadcasts a notification to all connected clients through their SSE connections.\nThe message is serialized to JSON and sent as an SSE event with type \"message\". If\nany errors occur during sending to a particular client, they are logged but don't\nprevent sending to other clients.",
+      "translation": "通过 SSE 连接向所有已连接的客户端广播通知。该消息会被序列化为 JSON，并以类型为\"message\"的 SSE 事件形式发送。如果在向某个特定客户端发送过程中发生任何错误，这些错误将被记录，但不会影响向其他客户端的发送。",
+      "count": 1
+    },
+    {
+      "source": "<ul class=\"tag-list-long\">\n<li><code>McpServerTransportProvider</code></li>\n<li><code>RouterFunction</code></li>\n<li><a href=\"https://modelcontextprotocol.io/specification/2025-11-25/basic/transports#backwards-compatibility\">Transports\nbackwards compatibility</a></li>\n</ul>",
+      "translation": "<ul class=\"tag-list-long\">\n<li><code>McpServerTransportProvider</code></li>\n<li><code>RouterFunction</code></li>\n<li><a href=\"https://modelcontextprotocol.io/specification/2025-11-25/basic/transports#backwards-compatibility\">传输向后兼容性</a></li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<code>protocolVersions</code> in interface <code>io.modelcontextprotocol.spec.McpServerTransportProviderBase</code>",
+      "translation": "接口 <code>io.modelcontextprotocol.spec.McpServerTransportProviderBase</code> 中的 <code>protocolVersions</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>setSessionFactory</code> in interface <code>io.modelcontextprotocol.spec.McpServerTransportProvider</code>",
+      "translation": "接口 <code>io.modelcontextprotocol.spec.McpServerTransportProvider</code> 中的 <code>setSessionFactory</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>notifyClients</code> in interface <code>io.modelcontextprotocol.spec.McpServerTransportProviderBase</code>",
+      "translation": "接口 <code>io.modelcontextprotocol.spec.McpServerTransportProviderBase</code> 中的 <code>notifyClients</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>notifyClient</code> in interface <code>io.modelcontextprotocol.spec.McpServerTransportProviderBase</code>",
+      "translation": "接口 <code>io.modelcontextprotocol.spec.McpServerTransportProviderBase</code> 中的 <code>notifyClient</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>closeGracefully</code> in interface <code>io.modelcontextprotocol.spec.McpServerTransportProviderBase</code>",
+      "translation": "接口 <code>io.modelcontextprotocol.spec.McpServerTransportProviderBase</code> 中的 <code>closeGracefully</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>/sse</code> - The SSE endpoint where clients establish their event stream\nconnection",
+      "translation": "<sse> - 客户端建立事件流连接的 SSE 端点",
+      "count": 1
+    },
+    {
+      "source": "<code>method</code> - The method name for the notification",
+      "translation": "<code>method</code> - 通知的方法名",
+      "count": 1
+    },
+    {
+      "source": "<code>params</code> - The parameters for the notification",
+      "translation": "<code>params</code> - 通知的参数",
+      "count": 1
+    },
+    {
+      "source": "Implements bidirectional communication using HTTP POST for client-to-server\nmessages and SSE for server-to-client messages",
+      "translation": "使用 HTTP POST 实现客户端到服务器的双向通信，并使用服务器发送事件（SSE）实现服务器到客户端的消息传递。",
+      "count": 1
+    },
+    {
+      "source": "Manages client sessions with unique IDs for reliable message delivery",
+      "translation": "管理具有唯一 ID 的客户端会话，以确保消息可靠投递。",
+      "count": 1
+    },
+    {
+      "source": "Supports graceful shutdown with proper session cleanup",
+      "translation": "支持优雅关闭并正确清理会话。",
+      "count": 1
+    },
+    {
+      "source": "Provides JSON-RPC message handling through configured endpoints",
+      "translation": "通过配置的端点提供 JSON-RPC 消息处理。",
+      "count": 1
+    },
+    {
+      "source": "Includes built-in error handling and logging",
+      "translation": "内置错误处理和日志记录功能。",
+      "count": 1
+    },
+    {
+      "source": "A configurable message endpoint where clients send their JSON-RPC messages via HTTP\nPOST",
+      "translation": "一个可配置的消息端点，客户端通过 HTTP POST 发送其 JSON-RPC 消息。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Alexandros Pappas",
+      "translation": "克里斯蒂安·茨洛夫，亚历山德罗斯·帕帕斯",
+      "count": 1
+    },
+    {
+      "source": "A Mono that completes when the broadcast attempt is finished",
+      "translation": "一个在广播尝试完成后完成的 Mono。",
+      "count": 1
+    },
+    {
+      "source": "A Mono that completes when all cleanup operations are finished",
+      "translation": "一个在所有清理操作完成后完成的单例。",
+      "count": 1
+    },
+    {
+      "source": "The configured RouterFunction for handling HTTP requests",
+      "translation": "用于处理 HTTP 请求的配置好的 RouterFunction",
+      "count": 1
+    },
+    {
+      "source": "A new Builder instance",
+      "translation": "一个新的 Builder 实例",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "Server-side implementation of the Model Context Protocol (MCP) transport layer using\nHTTP with Server-Sent Events (SSE) through Spring WebMVC. This implementation provides\na bridge between synchronous WebMVC operations and reactive programming patterns to\nmaintain compatibility with the reactive transport interface.",
+      "translation": "使用 Spring WebMVC 通过 HTTP 和服务器发送事件（SSE）实现模型上下文协议（MCP）传输层的服务端方案。该实现提供了同步 WebMVC 操作与响应式编程模式之间的桥梁，以保持与响应式传输接口的兼容性。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>使用 HTTP POST 实现客户端到服务器的双向通信，并使用服务器发送事件（SSE）实现服务器到客户端的消息传递。</li>\n<li>管理具有唯一 ID 的客户端会话，以确保消息可靠投递。</li>\n<li>支持优雅关闭并正确清理会话。</li>\n<li>通过配置的端点提供 JSON-RPC 消息处理。</li>\n<li>内置错误处理和日志记录功能。</li>\n</ul>",
+      "translation": "<ul>\n<li>使用 HTTP POST 实现客户端与服务器之间的双向通信，并通过服务器发送事件（SSE）实现服务器到客户端的消息传递。</li>\n<li>管理具有唯一 ID 的客户端会话，以确保消息可靠投递。</li>\n<li>支持优雅关闭并正确清理会话。</li>\n<li>通过配置的端点提供 JSON-RPC 消息处理。</li>\n<li>内置错误处理和日志记录功能。</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li><sse> - 客户端建立事件流连接的 SSE 端点</sse></li>\n<li>一个可配置的消息端点，客户端通过 HTTP POST 发送其 JSON-RPC 消息。</li>\n</ul>",
+      "translation": "<ul>\n<li><sse> - 客户端用于建立事件流（SSE）连接的 SSE 端点</sse></li>\n<li>一个可配置的消息端点，客户端通过 HTTP POST 向其发送 JSON-RPC 消息。</li>\n</ul>",
+      "count": 1
+    }
+  ]
+}

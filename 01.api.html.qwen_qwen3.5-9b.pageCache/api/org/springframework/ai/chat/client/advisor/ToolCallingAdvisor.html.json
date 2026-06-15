@@ -1,0 +1,226 @@
+{
+  "created_at": "2026-06-15 08:58:30",
+  "updated_at": "2026-06-15 08:58:30",
+  "stats": {
+    "total_entries": 42,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 48,
+    "entries_with_hits": 42,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1428571428571428,
+    "usage_percentage": 0.0042
+  },
+  "items": [
+    {
+      "source": "<code>streamAdvisorChain</code> - the stream advisor chain",
+      "translation": "<code>streamAdvisorChain</code> - 流顾问链",
+      "count": 4
+    },
+    {
+      "source": "Creates a new Builder instance for constructing a ToolCallingAdvisor.",
+      "translation": "为构建 ToolCallingAdvisor 创建一个新的 Builder 实例。",
+      "count": 2
+    },
+    {
+      "source": "Return the name of the advisor.",
+      "translation": "返回顾问的姓名。",
+      "count": 2
+    },
+    {
+      "source": "the potentially modified request",
+      "translation": "可能经过修改的请求",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "When the prompt options do not implement\n<a href=\"../../../model/tool/ToolCallingChatOptions.html\" title=\"interface in org.springframework.ai.model.tool\"><code>ToolCallingChatOptions</code></a> (e.g. for models that\ndon't support tool calling), this advisor passes the request through to the next\nadvisor without modification.",
+      "translation": "当提示选项未实现<a href=\"../../../model/tool/ToolCallingChatOptions.html\" title=\"interface in org.springframework.ai.model.tool\"><code>ToolCallingChatOptions</code></a>接口（例如，对于不支持工具调用的模型）时，该顾问会将请求原样传递给下一个顾问。",
+      "count": 1
+    },
+    {
+      "source": "It uses the CallAdvisorChainUtil to implement looping advisor chain calls.",
+      "translation": "它使用 CallAdvisorChainUtil 来实现循环顾问链调用。",
+      "count": 1
+    },
+    {
+      "source": "This enables intercepting the tool calling loop by the rest of the advisors next in the\nchain.",
+      "translation": "这使得链中后续的顾问能够拦截工具调用循环。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"api/Advisor.html#getName()\">Advisor</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"api/Advisor.html#getName()\">Advisor</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Default advisor order. Higher than\n<a href=\"api/Advisor.html#DEFAULT_CHAT_MEMORY_PRECEDENCE_ORDER\"><code>Advisor.DEFAULT_CHAT_MEMORY_PRECEDENCE_ORDER</code></a>\n(+200) so that memory advisors at their default order are placed outside this\nadvisor and do not participate in each tool-call iteration.",
+      "translation": "默认顾问顺序。高于 <a href=\"api/Advisor.html#DEFAULT_CHAT_MEMORY_PRECEDENCE_ORDER\"><code>Advisor.DEFAULT_CHAT_MEMORY_PRECEDENCE_ORDER</code></a>（+200），因此按默认顺序设置的记忆顾问会位于此顾问之外，不参与每次工具调用迭代。",
+      "count": 1
+    },
+    {
+      "source": "Builder for creating instances of ToolCallingAdvisor.",
+      "translation": "用于创建 ToolCallingAdvisor 实例的构建器。",
+      "count": 1
+    },
+    {
+      "source": "Default advisor order.",
+      "translation": "默认顾问顺序。",
+      "count": 1
+    },
+    {
+      "source": "Hook method called after each streaming call in the tool call loop.",
+      "translation": "在工具调用循环中的每次流式调用后调用的 Hook 方法。",
+      "count": 1
+    },
+    {
+      "source": "Hook method called before each streaming call in the tool call loop.",
+      "translation": "在工具调用循环中的每个流式调用之前调用 Hook 方法。",
+      "count": 1
+    },
+    {
+      "source": "Hook method called at the end of the streaming tool call loop to finalize the\nresponse.",
+      "translation": "在流式工具调用循环结束时调用的 Hook 方法，用于最终化响应。",
+      "count": 1
+    },
+    {
+      "source": "Hook method to determine the next instructions for a tool call iteration in\nstreaming mode.",
+      "translation": "使用钩子方法确定流式模式下工具调用迭代的下一条指令。",
+      "count": 1
+    },
+    {
+      "source": "Hook method called at the start of the streaming tool call loop.",
+      "translation": "在流式工具调用循环开始时调用的 Hook 方法。",
+      "count": 1
+    },
+    {
+      "source": "Hook method called at the start of the streaming tool call loop. Subclasses can\noverride to customize initialization behavior.",
+      "translation": "在流式工具调用循环开始时调用的钩子方法。子类可以重写它以自定义初始化行为。",
+      "count": 1
+    },
+    {
+      "source": "Hook method called before each streaming call in the tool call loop. Subclasses can\noverride to customize pre-call behavior.",
+      "translation": "在工具调用循环中的每个流式调用之前会调用 Hook 方法。子类可以重写此方法以自定义预调用行为。",
+      "count": 1
+    },
+    {
+      "source": "Hook method called after each streaming call in the tool call loop. Subclasses can\noverride to customize post-call behavior.",
+      "translation": "在工具调用循环中的每次流式调用后都会调用 Hook 方法。子类可以重写此方法以自定义调用后的行为。",
+      "count": 1
+    },
+    {
+      "source": "Hook method called at the end of the streaming tool call loop to finalize the\nresponse. Subclasses can override to customize finalization behavior.",
+      "translation": "在流式工具调用循环结束时调用的钩子方法，用于完成响应。子类可以重写此方法以自定义完成行为。",
+      "count": 1
+    },
+    {
+      "source": "Hook method to determine the next instructions for a tool call iteration in\nstreaming mode. Subclasses can override to customize conversation history handling.",
+      "translation": "用于在流式模式下确定工具调用迭代中下一条指令的钩子方法。子类可重写此方法以自定义对话历史处理逻辑。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"api/Advisor.html#getName()\">getName</a></code> in interface <code><a href=\"api/Advisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">Advisor</a></code>",
+      "translation": "接口 <code><a href=\"api/Advisor.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\">Advisor</a></code> 中的 <code><a href=\"api/Advisor.html#getName()\">getName</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"api/CallAdvisor.html#adviseCall(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.CallAdvisorChain)\">adviseCall</a></code> in interface <code><a href=\"api/CallAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">CallAdvisor</a></code>",
+      "translation": "接口 <code><a href=\"api/CallAdvisor.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\">CallAdvisor</a></code> 中的方法 <code><a href=\"api/CallAdvisor.html#adviseCall(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.CallAdvisorChain)\">adviseCall</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"api/StreamAdvisor.html#adviseStream(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.StreamAdvisorChain)\">adviseStream</a></code> in interface <code><a href=\"api/StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">StreamAdvisor</a></code>",
+      "translation": "接口 <code><a href=\"api/StreamAdvisor.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\">StreamAdvisor</a></code> 中的方法 <code><a href=\"api/StreamAdvisor.html#adviseStream(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.StreamAdvisorChain)\">adviseStream</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code>getOrder</code> in interface <code>org.springframework.core.Ordered</code>",
+      "translation": "接口 <code>org.springframework.core.Ordered</code> 中的 <code>getOrder</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>chatClientRequest</code> - the initial request",
+      "translation": "<code>chatClientRequest</code> - 初始请求",
+      "count": 1
+    },
+    {
+      "source": "<code>chatClientRequest</code> - the request about to be processed",
+      "translation": "<code>chatClientRequest</code> - 即将处理的消息请求",
+      "count": 1
+    },
+    {
+      "source": "<code>chatClientResponse</code> - the response from the call",
+      "translation": "<code>chatClientResponse</code> - 调用的响应结果",
+      "count": 1
+    },
+    {
+      "source": "<code>chatClientResponseFlux</code> - the flux of collected response chunks to emit",
+      "translation": "<code>chatClientResponseFlux</code> - 用于发射收集的响应块流的 Flux",
+      "count": 1
+    },
+    {
+      "source": "<code>chatClientRequest</code> - the current request",
+      "translation": "<code>chatClientRequest</code> - 当前请求",
+      "count": 1
+    },
+    {
+      "source": "<code>chatClientResponse</code> - the current response",
+      "translation": "<code>chatClientResponse</code> - 当前响应",
+      "count": 1
+    },
+    {
+      "source": "<code>toolExecutionResult</code> - the result of tool execution",
+      "translation": "<code>toolExecutionResult</code> - 工具执行的结果",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "the advisor name.",
+      "translation": "顾问姓名。",
+      "count": 1
+    },
+    {
+      "source": "the potentially modified response",
+      "translation": "可能经过修改的回复",
+      "count": 1
+    },
+    {
+      "source": "the potentially modified flux of responses",
+      "translation": "可能修改后的响应通量",
+      "count": 1
+    },
+    {
+      "source": "the list of messages to use as instructions for the next iteration",
+      "translation": "作为下一轮迭代指令的消息列表",
+      "count": 1
+    },
+    {
+      "source": "a new Builder instance",
+      "translation": "一个新的 Builder 实例",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "Recursive Advisor that disables the internal tool execution flow and instead implements\nthe tool calling loop as part of the advisor chain.",
+      "translation": "递归顾问，该顾问禁用内部工具执行流程，并将工具调用循环作为顾问链的一部分实现。",
+      "count": 1
+    }
+  ]
+}

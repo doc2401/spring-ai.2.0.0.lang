@@ -1,0 +1,211 @@
+{
+  "created_at": "2026-06-15 08:55:48",
+  "updated_at": "2026-06-15 08:55:48",
+  "stats": {
+    "total_entries": 39,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 39,
+    "entries_with_hits": 39,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.0039
+  },
+  "items": [
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Returns the value of the <a href=\"../../../../../../org/springframework/ai/chat/memory/repository/redis/AdvancedRedisChatMemoryRepository.MessageWithConversation.html#param-message\"><code>message</code></a> record component.",
+      "translation": "返回<a href=\"../../../../../../org/springframework/ai/chat/memory/repository/redis/AdvancedRedisChatMemoryRepository.MessageWithConversation.html#param-message\"><code>message</code></a>记录组件的值。",
+      "count": 1
+    },
+    {
+      "source": "Returns the value of the <a href=\"../../../../../../org/springframework/ai/rag/Query.html#param-history\"><code>history</code></a> record component.",
+      "translation": "返回 `<a href=\"../../../../../../org/springframework/ai/rag/Query.html#param-history\"><code>history</code></a>` 记录组件的值。",
+      "count": 1
+    },
+    {
+      "source": "Creates an instance of a <code>MessageWithConversation</code> record class.",
+      "translation": "创建一个 `<code>MessageWithConversation`</code> 记录类的实例。",
+      "count": 1
+    },
+    {
+      "source": "Returns the value of the <code>conversationHistory</code> record component.",
+      "translation": "返回 `<code>conversationHistory</code>` 记录组件的值。",
+      "count": 1
+    },
+    {
+      "source": "Creates an instance of a <code>DefaultToolExecutionResult</code> record class.",
+      "translation": "创建一个<code>DefaultToolExecutionResult</code>记录类的实例。",
+      "count": 1
+    },
+    {
+      "source": "Creates an instance of a <code>Query</code> record class.",
+      "translation": "创建一个<code>Query</code>记录类的实例。",
+      "count": 1
+    },
+    {
+      "source": "Chat client API.",
+      "translation": "聊天客户端 API。",
+      "count": 1
+    },
+    {
+      "source": "Provides classes for advising chat clients.",
+      "translation": "提供用于建议聊天客户端的类。",
+      "count": 1
+    },
+    {
+      "source": "This package contains the core interfaces and classes supporting Retrieval Augmented\nGeneration flows.",
+      "translation": "该包包含支持检索增强生成（RAG）流程的核心接口和类。",
+      "count": 1
+    },
+    {
+      "source": "Hook method to determine the next instructions for a tool call iteration in\nstreaming mode.",
+      "translation": "使用钩子方法确定流式模式下工具调用迭代的下一条指令。",
+      "count": 1
+    },
+    {
+      "source": "Get the messages in the chat memory for the specified conversation.",
+      "translation": "获取指定对话中的聊天记忆消息。",
+      "count": 1
+    },
+    {
+      "source": "Save the specified message in the chat memory for the specified conversation.",
+      "translation": "将指定的消息保存到指定对话的聊天记忆中。",
+      "count": 1
+    },
+    {
+      "source": "Save the specified messages in the chat memory for the specified conversation.",
+      "translation": "将指定对话中的指定消息保存到聊天记忆中。",
+      "count": 1
+    },
+    {
+      "source": "Replaces all the existing messages for the given conversation ID with the provided\nmessages.",
+      "translation": "使用提供的消息替换给定对话 ID 的所有现有消息。",
+      "count": 1
+    },
+    {
+      "source": "Finds all messages for a given conversation ID.",
+      "translation": "查找给定对话 ID 的所有消息。",
+      "count": 1
+    },
+    {
+      "source": "The AbstractMessage class is an abstract implementation of the Message interface.",
+      "translation": "AbstractMessage 类是 Message 接口的抽象实现。",
+      "count": 1
+    },
+    {
+      "source": "Lets the generative know the content was generated as a response to the user.",
+      "translation": "让生成内容明确表明其是作为对用户请求的回应而生成的。",
+      "count": 1
+    },
+    {
+      "source": "A message of the type 'system' passed as input.",
+      "translation": "输入的消息类型为“系统”。",
+      "count": 1
+    },
+    {
+      "source": "The ToolResponseMessage class represents a message with a function content in a chat\napplication.",
+      "translation": "ToolResponseMessage 类表示聊天应用程序中包含函数内容的消息。",
+      "count": 1
+    },
+    {
+      "source": "A message of the type 'user' passed as input Messages with the user role are from the\nend-user or developer.",
+      "translation": "类型为\"user\"的消息作为输入消息传递时，具有用户角色的消息来自最终用户或开发者。",
+      "count": 1
+    },
+    {
+      "source": "The Prompt class represents a prompt used in AI model requests.",
+      "translation": "Prompt 类表示在 AI 模型请求中使用的提示。",
+      "count": 1
+    },
+    {
+      "source": "Get the last user or tool response message in the prompt.",
+      "translation": "获取提示中的最后一个用户或工具响应消息。",
+      "count": 1
+    },
+    {
+      "source": "The history of messages exchanged during the conversation, including the tool\nexecution result.",
+      "translation": "对话过程中交换的消息历史，包括工具执行结果。",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a> in <a href=\"../../../bedrock/package-summary.html\">org.springframework.ai.bedrock</a>",
+      "translation": "<a href=\"../Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a> 在 <a href=\"../../../bedrock/package-summary.html\">org.springframework.ai.bedrock</a> 中的用法",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a> in <a href=\"../../client/package-summary.html\">org.springframework.ai.chat.client</a>",
+      "translation": "<a href=\"../Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a> 在 <a href=\"../../client/package-summary.html\">org.springframework.ai.chat.client</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a> in <a href=\"../../client/advisor/package-summary.html\">org.springframework.ai.chat.client.advisor</a>",
+      "translation": "<a href=\"../Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a> 在 <a href=\"../../client/advisor/package-summary.html\">org.springframework.ai.chat.client.advisor</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a> in <a href=\"../../memory/package-summary.html\">org.springframework.ai.chat.memory</a>",
+      "translation": "<a href=\"../Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a> 在 <a href=\"../../memory/package-summary.html\">org.springframework.ai.chat.memory</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a> in <a href=\"../../memory/repository/cassandra/package-summary.html\">org.springframework.ai.chat.memory.repository.cassandra</a>",
+      "translation": "<a href=\"../Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a> 在 <a href=\"../../memory/repository/cassandra/package-summary.html\">org.springframework.ai.chat.memory.repository.cassandra</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a> in <a href=\"../../memory/repository/jdbc/package-summary.html\">org.springframework.ai.chat.memory.repository.jdbc</a>",
+      "translation": "<a href=\"../Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a> 在 <a href=\"../../memory/repository/jdbc/package-summary.html\">org.springframework.ai.chat.memory.repository.jdbc</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a> in <a href=\"../../memory/repository/mongo/package-summary.html\">org.springframework.ai.chat.memory.repository.mongo</a>",
+      "translation": "<a href=\"../Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a> 在 <a href=\"../../memory/repository/mongo/package-summary.html\">org.springframework.ai.chat.memory.repository.mongo</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a> in <a href=\"../../memory/repository/neo4j/package-summary.html\">org.springframework.ai.chat.memory.repository.neo4j</a>",
+      "translation": "<a href=\"../Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a> 在 <a href=\"../../memory/repository/neo4j/package-summary.html\">org.springframework.ai.chat.memory.repository.neo4j</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a> in <a href=\"../../memory/repository/redis/package-summary.html\">org.springframework.ai.chat.memory.repository.redis</a>",
+      "translation": "<a href=\"../Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a> 在 <a href=\"../../memory/repository/redis/package-summary.html\">org.springframework.ai.chat.memory.repository.redis</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a> in <a href=\"../package-summary.html\">org.springframework.ai.chat.messages</a>",
+      "translation": "<a href=\"../Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a> 在 <a href=\"../package-summary.html\">org.springframework.ai.chat.messages</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a> in <a href=\"../../model/package-summary.html\">org.springframework.ai.chat.model</a>",
+      "translation": "<a href=\"../Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a> 在 <a href=\"../../model/package-summary.html\">org.springframework.ai.chat.model</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a> in <a href=\"../../prompt/package-summary.html\">org.springframework.ai.chat.prompt</a>",
+      "translation": "<a href=\"../Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a> 在 <a href=\"../../prompt/package-summary.html\">org.springframework.ai.chat.prompt</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a> in <a href=\"../../../deepseek/package-summary.html\">org.springframework.ai.deepseek</a>",
+      "translation": "<a href=\"../Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a> 在 <a href=\"../../../deepseek/package-summary.html\">org.springframework.ai.deepseek</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a> in <a href=\"../../../model/tool/package-summary.html\">org.springframework.ai.model.tool</a>",
+      "translation": "<a href=\"../Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a> 在 <a href=\"../../../model/tool/package-summary.html\">org.springframework.ai.model.tool</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a> in <a href=\"../../../rag/package-summary.html\">org.springframework.ai.rag</a>",
+      "translation": "<a href=\"../Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a> 在 <a href=\"../../../rag/package-summary.html\">org.springframework.ai.rag</a> 中的用途",
+      "count": 1
+    }
+  ]
+}

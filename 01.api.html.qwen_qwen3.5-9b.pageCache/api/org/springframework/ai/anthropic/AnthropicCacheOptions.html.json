@@ -1,0 +1,71 @@
+{
+  "created_at": "2026-06-15 07:23:41",
+  "updated_at": "2026-06-15 07:23:41",
+  "stats": {
+    "total_entries": 11,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 11,
+    "entries_with_hits": 11,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.0011
+  },
+  "items": [
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Whether a <code>cache_control</code> breakpoint is placed on the last tool result\nmessage of a request, so that tool outputs are written to (and read from) the cache\nacross tool-calling rounds. Takes effect with strategies whose eligible message\ntypes include tool results, i.e.\n<a href=\"AnthropicCacheStrategy.html#CONVERSATION_HISTORY\"><code>AnthropicCacheStrategy.CONVERSATION_HISTORY</code></a>; it is a no-op for strategies\nthat only target tool definitions or system messages.",
+      "translation": "是否在最后一个请求工具结果消息上设置 <code>cache_control</code> 断点，以便跨工具调用轮次将工具输出写入（并从）缓存中读取。该选项对符合条件的消息类型包含工具结果的策略生效，例如 <a href=\"AnthropicCacheStrategy.html#CONVERSATION_HISTORY\"><code>AnthropicCacheStrategy.CONVERSATION_HISTORY</code></a>；对于仅针对工具定义或系统消息的策略，此选项无效。",
+      "count": 1
+    },
+    {
+      "source": "Returns a new disabled cache options instance with strategy <code>NONE</code>.",
+      "translation": "返回一个禁用缓存选项的新实例，其策略为 <code>NONE</code>。",
+      "count": 1
+    },
+    {
+      "source": "Whether a <code>cache_control</code> breakpoint is placed on the last tool result\nmessage of a request, so that tool outputs are written to (and read from) the cache\nacross tool-calling rounds.",
+      "translation": "是否在最后一个请求工具结果消息上设置 `<code>cache_control` 断点，以便在工具调用轮次之间将工具输出写入（并从）缓存中读取。",
+      "count": 1
+    },
+    {
+      "source": "Returns a new disabled cache options instance with strategy <code>NONE</code>. Each call\nreturns a fresh instance to avoid shared mutable state.",
+      "translation": "返回一个禁用缓存选项的新实例，其策略为 <code>NONE</code>。每次调用都会返回一个新的实例，以避免共享可变状态。",
+      "count": 1
+    },
+    {
+      "source": "Anthropic cache options for configuring prompt caching behavior with the Anthropic Java\nSDK.",
+      "translation": "Anthropic 缓存选项，用于配置使用 Anthropic Java SDK 时的提示词缓存行为。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)\" title=\"class or interface in java.lang\">equals</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"class or interface in java.lang\">Object</a></code>",
+      "translation": "`Object` 类中的 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)\" title=\"class or interface in java.lang\">equals</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#hashCode()\" title=\"class or interface in java.lang\">hashCode</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"class or interface in java.lang\">Object</a></code>",
+      "translation": "类 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"java.lang 中的类或接口\">Object</a></code> 中的 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#hashCode()\" title=\"java.lang 中的类或接口\">hashCode</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code>true</code> if tool result caching is enabled",
+      "translation": "如果启用了工具结果缓存，则为 <code>true</code>",
+      "count": 1
+    },
+    {
+      "source": "Austin Dase, Soby Chacko, Sebastien Deleuze",
+      "translation": "奥斯汀·达塞，索比·查科，塞巴斯蒂安·德洛兹",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    }
+  ]
+}

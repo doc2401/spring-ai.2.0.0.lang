@@ -1,0 +1,501 @@
+{
+  "created_at": "2026-06-15 08:17:44",
+  "updated_at": "2026-06-15 08:17:44",
+  "stats": {
+    "total_entries": 97,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 125,
+    "entries_with_hits": 97,
+    "entries_without_hits": 0,
+    "hit_rate": 1.288659793814433,
+    "usage_percentage": 0.0097
+  },
+  "items": [
+    {
+      "source": "Shortcut constructor for a chat completion request with the given messages,\nmodel and temperature.",
+      "translation": "带有给定消息、模型和温度的聊天完成请求的快捷构造函数。",
+      "count": 4
+    },
+    {
+      "source": "<code>model</code> - ID of the model to use.",
+      "translation": "<code>model</code> - 要使用的模型 ID。",
+      "count": 4
+    },
+    {
+      "source": "<code>messages</code> - The prompt(s) to generate completions for, encoded as a list of\ndict with role and content. The first prompt role should be user or system.",
+      "translation": "<code>messages</code> - 用于生成补全内容的提示，编码为包含 role 和 content 的字典列表。第一个提示的角色应为 user 或 system。",
+      "count": 3
+    },
+    {
+      "source": "Returns the value of the <a href=\"#param-frequencyPenalty\"><code>frequencyPenalty</code></a> record component.",
+      "translation": "返回 `<a href=\"#param-frequencyPenalty\"><code>frequencyPenalty</code></a>` 记录组件的值。",
+      "count": 2
+    },
+    {
+      "source": "Returns the value of the <a href=\"#param-maxTokens\"><code>maxTokens</code></a> record component.",
+      "translation": "返回 `<a href=\"#param-maxTokens\"><code>maxTokens</code></a>` 记录组件的值。",
+      "count": 2
+    },
+    {
+      "source": "Returns the value of the <a href=\"#param-messages\"><code>messages</code></a> record component.",
+      "translation": "返回 `<a href=\"#param-messages\"><code>messages</code></a>` 记录组件的值。",
+      "count": 2
+    },
+    {
+      "source": "Returns the value of the <a href=\"#param-model\"><code>model</code></a> record component.",
+      "translation": "返回 `<a href=\"#param-model\"><code>model</code></a>` 记录组件的值。",
+      "count": 2
+    },
+    {
+      "source": "Returns the value of the <a href=\"#param-n\"><code>n</code></a> record component.",
+      "translation": "返回第 <a href=\"#param-n\"><code>n</code></a> 个记录组件的值。",
+      "count": 2
+    },
+    {
+      "source": "Returns the value of the <a href=\"#param-presencePenalty\"><code>presencePenalty</code></a> record component.",
+      "translation": "返回 `<a href=\"#param-presencePenalty\"><code>presencePenalty</code></a>` 记录组件的值。",
+      "count": 2
+    },
+    {
+      "source": "Returns the value of the <a href=\"#param-randomSeed\"><code>randomSeed</code></a> record component.",
+      "translation": "返回 `<a href=\"#param-randomSeed\"><code>randomSeed</code></a>` 记录组件的值。",
+      "count": 2
+    },
+    {
+      "source": "Returns the value of the <a href=\"#param-reasoningEffort\"><code>reasoningEffort</code></a> record component.",
+      "translation": "返回 `<a href=\"#param-reasoningEffort\"><code>reasoningEffort</code></a>` 记录组件的值。",
+      "count": 2
+    },
+    {
+      "source": "Returns the value of the <a href=\"#param-responseFormat\"><code>responseFormat</code></a> record component.",
+      "translation": "返回 `<a href=\"#param-responseFormat\"><code>responseFormat</code></a>` 记录组件的值。",
+      "count": 2
+    },
+    {
+      "source": "Returns the value of the <a href=\"#param-safePrompt\"><code>safePrompt</code></a> record component.",
+      "translation": "返回 `<a href=\"#param-safePrompt\"><code>safePrompt</code></a>` 记录组件的值。",
+      "count": 2
+    },
+    {
+      "source": "Returns the value of the <a href=\"#param-stop\"><code>stop</code></a> record component.",
+      "translation": "返回 `<a href=\"#param-stop\"><code>stop</code></a>` 记录组件的值。",
+      "count": 2
+    },
+    {
+      "source": "Returns the value of the <a href=\"#param-stream\"><code>stream</code></a> record component.",
+      "translation": "返回 `<a href=\"#param-stream\"><code>stream</code></a>` 记录组件的值。",
+      "count": 2
+    },
+    {
+      "source": "Returns the value of the <a href=\"#param-temperature\"><code>temperature</code></a> record component.",
+      "translation": "返回 `<a href=\"#param-temperature\"><code>temperature</code></a>` 记录组件的值。",
+      "count": 2
+    },
+    {
+      "source": "Returns the value of the <a href=\"#param-toolChoice\"><code>toolChoice</code></a> record component.",
+      "translation": "返回<a href=\"#param-toolChoice\"><code>toolChoice</code></a>记录组件的值。",
+      "count": 2
+    },
+    {
+      "source": "Returns the value of the <a href=\"#param-tools\"><code>tools</code></a> record component.",
+      "translation": "返回 `<a href=\"#param-tools\"><code>tools</code></a>` 记录组件的值。",
+      "count": 2
+    },
+    {
+      "source": "Returns the value of the <a href=\"#param-topP\"><code>topP</code></a> record component.",
+      "translation": "返回 `<a href=\"#param-topP\"><code>topP</code></a>` 记录组件的值。",
+      "count": 2
+    },
+    {
+      "source": "Creates an instance of a <code>ChatCompletionRequest</code> record class.",
+      "translation": "创建一个<code>ChatCompletionRequest</code>记录类的实例。",
+      "count": 2
+    },
+    {
+      "source": "Shortcut constructor for a chat completion request with the given messages and\nstream.",
+      "translation": "带有给定消息和流体的聊天完成请求的快捷构造函数。",
+      "count": 2
+    },
+    {
+      "source": "Shortcut constructor for a chat completion request with the given messages and\nmodel.",
+      "translation": "带有给定消息和模型的聊天完成请求的快捷构造函数。",
+      "count": 2
+    },
+    {
+      "source": "<code>temperature</code> - What sampling temperature to use, between 0.0 and 1.0.",
+      "translation": "`temperature` - 用于采样的温度值，范围在 0.0 到 1.0 之间。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Indicates whether some other object is \"equal to\" this one. The objects are equal if the other object is of the same class and if all the record components are equal. All components in this record class are compared with <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Objects.html#equals(java.lang.Object,java.lang.Object)\" title=\"class or interface in java.util\"><code>Objects::equals(Object,Object)</code></a>.",
+      "translation": "指示某些其他对象是否“等于”当前对象。如果另一个对象属于同一类，且所有记录组件均相等，则这两个对象相等。本记录类中的所有组件均使用 <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Objects.html#equals(java.lang.Object,java.lang.Object)\" title=\"class or interface in java.util\"><code>Objects::equals(Object,Object)</code></a> 进行比较。",
+      "count": 1
+    },
+    {
+      "source": "Creates a model request for chat conversation.",
+      "translation": "创建用于聊天对话的模型请求。",
+      "count": 1
+    },
+    {
+      "source": "Controls the reasoning effort level for adjustable reasoning models.",
+      "translation": "控制可调整推理模型的推理努力程度。",
+      "count": 1
+    },
+    {
+      "source": "An object specifying the format that the model must output.",
+      "translation": "指定模型必须输出的格式的物体。",
+      "count": 1
+    },
+    {
+      "source": "Specifies a tool the model should use.",
+      "translation": "指定模型应使用的工具。",
+      "count": 1
+    },
+    {
+      "source": "Shortcut constructor for a chat completion request with the given messages,\nmodel, tools and tool choice.",
+      "translation": "带有给定消息、模型、工具及工具选择的聊天完成请求的快捷构造函数。",
+      "count": 1
+    },
+    {
+      "source": "Indicates whether some other object is \"equal to\" this one.",
+      "translation": "指示其他对象是否“等于”此对象。",
+      "count": 1
+    },
+    {
+      "source": "Returns a hash code value for this object.",
+      "translation": "返回此对象的哈希码值。",
+      "count": 1
+    },
+    {
+      "source": "Returns a string representation of this record class.",
+      "translation": "返回此记录类的字符串表示形式。",
+      "count": 1
+    },
+    {
+      "source": "Shortcut constructor for a chat completion request with the given messages,\nmodel, tools and tool choice. Streaming is set to false, temperature to 0.8 and\nall other parameters are null.",
+      "translation": "用于创建具有给定消息、模型、工具及工具选择设置的聊天完成请求的快捷构造函数。流式传输设置为 false，温度为 0.8，其余所有参数均为 null。",
+      "count": 1
+    },
+    {
+      "source": "Returns a string representation of this record class. The representation contains the name of the class, followed by the name and value of each of the record components.",
+      "translation": "返回此记录类的字符串表示形式。该表示形式包含类名，随后是各记录组件的名称和值。",
+      "count": 1
+    },
+    {
+      "source": "Returns a hash code value for this object. The value is derived from the hash code of each of the record components.",
+      "translation": "返回此对象的哈希码值。该值由每个记录组件的哈希码推导得出。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html#toString()\" title=\"class or interface in java.lang\">toString</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html\" title=\"class or interface in java.lang\">Record</a></code>",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html#toString()\" title=\"类或接口在 java.lang 中\">toString</a></code> 方法，位于 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html\" title=\"类或接口在 java.lang 中\">Record</a></code> 类中",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html#hashCode()\" title=\"class or interface in java.lang\">hashCode</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html\" title=\"class or interface in java.lang\">Record</a></code>",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html#hashCode()\" title=\"类或接口在 java.lang 中\">hashCode</a></code> 方法位于 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html\" title=\"类或接口在 java.lang 中\">Record</a></code> 类中",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html#equals(java.lang.Object)\" title=\"class or interface in java.lang\">equals</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html\" title=\"class or interface in java.lang\">Record</a></code>",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html#equals(java.lang.Object)\" title=\"类或接口在 java.lang 中\">equals</a></code> 方法位于 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Record.html\" title=\"类或接口在 java.lang 中\">Record</a></code> 类中",
+      "count": 1
+    },
+    {
+      "source": "<code>model</code> - the value for the <a href=\"#param-model\"><code>model</code></a> record component",
+      "translation": "<code>model</code> - <a href=\"#param-model\"><code>model</code></a> 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "<code>messages</code> - the value for the <a href=\"#param-messages\"><code>messages</code></a> record component",
+      "translation": "<code>messages</code> - <a href=\"#param-messages\"><code>messages</code></a> 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "<code>tools</code> - the value for the <a href=\"#param-tools\"><code>tools</code></a> record component",
+      "translation": "<code>tools</code> - <a href=\"#param-tools\"><code>tools</code></a> 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "<code>toolChoice</code> - the value for the <a href=\"#param-toolChoice\"><code>toolChoice</code></a> record component",
+      "translation": "<code>toolChoice</code> - <a href=\"#param-toolChoice\"><code>toolChoice</code></a> 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "<code>temperature</code> - the value for the <a href=\"#param-temperature\"><code>temperature</code></a> record component",
+      "translation": "<code>temperature</code> - <a href=\"#param-temperature\"><code>temperature</code></a> 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "<code>topP</code> - the value for the <a href=\"#param-topP\"><code>topP</code></a> record component",
+      "translation": "<code>topP</code> - <a href=\"#param-topP\"><code>topP</code></a> 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "<code>maxTokens</code> - the value for the <a href=\"#param-maxTokens\"><code>maxTokens</code></a> record component",
+      "translation": "<code>maxTokens</code> - <a href=\"#param-maxTokens\"><code>maxTokens</code></a> 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "<code>n</code> - the value for the <a href=\"#param-n\"><code>n</code></a> record component",
+      "translation": "<code>n</code> - <a href=\"#param-n\"><code>n</code></a> 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "<code>presencePenalty</code> - the value for the <a href=\"#param-presencePenalty\"><code>presencePenalty</code></a> record component",
+      "translation": "<code>presencePenalty</code> - <a href=\"#param-presencePenalty\"><code>presencePenalty</code></a> 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "<code>frequencyPenalty</code> - the value for the <a href=\"#param-frequencyPenalty\"><code>frequencyPenalty</code></a> record component",
+      "translation": "<code>frequencyPenalty</code> - <a href=\"#param-frequencyPenalty\"><code>frequencyPenalty</code></a> 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "<code>stream</code> - the value for the <a href=\"#param-stream\"><code>stream</code></a> record component",
+      "translation": "`stream` - `<a href=\"#param-stream\"><code>stream</code></a>` 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "<code>safePrompt</code> - the value for the <a href=\"#param-safePrompt\"><code>safePrompt</code></a> record component",
+      "translation": "<code>safePrompt</code> - <a href=\"#param-safePrompt\"><code>safePrompt</code></a> 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "<code>stop</code> - the value for the <a href=\"#param-stop\"><code>stop</code></a> record component",
+      "translation": "<code>stop</code> - <a href=\"#param-stop\"><code>stop</code></a> 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "<code>reasoningEffort</code> - the value for the <a href=\"#param-reasoningEffort\"><code>reasoningEffort</code></a> record component",
+      "translation": "<code>reasoningEffort</code> - <a href=\"#param-reasoningEffort\"><code>reasoningEffort</code></a> 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "<code>randomSeed</code> - the value for the <a href=\"#param-randomSeed\"><code>randomSeed</code></a> record component",
+      "translation": "<code>randomSeed</code> - <a href=\"#param-randomSeed\"><code>randomSeed</code></a> 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "<code>responseFormat</code> - the value for the <a href=\"#param-responseFormat\"><code>responseFormat</code></a> record component",
+      "translation": "<code>responseFormat</code> - <a href=\"#param-responseFormat\"><code>responseFormat</code></a> 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "<code>true</code> if this object is the same as the <code>o</code> argument; <code>false</code> otherwise.",
+      "translation": "如果该对象与参数 `o` 相同，则返回 `<code>true</code>`；否则返回 `<code>false</code>`。",
+      "count": 1
+    },
+    {
+      "source": "<code><span id=\"param-model\">model</span></code> - ID of the model to use.",
+      "translation": "<code><span id=\"param-model\">model</span></code> - 要使用的模型 ID。",
+      "count": 1
+    },
+    {
+      "source": "<code><span id=\"param-messages\">messages</span></code> - The prompt(s) to generate completions for, encoded as a list of\ndict with role and content. The first prompt role should be user or system.",
+      "translation": "<code><span id=\"param-messages\">messages</span></code> - 用于生成补全内容的提示，编码为包含 role 和 content 的字典列表。第一个提示的 role 应为 user 或 system。",
+      "count": 1
+    },
+    {
+      "source": "<code><span id=\"param-tools\">tools</span></code> - A list of tools the model may call. Currently, only functions are\nsupported as a tool. Use this to provide a list of functions the model may generate\nJSON inputs for.",
+      "translation": "<code><span id=\"param-tools\">tools</span></code> - 模型可能调用的工具列表。目前仅支持函数作为工具。使用此参数提供模型可生成 JSON 输入的函数列表。",
+      "count": 1
+    },
+    {
+      "source": "<code><span id=\"param-toolChoice\">toolChoice</span></code> - Controls which (if any) function is called by the model. none\nmeans the model will not call a function and instead generates a message. auto\nmeans the model can pick between generating a message or calling a function. Any\nmeans the model must call a function.",
+      "translation": "<code><span id=\"param-toolChoice\">toolChoice</span></code> - 控制模型调用哪个（如果有）函数。none 表示模型不会调用函数，而是生成消息。auto 表示模型可以在生成消息或调用函数之间选择。Any 表示模型必须调用函数。",
+      "count": 1
+    },
+    {
+      "source": "<code><span id=\"param-temperature\">temperature</span></code> - What sampling temperature to use, between 0.0 and 1.0. Higher\nvalues like 0.8 will make the output more random, while lower values like 0.2 will\nmake it more focused and deterministic. We generally recommend altering this or\ntop_p but not both.",
+      "translation": "<code><span id=\"param-temperature\">temperature</span></code> - 使用的采样温度，范围在 0.0 到 1.0 之间。较高的值（如 0.8）会使输出更加随机，而较低的值（如 0.2）则使输出更加聚焦和确定性。我们通常建议调整此参数或 top_p，但不要同时调整两者。",
+      "count": 1
+    },
+    {
+      "source": "<code><span id=\"param-topP\">topP</span></code> - Nucleus sampling, where the model considers the results of the tokens\nwith top_p probability mass. So 0.1 means only the tokens comprising the top 10%\nprobability mass are considered. We generally recommend altering this or\ntemperature but not both.",
+      "translation": "<code><span id=\"param-topP\">topP</span></code> - 核采样，模型在此模式下仅考虑概率质量排名前 top_p 的 token。例如，0.1 表示只考虑占据前 10% 概率质量的 token。我们通常建议调整此参数或 temperature，但不同时调整两者。",
+      "count": 1
+    },
+    {
+      "source": "<code><span id=\"param-maxTokens\">maxTokens</span></code> - The maximum number of tokens to generate in the completion. The\ntoken count of your prompt plus max_tokens cannot exceed the model's context\nlength.",
+      "translation": "<code><span id=\"param-maxTokens\">maxTokens</span></code> - 生成完成时允许生成的最大 token 数量。您的提示词（prompt）的 token 数量与 max_tokens 之和不得超过模型的上下文长度。",
+      "count": 1
+    },
+    {
+      "source": "<code><span id=\"param-n\">n</span></code> - Number of completions to return for each request, input tokens are only\nbilled once. Minimum is 1.",
+      "translation": "<code><span id=\"param-n\">n</span></code> - 每次请求返回的补全数量，仅对输入 token 计费。最小值为 1。",
+      "count": 1
+    },
+    {
+      "source": "<code><span id=\"param-presencePenalty\">presencePenalty</span></code> - The presence_penalty determines how much the model penalizes\nthe repetition of words or phrases. A higher presence penalty encourages the model\nto use a wider variety of words and phrases, making the output more diverse and\ncreative. Supported range is between -2.0 and 2.0.",
+      "translation": "<code><span id=\"param-presencePenalty\">presencePenalty</span></code> - presence_penalty 决定了模型对词语或短语重复的惩罚程度。较高的 presence penalty 会促使模型使用更多样化的词汇和短语，从而使输出更加丰富和富有创意。支持的范围为 -2.0 到 2.0。",
+      "count": 1
+    },
+    {
+      "source": "<code><span id=\"param-frequencyPenalty\">frequencyPenalty</span></code> - The frequency_penalty penalizes the repetition of words\nbased on their frequency in the generated text. A higher frequency penalty\ndiscourages the model from repeating words that have already appeared frequently in\nthe output, promoting diversity and reducing repetition. Supported range is between\n-2.0 and 2.0.",
+      "translation": "<code><span id=\"param-frequencyPenalty\">frequencyPenalty</span></code> - frequency_penalty 会根据生成文本中单词的出现频率来惩罚重复。较高的频率惩罚会抑制模型重复那些在输出中已频繁出现的单词，从而促进多样性并减少重复。支持的范围为 -2.0 到 2.0。",
+      "count": 1
+    },
+    {
+      "source": "<code><span id=\"param-stream\">stream</span></code> - Whether to stream back partial progress. If set, tokens will be sent\nas data-only server-sent events as they become available, with the stream\nterminated by a data: [DONE] message. Otherwise, the server will hold the request\nopen until the timeout or until completion, with the response containing the full\nresult as JSON.",
+      "translation": "<code><span id=\"param-stream\">stream</span></code> - 是否流式传输部分进度。如果设置，令牌将作为仅包含数据的服务器发送事件在可用时发送，并由 data: [DONE] 消息终止流。否则，服务器将在超时或完成之前保持请求打开，响应中包含完整的 JSON 结果。",
+      "count": 1
+    },
+    {
+      "source": "<code><span id=\"param-safePrompt\">safePrompt</span></code> - Whether to inject a safety prompt before all conversations.",
+      "translation": "<code><span id=\"param-safePrompt\">safePrompt</span></code> - 是否在所有对话前注入安全提示。",
+      "count": 1
+    },
+    {
+      "source": "<code><span id=\"param-stop\">stop</span></code> - A list of tokens that the model should stop generating after.",
+      "translation": "<code><span id=\"param-stop\">stop</span></code> - 模型在生成过程中遇到这些标记时应停止生成的标记列表。",
+      "count": 1
+    },
+    {
+      "source": "<code><span id=\"param-reasoningEffort\">reasoningEffort</span></code> - Controls the reasoning effort level for reasoning models.",
+      "translation": "<code><span id=\"param-reasoningEffort\">reasoningEffort</span></code> - 控制推理模型的推理努力程度。",
+      "count": 1
+    },
+    {
+      "source": "<code><span id=\"param-randomSeed\">randomSeed</span></code> - The seed to use for random sampling. If set, different calls will\ngenerate deterministic results.",
+      "translation": "<code><span id=\"param-randomSeed\">randomSeed</span></code> - 用于随机采样的种子。如果设置，不同的调用将生成确定性结果。",
+      "count": 1
+    },
+    {
+      "source": "<code><span id=\"param-responseFormat\">responseFormat</span></code> - An object specifying the format or schema that the model must\noutput. Setting to { \"type\": \"json_object\" } enables JSON mode, which guarantees\nthe message the model generates is valid JSON. Setting to { \"type\": \"json_object\" ,\n\"json_schema\": schema} allows you to ensure the model provides an answer in a very\nspecific JSON format by supplying a clear JSON schema.",
+      "translation": "<code><span id=\"param-responseFormat\">responseFormat</span></code> - 一个指定模型必须输出的格式或架构的对象。将其设置为 { \"type\": \"json_object\" } 可启用 JSON 模式，确保模型生成的消息是有效的 JSON。将其设置为 { \"type\": \"json_object\", \"json_schema\": schema} 允许您通过提供清晰的 JSON 架构来确保模型以非常特定的 JSON 格式提供答案。",
+      "count": 1
+    },
+    {
+      "source": "the value of the <a href=\"#param-model\"><code>model</code></a> record component",
+      "translation": "`<a href=\"#param-model\"><code>model</code></a>` 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "the value of the <a href=\"#param-messages\"><code>messages</code></a> record component",
+      "translation": "`<a href=\"#param-messages\"><code>messages</code></a>` 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "the value of the <a href=\"#param-tools\"><code>tools</code></a> record component",
+      "translation": "`<a href=\"#param-tools\"><code>tools</code></a>` 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "the value of the <a href=\"#param-toolChoice\"><code>toolChoice</code></a> record component",
+      "translation": "`<a href=\"#param-toolChoice\"><code>toolChoice</code></a>` 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "the value of the <a href=\"#param-temperature\"><code>temperature</code></a> record component",
+      "translation": "`<a href=\"#param-temperature\"><code>temperature</code></a>` 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "the value of the <a href=\"#param-topP\"><code>topP</code></a> record component",
+      "translation": "`<a href=\"#param-topP\"><code>topP</code></a>` 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "the value of the <a href=\"#param-maxTokens\"><code>maxTokens</code></a> record component",
+      "translation": "`<a href=\"#param-maxTokens\"><code>maxTokens</code></a>` 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "the value of the <a href=\"#param-n\"><code>n</code></a> record component",
+      "translation": "记录组件 `<a href=\"#param-n\"><code>n</code></a>` 的值",
+      "count": 1
+    },
+    {
+      "source": "the value of the <a href=\"#param-presencePenalty\"><code>presencePenalty</code></a> record component",
+      "translation": "`<a href=\"#param-presencePenalty\"><code>presencePenalty</code></a>` 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "the value of the <a href=\"#param-frequencyPenalty\"><code>frequencyPenalty</code></a> record component",
+      "translation": "`<a href=\"#param-frequencyPenalty\"><code>frequencyPenalty</code></a>` 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "the value of the <a href=\"#param-stream\"><code>stream</code></a> record component",
+      "translation": "`<a href=\"#param-stream\"><code>stream</code></a>` 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "the value of the <a href=\"#param-safePrompt\"><code>safePrompt</code></a> record component",
+      "translation": "<a href=\"#param-safePrompt\"><code>safePrompt</code></a> 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "the value of the <a href=\"#param-stop\"><code>stop</code></a> record component",
+      "translation": "`<a href=\"#param-stop\"><code>stop</code></a>` 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "the value of the <a href=\"#param-reasoningEffort\"><code>reasoningEffort</code></a> record component",
+      "translation": "<a href=\"#param-reasoningEffort\"><code>reasoningEffort</code></a> 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "the value of the <a href=\"#param-randomSeed\"><code>randomSeed</code></a> record component",
+      "translation": "`<a href=\"#param-randomSeed\"><code>randomSeed</code></a>` 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "the value of the <a href=\"#param-responseFormat\"><code>responseFormat</code></a> record component",
+      "translation": "`<a href=\"#param-responseFormat\"><code>responseFormat</code></a>` 记录组件的值",
+      "count": 1
+    },
+    {
+      "source": "<code>stream</code> - Whether to stream back partial progress. If set, tokens will be\nsent",
+      "translation": "<code>stream</code> - 是否流式传输部分进度。如果设置，将发送 token",
+      "count": 1
+    },
+    {
+      "source": "<code>messages</code> - A list of messages comprising the conversation so far.",
+      "translation": "<code>messages</code> - 包含迄今为止对话的一系列消息。",
+      "count": 1
+    },
+    {
+      "source": "<code>tools</code> - A list of tools the model may call. Currently, only functions are\nsupported as a tool.",
+      "translation": "<code>tools</code> - 模型可能调用的工具列表。目前，仅支持函数作为工具。",
+      "count": 1
+    },
+    {
+      "source": "<code>toolChoice</code> - Controls which (if any) function is called by the model.",
+      "translation": "<code>toolChoice</code> - 控制模型调用哪个（如果有）函数。",
+      "count": 1
+    },
+    {
+      "source": "<code>o</code> - the object with which to compare",
+      "translation": "<code>o</code> - 用于比较的对象",
+      "count": 1
+    },
+    {
+      "source": "Ricken Bazolo, Christian Tzolov, Thomas Vitale, Jason Smith, Nicolas Krier, Sebastien Deleuze",
+      "translation": "里肯·巴佐洛，克里斯蒂安·茨洛夫，托马斯·维塔莱，杰森·史密斯，尼古拉斯·克里耶，塞巴斯蒂安·德洛兹",
+      "count": 1
+    },
+    {
+      "source": "a string representation of this object",
+      "translation": "该对象的字符串表示形式",
+      "count": 1
+    },
+    {
+      "source": "a hash code value for this object",
+      "translation": "该对象的哈希码值",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    }
+  ]
+}

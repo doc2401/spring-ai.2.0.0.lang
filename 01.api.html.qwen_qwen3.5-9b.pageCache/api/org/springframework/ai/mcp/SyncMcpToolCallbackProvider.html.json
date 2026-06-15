@@ -1,0 +1,121 @@
+{
+  "created_at": "2026-06-15 07:30:48",
+  "updated_at": "2026-06-15 07:30:48",
+  "stats": {
+    "total_entries": 21,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 29,
+    "entries_with_hits": 21,
+    "entries_without_hits": 0,
+    "hit_rate": 1.380952380952381,
+    "usage_percentage": 0.0021
+  },
+  "items": [
+    {
+      "source": "<code>mcpClients</code> - MCP clients for tool discovery",
+      "translation": "<code>mcpClients</code> - 用于工具发现的 MCP 客户端",
+      "count": 4
+    },
+    {
+      "source": "Creates a builder for constructing provider instances.",
+      "translation": "创建一个用于构建提供者实例的构建器。",
+      "count": 2
+    },
+    {
+      "source": "Invalidates the cached tool callbacks, forcing re-discovery on next request.",
+      "translation": "使缓存的工具回调失效，强制在下次请求时重新发现。",
+      "count": 2
+    },
+    {
+      "source": "Creates tool callbacks from multiple MCP clients.",
+      "translation": "从多个 MCP 客户端创建工具回调。",
+      "count": 2
+    },
+    {
+      "source": "Creates a provider with MCP clients using default filter.",
+      "translation": "使用默认过滤器创建带有 MCP 客户端的提供者。",
+      "count": 2
+    },
+    {
+      "source": "<code>toolFilter</code> - filter for discovered tools",
+      "translation": "<code>toolFilter</code> - 用于筛选已发现的工具",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Automatically discovers and exposes tools from multiple MCP servers as Spring AI\n<a href=\"../tool/ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a> instances.",
+      "translation": "自动发现并暴露来自多个 MCP 服务器的工具，作为 <a href=\"../tool/ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a> 实例。",
+      "count": 1
+    },
+    {
+      "source": "Discovers and consolidates tools from all provided clients into a single list,\nensuring no naming conflicts.",
+      "translation": "发现并整合来自所有提供方的工具到一个列表中，确保无命名冲突。",
+      "count": 1
+    },
+    {
+      "source": "Builder for <code>SyncMcpToolCallbackProvider</code>.",
+      "translation": "<code>SyncMcpToolCallbackProvider</code> 的构建器。",
+      "count": 1
+    },
+    {
+      "source": "Creates a provider with MCP clients and tool filter.",
+      "translation": "创建一个带有 MCP 客户端和工具过滤器的提供者。",
+      "count": 1
+    },
+    {
+      "source": "Creates a provider with MCP clients, filter, and prefix generator.",
+      "translation": "创建一个带有 MCP 客户端、过滤器和前缀生成器的提供者。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../tool/ToolCallbackProvider.html#getToolCallbacks()\">getToolCallbacks</a></code> in interface <code><a href=\"../tool/ToolCallbackProvider.html\" title=\"interface in org.springframework.ai.tool\">ToolCallbackProvider</a></code>",
+      "translation": "接口 <code><a href=\"../tool/ToolCallbackProvider.html\" title=\"org.springframework.ai.tool 中的接口\">ToolCallbackProvider</a></code> 中的方法 <code><a href=\"../tool/ToolCallbackProvider.html#getToolCallbacks()\">getToolCallbacks</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code>onApplicationEvent</code> in interface <code>org.springframework.context.ApplicationListener&lt;<a href=\"McpToolsChangedEvent.html\" title=\"class in org.springframework.ai.mcp\">McpToolsChangedEvent</a>&gt;</code>",
+      "translation": "<code>onApplicationEvent</code> 接口 <code>org.springframework.context.ApplicationListener&lt;<a href=\"McpToolsChangedEvent.html\" title=\"class in org.springframework.ai.mcp\">McpToolsChangedEvent</a>&gt;</code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>toolNamePrefixGenerator</code> - generates prefixes for tool names",
+      "translation": "<code>toolNamePrefixGenerator</code> - 为工具名称生成前缀",
+      "count": 1
+    },
+    {
+      "source": "<code>mcpClients</code> - MCP clients to discover tools from",
+      "translation": "<code>mcpClients</code> - 用于发现工具的 MCP 客户端。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, YunKui Lu",
+      "translation": "克里斯蒂安·茨洛夫，陆云魁",
+      "count": 1
+    },
+    {
+      "source": "consolidated list of tool callbacks",
+      "translation": "工具回调的整合列表",
+      "count": 1
+    },
+    {
+      "source": "new builder",
+      "translation": "新建造者",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Provides Spring AI tool callbacks by discovering tools from MCP servers.",
+      "translation": "通过从 MCP 服务器发现工具，提供 Spring AI 的工具回调。",
+      "count": 1
+    }
+  ]
+}

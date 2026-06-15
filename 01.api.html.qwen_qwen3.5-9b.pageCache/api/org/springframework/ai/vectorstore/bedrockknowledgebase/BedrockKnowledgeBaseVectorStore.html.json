@@ -1,0 +1,206 @@
+{
+  "created_at": "2026-06-15 07:38:09",
+  "updated_at": "2026-06-15 07:38:09",
+  "stats": {
+    "total_entries": 38,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 44,
+    "entries_with_hits": 38,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1578947368421053,
+    "usage_percentage": 0.0038000000000000004
+  },
+  "items": [
+    {
+      "source": "Adds list of <a href=\"../../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a>s to the vector store.",
+      "translation": "向向量存储添加<a href=\"../../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a>列表。",
+      "count": 2
+    },
+    {
+      "source": "Creates a new builder for BedrockKnowledgeBaseVectorStore.",
+      "translation": "为 BedrockKnowledgeBaseVectorStore 创建一个新的构建器。",
+      "count": 2
+    },
+    {
+      "source": "Deletes documents from the vector store.",
+      "translation": "从向量存储中删除文档。",
+      "count": 2
+    },
+    {
+      "source": "Deletes documents from the vector store based on filter criteria.",
+      "translation": "根据筛选条件从向量存储中删除文档。",
+      "count": 2
+    },
+    {
+      "source": "Returns the Knowledge Base ID this store is configured to query.",
+      "translation": "返回此商店配置的用于查询的知识库 ID。",
+      "count": 2
+    },
+    {
+      "source": "Retrieves documents by query embedding similarity and metadata filters to retrieve\nexactly the number of nearest-neighbor results that match the request criteria.",
+      "translation": "通过查询嵌入相似度和元数据过滤器检索文档，以精确获取与请求条件匹配的最近邻结果数量。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This store uses the Bedrock Agent Runtime Retrieve API to perform similarity searches\nagainst a pre-configured Knowledge Base.",
+      "translation": "该商店使用 Bedrock Agent Runtime 检索 API，针对预配置的知识库执行相似性搜索。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../VectorStore.html#add(java.util.List)\">VectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../VectorStore.html#add(java.util.List)\">VectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../VectorStore.html#delete(java.util.List)\">VectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../VectorStore.html#delete(java.util.List)\">VectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../VectorStore.html#delete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">VectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../VectorStore.html#delete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">VectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../VectorStoreRetriever.html#similaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">VectorStoreRetriever</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../VectorStoreRetriever.html#similaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">VectorStoreRetriever</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../VectorStore.html#getNativeClient()\">VectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../VectorStore.html#getNativeClient()\">VectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Builder for <a href=\"BedrockKnowledgeBaseVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.bedrockknowledgebase\"><code>BedrockKnowledgeBaseVectorStore</code></a>.",
+      "translation": "<code>BedrockKnowledgeBaseVectorStore</code> 的构建器。",
+      "count": 1
+    },
+    {
+      "source": "Returns the native client if available in this vector store implementation.\n\nNote on usage: 1. Returns empty Optional when no native client is available 2. Due\nto Java type erasure, runtime type checking is not possible\n\nExample usage: When working with implementation with known native client:\nOptional<nativeclienttype> client = vectorStore.getNativeClient();\n\nNote: Using Optional<span class=\"invalid-tag\">invalid input: '&lt;'</span>?&gt; will return the native client if one exists, rather than an\nempty Optional. For type safety, prefer using the specific client type.</nativeclienttype>",
+      "translation": "返回当前向量存储实现中可用的原生客户端。\n\n使用注意事项：1. 若无可用原生客户端，则返回空 Optional；2. 由于 Java 类型擦除，无法进行运行时类型检查。\n\n使用示例：在与已知原生客户端的实现协作时：Optional<nativeclienttype> client = vectorStore.getNativeClient();\n\n注意：使用 Optional<span class=\"invalid-tag\">无效输入：'&lt;'</span>?&gt; 将返回存在的原生客户端，而非空 Optional。为确保类型安全，建议使用特定的客户端类型。</nativeclienttype>",
+      "count": 1
+    },
+    {
+      "source": "Returns the native client if available in this vector store implementation.",
+      "translation": "如果此向量存储实现中可用，则返回原生客户端。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../VectorStore.html#add(java.util.List)\">add</a></code> in interface <code><a href=\"../VectorStore.html\" title=\"interface in org.springframework.ai.vectorstore\">VectorStore</a></code>",
+      "translation": "接口 <code><a href=\"../VectorStore.html\" title=\"org.springframework.ai.vectorstore 中的接口\">VectorStore</a></code> 中的 <code><a href=\"../VectorStore.html#add(java.util.List)\">add</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../VectorStore.html#delete(java.util.List)\">delete</a></code> in interface <code><a href=\"../VectorStore.html\" title=\"interface in org.springframework.ai.vectorstore\">VectorStore</a></code>",
+      "translation": "接口 <code><a href=\"../VectorStore.html\" title=\"org.springframework.ai.vectorstore 中的接口\">VectorStore</a></code> 中的 <code><a href=\"../VectorStore.html#delete(java.util.List)\">delete</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../VectorStore.html#delete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">delete</a></code> in interface <code><a href=\"../VectorStore.html\" title=\"interface in org.springframework.ai.vectorstore\">VectorStore</a></code>",
+      "translation": "接口 <code><a href=\"../VectorStore.html\" title=\"org.springframework.ai.vectorstore 中的接口\">VectorStore</a></code> 中的 <code><a href=\"../VectorStore.html#delete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">delete</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../VectorStoreRetriever.html#similaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">similaritySearch</a></code> in interface <code><a href=\"../VectorStoreRetriever.html\" title=\"interface in org.springframework.ai.vectorstore\">VectorStoreRetriever</a></code>",
+      "translation": "接口 <code><a href=\"../VectorStoreRetriever.html\" title=\"org.springframework.ai.vectorstore 中的接口\">VectorStoreRetriever</a></code> 中的 <code><a href=\"../VectorStoreRetriever.html#similaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">similaritySearch</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../VectorStore.html#getName()\">getName</a></code> in interface <code><a href=\"../VectorStore.html\" title=\"interface in org.springframework.ai.vectorstore\">VectorStore</a></code>",
+      "translation": "接口 <code><a href=\"../VectorStore.html\" title=\"org.springframework.ai.vectorstore 中的接口\">VectorStore</a></code> 中的 <code><a href=\"../VectorStore.html#getName()\">getName</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../VectorStore.html#getNativeClient()\">getNativeClient</a></code> in interface <code><a href=\"../VectorStore.html\" title=\"interface in org.springframework.ai.vectorstore\">VectorStore</a></code>",
+      "translation": "接口 <code><a href=\"../VectorStore.html\" title=\"org.springframework.ai.vectorstore 中的接口\">VectorStore</a></code> 中的方法 <code><a href=\"../VectorStore.html#getNativeClient()\">getNativeClient</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<ul class=\"tag-list-long\">\n<li><a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html\"> Amazon\nBedrock Knowledge Bases</a></li>\n</ul>",
+      "translation": "<ul class=\"tag-list-long\">\n<li><a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html\">Amazon Bedrock 知识库</a></li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<span id=\"getNativeClient()-type-param-T\"><code>T</code> - The type of the native client</span>",
+      "translation": "<span id=\"getNativeClient()-type-param-T\"><code>T</code> - 原生客户端的类型</span>",
+      "count": 1
+    },
+    {
+      "source": "<code>client</code> - the Bedrock Agent Runtime client",
+      "translation": "<code>client</code> - Bedrock Agent Runtime 客户端",
+      "count": 1
+    },
+    {
+      "source": "<code>knowledgeBaseId</code> - the ID of the Knowledge Base to query",
+      "translation": "<code>knowledgeBaseId</code> - 要查询的知识库的 ID",
+      "count": 1
+    },
+    {
+      "source": "<code>documents</code> - the list of documents to store. Throws an exception if the\nunderlying provider checks for duplicate IDs.",
+      "translation": "<code>documents</code> - 要存储的文档列表。如果底层提供者检查重复 ID，则抛出异常。",
+      "count": 1
+    },
+    {
+      "source": "<code>idList</code> - list of document ids for which documents will be removed.",
+      "translation": "<code>idList</code> - 将被删除文档的文档 ID 列表。",
+      "count": 1
+    },
+    {
+      "source": "<code>filterExpression</code> - Filter expression to identify documents to delete",
+      "translation": "<code>filterExpression</code> - 用于标识要删除的文档的过滤表达式",
+      "count": 1
+    },
+    {
+      "source": "<code>request</code> - Search request for set search parameters, such as the query text,\ntopK, similarity threshold and metadata filter expressions.",
+      "translation": "<code>request</code> - 用于设置搜索参数的搜索请求，例如查询文本、topK、相似度阈值和元数据过滤表达式。",
+      "count": 1
+    },
+    {
+      "source": "Yuriy Bezsonov",
+      "translation": "尤里·别松诺夫",
+      "count": 1
+    },
+    {
+      "source": "a new builder instance",
+      "translation": "一个新的构建器实例",
+      "count": 1
+    },
+    {
+      "source": "Returns documents that match the query request conditions.",
+      "translation": "返回与查询请求条件匹配的文档。",
+      "count": 1
+    },
+    {
+      "source": "Optional containing native client if available, empty Optional otherwise",
+      "translation": "如有可用的本机客户端，则包含该客户端的 Optional；否则为空 Optional。",
+      "count": 1
+    },
+    {
+      "source": "the Knowledge Base ID",
+      "translation": "知识库 ID",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "Amazon Bedrock Knowledge Base implementation of <a href=\"../VectorStore.html\" title=\"interface in org.springframework.ai.vectorstore\"><code>VectorStore</code></a>.",
+      "translation": "Amazon Bedrock 知识底座对<a href=\"../VectorStore.html\" title=\"org.springframework.ai.vectorstore 中的接口\"><code>VectorStore</code></a>接口的实现。",
+      "count": 1
+    }
+  ]
+}

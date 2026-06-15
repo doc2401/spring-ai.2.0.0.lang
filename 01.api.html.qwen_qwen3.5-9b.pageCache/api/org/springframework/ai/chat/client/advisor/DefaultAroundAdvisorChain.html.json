@@ -1,0 +1,181 @@
+{
+  "created_at": "2026-06-15 08:57:52",
+  "updated_at": "2026-06-15 08:57:52",
+  "stats": {
+    "total_entries": 33,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 40,
+    "entries_with_hits": 33,
+    "entries_without_hits": 0,
+    "hit_rate": 1.2121212121212122,
+    "usage_percentage": 0.0033000000000000004
+  },
+  "items": [
+    {
+      "source": "Invokes the next <a href=\"api/CallAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>CallAdvisor</code></a> in the <a href=\"api/CallAdvisorChain.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>CallAdvisorChain</code></a> with the given\nrequest.",
+      "translation": "调用 <a href=\"api/CallAdvisor.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\"><code>CallAdvisor</code></a> 链中的下一个 <a href=\"api/CallAdvisorChain.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\"><code>CallAdvisorChain</code></a>，使用给定的请求。",
+      "count": 2
+    },
+    {
+      "source": "Invokes the next <a href=\"api/StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>StreamAdvisor</code></a> in the <a href=\"api/StreamAdvisorChain.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>StreamAdvisorChain</code></a> with the\ngiven request.",
+      "translation": "调用 <a href=\"api/StreamAdvisor.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\"><code>StreamAdvisor</code></a> 中的下一个 <a href=\"api/StreamAdvisorChain.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\"><code>StreamAdvisorChain</code></a>，并传入给定的请求。",
+      "count": 2
+    },
+    {
+      "source": "Returns the list of all the <a href=\"api/CallAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>CallAdvisor</code></a> instances included in this chain at\nthe time of its creation.",
+      "translation": "返回在创建此链时包含的所有<a href=\"api/CallAdvisor.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\"><code>CallAdvisor</code></a>实例的列表。",
+      "count": 2
+    },
+    {
+      "source": "Returns the list of all the <a href=\"api/StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>StreamAdvisor</code></a> instances included in this chain\nat the time of its creation.",
+      "translation": "返回在创建此链时包含的所有<a href=\"api/StreamAdvisor.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\"><code>StreamAdvisor</code></a>实例的列表。",
+      "count": 2
+    },
+    {
+      "source": "Returns a new <a href=\"api/BaseAdvisorChain.Builder.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>BaseAdvisorChain.Builder</code></a> initialized with this chain's advisors and\nconfiguration, allowing it to be selectively modified before building a new chain.",
+      "translation": "返回一个新的 <a href=\"api/BaseAdvisorChain.Builder.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>BaseAdvisorChain.Builder</code></a>，该构建器已使用此链的顾问和配置进行初始化，允许在构建新链之前对其进行选择性修改。",
+      "count": 2
+    },
+    {
+      "source": "Creates a new CallAdvisorChain copy that contains all advisors after the specified\nadvisor.",
+      "translation": "创建一个包含指定顾问之后所有顾问的新 CallAdvisorChain 副本。",
+      "count": 2
+    },
+    {
+      "source": "Creates a new StreamAdvisorChain copy that contains all advisors after the\nspecified advisor.",
+      "translation": "创建一个包含指定顾问之后所有顾问的新 StreamAdvisorChain 副本。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Concrete <a href=\"api/BaseAdvisorChain.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>BaseAdvisorChain</code></a> classes must override this to return the most\nconcrete builder implementation.",
+      "translation": "具体实现 <a href=\"api/BaseAdvisorChain.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\"><code>BaseAdvisorChain</code></a> 的类必须重写此方法，以返回最具体的构建器实现。",
+      "count": 1
+    },
+    {
+      "source": "Default implementation for the <a href=\"api/BaseAdvisorChain.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>BaseAdvisorChain</code></a>. Used by the <a href=\"../ChatClient.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient</code></a>\nto delegate the call to the next <a href=\"api/CallAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>CallAdvisor</code></a> or <a href=\"api/StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>StreamAdvisor</code></a> in the\nchain.",
+      "translation": "这是<a href=\"api/BaseAdvisorChain.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>BaseAdvisorChain</code></a>的默认实现。它被<a href=\"../ChatClient.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient</code></a>使用，用于将调用委托给链中的下一个<a href=\"api/CallAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>CallAdvisor</code></a>或<a href=\"api/StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>StreamAdvisor</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"api/CallAdvisorChain.html#nextCall(org.springframework.ai.chat.client.ChatClientRequest)\">CallAdvisorChain</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"api/CallAdvisorChain.html#nextCall(org.springframework.ai.chat.client.ChatClientRequest)\">CallAdvisorChain</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"api/StreamAdvisorChain.html#nextStream(org.springframework.ai.chat.client.ChatClientRequest)\">StreamAdvisorChain</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"api/StreamAdvisorChain.html#nextStream(org.springframework.ai.chat.client.ChatClientRequest)\">StreamAdvisorChain</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"api/CallAdvisorChain.html#copy(org.springframework.ai.chat.client.advisor.api.CallAdvisor)\">CallAdvisorChain</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"api/CallAdvisorChain.html#copy(org.springframework.ai.chat.client.advisor.api.CallAdvisor)\">CallAdvisorChain</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"api/StreamAdvisorChain.html#copy(org.springframework.ai.chat.client.advisor.api.StreamAdvisor)\">StreamAdvisorChain</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"api/StreamAdvisorChain.html#copy(org.springframework.ai.chat.client.advisor.api.StreamAdvisor)\">StreamAdvisorChain</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"api/CallAdvisorChain.html#getCallAdvisors()\">CallAdvisorChain</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"api/CallAdvisorChain.html#getCallAdvisors()\">CallAdvisorChain</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"api/StreamAdvisorChain.html#getStreamAdvisors()\">StreamAdvisorChain</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"api/StreamAdvisorChain.html#getStreamAdvisors()\">StreamAdvisorChain</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"api/BaseAdvisorChain.html#mutate()\">BaseAdvisorChain</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"api/BaseAdvisorChain.html#mutate()\">BaseAdvisorChain</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"api/CallAdvisorChain.html#nextCall(org.springframework.ai.chat.client.ChatClientRequest)\">nextCall</a></code> in interface <code><a href=\"api/CallAdvisorChain.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">CallAdvisorChain</a></code>",
+      "translation": "接口 <code><a href=\"api/CallAdvisorChain.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\">CallAdvisorChain</a></code> 中的方法 <code><a href=\"api/CallAdvisorChain.html#nextCall(org.springframework.ai.chat.client.ChatClientRequest)\">nextCall</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"api/StreamAdvisorChain.html#nextStream(org.springframework.ai.chat.client.ChatClientRequest)\">nextStream</a></code> in interface <code><a href=\"api/StreamAdvisorChain.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">StreamAdvisorChain</a></code>",
+      "translation": "接口 <code><a href=\"api/StreamAdvisorChain.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\">StreamAdvisorChain</a></code> 中的方法 <code><a href=\"api/StreamAdvisorChain.html#nextStream(org.springframework.ai.chat.client.ChatClientRequest)\">nextStream</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"api/CallAdvisorChain.html#copy(org.springframework.ai.chat.client.advisor.api.CallAdvisor)\">copy</a></code> in interface <code><a href=\"api/CallAdvisorChain.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">CallAdvisorChain</a></code>",
+      "translation": "接口 <code><a href=\"api/CallAdvisorChain.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\">CallAdvisorChain</a></code> 中的<code><a href=\"api/CallAdvisorChain.html#copy(org.springframework.ai.chat.client.advisor.api.CallAdvisor)\">copy</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"api/StreamAdvisorChain.html#copy(org.springframework.ai.chat.client.advisor.api.StreamAdvisor)\">copy</a></code> in interface <code><a href=\"api/StreamAdvisorChain.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">StreamAdvisorChain</a></code>",
+      "translation": "接口 <code><a href=\"api/StreamAdvisorChain.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\">StreamAdvisorChain</a></code> 中的方法 <code><a href=\"api/StreamAdvisorChain.html#copy(org.springframework.ai.chat.client.advisor.api.StreamAdvisor)\">copy</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"api/CallAdvisorChain.html#getCallAdvisors()\">getCallAdvisors</a></code> in interface <code><a href=\"api/CallAdvisorChain.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">CallAdvisorChain</a></code>",
+      "translation": "接口 <code><a href=\"api/CallAdvisorChain.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\">CallAdvisorChain</a></code> 中的方法 <code><a href=\"api/CallAdvisorChain.html#getCallAdvisors()\">getCallAdvisors</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"api/StreamAdvisorChain.html#getStreamAdvisors()\">getStreamAdvisors</a></code> in interface <code><a href=\"api/StreamAdvisorChain.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">StreamAdvisorChain</a></code>",
+      "translation": "接口 <code><a href=\"api/StreamAdvisorChain.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\">StreamAdvisorChain</a></code> 中的方法<code><a href=\"api/StreamAdvisorChain.html#getStreamAdvisors()\">getStreamAdvisors</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"api/AdvisorChain.html#getObservationRegistry()\">getObservationRegistry</a></code> in interface <code><a href=\"api/AdvisorChain.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">AdvisorChain</a></code>",
+      "translation": "接口 <code><a href=\"api/AdvisorChain.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\">AdvisorChain</a></code> 中的方法 <code><a href=\"api/AdvisorChain.html#getObservationRegistry()\">getObservationRegistry</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"api/BaseAdvisorChain.html#mutate()\">mutate</a></code> in interface <code><a href=\"api/BaseAdvisorChain.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">BaseAdvisorChain</a></code>",
+      "translation": "接口 <code><a href=\"api/BaseAdvisorChain.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\">BaseAdvisorChain</a></code> 中的 <code><a href=\"api/BaseAdvisorChain.html#mutate()\">mutate</a></code>",
+      "count": 1
+    },
+    {
+      "source": "a pre-populated <a href=\"api/BaseAdvisorChain.Builder.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>BaseAdvisorChain.Builder</code></a>",
+      "translation": "一个预填充的<a href=\"api/BaseAdvisorChain.Builder.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\"><code>BaseAdvisorChain.Builder</code></a>",
+      "count": 1
+    },
+    {
+      "source": "<code>after</code> - the CallAdvisor after which to copy the chain",
+      "translation": "<code>after</code> - 要复制链的后续 CallAdvisor",
+      "count": 1
+    },
+    {
+      "source": "<code>after</code> - the StreamAdvisor after which to copy the chain",
+      "translation": "<code>after</code> - 要复制链的 StreamAdvisor",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Dariusz Jedrzejczyk, Thomas Vitale",
+      "translation": "克里斯蒂安·茨洛夫，达里乌什·耶德热伊奇克，托马斯·维塔莱",
+      "count": 1
+    },
+    {
+      "source": "a new CallAdvisorChain containing all advisors after the specified advisor",
+      "translation": "包含指定顾问之后所有顾问的新 CallAdvisorChain。",
+      "count": 1
+    },
+    {
+      "source": "a new StreamAdvisorChain containing all advisors after the specified\nadvisor",
+      "translation": "包含指定 advisor 之后所有 advisor 的新 StreamAdvisorChain。",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    }
+  ]
+}

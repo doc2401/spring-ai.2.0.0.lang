@@ -1,0 +1,51 @@
+{
+  "created_at": "2026-06-15 08:01:36",
+  "updated_at": "2026-06-15 08:01:36",
+  "stats": {
+    "total_entries": 7,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 7,
+    "entries_with_hits": 7,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.0007
+  },
+  "items": [
+    {
+      "source": "Covers functional correctness (do the right temperatures come back?) and structural\ncorrectness (is <code>ToolCallingAdvisor</code> actually in control of the loop?). The\nstructural proof uses a <a href=\"AbstractToolCallingAdvisorAutoRegistrationIT.ChainIterationCountingAdvisor.html\" title=\"class in org.springframework.ai.test.chat.client.advisor\"><code>AbstractToolCallingAdvisorAutoRegistrationIT.ChainIterationCountingAdvisor</code></a> positioned just after the\nauto-registered <code>ToolCallingAdvisor</code>. Because the advisor recurses via\n<code>chain.copy(this).nextCall()</code>, the counting advisor is invoked once per tool-call\niteration plus once for the final answer — a count &gt; 1 proves the advisor chain owns\nthe loop. When only the model's built-in path runs the count is always 1.",
+      "translation": "涵盖功能正确性（是否返回了正确的温度？）和结构正确性（<code>ToolCallingAdvisor</code> 是否真正控制循环？）。该结构证明使用了一个 <a href=\"AbstractToolCallingAdvisorAutoRegistrationIT.ChainIterationCountingAdvisor.html\" title=\"class in org.springframework.ai.test.chat.client.advisor\"><code>AbstractToolCallingAdvisorAutoRegistrationIT.ChainIterationCountingAdvisor</code></a>，其位置紧接在自动注册的 <code>ToolCallingAdvisor</code> 之后。由于该顾问通过 <code>chain.copy(this).nextCall()</code> 进行递归调用，计数顾问会在每次工具调用迭代时被触发一次，并在最终答案生成时再被触发一次——计数大于 1 即证明顾问链拥有循环控制权。当仅运行模型内置路径时，计数始终为 1。",
+      "count": 1
+    },
+    {
+      "source": "Subclasses provide the <a href=\"../../../../chat/model/ChatModel.html\" title=\"interface in org.springframework.ai.chat.model\"><code>ChatModel</code></a> implementation via <a href=\"#getChatModel()\"><code>getChatModel()</code></a>.",
+      "translation": "子类通过<a href=\"#getChatModel()\"><code>getChatModel()</code></a>提供<a href=\"../../../../chat/model/ChatModel.html\" title=\"interface in org.springframework.ai.chat.model\"><code>ChatModel</code></a>接口的实现。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Counts how many times the advisor chain passes through this advisor.",
+      "translation": "统计顾问链经过此顾问的次数。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Abstract integration-test base for <a href=\"../../../../chat/client/advisor/ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor</code></a> auto-registration\nbehaviour.",
+      "translation": "用于自动注册<a href=\"../../../../chat/client/advisor/ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor</code></a>的集成测试基础抽象。",
+      "count": 1
+    }
+  ]
+}

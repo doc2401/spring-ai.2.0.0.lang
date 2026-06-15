@@ -1,0 +1,106 @@
+{
+  "created_at": "2026-06-15 08:47:51",
+  "updated_at": "2026-06-15 08:47:51",
+  "stats": {
+    "total_entries": 18,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 20,
+    "entries_with_hits": 18,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1111111111111112,
+    "usage_percentage": 0.0018
+  },
+  "items": [
+    {
+      "source": "Return a <a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient.Builder</code></a> to create a new <a href=\"ChatClient.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient</code></a> whose\nsettings are replicated from the default <a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient.ChatClientRequestSpec</code></a> of this\nclient.",
+      "translation": "返回一个<a href=\"ChatClient.Builder.html\" title=\"org.springframework.ai.chat.client 中的接口\"><code>ChatClient.Builder</code></a>，用于创建一个新的<a href=\"ChatClient.html\" title=\"org.springframework.ai.chat.client 中的接口\"><code>ChatClient</code></a>，该客户端的设置将从此客户端的默认<a href=\"ChatClient.ChatClientRequestSpec.html\" title=\"org.springframework.ai.chat.client 中的接口\"><code>ChatClient.ChatClientRequestSpec</code></a>中复制。",
+      "count": 2
+    },
+    {
+      "source": "Creates a <a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient.Builder</code></a> for constructing a <a href=\"ChatClient.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient</code></a>.",
+      "translation": "创建一个<a href=\"ChatClient.Builder.html\" title=\"org.springframework.ai.chat.client 中的接口\"><code>ChatClient.Builder</code></a>，用于构建一个<a href=\"ChatClient.html\" title=\"org.springframework.ai.chat.client 中的接口\"><code>ChatClient</code></a>。",
+      "count": 2
+    },
+    {
+      "source": "When <code>toolCallingAdvisorBuilder</code> is <code>null</code>, a default\n<a href=\"advisor/ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor</code></a> is created\nwith a <a href=\"../../model/tool/ToolCallingManager.html\" title=\"interface in org.springframework.ai.model.tool\"><code>ToolCallingManager</code></a> backed by the\nsupplied <code>observationRegistry</code>.",
+      "translation": "当<code>toolCallingAdvisorBuilder</code>为<code>null</code>时，会创建一个默认的\n<a href=\"advisor/ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor</code></a>，该 Advisor 由一个基于提供的<code>observationRegistry</code>的\n<a href=\"../../model/tool/ToolCallingManager.html\" title=\"interface in org.springframework.ai.model.tool\"><code>ToolCallingManager</code></a>支持。",
+      "count": 1
+    },
+    {
+      "source": "When <code>toolCallingAdvisorBuilder</code> is non-null it is used as-is. The caller is\nthen responsible for configuring the builder's\n<a href=\"../../model/tool/ToolCallingManager.html\" title=\"interface in org.springframework.ai.model.tool\"><code>ToolCallingManager</code></a>, including any\n<code>ObservationRegistry</code>, since the supplied\n<code>observationRegistry</code> will not be automatically applied to it.",
+      "translation": "当 <code>toolCallingAdvisorBuilder</code> 不为 null 时，将直接使用它。调用方随后负责配置该构建器的\n<a href=\"../../model/tool/ToolCallingManager.html\" title=\"interface in org.springframework.ai.model.tool\"><code>ToolCallingManager</code></a>，包括任何\n<code>ObservationRegistry</code>，因为所提供的\n<code>observationRegistry</code> 不会自动应用其中。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Use <a href=\"#builder(org.springframework.ai.chat.model.ChatModel)\"><code>builder(ChatModel)</code></a> to prepare an instance.",
+      "translation": "使用<a href=\"#builder(org.springframework.ai.chat.model.ChatModel)\"><code>builder(ChatModel)</code></a>来准备一个实例。",
+      "count": 1
+    },
+    {
+      "source": "A mutable builder for creating a <a href=\"ChatClient.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient</code></a>.",
+      "translation": "一个可变构建器，用于创建<a href=\"ChatClient.html\" title=\"org.springframework.ai.chat.client 中的接口\"><code>ChatClient</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Configures optional behaviour for <code>entity(...)</code> calls.",
+      "translation": "配置 `entity(...)` 调用的可选行为。",
+      "count": 1
+    },
+    {
+      "source": "Specification for a prompt system.",
+      "translation": "提示系统规范。",
+      "count": 1
+    },
+    {
+      "source": "<code>observationRegistry</code> - the observation registry for client-level observations;\nalso used to configure the default <code>ToolCallingManager</code> when\n<code>toolCallingAdvisorBuilder</code> is <code>null</code>",
+      "translation": "<code>observationRegistry</code> - 用于客户端级观测的观测注册表；  \n当 <code>toolCallingAdvisorBuilder</code> 为 <code>null</code> 时，也用于配置默认的 <code>ToolCallingManager</code>。",
+      "count": 1
+    },
+    {
+      "source": "<code>toolCallingAdvisorBuilder</code> - optional builder for the\n<a href=\"advisor/ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor</code></a>; when\n<code>null</code> a default is created",
+      "translation": "<code>toolCallingAdvisorBuilder</code> - 可选的 <a href=\"advisor/ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor</code></a> 构建器；当为 <code>null</code> 时，将创建默认实例。",
+      "count": 1
+    },
+    {
+      "source": "a new <a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient.Builder</code></a>",
+      "translation": "一个新的<a href=\"ChatClient.Builder.html\" title=\"org.springframework.ai.chat.client 中的接口\"><code>ChatClient.Builder</code></a>",
+      "count": 1
+    },
+    {
+      "source": "<code>chatModel</code> - the chat model to use",
+      "translation": "<code>chatModel</code> - 要使用的聊天模型",
+      "count": 1
+    },
+    {
+      "source": "<code>chatClientObservationConvention</code> - optional custom observation convention for\nthe chat client",
+      "translation": "<code>chatClientObservationConvention</code> - 聊天客户端的可选自定义观察约定",
+      "count": 1
+    },
+    {
+      "source": "<code>advisorObservationConvention</code> - optional custom observation convention for\nadvisors",
+      "translation": "<code>advisorObservationConvention</code> - 用于 Advisor 的可选自定义观察约定",
+      "count": 1
+    },
+    {
+      "source": "Mark Pollack, Christian Tzolov, Josh Long, Arjen Poutsma, Thomas Vitale",
+      "translation": "Mark Pollack，Christian Tzolov，Josh Long，Arjen Poutsma，Thomas Vitale",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Client to perform stateless requests to an AI Model, using a fluent API.",
+      "translation": "客户端需通过流式 API 向 AI 模型发起无状态请求。",
+      "count": 1
+    }
+  ]
+}

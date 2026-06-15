@@ -1,0 +1,91 @@
+{
+  "created_at": "2026-06-15 08:22:08",
+  "updated_at": "2026-06-15 08:22:08",
+  "stats": {
+    "total_entries": 15,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 17,
+    "entries_with_hits": 15,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1333333333333333,
+    "usage_percentage": 0.0015
+  },
+  "items": [
+    {
+      "source": "<span class=\"deprecated-label\">Deprecated, for removal: This API element is subject to removal in a future version.</span>",
+      "translation": "<code class=\"deprecated-label\">已弃用，即将移除：此 API 元素将在未来版本中被移除。</code>",
+      "count": 3
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This configuration class sets up the WebMvc-specific transport components for the MCP\nserver, providing Server-Sent Events (SSE) communication through Spring MVC. It is\nactivated when:",
+      "translation": "此配置类为 MCP 服务器设置 WebMvc 专用的传输组件，通过 Spring MVC 提供服务器发送事件（SSE）通信。它在以下情况被激活：",
+      "count": 1
+    },
+    {
+      "source": "The configuration provides:",
+      "translation": "该配置提供：",
+      "count": 1
+    },
+    {
+      "source": "Required dependencies:",
+      "translation": "所需依赖项：",
+      "count": 1
+    },
+    {
+      "source": "The <code>spring.ai.mcp.server.transport</code> property is set to <code>WEBMVC</code>",
+      "translation": "<code>spring.ai.mcp.server.transport</code> 属性被设置为 <code>WEBMVC</code>",
+      "count": 1
+    },
+    {
+      "source": "The WebMvcSseServerTransport class is on the classpath (from mcp-spring-webmvc\ndependency)",
+      "translation": "WebMvcSseServerTransport 类位于类路径中（来自 mcp-spring-webmvc 依赖）。",
+      "count": 1
+    },
+    {
+      "source": "Spring MVC's RouterFunction class is available (from spring-boot-starter-web)",
+      "translation": "Spring MVC 的 RouterFunction 类现已可用（来自 spring-boot-starter-web）。",
+      "count": 1
+    },
+    {
+      "source": "A WebMvcSseServerTransport bean for handling SSE communication",
+      "translation": "用于处理服务器发送事件（SSE）通信的 WebMvcSseServerTransport Bean。",
+      "count": 1
+    },
+    {
+      "source": "A RouterFunction bean that sets up the SSE endpoint",
+      "translation": "用于设置 SSE 端点的 RouterFunction Bean",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Yanming Zhou",
+      "translation": "克里斯蒂安·茨洛夫，周延明",
+      "count": 1
+    },
+    {
+      "source": "<code>Auto-configuration</code> for MCP WebMvc Server Transport.",
+      "translation": "MCP WebMvc 服务器传输的自动配置。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>WebMvcSseServerTransport 类位于类路径中（来自 mcp-spring-webmvc 依赖）。</li>\n<li>Spring MVC 的 RouterFunction 类现已可用（来自 spring-boot-starter-web）。</li>\n<li><code>spring.ai.mcp.server.transport</code> 属性被设置为 <code>WEBMVC</code></li>\n</ul>",
+      "translation": "<ul>\n<li>WebMvcSseServerTransport 类位于类路径中（来自 mcp-spring-webmvc 依赖）。</li>\n<li>Spring MVC 的 RouterFunction 类现已可用（来自 spring-boot-starter-web）。</li>\n<li><code>spring.ai.mcp.server.transport</code> 属性被设置为 <code>WEBMVC</code></li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>用于处理服务器发送事件（SSE）通信的 WebMvcSseServerTransport Bean。</li>\n<li>用于设置 SSE 端点的 RouterFunction Bean</li>\n</ul>",
+      "translation": "<ul>\n<li>用于处理服务器发送事件（SSE）通信的 WebMvcSseServerTransport Bean。</li>\n<li>用于配置 SSE 端点的 RouterFunction Bean</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>&lt;dependency&gt;\n    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;\n    &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;\n&lt;/dependency&gt;\n</code></pre>",
+      "translation": "<pre><code>&lt;dependency&gt;\n    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;\n    &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;\n&lt;/dependency&gt;</code></pre>",
+      "count": 1
+    }
+  ]
+}

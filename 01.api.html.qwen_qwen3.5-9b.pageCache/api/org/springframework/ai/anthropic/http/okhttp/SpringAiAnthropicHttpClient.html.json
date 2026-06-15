@@ -1,0 +1,66 @@
+{
+  "created_at": "2026-06-15 09:07:42",
+  "updated_at": "2026-06-15 09:07:42",
+  "stats": {
+    "total_entries": 10,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 10,
+    "entries_with_hits": 10,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.001
+  },
+  "items": [
+    {
+      "source": "<b>Attribution:</b> the body of this class is a Java port of <code>OkHttpClient</code> from\n<code>anthropic-java-client-okhttp</code> (Apache License 2.0, authored by Anthropic). Only\nthe Micrometer wiring in <a href=\"SpringAiAnthropicHttpClient.Builder.html#build()\"><code>SpringAiAnthropicHttpClient.Builder.build()</code></a> is original to Spring AI.",
+      "translation": "<b>归属：</b> 此类的主体是 Java 版本的 `OkHttpClient`，源自 `anthropic-java-client-okhttp`（Apache License 2.0，由 Anthropic 编写）。仅在 `<a href=\"SpringAiAnthropicHttpClient.Builder.html#build()\"><code>SpringAiAnthropicHttpClient.Builder.build()</code></a>` 中的 Micrometer 集成部分为 Spring AI 原创。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Builder for <a href=\"SpringAiAnthropicHttpClient.html\" title=\"class in org.springframework.ai.anthropic.http.okhttp\"><code>SpringAiAnthropicHttpClient</code></a>.",
+      "translation": "用于构建<a href=\"SpringAiAnthropicHttpClient.html\" title=\"类 org.springframework.ai.anthropic.http.okhttp\"><code>SpringAiAnthropicHttpClient</code></a>的构造器。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/AutoCloseable.html#close()\" title=\"class or interface in java.lang\">close</a></code> in interface <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/AutoCloseable.html\" title=\"class or interface in java.lang\">AutoCloseable</a></code>",
+      "translation": "`AutoCloseable` 接口中的 `close()` 方法。",
+      "count": 1
+    },
+    {
+      "source": "<code>execute</code> in interface <code>com.anthropic.core.http.HttpClient</code>",
+      "translation": "<code>execute</code> 接口 <code>com.anthropic.core.http.HttpClient</code> 中的方法",
+      "count": 1
+    },
+    {
+      "source": "<code>executeAsync</code> in interface <code>com.anthropic.core.http.HttpClient</code>",
+      "translation": "接口 <code>com.anthropic.core.http.HttpClient</code> 中的 <code>executeAsync</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>close</code> in interface <code>com.anthropic.core.http.HttpClient</code>",
+      "translation": "接口 <code>com.anthropic.core.http.HttpClient</code> 中的 <code>close</code>",
+      "count": 1
+    },
+    {
+      "source": "Soby Chacko",
+      "translation": "索比·查科",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "OkHttp-backed <code>HttpClient</code> for the Anthropic Java SDK, with Micrometer's\n<code>OkHttpObservationInterceptor</code> attached so each HTTP attempt produces an\nobservation (span + metric + traceparent propagation). When a <code>MeterRegistry</code> is\nsupplied, <code>OkHttpConnectionPoolMetrics</code> is also bound. We own this code because\nthe SDK's stock <code>AnthropicOkHttpClient.Builder</code> doesn't expose an interceptor\nseam — see the SDK's\n<a href=\"https://platform.claude.com/docs/en/api/sdks/java#custom-http-client\">Custom\nHTTP client</a> guide for the integration pattern and\n<a href=\"https://github.com/anthropics/anthropic-sdk-java/pull/315\">anthropic-sdk-java\n#315</a> for the upstream fix being tracked.",
+      "translation": "由 OkHttp 支持的 Anthropic Java SDK 的 <code>HttpClient</code>，已附加 Micrometer 的<code>OkHttpObservationInterceptor</code>，使得每次 HTTP 请求都会生成观测记录（包含 span、指标以及 traceparent 传播）。当提供 <code>MeterRegistry</code> 时，也会绑定 <code>OkHttpConnectionPoolMetrics</code>。我们拥有这段代码，因为 SDK 自带的<code>AnthropicOkHttpClient.Builder</code>并未暴露拦截器接入点——请参见 SDK 的<a href=\"https://platform.claude.com/docs/en/api/sdks/java#custom-http-client\">自定义 HTTP 客户端</a>指南以了解集成模式，并参考<a href=\"https://github.com/anthropics/anthropic-sdk-java/pull/315\">anthropic-sdk-java #315</a>以追踪上游修复。",
+      "count": 1
+    }
+  ]
+}

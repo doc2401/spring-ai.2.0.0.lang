@@ -1,0 +1,91 @@
+{
+  "created_at": "2026-06-15 07:59:09",
+  "updated_at": "2026-06-15 07:59:09",
+  "stats": {
+    "total_entries": 15,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 20,
+    "entries_with_hits": 15,
+    "entries_without_hits": 0,
+    "hit_rate": 1.3333333333333333,
+    "usage_percentage": 0.0015
+  },
+  "items": [
+    {
+      "source": "Clears all indexed tools for the specified session.",
+      "translation": "清除指定会话中的所有索引工具。",
+      "count": 2
+    },
+    {
+      "source": "Registers a tool in the search index for the specified session.",
+      "translation": "为指定会话在搜索索引中注册工具。",
+      "count": 2
+    },
+    {
+      "source": "Registers multiple tools in the search index for the specified session in a single\nbatch operation.",
+      "translation": "在单个批量操作中，为指定的会话注册多个工具到搜索索引中。",
+      "count": 2
+    },
+    {
+      "source": "Searches for tools matching the given request criteria.",
+      "translation": "搜索符合给定请求条件的工具。",
+      "count": 2
+    },
+    {
+      "source": "<code>sessionId</code> - the session identifier for tool isolation",
+      "translation": "<code>sessionId</code> - 用于工具隔离的会话标识符",
+      "count": 2
+    },
+    {
+      "source": "Implementations should override this method when a batch operation is more\nefficient than repeated <a href=\"#indexTool(java.lang.String,org.springframework.ai.tool.toolsearch.ToolReference)\"><code>indexTool(String, ToolReference)</code></a> calls (e.g. a single embedding API call\nor a single write transaction). The default implementation simply iterates and\ndelegates to <a href=\"#indexTool(java.lang.String,org.springframework.ai.tool.toolsearch.ToolReference)\"><code>indexTool(String, ToolReference)</code></a>.",
+      "translation": "实现类应在批量操作比重复调用<a href=\"#indexTool(java.lang.String,org.springframework.ai.tool.toolsearch.ToolReference)\"><code>indexTool(String, ToolReference)</code></a>更高效时（例如单次嵌入 API 调用或单次写入事务）重写此方法。默认实现仅迭代并委托给<a href=\"#indexTool(java.lang.String,org.springframework.ai.tool.toolsearch.ToolReference)\"><code>indexTool(String, ToolReference)</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Implementations provide different search strategies — such as embedding-based semantic\nsearch, full-text keyword search, or regex pattern matching — to find relevant tools\nfrom a registered catalog based on search queries. This aligns with the Tool Search\nTool concept for dynamic tool discovery.",
+      "translation": "实现提供了不同的搜索策略——例如基于嵌入的语义搜索、全文关键词搜索或正则表达式模式匹配——以根据搜索查询从已注册的目录中找到相关工具。这与“工具搜索”工具的概念相一致，该概念支持动态工具发现。",
+      "count": 1
+    },
+    {
+      "source": "<code>toolReference</code> - the reference to the tool being indexed",
+      "translation": "<code>toolReference</code> - 被索引工具的引用",
+      "count": 1
+    },
+    {
+      "source": "<code>toolReferences</code> - the tools to register",
+      "translation": "<code>toolReferences</code> - 要注册的工具",
+      "count": 1
+    },
+    {
+      "source": "<code>toolSearchRequest</code> - the search request containing query and parameters",
+      "translation": "<code>toolSearchRequest</code> - 包含查询和参数的搜索请求",
+      "count": 1
+    },
+    {
+      "source": "<code>sessionId</code> - the session identifier",
+      "translation": "<code>sessionId</code> - 会话标识符",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "a response containing matching tool references",
+      "translation": "包含匹配工具引用的响应",
+      "count": 1
+    },
+    {
+      "source": "Interface for searching and discovering tools on-demand.",
+      "translation": "用于按需搜索和发现工具的界面。",
+      "count": 1
+    }
+  ]
+}

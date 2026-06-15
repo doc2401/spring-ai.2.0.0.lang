@@ -1,0 +1,66 @@
+{
+  "created_at": "2026-06-15 07:41:01",
+  "updated_at": "2026-06-15 07:41:01",
+  "stats": {
+    "total_entries": 10,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 10,
+    "entries_with_hits": 10,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.001
+  },
+  "items": [
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Mark interface representing the supported expression types: <a href=\"Filter.Key.html\" title=\"class in org.springframework.ai.vectorstore.filter\"><code>Filter.Key</code></a>,\n<a href=\"Filter.Value.html\" title=\"class in org.springframework.ai.vectorstore.filter\"><code>Filter.Value</code></a>, <a href=\"Filter.Expression.html\" title=\"class in org.springframework.ai.vectorstore.filter\"><code>Filter.Expression</code></a> and <a href=\"Filter.Group.html\" title=\"class in org.springframework.ai.vectorstore.filter\"><code>Filter.Group</code></a>.",
+      "translation": "标记表示支持的表达式类型的接口：<a href=\"Filter.Key.html\" title=\"class in org.springframework.ai.vectorstore.filter\"><code>Filter.Key</code></a>、<a href=\"Filter.Value.html\" title=\"class in org.springframework.ai.vectorstore.filter\"><code>Filter.Value</code></a>、<a href=\"Filter.Expression.html\" title=\"class in org.springframework.ai.vectorstore.filter\"><code>Filter.Expression</code></a> 和 <a href=\"Filter.Group.html\" title=\"class in org.springframework.ai.vectorstore.filter\"><code>Filter.Group</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Portable runtime generative for metadata filter expressions. This generic generative is\nused to define store agnostic filter expressions than later can be converted into\nvector-store specific, native, expressions.\n\nThe expression generative supports constant comparison\n<code>(e.g. ==, !=, &lt;, &lt;=, &gt;, &gt;=) </code>, IN/NON-IN checks and AND and OR to compose\nmultiple expressions.\n\nFor example:\n\n<pre><code>// 1: country == \"BG\"\nnew Expression(EQ, new Key(\"country\"), new Value(\"BG\"));\n\n// 2: genre == \"drama\" AND year &gt;= 2020\nnew Expression(AND, new Expression(EQ, new Key(\"genre\"), new Value(\"drama\")),\n\t\tnew Expression(GTE, new Key(\"year\"), new Value(2020)));\n\n// 3: genre in [\"comedy\", \"documentary\", \"drama\"]\nnew Expression(IN, new Key(\"genre\"), new Value(List.of(\"comedy\", \"documentary\", \"drama\")));\n\n// 4: year &gt;= 2020 OR country == \"BG\" AND city != \"Sofia\"\nnew Expression(OR, new Expression(GTE, new Key(\"year\"), new Value(2020)),\n\t\tnew Expression(AND, new Expression(EQ, new Key(\"country\"), new Value(\"BG\")),\n\t\t\t\tnew Expression(NE, new Key(\"city\"), new Value(\"Sofia\"))));\n\n// 5: (year &gt;= 2020 OR country == \"BG\") AND city NIN [\"Sofia\", \"Plovdiv\"]\nnew Expression(AND,\n\t\tnew Group(new Expression(OR, new Expression(EQ, new Key(\"country\"), new Value(\"BG\")),\n\t\t\t\tnew Expression(GTE, new Key(\"year\"), new Value(2020)))),\n\t\tnew Expression(NIN, new Key(\"city\"), new Value(List.of(\"Sofia\", \"Varna\"))));\n\n// 6: isOpen == true AND year &gt;= 2020 AND country IN [\"BG\", \"NL\", \"US\"]\nnew Expression(AND, new Expression(EQ, new Key(\"isOpen\"), new Value(true)),\n\t\tnew Expression(AND, new Expression(GTE, new Key(\"year\"), new Value(2020)),\n\t\t\t\tnew Expression(IN, new Key(\"country\"), new Value(List.of(\"BG\", \"NL\", \"US\")))));\n\n</code></pre>\n\n\nUsually you will not create expression manually but use either the\n<a href=\"FilterExpressionBuilder.html\" title=\"class in org.springframework.ai.vectorstore.filter\"><code>FilterExpressionBuilder</code></a> DSL or the <a href=\"FilterExpressionTextParser.html\" title=\"class in org.springframework.ai.vectorstore.filter\"><code>FilterExpressionTextParser</code></a> for\nparsing generic text expressions.",
+      "translation": "用于元数据过滤表达式的便携式运行时生成器。这种通用生成器用于定义与存储无关的过滤表达式，这些表达式随后可转换为特定于向量存储的原生表达式。\n\n该表达式生成器支持常量比较（例如 ==、!=、<、<=、>、>=）、IN/NON-IN 检查以及 AND 和 OR 操作以组合多个表达式。\n\n例如：\n\n<pre><code>// 1: country == \"BG\"\nnew Expression(EQ, new Key(\"country\"), new Value(\"BG\"));\n\n// 2: genre == \"drama\" AND year >= 2020\nnew Expression(AND, new Expression(EQ, new Key(\"genre\"), new Value(\"drama\")),\n\t\tnew Expression(GTE, new Key(\"year\"), new Value(2020)));\n\n// 3: genre in [\"comedy\", \"documentary\", \"drama\"]\nnew Expression(IN, new Key(\"genre\"), new Value(List.of(\"comedy\", \"documentary\", \"drama\")));\n\n// 4: year >= 2020 OR country == \"BG\" AND city != \"Sofia\"\nnew Expression(OR, new Expression(GTE, new Key(\"year\"), new Value(2020)),\n\t\tnew Expression(AND, new Expression(EQ, new Key(\"country\"), new Value(\"BG\")),\n\t\t\t\tnew Expression(NE, new Key(\"city\"), new Value(\"Sofia\"))));\n\n// 5: (year >= 2020 OR country == \"BG\") AND city NIN [\"Sofia\", \"Plovdiv\"]\nnew Expression(AND,\n\t\tnew Group(new Expression(OR, new Expression(EQ, new Key(\"country\"), new Value(\"BG\")),\n\t\t\t\tnew Expression(GTE, new Key(\"year\"), new Value(2020)))),\n\t\tnew Expression(NIN, new Key(\"city\"), new Value(List.of(\"Sofia\", \"Varna\"))));\n\n// 6: isOpen == true AND year >= 2020 AND country IN [\"BG\", \"NL\", \"US\"]\nnew Expression(AND, new Expression(EQ, new Key(\"isOpen\"), new Value(true)),\n\t\tnew Expression(AND, new Expression(GTE, new Key(\"year\"), new Value(2020)),\n\t\t\t\tnew Expression(IN, new Key(\"country\"), new Value(List.of(\"BG\", \"NL\", \"US\")))));\n\n</code></pre>\n\n通常，您不会手动创建表达式，而是使用 <a href=\"FilterExpressionBuilder.html\" title=\"class in org.springframework.ai.vectorstore.filter\"><code>FilterExpressionBuilder</code></a> DSL 或 <a href=\"FilterExpressionTextParser.html\" title=\"class in org.springframework.ai.vectorstore.filter\"><code>FilterExpressionTextParser</code></a> 来解析通用文本表达式。",
+      "count": 1
+    },
+    {
+      "source": "Triple that represents and filter boolean expression as\n<code>left type right</code>.",
+      "translation": "代表并过滤布尔表达式的三元组为 <code>left type right</code>。",
+      "count": 1
+    },
+    {
+      "source": "Filter expression operations.",
+      "translation": "筛选表达式操作。",
+      "count": 1
+    },
+    {
+      "source": "Represents expression grouping (e.g. (...) ) that indicates that the group needs to\nbe evaluated with a precedence.",
+      "translation": "表示表达式分组（例如 (...)），表明该组需要按优先级进行求值。",
+      "count": 1
+    },
+    {
+      "source": "String identifier representing an expression key.",
+      "translation": "表示表达式键的字符串标识符。",
+      "count": 1
+    },
+    {
+      "source": "Represents expression value constant or constant array.",
+      "translation": "表示表达式值常量或常量数组。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    }
+  ]
+}

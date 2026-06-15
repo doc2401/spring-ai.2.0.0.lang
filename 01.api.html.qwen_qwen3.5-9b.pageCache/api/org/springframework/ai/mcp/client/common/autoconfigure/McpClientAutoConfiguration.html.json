@@ -1,0 +1,181 @@
+{
+  "created_at": "2026-06-15 08:25:32",
+  "updated_at": "2026-06-15 08:25:32",
+  "stats": {
+    "total_entries": 33,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 35,
+    "entries_with_hits": 33,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0606060606060606,
+    "usage_percentage": 0.0033000000000000004
+  },
+  "items": [
+    {
+      "source": "Creates a list of <code>McpSyncClient</code> instances based on the available\ntransports.",
+      "translation": "根据可用的传输方式，创建一组<code>McpSyncClient</code>实例。",
+      "count": 2
+    },
+    {
+      "source": "Creates a closeable wrapper for MCP sync clients to ensure proper resource cleanup.",
+      "translation": "为 MCP 同步客户端创建一个可关闭的包装器，以确保资源得到正确清理。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This configuration class sets up the necessary beans for MCP client functionality,\nincluding both synchronous and asynchronous clients along with their respective tool\ncallbacks. It is automatically enabled when the required classes are present on the\nclasspath and can be explicitly disabled through properties.",
+      "translation": "此配置类为 MCP 客户端功能设置所需的 Bean，包括同步和异步客户端及其各自的工具回调。当所需类存在于类路径中时，该配置会自动启用，也可通过属性显式禁用。",
+      "count": 1
+    },
+    {
+      "source": "Configuration Properties:",
+      "translation": "配置属性：",
+      "count": 1
+    },
+    {
+      "source": "The configuration is activated after the transport-specific auto-configurations (Stdio,\nSSE HTTP, and SSE WebFlux) to ensure proper initialization order. At least one\ntransport must be available for the clients to be created.",
+      "translation": "配置在特定传输方式的自动配置（Stdio、SSE HTTP 和 SSE WebFlux）之后激活，以确保正确的初始化顺序。至少需要一种可用的传输方式才能创建客户端。",
+      "count": 1
+    },
+    {
+      "source": "Key features:",
+      "translation": "主要功能：",
+      "count": 1
+    },
+    {
+      "source": "Each client is configured with:",
+      "translation": "每个客户端均配置有：",
+      "count": 1
+    },
+    {
+      "source": "If initialization is enabled in properties, the clients are automatically\ninitialized.",
+      "translation": "如果属性中启用了初始化，客户端将自动进行初始化。",
+      "count": 1
+    },
+    {
+      "source": "Record class that implements <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/AutoCloseable.html\" title=\"class or interface in java.lang\"><code>AutoCloseable</code></a> to ensure proper cleanup of MCP\nclients.",
+      "translation": "实现 <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/AutoCloseable.html\" title=\"class or interface in java.lang\"><code>AutoCloseable</code></a> 的 Record 类，以确保正确清理 MCP 客户端。",
+      "count": 1
+    },
+    {
+      "source": "Customization Options:\n<ul>\n<li>Extensible through <code><a href=\"../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;io.modelcontextprotocol.client.McpClient.SyncSpec&gt;</code> and\n<code><a href=\"../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;io.modelcontextprotocol.client.McpClient.AsyncSpec&gt;</code>\n</li><li>Configurable timeouts and client information\n</li><li>Support for custom transport implementations\n</li></ul>",
+      "translation": "自定义选项：\n<ul>\n<li>可通过 <code><a href=\"../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;io.modelcontextprotocol.client.McpClient.SyncSpec&gt;</code> 和\n<code><a href=\"../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;io.modelcontextprotocol.client.McpClient.AsyncSpec&gt;</code> 进行扩展\n</li><li>可配置超时时间和客户端信息\n</li><li>支持自定义传输实现\n</li></ul>",
+      "count": 1
+    },
+    {
+      "source": "Synchronous and Asynchronous Client Support:\n<ul>\n<li>Creates and configures MCP clients based on available transports\n</li><li>Supports both blocking (sync) and non-blocking (async) operations\n</li><li>Automatic client initialization if enabled\n</li></ul>",
+      "translation": "同步与异步客户端支持：\n<ul>\n<li>根据可用的传输方式创建和配置 MCP 客户端\n</li><li>支持阻塞（同步）和非阻塞（异步）操作\n</li><li>若启用则自动初始化客户端\n</li></ul>",
+      "count": 1
+    },
+    {
+      "source": "Integration Support:\n<ul>\n<li>Sets up tool callbacks for Spring AI integration\n</li><li>Supports multiple named transports\n</li><li>Proper lifecycle management with automatic cleanup\n</li></ul>",
+      "translation": "集成支持：\n<ul>\n<li>为 Spring AI 集成设置工具回调\n</li><li>支持多个命名传输\n</li><li>具有自动清理功能的生命周期管理\n</li></ul>",
+      "count": 1
+    },
+    {
+      "source": "Custom configurations through <a href=\"configurer/McpSyncClientConfigurer.html\" title=\"class in org.springframework.ai.mcp.client.common.autoconfigure.configurer\"><code>McpSyncClientConfigurer</code></a>",
+      "translation": "通过<a href=\"configurer/McpSyncClientConfigurer.html\" title=\"class in org.springframework.ai.mcp.client.common.autoconfigure.configurer\"><code>McpSyncClientConfigurer</code></a>进行自定义配置。",
+      "count": 1
+    },
+    {
+      "source": "<code>spring.ai.mcp.client.enabled</code> - Enable/disable MCP client support (default:\ntrue)",
+      "translation": "<code>spring.ai.mcp.client.enabled</code> - 启用/禁用 MCP 客户端支持（默认值：true）",
+      "count": 1
+    },
+    {
+      "source": "<code>spring.ai.mcp.client.type</code> - Client type: SYNC or ASYNC (default: SYNC)",
+      "translation": "<code>spring.ai.mcp.client.type</code> - 客户端类型：SYNC 或 ASYNC（默认值：SYNC）",
+      "count": 1
+    },
+    {
+      "source": "<code>spring.ai.mcp.client.name</code> - Client implementation name",
+      "translation": "<code>spring.ai.mcp.client.name</code> - 客户端实现名称",
+      "count": 1
+    },
+    {
+      "source": "<code>spring.ai.mcp.client.version</code> - Client implementation version",
+      "translation": "<code>spring.ai.mcp.client.version</code> - 客户端实现版本",
+      "count": 1
+    },
+    {
+      "source": "<code>spring.ai.mcp.client.request-timeout</code> - Request timeout duration",
+      "translation": "<code>spring.ai.mcp.client.request-timeout</code> - 请求超时时长",
+      "count": 1
+    },
+    {
+      "source": "<code>spring.ai.mcp.client.initialized</code> - Whether to initialize clients on\ncreation",
+      "translation": "<code>spring.ai.mcp.client.initialized</code> - 是否在创建时初始化客户端",
+      "count": 1
+    },
+    {
+      "source": "<code>mcpSyncClientConfigurer</code> - the configurer for customizing client creation",
+      "translation": "<mcpSyncClientConfigurer> - 用于自定义客户端创建的配置器",
+      "count": 1
+    },
+    {
+      "source": "<code>commonProperties</code> - common MCP client properties",
+      "translation": "<code>commonProperties</code> - 通用 MCP 客户端属性",
+      "count": 1
+    },
+    {
+      "source": "<code>transportsProvider</code> - provider of named MCP transports",
+      "translation": "<code>transportsProvider</code> - 命名 MCP 传输的提供者",
+      "count": 1
+    },
+    {
+      "source": "<code>clients</code> - the list of MCP sync clients to manage",
+      "translation": "<code>clients</code> - 要管理的 MCP 同步客户端列表",
+      "count": 1
+    },
+    {
+      "source": "Client information (name and version) from common properties",
+      "translation": "来自公共属性的客户端信息（名称和版本）",
+      "count": 1
+    },
+    {
+      "source": "Request timeout settings",
+      "translation": "请求超时设置",
+      "count": 1
+    },
+    {
+      "source": "list of configured MCP sync clients",
+      "translation": "已配置的 MCP 同步客户端列表",
+      "count": 1
+    },
+    {
+      "source": "a closeable wrapper for the clients",
+      "translation": "用于客户端的可关闭包装器",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Auto-configuration for Model Context Protocol (MCP) client support.",
+      "translation": "Model 上下文协议（MCP）客户端支持的自动配置。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li><code>spring.ai.mcp.client.enabled</code> - 启用/禁用 MCP 客户端支持（默认值：true）</li><li><code>spring.ai.mcp.client.type</code> - 客户端类型：SYNC 或 ASYNC（默认值：SYNC）</li><li><code>spring.ai.mcp.client.name</code> - 客户端实现名称</li><li><code>spring.ai.mcp.client.version</code> - 客户端实现版本</li><li><code>spring.ai.mcp.client.request-timeout</code> - 请求超时时长</li><li><code>spring.ai.mcp.client.initialized</code> - 是否在创建时初始化客户端</li></ul>",
+      "translation": "<ul>\n<li><code>spring.ai.mcp.client.enabled</code> - 启用/禁用 MCP 客户端支持（默认值：true）</li>\n<li><code>spring.ai.mcp.client.type</code> - 客户端类型：SYNC 或 ASYNC（默认值：SYNC）</li>\n<li><code>spring.ai.mcp.client.name</code> - 客户端实现名称</li>\n<li><code>spring.ai.mcp.client.version</code> - 客户端实现版本</li>\n<li><code>spring.ai.mcp.client.request-timeout</code> - 请求超时时长</li>\n<li><code>spring.ai.mcp.client.initialized</code> - 是否在创建时初始化客户端</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>同步与异步客户端支持：\n<ul>\n<li>根据可用的传输方式创建和配置 MCP 客户端\n</li><li>支持阻塞（同步）和非阻塞（异步）操作\n</li><li>若启用则自动初始化客户端\n</li></ul></li><li>集成支持：\n<ul>\n<li>为 Spring AI 集成设置工具回调\n</li><li>支持多个命名传输\n</li><li>具有自动清理功能的生命周期管理\n</li></ul></li><li>自定义选项：\n<ul>\n<li>可通过 <code><a href=\"../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;io.modelcontextprotocol.client.McpClient.SyncSpec&gt;</code> 和\n<code><a href=\"../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;io.modelcontextprotocol.client.McpClient.AsyncSpec&gt;</code> 进行扩展\n</li><li>可配置超时时间和客户端信息\n</li><li>支持自定义传输实现\n</li></ul></li></ul>",
+      "translation": "<ul>\n<li>同步与异步客户端支持：\n<ul>\n<li>根据可用的传输方式创建和配置 MCP 客户端\n</li><li>支持阻塞（同步）和非阻塞（异步）操作\n</li><li>若启用则自动初始化客户端\n</li></ul></li><li>集成支持：\n<ul>\n<li>为 Spring AI 集成设置工具回调\n</li><li>支持多个命名传输\n</li><li>具有自动清理功能的生命周期管理\n</li></ul></li><li>自定义选项：\n<ul>\n<li>可通过 <code><a href=\"../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;io.modelcontextprotocol.client.McpClient.SyncSpec&gt;</code> 和\n<code><a href=\"../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;io.modelcontextprotocol.client.McpClient.AsyncSpec&gt;</code> 进行扩展\n</li><li>可配置超时时间和客户端信息\n</li><li>支持自定义传输实现\n</li></ul></li></ul>",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>来自公共属性的客户端信息（名称和版本）</li><li>请求超时设置</li><li>通过<a href=\"configurer/McpSyncClientConfigurer.html\" title=\"class in org.springframework.ai.mcp.client.common.autoconfigure.configurer\"><code>McpSyncClientConfigurer</code></a>进行自定义配置。</li></ul>",
+      "translation": "<ul>\n<li>来自公共属性的客户端信息（名称和版本）</li><li>请求超时设置</li><li>通过<a href=\"configurer/McpSyncClientConfigurer.html\" title=\"class in org.springframework.ai.mcp.client.common.autoconfigure.configurer\"><code>McpSyncClientConfigurer</code></a>进行自定义配置。</li></ul>",
+      "count": 1
+    }
+  ]
+}

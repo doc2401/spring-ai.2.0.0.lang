@@ -1,0 +1,206 @@
+{
+  "created_at": "2026-06-15 07:26:27",
+  "updated_at": "2026-06-15 07:26:27",
+  "stats": {
+    "total_entries": 38,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 48,
+    "entries_with_hits": 38,
+    "entries_without_hits": 0,
+    "hit_rate": 1.263157894736842,
+    "usage_percentage": 0.0038000000000000004
+  },
+  "items": [
+    {
+      "source": "<code>citedText</code> - the text that was cited from the document",
+      "translation": "<citedText> - 从文档中引用的文本",
+      "count": 3
+    },
+    {
+      "source": "<code>documentIndex</code> - the index of the document (0-based)",
+      "translation": "<code>documentIndex</code> - 文档的索引（从 0 开始）",
+      "count": 3
+    },
+    {
+      "source": "<code>documentTitle</code> - the title of the document",
+      "translation": "<code>documentTitle</code> - 文档的标题",
+      "count": 3
+    },
+    {
+      "source": "Get a human-readable location description.",
+      "translation": "获取人类可读的位置描述。",
+      "count": 2
+    },
+    {
+      "source": "Create a character location citation for plain text documents.",
+      "translation": "为纯文本文档创建角色位置引用。",
+      "count": 2
+    },
+    {
+      "source": "Create a content block location citation for custom content documents.",
+      "translation": "为自定义内容文档创建内容块位置引用。",
+      "count": 2
+    },
+    {
+      "source": "Create a page location citation for PDF documents.",
+      "translation": "为 PDF 文档创建页面位置引用。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Citations are returned in the response metadata under the \"citations\" key and include:",
+      "translation": "引用信息将包含在响应元数据的\"citations\"键下，其中包括：",
+      "count": 1
+    },
+    {
+      "source": "Create a web search result location citation. For this type,\n<a href=\"#getDocumentIndex()\"><code>getDocumentIndex()</code></a> returns 0 and is not meaningful — use <a href=\"#getUrl()\"><code>getUrl()</code></a>\ninstead.",
+      "translation": "<a href=\"#getDocumentIndex()\"><code>getDocumentIndex()</code></a> 返回 0 且无实际意义——请使用 <a href=\"#getUrl()\"><code>getUrl()</code></a> 代替。",
+      "count": 1
+    },
+    {
+      "source": "Types of citation locations based on document format.",
+      "translation": "基于文档格式的引用位置类型。",
+      "count": 1
+    },
+    {
+      "source": "Create a web search result location citation.",
+      "translation": "创建网页搜索结果位置引用。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#toString()\" title=\"class or interface in java.lang\">toString</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"class or interface in java.lang\">Object</a></code>",
+      "translation": "类 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"java.lang 中的类或接口\">Object</a></code> 中的 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#toString()\" title=\"java.lang 中的类或接口\">toString</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<b>CHAR_LOCATION:</b> For plain text documents, includes character start/end\nindices",
+      "translation": "<b>CHAR_LOCATION：</b> 对于纯文本文档，包含字符的起始/结束索引",
+      "count": 1
+    },
+    {
+      "source": "<b>PAGE_LOCATION:</b> For PDF documents, includes page start/end numbers",
+      "translation": "<b>PAGE_LOCATION：</b> 对于 PDF 文档，包含页码起始/结束编号",
+      "count": 1
+    },
+    {
+      "source": "<b>CONTENT_BLOCK_LOCATION:</b> For custom content documents, includes block\nstart/end indices",
+      "translation": "<b>CONTENT_BLOCK_LOCATION：</b> 对于自定义内容文档，包含块开始/结束索引。",
+      "count": 1
+    },
+    {
+      "source": "<code>startCharIndex</code> - the starting character index (0-based, inclusive)",
+      "translation": "<code>startCharIndex</code> - 起始字符索引（基于 0，包含该索引）",
+      "count": 1
+    },
+    {
+      "source": "<code>endCharIndex</code> - the ending character index (exclusive)",
+      "translation": "<code>endCharIndex</code> - 结束字符索引（不包含）",
+      "count": 1
+    },
+    {
+      "source": "<code>startPageNumber</code> - the starting page number (1-based, inclusive)",
+      "translation": "<code>startPageNumber</code> - 起始页码（基于 1，包含该值）",
+      "count": 1
+    },
+    {
+      "source": "<code>endPageNumber</code> - the ending page number (exclusive)",
+      "translation": "<code>endPageNumber</code> - 结束页码（不包含）",
+      "count": 1
+    },
+    {
+      "source": "<code>startBlockIndex</code> - the starting content block index (0-based, inclusive)",
+      "translation": "<code>startBlockIndex</code> - 起始内容块索引（从 0 开始，包含该值）",
+      "count": 1
+    },
+    {
+      "source": "<code>endBlockIndex</code> - the ending content block index (exclusive)",
+      "translation": "<code>endBlockIndex</code> - 结束内容块的索引（不包含该索引）",
+      "count": 1
+    },
+    {
+      "source": "<code>citedText</code> - the text that was cited from the search result",
+      "translation": "<citedText> - 从搜索结果中引用的文本",
+      "count": 1
+    },
+    {
+      "source": "<code>url</code> - the URL of the search result",
+      "translation": "<code>url</code> - 搜索结果页面的 URL",
+      "count": 1
+    },
+    {
+      "source": "<code>documentTitle</code> - the title of the web page",
+      "translation": "<code>documentTitle</code> - 网页的标题",
+      "count": 1
+    },
+    {
+      "source": "The cited text from the document",
+      "translation": "文档中引用的文本",
+      "count": 1
+    },
+    {
+      "source": "The document index (which document was cited)",
+      "translation": "文档索引（引用了哪些文档）",
+      "count": 1
+    },
+    {
+      "source": "The document title (if provided)",
+      "translation": "文档标题（如已提供）",
+      "count": 1
+    },
+    {
+      "source": "Location information (character ranges, page numbers, or content block\nindices)",
+      "translation": "位置信息（字符范围、页码或内容块索引）",
+      "count": 1
+    },
+    {
+      "source": "Soby Chacko",
+      "translation": "索比·查科",
+      "count": 1
+    },
+    {
+      "source": "a new Citation with CHAR_LOCATION type",
+      "translation": "新增一条类型为 CHAR_LOCATION 的引用",
+      "count": 1
+    },
+    {
+      "source": "a new Citation with PAGE_LOCATION type",
+      "translation": "带有 PAGE_LOCATION 类型的新引用",
+      "count": 1
+    },
+    {
+      "source": "a new Citation with CONTENT_BLOCK_LOCATION type",
+      "translation": "带有 CONTENT_BLOCK_LOCATION 类型的新引用",
+      "count": 1
+    },
+    {
+      "source": "a new Citation with WEB_SEARCH_RESULT_LOCATION type",
+      "translation": "带有 WEB_SEARCH_RESULT_LOCATION 类型的新引用",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Citation Types",
+      "translation": "引用类型",
+      "count": 1
+    },
+    {
+      "source": "Represents a citation reference in a Claude response. Citations indicate which parts of\nthe provided documents were referenced when generating the response.",
+      "translation": "表示 Claude 响应中的引用参考。引用标明了在生成响应时参考了所提供文档的哪些部分。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>文档中引用的文本</li>\n<li>文档索引（引用了哪些文档）</li>\n<li>文档标题（如已提供）</li>\n<li>位置信息（字符范围、页码或内容块索引）</li>\n</ul><h3 id=\"citation-types-heading\">引用类型</h3><ul>\n<li><b>CHAR_LOCATION：</b> 对于纯文本文档，包含字符的起始/结束索引</li>\n<li><b>PAGE_LOCATION：</b> 对于 PDF 文档，包含页码起始/结束编号</li>\n<li><b>CONTENT_BLOCK_LOCATION：</b> 对于自定义内容文档，包含块开始/结束索引。</li>\n</ul>",
+      "translation": "<ul>\n<li>文档中引用的文本</li>\n<li>文档索引（引用了哪些文档）</li>\n<li>文档标题（如已提供）</li>\n<li>位置信息（字符范围、页码或内容块索引）</li>\n</ul><h3 id=\"citation-types-heading\">引用类型</h3><ul>\n<li><b>CHAR_LOCATION：</b> 对于纯文本文档，包含字符的起始/结束索引</li>\n<li><b>PAGE_LOCATION：</b> 对于 PDF 文档，包含页码起始/结束编号</li>\n<li><b>CONTENT_BLOCK_LOCATION：</b> 对于自定义内容文档，包含块开始/结束索引。</li>\n</ul>",
+      "count": 1
+    }
+  ]
+}

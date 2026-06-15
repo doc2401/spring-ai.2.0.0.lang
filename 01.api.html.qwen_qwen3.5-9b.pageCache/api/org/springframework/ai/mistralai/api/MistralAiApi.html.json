@@ -1,0 +1,191 @@
+{
+  "created_at": "2026-06-15 08:18:10",
+  "updated_at": "2026-06-15 08:18:10",
+  "stats": {
+    "total_entries": 35,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 39,
+    "entries_with_hits": 35,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1142857142857143,
+    "usage_percentage": 0.0034999999999999996
+  },
+  "items": [
+    {
+      "source": "Create a new client API.",
+      "translation": "创建一个新的客户端 API。",
+      "count": 2
+    },
+    {
+      "source": "Creates a model response for the given chat conversation.",
+      "translation": "为给定的聊天对话生成模型回复。",
+      "count": 2
+    },
+    {
+      "source": "Creates a streaming chat response for the given chat conversation.",
+      "translation": "为给定的聊天对话创建流式聊天响应。",
+      "count": 2
+    },
+    {
+      "source": "Creates an embedding vector representing the input text or token array.",
+      "translation": "生成一个表示输入文本或标记数组的嵌入向量。",
+      "count": 2
+    },
+    {
+      "source": "Implements <b>Synchronous</b> and <b>Streaming</b> chat completion and supports latest\n<b>Function Calling</b> features.",
+      "translation": "实现<b>同步</b>和<b>流式</b>聊天补全，并支持最新的<b>函数调用</b>功能。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Represents a chat completion response returned by model, based on the provided\ninput.",
+      "translation": "代表由模型根据提供的输入返回的聊天补全响应。",
+      "count": 1
+    },
+    {
+      "source": "Represents a streamed chunk of a chat completion response returned by model, based\non the provided input.",
+      "translation": "代表由模型根据提供的输入返回的聊天完成响应的流式数据块。",
+      "count": 1
+    },
+    {
+      "source": "Message comprising the conversation.",
+      "translation": "包含对话的消息。",
+      "count": 1
+    },
+    {
+      "source": "Creates a model request for chat conversation.",
+      "translation": "创建用于聊天对话的模型请求。",
+      "count": 1
+    },
+    {
+      "source": "List of well-known Mistral chat models.",
+      "translation": "知名 Mistral 聊天模型列表。",
+      "count": 1
+    },
+    {
+      "source": "Represents an embedding vector returned by embedding endpoint.",
+      "translation": "表示由嵌入端点返回的嵌入向量。",
+      "count": 1
+    },
+    {
+      "source": "List of multiple embedding responses.",
+      "translation": "多个嵌入响应的列表。",
+      "count": 1
+    },
+    {
+      "source": "List of well-known Mistral embedding models.",
+      "translation": "知名 Mistral 嵌入模型列表。",
+      "count": 1
+    },
+    {
+      "source": "Creates an embedding vector representing the input text.",
+      "translation": "生成一个表示输入文本的嵌入向量。",
+      "count": 1
+    },
+    {
+      "source": "The reason the model stopped generating tokens.",
+      "translation": "模型停止生成 token 的原因。",
+      "count": 1
+    },
+    {
+      "source": "Represents a tool the model may call.",
+      "translation": "代表模型可能调用的工具。",
+      "count": 1
+    },
+    {
+      "source": "Log probability information for the choice. anticipation of future changes.",
+      "translation": "选择对数概率信息。对未来变化的预期。",
+      "count": 1
+    },
+    {
+      "source": "Usage statistics.",
+      "translation": "使用统计。",
+      "count": 1
+    },
+    {
+      "source": "<span id=\"embeddings(org.springframework.ai.mistralai.api.MistralAiApi.EmbeddingRequest)-type-param-T\"><code>T</code> - Type of the entity in the data list. Can be a <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html\" title=\"class or interface in java.lang\"><code>String</code></a> or\n<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"class or interface in java.util\"><code>List</code></a> of tokens (e.g. Integers). For embedding multiple inputs in a single\nrequest, You can pass a <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"class or interface in java.util\"><code>List</code></a> of <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html\" title=\"class or interface in java.lang\"><code>String</code></a> or <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"class or interface in java.util\"><code>List</code></a> of\n<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"class or interface in java.util\"><code>List</code></a> of tokens. For example:\n\n<pre><code>List.of(\"text1\", \"text2\", \"text3\") or List.of(List.of(1, 2, 3), List.of(3, 4, 5))</code> </pre></span>",
+      "translation": "<span id=\"embeddings(org.springframework.ai.mistralai.api.MistralAiApi.EmbeddingRequest)-type-param-T\"><code>T</code> - 数据列表中实体的类型。可以是 <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html\" title=\"class or interface in java.lang\"><code>String</code></a> 或\n<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"class or interface in java.util\"><code>List</code></a>（例如 Integer）的令牌列表。若要在一个请求中对多个输入进行嵌入，您可以传递一个 <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"class or interface in java.util\"><code>List</code></a> 类型的 <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html\" title=\"class or interface in java.lang\"><code>String</code></a>，或一个 <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"class or interface in java.util\"><code>List</code></a> 类型的\n<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"class or interface in java.util\"><code>List</code></a>（令牌列表）。例如：\n\n<pre><code>List.of(\"text1\", \"text2\", \"text3\") 或 List.of(List.of(1, 2, 3), List.of(3, 4, 5))</code> </pre></span>",
+      "count": 1
+    },
+    {
+      "source": "Returns list of <a href=\"MistralAiApi.Embedding.html\" title=\"class in org.springframework.ai.mistralai.api\"><code>MistralAiApi.Embedding</code></a> wrapped in <a href=\"MistralAiApi.EmbeddingList.html\" title=\"class in org.springframework.ai.mistralai.api\"><code>MistralAiApi.EmbeddingList</code></a>.",
+      "translation": "返回一个由<a href=\"MistralAiApi.Embedding.html\" title=\"class in org.springframework.ai.mistralai.api\"><code>MistralAiApi.Embedding</code></a>组成的列表，该列表被封装在<a href=\"MistralAiApi.EmbeddingList.html\" title=\"class in org.springframework.ai.mistralai.api\"><code>MistralAiApi.EmbeddingList</code></a>中。",
+      "count": 1
+    },
+    {
+      "source": "Entity response with <a href=\"MistralAiApi.ChatCompletion.html\" title=\"class in org.springframework.ai.mistralai.api\"><code>MistralAiApi.ChatCompletion</code></a> as a body and HTTP status code\nand headers.",
+      "translation": "实体响应包含 `<a href=\"MistralAiApi.ChatCompletion.html\" title=\"org.springframework.ai.mistralai.api 中的类\"><code>MistralAiApi.ChatCompletion</code></a>` 作为正文，以及 HTTP 状态码和标头。",
+      "count": 1
+    },
+    {
+      "source": "<code>baseUrl</code> - API base URL.",
+      "translation": "<code>baseUrl</code> - API 基础 URL。",
+      "count": 1
+    },
+    {
+      "source": "<code>apiKey</code> - Mistral api Key.",
+      "translation": "<code>apiKey</code> - Mistral API 密钥。",
+      "count": 1
+    },
+    {
+      "source": "<code>restClientBuilder</code> - RestClient builder.",
+      "translation": "<code>restClientBuilder</code> - RestClient 构建器。",
+      "count": 1
+    },
+    {
+      "source": "<code>webClientBuilder</code> - WebClient builder.",
+      "translation": "<code>webClientBuilder</code> - WebClient 构建器。",
+      "count": 1
+    },
+    {
+      "source": "<code>responseErrorHandler</code> - Response error handler.",
+      "translation": "<code>responseErrorHandler</code> - 响应错误处理器。",
+      "count": 1
+    },
+    {
+      "source": "<code>embeddingRequest</code> - The embedding request.",
+      "translation": "<code>embeddingRequest</code> - 嵌入请求。",
+      "count": 1
+    },
+    {
+      "source": "<code>chatRequest</code> - The chat completion request.",
+      "translation": "<code>chatRequest</code> - 聊天补全请求。",
+      "count": 1
+    },
+    {
+      "source": "<code>chatRequest</code> - The chat completion request. Must have the stream property set\nto true.",
+      "translation": "<code>chatRequest</code> - 聊天补全请求。必须将 stream 属性设置为 true。",
+      "count": 1
+    },
+    {
+      "source": "Returns a <code>Flux</code> stream from chat completion chunks.",
+      "translation": "从聊天完成块返回一个 `<code>Flux</code>` 流。",
+      "count": 1
+    },
+    {
+      "source": "Ricken Bazolo, Christian Tzolov, Thomas Vitale, Jason Smith, Nicolas Krier, Sebastien Deleuze",
+      "translation": "里肯·巴佐洛，克里斯蒂安·茨洛夫，托马斯·维塔莱，杰森·史密斯，尼古拉斯·克里耶，塞巴斯蒂安·德洛兹",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "Single-class, Java Client library for Mistral AI platform. Provides implementation for\nthe <a href=\"https://docs.mistral.ai/api/endpoint/embeddings\">Embeddings</a> and the\n<a href=\"https://docs.mistral.ai/api/endpoint/chat\">Chat Completion</a> APIs.",
+      "translation": "Mistral AI 平台的单类 Java 客户端库。提供了 <a href=\"https://docs.mistral.ai/api/endpoint/embeddings\">Embeddings（嵌入）</a> 和 <a href=\"https://docs.mistral.ai/api/endpoint/chat\">Chat Completion（聊天补全）</a> API 的实现。",
+      "count": 1
+    }
+  ]
+}

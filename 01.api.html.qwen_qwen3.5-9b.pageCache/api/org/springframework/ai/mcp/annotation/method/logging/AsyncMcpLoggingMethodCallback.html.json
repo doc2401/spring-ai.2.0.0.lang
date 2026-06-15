@@ -1,0 +1,106 @@
+{
+  "created_at": "2026-06-15 08:30:55",
+  "updated_at": "2026-06-15 08:30:55",
+  "stats": {
+    "total_entries": 18,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 21,
+    "entries_with_hits": 18,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1666666666666667,
+    "usage_percentage": 0.0018
+  },
+  "items": [
+    {
+      "source": "Apply the callback to the given notification.",
+      "translation": "将回调应用于给定的通知。",
+      "count": 2
+    },
+    {
+      "source": "Create a new builder.",
+      "translation": "创建一个新的构建器。",
+      "count": 2
+    },
+    {
+      "source": "Validates that the method return type is compatible with the logging consumer\ncallback.",
+      "translation": "验证方法返回类型是否与日志消费者回调兼容。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This method builds the arguments for the method call, invokes the method, and\nreturns a Mono that completes when the method execution is done.",
+      "translation": "该方法构建方法调用的参数，调用该方法，并在方法执行完成后返回一个完成的 Mono。",
+      "count": 1
+    },
+    {
+      "source": "Class for creating Function callbacks around logging consumer methods that return Mono.\n\nThis class provides a way to convert methods annotated with <a href=\"../../McpLogging.html\" title=\"annotation interface in org.springframework.ai.mcp.annotation\"><code>McpLogging</code></a> into\ncallback functions that can be used to handle logging message notifications in a\nreactive way. It supports methods with either a single LoggingMessageNotification\nparameter or three parameters (LoggingLevel, String, String).",
+      "translation": "用于围绕返回 Mono 的日志消费者方法创建 Function 回调的类。\n\n该类提供了一种将带有 <a href=\"../../McpLogging.html\" title=\"annotation interface in org.springframework.ai.mcp.annotation\"><code>McpLogging</code></a> 注解的方法转换为回调函数的方法，这些回调函数可用于以响应式方式处理日志消息通知。它支持具有单个 LoggingMessageNotification 参数或三个参数（LoggingLevel、String、String）的方法。",
+      "count": 1
+    },
+    {
+      "source": "Builder for creating AsyncMcpLoggingConsumerMethodCallback instances.",
+      "translation": "用于创建 AsyncMcpLoggingConsumerMethodCallback 实例的构建器。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Function.html#apply(T)\" title=\"class or interface in java.util.function\">apply</a></code> in interface <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Function.html\" title=\"class or interface in java.util.function\">Function</a>&lt;io.modelcontextprotocol.spec.McpSchema.LoggingMessageNotification, reactor.core.publisher.Mono&lt;<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Void.html\" title=\"class or interface in java.lang\">Void</a>&gt;&gt;</code>",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Function.html#apply(T)\" title=\"class or interface in java.util.function\">apply</a></code> 在接口 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Function.html\" title=\"class or interface in java.util.function\">Function</a>&lt;io.modelcontextprotocol.spec.McpSchema.LoggingMessageNotification, reactor.core.publisher.Mono&lt;<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Void.html\" title=\"class or interface in java.lang\">Void</a>&gt;&gt;</code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"AbstractMcpLoggingMethodCallback.html#validateReturnType(java.lang.reflect.Method)\">validateReturnType</a></code> in class <code><a href=\"AbstractMcpLoggingMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.logging\">AbstractMcpLoggingMethodCallback</a></code>",
+      "translation": "<code><a href=\"AbstractMcpLoggingMethodCallback.html#validateReturnType(java.lang.reflect.Method)\">validateReturnType</a></code> 类 <code><a href=\"AbstractMcpLoggingMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.logging\">AbstractMcpLoggingMethodCallback</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"AbstractMcpLoggingMethodCallback.McpLoggingConsumerMethodException.html\" title=\"class in org.springframework.ai.mcp.annotation.method.logging\">AbstractMcpLoggingMethodCallback.McpLoggingConsumerMethodException</a></code> - if there is an error invoking the logging\nconsumer method",
+      "translation": "<code><a href=\"AbstractMcpLoggingMethodCallback.McpLoggingConsumerMethodException.html\" title=\"class in org.springframework.ai.mcp.annotation.method.logging\">AbstractMcpLoggingMethodCallback.McpLoggingConsumerMethodException</a></code> - 如果在调用日志消费者方法时发生错误",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if the notification is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果通知为 null",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if the return type is not compatible",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果返回类型不兼容",
+      "count": 1
+    },
+    {
+      "source": "<code>notification</code> - The logging message notification, must not be null",
+      "translation": "<code>notification</code> - 日志消息通知，不得为 null",
+      "count": 1
+    },
+    {
+      "source": "<code>method</code> - The method to validate",
+      "translation": "<code>method</code> - 待验证的方法",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "A Mono that completes when the method execution is done",
+      "translation": "一个在方法执行完成后完成的 Mono。",
+      "count": 1
+    },
+    {
+      "source": "A new builder instance",
+      "translation": "一个新的构建器实例",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    }
+  ]
+}

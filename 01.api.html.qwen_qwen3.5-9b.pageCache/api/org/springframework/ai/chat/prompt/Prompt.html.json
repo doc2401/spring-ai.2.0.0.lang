@@ -1,0 +1,191 @@
+{
+  "created_at": "2026-06-15 08:53:15",
+  "updated_at": "2026-06-15 08:53:15",
+  "stats": {
+    "total_entries": 35,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 41,
+    "entries_with_hits": 35,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1714285714285715,
+    "usage_percentage": 0.0034999999999999996
+  },
+  "items": [
+    {
+      "source": "Retrieves the instructions or input required by the AI model.",
+      "translation": "获取 AI 模型所需的指令或输入。",
+      "count": 2
+    },
+    {
+      "source": "Retrieves the customizable options for AI model interactions.",
+      "translation": "获取用于 AI 模型交互的可自定义选项。",
+      "count": 2
+    },
+    {
+      "source": "Get all system messages in the prompt.",
+      "translation": "获取提示中的所有系统消息。",
+      "count": 2
+    },
+    {
+      "source": "Get all user messages in the prompt.",
+      "translation": "获取提示中的所有用户消息。",
+      "count": 2
+    },
+    {
+      "source": "a new <a href=\"Prompt.html\" title=\"class in org.springframework.ai.chat.prompt\"><code>Prompt</code></a> instance with the augmented system message.",
+      "translation": "一个包含增强后系统消息的新<a href=\"Prompt.html\" title=\"org.springframework.ai.chat.prompt 中的类\"><code>Prompt</code></a>实例。",
+      "count": 2
+    },
+    {
+      "source": "a new <a href=\"Prompt.html\" title=\"class in org.springframework.ai.chat.prompt\"><code>Prompt</code></a> instance with the augmented user message.",
+      "translation": "包含增强后用户消息的新<a href=\"Prompt.html\" title=\"org.springframework.ai.chat.prompt 中的类\"><code>Prompt</code></a>实例。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../model/ModelRequest.html#getOptions()\">ModelRequest</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../model/ModelRequest.html#getOptions()\">ModelRequest</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../model/ModelRequest.html#getInstructions()\">ModelRequest</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../model/ModelRequest.html#getInstructions()\">ModelRequest</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "The Prompt class represents a prompt used in AI model requests. A prompt consists of\none or more messages and additional chat options.",
+      "translation": "Prompt 类表示在 AI 模型请求中使用的提示。一个提示由一条或多条消息以及额外的聊天选项组成。",
+      "count": 1
+    },
+    {
+      "source": "Augments the last system message in the prompt with the provided text.",
+      "translation": "将提供的文本附加到提示中的最后一个系统消息。",
+      "count": 1
+    },
+    {
+      "source": "Augments the first system message in the prompt with the provided function.",
+      "translation": "将提供的函数附加到提示中的第一个系统消息。",
+      "count": 1
+    },
+    {
+      "source": "Augments the last user message in the prompt with the provided text.",
+      "translation": "将提供的文本附加到提示中的最后一条用户消息。",
+      "count": 1
+    },
+    {
+      "source": "Augments the last user message in the prompt with the provided function.",
+      "translation": "将提供的函数附加到提示中的最后一条用户消息。",
+      "count": 1
+    },
+    {
+      "source": "Get the last user or tool response message in the prompt.",
+      "translation": "获取提示中的最后一个用户或工具响应消息。",
+      "count": 1
+    },
+    {
+      "source": "Get the first system message in the prompt.",
+      "translation": "获取提示中的第一个系统消息。",
+      "count": 1
+    },
+    {
+      "source": "Get the last user message in the prompt.",
+      "translation": "获取提示中的最后一条用户消息。",
+      "count": 1
+    },
+    {
+      "source": "Get the first system message in the prompt. If no system message is found, an empty\nSystemMessage is returned.",
+      "translation": "获取提示中的第一个系统消息。如果未找到系统消息，则返回一个空的 SystemMessage。",
+      "count": 1
+    },
+    {
+      "source": "Get the last user message in the prompt. If no user message is found, an empty\nUserMessage is returned.",
+      "translation": "获取提示中的最后一个用户消息。如果未找到用户消息，则返回一个空的 UserMessage。",
+      "count": 1
+    },
+    {
+      "source": "Get the last user or tool response message in the prompt. If no user or tool\nresponse message is found, an empty UserMessage is returned.",
+      "translation": "获取提示中的最后一个用户或工具响应消息。如果未找到用户或工具响应消息，则返回一个空的 UserMessage。",
+      "count": 1
+    },
+    {
+      "source": "Augments the first system message in the prompt with the provided function. If no\nsystem message is found, a new one is created with the provided text.",
+      "translation": "在提示词中为第一个系统消息添加所提供的函数。如果未找到系统消息，则使用提供的文本创建一个新的系统消息。",
+      "count": 1
+    },
+    {
+      "source": "Augments the last system message in the prompt with the provided text. If no system\nmessage is found, a new one is created with the provided text.",
+      "translation": "将提供的文本附加到提示中的最后一个系统消息中。如果未找到系统消息，则使用提供的文本创建一个新的系统消息。",
+      "count": 1
+    },
+    {
+      "source": "Augments the last user message in the prompt with the provided function. If no user\nmessage is found, a new one is created with the provided text.",
+      "translation": "将提供的函数附加到提示中的最后一条用户消息。如果未找到用户消息，则使用提供的文本创建一条新消息。",
+      "count": 1
+    },
+    {
+      "source": "Augments the last user message in the prompt with the provided text. If no user\nmessage is found, a new one is created with the provided text.",
+      "translation": "将提供的文本附加到提示中的最后一条用户消息中。如果未找到用户消息，则使用提供的文本创建一条新的消息。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../model/ModelRequest.html#getOptions()\">getOptions</a></code> in interface <code><a href=\"../../model/ModelRequest.html\" title=\"interface in org.springframework.ai.model\">ModelRequest</a>&lt;<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"class or interface in java.util\">List</a>&lt;<a href=\"../messages/Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a>&gt;&gt;</code>",
+      "translation": "<code><a href=\"../../model/ModelRequest.html#getOptions()\">getOptions</a></code> 接口中的 <code><a href=\"../../model/ModelRequest.html\" title=\"interface in org.springframework.ai.model\">ModelRequest</a>&lt;<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"class or interface in java.util\">List</a>&lt;<a href=\"../messages/Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a>&gt;&gt;</code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../model/ModelRequest.html#getInstructions()\">getInstructions</a></code> in interface <code><a href=\"../../model/ModelRequest.html\" title=\"interface in org.springframework.ai.model\">ModelRequest</a>&lt;<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"class or interface in java.util\">List</a>&lt;<a href=\"../messages/Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a>&gt;&gt;</code>",
+      "translation": "<code><a href=\"../../model/ModelRequest.html#getInstructions()\">getInstructions</a></code> 接口中的 <code><a href=\"../../model/ModelRequest.html\" title=\"interface in org.springframework.ai.model\">ModelRequest</a>&lt;<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"class or interface in java.util\">List</a>&lt;<a href=\"../messages/Message.html\" title=\"interface in org.springframework.ai.chat.messages\">Message</a>&gt;&gt;</code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#toString()\" title=\"class or interface in java.lang\">toString</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"class or interface in java.lang\">Object</a></code>",
+      "translation": "类 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"java.lang 中的类或接口\">Object</a></code> 中的 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#toString()\" title=\"java.lang 中的类或接口\">toString</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)\" title=\"class or interface in java.lang\">equals</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"class or interface in java.lang\">Object</a></code>",
+      "translation": "`Object` 类中的 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)\" title=\"class or interface in java.lang\">equals</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#hashCode()\" title=\"class or interface in java.lang\">hashCode</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"class or interface in java.lang\">Object</a></code>",
+      "translation": "类 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"java.lang 中的类或接口\">Object</a></code> 中的 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#hashCode()\" title=\"java.lang 中的类或接口\">hashCode</a></code>",
+      "count": 1
+    },
+    {
+      "source": "Mark Pollack, luocongqiu, Thomas Vitale, Sebastien Deleuze",
+      "translation": "Mark Pollack，luocongqiu，Thomas Vitale，Sebastien Deleuze",
+      "count": 1
+    },
+    {
+      "source": "the customizable options for AI model interactions",
+      "translation": "AI 模型交互的可定制选项",
+      "count": 1
+    },
+    {
+      "source": "the instructions or input required by the AI model",
+      "translation": "AI 模型所需的指令或输入。",
+      "count": 1
+    },
+    {
+      "source": "a list of all system messages in the prompt",
+      "translation": "提示词中所有系统消息的列表",
+      "count": 1
+    },
+    {
+      "source": "a list of all user messages in the prompt",
+      "translation": "提示词中所有用户消息的列表",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "created_at": "2026-06-15 07:46:54",
+  "updated_at": "2026-06-15 07:46:54",
+  "stats": {
+    "total_entries": 18,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 25,
+    "entries_with_hits": 18,
+    "entries_without_hits": 0,
+    "hit_rate": 1.3888888888888888,
+    "usage_percentage": 0.0018
+  },
+  "items": [
+    {
+      "source": "this builder instance",
+      "translation": "此构建器实例",
+      "count": 3
+    },
+    {
+      "source": "Constructs a new TypesenseBuilder instance.",
+      "translation": "构建一个新的 TypesenseBuilder 实例。",
+      "count": 2
+    },
+    {
+      "source": "Builds and returns a new VectorStore instance with the configured settings.",
+      "translation": "构建并返回一个具有配置设置的新 VectorStore 实例。",
+      "count": 2
+    },
+    {
+      "source": "Configures the collection name.",
+      "translation": "配置集合名称。",
+      "count": 2
+    },
+    {
+      "source": "Configures the dimension size of the embedding vectors.",
+      "translation": "配置嵌入向量的维度大小。",
+      "count": 2
+    },
+    {
+      "source": "Configures whether to initialize the collection schema automatically.",
+      "translation": "配置是否自动初始化集合模式。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../VectorStore.Builder.html#build()\">VectorStore.Builder</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../VectorStore.Builder.html#build()\">VectorStore.Builder</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if client is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果客户端为 null",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if collectionName is null or empty",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果 collectionName 为 null 或为空",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if dimension is invalid",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果维度无效",
+      "count": 1
+    },
+    {
+      "source": "<code>client</code> - The Typesense client instance used for database operations. Must\nnot be null.",
+      "translation": "<code>client</code> - 用于数据库操作的 Typesense 客户端实例。不能为 null。",
+      "count": 1
+    },
+    {
+      "source": "<code>embeddingModel</code> - The embedding model used for vector transformations.",
+      "translation": "<code>embeddingModel</code> - 用于向量转换的嵌入模型。",
+      "count": 1
+    },
+    {
+      "source": "<code>collectionName</code> - the collection name to use",
+      "translation": "<code>collectionName</code> - 要使用的集合名称",
+      "count": 1
+    },
+    {
+      "source": "<code>embeddingDimension</code> - The dimension of the embedding",
+      "translation": "<code>embeddingDimension</code> - 嵌入的维度",
+      "count": 1
+    },
+    {
+      "source": "<code>initializeSchema</code> - true to initialize schema automatically",
+      "translation": "<code>initializeSchema</code> - 自动初始化架构时设为 true",
+      "count": 1
+    },
+    {
+      "source": "Dhanush Anumula, Christian Tzolov, Eddú Meléndez, Mark Pollack, Soby Chacko, chabinhwang",
+      "translation": "Dhanush Anumula，Christian Tzolov，Eddú Meléndez，Mark Pollack，Soby Chacko，chabinhwang",
+      "count": 1
+    },
+    {
+      "source": "a new VectorStore instance",
+      "translation": "一个新的向量存储实例",
+      "count": 1
+    }
+  ]
+}

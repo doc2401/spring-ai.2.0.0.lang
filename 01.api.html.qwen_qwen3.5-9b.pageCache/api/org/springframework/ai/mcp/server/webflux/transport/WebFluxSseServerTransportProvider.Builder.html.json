@@ -1,0 +1,161 @@
+{
+  "created_at": "2026-06-15 08:23:07",
+  "updated_at": "2026-06-15 08:23:07",
+  "stats": {
+    "total_entries": 29,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 42,
+    "entries_with_hits": 29,
+    "entries_without_hits": 0,
+    "hit_rate": 1.4482758620689655,
+    "usage_percentage": 0.0029
+  },
+  "items": [
+    {
+      "source": "this builder instance",
+      "translation": "此构建器实例",
+      "count": 7
+    },
+    {
+      "source": "Builds a new instance of <a href=\"WebFluxSseServerTransportProvider.html\" title=\"class in org.springframework.ai.mcp.server.webflux.transport\"><code>WebFluxSseServerTransportProvider</code></a> with the\nconfigured settings.",
+      "translation": "使用配置的设置构建一个新的<a href=\"WebFluxSseServerTransportProvider.html\" title=\"class in org.springframework.ai.mcp.server.webflux.transport\"><code>WebFluxSseServerTransportProvider</code></a>实例。",
+      "count": 2
+    },
+    {
+      "source": "Sets the project basePath as endpoint prefix where clients should send their\nJSON-RPC messages",
+      "translation": "将项目的 basePath 设置为端点前缀，客户端应在此处发送 JSON-RPC 消息。",
+      "count": 2
+    },
+    {
+      "source": "Sets the McpJsonMapper to use for JSON serialization/deserialization of MCP\nmessages.",
+      "translation": "设置用于 MCP 消息 JSON 序列化/反序列化的 McpJsonMapper。",
+      "count": 2
+    },
+    {
+      "source": "Sets the interval for sending keep-alive pings to clients.",
+      "translation": "设置向客户端发送保活心跳包的间隔时间。",
+      "count": 2
+    },
+    {
+      "source": "Sets the endpoint URI where clients should send their JSON-RPC messages.",
+      "translation": "设置客户端应发送其 JSON-RPC 消息的端点 URI。",
+      "count": 2
+    },
+    {
+      "source": "Sets the security validator for validating HTTP requests.",
+      "translation": "设置用于验证 HTTP 请求的安全验证器。",
+      "count": 2
+    },
+    {
+      "source": "Sets the SSE endpoint path.",
+      "translation": "设置 SSE 端点路径。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This builder provides a fluent API for configuring and creating instances of\nWebFluxSseServerTransportProvider with custom settings.",
+      "translation": "该构建器提供了一个流式 API，用于使用自定义配置来配置和创建 WebFluxSseServerTransportProvider 实例。",
+      "count": 1
+    },
+    {
+      "source": "Sets the context extractor that allows providing the MCP feature\nimplementations to inspect HTTP transport level metadata that was present at\nHTTP request processing time.",
+      "translation": "设置上下文提取器，允许向 MCP 功能实现提供在 HTTP 请求处理期间存在的 HTTP 传输层元数据以供检查。",
+      "count": 1
+    },
+    {
+      "source": "Sets the context extractor that allows providing the MCP feature\nimplementations to inspect HTTP transport level metadata that was present at\nHTTP request processing time. This allows extracting custom headers and other\nuseful data for use during execution later on in the process.",
+      "translation": "设置上下文提取器，允许向 MCP 功能实现提供在 HTTP 请求处理期间存在的 HTTP 传输层元数据。这使得可以在后续执行过程中提取自定义标头和其他有用的数据。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if jsonMapper is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果 jsonMapper 为 null",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if basePath is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果 basePath 为 null",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if messageEndpoint is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果 messageEndpoint 为 null",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if sseEndpoint is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果 sseEndpoint 为 null",
+      "count": 1
+    },
+    {
+      "source": "<code>contextExtractor</code> - The contextExtractor to fill in a\n<code>McpTransportContext</code>.",
+      "translation": "<code>contextExtractor</code> - 用于填充 <code>McpTransportContext</code> 的 contextExtractor。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if contextExtractor is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果 contextExtractor 为 null",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if securityValidator is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果 securityValidator 为 null",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html\" title=\"class or interface in java.lang\">IllegalStateException</a></code> - if required parameters are not set",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html\" title=\"class or interface in java.lang\">IllegalStateException</a></code> - 如果未设置必需参数",
+      "count": 1
+    },
+    {
+      "source": "<code>jsonMapper</code> - The McpJsonMapper instance. Must not be null.",
+      "translation": "<code>jsonMapper</code> - McpJsonMapper 实例。不能为 null。",
+      "count": 1
+    },
+    {
+      "source": "<code>baseUrl</code> - the message basePath . Must not be null.",
+      "translation": "<code>baseUrl</code> - 消息的 basePath。不能为 null。",
+      "count": 1
+    },
+    {
+      "source": "<code>messageEndpoint</code> - The message endpoint URI. Must not be null.",
+      "translation": "<code>messageEndpoint</code> - 消息端点 URI。不得为 null。",
+      "count": 1
+    },
+    {
+      "source": "<code>sseEndpoint</code> - The SSE endpoint path. Must not be null.",
+      "translation": "<sseEndpoint> - SSE 端点路径，不能为空。",
+      "count": 1
+    },
+    {
+      "source": "<code>keepAliveInterval</code> - The keep-alive interval duration. If null, keep-alive\nis disabled.",
+      "translation": "<code>keepAliveInterval</code> - 保活间隔时长。如果为 null，则禁用保活功能。",
+      "count": 1
+    },
+    {
+      "source": "<code>securityValidator</code> - The security validator to use. Must not be null.",
+      "translation": "<code>securityValidator</code> - 要使用的安全验证器，不能为 null。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Alexandros Pappas, Dariusz Jędrzejczyk",
+      "translation": "克里斯蒂安·茨洛夫，亚历山德罗斯·帕帕斯，达里乌什·耶德雷日奇克",
+      "count": 1
+    },
+    {
+      "source": "A new WebFluxSseServerTransportProvider instance",
+      "translation": "一个新的 WebFluxSseServerTransportProvider 实例",
+      "count": 1
+    },
+    {
+      "source": "Builder for creating instances of <a href=\"WebFluxSseServerTransportProvider.html\" title=\"class in org.springframework.ai.mcp.server.webflux.transport\"><code>WebFluxSseServerTransportProvider</code></a>.",
+      "translation": "用于创建<a href=\"WebFluxSseServerTransportProvider.html\" title=\"class in org.springframework.ai.mcp.server.webflux.transport\"><code>WebFluxSseServerTransportProvider</code></a>实例的构建器。",
+      "count": 1
+    }
+  ]
+}

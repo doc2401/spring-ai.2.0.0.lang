@@ -1,0 +1,96 @@
+{
+  "created_at": "2026-06-15 07:28:35",
+  "updated_at": "2026-06-15 07:28:35",
+  "stats": {
+    "total_entries": 16,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 17,
+    "entries_with_hits": 16,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0625,
+    "usage_percentage": 0.0015999999999999999
+  },
+  "items": [
+    {
+      "source": "Cached embedding dimensions.",
+      "translation": "缓存嵌入维度。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"EmbeddingModel.html#dimensions()\">EmbeddingModel</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"EmbeddingModel.html#dimensions()\">EmbeddingModel</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Abstract implementation of the <a href=\"EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\"><code>EmbeddingModel</code></a> interface that provides\ndimensions calculation caching.",
+      "translation": "<a href=\"EmbeddingModel.html\" title=\"org.springframework.ai.embedding 中的接口\"><code>EmbeddingModel</code></a>接口的抽象实现，提供维度计算缓存功能。",
+      "count": 1
+    },
+    {
+      "source": "Get the number of dimensions of the embedded vectors.",
+      "translation": "获取嵌入向量的维度数量。",
+      "count": 1
+    },
+    {
+      "source": "Return the dimension of the requested embedding generative name.",
+      "translation": "返回请求的生成式嵌入名称的维度。",
+      "count": 1
+    },
+    {
+      "source": "Return the dimension of the requested embedding generative name. If the generative\nname is unknown uses the EmbeddingModel to perform a dummy EmbeddingModel#embed and\ncount the response dimensions.",
+      "translation": "返回请求的嵌入生成名称的维度。如果该生成名称未知，则使用 EmbeddingModel 执行一次虚拟的 EmbeddingModel#embed 操作，并统计响应结果的维度。",
+      "count": 1
+    },
+    {
+      "source": "Get the number of dimensions of the embedded vectors. Note that by default, this\nmethod will call the remote Embedding endpoint to get the dimensions of the\nembedded vectors. If the dimensions are known ahead of time, it is recommended to\noverride this method.",
+      "translation": "获取嵌入向量的维度数量。请注意，默认情况下，此方法会调用远程 Embedding 端点以获取嵌入向量的维度。如果已知维度，建议重写此方法。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"EmbeddingModel.html#dimensions()\">dimensions</a></code> in interface <code><a href=\"EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a></code>",
+      "translation": "<code><a href=\"EmbeddingModel.html#dimensions()\">dimensions</a></code> 接口 <code><a href=\"EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>embeddingModel</code> - Fall-back client to determine, empirically the dimensions.",
+      "translation": "<code>embeddingModel</code> - 用于通过实证方式确定维度的备用客户端。",
+      "count": 1
+    },
+    {
+      "source": "<code>modelName</code> - Embedding generative name to retrieve the dimensions for.",
+      "translation": "<code>modelName</code> - 嵌入生成名称以检索其维度。",
+      "count": 1
+    },
+    {
+      "source": "<code>dummyContent</code> - Dummy content to use for the empirical dimension calculation.",
+      "translation": "<code>dummyContent</code> - 用于经验维度计算的虚拟内容。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Josh Long",
+      "translation": "克里斯蒂安·茨洛夫，乔什·朗",
+      "count": 1
+    },
+    {
+      "source": "Returns the embedding dimensions for the modelName.",
+      "translation": "返回指定模型名称的嵌入维度。",
+      "count": 1
+    },
+    {
+      "source": "the number of dimensions of the embedded vectors.",
+      "translation": "嵌入向量的维度数量。",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    }
+  ]
+}

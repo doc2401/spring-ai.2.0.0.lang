@@ -1,0 +1,86 @@
+{
+  "created_at": "2026-06-15 08:47:02",
+  "updated_at": "2026-06-15 08:47:02",
+  "stats": {
+    "total_entries": 14,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 15,
+    "entries_with_hits": 14,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0714285714285714,
+    "usage_percentage": 0.0014
+  },
+  "items": [
+    {
+      "source": "since 2.0.0 in favor of\n<a href=\"#toolCallingAdvisorAutoRegister(boolean)\"><code>toolCallingAdvisorAutoRegister(boolean)</code></a>.",
+      "translation": "自 2.0.0 版本起，推荐使用\n<a href=\"#toolCallingAdvisorAutoRegister(boolean)\"><code>toolCallingAdvisorAutoRegister(boolean)</code></a>。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "For per-call control prefer\n<a href=\"ChatClient.EntityParamSpec.html#useProviderStructuredOutput()\"><code>ChatClient.EntityParamSpec.useProviderStructuredOutput()</code></a>.",
+      "translation": "对于每次调用的控制，请优先使用 <a href=\"ChatClient.EntityParamSpec.html#useProviderStructuredOutput()\"><code>ChatClient.EntityParamSpec.useProviderStructuredOutput()</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "<b>Not enabled by default</b> because native structured output support varies\nacross models and providers. Known limitations:",
+      "translation": "<b>默认未启用</b>，因为原生结构化输出支持因模型和提供商而异。已知限制：",
+      "count": 1
+    },
+    {
+      "source": "Controls whether a\n<a href=\"advisor/ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor</code></a> is\nautomatically added to the chain. Auto-registration is enabled by default so that\ntools injected at runtime by another advisor are handled correctly even when no\nstatic tools are configured. No explicit\n<a href=\"advisor/api/ToolAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>ToolAdvisor</code></a> must be present.\nPass <code>false</code> to opt out:\n\n<pre><code>client.prompt()\n    .tools(myTool)\n    .advisors(AdvisorParams.toolCallingAdvisorAutoRegister(false))\n    .call();\n</code></pre>",
+      "translation": "控制是否自动将 <a href=\"advisor/ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor</code></a> 添加到链中。默认情况下启用自动注册，以便即使未配置静态工具，也能正确处理由另一个顾问在运行时注入的工具。无需显式存在 <a href=\"advisor/api/ToolAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>ToolAdvisor</code></a>。传递 <code>false</code> 以禁用此功能：\n\n<pre><code>client.prompt()\n    .tools(myTool)\n    .advisors(AdvisorParams.toolCallingAdvisorAutoRegister(false))\n    .call();\n</code></pre>",
+      "count": 1
+    },
+    {
+      "source": "Controls whether a\n<a href=\"advisor/ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor</code></a> is\nautomatically added to the chain.",
+      "translation": "控制是否自动将 <a href=\"advisor/ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor</code></a> 添加到链中。",
+      "count": 1
+    },
+    {
+      "source": "Advisor parameter that enables provider-native structured output for all\n<code>entity()</code> calls on a prompt.",
+      "translation": "顾问参数，用于为提示中的所有 <code>entity()</code> 调用启用原生结构化输出。",
+      "count": 1
+    },
+    {
+      "source": "Configuration options for the ChatClient request.\n\nPreset advisors parameters that can be passed as configuration options to the Advisor\ncontext.",
+      "translation": "ChatClient 请求的配置选项。  \n可作为配置选项传递给 Advisor 上下文的预设顾问参数。",
+      "count": 1
+    },
+    {
+      "source": "<b>Ollama</b>: models with a built-in reasoning/thinking mode (e.g.\n<code>qwen3:8b</code>, <code>qwen3.5:9b</code>) may return plain text instead of JSON,\ncausing deserialization failures.",
+      "translation": "<b>Ollama</b>：内置推理/思考模式（例如<code>qwen3:8b</code>、<code>qwen3.5:9b</code>）的模型可能会返回纯文本而非 JSON，从而导致反序列化失败。",
+      "count": 1
+    },
+    {
+      "source": "<b>OpenAI</b>: the Structured Outputs API does not accept a top-level JSON\narray schema. Requesting a <code>List&lt;T&gt;</code> will fail; wrap the list in a container\nrecord or use the default prompt-based approach instead.",
+      "translation": "<b>OpenAI</b>：结构化输出 API 不接受顶层 JSON 数组模式。请求 `<code>List&lt;T&gt;</code>` 将会失败；请将列表包装在容器记录中，或者改用基于提示的默认方法。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "Advisor parameter that enables provider-native structured output for all\n<code>entity()</code> calls on a prompt. When set, the JSON schema is delivered to the\nAI provider as an API-level constraint rather than appended as prompt text.",
+      "translation": "顾问参数，用于为提示中的所有`entity()` 调用启用由提供商原生的结构化输出。设置该参数时，JSON Schema 将以 API 级约束的形式传递给 AI 提供商，而不是作为提示文本附加。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li><b>Ollama</b>：内置推理/思考模式（例如<code>qwen3:8b</code>、<code>qwen3.5:9b</code>）的模型可能会返回纯文本而非 JSON，从而导致反序列化失败。</li>\n<li><b>OpenAI</b>：结构化输出 API 不接受顶层 JSON 数组模式。请求 `<code>List&lt;T&gt;</code>` 将会失败；请将列表包装在容器记录中，或者改用基于提示的默认方法。</li>\n</ul>",
+      "translation": "<ul>\n<li><b>Ollama</b>：内置推理/思考模式（例如<code>qwen3:8b</code>、<code>qwen3.5:9b</code>）的模型可能会返回纯文本而非 JSON，从而导致反序列化失败。</li>\n<li><b>OpenAI</b>：结构化输出 API 不支持顶层 JSON 数组模式。请求 `<code>List&lt;T&gt;</code>` 将会失败；请将列表包装在容器记录中，或者改用基于提示的默认方法。</li>\n</ul>",
+      "count": 1
+    }
+  ]
+}

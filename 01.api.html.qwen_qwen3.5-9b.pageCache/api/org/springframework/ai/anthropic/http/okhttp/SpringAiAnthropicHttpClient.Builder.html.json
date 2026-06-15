@@ -1,0 +1,81 @@
+{
+  "created_at": "2026-06-15 09:07:37",
+  "updated_at": "2026-06-15 09:07:37",
+  "stats": {
+    "total_entries": 13,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 13,
+    "entries_with_hits": 13,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.0013
+  },
+  "items": [
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Builder for <a href=\"SpringAiAnthropicHttpClient.html\" title=\"class in org.springframework.ai.anthropic.http.okhttp\"><code>SpringAiAnthropicHttpClient</code></a>. Mirrors the upstream\n<code>com.anthropic.client.okhttp.OkHttpClient.Builder</code> surface, with two\nadditional optional inputs: an <code>ObservationRegistry</code> (defaults to\n<code>ObservationRegistry.NOOP</code>) and a <code>MeterRegistry</code> (optional; when\nsupplied, OkHttp connection-pool gauges are bound to it).",
+      "translation": "用于构建<a href=\"SpringAiAnthropicHttpClient.html\" title=\"class in org.springframework.ai.anthropic.http.okhttpClient\"><code>SpringAiAnthropicHttpClient</code></a>的构造器。该构造器镜像了上游<code>com.anthropic.client.okhttp.OkHttpClient.Builder</code>的接口，并额外提供了两个可选输入：一个<code>ObservationRegistry</code>（默认为<code>ObservationRegistry.NOOP</code>）和一个<code>MeterRegistry</code>（可选；当提供时，OkHttp 连接池指标将绑定到该注册表）。",
+      "count": 1
+    },
+    {
+      "source": "Sets the executor used by the OkHttp dispatcher. When supplied, the caller owns\nthe executor's lifecycle — <a href=\"SpringAiAnthropicHttpClient.html#close()\"><code>SpringAiAnthropicHttpClient.close()</code></a> will not\nshut it down. When null, an internal default is created and closed with the\nclient.",
+      "translation": "设置 OkHttp 调度器使用的执行器。如果提供了执行器，调用方需负责其生命周期——<a href=\"SpringAiAnthropicHttpClient.html#close()\"><code>SpringAiAnthropicHttpClient.close()</code></a> 不会关闭它。如果为 null，则创建一个内部默认执行器，并在客户端关闭时将其关闭。",
+      "count": 1
+    },
+    {
+      "source": "Adds an OkHttp application interceptor. The observation interceptor is\noutermost (added first); user interceptors are nested inside it. Consequently,\non the <em>request</em> path user interceptors execute after the observation\ninterceptor, and on the <em>response</em> path they execute before it — the\nobservation span is open for the full duration of the user interceptor's\nexecution. Use this to attach cross-cutting concerns such as OAuth2\nbearer-token injection, custom logging, or tenant-propagation headers.",
+      "translation": "添加一个 OkHttp 应用拦截器。观察拦截器位于最外层（最先添加），用户拦截器嵌套在其内部。因此，在<em>请求</em>路径上，用户拦截器在观察拦截器之后执行；而在<em>响应</em>路径上，它们则在观察拦截器之前执行——观察跨度对用户拦截器的整个执行过程保持开启状态。利用此机制可附加横切关注点，例如 OAuth2 访问令牌注入、自定义日志记录或租户传播头。",
+      "count": 1
+    },
+    {
+      "source": "Tags applied to the connection-pool gauges registered with the\n<code>MeterRegistry</code>.",
+      "translation": "已注册到 <code>MeterRegistry</code> 的连接池仪表所应用的标签。",
+      "count": 1
+    },
+    {
+      "source": "Registers the Micrometer observation registry used by the OkHttp interceptor.\nDefaults to <code>ObservationRegistry.NOOP</code>, which makes the interceptor a\nno-op — no metric/span overhead in environments that don't wire observability.",
+      "translation": "注册由 OkHttp 拦截器使用的 Micrometer 观察注册表。  \n默认值为 `<code>ObservationRegistry.NOOP</code>`，这使得拦截器变为空操作——在未配置可观测性的环境中不会产生指标或追踪开销。",
+      "count": 1
+    },
+    {
+      "source": "Tags applied to the connection-pool gauges registered with the\n<code>MeterRegistry</code>. Useful for distinguishing multiple clients writing pool\nmetrics into the same registry (e.g. a sync and an async client sharing a\nregistry). Has no effect when no meter registry is set.",
+      "translation": "应用于注册到 <code>MeterRegistry</code> 的连接池仪表的标签。可用于区分多个客户端向同一注册表写入池指标（例如，共享一个注册表的同步和异步客户端）。当未设置仪表注册表时，此参数无效。",
+      "count": 1
+    },
+    {
+      "source": "Sets the executor used by the OkHttp dispatcher.",
+      "translation": "设置 OkHttp 调度器所使用的执行器。",
+      "count": 1
+    },
+    {
+      "source": "Adds an OkHttp application interceptor.",
+      "translation": "添加一个 OkHttp 应用拦截器。",
+      "count": 1
+    },
+    {
+      "source": "Registers a meter registry to bind OkHttp connection-pool gauges (active/idle\nconnections).",
+      "translation": "注册一个仪表注册表，以绑定 OkHttp 连接池的仪表（活动/空闲连接）。",
+      "count": 1
+    },
+    {
+      "source": "Registers the Micrometer observation registry used by the OkHttp interceptor.",
+      "translation": "注册由 OkHttp 拦截器使用的 Micrometer 观测注册表。",
+      "count": 1
+    },
+    {
+      "source": "Registers a meter registry to bind OkHttp connection-pool gauges (active/idle\nconnections). Optional; when omitted, no pool gauges are registered.",
+      "translation": "注册一个仪表注册表，以绑定 OkHttp 连接池的仪表（活动/空闲连接）。可选；若省略，则不注册任何池仪表。",
+      "count": 1
+    },
+    {
+      "source": "Soby Chacko",
+      "translation": "索比·查科",
+      "count": 1
+    }
+  ]
+}

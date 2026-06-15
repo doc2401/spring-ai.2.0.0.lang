@@ -1,0 +1,76 @@
+{
+  "created_at": "2026-06-15 07:36:57",
+  "updated_at": "2026-06-15 07:36:57",
+  "stats": {
+    "total_entries": 12,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 12,
+    "entries_with_hits": 12,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.0012000000000000001
+  },
+  "items": [
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "The options include the embedding model name, the number of dimensions of the resulting\noutput, the start and end offset of the video segment, and the interval of the video\nfor embedding generation.",
+      "translation": "选项包括嵌入模型名称、输出结果的维度数量、视频片段的起始和结束偏移量，以及用于生成嵌入的视频间隔。",
+      "count": 1
+    },
+    {
+      "source": "The supported embedding models are text-embedding-004, text-multilingual-embedding-002,\nand multimodalembedding@001.",
+      "translation": "支持的嵌入模型包括 text-embedding-004、text-multilingual-embedding-002 以及 multimodalembedding@001。",
+      "count": 1
+    },
+    {
+      "source": "The number of dimensions is used to specify the size of the resulting output\nembeddings. This can be useful for storage optimization purposes. Supported for model\nversion 004 and later.",
+      "translation": "维度数量用于指定输出嵌入的大小，这有助于优化存储。此功能适用于模型版本 004 及更高版本。",
+      "count": 1
+    },
+    {
+      "source": "The video start offset and end offset specify the segment of the video to be used for\nembedding generation. If not specified, the default values are calculated based on the\nvideo length and are adjusted to ensure a minimum segment of 120 seconds.",
+      "translation": "视频起始偏移量和结束偏移量用于指定生成嵌入时所使用的视频片段。若未指定，则默认值将根据视频长度计算得出，并会进行调整以确保片段时长至少为 120 秒。",
+      "count": 1
+    },
+    {
+      "source": "The video interval specifies the period of the video over which embeddings will be\ngenerated. The minimum value is 4, and if it is lower, an InvalidArgumentError is\nreturned. There is no maximum limit for the interval value, but if it exceeds the video\nlength or 120 seconds, it may impact the quality of the generated embeddings. The\ndefault value is 16.",
+      "translation": "视频间隔指定了生成嵌入的视频时间范围。最小值为 4，若低于此值将返回 InvalidArgumentError 错误。该间隔值没有上限，但如果超过视频长度或 120 秒，可能会影响生成嵌入的质量。默认值为 16。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../../embedding/EmbeddingOptions.html#getModel()\">getModel</a></code> in interface <code><a href=\"../../../embedding/EmbeddingOptions.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingOptions</a></code>",
+      "translation": "<code><a href=\"../../../embedding/EmbeddingOptions.html#getModel()\">getModel</a></code> 接口 <code><a href=\"../../../embedding/EmbeddingOptions.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingOptions</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../../embedding/EmbeddingOptions.html#getDimensions()\">getDimensions</a></code> in interface <code><a href=\"../../../embedding/EmbeddingOptions.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingOptions</a></code>",
+      "translation": "<code><a href=\"../../../embedding/EmbeddingOptions.html#getDimensions()\">getDimensions</a></code> 接口 <code><a href=\"../../../embedding/EmbeddingOptions.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingOptions</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Ilayaperumal Gopinathan, Sebastien Deleuze",
+      "translation": "Christian Tzolov，Ilayaperumal Gopinathan，Sebastien Deleuze",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "Class representing the options for Vertex AI Multimodal Embedding.",
+      "translation": "代表 Vertex AI 多模态嵌入选项的类。",
+      "count": 1
+    }
+  ]
+}

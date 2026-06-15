@@ -1,0 +1,81 @@
+{
+  "created_at": "2026-06-15 08:28:54",
+  "updated_at": "2026-06-15 08:28:54",
+  "stats": {
+    "total_entries": 13,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 16,
+    "entries_with_hits": 13,
+    "entries_without_hits": 0,
+    "hit_rate": 1.2307692307692308,
+    "usage_percentage": 0.0013
+  },
+  "items": [
+    {
+      "source": "Create a new AsyncMcpProgressProvider.",
+      "translation": "创建一个新的 AsyncMcpProgressProvider。",
+      "count": 2
+    },
+    {
+      "source": "Returns the methods of the given bean class.",
+      "translation": "返回给定 Bean 类的方法。",
+      "count": 2
+    },
+    {
+      "source": "Get the list of progress specifications.",
+      "translation": "获取进度规范列表。",
+      "count": 2
+    },
+    {
+      "source": "This class scans a list of objects for methods annotated with <a href=\"../../McpProgress.html\" title=\"annotation interface in org.springframework.ai.mcp.annotation\"><code>McpProgress</code></a> and\ncreates <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Function.html\" title=\"class or interface in java.util.function\"><code>Function</code></a> callbacks for them. These callbacks can be used to handle\nprogress notifications from MCP servers asynchronously.",
+      "translation": "该类会扫描对象列表，查找带有 <a href=\"../../McpProgress.html\" title=\"org.springframework.ai.mcp.annotation 中的注解接口\"><code>McpProgress</code></a> 注解的方法，并为其创建 <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Function.html\" title=\"java.util.function 中的类或接口\"><code>Function</code></a> 回调。这些回调可用于异步处理来自 MCP 服务器的进度通知。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Example usage:",
+      "translation": "使用示例：",
+      "count": 1
+    },
+    {
+      "source": "<code>progressObjects</code> - the objects containing methods annotated with\n<a href=\"../../McpProgress.html\" title=\"annotation interface in org.springframework.ai.mcp.annotation\"><code>McpProgress</code></a>",
+      "translation": "<code>progressObjects</code> - 包含用 <a href=\"../../McpProgress.html\" title=\"org.springframework.ai.mcp.annotation 中的注解接口\"><code>McpProgress</code></a> 注解的方法的对象。",
+      "count": 1
+    },
+    {
+      "source": "<code>bean</code> - the bean instance",
+      "translation": "<code>bean</code> - 实例",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "the list of progress specifications",
+      "translation": "进度规范清单",
+      "count": 1
+    },
+    {
+      "source": "the methods of the bean class",
+      "translation": "Bean 类的方法",
+      "count": 1
+    },
+    {
+      "source": "Provider for asynchronous progress callbacks.",
+      "translation": "异步进度回调的提供者。",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>// Create a provider with a list of objects containing @McpProgress methods\nAsyncMcpProgressProvider provider = new AsyncMcpProgressProvider(List.of(progressHandler));\n\n// Get the list of progress callbacks\nList&lt;AsyncProgressSpecification&gt; progressSpecs = provider.getProgressSpecifications();\n\n// Add the functions to the client features\nMcpClientFeatures.Async clientFeatures = new McpClientFeatures.Async(\n    clientInfo, clientCapabilities, roots,\n    toolsChangeConsumers, resourcesChangeConsumers, promptsChangeConsumers,\n    loggingConsumers, progressHandlers, samplingHandler);\n</code></pre>",
+      "translation": "<pre><code>// 创建一个包含带有 @McpProgress 方法的对象列表的提供者\nAsyncMcpProgressProvider provider = new AsyncMcpProgressProvider(List.of(progressHandler));\n\n// 获取进度回调列表\nList&lt;AsyncProgressSpecification&gt; progressSpecs = provider.getProgressSpecifications();\n\n// 将函数添加到客户端功能中\nMcpClientFeatures.Async clientFeatures = new McpClientFeatures.Async(\n    clientInfo, clientCapabilities, roots,\n    toolsChangeConsumers, resourcesChangeConsumers, promptsChangeConsumers,\n    loggingConsumers, progressHandlers, samplingHandler);\n</code></pre>",
+      "count": 1
+    }
+  ]
+}

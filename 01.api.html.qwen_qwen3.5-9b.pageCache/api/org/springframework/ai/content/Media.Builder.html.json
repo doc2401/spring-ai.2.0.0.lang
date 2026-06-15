@@ -1,0 +1,166 @@
+{
+  "created_at": "2026-06-15 07:26:47",
+  "updated_at": "2026-06-15 07:26:47",
+  "stats": {
+    "total_entries": 30,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 41,
+    "entries_with_hits": 30,
+    "entries_without_hits": 0,
+    "hit_rate": 1.3666666666666667,
+    "usage_percentage": 0.003
+  },
+  "items": [
+    {
+      "source": "the builder instance",
+      "translation": "构建器实例",
+      "count": 6
+    },
+    {
+      "source": "Builds a new Media instance with the configured properties.",
+      "translation": "使用配置的属性构建一个新的 Media 实例。",
+      "count": 2
+    },
+    {
+      "source": "Sets the media data from any Object.",
+      "translation": "从任意对象设置媒体数据。",
+      "count": 2
+    },
+    {
+      "source": "Sets the media data from a URI.",
+      "translation": "从 URI 设置媒体数据。",
+      "count": 2
+    },
+    {
+      "source": "Sets the media data from a Resource.",
+      "translation": "从资源中设置媒体数据。",
+      "count": 2
+    },
+    {
+      "source": "Sets the MIME type for the media object.",
+      "translation": "设置媒体对象的 MIME 类型。",
+      "count": 2
+    },
+    {
+      "source": "Sets the name for the media object.",
+      "translation": "设置媒体对象的名称。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Important security note: This field is vulnerable to prompt injections, as the\nmodel might inadvertently interpret it as instructions. It is recommended to\nspecify neutral names.",
+      "translation": "重要安全提示：此字段存在提示注入漏洞，因为模型可能会无意中将其解释为指令。建议指定中性名称。",
+      "count": 1
+    },
+    {
+      "source": "The name must only contain:",
+      "translation": "姓名只能包含以下内容：",
+      "count": 1
+    },
+    {
+      "source": "Builder class for Media.",
+      "translation": "Media 的构建器类。",
+      "count": 1
+    },
+    {
+      "source": "Sets the ID for the media object.",
+      "translation": "设置媒体对象的 ID。",
+      "count": 1
+    },
+    {
+      "source": "Sets the ID for the media object. The ID is typically assigned by AI models\nwhen they return a reference to previously provided media content.",
+      "translation": "设置媒体对象的 ID。该 ID 通常由 AI 模型在返回对先前提供的媒体内容的引用时分配。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if mimeType is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果 mimeType 为 null",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if resource is null or if reading the resource\ncontent fails",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - 如果资源为 null，或者读取资源内容时失败。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if data is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果数据为 null",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if URI is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果 URI 为 null",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if mimeType or data are null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果 mimeType 或 data 为 null",
+      "count": 1
+    },
+    {
+      "source": "<code>mimeType</code> - the media MIME type, must not be null",
+      "translation": "<code>mimeType</code> - 媒体 MIME 类型，不得为 null",
+      "count": 1
+    },
+    {
+      "source": "<code>resource</code> - the media resource, must not be null",
+      "translation": "<code>resource</code> - 媒体资源，不能为 null",
+      "count": 1
+    },
+    {
+      "source": "<code>data</code> - the media data object, must not be null",
+      "translation": "<data> - 媒体数据对象，不能为 null",
+      "count": 1
+    },
+    {
+      "source": "<code>uri</code> - the media URI, must not be null",
+      "translation": "<code>uri</code> - 媒体 URI，不得为 null",
+      "count": 1
+    },
+    {
+      "source": "<code>id</code> - the media identifier",
+      "translation": "<code>id</code> - 媒体标识符",
+      "count": 1
+    },
+    {
+      "source": "<code>name</code> - the media name",
+      "translation": "<code>name</code> - 媒体名称",
+      "count": 1
+    },
+    {
+      "source": "Alphanumeric characters",
+      "translation": "字母数字字符",
+      "count": 1
+    },
+    {
+      "source": "Whitespace characters (no more than one in a row)",
+      "translation": "空白字符（每行不超过一个）",
+      "count": 1
+    },
+    {
+      "source": "Square brackets",
+      "translation": "方括号",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Mark Pollack, Thomas Vitale",
+      "translation": "克里斯蒂安·茨洛夫，马克·波拉克，托马斯·维塔莱",
+      "count": 1
+    },
+    {
+      "source": "a new Media instance",
+      "translation": "一个新的媒体实例",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>字母数字字符</li><li>空白字符（每行不超过一个）</li><li>Hyphens\n</li><li>Parentheses\n</li><li>方括号</li></ul>",
+      "translation": "<ul>\n<li>字母数字字符</li><li>空白字符（每行最多一个）</li><li>连字符</li><li>圆括号</li><li>方括号</li></ul>",
+      "count": 1
+    }
+  ]
+}

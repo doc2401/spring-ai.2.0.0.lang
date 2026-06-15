@@ -1,0 +1,96 @@
+{
+  "created_at": "2026-06-15 09:04:48",
+  "updated_at": "2026-06-15 09:04:48",
+  "stats": {
+    "total_entries": 16,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 18,
+    "entries_with_hits": 16,
+    "entries_without_hits": 0,
+    "hit_rate": 1.125,
+    "usage_percentage": 0.0015999999999999999
+  },
+  "items": [
+    {
+      "source": "Thorough validation using URL class More comprehensive but might be slower\nValidates protocol, host, port, and basic structure",
+      "translation": "使用 URL 类进行彻底验证：更全面但可能较慢  \n验证协议、主机、端口和基本结构",
+      "count": 2
+    },
+    {
+      "source": "Attempts to fix common URL issues Adds protocol if missing, removes extra spaces",
+      "translation": "尝试修复常见的 URL 问题：若缺少协议则添加，并移除多余空格。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This method is not sufficient for security-sensitive URL validation and\nshould not be relied upon for security-critical checks. Use\n<a href=\"#isValidURLStrict(java.lang.String)\"><code>isValidURLStrict(String)</code></a> instead for robust validation.",
+      "translation": "此方法不足以用于对安全性敏感的 URL 验证，不应依赖它进行关键安全检查。请使用 <a href=\"#isValidURLStrict(java.lang.String)\"><code>isValidURLStrict(String)</code></a> 进行更可靠的验证。",
+      "count": 1
+    },
+    {
+      "source": "Resolves all IP addresses for the given hostname and throws\n<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/SecurityException.html\" title=\"class or interface in java.lang\"><code>SecurityException</code></a> if any resolve to a loopback, link-local, site-local, or\nwildcard address.",
+      "translation": "解析给定主机名的所有 IP 地址，如果任何解析结果指向回环、链路本地、站点本地或通配符地址，则抛出<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/SecurityException.html\" title=\"class or interface in java.lang\"><code>SecurityException</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Resolves all IP addresses for the given hostname and throws\n<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/SecurityException.html\" title=\"class or interface in java.lang\"><code>SecurityException</code></a> if any resolve to a loopback, link-local, site-local, or\nwildcard address. Protects against SSRF via internal network access (including IPv6\nequivalents) and limits exposure from DNS rebinding by checking all returned\naddresses.",
+      "translation": "解析给定主机名的所有 IP 地址，如果任何解析结果指向回环、链路本地、站点本地或通配符地址，则抛出<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/SecurityException.html\" title=\"class or interface in java.lang\"><code>SecurityException</code></a>。此功能通过阻止内部网络访问（包括 IPv6 等效地址）来防范 SSRF 攻击，并通过检查所有返回的地址来限制 DNS 重绑定带来的风险。",
+      "count": 1
+    },
+    {
+      "source": "Returns <code>true</code> if the given address is a loopback, link-local, site-local, or\nwildcard address.",
+      "translation": "如果给定地址是回环、链路本地、站点本地或通配符地址，则返回 <code>true</code>。",
+      "count": 1
+    },
+    {
+      "source": "Returns <code>true</code> if the given address is a loopback, link-local, site-local, or\nwildcard address. Covers both IPv4 and IPv6 private/internal ranges.",
+      "translation": "如果给定地址是回环、链路本地、站点本地或任意地址，则返回 <code>true</code>。涵盖 IPv4 和 IPv6 的私有/内部范围。",
+      "count": 1
+    },
+    {
+      "source": "This method is not sufficient for security-sensitive URL validation and\nshould not be relied upon for security-critical checks.",
+      "translation": "此方法不足以用于对安全性敏感的 URL 验证，不应将其用于关键安全校验。",
+      "count": 1
+    },
+    {
+      "source": "Utility class for detecting and normalizing URLs. Intended for use with multimodal user\ninputs.",
+      "translation": "用于检测和标准化 URL 的工具类，旨在与多模态用户输入配合使用。",
+      "count": 1
+    },
+    {
+      "source": "Check if the string looks like a URL using a simple regex pattern to disstinct it\nfrom base64 or other text. This is a quick check to avoid unnecessary URL parsing\nfor clearly non-URL strings.",
+      "translation": "使用简单的正则表达式模式检查字符串是否看起来像 URL，以将其与 Base64 或其他文本区分开来。这是一种快速检查方法，可避免对明显不是 URL 的字符串进行不必要的 URL 解析。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/SecurityException.html\" title=\"class or interface in java.lang\">SecurityException</a></code> - if the host resolves to a blocked internal address or\ncannot be resolved",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/SecurityException.html\" title=\"class or interface in java.lang\">SecurityException</a></code> - 如果主机解析为被阻止的内部地址，或无法解析",
+      "count": 1
+    },
+    {
+      "source": "<code>host</code> - the hostname to check",
+      "translation": "<code>host</code> - 要检查的主机名",
+      "count": 1
+    },
+    {
+      "source": "<code>address</code> - the address to test",
+      "translation": "<code>address</code> - 要测试的地址",
+      "count": 1
+    },
+    {
+      "source": "<code>true</code> if the address should be blocked",
+      "translation": "<code>true</code> 表示应阻止该地址。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    }
+  ]
+}

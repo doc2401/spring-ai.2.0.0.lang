@@ -1,0 +1,226 @@
+{
+  "created_at": "2026-06-15 08:37:22",
+  "updated_at": "2026-06-15 08:37:22",
+  "stats": {
+    "total_entries": 42,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 50,
+    "entries_with_hits": 42,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1904761904761905,
+    "usage_percentage": 0.0042
+  },
+  "items": [
+    {
+      "source": "Executes a method call to the AI model.",
+      "translation": "执行对 AI 模型的方法调用。",
+      "count": 4
+    },
+    {
+      "source": "Creates a new instance of GoogleGenAiChatModel.",
+      "translation": "创建一个新的 GoogleGenAiChatModel 实例。",
+      "count": 2
+    },
+    {
+      "source": "Gets the cached content service for managing cached content.",
+      "translation": "获取用于管理缓存内容的缓存内容服务。",
+      "count": 2
+    },
+    {
+      "source": "Gets the chat options for this model.",
+      "translation": "获取此模型的聊天选项。",
+      "count": 2
+    },
+    {
+      "source": "Use the provided convention for reporting observation data",
+      "translation": "请使用提供的规范报告观测数据。",
+      "count": 2
+    },
+    {
+      "source": "<code>prompt</code> - the request object to be sent to the AI model",
+      "translation": "<code>prompt</code> - 要发送给 AI 模型的请求对象",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "The model can be configured with various options including temperature, top-k, top-p\nsampling, maximum output tokens, and candidate count through\n<a href=\"GoogleGenAiChatOptions.html\" title=\"class in org.springframework.ai.google.genai\"><code>GoogleGenAiChatOptions</code></a>.",
+      "translation": "该模型可通过 <a href=\"GoogleGenAiChatOptions.html\" title=\"class in org.springframework.ai.google.genai\"><code>GoogleGenAiChatOptions</code></a> 配置多种选项，包括温度、top-k、top-p 采样、最大输出 token 数以及候选数量。",
+      "count": 1
+    },
+    {
+      "source": "Use the <a href=\"GoogleGenAiChatModel.Builder.html\" title=\"class in org.springframework.ai.google.genai\"><code>GoogleGenAiChatModel.Builder</code></a> to create instances with custom configurations:",
+      "translation": "使用<a href=\"GoogleGenAiChatModel.Builder.html\" title=\"class in org.springframework.ai.google.genai\"><code>GoogleGenAiChatModel.Builder</code></a>创建具有自定义配置的实例：",
+      "count": 1
+    },
+    {
+      "source": "Key features include:",
+      "translation": "主要功能包括：",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../model/Model.html#call(TReq)\">Model</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../model/Model.html#call(TReq)\">Model</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../model/StreamingModel.html#stream(TReq)\">StreamingModel</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../model/StreamingModel.html#stream(TReq)\">StreamingModel</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../chat/model/ChatModel.html#getOptions()\">ChatModel</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../chat/model/ChatModel.html#getOptions()\">ChatModel</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../model/Model.html#call(TReq)\">call</a></code> in interface <code><a href=\"../../model/Model.html\" title=\"interface in org.springframework.ai.model\">Model</a>&lt;<a href=\"../../chat/prompt/Prompt.html\" title=\"class in org.springframework.ai.chat.prompt\">Prompt</a>, <a href=\"../../chat/model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a>&gt;</code>",
+      "translation": "<a href=\"../../model/Model.html#call(TReq)\">call</a> 接口中的<code><a href=\"../../model/Model.html\" title=\"interface in org.springframework.ai.model\">Model</a>&lt;<a href=\"../../chat/prompt/Prompt.html\" title=\"class in org.springframework.ai.chat.prompt\">Prompt</a>, <a href=\"../../chat/model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a>&gt;</code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../model/StreamingModel.html#stream(TReq)\">stream</a></code> in interface <code><a href=\"../../model/StreamingModel.html\" title=\"interface in org.springframework.ai.model\">StreamingModel</a>&lt;<a href=\"../../chat/prompt/Prompt.html\" title=\"class in org.springframework.ai.chat.prompt\">Prompt</a>, <a href=\"../../chat/model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a>&gt;</code>",
+      "translation": "<code><a href=\"../../model/StreamingModel.html#stream(TReq)\">stream</a></code> 接口 <code><a href=\"../../model/StreamingModel.html\" title=\"interface in org.springframework.ai.model\">StreamingModel</a>&lt;<a href=\"../../chat/prompt/Prompt.html\" title=\"class in org.springframework.ai.chat.prompt\">Prompt</a>, <a href=\"../../chat/model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a>&gt;</code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../chat/model/ChatModel.html#call(org.springframework.ai.chat.prompt.Prompt)\">call</a></code> in interface <code><a href=\"../../chat/model/ChatModel.html\" title=\"interface in org.springframework.ai.chat.model\">ChatModel</a></code>",
+      "translation": "接口 <code><a href=\"../../chat/model/ChatModel.html\" title=\"org.springframework.ai.chat.model 中的接口\">ChatModel</a></code> 中的 <code><a href=\"../../chat/model/ChatModel.html#call(org.springframework.ai.chat.prompt.Prompt)\">call</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../chat/model/ChatModel.html#stream(org.springframework.ai.chat.prompt.Prompt)\">stream</a></code> in interface <code><a href=\"../../chat/model/ChatModel.html\" title=\"interface in org.springframework.ai.chat.model\">ChatModel</a></code>",
+      "translation": "<code><a href=\"../../chat/model/ChatModel.html#stream(org.springframework.ai.chat.prompt.Prompt)\">stream</a></code> 接口 <code><a href=\"../../chat/model/ChatModel.html\" title=\"interface in org.springframework.ai.chat.model\">ChatModel</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../chat/model/StreamingChatModel.html#stream(org.springframework.ai.chat.prompt.Prompt)\">stream</a></code> in interface <code><a href=\"../../chat/model/StreamingChatModel.html\" title=\"interface in org.springframework.ai.chat.model\">StreamingChatModel</a></code>",
+      "translation": "<code><a href=\"../../chat/model/StreamingChatModel.html#stream(org.springframework.ai.chat.prompt.Prompt)\">stream</a></code> 接口 <code><a href=\"../../chat/model/StreamingChatModel.html\" title=\"interface in org.springframework.ai.chat.model\">StreamingChatModel</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../chat/model/ChatModel.html#getOptions()\">getOptions</a></code> in interface <code><a href=\"../../chat/model/ChatModel.html\" title=\"interface in org.springframework.ai.chat.model\">ChatModel</a></code>",
+      "translation": "接口 <code><a href=\"../../chat/model/ChatModel.html\" title=\"org.springframework.ai.chat.model 中的接口\">ChatModel</a></code> 中的<code><a href=\"../../chat/model/ChatModel.html#getOptions()\">getOptions</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code>toolCallingManager</code> - the tool calling manager to use. It is wrapped in a\n<a href=\"schema/GoogleGenAiToolCallingManager.html\" title=\"class in org.springframework.ai.google.genai.schema\"><code>GoogleGenAiToolCallingManager</code></a> to ensure compatibility with Vertex AI's\nOpenAPI schema format.",
+      "translation": "<code>toolCallingManager</code> - 要使用的工具调用管理器。它被封装在\n<a href=\"schema/GoogleGenAiToolCallingManager.html\" title=\"class in org.springframework.ai.google.genai.schema\"><code>GoogleGenAiToolCallingManager</code></a>\n中，以确保与 Vertex AI 的 OpenAPI 模式格式兼容。",
+      "count": 1
+    },
+    {
+      "source": "Tool/Function calling capabilities through <a href=\"../../model/tool/ToolCallingManager.html\" title=\"interface in org.springframework.ai.model.tool\"><code>ToolCallingManager</code></a>",
+      "translation": "通过<a href=\"../../model/tool/ToolCallingManager.html\" title=\"org.springframework.ai.model.tool 接口中的接口\"><code>ToolCallingManager</code></a>实现工具/函数调用功能。",
+      "count": 1
+    },
+    {
+      "source": "Streaming support via <a href=\"#stream(org.springframework.ai.chat.prompt.Prompt)\"><code>stream(Prompt)</code></a> method",
+      "translation": "通过<a href=\"#stream(org.springframework.ai.chat.prompt.Prompt)\"><code>stream(Prompt)</code></a>方法支持流式处理。",
+      "count": 1
+    },
+    {
+      "source": "Configurable safety settings through <a href=\"common/GoogleGenAiSafetySetting.html\" title=\"class in org.springframework.ai.google.genai.common\"><code>GoogleGenAiSafetySetting</code></a>",
+      "translation": "通过<a href=\"common/GoogleGenAiSafetySetting.html\" title=\"class in org.springframework.ai.google.genai.common\"><code>GoogleGenAiSafetySetting</code></a>配置可设置的安全选项。",
+      "count": 1
+    },
+    {
+      "source": "<code>destroy</code> in interface <code>org.springframework.beans.factory.DisposableBean</code>",
+      "translation": "接口 <code>org.springframework.beans.factory.DisposableBean</code> 中的 <code>destroy</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>genAiClient</code> - the GenAI Client instance to use",
+      "translation": "<code>genAiClient</code> - 要使用的 GenAI 客户端实例",
+      "count": 1
+    },
+    {
+      "source": "<code>options</code> - the default options to use",
+      "translation": "<code>options</code> - 要使用的默认选项",
+      "count": 1
+    },
+    {
+      "source": "<code>retryTemplate</code> - the retry template to use",
+      "translation": "<code>retryTemplate</code> - 要使用的重试模板",
+      "count": 1
+    },
+    {
+      "source": "<code>observationRegistry</code> - the observation registry to use",
+      "translation": "<code>observationRegistry</code> - 要使用的观测注册表",
+      "count": 1
+    },
+    {
+      "source": "<code>observationConvention</code> - The provided convention",
+      "translation": "<code>observationConvention</code> - 提供的约定",
+      "count": 1
+    },
+    {
+      "source": "Support for multiple Gemini model versions including Gemini Pro, Gemini 1.5 Pro,\nGemini 1.5/2.0 Flash variants",
+      "translation": "支持多个 Gemini 模型版本，包括 Gemini Pro、Gemini 1.5 Pro 以及 Gemini 1.5/2.0 Flash 变体。",
+      "count": 1
+    },
+    {
+      "source": "Support for system messages and multi-modal content (text and images)",
+      "translation": "支持系统消息和多模态内容（文本和图像）",
+      "count": 1
+    },
+    {
+      "source": "Built-in retry mechanism and observability through Micrometer",
+      "translation": "内置的重试机制以及通过 Micrometer 实现的可观测性",
+      "count": 1
+    },
+    {
+      "source": "Google Search Retrieval integration",
+      "translation": "Google 搜索检索集成",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Grogdunn, luocongqiu, Chris Turchin, Mark Pollack, Soby Chacko, Jihoon Kim, Alexandros Pappas, Ilayaperumal Gopinathan, Dan Dobrin, Thomas Vitale, Sebastien Deleuze",
+      "translation": "Christian Tzolov，Grogdunn，luocongqiu，Chris Turchin，Mark Pollack，Soby Chacko，Jihoon Kim，Alexandros Pappas，Ilayaperumal Gopinathan，Dan Dobrin，Thomas Vitale，Sebastien Deleuze",
+      "count": 1
+    },
+    {
+      "source": "the response from the AI model",
+      "translation": "AI 模型的回复",
+      "count": 1
+    },
+    {
+      "source": "the streaming response from the AI model",
+      "translation": "AI 模型的流式响应",
+      "count": 1
+    },
+    {
+      "source": "the chat options",
+      "translation": "聊天选项",
+      "count": 1
+    },
+    {
+      "source": "the cached content service",
+      "translation": "缓存内容服务",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Google GenAI Chat Model implementation that provides access to Google's Gemini language\nmodels.",
+      "translation": "提供对 Google Gemini 语言模型访问的 Google GenAI Chat 模型实现。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>支持多个 Gemini 模型版本，包括 Gemini Pro、Gemini 1.5 Pro 以及 Gemini 1.5/2.0 Flash 变体。</li>\n<li>通过<a href=\"../../model/tool/ToolCallingManager.html\" title=\"org.springframework.ai.model.tool 接口中的接口\"><code>ToolCallingManager</code></a>实现工具/函数调用功能。</li>\n<li>通过<a href=\"#stream(org.springframework.ai.chat.prompt.Prompt)\"><code>stream(Prompt)</code></a>方法支持流式处理。</li>\n<li>通过<a href=\"common/GoogleGenAiSafetySetting.html\" title=\"class in org.springframework.ai.google.genai.common\"><code>GoogleGenAiSafetySetting</code></a>配置可设置的安全选项。</li>\n<li>支持系统消息和多模态内容（文本和图像）</li>\n<li>内置的重试机制以及通过 Micrometer 实现的可观测性</li>\n<li>Google 搜索检索集成</li>\n</ul>",
+      "translation": "<ul>\n<li>支持多个 Gemini 模型版本，包括 Gemini Pro、Gemini 1.5 Pro 以及 Gemini 1.5/2.0 Flash 变体。</li>\n<li>通过<a href=\"../../model/tool/ToolCallingManager.html\" title=\"org.springframework.ai.model.tool 接口中的接口\"><code>ToolCallingManager</code></a>实现工具/函数调用功能。</li>\n<li>通过<a href=\"#stream(org.springframework.ai.chat.prompt.Prompt)\"><code>stream(Prompt)</code></a>方法支持流式处理。</li>\n<li>通过<a href=\"common/GoogleGenAiSafetySetting.html\" title=\"class in org.springframework.ai.google.genai.common\"><code>GoogleGenAiSafetySetting</code></a>配置可设置的安全选项。</li>\n<li>支持系统消息和多模态内容（文本和图像）</li>\n<li>内置的重试机制以及通过 Micrometer 实现的可观测性</li>\n<li>Google 搜索检索集成</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>GoogleGenAiChatModel model = GoogleGenAiChatModel.builder()\n\t\t.genAiClient(genAiClient)\n\t\t.options(options)\n\t\t.toolCallingManager(toolManager)\n\t\t.build();\n</code></pre>",
+      "translation": "<pre><code>GoogleGenAiChatModel model = GoogleGenAiChatModel.builder()\n\t\t.genAiClient(genAiClient)\n\t\t.options(options)\n\t\t.toolCallingManager(toolManager)\n\t\t.build();\n</code></pre>",
+      "count": 1
+    }
+  ]
+}

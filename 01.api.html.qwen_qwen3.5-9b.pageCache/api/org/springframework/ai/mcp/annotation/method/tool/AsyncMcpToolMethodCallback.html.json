@@ -1,0 +1,126 @@
+{
+  "created_at": "2026-06-15 08:33:13",
+  "updated_at": "2026-06-15 08:33:13",
+  "stats": {
+    "total_entries": 22,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 23,
+    "entries_with_hits": 22,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0454545454545454,
+    "usage_percentage": 0.0022
+  },
+  "items": [
+    {
+      "source": "Apply the callback to the given request.",
+      "translation": "将回调应用于给定的请求。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This method builds the arguments for the method call, invokes the method, and\nreturns the result.",
+      "translation": "该方法构建方法调用的参数，调用该方法并返回结果。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"AbstractAsyncMcpToolMethodCallback.html#isExchangeOrContextType(java.lang.Class)\">AbstractAsyncMcpToolMethodCallback</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述已从类复制：<code><a href=\"AbstractAsyncMcpToolMethodCallback.html#isExchangeOrContextType(java.lang.Class)\">AbstractAsyncMcpToolMethodCallback</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"AbstractMcpToolMethodCallback.html#resolveTransportContext(T)\">AbstractMcpToolMethodCallback</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述已从类复制：<code><a href=\"AbstractMcpToolMethodCallback.html#resolveTransportContext(T)\">AbstractMcpToolMethodCallback</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Class for creating Function callbacks around tool methods.\n\nThis class provides a way to convert methods annotated with <a href=\"../../McpTool.html\" title=\"annotation interface in org.springframework.ai.mcp.annotation\"><code>McpTool</code></a> into\ncallback functions that can be used to handle tool requests.",
+      "translation": "用于围绕工具方法创建 Function 回调的类。\n\n该类提供了一种将带有 <a href=\"../../McpTool.html\" title=\"org.springframework.ai.mcp.annotation 中的注解接口\"><code>McpTool</code></a> 注解的方法转换为可用于处理工具请求的回调函数的方法。",
+      "count": 1
+    },
+    {
+      "source": "Resolves the <code>McpTransportContext</code> from the exchange or context object.",
+      "translation": "从交换对象或上下文对象中解析出 `<code>McpTransportContext`。",
+      "count": 1
+    },
+    {
+      "source": "Resolves the <code>McpTransportContext</code> from the exchange or context object.\nSubclasses must implement this method to extract or return the transport context\nappropriately based on the type of the exchange parameter.",
+      "translation": "从交换对象或上下文对象中解析出 `<code>McpTransportContext`。  \n子类必须实现此方法，以便根据 `exchange` 参数的类型适当地提取或返回传输上下文。",
+      "count": 1
+    },
+    {
+      "source": "Determines if the given parameter type is an exchange or context type that should\nbe injected.",
+      "translation": "判断给定的参数类型是否为应注入的交换或上下文类型。",
+      "count": 1
+    },
+    {
+      "source": "Determines if the given parameter type is an exchange or context type that should\nbe injected. Subclasses must implement this method to specify which types are\nconsidered exchange or context types.",
+      "translation": "判断给定的参数类型是否为应被注入的交换或上下文类型。子类必须实现此方法以指定哪些类型被视为交换或上下文类型。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"AbstractAsyncMcpToolMethodCallback.html#isExchangeOrContextType(java.lang.Class)\">isExchangeOrContextType</a></code> in class <code><a href=\"AbstractAsyncMcpToolMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.tool\">AbstractAsyncMcpToolMethodCallback</a>&lt;io.modelcontextprotocol.server.McpAsyncServerExchange, <a href=\"../../context/McpAsyncRequestContext.html\" title=\"interface in org.springframework.ai.mcp.annotation.context\">McpAsyncRequestContext</a>&gt;</code>",
+      "translation": "<code><a href=\"AbstractAsyncMcpToolMethodCallback.html#isExchangeOrContextType(java.lang.Class)\">isExchangeOrContextType</a></code> 类 <code><a href=\"AbstractAsyncMcpToolMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.tool\">AbstractAsyncMcpToolMethodCallback</a>&lt;io.modelcontextprotocol.server.McpAsyncServerExchange, <a href=\"../../context/McpAsyncRequestContext.html\" title=\"interface in org.springframework.ai.mcp.annotation.context\">McpAsyncRequestContext</a>&gt;</code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"AbstractMcpToolMethodCallback.html#createRequestContext(T,io.modelcontextprotocol.spec.McpSchema.CallToolRequest)\">createRequestContext</a></code> in class <code><a href=\"AbstractMcpToolMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.tool\">AbstractMcpToolMethodCallback</a>&lt;io.modelcontextprotocol.server.McpAsyncServerExchange, <a href=\"../../context/McpAsyncRequestContext.html\" title=\"interface in org.springframework.ai.mcp.annotation.context\">McpAsyncRequestContext</a>&gt;</code>",
+      "translation": "<code><a href=\"AbstractMcpToolMethodCallback.html#createRequestContext(T,io.modelcontextprotocol.spec.McpSchema.CallToolRequest)\">createRequestContext</a></code> 类 <code><a href=\"AbstractMcpToolMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.tool\">AbstractMcpToolMethodCallback</a>&lt;io.modelcontextprotocol.server.McpAsyncServerExchange, <a href=\"../../context/McpAsyncRequestContext.html\" title=\"interface in org.springframework.ai.mcp.annotation.context\">McpAsyncRequestContext</a>&gt;</code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"AbstractMcpToolMethodCallback.html#resolveTransportContext(T)\">resolveTransportContext</a></code> in class <code><a href=\"AbstractMcpToolMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.tool\">AbstractMcpToolMethodCallback</a>&lt;io.modelcontextprotocol.server.McpAsyncServerExchange, <a href=\"../../context/McpAsyncRequestContext.html\" title=\"interface in org.springframework.ai.mcp.annotation.context\">McpAsyncRequestContext</a>&gt;</code>",
+      "translation": "<code><a href=\"AbstractMcpToolMethodCallback.html#resolveTransportContext(T)\">resolveTransportContext</a></code> 类 <code><a href=\"AbstractMcpToolMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.tool\">AbstractMcpToolMethodCallback</a>&lt;io.modelcontextprotocol.server.McpAsyncServerExchange, <a href=\"../../context/McpAsyncRequestContext.html\" title=\"interface in org.springframework.ai.mcp.annotation.context\">McpAsyncRequestContext</a>&gt;</code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/BiFunction.html#apply(T,U)\" title=\"class or interface in java.util.function\">apply</a></code> in interface <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/BiFunction.html\" title=\"class or interface in java.util.function\">BiFunction</a>&lt;io.modelcontextprotocol.server.McpAsyncServerExchange, io.modelcontextprotocol.spec.McpSchema.CallToolRequest, reactor.core.publisher.Mono&lt;io.modelcontextprotocol.spec.McpSchema.CallToolResult&gt;&gt;</code>",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/BiFunction.html#apply(T,U)\" title=\"class or interface in java.util.function\">apply</a></code> 接口 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/BiFunction.html\" title=\"class or interface in java.util.function\">BiFunction</a>&lt;io.modelcontextprotocol.server.McpAsyncServerExchange, io.modelcontextprotocol.spec.McpSchema.CallToolRequest, reactor.core.publisher.Mono&lt;io.modelcontextprotocol.spec.McpSchema.CallToolResult&gt;&gt;</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>paramType</code> - The parameter type to check",
+      "translation": "<code>paramType</code> - 要检查的参数类型",
+      "count": 1
+    },
+    {
+      "source": "<code>exchange</code> - The exchange or context object",
+      "translation": "<code>exchange</code> - 交易所或上下文对象",
+      "count": 1
+    },
+    {
+      "source": "<code>exchange</code> - The server exchange context",
+      "translation": "<code>exchange</code> - 服务器交换上下文",
+      "count": 1
+    },
+    {
+      "source": "<code>request</code> - The tool call request, must not be null",
+      "translation": "<code>request</code> - 工具调用请求，不能为 null",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "true if the parameter type is an exchange or context type, false otherwise",
+      "translation": "如果参数类型是交换或上下文类型，则返回 true；否则返回 false。",
+      "count": 1
+    },
+    {
+      "source": "The resolved McpTransportContext",
+      "translation": "已解析的 McpTransportContext",
+      "count": 1
+    },
+    {
+      "source": "The result of the method invocation",
+      "translation": "方法调用的结果",
+      "count": 1
+    }
+  ]
+}

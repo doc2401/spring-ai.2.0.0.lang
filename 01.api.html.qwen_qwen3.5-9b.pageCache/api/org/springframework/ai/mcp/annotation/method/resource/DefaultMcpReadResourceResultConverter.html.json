@@ -1,0 +1,96 @@
+{
+  "created_at": "2026-06-15 08:32:18",
+  "updated_at": "2026-06-15 08:32:18",
+  "stats": {
+    "total_entries": 16,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 24,
+    "entries_with_hits": 16,
+    "entries_without_hits": 0,
+    "hit_rate": 1.5,
+    "usage_percentage": 0.0015999999999999999
+  },
+  "items": [
+    {
+      "source": "Converts the method's return value to a <code>McpSchema.ReadResourceResult</code>.",
+      "translation": "将方法的返回值转换为 `<code>McpSchema.ReadResourceResult</code>`。",
+      "count": 2
+    },
+    {
+      "source": "Converts the method's return value to a <code>McpSchema.ReadResourceResult</code>, propagating\nresource-level metadata to the content items.",
+      "translation": "将方法的返回值转换为 `<code>McpSchema.ReadResourceResult`》，并将资源级别的元数据传播到内容项中。",
+      "count": 2
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if the return type is not supported",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果返回类型不受支持",
+      "count": 2
+    },
+    {
+      "source": "<code>result</code> - The method's return value",
+      "translation": "<code>result</code> - 方法的返回值",
+      "count": 2
+    },
+    {
+      "source": "<code>requestUri</code> - The original request URI",
+      "translation": "<code>requestUri</code> - 原始请求 URI",
+      "count": 2
+    },
+    {
+      "source": "<code>mimeType</code> - The MIME type of the resource",
+      "translation": "<code>mimeType</code> - 资源的 MIME 类型",
+      "count": 2
+    },
+    {
+      "source": "<code>contentType</code> - The content type of the resource",
+      "translation": "<code>contentType</code> - 资源的媒体类型",
+      "count": 2
+    },
+    {
+      "source": "A <code>McpSchema.ReadResourceResult</code> containing the appropriate resource contents",
+      "translation": "包含适当资源内容的 `<code>McpSchema.ReadResourceResult</code>`",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This class provides a standard implementation for converting various return types from\nresource methods to a standardized <code>McpSchema.ReadResourceResult</code> format.",
+      "translation": "该类提供了将资源方法的各种返回类型转换为标准化 `<code>McpSchema.ReadResourceResult</code>` 格式的标准实现。",
+      "count": 1
+    },
+    {
+      "source": "This method handles various return types and converts them to a standardized\n<code>McpSchema.ReadResourceResult</code> format.",
+      "translation": "该方法可处理各种返回类型，并将其转换为标准化的 `<code>McpSchema.ReadResourceResult</code>` 格式。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"McpReadResourceResultConverter.html#convertToReadResourceResult(java.lang.Object,java.lang.String,java.lang.String,org.springframework.ai.mcp.annotation.method.resource.AbstractMcpResourceMethodCallback.ContentType)\">convertToReadResourceResult</a></code> in interface <code><a href=\"McpReadResourceResultConverter.html\" title=\"interface in org.springframework.ai.mcp.annotation.method.resource\">McpReadResourceResultConverter</a></code>",
+      "translation": "<code><a href=\"McpReadResourceResultConverter.html#convertToReadResourceResult(java.lang.Object,java.lang.String,java.lang.String,org.springframework.ai.mcp.annotation.method.resource.AbstractMcpResourceMethodCallback.ContentType)\">convertToReadResourceResult</a></code> 接口 <code><a href=\"McpReadResourceResultConverter.html\" title=\"interface in org.springframework.ai.mcp.annotation.method.resource\">McpReadResourceResultConverter</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"McpReadResourceResultConverter.html#convertToReadResourceResult(java.lang.Object,java.lang.String,java.lang.String,org.springframework.ai.mcp.annotation.method.resource.AbstractMcpResourceMethodCallback.ContentType,java.util.Map)\">convertToReadResourceResult</a></code> in interface <code><a href=\"McpReadResourceResultConverter.html\" title=\"interface in org.springframework.ai.mcp.annotation.method.resource\">McpReadResourceResultConverter</a></code>",
+      "translation": "<code><a href=\"McpReadResourceResultConverter.html#convertToReadResourceResult(java.lang.Object,java.lang.String,java.lang.String,org.springframework.ai.mcp.annotation.method.resource.AbstractMcpResourceMethodCallback.ContentType,java.util.Map)\">convertToReadResourceResult</a></code> 接口 <code><a href=\"McpReadResourceResultConverter.html\" title=\"interface in org.springframework.ai.mcp.annotation.method.resource\">McpReadResourceResultConverter</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>meta</code> - The resource-level metadata to propagate to content items",
+      "translation": "<meta> - 要传播到内容项的资源级元数据",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Alexandros Pappas, Vadzim Shurmialiou, Craig Walls",
+      "translation": "克里斯蒂安·茨洛夫，亚历山德罗斯·帕帕斯，瓦季姆·舒尔米亚柳，克雷格·沃尔斯",
+      "count": 1
+    },
+    {
+      "source": "Default implementation of <a href=\"McpReadResourceResultConverter.html\" title=\"interface in org.springframework.ai.mcp.annotation.method.resource\"><code>McpReadResourceResultConverter</code></a>.",
+      "translation": "<a href=\"McpReadResourceResultConverter.html\" title=\"org.springframework.ai.mcp.annotation.method.resource 接口中的接口\"><code>McpReadResourceResultConverter</code></a>的默认实现。",
+      "count": 1
+    }
+  ]
+}

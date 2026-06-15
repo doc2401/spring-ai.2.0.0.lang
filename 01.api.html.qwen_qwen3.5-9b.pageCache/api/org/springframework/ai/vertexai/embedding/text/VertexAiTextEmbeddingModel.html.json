@@ -1,0 +1,116 @@
+{
+  "created_at": "2026-06-15 07:37:00",
+  "updated_at": "2026-06-15 07:37:00",
+  "stats": {
+    "total_entries": 20,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 23,
+    "entries_with_hits": 20,
+    "entries_without_hits": 0,
+    "hit_rate": 1.15,
+    "usage_percentage": 0.002
+  },
+  "items": [
+    {
+      "source": "Executes a method call to the AI model.",
+      "translation": "执行对 AI 模型的方法调用。",
+      "count": 2
+    },
+    {
+      "source": "Embeds the given document's content into a vector.",
+      "translation": "将给定文档的内容嵌入向量中。",
+      "count": 2
+    },
+    {
+      "source": "Use the provided convention for reporting observation data",
+      "translation": "请使用提供的规范报告观测数据。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../../embedding/EmbeddingModel.html#embed(org.springframework.ai.document.Document)\">EmbeddingModel</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../../embedding/EmbeddingModel.html#embed(org.springframework.ai.document.Document)\">EmbeddingModel</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../../model/Model.html#call(TReq)\">Model</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../../model/Model.html#call(TReq)\">Model</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../../embedding/EmbeddingModel.html#dimensions()\">EmbeddingModel</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../../embedding/EmbeddingModel.html#dimensions()\">EmbeddingModel</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "A class representing a Vertex AI Text Embedding Model.",
+      "translation": "代表 Vertex AI 文本嵌入模型的类。",
+      "count": 1
+    },
+    {
+      "source": "Get the number of dimensions of the embedded vectors.",
+      "translation": "获取嵌入向量的维度数量。",
+      "count": 1
+    },
+    {
+      "source": "Get the number of dimensions of the embedded vectors. Note that by default, this\nmethod will call the remote Embedding endpoint to get the dimensions of the\nembedded vectors. If the dimensions are known ahead of time, it is recommended to\noverride this method.",
+      "translation": "获取嵌入向量的维度数量。请注意，默认情况下，此方法会调用远程 Embedding 端点以获取嵌入向量的维度。如果已知维度，建议重写此方法。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../../embedding/EmbeddingModel.html#dimensions()\">dimensions</a></code> in interface <code><a href=\"../../../embedding/EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a></code>",
+      "translation": "接口 <code><a href=\"../../../embedding/EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a></code> 中的 <code><a href=\"../../../embedding/EmbeddingModel.html#dimensions()\">dimensions</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../../embedding/AbstractEmbeddingModel.html#dimensions()\">dimensions</a></code> in class <code><a href=\"../../../embedding/AbstractEmbeddingModel.html\" title=\"class in org.springframework.ai.embedding\">AbstractEmbeddingModel</a></code>",
+      "translation": "<code><a href=\"../../../embedding/AbstractEmbeddingModel.html#dimensions()\">dimensions</a></code> 类 <code><a href=\"../../../embedding/AbstractEmbeddingModel.html\" title=\"class in org.springframework.ai.embedding\">AbstractEmbeddingModel</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>document</code> - the document to embed.",
+      "translation": "<code>document</code> - 要嵌入的文档。",
+      "count": 1
+    },
+    {
+      "source": "<code>request</code> - the request object to be sent to the AI model",
+      "translation": "<code>request</code> - 要发送给 AI 模型的请求对象",
+      "count": 1
+    },
+    {
+      "source": "<code>observationConvention</code> - The provided convention",
+      "translation": "<code>observationConvention</code> - 提供的约定",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Mark Pollack, Rodrigo Malara, Soby Chacko, Sebastien Deleuze",
+      "translation": "Christian Tzolov，Mark Pollack，Rodrigo Malara，Soby Chacko，Sebastien Deleuze",
+      "count": 1
+    },
+    {
+      "source": "the embedded vector.",
+      "translation": "嵌入向量。",
+      "count": 1
+    },
+    {
+      "source": "the response from the AI model",
+      "translation": "AI 模型的回复",
+      "count": 1
+    },
+    {
+      "source": "the number of dimensions of the embedded vectors.",
+      "translation": "嵌入向量的维度数量。",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "created_at": "2026-06-15 07:23:47",
+  "updated_at": "2026-06-15 07:23:47",
+  "stats": {
+    "total_entries": 24,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 25,
+    "entries_with_hits": 24,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0416666666666667,
+    "usage_percentage": 0.0024000000000000002
+  },
+  "items": [
+    {
+      "source": "Returns an array containing the constants of this enum class, in\nthe order they are declared.",
+      "translation": "返回一个包含此枚举类常量的数组，这些常量按照声明顺序排列。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Returns the enum constant of this class with the specified name.\nThe string must match <i>exactly</i> an identifier used to declare an\nenum constant in this class.  (Extraneous whitespace characters are \nnot permitted.)",
+      "translation": "返回此类的具有指定名称的枚举常量。该字符串必须与用于在此类中声明枚举常量的标识符完全匹配。（不允许存在多余的空白字符。）",
+      "count": 1
+    },
+    {
+      "source": "Defines the caching strategy for Anthropic prompt caching. Anthropic allows up to 4\ncache breakpoints per request, and the cache hierarchy follows the order: tools -&gt;\nsystem -&gt; messages.",
+      "translation": "定义了 Anthropic 提示缓存的缓存策略。Anthropic 允许每个请求最多设置 4 个缓存断点，且缓存层级遵循以下顺序：工具 -> 系统 -> 消息。",
+      "count": 1
+    },
+    {
+      "source": "Cache the entire conversation history up to (but not including) the current user\nquestion.",
+      "translation": "缓存当前用户提问之前的整个对话历史（不包括该提问）。",
+      "count": 1
+    },
+    {
+      "source": "No caching (default behavior).",
+      "translation": "不启用缓存（默认行为）。",
+      "count": 1
+    },
+    {
+      "source": "Cache system instructions and tool definitions.",
+      "translation": "缓存系统指令和工具定义。",
+      "count": 1
+    },
+    {
+      "source": "Cache system instructions only.",
+      "translation": "仅缓存系统指令。",
+      "count": 1
+    },
+    {
+      "source": "Cache tool definitions only.",
+      "translation": "仅缓存工具定义。",
+      "count": 1
+    },
+    {
+      "source": "Returns the enum constant of this class with the specified name.",
+      "translation": "返回此类的具有指定名称的枚举常量。",
+      "count": 1
+    },
+    {
+      "source": "No caching (default behavior). All content is processed fresh on each request.",
+      "translation": "不启用缓存（默认行为）。每次请求都会对所有内容进行全新处理。",
+      "count": 1
+    },
+    {
+      "source": "Cache tool definitions only. Places a cache breakpoint on the last tool, while\nsystem messages and conversation history remain uncached.",
+      "translation": "仅缓存工具定义。在最后一个工具上设置缓存断点，同时保持系统消息和对话历史未缓存。",
+      "count": 1
+    },
+    {
+      "source": "Cache system instructions only. Places a cache breakpoint on the system message\ncontent. Tools are cached implicitly via Anthropic's automatic lookback mechanism.",
+      "translation": "仅缓存系统指令。在系统消息内容处设置缓存断点。工具会通过 Anthropic 的自动回溯机制隐式缓存。",
+      "count": 1
+    },
+    {
+      "source": "Cache system instructions and tool definitions. Places cache breakpoints on the\nlast tool (breakpoint 1) and system message content (breakpoint 2).",
+      "translation": "缓存系统指令和工具定义。在最后一个工具（断点 1）和系统消息内容（断点 2）处设置缓存断点。",
+      "count": 1
+    },
+    {
+      "source": "Cache the entire conversation history up to (but not including) the current user\nquestion. Places a cache breakpoint on the last user message in the conversation\nhistory, enabling incremental caching as the conversation grows.",
+      "translation": "将当前用户提问之前的整个对话历史缓存。在对话历史中的最后一条用户消息处设置缓存断点，随着对话的扩展启用增量缓存。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if this enum class has no constant with the specified name",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果此枚举类没有指定名称的常量，则抛出此异常。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/NullPointerException.html\" title=\"class or interface in java.lang\">NullPointerException</a></code> - if the argument is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/NullPointerException.html\" title=\"java.lang 中的类或接口\">NullPointerException</a></code> - 如果参数为 null",
+      "count": 1
+    },
+    {
+      "source": "<code>name</code> - the name of the enum constant to be returned.",
+      "translation": "<code>name</code> - 要返回的枚举常量的名称。",
+      "count": 1
+    },
+    {
+      "source": "Mark Pollack, Soby Chacko",
+      "translation": "马克·波拉克，索比·查科",
+      "count": 1
+    },
+    {
+      "source": "an array containing the constants of this enum class, in the order they are declared",
+      "translation": "包含此枚举类常量的数组，按声明顺序排列。",
+      "count": 1
+    },
+    {
+      "source": "the enum constant with the specified name",
+      "translation": "具有指定名称的枚举常量",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Enum Constant Summary",
+      "translation": "枚举常量摘要",
+      "count": 1
+    },
+    {
+      "source": "Enum Constant Details",
+      "translation": "枚举常量详情",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "created_at": "2026-06-15 09:01:42",
+  "updated_at": "2026-06-15 09:01:42",
+  "stats": {
+    "total_entries": 18,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 19,
+    "entries_with_hits": 18,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0555555555555556,
+    "usage_percentage": 0.0018
+  },
+  "items": [
+    {
+      "source": "Not used for semantic cache advisor since we override adviseCall/adviseStream.",
+      "translation": "未用于语义缓存顾问，因为我们重写了 adviseCall 和 adviseStream。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "A chain of <a href=\"../CallAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>CallAdvisor</code></a> instances orchestrating the execution of a\n<a href=\"../../../ChatClientRequest.html\" title=\"class in org.springframework.ai.chat.client\"><code>ChatClientRequest</code></a> on the next <a href=\"../CallAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>CallAdvisor</code></a> in the chain.",
+      "translation": "一系列<a href=\"../CallAdvisor.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\"><code>CallAdvisor</code></a>实例负责编排对下一个链中<a href=\"../CallAdvisor.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\"><code>CallAdvisor</code></a>的<a href=\"../../../ChatClientRequest.html\" title=\"org.springframework.ai.chat.client 中的类\"><code>ChatClientRequest</code></a>的执行。",
+      "count": 1
+    },
+    {
+      "source": "A chain of <a href=\"../StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>StreamAdvisor</code></a> instances orchestrating the execution of a\n<a href=\"../../../ChatClientRequest.html\" title=\"class in org.springframework.ai.chat.client\"><code>ChatClientRequest</code></a> on the next <a href=\"../StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>StreamAdvisor</code></a> in the chain.",
+      "translation": "一系列<a href=\"../StreamAdvisor.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\"><code>StreamAdvisor</code></a>实例，负责协调在链中下一个<a href=\"../StreamAdvisor.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\"><code>StreamAdvisor</code></a>上执行一个<a href=\"../../../ChatClientRequest.html\" title=\"org.springframework.ai.chat.client 中的类\"><code>ChatClientRequest</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Default implementation for the <a href=\"../BaseAdvisorChain.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>BaseAdvisorChain</code></a>.",
+      "translation": "`BaseAdvisorChain` 接口的<a href=\"../BaseAdvisorChain.html\" title=\"org.springframework.ai.chat.client.advisor.api 包中的接口\"><code>BaseAdvisorChain</code></a>默认实现。",
+      "count": 1
+    },
+    {
+      "source": "Provides classes for advising chat clients.",
+      "translation": "提供用于建议聊天客户端的类。",
+      "count": 1
+    },
+    {
+      "source": "Provides the API for chat client advisors.",
+      "translation": "为聊天客户端顾问提供 API。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI chat client advisors package.",
+      "translation": "Spring AI 聊天客户端顾问包。",
+      "count": 1
+    },
+    {
+      "source": "Test support classes for ChatClient advisor integration tests.",
+      "translation": "ChatClient 顾问集成测试的测试支持类。",
+      "count": 1
+    },
+    {
+      "source": "A base interface for advisor chains that can be used to chain multiple advisors\ntogether, both for call and stream advisors.",
+      "translation": "用于将多个顾问（包括调用型顾问和流式顾问）串联在一起的顾问链基础接口。",
+      "count": 1
+    },
+    {
+      "source": "Logic to be executed after the rest of the advisor chain is called.",
+      "translation": "在调用顾问链其余部分后执行的逻辑。",
+      "count": 1
+    },
+    {
+      "source": "Logic to be executed before the rest of the advisor chain is called.",
+      "translation": "在调用顾问链其余部分之前执行的逻辑。",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../AdvisorChain.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">AdvisorChain</a> in <a href=\"../../../../cache/semantic/package-summary.html\">org.springframework.ai.chat.cache.semantic</a>",
+      "translation": "<a href=\"../AdvisorChain.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">AdvisorChain</a> 在 <a href=\"../../../../cache/semantic/package-summary.html\">org.springframework.ai.chat.cache.semantic</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../AdvisorChain.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">AdvisorChain</a> in <a href=\"../../package-summary.html\">org.springframework.ai.chat.client.advisor</a>",
+      "translation": "<a href=\"../AdvisorChain.html\" title=\"接口，位于 org.springframework.ai.chat.client.advisor 包中\">AdvisorChain</a> 在 <a href=\"../../package-summary.html\">org.springframework.ai.chat.client.advisor</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../AdvisorChain.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">AdvisorChain</a> in <a href=\"../package-summary.html\">org.springframework.ai.chat.client.advisor.api</a>",
+      "translation": "<a href=\"../AdvisorChain.html\" title=\"接口 org.springframework.ai.chat.client.advisor.api 中的 AdvisorChain\">AdvisorChain</a> 在 <a href=\"../package-summary.html\">org.springframework.ai.chat.client.advisor.api</a> 包中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../AdvisorChain.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">AdvisorChain</a> in <a href=\"../../vectorstore/package-summary.html\">org.springframework.ai.chat.client.advisor.vectorstore</a>",
+      "translation": "<a href=\"../AdvisorChain.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">AdvisorChain</a> 在 <a href=\"../../vectorstore/package-summary.html\">org.springframework.ai.chat.client.advisor.vectorstore</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../AdvisorChain.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">AdvisorChain</a> in <a href=\"../../../../../rag/advisor/package-summary.html\">org.springframework.ai.rag.advisor</a>",
+      "translation": "<a href=\"../AdvisorChain.html\" title=\"接口，位于 org.springframework.ai.chat.client.advisor.api 包中\">AdvisorChain</a> 在 <a href=\"../../../../../rag/advisor/package-summary.html\">org.springframework.ai.rag.advisor</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../AdvisorChain.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">AdvisorChain</a> in <a href=\"../../../../../test/chat/client/advisor/package-summary.html\">org.springframework.ai.test.chat.client.advisor</a>",
+      "translation": "<a href=\"../AdvisorChain.html\" title=\"接口在 org.springframework.ai.chat.client.advisor.api 中\">AdvisorChain</a> 在 <a href=\"../../../../../test/chat/client/advisor/package-summary.html\">org.springframework.ai.test.chat.client.advisor</a> 中的用途",
+      "count": 1
+    }
+  ]
+}

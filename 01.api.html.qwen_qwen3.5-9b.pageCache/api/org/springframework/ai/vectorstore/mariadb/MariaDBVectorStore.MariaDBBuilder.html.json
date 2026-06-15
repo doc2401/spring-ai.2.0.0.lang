@@ -1,0 +1,181 @@
+{
+  "created_at": "2026-06-15 07:43:35",
+  "updated_at": "2026-06-15 07:43:35",
+  "stats": {
+    "total_entries": 33,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 60,
+    "entries_with_hits": 33,
+    "entries_without_hits": 0,
+    "hit_rate": 1.8181818181818181,
+    "usage_percentage": 0.0033000000000000004
+  },
+  "items": [
+    {
+      "source": "this builder instance",
+      "translation": "此构建器实例",
+      "count": 12
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if name is null or empty",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果 name 为 null 或为空",
+      "count": 4
+    },
+    {
+      "source": "Builds and returns a new MariaDBVectorStore instance with the configured\nsettings.",
+      "translation": "构建并返回一个具有配置设置的新 MariaDBVectorStore 实例。",
+      "count": 2
+    },
+    {
+      "source": "Configures the name of the content field in the database.",
+      "translation": "配置数据库中内容字段的名称。",
+      "count": 2
+    },
+    {
+      "source": "Configures the dimension size of the embedding vectors.",
+      "translation": "配置嵌入向量的维度大小。",
+      "count": 2
+    },
+    {
+      "source": "Configures the distance type used for similarity calculations.",
+      "translation": "配置用于相似度计算的距離類型。",
+      "count": 2
+    },
+    {
+      "source": "Configures the name of the embedding field in the database.",
+      "translation": "配置数据库中嵌入字段的名称。",
+      "count": 2
+    },
+    {
+      "source": "Configures the name of the ID field in the database.",
+      "translation": "配置数据库中 ID 字段的名称。",
+      "count": 2
+    },
+    {
+      "source": "Configures whether to initialize the database schema.",
+      "translation": "配置是否初始化数据库模式。",
+      "count": 2
+    },
+    {
+      "source": "Configures the maximum batch size for document operations.",
+      "translation": "配置文档操作的最大批量大小。",
+      "count": 2
+    },
+    {
+      "source": "Configures the name of the metadata field in the database.",
+      "translation": "配置数据库中元数据字段的名称。",
+      "count": 2
+    },
+    {
+      "source": "Configures whether to remove any existing vector store table.",
+      "translation": "配置是否删除现有的向量存储表。",
+      "count": 2
+    },
+    {
+      "source": "Configures the schema name for the vector store table.",
+      "translation": "配置向量存储表的模式名称。",
+      "count": 2
+    },
+    {
+      "source": "Configures whether schema validation should be performed.",
+      "translation": "配置是否执行模式验证。",
+      "count": 2
+    },
+    {
+      "source": "Configures the vector store table name.",
+      "translation": "配置向量存储表名。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Builder for creating instances of <a href=\"MariaDBVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.mariadb\"><code>MariaDBVectorStore</code></a>. This builder provides\na fluent API for configuring all aspects of the vector store.",
+      "translation": "用于创建<a href=\"MariaDBVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.mariadb\"><code>MariaDBVectorStore</code></a>实例的构建器。此构建器为配置向量存储的所有方面提供了流式 API。",
+      "count": 1
+    },
+    {
+      "source": "<code>vectorTableName</code> - the name for the vector store table (defaults to\n<a href=\"MariaDBVectorStore.html#DEFAULT_TABLE_NAME\">\"vector_store\"</a>)",
+      "translation": "<code>vectorTableName</code> - 向量存储表的名称（默认为 <a href=\"MariaDBVectorStore.html#DEFAULT_TABLE_NAME\">\"vector_store\"</a>）",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if distanceType is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果 distanceType 为 null",
+      "count": 1
+    },
+    {
+      "source": "<code>name</code> - the field name for document content (defaults to\n<a href=\"MariaDBVectorStore.html#DEFAULT_COLUMN_CONTENT\">\"content\"</a>)",
+      "translation": "<code>name</code> - 文档内容的字段名（默认为 <a href=\"MariaDBVectorStore.html#DEFAULT_COLUMN_CONTENT\">\"content\"</a>）",
+      "count": 1
+    },
+    {
+      "source": "<code>name</code> - the field name for embeddings (defaults to\n<a href=\"MariaDBVectorStore.html#DEFAULT_COLUMN_EMBEDDING\">\"embedding\"</a>)",
+      "translation": "<code>name</code> - 嵌入字段的名称（默认为 <a href=\"MariaDBVectorStore.html#DEFAULT_COLUMN_EMBEDDING\">\"embedding\"</a>）",
+      "count": 1
+    },
+    {
+      "source": "<code>name</code> - the field name for document IDs (defaults to\n<a href=\"MariaDBVectorStore.html#DEFAULT_COLUMN_ID\">\"id\"</a>)",
+      "translation": "<code>name</code> - 文档 ID 的字段名称（默认为 <a href=\"MariaDBVectorStore.html#DEFAULT_COLUMN_ID\">\"id\"</a>）",
+      "count": 1
+    },
+    {
+      "source": "<code>name</code> - the field name for document metadata (defaults to\n<a href=\"MariaDBVectorStore.html#DEFAULT_COLUMN_METADATA\">\"metadata\"</a>)",
+      "translation": "<code>name</code> - 文档元数据的字段名称（默认为 <a href=\"MariaDBVectorStore.html#DEFAULT_COLUMN_METADATA\">\"metadata\"</a>）",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html\" title=\"class or interface in java.lang\">IllegalStateException</a></code> - if the builder configuration is invalid",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html\" title=\"class or interface in java.lang\">IllegalStateException</a></code> - 如果构建器配置无效",
+      "count": 1
+    },
+    {
+      "source": "<code>schemaName</code> - the database schema name (can be null for default schema)",
+      "translation": "<code>schemaName</code> - 数据库架构名称（对于默认架构可为 null）",
+      "count": 1
+    },
+    {
+      "source": "<code>schemaValidation</code> - true to enable schema validation, false to disable",
+      "translation": "<code>schemaValidation</code> - 启用模式验证时设为 true，禁用时设为 false",
+      "count": 1
+    },
+    {
+      "source": "<code>dimensions</code> - the dimension of the embeddings",
+      "translation": "<code>dimensions</code> - 嵌入的维度",
+      "count": 1
+    },
+    {
+      "source": "<code>distanceType</code> - the distance type to use",
+      "translation": "<code>distanceType</code> - 要使用的距离类型",
+      "count": 1
+    },
+    {
+      "source": "<code>removeExistingVectorStoreTable</code> - true to remove existing table, false to\nkeep it",
+      "translation": "<code>removeExistingVectorStoreTable</code> - 设置为 true 以删除现有表，设置为 false 以保留它",
+      "count": 1
+    },
+    {
+      "source": "<code>initializeSchema</code> - true to initialize schema, false otherwise",
+      "translation": "<code>initializeSchema</code> - 用于初始化架构，true 表示启用，false 表示禁用",
+      "count": 1
+    },
+    {
+      "source": "<code>maxDocumentBatchSize</code> - the maximum number of documents to process in a\nbatch",
+      "translation": "<code>maxDocumentBatchSize</code> - 每个批次中要处理的文档的最大数量",
+      "count": 1
+    },
+    {
+      "source": "Diego Dupin, Ilayaperumal Gopinathan, Soby Chacko, chabinhwang",
+      "translation": "迭戈·杜平，伊拉亚佩鲁马勒·戈皮纳坦，索比·查科，chabinhwang",
+      "count": 1
+    },
+    {
+      "source": "a new MariaDBVectorStore instance",
+      "translation": "一个新的 MariaDBVectorStore 实例",
+      "count": 1
+    }
+  ]
+}

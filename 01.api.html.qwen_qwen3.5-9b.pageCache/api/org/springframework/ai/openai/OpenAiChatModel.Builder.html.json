@@ -1,0 +1,121 @@
+{
+  "created_at": "2026-06-15 07:32:55",
+  "updated_at": "2026-06-15 07:32:55",
+  "stats": {
+    "total_entries": 21,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 31,
+    "entries_with_hits": 21,
+    "entries_without_hits": 0,
+    "hit_rate": 1.4761904761904763,
+    "usage_percentage": 0.0021
+  },
+  "items": [
+    {
+      "source": "this builder",
+      "translation": "此构建器",
+      "count": 5
+    },
+    {
+      "source": "since 2.0.0 for removal in 3.0.0 — internal tool execution in\n<a href=\"OpenAiChatModel.html\" title=\"class in org.springframework.ai.openai\"><code>OpenAiChatModel</code></a> is superseded by <code>ToolCallingAdvisor</code> used via\n<code>ChatClient</code>.",
+      "translation": "自 2.0.0 版本起，将在 3.0.0 版本中移除——在<a href=\"OpenAiChatModel.html\" title=\"class in org.springframework.ai.openai\"><code>OpenAiChatModel</code></a>中的内部工具执行功能已被通过<code>ChatClient</code>使用的<code>ToolCallingAdvisor</code>所取代。",
+      "count": 2
+    },
+    {
+      "source": "Builds a new <a href=\"OpenAiChatModel.html\" title=\"class in org.springframework.ai.openai\"><code>OpenAiChatModel</code></a> instance.",
+      "translation": "构建一个新的<a href=\"OpenAiChatModel.html\" title=\"org.springframework.ai.openai 中的类\"><code>OpenAiChatModel</code></a>实例。",
+      "count": 2
+    },
+    {
+      "source": "Sets the observation registry for metrics and tracing.",
+      "translation": "设置指标和追踪的观察注册表。",
+      "count": 2
+    },
+    {
+      "source": "Sets the synchronous OpenAI client.",
+      "translation": "设置同步的 OpenAI 客户端。",
+      "count": 2
+    },
+    {
+      "source": "Sets the asynchronous OpenAI client.",
+      "translation": "设置异步 OpenAI 客户端。",
+      "count": 2
+    },
+    {
+      "source": "Sets the chat options.",
+      "translation": "设置聊天选项。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Builder for creating <a href=\"OpenAiChatModel.html\" title=\"class in org.springframework.ai.openai\"><code>OpenAiChatModel</code></a> instances.",
+      "translation": "用于创建<a href=\"OpenAiChatModel.html\" title=\"org.springframework.ai.openai 中的类\"><code>OpenAiChatModel</code></a>实例的构建器。",
+      "count": 1
+    },
+    {
+      "source": "Registers an <a href=\"http/okhttp/OpenAiHttpClientBuilderCustomizer.html\" title=\"interface in org.springframework.ai.openai.http.okhttp\"><code>OpenAiHttpClientBuilderCustomizer</code></a> that mutates the\nunderlying OkHttp client builder before the OpenAI clients are constructed.",
+      "translation": "注册一个 <a href=\"http/okhttp/OpenAiHttpClientBuilderCustomizer.html\" title=\"interface in org.springframework.ai.openai.http.okhttpClient\"><code>OpenAiHttpClientBuilderCustomizer</code></a>，该自定义器会在构建 OpenAI 客户端之前修改底层的 OkHttp 客户端构建器。",
+      "count": 1
+    },
+    {
+      "source": "Sets the full list of <a href=\"http/okhttp/OpenAiHttpClientBuilderCustomizer.html\" title=\"interface in org.springframework.ai.openai.http.okhttp\"><code>customizers</code></a> to\napply, replacing any customizers registered earlier on this builder.",
+      "translation": "设置要应用的<a href=\"http/okhttp/OpenAiHttpClientBuilderCustomizer.html\" title=\"interface in org.springframework.ai.openai.http.okhttpClientBuilderCustomizer\"><code>customizers</code></a>完整列表，替换在此构建器上之前注册的任何自定义器。",
+      "count": 1
+    },
+    {
+      "source": "Registers an <a href=\"http/okhttp/OpenAiHttpClientBuilderCustomizer.html\" title=\"interface in org.springframework.ai.openai.http.okhttp\"><code>OpenAiHttpClientBuilderCustomizer</code></a> that mutates the\nunderlying OkHttp client builder before the OpenAI clients are constructed. Use\nthis to attach OkHttp interceptors (e.g. OAuth2 bearer-token injection), swap\nthe dispatcher executor, or tweak any other OkHttp setting. Customizers are\napplied in the order they are registered, after Spring AI's own defaults, so\nuser code wins.",
+      "translation": "注册一个 <a href=\"http/okhttp/OpenAiHttpClientBuilderCustomizer.html\" title=\"interface in org.springframework.ai.openai.http.okhttp\"><code>OpenAiHttpClientBuilderCustomizer</code></a>，该自定义器会在构建 OpenAI 客户端之前修改底层的 OkHttp 客户端构建器。您可以使用此功能附加 OkHttp 拦截器（例如注入 OAuth2 访问令牌）、替换分发器执行器，或调整任何其他 OkHttp 设置。自定义器按注册顺序应用，在 Spring AI 自身的默认配置之后生效，因此用户代码具有最高优先级。",
+      "count": 1
+    },
+    {
+      "source": "Sets the full list of <a href=\"http/okhttp/OpenAiHttpClientBuilderCustomizer.html\" title=\"interface in org.springframework.ai.openai.http.okhttp\"><code>customizers</code></a> to\napply, replacing any customizers registered earlier on this builder. The order\nof the list is preserved when invoking the customizers.",
+      "translation": "设置要应用的<a href=\"http/okhttp/OpenAiHttpClientBuilderCustomizer.html\" title=\"interface in org.springframework.ai.openai.http.okhttpClient\"><code>customizers</code></a>完整列表，替换在此构建器上先前注册的任意自定义器。调用自定义器时保留列表的顺序。",
+      "count": 1
+    },
+    {
+      "source": "Sets the tool calling manager used for internal tool execution.",
+      "translation": "设置用于内部工具执行的工具调用管理器。",
+      "count": 1
+    },
+    {
+      "source": "<code>openAiClient</code> - the synchronous client",
+      "translation": "<code>openAiClient</code> - 同步客户端",
+      "count": 1
+    },
+    {
+      "source": "<code>openAiClientAsync</code> - the asynchronous client",
+      "translation": "<code>openAiClientAsync</code> - 异步客户端",
+      "count": 1
+    },
+    {
+      "source": "<code>options</code> - the chat options",
+      "translation": "<code>options</code> - 聊天选项",
+      "count": 1
+    },
+    {
+      "source": "<code>toolCallingManager</code> - the tool calling manager",
+      "translation": "<code>toolCallingManager</code> - 工具调用管理器",
+      "count": 1
+    },
+    {
+      "source": "<code>observationRegistry</code> - the observation registry",
+      "translation": "<code>observationRegistry</code> - 观测注册表",
+      "count": 1
+    },
+    {
+      "source": "Julien Dubois, Christian Tzolov, Soby Chacko, Ilayaperumal Gopinathan, Thomas Vitale, Eric Bottard, Taewoong Kim",
+      "translation": "朱利安·杜瓦，克里斯蒂安·茨洛夫，索比·查科，伊拉亚佩尔马拉·戈皮纳坦，托马斯·维塔勒，埃里克·博塔尔，金泰宇",
+      "count": 1
+    },
+    {
+      "source": "the configured chat model",
+      "translation": "已配置的聊天模型",
+      "count": 1
+    }
+  ]
+}

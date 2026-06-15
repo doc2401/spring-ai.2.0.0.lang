@@ -1,0 +1,71 @@
+{
+  "created_at": "2026-06-15 07:36:27",
+  "updated_at": "2026-06-15 07:36:27",
+  "stats": {
+    "total_entries": 11,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 13,
+    "entries_with_hits": 11,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1818181818181819,
+    "usage_percentage": 0.0011
+  },
+  "items": [
+    {
+      "source": "Retrieves documents by query embedding similarity using the default\n<a href=\"SearchRequest.html\" title=\"class in org.springframework.ai.vectorstore\"><code>SearchRequest</code></a>'s search criteria.",
+      "translation": "使用默认 <a href=\"SearchRequest.html\" title=\"class in org.springframework.ai.vectorstore\"><code>SearchRequest</code></a> 的搜索条件，通过查询嵌入相似度检索文档。",
+      "count": 2
+    },
+    {
+      "source": "Retrieves documents by query embedding similarity and metadata filters to retrieve\nexactly the number of nearest-neighbor results that match the request criteria.",
+      "translation": "通过查询嵌入相似度和元数据过滤器检索文档，以精确获取与请求条件匹配的最近邻结果数量。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This is useful when you want to provide retrieval-only access to a vector store,\nfollowing the principle of least privilege by not exposing write operations.",
+      "translation": "当您需要仅提供向量存储的检索访问权限，并遵循最小权限原则以避免暴露写入操作时，此方法非常有用。",
+      "count": 1
+    },
+    {
+      "source": "<code>request</code> - Search request for set search parameters, such as the query text,\ntopK, similarity threshold and metadata filter expressions.",
+      "translation": "<code>request</code> - 用于设置搜索参数的搜索请求，例如查询文本、topK、相似度阈值和元数据过滤表达式。",
+      "count": 1
+    },
+    {
+      "source": "<code>query</code> - Text to use for embedding similarity comparison.",
+      "translation": "<code>query</code> - 用于嵌入相似度比较的文本。",
+      "count": 1
+    },
+    {
+      "source": "This is a functional interface and can therefore be used as the assignment target for a lambda expression or method reference.",
+      "translation": "这是一个函数式接口，因此可用作 Lambda 表达式或方法引用的赋值目标。",
+      "count": 1
+    },
+    {
+      "source": "Mark Pollack",
+      "translation": "马克·波拉克",
+      "count": 1
+    },
+    {
+      "source": "Returns documents that match the query request conditions.",
+      "translation": "返回与查询请求条件匹配的文档。",
+      "count": 1
+    },
+    {
+      "source": "Returns a list of documents that have embeddings similar to the query text\nembedding.",
+      "translation": "返回与查询文本嵌入相似的文档列表。",
+      "count": 1
+    },
+    {
+      "source": "A functional interface that provides read-only access to vector store retrieval\noperations. This interface extracts only the document retrieval functionality from\n<a href=\"VectorStore.html\" title=\"interface in org.springframework.ai.vectorstore\"><code>VectorStore</code></a>, ensuring that mutation operations (add, delete) are not exposed.",
+      "translation": "一个提供向量存储检索操作只读访问的功能接口。该接口从 <a href=\"VectorStore.html\" title=\"org.springframework.ai.vectorstore 中的接口\"><code>VectorStore</code></a> 中提取了仅文档检索功能，确保不暴露任何突变操作（添加、删除）。",
+      "count": 1
+    }
+  ]
+}

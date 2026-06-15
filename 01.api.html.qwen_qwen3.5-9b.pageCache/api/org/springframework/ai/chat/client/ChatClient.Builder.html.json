@@ -1,0 +1,101 @@
+{
+  "created_at": "2026-06-15 08:47:17",
+  "updated_at": "2026-06-15 08:47:17",
+  "stats": {
+    "total_entries": 17,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 21,
+    "entries_with_hits": 17,
+    "entries_without_hits": 0,
+    "hit_rate": 1.2352941176470589,
+    "usage_percentage": 0.0017
+  },
+  "items": [
+    {
+      "source": "as of 2.0.0, in favor of <a href=\"#defaultTools(java.lang.Object...)\"><code>defaultTools(Object...)</code></a>.",
+      "translation": "自 2.0.0 版本起，推荐使用<a href=\"#defaultTools(java.lang.Object...)\"><code>defaultTools(Object...)</code></a>。",
+      "count": 3
+    },
+    {
+      "source": "as of 2.0.0, in favor of <a href=\"#defaultTools(java.lang.Object...)\"><code>defaultTools(Object...)</code></a>. To be\nremoved in 3.0.0.",
+      "translation": "自 2.0.0 版本起，推荐使用<a href=\"#defaultTools(java.lang.Object...)\"><code>defaultTools(Object...)</code></a>。该功能将在 3.0.0 版本中移除。",
+      "count": 3
+    },
+    {
+      "source": "Default tools are shared across all requests produced by <a href=\"ChatClient.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient</code></a>\ninstances built from this builder. If a request also provides its own tools via\n<a href=\"ChatClient.ChatClientRequestSpec.html#tools(java.lang.Object...)\"><code>ChatClient.ChatClientRequestSpec.tools(Object...)</code></a>, those runtime tools completely\noverride the defaults for that request.",
+      "translation": "默认工具由通过此构建器创建的 <a href=\"ChatClient.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient</code></a> 实例所生成的所有请求共享。如果某个请求还通过 <a href=\"ChatClient.ChatClientRequestSpec.html#tools(java.lang.Object...)\"><code>ChatClient.ChatClientRequestSpec.tools(Object...)</code></a> 提供了自己的工具，则这些运行时工具将完全覆盖该请求的默认工具。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "WARNING: Because default tools are shared, be careful not to register tools\nthat should only be available in specific contexts.",
+      "translation": "警告：由于默认工具是共享的，请小心不要注册那些应仅在特定上下文中可用的工具。",
+      "count": 1
+    },
+    {
+      "source": "A mutable builder for creating a <a href=\"ChatClient.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient</code></a>.",
+      "translation": "一个可变构建器，用于创建<a href=\"ChatClient.html\" title=\"org.springframework.ai.chat.client 中的接口\"><code>ChatClient</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Register one or more default tools that will be available to every request\nbuilt from this <a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient.Builder</code></a>.",
+      "translation": "注册一个或多个默认工具，这些工具将可供从此<a href=\"ChatClient.Builder.html\" title=\"org.springframework.ai.chat.client 中的接口\"><code>ChatClient.Builder</code></a>构建的所有请求使用。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if <code>tools</code> is <code>null</code>, contains\n<code>null</code> elements, or if a POJO argument has no\n<a href=\"../../tool/annotation/Tool.html\" title=\"annotation interface in org.springframework.ai.tool.annotation\"><code>Tool</code></a>-annotated methods",
+      "translation": "IllegalArgumentException - 如果 <code>tools</code> 为 <code>null</code>、包含 <code>null</code> 元素，或者 POJO 参数没有带有<a href=\"../../tool/annotation/Tool.html\" title=\"annotation interface in org.springframework.ai.tool.annotation\"><code>Tool</code></a>注解的方法时抛出此异常",
+      "count": 1
+    },
+    {
+      "source": "Any other object — treated as a <code>@Tool</code>-annotated POJO; a\n<a href=\"../../tool/ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a> is generated for each\n<a href=\"../../tool/annotation/Tool.html\" title=\"annotation interface in org.springframework.ai.tool.annotation\"><code>Tool</code></a>-annotated method it\ncontains.",
+      "translation": "任何其他对象——被视为带有 <code>@Tool</code> 注解的 POJO；对于其包含的每个带有 <a href=\"../../tool/annotation/Tool.html\" title=\"annotation interface in org.springframework.ai.tool.annotation\"><code>Tool</code></a> 注解的方法，都会生成一个 <a href=\"../../tool/ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "<code>tools</code> - tool objects to register; must not be <code>null</code> and must not\ncontain <code>null</code> elements",
+      "translation": "<code>tools</code> - 用于注册的工具对象；不能为 <code>null</code>，且不能包含 <code>null</code> 元素。",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"../../tool/ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a> — registered directly as a\ncallback.",
+      "translation": "<a href=\"../../tool/ToolCallback.html\" title=\"org.springframework.ai.tool 中的接口\"><code>ToolCallback</code></a>——直接注册为回调。",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"../../tool/ToolCallbackProvider.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallbackProvider</code></a> — registered\ndirectly as a provider; its callbacks are resolved lazily at request time.",
+      "translation": "<a href=\"../../tool/ToolCallbackProvider.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallbackProvider</code></a> — 直接注册为提供者；其回调在请求时懒式解析。",
+      "count": 1
+    },
+    {
+      "source": "<code>ToolCallback[]</code> or <code>ToolCallbackProvider[]</code> — every element of\nthe array is registered as above.",
+      "translation": "<code>ToolCallback[]</code> 或 <code>ToolCallbackProvider[]</code>——数组中的每个元素均按上述方式注册。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html\" title=\"class or interface in java.util\"><code>Collection</code></a> — iterated and each element is dispatched by\nthe same rules.",
+      "translation": "<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html\" title=\"java.util 中的类或接口\"><code>Collection</code></a>——对其进行迭代，且每个元素均按相同规则进行分发。",
+      "count": 1
+    },
+    {
+      "source": "Mark Pollack, Christian Tzolov, Josh Long, Arjen Poutsma, Thomas Vitale",
+      "translation": "Mark Pollack，Christian Tzolov，Josh Long，Arjen Poutsma，Thomas Vitale",
+      "count": 1
+    },
+    {
+      "source": "this builder for chaining",
+      "translation": "用于链式调用的构建器",
+      "count": 1
+    },
+    {
+      "source": "Register one or more default tools that will be available to every request\nbuilt from this <a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient.Builder</code></a>. The method accepts the same heterogeneous mix\nof tool representations as <a href=\"ChatClient.ChatClientRequestSpec.html#tools(java.lang.Object...)\"><code>ChatClient.ChatClientRequestSpec.tools(Object...)</code></a> and\napplies the same automatic dispatch rules:\n\n<ul>\n<li><a href=\"../../tool/ToolCallback.html\" title=\"org.springframework.ai.tool 中的接口\"><code>ToolCallback</code></a>——直接注册为回调。</li>\n<li><a href=\"../../tool/ToolCallbackProvider.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallbackProvider</code></a> — 直接注册为提供者；其回调在请求时懒式解析。</li>\n<li><code>ToolCallback[]</code> 或 <code>ToolCallbackProvider[]</code>——数组中的每个元素均按上述方式注册。</li>\n<li><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html\" title=\"java.util 中的类或接口\"><code>Collection</code></a>——对其进行迭代，且每个元素均按相同规则进行分发。</li>\n<li>任何其他对象——被视为带有 <code>@Tool</code> 注解的 POJO；对于其包含的每个带有 <a href=\"../../tool/annotation/Tool.html\" title=\"annotation interface in org.springframework.ai.tool.annotation\"><code>Tool</code></a> 注解的方法，都会生成一个 <a href=\"../../tool/ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a>。</li>\n</ul>",
+      "translation": "注册一个或多个默认工具，这些工具将可供从此<a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient.Builder</code></a>构建的每个请求使用。该方法接受与<a href=\"ChatClient.ChatClientRequestSpec.html#tools(java.lang.Object...)\"><code>ChatClient.ChatClientRequestSpec.tools(Object...)</code></a>相同的异构工具表示形式，并应用相同的自动分发规则：\n\n<ul>\n<li><a href=\"../../tool/ToolCallback.html\" title=\"org.springframework.ai.tool 中的接口\"><code>ToolCallback</code></a>——直接注册为回调。</li>\n<li><a href=\"../../tool/ToolCallbackProvider.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallbackProvider</code></a> — 直接注册为提供者；其回调在请求时懒式解析。</li>\n<li><code>ToolCallback[]</code> 或 <code>ToolCallbackProvider[]</code>——数组中的每个元素均按上述方式注册。</li>\n<li><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html\" title=\"java.util 中的类或接口\"><code>Collection</code></a>——对其进行迭代，且每个元素均按相同规则进行分发。</li>\n<li>任何其他对象——被视为带有 <code>@Tool</code> 注解的 POJO；对于其包含的每个带有 <a href=\"../../tool/annotation/Tool.html\" title=\"annotation interface in org.springframework.ai.tool.annotation\"><code>Tool</code></a> 注解的方法，都会生成一个 <a href=\"../../tool/ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a>。</li>\n</ul>",
+      "count": 1
+    }
+  ]
+}

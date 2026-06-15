@@ -1,0 +1,81 @@
+{
+  "created_at": "2026-06-15 07:36:34",
+  "updated_at": "2026-06-15 07:36:34",
+  "stats": {
+    "total_entries": 13,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 13,
+    "entries_with_hits": 13,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.0013
+  },
+  "items": [
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "The end offset of the video segment in seconds.",
+      "translation": "视频片段的结束偏移量（以秒为单位）。",
+      "count": 1
+    },
+    {
+      "source": "The Cloud Storage location of the video on which to perform the embedding.",
+      "translation": "要执行嵌入操作的视频的 Cloud Storage 位置。",
+      "count": 1
+    },
+    {
+      "source": "The interval of the video the embedding will be generated.",
+      "translation": "视频生成嵌入的时间间隔。",
+      "count": 1
+    },
+    {
+      "source": "The start offset of the video segment in seconds.",
+      "translation": "视频片段的起始偏移量（以秒为单位）。",
+      "count": 1
+    },
+    {
+      "source": "Video bytes to be encoded in base64 string.",
+      "translation": "待以 Base64 字符串形式编码的视频字节。",
+      "count": 1
+    },
+    {
+      "source": "Video bytes to be encoded in base64 string. One of videoBytes or gcsUri.",
+      "translation": "待以 Base64 字符串编码的视频字节。需提供 videoBytes 或 gcsUri 其中之一。",
+      "count": 1
+    },
+    {
+      "source": "The Cloud Storage location of the video on which to perform the embedding. One\nof videoBytes or gcsUri.",
+      "translation": "视频嵌入操作的目标视频所在的云存储位置。为 videoBytes 或 gcsUri 之一。",
+      "count": 1
+    },
+    {
+      "source": "The start offset of the video segment in seconds. If not specified, it's\ncalculated with max(0, endOffsetSec - 120).",
+      "translation": "视频片段起始偏移量（秒）。如果未指定，则计算为 max(0, endOffsetSec - 120)。",
+      "count": 1
+    },
+    {
+      "source": "The end offset of the video segment in seconds. If not specified, it's\ncalculated with min(video length, startOffSec + 120). If both startOffSec and\nendOffSec are specified, endOffsetSec is adjusted to min(startOffsetSec+120,\nendOffsetSec).",
+      "translation": "视频片段的结束偏移量（秒）。如果未指定，则计算为 min(视频长度，startOffSec + 120)。如果同时指定了 startOffSec 和 endOffSec，则 endOffsetSec 会被调整为 min(startOffsetSec+120, endOffsetSec)。",
+      "count": 1
+    },
+    {
+      "source": "The interval of the video the embedding will be generated. The minimum value\nfor interval_sec is 4. If the interval is less than 4, an InvalidArgumentError\nis returned. There are no limitations on the maximum value of the interval.\nHowever, if the interval is larger than min(video length, 120s), it impacts the\nquality of the generated embeddings. Default value: 16.",
+      "translation": "视频生成嵌入的时间间隔。interval_sec 的最小值为 4。如果间隔小于 4，将返回 InvalidArgumentError 错误。对间隔的最大值没有限制。然而，如果间隔大于 min(视频长度，120 秒)，则会影响生成嵌入的质量。默认值：16。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Ilayaperumal Gopinathan",
+      "translation": "克里斯蒂安·茨洛夫，伊拉亚佩鲁马勒·戈皮纳坦",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    }
+  ]
+}

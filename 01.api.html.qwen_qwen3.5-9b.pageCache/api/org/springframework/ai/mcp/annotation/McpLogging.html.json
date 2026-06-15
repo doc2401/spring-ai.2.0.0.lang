@@ -1,0 +1,86 @@
+{
+  "created_at": "2026-06-15 08:21:09",
+  "updated_at": "2026-06-15 08:21:09",
+  "stats": {
+    "total_entries": 14,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 14,
+    "entries_with_hits": 14,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.0014
+  },
+  "items": [
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "For synchronous consumers, the method must have a void return type. For asynchronous\n consumers, the method can have either a void return type or return <code>Mono&lt;Void&gt;</code>.",
+      "translation": "对于同步消费者，该方法必须具有 void 返回类型。对于异步消费者，该方法可以具有 void 返回类型，或者返回 `<code>Mono&lt;Void&gt;</code>`。",
+      "count": 1
+    },
+    {
+      "source": "Methods annotated with this annotation can be used to consume logging messages from MCP\n servers. The methods can have one of two signatures:",
+      "translation": "带有此注解的方法可用于从 MCP 服务器消费日志消息。这些方法的签名可以是以下两种之一：",
+      "count": 1
+    },
+    {
+      "source": "Example usage:",
+      "translation": "使用示例：",
+      "count": 1
+    },
+    {
+      "source": "Used as connection or clients identifier to select the MCP clients, the logging\nconsumer is associated with.",
+      "translation": "用作连接或客户端标识符以选择与日志消费者关联的 MCP 客户端。",
+      "count": 1
+    },
+    {
+      "source": "Used as connection or clients identifier to select the MCP clients, the logging\nconsumer is associated with. At least one client identifier must be specified.",
+      "translation": "用作连接标识符或客户端标识符以选择与日志消费者关联的 MCP 客户端。必须至少指定一个客户端标识符。",
+      "count": 1
+    },
+    {
+      "source": "Three parameters of types <code>LoggingLevel</code>, <code>String</code> (logger), and\n <code>String</code> (data)",
+      "translation": "三个参数，类型分别为<code>LoggingLevel</code>、<code>String</code>（记录器）和<code>String</code>（数据）。",
+      "count": 1
+    },
+    {
+      "source": "A single parameter of type <code>LoggingMessageNotification</code>",
+      "translation": "类型为 `<code>LoggingMessageNotification</code>` 的单个参数",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "Required Element Summary",
+      "translation": "所需元素摘要",
+      "count": 1
+    },
+    {
+      "source": "Element Details",
+      "translation": "元素详情",
+      "count": 1
+    },
+    {
+      "source": "Annotation for methods that handle logging message notifications from MCP servers. This\n annotation is applicable only for MCP clients.",
+      "translation": "用于处理来自 MCP 服务器的日志消息通知的方法注解。此注解仅适用于 MCP 客户端。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n <li>类型为 `<code>LoggingMessageNotification</code>` 的单个参数</li><li>三个参数，类型分别为<code>LoggingLevel</code>、<code>String</code>（记录器）和<code>String</code>（数据）。</li></ul>",
+      "translation": "<ul>\n <li>单个参数，类型为 `<code>LoggingMessageNotification`</code></li><li>三个参数，类型分别为 `<code>LoggingLevel`</code>、`<code>String`</code>（记录器）和 `<code>String`</code>（数据）。</li></ul>",
+      "count": 1
+    },
+    {
+      "source": "<pre><code> &amp;#64;McpLogging\n public void handleLoggingMessage(LoggingMessageNotification notification) {\n     // Handle the notification\n }\n\n\n\n&amp;#64;McpLogging\n public void handleLoggingMessageWithParams(LoggingLevel level, String logger, String data) {\n     // Handle the logging message\n }\n </code></pre>",
+      "translation": "<pre><code>&amp;#64;McpLogging\npublic void handleLoggingMessage(LoggingMessageNotification 通知) {\n    // 处理通知\n}\n\n\n\n&amp;#64;McpLogging\npublic void handleLoggingMessageWithParams(日志级别 level, String logger, String data) {\n    // 处理日志消息\n}\n</code></pre>",
+      "count": 1
+    }
+  ]
+}

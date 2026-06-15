@@ -1,0 +1,286 @@
+{
+  "created_at": "2026-06-15 07:58:18",
+  "updated_at": "2026-06-15 07:58:18",
+  "stats": {
+    "total_entries": 54,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 60,
+    "entries_with_hits": 54,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1111111111111112,
+    "usage_percentage": 0.005399999999999999
+  },
+  "items": [
+    {
+      "source": "ToolCallbacks to be registered with the ChatModel.",
+      "translation": "需与 ChatModel 注册的 ToolCallbacks。",
+      "count": 3
+    },
+    {
+      "source": "as of 2.0.0, in favor of <a href=\"../../chat/client/ChatClient.Builder.html#defaultTools(java.lang.Object...)\"><code>ChatClient.Builder.defaultTools(Object...)</code></a>.",
+      "translation": "自 2.0.0 版本起，推荐使用<a href=\"../../chat/client/ChatClient.Builder.html#defaultTools(java.lang.Object...)\"><code>ChatClient.Builder.defaultTools(Object...)</code></a>。",
+      "count": 2
+    },
+    {
+      "source": "as of 2.0.0, in favor of <a href=\"../../chat/client/ChatClient.ChatClientRequestSpec.html#tools(java.lang.Object...)\"><code>ChatClient.ChatClientRequestSpec.tools(Object...)</code></a>.",
+      "translation": "自 2.0.0 版本起，推荐使用<a href=\"../../chat/client/ChatClient.ChatClientRequestSpec.html#tools(java.lang.Object...)\"><code>ChatClient.ChatClientRequestSpec.tools(Object...)</code></a>。",
+      "count": 2
+    },
+    {
+      "source": "Converts a Spring AI tool callback to an MCP asynchronous tool specification.",
+      "translation": "将 Spring AI 工具回调转换为 MCP 异步工具规范。",
+      "count": 2
+    },
+    {
+      "source": "Converts a Spring AI ToolCallback to an MCP SyncToolSpecification.",
+      "translation": "将 Spring AI 的 ToolCallback 转换为 MCP SyncToolSpecification。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "as of 2.0.0, in favor of \n<details class=\"invalid-tag\">\n<summary>invalid reference</summary>\n<pre><code>#defaultTools(Consumer)</code></pre>\n</details>\n.",
+      "translation": "自 2.0.0 版本起，推荐使用  \n<details class=\"invalid-tag\">\n<summary>无效引用</summary>\n<pre><code>#defaultTools(Consumer)</code></pre>\n</details>\n。",
+      "count": 1
+    },
+    {
+      "source": "as of 2.0.0, in favor of <a href=\"../../chat/client/DefaultChatClientBuilder.html#defaultTools(java.lang.Object...)\"><code>DefaultChatClientBuilder.defaultTools(Object...)</code></a>.",
+      "translation": "自 2.0.0 版本起，推荐使用<a href=\"../../chat/client/DefaultChatClientBuilder.html#defaultTools(java.lang.Object...)\"><code>DefaultChatClientBuilder.defaultTools(Object...)</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Adapts MCP tools to Spring AI's <a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a> interface with asynchronous\nexecution.",
+      "translation": "将 MCP 工具适配为支持异步执行的 Spring AI<a href=\"../ToolCallback.html\" title=\"org.springframework.ai.tool 中的接口\"><code>ToolCallback</code></a>接口。",
+      "count": 1
+    },
+    {
+      "source": "Synchronous adapter bridging MCP tools to Spring AI's <a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a> interface.",
+      "translation": "同步适配器桥接 MCP 工具与 Spring AI 的<a href=\"../ToolCallback.html\" title=\"org.springframework.ai.tool 中的接口\"><code>ToolCallback</code></a>接口。",
+      "count": 1
+    },
+    {
+      "source": "This class wraps an existing <a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a> and modifies its input schema to\ninclude additional fields defined in the provided Record type.",
+      "translation": "该类包装了现有的<a href=\"../ToolCallback.html\" title=\"org.springframework.ai.tool 中的接口\"><code>ToolCallback</code></a>，并修改其输入模式以包含在提供的记录类型中定义的附加字段。",
+      "count": 1
+    },
+    {
+      "source": "A <a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a> implementation to invoke functions as tools.",
+      "translation": "一个<a href=\"../ToolCallback.html\" title=\"org.springframework.ai.tool 中的接口\"><code>ToolCallback</code></a>实现，用于将函数作为工具调用。",
+      "count": 1
+    },
+    {
+      "source": "A <a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a> implementation to invoke methods as tools.",
+      "translation": "一个<a href=\"../ToolCallback.html\" title=\"org.springframework.ai.tool 中的接口\"><code>ToolCallback</code></a>实现，用于将方法作为工具调用。",
+      "count": 1
+    },
+    {
+      "source": "Resolve the <a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a> for the given tool name.",
+      "translation": "解析给定工具名称的<a href=\"../ToolCallback.html\" title=\"org.springframework.ai.tool 中的接口\"><code>ToolCallback</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI integration with Anthropic's Claude models using the official\n<a href=\"https://github.com/anthropics/anthropic-sdk-java\">Anthropic Java SDK</a>.",
+      "translation": "使用官方 <a href=\"https://github.com/anthropics/anthropic-sdk-java\">Anthropic Java SDK</a> 将 Spring AI 与 Anthropic 的 Claude 模型集成。",
+      "count": 1
+    },
+    {
+      "source": "Chat client API.",
+      "translation": "聊天客户端 API。",
+      "count": 1
+    },
+    {
+      "source": "Core support for Model Context Protocol (MCP) integration in Spring AI.",
+      "translation": "Spring AI 中模型上下文协议（MCP）集成的核心支持。",
+      "count": 1
+    },
+    {
+      "source": "Test support classes for ChatClient advisor integration tests.",
+      "translation": "ChatClient 顾问集成测试的测试支持类。",
+      "count": 1
+    },
+    {
+      "source": "Discovers and returns all available tools from configured MCP servers.",
+      "translation": "发现并返回所有已配置的 MCP 服务器中可用的工具。",
+      "count": 1
+    },
+    {
+      "source": "Creates a reactive stream of tool callbacks from multiple MCP clients.",
+      "translation": "从多个 MCP 客户端创建工具回调的响应式流。",
+      "count": 1
+    },
+    {
+      "source": "Convenience method to get tool callbacks from multiple asynchronous MCP clients.",
+      "translation": "从多个异步 MCP 客户端获取工具回调的便捷方法。",
+      "count": 1
+    },
+    {
+      "source": "Gets tool callbacks from a list of asynchronous MCP clients.",
+      "translation": "从异步 MCP 客户端列表中获取工具回调。",
+      "count": 1
+    },
+    {
+      "source": "Convenience method to get tool callbacks from multiple synchronous MCP clients.",
+      "translation": "从多个同步 MCP 客户端获取工具回调的便捷方法。",
+      "count": 1
+    },
+    {
+      "source": "Gets tool callbacks from a list of synchronous MCP clients.",
+      "translation": "从同步 MCP 客户端列表中获取工具回调。",
+      "count": 1
+    },
+    {
+      "source": "Creates tool callbacks from multiple MCP clients.",
+      "translation": "从多个 MCP 客户端创建工具回调。",
+      "count": 1
+    },
+    {
+      "source": "Convenience method to convert a variable number of tool callbacks to MCP\nasynchronous tool specification.",
+      "translation": "将可变数量的工具回调转换为 MCP 异步工具规范的便捷方法。",
+      "count": 1
+    },
+    {
+      "source": "Converts a Spring AI ToolCallback to an MCP StatelessSyncToolSpecification.",
+      "translation": "将 Spring AI 的 ToolCallback 转换为无状态同步 MCP 工具规范。",
+      "count": 1
+    },
+    {
+      "source": "Convenience method to convert a variable number of tool callbacks to MCP\nsynchronous tool specification.",
+      "translation": "将可变数量的工具回调转换为 MCP 同步工具规范的便捷方法。",
+      "count": 1
+    },
+    {
+      "source": "Converts a list of Spring AI tool callbacks to MCP asynchronous tool specification.",
+      "translation": "将一组 Spring AI 工具回调转换为 MCP 异步工具规范。",
+      "count": 1
+    },
+    {
+      "source": "Converts a list of Spring AI tool callbacks to MCP synchronous tool specification.",
+      "translation": "将一组 Spring AI 工具回调转换为 MCP 同步工具规范。",
+      "count": 1
+    },
+    {
+      "source": "Creates a weather tool callback with returnDirect=true.",
+      "translation": "创建一个返回直接为 true 的天气工具回调。",
+      "count": 1
+    },
+    {
+      "source": "Creates the weather tool callback used in tests.",
+      "translation": "创建测试中使用的天气工具回调。",
+      "count": 1
+    },
+    {
+      "source": "Returns the array of function callbacks held by this provider.",
+      "translation": "返回此提供者持有的函数回调数组。",
+      "count": 1
+    },
+    {
+      "source": "Constructs a new StaticToolCallbackProvider with the specified array of function\ncallbacks.",
+      "translation": "使用指定的函数回调数组构建一个新的 StaticToolCallbackProvider。",
+      "count": 1
+    },
+    {
+      "source": "Constructs a new StaticToolCallbackProvider with the specified list of function\ncallbacks.",
+      "translation": "使用指定的函数回调列表构建一个新的 StaticToolCallbackProvider。",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> in <a href=\"../../anthropic/package-summary.html\">org.springframework.ai.anthropic</a>",
+      "translation": "<a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> 在 <a href=\"../../anthropic/package-summary.html\">org.springframework.ai.anthropic</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> in <a href=\"../../bedrock/converse/package-summary.html\">org.springframework.ai.bedrock.converse</a>",
+      "translation": "<a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> 在 <a href=\"../../bedrock/converse/package-summary.html\">org.springframework.ai.bedrock.converse</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> in <a href=\"../../chat/client/package-summary.html\">org.springframework.ai.chat.client</a>",
+      "translation": "<a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> 在 <a href=\"../../chat/client/package-summary.html\">org.springframework.ai.chat.client</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> in <a href=\"../../deepseek/package-summary.html\">org.springframework.ai.deepseek</a>",
+      "translation": "<a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> 在 <a href=\"../../deepseek/package-summary.html\">org.springframework.ai.deepseek</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> in <a href=\"../../google/genai/package-summary.html\">org.springframework.ai.google.genai</a>",
+      "translation": "<a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> 在 <a href=\"../../google/genai/package-summary.html\">org.springframework.ai.google.genai</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> in <a href=\"../../mcp/package-summary.html\">org.springframework.ai.mcp</a>",
+      "translation": "<a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> 在 <a href=\"../../mcp/package-summary.html\">org.springframework.ai.mcp</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> in <a href=\"../../mcp/server/common/autoconfigure/package-summary.html\">org.springframework.ai.mcp.server.common.autoconfigure</a>",
+      "translation": "<a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> 在 <a href=\"../../mcp/server/common/autoconfigure/package-summary.html\">org.springframework.ai.mcp.server.common.autoconfigure</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> in <a href=\"../../mistralai/package-summary.html\">org.springframework.ai.mistralai</a>",
+      "translation": "<a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> 在 <a href=\"../../mistralai/package-summary.html\">org.springframework.ai.mistralai</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> in <a href=\"../../model/tool/package-summary.html\">org.springframework.ai.model.tool</a>",
+      "translation": "<a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> 在 <a href=\"../../model/tool/package-summary.html\">org.springframework.ai.model.tool</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> in <a href=\"../../ollama/api/package-summary.html\">org.springframework.ai.ollama.api</a>",
+      "translation": "<a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> 在 <a href=\"../../ollama/api/package-summary.html\">org.springframework.ai.ollama.api</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> in <a href=\"../../openai/package-summary.html\">org.springframework.ai.openai</a>",
+      "translation": "<a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> 在 <a href=\"../../openai/package-summary.html\">org.springframework.ai.openai</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> in <a href=\"../../support/package-summary.html\">org.springframework.ai.support</a>",
+      "translation": "<a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> 在 <a href=\"../../support/package-summary.html\">org.springframework.ai.support</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> in <a href=\"../../test/chat/client/advisor/package-summary.html\">org.springframework.ai.test.chat.client.advisor</a>",
+      "translation": "<a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> 在 <a href=\"../../test/chat/client/advisor/package-summary.html\">org.springframework.ai.test.chat.client.advisor</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> in <a href=\"../package-summary.html\">org.springframework.ai.tool</a>",
+      "translation": "<a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> 在 <a href=\"../package-summary.html\">org.springframework.ai.tool</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> in <a href=\"../augment/package-summary.html\">org.springframework.ai.tool.augment</a>",
+      "translation": "<a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> 在 <a href=\"../augment/package-summary.html\">org.springframework.ai.tool.augment</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> in <a href=\"../function/package-summary.html\">org.springframework.ai.tool.function</a>",
+      "translation": "<a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> 在 <a href=\"../function/package-summary.html\">org.springframework.ai.tool.function</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> in <a href=\"../method/package-summary.html\">org.springframework.ai.tool.method</a>",
+      "translation": "<a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> 在 <a href=\"../method/package-summary.html\">org.springframework.ai.tool.method</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> in <a href=\"../resolution/package-summary.html\">org.springframework.ai.tool.resolution</a>",
+      "translation": "<a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> 在 <a href=\"../resolution/package-summary.html\">org.springframework.ai.tool.resolution</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> in <a href=\"../support/package-summary.html\">org.springframework.ai.tool.support</a>",
+      "translation": "<a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a> 在 <a href=\"../support/package-summary.html\">org.springframework.ai.tool.support</a> 中的用途",
+      "count": 1
+    }
+  ]
+}

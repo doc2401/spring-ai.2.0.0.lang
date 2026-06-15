@@ -1,0 +1,121 @@
+{
+  "created_at": "2026-06-15 07:27:29",
+  "updated_at": "2026-06-15 07:27:29",
+  "stats": {
+    "total_entries": 21,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 26,
+    "entries_with_hits": 21,
+    "entries_without_hits": 0,
+    "hit_rate": 1.2380952380952381,
+    "usage_percentage": 0.0021
+  },
+  "items": [
+    {
+      "source": "Creates a cleaner with default thinking tag patterns.",
+      "translation": "创建一个带有默认思维标签模式的清理器。",
+      "count": 2
+    },
+    {
+      "source": "Creates a cleaner with custom pattern strings.",
+      "translation": "使用自定义模式字符串创建清理器。",
+      "count": 2
+    },
+    {
+      "source": "Creates a cleaner with custom patterns.",
+      "translation": "创建具有自定义图案的清洁器。",
+      "count": 2
+    },
+    {
+      "source": "Creates a builder for constructing a thinking tag cleaner.",
+      "translation": "创建一个用于构建思维标签清理器的构建器。",
+      "count": 2
+    },
+    {
+      "source": "Clean the given text by removing unwanted patterns, tags, or formatting.",
+      "translation": "请提供需要清理的文本内容，我将按照您的要求去除不需要的模式、标签或格式。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "<b>Performance:</b> This cleaner includes fast-path optimization. For responses without\nthinking tags (most models), it performs a quick character check and returns\nimmediately, making it safe to use as a default cleaner even for non-thinking models.",
+      "translation": "<b>性能：</b> 此清理器包含快速路径优化。对于不包含思考标签的响应（适用于大多数模型），它会执行快速的字符检查并立即返回，因此即使作为非思考模型的默认清理器使用也是安全的。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"ResponseTextCleaner.html#clean(java.lang.String)\">ResponseTextCleaner</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"ResponseTextCleaner.html#clean(java.lang.String)\">ResponseTextCleaner</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Builder for <a href=\"ThinkingTagCleaner.html\" title=\"class in org.springframework.ai.converter\"><code>ThinkingTagCleaner</code></a>.",
+      "translation": "<thinking>用户要求我翻译一段技术文档内容，需要遵循以下规则：\n1. 只输出翻译内容，不添加任何解释或额外内容\n2. 保持与原文相同的段落数和格式\n3. 处理HTML标签时要保持流畅性\n4. 不应翻译的内容（如专有名词、代码等）保持原文\n\n这段文本是一个Java/Spring AI的技术文档片段，包含：\n- HTML链接标签\n- 代码标记 <code>ThinkingTagCleaner</code>\n- 类名和包名\n\n我需要保持HTML结构不变，只翻译文字部分。\"Builder for\"应该翻译为\"构建器用于\"或更自然的\"ThinkingTagCleaner 的构建器\"。\n\n让我组织翻译：\n- \"Builder for\" → \"ThinkingTagCleaner 的构建器\"\n- 保持 <a>标签和<code>标签不变\n- 包名 org.springframework.ai.converter 保持原文\n</thinking>\n\n<a href=\"ThinkingTagCleaner.html\" title=\"org.springframework.ai.converter 中的类\"><code>ThinkingTagCleaner</code></a>的构建器。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ResponseTextCleaner.html#clean(java.lang.String)\">clean</a></code> in interface <code><a href=\"ResponseTextCleaner.html\" title=\"interface in org.springframework.ai.converter\">ResponseTextCleaner</a></code>",
+      "translation": "<code><a href=\"ResponseTextCleaner.html#clean(java.lang.String)\">clean</a></code> 接口 <code><a href=\"ResponseTextCleaner.html\" title=\"org.springframework.ai.converter 中的接口\">ResponseTextCleaner</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "Amazon Nova: <code>&lt;thinking&gt;...&lt;/thinking&gt;</code>",
+      "translation": "亚马逊 Nova：<code>&lt;thinking&gt;...&lt;/thinking&gt;</code>",
+      "count": 1
+    },
+    {
+      "source": "Qwen models: <code>&lt;think&gt;...&lt;/think&gt;</code>",
+      "translation": "Qwen 模型：<code>&lt;think&gt;...&lt;/think&gt;</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>patterns</code> - the list of regex patterns to match thinking tags",
+      "translation": "<patterns> - 用于匹配思考标签的正则表达式模式列表",
+      "count": 1
+    },
+    {
+      "source": "<code>patternStrings</code> - the list of regex pattern strings to match thinking tags",
+      "translation": "<code>patternStrings</code> - 用于匹配思维标签的正则表达式字符串列表。",
+      "count": 1
+    },
+    {
+      "source": "<code>text</code> - the raw text from LLM response",
+      "translation": "<code>text</code> - 来自 LLM 响应的原始文本",
+      "count": 1
+    },
+    {
+      "source": "DeepSeek models: various thinking patterns",
+      "translation": "DeepSeek 模型：多种思维模式",
+      "count": 1
+    },
+    {
+      "source": "Claude models: thinking blocks in different formats",
+      "translation": "Claude 模型：不同格式的推理块",
+      "count": 1
+    },
+    {
+      "source": "the cleaned text ready for parsing",
+      "translation": "已清理完毕，准备解析。",
+      "count": 1
+    },
+    {
+      "source": "a new builder instance",
+      "translation": "一个新的构建器实例",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "A <a href=\"ResponseTextCleaner.html\" title=\"interface in org.springframework.ai.converter\"><code>ResponseTextCleaner</code></a> that removes thinking tags from LLM responses. This\ncleaner supports multiple tag patterns to handle different AI models:\n<ul>\n<li>亚马逊 Nova：<code>&lt;thinking&gt;...&lt;/thinking&gt;</code></li>\n<li>Qwen 模型：<code>&lt;think&gt;...&lt;/think&gt;</code></li>\n<li>DeepSeek 模型：多种思维模式</li>\n<li>Claude 模型：不同格式的推理块</li>\n</ul>",
+      "translation": "一个 <a href=\"ResponseTextCleaner.html\" title=\"interface in org.springframework.ai.converter\"><code>ResponseTextCleaner</code></a>，用于从 LLM 响应中移除思考标签。该清理器支持多种标签模式，以适配不同的 AI 模型：\n<ul>\n<li>亚马逊 Nova：<code>&lt;thinking&gt;...&lt;/thinking&gt;</code></li>\n<li>Qwen 模型：<code>&lt;think&gt;...&lt;/think&gt;</code></li>\n<li>DeepSeek 模型：多种思维模式</li>\n<li>Claude 模型：不同格式的推理块</li>\n</ul>",
+      "count": 1
+    }
+  ]
+}

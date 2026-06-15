@@ -1,0 +1,141 @@
+{
+  "created_at": "2026-06-15 08:41:13",
+  "updated_at": "2026-06-15 08:41:13",
+  "stats": {
+    "total_entries": 25,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 31,
+    "entries_with_hits": 25,
+    "entries_without_hits": 0,
+    "hit_rate": 1.24,
+    "usage_percentage": 0.0025
+  },
+  "items": [
+    {
+      "source": "Create a new ElevenLabs Voices API client.",
+      "translation": "创建一个新的 ElevenLabs 语音 API 客户端。",
+      "count": 4
+    },
+    {
+      "source": "Returns metadata about a specific voice.",
+      "translation": "返回有关特定语音的元数据。",
+      "count": 2
+    },
+    {
+      "source": "Retrieves a list of all available voices from the ElevenLabs API.",
+      "translation": "从 ElevenLabs API 获取所有可用声音的列表。",
+      "count": 2
+    },
+    {
+      "source": "<code>ResponseEntity</code> containing the <a href=\"ElevenLabsVoicesApi.VoiceSettings.html\" title=\"class in org.springframework.ai.elevenlabs.api\"><code>ElevenLabsVoicesApi.VoiceSettings</code></a> record.",
+      "translation": "包含 <a href=\"ElevenLabsVoicesApi.VoiceSettings.html\" title=\"类 org.springframework.ai.elevenlabs.api\"><code>ElevenLabsVoicesApi.VoiceSettings</code></a> 记录的 <code>ResponseEntity</code>。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Builder to construct <a href=\"ElevenLabsVoicesApi.html\" title=\"class in org.springframework.ai.elevenlabs.api\"><code>ElevenLabsVoicesApi</code></a> instance.",
+      "translation": "构建器用于创建 <a href=\"ElevenLabsVoicesApi.html\" title=\"org.springframework.ai.elevenlabs.api 中的类\"><code>ElevenLabsVoicesApi</code></a> 实例。",
+      "count": 1
+    },
+    {
+      "source": "Client for the ElevenLabs Voices API.",
+      "translation": "ElevenLabs 语音 API 的客户端。",
+      "count": 1
+    },
+    {
+      "source": "Represents a single voice from the ElevenLabs API.",
+      "translation": "代表来自 ElevenLabs API 的单个声音。",
+      "count": 1
+    },
+    {
+      "source": "Represents the response from the /v1/voices endpoint.",
+      "translation": "代表来自/v1/voices 端点的响应。",
+      "count": 1
+    },
+    {
+      "source": "Gets the default settings for voices.",
+      "translation": "获取语音的默认设置。",
+      "count": 1
+    },
+    {
+      "source": "Returns the settings for a specific voice.",
+      "translation": "返回特定语音的设置。",
+      "count": 1
+    },
+    {
+      "source": "Gets the default settings for voices. \"similarity_boost\" corresponds to ”Clarity +\nSimilarity Enhancement” in the web app and \"stability\" corresponds to \"Stability\"\nslider in the web app.",
+      "translation": "获取语音的默认设置。其中，\"similarity_boost\" 对应网页应用中的“清晰度 + 相似度增强”，而 \"stability\" 则对应网页应用中的“稳定性”滑块。",
+      "count": 1
+    },
+    {
+      "source": "Returns the settings for a specific voice. \"similarity_boost\" corresponds to\n\"Clarity + Similarity Enhancement\" in the web app and \"stability\" corresponds to\nthe \"Stability\" slider in the web app.",
+      "translation": "返回特定语音的设置。\"similarity_boost\"对应网页应用中的“清晰度 + 相似性增强”，而\"stability\"对应网页应用中的“稳定性”滑块。",
+      "count": 1
+    },
+    {
+      "source": "<code>ResponseEntity</code> containing the <a href=\"ElevenLabsVoicesApi.Voice.html\" title=\"class in org.springframework.ai.elevenlabs.api\"><code>ElevenLabsVoicesApi.Voice</code></a> record.",
+      "translation": "包含 <a href=\"ElevenLabsVoicesApi.Voice.html\" title=\"class in org.springframework.ai.elevenlabs.api\"><code>ElevenLabsVoicesApi.Voice</code></a> 记录的 <code>ResponseEntity</code>。",
+      "count": 1
+    },
+    {
+      "source": "<code>baseUrl</code> - The base URL for the ElevenLabs API.",
+      "translation": "<code>baseUrl</code> - ElevenLabs API 的基础 URL。",
+      "count": 1
+    },
+    {
+      "source": "<code>apiKey</code> - Your ElevenLabs API key.",
+      "translation": "<code>apiKey</code> - 您的 ElevenLabs API 密钥。",
+      "count": 1
+    },
+    {
+      "source": "<code>headers</code> - the http headers to use.",
+      "translation": "<code>headers</code> - 要使用的 HTTP 标头。",
+      "count": 1
+    },
+    {
+      "source": "<code>restClientBuilder</code> - A builder for the Spring RestClient.",
+      "translation": "<code>restClientBuilder</code> - Spring RestClient 的构建器。",
+      "count": 1
+    },
+    {
+      "source": "<code>responseErrorHandler</code> - A custom error handler for API responses.",
+      "translation": "<code>responseErrorHandler</code> - 用于处理 API 响应的自定义错误处理器。",
+      "count": 1
+    },
+    {
+      "source": "<code>restClient</code> - Spring RestClient instance.",
+      "translation": "<code>restClient</code> - Spring RestClient 实例。",
+      "count": 1
+    },
+    {
+      "source": "<code>voiceId</code> - The ID of the voice to get settings for. Required.",
+      "translation": "<code>voiceId</code> - 要获取其设置的语音的 ID。必需。",
+      "count": 1
+    },
+    {
+      "source": "<code>voiceId</code> - ID of the voice to be used. You can use the Get voices endpoint list\nall the available voices. Required.",
+      "translation": "<code>voiceId</code> - 要使用的语音的 ID。您可以使用获取语音端点列出所有可用语音。必需。",
+      "count": 1
+    },
+    {
+      "source": "Alexandros Pappas",
+      "translation": "亚历山德罗斯·帕帕斯",
+      "count": 1
+    },
+    {
+      "source": "A ResponseEntity containing a Voices object, which contains the list of\nvoices.",
+      "translation": "包含 Voices 对象的 ResponseEntity，该对象包含语音列表。",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    }
+  ]
+}

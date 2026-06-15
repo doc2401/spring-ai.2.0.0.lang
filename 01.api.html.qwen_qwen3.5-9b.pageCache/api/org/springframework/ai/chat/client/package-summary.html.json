@@ -1,0 +1,111 @@
+{
+  "created_at": "2026-06-15 08:49:43",
+  "updated_at": "2026-06-15 08:49:43",
+  "stats": {
+    "total_entries": 19,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 19,
+    "entries_with_hits": 19,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.0019000000000000002
+  },
+  "items": [
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Represents a request processed by a <a href=\"ChatClient.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient</code></a> that ultimately is used to build\na <a href=\"../prompt/Prompt.html\" title=\"class in org.springframework.ai.chat.prompt\"><code>Prompt</code></a> to be sent to an AI model.",
+      "translation": "表示由<a href=\"ChatClient.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient</code></a>处理并最终用于构建要发送给 AI 模型的<a href=\"../prompt/Prompt.html\" title=\"class in org.springframework.ai.chat.prompt\"><code>Prompt</code></a>的请求。",
+      "count": 1
+    },
+    {
+      "source": "The default implementation of <a href=\"ChatClient.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient</code></a> as created by the\n<a href=\"ChatClient.Builder.html#build()\"><code>ChatClient.Builder.build()</code></a> } method.",
+      "translation": "由 <a href=\"ChatClient.Builder.html#build()\"><code>ChatClient.Builder.build()</code></a> 方法创建的 <a href=\"ChatClient.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient</code></a> 的默认实现。",
+      "count": 1
+    },
+    {
+      "source": "in favor of <a href=\"ChatClientBuilderCustomizer.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClientBuilderCustomizer</code></a>",
+      "translation": "支持<a href=\"ChatClientBuilderCustomizer.html\" title=\"org.springframework.ai.chat.client 中的接口\"><code>ChatClientBuilderCustomizer</code></a>",
+      "count": 1
+    },
+    {
+      "source": "A mutable builder for creating a <a href=\"ChatClient.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient</code></a>.",
+      "translation": "一个可变构建器，用于创建<a href=\"ChatClient.html\" title=\"org.springframework.ai.chat.client 中的接口\"><code>ChatClient</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Common attributes used in <a href=\"ChatClient.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient</code></a> context.",
+      "translation": "<a href=\"ChatClient.html\" title=\"org.springframework.ai.chat.client 中的接口\"><code>ChatClient</code></a> 上下文中常用的属性。",
+      "count": 1
+    },
+    {
+      "source": "Callback interface that can be used to customize a <a href=\"ChatClient.Builder.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient.Builder</code></a>.",
+      "translation": "可用作自定义<a href=\"ChatClient.Builder.html\" title=\"org.springframework.ai.chat.client 中的接口\"><code>ChatClient.Builder</code></a>的回调接口。",
+      "count": 1
+    },
+    {
+      "source": "Represents a response returned by a <a href=\"ChatClient.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient</code></a>.",
+      "translation": "表示由<a href=\"ChatClient.html\" title=\"org.springframework.ai.chat.client 中的接口\"><code>ChatClient</code></a>返回的响应。",
+      "count": 1
+    },
+    {
+      "source": "Default implementation of <a href=\"ChatClient.EntityParamSpec.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient.EntityParamSpec</code></a>.",
+      "translation": "<a href=\"ChatClient.EntityParamSpec.html\" title=\"org.springframework.ai.chat.client 中的接口\"><code>ChatClient.EntityParamSpec</code></a>的默认实现。",
+      "count": 1
+    },
+    {
+      "source": "Represents a <a href=\"../../model/Model.html\" title=\"interface in org.springframework.ai.model\"><code>Model</code></a> response that includes the\nentire response along with the specified response entity type.",
+      "translation": "表示包含整个响应以及指定响应实体类型的<a href=\"../../model/Model.html\" title=\"interface in org.springframework.ai.model\"><code>Model</code></a>响应。",
+      "count": 1
+    },
+    {
+      "source": "Configures optional behaviour for <code>entity(...)</code> calls.",
+      "translation": "配置 `entity(...)` 调用的可选行为。",
+      "count": 1
+    },
+    {
+      "source": "Chat client API.",
+      "translation": "聊天客户端 API。",
+      "count": 1
+    },
+    {
+      "source": "Provides classes for advising chat clients.",
+      "translation": "提供用于建议聊天客户端的类。",
+      "count": 1
+    },
+    {
+      "source": "Provides classes for observing chat data.",
+      "translation": "提供用于观察聊天数据的类。",
+      "count": 1
+    },
+    {
+      "source": "Configuration options for the ChatClient request.",
+      "translation": "ChatClient 请求的配置选项。",
+      "count": 1
+    },
+    {
+      "source": "Client to perform stateless requests to an AI Model, using a fluent API.",
+      "translation": "客户端需通过流式 API 向 AI 模型发起无状态请求。",
+      "count": 1
+    },
+    {
+      "source": "Specification for a prompt system.",
+      "translation": "提示系统规范。",
+      "count": 1
+    },
+    {
+      "source": "Helper that for streaming chat responses, aggregate the chat response messages into a\nsingle AssistantMessage.",
+      "translation": "用于流式传输聊天响应的辅助工具，将聊天响应消息聚合为单个 AssistantMessage。",
+      "count": 1
+    },
+    {
+      "source": "DefaultChatClientBuilder is a builder class for creating a ChatClient.",
+      "translation": "DefaultChatClientBuilder 是一个用于创建 ChatClient 的构建器类。",
+      "count": 1
+    }
+  ]
+}

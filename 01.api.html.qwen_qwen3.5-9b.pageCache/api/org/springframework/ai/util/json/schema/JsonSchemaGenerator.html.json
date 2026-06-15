@@ -1,0 +1,66 @@
+{
+  "created_at": "2026-06-15 07:57:10",
+  "updated_at": "2026-06-15 07:57:10",
+  "stats": {
+    "total_entries": 10,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 12,
+    "entries_with_hits": 10,
+    "entries_without_hits": 0,
+    "hit_rate": 1.2,
+    "usage_percentage": 0.001
+  },
+  "items": [
+    {
+      "source": "Generate a JSON Schema for a method's input parameters.",
+      "translation": "{\"type\": \"object\", \"properties\": {\"name\": {\"type\": \"string\"}, \"parameters\": {\"type\": \"array\", \"items\": {\"type\": \"object\", \"properties\": {\"name\": {\"type\": \"string\"}, \"type\": {\"type\": \"string\"}, \"required\": {\"type\": \"boolean\"}}, \"required\": [\"name\", \"type\"]}}}, \"required\": [\"name\", \"parameters\"]}",
+      "count": 2
+    },
+    {
+      "source": "Generate a JSON Schema for a class type.",
+      "translation": "{\"type\": \"object\", \"properties\": {\"name\": {\"type\": \"string\"}, \"id\": {\"type\": \"integer\"}}, \"required\": [\"name\"]}",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Metadata such as descriptions and required properties can be specified using one of the\nfollowing supported annotations:",
+      "translation": "可以使用以下支持的注解之一来指定元数据，例如描述和必需属性：",
+      "count": 1
+    },
+    {
+      "source": "If none of these annotations are present, the default behavior is to consider the\nproperty as required and not to include a description.",
+      "translation": "如果不存在这些注释，默认行为是将该属性视为必填项且不包含描述。",
+      "count": 1
+    },
+    {
+      "source": "Options for generating JSON Schemas.",
+      "translation": "生成 JSON Schema 的选项。",
+      "count": 1
+    },
+    {
+      "source": "Thomas Vitale, Sebastien Deleuze",
+      "translation": "托马斯·维塔莱，塞巴斯蒂安·德洛兹",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Utilities to generate JSON Schemas from Java types and method signatures. It's designed\nto work well in the context of tool calling and structured outputs, aiming at ensuring\nconsistency and robustness across different model providers.",
+      "translation": "用于从 Java 类型和方法签名生成 JSON Schema 的工具。该工具专为工具调用和结构化输出场景设计，旨在确保在不同模型提供商之间的一致性和鲁棒性。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li><code>@ToolParam(required = ..., description = ...)</code></li>\n<li><code>@JsonProperty(required = ...)</code></li>\n<li><code>@JsonClassDescription(...)</code></li>\n<li><code>@JsonPropertyDescription(...)</code></li>\n<li><code>@Schema(required = ..., description = ...)</code></li>\n<li><code>@Nullable</code></li>\n</ul>",
+      "translation": "<ul>\n<li><code>@ToolParam(required = ..., description = ...)</code></li>\n<li><code>@JsonProperty(required = ...)</code></li>\n<li><code>@JsonClassDescription(...)</code></li>\n<li><code>@JsonPropertyDescription(...)</code></li>\n<li><code>@Schema(required = ..., description = ...)</code></li>\n<li><code>@Nullable</code></li>\n</ul>",
+      "count": 1
+    }
+  ]
+}

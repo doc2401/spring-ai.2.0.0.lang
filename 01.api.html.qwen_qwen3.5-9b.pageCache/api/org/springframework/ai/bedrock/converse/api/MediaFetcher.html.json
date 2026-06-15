@@ -1,0 +1,131 @@
+{
+  "created_at": "2026-06-15 09:04:42",
+  "updated_at": "2026-06-15 09:04:42",
+  "stats": {
+    "total_entries": 23,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 26,
+    "entries_with_hits": 23,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1304347826086956,
+    "usage_percentage": 0.0023
+  },
+  "items": [
+    {
+      "source": "Creates a <code>MediaFetcher</code> with no host allowlist (blocklist-only protection).",
+      "translation": "创建一个不带主机允许列表的<code>MediaFetcher</code>（仅使用阻止列表进行保护）。",
+      "count": 2
+    },
+    {
+      "source": "Creates a <code>MediaFetcher</code> with an optional host allowlist.",
+      "translation": "创建一个可选的允许主机列表的<code>MediaFetcher</code>。",
+      "count": 2
+    },
+    {
+      "source": "Fetches the content at <code>uri</code> and returns it as a byte array.",
+      "translation": "从 `<code>uri</code>` 获取内容，并将其作为字节数组返回。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "When <code>allowedHosts</code> is non-empty, every fetch is checked against this set\nbefore the SSRF blocklist. A host is allowed when it either equals an entry exactly\n(case-insensitive) or matches a wildcard entry of the form <code>*.example.com</code>.",
+      "translation": "当 `<code>allowedHosts</code>` 非空时，在检查 SSRF 阻止列表之前，每个请求都会与该集合进行比对。若主机名与某条目完全匹配（不区分大小写），或匹配形式为 `<code>*.example.com</code>` 的通配符条目，则该主机被允许。",
+      "count": 1
+    },
+    {
+      "source": "Protection measures:",
+      "translation": "保护措施：",
+      "count": 1
+    },
+    {
+      "source": "The caller is responsible for validating the URI (protocol, host) before invoking\nthis method. This method enforces size limits and socket-level SSRF protection.",
+      "translation": "调用方有责任在调用此方法之前验证 URI（协议、主机）。此方法强制实施大小限制和基于套接字的 SSRF 防护。",
+      "count": 1
+    },
+    {
+      "source": "Maximum number of bytes fetched from a media URL.",
+      "translation": "从媒体 URL 获取的最大字节数。",
+      "count": 1
+    },
+    {
+      "source": "Maximum number of bytes fetched from a media URL. Protects against memory\nexhaustion when a user-supplied URL points to arbitrarily large content (40 MB).",
+      "translation": "从媒体 URL 获取的最大字节数。当用户提供的 URL 指向任意大小的内容时，可防止内存耗尽（40 MB）。",
+      "count": 1
+    },
+    {
+      "source": "Socket-level blocking via <code>MediaFetcher.SsrfBlockingPlainSocketFactory</code> and\n<code>MediaFetcher.SsrfBlockingSSLSocketFactory</code>: the resolved <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/InetAddress.html\" title=\"class or interface in java.net\"><code>InetAddress</code></a> is\nchecked at <code>connectSocket()</code> time — after DNS resolution — so raw IP literals\n(e.g. <code>127.0.0.1</code>, <code>169.254.169.254</code>) are blocked even when no DNS lookup\noccurs.",
+      "translation": "通过 `<code>MediaFetcher.SsrfBlockingPlainSocketFactory</code>` 和 `<code>MediaFetcher.SsrfBlockingSSLSocketFactory</code>` 实现的套接字级阻塞：在 `<code>connectSocket()</code>` 时检查解析后的 <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/InetAddress.html\" title=\"class or interface in java.net\"><code>InetAddress</code></a>——即在 DNS 解析之后——因此即使没有发生 DNS 查询，原始 IP 字面量（例如 `<code>127.0.0.1</code>`、`<code>169.254.169.254</code>`）也会被阻止。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/SecurityException.html\" title=\"class or interface in java.lang\">SecurityException</a></code> - if the response exceeds\n<a href=\"#DEFAULT_MAX_FETCH_SIZE_BYTES\"><code>DEFAULT_MAX_FETCH_SIZE_BYTES</code></a> or the host resolves to a blocked internal\naddress",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/SecurityException.html\" title=\"class or interface in java.lang\">SecurityException</a></code> - 如果响应超过\n<a href=\"#DEFAULT_MAX_FETCH_SIZE_BYTES\"><code>DEFAULT_MAX_FETCH_SIZE_BYTES</code></a>，或者主机解析为被阻止的内部地址时。",
+      "count": 1
+    },
+    {
+      "source": "DNS-level blocking via <code>MediaFetcher.SsrfSafeDnsResolver</code>: hostnames that resolve to\ninternal addresses are rejected early, before a connection attempt is made. This\nprovides a fast-fail path for hostname-based requests and limits DNS rebinding\nexposure.",
+      "translation": "通过 <code>MediaFetcher.SsrfSafeDnsResolver</code> 在 DNS 层面进行拦截：解析到内部地址的主机名会在发起连接之前被提前拒绝。这为主机名请求提供了快速失败路径，并限制了 DNS 重绑定攻击的暴露面。",
+      "count": 1
+    },
+    {
+      "source": "Response bodies are capped at <a href=\"#DEFAULT_MAX_FETCH_SIZE_BYTES\">41943040</a> bytes to\nprevent memory exhaustion.",
+      "translation": "响应体大小限制为<a href=\"#DEFAULT_MAX_FETCH_SIZE_BYTES\">41943040</a>字节，以防止内存耗尽。",
+      "count": 1
+    },
+    {
+      "source": "<code>allowedHosts</code> - set of permitted hostnames or wildcard patterns; an empty set\ndisables allowlist enforcement",
+      "translation": "<code>allowedHosts</code> - 允许的域名集合或通配符模式；空集表示禁用白名单强制检查。",
+      "count": 1
+    },
+    {
+      "source": "<code>uri</code> - the URI to fetch",
+      "translation": "<code>uri</code> - 要获取的 URI",
+      "count": 1
+    },
+    {
+      "source": "<code>org.springframework.web.client.RestClientException</code> - on HTTP or I/O errors",
+      "translation": "<code>org.springframework.web.client.RestClientException</code> - 在发生 HTTP 或 I/O 错误时抛出",
+      "count": 1
+    },
+    {
+      "source": "HTTP redirects are disabled to prevent redirect chains that lead to internal\naddresses.",
+      "translation": "已禁用 HTTP 重定向，以防止导致内部地址的重定向链。",
+      "count": 1
+    },
+    {
+      "source": "Connect and socket timeouts prevent slow-server resource exhaustion.",
+      "translation": "连接和套接字超时可防止慢速服务器导致资源耗尽。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "the response body as a byte array",
+      "translation": "响应体作为字节数组",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "Fetches media content from HTTP/HTTPS URLs with SSRF and resource-exhaustion\nprotections.",
+      "translation": "从带有 SSRF 和资源耗尽保护的 HTTP/HTTPS URL 获取媒体内容。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>通过 `<code>MediaFetcher.SsrfBlockingPlainSocketFactory</code>` 和 `<code>MediaFetcher.SsrfBlockingSSLSocketFactory</code>` 实现的套接字级阻塞：在 `<code>connectSocket()</code>` 时检查解析后的 <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/InetAddress.html\" title=\"class or interface in java.net\"><code>InetAddress</code></a>——即在 DNS 解析之后——因此即使没有发生 DNS 查询，原始 IP 字面量（例如 `<code>127.0.0.1</code>`、`<code>169.254.169.254</code>`）也会被阻止。</li>\n<li>通过 <code>MediaFetcher.SsrfSafeDnsResolver</code> 在 DNS 层面进行拦截：解析到内部地址的主机名会在发起连接之前被提前拒绝。这为主机名请求提供了快速失败路径，并限制了 DNS 重绑定攻击的暴露面。</li>\n<li>已禁用 HTTP 重定向，以防止导致内部地址的重定向链。</li>\n<li>连接和套接字超时可防止慢速服务器导致资源耗尽。</li>\n<li>响应体大小限制为<a href=\"#DEFAULT_MAX_FETCH_SIZE_BYTES\">41943040</a>字节，以防止内存耗尽。</li>\n</ul>",
+      "translation": "<ul>\n<li>通过 `<code>MediaFetcher.SsrfBlockingPlainSocketFactory</code>` 和 `<code>MediaFetcher.SsrfBlockingSSLSocketFactory</code>` 实现的套接字级阻塞：在调用 `<code>connectSocket()</code>` 时检查解析后的 <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/InetAddress.html\" title=\"class or interface in java.net\"><code>InetAddress</code></a>——即在 DNS 解析之后——因此即使未发生 DNS 查询，原始 IP 字面量（例如 `<code>127.0.0.1</code>`、`<code>169.254.169.254</code>`）也会被阻止。</li>\n<li>通过 <code>MediaFetcher.SsrfSafeDnsResolver</code> 在 DNS 层面进行拦截：解析到内部地址的主机名会在发起连接之前被提前拒绝。这为主机名请求提供了快速失败路径，并限制了 DNS 重绑定攻击的暴露面。</li>\n<li>已禁用 HTTP 重定向，以防止导致内部地址的重定向链。</li>\n<li>连接和套接字超时可防止慢速服务器导致资源耗尽。</li>\n<li>响应体大小限制为<a href=\"#DEFAULT_MAX_FETCH_SIZE_BYTES\">41943040</a>字节，以防止内存耗尽。</li>\n</ul>",
+      "count": 1
+    }
+  ]
+}

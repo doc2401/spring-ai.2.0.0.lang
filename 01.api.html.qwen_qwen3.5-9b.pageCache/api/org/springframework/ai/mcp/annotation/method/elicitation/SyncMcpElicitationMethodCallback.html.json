@@ -1,0 +1,126 @@
+{
+  "created_at": "2026-06-15 08:30:43",
+  "updated_at": "2026-06-15 08:30:43",
+  "stats": {
+    "total_entries": 22,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 26,
+    "entries_with_hits": 22,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1818181818181819,
+    "usage_percentage": 0.0022
+  },
+  "items": [
+    {
+      "source": "Apply the callback to the given request.",
+      "translation": "将回调应用于给定的请求。",
+      "count": 2
+    },
+    {
+      "source": "Create a new builder.",
+      "translation": "创建一个新的构建器。",
+      "count": 2
+    },
+    {
+      "source": "Checks if a parameter type is compatible with the exchange type.",
+      "translation": "检查参数类型是否与交换类型兼容。",
+      "count": 2
+    },
+    {
+      "source": "Validates that the method return type is compatible with the elicitation callback.",
+      "translation": "验证方法返回类型是否与提取回调兼容。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This method builds the arguments for the method call, invokes the method, and\nreturns the result.",
+      "translation": "该方法构建方法调用的参数，调用该方法并返回结果。",
+      "count": 1
+    },
+    {
+      "source": "Class for creating Function callbacks around elicitation methods.\n\nThis class provides a way to convert methods annotated with <a href=\"../../McpElicitation.html\" title=\"annotation interface in org.springframework.ai.mcp.annotation\"><code>McpElicitation</code></a> into\ncallback functions that can be used to handle elicitation requests. It supports methods\nwith a single ElicitRequest parameter.",
+      "translation": "用于围绕引出方法创建函数回调的类。\n\n该类提供了一种将带有 <a href=\"../../McpElicitation.html\" title=\"org.springframework.ai.mcp.annotation 中的注解接口\"><code>McpElicitation</code></a> 注解的方法转换为可用于处理引出请求的回调函数的方法。它支持具有单个 ElicitRequest 参数的方法。",
+      "count": 1
+    },
+    {
+      "source": "Builder for creating SyncMcpElicitationMethodCallback instances.",
+      "translation": "用于创建 SyncMcpElicitationMethodCallback 实例的构建器。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Function.html#apply(T)\" title=\"class or interface in java.util.function\">apply</a></code> in interface <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Function.html\" title=\"class or interface in java.util.function\">Function</a>&lt;io.modelcontextprotocol.spec.McpSchema.ElicitRequest, io.modelcontextprotocol.spec.McpSchema.ElicitResult&gt;</code>",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Function.html#apply(T)\" title=\"class or interface in java.util.function\">apply</a></code> 接口 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Function.html\" title=\"class or interface in java.util.function\">Function</a>&lt;io.modelcontextprotocol.spec.McpSchema.ElicitRequest, io.modelcontextprotocol.spec.McpSchema.ElicitResult&gt;</code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"AbstractMcpElicitationMethodCallback.html#validateReturnType(java.lang.reflect.Method)\">validateReturnType</a></code> in class <code><a href=\"AbstractMcpElicitationMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.elicitation\">AbstractMcpElicitationMethodCallback</a></code>",
+      "translation": "<code><a href=\"AbstractMcpElicitationMethodCallback.html#validateReturnType(java.lang.reflect.Method)\">validateReturnType</a></code> 类 <code><a href=\"AbstractMcpElicitationMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.elicitation\">AbstractMcpElicitationMethodCallback</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"AbstractMcpElicitationMethodCallback.html#isExchangeType(java.lang.Class)\">isExchangeType</a></code> in class <code><a href=\"AbstractMcpElicitationMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.elicitation\">AbstractMcpElicitationMethodCallback</a></code>",
+      "translation": "<code><a href=\"AbstractMcpElicitationMethodCallback.html#isExchangeType(java.lang.Class)\">isExchangeType</a></code> 类 <code><a href=\"AbstractMcpElicitationMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.elicitation\">AbstractMcpElicitationMethodCallback</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"AbstractMcpElicitationMethodCallback.McpElicitationMethodException.html\" title=\"class in org.springframework.ai.mcp.annotation.method.elicitation\">AbstractMcpElicitationMethodCallback.McpElicitationMethodException</a></code> - if there is an error invoking the elicitation\nmethod",
+      "translation": "<code><a href=\"AbstractMcpElicitationMethodCallback.McpElicitationMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.elicitation\">AbstractMcpElicitationMethodCallback.McpElicitationMethodException</a></code> - 如果调用 elicitation 方法时发生错误",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if the request is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果请求为 null",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if the return type is not compatible",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果返回类型不兼容",
+      "count": 1
+    },
+    {
+      "source": "<code>request</code> - The elicitation request, must not be null",
+      "translation": "<code>request</code> - 诱导请求，不得为 null",
+      "count": 1
+    },
+    {
+      "source": "<code>method</code> - The method to validate",
+      "translation": "<code>method</code> - 待验证的方法",
+      "count": 1
+    },
+    {
+      "source": "<code>paramType</code> - The parameter type to check",
+      "translation": "<code>paramType</code> - 要检查的参数类型",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "The result of the method invocation",
+      "translation": "方法调用的结果",
+      "count": 1
+    },
+    {
+      "source": "true if the parameter type is compatible with the exchange type, false\notherwise",
+      "translation": "如果参数类型与交换类型兼容，则为 true；否则为 false。",
+      "count": 1
+    },
+    {
+      "source": "A new builder instance",
+      "translation": "一个新的构建器实例",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    }
+  ]
+}

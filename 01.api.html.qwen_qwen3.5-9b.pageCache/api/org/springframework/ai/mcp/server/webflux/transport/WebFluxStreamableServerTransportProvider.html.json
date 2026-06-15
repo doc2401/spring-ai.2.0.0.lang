@@ -1,0 +1,121 @@
+{
+  "created_at": "2026-06-15 08:23:30",
+  "updated_at": "2026-06-15 08:23:30",
+  "stats": {
+    "total_entries": 21,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 21,
+    "entries_with_hits": 21,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.0021
+  },
+  "items": [
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "The router function defines one endpoint with three methods:",
+      "translation": "路由器函数定义了一个端点，包含三个方法：",
+      "count": 1
+    },
+    {
+      "source": "Builder for creating instances of <a href=\"WebFluxStreamableServerTransportProvider.html\" title=\"class in org.springframework.ai.mcp.server.webflux.transport\"><code>WebFluxStreamableServerTransportProvider</code></a>.",
+      "translation": "用于创建<a href=\"WebFluxStreamableServerTransportProvider.html\" title=\"class in org.springframework.ai.mcp.server.webflux.transport\"><code>WebFluxStreamableServerTransportProvider</code></a>实例的构建器。",
+      "count": 1
+    },
+    {
+      "source": "Implementation of a WebFlux based <code>McpStreamableServerTransportProvider</code>.",
+      "translation": "基于 WebFlux 的 <code>McpStreamableServerTransportProvider</code> 实现。",
+      "count": 1
+    },
+    {
+      "source": "Returns the WebFlux router function that defines the transport's HTTP endpoints.",
+      "translation": "返回定义传输 HTTP 端点的 WebFlux 路由函数。",
+      "count": 1
+    },
+    {
+      "source": "<code>protocolVersions</code> in interface <code>io.modelcontextprotocol.spec.McpServerTransportProviderBase</code>",
+      "translation": "接口 <code>io.modelcontextprotocol.spec.McpServerTransportProviderBase</code> 中的 <code>protocolVersions</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>setSessionFactory</code> in interface <code>io.modelcontextprotocol.spec.McpStreamableServerTransportProvider</code>",
+      "translation": "在接口 <code>io.modelcontextprotocol.spec.McpStreamableServerTransportProvider</code> 中的 <code>setSessionFactory</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>notifyClients</code> in interface <code>io.modelcontextprotocol.spec.McpServerTransportProviderBase</code>",
+      "translation": "接口 <code>io.modelcontextprotocol.spec.McpServerTransportProviderBase</code> 中的 <code>notifyClients</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>notifyClients</code> in interface <code>io.modelcontextprotocol.spec.McpStreamableServerTransportProvider</code>",
+      "translation": "接口 <code>io.modelcontextprotocol.spec.McpStreamableServerTransportProvider</code> 中的 <code>notifyClients</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>notifyClient</code> in interface <code>io.modelcontextprotocol.spec.McpServerTransportProviderBase</code>",
+      "translation": "接口 <code>io.modelcontextprotocol.spec.McpServerTransportProviderBase</code> 中的 <code>notifyClient</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>closeGracefully</code> in interface <code>io.modelcontextprotocol.spec.McpServerTransportProviderBase</code>",
+      "translation": "接口 <code>io.modelcontextprotocol.spec.McpServerTransportProviderBase</code> 中的 <code>closeGracefully</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>closeGracefully</code> in interface <code>io.modelcontextprotocol.spec.McpStreamableServerTransportProvider</code>",
+      "translation": "接口 <code>io.modelcontextprotocol.spec.McpStreamableServerTransportProvider</code> 中的 <code>closeGracefully</code>",
+      "count": 1
+    },
+    {
+      "source": "The configured <code>RouterFunction</code> for handling HTTP requests",
+      "translation": "用于处理 HTTP 请求的已配置 <code>RouterFunction</code>",
+      "count": 1
+    },
+    {
+      "source": "GET {messageEndpoint} - For the client listening SSE stream",
+      "translation": "GET {messageEndpoint} - 供监听 SSE 流的客户端使用",
+      "count": 1
+    },
+    {
+      "source": "POST {messageEndpoint} - For receiving client messages",
+      "translation": "POST {messageEndpoint} - 用于接收客户端消息",
+      "count": 1
+    },
+    {
+      "source": "DELETE {messageEndpoint} - For removing sessions",
+      "translation": "DELETE {messageEndpoint} - 用于删除会话",
+      "count": 1
+    },
+    {
+      "source": "Dariusz Jędrzejczyk, Christian Tzolov",
+      "translation": "达里乌什·耶德雷日奇克，克里斯蒂安·茨博洛夫",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "Returns the WebFlux router function that defines the transport's HTTP endpoints.\nThis router function should be integrated into the application's web configuration.",
+      "translation": "返回定义传输 HTTP 端点的 WebFlux 路由函数。该路由函数应集成到应用程序的 Web 配置中。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>GET {messageEndpoint} - 供监听 SSE 流的客户端使用</li>\n<li>POST {messageEndpoint} - 用于接收客户端消息</li>\n<li>DELETE {messageEndpoint} - 用于删除会话</li>\n</ul>",
+      "translation": "<ul>\n<li>GET {messageEndpoint} - 供监听 SSE 流的客户端使用</li>\n<li>POST {messageEndpoint} - 用于接收客户端消息</li>\n<li>DELETE {messageEndpoint} - 用于删除会话</li>\n</ul>",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "created_at": "2026-06-15 07:24:22",
+  "updated_at": "2026-06-15 07:24:22",
+  "stats": {
+    "total_entries": 42,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 49,
+    "entries_with_hits": 42,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1666666666666667,
+    "usage_percentage": 0.0042
+  },
+  "items": [
+    {
+      "source": "Streams the chat completion as a <code>Flux</code> of <a href=\"../chat/model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> events.",
+      "translation": "以<code>Flux</code>流的形式广播<code>ChatResponse</code>事件，其中包含对<a href=\"../chat/model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a>类的引用。",
+      "count": 2
+    },
+    {
+      "source": "Creates a new builder for <a href=\"AnthropicChatModel.html\" title=\"class in org.springframework.ai.anthropic\"><code>AnthropicChatModel</code></a>.",
+      "translation": "为<a href=\"AnthropicChatModel.html\" title=\"class in org.springframework.ai.anthropic\"><code>AnthropicChatModel</code></a>创建一个新的构建器。",
+      "count": 2
+    },
+    {
+      "source": "Executes a method call to the AI model.",
+      "translation": "执行对 AI 模型的方法调用。",
+      "count": 2
+    },
+    {
+      "source": "Gets the chat options for this model.",
+      "translation": "获取此模型的聊天选项。",
+      "count": 2
+    },
+    {
+      "source": "Use the provided convention for reporting observation data.",
+      "translation": "请使用提供的规范报告观测数据。",
+      "count": 2
+    },
+    {
+      "source": "<code>prompt</code> - The prompt for the chat completion. In a recursive tool-call\nscenario, this prompt will contain the full conversation history including the tool\nresults.",
+      "translation": "<code>prompt</code> - 用于聊天补全的提示。在递归工具调用场景中，此提示将包含完整的对话历史，包括工具结果。",
+      "count": 2
+    },
+    {
+      "source": "<code>previousChatResponse</code> - The chat response from the preceding API call. This is\nused to accumulate token usage correctly across multiple API calls in a single user\nturn.",
+      "translation": "<code>previousChatResponse</code> - 前一次 API 调用的聊天响应。此字段用于在单个用户回合的多次 API 调用中正确累积 token 使用情况。",
+      "count": 2
+    },
+    {
+      "source": "<b>Observability.</b> Two layers of Micrometer observations are emitted: a\n<code>gen_ai.client.operation</code> span per chat-model call (with token usage, model\nmetadata, and request parameters), and an <code>okhttp.requests</code> span per outbound\nHTTP attempt (with HTTP method, URI, status code, and <code>traceparent</code> propagation).\nOptional OkHttp connection-pool gauges are bound to the\n<code>MeterRegistry</code> when supplied. For synchronous\ncalls the HTTP span nests under the chat-model span; for streaming calls the HTTP span\nfires but is not parented under the chat-model span due to an SDK-internal thread\nboundary — see <a href=\"#stream(org.springframework.ai.chat.prompt.Prompt)\"><code>stream(org.springframework.ai.chat.prompt.Prompt)</code></a>.",
+      "translation": "<b>可观测性。</b> 会发出两层 Micrometer 观测数据：每次聊天模型调用都会生成一个<code>gen_ai.client.operation</code> Span（包含 token 用量、模型元数据和请求参数），以及每次出站 HTTP 尝试都会生成一个<code>okhttp.requests</code> Span（包含 HTTP 方法、URI、状态码和<code>traceparent</code>传播）。如果提供了 OkHttp 连接池，其可选的仪表会绑定到<code>MeterRegistry</code>。对于同步调用，HTTP Span 嵌套在聊天模型 Span 之下；而对于流式调用，HTTP Span 会触发但不会作为聊天模型 Span 的子 Span，这是由于 SDK 内部线程边界所致——参见<a href=\"#stream(org.springframework.ai.chat.prompt.Prompt)\"><code>stream(org.springframework.ai.chat.prompt.Prompt)</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "<b>Observability note.</b> The outbound HTTP attempt is observed as\n<code>okhttp.requests</code> with timer + <code>traceparent</code>, but for streaming calls\nthe HTTP span is not parented under the chat-model's\n<code>gen_ai.client.operation</code> span. The SDK's async path internally schedules the\nHTTP call on <code>ForkJoinPool.commonPool()</code> before Spring AI's HTTP client runs,\nwhich drops the calling thread's observation context. Filter by\n<code>okhttp.requests</code> + host <code>api.anthropic.com</code> and correlate by trace ID\nor timestamp if you need to join the spans in your tracing UI.",
+      "translation": "<b>可观测性说明。</b> 出站 HTTP 请求被记录为<code>okhttp.requests</code>，并带有计时器和<code>traceparent</code>；但对于流式调用，HTTP 跨度并未作为聊天模型中<code>gen_ai.client.operation</code>跨度的子跨度。SDK 的异步路径会在 Spring AI HTTP 客户端执行之前，在内部将 HTTP 调用调度到<code>ForkJoinPool.commonPool()</code>，从而导致丢失调用线程的可观测上下文。如需在追踪 UI 中合并这些跨度，请通过<code>okhttp.requests</code>及主机<code>api.anthropic.com</code>进行过滤，并依据追踪 ID 或时间戳进行关联。",
+      "count": 1
+    },
+    {
+      "source": "Rate-limit headers are read from the streaming response via\n<code>withRawResponse().createStreaming(...)</code> and attached to the aggregated\n<a href=\"../chat/model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a>. Because that SDK call exposes the stream as a blocking\n<code>StreamResponse</code>, the events are pulled on\n<code>Schedulers.boundedElastic()</code>; a streaming call therefore holds a worker\nthread for the duration of the stream.",
+      "translation": "限流标头通过 <code>withRawResponse().createStreaming(...)</code> 从流式响应中读取，并附加到聚合的 <a href=\"../chat/model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a>。由于该 SDK 调用以阻塞方式暴露流为 <code>StreamResponse</code>，事件会在 <code>Schedulers.boundedElastic()</code> 上被拉取；因此，流式调用在整个流期间会占用一个工作线程。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Supports synchronous and streaming completions, tool calling, and Micrometer-based\nobservability. API credentials are auto-detected from <code>ANTHROPIC_API_KEY</code> if not\nconfigured.",
+      "translation": "支持同步和流式完成、工具调用以及基于 Micrometer 的可观测性。若未配置，API 凭据将自动从环境变量 `ANTHROPIC_API_KEY` 中检测。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../model/Model.html#call(TReq)\">Model</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../model/Model.html#call(TReq)\">Model</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Builder for creating <a href=\"AnthropicChatModel.html\" title=\"class in org.springframework.ai.anthropic\"><code>AnthropicChatModel</code></a> instances.",
+      "translation": "用于创建<a href=\"AnthropicChatModel.html\" title=\"org.springframework.ai.anthropic 中的类\"><code>AnthropicChatModel</code></a>实例的构建器。",
+      "count": 1
+    },
+    {
+      "source": "Returns the underlying synchronous Anthropic SDK client. Useful for accessing SDK\nfeatures directly, such as the Files API (<code>client.beta().files()</code>).",
+      "translation": "返回底层的同步 Anthropic SDK 客户端。此方法可用于直接访问 SDK 功能，例如 Files API（<code>client.beta().files()</code>）。",
+      "count": 1
+    },
+    {
+      "source": "Returns the underlying synchronous Anthropic SDK client.",
+      "translation": "返回底层的同步 Anthropic SDK 客户端。",
+      "count": 1
+    },
+    {
+      "source": "Returns the underlying asynchronous Anthropic SDK client.",
+      "translation": "返回底层的异步 Anthropic SDK 客户端。",
+      "count": 1
+    },
+    {
+      "source": "Internal method to handle synchronous chat completion calls with tool execution\nsupport.",
+      "translation": "用于支持工具执行的同步聊天完成调用的内部方法。",
+      "count": 1
+    },
+    {
+      "source": "Internal method to handle streaming chat completion calls with tool execution\nsupport.",
+      "translation": "用于支持工具执行的流式聊天完成调用的内部方法。",
+      "count": 1
+    },
+    {
+      "source": "Returns the underlying asynchronous Anthropic SDK client. Useful for non-blocking\naccess to SDK features directly, such as the Files API.",
+      "translation": "返回底层的异步 Anthropic SDK 客户端。此功能可用于非阻塞方式直接访问 SDK 特性，例如 Files API。",
+      "count": 1
+    },
+    {
+      "source": "Internal method to handle synchronous chat completion calls with tool execution\nsupport. This method is called recursively to support multi-turn tool calling.",
+      "translation": "处理支持工具执行的同步聊天完成调用的内部方法。此方法会递归调用以支持多轮工具调用。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../model/Model.html#call(TReq)\">call</a></code> in interface <code><a href=\"../model/Model.html\" title=\"interface in org.springframework.ai.model\">Model</a>&lt;<a href=\"../chat/prompt/Prompt.html\" title=\"class in org.springframework.ai.chat.prompt\">Prompt</a>, <a href=\"../chat/model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a>&gt;</code>",
+      "translation": "<a href=\"../model/Model.html#call(TReq)\">call</a> 接口中的<code><a href=\"../model/Model.html\" title=\"interface in org.springframework.ai.model\">Model</a>&lt;<a href=\"../chat/prompt/Prompt.html\" title=\"class in org.springframework.ai.chat.prompt\">Prompt</a>, <a href=\"../chat/model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a>&gt;</code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../model/StreamingModel.html#stream(TReq)\">stream</a></code> in interface <code><a href=\"../model/StreamingModel.html\" title=\"interface in org.springframework.ai.model\">StreamingModel</a>&lt;<a href=\"../chat/prompt/Prompt.html\" title=\"class in org.springframework.ai.chat.prompt\">Prompt</a>, <a href=\"../chat/model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a>&gt;</code>",
+      "translation": "<code><a href=\"../model/StreamingModel.html#stream(TReq)\">stream</a></code> 接口 <code><a href=\"../model/StreamingModel.html\" title=\"interface in org.springframework.ai.model\">StreamingModel</a>&lt;<a href=\"../chat/prompt/Prompt.html\" title=\"class in org.springframework.ai.chat.prompt\">Prompt</a>, <a href=\"../chat/model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a>&gt;</code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../chat/model/ChatModel.html#getOptions()\">getOptions</a></code> in interface <code><a href=\"../chat/model/ChatModel.html\" title=\"interface in org.springframework.ai.chat.model\">ChatModel</a></code>",
+      "translation": "接口 <code><a href=\"../chat/model/ChatModel.html\" title=\"org.springframework.ai.chat.model 中的接口\">ChatModel</a></code> 中的<code><a href=\"../chat/model/ChatModel.html#getOptions()\">getOptions</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../chat/model/ChatModel.html#call(org.springframework.ai.chat.prompt.Prompt)\">call</a></code> in interface <code><a href=\"../chat/model/ChatModel.html\" title=\"interface in org.springframework.ai.chat.model\">ChatModel</a></code>",
+      "translation": "接口 <code><a href=\"../chat/model/ChatModel.html\" title=\"org.springframework.ai.chat.model 中的接口\">ChatModel</a></code> 中的 <code><a href=\"../chat/model/ChatModel.html#call(org.springframework.ai.chat.prompt.Prompt)\">call</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../chat/model/ChatModel.html#stream(org.springframework.ai.chat.prompt.Prompt)\">stream</a></code> in interface <code><a href=\"../chat/model/ChatModel.html\" title=\"interface in org.springframework.ai.chat.model\">ChatModel</a></code>",
+      "translation": "<code><a href=\"../chat/model/ChatModel.html#stream(org.springframework.ai.chat.prompt.Prompt)\">stream</a></code> 接口 <code><a href=\"../chat/model/ChatModel.html\" title=\"interface in org.springframework.ai.chat.model\">ChatModel</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../chat/model/StreamingChatModel.html#stream(org.springframework.ai.chat.prompt.Prompt)\">stream</a></code> in interface <code><a href=\"../chat/model/StreamingChatModel.html\" title=\"interface in org.springframework.ai.chat.model\">StreamingChatModel</a></code>",
+      "translation": "<code><a href=\"../chat/model/StreamingChatModel.html#stream(org.springframework.ai.chat.prompt.Prompt)\">stream</a></code> 接口 <code><a href=\"../chat/model/StreamingChatModel.html\" title=\"interface in org.springframework.ai.chat.model\">StreamingChatModel</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "a <code>Flux</code> of streamed <a href=\"../chat/model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> events",
+      "translation": "一个流式传输的 <a href=\"../chat/model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> 事件流",
+      "count": 1
+    },
+    {
+      "source": "A <code>Flux</code> of <a href=\"../chat/model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> events, which can include text\nchunks and the final response with tool call information or the model's final\nanswer.",
+      "translation": "一个包含文本块以及带有工具调用信息或模型最终答案的最终响应的 <a href=\"../chat/model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> 事件流。",
+      "count": 1
+    },
+    {
+      "source": "The final <a href=\"../chat/model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> after all tool calls (if any) are resolved.",
+      "translation": "所有工具调用（如果有）解析后的最终<a href=\"../chat/model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "<code>prompt</code> - the request object to be sent to the AI model",
+      "translation": "<code>prompt</code> - 要发送给 AI 模型的请求对象",
+      "count": 1
+    },
+    {
+      "source": "<code>prompt</code> - the prompt",
+      "translation": "<code>prompt</code> - 提示词",
+      "count": 1
+    },
+    {
+      "source": "<code>observationConvention</code> - the provided convention",
+      "translation": "<code>observationConvention</code> - 提供的约定",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, luocongqiu, Mariusz Bernacki, Thomas Vitale, Claudio Silva Junior, Alexandros Pappas, Jonghoon Park, Soby Chacko, Austin Dase, Sebastien Deleuze, Ilayaperumal Gopinathan",
+      "translation": "Christian Tzolov, 骆丛秋，Mariusz Bernacki, Thomas Vitale, Claudio Silva Junior, Alexandros Pappas, Jonghoon Park, Soby Chacko, Austin Dase, Sebastien Deleuze, Ilayaperumal Gopinathan",
+      "count": 1
+    },
+    {
+      "source": "a new builder instance",
+      "translation": "一个新的构建器实例",
+      "count": 1
+    },
+    {
+      "source": "the chat options",
+      "translation": "聊天选项",
+      "count": 1
+    },
+    {
+      "source": "the sync client",
+      "translation": "同步客户端",
+      "count": 1
+    },
+    {
+      "source": "the async client",
+      "translation": "异步客户端",
+      "count": 1
+    },
+    {
+      "source": "the response from the AI model",
+      "translation": "AI 模型的回复",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"../chat/model/ChatModel.html\" title=\"interface in org.springframework.ai.chat.model\"><code>ChatModel</code></a> and <a href=\"../chat/model/StreamingChatModel.html\" title=\"interface in org.springframework.ai.chat.model\"><code>StreamingChatModel</code></a> implementation using the official\n<a href=\"https://github.com/anthropics/anthropic-sdk-java\">Anthropic Java SDK</a>.",
+      "translation": "使用官方 <a href=\"https://github.com/anthropics/anthropic-sdk-java\">Anthropic Java SDK</a> 实现 <a href=\"../chat/model/ChatModel.html\" title=\"interface in org.springframework.ai.chat.model\"><code>ChatModel</code></a> 和 <a href=\"../chat/model/StreamingChatModel.html\" title=\"interface in org.springframework.ai.chat.model\"><code>StreamingChatModel</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Internal method to handle streaming chat completion calls with tool execution\nsupport. This method is called recursively to support multi-turn tool calling.",
+      "translation": "内部方法，用于处理支持工具执行的流式聊天补全调用。该方法会递归调用以支持多轮工具调用。",
+      "count": 1
+    }
+  ]
+}

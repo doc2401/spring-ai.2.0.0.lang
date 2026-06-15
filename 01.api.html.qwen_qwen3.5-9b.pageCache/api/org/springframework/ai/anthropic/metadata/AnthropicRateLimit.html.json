@@ -1,0 +1,231 @@
+{
+  "created_at": "2026-06-15 09:07:26",
+  "updated_at": "2026-06-15 09:07:26",
+  "stats": {
+    "total_entries": 43,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 57,
+    "entries_with_hits": 43,
+    "entries_without_hits": 0,
+    "hit_rate": 1.3255813953488371,
+    "usage_percentage": 0.0043
+  },
+  "items": [
+    {
+      "source": "Returns the <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/Duration.html\" title=\"class or interface in java.time\"><code>time</code></a> until the rate limit (based on requests) resets\nto its <a href=\"../../chat/metadata/RateLimit.html#getRequestsLimit()\"><code>initial state</code></a>.",
+      "translation": "返回自上次请求速率限制（基于请求数）重置到其<a href=\"../../chat/metadata/RateLimit.html#getRequestsLimit()\"><code>初始状态</code></a>所需的<code>time</code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/Duration.html\" title=\"class or interface in java.time\">时间</a>。",
+      "count": 2
+    },
+    {
+      "source": "Returns the <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/Duration.html\" title=\"class or interface in java.time\"><code>time</code></a> until the rate limit (based on tokens) resets to\nits <a href=\"../../chat/metadata/RateLimit.html#getTokensLimit()\"><code>initial state</code></a>.",
+      "translation": "返回直到基于 token 的速率限制重置为其<a href=\"../../chat/metadata/RateLimit.html#getTokensLimit()\"><code>初始状态</code></a>所需的<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/Duration.html\" title=\"class or interface in java.time\">time</a></code>。",
+      "count": 2
+    },
+    {
+      "source": "Returns the remaining number of requests that are permitted before exhausting the\n<a href=\"../../chat/metadata/RateLimit.html#getRequestsLimit()\"><code>rate limit</code></a>.",
+      "translation": "返回在耗尽<a href=\"../../chat/metadata/RateLimit.html#getRequestsLimit()\"><code>速率限制</code></a>之前允许的请求剩余数量。",
+      "count": 2
+    },
+    {
+      "source": "Returns the remaining number of tokens that are permitted before exhausting the\n<a href=\"../../chat/metadata/RateLimit.html#getTokensLimit()\"><code>rate limit</code></a>.",
+      "translation": "返回在耗尽<a href=\"../../chat/metadata/RateLimit.html#getTokensLimit()\"><code>速率限制</code></a>之前允许使用的剩余令牌数量。",
+      "count": 2
+    },
+    {
+      "source": "Parses Anthropic rate-limit headers from the given <code>Headers</code>.",
+      "translation": "解析给定<code>Headers</code>中的 Anthropic 速率限制标头。",
+      "count": 2
+    },
+    {
+      "source": "Returns the maximum number of input tokens allowed within the rate-limit window.",
+      "translation": "返回速率限制窗口内允许的最大输入 token 数量。",
+      "count": 2
+    },
+    {
+      "source": "Returns the number of input tokens remaining within the current rate-limit window.",
+      "translation": "返回当前速率限制窗口内剩余的输入 token 数量。",
+      "count": 2
+    },
+    {
+      "source": "Returns the duration until the input-token rate-limit window resets.",
+      "translation": "返回输入令牌速率限制窗口重置前的剩余时长。",
+      "count": 2
+    },
+    {
+      "source": "Returns the maximum number of output tokens allowed within the rate-limit window.",
+      "translation": "返回速率限制窗口内允许的最大输出 token 数量。",
+      "count": 2
+    },
+    {
+      "source": "Returns the number of output tokens remaining within the current rate-limit window.",
+      "translation": "返回当前速率限制窗口内剩余的输出 token 数量。",
+      "count": 2
+    },
+    {
+      "source": "Returns the duration until the output-token rate-limit window resets.",
+      "translation": "返回输出令牌速率限制窗口重置前的剩余时长。",
+      "count": 2
+    },
+    {
+      "source": "Returns the maximum number of requests that are permitted before exhausting the\nrate limit.",
+      "translation": "返回在耗尽速率限制之前允许的最大请求数。",
+      "count": 2
+    },
+    {
+      "source": "Returns the maximum number of tokens that are permitted before exhausting the rate\nlimit.",
+      "translation": "返回在耗尽速率限制之前允许的最大令牌数。",
+      "count": 2
+    },
+    {
+      "source": "the duration until reset, or <code>null</code> if Anthropic did not return the\nheader",
+      "translation": "重置前的持续时间，或者如果 Anthropic 未返回该头部信息则为 `<code>null</code>`。",
+      "count": 2
+    },
+    {
+      "source": "Parses Anthropic rate-limit response headers as documented at\n<a href=\"https://docs.anthropic.com/en/api/rate-limits\">Anthropic rate limits</a>.\nBeyond the request and token families exposed through the <a href=\"../../chat/metadata/RateLimit.html\" title=\"interface in org.springframework.ai.chat.metadata\"><code>RateLimit</code></a> contract,\nthis class also surfaces the Anthropic-specific input-token and output-token buckets\nvia dedicated getters.",
+      "translation": "解析 Anthropic 速率限制响应头，具体文档请参考 <a href=\"https://docs.anthropic.com/en/api/rate-limits\">Anthropic 速率限制</a>。\n除了通过 <a href=\"../../chat/metadata/RateLimit.html\" title=\"interface in org.springframework.ai.chat.metadata\"><code>RateLimit</code></a> 接口暴露的请求和令牌系列外，\n该类还通过专用 getter 方法提供了 Anthropic 特定的输入令牌和输出令牌桶。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../chat/metadata/RateLimit.html#getRequestsLimit()\">RateLimit</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../chat/metadata/RateLimit.html#getRequestsLimit()\">RateLimit</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../chat/metadata/RateLimit.html#getRequestsRemaining()\">RateLimit</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../chat/metadata/RateLimit.html#getRequestsRemaining()\">RateLimit</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../chat/metadata/RateLimit.html#getRequestsReset()\">RateLimit</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../chat/metadata/RateLimit.html#getRequestsReset()\">RateLimit</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../chat/metadata/RateLimit.html#getTokensLimit()\">RateLimit</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../chat/metadata/RateLimit.html#getTokensLimit()\">RateLimit</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../chat/metadata/RateLimit.html#getTokensRemaining()\">RateLimit</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../chat/metadata/RateLimit.html#getTokensRemaining()\">RateLimit</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../chat/metadata/RateLimit.html#getTokensReset()\">RateLimit</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../chat/metadata/RateLimit.html#getTokensReset()\">RateLimit</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "an <a href=\"AnthropicRateLimit.html\" title=\"class in org.springframework.ai.anthropic.metadata\"><code>AnthropicRateLimit</code></a> populated from the headers, or an\n<a href=\"../../chat/metadata/EmptyRateLimit.html\" title=\"class in org.springframework.ai.chat.metadata\"><code>EmptyRateLimit</code></a> if no rate-limit headers are present",
+      "translation": "一个从响应头中填充的 <a href=\"AnthropicRateLimit.html\" title=\"class in org.springframework.ai.anthropic.metadata\"><code>AnthropicRateLimit</code></a> 对象，或者在不存在速率限制响应头时返回一个 <a href=\"../../chat/metadata/EmptyRateLimit.html\" title=\"class in org.springframework.ai.chat.metadata\"><code>EmptyRateLimit</code></a> 对象。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../chat/metadata/RateLimit.html#getRequestsLimit()\">getRequestsLimit</a></code> in interface <code><a href=\"../../chat/metadata/RateLimit.html\" title=\"interface in org.springframework.ai.chat.metadata\">RateLimit</a></code>",
+      "translation": "接口 <code><a href=\"../../chat/metadata/RateLimit.html\" title=\"org.springframework.ai.chat.metadata 中的接口\">RateLimit</a></code> 中的方法<code><a href=\"../../chat/metadata/RateLimit.html#getRequestsLimit()\">getRequestsLimit</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../chat/metadata/RateLimit.html#getRequestsRemaining()\">getRequestsRemaining</a></code> in interface <code><a href=\"../../chat/metadata/RateLimit.html\" title=\"interface in org.springframework.ai.chat.metadata\">RateLimit</a></code>",
+      "translation": "接口 <code><a href=\"../../chat/metadata/RateLimit.html\" title=\"org.springframework.ai.chat.metadata 中的接口\">RateLimit</a></code> 中的 <code><a href=\"../../chat/metadata/RateLimit.html#getRequestsRemaining()\">getRequestsRemaining</a></code>",
+      "count": 1
+    },
+    {
+      "source": "an <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Long.html\" title=\"class or interface in java.lang\"><code>Long</code></a> with the remaining number of requests that are permitted\nbefore exhausting the <a href=\"../../chat/metadata/RateLimit.html#getRequestsLimit()\"><code>rate limit</code></a>.",
+      "translation": "一个<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Long.html\" title=\"class or interface in java.lang\"><code>Long</code></a>，表示在耗尽<a href=\"../../chat/metadata/RateLimit.html#getRequestsLimit()\"><code>速率限制</code></a>之前允许的剩余请求数。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../chat/metadata/RateLimit.html#getRequestsReset()\">getRequestsReset</a></code> in interface <code><a href=\"../../chat/metadata/RateLimit.html\" title=\"interface in org.springframework.ai.chat.metadata\">RateLimit</a></code>",
+      "translation": "接口 <code><a href=\"../../chat/metadata/RateLimit.html\" title=\"org.springframework.ai.chat.metadata 中的接口\">RateLimit</a></code> 中的方法 <code><a href=\"../../chat/metadata/RateLimit.html#getRequestsReset()\">getRequestsReset</a></code>",
+      "count": 1
+    },
+    {
+      "source": "a <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/Duration.html\" title=\"class or interface in java.time\"><code>Duration</code></a> representing the time until the rate limit (based on\nrequests) resets to its <a href=\"../../chat/metadata/RateLimit.html#getRequestsLimit()\"><code>initial state</code></a>.",
+      "translation": "一个<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/Duration.html\" title=\"class or interface in java.time\"><code>Duration</code></a>，表示基于请求的速率限制重置到其<a href=\"../../chat/metadata/RateLimit.html#getRequestsLimit()\"><code>初始状态</code></a>所需的时间。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../chat/metadata/RateLimit.html#getTokensLimit()\">getTokensLimit</a></code> in interface <code><a href=\"../../chat/metadata/RateLimit.html\" title=\"interface in org.springframework.ai.chat.metadata\">RateLimit</a></code>",
+      "translation": "接口 <code><a href=\"../../chat/metadata/RateLimit.html\" title=\"org.springframework.ai.chat.metadata 中的接口\">RateLimit</a></code> 中的 <code><a href=\"../../chat/metadata/RateLimit.html#getTokensLimit()\">getTokensLimit</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../chat/metadata/RateLimit.html#getTokensRemaining()\">getTokensRemaining</a></code> in interface <code><a href=\"../../chat/metadata/RateLimit.html\" title=\"interface in org.springframework.ai.chat.metadata\">RateLimit</a></code>",
+      "translation": "接口 <code><a href=\"../../chat/metadata/RateLimit.html\" title=\"org.springframework.ai.chat.metadata 中的接口\">RateLimit</a></code> 中的方法<code><a href=\"../../chat/metadata/RateLimit.html#getTokensRemaining()\">getTokensRemaining</a></code>",
+      "count": 1
+    },
+    {
+      "source": "an <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Long.html\" title=\"class or interface in java.lang\"><code>Long</code></a> with the remaining number of tokens that are permitted\nbefore exhausting the <a href=\"../../chat/metadata/RateLimit.html#getTokensLimit()\"><code>rate limit</code></a>.",
+      "translation": "一个带有剩余可用 token 数量的<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Long.html\" title=\"class or interface in java.lang\"><code>Long</code></a>对象，在耗尽<a href=\"../../chat/metadata/RateLimit.html#getTokensLimit()\"><code>速率限制</code></a>之前。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../chat/metadata/RateLimit.html#getTokensReset()\">getTokensReset</a></code> in interface <code><a href=\"../../chat/metadata/RateLimit.html\" title=\"interface in org.springframework.ai.chat.metadata\">RateLimit</a></code>",
+      "translation": "接口 <code><a href=\"../../chat/metadata/RateLimit.html\" title=\"org.springframework.ai.chat.metadata 中的接口\">RateLimit</a></code> 中的 <code><a href=\"../../chat/metadata/RateLimit.html#getTokensReset()\">getTokensReset</a></code>",
+      "count": 1
+    },
+    {
+      "source": "a <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/Duration.html\" title=\"class or interface in java.time\"><code>Duration</code></a> with the time until the rate limit (based on tokens)\nresets to its <a href=\"../../chat/metadata/RateLimit.html#getTokensLimit()\"><code>initial state</code></a>.",
+      "translation": "一个<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/Duration.html\" title=\"class or interface in java.time\"><code>Duration</code></a>，表示基于 token 的速率限制重置到其<a href=\"../../chat/metadata/RateLimit.html#getTokensLimit()\"><code>初始状态</code></a>所需的时间。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#toString()\" title=\"class or interface in java.lang\">toString</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"class or interface in java.lang\">Object</a></code>",
+      "translation": "类 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"java.lang 中的类或接口\">Object</a></code> 中的 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#toString()\" title=\"java.lang 中的类或接口\">toString</a></code>",
+      "count": 1
+    },
+    {
+      "source": "an <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Long.html\" title=\"class or interface in java.lang\"><code>Long</code></a> with the maximum number of requests that are permitted\nbefore exhausting the rate limit.",
+      "translation": "一个 <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Long.html\" title=\"class or interface in java.lang\"><code>Long</code></a>，表示在耗尽速率限制之前允许的最大请求数。",
+      "count": 1
+    },
+    {
+      "source": "an <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Long.html\" title=\"class or interface in java.lang\"><code>Long</code></a> with the maximum number of tokens that are permitted before\nexhausting the rate limit.",
+      "translation": "一个 <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Long.html\" title=\"class or interface in java.lang\"><code>Long</code></a>，表示在耗尽速率限制之前允许的最大令牌数。",
+      "count": 1
+    },
+    {
+      "source": "<code>headers</code> - the HTTP response headers",
+      "translation": "<code>headers</code> - HTTP 响应头",
+      "count": 1
+    },
+    {
+      "source": "the input tokens limit, or <code>null</code> if Anthropic did not return the\nheader",
+      "translation": "输入 token 数量限制，或者如果 Anthropic 未返回该头部信息，则为 <code>null</code>。",
+      "count": 1
+    },
+    {
+      "source": "the remaining input tokens, or <code>null</code> if Anthropic did not return the\nheader",
+      "translation": "剩余输入 token，或如果 Anthropic 未返回该头部则为<code>null</code>。",
+      "count": 1
+    },
+    {
+      "source": "the output tokens limit, or <code>null</code> if Anthropic did not return the\nheader",
+      "translation": "输出 token 数量限制，或者如果 Anthropic 未返回该头部信息，则为 <code>null</code>。",
+      "count": 1
+    },
+    {
+      "source": "the remaining output tokens, or <code>null</code> if Anthropic did not return\nthe header",
+      "translation": "剩余的输出令牌数，或者如果 Anthropic 未返回该头部，则为 <code>null</code>。",
+      "count": 1
+    },
+    {
+      "source": "Gorre Surya, Soby Chacko",
+      "translation": "Gorre Surya，Soby Chacko",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"../../chat/metadata/RateLimit.html\" title=\"interface in org.springframework.ai.chat.metadata\"><code>RateLimit</code></a> implementation for the Anthropic SDK.",
+      "translation": "用于 Anthropic SDK 的 <a href=\"../../chat/metadata/RateLimit.html\" title=\"org.springframework.ai.chat.metadata 中的接口\"><code>RateLimit</code></a> 实现。",
+      "count": 1
+    }
+  ]
+}

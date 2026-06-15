@@ -1,0 +1,96 @@
+{
+  "created_at": "2026-06-15 07:42:54",
+  "updated_at": "2026-06-15 07:42:54",
+  "stats": {
+    "total_entries": 16,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 17,
+    "entries_with_hits": 16,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0625,
+    "usage_percentage": 0.0015999999999999999
+  },
+  "items": [
+    {
+      "source": "<code>context</code> - Output native expression.",
+      "translation": "<code>context</code> - 输出地道表达。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Expands the NIN (e.g. NOT IN) into a semantically equivalent boolean expressions of\nANDs of NEs. Useful for providers that don't provide native NIN support.<br/>\n\nFor example the\n\n<pre>foo NIN [\"bar1\", \"bar2\", \"bar3\"] (or foo NOT IN [\"bar1\", \"bar2\", \"bar3\"])\n</pre>\n\nexpress is equivalent to\n\n<pre><code>foo != \"bar1\" &amp;&amp; foo != \"bar2\" &amp;&amp; foo != \"bar3\" (e.g. AND(foo NE \"bar1\" AND( foo NE \"bar2\" OR(foo NE \"bar3\"))) )</code>\n</pre>",
+      "translation": "将 NIN（例如 NOT IN）扩展为语义等价的 NE 的 AND 布尔表达式。对于不支持原生 NIN 支持的提供者非常有用。<br/>\n\n例如，\n\n<pre>foo NIN [\"bar1\", \"bar2\", \"bar3\"]（或 foo NOT IN [\"bar1\", \"bar2\", \"bar3\"]）\n</pre>\n\n等价于\n\n<pre><code>foo != \"bar1\" && foo != \"bar2\" && foo != \"bar3\"（例如 AND(foo NE \"bar1\" AND( foo NE \"bar2\" OR(foo NE \"bar3\")))）</code>\n</pre>",
+      "count": 1
+    },
+    {
+      "source": "Expands the IN into a semantically equivalent boolean expressions of ORs of EQs.\nUseful for providers that don't provide native IN support.\n\nFor example the <pre>foo IN [\"bar1\", \"bar2\", \"bar3\"]\n</pre>\n\nexpression is equivalent to\n\n<pre><code>foo == \"bar1\" || foo == \"bar2\" || foo == \"bar3\" (e.g. OR(foo EQ \"bar1\" OR(foo EQ \"bar2\" OR(foo EQ \"bar3\")))</code>\n</pre>",
+      "translation": "将 IN 扩展为语义等价的由 EQ 组成的 OR 表达式。  \n适用于不支持原生 IN 功能的提供者。\n\n例如，<pre>foo IN [\"bar1\", \"bar2\", \"bar3\"]</pre>  \n表达式等价于  \n\n<pre><code>foo == \"bar1\" || foo == \"bar2\" || foo == \"bar3\"（例如 OR(foo EQ \"bar1\" OR(foo EQ \"bar2\" OR(foo EQ \"bar3\")))</code></pre>",
+      "count": 1
+    },
+    {
+      "source": "Transforms the input expression into a semantically equivalent one with negation\noperators propagated thought the expression tree by following the negation rules:\n\n<pre>        NOT(NOT(a)) = a\n\n        NOT(a AND b) = NOT(a) OR NOT(b)\n        NOT(a OR b) = NOT(a) AND NOT(b)\n\n        NOT(a EQ b) = a NE b\n        NOT(a NE b) = a EQ b\n\n        NOT(a GT b) = a LTE b\n        NOT(a GTE b) = a LT b\n\n        NOT(a LT b) = a GTE b\n        NOT(a LTE b) = a GT b\n\n        NOT(a IN [...]) = a NIN [...]\n        NOT(a NIN [...]) = a IN [...]\n</pre>",
+      "translation": "将输入表达式转换为语义等价的表达式，通过将否定算子沿表达式树传播并遵循以下否定规则：\n\n<pre>        NOT(NOT(a)) = a\n\n        NOT(a AND b) = NOT(a) OR NOT(b)\n        NOT(a OR b) = NOT(a) AND NOT(b)\n\n        NOT(a EQ b) = a NE b\n        NOT(a NE b) = a EQ b\n\n        NOT(a GT b) = a LTE b\n        NOT(a GTE b) = a LT b\n\n        NOT(a LT b) = a GTE b\n        NOT(a LTE b) = a GT b\n\n        NOT(a IN [...]) = a NIN [...]\n        NOT(a NIN [...]) = a IN [...]\n</pre>",
+      "count": 1
+    },
+    {
+      "source": "Helper class providing various boolean transformation.",
+      "translation": "提供多种布尔类型转换的辅助类。",
+      "count": 1
+    },
+    {
+      "source": "Expands the IN into a semantically equivalent boolean expressions of ORs of EQs.",
+      "translation": "将 IN 扩展为语义等价的由 EQ 组成的 OR 布尔表达式。",
+      "count": 1
+    },
+    {
+      "source": "Expands the NIN (e.g.",
+      "translation": "扩展 NIN（例如",
+      "count": 1
+    },
+    {
+      "source": "Transforms the input expression into a semantically equivalent one with negation\noperators propagated thought the expression tree by following the negation rules:",
+      "translation": "将输入表达式转换为语义等价的表达式，通过将否定算子沿表达式树传播并遵循以下否定规则：",
+      "count": 1
+    },
+    {
+      "source": "<code>filterExpressionConverter</code> - <a href=\"FilterExpressionConverter.html\" title=\"interface in org.springframework.ai.vectorstore.filter\"><code>FilterExpressionConverter</code></a> used to compose\nthe OR and EQ expanded expressions.",
+      "translation": "<code>filterExpressionConverter</code> - 用于组合 OR 和 EQ 扩展表达式的<a href=\"FilterExpressionConverter.html\" title=\"interface in org.springframework.ai.vectorstore.filter\"><code>FilterExpressionConverter</code></a>接口。",
+      "count": 1
+    },
+    {
+      "source": "<code>filterExpressionConverter</code> - <a href=\"FilterExpressionConverter.html\" title=\"interface in org.springframework.ai.vectorstore.filter\"><code>FilterExpressionConverter</code></a> used to compose\nthe AND and NE expanded expressions.",
+      "translation": "<code>filterExpressionConverter</code> - 用于组合 AND 和 NE 扩展表达式的<a href=\"FilterExpressionConverter.html\" title=\"interface in org.springframework.ai.vectorstore.filter\"><code>FilterExpressionConverter</code></a>接口。",
+      "count": 1
+    },
+    {
+      "source": "<code>operand</code> - Filter expression to negate.",
+      "translation": "<code>operand</code> - 要取反的过滤表达式。",
+      "count": 1
+    },
+    {
+      "source": "<code>exp</code> - input IN expression.",
+      "translation": "<code>exp</code> - 输入 IN 表达式。",
+      "count": 1
+    },
+    {
+      "source": "<code>exp</code> - input NIN expression.",
+      "translation": "<code>exp</code> - 输入的 NIN 表达式。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "Returns a negation of the input expression.",
+      "translation": "返回输入表达式的否定。",
+      "count": 1
+    }
+  ]
+}

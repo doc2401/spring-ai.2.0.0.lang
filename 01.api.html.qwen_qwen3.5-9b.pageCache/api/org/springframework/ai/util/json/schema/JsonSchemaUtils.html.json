@@ -1,0 +1,91 @@
+{
+  "created_at": "2026-06-15 07:57:17",
+  "updated_at": "2026-06-15 07:57:17",
+  "stats": {
+    "total_entries": 15,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 16,
+    "entries_with_hits": 15,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0666666666666667,
+    "usage_percentage": 0.0015
+  },
+  "items": [
+    {
+      "source": "Generates JSON Schema (version 2020_12) for the given class.",
+      "translation": "为给定类生成 JSON Schema（版本 2020_12）。",
+      "count": 2
+    },
+    {
+      "source": "This is needed because victools generates self-contained schemas where\n<code>$defs</code> and the <code>$ref</code> pointers into them are rooted at the sub-schema.\nInlining the sub-schema under <code>properties.&lt;paramName&gt;</code> re-parents existing\n<code>\"#/$defs/&lt;Name&gt;\"</code> refs to the outer root, leaving them unresolvable unless\n<code>$defs</code> is hoisted first.",
+      "translation": "这是必要的，因为 victools 生成的是自包含的架构，其中 `<code>$defs</code>` 和指向它们的 `<code>$ref</code>` 引用根植于子架构。将子架构内联到 `<code>properties.&lt;paramName&gt;</code>` 下会将现有的 `\"#/$defs/&lt;Name&gt;\"` 引用重新父化为外部根节点，除非先将 `<code>$defs</code>` 提升，否则这些引用将无法解析。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Moves any <code>$defs</code> block found on <code>subSchema</code> into the <code>$defs</code>\nblock of <code>rootSchema</code>, creating one on the root if needed.",
+      "translation": "将位于 <code>subSchema</code> 上的任何 <code>$defs</code> 块移动到 <code>rootSchema</code> 的 <code>$defs</code> 块中，如果根对象中没有则创建一个新的。",
+      "count": 1
+    },
+    {
+      "source": "Utility methods for working with JSON schemas.",
+      "translation": "用于处理 JSON 架构的实用方法。",
+      "count": 1
+    },
+    {
+      "source": "Ensures that the input schema is valid for AI model APIs.",
+      "translation": "确保输入模式符合 AI 模型 API 的要求。",
+      "count": 1
+    },
+    {
+      "source": "Ensures that the input schema is valid for AI model APIs. Many AI models require\nthat the parameters object must have a \"properties\" field, even if it's empty. This\nmethod normalizes schemas from external sources (like MCP tools) that may not\ninclude this field.",
+      "translation": "确保输入模式适用于 AI 模型 API。许多 AI 模型要求参数对象必须包含一个\"properties\"字段，即使该字段为空。此方法可规范化来自外部来源（如 MCP 工具）的模式，这些来源可能未包含该字段。",
+      "count": 1
+    },
+    {
+      "source": "<code>inputType</code> - the input <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/reflect/Type.html\" title=\"class or interface in java.lang.reflect\"><code>Type</code></a> to generate JSON Schema from.",
+      "translation": "<code>inputType</code> - 用于生成 JSON Schema 的输入 <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/reflect/Type.html\" title=\"java.lang.reflect 中的类或接口\"><code>Type</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "<code>subSchema</code> - the per-parameter sub-schema whose <code>$defs</code> block is consumed",
+      "translation": "<code>subSchema</code> - 每个参数的子模式，其 <code>$defs</code> 块将被消耗。",
+      "count": 1
+    },
+    {
+      "source": "<code>rootSchema</code> - the wrapper schema that will receive the hoisted definitions",
+      "translation": "<code>rootSchema</code> - 用于接收提升后定义的包装模式。",
+      "count": 1
+    },
+    {
+      "source": "<code>inputSchema</code> - the input schema as a JSON string",
+      "translation": "<code>inputSchema</code> - 作为 JSON 字符串的输入模式",
+      "count": 1
+    },
+    {
+      "source": "Guangdong Liu, Ilayaperumal Gopinathan, Sebastien Deleuze",
+      "translation": "广东刘，伊拉亚佩尔马·戈皮纳坦，塞巴斯蒂安·德洛兹",
+      "count": 1
+    },
+    {
+      "source": "a valid input schema as a JSON string with required fields",
+      "translation": "包含必需字段的 JSON 字符串形式的有效输入模式。",
+      "count": 1
+    },
+    {
+      "source": "the generated JSON Schema as a String.",
+      "translation": "将生成的 JSON Schema 作为字符串。",
+      "count": 1
+    },
+    {
+      "source": "Moves any <code>$defs</code> block found on <code>subSchema</code> into the <code>$defs</code>\nblock of <code>rootSchema</code>, creating one on the root if needed. On key collisions\nthe existing root entry is reused when the two definitions are structurally equal;\notherwise the incoming entry is renamed with a numeric suffix and every\n<code>\"#/$defs/&lt;oldKey&gt;\"</code> reference inside the inlined sub-schema and inside every\ndefinition inserted by this call is rewritten to point at the new key.",
+      "translation": "将 <code>subSchema</code> 上找到的任何 <code>$defs</code> 块移动到 <code>rootSchema</code> 的 <code>$defs</code> 块中，如果根对象中没有则创建一个新的。在键冲突时，如果两个定义在结构上相等，则复用现有的根条目；否则，将传入的条目重命名并添加数字后缀，并且重写内联子模式以及此调用插入的每个定义中的每一个 <code>\"#/$defs/&lt;oldKey&gt;\"</code> 引用，使其指向新的键。",
+      "count": 1
+    }
+  ]
+}

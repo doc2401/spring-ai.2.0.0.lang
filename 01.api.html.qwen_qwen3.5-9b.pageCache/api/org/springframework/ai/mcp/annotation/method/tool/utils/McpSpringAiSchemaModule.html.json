@@ -1,0 +1,71 @@
+{
+  "created_at": "2026-06-15 08:33:47",
+  "updated_at": "2026-06-15 08:33:47",
+  "stats": {
+    "total_entries": 11,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 13,
+    "entries_with_hits": 11,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1818181818181819,
+    "usage_percentage": 0.0011
+  },
+  "items": [
+    {
+      "source": "Extract the description from the tool-param annotation for the given member, or\nreturn <code>null</code> if the annotation is absent or its description is blank.",
+      "translation": "从给定成员的 tool-param 注解中提取描述，或者如果注解不存在或其描述为空，则返回 <code>null</code>。",
+      "count": 2
+    },
+    {
+      "source": "Extract the required flag from the tool-param annotation for the given member, or\nreturn <code>null</code> if the annotation is absent.",
+      "translation": "从给定成员的 tool-param 注解中提取所需的标志，或者如果该注解不存在则返回 <code>null</code>。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This module provides a set of customizations to the JSON Schema generator to support\nthe Spring AI MCP framework. It allows extracting descriptions from\n<code>@McpToolParam(description = ...)</code> annotations and to determine whether a\nproperty is required based on the presence of a series of annotations.",
+      "translation": "该模块提供了一组自定义功能，用于增强 JSON Schema 生成器以支持 Spring AI MCP 框架。它允许从 `<code>@McpToolParam(description = ...)</code>` 注解中提取描述信息，并根据一系列注解的存在与否来确定属性是否为必需项。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../../../../../util/json/schema/AbstractSpringAiSchemaModule.html#resolveToolParamDescription(com.github.victools.jsonschema.generator.MemberScope)\">AbstractSpringAiSchemaModule</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述已从类复制：<code><a href=\"../../../../../util/json/schema/AbstractSpringAiSchemaModule.html#resolveToolParamDescription(com.github.victools.jsonschema.generator.MemberScope)\">AbstractSpringAiSchemaModule</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../../../../../util/json/schema/AbstractSpringAiSchemaModule.html#resolveToolParamRequired(com.github.victools.jsonschema.generator.MemberScope)\">AbstractSpringAiSchemaModule</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述已从类复制：<code><a href=\"../../../../../util/json/schema/AbstractSpringAiSchemaModule.html#resolveToolParamRequired(com.github.victools.jsonschema.generator.MemberScope)\">AbstractSpringAiSchemaModule</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../../../../util/json/schema/AbstractSpringAiSchemaModule.html#resolveToolParamDescription(com.github.victools.jsonschema.generator.MemberScope)\">resolveToolParamDescription</a></code> in class <code><a href=\"../../../../../util/json/schema/AbstractSpringAiSchemaModule.html\" title=\"class in org.springframework.ai.util.json.schema\">AbstractSpringAiSchemaModule</a></code>",
+      "translation": "<code><a href=\"../../../../../util/json/schema/AbstractSpringAiSchemaModule.html#resolveToolParamDescription(com.github.victools.jsonschema.generator.MemberScope)\">resolveToolParamDescription</a></code> 类 <code><a href=\"../../../../../util/json/schema/AbstractSpringAiSchemaModule.html\" title=\"class in org.springframework.ai.util.json.schema\">AbstractSpringAiSchemaModule</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../../../../util/json/schema/AbstractSpringAiSchemaModule.html#resolveToolParamRequired(com.github.victools.jsonschema.generator.MemberScope)\">resolveToolParamRequired</a></code> in class <code><a href=\"../../../../../util/json/schema/AbstractSpringAiSchemaModule.html\" title=\"class in org.springframework.ai.util.json.schema\">AbstractSpringAiSchemaModule</a></code>",
+      "translation": "<code><a href=\"../../../../../util/json/schema/AbstractSpringAiSchemaModule.html#resolveToolParamRequired(com.github.victools.jsonschema.generator.MemberScope)\">resolveToolParamRequired</a></code> 类 <code><a href=\"../../../../../util/json/schema/AbstractSpringAiSchemaModule.html\" title=\"class in org.springframework.ai.util.json.schema\">AbstractSpringAiSchemaModule</a></code>",
+      "count": 1
+    },
+    {
+      "source": "Thomas Vitale, Christian Tzolov",
+      "translation": "托马斯·维塔莱，克里斯蒂安·茨佐洛夫",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "JSON Schema Generator Module for Spring AI MCP.",
+      "translation": "Spring AI MCP 的 JSON Schema 生成模块。",
+      "count": 1
+    }
+  ]
+}

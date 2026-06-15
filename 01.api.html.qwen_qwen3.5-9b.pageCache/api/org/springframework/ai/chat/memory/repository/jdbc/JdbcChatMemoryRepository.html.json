@@ -1,0 +1,81 @@
+{
+  "created_at": "2026-06-15 08:56:15",
+  "updated_at": "2026-06-15 08:56:15",
+  "stats": {
+    "total_entries": 13,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 14,
+    "entries_with_hits": 13,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0769230769230769,
+    "usage_percentage": 0.0013
+  },
+  "items": [
+    {
+      "source": "Replaces all the existing messages for the given conversation ID with the provided\nmessages.",
+      "translation": "使用提供的消息替换给定对话 ID 的所有现有消息。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../ChatMemoryRepository.html#saveAll(java.lang.String,java.util.List)\">ChatMemoryRepository</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../ChatMemoryRepository.html#saveAll(java.lang.String,java.util.List)\">ChatMemoryRepository</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "An implementation of <a href=\"../../ChatMemoryRepository.html\" title=\"interface in org.springframework.ai.chat.memory\"><code>ChatMemoryRepository</code></a> for JDBC.",
+      "translation": "针对 JDBC 实现的<a href=\"../../ChatMemoryRepository.html\" title=\"org.springframework.ai.chat.memory 中的接口\"><code>ChatMemoryRepository</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Metadata key under which each message's creation timestamp (an <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/Instant.html\" title=\"class or interface in java.time\"><code>Instant</code></a>) is\nexposed when messages are read back from the repository.",
+      "translation": "每条消息的创建时间戳（一个<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/Instant.html\" title=\"class or interface in java.time\"><code>Instant</code></a>）在从存储库读取消息时，将在此元数据键下暴露。",
+      "count": 1
+    },
+    {
+      "source": "Metadata key under which each message's creation timestamp (an <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/Instant.html\" title=\"class or interface in java.time\"><code>Instant</code></a>) is\nexposed when messages are read back from the repository. Messages carrying this key\nretain their original timestamp when the conversation is saved again.",
+      "translation": "每条消息的创建时间戳（一个<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/Instant.html\" title=\"class or interface in java.time\"><code>Instant</code></a>）在从存储库读取消息时，将通过此元数据键进行暴露。携带此键的消息在再次保存对话时会保留其原始时间戳。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../ChatMemoryRepository.html#findConversationIds()\">findConversationIds</a></code> in interface <code><a href=\"../../ChatMemoryRepository.html\" title=\"interface in org.springframework.ai.chat.memory\">ChatMemoryRepository</a></code>",
+      "translation": "接口 <code><a href=\"../../ChatMemoryRepository.html\" title=\"org.springframework.ai.chat.memory 中的接口\">ChatMemoryRepository</a></code> 中的方法 <code><a href=\"../../ChatMemoryRepository.html#findConversationIds()\">findConversationIds</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../ChatMemoryRepository.html#findByConversationId(java.lang.String)\">findByConversationId</a></code> in interface <code><a href=\"../../ChatMemoryRepository.html\" title=\"interface in org.springframework.ai.chat.memory\">ChatMemoryRepository</a></code>",
+      "translation": "接口 <code><a href=\"../../ChatMemoryRepository.html\" title=\"org.springframework.ai.chat.memory 中的接口\">ChatMemoryRepository</a></code> 中的 <code><a href=\"../../ChatMemoryRepository.html#findByConversationId(java.lang.String)\">findByConversationId</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../ChatMemoryRepository.html#saveAll(java.lang.String,java.util.List)\">saveAll</a></code> in interface <code><a href=\"../../ChatMemoryRepository.html\" title=\"interface in org.springframework.ai.chat.memory\">ChatMemoryRepository</a></code>",
+      "translation": "接口 <code><a href=\"../../ChatMemoryRepository.html\" title=\"org.springframework.ai.chat.memory 中的接口\">ChatMemoryRepository</a></code> 中的 <code><a href=\"../../ChatMemoryRepository.html#saveAll(java.lang.String,java.util.List)\">saveAll</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../ChatMemoryRepository.html#deleteByConversationId(java.lang.String)\">deleteByConversationId</a></code> in interface <code><a href=\"../../ChatMemoryRepository.html\" title=\"interface in org.springframework.ai.chat.memory\">ChatMemoryRepository</a></code>",
+      "translation": "接口 <code><a href=\"../../ChatMemoryRepository.html\" title=\"org.springframework.ai.chat.memory 中的接口\">ChatMemoryRepository</a></code> 中的方法 <code><a href=\"../../ChatMemoryRepository.html#deleteByConversationId(java.lang.String)\">deleteByConversationId</a></code>",
+      "count": 1
+    },
+    {
+      "source": "Jonathan Leijendekker, Thomas Vitale, Linar Abzaltdinov, Mark Pollack, Yanming Zhou",
+      "translation": "Jonathan Leijendekker，Thomas Vitale，Linar Abzaltdinov，Mark Pollack，Yanming Zhou",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    }
+  ]
+}

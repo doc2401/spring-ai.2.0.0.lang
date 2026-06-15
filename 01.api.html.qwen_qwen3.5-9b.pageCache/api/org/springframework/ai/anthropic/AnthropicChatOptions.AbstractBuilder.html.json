@@ -1,0 +1,181 @@
+{
+  "created_at": "2026-06-15 07:24:42",
+  "updated_at": "2026-06-15 07:24:42",
+  "stats": {
+    "total_entries": 33,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 51,
+    "entries_with_hits": 33,
+    "entries_without_hits": 0,
+    "hit_rate": 1.5454545454545454,
+    "usage_percentage": 0.0033000000000000004
+  },
+  "items": [
+    {
+      "source": "this builder",
+      "translation": "此构建器",
+      "count": 5
+    },
+    {
+      "source": "Build the <a href=\"../chat/prompt/ChatOptions.html\" title=\"interface in org.springframework.ai.chat.prompt\"><code>ChatOptions</code></a>.",
+      "translation": "构建<a href=\"../chat/prompt/ChatOptions.html\" title=\"org.springframework.ai.chat.prompt 中的接口\"><code>ChatOptions</code></a>。",
+      "count": 2
+    },
+    {
+      "source": "Mutate this builder by taking all <code>other</code>'s values that are non-null,\nretaining <code>this</code> other values.",
+      "translation": "通过保留所有非空的 `<code>other</code>` 值，同时保持 `<code>this</code>` 的其他值，来变异此构建器。",
+      "count": 2
+    },
+    {
+      "source": "Convenience method to set the effort level for the model's response.",
+      "translation": "设置模型响应努力程度的便捷方法。",
+      "count": 2
+    },
+    {
+      "source": "Sets the geographic region for inference processing.",
+      "translation": "设置推理处理的地域。",
+      "count": 2
+    },
+    {
+      "source": "Sets the output configuration for controlling response format and effort.",
+      "translation": "设置输出配置以控制响应格式和努力程度。",
+      "count": 2
+    },
+    {
+      "source": "Sets the service tier for capacity routing.",
+      "translation": "设置容量路由的服务层级。",
+      "count": 2
+    },
+    {
+      "source": "Convenience method to let Claude adaptively decide whether to think.",
+      "translation": "一种便捷方法，让 Claude 自适应地决定是否进行思考。",
+      "count": 2
+    },
+    {
+      "source": "Convenience method to let Claude adaptively decide whether to think, with a\ndisplay setting.",
+      "translation": "一种便捷方法，让 Claude 能够自适应地决定是否进行思考，并配备显示设置。",
+      "count": 2
+    },
+    {
+      "source": "Convenience method to explicitly disable thinking.",
+      "translation": "显式禁用思考的便捷方法。",
+      "count": 2
+    },
+    {
+      "source": "Convenience method to enable thinking with a specific budget in tokens.",
+      "translation": "一种便捷方法，用于在特定 token 预算下启用思考。",
+      "count": 2
+    },
+    {
+      "source": "Convenience method to enable thinking with a specific budget and display\nsetting.",
+      "translation": "启用特定预算和显示设置以进行思考的便捷方法。",
+      "count": 2
+    },
+    {
+      "source": "Enables Anthropic's built-in web search tool with the given configuration.",
+      "translation": "启用 Anthropic 内置的网络搜索工具，并使用给定的配置。",
+      "count": 2
+    },
+    {
+      "source": "<code>budgetTokens</code> - the thinking budget (must be &gt;= 1024 and &lt; maxTokens)",
+      "translation": "`budgetTokens` - 思考预算（必须 >= 1024 且 < maxTokens）",
+      "count": 2
+    },
+    {
+      "source": "<code>display</code> - controls how thinking content appears in the response\n(SUMMARIZED or OMITTED)",
+      "translation": "<code>display</code> - 控制思考内容在响应中的显示方式（SUMMARIZED 或 OMITTED）",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../chat/prompt/ChatOptions.Builder.html#combineWith(org.springframework.ai.chat.prompt.ChatOptions.Builder)\">ChatOptions.Builder</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../chat/prompt/ChatOptions.Builder.html#combineWith(org.springframework.ai.chat.prompt.ChatOptions.Builder)\">ChatOptions.Builder</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../chat/prompt/ChatOptions.Builder.html#build()\">ChatOptions.Builder</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../chat/prompt/ChatOptions.Builder.html#build()\">ChatOptions.Builder</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../chat/prompt/ChatOptions.Builder.html#clone()\">clone</a></code> in interface <code><a href=\"../chat/prompt/ChatOptions.Builder.html\" title=\"interface in org.springframework.ai.chat.prompt\">ChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in AnthropicChatOptions.AbstractBuilder\">B</a> extends <a href=\"AnthropicChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.anthropic\">AnthropicChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in AnthropicChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code>",
+      "translation": "<code><a href=\"../chat/prompt/ChatOptions.Builder.html#clone()\">clone()</a></code> 在接口 <code><a href=\"../chat/prompt/ChatOptions.Builder.html\" title=\"interface in org.springframework.ai.chat.prompt\">ChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in AnthropicChatOptions.AbstractBuilder\">B</a> extends <a href=\"AnthropicChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.anthropic\">AnthropicChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in AnthropicChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../model/tool/DefaultToolCallingChatOptions.Builder.html#clone()\">clone</a></code> in class <code><a href=\"../model/tool/DefaultToolCallingChatOptions.Builder.html\" title=\"class in org.springframework.ai.model.tool\">DefaultToolCallingChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in AnthropicChatOptions.AbstractBuilder\">B</a> extends <a href=\"AnthropicChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.anthropic\">AnthropicChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in AnthropicChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code>",
+      "translation": "<code><a href=\"../model/tool/DefaultToolCallingChatOptions.Builder.html#clone()\">clone</a></code> 方法位于类 <code><a href=\"../model/tool/DefaultToolCallingChatOptions.Builder.html\" title=\"class in org.springframework.ai.model.tool\">DefaultToolCallingChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in AnthropicChatOptions.AbstractBuilder\">B</a> extends <a href=\"AnthropicChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.anthropic\">AnthropicChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in AnthropicChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code> 中。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../model/tool/StructuredOutputChatOptions.Builder.html#outputSchema(java.lang.String)\">outputSchema</a></code> in interface <code><a href=\"../model/tool/StructuredOutputChatOptions.Builder.html\" title=\"interface in org.springframework.ai.model.tool\">StructuredOutputChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in AnthropicChatOptions.AbstractBuilder\">B</a> extends <a href=\"AnthropicChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.anthropic\">AnthropicChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in AnthropicChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code>",
+      "translation": "<code><a href=\"../model/tool/StructuredOutputChatOptions.Builder.html#outputSchema(java.lang.String)\">outputSchema</a></code> 接口 <code><a href=\"../model/tool/StructuredOutputChatOptions.Builder.html\" title=\"interface in org.springframework.ai.model.tool\">StructuredOutputChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"类型参数 AnthropicChatOptions.AbstractBuilder\">B</a> extends <a href=\"AnthropicChatOptions.AbstractBuilder.html\" title=\"类 org.springframework.ai.anthropic\">AnthropicChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"类型参数 AnthropicChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../chat/prompt/ChatOptions.Builder.html#combineWith(org.springframework.ai.chat.prompt.ChatOptions.Builder)\">combineWith</a></code> in interface <code><a href=\"../chat/prompt/ChatOptions.Builder.html\" title=\"interface in org.springframework.ai.chat.prompt\">ChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in AnthropicChatOptions.AbstractBuilder\">B</a> extends <a href=\"AnthropicChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.anthropic\">AnthropicChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in AnthropicChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code>",
+      "translation": "<code><a href=\"../chat/prompt/ChatOptions.Builder.html#combineWith(org.springframework.ai.chat.prompt.ChatOptions.Builder)\">combineWith</a></code> 接口 <code><a href=\"../chat/prompt/ChatOptions.Builder.html\" title=\"interface in org.springframework.ai.chat.prompt\">ChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in AnthropicChatOptions.AbstractBuilder\">B</a> extends <a href=\"AnthropicChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.anthropic\">AnthropicChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in AnthropicChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../model/tool/DefaultToolCallingChatOptions.Builder.html#combineWith(org.springframework.ai.chat.prompt.ChatOptions.Builder)\">combineWith</a></code> in class <code><a href=\"../model/tool/DefaultToolCallingChatOptions.Builder.html\" title=\"class in org.springframework.ai.model.tool\">DefaultToolCallingChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in AnthropicChatOptions.AbstractBuilder\">B</a> extends <a href=\"AnthropicChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.anthropic\">AnthropicChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in AnthropicChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code>",
+      "translation": "<code><a href=\"../model/tool/DefaultToolCallingChatOptions.Builder.html#combineWith(org.springframework.ai.chat.prompt.ChatOptions.Builder)\">combineWith</a></code> 类 <code><a href=\"../model/tool/DefaultToolCallingChatOptions.Builder.html\" title=\"class in org.springframework.ai.model.tool\">DefaultToolCallingChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in AnthropicChatOptions.AbstractBuilder\">B</a> extends <a href=\"AnthropicChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.anthropic\">AnthropicChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in AnthropicChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../chat/prompt/ChatOptions.Builder.html#build()\">build</a></code> in interface <code><a href=\"../chat/prompt/ChatOptions.Builder.html\" title=\"interface in org.springframework.ai.chat.prompt\">ChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in AnthropicChatOptions.AbstractBuilder\">B</a> extends <a href=\"AnthropicChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.anthropic\">AnthropicChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in AnthropicChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code>",
+      "translation": "<code><a href=\"../chat/prompt/ChatOptions.Builder.html#build()\">build</a></code> 接口 <code><a href=\"../chat/prompt/ChatOptions.Builder.html\" title=\"interface in org.springframework.ai.chat.prompt\">ChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in AnthropicChatOptions.AbstractBuilder\">B</a> extends <a href=\"AnthropicChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.anthropic\">AnthropicChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in AnthropicChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../model/tool/ToolCallingChatOptions.Builder.html#build()\">build</a></code> in interface <code><a href=\"../model/tool/ToolCallingChatOptions.Builder.html\" title=\"interface in org.springframework.ai.model.tool\">ToolCallingChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in AnthropicChatOptions.AbstractBuilder\">B</a> extends <a href=\"AnthropicChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.anthropic\">AnthropicChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in AnthropicChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code>",
+      "translation": "<code><a href=\"../model/tool/ToolCallingChatOptions.Builder.html#build()\">build</a></code> 接口 <code><a href=\"../model/tool/ToolCallingChatOptions.Builder.html\" title=\"interface in org.springframework.ai.model.tool\">ToolCallingChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in AnthropicChatOptions.AbstractBuilder\">B</a> extends <a href=\"AnthropicChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.anthropic\">AnthropicChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in AnthropicChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../model/tool/DefaultToolCallingChatOptions.Builder.html#build()\">build</a></code> in class <code><a href=\"../model/tool/DefaultToolCallingChatOptions.Builder.html\" title=\"class in org.springframework.ai.model.tool\">DefaultToolCallingChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in AnthropicChatOptions.AbstractBuilder\">B</a> extends <a href=\"AnthropicChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.anthropic\">AnthropicChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in AnthropicChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code>",
+      "translation": "<code><a href=\"../model/tool/DefaultToolCallingChatOptions.Builder.html#build()\">build</a></code> 方法位于类 <code><a href=\"../model/tool/DefaultToolCallingChatOptions.Builder.html\" title=\"class in org.springframework.ai.model.tool\">DefaultToolCallingChatOptions.Builder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in AnthropicChatOptions.AbstractBuilder\">B</a> extends <a href=\"AnthropicChatOptions.AbstractBuilder.html\" title=\"class in org.springframework.ai.anthropic\">AnthropicChatOptions.AbstractBuilder</a>&lt;<a href=\"#type-param-B\" title=\"type parameter in AnthropicChatOptions.AbstractBuilder\">B</a>&gt;&gt;</code> 中。",
+      "count": 1
+    },
+    {
+      "source": "<code>outputConfig</code> - the output configuration",
+      "translation": "<code>outputConfig</code> - 输出配置",
+      "count": 1
+    },
+    {
+      "source": "<code>effort</code> - the desired effort level (LOW, MEDIUM, HIGH, MAX)",
+      "translation": "<code>effort</code> - 期望的努力级别（LOW、MEDIUM、HIGH、MAX）",
+      "count": 1
+    },
+    {
+      "source": "<code>webSearchTool</code> - the web search configuration",
+      "translation": "<code>webSearchTool</code> - 网络搜索配置",
+      "count": 1
+    },
+    {
+      "source": "<code>serviceTier</code> - the service tier (AUTO or STANDARD_ONLY)",
+      "translation": "<code>serviceTier</code> - 服务层级（AUTO 或 STANDARD_ONLY）",
+      "count": 1
+    },
+    {
+      "source": "<code>inferenceGeo</code> - the region identifier (\"us\" or \"eu\")",
+      "translation": "`inferenceGeo` - 区域标识符（\"us\"或\"eu\"）",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Thomas Vitale, Alexandros Pappas, Ilayaperumal Gopinathan, Soby Chacko, Austin Dase, Sebastien Deleuze",
+      "translation": "Christian Tzolov，Thomas Vitale，Alexandros Pappas，Ilayaperumal Gopinathan，Soby Chacko，Austin Dase，Sebastien Deleuze",
+      "count": 1
+    },
+    {
+      "source": "the Chat options.",
+      "translation": "聊天选项。",
+      "count": 1
+    }
+  ]
+}

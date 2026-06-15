@@ -1,0 +1,106 @@
+{
+  "created_at": "2026-06-15 08:01:59",
+  "updated_at": "2026-06-15 08:01:59",
+  "stats": {
+    "total_entries": 18,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 23,
+    "entries_with_hits": 18,
+    "entries_without_hits": 0,
+    "hit_rate": 1.2777777777777777,
+    "usage_percentage": 0.0018
+  },
+  "items": [
+    {
+      "source": "This builder instance for chaining.",
+      "translation": "用于链式调用的此构建器实例。",
+      "count": 4
+    },
+    {
+      "source": "Builds and returns a new <a href=\"StTemplateRenderer.html\" title=\"class in org.springframework.ai.template.st\"><code>StTemplateRenderer</code></a> instance with the\nconfigured settings.",
+      "translation": "构建并返回一个新的 <a href=\"StTemplateRenderer.html\" title=\"class in org.springframework.ai.template.st\"><code>StTemplateRenderer</code></a> 实例，该实例使用已配置的设置。",
+      "count": 2
+    },
+    {
+      "source": "Configures the renderer to support StringTemplate's built-in functions during\nvalidation.",
+      "translation": "配置渲染器以在验证期间支持 StringTemplate 的内置函数。",
+      "count": 2
+    },
+    {
+      "source": "When disabled (default, false), these identifiers are treated like regular\nvariables and must be provided in the input map if validation is enabled\n(<a href=\"../ValidationMode.html#WARN\"><code>ValidationMode.WARN</code></a> or <a href=\"../ValidationMode.html#THROW\"><code>ValidationMode.THROW</code></a>).",
+      "translation": "当禁用时（默认值为 false），这些标识符被视为普通变量，如果启用了验证（<a href=\"../ValidationMode.html#WARN\"><code>ValidationMode.WARN</code></a> 或 <a href=\"../ValidationMode.html#THROW\"><code>ValidationMode.THROW</code></a>），则必须在输入映射中提供它们。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "When enabled (set to true), identifiers in the template that match known ST\nfunction names (e.g., \"first\", \"rest\", \"length\") will not be treated as\nrequired input variables during validation.",
+      "translation": "启用时（设置为 true），模板中与已知 ST 函数名称（例如\"first\"、\"rest\"、\"length\"）匹配的标识符在验证期间将不会被视作必需的输入变量。",
+      "count": 1
+    },
+    {
+      "source": "Builder for configuring and creating <a href=\"StTemplateRenderer.html\" title=\"class in org.springframework.ai.template.st\"><code>StTemplateRenderer</code></a> instances.",
+      "translation": "用于配置和创建 <a href=\"StTemplateRenderer.html\" title=\"class in org.springframework.ai.template.st\"><code>StTemplateRenderer</code></a> 实例的构建器。",
+      "count": 1
+    },
+    {
+      "source": "Sets the validation mode to control behavior when the provided variables do not\nmatch the variables required by the template. Default is\n<a href=\"../ValidationMode.html#THROW\"><code>ValidationMode.THROW</code></a>.",
+      "translation": "将验证模式设置为控制当提供的变量与模板所需的变量不匹配时的行为。默认值为 <a href=\"../ValidationMode.html#THROW\"><code>ValidationMode.THROW</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Sets the character used as the end delimiter for template expressions.",
+      "translation": "设置模板表达式中用作结束定界符的字符。",
+      "count": 1
+    },
+    {
+      "source": "Sets the character used as the start delimiter for template expressions.",
+      "translation": "设置用作模板表达式起始分隔符的字符。",
+      "count": 1
+    },
+    {
+      "source": "Sets the validation mode to control behavior when the provided variables do not\nmatch the variables required by the template.",
+      "translation": "将验证模式设置为控制当提供的变量与模板所需的变量不匹配时的行为。",
+      "count": 1
+    },
+    {
+      "source": "Sets the character used as the start delimiter for template expressions.\nDefault is '{'.",
+      "translation": "设置模板表达式中用作起始分隔符的字符。默认值为 '{'。",
+      "count": 1
+    },
+    {
+      "source": "Sets the character used as the end delimiter for template expressions. Default\nis '}'.",
+      "translation": "设置模板表达式的结束分隔符。默认值为 \"}\"。",
+      "count": 1
+    },
+    {
+      "source": "A configured <a href=\"StTemplateRenderer.html\" title=\"class in org.springframework.ai.template.st\"><code>StTemplateRenderer</code></a>.",
+      "translation": "已配置的<a href=\"StTemplateRenderer.html\" title=\"org.springframework.ai.template.st 中的类\"><code>StTemplateRenderer</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "<code>startDelimiterToken</code> - The start delimiter character.",
+      "translation": "<code>startDelimiterToken</code> - 起始分隔符字符。",
+      "count": 1
+    },
+    {
+      "source": "<code>endDelimiterToken</code> - The end delimiter character.",
+      "translation": "<code>endDelimiterToken</code> - 结束分隔符字符。",
+      "count": 1
+    },
+    {
+      "source": "<code>validationMode</code> - The desired validation mode.",
+      "translation": "<code>validationMode</code> - 期望的验证模式。",
+      "count": 1
+    },
+    {
+      "source": "Thomas Vitale, Sun Yuhan",
+      "translation": "托马斯·维塔莱，孙雨涵",
+      "count": 1
+    }
+  ]
+}

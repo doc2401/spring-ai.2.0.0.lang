@@ -1,0 +1,66 @@
+{
+  "created_at": "2026-06-15 08:58:48",
+  "updated_at": "2026-06-15 08:58:48",
+  "stats": {
+    "total_entries": 10,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 12,
+    "entries_with_hits": 10,
+    "entries_without_hits": 0,
+    "hit_rate": 1.2,
+    "usage_percentage": 0.001
+  },
+  "items": [
+    {
+      "source": "Returns a <a href=\"../ResponseEntity.html\" title=\"class in org.springframework.ai.chat.client\"><code>ResponseEntity</code></a> containing both the complete\n<a href=\"../../model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> object and a specific entity type, with behaviour\nconfigured via the <code>entityParamSpecConsumer</code>.",
+      "translation": "返回一个包含完整 <a href=\"../ResponseEntity.html\" title=\"class in org.springframework.ai.chat.client\"><code>ResponseEntity</code></a> 和特定实体类型的对象，其行为通过 <code>entityParamSpecConsumer</code> 进行配置。该 <a href=\"../../model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> 对象也包含在内。",
+      "count": 2
+    },
+    {
+      "source": "Deserializes the response into a <code>T</code> instance, with behaviour configured\nvia the <code>entityParamSpecConsumer</code>.",
+      "translation": "将响应反序列化为 `<code>T</code>` 实例，其行为通过 `<code>entityParamSpecConsumer</code>` 进行配置。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Returns a <a href=\"../ResponseEntity.html\" title=\"class in org.springframework.ai.chat.client\"><code>ResponseEntity</code></a> containing both the complete\n<a href=\"../../model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> object and an entity converted using a specified\n<a href=\"../../../converter/StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a>, with behaviour configured via the\n<code>entityParamSpecConsumer</code>.",
+      "translation": "返回一个 <a href=\"../ResponseEntity.html\" title=\"class in org.springframework.ai.chat.client\"><code>ResponseEntity</code></a>，其中包含完整的 <a href=\"../../model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> 对象以及使用指定的 <a href=\"../../../converter/StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a> 转换后的实体，其行为通过 <code>entityParamSpecConsumer</code> 进行配置。",
+      "count": 1
+    },
+    {
+      "source": "Default implementation of <a href=\"../ChatClient.EntityParamSpec.html\" title=\"interface in org.springframework.ai.chat.client\"><code>ChatClient.EntityParamSpec</code></a>.",
+      "translation": "<a href=\"../ChatClient.EntityParamSpec.html\" title=\"org.springframework.ai.chat.client 中的接口\"><code>ChatClient.EntityParamSpec</code></a>的默认实现。",
+      "count": 1
+    },
+    {
+      "source": "Validates the model's JSON response against the entity schema and retries with\nthe error feedback on failure, up to <code>maxRepeatAttempts</code> times (default:\n3).",
+      "translation": "验证模型对实体模式的 JSON 响应，并在失败时根据错误反馈重试，最多重试 <code>maxRepeatAttempts</code> 次（默认值为 3）。",
+      "count": 1
+    },
+    {
+      "source": "Deserializes the response using the given converter, with behaviour configured\nvia the <code>entityParamSpecConsumer</code>.",
+      "translation": "使用给定的转换器反序列化响应，其行为通过 `<code>entityParamSpecConsumer</code>` 进行配置。",
+      "count": 1
+    },
+    {
+      "source": "Chat client API.",
+      "translation": "聊天客户端 API。",
+      "count": 1
+    },
+    {
+      "source": "Delivers the JSON schema to the AI provider as an API-level constraint rather\nthan appending it as prompt text.",
+      "translation": "将 JSON Schema 作为 API 级别的约束传递给 AI 提供商，而不是将其附加为提示文本。",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ChatClient.EntityParamSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.EntityParamSpec</a> in <a href=\"../package-summary.html\">org.springframework.ai.chat.client</a>",
+      "translation": "<a href=\"../ChatClient.EntityParamSpec.html\" title=\"interface in org.springframework.ai.chat.client\">ChatClient.EntityParamSpec</a> 在 <a href=\"../package-summary.html\">org.springframework.ai.chat.client</a> 中的用途",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "created_at": "2026-06-15 08:56:39",
+  "updated_at": "2026-06-15 08:56:39",
+  "stats": {
+    "total_entries": 25,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 42,
+    "entries_with_hits": 25,
+    "entries_without_hits": 0,
+    "hit_rate": 1.68,
+    "usage_percentage": 0.0025
+  },
+  "items": [
+    {
+      "source": "this builder",
+      "translation": "此构建器",
+      "count": 9
+    },
+    {
+      "source": "Builds and returns an instance of <a href=\"RedisChatMemoryRepository.html\" title=\"class in org.springframework.ai.chat.memory.repository.redis\"><code>RedisChatMemoryRepository</code></a>.",
+      "translation": "构建并返回一个<a href=\"RedisChatMemoryRepository.html\" title=\"class in org.springframework.ai.chat.memory.repository.redis\"><code>RedisChatMemoryRepository</code></a>类的实例。",
+      "count": 2
+    },
+    {
+      "source": "Sets the index name.",
+      "translation": "设置索引名称。",
+      "count": 2
+    },
+    {
+      "source": "Sets whether to initialize the schema.",
+      "translation": "设置是否初始化架构。",
+      "count": 2
+    },
+    {
+      "source": "Sets the RedisClient client.",
+      "translation": "设置 RedisClient 客户端。",
+      "count": 2
+    },
+    {
+      "source": "Sets the key prefix.",
+      "translation": "设置键前缀。",
+      "count": 2
+    },
+    {
+      "source": "Sets the maximum number of conversation IDs to return.",
+      "translation": "设置要返回的对话 ID 的最大数量。",
+      "count": 2
+    },
+    {
+      "source": "Sets the maximum number of messages per conversation to return.",
+      "translation": "设置每段对话中返回的最大消息数量。",
+      "count": 2
+    },
+    {
+      "source": "Sets the time to live duration for messages stored in Redis.",
+      "translation": "设置存储在 Redis 中的消息的生存时间（TTL）。",
+      "count": 2
+    },
+    {
+      "source": "Sets the time to live in seconds for messages stored in Redis.",
+      "translation": "设置存储在 Redis 中的消息的生存时间（以秒为单位）。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Inner static builder class for constructing instances of\n<a href=\"RedisChatMemoryRepository.html\" title=\"class in org.springframework.ai.chat.memory.repository.redis\"><code>RedisChatMemoryRepository</code></a>.",
+      "translation": "内部静态构建器类，用于构建 <a href=\"RedisChatMemoryRepository.html\" title=\"class in org.springframework.ai.chat.memory.repository.redis\"><code>RedisChatMemoryRepository</code></a> 类的实例。",
+      "count": 1
+    },
+    {
+      "source": "Sets the metadata field definitions for proper indexing.",
+      "translation": "设置元数据字段定义，以实现正确的索引。",
+      "count": 1
+    },
+    {
+      "source": "Sets the metadata field definitions for proper indexing. Format is compatible\nwith RedisVL schema format.",
+      "translation": "设置元数据字段定义以支持正确索引。格式与 RedisVL 架构格式兼容。",
+      "count": 1
+    },
+    {
+      "source": "a new <a href=\"RedisChatMemoryRepository.html\" title=\"class in org.springframework.ai.chat.memory.repository.redis\"><code>RedisChatMemoryRepository</code></a> instance",
+      "translation": "一个新的<a href=\"RedisChatMemoryRepository.html\" title=\"org.springframework.ai.chat.memory.repository.redis 中的类\"><code>RedisChatMemoryRepository</code></a>实例",
+      "count": 1
+    },
+    {
+      "source": "<code>jedisClient</code> - the RedisClient client to use",
+      "translation": "<jedisClient> - 要使用的 RedisClient 客户端",
+      "count": 1
+    },
+    {
+      "source": "<code>indexName</code> - the index name to use",
+      "translation": "<code>indexName</code> - 要使用的索引名称",
+      "count": 1
+    },
+    {
+      "source": "<code>keyPrefix</code> - the key prefix to use",
+      "translation": "<code>keyPrefix</code> - 要使用的键前缀",
+      "count": 1
+    },
+    {
+      "source": "<code>initializeSchema</code> - whether to initialize the schema",
+      "translation": "<code>initializeSchema</code> - 是否初始化模式",
+      "count": 1
+    },
+    {
+      "source": "<code>timeToLiveSeconds</code> - the time to live in seconds (use -1 for no expiration)",
+      "translation": "<code>timeToLiveSeconds</code> - 存活时间（以秒为单位，使用 -1 表示永不过期）",
+      "count": 1
+    },
+    {
+      "source": "<code>timeToLive</code> - the time to live duration (null for no expiration)",
+      "translation": "<code>timeToLive</code> - 生存时间（若为 null，表示无过期）",
+      "count": 1
+    },
+    {
+      "source": "<code>maxConversationIds</code> - the maximum number of conversation IDs",
+      "translation": "<code>maxConversationIds</code> - 会话 ID 的最大数量",
+      "count": 1
+    },
+    {
+      "source": "<code>maxMessagesPerConversation</code> - the maximum number of messages per\nconversation",
+      "translation": "<code>maxMessagesPerConversation</code> - 每会话的最大消息数",
+      "count": 1
+    },
+    {
+      "source": "<code>metadataFields</code> - list of field definitions",
+      "translation": "<code>metadataFields</code> - 字段定义列表",
+      "count": 1
+    },
+    {
+      "source": "Brian Sam-Bodden, Yanming Zhou",
+      "translation": "布莱恩·萨姆 - 博登，周燕明",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "created_at": "2026-06-15 07:34:51",
+  "updated_at": "2026-06-15 07:34:51",
+  "stats": {
+    "total_entries": 19,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 26,
+    "entries_with_hits": 19,
+    "entries_without_hits": 0,
+    "hit_rate": 1.368421052631579,
+    "usage_percentage": 0.0019000000000000002
+  },
+  "items": [
+    {
+      "source": "the estimated number of tokens.",
+      "translation": "估算的 token 数量。",
+      "count": 3
+    },
+    {
+      "source": "Creates a new JTokkitTokenCountEstimator with default CL100K_BASE encoding.",
+      "translation": "使用默认的 CL100K_BASE 编码创建一个新的 JTokkitTokenCountEstimator。",
+      "count": 2
+    },
+    {
+      "source": "Creates a new JTokkitTokenCountEstimator with the specified encoding type.",
+      "translation": "使用指定的编码类型创建一个新的 JTokkitTokenCountEstimator。",
+      "count": 2
+    },
+    {
+      "source": "Estimates the number of tokens in the given text.",
+      "translation": "估算给定文本中的 token 数量。",
+      "count": 2
+    },
+    {
+      "source": "Estimates the number of tokens in the given messages.",
+      "translation": "估算给定消息中的 token 数量。",
+      "count": 2
+    },
+    {
+      "source": "Estimates the number of tokens in the given message.",
+      "translation": "估算给定消息中的 token 数量。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"TokenCountEstimator.html#estimate(java.lang.String)\">TokenCountEstimator</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"TokenCountEstimator.html#estimate(java.lang.String)\">TokenCountEstimator</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"TokenCountEstimator.html#estimate(org.springframework.ai.content.MediaContent)\">TokenCountEstimator</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"TokenCountEstimator.html#estimate(org.springframework.ai.content.MediaContent)\">TokenCountEstimator</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"TokenCountEstimator.html#estimate(java.lang.Iterable)\">TokenCountEstimator</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"TokenCountEstimator.html#estimate(java.lang.Iterable)\">TokenCountEstimator</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Estimates the number of tokens in a given text or message using the JTokkit encoding\nlibrary.",
+      "translation": "使用 JTokkit 编码库估算给定文本或消息中的 token 数量。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"TokenCountEstimator.html#estimate(java.lang.String)\">estimate</a></code> in interface <code><a href=\"TokenCountEstimator.html\" title=\"interface in org.springframework.ai.tokenizer\">TokenCountEstimator</a></code>",
+      "translation": "接口 <code><a href=\"TokenCountEstimator.html\" title=\"org.springframework.ai.tokenizer 中的接口\">TokenCountEstimator</a></code> 中的<code><a href=\"TokenCountEstimator.html#estimate(java.lang.String)\">estimate</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"TokenCountEstimator.html#estimate(org.springframework.ai.content.MediaContent)\">estimate</a></code> in interface <code><a href=\"TokenCountEstimator.html\" title=\"interface in org.springframework.ai.tokenizer\">TokenCountEstimator</a></code>",
+      "translation": "<a href=\"TokenCountEstimator.html#estimate(org.springframework.ai.content.MediaContent)\">estimate</a> 接口 <code><a href=\"TokenCountEstimator.html\" title=\"org.springframework.ai.tokenizer 中的接口\">TokenCountEstimator</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"TokenCountEstimator.html#estimate(java.lang.Iterable)\">estimate</a></code> in interface <code><a href=\"TokenCountEstimator.html\" title=\"interface in org.springframework.ai.tokenizer\">TokenCountEstimator</a></code>",
+      "translation": "接口 <code><a href=\"TokenCountEstimator.html\" title=\"org.springframework.ai.tokenizer 中的接口\">TokenCountEstimator</a></code> 中的 <code><a href=\"TokenCountEstimator.html#estimate(java.lang.Iterable)\">estimate</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code>tokenEncodingType</code> - the encoding type to use for token counting",
+      "translation": "<code>tokenEncodingType</code> - 用于标记计数的编码类型",
+      "count": 1
+    },
+    {
+      "source": "<code>text</code> - the text to estimate the number of tokens for.",
+      "translation": "<code>text</code> - 用于估算 token 数量的文本。",
+      "count": 1
+    },
+    {
+      "source": "<code>content</code> - the content (Message or Document) to estimate the number of tokens\nfor.",
+      "translation": "<code>content</code> - 用于估算 token 数量的内容（消息或文档）。",
+      "count": 1
+    },
+    {
+      "source": "<code>contents</code> - the messages to estimate the number of tokens for.",
+      "translation": "<code>contents</code> - 用于估算 token 数量的消息。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Soby Chacko",
+      "translation": "克里斯蒂安·茨洛夫，索比·查科",
+      "count": 1
+    }
+  ]
+}

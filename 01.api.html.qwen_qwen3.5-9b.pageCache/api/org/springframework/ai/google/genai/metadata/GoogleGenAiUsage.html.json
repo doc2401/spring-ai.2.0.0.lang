@@ -1,0 +1,166 @@
+{
+  "created_at": "2026-06-15 08:38:11",
+  "updated_at": "2026-06-15 08:38:11",
+  "stats": {
+    "total_entries": 30,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 40,
+    "entries_with_hits": 30,
+    "entries_without_hits": 0,
+    "hit_rate": 1.3333333333333333,
+    "usage_percentage": 0.003
+  },
+  "items": [
+    {
+      "source": "Creates a new GoogleGenAiUsage instance with all extended metadata.",
+      "translation": "创建一个包含所有扩展元数据的新 GoogleGenAiUsage 实例。",
+      "count": 2
+    },
+    {
+      "source": "Creates a GoogleGenAiUsage instance from the Google GenAI SDK response metadata.",
+      "translation": "从 Google GenAI SDK 的响应元数据中创建一个 GoogleGenAiUsage 实例。",
+      "count": 2
+    },
+    {
+      "source": "Returns the number of tokens in the cached content.",
+      "translation": "返回缓存内容中的 token 数量。",
+      "count": 2
+    },
+    {
+      "source": "Returns the list of modalities of the cached content in the request input.",
+      "translation": "返回请求输入中缓存内容的模态列表。",
+      "count": 2
+    },
+    {
+      "source": "Returns the list of modalities that were returned in the response.",
+      "translation": "返回响应中返回的模态列表。",
+      "count": 2
+    },
+    {
+      "source": "Returns the list of modalities that were processed in the request input.",
+      "translation": "返回请求输入中已处理的模态列表。",
+      "count": 2
+    },
+    {
+      "source": "Returns the number of tokens present in thoughts output for thinking-enabled\nmodels.",
+      "translation": "返回思维链启用模型中 thoughts 输出的 token 数量。",
+      "count": 2
+    },
+    {
+      "source": "Returns the number of tokens present in tool-use prompts.",
+      "translation": "返回工具使用提示中存在的 token 数量。",
+      "count": 2
+    },
+    {
+      "source": "Returns the list of modalities that were processed for tool-use request inputs.",
+      "translation": "返回为工具使用请求输入处理的模态列表。",
+      "count": 2
+    },
+    {
+      "source": "Returns the traffic type showing whether a request consumes Pay-As-You-Go or\nProvisioned Throughput quota.",
+      "translation": "返回流量类型，指示请求是消耗按量付费还是预留吞吐量配额。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../../chat/metadata/Usage.html#getCacheReadInputTokens()\">Usage</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../../chat/metadata/Usage.html#getCacheReadInputTokens()\">Usage</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Extended usage metadata for Google GenAI responses that includes thinking tokens,\ncached content, tool-use tokens, and modality breakdowns.",
+      "translation": "包含思考令牌、缓存内容、工具使用令牌及模态分解的 Google GenAI 响应扩展用法元数据。",
+      "count": 1
+    },
+    {
+      "source": "Returns the number of input tokens read from the prompt cache, if the provider\nsupports prompt caching.",
+      "translation": "如果提供者支持提示词缓存，则返回从提示词缓存中读取的输入 token 数量。",
+      "count": 1
+    },
+    {
+      "source": "Returns the number of input tokens read from the prompt cache, if the provider\nsupports prompt caching. Cached tokens are tokens that were previously processed\nand stored by the provider, reducing cost and latency for repeated prompt prefixes.",
+      "translation": "返回从提示缓存中读取的输入 token 数量（如果提供者支持提示缓存）。缓存的 token 是先前由提供者处理并存储的 token，可减少重复提示前缀的成本和延迟。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../../chat/metadata/Usage.html#getCacheReadInputTokens()\">getCacheReadInputTokens</a></code> in interface <code><a href=\"../../../chat/metadata/Usage.html\" title=\"interface in org.springframework.ai.chat.metadata\">Usage</a></code>",
+      "translation": "接口 <code><a href=\"../../../chat/metadata/Usage.html\" title=\"org.springframework.ai.chat.metadata 中的接口\">Usage</a></code> 中的方法<code><a href=\"../../../chat/metadata/Usage.html#getCacheReadInputTokens()\">getCacheReadInputTokens</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../../chat/metadata/DefaultUsage.html#getCacheReadInputTokens()\">getCacheReadInputTokens</a></code> in class <code><a href=\"../../../chat/metadata/DefaultUsage.html\" title=\"class in org.springframework.ai.chat.metadata\">DefaultUsage</a></code>",
+      "translation": "<code><a href=\"../../../chat/metadata/DefaultUsage.html#getCacheReadInputTokens()\">getCacheReadInputTokens</a></code> 类 <code><a href=\"../../../chat/metadata/DefaultUsage.html\" title=\"class in org.springframework.ai.chat.metadata\">DefaultUsage</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../../chat/metadata/DefaultUsage.html#toString()\">toString</a></code> in class <code><a href=\"../../../chat/metadata/DefaultUsage.html\" title=\"class in org.springframework.ai.chat.metadata\">DefaultUsage</a></code>",
+      "translation": "<code><a href=\"../../../chat/metadata/DefaultUsage.html#toString()\">toString</a></code> 类 <code><a href=\"../../../chat/metadata/DefaultUsage.html\" title=\"class in org.springframework.ai.chat.metadata\">DefaultUsage</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>usageMetadata</code> - the usage metadata from the Google GenAI SDK",
+      "translation": "<code>usageMetadata</code> - 来自 Google GenAI SDK 的使用元数据",
+      "count": 1
+    },
+    {
+      "source": "the number of cached input tokens read, or <code>null</code> if the provider\ndoes not support prompt caching or no cache hit occurred.",
+      "translation": "已读取的缓存输入 token 数量，如果提供者不支持提示词缓存或未发生缓存命中，则为 <code>null</code>。",
+      "count": 1
+    },
+    {
+      "source": "Dan Dobrin",
+      "translation": "丹·多布林",
+      "count": 1
+    },
+    {
+      "source": "a new GoogleGenAiUsage instance with all available metadata",
+      "translation": "包含所有可用元数据的新 GoogleGenAiUsage 实例",
+      "count": 1
+    },
+    {
+      "source": "the thoughts token count, or null if not available",
+      "translation": "思想令牌计数，若不可用则为 null",
+      "count": 1
+    },
+    {
+      "source": "the cached content token count, or null if not available",
+      "translation": "缓存内容的标记数量，若不可用则为 null。",
+      "count": 1
+    },
+    {
+      "source": "the tool-use prompt token count, or null if not available",
+      "translation": "工具使用提示符的令牌数，若不可用则为 null",
+      "count": 1
+    },
+    {
+      "source": "the prompt tokens details by modality, or null if not available",
+      "translation": "按模态划分的提示词 token 详情，若不可用则为 null",
+      "count": 1
+    },
+    {
+      "source": "the candidates tokens details by modality, or null if not available",
+      "translation": "按模态划分的候选 token 详细信息，若不可用则为 null。",
+      "count": 1
+    },
+    {
+      "source": "the cache tokens details by modality, or null if not available",
+      "translation": "按模态划分的缓存令牌详情，若不可用则为 null。",
+      "count": 1
+    },
+    {
+      "source": "the tool-use prompt tokens details by modality, or null if not available",
+      "translation": "按模态划分的工具使用提示词 token 详情，若无可用数据则为 null。",
+      "count": 1
+    },
+    {
+      "source": "the traffic type, or null if not available",
+      "translation": "交通类型，或不可用时为 null",
+      "count": 1
+    }
+  ]
+}

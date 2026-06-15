@@ -1,0 +1,66 @@
+{
+  "created_at": "2026-06-15 08:01:38",
+  "updated_at": "2026-06-15 08:01:38",
+  "stats": {
+    "total_entries": 10,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 12,
+    "entries_with_hits": 10,
+    "entries_without_hits": 0,
+    "hit_rate": 1.2,
+    "usage_percentage": 0.001
+  },
+  "items": [
+    {
+      "source": "Creates a weather tool callback with returnDirect=true.",
+      "translation": "创建一个返回直接为 true 的天气工具回调。",
+      "count": 2
+    },
+    {
+      "source": "Returns the ChatModel instance to be used in tests.",
+      "translation": "返回用于测试的 ChatModel 实例。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Subclasses must implement <a href=\"#getChatModel()\"><code>getChatModel()</code></a> to provide the specific ChatModel\ninstance to test against.",
+      "translation": "子类必须实现<a href=\"#getChatModel()\"><code>getChatModel()</code></a>，以提供用于测试的具体 ChatModel 实例。",
+      "count": 1
+    },
+    {
+      "source": "Creates the weather tool callback used in tests.",
+      "translation": "创建测试中使用的天气工具回调。",
+      "count": 1
+    },
+    {
+      "source": "Creates the weather tool callback used in tests. Subclasses can override this to\nprovide a custom tool callback.",
+      "translation": "创建测试中使用的天气工具回调。子类可以重写此方法以提供自定义的工具回调。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "the ChatModel to test",
+      "translation": "用于测试的 ChatModel",
+      "count": 1
+    },
+    {
+      "source": "the tool callback for weather service",
+      "translation": "天气服务的工具回调",
+      "count": 1
+    },
+    {
+      "source": "Abstract base class for <a href=\"../../../../chat/client/advisor/ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor</code></a> integration tests. Provides reusable\ntest scenarios for different ChatModel implementations.",
+      "translation": "用于<a href=\"../../../../chat/client/advisor/ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor</code></a>集成测试的抽象基类。为不同的 ChatModel 实现提供可重用的测试场景。",
+      "count": 1
+    }
+  ]
+}

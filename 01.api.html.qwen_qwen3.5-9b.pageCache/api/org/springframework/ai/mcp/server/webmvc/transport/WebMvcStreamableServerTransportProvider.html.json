@@ -1,0 +1,156 @@
+{
+  "created_at": "2026-06-15 08:22:47",
+  "updated_at": "2026-06-15 08:22:47",
+  "stats": {
+    "total_entries": 28,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 32,
+    "entries_with_hits": 28,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1428571428571428,
+    "usage_percentage": 0.0028
+  },
+  "items": [
+    {
+      "source": "Default base URL for the message endpoint.",
+      "translation": "消息端点的默认基础 URL。",
+      "count": 2
+    },
+    {
+      "source": "Event type for sending the message endpoint URI to clients.",
+      "translation": "发送消息端点 URI 给客户端的事件类型。",
+      "count": 2
+    },
+    {
+      "source": "Event type for JSON-RPC messages sent through the SSE connection.",
+      "translation": "通过 SSE 连接发送的 JSON-RPC 消息的事件类型。",
+      "count": 2
+    },
+    {
+      "source": "Initiates a graceful shutdown of the transport.",
+      "translation": "优雅地终止传输。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This is the non-reactive version of",
+      "translation": "这是非反应性版本的",
+      "count": 1
+    },
+    {
+      "source": "Returns the RouterFunction that defines the HTTP endpoints for this transport. The\nrouter function handles three endpoints:\n<ul>\n<li>GET [mcpEndpoint] - For establishing SSE connections and message replay</li>\n<li>POST [mcpEndpoint] - For receiving JSON-RPC messages from clients</li>\n<li>DELETE [mcpEndpoint] - For session deletion (if enabled)</li>\n</ul>",
+      "translation": "返回定义此传输 HTTP 端点的 RouterFunction。该路由函数处理三个端点：\n<ul>\n<li>GET [mcpEndpoint] - 用于建立 SSE 连接和消息重放</li>\n<li>POST [mcpEndpoint] - 用于从客户端接收 JSON-RPC 消息</li>\n<li>DELETE [mcpEndpoint] - 用于会话删除（如果已启用）</li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "Builder for creating instances of <a href=\"WebMvcStreamableServerTransportProvider.html\" title=\"class in org.springframework.ai.mcp.server.webmvc.transport\"><code>WebMvcStreamableServerTransportProvider</code></a>.",
+      "translation": "用于创建<a href=\"WebMvcStreamableServerTransportProvider.html\" title=\"class in org.springframework.ai.mcp.server.webmvc.transport\"><code>WebMvcStreamableServerTransportProvider</code></a>实例的构建器。",
+      "count": 1
+    },
+    {
+      "source": "Returns the RouterFunction that defines the HTTP endpoints for this transport.",
+      "translation": "返回定义此传输的 HTTP 端点的 RouterFunction。",
+      "count": 1
+    },
+    {
+      "source": "Broadcasts a notification to all connected clients through their SSE connections.",
+      "translation": "通过 SSE 连接向所有已连接的客户端广播通知。",
+      "count": 1
+    },
+    {
+      "source": "Broadcasts a notification to all connected clients through their SSE connections.\nIf any errors occur during sending to a particular client, they are logged but\ndon't prevent sending to other clients.",
+      "translation": "通过 SSE 连接向所有已连接的客户端广播通知。\n如果在向特定客户端发送过程中发生任何错误，这些错误将被记录，但不会影响向其他客户端的发送。",
+      "count": 1
+    },
+    {
+      "source": "<code>protocolVersions</code> in interface <code>io.modelcontextprotocol.spec.McpServerTransportProviderBase</code>",
+      "translation": "接口 <code>io.modelcontextprotocol.spec.McpServerTransportProviderBase</code> 中的 <code>protocolVersions</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>setSessionFactory</code> in interface <code>io.modelcontextprotocol.spec.McpStreamableServerTransportProvider</code>",
+      "translation": "在接口 <code>io.modelcontextprotocol.spec.McpStreamableServerTransportProvider</code> 中的 <code>setSessionFactory</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>notifyClients</code> in interface <code>io.modelcontextprotocol.spec.McpServerTransportProviderBase</code>",
+      "translation": "接口 <code>io.modelcontextprotocol.spec.McpServerTransportProviderBase</code> 中的 <code>notifyClients</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>notifyClients</code> in interface <code>io.modelcontextprotocol.spec.McpStreamableServerTransportProvider</code>",
+      "translation": "接口 <code>io.modelcontextprotocol.spec.McpStreamableServerTransportProvider</code> 中的 <code>notifyClients</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>notifyClient</code> in interface <code>io.modelcontextprotocol.spec.McpServerTransportProviderBase</code>",
+      "translation": "接口 <code>io.modelcontextprotocol.spec.McpServerTransportProviderBase</code> 中的 <code>notifyClient</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>closeGracefully</code> in interface <code>io.modelcontextprotocol.spec.McpServerTransportProviderBase</code>",
+      "translation": "接口 <code>io.modelcontextprotocol.spec.McpServerTransportProviderBase</code> 中的 <code>closeGracefully</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>closeGracefully</code> in interface <code>io.modelcontextprotocol.spec.McpStreamableServerTransportProvider</code>",
+      "translation": "接口 <code>io.modelcontextprotocol.spec.McpStreamableServerTransportProvider</code> 中的 <code>closeGracefully</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>method</code> - The method name for the notification",
+      "translation": "<code>method</code> - 通知的方法名",
+      "count": 1
+    },
+    {
+      "source": "<code>params</code> - The parameters for the notification",
+      "translation": "<code>params</code> - 通知的参数",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Dariusz Jędrzejczyk",
+      "translation": "克里斯蒂安·茨洛夫，达里乌什·耶德雷日奇克",
+      "count": 1
+    },
+    {
+      "source": "A Mono that completes when the broadcast attempt is finished",
+      "translation": "一个在广播尝试完成后完成的 Mono。",
+      "count": 1
+    },
+    {
+      "source": "A Mono that completes when all cleanup operations are finished",
+      "translation": "一个在所有清理操作完成后完成的单例。",
+      "count": 1
+    },
+    {
+      "source": "The configured RouterFunction for handling HTTP requests",
+      "translation": "用于处理 HTTP 请求的配置好的 RouterFunction",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "Server-side implementation of the Model Context Protocol (MCP) streamable transport\nlayer using HTTP with Server-Sent Events (SSE) through Spring WebMVC. This\nimplementation provides a bridge between synchronous WebMVC operations and reactive\nprogramming patterns to maintain compatibility with the reactive transport interface.",
+      "translation": "使用基于 Spring WebMVC 的 HTTP 和服务器发送事件（SSE）实现模型上下文协议（MCP）的可流式传输层服务端方案。该实现提供了同步 WebMVC 操作与响应式编程模式之间的桥梁，以保持与响应式传输接口的兼容性。",
+      "count": 1
+    },
+    {
+      "source": "<details class=\"invalid-tag\">\n<summary>invalid reference</summary>\n<pre><code>io.modelcontextprotocol.server.transport.WebFluxStreamableServerTransportProvider</code></pre>\n</details>",
+      "translation": "<details class=\"invalid-tag\">\n<summary>无效引用</summary>\n<pre><code>io.modelcontextprotocol.server.transport.WebFluxStreamableServerTransportProvider</code></pre>\n</details>",
+      "count": 1
+    }
+  ]
+}

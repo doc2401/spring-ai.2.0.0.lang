@@ -1,0 +1,166 @@
+{
+  "created_at": "2026-06-15 07:28:08",
+  "updated_at": "2026-06-15 07:28:08",
+  "stats": {
+    "total_entries": 30,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 38,
+    "entries_with_hits": 30,
+    "entries_without_hits": 0,
+    "hit_rate": 1.2666666666666666,
+    "usage_percentage": 0.003
+  },
+  "items": [
+    {
+      "source": "Helper content extractor that uses and external <a href=\"ContentFormatter.html\" title=\"interface in org.springframework.ai.document\"><code>ContentFormatter</code></a>.",
+      "translation": "使用外部<a href=\"ContentFormatter.html\" title=\"org.springframework.ai.document 中的接口\"><code>ContentFormatter</code></a>的辅助内容提取器。",
+      "count": 2
+    },
+    {
+      "source": "Replace the document's <a href=\"ContentFormatter.html\" title=\"interface in org.springframework.ai.document\"><code>ContentFormatter</code></a>.",
+      "translation": "替换文档中的<a href=\"ContentFormatter.html\" title=\"org.springframework.ai.document 中的接口\"><code>ContentFormatter</code></a>。",
+      "count": 2
+    },
+    {
+      "source": "Returns the content formatter associated with this document.",
+      "translation": "返回与此文档关联的内容格式化器。",
+      "count": 2
+    },
+    {
+      "source": "Returns the unique identifier for this document.",
+      "translation": "返回此文档的唯一标识符。",
+      "count": 2
+    },
+    {
+      "source": "Returns the document's media content, if any.",
+      "translation": "返回文档的媒体内容（如果有）。",
+      "count": 2
+    },
+    {
+      "source": "Returns the metadata associated with this document.",
+      "translation": "返回与此文档关联的元数据。",
+      "count": 2
+    },
+    {
+      "source": "Returns the document's text content, if any.",
+      "translation": "返回文档的文本内容（如果有的话）。",
+      "count": 2
+    },
+    {
+      "source": "Determines whether this document contains text or media content.",
+      "translation": "确定此文档是否包含文本或媒体内容。",
+      "count": 2
+    },
+    {
+      "source": "This ID is either explicitly provided during document creation or generated using\nthe configured <a href=\"id/IdGenerator.html\" title=\"interface in org.springframework.ai.document.id\"><code>IdGenerator</code></a> (defaults to <a href=\"id/RandomIdGenerator.html\" title=\"class in org.springframework.ai.document.id\"><code>RandomIdGenerator</code></a>).",
+      "translation": "该 ID 要么是在创建文档时显式提供的，要么是使用配置的<a href=\"id/IdGenerator.html\" title=\"interface in org.springframework.ai.document.id\"><code>IdGenerator</code></a>生成的（默认为<a href=\"id/RandomIdGenerator.html\" title=\"class in org.springframework.ai.document.id\"><code>RandomIdGenerator</code></a>）。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Example of creating a text document:",
+      "translation": "创建文本文档的示例：",
+      "count": 1
+    },
+    {
+      "source": "Example of creating a media document:",
+      "translation": "创建媒体文档的示例：",
+      "count": 1
+    },
+    {
+      "source": "Example of checking content type and accessing content:",
+      "translation": "检查内容类型并访问内容的示例：",
+      "count": 1
+    },
+    {
+      "source": "The metadata values are restricted to simple types (string, int, float, boolean)\nfor compatibility with Vector Databases.",
+      "translation": "元数据值仅限于简单类型（字符串、整数、浮点数和布尔值），以确保与向量数据库的兼容性。",
+      "count": 1
+    },
+    {
+      "source": "true if this document contains text content (accessible via\n<a href=\"#getText()\"><code>getText()</code></a>), false if it contains media content (accessible via\n<a href=\"#getMedia()\"><code>getMedia()</code></a>)",
+      "translation": "如果此文档包含文本内容（可通过 <a href=\"#getText()\"><code>getText()</code></a> 访问），则为 true；如果包含媒体内容（可通过 <a href=\"#getMedia()\"><code>getMedia()</code></a> 访问），则为 false。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)\" title=\"class or interface in java.lang\">equals</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"class or interface in java.lang\">Object</a></code>",
+      "translation": "`Object` 类中的 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)\" title=\"class or interface in java.lang\">equals</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#hashCode()\" title=\"class or interface in java.lang\">hashCode</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"class or interface in java.lang\">Object</a></code>",
+      "translation": "类 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"java.lang 中的类或接口\">Object</a></code> 中的 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#hashCode()\" title=\"java.lang 中的类或接口\">hashCode</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#toString()\" title=\"class or interface in java.lang\">toString</a></code> in class <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"class or interface in java.lang\">Object</a></code>",
+      "translation": "类 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html\" title=\"java.lang 中的类或接口\">Object</a></code> 中的 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#toString()\" title=\"java.lang 中的类或接口\">toString</a></code>",
+      "count": 1
+    },
+    {
+      "source": "the text content if <a href=\"#isText()\"><code>isText()</code></a> is true, null otherwise",
+      "translation": "如果<a href=\"#isText()\"><code>isText()</code></a>为真，则返回文本内容；否则返回 null。",
+      "count": 1
+    },
+    {
+      "source": "the media content if <a href=\"#isText()\"><code>isText()</code></a> is false, null otherwise",
+      "translation": "如果 `<a href=\"#isText()\"><code>isText()</code></a>` 为 false，则媒体内容为 null；否则为其他值。",
+      "count": 1
+    },
+    {
+      "source": "<code>contentFormatter</code> - new formatter to use.",
+      "translation": "<code>contentFormatter</code> - 要使用的新格式化器。",
+      "count": 1
+    },
+    {
+      "source": "the unique identifier of this document",
+      "translation": "本文档的唯一标识符",
+      "count": 1
+    },
+    {
+      "source": "the metadata map",
+      "translation": "元数据映射图",
+      "count": 1
+    },
+    {
+      "source": "the current ContentFormatter instance used for formatting the document\ncontent.",
+      "translation": "当前用于格式化文档内容的 ContentFormatter 实例。",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "A document is a container for the content and metadata of a document. It also contains\nthe document's unique ID.\n\nA Document can hold either text content or media content, but not both.\n\nIt is intended to be used to take data from external sources as part of spring-ai's ETL\npipeline.",
+      "translation": "文档是用于存储文档内容和元数据的容器，同时也包含文档的唯一标识符。\n\n文档可以包含文本内容或媒体内容，但不能同时包含两者。\n\n它旨在作为 spring-ai 的 ETL 流程的一部分，从外部源获取数据。",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>// Using constructor\nDocument textDoc = new Document(\"Sample text content\", Map.of(\"source\", \"user-input\"));\n\n// Using builder\nDocument textDoc = Document.builder()\n    .text(\"Sample text content\")\n    .metadata(\"source\", \"user-input\")\n    .build();\n</code></pre>",
+      "translation": "<pre><code>// 使用构造函数\nDocument textDoc = new Document(\"示例文本内容\", Map.of(\"source\", \"用户输入\"));\n\n// 使用构建器\nDocument textDoc = Document.builder()\n    .text(\"示例文本内容\")\n    .metadata(\"source\", \"用户输入\")\n    .build();\n</code></pre>",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>// Using constructor\nMedia imageContent = new Media(MediaType.IMAGE_PNG, new byte[] {...});\nDocument mediaDoc = new Document(imageContent, Map.of(\"filename\", \"sample.png\"));\n\n// Using builder\nDocument mediaDoc = Document.builder()\n    .media(new Media(MediaType.IMAGE_PNG, new byte[] {...}))\n    .metadata(\"filename\", \"sample.png\")\n    .build();\n</code></pre>",
+      "translation": "<pre><code>// 使用构造函数\nMedia imageContent = new Media(MediaType.IMAGE_PNG, new byte[] {...});\nDocument mediaDoc = new Document(imageContent, Map.of(\"filename\", \"sample.png\"));\n\n// 使用构建器\nDocument mediaDoc = Document.builder()\n    .media(new Media(MediaType.IMAGE_PNG, new byte[] {...}))\n    .metadata(\"filename\", \"sample.png\")\n    .build();\n</code></pre>",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>if (document.isText()) {\n    String textContent = document.getText();\n    // Process text content\n} else {\n    Media mediaContent = document.getMedia();\n    // Process media content\n}\n</code></pre>",
+      "translation": "<pre><code>if (document.isText()) {\n    String textContent = document.getText();\n    // 处理文本内容\n} else {\n    Media mediaContent = document.getMedia();\n    // 处理媒体内容\n}\n</code></pre>",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "created_at": "2026-06-15 07:59:56",
+  "updated_at": "2026-06-15 07:59:56",
+  "stats": {
+    "total_entries": 18,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 21,
+    "entries_with_hits": 18,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1666666666666667,
+    "usage_percentage": 0.0018
+  },
+  "items": [
+    {
+      "source": "Called after a session's tool index has been cleared — either because this strategy\nreturned it from <a href=\"ToolIndexEvictionStrategy.html#onAccess(java.lang.String)\"><code>ToolIndexEvictionStrategy.onAccess(String)</code></a>, or because of an explicit eviction request.",
+      "translation": "在会话的工具索引被清除后调用——无论是因为该策略通过<a href=\"ToolIndexEvictionStrategy.html#onAccess(java.lang.String)\"><code>ToolIndexEvictionStrategy.onAccess(String)</code></a>返回了它，还是因为显式的驱逐请求。",
+      "count": 2
+    },
+    {
+      "source": "Creates a new LruEvictionStrategy.",
+      "translation": "创建一个新的 LruEvictionStrategy。",
+      "count": 2
+    },
+    {
+      "source": "Called each time a session is accessed at the start of request processing.",
+      "translation": "每次在请求处理开始时访问会话时都会调用。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Access order is updated on every <a href=\"#onAccess(java.lang.String)\"><code>onAccess(String)</code></a> call, so a session that receives a\nnew request is moved to the most-recently-used position and will not be a candidate for\neviction until all other sessions have been accessed.",
+      "translation": "访问顺序会在每次调用 <a href=\"#onAccess(java.lang.String)\"><code>onAccess(String)</code></a> 时进行更新，因此接收到新请求的会话会被移至最近使用的位置，并且只有在所有其他会话都被访问后，该会话才会成为被驱逐的候选对象。",
+      "count": 1
+    },
+    {
+      "source": "Implementations should update their internal tracking state for <code>sessionId</code>\nand return the set of session IDs whose tool indexes must now be cleared. The\nreturned set must never include the currently-accessed <code>sessionId</code>.",
+      "translation": "实现应更新其内部跟踪状态以处理<code>sessionId</code>，并返回必须清除工具索引的会话 ID 集合。该返回集合绝不能包含当前正在访问的<code>sessionId</code>。",
+      "count": 1
+    },
+    {
+      "source": "This strategy is suitable for remote vector databases and API-based embedding models,\nwhere the number of sessions whose embeddings are retained in the store must be\nbounded.",
+      "translation": "该策略适用于远程向量数据库和基于 API 的嵌入模型，其中必须对存储在其中的会话嵌入数量进行限制。",
+      "count": 1
+    },
+    {
+      "source": "Implementations should remove any internal tracking state for the evicted session.",
+      "translation": "实现应移除被驱逐会话的任何内部跟踪状态。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"ToolIndexEvictionStrategy.html#onAccess(java.lang.String)\">ToolIndexEvictionStrategy</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"ToolIndexEvictionStrategy.html#onAccess(java.lang.String)\">ToolIndexEvictionStrategy</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"ToolIndexEvictionStrategy.html#onRemoved(java.lang.String)\">ToolIndexEvictionStrategy</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"ToolIndexEvictionStrategy.html#onRemoved(java.lang.String)\">ToolIndexEvictionStrategy</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ToolIndexEvictionStrategy.html#onAccess(java.lang.String)\">onAccess</a></code> in interface <code><a href=\"ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\">ToolIndexEvictionStrategy</a></code>",
+      "translation": "接口 <code><a href=\"ToolIndexEvictionStrategy.html\" title=\"org.springframework.ai.tool.toolsearch.eviction 中的接口\">ToolIndexEvictionStrategy</a></code> 中的方法 <code><a href=\"ToolIndexEvictionStrategy.html#onAccess(java.lang.String)\">onAccess</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ToolIndexEvictionStrategy.html#onRemoved(java.lang.String)\">onRemoved</a></code> in interface <code><a href=\"ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\">ToolIndexEvictionStrategy</a></code>",
+      "translation": "<a href=\"ToolIndexEvictionStrategy.html#onRemoved(java.lang.String)\">onRemoved</a> 接口 <code><a href=\"ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\">ToolIndexEvictionStrategy</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>maxSessions</code> - maximum number of sessions whose indexes are retained; must be\npositive",
+      "translation": "<code>maxSessions</code> - 保留的会话索引的最大数量；必须为正数。",
+      "count": 1
+    },
+    {
+      "source": "<code>sessionId</code> - the session being accessed",
+      "translation": "<code>sessionId</code> - 正在访问的会话",
+      "count": 1
+    },
+    {
+      "source": "session IDs to evict; never <code>null</code>, may be empty",
+      "translation": "待驱逐的会话 ID；永远不会为<code>null</code>，可能为空。",
+      "count": 1
+    },
+    {
+      "source": "<code>sessionId</code> - the session that was evicted",
+      "translation": "<code>sessionId</code> - 被驱逐的会话",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "A <a href=\"ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\"><code>ToolIndexEvictionStrategy</code></a> that evicts the least-recently-used session when\nthe number of concurrently active sessions exceeds a configured maximum.",
+      "translation": "一个 <a href=\"ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\"><code>ToolIndexEvictionStrategy</code></a>，当并发活跃会话数超过配置的最大限度时，它会驱逐最近最少使用的会话。",
+      "count": 1
+    }
+  ]
+}

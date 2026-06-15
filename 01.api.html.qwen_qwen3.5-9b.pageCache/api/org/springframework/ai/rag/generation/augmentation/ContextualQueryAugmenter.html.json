@@ -1,0 +1,76 @@
+{
+  "created_at": "2026-06-15 08:04:59",
+  "updated_at": "2026-06-15 08:04:59",
+  "stats": {
+    "total_entries": 12,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 13,
+    "entries_with_hits": 12,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0833333333333333,
+    "usage_percentage": 0.0012000000000000001
+  },
+  "items": [
+    {
+      "source": "Augments the user query with contextual data.",
+      "translation": "根据上下文数据增强用户查询。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Example usage:",
+      "translation": "使用示例：",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"QueryAugmenter.html#augment(org.springframework.ai.rag.Query,java.util.List)\">QueryAugmenter</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"QueryAugmenter.html#augment(org.springframework.ai.rag.Query,java.util.List)\">QueryAugmenter</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"QueryAugmenter.html#augment(org.springframework.ai.rag.Query,java.util.List)\">augment</a></code> in interface <code><a href=\"QueryAugmenter.html\" title=\"interface in org.springframework.ai.rag.generation.augmentation\">QueryAugmenter</a></code>",
+      "translation": "<a href=\"QueryAugmenter.html#augment(org.springframework.ai.rag.Query,java.util.List)\">augment</a> 接口 <code><a href=\"QueryAugmenter.html\" title=\"interface in org.springframework.ai.rag.generation.augmentation\">QueryAugmenter</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>query</code> - The user query to augment",
+      "translation": "<code>query</code> - 待增强的用户查询",
+      "count": 1
+    },
+    {
+      "source": "<code>documents</code> - The contextual data to use for augmentation",
+      "translation": "<code>documents</code> - 用于增强的上下文数据",
+      "count": 1
+    },
+    {
+      "source": "Thomas Vitale",
+      "translation": "托马斯·维塔莱",
+      "count": 1
+    },
+    {
+      "source": "The augmented query",
+      "translation": "增强查询",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Augments the user query with contextual data from the content of the provided\ndocuments.",
+      "translation": "根据所提供文档的内容，将用户查询与上下文数据相结合。",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>QueryAugmenter augmenter = ContextualQueryAugmenter.builder()\n   .allowEmptyContext(false)\n   .build();\nQuery augmentedQuery = augmenter.augment(query, documents);\n</code></pre>",
+      "translation": "<pre><code>QueryAugmenter augmenter = ContextualQueryAugmenter.builder()\n   .allowEmptyContext(false)\n   .build();\nQuery augmentedQuery = augmenter.augment(query, documents);\n</code></pre>",
+      "count": 1
+    }
+  ]
+}

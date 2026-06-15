@@ -1,0 +1,101 @@
+{
+  "created_at": "2026-06-15 08:51:26",
+  "updated_at": "2026-06-15 08:51:26",
+  "stats": {
+    "total_entries": 17,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 21,
+    "entries_with_hits": 17,
+    "entries_without_hits": 0,
+    "hit_rate": 1.2352941176470589,
+    "usage_percentage": 0.0017
+  },
+  "items": [
+    {
+      "source": "Factory method used to create a new <a href=\"PromptMetadata.html\" title=\"interface in org.springframework.ai.chat.metadata\"><code>PromptMetadata</code></a> composed of an\n<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Iterable.html\" title=\"class or interface in java.lang\"><code>Iterable</code></a> of <a href=\"PromptMetadata.PromptFilterMetadata.html\" title=\"interface in org.springframework.ai.chat.metadata\"><code>PromptMetadata.PromptFilterMetadata</code></a>.",
+      "translation": "工厂方法用于创建一个新的<a href=\"PromptMetadata.html\" title=\"org.springframework.ai.chat.metadata 中的接口\"><code>PromptMetadata</code></a>，该对象由一个包含 <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Iterable.html\" title=\"java.lang 中的类或接口\"><code>Iterable</code></a> 的<a href=\"PromptMetadata.PromptFilterMetadata.html\" title=\"org.springframework.ai.chat.metadata 中的接口\"><code>PromptMetadata.PromptFilterMetadata</code></a>组成。",
+      "count": 2
+    },
+    {
+      "source": "Returns an <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html\" title=\"class or interface in java.util\"><code>Optional</code></a> <a href=\"PromptMetadata.PromptFilterMetadata.html\" title=\"interface in org.springframework.ai.chat.metadata\"><code>PromptMetadata.PromptFilterMetadata</code></a> at the given index.",
+      "translation": "返回给定索引处的一个 <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html\" title=\"java.util 中的类或接口\"><code>Optional</code></a> <a href=\"PromptMetadata.PromptFilterMetadata.html\" title=\"org.springframework.ai.chat.metadata 中的接口\"><code>PromptMetadata.PromptFilterMetadata</code></a>。",
+      "count": 2
+    },
+    {
+      "source": "Factory method used to create a new <a href=\"PromptMetadata.html\" title=\"interface in org.springframework.ai.chat.metadata\"><code>PromptMetadata</code></a> composed of an array of\n<a href=\"PromptMetadata.PromptFilterMetadata.html\" title=\"interface in org.springframework.ai.chat.metadata\"><code>PromptMetadata.PromptFilterMetadata</code></a>.",
+      "translation": "工厂方法用于创建一个新的 <a href=\"PromptMetadata.html\" title=\"org.springframework.ai.chat.metadata 中的接口\"><code>PromptMetadata</code></a>，该对象由一个 <a href=\"PromptMetadata.PromptFilterMetadata.html\" title=\"org.springframework.ai.chat.metadata 中的接口\"><code>PromptMetadata.PromptFilterMetadata</code></a> 数组组成。",
+      "count": 2
+    },
+    {
+      "source": "Factory method used to create empty <a href=\"PromptMetadata.html\" title=\"interface in org.springframework.ai.chat.metadata\"><code>PromptMetadata</code></a> when the information is\nnot supplied by the AI provider.",
+      "translation": "工厂方法用于在 AI 提供者未提供信息时创建空的<a href=\"PromptMetadata.html\" title=\"org.springframework.ai.chat.metadata 中的接口\"><code>PromptMetadata</code></a>。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Abstract Data Type (ADT) modeling metadata gathered by the AI during request\nprocessing.",
+      "translation": "抽象数据类型（ADT）模型，用于描述人工智能在请求处理过程中收集的元数据。",
+      "count": 1
+    },
+    {
+      "source": "Abstract Data Type (ADT) modeling filter metadata for all prompts sent during an AI\nrequest.",
+      "translation": "抽象数据类型（ADT）建模用于过滤在 AI 请求期间发送的所有提示的元数据。",
+      "count": 1
+    },
+    {
+      "source": "<code>iterable</code> - <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Iterable.html\" title=\"class or interface in java.lang\"><code>Iterable</code></a> of <a href=\"PromptMetadata.PromptFilterMetadata.html\" title=\"interface in org.springframework.ai.chat.metadata\"><code>PromptMetadata.PromptFilterMetadata</code></a> used to compose\nthe <a href=\"PromptMetadata.html\" title=\"interface in org.springframework.ai.chat.metadata\"><code>PromptMetadata</code></a>.",
+      "translation": "<code>iterable</code> - 用于组合<a href=\"PromptMetadata.html\" title=\"org.springframework.ai.chat.metadata 中的接口\"><code>PromptMetadata</code></a>的<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Iterable.html\" title=\"java.lang 中的类或接口\"><code>Iterable</code></a>，其元素类型为<a href=\"PromptMetadata.PromptFilterMetadata.html\" title=\"org.springframework.ai.chat.metadata 中的接口\"><code>PromptMetadata.PromptFilterMetadata</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "a new <a href=\"PromptMetadata.html\" title=\"interface in org.springframework.ai.chat.metadata\"><code>PromptMetadata</code></a> composed of an <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Iterable.html\" title=\"class or interface in java.lang\"><code>Iterable</code></a> of\n<a href=\"PromptMetadata.PromptFilterMetadata.html\" title=\"interface in org.springframework.ai.chat.metadata\"><code>PromptMetadata.PromptFilterMetadata</code></a>.",
+      "translation": "一个由 <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Iterable.html\" title=\"class or interface in java.lang\"><code>Iterable</code></a> 组成的新 <a href=\"PromptMetadata.html\" title=\"interface in org.springframework.ai.chat.metadata\"><code>PromptMetadata</code></a>，其中包含多个 <a href=\"PromptMetadata.PromptFilterMetadata.html\" title=\"interface in org.springframework.ai.chat.metadata\"><code>PromptMetadata.PromptFilterMetadata</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "<code>array</code> - array of <a href=\"PromptMetadata.PromptFilterMetadata.html\" title=\"interface in org.springframework.ai.chat.metadata\"><code>PromptMetadata.PromptFilterMetadata</code></a> used to compose the\n<a href=\"PromptMetadata.html\" title=\"interface in org.springframework.ai.chat.metadata\"><code>PromptMetadata</code></a>.",
+      "translation": "<code>array</code> - 用于组合 <a href=\"PromptMetadata.html\" title=\"接口在 org.springframework.ai.chat.metadata\"><code>PromptMetadata</code></a> 的 <a href=\"PromptMetadata.PromptFilterMetadata.html\" title=\"接口在 org.springframework.ai.chat.metadata\"><code>PromptMetadata.PromptFilterMetadata</code></a> 数组。",
+      "count": 1
+    },
+    {
+      "source": "<code>promptIndex</code> - index of the <a href=\"PromptMetadata.PromptFilterMetadata.html\" title=\"interface in org.springframework.ai.chat.metadata\"><code>PromptMetadata.PromptFilterMetadata</code></a> contained in this\n<a href=\"PromptMetadata.html\" title=\"interface in org.springframework.ai.chat.metadata\"><code>PromptMetadata</code></a>.",
+      "translation": "<code>promptIndex</code> - 此 <a href=\"PromptMetadata.PromptFilterMetadata.html\" title=\"org.springframework.ai.chat.metadata 包中的接口\"><code>PromptMetadata.PromptFilterMetadata</code></a> 在 <a href=\"PromptMetadata.html\" title=\"org.springframework.ai.chat.metadata 包中的接口\"><code>PromptMetadata</code></a> 中的索引。",
+      "count": 1
+    },
+    {
+      "source": "a new <a href=\"PromptMetadata.html\" title=\"interface in org.springframework.ai.chat.metadata\"><code>PromptMetadata</code></a> composed of an array of\n<a href=\"PromptMetadata.PromptFilterMetadata.html\" title=\"interface in org.springframework.ai.chat.metadata\"><code>PromptMetadata.PromptFilterMetadata</code></a>.",
+      "translation": "一个由 <a href=\"PromptMetadata.html\" title=\"org.springframework.ai.chat.metadata 中的接口\"><code>PromptMetadata</code></a> 组成的新对象，其中包含一个 <a href=\"PromptMetadata.PromptFilterMetadata.html\" title=\"org.springframework.ai.chat.metadata 中的接口\"><code>PromptMetadata.PromptFilterMetadata</code></a> 数组。",
+      "count": 1
+    },
+    {
+      "source": "<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html\" title=\"class or interface in java.util\"><code>Optional</code></a> <a href=\"PromptMetadata.PromptFilterMetadata.html\" title=\"interface in org.springframework.ai.chat.metadata\"><code>PromptMetadata.PromptFilterMetadata</code></a> at the given index.",
+      "translation": "<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html\" title=\"java.util 中的类或接口\"><code>Optional</code></a> <a href=\"PromptMetadata.PromptFilterMetadata.html\" title=\"org.springframework.ai.chat.metadata 中的接口\"><code>PromptMetadata.PromptFilterMetadata</code></a> 在给定索引处。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if the prompt index is less than 0.",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - 如果提示索引小于 0。",
+      "count": 1
+    },
+    {
+      "source": "This is a functional interface and can therefore be used as the assignment target for a lambda expression or method reference.",
+      "translation": "这是一个函数式接口，因此可用作 Lambda 表达式或方法引用的赋值目标。",
+      "count": 1
+    },
+    {
+      "source": "John Blum",
+      "translation": "约翰·布鲁姆",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    }
+  ]
+}

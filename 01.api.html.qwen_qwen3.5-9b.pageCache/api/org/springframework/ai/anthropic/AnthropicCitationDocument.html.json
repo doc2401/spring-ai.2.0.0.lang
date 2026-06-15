@@ -1,0 +1,101 @@
+{
+  "created_at": "2026-06-15 07:25:16",
+  "updated_at": "2026-06-15 07:25:16",
+  "stats": {
+    "total_entries": 17,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 18,
+    "entries_with_hits": 17,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0588235294117647,
+    "usage_percentage": 0.0017
+  },
+  "items": [
+    {
+      "source": "Convert this citation document to an SDK <code>DocumentBlockParam</code>.",
+      "translation": "将本引用文档转换为 SDK 中的 `DocumentBlockParam`。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "<b>Plain Text Document:</b>",
+      "translation": "纯文本文档：",
+      "count": 1
+    },
+    {
+      "source": "<b>PDF Document:</b>",
+      "translation": "<b>PDF 文档：</b>",
+      "count": 1
+    },
+    {
+      "source": "<b>Custom Content Blocks:</b>",
+      "translation": "<b>自定义内容块：</b>",
+      "count": 1
+    },
+    {
+      "source": "Citations allow Claude to reference specific parts of provided documents in its\nresponses. When a citation document is included in a prompt, Claude can cite the source\nmaterial, and citation metadata (character ranges, page numbers, or content blocks) is\nreturned in the response.",
+      "translation": "引用功能使 Claude 能够在回复中引用所提供文档的特定部分。当提示中包含引用文档时，Claude 可以引用源材料，并在响应中返回引用元数据（字符范围、页码或内容块）。",
+      "count": 1
+    },
+    {
+      "source": "Builder class for AnthropicCitationDocument.",
+      "translation": "AnthropicCitationDocument 的构建器类。",
+      "count": 1
+    },
+    {
+      "source": "Document types supported by Anthropic Citations API.",
+      "translation": "Anthropic 引用 API 支持的文件类型。",
+      "count": 1
+    },
+    {
+      "source": "Soby Chacko",
+      "translation": "索比·查科",
+      "count": 1
+    },
+    {
+      "source": "configured DocumentBlockParam for the Anthropic API",
+      "translation": "已配置用于 Anthropic API 的 DocumentBlockParam。",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Usage Examples",
+      "translation": "使用示例",
+      "count": 1
+    },
+    {
+      "source": "Builder class for creating citation-enabled documents using the Anthropic Java SDK.\nProduces SDK <code>DocumentBlockParam</code> objects directly.",
+      "translation": "用于使用 Anthropic Java SDK 创建支持引用的文档的构建器类。\n直接生成 SDK `DocumentBlockParam` 对象。",
+      "count": 1
+    },
+    {
+      "source": "<h3 id=\"usage-examples-heading\">使用示例</h3>",
+      "translation": "<h3 id=\"usage-examples-heading\">使用示例</h3>",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>AnthropicCitationDocument document = AnthropicCitationDocument.builder()\n    .plainText(\"The Eiffel Tower was completed in 1889 in Paris, France.\")\n    .title(\"Eiffel Tower Facts\")\n    .citationsEnabled(true)\n    .build();\n</code></pre>",
+      "translation": "<pre><code>AnthropicCitationDocument document = AnthropicCitationDocument.builder()\n    .plainText(\"埃菲尔铁塔于1889年在法国巴黎建成。\")\n    .title(\"埃菲尔铁塔事实\")\n    .citationsEnabled(true)\n    .build();\n</code></pre>",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>AnthropicCitationDocument document = AnthropicCitationDocument.builder()\n    .pdfFile(\"path/to/document.pdf\")\n    .title(\"Technical Specification\")\n    .citationsEnabled(true)\n    .build();\n</code></pre>",
+      "translation": "<pre><code>AnthropicCitationDocument document = AnthropicCitationDocument.builder()\n    .pdfFile(\"path/to/document.pdf\")\n    .title(\"Technical Specification\")\n    .citationsEnabled(true)\n    .build();\n</code></pre>",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>AnthropicCitationDocument document = AnthropicCitationDocument.builder()\n    .customContent(\n        \"Fact 1: The Great Wall spans 21,196 kilometers.\",\n        \"Fact 2: Construction began in the 7th century BC.\",\n        \"Fact 3: It was built to protect Chinese states.\"\n    )\n    .title(\"Great Wall Facts\")\n    .citationsEnabled(true)\n    .build();\n</code></pre>",
+      "translation": "<pre><code>AnthropicCitationDocument document = AnthropicCitationDocument.builder()\n    .customContent(\n        \"事实1：长城全长21,196公里。\",\n        \"事实2：建设始于公元前7世纪。\",\n        \"事实3：它是为保护中国各州而建造的。\"\n    )\n    .title(\"长城事实\")\n    .citationsEnabled(true)\n    .build();\n</code></pre>",
+      "count": 1
+    }
+  ]
+}

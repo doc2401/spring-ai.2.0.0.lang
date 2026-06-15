@@ -1,0 +1,106 @@
+{
+  "created_at": "2026-06-15 08:47:27",
+  "updated_at": "2026-06-15 08:47:27",
+  "stats": {
+    "total_entries": 18,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 56,
+    "entries_with_hits": 18,
+    "entries_without_hits": 0,
+    "hit_rate": 3.111111111111111,
+    "usage_percentage": 0.0018
+  },
+  "items": [
+    {
+      "source": "<code>entityParamSpecConsumer</code> - configures options such as\n<a href=\"ChatClient.EntityParamSpec.html#useProviderStructuredOutput()\"><code>ChatClient.EntityParamSpec.useProviderStructuredOutput()</code></a> and\n<a href=\"ChatClient.EntityParamSpec.html#validateSchema()\"><code>ChatClient.EntityParamSpec.validateSchema()</code></a>",
+      "translation": "<code>entityParamSpecConsumer</code> - 配置选项，例如\n<a href=\"ChatClient.EntityParamSpec.html#useProviderStructuredOutput()\"><code>ChatClient.EntityParamSpec.useProviderStructuredOutput()</code></a> 和\n<a href=\"ChatClient.EntityParamSpec.html#validateSchema()\"><code>ChatClient.EntityParamSpec.validateSchema()</code></a>",
+      "count": 6
+    },
+    {
+      "source": "the deserialized entity, or <code>null</code> if the response is empty",
+      "translation": "反序列化的实体，或者如果响应为空则为 <code>null</code>",
+      "count": 6
+    },
+    {
+      "source": "the <a href=\"ResponseEntity.html\" title=\"class in org.springframework.ai.chat.client\"><code>ResponseEntity</code></a> containing both the complete\n<a href=\"../model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> object and the deserialized entity",
+      "translation": "包含完整 <a href=\"../model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> 对象和反序列化实体的 <a href=\"ResponseEntity.html\" title=\"class in org.springframework.ai.chat.client\"><code>ResponseEntity</code></a>",
+      "count": 5
+    },
+    {
+      "source": "Returns a <a href=\"ResponseEntity.html\" title=\"class in org.springframework.ai.chat.client\"><code>ResponseEntity</code></a> containing both the complete\n<a href=\"../model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> object and a specific entity type, with behaviour\nconfigured via the <code>entityParamSpecConsumer</code>.",
+      "translation": "返回一个包含完整 <a href=\"../model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> 对象和特定实体类型的 <a href=\"ResponseEntity.html\" title=\"class in org.springframework.ai.chat.client\"><code>ResponseEntity</code></a>，其行为通过 <code>entityParamSpecConsumer</code> 进行配置。",
+      "count": 4
+    },
+    {
+      "source": "Deserializes the response into a <code>T</code> instance, with behaviour configured\nvia the <code>entityParamSpecConsumer</code>.",
+      "translation": "将响应反序列化为 `<code>T</code>` 实例，其行为通过 `<code>entityParamSpecConsumer</code>` 进行配置。",
+      "count": 4
+    },
+    {
+      "source": "Deserializes the response into a <code>T</code> instance.",
+      "translation": "将响应反序列化为 `<code>T</code>` 实例。",
+      "count": 4
+    },
+    {
+      "source": "<code>type</code> - the target parameterized type",
+      "translation": "<code>type</code> - 目标参数化类型",
+      "count": 4
+    },
+    {
+      "source": "<code>structuredOutputConverter</code> - the converter for parsing and schema\nresolution",
+      "translation": "<code>structuredOutputConverter</code> - 用于解析和模式解析的转换器",
+      "count": 4
+    },
+    {
+      "source": "<code>type</code> - the target class",
+      "translation": "<code>type</code> - 目标类",
+      "count": 4
+    },
+    {
+      "source": "Returns a <a href=\"ResponseEntity.html\" title=\"class in org.springframework.ai.chat.client\"><code>ResponseEntity</code></a> containing both the complete\n<a href=\"../model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> object and an entity converted using a specified\n<a href=\"../../converter/StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a>, with behaviour configured via the\n<code>entityParamSpecConsumer</code>.",
+      "translation": "返回一个 <a href=\"ResponseEntity.html\" title=\"class in org.springframework.ai.chat.client\"><code>ResponseEntity</code></a>，其中包含完整的 <a href=\"../model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> 对象以及使用指定的 <a href=\"../../converter/StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a> 转换后的实体，其行为通过 <code>entityParamSpecConsumer</code> 进行配置。",
+      "count": 2
+    },
+    {
+      "source": "Returns a <a href=\"ResponseEntity.html\" title=\"class in org.springframework.ai.chat.client\"><code>ResponseEntity</code></a> containing both the complete\n<a href=\"../model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> object and an entity converted using a specified\n<a href=\"../../converter/StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a>.",
+      "translation": "返回一个 <a href=\"ResponseEntity.html\" title=\"class in org.springframework.ai.chat.client\"><code>ResponseEntity</code></a>，其中包含完整的 <a href=\"../model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> 对象以及使用指定的 <a href=\"../../converter/StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a> 转换后的实体。",
+      "count": 2
+    },
+    {
+      "source": "Returns a <a href=\"ResponseEntity.html\" title=\"class in org.springframework.ai.chat.client\"><code>ResponseEntity</code></a> containing both the complete\n<a href=\"../model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> object and a <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html\" title=\"class or interface in java.util\"><code>Collection</code></a> of entity types.",
+      "translation": "返回一个包含完整 <a href=\"../model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> 对象以及实体类型 <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html\" title=\"class or interface in java.util\"><code>Collection</code></a> 集合的 <a href=\"ResponseEntity.html\" title=\"class in org.springframework.ai.chat.client\"><code>ResponseEntity</code></a>。",
+      "count": 2
+    },
+    {
+      "source": "Returns a <a href=\"ResponseEntity.html\" title=\"class in org.springframework.ai.chat.client\"><code>ResponseEntity</code></a> containing both the complete\n<a href=\"../model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> object and a specific entity type.",
+      "translation": "返回一个包含完整 <a href=\"../model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> 对象和特定实体类型的 <a href=\"ResponseEntity.html\" title=\"class in org.springframework.ai.chat.client\"><code>ResponseEntity</code></a>。",
+      "count": 2
+    },
+    {
+      "source": "Deserializes the response using the given converter, with behaviour configured\nvia the <code>entityParamSpecConsumer</code>.",
+      "translation": "使用给定的转换器反序列化响应，其行为通过 `<code>entityParamSpecConsumer</code>` 进行配置。",
+      "count": 2
+    },
+    {
+      "source": "Deserializes the response using the given converter.",
+      "translation": "使用给定的转换器反序列化响应。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "the <a href=\"ResponseEntity.html\" title=\"class in org.springframework.ai.chat.client\"><code>ResponseEntity</code></a> containing both the complete\n<a href=\"../model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> object and the deserialized entities",
+      "translation": "包含完整 <a href=\"../model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> 对象以及反序列化后的实体的 <a href=\"ResponseEntity.html\" title=\"class in org.springframework.ai.chat.client\"><code>ResponseEntity</code></a>",
+      "count": 1
+    },
+    {
+      "source": "Mark Pollack, Christian Tzolov, Josh Long, Arjen Poutsma, Thomas Vitale",
+      "translation": "Mark Pollack，Christian Tzolov，Josh Long，Arjen Poutsma，Thomas Vitale",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "created_at": "2026-06-15 07:59:49",
+  "updated_at": "2026-06-15 07:59:49",
+  "stats": {
+    "total_entries": 17,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 19,
+    "entries_with_hits": 17,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1176470588235294,
+    "usage_percentage": 0.0017
+  },
+  "items": [
+    {
+      "source": "Called after a session's tool index has been cleared — either because this strategy\nreturned it from <a href=\"ToolIndexEvictionStrategy.html#onAccess(java.lang.String)\"><code>ToolIndexEvictionStrategy.onAccess(String)</code></a>, or because of an explicit eviction request.",
+      "translation": "在会话的工具索引被清除后调用——无论是因为该策略通过<a href=\"ToolIndexEvictionStrategy.html#onAccess(java.lang.String)\"><code>ToolIndexEvictionStrategy.onAccess(String)</code></a>返回了它，还是因为显式的驱逐请求。",
+      "count": 2
+    },
+    {
+      "source": "Shared singleton instance.",
+      "translation": "共享单例实例。",
+      "count": 2
+    },
+    {
+      "source": "<b>Contract note:</b> <a href=\"#onAccess(java.lang.String)\"><code>onAccess(String)</code></a> intentionally returns the currently-accessed\nsession ID, which diverges from the general recommendation in\n<a href=\"ToolIndexEvictionStrategy.html#onAccess(java.lang.String)\"><code>ToolIndexEvictionStrategy.onAccess(String)</code></a>. This is safe because the advisor's\n<code>doEvict</code> + fingerprint-recheck sequence is idempotent: evicting the current\nsession removes its cached fingerprint, so the subsequent fingerprint comparison always\nsees <code>null</code> and triggers a full re-index. When combined with other strategies in\na <a href=\"CompositeEvictionStrategy.html\" title=\"class in org.springframework.ai.tool.toolsearch.eviction\"><code>CompositeEvictionStrategy</code></a>, the always-evict behaviour is preserved (the more\naggressive strategy wins).",
+      "translation": "<b>合同说明：</b> <a href=\"#onAccess(java.lang.String)\"><code>onAccess(String)</code></a> 有意返回当前访问的会话 ID，这与<a href=\"ToolIndexEvictionStrategy.html#onAccess(java.lang.String)\"><code>ToolIndexEvictionStrategy.onAccess(String)</code></a>中的一般建议相悖。这是安全的，因为顾问的<code>doEvict</code> + 指纹重新检查序列是幂等的：驱逐当前会话会移除其缓存的指纹，因此随后的指纹比较总是看到<code>null</code>并触发完整重新索引。当与<a href=\"CompositeEvictionStrategy.html\" title=\"class in org.springframework.ai.tool.toolsearch.eviction\"><code>CompositeEvictionStrategy</code></a>中的其他策略结合使用时，始终驱逐的行为得以保留（更激进的策略胜出）。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Use this strategy when the tool set may change between turns (e.g. dynamically\ngenerated tool descriptions) and you want to guarantee freshness at the cost of\nre-indexing on every request. For stable tool sets, <a href=\"NeverEvictStrategy.html\" title=\"class in org.springframework.ai.tool.toolsearch.eviction\"><code>NeverEvictStrategy</code></a> is more\nefficient.",
+      "translation": "当工具集可能在轮次之间发生变化（例如动态生成的工具描述），且您希望以每次请求重新索引为代价来保证新鲜度时，请使用此策略。对于稳定的工具集，<a href=\"NeverEvictStrategy.html\" title=\"class in org.springframework.ai.tool.toolsearch.eviction\"><code>NeverEvictStrategy</code></a> 效率更高。",
+      "count": 1
+    },
+    {
+      "source": "Implementations should remove any internal tracking state for the evicted session.",
+      "translation": "实现应移除被驱逐会话的任何内部跟踪状态。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"ToolIndexEvictionStrategy.html#onRemoved(java.lang.String)\">ToolIndexEvictionStrategy</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"ToolIndexEvictionStrategy.html#onRemoved(java.lang.String)\">ToolIndexEvictionStrategy</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Returns a set containing <code>sessionId</code>, causing the advisor to clear the\nsession's index and remove its cached fingerprint before the fingerprint-comparison\nstep.",
+      "translation": "返回一个包含 <code>sessionId</code> 的集合，导致顾问在指纹比较步骤之前清除会话的索引并移除其缓存的指纹。",
+      "count": 1
+    },
+    {
+      "source": "Returns a set containing <code>sessionId</code>, causing the advisor to clear the\nsession's index and remove its cached fingerprint before the fingerprint-comparison\nstep. The comparison then always sees a missing fingerprint and re-indexes the full\ntool set.",
+      "translation": "返回一个包含 `<code>sessionId</code>` 的集合，导致顾问在指纹比较步骤之前清除会话的索引并移除其缓存的指纹。随后，比较过程将始终检测到缺失的指纹，并重新索引整个工具集。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ToolIndexEvictionStrategy.html#onAccess(java.lang.String)\">onAccess</a></code> in interface <code><a href=\"ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\">ToolIndexEvictionStrategy</a></code>",
+      "translation": "接口 <code><a href=\"ToolIndexEvictionStrategy.html\" title=\"org.springframework.ai.tool.toolsearch.eviction 中的接口\">ToolIndexEvictionStrategy</a></code> 中的方法 <code><a href=\"ToolIndexEvictionStrategy.html#onAccess(java.lang.String)\">onAccess</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ToolIndexEvictionStrategy.html#onRemoved(java.lang.String)\">onRemoved</a></code> in interface <code><a href=\"ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\">ToolIndexEvictionStrategy</a></code>",
+      "translation": "<a href=\"ToolIndexEvictionStrategy.html#onRemoved(java.lang.String)\">onRemoved</a> 接口 <code><a href=\"ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\">ToolIndexEvictionStrategy</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>sessionId</code> - the session being accessed",
+      "translation": "<code>sessionId</code> - 正在访问的会话",
+      "count": 1
+    },
+    {
+      "source": "a singleton set containing <code>sessionId</code>",
+      "translation": "包含<code>sessionId</code>的单元素集合",
+      "count": 1
+    },
+    {
+      "source": "<code>sessionId</code> - the session that was evicted",
+      "translation": "<code>sessionId</code> - 被驱逐的会话",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "A <a href=\"ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\"><code>ToolIndexEvictionStrategy</code></a> that clears a session's tool index before every\nrequest, ensuring tools are always re-indexed on each conversation turn.",
+      "translation": "一个 <a href=\"ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\"><code>ToolIndexEvictionStrategy</code></a>，它在每次请求之前清除会话的工具索引，确保工具在每次对话轮次中都会重新索引。",
+      "count": 1
+    }
+  ]
+}

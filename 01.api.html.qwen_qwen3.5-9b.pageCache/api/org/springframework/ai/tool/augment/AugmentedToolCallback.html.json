@@ -1,0 +1,76 @@
+{
+  "created_at": "2026-06-15 07:57:49",
+  "updated_at": "2026-06-15 07:57:49",
+  "stats": {
+    "total_entries": 12,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 15,
+    "entries_with_hits": 12,
+    "entries_without_hits": 0,
+    "hit_rate": 1.25,
+    "usage_percentage": 0.0012000000000000001
+  },
+  "items": [
+    {
+      "source": "Execute tool with the given input and return the result to send back to the AI\nmodel.",
+      "translation": "使用给定输入执行工具，并将结果返回给AI模型。",
+      "count": 2
+    },
+    {
+      "source": "Execute tool with the given input and context, and return the result to send back\nto the AI model.",
+      "translation": "使用给定输入和上下文执行工具，并将结果返回给AI模型。",
+      "count": 2
+    },
+    {
+      "source": "Definition used by the AI model to determine when and how to call the tool.",
+      "translation": "AI 模型用于确定何时以及如何调用工具的指令。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This class wraps an existing <a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a> and modifies its input schema to\ninclude additional fields defined in the provided Record type. It also provides a\nmechanism to handle these extended arguments, either by consuming them via a provided\n<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Consumer.html\" title=\"class or interface in java.util.function\"><code>Consumer</code></a> or by removing them from the input after processing.",
+      "translation": "该类包装了现有的 <a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a>，并将其输入模式修改为包含在提供的 Record 类型中定义的额外字段。此外，它还提供了一种机制来处理这些扩展参数：可以通过提供的 <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Consumer.html\" title=\"class or interface in java.util.function\"><code>Consumer</code></a> 来消费它们，也可以在处理后从输入中移除它们。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../ToolCallback.html#getToolDefinition()\">ToolCallback</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../ToolCallback.html#getToolDefinition()\">ToolCallback</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../ToolCallback.html#call(java.lang.String)\">ToolCallback</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../ToolCallback.html#call(java.lang.String)\">ToolCallback</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../ToolCallback.html#call(java.lang.String,org.springframework.ai.chat.model.ToolContext)\">ToolCallback</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../ToolCallback.html#call(java.lang.String,org.springframework.ai.chat.model.ToolContext)\">ToolCallback</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../ToolCallback.html#getToolDefinition()\">getToolDefinition</a></code> in interface <code><a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a></code>",
+      "translation": "<code><a href=\"../ToolCallback.html#getToolDefinition()\">getToolDefinition</a></code> 接口 <code><a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../ToolCallback.html#call(java.lang.String)\">call</a></code> in interface <code><a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a></code>",
+      "translation": "接口 <code><a href=\"../ToolCallback.html\" title=\"org.springframework.ai.tool 中的接口\">ToolCallback</a></code> 中的 <code><a href=\"../ToolCallback.html#call(java.lang.String)\">call</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../ToolCallback.html#call(java.lang.String,org.springframework.ai.chat.model.ToolContext)\">call</a></code> in interface <code><a href=\"../ToolCallback.html\" title=\"interface in org.springframework.ai.tool\">ToolCallback</a></code>",
+      "translation": "接口 <code><a href=\"../ToolCallback.html\" title=\"org.springframework.ai.tool 中的接口\">ToolCallback</a></code> 中的 <code><a href=\"../ToolCallback.html#call(java.lang.String,org.springframework.ai.chat.model.ToolContext)\">call</a></code>",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    }
+  ]
+}

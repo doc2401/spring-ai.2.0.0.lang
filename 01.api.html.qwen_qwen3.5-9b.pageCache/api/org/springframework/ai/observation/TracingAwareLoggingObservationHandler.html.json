@@ -1,0 +1,96 @@
+{
+  "created_at": "2026-06-15 07:32:22",
+  "updated_at": "2026-06-15 07:32:22",
+  "stats": {
+    "total_entries": 16,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 17,
+    "entries_with_hits": 16,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0625,
+    "usage_percentage": 0.0015999999999999999
+  },
+  "items": [
+    {
+      "source": "Creates a new instance.",
+      "translation": "创建新实例。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "An <code>ObservationHandler</code> that can wrap another one and makes the tracing data\navailable for the <code>ObservationHandler.onStop(Observation.Context)</code> method. This\nhandler can be used in cases where the logging library or needs access to the tracing\ndata (i.e.: log correlation).",
+      "translation": "一个能够包装另一个处理器的<code>ObservationHandler</code>，它使得追踪数据在<code>ObservationHandler.onStop(Observation.Context)</code>方法中可用。此处理器可用于日志库需要访问追踪数据的场景（例如：日志关联）。",
+      "count": 1
+    },
+    {
+      "source": "<code>onStart</code> in interface <code>io.micrometer.observation.ObservationHandler&lt;<a href=\"#type-param-T\" title=\"type parameter in TracingAwareLoggingObservationHandler\">T</a> extends io.micrometer.observation.Observation.Context&gt;</code>",
+      "translation": "<code>onStart</code> 在接口 <code>io.micrometer.observation.ObservationHandler&lt;<a href=\"#type-param-T\" title=\"TracingAwareLoggingObservationHandler 中的类型参数\">T</a> extends io.micrometer.observation.Observation.Context&gt;</code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>onError</code> in interface <code>io.micrometer.observation.ObservationHandler&lt;<a href=\"#type-param-T\" title=\"type parameter in TracingAwareLoggingObservationHandler\">T</a> extends io.micrometer.observation.Observation.Context&gt;</code>",
+      "translation": "<code>onError</code> 在接口 <code>io.micrometer.observation.ObservationHandler&lt;<a href=\"#type-param-T\" title=\"TracingAwareLoggingObservationHandler 中的类型参数\">T</a> extends io.micrometer.observation.Observation.Context&gt;</code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>onEvent</code> in interface <code>io.micrometer.observation.ObservationHandler&lt;<a href=\"#type-param-T\" title=\"type parameter in TracingAwareLoggingObservationHandler\">T</a> extends io.micrometer.observation.Observation.Context&gt;</code>",
+      "translation": "<code>onEvent</code> 在接口 <code>io.micrometer.observation.ObservationHandler&lt;<a href=\"#type-param-T\" title=\"TracingAwareLoggingObservationHandler 中的类型参数\">T</a> extends io.micrometer.observation.Observation.Context&gt;</code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>onScopeOpened</code> in interface <code>io.micrometer.observation.ObservationHandler&lt;<a href=\"#type-param-T\" title=\"type parameter in TracingAwareLoggingObservationHandler\">T</a> extends io.micrometer.observation.Observation.Context&gt;</code>",
+      "translation": "<code>onScopeOpened</code> 在接口 <code>io.micrometer.observation.ObservationHandler&lt;<a href=\"#type-param-T\" title=\"TracingAwareLoggingObservationHandler 中的类型参数\">T</a> extends io.micrometer.observation.Observation.Context&gt;</code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>onScopeClosed</code> in interface <code>io.micrometer.observation.ObservationHandler&lt;<a href=\"#type-param-T\" title=\"type parameter in TracingAwareLoggingObservationHandler\">T</a> extends io.micrometer.observation.Observation.Context&gt;</code>",
+      "translation": "<code>onScopeClosed</code> 在接口 <code>io.micrometer.observation.ObservationHandler&lt;<a href=\"#type-param-T\" title=\"TracingAwareLoggingObservationHandler 中的类型参数\">T</a> extends io.micrometer.observation.Observation.Context&gt;</code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>onScopeReset</code> in interface <code>io.micrometer.observation.ObservationHandler&lt;<a href=\"#type-param-T\" title=\"type parameter in TracingAwareLoggingObservationHandler\">T</a> extends io.micrometer.observation.Observation.Context&gt;</code>",
+      "translation": "<code>onScopeReset</code> 在接口 <code>io.micrometer.observation.ObservationHandler&lt;<a href=\"#type-param-T\" title=\"TracingAwareLoggingObservationHandler 中的类型参数\">T</a> extends io.micrometer.observation.Observation.Context&gt;</code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>onStop</code> in interface <code>io.micrometer.observation.ObservationHandler&lt;<a href=\"#type-param-T\" title=\"type parameter in TracingAwareLoggingObservationHandler\">T</a> extends io.micrometer.observation.Observation.Context&gt;</code>",
+      "translation": "<code>onStop</code> 在接口 <code>io.micrometer.observation.ObservationHandler&lt;<a href=\"#type-param-T\" title=\"TracingAwareLoggingObservationHandler 中的类型参数\">T</a> extends io.micrometer.observation.Observation.Context&gt;</code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>supportsContext</code> in interface <code>io.micrometer.observation.ObservationHandler&lt;<a href=\"#type-param-T\" title=\"type parameter in TracingAwareLoggingObservationHandler\">T</a> extends io.micrometer.observation.Observation.Context&gt;</code>",
+      "translation": "<code>supportsContext</code> 在接口 <code>io.micrometer.observation.ObservationHandler&lt;<a href=\"#type-param-T\" title=\"TracingAwareLoggingObservationHandler 中的类型参数\">T</a> extends io.micrometer.observation.Observation.Context&gt;</code> 中",
+      "count": 1
+    },
+    {
+      "source": "<span id=\"type-param-T\"><code>T</code> - type of handler context</span>",
+      "translation": "<span id=\"type-param-T\"><code>T</code> - 处理程序上下文的类型</span>",
+      "count": 1
+    },
+    {
+      "source": "<code>delegate</code> - ObservationHandler instance to delegate the handler method calls to",
+      "translation": "<code>delegate</code> - 用于将处理程序方法调用委托给 ObservationHandler 实例的委托。",
+      "count": 1
+    },
+    {
+      "source": "<code>tracer</code> - Tracer instance to create the scope with",
+      "translation": "<code>tracer</code> - 用于创建上下文的 Tracer 实例",
+      "count": 1
+    },
+    {
+      "source": "Jonatan Ivanov",
+      "translation": "乔纳坦·伊万诺夫",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    }
+  ]
+}

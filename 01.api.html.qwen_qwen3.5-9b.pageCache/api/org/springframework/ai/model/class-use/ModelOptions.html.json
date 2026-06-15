@@ -1,0 +1,341 @@
+{
+  "created_at": "2026-06-15 08:11:31",
+  "updated_at": "2026-06-15 08:11:31",
+  "stats": {
+    "total_entries": 65,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 66,
+    "entries_with_hits": 65,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0153846153846153,
+    "usage_percentage": 0.0065
+  },
+  "items": [
+    {
+      "source": "Helper class for creating strongly-typed Ollama options.",
+      "translation": "用于创建强类型 Ollama 选项的辅助类。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Chat options for <a href=\"../../anthropic/AnthropicChatModel.html\" title=\"class in org.springframework.ai.anthropic\"><code>AnthropicChatModel</code></a>.",
+      "translation": "AnthropicChatModel 类的聊天选项。",
+      "count": 1
+    },
+    {
+      "source": "Default implementation of the <a href=\"../../audio/tts/TextToSpeechOptions.html\" title=\"interface in org.springframework.ai.audio.tts\"><code>TextToSpeechOptions</code></a> interface.",
+      "translation": "<a href=\"../../audio/tts/TextToSpeechOptions.html\" title=\"org.springframework.ai.audio.tts 接口中的接口\"><code>TextToSpeechOptions</code></a>接口的默认实现。",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\"><code>ModelOptions</code></a> representing the common options that are portable across different\nchat models.",
+      "translation": "<a href=\"../ModelOptions.html\" title=\"org.springframework.ai.model 中的接口\"><code>ModelOptions</code></a> 表示可在不同聊天模型之间移植的通用选项。",
+      "count": 1
+    },
+    {
+      "source": "Default implementation for the <a href=\"../../chat/prompt/ChatOptions.html\" title=\"interface in org.springframework.ai.chat.prompt\"><code>ChatOptions</code></a>.",
+      "translation": "<a href=\"../../chat/prompt/ChatOptions.html\" title=\"org.springframework.ai.chat.prompt 中的接口\"><code>ChatOptions</code></a>的默认实现。",
+      "count": 1
+    },
+    {
+      "source": "Default implementation of <a href=\"../../embedding/EmbeddingOptions.html\" title=\"interface in org.springframework.ai.embedding\"><code>EmbeddingOptions</code></a>.",
+      "translation": "<a href=\"../../embedding/EmbeddingOptions.html\" title=\"org.springframework.ai.embedding 接口中的接口\"><code>EmbeddingOptions</code></a>的默认实现。",
+      "count": 1
+    },
+    {
+      "source": "Default implementation of <a href=\"../tool/StructuredOutputChatOptions.html\" title=\"interface in org.springframework.ai.model.tool\"><code>StructuredOutputChatOptions</code></a>.",
+      "translation": "<a href=\"../tool/StructuredOutputChatOptions.html\" title=\"org.springframework.ai.model.tool 接口中的接口\"><code>StructuredOutputChatOptions</code></a>的默认实现。",
+      "count": 1
+    },
+    {
+      "source": "Default implementation of <a href=\"../tool/ToolCallingChatOptions.html\" title=\"interface in org.springframework.ai.model.tool\"><code>ToolCallingChatOptions</code></a>.",
+      "translation": "<a href=\"../tool/ToolCallingChatOptions.html\" title=\"org.springframework.ai.model.tool 接口中的接口\"><code>ToolCallingChatOptions</code></a>的默认实现。",
+      "count": 1
+    },
+    {
+      "source": "Spring AI integration with Anthropic's Claude models using the official\n<a href=\"https://github.com/anthropics/anthropic-sdk-java\">Anthropic Java SDK</a>.",
+      "translation": "使用官方 <a href=\"https://github.com/anthropics/anthropic-sdk-java\">Anthropic Java SDK</a> 将 Spring AI 与 Anthropic 的 Claude 模型集成。",
+      "count": 1
+    },
+    {
+      "source": "Provides the API for embedding observations.",
+      "translation": "提供用于嵌入观测数据的 API。",
+      "count": 1
+    },
+    {
+      "source": "Provides a set of interfaces and classes for a generic API designed to interact with\nvarious AI models.",
+      "translation": "提供了一套接口和类，用于构建一个通用的 API，以便与各种人工智能模型进行交互。",
+      "count": 1
+    },
+    {
+      "source": "Options for audio transcription.",
+      "translation": "音频转录选项。",
+      "count": 1
+    },
+    {
+      "source": "Interface for text-to-speech model options.",
+      "translation": "文本转语音模型选项界面。",
+      "count": 1
+    },
+    {
+      "source": "Options for the Bedrock Cohere embedding API.",
+      "translation": "Bedrock Cohere 嵌入 API 的选项。",
+      "count": 1
+    },
+    {
+      "source": "The options to be used when sending a chat request to the Bedrock API.",
+      "translation": "发送聊天请求到 Bedrock API 时应使用的选项。",
+      "count": 1
+    },
+    {
+      "source": "Options for the Titan Embedding API.",
+      "translation": "Titan Embedding API 的选项。",
+      "count": 1
+    },
+    {
+      "source": "Chat completions options for the DeepSeek chat API.",
+      "translation": "DeepSeek 聊天 API 的完整补全选项。",
+      "count": 1
+    },
+    {
+      "source": "Options for ElevenLabs text-to-speech.",
+      "translation": "ElevenLabs 文本转语音的选项。",
+      "count": 1
+    },
+    {
+      "source": "Options for embedding models.",
+      "translation": "嵌入模型选项。",
+      "count": 1
+    },
+    {
+      "source": "Options for the Google GenAI Chat API.",
+      "translation": "Google GenAI 聊天 API 的选项。",
+      "count": 1
+    },
+    {
+      "source": "Options for the Embedding supported by the GenAI SDK",
+      "translation": "GenAI SDK 支持的嵌入选项",
+      "count": 1
+    },
+    {
+      "source": "ImageOptions represent the common options, portable across different image generation\nmodels.",
+      "translation": "ImageOptions 表示通用的选项，可在不同的图像生成模型之间移植使用。",
+      "count": 1
+    },
+    {
+      "source": "Options for the Mistral AI Chat API.",
+      "translation": "Mistral AI 聊天 API 的选项。",
+      "count": 1
+    },
+    {
+      "source": "Options for the Mistral AI Embedding API.",
+      "translation": "Mistral AI 嵌入 API 的选项。",
+      "count": 1
+    },
+    {
+      "source": "Options for Mistral AI OCR requests.",
+      "translation": "Mistral AI OCR 请求的选项。",
+      "count": 1
+    },
+    {
+      "source": "Retrieves the customizable options for AI model interactions.",
+      "translation": "获取用于 AI 模型交互的可自定义选项。",
+      "count": 1
+    },
+    {
+      "source": "Mixin interface for ChatModels that support structured output.",
+      "translation": "支持结构化输出的 ChatModels 的混入接口。",
+      "count": 1
+    },
+    {
+      "source": "A set of options that can be used to configure the interaction with a chat model,\nincluding tool calling.",
+      "translation": "一组可用于配置与聊天模型交互的选项，包括工具调用。",
+      "count": 1
+    },
+    {
+      "source": "Represents the options for moderation.",
+      "translation": "代表审核选项。",
+      "count": 1
+    },
+    {
+      "source": "Configuration options for OpenAI text-to-speech using the OpenAI Java SDK.",
+      "translation": "使用 OpenAI Java SDK 配置 OpenAI 文本转语音的选项。",
+      "count": 1
+    },
+    {
+      "source": "OpenAI SDK Audio Transcription Options.",
+      "translation": "OpenAI SDK 音频转录选项。",
+      "count": 1
+    },
+    {
+      "source": "Configuration information for the Chat Model implementation using the OpenAI Java SDK.",
+      "translation": "使用 OpenAI Java SDK 实现聊天模型的配置信息。",
+      "count": 1
+    },
+    {
+      "source": "Configuration information for the Embedding Model implementation using the OpenAI Java\nSDK.",
+      "translation": "使用 OpenAI Java SDK 实现嵌入模型的配置信息。",
+      "count": 1
+    },
+    {
+      "source": "Configuration information for the Image Model implementation using the OpenAI Java SDK.",
+      "translation": "使用 OpenAI Java SDK 实现图像模型的配置信息。",
+      "count": 1
+    },
+    {
+      "source": "OpenAI SDK Moderation Options.",
+      "translation": "OpenAI SDK 审核选项。",
+      "count": 1
+    },
+    {
+      "source": "PostgresML Embedding Options.",
+      "translation": "PostgresML 嵌入选项。",
+      "count": 1
+    },
+    {
+      "source": "StabilityAiImageOptions is an interface that extends ImageOptions.",
+      "translation": "StabilityAiImageOptions 是一个扩展了 ImageOptions 的接口。",
+      "count": 1
+    },
+    {
+      "source": "Class representing the options for Vertex AI Multimodal Embedding.",
+      "translation": "代表 Vertex AI 多模态嵌入选项的类。",
+      "count": 1
+    },
+    {
+      "source": "Options for the Vertex AI Text Embedding service.",
+      "translation": "Vertex AI 文本嵌入服务的选项。",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> in <a href=\"../../anthropic/package-summary.html\">org.springframework.ai.anthropic</a>",
+      "translation": "<a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> 在 <a href=\"../../anthropic/package-summary.html\">org.springframework.ai.anthropic</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> in <a href=\"../../audio/transcription/package-summary.html\">org.springframework.ai.audio.transcription</a>",
+      "translation": "<a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> 在 <a href=\"../../audio/transcription/package-summary.html\">org.springframework.ai.audio.transcription</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> in <a href=\"../../audio/tts/package-summary.html\">org.springframework.ai.audio.tts</a>",
+      "translation": "<a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> 在 <a href=\"../../audio/tts/package-summary.html\">org.springframework.ai.audio.tts</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> in <a href=\"../../bedrock/cohere/package-summary.html\">org.springframework.ai.bedrock.cohere</a>",
+      "translation": "<a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> 在 <a href=\"../../bedrock/cohere/package-summary.html\">org.springframework.ai.bedrock.cohere</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> in <a href=\"../../bedrock/converse/package-summary.html\">org.springframework.ai.bedrock.converse</a>",
+      "translation": "<a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> 在 <a href=\"../../bedrock/converse/package-summary.html\">org.springframework.ai.bedrock.converse</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> in <a href=\"../../bedrock/titan/package-summary.html\">org.springframework.ai.bedrock.titan</a>",
+      "translation": "<a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> 在 <a href=\"../../bedrock/titan/package-summary.html\">org.springframework.ai.bedrock.titan</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> in <a href=\"../../chat/prompt/package-summary.html\">org.springframework.ai.chat.prompt</a>",
+      "translation": "<a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> 在 <a href=\"../../chat/prompt/package-summary.html\">org.springframework.ai.chat.prompt</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> in <a href=\"../../deepseek/package-summary.html\">org.springframework.ai.deepseek</a>",
+      "translation": "<a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> 在 <a href=\"../../deepseek/package-summary.html\">org.springframework.ai.deepseek</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> in <a href=\"../../elevenlabs/package-summary.html\">org.springframework.ai.elevenlabs</a>",
+      "translation": "<a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> 在 <a href=\"../../elevenlabs/package-summary.html\">org.springframework.ai.elevenlabs</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> in <a href=\"../../embedding/package-summary.html\">org.springframework.ai.embedding</a>",
+      "translation": "<a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> 在 <a href=\"../../embedding/package-summary.html\">org.springframework.ai.embedding</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> in <a href=\"../../google/genai/package-summary.html\">org.springframework.ai.google.genai</a>",
+      "translation": "<a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> 在 <a href=\"../../google/genai/package-summary.html\">org.springframework.ai.google.genai</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> in <a href=\"../../google/genai/text/package-summary.html\">org.springframework.ai.google.genai.text</a>",
+      "translation": "<a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> 在 <a href=\"../../google/genai/text/package-summary.html\">org.springframework.ai.google.genai.text</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> in <a href=\"../../image/package-summary.html\">org.springframework.ai.image</a>",
+      "translation": "<a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> 在 <a href=\"../../image/package-summary.html\">org.springframework.ai.image</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> in <a href=\"../../mistralai/package-summary.html\">org.springframework.ai.mistralai</a>",
+      "translation": "<a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> 在 <a href=\"../../mistralai/package-summary.html\">org.springframework.ai.mistralai</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> in <a href=\"../../mistralai/moderation/package-summary.html\">org.springframework.ai.mistralai.moderation</a>",
+      "translation": "<a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> 在 <a href=\"../../mistralai/moderation/package-summary.html\">org.springframework.ai.mistralai.moderation</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> in <a href=\"../../mistralai/ocr/package-summary.html\">org.springframework.ai.mistralai.ocr</a>",
+      "translation": "<a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> 在 <a href=\"../../mistralai/ocr/package-summary.html\">org.springframework.ai.mistralai.ocr</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> in <a href=\"../package-summary.html\">org.springframework.ai.model</a>",
+      "translation": "<a href=\"../ModelOptions.html\" title=\"接口在 org.springframework.ai.model 中\">ModelOptions</a> 在 <a href=\"../package-summary.html\">org.springframework.ai.model</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> in <a href=\"../tool/package-summary.html\">org.springframework.ai.model.tool</a>",
+      "translation": "<a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> 在 <a href=\"../tool/package-summary.html\">org.springframework.ai.model.tool</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> in <a href=\"../../moderation/package-summary.html\">org.springframework.ai.moderation</a>",
+      "translation": "<a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> 在 <a href=\"../../moderation/package-summary.html\">org.springframework.ai.moderation</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> in <a href=\"../../ollama/api/package-summary.html\">org.springframework.ai.ollama.api</a>",
+      "translation": "<a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> 在 <a href=\"../../ollama/api/package-summary.html\">org.springframework.ai.ollama.api</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> in <a href=\"../../openai/package-summary.html\">org.springframework.ai.openai</a>",
+      "translation": "<a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> 在 <a href=\"../../openai/package-summary.html\">org.springframework.ai.openai</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> in <a href=\"../../postgresml/package-summary.html\">org.springframework.ai.postgresml</a>",
+      "translation": "<a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> 在 <a href=\"../../postgresml/package-summary.html\">org.springframework.ai.postgresml</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> in <a href=\"../../stabilityai/api/package-summary.html\">org.springframework.ai.stabilityai.api</a>",
+      "translation": "<a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> 在 <a href=\"../../stabilityai/api/package-summary.html\">org.springframework.ai.stabilityai.api</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> in <a href=\"../../vertexai/embedding/multimodal/package-summary.html\">org.springframework.ai.vertexai.embedding.multimodal</a>",
+      "translation": "<a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> 在 <a href=\"../../vertexai/embedding/multimodal/package-summary.html\">org.springframework.ai.vertexai.embedding.multimodal</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> in <a href=\"../../vertexai/embedding/text/package-summary.html\">org.springframework.ai.vertexai.embedding.text</a>",
+      "translation": "<a href=\"../ModelOptions.html\" title=\"interface in org.springframework.ai.model\">ModelOptions</a> 在 <a href=\"../../vertexai/embedding/text/package-summary.html\">org.springframework.ai.vertexai.embedding.text</a> 中的用途",
+      "count": 1
+    }
+  ]
+}

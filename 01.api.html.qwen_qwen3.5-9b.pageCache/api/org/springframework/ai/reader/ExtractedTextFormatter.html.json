@@ -1,0 +1,166 @@
+{
+  "created_at": "2026-06-15 07:34:21",
+  "updated_at": "2026-06-15 07:34:21",
+  "stats": {
+    "total_entries": 30,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 40,
+    "entries_with_hits": 30,
+    "entries_without_hits": 0,
+    "hit_rate": 1.3333333333333333,
+    "usage_percentage": 0.003
+  },
+  "items": [
+    {
+      "source": "Provides an instance of the builder for this formatter.",
+      "translation": "提供此格式化器的构建器实例。",
+      "count": 2
+    },
+    {
+      "source": "Provides a default instance of the formatter.",
+      "translation": "提供格式器的默认实例。",
+      "count": 2
+    },
+    {
+      "source": "Removes the specified number of lines from the bottom part of the text.",
+      "translation": "从文本底部删除指定数量的行。",
+      "count": 2
+    },
+    {
+      "source": "Removes a specified number of lines from the top part of the given text.",
+      "translation": "从给定文本的顶部删除指定数量的行。",
+      "count": 2
+    },
+    {
+      "source": "Formats the provided text according to the formatter's configuration.",
+      "translation": "根据格式化器的配置对提供的文本进行格式化。",
+      "count": 2
+    },
+    {
+      "source": "Formats the provided text based on the formatter's configuration, considering the\npage number.",
+      "translation": "根据格式化器的配置对提供的文本进行格式化，同时考虑页码。",
+      "count": 2
+    },
+    {
+      "source": "Replaces multiple, adjacent blank lines into a single blank line.",
+      "translation": "将多个连续的空白行替换为单个空白行。",
+      "count": 2
+    },
+    {
+      "source": "<code>lineSeparator</code> - The line separator to use when identifying lines in the text.",
+      "translation": "<code>lineSeparator</code> - 用于在文本中识别行时的行分隔符。",
+      "count": 2
+    },
+    {
+      "source": "<code>pageText</code> - Text to be formatted.",
+      "translation": "<code>pageText</code> - 待格式化的文本。",
+      "count": 2
+    },
+    {
+      "source": "Formatted text.",
+      "translation": "格式化文本。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This method takes a text and trims it by removing a certain number of lines from\nthe top. If the provided text is null or contains only whitespace, it will be\nreturned as is. If the number of lines to remove exceeds the actual number of lines\nin the text, the result will be an empty string.",
+      "translation": "该方法接收一个文本，并通过从顶部删除指定数量的行来对其进行修剪。如果提供的文本为 null 或仅包含空白字符，则原样返回该文本。如果要删除的行数超过文本中的实际行数，则结果为空字符串。",
+      "count": 1
+    },
+    {
+      "source": "The method identifies lines based on the system's line separator, making it\ncompatible with different platforms.",
+      "translation": "该方法根据系统的行分隔符来识别行，从而兼容不同的平台。",
+      "count": 1
+    },
+    {
+      "source": "A utility to reformat extracted text content before encapsulating it in a\n<a href=\"../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a>. This formatter provides the following\nfunctionalities:\n\n<ul>\n<li>Left alignment of text</li>\n<li>Removal of specified lines from the beginning and end of content</li>\n<li>Consolidation of consecutive blank lines</li>\n</ul>\n\nAn instance of this formatter can be customized using the <a href=\"ExtractedTextFormatter.Builder.html\" title=\"class in org.springframework.ai.reader\"><code>ExtractedTextFormatter.Builder</code></a> nested class.",
+      "translation": "这是一个工具，用于在将提取的文本内容封装到<a href=\"../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a>之前对其进行格式化。该格式化工具提供以下功能：\n\n<ul>\n<li>文本左对齐</li>\n<li>从内容的开头和结尾移除指定的行</li>\n<li>合并连续的空白行</li>\n</ul>\n\n可以使用嵌套类<a href=\"ExtractedTextFormatter.Builder.html\" title=\"class in org.springframework.ai.reader\"><code>ExtractedTextFormatter.Builder</code></a>自定义此格式化工具的实例。",
+      "count": 1
+    },
+    {
+      "source": "The <code>Builder</code> class is a nested static class of\n<a href=\"ExtractedTextFormatter.html\" title=\"class in org.springframework.ai.reader\"><code>ExtractedTextFormatter</code></a> designed to facilitate the creation and\ncustomization of instances of <a href=\"ExtractedTextFormatter.html\" title=\"class in org.springframework.ai.reader\"><code>ExtractedTextFormatter</code></a>.",
+      "translation": "`Builder` 类是 `<a href=\"ExtractedTextFormatter.html\" title=\"class in org.springframework.ai.reader\"><code>ExtractedTextFormatter</code></a>` 的一个嵌套静态内部类，旨在促进 `<a href=\"ExtractedTextFormatter.html\" title=\"class in org.springframework.ai.reader\"><code>ExtractedTextFormatter</code></a>` 实例的创建与定制。",
+      "count": 1
+    },
+    {
+      "source": "<code>pageText</code> - text to adjust the blank lines for.",
+      "translation": "<code>pageText</code> - 用于调整空行间距的文本。",
+      "count": 1
+    },
+    {
+      "source": "<code>pageText</code> - text to align.",
+      "translation": "<code>pageText</code> - 要对齐的文本。",
+      "count": 1
+    },
+    {
+      "source": "<code>pageText</code> - Text to remove lines from.",
+      "translation": "<code>pageText</code> - 要从中删除行的文本。",
+      "count": 1
+    },
+    {
+      "source": "<code>numberOfLines</code> - Number of lines to remove.",
+      "translation": "<code>numberOfLines</code> - 要删除的行数。",
+      "count": 1
+    },
+    {
+      "source": "<code>pageText</code> - The text from which the top lines need to be removed. If this is\nnull, empty, or consists only of whitespace, it will be returned unchanged.",
+      "translation": "<code>pageText</code> - 需要从中删除顶部行的文本。如果该值为 null、空或仅包含空白字符，则将其原样返回。",
+      "count": 1
+    },
+    {
+      "source": "<code>numberOfLines</code> - The number of lines to remove from the top of the text. If\nthis exceeds the actual number of lines in the text, an empty string will be\nreturned.",
+      "translation": "<code>numberOfLines</code> - 从文本顶部移除的行数。如果该数值超过文本的实际行数，则返回空字符串。",
+      "count": 1
+    },
+    {
+      "source": "<code>pageNumber</code> - Page number of the provided text.",
+      "translation": "<code>pageNumber</code> - 所提供文本的页码。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "an instance of the builder.",
+      "translation": "构建器的一个实例。",
+      "count": 1
+    },
+    {
+      "source": "default instance of the formatter.",
+      "translation": "格式化程序的默认实例。",
+      "count": 1
+    },
+    {
+      "source": "Returns the same text but with blank lines trimmed.",
+      "translation": "返回相同的文本，但已删除空行。",
+      "count": 1
+    },
+    {
+      "source": "Returns the same text but aligned to the left side.",
+      "translation": "返回相同的文本，但将其左对齐。",
+      "count": 1
+    },
+    {
+      "source": "Returns the text striped from last lines.",
+      "translation": "返回从最后一行删除后的文本。",
+      "count": 1
+    },
+    {
+      "source": "The text with the specified number of lines removed from the top.",
+      "translation": "从顶部删除指定行数的文本。",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    }
+  ]
+}

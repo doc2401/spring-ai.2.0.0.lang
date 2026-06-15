@@ -1,0 +1,101 @@
+{
+  "created_at": "2026-06-15 07:59:53",
+  "updated_at": "2026-06-15 07:59:53",
+  "stats": {
+    "total_entries": 17,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 20,
+    "entries_with_hits": 17,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1764705882352942,
+    "usage_percentage": 0.0017
+  },
+  "items": [
+    {
+      "source": "Called after a session's tool index has been cleared — either because this strategy\nreturned it from <a href=\"ToolIndexEvictionStrategy.html#onAccess(java.lang.String)\"><code>ToolIndexEvictionStrategy.onAccess(String)</code></a>, or because of an explicit eviction request.",
+      "translation": "在会话的工具索引被清除后调用——无论是因为该策略通过<a href=\"ToolIndexEvictionStrategy.html#onAccess(java.lang.String)\"><code>ToolIndexEvictionStrategy.onAccess(String)</code></a>返回了它，还是因为显式的驱逐请求。",
+      "count": 2
+    },
+    {
+      "source": "Creates a composite strategy from the given delegates.",
+      "translation": "根据给定的委托创建复合策略。",
+      "count": 2
+    },
+    {
+      "source": "Called each time a session is accessed at the start of request processing.",
+      "translation": "每次在请求处理开始时访问会话时都会调用。",
+      "count": 2
+    },
+    {
+      "source": "All delegates receive every <a href=\"#onAccess(java.lang.String)\"><code>onAccess(String)</code></a> and <a href=\"#onRemoved(java.lang.String)\"><code>onRemoved(String)</code></a> call. A session is\nevicted if <em>any</em> delegate requests its eviction. Typical usage is to combine LRU\ncapacity bounding with TTL-based idle cleanup.",
+      "translation": "所有委托人都接收每个<a href=\"#onAccess(java.lang.String)\"><code>onAccess(String)</code></a>和<a href=\"#onRemoved(java.lang.String)\"><code>onRemoved(String)</code></a>调用。如果<em>任何</em>一个委托人请求将其驱逐，则该会话将被驱逐。典型用法是将 LRU 容量限制与基于 TTL 的空闲清理相结合。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Implementations should update their internal tracking state for <code>sessionId</code>\nand return the set of session IDs whose tool indexes must now be cleared. The\nreturned set must never include the currently-accessed <code>sessionId</code>.",
+      "translation": "实现应更新其内部跟踪状态以处理<code>sessionId</code>，并返回必须清除工具索引的会话 ID 集合。该返回集合绝不能包含当前正在访问的<code>sessionId</code>。",
+      "count": 1
+    },
+    {
+      "source": "Implementations should remove any internal tracking state for the evicted session.",
+      "translation": "实现应移除被驱逐会话的任何内部跟踪状态。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"ToolIndexEvictionStrategy.html#onAccess(java.lang.String)\">ToolIndexEvictionStrategy</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"ToolIndexEvictionStrategy.html#onAccess(java.lang.String)\">ToolIndexEvictionStrategy</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"ToolIndexEvictionStrategy.html#onRemoved(java.lang.String)\">ToolIndexEvictionStrategy</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"ToolIndexEvictionStrategy.html#onRemoved(java.lang.String)\">ToolIndexEvictionStrategy</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ToolIndexEvictionStrategy.html#onAccess(java.lang.String)\">onAccess</a></code> in interface <code><a href=\"ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\">ToolIndexEvictionStrategy</a></code>",
+      "translation": "接口 <code><a href=\"ToolIndexEvictionStrategy.html\" title=\"org.springframework.ai.tool.toolsearch.eviction 中的接口\">ToolIndexEvictionStrategy</a></code> 中的方法 <code><a href=\"ToolIndexEvictionStrategy.html#onAccess(java.lang.String)\">onAccess</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ToolIndexEvictionStrategy.html#onRemoved(java.lang.String)\">onRemoved</a></code> in interface <code><a href=\"ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\">ToolIndexEvictionStrategy</a></code>",
+      "translation": "<a href=\"ToolIndexEvictionStrategy.html#onRemoved(java.lang.String)\">onRemoved</a> 接口 <code><a href=\"ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\">ToolIndexEvictionStrategy</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>strategies</code> - one or more strategies to combine; must not be empty",
+      "translation": "<code>strategies</code> - 一个或多个要组合的策略；不能为空",
+      "count": 1
+    },
+    {
+      "source": "<code>sessionId</code> - the session being accessed",
+      "translation": "<code>sessionId</code> - 正在访问的会话",
+      "count": 1
+    },
+    {
+      "source": "session IDs to evict; never <code>null</code>, may be empty",
+      "translation": "待驱逐的会话 ID；永远不会为<code>null</code>，可能为空。",
+      "count": 1
+    },
+    {
+      "source": "<code>sessionId</code> - the session that was evicted",
+      "translation": "<code>sessionId</code> - 被驱逐的会话",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "A <a href=\"ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\"><code>ToolIndexEvictionStrategy</code></a> that delegates to multiple strategies and unions\ntheir eviction decisions.",
+      "translation": "一个委托给多个策略并合并其驱逐决策的<a href=\"ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\"><code>ToolIndexEvictionStrategy</code></a>。",
+      "count": 1
+    }
+  ]
+}

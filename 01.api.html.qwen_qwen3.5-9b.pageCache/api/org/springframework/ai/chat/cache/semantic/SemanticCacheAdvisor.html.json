@@ -1,0 +1,206 @@
+{
+  "created_at": "2026-06-15 09:02:39",
+  "updated_at": "2026-06-15 09:02:39",
+  "stats": {
+    "total_entries": 38,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 51,
+    "entries_with_hits": 38,
+    "entries_without_hits": 0,
+    "hit_rate": 1.3421052631578947,
+    "usage_percentage": 0.0038000000000000004
+  },
+  "items": [
+    {
+      "source": "Not used for semantic cache advisor since we override adviseCall/adviseStream.",
+      "translation": "未用于语义缓存顾问，因为我们重写了 adviseCall 和 adviseStream。",
+      "count": 4
+    },
+    {
+      "source": "<code>cache</code> - The semantic cache implementation to use",
+      "translation": "<code>cache</code> - 要使用的语义缓存实现",
+      "count": 3
+    },
+    {
+      "source": "Creates a new semantic cache advisor with default order and scheduler.",
+      "translation": "创建具有默认顺序和调度器的新语义缓存顾问。",
+      "count": 2
+    },
+    {
+      "source": "Creates a new semantic cache advisor with specified order and default scheduler.",
+      "translation": "创建具有指定顺序和默认调度器的新语义缓存顾问。",
+      "count": 2
+    },
+    {
+      "source": "Creates a new semantic cache advisor with specified order and scheduler.",
+      "translation": "使用指定的顺序和调度器创建一个新的语义缓存顾问。",
+      "count": 2
+    },
+    {
+      "source": "Creates a new builder for constructing SemanticCacheAdvisor instances.",
+      "translation": "创建一个用于构建 SemanticCacheAdvisor 实例的新构建器。",
+      "count": 2
+    },
+    {
+      "source": "Scheduler used for processing the advisor logic when streaming.",
+      "translation": "用于流处理时执行顾问逻辑的调度器。",
+      "count": 2
+    },
+    {
+      "source": "<code>order</code> - The order of this advisor in the chain",
+      "translation": "<code>order</code> - 该顾问在链中的顺序",
+      "count": 2
+    },
+    {
+      "source": "<code>request</code> - The chat client request to process",
+      "translation": "<code>request</code> - 待处理的聊天客户端请求",
+      "count": 2
+    },
+    {
+      "source": "<code>chain</code> - The advisor chain to continue processing if needed",
+      "translation": "<code>chain</code> - 若需要则继续处理的顾问链",
+      "count": 2
+    },
+    {
+      "source": "This advisor implements <a href=\"../../client/advisor/api/BaseChatMemoryAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>BaseChatMemoryAdvisor</code></a> but overrides both\n<a href=\"#adviseCall(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.CallAdvisorChain)\"><code>adviseCall(ChatClientRequest, CallAdvisorChain)</code></a> and <a href=\"#adviseStream(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.StreamAdvisorChain)\"><code>adviseStream(ChatClientRequest, StreamAdvisorChain)</code></a> to provide custom caching logic that\ndoesn't fit the standard before/after pattern.",
+      "translation": "该顾问实现了 <a href=\"../../client/advisor/api/BaseChatMemoryAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>BaseChatMemoryAdvisor</code></a>，但重写了 <a href=\"#adviseCall(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.CallAdvisorChain)\"><code>adviseCall(ChatClientRequest, CallAdvisorChain)</code></a> 和 <a href=\"#adviseStream(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.StreamAdvisorChain)\"><code>adviseStream(ChatClientRequest, StreamAdvisorChain)</code></a>，以提供不符合标准前置/后置模式的自定义缓存逻辑。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Key features:",
+      "translation": "主要功能：",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../client/advisor/api/BaseAdvisor.html#getScheduler()\">BaseAdvisor</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../client/advisor/api/BaseAdvisor.html#getScheduler()\">BaseAdvisor</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Builder class for creating SemanticCacheAdvisor instances.",
+      "translation": "用于创建 SemanticCacheAdvisor 实例的构建器类。",
+      "count": 1
+    },
+    {
+      "source": "Handles synchronous chat requests by checking the cache before proceeding.",
+      "translation": "处理同步聊天请求时，先检查缓存再执行后续操作。",
+      "count": 1
+    },
+    {
+      "source": "Handles streaming chat requests by checking the cache before proceeding.",
+      "translation": "负责处理流式聊天请求，在继续执行前会先检查缓存。",
+      "count": 1
+    },
+    {
+      "source": "Handles synchronous chat requests by checking the cache before proceeding. If a\nsemantically similar response is found in the cache, it is returned immediately.\nOtherwise, the request proceeds through the chain and the response is cached.",
+      "translation": "处理同步聊天请求时，会先检查缓存。如果在缓存中找到语义相似的响应，则立即返回；否则，请求将继续通过链式处理，并将响应存入缓存。",
+      "count": 1
+    },
+    {
+      "source": "Handles streaming chat requests by checking the cache before proceeding. If a\nsemantically similar response is found in the cache, it is returned as a single\nitem flux. Otherwise, the request proceeds through the chain with true streaming -\ntokens are returned to the user as they arrive, while the response is aggregated\nand cached asynchronously when the stream completes.",
+      "translation": "处理流式聊天请求时，会先检查缓存。若在缓存中找到语义相似的响应，则将其作为单个项目 Flux 返回；否则，请求将通过该链继续执行真正的流式处理——即随着 token 的到达实时返回给用户，同时在流结束时异步聚合响应并将其缓存。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../client/advisor/api/BaseAdvisor.html#getScheduler()\">getScheduler</a></code> in interface <code><a href=\"../../client/advisor/api/BaseAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">BaseAdvisor</a></code>",
+      "translation": "接口 <code><a href=\"../../client/advisor/api/BaseAdvisor.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\">BaseAdvisor</a></code> 中的<code><a href=\"../../client/advisor/api/BaseAdvisor.html#getScheduler()\">getScheduler</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../client/advisor/api/BaseAdvisor.html#adviseCall(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.CallAdvisorChain)\">adviseCall</a></code> in interface <code><a href=\"../../client/advisor/api/BaseAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">BaseAdvisor</a></code>",
+      "translation": "`<code><a href=\"../../client/advisor/api/BaseAdvisor.html#adviseCall(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.CallAdvisorChain)\">adviseCall</a></code>` 接口 `<code><a href=\"../../client/advisor/api/BaseAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">BaseAdvisor</a></code>` 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../client/advisor/api/CallAdvisor.html#adviseCall(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.CallAdvisorChain)\">adviseCall</a></code> in interface <code><a href=\"../../client/advisor/api/CallAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">CallAdvisor</a></code>",
+      "translation": "接口 <code><a href=\"../../client/advisor/api/CallAdvisor.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\">CallAdvisor</a></code> 中的方法 <code><a href=\"../../client/advisor/api/CallAdvisor.html#adviseCall(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.CallAdvisorChain)\">adviseCall</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../client/advisor/api/BaseAdvisor.html#adviseStream(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.StreamAdvisorChain)\">adviseStream</a></code> in interface <code><a href=\"../../client/advisor/api/BaseAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">BaseAdvisor</a></code>",
+      "translation": "<code><a href=\"../../client/advisor/api/BaseAdvisor.html#adviseStream(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.StreamAdvisorChain)\">adviseStream</a></code> 接口 <code><a href=\"../../client/advisor/api/BaseAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">BaseAdvisor</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../client/advisor/api/StreamAdvisor.html#adviseStream(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.StreamAdvisorChain)\">adviseStream</a></code> in interface <code><a href=\"../../client/advisor/api/StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">StreamAdvisor</a></code>",
+      "translation": "接口 <code><a href=\"../../client/advisor/api/StreamAdvisor.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\">StreamAdvisor</a></code> 中的方法 <code><a href=\"../../client/advisor/api/StreamAdvisor.html#adviseStream(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.StreamAdvisorChain)\">adviseStream</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../client/advisor/api/BaseAdvisor.html#before(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.AdvisorChain)\">before</a></code> in interface <code><a href=\"../../client/advisor/api/BaseAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">BaseAdvisor</a></code>",
+      "translation": "<code><a href=\"../../client/advisor/api/BaseAdvisor.html#before(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.AdvisorChain)\">before</a></code> 接口 <code><a href=\"../../client/advisor/api/BaseAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">BaseAdvisor</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../client/advisor/api/BaseAdvisor.html#after(org.springframework.ai.chat.client.ChatClientResponse,org.springframework.ai.chat.client.advisor.api.AdvisorChain)\">after</a></code> in interface <code><a href=\"../../client/advisor/api/BaseAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">BaseAdvisor</a></code>",
+      "translation": "<code><a href=\"../../client/advisor/api/BaseAdvisor.html#after(org.springframework.ai.chat.client.ChatClientResponse,org.springframework.ai.chat.client.advisor.api.AdvisorChain)\">after</a></code> 接口 <code><a href=\"../../client/advisor/api/BaseAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">BaseAdvisor</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code>getOrder</code> in interface <code>org.springframework.core.Ordered</code>",
+      "translation": "接口 <code>org.springframework.core.Ordered</code> 中的 <code>getOrder</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>scheduler</code> - The scheduler for async operations",
+      "translation": "<code>scheduler</code> - 用于异步操作的调度器",
+      "count": 1
+    },
+    {
+      "source": "Semantic similarity based caching of responses",
+      "translation": "基于语义相似性的响应缓存",
+      "count": 1
+    },
+    {
+      "source": "Support for both synchronous and streaming chat operations",
+      "translation": "支持同步和流式聊天操作",
+      "count": 1
+    },
+    {
+      "source": "Configurable execution order in the advisor chain",
+      "translation": "顾问链中可配置的执行顺序",
+      "count": 1
+    },
+    {
+      "source": "Brian Sam-Bodden, Soby Chacko",
+      "translation": "布莱恩·萨姆 - 博登，索比·查科",
+      "count": 1
+    },
+    {
+      "source": "The response, either from cache or from the model",
+      "translation": "响应，无论是来自缓存还是模型。",
+      "count": 1
+    },
+    {
+      "source": "A Flux of responses, either from cache or from the model",
+      "translation": "来自缓存或模型的响应流",
+      "count": 1
+    },
+    {
+      "source": "A new builder instance",
+      "translation": "一个新的构建器实例",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "An advisor implementation that provides semantic caching capabilities for chat\nresponses. This advisor intercepts chat requests and checks for semantically similar\ncached responses before allowing the request to proceed to the model.",
+      "translation": "一种顾问实现，为聊天响应提供语义缓存功能。该顾问拦截聊天请求，并在允许请求继续传输到模型之前，检查是否存在语义相似的缓存响应。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>基于语义相似性的响应缓存</li>\n<li>支持同步和流式聊天操作</li>\n<li>顾问链中可配置的执行顺序</li>\n</ul>",
+      "translation": "<ul>\n<li>基于语义相似性的响应缓存</li>\n<li>支持同步与流式聊天操作</li>\n<li>可配置的顾问链执行顺序</li>\n</ul>",
+      "count": 1
+    }
+  ]
+}

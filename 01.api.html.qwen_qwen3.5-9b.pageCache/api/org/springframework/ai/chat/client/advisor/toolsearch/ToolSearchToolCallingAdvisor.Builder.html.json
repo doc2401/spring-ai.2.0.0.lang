@@ -1,0 +1,171 @@
+{
+  "created_at": "2026-06-15 09:00:34",
+  "updated_at": "2026-06-15 09:00:34",
+  "stats": {
+    "total_entries": 31,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 35,
+    "entries_with_hits": 31,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1290322580645162,
+    "usage_percentage": 0.0031000000000000003
+  },
+  "items": [
+    {
+      "source": "Builds and returns a new ToolSearchToolCallingAdvisor instance with the\nconfigured properties.",
+      "translation": "构建并返回一个新的 ToolSearchToolCallingAdvisor 实例，该实例包含已配置的属性。",
+      "count": 2
+    },
+    {
+      "source": "Sets the eviction strategy that determines when session tool indexes are\ncleared from the advisor's cache.",
+      "translation": "设置驱逐策略，该策略决定何时从顾问缓存中清除会话工具索引。",
+      "count": 2
+    },
+    {
+      "source": "Sets the ToolIndex to be used for finding tools.",
+      "translation": "设置用于查找工具的 ToolIndex。",
+      "count": 2
+    },
+    {
+      "source": "this Builder instance for method chaining",
+      "translation": "此构建器实例用于方法链式调用。",
+      "count": 2
+    },
+    {
+      "source": "Combine with <a href=\"../../../../tool/toolsearch/eviction/TtlEvictionStrategy.html\" title=\"class in org.springframework.ai.tool.toolsearch.eviction\"><code>TtlEvictionStrategy</code></a> via <a href=\"../../../../tool/toolsearch/eviction/CompositeEvictionStrategy.html\" title=\"class in org.springframework.ai.tool.toolsearch.eviction\"><code>CompositeEvictionStrategy</code></a>\nto also release indexes for sessions that have been idle longer than a fixed\nduration.",
+      "translation": "结合<a href=\"../../../../tool/toolsearch/eviction/TtlEvictionStrategy.html\" title=\"class in org.springframework.ai.tool.toolsearch.eviction\"><code>TtlEvictionStrategy</code></a>，通过<a href=\"../../../../tool/toolsearch/eviction/CompositeEvictionStrategy.html\" title=\"class in org.springframework.ai.tool.toolsearch.eviction\"><code>CompositeEvictionStrategy</code></a>来释放那些空闲时间超过固定时长的会话的索引。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This builder extends <a href=\"../ToolCallingAdvisor.Builder.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor.Builder</code></a> and adds configuration\noptions specific to tool search functionality.",
+      "translation": "该构建器扩展了<a href=\"../ToolCallingAdvisor.Builder.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor.Builder</code></a>，并添加了针对工具搜索功能的特定配置选项。",
+      "count": 1
+    },
+    {
+      "source": "Subclasses must override <a href=\"../ToolCallingAdvisor.Builder.html#newCopy()\"><code>ToolCallingAdvisor.Builder.newCopy()</code></a> to return an instance of their own\ntype, and override this method to copy their additional fields into it.",
+      "translation": "子类必须重写<a href=\"../ToolCallingAdvisor.Builder.html#newCopy()\"><code>ToolCallingAdvisor.Builder.newCopy()</code></a>以返回其自身类型的实例，并覆盖此方法将其额外字段复制到该实例中。",
+      "count": 1
+    },
+    {
+      "source": "Defaults to <code>new LruEvictionStrategy(1000)</code>, which retains indexes for at\nmost 1 000 concurrently active sessions and silently evicts the\nleast-recently-used one when the cap is exceeded. Adjust the cap to match the\nexpected peak concurrency of your deployment — lower values reduce memory\npressure, higher values reduce unnecessary re-indexing for services with many\nparallel conversations.",
+      "translation": "默认为<code>new LruEvictionStrategy(1000)</code>，最多保留 1 000 个并发活跃会话的索引；当达到上限时，会静默淘汰最近最少使用的索引。请根据部署的预期峰值并发量调整该上限：较低的数值可减少内存压力，较高的数值则能减少具有大量并行对话的服务中不必要的重新索引操作。",
+      "count": 1
+    },
+    {
+      "source": "Factory method called by <a href=\"../ToolCallingAdvisor.Builder.html#copy()\"><code>ToolCallingAdvisor.Builder.copy()</code></a> to create the blank builder instance\nthat will receive the copied fields. Subclasses must override this to return an\ninstance of their own builder type so that <a href=\"../ToolCallingAdvisor.Builder.html#copy()\"><code>ToolCallingAdvisor.Builder.copy()</code></a> preserves the full\nsubtype.",
+      "translation": "由<a href=\"../ToolCallingAdvisor.Builder.html#copy()\"><code>ToolCallingAdvisor.Builder.copy()</code></a>调用的工厂方法，用于创建将接收已复制字段的空白构建器实例。子类必须重写此方法以返回其自身类型的构建器实例，从而使<a href=\"../ToolCallingAdvisor.Builder.html#copy()\"><code>ToolCallingAdvisor.Builder.copy()</code></a>能够保留完整的子类型。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../ToolCallingAdvisor.Builder.html#newCopy()\">ToolCallingAdvisor.Builder</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../ToolCallingAdvisor.Builder.html#newCopy()\">ToolCallingAdvisor.Builder</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../ToolCallingAdvisor.Builder.html#copy()\">ToolCallingAdvisor.Builder</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述已从类复制：<code><a href=\"../ToolCallingAdvisor.Builder.html#copy()\">ToolCallingAdvisor.Builder</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Factory method called by <a href=\"../ToolCallingAdvisor.Builder.html#copy()\"><code>ToolCallingAdvisor.Builder.copy()</code></a> to create the blank builder instance\nthat will receive the copied fields.",
+      "translation": "由 `<a href=\"../ToolCallingAdvisor.Builder.html#copy()\"><code>ToolCallingAdvisor.Builder.copy()</code></a>` 调用的工厂方法，用于创建将接收已复制字段的空白构建器实例。",
+      "count": 1
+    },
+    {
+      "source": "Creates a shallow copy of this builder with all current settings.",
+      "translation": "创建此构建器的浅拷贝，包含所有当前设置。",
+      "count": 1
+    },
+    {
+      "source": "Sets the maximum number of tool references to return in tool search results.",
+      "translation": "设置工具搜索结果中返回的最大工具引用数量。",
+      "count": 1
+    },
+    {
+      "source": "Sets the key name in the context where the conversation ID is stored.",
+      "translation": "在存储对话 ID 的上下文中设置键名。",
+      "count": 1
+    },
+    {
+      "source": "Sets the maximum number of tool references to return in tool search results.\nThis is the human/user defined default value used when invoking the tool search\ntool.",
+      "translation": "设置工具搜索结果中返回的最大工具引用数量。  \n这是调用工具搜索工具时使用的由用户定义的人为默认值。",
+      "count": 1
+    },
+    {
+      "source": "Sets the key name in the context where the conversation ID is stored. By\ndefault, it is \"conversationId\", but it can be customized if the conversation\nID is stored under a different key in the context.",
+      "translation": "设置存储对话 ID 的上下文中的键名。默认值为\"conversationId\"，但如果对话 ID 存储在上下文中不同的键下，则可以自定义该键名。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../ToolCallingAdvisor.Builder.html#build()\">build</a></code> in class <code><a href=\"../ToolCallingAdvisor.Builder.html\" title=\"class in org.springframework.ai.chat.client.advisor\">ToolCallingAdvisor.Builder</a>&lt;<a href=\"#type-param-T\" title=\"type parameter in ToolSearchToolCallingAdvisor.Builder\">T</a> extends <a href=\"ToolSearchToolCallingAdvisor.Builder.html\" title=\"class in org.springframework.ai.chat.client.advisor.toolsearch\">ToolSearchToolCallingAdvisor.Builder</a>&lt;<a href=\"#type-param-T\" title=\"type parameter in ToolSearchToolCallingAdvisor.Builder\">T</a>&gt;&gt;</code>",
+      "translation": "<code><a href=\"../ToolCallingAdvisor.Builder.html#build()\">build()</a></code> 方法位于类 <code><a href=\"../ToolCallingAdvisor.Builder.html\" title=\"class in org.springframework.ai.chat.client.advisor\">ToolCallingAdvisor.Builder</a>&lt;<a href=\"#type-param-T\" title=\"type parameter in ToolSearchToolCallingAdvisor.Builder\">T</a> extends <a href=\"ToolSearchToolCallingAdvisor.Builder.html\" title=\"class in org.springframework.ai.chat.client.advisor.toolsearch\">ToolSearchToolCallingAdvisor.Builder</a>&lt;<a href=\"#type-param-T\" title=\"type parameter in ToolSearchToolCallingAdvisor.Builder\">T</a>&gt;&gt;</code> 中。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../ToolCallingAdvisor.Builder.html#newCopy()\">newCopy</a></code> in class <code><a href=\"../ToolCallingAdvisor.Builder.html\" title=\"class in org.springframework.ai.chat.client.advisor\">ToolCallingAdvisor.Builder</a>&lt;<a href=\"#type-param-T\" title=\"type parameter in ToolSearchToolCallingAdvisor.Builder\">T</a> extends <a href=\"ToolSearchToolCallingAdvisor.Builder.html\" title=\"class in org.springframework.ai.chat.client.advisor.toolsearch\">ToolSearchToolCallingAdvisor.Builder</a>&lt;<a href=\"#type-param-T\" title=\"type parameter in ToolSearchToolCallingAdvisor.Builder\">T</a>&gt;&gt;</code>",
+      "translation": "<code><a href=\"../ToolCallingAdvisor.Builder.html#newCopy()\">newCopy</a></code> 类 <code><a href=\"../ToolCallingAdvisor.Builder.html\" title=\"class in org.springframework.ai.chat.client.advisor\">ToolCallingAdvisor.Builder</a>&lt;<a href=\"#type-param-T\" title=\"type parameter in ToolSearchToolCallingAdvisor.Builder\">T</a> extends <a href=\"ToolSearchToolCallingAdvisor.Builder.html\" title=\"class in org.springframework.ai.chat.client.advisor.toolsearch\">ToolSearchToolCallingAdvisor.Builder</a>&lt;<a href=\"#type-param-T\" title=\"type parameter in ToolSearchToolCallingAdvisor.Builder\">T</a>&gt;&gt;</code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../ToolCallingAdvisor.Builder.html#copy()\">copy</a></code> in class <code><a href=\"../ToolCallingAdvisor.Builder.html\" title=\"class in org.springframework.ai.chat.client.advisor\">ToolCallingAdvisor.Builder</a>&lt;<a href=\"#type-param-T\" title=\"type parameter in ToolSearchToolCallingAdvisor.Builder\">T</a> extends <a href=\"ToolSearchToolCallingAdvisor.Builder.html\" title=\"class in org.springframework.ai.chat.client.advisor.toolsearch\">ToolSearchToolCallingAdvisor.Builder</a>&lt;<a href=\"#type-param-T\" title=\"type parameter in ToolSearchToolCallingAdvisor.Builder\">T</a>&gt;&gt;</code>",
+      "translation": "<code><a href=\"../ToolCallingAdvisor.Builder.html#copy()\">copy()</a></code> 类 <code><a href=\"../ToolCallingAdvisor.Builder.html\" title=\"class in org.springframework.ai.chat.client.advisor\">ToolCallingAdvisor.Builder</a>&lt;<a href=\"#type-param-T\" title=\"type parameter in ToolSearchToolCallingAdvisor.Builder\">T</a> extends <a href=\"ToolSearchToolCallingAdvisor.Builder.html\" title=\"class in org.springframework.ai.chat.client.advisor.toolsearch\">ToolSearchToolCallingAdvisor.Builder</a>&lt;<a href=\"#type-param-T\" title=\"type parameter in ToolSearchToolCallingAdvisor.Builder\">T</a>&gt;&gt;</code>",
+      "count": 1
+    },
+    {
+      "source": "<span id=\"type-param-T\"><code>T</code> - the builder type, used for self-referential generics to support method\nchaining in subclasses</span>",
+      "translation": "<span id=\"type-param-T\"><code>T</code> - 构建器类型，用于自引用泛型以支持子类的链式调用</span>",
+      "count": 1
+    },
+    {
+      "source": "<code>evictionStrategy</code> - the eviction strategy to use; must not be <code>null</code>",
+      "translation": "<code>evictionStrategy</code> - 要使用的驱逐策略；不能为 <code>null</code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if required parameters are null or invalid",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果必需参数为 null 或无效",
+      "count": 1
+    },
+    {
+      "source": "a new <a href=\"../ToolCallingAdvisor.Builder.html\" title=\"class in org.springframework.ai.chat.client.advisor\"><code>ToolCallingAdvisor.Builder</code></a> with the same configuration",
+      "translation": "一个具有相同配置的新的<a href=\"../ToolCallingAdvisor.Builder.html\" title=\"类在 org.springframework.ai.chat.client.advisor 中\"><code>ToolCallingAdvisor.Builder</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "<code>toolIndex</code> - the ToolIndex instance",
+      "translation": "<code>toolIndex</code> - ToolIndex 实例",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "a new ToolSearchToolCallingAdvisor instance",
+      "translation": "一个新的 ToolSearchToolCallingAdvisor 实例",
+      "count": 1
+    },
+    {
+      "source": "a new, unconfigured builder of the same concrete type",
+      "translation": "同类型的新未配置构建器",
+      "count": 1
+    },
+    {
+      "source": "Builder for creating instances of ToolSearchToolCallingAdvisor.",
+      "translation": "用于创建 ToolSearchToolCallingAdvisor 实例的构建器。",
+      "count": 1
+    },
+    {
+      "source": "Creates a shallow copy of this builder with all current settings. The copy can\nbe used as a template from which per-call overrides (e.g.\n<code>conversationHistoryEnabled</code>) are applied without mutating the original.",
+      "translation": "创建此构建器的浅拷贝，包含所有当前设置。该拷贝可用作模板，在此之上应用每次调用的覆盖（例如 <code>conversationHistoryEnabled</code>），而不会修改原始构建器。",
+      "count": 1
+    }
+  ]
+}

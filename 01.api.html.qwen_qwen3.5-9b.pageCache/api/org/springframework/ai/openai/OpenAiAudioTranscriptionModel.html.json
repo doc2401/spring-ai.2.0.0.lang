@@ -1,0 +1,101 @@
+{
+  "created_at": "2026-06-15 07:32:48",
+  "updated_at": "2026-06-15 07:32:48",
+  "stats": {
+    "total_entries": 17,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 21,
+    "entries_with_hits": 17,
+    "entries_without_hits": 0,
+    "hit_rate": 1.2352941176470589,
+    "usage_percentage": 0.0017
+  },
+  "items": [
+    {
+      "source": "Creates a new builder for <a href=\"OpenAiAudioTranscriptionModel.html\" title=\"class in org.springframework.ai.openai\"><code>OpenAiAudioTranscriptionModel</code></a>.",
+      "translation": "为<a href=\"OpenAiAudioTranscriptionModel.html\" title=\"class in org.springframework.ai.openai\"><code>OpenAiAudioTranscriptionModel</code></a>类创建一个新的构建器。",
+      "count": 2
+    },
+    {
+      "source": "Transcribes the audio from the given prompt.",
+      "translation": "将给定提示中的音频转录为文本。",
+      "count": 2
+    },
+    {
+      "source": "Gets the transcription options for this model.",
+      "translation": "获取此模型的转录选项。",
+      "count": 2
+    },
+    {
+      "source": "Creates a builder initialized with this model's configuration.",
+      "translation": "使用此模型的配置创建一个构建器。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../audio/transcription/TranscriptionModel.html#call(org.springframework.ai.audio.transcription.AudioTranscriptionPrompt)\">TranscriptionModel</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../audio/transcription/TranscriptionModel.html#call(org.springframework.ai.audio.transcription.AudioTranscriptionPrompt)\">TranscriptionModel</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Builder for creating <a href=\"OpenAiAudioTranscriptionModel.html\" title=\"class in org.springframework.ai.openai\"><code>OpenAiAudioTranscriptionModel</code></a> instances.",
+      "translation": "用于创建<a href=\"OpenAiAudioTranscriptionModel.html\" title=\"class in org.springframework.ai.openai\"><code>OpenAiAudioTranscriptionModel</code></a>实例的构建器。",
+      "count": 1
+    },
+    {
+      "source": "OpenAI audio transcription model implementation using the OpenAI Java SDK. You provide\nas input the audio file you want to transcribe and the desired output file format of\nthe transcription of the audio.",
+      "translation": "使用 OpenAI Java SDK 实现 OpenAI 音频转录模型。您只需提供要转录的音频文件以及期望的转录输出文件格式即可。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../model/Model.html#call(TReq)\">call</a></code> in interface <code><a href=\"../model/Model.html\" title=\"interface in org.springframework.ai.model\">Model</a>&lt;<a href=\"../audio/transcription/AudioTranscriptionPrompt.html\" title=\"class in org.springframework.ai.audio.transcription\">AudioTranscriptionPrompt</a>, <a href=\"../audio/transcription/AudioTranscriptionResponse.html\" title=\"class in org.springframework.ai.audio.transcription\">AudioTranscriptionResponse</a>&gt;</code>",
+      "translation": "接口<code><a href=\"../model/Model.html\" title=\"interface in org.springframework.ai.model\">Model</a>&lt;<a href=\"../audio/transcription/AudioTranscriptionPrompt.html\" title=\"class in org.springframework.ai.audio.transcription\">AudioTranscriptionPrompt</a>, <a href=\"../audio/transcription/AudioTranscriptionResponse.html\" title=\"class in org.springframework.ai.audio.transcription\">AudioTranscriptionResponse</a>&gt;</code>中的<code><a href=\"../model/Model.html#call(TReq)\">call</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../audio/transcription/TranscriptionModel.html#call(org.springframework.ai.audio.transcription.AudioTranscriptionPrompt)\">call</a></code> in interface <code><a href=\"../audio/transcription/TranscriptionModel.html\" title=\"interface in org.springframework.ai.audio.transcription\">TranscriptionModel</a></code>",
+      "translation": "接口 <code><a href=\"../audio/transcription/TranscriptionModel.html\" title=\"org.springframework.ai.audio.transcription 中的接口\">TranscriptionModel</a></code> 中的方法 <code><a href=\"../audio/transcription/TranscriptionModel.html#call(org.springframework.ai.audio.transcription.AudioTranscriptionPrompt)\">call</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code>transcriptionPrompt</code> - The prompt containing the audio resource and options.",
+      "translation": "<code>transcriptionPrompt</code> - 包含音频资源和选项的提示。",
+      "count": 1
+    },
+    {
+      "source": "Michael Lavelle, Christian Tzolov, Thomas Vitale, Ilayaperumal Gopinathan, Sebastien Deleuze",
+      "translation": "迈克尔·拉维尔，克里斯蒂安·茨洛夫，托马斯·维塔勒，伊莱亚佩鲁马尔·戈皮纳坦，塞巴斯蒂安·德洛兹",
+      "count": 1
+    },
+    {
+      "source": "a new builder instance",
+      "translation": "一个新的构建器实例",
+      "count": 1
+    },
+    {
+      "source": "a builder for creating a modified copy",
+      "translation": "用于创建修改副本的构建器",
+      "count": 1
+    },
+    {
+      "source": "the transcription options",
+      "translation": "转录选项",
+      "count": 1
+    },
+    {
+      "source": "The transcription response.",
+      "translation": "转录响应。",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    }
+  ]
+}

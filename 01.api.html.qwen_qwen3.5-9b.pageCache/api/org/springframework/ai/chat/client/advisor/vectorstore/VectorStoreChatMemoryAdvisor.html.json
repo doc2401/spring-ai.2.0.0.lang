@@ -1,0 +1,116 @@
+{
+  "created_at": "2026-06-15 09:00:56",
+  "updated_at": "2026-06-15 09:00:56",
+  "stats": {
+    "total_entries": 20,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 23,
+    "entries_with_hits": 20,
+    "entries_without_hits": 0,
+    "hit_rate": 1.15,
+    "usage_percentage": 0.002
+  },
+  "items": [
+    {
+      "source": "Logic to be executed after the rest of the advisor chain is called.",
+      "translation": "在调用顾问链其余部分后执行的逻辑。",
+      "count": 2
+    },
+    {
+      "source": "Logic to be executed before the rest of the advisor chain is called.",
+      "translation": "在调用顾问链其余部分之前执行的逻辑。",
+      "count": 2
+    },
+    {
+      "source": "Scheduler used for processing the advisor logic when streaming.",
+      "translation": "用于流处理时执行顾问逻辑的调度器。",
+      "count": 2
+    },
+    {
+      "source": "<strong>Security note:</strong> Document content retrieved from the vector store is\nXML-escaped before interpolation and wrapped in typed <code>&lt;memory-entry&gt;</code> elements\nto neutralize role-boundary injection and structural escape attacks. The default system\nprompt template instructs the model to treat the LONG_TERM_MEMORY section as historical\ndata only, not as instructions. This is a convention-level control — the root cause\n(user-controlled content interpolated into system prompt text) is not eliminated. For\nagent configurations with tool access, prefer architectures that keep user-sourced\ncontent in typed <code>Message</code> objects (see <code>MessageChatMemoryAdvisor</code>).",
+      "translation": "<strong>安全提示：</strong>从向量存储检索的文档内容在插值前会进行 XML 转义，并封装为带类型的<code>&lt;memory-entry&gt;</code>元素，以中和角色边界注入及结构逃逸攻击。默认的系统提示模板指示模型将 LONG_TERM_MEMORY 部分视为历史数据而非指令。这是一种约定层面的控制——根本原因（即用户可控内容被插值到系统提示文本中）并未消除。对于具有工具访问权限的代理配置，建议采用将用户来源内容保留在带类型的<code>Message</code>对象中的架构（参见<code>MessageChatMemoryAdvisor</code>）。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This only works for text based exchanges with the models, not multi-modal exchanges.",
+      "translation": "此功能仅适用于基于文本的模型交互，不适用于多模态交互。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../api/BaseAdvisor.html#getScheduler()\">BaseAdvisor</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../api/BaseAdvisor.html#getScheduler()\">BaseAdvisor</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../api/BaseAdvisor.html#before(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.AdvisorChain)\">BaseAdvisor</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../api/BaseAdvisor.html#before(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.AdvisorChain)\">BaseAdvisor</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../api/BaseAdvisor.html#after(org.springframework.ai.chat.client.ChatClientResponse,org.springframework.ai.chat.client.advisor.api.AdvisorChain)\">BaseAdvisor</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../api/BaseAdvisor.html#after(org.springframework.ai.chat.client.ChatClientResponse,org.springframework.ai.chat.client.advisor.api.AdvisorChain)\">BaseAdvisor</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Builder for VectorStoreChatMemoryAdvisor.",
+      "translation": "VectorStoreChatMemoryAdvisor 的构建器。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../api/BaseAdvisor.html#getScheduler()\">getScheduler</a></code> in interface <code><a href=\"../api/BaseAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">BaseAdvisor</a></code>",
+      "translation": "接口 <code><a href=\"../api/BaseAdvisor.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\">BaseAdvisor</a></code> 中的<code><a href=\"../api/BaseAdvisor.html#getScheduler()\">getScheduler</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../api/BaseAdvisor.html#before(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.AdvisorChain)\">before</a></code> in interface <code><a href=\"../api/BaseAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">BaseAdvisor</a></code>",
+      "translation": "<code><a href=\"../api/BaseAdvisor.html#before(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.AdvisorChain)\">before</a></code> 接口 <code><a href=\"../api/BaseAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">BaseAdvisor</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../api/BaseAdvisor.html#after(org.springframework.ai.chat.client.ChatClientResponse,org.springframework.ai.chat.client.advisor.api.AdvisorChain)\">after</a></code> in interface <code><a href=\"../api/BaseAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">BaseAdvisor</a></code>",
+      "translation": "接口 <code><a href=\"../api/BaseAdvisor.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\">BaseAdvisor</a></code> 中的方法<code><a href=\"../api/BaseAdvisor.html#after(org.springframework.ai.chat.client.ChatClientResponse,org.springframework.ai.chat.client.advisor.api.AdvisorChain)\">after</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../api/BaseAdvisor.html#adviseStream(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.StreamAdvisorChain)\">adviseStream</a></code> in interface <code><a href=\"../api/BaseAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">BaseAdvisor</a></code>",
+      "translation": "<code><a href=\"../api/BaseAdvisor.html#adviseStream(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.StreamAdvisorChain)\">adviseStream</a></code> 接口 <code><a href=\"../api/BaseAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">BaseAdvisor</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../api/StreamAdvisor.html#adviseStream(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.StreamAdvisorChain)\">adviseStream</a></code> in interface <code><a href=\"../api/StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">StreamAdvisor</a></code>",
+      "translation": "<code><a href=\"../api/StreamAdvisor.html#adviseStream(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.StreamAdvisorChain)\">adviseStream</a></code> 接口 <code><a href=\"../api/StreamAdvisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">StreamAdvisor</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>getOrder</code> in interface <code>org.springframework.core.Ordered</code>",
+      "translation": "接口 <code>org.springframework.core.Ordered</code> 中的 <code>getOrder</code>",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Thomas Vitale, Oganes Bozoyan, Mark Pollack",
+      "translation": "Christian Tzolov, Thomas Vitale, Oganes Bozoyan, Mark Pollack",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "Memory is retrieved from a VectorStore added into the prompt's system text.",
+      "translation": "记忆是从添加到提示系统文本中的向量存储中检索的。",
+      "count": 1
+    }
+  ]
+}

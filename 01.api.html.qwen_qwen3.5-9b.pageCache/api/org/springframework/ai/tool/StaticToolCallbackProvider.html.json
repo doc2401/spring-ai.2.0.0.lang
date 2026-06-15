@@ -1,0 +1,96 @@
+{
+  "created_at": "2026-06-15 07:35:00",
+  "updated_at": "2026-06-15 07:35:00",
+  "stats": {
+    "total_entries": 16,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 18,
+    "entries_with_hits": 16,
+    "entries_without_hits": 0,
+    "hit_rate": 1.125,
+    "usage_percentage": 0.0015999999999999999
+  },
+  "items": [
+    {
+      "source": "Constructs a new StaticToolCallbackProvider with the specified array of function\ncallbacks.",
+      "translation": "使用指定的函数回调数组构建一个新的 StaticToolCallbackProvider。",
+      "count": 2
+    },
+    {
+      "source": "Returns the array of function callbacks held by this provider.",
+      "translation": "返回此提供者持有的函数回调数组。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This implementation is thread-safe as it maintains an immutable array of callbacks that\nis set during construction and cannot be modified afterwards.",
+      "translation": "该实现是线程安全的，因为它在构造时设置了一个不可变的回调数组，此后无法对其进行修改。",
+      "count": 1
+    },
+    {
+      "source": "Example usage:",
+      "translation": "使用示例：",
+      "count": 1
+    },
+    {
+      "source": "Constructs a new StaticToolCallbackProvider with the specified list of function\ncallbacks.",
+      "translation": "使用指定的函数回调列表构建一个新的 StaticToolCallbackProvider。",
+      "count": 1
+    },
+    {
+      "source": "Constructs a new StaticToolCallbackProvider with the specified list of function\ncallbacks. The list is converted to an array internally.",
+      "translation": "使用指定的函数回调列表构建一个新的静态工具回调提供者。该列表在内部被转换为数组。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ToolCallbackProvider.html#getToolCallbacks()\">getToolCallbacks</a></code> in interface <code><a href=\"ToolCallbackProvider.html\" title=\"interface in org.springframework.ai.tool\">ToolCallbackProvider</a></code>",
+      "translation": "<code><a href=\"ToolCallbackProvider.html#getToolCallbacks()\">getToolCallbacks</a></code> 接口 <code><a href=\"ToolCallbackProvider.html\" title=\"org.springframework.ai.tool 中的接口\">ToolCallbackProvider</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if the toolCallbacks array is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果 toolCallbacks 数组为 null",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if the toolCallbacks list is null or contains null\nelements",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果 toolCallbacks 列表为 null 或包含 null 元素",
+      "count": 1
+    },
+    {
+      "source": "<code>toolCallbacks</code> - the array of function callbacks to be provided by this\nprovider. Must not be null, though an empty array is permitted.",
+      "translation": "<code>toolCallbacks</code> - 由该提供者提供的函数回调数组。不得为 null，但允许为空数组。",
+      "count": 1
+    },
+    {
+      "source": "<code>toolCallbacks</code> - the list of function callbacks to be provided by this\nprovider. Must not be null and must not contain null elements.",
+      "translation": "<code>toolCallbacks</code> - 由该提供者提供的函数回调列表。不得为 null，且不能包含 null 元素。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "an array containing all function callbacks provided during construction.\nThe returned array is a direct reference to the internal array, as the callbacks\nare expected to be immutable.",
+      "translation": "一个包含构建期间提供的所有函数回调的数组。返回的数组是对内部数组的直接引用，因为预期这些回调是不可变的。",
+      "count": 1
+    },
+    {
+      "source": "A simple implementation of <a href=\"ToolCallbackProvider.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallbackProvider</code></a> that maintains a static array\nof <a href=\"ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a> objects. This provider is immutable after construction and\nprovides a straightforward way to supply a fixed set of tool callbacks to AI models.",
+      "translation": "这是一个简单的<a href=\"ToolCallbackProvider.html\" title=\"org.springframework.ai.tool 中的接口\"><code>ToolCallbackProvider</code></a>实现，它维护一个静态的<a href=\"ToolCallback.html\" title=\"org.springframework.ai.tool 中的接口\"><code>ToolCallback</code></a>对象数组。该提供者在构造后是不可变的，并为 AI 模型提供了一种简单的方式来提供固定的一组工具回调。",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>ToolCallback callback1 = new MyFunctionCallback();\nToolCallback callback2 = new AnotherFunctionCallback();\n\n// Create provider with varargs constructor\nToolCallbackProvider provider1 = new StaticToolCallbackProvider(callback1, callback2);\n\n// Or create provider with List constructor\nList&lt;ToolCallback&gt; callbacks = Arrays.asList(callback1, callback2);\nToolCallbackProvider provider2 = new StaticToolCallbackProvider(callbacks);\n</code></pre>",
+      "translation": "<pre><code>ToolCallback callback1 = new MyFunctionCallback();\nToolCallback callback2 = new AnotherFunctionCallback();\n\n// 使用可变参数构造函数创建提供者\nToolCallbackProvider provider1 = new StaticToolCallbackProvider(callback1, callback2);\n\n// 或使用 List 构造函数创建提供者\nList&lt;ToolCallback&gt; callbacks = Arrays.asList(callback1, callback2);\nToolCallbackProvider provider2 = new StaticToolCallbackProvider(callbacks);\n</code></pre>",
+      "count": 1
+    }
+  ]
+}

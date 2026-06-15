@@ -1,0 +1,161 @@
+{
+  "created_at": "2026-06-15 07:24:00",
+  "updated_at": "2026-06-15 07:24:00",
+  "stats": {
+    "total_entries": 29,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 43,
+    "entries_with_hits": 29,
+    "entries_without_hits": 0,
+    "hit_rate": 1.4827586206896552,
+    "usage_percentage": 0.0029
+  },
+  "items": [
+    {
+      "source": "this builder",
+      "translation": "此构建器",
+      "count": 9
+    },
+    {
+      "source": "since 2.0.0 for removal in 3.0.0 — internal tool execution in\n<a href=\"AnthropicChatModel.html\" title=\"class in org.springframework.ai.anthropic\"><code>AnthropicChatModel</code></a> is superseded by <code>ToolCallingAdvisor</code> used via\n<code>ChatClient</code>.",
+      "translation": "自 2.0.0 版本起，将在 3.0.0 版本中移除——在<a href=\"AnthropicChatModel.html\" title=\"class in org.springframework.ai.anthropic\"><code>AnthropicChatModel</code></a> 中的内部工具执行功能已被通过<code>ChatClient</code>使用的<code>ToolCallingAdvisor</code>所取代。",
+      "count": 2
+    },
+    {
+      "source": "Builds a new <a href=\"AnthropicChatModel.html\" title=\"class in org.springframework.ai.anthropic\"><code>AnthropicChatModel</code></a> instance.",
+      "translation": "构建一个新的<a href=\"AnthropicChatModel.html\" title=\"org.springframework.ai.anthropic 中的类\"><code>AnthropicChatModel</code></a>实例。",
+      "count": 2
+    },
+    {
+      "source": "Sets the synchronous Anthropic client.",
+      "translation": "设置同步的 Anthropic 客户端。",
+      "count": 2
+    },
+    {
+      "source": "Sets the asynchronous Anthropic client.",
+      "translation": "设置异步 Anthropic 客户端。",
+      "count": 2
+    },
+    {
+      "source": "Sets the observation registry for metrics and tracing.",
+      "translation": "设置指标和追踪的观察注册表。",
+      "count": 2
+    },
+    {
+      "source": "Sets the chat options.",
+      "translation": "设置聊天选项。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Builder for creating <a href=\"AnthropicChatModel.html\" title=\"class in org.springframework.ai.anthropic\"><code>AnthropicChatModel</code></a> instances.",
+      "translation": "用于创建<a href=\"AnthropicChatModel.html\" title=\"org.springframework.ai.anthropic 中的类\"><code>AnthropicChatModel</code></a>实例的构建器。",
+      "count": 1
+    },
+    {
+      "source": "Registers an <a href=\"http/okhttp/AnthropicHttpClientBuilderCustomizer.html\" title=\"interface in org.springframework.ai.anthropic.http.okhttp\"><code>AnthropicHttpClientBuilderCustomizer</code></a> that mutates the\nunderlying OkHttp client builder before the Anthropic clients are constructed.",
+      "translation": "注册一个 <a href=\"http/okhttp/AnthropicHttpClientBuilderCustomizer.html\" title=\"interface in org.springframework.ai.anthropic.http.okhttp\"><code>AnthropicHttpClientBuilderCustomizer</code></a>，该自定义器会在构建 Anthropic 客户端之前修改底层的 OkHttp 客户端构建器。",
+      "count": 1
+    },
+    {
+      "source": "Sets the full list of <a href=\"http/okhttp/AnthropicHttpClientBuilderCustomizer.html\" title=\"interface in org.springframework.ai.anthropic.http.okhttp\"><code>customizers</code></a>\nto apply, replacing any customizers registered earlier on this builder.",
+      "translation": "设置要应用的<a href=\"http/okhttp/AnthropicHttpClientBuilderCustomizer.html\" title=\"interface in org.springframework.ai.anthropic.http.okhttp\"><code>customizers</code></a>完整列表，替换在此构建器上之前注册的任何自定义器。",
+      "count": 1
+    },
+    {
+      "source": "Registers an <a href=\"http/okhttp/AnthropicHttpClientBuilderCustomizer.html\" title=\"interface in org.springframework.ai.anthropic.http.okhttp\"><code>AnthropicHttpClientBuilderCustomizer</code></a> that mutates the\nunderlying OkHttp client builder before the Anthropic clients are constructed.\nUse this to attach OkHttp interceptors (e.g. OAuth2 bearer-token injection),\nswap the dispatcher executor, or tweak any other OkHttp setting. Customizers\nare applied in the order they are registered, after Spring AI's own defaults,\nso user code wins.",
+      "translation": "注册一个 <a href=\"http/okhttp/AnthropicHttpClientBuilderCustomizer.html\" title=\"interface in org.springframework.ai.anthropic.http.okhttp\"><code>AnthropicHttpClientBuilderCustomizer</code></a>，该自定义器会在构建 Anthropic 客户端之前修改底层的 OkHttp 客户端构建器。您可以使用此功能附加 OkHttp 拦截器（例如注入 OAuth2 访问令牌）、替换分发器执行器，或调整任何其他 OkHttp 设置。自定义器按照注册顺序依次应用，且位于 Spring AI 自身默认配置之后，因此用户代码具有最高优先级。",
+      "count": 1
+    },
+    {
+      "source": "Sets the full list of <a href=\"http/okhttp/AnthropicHttpClientBuilderCustomizer.html\" title=\"interface in org.springframework.ai.anthropic.http.okhttp\"><code>customizers</code></a>\nto apply, replacing any customizers registered earlier on this builder. The\norder of the list is preserved when invoking the customizers.",
+      "translation": "设置要应用的 <a href=\"http/okhttp/AnthropicHttpClientBuilderCustomizer.html\" title=\"interface in org.springframework.ai.anthropic.http.okhttp\"><code>customizers</code></a> 完整列表，替换在此构建器上之前注册的任何自定义器。调用自定义器时，将保留该列表的顺序。",
+      "count": 1
+    },
+    {
+      "source": "Sets the meter registry used to bind OkHttp connection-pool gauges (active/idle\nconnections). Optional; when omitted, no pool gauges are registered.\nAuto-configuration wires the application's <code>MeterRegistry</code> bean here\nautomatically.",
+      "translation": "设置用于绑定 OkHttp 连接池仪表（活动/空闲连接）的计量器注册表。可选；若省略，则不注册任何池仪表。自动配置会自动将应用程序的 `<code>MeterRegistry` 豆注入此处。",
+      "count": 1
+    },
+    {
+      "source": "Sets the executor used by the underlying OkHttp dispatcher for both the sync\nand async clients. The caller owns the executor's lifecycle — Spring AI will\nnot shut it down. Typical use: pass\n<code>Executors.newVirtualThreadPerTaskExecutor()</code> on Java 21+ to back HTTP\ndispatch with virtual threads. When omitted, an internal platform-thread\nexecutor is created and managed by the HTTP client.",
+      "translation": "设置底层 OkHttp 调度器在同步和异步客户端中使用的执行器。调用者需负责该执行器的生命周期管理——Spring AI 不会关闭它。典型用法：在 Java 21+ 上传入 <code>Executors.newVirtualThreadPerTaskExecutor()</code>，以利用虚拟线程支持 HTTP 调度。若未指定，HTTP 客户端将创建并由其内部管理的平台线程执行器。",
+      "count": 1
+    },
+    {
+      "source": "Sets the executor used by the underlying OkHttp dispatcher for both the sync\nand async clients.",
+      "translation": "设置底层 OkHttp 调度器中同步和异步客户端所使用的执行器。",
+      "count": 1
+    },
+    {
+      "source": "Sets the meter registry used to bind OkHttp connection-pool gauges (active/idle\nconnections).",
+      "translation": "设置用于绑定 OkHttp 连接池仪表（活动/空闲连接）的计量器注册表。",
+      "count": 1
+    },
+    {
+      "source": "Sets the tool calling manager used for internal tool execution.",
+      "translation": "设置用于内部工具执行的工具调用管理器。",
+      "count": 1
+    },
+    {
+      "source": "<code>anthropicClient</code> - the synchronous client",
+      "translation": "<code>anthropicClient</code> - 同步客户端",
+      "count": 1
+    },
+    {
+      "source": "<code>anthropicClientAsync</code> - the asynchronous client",
+      "translation": "<code>anthropicClientAsync</code> - 异步客户端",
+      "count": 1
+    },
+    {
+      "source": "<code>options</code> - the chat options",
+      "translation": "<code>options</code> - 聊天选项",
+      "count": 1
+    },
+    {
+      "source": "<code>toolCallingManager</code> - the tool calling manager",
+      "translation": "<code>toolCallingManager</code> - 工具调用管理器",
+      "count": 1
+    },
+    {
+      "source": "<code>observationRegistry</code> - the observation registry",
+      "translation": "<code>observationRegistry</code> - 观测注册表",
+      "count": 1
+    },
+    {
+      "source": "<code>meterRegistry</code> - the meter registry",
+      "translation": "<code>meterRegistry</code> - 计量器注册表",
+      "count": 1
+    },
+    {
+      "source": "<code>dispatcherExecutor</code> - the dispatcher executor; null restores the default",
+      "translation": "<code>dispatcherExecutor</code> - 调度器执行器；为 null 时恢复默认值",
+      "count": 1
+    },
+    {
+      "source": "<code>customizer</code> - the customizer to add",
+      "translation": "<code>customizer</code> - 要添加的自定义器",
+      "count": 1
+    },
+    {
+      "source": "<code>customizers</code> - the list of customizers",
+      "translation": "<code>customizers</code> - 自定义器列表",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, luocongqiu, Mariusz Bernacki, Thomas Vitale, Claudio Silva Junior, Alexandros Pappas, Jonghoon Park, Soby Chacko, Austin Dase, Sebastien Deleuze, Ilayaperumal Gopinathan",
+      "translation": "Christian Tzolov, 骆丛秋，Mariusz Bernacki, Thomas Vitale, Claudio Silva Junior, Alexandros Pappas, Jonghoon Park, Soby Chacko, Austin Dase, Sebastien Deleuze, Ilayaperumal Gopinathan",
+      "count": 1
+    },
+    {
+      "source": "the configured chat model",
+      "translation": "已配置的聊天模型",
+      "count": 1
+    }
+  ]
+}

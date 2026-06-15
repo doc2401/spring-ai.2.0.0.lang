@@ -1,0 +1,76 @@
+{
+  "created_at": "2026-06-15 08:21:26",
+  "updated_at": "2026-06-15 08:21:26",
+  "stats": {
+    "total_entries": 12,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 13,
+    "entries_with_hits": 12,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0833333333333333,
+    "usage_percentage": 0.0012000000000000001
+  },
+  "items": [
+    {
+      "source": "Used as connection or client identifier to select the MCP clients that the resource\nchange listener is associated with.",
+      "translation": "用作连接或客户端标识符，以选择资源变更监听器所关联的 MCP 客户端。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "The annotated method must have a void return type for synchronous consumers, or can\nreturn <code>Mono&lt;Void&gt;</code> for asynchronous consumers. The method should accept a single\nparameter of type <code>List&lt;McpSchema.Resource&gt;</code> that represents the updated list of\nresources after the change notification.",
+      "translation": "注释方法对于同步消费者必须具有 void 返回类型，或者对于异步消费者可以返回 `<code>Mono&lt;Void&gt;</code>`。该方法应接受一个类型为 `<code>List&lt;McpSchema.Resource&gt;</code>` 的单个参数，该参数表示变更通知后更新的资源列表。",
+      "count": 1
+    },
+    {
+      "source": "Methods annotated with this annotation are used to listen for notifications when the\nlist of available resources changes on an MCP server. According to the MCP\nspecification, servers that declare the <code>listChanged</code> capability will send\nnotifications when their resource list is modified.",
+      "translation": "使用此注解标注的方法用于监听 MCP 服务器上可用资源列表变更时的通知。根据 MCP 规范，声明了 `<code>listChanged</code>` 能力的服务器会在其资源列表被修改时发送通知。",
+      "count": 1
+    },
+    {
+      "source": "Example usage:",
+      "translation": "使用示例：",
+      "count": 1
+    },
+    {
+      "source": "<ul class=\"tag-list-long\">\n<li><a href=\"https://modelcontextprotocol.io/specification/2025-06-18/server/resources#list-changed-notification\">MCP\nResource List Changed Notification</a></li>\n</ul>",
+      "translation": "<ul class=\"tag-list-long\">\n<li><a href=\"https://modelcontextprotocol.io/specification/2025-06-18/server/resources#list-changed-notification\">MCP 资源列表变更通知</a></li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "the client identifier, or empty string to listen to all clients",
+      "translation": "客户端标识符，或留空字符串以监听所有客户端。",
+      "count": 1
+    },
+    {
+      "source": "Required Element Summary",
+      "translation": "所需元素摘要",
+      "count": 1
+    },
+    {
+      "source": "Element Details",
+      "translation": "元素详情",
+      "count": 1
+    },
+    {
+      "source": "Annotation for methods that handle resource list change notifications from MCP servers.\nThis annotation is applicable only for MCP clients.",
+      "translation": "用于处理来自 MCP 服务器的资源列表变更通知的方法注解。  \n此注解仅适用于 MCP 客户端。",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>&amp;#64;McpResourceListChanged(clients = \"test-client\")\npublic void onResourceListChanged(List&lt;McpSchema.Resource&gt; updatedResources) {\n    // Handle resource list change notification with the updated resources\n    logger.info(\"Resource list updated, now contains {} resources\", updatedResources.size());\n    // Process the updated resource list\n}\n\n&amp;#64;McpResourceListChanged(clients = \"test-client\")\npublic Mono&lt;Void&gt; onResourceListChangedAsync(List&lt;McpSchema.Resource&gt; updatedResources) {\n    // Handle resource list change notification asynchronously\n    return processUpdatedResources(updatedResources);\n}\n</code></pre>",
+      "translation": "<pre><code>&#64;McpResourceListChanged(clients = \"test-client\")\npublic void onResourceListChanged(List&lt;McpSchema.Resource&gt; updatedResources) {\n    // 处理资源列表变更通知，包含更新后的资源\n    logger.info(\"资源列表已更新，当前包含 {} 个资源\", updatedResources.size());\n    // 处理更新后的资源列表\n}\n\n&#64;McpResourceListChanged(clients = \"test-client\")\npublic Mono&lt;Void&gt; onResourceListChangedAsync(List&lt;McpSchema.Resource&gt; updatedResources) {\n    // 异步处理资源列表变更通知\n    return processUpdatedResources(updatedResources);\n}\n</code></pre>",
+      "count": 1
+    }
+  ]
+}

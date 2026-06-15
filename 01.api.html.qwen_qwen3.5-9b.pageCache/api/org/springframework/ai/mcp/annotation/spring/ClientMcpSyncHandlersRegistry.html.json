@@ -1,0 +1,106 @@
+{
+  "created_at": "2026-06-15 08:28:21",
+  "updated_at": "2026-06-15 08:28:21",
+  "stats": {
+    "total_entries": 18,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 25,
+    "entries_with_hits": 18,
+    "entries_without_hits": 0,
+    "hit_rate": 1.3888888888888888,
+    "usage_percentage": 0.0018
+  },
+  "items": [
+    {
+      "source": "Invoke the elicitation handler for a given MCP client.",
+      "translation": "为给定的 MCP 客户端调用提示处理程序。",
+      "count": 2
+    },
+    {
+      "source": "Invoke all elicitation handlers for a given MCP client, sequentially.",
+      "translation": "按顺序为给定的 MCP 客户端调用所有提示收集处理器。",
+      "count": 2
+    },
+    {
+      "source": "Invoke all progress handlers for a given MCP client, sequentially.",
+      "translation": "按顺序调用给定 MCP 客户端的所有进度处理器。",
+      "count": 2
+    },
+    {
+      "source": "Invoke all prompt list changed handlers for a given MCP client, sequentially.",
+      "translation": "按顺序为给定的MCP客户端调用所有已更改的提示列表处理器。",
+      "count": 2
+    },
+    {
+      "source": "Invoke all resource list changed handlers for a given MCP client, sequentially.",
+      "translation": "按顺序为给定的MCP客户端调用所有资源列表变更处理器。",
+      "count": 2
+    },
+    {
+      "source": "Invoke the sampling handler for a given MCP client.",
+      "translation": "为给定的 MCP 客户端调用采样处理器。",
+      "count": 2
+    },
+    {
+      "source": "Invoke all tool list changed handlers for a given MCP client, sequentially.",
+      "translation": "按顺序为给定的MCP客户端调用所有工具列表变更处理器。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "First, once bean definitions are available, all bean types are scanned for the presence\nof MCP annotations. In particular, this is used to prepare the result\n<a href=\"#getCapabilities(java.lang.String)\"><code>getCapabilities(String)</code></a>, which is then used by MCP client auto-configurations\nto configure the client capabilities without needing to instantiate the beans.",
+      "translation": "首先，一旦 Bean 定义可用，将扫描所有 Bean 类型以查找是否存在 MCP 注解。特别是，这用于准备结果<a href=\"#getCapabilities(java.lang.String)\"><code>getCapabilities(String)</code></a>，随后 MCP 客户端自动配置将利用该结果来配置客户端能力，而无需实例化这些 Bean。",
+      "count": 1
+    },
+    {
+      "source": "The scanning happens in two phases:",
+      "translation": "扫描分为两个阶段：",
+      "count": 1
+    },
+    {
+      "source": "Second, after all singleton beans have been instantiated, all annotated beans are\nscanned again, MCP handlers are created to match the annotations, and stored by client.",
+      "translation": "其次，在所有单例 Bean 实例化完成后，会再次扫描所有已标注的 Bean，创建 MCP 处理器以匹配这些标注，并由客户端进行存储。",
+      "count": 1
+    },
+    {
+      "source": "Obtain the MCP capabilities declared for a given MCP client. Capabilities are\nregistered with the <a href=\"../McpSampling.html\" title=\"annotation interface in org.springframework.ai.mcp.annotation\"><code>McpSampling</code></a> and <a href=\"../McpElicitation.html\" title=\"annotation interface in org.springframework.ai.mcp.annotation\"><code>McpElicitation</code></a> annotations.",
+      "translation": "获取给定 MCP 客户端声明的 MCP 能力。这些能力通过 `<a href=\"../McpSampling.html\" title=\"org.springframework.ai.mcp.annotation 包中的注解接口\"><code>McpSampling</code></a>` 和 `<a href=\"../McpElicitation.html\" title=\"org.springframework.ai.mcp.annotation 包中的注解接口\"><code>McpElicitation</code></a>` 注解进行注册。",
+      "count": 1
+    },
+    {
+      "source": "Obtain the MCP capabilities declared for a given MCP client.",
+      "translation": "获取给定 MCP 客户端声明的 MCP 能力。",
+      "count": 1
+    },
+    {
+      "source": "<code>afterSingletonsInstantiated</code> in interface <code>org.springframework.beans.factory.SmartInitializingSingleton</code>",
+      "translation": "在接口 <code>org.springframework.beans.factory.SmartInitializingSingleton</code> 中的 <code>afterSingletonsInstantiated</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>postProcessBeanFactory</code> in interface <code>org.springframework.beans.factory.config.BeanFactoryPostProcessor</code>",
+      "translation": "接口 <code>org.springframework.beans.factory.config.BeanFactoryPostProcessor</code> 中的 <code>postProcessBeanFactory</code>",
+      "count": 1
+    },
+    {
+      "source": "Daniel Garnier-Moiroux",
+      "translation": "丹尼尔·加尼耶 - 莫鲁",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "Registry of methods annotated with MCP Client annotations (sampling, logging, etc.).\nAll beans in the application context are scanned to find these methods automatically.\nThey are then exposed by the registry by client name.",
+      "translation": "注册了带有 MCP 客户端注解（如采样、日志等）的方法列表。  \n应用程序上下文中的所有 Bean 都会被扫描，以自动查找这些方法。  \n随后，这些方法将通过客户端名称由注册表暴露出来。",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "created_at": "2026-06-15 07:34:13",
+  "updated_at": "2026-06-15 07:34:13",
+  "stats": {
+    "total_entries": 30,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 35,
+    "entries_with_hits": 30,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1666666666666667,
+    "usage_percentage": 0.003
+  },
+  "items": [
+    {
+      "source": "this builder",
+      "translation": "此构建器",
+      "count": 5
+    },
+    {
+      "source": "Constructs and returns an instance of <a href=\"ExtractedTextFormatter.html\" title=\"class in org.springframework.ai.reader\"><code>ExtractedTextFormatter</code></a> using the\nconfigurations set on this builder.",
+      "translation": "使用此构建器上设置的配置，构造并返回一个 <a href=\"ExtractedTextFormatter.html\" title=\"class in org.springframework.ai.reader\"><code>ExtractedTextFormatter</code></a> 实例。",
+      "count": 2
+    },
+    {
+      "source": "After configuring the builder, calling the <a href=\"#build()\"><code>build()</code></a> method will return a\nnew instance of <a href=\"ExtractedTextFormatter.html\" title=\"class in org.springframework.ai.reader\"><code>ExtractedTextFormatter</code></a> with the specified configurations.",
+      "translation": "配置完构建器后，调用<a href=\"#build()\"><code>build()</code></a>方法将返回一个新的<a href=\"ExtractedTextFormatter.html\" title=\"class in org.springframework.ai.reader\"><code>ExtractedTextFormatter</code></a>实例，该实例包含指定的配置。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "It allows for a step-by-step, fluent construction of the\n<a href=\"ExtractedTextFormatter.html\" title=\"class in org.springframework.ai.reader\"><code>ExtractedTextFormatter</code></a>, by providing methods to set specific configurations\nsuch as left alignment of text, the number of top lines or bottom lines to delete,\nand the number of top pages to skip before deletion. Each configuration method in\nthe builder returns the builder instance itself, enabling method chaining.",
+      "translation": "它支持通过提供设置特定配置的方法，以分步、流畅的方式构建<a href=\"ExtractedTextFormatter.html\" title=\"class in org.springframework.ai.reader\"><code>ExtractedTextFormatter</code></a>类，这些方法可设置文本左对齐、要删除的顶部或底部行数，以及在删除前跳过的顶部页数等配置。构建器中的每个配置方法都会返回构建器实例本身，从而支持方法链式调用。",
+      "count": 1
+    },
+    {
+      "source": "This method uses the values set on the builder to initialize the configuration\nfor the <a href=\"ExtractedTextFormatter.html\" title=\"class in org.springframework.ai.reader\"><code>ExtractedTextFormatter</code></a> instance. If no values are explicitly\nset on the builder, the defaults specified in the builder are used.",
+      "translation": "此方法使用构建器中设置的值来初始化 <a href=\"ExtractedTextFormatter.html\" title=\"class in org.springframework.ai.reader\"><code>ExtractedTextFormatter</code></a> 实例的配置。如果未在构建器上显式设置任何值，则使用构建器中指定的默认值。",
+      "count": 1
+    },
+    {
+      "source": "It's recommended to use this method only once per builder instance to ensure\nthat each <a href=\"ExtractedTextFormatter.html\" title=\"class in org.springframework.ai.reader\"><code>ExtractedTextFormatter</code></a> object is configured as intended.",
+      "translation": "建议每个构建器实例仅使用此方法一次，以确保每个<a href=\"ExtractedTextFormatter.html\" title=\"org.springframework.ai.reader 中的类\"><code>ExtractedTextFormatter</code></a>对象均按预期进行配置。",
+      "count": 1
+    },
+    {
+      "source": "Set the line separator to use when formatting the text.",
+      "translation": "设置用于格式化文本的行分隔符。",
+      "count": 1
+    },
+    {
+      "source": "Align the document text to the left.",
+      "translation": "将文档文本左对齐。",
+      "count": 1
+    },
+    {
+      "source": "Remove the bottom N lines from the page text.",
+      "translation": "从页面文本中删除底部的 N 行。",
+      "count": 1
+    },
+    {
+      "source": "Withdraw the top N pages from the text top/bottom line deletion.",
+      "translation": "从文本的顶部/底部行删除中移除前 N 个页面。",
+      "count": 1
+    },
+    {
+      "source": "Remove the top N lines from the page text.",
+      "translation": "从页面文本中删除前 N 行。",
+      "count": 1
+    },
+    {
+      "source": "Align the document text to the left. Defaults to false.",
+      "translation": "将文档文本左对齐。默认为 false。",
+      "count": 1
+    },
+    {
+      "source": "Withdraw the top N pages from the text top/bottom line deletion. Defaults to 0.",
+      "translation": "从文本顶部/底部行删除中提取前 N 个页面。默认值为 0。",
+      "count": 1
+    },
+    {
+      "source": "Remove the top N lines from the page text. Defaults to 0.",
+      "translation": "从页面文本中移除顶部 N 行。默认为 0。",
+      "count": 1
+    },
+    {
+      "source": "Remove the bottom N lines from the page text. Defaults to 0.",
+      "translation": "从页面文本中移除底部的 N 行。默认为 0。",
+      "count": 1
+    },
+    {
+      "source": "Set the line separator to use when formatting the text. Defaults to the system\nline separator.",
+      "translation": "设置格式化文本时使用的行分隔符。默认值为系统行分隔符。",
+      "count": 1
+    },
+    {
+      "source": "a new instance of <a href=\"ExtractedTextFormatter.html\" title=\"class in org.springframework.ai.reader\"><code>ExtractedTextFormatter</code></a> configured with the\nvalues set on this builder.",
+      "translation": "一个使用本构建器中设置的值进行配置的<a href=\"ExtractedTextFormatter.html\" title=\"class in org.springframework.ai.reader\"><code>ExtractedTextFormatter</code></a>新实例。",
+      "count": 1
+    },
+    {
+      "source": "Left alignment to <code>false</code>",
+      "translation": "左对齐设置为<code>false</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>leftAlignment</code> - Flag to align the text to the left.",
+      "translation": "<code>leftAlignment</code> - 将文本左对齐的标志。",
+      "count": 1
+    },
+    {
+      "source": "<code>numberOfTopPagesToSkipBeforeDelete</code> - Number of pages to skip from\ntop/bottom line deletion policy.",
+      "translation": "<code>numberOfTopPagesToSkipBeforeDelete</code> - 在应用顶部/底部删除策略前跳过的页面数量。",
+      "count": 1
+    },
+    {
+      "source": "<code>numberOfTopTextLinesToDelete</code> - Number of top text lines to delete.",
+      "translation": "<code>numberOfTopTextLinesToDelete</code> - 要删除的顶部文本行数。",
+      "count": 1
+    },
+    {
+      "source": "<code>numberOfBottomTextLinesToDelete</code> - Number of bottom text lines to delete.",
+      "translation": "<code>numberOfBottomTextLinesToDelete</code> - 要删除的底部分行文本数量。",
+      "count": 1
+    },
+    {
+      "source": "<code>lineSeparator</code> - The line separator to use.",
+      "translation": "<code>lineSeparator</code> - 要使用的行分隔符。",
+      "count": 1
+    },
+    {
+      "source": "Number of top pages to skip before deletion to 0",
+      "translation": "删除前跳过的顶级页面数量设置为 0",
+      "count": 1
+    },
+    {
+      "source": "Number of top text lines to delete to 0",
+      "translation": "删除顶部文本行的数量设为 0",
+      "count": 1
+    },
+    {
+      "source": "Number of bottom text lines to delete to 0",
+      "translation": "将底部文本行数删除至 0",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "The <code>Builder</code> class is a nested static class of\n<a href=\"ExtractedTextFormatter.html\" title=\"class in org.springframework.ai.reader\"><code>ExtractedTextFormatter</code></a> designed to facilitate the creation and\ncustomization of instances of <a href=\"ExtractedTextFormatter.html\" title=\"class in org.springframework.ai.reader\"><code>ExtractedTextFormatter</code></a>.",
+      "translation": "`Builder` 类是 `<a href=\"ExtractedTextFormatter.html\" title=\"class in org.springframework.ai.reader\"><code>ExtractedTextFormatter</code></a>` 的一个嵌套静态内部类，旨在促进 `<a href=\"ExtractedTextFormatter.html\" title=\"class in org.springframework.ai.reader\"><code>ExtractedTextFormatter</code></a>` 实例的创建与定制。",
+      "count": 1
+    },
+    {
+      "source": "By default, the builder sets:\n<ul>\n<li>左对齐设置为<code>false</code></li>\n<li>删除前跳过的顶级页面数量设置为 0</li>\n<li>删除顶部文本行的数量设为 0</li>\n<li>将底部文本行数删除至 0</li>\n</ul>",
+      "translation": "默认情况下，构建器会设置：\n<ul>\n<li>左对齐设置为<code>false</code></li>\n<li>删除前跳过的顶级页面数量设置为 0</li>\n<li>删除顶部文本行的数量设为 0</li>\n<li>将底部文本行数删除至 0</li>\n</ul>",
+      "count": 1
+    }
+  ]
+}

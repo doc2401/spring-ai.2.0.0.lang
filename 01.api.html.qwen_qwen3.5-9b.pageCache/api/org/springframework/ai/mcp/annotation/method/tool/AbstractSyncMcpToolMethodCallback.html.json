@@ -1,0 +1,96 @@
+{
+  "created_at": "2026-06-15 08:33:04",
+  "updated_at": "2026-06-15 08:33:04",
+  "stats": {
+    "total_entries": 16,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 16,
+    "entries_with_hits": 16,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.0015999999999999999
+  },
+  "items": [
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Abstract base class for creating Function callbacks around synchronous tool methods.\n\nThis class extends <a href=\"AbstractAsyncMcpToolMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.tool\"><code>AbstractAsyncMcpToolMethodCallback</code></a> and provides synchronous\nwrapper methods for handling tool requests. It converts the asynchronous reactive\nmethods from the parent class into synchronous equivalents suitable for blocking\noperations.",
+      "translation": "用于围绕同步工具方法创建 Function 回调的抽象基类。\n\n该类扩展了 <a href=\"AbstractAsyncMcpToolMethodCallback.html\" title=\"class in org.springframework.ai.mcp.annotation.method.tool\"><code>AbstractAsyncMcpToolMethodCallback</code></a>，并提供用于处理工具请求的同步包装方法。它将父类中的异步响应式方法转换为适用于阻塞操作的同步等效方法。",
+      "count": 1
+    },
+    {
+      "source": "Creates an error result for exceptions that occur during method invocation.",
+      "translation": "在方法调用期间发生异常时，创建错误结果。",
+      "count": 1
+    },
+    {
+      "source": "Processes the result of the method invocation and converts it to a CallToolResult.",
+      "translation": "处理方法调用的结果并将其转换为 CallToolResult。",
+      "count": 1
+    },
+    {
+      "source": "Validates that the request is not null.",
+      "translation": "验证请求不为空。",
+      "count": 1
+    },
+    {
+      "source": "Processes the result of the method invocation and converts it to a CallToolResult.\nThis is a synchronous wrapper around the parent class's reactive result processing.",
+      "translation": "处理方法调用的结果并将其转换为 CallToolResult。这是父类反应式结果处理的同步包装器。",
+      "count": 1
+    },
+    {
+      "source": "Creates an error result for exceptions that occur during method invocation. This is\na synchronous wrapper around the parent class's reactive error handling.",
+      "translation": "在方法调用期间发生异常时，创建一个错误结果。这是父类响应式错误处理的同步包装器。",
+      "count": 1
+    },
+    {
+      "source": "Validates that the request is not null. This is a synchronous wrapper around the\nparent class's reactive validation.",
+      "translation": "验证请求不为空。这是父类反应式验证的同步包装器。",
+      "count": 1
+    },
+    {
+      "source": "<span id=\"type-param-T\"><code>T</code> - The type of the context parameter (e.g., McpTransportContext or\nMcpSyncServerExchange)</span>",
+      "translation": "<span id=\"type-param-T\"><code>T</code> - 上下文参数的类型（例如，McpTransportContext 或 McpSyncServerExchange）</span>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if the request is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果请求为 null",
+      "count": 1
+    },
+    {
+      "source": "<code>result</code> - The result from the method invocation",
+      "translation": "<code>result</code> - 方法调用的结果",
+      "count": 1
+    },
+    {
+      "source": "<code>e</code> - The exception that occurred",
+      "translation": "<code>e</code> - 发生的异常",
+      "count": 1
+    },
+    {
+      "source": "<code>request</code> - The request to validate",
+      "translation": "<code>request</code> - 待验证的请求",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "A CallToolResult representing the processed result",
+      "translation": "代表已处理结果的 CallToolResult",
+      "count": 1
+    },
+    {
+      "source": "A CallToolResult representing the error",
+      "translation": "代表错误的 CallToolResult",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "created_at": "2026-06-15 07:38:33",
+  "updated_at": "2026-06-15 07:38:33",
+  "stats": {
+    "total_entries": 42,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 47,
+    "entries_with_hits": 42,
+    "entries_without_hits": 0,
+    "hit_rate": 1.119047619047619,
+    "usage_percentage": 0.0042
+  },
+  "items": [
+    {
+      "source": "Create a new <a href=\"../observation/VectorStoreObservationContext.Builder.html\" title=\"class in org.springframework.ai.vectorstore.observation\"><code>VectorStoreObservationContext.Builder</code></a> instance.",
+      "translation": "创建一个新的<a href=\"../observation/VectorStoreObservationContext.Builder.html\" title=\"class in org.springframework.ai.vectorstore.observation\"><code>VectorStoreObservationContext.Builder</code></a>实例。",
+      "count": 2
+    },
+    {
+      "source": "Perform the actual add operation.",
+      "translation": "执行实际的加法操作。",
+      "count": 2
+    },
+    {
+      "source": "Perform the actual delete operation.",
+      "translation": "执行实际的删除操作。",
+      "count": 2
+    },
+    {
+      "source": "Template method for concrete implementations to provide filter-based deletion\nlogic.",
+      "translation": "为基于过滤器的删除逻辑提供具体实现的模板方法。",
+      "count": 2
+    },
+    {
+      "source": "Perform the actual similarity search operation.",
+      "translation": "执行实际的相似度搜索操作。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Basic usage example:",
+      "translation": "基本使用示例：",
+      "count": 1
+    },
+    {
+      "source": "Advanced configuration example:",
+      "translation": "高级配置示例：",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../VectorStore.html#getNativeClient()\">VectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../VectorStore.html#getNativeClient()\">VectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Returns the native client if available in this vector store implementation.\n\nNote on usage: 1. Returns empty Optional when no native client is available 2. Due\nto Java type erasure, runtime type checking is not possible\n\nExample usage: When working with implementation with known native client:\nOptional<nativeclienttype> client = vectorStore.getNativeClient();\n\nNote: Using Optional<span class=\"invalid-tag\">invalid input: '&lt;'</span>?&gt; will return the native client if one exists, rather than an\nempty Optional. For type safety, prefer using the specific client type.</nativeclienttype>",
+      "translation": "返回当前向量存储实现中可用的原生客户端。\n\n使用注意事项：1. 若无可用原生客户端，则返回空 Optional；2. 由于 Java 类型擦除，无法进行运行时类型检查。\n\n使用示例：在与已知原生客户端的实现协作时：Optional<nativeclienttype> client = vectorStore.getNativeClient();\n\n注意：使用 Optional<span class=\"invalid-tag\">无效输入：'&lt;'</span>?&gt; 将返回存在的原生客户端，而非空 Optional。为确保类型安全，建议使用特定的客户端类型。</nativeclienttype>",
+      "count": 1
+    },
+    {
+      "source": "Builder for the Cassandra vector store.",
+      "translation": "Cassandra 向量存储的构建器。",
+      "count": 1
+    },
+    {
+      "source": "Given a string document id, return the value for each primary key column.",
+      "translation": "给定字符串文档 ID，返回每个主键列的值。",
+      "count": 1
+    },
+    {
+      "source": "Given a list of primary key column values, return the document id.",
+      "translation": "给定主键列值的列表，返回文档 ID。",
+      "count": 1
+    },
+    {
+      "source": "Indexes are automatically created with COSINE.",
+      "translation": "使用 COSINE 会自动创建索引。",
+      "count": 1
+    },
+    {
+      "source": "Returns the native client if available in this vector store implementation.",
+      "translation": "如果此向量存储实现中可用，则返回原生客户端。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">doAdd</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">doAdd</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">doDelete</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">doDelete</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">doDelete</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">doDelete</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">doSimilaritySearch</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">doSimilaritySearch</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">createObservationContextBuilder</a></code> in class <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"../observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">createObservationContextBuilder</a></code> 类 <code><a href=\"../observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/AutoCloseable.html#close()\" title=\"class or interface in java.lang\">close</a></code> in interface <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/AutoCloseable.html\" title=\"class or interface in java.lang\">AutoCloseable</a></code>",
+      "translation": "`AutoCloseable` 接口中的 `close()` 方法。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../VectorStore.html#getNativeClient()\">getNativeClient</a></code> in interface <code><a href=\"../VectorStore.html\" title=\"interface in org.springframework.ai.vectorstore\">VectorStore</a></code>",
+      "translation": "接口 <code><a href=\"../VectorStore.html\" title=\"org.springframework.ai.vectorstore 中的接口\">VectorStore</a></code> 中的方法 <code><a href=\"../VectorStore.html#getNativeClient()\">getNativeClient</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<span id=\"getNativeClient()-type-param-T\"><code>T</code> - The type of the native client</span>",
+      "translation": "<span id=\"getNativeClient()-type-param-T\"><code>T</code> - 原生客户端的类型</span>",
+      "count": 1
+    },
+    {
+      "source": "<code>documents</code> - the documents to add",
+      "translation": "<code>documents</code> - 要添加的文档",
+      "count": 1
+    },
+    {
+      "source": "<code>idList</code> - the list of document IDs to delete",
+      "translation": "<code>idList</code> - 要删除的文档 ID 列表",
+      "count": 1
+    },
+    {
+      "source": "<code>filterExpression</code> - Filter expression to identify documents to delete",
+      "translation": "<code>filterExpression</code> - 用于标识要删除的文档的过滤表达式",
+      "count": 1
+    },
+    {
+      "source": "<code>request</code> - the search request",
+      "translation": "<code>request</code> - 搜索请求",
+      "count": 1
+    },
+    {
+      "source": "<code>operationName</code> - the operation name",
+      "translation": "<code>operationName</code> - 操作名称",
+      "count": 1
+    },
+    {
+      "source": "Mick Semb Wever, Christian Tzolov, Thomas Vitale, Soby Chacko, chabinhwang",
+      "translation": "米克·森布·韦弗，克里斯蒂安·茨洛夫，托马斯·维塔莱，索比·查科，chabinhwang",
+      "count": 1
+    },
+    {
+      "source": "the list of documents that match the query request conditions",
+      "translation": "与查询请求条件匹配的文件列表",
+      "count": 1
+    },
+    {
+      "source": "the observation context builder",
+      "translation": "观察上下文构建器",
+      "count": 1
+    },
+    {
+      "source": "Optional containing native client if available, empty Optional otherwise",
+      "translation": "如有可用的本机客户端，则包含该客户端的 Optional；否则为空 Optional。",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "The CassandraVectorStore is for managing and querying vector data in an Apache\nCassandra db. It offers functionalities like adding, deleting, and performing\nsimilarity searches on documents.\n\nThe store utilizes CQL to index and search vector data. It allows for custom metadata\nfields in the documents to be stored alongside the vector and content data.\n\nThis class requires a CassandraVectorStore#CassandraBuilder configuration object for\ninitialization, which includes settings like connection details, index name, column\nnames, etc. It also requires an EmbeddingModel to convert documents into embeddings\nbefore storing them.\n\nA schema matching the configuration is automatically created if it doesn't exist.\nMissing columns and indexes in existing tables will also be automatically created.\nDisable this with the CassandraBuilder#initializeSchema(boolean) method().",
+      "translation": "CassandraVectorStore 用于在 Apache Cassandra 数据库中管理和查询向量数据，提供添加、删除文档以及执行相似度搜索等功能。\n\n该存储系统利用 CQL 对向量数据进行索引和搜索，允许将自定义元数据字段与向量和内容数据一同存储在文档中。\n\n初始化此类需要一个 CassandraVectorStore#CassandraBuilder 配置对象，其中包含连接详情、索引名称、列名等设置；同时还需要一个 EmbeddingModel，用于在存储前将文档转换为嵌入向量。\n\n如果配置对应的模式不存在，系统将自动创建该模式；对于现有表中缺失的列和索引，也会自动创建。可通过 CassandraBuilder#initializeSchema(boolean) 方法禁用此行为。",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>CassandraVectorStore vectorStore = CassandraVectorStore.builder(embeddingModel)\n    .session(cqlSession)\n    .keyspace(\"my_keyspace\")\n    .table(\"my_vectors\")\n    .build();\n\n// Add documents\nvectorStore.add(List.of(\n    new Document(\"1\", \"content1\", Map.of(\"key1\", \"value1\")),\n    new Document(\"2\", \"content2\", Map.of(\"key2\", \"value2\"))\n));\n\n// Search with filters\nList&lt;Document&gt; results = vectorStore.similaritySearch(\n    SearchRequest.query(\"search text\")\n        .withTopK(5)\n        .withSimilarityThreshold(0.7)\n        .withFilterExpression(\"metadata.key1 == 'value1'\")\n);\n</code></pre>",
+      "translation": "<pre><code>CassandraVectorStore vectorStore = CassandraVectorStore.builder(embeddingModel)\n    .session(cqlSession)\n    .keyspace(\"my_keyspace\")\n    .table(\"my_vectors\")\n    .build();\n\n// 添加文档\nvectorStore.add(List.of(\n    new Document(\"1\", \"content1\", Map.of(\"key1\", \"value1\")),\n    new Document(\"2\", \"content2\", Map.of(\"key2\", \"value2\"))\n));\n\n// 使用过滤器进行搜索\nList&lt;Document&gt; results = vectorStore.similaritySearch(\n    SearchRequest.query(\"search text\")\n        .withTopK(5)\n        .withSimilarityThreshold(0.7)\n        .withFilterExpression(\"metadata.key1 == 'value1'\")\n);\n</code></pre>",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>CassandraVectorStore vectorStore = CassandraVectorStore.builder(embeddingModel)\n    .session(cqlSession)\n    .keyspace(\"my_keyspace\")\n    .table(\"my_vectors\")\n    .partitionKeys(List.of(new SchemaColumn(\"id\", DataTypes.TEXT)))\n    .clusteringKeys(List.of(new SchemaColumn(\"timestamp\", DataTypes.TIMESTAMP)))\n    .addMetadataColumns(\n        new SchemaColumn(\"category\", DataTypes.TEXT, SchemaColumnTags.INDEXED),\n        new SchemaColumn(\"score\", DataTypes.DOUBLE)\n    )\n    .contentColumnName(\"text\")\n    .embeddingColumnName(\"vector\")\n    .fixedThreadPoolExecutorSize(32)\n    .initializeSchema(true)\n    .batchingStrategy(new TokenCountBatchingStrategy())\n    .build();\n</code></pre>\n\nThis class is designed to work with brand new tables that it creates for you, or on top\nof existing Cassandra tables. The latter is appropriate when wanting to keep data in\nplace, creating embeddings next to it, and performing vector similarity searches\nin-situ.\n\nInstances of this class are not dynamic against server-side schema changes. If you\nchange the schema server-side you need a new CassandraVectorStore instance.\n\nWhen adding documents with the method <a href=\"../observation/AbstractObservationVectorStore.html#add(java.util.List)\"><code>AbstractObservationVectorStore.add(List&lt;Document&gt;)</code></a> it first calls\nembeddingModel to create the embeddings. This is slow. Configure\n<a href=\"CassandraVectorStore.Builder.html#fixedThreadPoolExecutorSize(int)\"><code>CassandraVectorStore.Builder.fixedThreadPoolExecutorSize(int)</code></a> accordingly to improve performance so\nembeddings are created and the documents are added concurrently. The default\nconcurrency is 16 (\n<details class=\"invalid-tag\">\n<summary>invalid reference</summary>\n<pre><code>Builder#DEFAULT_ADD_CONCURRENCY</code></pre>\n</details>\n). Remote transformers\nprobably want higher concurrency, and local transformers may need lower concurrency.\nThis concurrency limit does not need to be higher than the max parallel calls made to\nthe <a href=\"../observation/AbstractObservationVectorStore.html#add(java.util.List)\"><code>AbstractObservationVectorStore.add(List&lt;Document&gt;)</code></a> method multiplied by the list size. This setting can\nalso serve as a protecting throttle against your embedding model.",
+      "translation": "<pre><code>CassandraVectorStore vectorStore = CassandraVectorStore.builder(embeddingModel)\n    .session(cqlSession)\n    .keyspace(\"my_keyspace\")\n    .table(\"my_vectors\")\n    .partitionKeys(List.of(new SchemaColumn(\"id\", DataTypes.TEXT)))\n    .clusteringKeys(List.of(new SchemaColumn(\"timestamp\", DataTypes.TIMESTAMP)))\n    .addMetadataColumns(\n        new SchemaColumn(\"category\", DataTypes.TEXT, SchemaColumnTags.INDEXED),\n        new SchemaColumn(\"score\", DataTypes.DOUBLE)\n    )\n    .contentColumnName(\"text\")\n    .embeddingColumnName(\"vector\")\n    .fixedThreadPoolExecutorSize(32)\n    .initializeSchema(true)\n    .batchingStrategy(new TokenCountBatchingStrategy())\n    .build();\n</code></pre>\n\n该类旨在配合全新创建的表使用，也可构建在现有的 Cassandra 表之上。后者适用于希望保留现有数据、在其旁生成嵌入向量并就地执行向量相似度搜索的场景。\n\n此类的实例无法动态适应服务端架构变更。如果您在服务端修改了架构，则需要创建一个新的 CassandraVectorStore 实例。\n\n在使用 <a href=\"../observation/AbstractObservationVectorStore.html#add(java.util.List)\"><code>AbstractObservationVectorStore.add(List&lt;Document&gt;)</code></a> 方法添加文档时，会首先调用 embeddingModel 生成嵌入向量，这一过程较为缓慢。请相应配置 <a href=\"CassandraVectorStore.Builder.html#fixedThreadPoolExecutorSize(int)\"><code>CassandraVectorStore.Builder.fixedThreadPoolExecutorSize(int)</code></a> 以提升性能，确保嵌入向量的创建与文档的添加能够并发执行。默认并发度为 16（\n<details class=\"invalid-tag\">\n<summary>无效引用</summary>\n<pre><code>Builder#DEFAULT_ADD_CONCURRENCY</code></pre>\n</details>\n）。远程转换器可能需要更高的并发度，而本地转换器则可能需要较低的并发度。此并发限制无需高于调用 <a href=\"../observation/AbstractObservationVectorStore.html#add(java.util.List)\"><code>AbstractObservationVectorStore.add(List&lt;Document&gt;)</code></a> 方法的最大并行调用次数乘以列表大小。该设置还可作为对嵌入模型的保护性节流机制。",
+      "count": 1
+    }
+  ]
+}

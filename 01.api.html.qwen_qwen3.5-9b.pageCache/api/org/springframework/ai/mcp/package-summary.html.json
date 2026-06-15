@@ -1,0 +1,151 @@
+{
+  "created_at": "2026-06-15 07:30:42",
+  "updated_at": "2026-06-15 07:30:42",
+  "stats": {
+    "total_entries": 27,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 27,
+    "entries_with_hits": 27,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.0026999999999999997
+  },
+  "items": [
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This package provides the foundational classes and utilities for integrating MCP with\nSpring AI's tool system. It includes:",
+      "translation": "该包提供了将 MCP 与 Spring AI 工具系统集成所需的基础类和实用工具。它包括：",
+      "count": 1
+    },
+    {
+      "source": "The classes in this package enable seamless integration between Spring AI applications\nand MCP servers, allowing language models to discover and invoke tools through a\nstandardized protocol.",
+      "translation": "本包中的类实现了 Spring AI 应用与 MCP 服务器之间的无缝集成，使语言模型能够通过标准化协议发现并调用工具。",
+      "count": 1
+    },
+    {
+      "source": "A <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/BiPredicate.html\" title=\"class or interface in java.util.function\"><code>BiPredicate</code></a> for <a href=\"SyncMcpToolCallbackProvider.html\" title=\"class in org.springframework.ai.mcp\"><code>SyncMcpToolCallbackProvider</code></a> and the\n<a href=\"AsyncMcpToolCallbackProvider.html\" title=\"class in org.springframework.ai.mcp\"><code>AsyncMcpToolCallbackProvider</code></a> to filter the discovered tool for the given\n<a href=\"McpConnectionInfo.html\" title=\"class in org.springframework.ai.mcp\"><code>McpConnectionInfo</code></a>.",
+      "translation": "一个用于 <a href=\"SyncMcpToolCallbackProvider.html\" title=\"class in org.springframework.ai.mcp\"><code>SyncMcpToolCallbackProvider</code></a> 和 <a href=\"AsyncMcpToolCallbackProvider.html\" title=\"class in org.springframework.ai.mcp\"><code>AsyncMcpToolCallbackProvider</code></a> 的 <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/BiPredicate.html\" title=\"class or interface in java.util.function\"><code>BiPredicate</code></a>，用于根据给定的 <a href=\"McpConnectionInfo.html\" title=\"class in org.springframework.ai.mcp\"><code>McpConnectionInfo</code></a> 过滤发现的工具。",
+      "count": 1
+    },
+    {
+      "source": "Adapts MCP tools to Spring AI's <a href=\"../tool/ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a> interface with asynchronous\nexecution.",
+      "translation": "将 MCP 工具适配为支持异步执行的 Spring AI 的<a href=\"../tool/ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a>接口。",
+      "count": 1
+    },
+    {
+      "source": "Default implementation of <a href=\"McpToolNamePrefixGenerator.html\" title=\"interface in org.springframework.ai.mcp\"><code>McpToolNamePrefixGenerator</code></a> that ensures unique tool\nnames for all client/server connections.",
+      "translation": "<a href=\"McpToolNamePrefixGenerator.html\" title=\"org.springframework.ai.mcp 接口中的接口\"><code>McpToolNamePrefixGenerator</code></a> 的默认实现，可确保所有客户端/服务器连接的工具名称唯一。",
+      "count": 1
+    },
+    {
+      "source": "Synchronous adapter bridging MCP tools to Spring AI's <a href=\"../tool/ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a> interface.",
+      "translation": "同步适配器桥接 MCP 工具与 Spring AI 的<a href=\"../tool/ToolCallback.html\" title=\"interface in org.springframework.ai.tool\"><code>ToolCallback</code></a>接口。",
+      "count": 1
+    },
+    {
+      "source": "Strategy interface for converting a <a href=\"../chat/model/ToolContext.html\" title=\"class in org.springframework.ai.chat.model\"><code>ToolContext</code></a> to a map of metadata to be sent\nas part of an MCP tool call.",
+      "translation": "用于将<a href=\"../chat/model/ToolContext.html\" title=\"class in org.springframework.ai.chat.model\"><code>ToolContext</code></a>转换为元数据映射的接口，该映射将作为 MCP 工具调用的一部分发送。",
+      "count": 1
+    },
+    {
+      "source": "Builder for <code>AsyncMcpToolCallbackProvider</code> configuration.",
+      "translation": "<code>AsyncMcpToolCallbackProvider</code> 配置的构建器。",
+      "count": 1
+    },
+    {
+      "source": "Builder for <code>SyncMcpToolCallback</code> instances.",
+      "translation": "用于构建<code>SyncMcpToolCallback</code>实例的构造器。",
+      "count": 1
+    },
+    {
+      "source": "Builder for <code>SyncMcpToolCallbackProvider</code>.",
+      "translation": "<code>SyncMcpToolCallbackProvider</code> 的构建器。",
+      "count": 1
+    },
+    {
+      "source": "Annotations for declaring MCP capabilities (tools, prompts, resources, completion,\nlogging, progress, sampling, elicitation) and list-changed handlers.",
+      "translation": "用于声明 MCP 功能（工具、提示词、资源、补全、日志、进度、采样、引导）以及列表变更处理程序的注解。",
+      "count": 1
+    },
+    {
+      "source": "Builder for constructing AsyncMcpToolCallback instances.",
+      "translation": "用于构建 AsyncMcpToolCallback 实例的构建器。",
+      "count": 1
+    },
+    {
+      "source": "Provides MCP tools asynchronously from multiple MCP servers as Spring AI tool\ncallbacks.",
+      "translation": "以异步方式从多个 MCP 服务器提供 MCP 工具，作为 Spring AI 的工具回调。",
+      "count": 1
+    },
+    {
+      "source": "MCP connection info record containing the client and server related metadata.",
+      "translation": "包含客户端和服务器相关元数据的 MCP 连接信息记录。",
+      "count": 1
+    },
+    {
+      "source": "Builder class for constructing McpConnectionInfo instances.",
+      "translation": "用于构建 McpConnectionInfo 实例的 Builder 类。",
+      "count": 1
+    },
+    {
+      "source": "Strategy interface for generating prefixed tool name based on MCP client/server and\nTool information.",
+      "translation": "用于基于 MCP 客户端/服务器和工具信息生成带前缀的工具名称的策略接口。",
+      "count": 1
+    },
+    {
+      "source": "Event published when the MCP Tools have changed for a given MCP connection.",
+      "translation": "当给定 MCP 连接的 MCP 工具发生变化时发布的事件。",
+      "count": 1
+    },
+    {
+      "source": "Utility class that provides helper methods for working with Model Context Protocol\n(MCP) tools in a Spring AI environment.",
+      "translation": "提供用于在 Spring AI 环境中操作模型上下文协议（MCP）工具的辅助方法的工具类。",
+      "count": 1
+    },
+    {
+      "source": "Provides Spring AI tool callbacks by discovering tools from MCP servers.",
+      "translation": "通过从 MCP 服务器发现工具，提供 Spring AI 的工具回调。",
+      "count": 1
+    },
+    {
+      "source": "Tool callback implementations for both synchronous and asynchronous MCP\noperations",
+      "translation": "同步和异步 MCP 操作的工具回调实现",
+      "count": 1
+    },
+    {
+      "source": "Tool callback providers that discover and expose MCP tools",
+      "translation": "用于发现和暴露 MCP 工具的回调提供者",
+      "count": 1
+    },
+    {
+      "source": "Utility classes for converting between Spring AI and MCP tool representations",
+      "translation": "用于在 Spring AI 和 MCP 工具表示形式之间进行转换的工具类。",
+      "count": 1
+    },
+    {
+      "source": "Support for customizing MCP client behavior",
+      "translation": "支持自定义 MCP 客户端行为",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "Core support for Model Context Protocol (MCP) integration in Spring AI.",
+      "translation": "Spring AI 中模型上下文协议（MCP）集成的核心支持。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>同步和异步 MCP 操作的工具回调实现</li>\n<li>用于发现和暴露 MCP 工具的回调提供者</li>\n<li>用于在 Spring AI 和 MCP 工具表示形式之间进行转换的工具类。</li>\n<li>支持自定义 MCP 客户端行为</li>\n</ul>",
+      "translation": "<ul>\n<li>同步与异步 MCP 操作的工具回调实现</li>\n<li>用于发现和暴露 MCP 工具的回调提供者</li>\n<li>用于在 Spring AI 与 MCP 工具表示形式之间进行转换的工具类。</li>\n<li>支持自定义 MCP 客户端行为</li>\n</ul>",
+      "count": 1
+    }
+  ]
+}

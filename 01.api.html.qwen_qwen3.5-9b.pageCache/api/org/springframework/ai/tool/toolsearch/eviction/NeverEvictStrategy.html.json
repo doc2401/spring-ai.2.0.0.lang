@@ -1,0 +1,111 @@
+{
+  "created_at": "2026-06-15 08:00:00",
+  "updated_at": "2026-06-15 08:00:00",
+  "stats": {
+    "total_entries": 19,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 22,
+    "entries_with_hits": 19,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1578947368421053,
+    "usage_percentage": 0.0019000000000000002
+  },
+  "items": [
+    {
+      "source": "Called after a session's tool index has been cleared — either because this strategy\nreturned it from <a href=\"ToolIndexEvictionStrategy.html#onAccess(java.lang.String)\"><code>ToolIndexEvictionStrategy.onAccess(String)</code></a>, or because of an explicit eviction request.",
+      "translation": "在会话的工具索引被清除后调用——无论是因为该策略通过<a href=\"ToolIndexEvictionStrategy.html#onAccess(java.lang.String)\"><code>ToolIndexEvictionStrategy.onAccess(String)</code></a>返回了它，还是因为显式的驱逐请求。",
+      "count": 2
+    },
+    {
+      "source": "Shared singleton instance.",
+      "translation": "共享单例实例。",
+      "count": 2
+    },
+    {
+      "source": "Called each time a session is accessed at the start of request processing.",
+      "translation": "每次在请求处理开始时访问会话时都会调用。",
+      "count": 2
+    },
+    {
+      "source": "<b>Memory warning:</b> this strategy accumulates one index entry per distinct session\nID and never frees them. In a service that handles many short-lived conversations (e.g.\nHTTP sessions, anonymous users) the index map will grow without bound, eventually\nexhausting heap (Lucene <code>ByteBuffersDirectory</code> instances) or remote vector-store\nquota. For production deployments use <a href=\"LruEvictionStrategy.html\" title=\"class in org.springframework.ai.tool.toolsearch.eviction\"><code>LruEvictionStrategy</code></a> to cap the number of\nconcurrently retained indexes, <a href=\"TtlEvictionStrategy.html\" title=\"class in org.springframework.ai.tool.toolsearch.eviction\"><code>TtlEvictionStrategy</code></a> to expire idle sessions, or\na <a href=\"CompositeEvictionStrategy.html\" title=\"class in org.springframework.ai.tool.toolsearch.eviction\"><code>CompositeEvictionStrategy</code></a> combining both.",
+      "translation": "<b>内存警告：</b> 此策略会为每个不同的会话 ID 累积一个索引条目，且从不释放它们。在处理大量短生命周期对话的服务中（例如 HTTP 会话、匿名用户），索引映射将无限制增长，最终耗尽堆内存（Lucene <code>ByteBuffersDirectory</code> 实例）或远程向量存储配额。在生产部署中，请使用 <a href=\"LruEvictionStrategy.html\" title=\"class in org.springframework.ai.tool.toolsearch.eviction\"><code>LruEvictionStrategy</code></a> 限制同时保留的索引数量，使用 <a href=\"TtlEvictionStrategy.html\" title=\"class in org.springframework.ai.tool.toolsearch.eviction\"><code>TtlEvictionStrategy</code></a> 使空闲会话过期，或使用结合两者的 <a href=\"CompositeEvictionStrategy.html\" title=\"class in org.springframework.ai.tool.toolsearch.eviction\"><code>CompositeEvictionStrategy</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Tool indexes persist across requests for the lifetime of the\n<code>ToolSearchToolCallingAdvisor</code> bean, or until explicitly released via\n<code>ToolSearchToolCallingAdvisor#evictSession(String)</code>.",
+      "translation": "工具索引在 <code>ToolSearchToolCallingAdvisor</code>  Bean 的生命周期内跨请求持久存在，或者直到通过 <code>ToolSearchToolCallingAdvisor#evictSession(String)</code> 显式释放为止。",
+      "count": 1
+    },
+    {
+      "source": "Implementations should update their internal tracking state for <code>sessionId</code>\nand return the set of session IDs whose tool indexes must now be cleared. The\nreturned set must never include the currently-accessed <code>sessionId</code>.",
+      "translation": "实现应更新其内部跟踪状态以处理<code>sessionId</code>，并返回必须清除工具索引的会话 ID 集合。该返回集合绝不能包含当前正在访问的<code>sessionId</code>。",
+      "count": 1
+    },
+    {
+      "source": "This strategy is appropriate only when the set of active sessions is small and stable\n(e.g. a single-user tool or a bounded pool of long-running agents), or when the\napplication manages session lifecycle explicitly via\n<code>ToolSearchToolCallingAdvisor#evictSession(String)</code>.",
+      "translation": "该策略仅适用于活动会话集较小且稳定的情况（例如单用户工具或有限数量的长运行代理池），或者应用程序通过显式管理会话生命周期来使用`ToolSearchToolCallingAdvisor#evictSession(String)`方法时。",
+      "count": 1
+    },
+    {
+      "source": "Implementations should remove any internal tracking state for the evicted session.",
+      "translation": "实现应移除被驱逐会话的任何内部跟踪状态。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"ToolIndexEvictionStrategy.html#onAccess(java.lang.String)\">ToolIndexEvictionStrategy</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"ToolIndexEvictionStrategy.html#onAccess(java.lang.String)\">ToolIndexEvictionStrategy</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"ToolIndexEvictionStrategy.html#onRemoved(java.lang.String)\">ToolIndexEvictionStrategy</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"ToolIndexEvictionStrategy.html#onRemoved(java.lang.String)\">ToolIndexEvictionStrategy</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ToolIndexEvictionStrategy.html#onAccess(java.lang.String)\">onAccess</a></code> in interface <code><a href=\"ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\">ToolIndexEvictionStrategy</a></code>",
+      "translation": "接口 <code><a href=\"ToolIndexEvictionStrategy.html\" title=\"org.springframework.ai.tool.toolsearch.eviction 中的接口\">ToolIndexEvictionStrategy</a></code> 中的方法 <code><a href=\"ToolIndexEvictionStrategy.html#onAccess(java.lang.String)\">onAccess</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ToolIndexEvictionStrategy.html#onRemoved(java.lang.String)\">onRemoved</a></code> in interface <code><a href=\"ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\">ToolIndexEvictionStrategy</a></code>",
+      "translation": "<a href=\"ToolIndexEvictionStrategy.html#onRemoved(java.lang.String)\">onRemoved</a> 接口 <code><a href=\"ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\">ToolIndexEvictionStrategy</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>sessionId</code> - the session being accessed",
+      "translation": "<code>sessionId</code> - 正在访问的会话",
+      "count": 1
+    },
+    {
+      "source": "session IDs to evict; never <code>null</code>, may be empty",
+      "translation": "待驱逐的会话 ID；永远不会为<code>null</code>，可能为空。",
+      "count": 1
+    },
+    {
+      "source": "<code>sessionId</code> - the session that was evicted",
+      "translation": "<code>sessionId</code> - 被驱逐的会话",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "A <a href=\"ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\"><code>ToolIndexEvictionStrategy</code></a> that never evicts sessions automatically.",
+      "translation": "一个永远不会自动驱逐会话的<a href=\"ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\"><code>ToolIndexEvictionStrategy</code></a>。",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "created_at": "2026-06-15 08:59:44",
+  "updated_at": "2026-06-15 08:59:44",
+  "stats": {
+    "total_entries": 11,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 13,
+    "entries_with_hits": 11,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1818181818181819,
+    "usage_percentage": 0.0011
+  },
+  "items": [
+    {
+      "source": "Creates a new <a href=\"BaseAdvisorChain.Builder.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>BaseAdvisorChain.Builder</code></a> for the default <a href=\"BaseAdvisorChain.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>BaseAdvisorChain</code></a>\nimplementation.",
+      "translation": "为默认的<a href=\"BaseAdvisorChain.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\"><code>BaseAdvisorChain</code></a>实现创建一个新的<a href=\"BaseAdvisorChain.Builder.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\"><code>BaseAdvisorChain.Builder</code></a>。",
+      "count": 2
+    },
+    {
+      "source": "Returns a new <a href=\"BaseAdvisorChain.Builder.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>BaseAdvisorChain.Builder</code></a> initialized with this chain's advisors and\nconfiguration, allowing it to be selectively modified before building a new chain.",
+      "translation": "返回一个新的 <a href=\"BaseAdvisorChain.Builder.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>BaseAdvisorChain.Builder</code></a>，该对象已使用此链的顾问和配置进行初始化，允许在构建新链之前对其进行选择性修改。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Concrete <a href=\"BaseAdvisorChain.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>BaseAdvisorChain</code></a> classes must override this to return the most\nconcrete builder implementation.",
+      "translation": "具体实现 <a href=\"BaseAdvisorChain.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\"><code>BaseAdvisorChain</code></a> 的类必须重写此方法，以返回最具体的构建器实现。",
+      "count": 1
+    },
+    {
+      "source": "Builder for creating a <a href=\"BaseAdvisorChain.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>BaseAdvisorChain</code></a> instance.",
+      "translation": "用于创建<a href=\"BaseAdvisorChain.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\"><code>BaseAdvisorChain</code></a>实例的构建器。",
+      "count": 1
+    },
+    {
+      "source": "A base interface for advisor chains that can be used to chain multiple advisors\ntogether, both for call and stream advisors.",
+      "translation": "用于将多个顾问（包括调用型顾问和流式顾问）串联在一起的顾问链基础接口。",
+      "count": 1
+    },
+    {
+      "source": "a pre-populated <a href=\"BaseAdvisorChain.Builder.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>BaseAdvisorChain.Builder</code></a>",
+      "translation": "一个预填充的<a href=\"BaseAdvisorChain.Builder.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\"><code>BaseAdvisorChain.Builder</code></a>",
+      "count": 1
+    },
+    {
+      "source": "a new <a href=\"BaseAdvisorChain.Builder.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\"><code>BaseAdvisorChain.Builder</code></a>",
+      "translation": "一个新的<a href=\"BaseAdvisorChain.Builder.html\" title=\"org.springframework.ai.chat.client.advisor.api 包中的接口\"><code>BaseAdvisorChain.Builder</code></a>",
+      "count": 1
+    },
+    {
+      "source": "<code>observationRegistry</code> - the observation registry to use",
+      "translation": "<code>observationRegistry</code> - 要使用的观测注册表",
+      "count": 1
+    },
+    {
+      "source": "Thomas Vitale, Christian Tzolov",
+      "translation": "托马斯·维塔莱，克里斯蒂安·茨佐洛夫",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    }
+  ]
+}

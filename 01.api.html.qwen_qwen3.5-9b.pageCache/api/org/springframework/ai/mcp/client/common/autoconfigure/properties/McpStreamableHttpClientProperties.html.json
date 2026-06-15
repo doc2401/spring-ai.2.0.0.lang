@@ -1,0 +1,71 @@
+{
+  "created_at": "2026-06-15 08:26:07",
+  "updated_at": "2026-06-15 08:26:07",
+  "stats": {
+    "total_entries": 11,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 12,
+    "entries_with_hits": 11,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0909090909090908,
+    "usage_percentage": 0.0011
+  },
+  "items": [
+    {
+      "source": "Returns the map of configured Streamable Http connections.",
+      "translation": "返回配置的流式 HTTP 连接的映射。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "These properties allow configuration of multiple named Streamable Http connections to\nMCP servers. Each connection is configured with a URL endpoint for communication.",
+      "translation": "这些属性允许配置多个命名流式 HTTP 连接至 MCP 服务器。每个连接均配置有用于通信的 URL 端点。",
+      "count": 1
+    },
+    {
+      "source": "Example configuration:",
+      "translation": "示例配置：",
+      "count": 1
+    },
+    {
+      "source": "Parameters for configuring an Streamable Http connection to an MCP server.",
+      "translation": "配置用于与 MCP 服务器建立可流式 HTTP 连接的参数。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "map of connection names to their Streamable Http parameters",
+      "translation": "连接名称到其可流式 HTTP 参数的映射图",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "Configuration properties for Streamable Http client connections.",
+      "translation": "流式 HTTP 客户端连接的配置属性。",
+      "count": 1
+    },
+    {
+      "source": "<pre>spring.ai.mcp.client.streamable-http:\n  connections:\n    server1:\n      url: http://localhost:8080/events\n    server2:\n      url: http://otherserver:8081/events\n</pre>",
+      "translation": "<pre>spring.ai.mcp.client.streamable-http:\n  connections:\n    server1:\n      url: http://localhost:8080/events\n    server2:\n      url: http://otherserver:8081/events\n</pre>",
+      "count": 1
+    }
+  ]
+}

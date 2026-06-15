@@ -1,0 +1,136 @@
+{
+  "created_at": "2026-06-15 07:46:08",
+  "updated_at": "2026-06-15 07:46:08",
+  "stats": {
+    "total_entries": 24,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 34,
+    "entries_with_hits": 24,
+    "entries_without_hits": 0,
+    "hit_rate": 1.4166666666666667,
+    "usage_percentage": 0.0024000000000000002
+  },
+  "items": [
+    {
+      "source": "<code>context</code> - the context to append the string representation to",
+      "translation": "<code>context</code> - 要追加字符串表示形式的上下文",
+      "count": 5
+    },
+    {
+      "source": "Convert the given group into a string representation.",
+      "translation": "将给定组转换为字符串表示形式。",
+      "count": 4
+    },
+    {
+      "source": "Convert the given expression into a string representation.",
+      "translation": "将给定表达式转换为字符串表示形式。",
+      "count": 2
+    },
+    {
+      "source": "Convert the given key into a string representation.",
+      "translation": "将给定的键转换为字符串表示形式。",
+      "count": 2
+    },
+    {
+      "source": "<code>group</code> - the group to convert",
+      "translation": "<code>group</code> - 要转换的组",
+      "count": 2
+    },
+    {
+      "source": "For convenience, implementations can use the provided static helper methods such as\n<a href=\"../filter/converter/AbstractFilterExpressionConverter.html#emitJsonValue(java.lang.Object,java.lang.StringBuilder)\"><code>AbstractFilterExpressionConverter.emitJsonValue(Object, StringBuilder)</code></a> for JSON-based filters,\n<a href=\"../filter/converter/AbstractFilterExpressionConverter.html#emitLuceneString(java.lang.String,java.lang.StringBuilder)\"><code>AbstractFilterExpressionConverter.emitLuceneString(String, StringBuilder)</code></a> for Lucene-based filters, or\nimplement their own format-specific escaping logic as needed.",
+      "translation": "为方便起见，实现可以使用提供的静态辅助方法，例如针对基于 JSON 的过滤器使用<a href=\"../filter/converter/AbstractFilterExpressionConverter.html#emitJsonValue(java.lang.Object,java.lang.StringBuilder)\"><code>AbstractFilterExpressionConverter.emitJsonValue(Object, StringBuilder)</code></a>，针对基于 Lucene 的过滤器使用<a href=\"../filter/converter/AbstractFilterExpressionConverter.html#emitLuceneString(java.lang.String,java.lang.StringBuilder)\"><code>AbstractFilterExpressionConverter.emitLuceneString(String, StringBuilder)</code></a>，或根据需要实现其自身的特定格式转义逻辑。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Converts <a href=\"../filter/Filter.Expression.html\" title=\"class in org.springframework.ai.vectorstore.filter\"><code>Filter.Expression</code></a> into Redis search filter expression format. (<a href=\"https://redis.io/docs/latest/develop/ai/search-and-query/\">search-and-query</a>)",
+      "translation": "将 <a href=\"../filter/Filter.Expression.html\" title=\"class in org.springframework.ai.vectorstore.filter\"><code>Filter.Expression</code></a> 转换为 Redis 搜索过滤器表达式格式。（<a href=\"https://redis.io/docs/latest/develop/ai/search-and-query/\">search-and-query</a>）",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../filter/converter/AbstractFilterExpressionConverter.html#doStartGroup(org.springframework.ai.vectorstore.filter.Filter.Group,java.lang.StringBuilder)\">AbstractFilterExpressionConverter</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"../filter/converter/AbstractFilterExpressionConverter.html#doStartGroup(org.springframework.ai.vectorstore.filter.Filter.Group,java.lang.StringBuilder)\">AbstractFilterExpressionConverter</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../filter/converter/AbstractFilterExpressionConverter.html#doEndGroup(org.springframework.ai.vectorstore.filter.Filter.Group,java.lang.StringBuilder)\">AbstractFilterExpressionConverter</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类中复制：<code><a href=\"../filter/converter/AbstractFilterExpressionConverter.html#doEndGroup(org.springframework.ai.vectorstore.filter.Filter.Group,java.lang.StringBuilder)\">AbstractFilterExpressionConverter</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../filter/converter/AbstractFilterExpressionConverter.html#doKey(org.springframework.ai.vectorstore.filter.Filter.Key,java.lang.StringBuilder)\">AbstractFilterExpressionConverter</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类中复制：<code><a href=\"../filter/converter/AbstractFilterExpressionConverter.html#doKey(org.springframework.ai.vectorstore.filter.Filter.Key,java.lang.StringBuilder)\">AbstractFilterExpressionConverter</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../filter/converter/AbstractFilterExpressionConverter.html#doExpression(org.springframework.ai.vectorstore.filter.Filter.Expression,java.lang.StringBuilder)\">AbstractFilterExpressionConverter</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类中复制：<code><a href=\"../filter/converter/AbstractFilterExpressionConverter.html#doExpression(org.springframework.ai.vectorstore.filter.Filter.Expression,java.lang.StringBuilder)\">AbstractFilterExpressionConverter</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../filter/converter/AbstractFilterExpressionConverter.html#doSingleValue(java.lang.Object,java.lang.StringBuilder)\">AbstractFilterExpressionConverter</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述已从类复制：<code><a href=\"../filter/converter/AbstractFilterExpressionConverter.html#doSingleValue(java.lang.Object,java.lang.StringBuilder)\">AbstractFilterExpressionConverter</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Convert the given single value into a string representation and append it to the\ncontext.",
+      "translation": "将给定单值转换为字符串表示形式，并将其附加到上下文中。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../filter/converter/AbstractFilterExpressionConverter.html#doStartGroup(org.springframework.ai.vectorstore.filter.Filter.Group,java.lang.StringBuilder)\">doStartGroup</a></code> in class <code><a href=\"../filter/converter/AbstractFilterExpressionConverter.html\" title=\"class in org.springframework.ai.vectorstore.filter.converter\">AbstractFilterExpressionConverter</a></code>",
+      "translation": "<code><a href=\"../filter/converter/AbstractFilterExpressionConverter.html#doStartGroup(org.springframework.ai.vectorstore.filter.Filter.Group,java.lang.StringBuilder)\">doStartGroup</a></code> 类 <code><a href=\"../filter/converter/AbstractFilterExpressionConverter.html\" title=\"class in org.springframework.ai.vectorstore.filter.converter\">AbstractFilterExpressionConverter</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../filter/converter/AbstractFilterExpressionConverter.html#doEndGroup(org.springframework.ai.vectorstore.filter.Filter.Group,java.lang.StringBuilder)\">doEndGroup</a></code> in class <code><a href=\"../filter/converter/AbstractFilterExpressionConverter.html\" title=\"class in org.springframework.ai.vectorstore.filter.converter\">AbstractFilterExpressionConverter</a></code>",
+      "translation": "<code><a href=\"../filter/converter/AbstractFilterExpressionConverter.html#doEndGroup(org.springframework.ai.vectorstore.filter.Filter.Group,java.lang.StringBuilder)\">doEndGroup</a></code> 类 <code><a href=\"../filter/converter/AbstractFilterExpressionConverter.html\" title=\"class in org.springframework.ai.vectorstore.filter.converter\">AbstractFilterExpressionConverter</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../filter/converter/AbstractFilterExpressionConverter.html#doKey(org.springframework.ai.vectorstore.filter.Filter.Key,java.lang.StringBuilder)\">doKey</a></code> in class <code><a href=\"../filter/converter/AbstractFilterExpressionConverter.html\" title=\"class in org.springframework.ai.vectorstore.filter.converter\">AbstractFilterExpressionConverter</a></code>",
+      "translation": "<code><a href=\"../filter/converter/AbstractFilterExpressionConverter.html#doKey(org.springframework.ai.vectorstore.filter.Filter.Key,java.lang.StringBuilder)\">doKey</a></code> 类 <code><a href=\"../filter/converter/AbstractFilterExpressionConverter.html\" title=\"class in org.springframework.ai.vectorstore.filter.converter\">AbstractFilterExpressionConverter</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../filter/converter/AbstractFilterExpressionConverter.html#doExpression(org.springframework.ai.vectorstore.filter.Filter.Expression,java.lang.StringBuilder)\">doExpression</a></code> in class <code><a href=\"../filter/converter/AbstractFilterExpressionConverter.html\" title=\"class in org.springframework.ai.vectorstore.filter.converter\">AbstractFilterExpressionConverter</a></code>",
+      "translation": "<code><a href=\"../filter/converter/AbstractFilterExpressionConverter.html#doExpression(org.springframework.ai.vectorstore.filter.Filter.Expression,java.lang.StringBuilder)\">doExpression</a></code> 类 <code><a href=\"../filter/converter/AbstractFilterExpressionConverter.html\" title=\"class in org.springframework.ai.vectorstore.filter.converter\">AbstractFilterExpressionConverter</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../filter/converter/AbstractFilterExpressionConverter.html#doSingleValue(java.lang.Object,java.lang.StringBuilder)\">doSingleValue</a></code> in class <code><a href=\"../filter/converter/AbstractFilterExpressionConverter.html\" title=\"class in org.springframework.ai.vectorstore.filter.converter\">AbstractFilterExpressionConverter</a></code>",
+      "translation": "<code><a href=\"../filter/converter/AbstractFilterExpressionConverter.html#doSingleValue(java.lang.Object,java.lang.StringBuilder)\">doSingleValue</a></code> 类 <code><a href=\"../filter/converter/AbstractFilterExpressionConverter.html\" title=\"class in org.springframework.ai.vectorstore.filter.converter\">AbstractFilterExpressionConverter</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code>key</code> - the key to convert",
+      "translation": "<code>key</code> - 要转换的键",
+      "count": 1
+    },
+    {
+      "source": "<code>expression</code> - the expression to convert",
+      "translation": "<code>expression</code> - 要转换的表达式",
+      "count": 1
+    },
+    {
+      "source": "<code>value</code> - the value to convert",
+      "translation": "<code>value</code> - 要转换的值",
+      "count": 1
+    },
+    {
+      "source": "Julien Ruaux",
+      "translation": "朱利安·鲁奥",
+      "count": 1
+    },
+    {
+      "source": "Convert the given single value into a string representation and append it to the\ncontext. This method handles all value types including String, Number, Boolean,\nDate, etc.",
+      "translation": "将给定的单个值转换为字符串表示形式并附加到上下文中。此方法处理所有值类型，包括 String、Number、Boolean、Date 等。",
+      "count": 1
+    }
+  ]
+}

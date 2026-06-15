@@ -1,0 +1,66 @@
+{
+  "created_at": "2026-06-15 08:26:40",
+  "updated_at": "2026-06-15 08:26:40",
+  "stats": {
+    "total_entries": 10,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 11,
+    "entries_with_hits": 10,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1,
+    "usage_percentage": 0.001
+  },
+  "items": [
+    {
+      "source": "Instantiate the supplied <a href=\"../context/MetaProvider.html\" title=\"interface in org.springframework.ai.mcp.annotation.context\"><code>MetaProvider</code></a> type using a no-argument constructor\nand return the metadata it supplies.",
+      "translation": "使用无参构造函数实例化提供的<a href=\"../context/MetaProvider.html\" title=\"interface in org.springframework.ai.mcp.annotation.context\"><code>MetaProvider</code></a>类型，并返回其提供的元数据。",
+      "count": 2
+    },
+    {
+      "source": "This class provides a single entry point <a href=\"#getMeta(java.lang.Class)\"><code>getMeta(Class)</code></a> that instantiates the\ngiven provider type via a no-argument constructor and returns its metadata as an\nunmodifiable <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html\" title=\"class or interface in java.util\"><code>Map</code></a>.",
+      "translation": "该类提供了一个单一入口点<a href=\"#getMeta(java.lang.Class)\"><code>getMeta(Class)</code></a>，通过无参数构造函数实例化给定的提供者类型，并将其元数据返回为一个不可修改的<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html\" title=\"class or interface in java.util\"><code>Map</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "The returned map is wrapped in <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collections.html#unmodifiableMap(java.util.Map)\" title=\"class or interface in java.util\"><code>Collections.unmodifiableMap(Map)</code></a> to prevent\nexternal modification. If the provider returns <code>null</code>, this method also\nreturns <code>null</code>.",
+      "translation": "返回的 Map 被包装在<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collections.html#unmodifiableMap(java.util.Map)\" title=\"java.util 中的类或接口\"><code>Collections.unmodifiableMap(Map)</code></a>中，以防止外部修改。如果提供者返回<code>null</code>，此方法也返回<code>null</code>。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Instantiation failures and missing no-arg constructors are reported as\n<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\"><code>IllegalArgumentExceptions</code></a>. This class is stateless and\nnot intended to be instantiated.",
+      "translation": "实例化失败和缺少无参构造函数会抛出<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\"><code>IllegalArgumentExceptions</code></a>。该类是无状态的，且不应被实例化。",
+      "count": 1
+    },
+    {
+      "source": "<code>metaProviderClass</code> - the <code>MetaProvider</code> implementation class to\ninstantiate; must provide a no-arg constructor",
+      "translation": "<code>metaProviderClass</code> - 要实例化的 <code>MetaProvider</code> 实现类；必须提供无参构造函数",
+      "count": 1
+    },
+    {
+      "source": "an unmodifiable metadata map, or <code>null</code> if the provider returns\n<code>null</code>",
+      "translation": "一个不可修改的元数据映射，或者如果提供者返回 null，则为 <code>null</code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if a no-arg constructor is missing or the instance\ncannot be created",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果缺少无参构造函数或无法创建实例",
+      "count": 1
+    },
+    {
+      "source": "Vadzim Shurmialiou, Craig Walls",
+      "translation": "瓦季姆·舒尔米亚乌，克雷格·沃尔斯",
+      "count": 1
+    },
+    {
+      "source": "Utility methods for working with <a href=\"../context/MetaProvider.html\" title=\"interface in org.springframework.ai.mcp.annotation.context\"><code>MetaProvider</code></a> metadata.",
+      "translation": "用于处理<a href=\"../context/MetaProvider.html\" title=\"org.springframework.ai.mcp.annotation.context 中的接口\"><code>MetaProvider</code></a>元数据的实用方法。",
+      "count": 1
+    }
+  ]
+}

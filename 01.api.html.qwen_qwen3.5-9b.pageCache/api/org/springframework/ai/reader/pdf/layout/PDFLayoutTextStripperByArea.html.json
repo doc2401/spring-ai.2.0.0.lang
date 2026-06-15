@@ -1,0 +1,151 @@
+{
+  "created_at": "2026-06-15 08:03:25",
+  "updated_at": "2026-06-15 08:03:25",
+  "stats": {
+    "total_entries": 27,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 32,
+    "entries_with_hits": 27,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1851851851851851,
+    "usage_percentage": 0.0026999999999999997
+  },
+  "items": [
+    {
+      "source": "Add a new region to group text by.",
+      "translation": "添加一个新区域以按该区域对文本进行分组。",
+      "count": 2
+    },
+    {
+      "source": "Process the page to extract the region text.",
+      "translation": "处理页面以提取区域文本。",
+      "count": 2
+    },
+    {
+      "source": "Get the list of regions that have been setup.",
+      "translation": "获取已配置的区域的列表。",
+      "count": 2
+    },
+    {
+      "source": "Get the text for the region, this should be called after extractRegions().",
+      "translation": "获取该区域的文本，此操作应在调用 extractRegions() 之后执行。",
+      "count": 2
+    },
+    {
+      "source": "This will print the processed page text to the output stream.",
+      "translation": "这将把处理后的页面文本输出到输出流。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Re-implement the PDFLayoutTextStripperByArea on top of the PDFLayoutTextStripper\ninstead the original PDFTextStripper.\n\nThis class allows cropping pages (e.g., removing headers, footers, and between-page\nempty spaces) while extracting layout text, preserving the PDF's internal text\nformatting.",
+      "translation": "在原有的 PDFLayoutTextStripper 基础上重新实现 PDFLayoutTextStripperByArea，而非直接使用原始的 PDFTextStripper。\n\n该类允许在提取布局文本的同时裁剪页面（例如移除页眉、页脚和页面间的空白区域），同时保留 PDF 内部文本的格式。",
+      "count": 1
+    },
+    {
+      "source": "Delete a region to group text by.",
+      "translation": "删除用于按区域分组的文本。",
+      "count": 1
+    },
+    {
+      "source": "This method does nothing in this derived class, because beads and regions are\nincompatible.",
+      "translation": "此方法在此派生类中不执行任何操作，因为珠子与区域是不兼容的。",
+      "count": 1
+    },
+    {
+      "source": "This method does nothing in this derived class, because beads and regions are\nincompatible. Beads are ignored when stripping by area.",
+      "translation": "此方法在此派生类中不执行任何操作，因为珠子与区域是不兼容的。按面积剥离时会忽略珠子。",
+      "count": 1
+    },
+    {
+      "source": "Delete a region to group text by. If the region does not exist, this method does\nnothing.",
+      "translation": "删除用于按文本分组的区域。如果该区域不存在，则此方法不执行任何操作。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"ForkPDFLayoutTextStripper.html#writePage()\">writePage</a></code> in class <code><a href=\"ForkPDFLayoutTextStripper.html\" title=\"class in org.springframework.ai.reader.pdf.layout\">ForkPDFLayoutTextStripper</a></code>",
+      "translation": "<code><a href=\"ForkPDFLayoutTextStripper.html#writePage()\">writePage</a></code> 类 <code><a href=\"ForkPDFLayoutTextStripper.html\" title=\"class in org.springframework.ai.reader.pdf.layout\">ForkPDFLayoutTextStripper</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/IOException.html\" title=\"class or interface in java.io\">IOException</a></code> - If there is an error loading properties.",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/IOException.html\" title=\"class or interface in java.io\">IOException</a></code> - 如果加载属性时发生错误。",
+      "count": 1
+    },
+    {
+      "source": "<code>setShouldSeparateByBeads</code> in class <code>org.apache.pdfbox.text.PDFTextStripper</code>",
+      "translation": "类 <code>org.apache.pdfbox.text.PDFTextStripper</code> 中的 <code>setShouldSeparateByBeads</code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/IOException.html\" title=\"class or interface in java.io\">IOException</a></code> - If there is an error while extracting text.",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/IOException.html\" title=\"class or interface in java.io\">IOException</a></code> - 如果在提取文本时发生错误。",
+      "count": 1
+    },
+    {
+      "source": "<code>processTextPosition</code> in class <code>org.apache.pdfbox.text.PDFTextStripper</code>",
+      "translation": "<code>processTextPosition</code> 类 <code>org.apache.pdfbox.text.PDFTextStripper</code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/IOException.html\" title=\"class or interface in java.io\">IOException</a></code> - If there is an error writing the text.",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/IOException.html\" title=\"class or interface in java.io\">IOException</a></code> - 如果在写入文本时发生错误。",
+      "count": 1
+    },
+    {
+      "source": "<code>showGlyph</code> in class <code>org.apache.pdfbox.contentstream.PDFStreamEngine</code>",
+      "translation": "类 <code>org.apache.pdfbox.contentstream.PDFStreamEngine</code> 中的 <code>showGlyph</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>aShouldSeparateByBeads</code> - The new grouping of beads.",
+      "translation": "<aShouldSeparateByBeads</a> - 珠子的新分组。",
+      "count": 1
+    },
+    {
+      "source": "<code>regionName</code> - The name of the region.",
+      "translation": "<code>regionName</code> - 区域名称。",
+      "count": 1
+    },
+    {
+      "source": "<code>rect</code> - The rectangle area to retrieve the text from. The y-coordinates are\njava coordinates (y == 0 is top), not PDF coordinates (y == 0 is bottom).",
+      "translation": "<code>rect</code> - 用于获取文本的矩形区域。其 y 坐标为 Java 坐标系（y == 0 表示顶部），而非 PDF 坐标系（y == 0 表示底部）。",
+      "count": 1
+    },
+    {
+      "source": "<code>regionName</code> - The name of the region to delete.",
+      "translation": "<code>regionName</code> - 要删除的区域名称。",
+      "count": 1
+    },
+    {
+      "source": "<code>regionName</code> - The name of the region to get the text from.",
+      "translation": "<code>regionName</code> - 要获取文本的区域名称。",
+      "count": 1
+    },
+    {
+      "source": "<code>page</code> - The page to extract the regions from.",
+      "translation": "<code>page</code> - 要从中提取区域的页面。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "A list of java.lang.String objects to identify the region names.",
+      "translation": "用于标识区域名称的 java.lang.String 对象列表。",
+      "count": 1
+    },
+    {
+      "source": "The text that was identified in that region.",
+      "translation": "该区域中识别出的文本。",
+      "count": 1
+    }
+  ]
+}

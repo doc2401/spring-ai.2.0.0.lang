@@ -1,0 +1,141 @@
+{
+  "created_at": "2026-06-15 08:04:06",
+  "updated_at": "2026-06-15 08:04:06",
+  "stats": {
+    "total_entries": 25,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 31,
+    "entries_with_hits": 25,
+    "entries_without_hits": 0,
+    "hit_rate": 1.24,
+    "usage_percentage": 0.0025
+  },
+  "items": [
+    {
+      "source": "A component for augmenting an input query with additional data, useful to provide a\nlarge language model with the necessary context to answer the user query.",
+      "translation": "一种用于增强输入查询并补充额外数据的组件，其有助于为大语言模型提供回答用户查询所需的上下文信息。",
+      "count": 2
+    },
+    {
+      "source": "Augments the user query with contextual data.",
+      "translation": "根据上下文数据增强用户查询。",
+      "count": 2
+    },
+    {
+      "source": "A component for expanding the input query into a list of queries, addressing challenges\nsuch as poorly formed queries by providing alternative query formulations, or by\nbreaking down complex problems into simpler sub-queries.",
+      "translation": "一种用于将输入查询扩展为查询列表的组件，通过提供替代查询表述或将复杂问题分解为更简单的子查询，来解决诸如查询格式不良等挑战。",
+      "count": 2
+    },
+    {
+      "source": "Expands the given query into a list of queries.",
+      "translation": "将给定的查询扩展为查询列表。",
+      "count": 2
+    },
+    {
+      "source": "A component for transforming the input query to make it more effective for retrieval\ntasks, addressing challenges such as poorly formed queries, ambiguous terms, complex\nvocabulary, or unsupported languages.",
+      "translation": "一种用于将输入查询转换为更有效的检索任务的组件，可解决诸如查询格式不佳、术语模糊、词汇复杂或语言不受支持等挑战。",
+      "count": 2
+    },
+    {
+      "source": "Transforms the given query according to the implemented strategy.",
+      "translation": "根据已实施的策略转换给定查询。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Component responsible for retrieving <a href=\"../../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a>s from an underlying data source,\nsuch as a search engine, a vector store, a database, or a knowledge graph.",
+      "translation": "负责从底层数据源（如搜索引擎、向量存储、数据库或知识图谱）检索<a href=\"../../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a>的组件。",
+      "count": 1
+    },
+    {
+      "source": "This package contains the core interfaces and classes supporting Retrieval Augmented\nGeneration flows.",
+      "translation": "该包包含支持检索增强生成（RAG）流程的核心接口和类。",
+      "count": 1
+    },
+    {
+      "source": "RAG Sub-Module: Query Augmentation.",
+      "translation": "检索增强生成子模块：查询增强。",
+      "count": 1
+    },
+    {
+      "source": "RAG Sub-Module: Query Expansion.",
+      "translation": "RAG 子模块：查询扩展。",
+      "count": 1
+    },
+    {
+      "source": "RAG Sub-Module: Query Transformation.",
+      "translation": "检索增强生成子模块：查询转换。",
+      "count": 1
+    },
+    {
+      "source": "RAG Sub-Module: Document Join.",
+      "translation": "RAG 子模块：文档合并。",
+      "count": 1
+    },
+    {
+      "source": "RAG Sub-Module: Document Search.",
+      "translation": "RAG 子模块：文档搜索。",
+      "count": 1
+    },
+    {
+      "source": "A component for post-processing retrieved documents based on a query, addressing\nchallenges such as \"lost-in-the-middle\", context length restrictions from the model,\nand the need to reduce noise and redundancy in the retrieved information.",
+      "translation": "一种用于基于查询对检索到的文档进行后处理的组件，旨在解决诸如“中间丢失”、模型上下文长度限制以及减少检索信息中的噪声和冗余等挑战。",
+      "count": 1
+    },
+    {
+      "source": "A component for combining documents retrieved based on multiple queries and from\nmultiple data sources into a single collection of documents.",
+      "translation": "一种组件，用于将基于多个查询从多个数据源检索到的文档合并为单个文档集合。",
+      "count": 1
+    },
+    {
+      "source": "Joins documents retrieved across multiple queries and daa sources.",
+      "translation": "跨多个查询和数据源检索的文档进行合并。",
+      "count": 1
+    },
+    {
+      "source": "Retrieves relevant documents from an underlying data source based on the given\nquery.",
+      "translation": "根据给定查询从底层数据源检索相关文档。",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Query.html\" title=\"class in org.springframework.ai.rag\">Query</a> in <a href=\"../package-summary.html\">org.springframework.ai.rag</a>",
+      "translation": "org.springframework.ai.rag 包中 <a href=\"../Query.html\" title=\"class in org.springframework.ai.rag\">Query</a> 的用法",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Query.html\" title=\"class in org.springframework.ai.rag\">Query</a> in <a href=\"../generation/augmentation/package-summary.html\">org.springframework.ai.rag.generation.augmentation</a>",
+      "translation": "<a href=\"../Query.html\" title=\"class in org.springframework.ai.rag\">Query</a> 在 <a href=\"../generation/augmentation/package-summary.html\">org.springframework.ai.rag.generation.augmentation</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Query.html\" title=\"class in org.springframework.ai.rag\">Query</a> in <a href=\"../postretrieval/document/package-summary.html\">org.springframework.ai.rag.postretrieval.document</a>",
+      "translation": "<a href=\"../Query.html\" title=\"class in org.springframework.ai.rag\">Query</a> 在 <a href=\"../postretrieval/document/package-summary.html\">org.springframework.ai.rag.postretrieval.document</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Query.html\" title=\"class in org.springframework.ai.rag\">Query</a> in <a href=\"../preretrieval/query/expansion/package-summary.html\">org.springframework.ai.rag.preretrieval.query.expansion</a>",
+      "translation": "<a href=\"../Query.html\" title=\"class in org.springframework.ai.rag\"><code>Query</code></a> 在 <a href=\"../preretrieval/query/expansion/package-summary.html\">org.springframework.ai.rag.preretrieval.query.expansion</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Query.html\" title=\"class in org.springframework.ai.rag\">Query</a> in <a href=\"../preretrieval/query/transformation/package-summary.html\">org.springframework.ai.rag.preretrieval.query.transformation</a>",
+      "translation": "<a href=\"../Query.html\" title=\"class in org.springframework.ai.rag\">Query</a> 在 <a href=\"../preretrieval/query/transformation/package-summary.html\">org.springframework.ai.rag.preretrieval.query.transformation</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Query.html\" title=\"class in org.springframework.ai.rag\">Query</a> in <a href=\"../retrieval/join/package-summary.html\">org.springframework.ai.rag.retrieval.join</a>",
+      "translation": "<a href=\"../Query.html\" title=\"class in org.springframework.ai.rag\"><code>Query</code></a> 在 <a href=\"../retrieval/join/package-summary.html\">org.springframework.ai.rag.retrieval.join</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../Query.html\" title=\"class in org.springframework.ai.rag\">Query</a> in <a href=\"../retrieval/search/package-summary.html\">org.springframework.ai.rag.retrieval.search</a>",
+      "translation": "<a href=\"../Query.html\" title=\"class in org.springframework.ai.rag\"><code>Query</code></a> 在 <a href=\"../retrieval/search/package-summary.html\">org.springframework.ai.rag.retrieval.search</a> 中的用途",
+      "count": 1
+    }
+  ]
+}

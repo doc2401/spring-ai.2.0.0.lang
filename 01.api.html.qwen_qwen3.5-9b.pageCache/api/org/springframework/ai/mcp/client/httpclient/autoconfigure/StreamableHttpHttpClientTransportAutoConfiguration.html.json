@@ -1,0 +1,116 @@
+{
+  "created_at": "2026-06-15 08:25:12",
+  "updated_at": "2026-06-15 08:25:12",
+  "stats": {
+    "total_entries": 20,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 21,
+    "entries_with_hits": 20,
+    "entries_without_hits": 0,
+    "hit_rate": 1.05,
+    "usage_percentage": 0.002
+  },
+  "items": [
+    {
+      "source": "Creates a list of HTTP client-based Streamable HTTP transports for MCP\ncommunication.",
+      "translation": "为 MCP 通信创建基于 HTTP 客户端的可流式 HTTP 传输列表。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This configuration class sets up the necessary beans for Streamable HTTP client\ntransport. It provides HTTP client-based Streamable HTTP transport implementation for\nMCP client communication.",
+      "translation": "此配置类为可流式 HTTP 客户端传输设置所需的 Bean。它为 MCP 客户端通信提供基于 HTTP 客户端的可流式 HTTP 传输实现。",
+      "count": 1
+    },
+    {
+      "source": "Key features:",
+      "translation": "主要功能：",
+      "count": 1
+    },
+    {
+      "source": "Each transport is configured with:",
+      "translation": "每个运输单元均配置有：",
+      "count": 1
+    },
+    {
+      "source": "<code>transportCustomizers</code> - provider for\n<code><a href=\"../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;io.modelcontextprotocol.client.transport.HttpClientStreamableHttpTransport.Builder&gt;</code> beans",
+      "translation": "<code>transportCustomizers</code> - 提供 <code><a href=\"../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;io.modelcontextprotocol.client.transport.HttpClientStreamableHttpTransport.Builder&gt;</code> 类型 Bean 的提供者",
+      "count": 1
+    },
+    {
+      "source": "Applies <code><a href=\"../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;io.modelcontextprotocol.client.transport.HttpClientStreamableHttpTransport.Builder&gt;</code>\nbeans to each transport builder.",
+      "translation": "将 <code><a href=\"../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;io.modelcontextprotocol.client.transport.HttpClientStreamableHttpTransport.Builder&gt;</code> 类型的 Bean 应用于每个传输构建器。",
+      "count": 1
+    },
+    {
+      "source": "All available\n<code><a href=\"../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;io.modelcontextprotocol.client.transport.HttpClientStreamableHttpTransport.Builder&gt;</code> beans\napplied with the connection name and transport builder",
+      "translation": "所有可用\n应用了连接名称和传输构建器的 <code><a href=\"../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;io.modelcontextprotocol.client.transport.HttpClientStreamableHttpTransport.Builder&gt;</code> Bean",
+      "count": 1
+    },
+    {
+      "source": "<code>streamableProperties</code> - the Streamable HTTP client properties containing server\nconfigurations",
+      "translation": "<code>streamableProperties</code> - 包含服务器配置的流式 HTTP 客户端属性。",
+      "count": 1
+    },
+    {
+      "source": "<code>jsonMapperProvider</code> - the provider for JsonMapper or a new instance if not\navailable",
+      "translation": "<code>jsonMapperProvider</code> - JsonMapper 的提供者，若不可用则提供新实例。",
+      "count": 1
+    },
+    {
+      "source": "Creates HTTP client-based Streamable HTTP transports for configured MCP server\nconnections",
+      "translation": "为配置的 MCP 服务器连接创建基于 HTTP 客户端的流式 HTTP 传输。",
+      "count": 1
+    },
+    {
+      "source": "Configures JsonMapper for JSON serialization/deserialization",
+      "translation": "配置 JsonMapper 用于 JSON 的序列化/反序列化。",
+      "count": 1
+    },
+    {
+      "source": "Supports multiple named server connections with different URLs",
+      "translation": "支持使用不同 URL 连接多个命名服务器。",
+      "count": 1
+    },
+    {
+      "source": "A new HttpClient instance",
+      "translation": "新的 HttpClient 实例",
+      "count": 1
+    },
+    {
+      "source": "Server URL from properties",
+      "translation": "从属性中获取服务器 URL",
+      "count": 1
+    },
+    {
+      "source": "JsonMapper for JSON processing",
+      "translation": "用于 JSON 处理的 JsonMapper",
+      "count": 1
+    },
+    {
+      "source": "list of named MCP transports",
+      "translation": "MCP 传输的命名列表",
+      "count": 1
+    },
+    {
+      "source": "Auto-configuration for Streamable HTTP client transport in the Model Context Protocol\n(MCP).",
+      "translation": "Model 上下文协议（MCP）中可流式传输的 HTTP 客户端传输的自动配置。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>为配置的 MCP 服务器连接创建基于 HTTP 客户端的流式 HTTP 传输。</li><li>配置 JsonMapper 用于 JSON 的序列化/反序列化。</li><li>支持使用不同 URL 连接多个命名服务器。</li><li>将 <code><a href=\"../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;io.modelcontextprotocol.client.transport.HttpClientStreamableHttpTransport.Builder&gt;</code> 类型的 Bean 应用于每个传输构建器。</li></ul>",
+      "translation": "<ul>\n<li>为配置的 MCP 服务器连接创建基于 HTTP 客户端的流式 HTTP 传输。</li><li>配置 JsonMapper 用于 JSON 的序列化/反序列化。</li><li>支持使用不同 URL 连接多个命名服务器。</li><li>将 <code><a href=\"../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;io.modelcontextprotocol.client.transport.HttpClientStreamableHttpTransport.Builder&gt;</code> 类型的 Bean 应用于每个传输构建器。</li></ul>",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li>新的 HttpClient 实例</li><li>从属性中获取服务器 URL</li><li>用于 JSON 处理的 JsonMapper</li><li>所有可用\n应用了连接名称和传输构建器的 <code><a href=\"../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;io.modelcontextprotocol.client.transport.HttpClientStreamableHttpTransport.Builder&gt;</code> Bean</li></ul>",
+      "translation": "<ul>\n<li>新的 HttpClient 实例</li>\n<li>从属性中获取服务器 URL</li>\n<li>用于 JSON 处理的 JsonMapper</li>\n<li>所有可用的、应用了连接名称和传输构建器的 <code><a href=\"../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer&lt;io.modelcontextprotocol.client.transport.HttpClientStreamableHttpTransport.Builder&gt;</a></code> Bean</li>\n</ul>",
+      "count": 1
+    }
+  ]
+}

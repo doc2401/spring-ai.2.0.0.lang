@@ -1,0 +1,86 @@
+{
+  "created_at": "2026-06-15 08:04:24",
+  "updated_at": "2026-06-15 08:04:24",
+  "stats": {
+    "total_entries": 14,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 15,
+    "entries_with_hits": 14,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0714285714285714,
+    "usage_percentage": 0.0014
+  },
+  "items": [
+    {
+      "source": "Retrieves relevant documents from an underlying data source based on the given\nquery.",
+      "translation": "根据给定查询从底层数据源检索相关文档。",
+      "count": 2
+    },
+    {
+      "source": "The <a href=\"#FILTER_EXPRESSION\"><code>FILTER_EXPRESSION</code></a> context key can be used to provide a filter expression\nfor a specific query. This key accepts either a string representation of a filter\nexpression or a <a href=\"../../../vectorstore/filter/Filter.Expression.html\" title=\"class in org.springframework.ai.vectorstore.filter\"><code>Filter.Expression</code></a> object directly.",
+      "translation": "`<a href=\"#FILTER_EXPRESSION\"><code>FILTER_EXPRESSION</code></a>` 上下文键可用于为特定查询提供过滤表达式。该键可接受过滤表达式的字符串表示形式，或直接接受一个 `<a href=\"../../../vectorstore/filter/Filter.Expression.html\" title=\"class in org.springframework.ai.vectorstore.filter\"><code>Filter.Expression</code></a>` 对象。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Example usage:",
+      "translation": "使用示例：",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"DocumentRetriever.html#retrieve(org.springframework.ai.rag.Query)\">DocumentRetriever</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"DocumentRetriever.html#retrieve(org.springframework.ai.rag.Query)\">DocumentRetriever</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Builder for <a href=\"VectorStoreDocumentRetriever.html\" title=\"class in org.springframework.ai.rag.retrieval.search\"><code>VectorStoreDocumentRetriever</code></a>.",
+      "translation": "用于构建<a href=\"VectorStoreDocumentRetriever.html\" title=\"class in org.springframework.ai.rag.retrieval.search\"><code>VectorStoreDocumentRetriever</code></a>的类。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"DocumentRetriever.html#retrieve(org.springframework.ai.rag.Query)\">retrieve</a></code> in interface <code><a href=\"DocumentRetriever.html\" title=\"interface in org.springframework.ai.rag.retrieval.search\">DocumentRetriever</a></code>",
+      "translation": "接口 <code><a href=\"DocumentRetriever.html\" title=\"org.springframework.ai.rag.retrieval.search 中的接口\">DocumentRetriever</a></code> 中的 <code><a href=\"DocumentRetriever.html#retrieve(org.springframework.ai.rag.Query)\">retrieve</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code>query</code> - The query to use for retrieving documents",
+      "translation": "<code>query</code> - 用于检索文档的查询语句",
+      "count": 1
+    },
+    {
+      "source": "Thomas Vitale",
+      "translation": "托马斯·维塔莱",
+      "count": 1
+    },
+    {
+      "source": "The list of relevant documents",
+      "translation": "相关文件清单",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "Retrieves documents from a vector store that are semantically similar to the input\nquery. It supports filtering based on metadata, similarity threshold, and top-k\nresults.",
+      "translation": "从向量存储中检索与输入查询语义相似的文档。它支持基于元数据、相似度阈值和 Top-K 结果的过滤。",
+      "count": 1
+    },
+    {
+      "source": "<pre><code>VectorStoreDocumentRetriever retriever = VectorStoreDocumentRetriever.builder()\n    .vectorStore(vectorStore)\n    .similarityThreshold(0.73)\n    .topK(5)\n    .filterExpression(filterExpression)\n    .build();\nList&lt;Document&gt; documents = retriever.retrieve(new Query(\"example query\"));\n</code></pre>",
+      "translation": "<pre><code>VectorStoreDocumentRetriever retriever = VectorStoreDocumentRetriever.builder()\n    .vectorStore(vectorStore)\n    .similarityThreshold(0.73)\n    .topK(5)\n    .filterExpression(filterExpression)\n    .build();\nList&lt;Document&gt; documents = retriever.retrieve(new Query(\"example query\"));\n</code></pre>",
+      "count": 1
+    }
+  ]
+}

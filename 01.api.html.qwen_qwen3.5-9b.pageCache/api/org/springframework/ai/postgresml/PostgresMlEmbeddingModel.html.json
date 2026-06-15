@@ -1,0 +1,161 @@
+{
+  "created_at": "2026-06-15 07:33:55",
+  "updated_at": "2026-06-15 07:33:55",
+  "stats": {
+    "total_entries": 29,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 35,
+    "entries_with_hits": 29,
+    "entries_without_hits": 0,
+    "hit_rate": 1.206896551724138,
+    "usage_percentage": 0.0029
+  },
+  "items": [
+    {
+      "source": "a constructor",
+      "translation": "构造函数",
+      "count": 2
+    },
+    {
+      "source": "a PostgresMlEmbeddingModel constructor",
+      "translation": "PostgresMlEmbeddingModel 构造函数",
+      "count": 2
+    },
+    {
+      "source": "Executes a method call to the AI model.",
+      "translation": "执行对 AI 模型的方法调用。",
+      "count": 2
+    },
+    {
+      "source": "Embeds the given text into a vector.",
+      "translation": "将给定文本嵌入为向量。",
+      "count": 2
+    },
+    {
+      "source": "Embeds the given document's content into a vector.",
+      "translation": "将给定文档的内容嵌入向量中。",
+      "count": 2
+    },
+    {
+      "source": "the embedded vector.",
+      "translation": "嵌入向量。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Extracts the text content from a <a href=\"../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a> to be used for embedding. By\ndefault, returns <a href=\"../document/Document.html#getText()\"><code>Document.getText()</code></a>. Implementations that support\n<a href=\"../document/MetadataMode.html\" title=\"enum class in org.springframework.ai.document\"><code>MetadataMode</code></a> should override this method to\nreturn\n<a href=\"../document/Document.html#getFormattedContent(org.springframework.ai.document.MetadataMode)\"><code>Document.getFormattedContent(org.springframework.ai.document.MetadataMode)</code></a>\nwith the appropriate metadata mode, so that metadata is included in the text sent\nto the embedding API.",
+      "translation": "从 <a href=\"../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a> 中提取用于嵌入的文本内容。默认情况下，返回 <a href=\"../document/Document.html#getText()\"><code>Document.getText()</code></a>。支持 <a href=\"../document/MetadataMode.html\" title=\"enum class in org.springframework.ai.document\"><code>MetadataMode</code></a> 的实现应重写此方法，以返回\n<a href=\"../document/Document.html#getFormattedContent(org.springframework.ai.document.MetadataMode)\"><code>Document.getFormattedContent(org.springframework.ai.document.MetadataMode)</code></a>\n并传入适当的元数据模式，以便将元数据包含在发送到嵌入 API 的文本中。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../embedding/EmbeddingModel.html#embed(java.lang.String)\">EmbeddingModel</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../embedding/EmbeddingModel.html#embed(java.lang.String)\">EmbeddingModel</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../embedding/EmbeddingModel.html#getEmbeddingContent(org.springframework.ai.document.Document)\">EmbeddingModel</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../embedding/EmbeddingModel.html#getEmbeddingContent(org.springframework.ai.document.Document)\">EmbeddingModel</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../embedding/EmbeddingModel.html#embed(org.springframework.ai.document.Document)\">EmbeddingModel</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../embedding/EmbeddingModel.html#embed(org.springframework.ai.document.Document)\">EmbeddingModel</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../model/Model.html#call(TReq)\">Model</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../model/Model.html#call(TReq)\">Model</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Extracts the text content from a <a href=\"../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a> to be used for embedding.",
+      "translation": "从<a href=\"../document/Document.html\" title=\"org.springframework.ai.document 中的类\"><code>Document</code></a>提取用于嵌入的文本内容。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../model/Model.html#call(TReq)\">call</a></code> in interface <code><a href=\"../model/Model.html\" title=\"interface in org.springframework.ai.model\">Model</a>&lt;<a href=\"../embedding/EmbeddingRequest.html\" title=\"class in org.springframework.ai.embedding\">EmbeddingRequest</a>, <a href=\"../embedding/EmbeddingResponse.html\" title=\"class in org.springframework.ai.embedding\">EmbeddingResponse</a>&gt;</code>",
+      "translation": "<a href=\"../model/Model.html#call(TReq)\">call</a> 接口中的<code><a href=\"../model/Model.html\" title=\"interface in org.springframework.ai.model\">Model</a>&lt;<a href=\"../embedding/EmbeddingRequest.html\" title=\"class in org.springframework.ai.embedding\">EmbeddingRequest</a>, <a href=\"../embedding/EmbeddingResponse.html\" title=\"class in org.springframework.ai.embedding\">EmbeddingResponse</a>&gt;</code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../embedding/EmbeddingModel.html#embed(java.lang.String)\">embed</a></code> in interface <code><a href=\"../embedding/EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a></code>",
+      "translation": "<code><a href=\"../embedding/EmbeddingModel.html#embed(java.lang.String)\">embed</a></code> 接口 <code><a href=\"../embedding/EmbeddingModel.html\" title=\"org.springframework.ai.embedding 中的接口\">EmbeddingModel</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../embedding/EmbeddingModel.html#getEmbeddingContent(org.springframework.ai.document.Document)\">getEmbeddingContent</a></code> in interface <code><a href=\"../embedding/EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a></code>",
+      "translation": "接口 <code><a href=\"../embedding/EmbeddingModel.html\" title=\"org.springframework.ai.embedding 中的接口\">EmbeddingModel</a></code> 中的方法 <code><a href=\"../embedding/EmbeddingModel.html#getEmbeddingContent(org.springframework.ai.document.Document)\">getEmbeddingContent</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../embedding/EmbeddingModel.html#embed(org.springframework.ai.document.Document)\">embed</a></code> in interface <code><a href=\"../embedding/EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a></code>",
+      "translation": "接口 <code><a href=\"../embedding/EmbeddingModel.html\" title=\"org.springframework.ai.embedding 中的接口\">EmbeddingModel</a></code> 中的方法 <code><a href=\"../embedding/EmbeddingModel.html#embed(org.springframework.ai.document.Document)\">embed</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../embedding/EmbeddingModel.html#call(org.springframework.ai.embedding.EmbeddingRequest)\">call</a></code> in interface <code><a href=\"../embedding/EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a></code>",
+      "translation": "<code><a href=\"../embedding/EmbeddingModel.html#call(org.springframework.ai.embedding.EmbeddingRequest)\">call</a></code> 接口 <code><a href=\"../embedding/EmbeddingModel.html\" title=\"interface in org.springframework.ai.embedding\">EmbeddingModel</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>afterPropertiesSet</code> in interface <code>org.springframework.beans.factory.InitializingBean</code>",
+      "translation": "接口 <code>org.springframework.beans.factory.InitializingBean</code> 中的 <code>afterPropertiesSet</code>",
+      "count": 1
+    },
+    {
+      "source": "<code>jdbcTemplate</code> - JdbcTemplate to use to interact with the database.",
+      "translation": "<code>jdbcTemplate</code> - 用于与数据库交互的 JdbcTemplate。",
+      "count": 1
+    },
+    {
+      "source": "<code>options</code> - PostgresMlEmbeddingOptions to configure the client.",
+      "translation": "<code>options</code> - 用于配置客户端的 PostgresMlEmbeddingOptions。",
+      "count": 1
+    },
+    {
+      "source": "<code>text</code> - the text to embed.",
+      "translation": "<code>text</code> - 要嵌入的文本。",
+      "count": 1
+    },
+    {
+      "source": "<code>document</code> - the document to extract embedding content from.",
+      "translation": "<code>document</code> - 用于提取嵌入内容的文档。",
+      "count": 1
+    },
+    {
+      "source": "<code>document</code> - the document to embed.",
+      "translation": "<code>document</code> - 要嵌入的文档。",
+      "count": 1
+    },
+    {
+      "source": "<code>request</code> - the request object to be sent to the AI model",
+      "translation": "<code>request</code> - 要发送给 AI 模型的请求对象",
+      "count": 1
+    },
+    {
+      "source": "Toshiaki Maki, Christian Tzolov, Soby Chacko, Sebastien Deleuze",
+      "translation": "牧俊明，克里斯蒂安·茨洛夫，索比·查科，塞巴斯蒂安·德洛兹",
+      "count": 1
+    },
+    {
+      "source": "the text content to embed.",
+      "translation": "待嵌入的文本内容。",
+      "count": 1
+    },
+    {
+      "source": "the response from the AI model",
+      "translation": "AI 模型的回复",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "created_at": "2026-06-15 07:28:38",
+  "updated_at": "2026-06-15 07:28:38",
+  "stats": {
+    "total_entries": 7,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 7,
+    "entries_with_hits": 7,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.0007
+  },
+  "items": [
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "EmbeddingModel implementations can call this method to optimize embedding tokens.\nThe incoming collection of <a href=\"../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a>s are split into sub-batches. It is\nimportant to preserve the order of the list of <a href=\"../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a>s when batching as\nthey are mapped to their corresponding embeddings by their order.",
+      "translation": "EmbeddingModel 实现可以调用此方法来优化嵌入 token。传入的 <a href=\"../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a> 集合会被拆分为子批次。在批处理时，保持 <a href=\"../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a> 列表的顺序非常重要，因为它们将按顺序映射到对应的嵌入中。",
+      "count": 1
+    },
+    {
+      "source": "Contract for batching <a href=\"../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a> objects so that the call to embed them could be\noptimized.",
+      "translation": "用于对<a href=\"../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a>对象进行批处理的合同，以优化嵌入它们的调用。",
+      "count": 1
+    },
+    {
+      "source": "EmbeddingModel implementations can call this method to optimize embedding tokens.",
+      "translation": "EmbeddingModel 实现可以调用此方法来优化嵌入令牌。",
+      "count": 1
+    },
+    {
+      "source": "a list of sub-batches that contain <a href=\"../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a>s.",
+      "translation": "包含<a href=\"../document/Document.html\" title=\"org.springframework.ai.document 中的类\"><code>Document</code></a>的子批次列表。",
+      "count": 1
+    },
+    {
+      "source": "<code>documents</code> - to batch",
+      "translation": "<code>documents</code> - 批量处理",
+      "count": 1
+    },
+    {
+      "source": "Soby Chacko",
+      "translation": "索比·查科",
+      "count": 1
+    }
+  ]
+}

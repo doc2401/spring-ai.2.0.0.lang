@@ -1,0 +1,86 @@
+{
+  "created_at": "2026-06-15 08:45:43",
+  "updated_at": "2026-06-15 08:45:43",
+  "stats": {
+    "total_entries": 14,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 14,
+    "entries_with_hits": 14,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.0014
+  },
+  "items": [
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Returns a <a href=\"../../chat/client/ResponseEntity.html\" title=\"class in org.springframework.ai.chat.client\"><code>ResponseEntity</code></a> containing both the complete\n<a href=\"../../chat/model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> object and an entity converted using a specified\n<a href=\"../StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a>, with behaviour configured via the\n<code>entityParamSpecConsumer</code>.",
+      "translation": "返回一个 <a href=\"../../chat/client/ResponseEntity.html\" title=\"class in org.springframework.ai.chat.client\"><code>ResponseEntity</code></a>，其中包含完整的 <a href=\"../../chat/model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> 对象以及使用指定的 <a href=\"../StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a> 转换后的实体，其行为通过 <code>entityParamSpecConsumer</code> 进行配置。",
+      "count": 1
+    },
+    {
+      "source": "Returns a <a href=\"../../chat/client/ResponseEntity.html\" title=\"class in org.springframework.ai.chat.client\"><code>ResponseEntity</code></a> containing both the complete\n<a href=\"../../chat/model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> object and an entity converted using a specified\n<a href=\"../StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a>.",
+      "translation": "返回一个 <a href=\"../../chat/client/ResponseEntity.html\" title=\"class in org.springframework.ai.chat.client\"><code>ResponseEntity</code></a>，其中包含完整的 <a href=\"../../chat/model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\"><code>ChatResponse</code></a> 对象以及使用指定的 <a href=\"../StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a> 转换后的实体。",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"../StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a> implementation that uses a\n<code>DefaultConversionService</code> to convert the LLM output into a\n<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"class or interface in java.util\"><code>List</code></a> instance.",
+      "translation": "使用 <code>DefaultConversionService</code> 将 LLM 输出转换为 <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"class or interface in java.util\"><code>List</code></a> 实例的<a href=\"../StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a>实现。",
+      "count": 1
+    },
+    {
+      "source": "Abstract <a href=\"../StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a> implementation that uses a pre-configured\n<code>DefaultConversionService</code> to convert the LLM output into the desired type\nformat.",
+      "translation": "使用预配置的 <code>DefaultConversionService</code> 将 LLM 输出转换为所需类型格式的 <a href=\"../StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a> 接口的实现摘要。",
+      "count": 1
+    },
+    {
+      "source": "Abstract <a href=\"../StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a> implementation that uses a pre-configured\n<code>MessageConverter</code> to convert the LLM output into the desired type format.",
+      "translation": "抽象类，实现了<a href=\"../StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a>接口，使用预配置的<code>MessageConverter</code>将 LLM 输出转换为所需的类型格式。",
+      "count": 1
+    },
+    {
+      "source": "<a href=\"../StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a> implementation that uses a pre-configured\n<code>JacksonJsonMessageConverter</code> to convert the LLM output into a\njava.util.Map&lt;String, Object&gt; instance.",
+      "translation": "使用预配置的 <code>JacksonJsonMessageConverter</code> 将 LLM 输出转换为 <a href=\"../StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a> 实现的 java.util.Map&lt;String, Object&gt; 实例。",
+      "count": 1
+    },
+    {
+      "source": "An implementation of <a href=\"../StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\"><code>StructuredOutputConverter</code></a> that transforms the LLM output\nto a specific object type using JSON schema.",
+      "translation": "一个实现了<a href=\"../StructuredOutputConverter.html\" title=\"org.springframework.ai.converter 中的接口\"><code>StructuredOutputConverter</code></a>的转换器，它使用 JSON Schema 将 LLM 输出转换为特定对象类型。",
+      "count": 1
+    },
+    {
+      "source": "Deserializes the response using the given converter, with behaviour configured\nvia the <code>entityParamSpecConsumer</code>.",
+      "translation": "使用给定的转换器反序列化响应，其行为通过 `<code>entityParamSpecConsumer</code>` 进行配置。",
+      "count": 1
+    },
+    {
+      "source": "Chat client API.",
+      "translation": "聊天客户端 API。",
+      "count": 1
+    },
+    {
+      "source": "Provides converters for transforming AI model text outputs into structured Java types.",
+      "translation": "提供转换器，用于将 AI 模型文本输出转换为结构化的 Java 类型。",
+      "count": 1
+    },
+    {
+      "source": "Deserializes the response using the given converter.",
+      "translation": "使用给定的转换器反序列化响应。",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\">StructuredOutputConverter</a> in <a href=\"../../chat/client/package-summary.html\">org.springframework.ai.chat.client</a>",
+      "translation": "<a href=\"../StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\">StructuredOutputConverter</a> 在 <a href=\"../../chat/client/package-summary.html\">org.springframework.ai.chat.client</a> 中的用途",
+      "count": 1
+    },
+    {
+      "source": "Uses of <a href=\"../StructuredOutputConverter.html\" title=\"interface in org.springframework.ai.converter\">StructuredOutputConverter</a> in <a href=\"../package-summary.html\">org.springframework.ai.converter</a>",
+      "translation": "<a href=\"../StructuredOutputConverter.html\" title=\"org.springframework.ai.converter 中的接口\">StructuredOutputConverter</a> 在 <a href=\"../package-summary.html\">org.springframework.ai.converter</a> 包中的用途",
+      "count": 1
+    }
+  ]
+}

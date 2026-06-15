@@ -1,0 +1,121 @@
+{
+  "created_at": "2026-06-15 07:47:42",
+  "updated_at": "2026-06-15 07:47:42",
+  "stats": {
+    "total_entries": 21,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 28,
+    "entries_with_hits": 21,
+    "entries_without_hits": 0,
+    "hit_rate": 1.3333333333333333,
+    "usage_percentage": 0.0021
+  },
+  "items": [
+    {
+      "source": "Configuration prefix for Redis vector store properties.",
+      "translation": "Redis 向量存储属性的配置前缀。",
+      "count": 2
+    },
+    {
+      "source": "Returns the HNSW properties.",
+      "translation": "返回 HNSW 属性。",
+      "count": 2
+    },
+    {
+      "source": "Returns the index name.",
+      "translation": "返回索引名称。",
+      "count": 2
+    },
+    {
+      "source": "Returns the key prefix.",
+      "translation": "返回键前缀。",
+      "count": 2
+    },
+    {
+      "source": "Sets the HNSW properties.",
+      "translation": "设置 HNSW 属性。",
+      "count": 2
+    },
+    {
+      "source": "Sets the index name.",
+      "translation": "设置索引名称。",
+      "count": 2
+    },
+    {
+      "source": "Sets the key prefix.",
+      "translation": "设置键前缀。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Example application.properties:",
+      "translation": "示例 application.properties：",
+      "count": 1
+    },
+    {
+      "source": "HNSW (Hierarchical Navigable Small World) algorithm configuration.",
+      "translation": "HNSW（分层可导航小世界）算法配置。",
+      "count": 1
+    },
+    {
+      "source": "<code>name</code> - the index name",
+      "translation": "<code>name</code> - 索引名称",
+      "count": 1
+    },
+    {
+      "source": "<code>keyPrefix</code> - the key prefix",
+      "translation": "<code>keyPrefix</code> - 键前缀",
+      "count": 1
+    },
+    {
+      "source": "<code>hnswProperties</code> - the HNSW properties",
+      "translation": "<code>hnswProperties</code> - HNSW 属性",
+      "count": 1
+    },
+    {
+      "source": "Julien Ruaux, Eddú Meléndez, Brian Sam-Bodden",
+      "translation": "朱利安·鲁奥，埃杜·梅伦德斯，布莱恩·萨姆 - 博登",
+      "count": 1
+    },
+    {
+      "source": "the index name",
+      "translation": "索引名称",
+      "count": 1
+    },
+    {
+      "source": "the key prefix",
+      "translation": "关键前缀",
+      "count": 1
+    },
+    {
+      "source": "the HNSW properties",
+      "translation": "HNSW 属性",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "Configuration properties for Redis Vector Store.",
+      "translation": "Redis 向量存储的配置属性。",
+      "count": 1
+    },
+    {
+      "source": "<pre>spring.ai.vectorstore.redis.index-name=my-index\nspring.ai.vectorstore.redis.prefix=doc:\nspring.ai.vectorstore.redis.initialize-schema=true\n\n# HNSW algorithm configuration\nspring.ai.vectorstore.redis.hnsw.m=32\nspring.ai.vectorstore.redis.hnsw.ef-construction=100\nspring.ai.vectorstore.redis.hnsw.ef-runtime=50\n</pre>",
+      "translation": "<pre>spring.ai.vectorstore.redis.index-name=my-index\nspring.ai.vectorstore.redis.prefix=doc:\nspring.ai.vectorstore.redis.initialize-schema=true\n\n# HNSW 算法配置\nspring.ai.vectorstore.redis.hnsw.m=32\nspring.ai.vectorstore.redis.hnsw.ef-construction=100\nspring.ai.vectorstore.redis.hnsw.ef-runtime=50\n</pre>",
+      "count": 1
+    }
+  ]
+}

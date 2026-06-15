@@ -1,0 +1,71 @@
+{
+  "created_at": "2026-06-15 08:33:42",
+  "updated_at": "2026-06-15 08:33:42",
+  "stats": {
+    "total_entries": 11,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 13,
+    "entries_with_hits": 11,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1818181818181819,
+    "usage_percentage": 0.0011
+  },
+  "items": [
+    {
+      "source": "Check if a method has a CallToolRequest parameter.",
+      "translation": "检查方法是否具有 CallToolRequest 参数。",
+      "count": 2
+    },
+    {
+      "source": "the JSON Schema as a string",
+      "translation": "作为字符串的 JSON 模式",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Generate a JSON Schema for a class type. Delegates to\n<a href=\"../../../../../util/json/schema/JsonSchemaGenerator.html#generateForType(java.lang.reflect.Type,org.springframework.ai.util.json.schema.JsonSchemaGenerator.SchemaOption...)\"><code>JsonSchemaGenerator.generateForType(Type, JsonSchemaGenerator.SchemaOption...)</code></a>.",
+      "translation": "为类类型生成 JSON Schema。委托给\n<a href=\"../../../../../util/json/schema/JsonSchemaGenerator.html#generateForType(java.lang.reflect.Type,org.springframework.ai.util.json.schema.JsonSchemaGenerator.SchemaOption...)\"><code>JsonSchemaGenerator.generateForType(Type, JsonSchemaGenerator.SchemaOption...)</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Generate a JSON Schema for a generic type. Delegates to\n<a href=\"../../../../../util/json/schema/JsonSchemaGenerator.html#generateForType(java.lang.reflect.Type,org.springframework.ai.util.json.schema.JsonSchemaGenerator.SchemaOption...)\"><code>JsonSchemaGenerator.generateForType(Type, JsonSchemaGenerator.SchemaOption...)</code></a>.",
+      "translation": "为通用类型生成 JSON Schema。委托给\n<a href=\"../../../../../util/json/schema/JsonSchemaGenerator.html#generateForType(java.lang.reflect.Type,org.springframework.ai.util.json.schema.JsonSchemaGenerator.SchemaOption...)\"><code>JsonSchemaGenerator.generateForType(Type, JsonSchemaGenerator.SchemaOption...)</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "Generate a JSON Schema for a class type.",
+      "translation": "{\"type\": \"object\", \"properties\": {\"name\": {\"type\": \"string\"}, \"id\": {\"type\": \"integer\"}}, \"required\": [\"name\"]}",
+      "count": 1
+    },
+    {
+      "source": "Generate a JSON Schema for a generic type.",
+      "translation": "{\"type\": \"object\", \"properties\": {}}",
+      "count": 1
+    },
+    {
+      "source": "<code>clazz</code> - the class to generate a schema for",
+      "translation": "<code>clazz</code> - 要生成模式的类",
+      "count": 1
+    },
+    {
+      "source": "<code>type</code> - the type to generate a schema for",
+      "translation": "<code>type</code> - 要生成模式的类型",
+      "count": 1
+    },
+    {
+      "source": "<code>method</code> - The method to check",
+      "translation": "<code>method</code> - 要检查的方法",
+      "count": 1
+    },
+    {
+      "source": "true if the method has a CallToolRequest parameter, false otherwise",
+      "translation": "如果该方法具有 CallToolRequest 参数，则返回 true；否则返回 false。",
+      "count": 1
+    }
+  ]
+}

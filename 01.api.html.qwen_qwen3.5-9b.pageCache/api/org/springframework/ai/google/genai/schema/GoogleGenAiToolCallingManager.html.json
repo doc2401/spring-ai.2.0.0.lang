@@ -1,0 +1,96 @@
+{
+  "created_at": "2026-06-15 08:38:17",
+  "updated_at": "2026-06-15 08:38:17",
+  "stats": {
+    "total_entries": 16,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 18,
+    "entries_with_hits": 16,
+    "entries_without_hits": 0,
+    "hit_rate": 1.125,
+    "usage_percentage": 0.0015999999999999999
+  },
+  "items": [
+    {
+      "source": "Creates a new instance of GoogleGenAiToolCallingManager.",
+      "translation": "创建一个新的 GoogleGenAiToolCallingManager 实例。",
+      "count": 2
+    },
+    {
+      "source": "Executes tool calls by delegating to the underlying tool calling manager.",
+      "translation": "通过委托给底层工具调用管理器来执行工具调用。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "It delegates the actual tool execution to another <a href=\"../../../model/tool/ToolCallingManager.html\" title=\"interface in org.springframework.ai.model.tool\"><code>ToolCallingManager</code></a> while\nhandling the necessary schema conversions for Vertex AI compatibility.",
+      "translation": "它将实际的工具执行委托给另一个<a href=\"../../../model/tool/ToolCallingManager.html\" title=\"interface in org.springframework.ai.model.tool\"><code>ToolCallingManager</code></a>，同时处理必要的模式转换以兼容 Vertex AI。",
+      "count": 1
+    },
+    {
+      "source": "Resolves tool definitions and converts their input schemas to be compatible with\nVertex AI's OpenAPI format.",
+      "translation": "解析工具定义，并将其输入模式转换为与 Vertex AI 的 OpenAPI 格式兼容的形式。",
+      "count": 1
+    },
+    {
+      "source": "Resolves tool definitions and converts their input schemas to be compatible with\nVertex AI's OpenAPI format. This includes converting JSON schemas to OpenAPI format\nand ensuring proper type value casing.",
+      "translation": "解析工具定义并将其输入模式转换为与 Vertex AI 的 OpenAPI 格式兼容的格式。这包括将 JSON Schema 转换为 OpenAPI 格式，并确保类型值的大小写正确。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../../model/tool/ToolCallingManager.html#resolveToolDefinitions(org.springframework.ai.model.tool.ToolCallingChatOptions)\">resolveToolDefinitions</a></code> in interface <code><a href=\"../../../model/tool/ToolCallingManager.html\" title=\"interface in org.springframework.ai.model.tool\">ToolCallingManager</a></code>",
+      "translation": "<code><a href=\"../../../model/tool/ToolCallingManager.html#resolveToolDefinitions(org.springframework.ai.model.tool.ToolCallingChatOptions)\">resolveToolDefinitions</a></code> 接口 <code><a href=\"../../../model/tool/ToolCallingManager.html\" title=\"interface in org.springframework.ai.model.tool\">ToolCallingManager</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../../model/tool/ToolCallingManager.html#executeToolCalls(org.springframework.ai.chat.prompt.Prompt,org.springframework.ai.chat.model.ChatResponse)\">executeToolCalls</a></code> in interface <code><a href=\"../../../model/tool/ToolCallingManager.html\" title=\"interface in org.springframework.ai.model.tool\">ToolCallingManager</a></code>",
+      "translation": "<code><a href=\"../../../model/tool/ToolCallingManager.html#executeToolCalls(org.springframework.ai.chat.prompt.Prompt,org.springframework.ai.chat.model.ChatResponse)\">executeToolCalls</a></code> 接口 <code><a href=\"../../../model/tool/ToolCallingManager.html\" title=\"interface in org.springframework.ai.model.tool\">ToolCallingManager</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>delegateToolCallingManager</code> - the underlying tool calling manager that handles\nactual tool execution",
+      "translation": "<code>delegateToolCallingManager</code> - 底层工具调用管理器，负责处理实际的工具执行。",
+      "count": 1
+    },
+    {
+      "source": "<code>chatOptions</code> - the options containing tool preferences and configurations",
+      "translation": "<code>chatOptions</code> - 包含工具偏好和配置的选项",
+      "count": 1
+    },
+    {
+      "source": "<code>prompt</code> - the original prompt that triggered the tool calls",
+      "translation": "<code>prompt</code> - 触发工具调用的原始提示词",
+      "count": 1
+    },
+    {
+      "source": "<code>chatResponse</code> - the chat response containing the tool calls to execute",
+      "translation": "<code>chatResponse</code> - 包含待执行工具调用的聊天响应。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Dan Dobrin",
+      "translation": "克里斯蒂安·茨洛夫，丹·多布林",
+      "count": 1
+    },
+    {
+      "source": "a list of tool definitions with Vertex AI compatible schemas",
+      "translation": "包含与 Vertex AI 兼容模式的工具定义列表。",
+      "count": 1
+    },
+    {
+      "source": "the result of executing the tool calls",
+      "translation": "执行工具调用的结果",
+      "count": 1
+    },
+    {
+      "source": "Implementation of <a href=\"../../../model/tool/ToolCallingManager.html\" title=\"interface in org.springframework.ai.model.tool\"><code>ToolCallingManager</code></a> specifically designed for Vertex AI\nGemini. This manager adapts tool definitions to be compatible with Vertex AI's OpenAPI\nschema format by converting JSON schemas and ensuring proper type value upper-casing.",
+      "translation": "针对 Vertex AI Gemini 实现的<a href=\"../../../model/tool/ToolCallingManager.html\" title=\"interface in org.springframework.ai.model.tool\"><code>ToolCallingManager</code></a>接口。该管理器通过将 JSON Schema 转换为适配格式并确保类型值正确大写，使工具定义与 Vertex AI 的 OpenAPI 架构格式兼容。",
+      "count": 1
+    }
+  ]
+}

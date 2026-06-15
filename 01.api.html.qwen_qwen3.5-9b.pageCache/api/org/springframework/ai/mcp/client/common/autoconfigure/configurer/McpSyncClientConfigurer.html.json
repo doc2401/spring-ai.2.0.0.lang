@@ -1,0 +1,56 @@
+{
+  "created_at": "2026-06-15 08:25:54",
+  "updated_at": "2026-06-15 08:25:54",
+  "stats": {
+    "total_entries": 8,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 9,
+    "entries_with_hits": 8,
+    "entries_without_hits": 0,
+    "hit_rate": 1.125,
+    "usage_percentage": 0.0007999999999999999
+  },
+  "items": [
+    {
+      "source": "Configures an MCP sync client specification by applying all registered customizers.",
+      "translation": "通过应用所有已注册的自定义器来配置 MCP 同步客户端规范。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This class manages a collection of <code><a href=\"../../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;io.modelcontextprotocol.client.McpClient.SyncSpec&gt;</code>\ninstances that can be applied to customize the configuration of MCP synchronous clients\nduring their creation.",
+      "translation": "该类管理一组 <code><a href=\"../../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;io.modelcontextprotocol.client.McpClient.SyncSpec&gt;</code> 实例，这些实例可用于在创建 MCP 同步客户端时定制其配置。",
+      "count": 1
+    },
+    {
+      "source": "The configurer applies customizations in the order they are registered, allowing for\nsequential modifications to the client specifications.",
+      "translation": "配置器按照注册顺序应用自定义设置，从而实现对客户端规格的顺序修改。",
+      "count": 1
+    },
+    {
+      "source": "<code>name</code> - the name of the client being configured",
+      "translation": "<code>name</code> - 正在配置的客户端名称",
+      "count": 1
+    },
+    {
+      "source": "<code>spec</code> - the specification to customize",
+      "translation": "<code>spec</code> - 要自定义的规范",
+      "count": 1
+    },
+    {
+      "source": "the customized specification",
+      "translation": "定制规格",
+      "count": 1
+    },
+    {
+      "source": "Configurer class for customizing MCP synchronous clients.",
+      "translation": "用于自定义 MCP 同步客户端的 Configurer 类。",
+      "count": 1
+    }
+  ]
+}

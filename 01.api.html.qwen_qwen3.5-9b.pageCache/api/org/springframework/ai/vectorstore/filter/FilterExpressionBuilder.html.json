@@ -1,0 +1,36 @@
+{
+  "created_at": "2026-06-15 07:41:10",
+  "updated_at": "2026-06-15 07:41:10",
+  "stats": {
+    "total_entries": 4,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 4,
+    "entries_with_hits": 4,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.00039999999999999996
+  },
+  "items": [
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "DSL builder for <a href=\"Filter.Expression.html\" title=\"class in org.springframework.ai.vectorstore.filter\"><code>Filter.Expression</code></a> instances. Here are some common examples:\n\n<pre><code>var b = new FilterExpressionBuilder();\n\n// 1: country == \"BG\"\nvar exp1 = b.eq(\"country\", \"BG\");\n\n// 2: genre == \"drama\" AND year &gt;= 2020\nvar exp2 = b.and(b.eq(\"genre\", \"drama\"), b.gte(\"year\", 2020));\n\n// 3: genre in [\"comedy\", \"documentary\", \"drama\"]\nvar exp3 = b.in(\"genre\", \"comedy\", \"documentary\", \"drama\");\n\n// 4: year &gt;= 2020 OR country == \"BG\" AND city != \"Sofia\"\nvar exp4 = b.and(b.or(b.gte(\"year\", 2020), b.eq(\"country\", \"BG\")), b.ne(\"city\", \"Sofia\"));\n\n// 5: (year &gt;= 2020 OR country == \"BG\") AND city NIN [\"Sofia\", \"Plovdiv\"]\nvar exp5 = b.and(b.group(b.or(b.gte(\"year\", 2020), b.eq(\"country\", \"BG\"))), b.nin(\"city\", \"Sofia\", \"Plovdiv\"));\n\n// 6: isOpen == true AND year &gt;= 2020 AND country IN [\"BG\", \"NL\", \"US\"]\nvar exp6 = b.and(b.and(b.eq(\"isOpen\", true), b.gte(\"year\", 2020)), b.in(\"country\", \"BG\", \"NL\", \"US\"));\n\n</code></pre>\n\n\nThis builder DSL mimics the common\n<a href=\"https://www.baeldung.com/hibernate-criteria-queries\">Criteria Queries</a>\nsyntax.",
+      "translation": "用于构建 <a href=\"Filter.Expression.html\" title=\"class in org.springframework.ai.vectorstore.filter\"><code>Filter.Expression</code></a> 实例的 DSL。以下是一些常见示例：\n\n<pre><code>var b = new FilterExpressionBuilder();\n\n// 1: country == \"BG\"\nvar exp1 = b.eq(\"country\", \"BG\");\n\n// 2: genre == \"drama\" AND year &gt;= 2020\nvar exp2 = b.and(b.eq(\"genre\", \"drama\"), b.gte(\"year\", 2020));\n\n// 3: genre in [\"comedy\", \"documentary\", \"drama\"]\nvar exp3 = b.in(\"genre\", \"comedy\", \"documentary\", \"drama\");\n\n// 4: year &gt;= 2020 OR country == \"BG\" AND city != \"Sofia\"\nvar exp4 = b.and(b.or(b.gte(\"year\", 2020), b.eq(\"country\", \"BG\")), b.ne(\"city\", \"Sofia\"));\n\n// 5: (year &gt;= 2020 OR country == \"BG\") AND city NIN [\"Sofia\", \"Plovdiv\"]\nvar exp5 = b.and(b.group(b.or(b.gte(\"year\", 2020), b.eq(\"country\", \"BG\"))), b.nin(\"city\", \"Sofia\", \"Plovdiv\"));\n\n// 6: isOpen == true AND year &gt;= 2020 AND country IN [\"BG\", \"NL\", \"US\"]\nvar exp6 = b.and(b.and(b.eq(\"isOpen\", true), b.gte(\"year\", 2020)), b.in(\"country\", \"BG\", \"NL\", \"US\"));\n\n</code></pre>\n\n此构建器 DSL 模仿了常见的\n<a href=\"https://www.baeldung.com/hibernate-criteria-queries\">Criteria Queries</a>\n语法。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    }
+  ]
+}

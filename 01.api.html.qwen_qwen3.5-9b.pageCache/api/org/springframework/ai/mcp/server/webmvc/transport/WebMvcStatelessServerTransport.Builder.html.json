@@ -1,0 +1,121 @@
+{
+  "created_at": "2026-06-15 08:22:34",
+  "updated_at": "2026-06-15 08:22:34",
+  "stats": {
+    "total_entries": 21,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 28,
+    "entries_with_hits": 21,
+    "entries_without_hits": 0,
+    "hit_rate": 1.3333333333333333,
+    "usage_percentage": 0.0021
+  },
+  "items": [
+    {
+      "source": "this builder instance",
+      "translation": "此构建器实例",
+      "count": 4
+    },
+    {
+      "source": "Builds a new instance of <a href=\"WebMvcStatelessServerTransport.html\" title=\"class in org.springframework.ai.mcp.server.webmvc.transport\"><code>WebMvcStatelessServerTransport</code></a> with the\nconfigured settings.",
+      "translation": "使用配置的设置构建一个新的<a href=\"WebMvcStatelessServerTransport.html\" title=\"class in org.springframework.ai.mcp.server.webmvc.transport\"><code>WebMvcStatelessServerTransport</code></a>实例。",
+      "count": 2
+    },
+    {
+      "source": "Sets the ObjectMapper to use for JSON serialization/deserialization of MCP\nmessages.",
+      "translation": "设置用于 MCP 消息的 JSON 序列化/反序列化的 ObjectMapper。",
+      "count": 2
+    },
+    {
+      "source": "Sets the endpoint URI where clients should send their JSON-RPC messages.",
+      "translation": "设置客户端应发送其 JSON-RPC 消息的端点 URI。",
+      "count": 2
+    },
+    {
+      "source": "Sets the security validator for validating HTTP requests.",
+      "translation": "设置用于验证 HTTP 请求的安全验证器。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This builder provides a fluent API for configuring and creating instances of\nWebMvcStatelessServerTransport with custom settings.",
+      "translation": "该构建器提供了一个流式 API，用于配置并创建带有自定义设置的 WebMvcStatelessServerTransport 实例。",
+      "count": 1
+    },
+    {
+      "source": "Sets the context extractor that allows providing the MCP feature\nimplementations to inspect HTTP transport level metadata that was present at\nHTTP request processing time.",
+      "translation": "设置上下文提取器，允许向 MCP 功能实现提供在 HTTP 请求处理期间存在的 HTTP 传输层元数据以供检查。",
+      "count": 1
+    },
+    {
+      "source": "Sets the context extractor that allows providing the MCP feature\nimplementations to inspect HTTP transport level metadata that was present at\nHTTP request processing time. This allows extracting custom headers and other\nuseful data for use during execution later on in the process.",
+      "translation": "设置上下文提取器，允许向 MCP 功能实现提供在 HTTP 请求处理期间存在的 HTTP 传输层元数据。这使得可以在后续执行过程中提取自定义标头和其他有用的数据。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if jsonMapper is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果 jsonMapper 为 null",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if messageEndpoint is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果 messageEndpoint 为 null",
+      "count": 1
+    },
+    {
+      "source": "<code>contextExtractor</code> - The contextExtractor to fill in a\n<code>McpTransportContext</code>.",
+      "translation": "<code>contextExtractor</code> - 用于填充 <code>McpTransportContext</code> 的 contextExtractor。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if contextExtractor is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果 contextExtractor 为 null",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if securityValidator is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果 securityValidator 为 null",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html\" title=\"class or interface in java.lang\">IllegalStateException</a></code> - if required parameters are not set",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html\" title=\"class or interface in java.lang\">IllegalStateException</a></code> - 如果未设置必需参数",
+      "count": 1
+    },
+    {
+      "source": "<code>jsonMapper</code> - The ObjectMapper instance. Must not be null.",
+      "translation": "<code>jsonMapper</code> - ObjectMapper 实例。不能为 null。",
+      "count": 1
+    },
+    {
+      "source": "<code>messageEndpoint</code> - The message endpoint URI. Must not be null.",
+      "translation": "<code>messageEndpoint</code> - 消息端点 URI。不得为 null。",
+      "count": 1
+    },
+    {
+      "source": "<code>securityValidator</code> - The security validator to use. Must not be null.",
+      "translation": "<code>securityValidator</code> - 要使用的安全验证器，不能为 null。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "A new WebMvcStatelessServerTransport instance",
+      "translation": "一个新的 WebMvcStatelessServerTransport 实例",
+      "count": 1
+    },
+    {
+      "source": "Builder for creating instances of <a href=\"WebMvcStatelessServerTransport.html\" title=\"class in org.springframework.ai.mcp.server.webmvc.transport\"><code>WebMvcStatelessServerTransport</code></a>.",
+      "translation": "用于创建<a href=\"WebMvcStatelessServerTransport.html\" title=\"class in org.springframework.ai.mcp.server.webmvc.transport\"><code>WebMvcStatelessServerTransport</code></a>实例的构建器。",
+      "count": 1
+    }
+  ]
+}

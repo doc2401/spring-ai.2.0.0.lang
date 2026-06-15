@@ -1,0 +1,136 @@
+{
+  "created_at": "2026-06-15 07:30:02",
+  "updated_at": "2026-06-15 07:30:02",
+  "stats": {
+    "total_entries": 24,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 34,
+    "entries_with_hits": 24,
+    "entries_without_hits": 0,
+    "hit_rate": 1.4166666666666667,
+    "usage_percentage": 0.0024000000000000002
+  },
+  "items": [
+    {
+      "source": "<code>mcpClients</code> - MCP clients for tool discovery",
+      "translation": "<code>mcpClients</code> - 用于工具发现的 MCP 客户端",
+      "count": 5
+    },
+    {
+      "source": "Creates a reactive stream of tool callbacks from multiple MCP clients.",
+      "translation": "从多个 MCP 客户端创建工具回调的响应式流。",
+      "count": 2
+    },
+    {
+      "source": "Creates a builder for constructing provider instances.",
+      "translation": "创建一个用于构建提供者实例的构建器。",
+      "count": 2
+    },
+    {
+      "source": "Discovers and returns all available tools from configured MCP servers.",
+      "translation": "发现并返回所有已配置的 MCP 服务器中可用的工具。",
+      "count": 2
+    },
+    {
+      "source": "Invalidates the cached tool callbacks, forcing re-discovery on next request.",
+      "translation": "使缓存的工具回调失效，强制在下次请求时重新发现。",
+      "count": 2
+    },
+    {
+      "source": "Creates a provider with tool filtering.",
+      "translation": "创建一个带有工具过滤功能的提供者。",
+      "count": 2
+    },
+    {
+      "source": "Creates a provider with default configuration.",
+      "translation": "使用默认配置创建提供者。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Discovers and exposes tools from configured MCP servers, enabling their use within\nSpring AI applications. Supports filtering and custom naming strategies for tools.",
+      "translation": "发现并暴露来自配置的 MCP 服务器的工具，使其能够在 Spring AI 应用程序中使用。支持对工具进行过滤和自定义命名策略。",
+      "count": 1
+    },
+    {
+      "source": "Retrieves tools asynchronously from each server, creates callbacks, and validates\nuniqueness. Blocks until all tools are discovered.",
+      "translation": "从每个服务器异步检索工具，创建回调并验证唯一性。阻塞直到发现所有工具。",
+      "count": 1
+    },
+    {
+      "source": "Provides fully reactive tool discovery suitable for non-blocking applications.\nCombines tools from all clients into a single stream with name conflict validation.",
+      "translation": "提供完全反应式的工具发现功能，适用于非阻塞应用程序。  \n将所有客户端的工具合并为单一数据流，并进行名称冲突验证。",
+      "count": 1
+    },
+    {
+      "source": "Builder for <code>AsyncMcpToolCallbackProvider</code> configuration.",
+      "translation": "<code>AsyncMcpToolCallbackProvider</code> 配置的构建器。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../tool/ToolCallbackProvider.html#getToolCallbacks()\">getToolCallbacks</a></code> in interface <code><a href=\"../tool/ToolCallbackProvider.html\" title=\"interface in org.springframework.ai.tool\">ToolCallbackProvider</a></code>",
+      "translation": "接口 <code><a href=\"../tool/ToolCallbackProvider.html\" title=\"org.springframework.ai.tool 中的接口\">ToolCallbackProvider</a></code> 中的方法 <code><a href=\"../tool/ToolCallbackProvider.html#getToolCallbacks()\">getToolCallbacks</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code>onApplicationEvent</code> in interface <code>org.springframework.context.ApplicationListener&lt;<a href=\"McpToolsChangedEvent.html\" title=\"class in org.springframework.ai.mcp\">McpToolsChangedEvent</a>&gt;</code>",
+      "translation": "<code>onApplicationEvent</code> 接口 <code>org.springframework.context.ApplicationListener&lt;<a href=\"McpToolsChangedEvent.html\" title=\"class in org.springframework.ai.mcp\">McpToolsChangedEvent</a>&gt;</code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if mcpClients is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果 mcpClients 为 null",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html\" title=\"class or interface in java.lang\">IllegalStateException</a></code> - if duplicate tool names exist",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html\" title=\"class or interface in java.lang\">IllegalStateException</a></code> - 如果存在重复的工具名称",
+      "count": 1
+    },
+    {
+      "source": "<code>toolFilter</code> - filter to apply to discovered tools",
+      "translation": "<code>toolFilter</code> - 应用于已发现工具的过滤器",
+      "count": 1
+    },
+    {
+      "source": "<code>toolFilter</code> - filter for discovered tools",
+      "translation": "<code>toolFilter</code> - 用于筛选已发现的工具",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, YunKui Lu",
+      "translation": "克里斯蒂安·茨洛夫，陆云魁",
+      "count": 1
+    },
+    {
+      "source": "array of tool callbacks for discovered tools",
+      "translation": "已发现工具的回调函数数组",
+      "count": 1
+    },
+    {
+      "source": "Flux of tool callbacks from all clients",
+      "translation": "来自所有客户端的工具回调流",
+      "count": 1
+    },
+    {
+      "source": "new builder",
+      "translation": "新建造者",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Provides MCP tools asynchronously from multiple MCP servers as Spring AI tool\ncallbacks.",
+      "translation": "以异步方式从多个 MCP 服务器提供 MCP 工具，作为 Spring AI 的工具回调。",
+      "count": 1
+    }
+  ]
+}

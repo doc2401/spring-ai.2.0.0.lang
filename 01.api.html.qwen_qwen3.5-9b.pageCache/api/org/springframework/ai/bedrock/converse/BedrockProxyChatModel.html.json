@@ -1,0 +1,126 @@
+{
+  "created_at": "2026-06-15 09:03:22",
+  "updated_at": "2026-06-15 09:03:22",
+  "stats": {
+    "total_entries": 22,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 25,
+    "entries_with_hits": 22,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1363636363636365,
+    "usage_percentage": 0.0022
+  },
+  "items": [
+    {
+      "source": "Gets the chat options for this model.",
+      "translation": "获取此模型的聊天选项。",
+      "count": 2
+    },
+    {
+      "source": "Use the provided convention for reporting observation data",
+      "translation": "请使用提供的规范报告观测数据。",
+      "count": 2
+    },
+    {
+      "source": "<code>prompt</code> - the request object to be sent to the AI model",
+      "translation": "<code>prompt</code> - 要发送给 AI 模型的请求对象",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../chat/model/ChatModel.html#getOptions()\">ChatModel</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../chat/model/ChatModel.html#getOptions()\">ChatModel</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Invoke the model and return the response.",
+      "translation": "调用模型并返回响应。",
+      "count": 1
+    },
+    {
+      "source": "Invoke the model and return the response stream.",
+      "translation": "调用模型并返回响应流。",
+      "count": 1
+    },
+    {
+      "source": "Invoke the model and return the response.\n\nhttps://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters.html\nhttps://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_Converse.html\nhttps://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/bedrockruntime/BedrockRuntimeClient.html#converse",
+      "translation": "调用模型并返回响应。\nhttps://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters.html\nhttps://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_Converse.html\nhttps://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/bedrockruntime/BedrockRuntimeClient.html#converse",
+      "count": 1
+    },
+    {
+      "source": "Invoke the model and return the response stream.\n\nhttps://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters.html\nhttps://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_Converse.html\nhttps://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/bedrockruntime/BedrockRuntimeAsyncClient.html#converseStream",
+      "translation": "调用模型并返回响应流。\n\nhttps://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters.html\nhttps://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_Converse.html\nhttps://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/bedrockruntime/BedrockRuntimeAsyncClient.html#converseStream",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../model/Model.html#call(TReq)\">call</a></code> in interface <code><a href=\"../../model/Model.html\" title=\"interface in org.springframework.ai.model\">Model</a>&lt;<a href=\"../../chat/prompt/Prompt.html\" title=\"class in org.springframework.ai.chat.prompt\">Prompt</a>, <a href=\"../../chat/model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a>&gt;</code>",
+      "translation": "<a href=\"../../model/Model.html#call(TReq)\">call</a> 接口中的<code><a href=\"../../model/Model.html\" title=\"interface in org.springframework.ai.model\">Model</a>&lt;<a href=\"../../chat/prompt/Prompt.html\" title=\"class in org.springframework.ai.chat.prompt\">Prompt</a>, <a href=\"../../chat/model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a>&gt;</code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../model/StreamingModel.html#stream(TReq)\">stream</a></code> in interface <code><a href=\"../../model/StreamingModel.html\" title=\"interface in org.springframework.ai.model\">StreamingModel</a>&lt;<a href=\"../../chat/prompt/Prompt.html\" title=\"class in org.springframework.ai.chat.prompt\">Prompt</a>, <a href=\"../../chat/model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a>&gt;</code>",
+      "translation": "<code><a href=\"../../model/StreamingModel.html#stream(TReq)\">stream</a></code> 接口 <code><a href=\"../../model/StreamingModel.html\" title=\"interface in org.springframework.ai.model\">StreamingModel</a>&lt;<a href=\"../../chat/prompt/Prompt.html\" title=\"class in org.springframework.ai.chat.prompt\">Prompt</a>, <a href=\"../../chat/model/ChatResponse.html\" title=\"class in org.springframework.ai.chat.model\">ChatResponse</a>&gt;</code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../chat/model/ChatModel.html#call(org.springframework.ai.chat.prompt.Prompt)\">call</a></code> in interface <code><a href=\"../../chat/model/ChatModel.html\" title=\"interface in org.springframework.ai.chat.model\">ChatModel</a></code>",
+      "translation": "接口 <code><a href=\"../../chat/model/ChatModel.html\" title=\"org.springframework.ai.chat.model 中的接口\">ChatModel</a></code> 中的 <code><a href=\"../../chat/model/ChatModel.html#call(org.springframework.ai.chat.prompt.Prompt)\">call</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../chat/model/ChatModel.html#getOptions()\">getOptions</a></code> in interface <code><a href=\"../../chat/model/ChatModel.html\" title=\"interface in org.springframework.ai.chat.model\">ChatModel</a></code>",
+      "translation": "接口 <code><a href=\"../../chat/model/ChatModel.html\" title=\"org.springframework.ai.chat.model 中的接口\">ChatModel</a></code> 中的<code><a href=\"../../chat/model/ChatModel.html#getOptions()\">getOptions</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../chat/model/ChatModel.html#stream(org.springframework.ai.chat.prompt.Prompt)\">stream</a></code> in interface <code><a href=\"../../chat/model/ChatModel.html\" title=\"interface in org.springframework.ai.chat.model\">ChatModel</a></code>",
+      "translation": "<code><a href=\"../../chat/model/ChatModel.html#stream(org.springframework.ai.chat.prompt.Prompt)\">stream</a></code> 接口 <code><a href=\"../../chat/model/ChatModel.html\" title=\"interface in org.springframework.ai.chat.model\">ChatModel</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../chat/model/StreamingChatModel.html#stream(org.springframework.ai.chat.prompt.Prompt)\">stream</a></code> in interface <code><a href=\"../../chat/model/StreamingChatModel.html\" title=\"interface in org.springframework.ai.chat.model\">StreamingChatModel</a></code>",
+      "translation": "<code><a href=\"../../chat/model/StreamingChatModel.html#stream(org.springframework.ai.chat.prompt.Prompt)\">stream</a></code> 接口 <code><a href=\"../../chat/model/StreamingChatModel.html\" title=\"interface in org.springframework.ai.chat.model\">StreamingChatModel</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>observationConvention</code> - The provided convention",
+      "translation": "<code>observationConvention</code> - 提供的约定",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Wei Jiang, Alexandros Pappas, Jihoon Kim, Soby Chacko, Sun Yuhan, Thomas Vitale, Sebastien Deleuze",
+      "translation": "Christian Tzolov，江伟，Alexandros Pappas，金智勋，Soby Chacko，俞瀚，Thomas Vitale，Sebastien Deleuze",
+      "count": 1
+    },
+    {
+      "source": "The model invocation response.",
+      "translation": "模型调用响应。",
+      "count": 1
+    },
+    {
+      "source": "the chat options",
+      "translation": "聊天选项",
+      "count": 1
+    },
+    {
+      "source": "The model invocation response stream.",
+      "translation": "模型调用响应流。",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "A <a href=\"../../chat/model/ChatModel.html\" title=\"interface in org.springframework.ai.chat.model\"><code>ChatModel</code></a> implementation that uses the Amazon Bedrock Converse API to\ninteract with the <a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference-supported-models-features.html\">Supported\nmodels</a>. <br/><br/>\nThe Converse API doesn't support any embedding models (such as Titan Embeddings G1 -\nText) or image generation models (such as Stability AI).",
+      "translation": "一个使用 Amazon Bedrock Converse API 与<a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference-supported-models-features.html\">支持模型</a>进行交互的<a href=\"../../chat/model/ChatModel.html\" title=\"interface in org.springframework.ai.chat.model\"><code>ChatModel</code></a>实现。<br/><br/>\nConverse API 不支持任何嵌入模型（例如 Titan Embeddings G1 - Text）或图像生成模型（例如 Stability AI）。",
+      "count": 1
+    }
+  ]
+}

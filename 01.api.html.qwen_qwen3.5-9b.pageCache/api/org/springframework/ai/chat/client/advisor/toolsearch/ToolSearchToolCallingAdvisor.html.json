@@ -1,0 +1,166 @@
+{
+  "created_at": "2026-06-15 09:00:45",
+  "updated_at": "2026-06-15 09:00:45",
+  "stats": {
+    "total_entries": 30,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 35,
+    "entries_with_hits": 30,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1666666666666667,
+    "usage_percentage": 0.003
+  },
+  "items": [
+    {
+      "source": "Creates a new Builder instance for constructing a ToolSearchToolCallingAdvisor.",
+      "translation": "为构建 ToolSearchToolCallingAdvisor 创建一个新的 Builder 实例。",
+      "count": 2
+    },
+    {
+      "source": "Explicitly evicts a session's tool index and removes it from the advisor's cache.",
+      "translation": "显式地驱逐会话的工具索引，并将其从顾问的缓存中移除。",
+      "count": 2
+    },
+    {
+      "source": "Return the name of the advisor.",
+      "translation": "返回顾问的姓名。",
+      "count": 2
+    },
+    {
+      "source": "<code>streamAdvisorChain</code> - the stream advisor chain",
+      "translation": "<code>streamAdvisorChain</code> - 流顾问链",
+      "count": 2
+    },
+    {
+      "source": "the potentially modified request",
+      "translation": "可能经过修改的请求",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Tool indexes are cached across turns of the same conversation: re-indexing only occurs\nwhen the tool set changes (detected via a fingerprint of tool names and descriptions).\nStale session indexes are cleaned up according to the configured\n<a href=\"../../../../tool/toolsearch/eviction/ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\"><code>ToolIndexEvictionStrategy</code></a>.",
+      "translation": "工具索引在同一对话的不同轮次中会被缓存：仅当工具集发生变化时（通过工具名称和描述的特征指纹检测）才会重新索引。过期的会话索引将根据配置的<a href=\"../../../../tool/toolsearch/eviction/ToolIndexEvictionStrategy.html\" title=\"interface in org.springframework.ai.tool.toolsearch.eviction\"><code>ToolIndexEvictionStrategy</code></a>进行清理。",
+      "count": 1
+    },
+    {
+      "source": "Call this when a conversation is known to be over (e.g., on logout or session\nexpiry) to free resources held by the underlying <a href=\"../../../../tool/toolsearch/ToolIndex.html\" title=\"interface in org.springframework.ai.tool.toolsearch\"><code>ToolIndex</code></a>.",
+      "translation": "在已知对话已结束时（例如登出或会话过期）调用此方法，以释放底层<a href=\"../../../../tool/toolsearch/ToolIndex.html\" title=\"interface in org.springframework.ai.tool.toolsearch\"><code>ToolIndex</code></a>持有的资源。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../api/Advisor.html#getName()\">Advisor</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../api/Advisor.html#getName()\">Advisor</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../ToolCallingAdvisor.html#doInitializeLoopStream(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.StreamAdvisorChain)\">ToolCallingAdvisor</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述已从类中复制：<code><a href=\"../ToolCallingAdvisor.html#doInitializeLoopStream(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.StreamAdvisorChain)\">ToolCallingAdvisor</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"../ToolCallingAdvisor.html#doBeforeStream(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.StreamAdvisorChain)\">ToolCallingAdvisor</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述已从类中复制：<code><a href=\"../ToolCallingAdvisor.html#doBeforeStream(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.StreamAdvisorChain)\">ToolCallingAdvisor</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Builder for creating instances of ToolSearchToolCallingAdvisor.",
+      "translation": "用于创建 ToolSearchToolCallingAdvisor 实例的构建器。",
+      "count": 1
+    },
+    {
+      "source": "Hook method called before each streaming call in the tool call loop.",
+      "translation": "在工具调用循环中的每个流式调用之前调用 Hook 方法。",
+      "count": 1
+    },
+    {
+      "source": "Hook method called at the start of the streaming tool call loop.",
+      "translation": "在流式工具调用循环开始时调用的 Hook 方法。",
+      "count": 1
+    },
+    {
+      "source": "Hook method called at the start of the streaming tool call loop. Subclasses can\noverride to customize initialization behavior.",
+      "translation": "在流式工具调用循环开始时调用的钩子方法。子类可以重写它以自定义初始化行为。",
+      "count": 1
+    },
+    {
+      "source": "Hook method called before each streaming call in the tool call loop. Subclasses can\noverride to customize pre-call behavior.",
+      "translation": "在工具调用循环中的每个流式调用之前会调用 Hook 方法。子类可以重写此方法以自定义预调用行为。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../api/Advisor.html#getName()\">getName</a></code> in interface <code><a href=\"../api/Advisor.html\" title=\"interface in org.springframework.ai.chat.client.advisor.api\">Advisor</a></code>",
+      "translation": "接口 <code><a href=\"../api/Advisor.html\" title=\"org.springframework.ai.chat.client.advisor.api 中的接口\">Advisor</a></code> 中的<code><a href=\"../api/Advisor.html#getName()\">getName</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../ToolCallingAdvisor.html#getName()\">getName</a></code> in class <code><a href=\"../ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\">ToolCallingAdvisor</a></code>",
+      "translation": "类 <code><a href=\"../ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\">ToolCallingAdvisor</a></code> 中的方法<code><a href=\"../ToolCallingAdvisor.html#getName()\">getName</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../ToolCallingAdvisor.html#doInitializeLoop(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.CallAdvisorChain)\">doInitializeLoop</a></code> in class <code><a href=\"../ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\">ToolCallingAdvisor</a></code>",
+      "translation": "<code><a href=\"../ToolCallingAdvisor.html#doInitializeLoop(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.CallAdvisorChain)\">doInitializeLoop</a></code> 类 <code><a href=\"../ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\">ToolCallingAdvisor</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../ToolCallingAdvisor.html#doBeforeCall(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.CallAdvisorChain)\">doBeforeCall</a></code> in class <code><a href=\"../ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\">ToolCallingAdvisor</a></code>",
+      "translation": "<code><a href=\"../ToolCallingAdvisor.html#doBeforeCall(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.CallAdvisorChain)\">doBeforeCall</a></code> 类 <code><a href=\"../ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\">ToolCallingAdvisor</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../ToolCallingAdvisor.html#doInitializeLoopStream(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.StreamAdvisorChain)\">doInitializeLoopStream</a></code> in class <code><a href=\"../ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\">ToolCallingAdvisor</a></code>",
+      "translation": "<code><a href=\"../ToolCallingAdvisor.html#doInitializeLoopStream(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.StreamAdvisorChain)\">doInitializeLoopStream</a></code> 类 <code><a href=\"../ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\">ToolCallingAdvisor</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../ToolCallingAdvisor.html#doBeforeStream(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.StreamAdvisorChain)\">doBeforeStream</a></code> in class <code><a href=\"../ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\">ToolCallingAdvisor</a></code>",
+      "translation": "<code><a href=\"../ToolCallingAdvisor.html#doBeforeStream(org.springframework.ai.chat.client.ChatClientRequest,org.springframework.ai.chat.client.advisor.api.StreamAdvisorChain)\">doBeforeStream</a></code> 类 <code><a href=\"../ToolCallingAdvisor.html\" title=\"class in org.springframework.ai.chat.client.advisor\">ToolCallingAdvisor</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>chatClientRequest</code> - the initial request",
+      "translation": "<code>chatClientRequest</code> - 初始请求",
+      "count": 1
+    },
+    {
+      "source": "<code>chatClientRequest</code> - the request about to be processed",
+      "translation": "<code>chatClientRequest</code> - 即将处理的消息请求",
+      "count": 1
+    },
+    {
+      "source": "<code>sessionId</code> - the session to evict",
+      "translation": "<code>sessionId</code> - 要驱逐的会话",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "the advisor name.",
+      "translation": "顾问姓名。",
+      "count": 1
+    },
+    {
+      "source": "a new Builder instance",
+      "translation": "一个新的 Builder 实例",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "CallAdvisor that integrates a tool search mechanism into the tool calling workflow. It\nindexes available tools at the start of a conversation, exposes a \"toolSearchTool\" for\nsearching tools based on natural language queries, and manages the selection and\ninjection of discovered tools into the conversation flow.",
+      "translation": "CallAdvisor 将工具搜索机制集成到工具调用工作流中。它在对话开始时索引可用工具，提供一个名为 \"toolSearchTool\" 的工具以支持基于自然语言查询的工具搜索，并管理发现工具的选中与注入到对话流程中的过程。",
+      "count": 1
+    }
+  ]
+}

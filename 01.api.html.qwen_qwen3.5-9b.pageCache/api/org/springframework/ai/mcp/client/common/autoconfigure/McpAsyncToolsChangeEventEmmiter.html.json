@@ -1,0 +1,61 @@
+{
+  "created_at": "2026-06-15 08:25:15",
+  "updated_at": "2026-06-15 08:25:15",
+  "stats": {
+    "total_entries": 9,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 10,
+    "entries_with_hits": 9,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1111111111111112,
+    "usage_percentage": 0.0009
+  },
+  "items": [
+    {
+      "source": "Customizes an MCP client component.",
+      "translation": "自定义 MCP 客户端组件。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This method is called for each MCP component being created, allowing for\ncomponent-specific customizations based on the component's name.",
+      "translation": "此方法会在为每个 MCP 组件创建时被调用，从而允许根据组件名称进行特定于组件的自定义。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"../../../customizer/McpClientCustomizer.html#customize(java.lang.String,B)\">McpClientCustomizer</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"../../../customizer/McpClientCustomizer.html#customize(java.lang.String,B)\">McpClientCustomizer</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "Emits <a href=\"../../../McpToolsChangedEvent.html\" title=\"class in org.springframework.ai.mcp\"><code>McpToolsChangedEvent</code></a> when the MCP Tools have changed for a given MCP\nconnection.",
+      "translation": "在给定 MCP 连接的 MCP 工具发生变化时，会发出 <a href=\"../../../McpToolsChangedEvent.html\" title=\"class in org.springframework.ai.mcp\"><code>McpToolsChangedEvent</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"../../../customizer/McpClientCustomizer.html#customize(java.lang.String,B)\">customize</a></code> in interface <code><a href=\"../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;io.modelcontextprotocol.client.McpClient.AsyncSpec&gt;</code>",
+      "translation": "<code><a href=\"../../../customizer/McpClientCustomizer.html#customize(java.lang.String,B)\">customize</a></code> 接口 <code><a href=\"../../../customizer/McpClientCustomizer.html\" title=\"interface in org.springframework.ai.mcp.customizer\">McpClientCustomizer</a>&lt;io.modelcontextprotocol.client.McpClient.AsyncSpec&gt;</code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>connectionName</code> - the name of the MCP component being customized",
+      "translation": "<code>connectionName</code> - 正在自定义的 MCP 组件的名称",
+      "count": 1
+    },
+    {
+      "source": "<code>spec</code> - the component to customize",
+      "translation": "<code>spec</code> - 要自定义的组件",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    }
+  ]
+}

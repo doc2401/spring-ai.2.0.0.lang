@@ -1,0 +1,106 @@
+{
+  "created_at": "2026-06-15 08:02:55",
+  "updated_at": "2026-06-15 08:02:55",
+  "stats": {
+    "total_entries": 18,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 29,
+    "entries_with_hits": 18,
+    "entries_without_hits": 0,
+    "hit_rate": 1.6111111111111112,
+    "usage_percentage": 0.0018
+  },
+  "items": [
+    {
+      "source": "<code>textFormatter</code> - Formatter for the extracted text",
+      "translation": "<code>textFormatter</code> - 提取文本的格式化器",
+      "count": 3
+    },
+    {
+      "source": "<code>resource</code> - Resource pointing to the document",
+      "translation": "<code>resource</code> - 指向文档的资源",
+      "count": 3
+    },
+    {
+      "source": "Metadata key representing the source of the document.",
+      "translation": "表示文档来源的元数据键。",
+      "count": 2
+    },
+    {
+      "source": "Constructor initializing the reader with a given resource URL.",
+      "translation": "使用给定资源 URL 初始化读取器的构造函数。",
+      "count": 2
+    },
+    {
+      "source": "Constructor initializing the reader with a given resource URL and a text formatter.",
+      "translation": "构造函数，使用给定的资源 URL 和文本格式化程序初始化读取器。",
+      "count": 2
+    },
+    {
+      "source": "Constructor initializing the reader with a resource.",
+      "translation": "使用资源初始化读取器的构造函数。",
+      "count": 2
+    },
+    {
+      "source": "Constructor initializing the reader with a resource, content handler, and a text\nformatter.",
+      "translation": "构造函数，使用资源、内容处理程序和文本格式化程序初始化读取器。",
+      "count": 2
+    },
+    {
+      "source": "Extracts and returns the list of documents from the resource.",
+      "translation": "从资源中提取并返回文档列表。",
+      "count": 2
+    },
+    {
+      "source": "<code>resourceUrl</code> - URL to the resource",
+      "translation": "<code>resourceUrl</code> - 资源的 URL",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "A document reader that leverages Apache Tika to extract text from a variety of document\nformats, such as PDF, DOC/DOCX, PPT/PPTX, and HTML. For a comprehensive list of\nsupported formats, refer to: https://tika.apache.org/3.1.0/formats.html.\n\nThis reader directly provides the extracted text without any additional formatting. All\nextracted texts are encapsulated within a <a href=\"../../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a> instance.\n\nIf you require more specialized handling for PDFs, consider using the\nPagePdfDocumentReader or ParagraphPdfDocumentReader.",
+      "translation": "这是一个利用 Apache Tika 从多种文档格式（如 PDF、DOC/DOCX、PPT/PPTX 和 HTML）中提取文本的文档阅读器。有关支持的完整格式列表，请参阅：https://tika.apache.org/3.1.0/formats.html。\n\n该阅读器直接提供提取的文本，无需任何额外格式化。所有提取的文本均封装在 <a href=\"../../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a> 实例中。\n\n如果您需要更专业的 PDF 处理功能，请考虑使用 PagePdfDocumentReader 或 ParagraphPdfDocumentReader。",
+      "count": 1
+    },
+    {
+      "source": "Constructor initializing the reader with a resource and a text formatter.",
+      "translation": "构造函数，使用资源与文本格式化程序初始化读取器。",
+      "count": 1
+    },
+    {
+      "source": "Constructor initializing the reader with a resource and a text formatter. This\nconstructor will create a BodyContentHandler that allows for reading large PDFs\n(constrained only by memory)",
+      "translation": "构造函数使用资源与文本格式化程序初始化读取器。该构造函数将创建一个 BodyContentHandler，允许读取大型 PDF 文件（仅受内存限制）。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html#get()\" title=\"class or interface in java.util.function\">get</a></code> in interface <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html\" title=\"class or interface in java.util.function\">Supplier</a>&lt;<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"class or interface in java.util\">List</a>&lt;<a href=\"../../document/Document.html\" title=\"class in org.springframework.ai.document\">Document</a>&gt;&gt;</code>",
+      "translation": "接口 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html\" title=\"类或 java.util.function 中的接口\">Supplier</a>&lt;<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"类或 java.util 中的接口\">List</a>&lt;<a href=\"../../document/Document.html\" title=\"org.springframework.ai.document 中的类\">Document</a>&gt;&gt;</code> 中的 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html#get()\" title=\"java.util.function 中的类或接口\">get</a></code>",
+      "count": 1
+    },
+    {
+      "source": "List of extracted <a href=\"../../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a>",
+      "translation": "已提取的<a href=\"../../document/Document.html\" title=\"org.springframework.ai.document 中的类\"><code>Document</code></a>列表",
+      "count": 1
+    },
+    {
+      "source": "<code>contentHandler</code> - Handler to manage content extraction",
+      "translation": "<code>contentHandler</code> - 用于管理内容提取的处理器",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    }
+  ]
+}

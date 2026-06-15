@@ -1,0 +1,131 @@
+{
+  "created_at": "2026-06-15 08:24:25",
+  "updated_at": "2026-06-15 08:24:25",
+  "stats": {
+    "total_entries": 23,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 32,
+    "entries_with_hits": 23,
+    "entries_without_hits": 0,
+    "hit_rate": 1.391304347826087,
+    "usage_percentage": 0.0023
+  },
+  "items": [
+    {
+      "source": "the builder instance",
+      "translation": "构建器实例",
+      "count": 5
+    },
+    {
+      "source": "Construct a fresh instance of <a href=\"WebClientStreamableHttpTransport.html\" title=\"class in org.springframework.ai.mcp.client.webflux.transport\"><code>WebClientStreamableHttpTransport</code></a> using\nthe current builder configuration.",
+      "translation": "使用当前的构建器配置创建一个新的<a href=\"WebClientStreamableHttpTransport.html\" title=\"class in org.springframework.ai.mcp.client.webflux.transport\"><code>WebClientStreamableHttpTransport</code></a>实例。",
+      "count": 2
+    },
+    {
+      "source": "Configure the <code>WebClient.Builder</code> to construct the <code>WebClient</code>.",
+      "translation": "配置 `<code>WebClient.Builder</code>` 以构建 `<code>WebClient</code>`。",
+      "count": 2
+    },
+    {
+      "source": "Configure the <code>McpJsonMapper</code> to use.",
+      "translation": "配置要使用的 <code>McpJsonMapper</code>。",
+      "count": 2
+    },
+    {
+      "source": "Configure the endpoint to make HTTP requests against.",
+      "translation": "配置用于发起 HTTP 请求的端点。",
+      "count": 2
+    },
+    {
+      "source": "Configure whether to use the stream resumability feature by keeping track of\nSSE event ids.",
+      "translation": "通过跟踪 SSE 事件 ID，配置是否启用流可恢复性功能。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Setting this value only updates the values used in version negotiation, and\ndoes NOT impact the actual capabilities of the transport. It should only be\nused for compatibility with servers having strict requirements around the\n<code>MCP-Protocol-Version</code> header.",
+      "translation": "设置此值仅会更新版本协商中使用的值，而不会影响传输的实际能力。它应仅用于与对 `<code>MCP-Protocol-Version` 标头有严格要求的服务器保持兼容。",
+      "count": 1
+    },
+    {
+      "source": "Builder for <a href=\"WebClientStreamableHttpTransport.html\" title=\"class in org.springframework.ai.mcp.client.webflux.transport\"><code>WebClientStreamableHttpTransport</code></a>.",
+      "translation": "用于构建<a href=\"WebClientStreamableHttpTransport.html\" title=\"class in org.springframework.ai.mcp.client.webflux.transport\"><code>WebClientStreamableHttpTransport</code></a>的类。",
+      "count": 1
+    },
+    {
+      "source": "Configure whether the client should open an SSE connection upon startup. Not\nall servers support this (although it is in theory possible with the current\nspecification), so use with caution. By default, this value is <code>false</code>.",
+      "translation": "配置客户端在启动时是否应打开 SSE 连接。并非所有服务器都支持此功能（尽管根据当前规范理论上可行），因此请谨慎使用。默认情况下，该值为 `<code>false</code>`。",
+      "count": 1
+    },
+    {
+      "source": "Configure whether the client should open an SSE connection upon startup.",
+      "translation": "配置客户端在启动时是否应建立 SSE 连接。",
+      "count": 1
+    },
+    {
+      "source": "Sets the list of supported protocol versions used in version negotiation.",
+      "translation": "设置版本协商中使用的支持协议版本列表。",
+      "count": 1
+    },
+    {
+      "source": "<ul class=\"tag-list-long\">\n<li><a href=\"https://modelcontextprotocol.io/specification/2024-11-05/basic/lifecycle#version-negotiation\">version\nnegotiation specification</a></li>\n<li><a href=\"https://modelcontextprotocol.io/specification/2025-06-18/basic/transports#protocol-version-header\">Protocol\nVersion Header</a></li>\n</ul>",
+      "translation": "<ul class=\"tag-list-long\">\n<li><a href=\"https://modelcontextprotocol.io/specification/2024-11-05/basic/lifecycle#version-negotiation\">版本协商规范</a></li>\n<li><a href=\"https://modelcontextprotocol.io/specification/2025-06-18/basic/transports#protocol-version-header\">协议版本头</a></li>\n</ul>",
+      "count": 1
+    },
+    {
+      "source": "<code>openConnectionOnStartup</code> - if <code>true</code> the <a href=\"WebClientStreamableHttpTransport.html#connect(java.util.function.Function)\"><code>WebClientStreamableHttpTransport.connect(Function)</code></a>\nmethod call will try to open an SSE connection before sending any JSON-RPC\nrequest",
+      "translation": "<code>openConnectionOnStartup</code> - 如果为 <code>true</code>，则会在发送任何 JSON-RPC 请求之前尝试建立 SSE 连接。",
+      "count": 1
+    },
+    {
+      "source": "<code>resumableStreams</code> - if <code>true</code> event ids will be tracked and upon\ndisconnection, the last seen id will be used upon reconnection as a header to\nresume consuming messages.",
+      "translation": "`resumableStreams` - 如果为 `true`，将跟踪事件 ID；在断开连接后重新连接时，将使用最后看到的事件 ID 作为标头来恢复消息消费。",
+      "count": 1
+    },
+    {
+      "source": "a new instance of <a href=\"WebClientStreamableHttpTransport.html\" title=\"class in org.springframework.ai.mcp.client.webflux.transport\"><code>WebClientStreamableHttpTransport</code></a>",
+      "translation": "一个<a href=\"WebClientStreamableHttpTransport.html\" title=\"class in org.springframework.ai.mcp.client.webflux.transport\"><code>WebClientStreamableHttpTransport</code></a>的新实例",
+      "count": 1
+    },
+    {
+      "source": "<code>jsonMapper</code> - instance to use",
+      "translation": "<code>jsonMapper</code> - 要使用的实例",
+      "count": 1
+    },
+    {
+      "source": "<code>webClientBuilder</code> - instance to use",
+      "translation": "<code>webClientBuilder</code> - 要使用的实例",
+      "count": 1
+    },
+    {
+      "source": "<code>endpoint</code> - endpoint to use",
+      "translation": "<code>endpoint</code> - 要使用的端点",
+      "count": 1
+    },
+    {
+      "source": "<code>supportedProtocolVersions</code> - protocol versions supported by this transport",
+      "translation": "<code>supportedProtocolVersions</code> - 此传输支持的协议版本",
+      "count": 1
+    },
+    {
+      "source": "Dariusz Jędrzejczyk",
+      "translation": "达里乌什·耶德热伊奇克",
+      "count": 1
+    },
+    {
+      "source": "this builder",
+      "translation": "此构建器",
+      "count": 1
+    },
+    {
+      "source": "Sets the list of supported protocol versions used in version negotiation. By\ndefault, the client will send the latest of those versions in the\n<code>MCP-Protocol-Version</code> header.",
+      "translation": "设置版本协商中使用的支持协议版本列表。默认情况下，客户端会在 `<code>MCP-Protocol-Version</code>` 标头中发送该列表中最新的版本。",
+      "count": 1
+    }
+  ]
+}

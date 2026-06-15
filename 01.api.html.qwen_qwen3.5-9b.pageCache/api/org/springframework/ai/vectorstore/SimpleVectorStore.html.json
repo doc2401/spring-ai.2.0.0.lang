@@ -1,0 +1,211 @@
+{
+  "created_at": "2026-06-15 07:36:13",
+  "updated_at": "2026-06-15 07:36:13",
+  "stats": {
+    "total_entries": 39,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 48,
+    "entries_with_hits": 39,
+    "entries_without_hits": 0,
+    "hit_rate": 1.2307692307692308,
+    "usage_percentage": 0.0039
+  },
+  "items": [
+    {
+      "source": "Create a new <a href=\"observation/VectorStoreObservationContext.Builder.html\" title=\"class in org.springframework.ai.vectorstore.observation\"><code>VectorStoreObservationContext.Builder</code></a> instance.",
+      "translation": "创建一个新的<a href=\"observation/VectorStoreObservationContext.Builder.html\" title=\"class in org.springframework.ai.vectorstore.observation\"><code>VectorStoreObservationContext.Builder</code></a>实例。",
+      "count": 2
+    },
+    {
+      "source": "Creates an instance of SimpleVectorStore builder.",
+      "translation": "创建 SimpleVectorStore 构建器的实例。",
+      "count": 2
+    },
+    {
+      "source": "Perform the actual add operation.",
+      "translation": "执行实际的加法操作。",
+      "count": 2
+    },
+    {
+      "source": "Perform the actual delete operation.",
+      "translation": "执行实际的删除操作。",
+      "count": 2
+    },
+    {
+      "source": "Template method for concrete implementations to provide filter-based deletion\nlogic.",
+      "translation": "为基于过滤器的删除逻辑提供具体实现的模板方法。",
+      "count": 2
+    },
+    {
+      "source": "Perform the actual similarity search operation.",
+      "translation": "执行实际的相似度搜索操作。",
+      "count": 2
+    },
+    {
+      "source": "Deserialize the vector store content from a file in JSON format into memory.",
+      "translation": "从 JSON 格式的文件中将向量存储内容反序列化到内存中。",
+      "count": 2
+    },
+    {
+      "source": "Deserialize the vector store content from a resource in JSON format into memory.",
+      "translation": "从 JSON 格式的资源中将向量存储内容反序列化到内存中。",
+      "count": 2
+    },
+    {
+      "source": "Serialize the vector store content into a file in JSON format.",
+      "translation": "将向量存储内容序列化为 JSON 格式的文件。",
+      "count": 2
+    },
+    {
+      "source": "The store can be persisted to and restored from a JSON file via the\n<a href=\"#save(java.io.File)\"><code>save(java.io.File)</code></a> and <a href=\"#load(java.io.File)\"><code>load(java.io.File)</code></a> /\n<a href=\"#load(org.springframework.core.io.Resource)\"><code>load(org.springframework.core.io.Resource)</code></a> methods.",
+      "translation": "该商店可以通过 `<a href=\"#save(java.io.File)\"><code>save(java.io.File)</code></a>` 和 `<a href=\"#load(java.io.File)\"><code>load(java.io.File)</code></a>` / `<a href=\"#load(org.springframework.core.io.Resource)\"><code>load(org.springframework.core.io.Resource)</code></a>` 方法持久化到 JSON 文件并从其中恢复。",
+      "count": 1
+    },
+    {
+      "source": "Uses a <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html\" title=\"class or interface in java.util.concurrent\"><code>ConcurrentHashMap</code></a> to store vectors and their\nassociated metadata. Map keys are document IDs; values are\n<code>SimpleVectorStoreContent</code> instances that encapsulate each document's text,\nmetadata, and embedding vector.",
+      "translation": "使用 <a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html\" title=\"class or interface in java.util.concurrent\"><code>ConcurrentHashMap</code></a> 来存储向量及其相关元数据。映射的键为文档 ID；值为 <code>SimpleVectorStoreContent</code> 实例，这些实例封装了每个文档的文本、元数据和嵌入向量。",
+      "count": 1
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Similarity search is performed using cosine similarity over all stored vectors. Filter\nexpressions on document metadata are evaluated via\n<code>SimpleVectorStoreFilterExpressionEvaluator</code>.",
+      "translation": "使用余弦相似度对所有存储的向量执行相似性搜索。文档元数据的过滤表达式通过 <code>SimpleVectorStoreFilterExpressionEvaluator</code> 进行评估。",
+      "count": 1
+    },
+    {
+      "source": "<b>NOTE</b>: This implementation is not designed for production use and should only be\nused for testing or demonstration purposes.",
+      "translation": "<b>注意</b>：此实现并非为生产环境设计，仅适用于测试或演示用途。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述已从类中复制：<code><a href=\"observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述已从类中复制：<code><a href=\"observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from class: <code><a href=\"observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">AbstractObservationVectorStore</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从类复制：<code><a href=\"observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">AbstractObservationVectorStore</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">doAdd</a></code> in class <code><a href=\"observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"observation/AbstractObservationVectorStore.html#doAdd(java.util.List)\">doAdd</a></code> 类 <code><a href=\"observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">doDelete</a></code> in class <code><a href=\"observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"observation/AbstractObservationVectorStore.html#doDelete(java.util.List)\">doDelete</a></code> 类 <code><a href=\"observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">doDelete</a></code> in class <code><a href=\"observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"observation/AbstractObservationVectorStore.html#doDelete(org.springframework.ai.vectorstore.filter.Filter.Expression)\">doDelete</a></code> 类 <code><a href=\"observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">doSimilaritySearch</a></code> in class <code><a href=\"observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"observation/AbstractObservationVectorStore.html#doSimilaritySearch(org.springframework.ai.vectorstore.SearchRequest)\">doSimilaritySearch</a></code> 类 <code><a href=\"observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">createObservationContextBuilder</a></code> in class <code><a href=\"observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code>",
+      "translation": "<code><a href=\"observation/AbstractObservationVectorStore.html#createObservationContextBuilder(java.lang.String)\">createObservationContextBuilder</a></code> 类 <code><a href=\"observation/AbstractObservationVectorStore.html\" title=\"class in org.springframework.ai.vectorstore.observation\">AbstractObservationVectorStore</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>documents</code> - the documents to add",
+      "translation": "<code>documents</code> - 要添加的文档",
+      "count": 1
+    },
+    {
+      "source": "<code>idList</code> - the list of document IDs to delete",
+      "translation": "<code>idList</code> - 要删除的文档 ID 列表",
+      "count": 1
+    },
+    {
+      "source": "<code>filterExpression</code> - Filter expression to identify documents to delete",
+      "translation": "<code>filterExpression</code> - 用于标识要删除的文档的过滤表达式",
+      "count": 1
+    },
+    {
+      "source": "<code>request</code> - the search request",
+      "translation": "<code>request</code> - 搜索请求",
+      "count": 1
+    },
+    {
+      "source": "<code>file</code> - the file to save the vector store content",
+      "translation": "<code>file</code> - 用于保存向量存储内容的文件",
+      "count": 1
+    },
+    {
+      "source": "<code>file</code> - the file to load the vector store content",
+      "translation": "<code>file</code> - 用于加载向量存储内容的文件",
+      "count": 1
+    },
+    {
+      "source": "<code>resource</code> - the resource to load the vector store content",
+      "translation": "<code>resource</code> - 用于加载向量存储内容的资源",
+      "count": 1
+    },
+    {
+      "source": "<code>operationName</code> - the operation name",
+      "translation": "<code>operationName</code> - 操作名称",
+      "count": 1
+    },
+    {
+      "source": "Raphael Yu, Dingmeng Xue, Mark Pollack, Christian Tzolov, Sebastien Deleuze, Ilayaperumal Gopinathan, Thomas Vitale, Jemin Huh, David Yu",
+      "translation": "Raphael Yu，薛定谔，马克·波拉克，克里斯蒂安·茨洛夫，塞巴斯蒂安·德洛兹，伊拉亚佩鲁马·戈皮纳坦，托马斯·维塔莱，金敏，大卫·尤",
+      "count": 1
+    },
+    {
+      "source": "the SimpleVectorStore builder.",
+      "translation": "SimpleVectorStore 构建器。",
+      "count": 1
+    },
+    {
+      "source": "the list of documents that match the query request conditions",
+      "translation": "与查询请求条件匹配的文件列表",
+      "count": 1
+    },
+    {
+      "source": "the observation context builder",
+      "translation": "观察上下文构建器",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    },
+    {
+      "source": "A simple, in-memory implementation of the <a href=\"https://docs.spring.io/spring-ai/reference/api/vectordbs.html#_understanding_vectors\">VectorStore</a>\ninterface.",
+      "translation": "一个简单且基于内存的<a href=\"https://docs.spring.io/spring-ai/reference/api/vectordbs.html#_understanding_vectors\">VectorStore</a>接口实现。",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "created_at": "2026-06-15 08:16:07",
+  "updated_at": "2026-06-15 08:16:07",
+  "stats": {
+    "total_entries": 4,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 5,
+    "entries_with_hits": 4,
+    "entries_without_hits": 0,
+    "hit_rate": 1.25,
+    "usage_percentage": 0.00039999999999999996
+  },
+  "items": [
+    {
+      "source": "Initializes MongoDB indices after application context refresh.",
+      "translation": "在应用程序上下文刷新后初始化 MongoDB 索引。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "Class responsible for creating proper MongoDB indices for the ChatMemory. Creates a\nmain index on the conversationId and timestamp fields, and a TTL index on the timestamp\nfield if the TTL is set in properties.",
+      "translation": "负责为 ChatMemory 创建适当的 MongoDB 索引的类。它会在 conversationId 和 timestamp 字段上创建主索引，并在属性中设置了 TTL 时，在 timestamp 字段上创建 TTL 索引。",
+      "count": 1
+    },
+    {
+      "source": "Łukasz Jernaś",
+      "translation": "Łukasz Jernaś",
+      "count": 1
+    }
+  ]
+}

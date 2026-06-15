@@ -1,0 +1,156 @@
+{
+  "created_at": "2026-06-15 08:22:16",
+  "updated_at": "2026-06-15 08:22:16",
+  "stats": {
+    "total_entries": 28,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 40,
+    "entries_with_hits": 28,
+    "entries_without_hits": 0,
+    "hit_rate": 1.4285714285714286,
+    "usage_percentage": 0.0028
+  },
+  "items": [
+    {
+      "source": "This builder instance for method chaining",
+      "translation": "此构建器实例用于方法链式调用。",
+      "count": 5
+    },
+    {
+      "source": "Sets the base URL for the server transport.",
+      "translation": "设置服务器传输的基础 URL。",
+      "count": 2
+    },
+    {
+      "source": "Builds a new instance of WebMvcSseServerTransportProvider with the configured\nsettings.",
+      "translation": "使用配置的设置构建一个新的 WebMvcSseServerTransportProvider 实例。",
+      "count": 2
+    },
+    {
+      "source": "Sets the JSON object mapper to use for message serialization/deserialization.",
+      "translation": "设置用于消息序列化和反序列化的 JSON 对象映射器。",
+      "count": 2
+    },
+    {
+      "source": "Sets the interval for keep-alive pings.",
+      "translation": "设置保活心跳包的间隔时间。",
+      "count": 2
+    },
+    {
+      "source": "Sets the endpoint path where clients will send their messages.",
+      "translation": "设置客户端发送消息的端点路径。",
+      "count": 2
+    },
+    {
+      "source": "Sets the security validator for validating HTTP requests.",
+      "translation": "设置用于验证 HTTP 请求的安全验证器。",
+      "count": 2
+    },
+    {
+      "source": "Sets the endpoint path where clients will establish SSE connections.",
+      "translation": "设置客户端建立 SSE 连接的端点路径。",
+      "count": 2
+    },
+    {
+      "source": "this builder instance",
+      "translation": "此构建器实例",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "If not specified, the default value of <a href=\"WebMvcSseServerTransportProvider.html#DEFAULT_SSE_ENDPOINT\"><code>WebMvcSseServerTransportProvider.DEFAULT_SSE_ENDPOINT</code></a> will be\nused.",
+      "translation": "如果未指定，将使用<a href=\"WebMvcSseServerTransportProvider.html#DEFAULT_SSE_ENDPOINT\"><code>WebMvcSseServerTransportProvider.DEFAULT_SSE_ENDPOINT</code></a>的默认值。",
+      "count": 1
+    },
+    {
+      "source": "This builder provides a fluent API for configuring and creating instances of\nWebMvcSseServerTransportProvider with custom settings.",
+      "translation": "该构建器提供了一个流式 API，用于使用自定义配置创建和实例化 WebMvcSseServerTransportProvider。",
+      "count": 1
+    },
+    {
+      "source": "If not specified, keep-alive pings will be disabled.",
+      "translation": "若未指定，则禁用 keepalive 探测。",
+      "count": 1
+    },
+    {
+      "source": "Sets the context extractor that allows providing the MCP feature\nimplementations to inspect HTTP transport level metadata that was present at\nHTTP request processing time.",
+      "translation": "设置上下文提取器，允许向 MCP 功能实现提供在 HTTP 请求处理期间存在的 HTTP 传输层元数据以供检查。",
+      "count": 1
+    },
+    {
+      "source": "Sets the context extractor that allows providing the MCP feature\nimplementations to inspect HTTP transport level metadata that was present at\nHTTP request processing time. This allows extracting custom headers and other\nuseful data for use during execution later on in the process.",
+      "translation": "设置上下文提取器，允许向 MCP 功能实现提供在 HTTP 请求处理期间存在的 HTTP 传输层元数据。这使得可以在后续执行过程中提取自定义标头和其他有用的数据。",
+      "count": 1
+    },
+    {
+      "source": "<code>contextExtractor</code> - The contextExtractor to fill in a\n<code>McpTransportContext</code>.",
+      "translation": "<code>contextExtractor</code> - 用于填充 <code>McpTransportContext</code> 的 contextExtractor。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if contextExtractor is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果 contextExtractor 为 null",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if securityValidator is null",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果 securityValidator 为 null",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html\" title=\"class or interface in java.lang\">IllegalStateException</a></code> - if jsonMapper or messageEndpoint is not set",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html\" title=\"class or interface in java.lang\">IllegalStateException</a></code> - 如果未设置 jsonMapper 或 messageEndpoint",
+      "count": 1
+    },
+    {
+      "source": "<code>jsonMapper</code> - The object mapper to use",
+      "translation": "<code>jsonMapper</code> - 要使用的对象映射器",
+      "count": 1
+    },
+    {
+      "source": "<code>baseUrl</code> - The base URL to use",
+      "translation": "<code>baseUrl</code> - 要使用的基地址",
+      "count": 1
+    },
+    {
+      "source": "<code>messageEndpoint</code> - The message endpoint path",
+      "translation": "<code>messageEndpoint</code> - 消息端点路径",
+      "count": 1
+    },
+    {
+      "source": "<code>sseEndpoint</code> - The SSE endpoint path",
+      "translation": "<sseEndpoint> - SSE 端点路径",
+      "count": 1
+    },
+    {
+      "source": "<code>keepAliveInterval</code> - The interval duration for keep-alive pings",
+      "translation": "<code>keepAliveInterval</code> - 保持活动心跳包的间隔时长",
+      "count": 1
+    },
+    {
+      "source": "<code>securityValidator</code> - The security validator to use. Must not be null.",
+      "translation": "<code>securityValidator</code> - 要使用的安全验证器，不能为 null。",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov, Alexandros Pappas",
+      "translation": "克里斯蒂安·茨洛夫，亚历山德罗斯·帕帕斯",
+      "count": 1
+    },
+    {
+      "source": "A new WebMvcSseServerTransportProvider instance",
+      "translation": "一个新的 WebMvcSseServerTransportProvider 实例",
+      "count": 1
+    },
+    {
+      "source": "Builder for creating instances of WebMvcSseServerTransportProvider.",
+      "translation": "用于创建 WebMvcSseServerTransportProvider 实例的构建器。",
+      "count": 1
+    }
+  ]
+}

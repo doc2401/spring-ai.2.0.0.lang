@@ -1,0 +1,121 @@
+{
+  "created_at": "2026-06-15 07:29:26",
+  "updated_at": "2026-06-15 07:29:26",
+  "stats": {
+    "total_entries": 21,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 23,
+    "entries_with_hits": 21,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0952380952380953,
+    "usage_percentage": 0.0021
+  },
+  "items": [
+    {
+      "source": "Constructs a TokenCountBatchingStrategy with the specified parameters.",
+      "translation": "使用指定参数构建一个 TokenCountBatchingStrategy。",
+      "count": 2
+    },
+    {
+      "source": "<code>reservePercentage</code> - the percentage of tokens to reserve from the max input\ntoken count to create a buffer.",
+      "translation": "`reservePercentage` - 从最大输入 token 数量中预留的百分比，用于创建缓冲区。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "EmbeddingModel implementations can call this method to optimize embedding tokens.\nThe incoming collection of <a href=\"../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a>s are split into sub-batches. It is\nimportant to preserve the order of the list of <a href=\"../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a>s when batching as\nthey are mapped to their corresponding embeddings by their order.",
+      "translation": "EmbeddingModel 实现可以调用此方法来优化嵌入 token。传入的 <a href=\"../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a> 集合会被拆分为子批次。在批处理时，保持 <a href=\"../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a> 列表的顺序非常重要，因为它们将按顺序映射到对应的嵌入中。",
+      "count": 1
+    },
+    {
+      "source": "Token count based strategy implementation for <a href=\"BatchingStrategy.html\" title=\"interface in org.springframework.ai.embedding\"><code>BatchingStrategy</code></a>. Using openai\nmax input token as the default: <a href=\"https://platform.openai.com/docs/guides/embeddings#embedding-models\">embedding-models</a>\n\nThis strategy incorporates a reserve percentage to provide a buffer for potential\noverhead or unexpected increases in token count during processing. The actual max input\ntoken count used is calculated as: actualMaxInputTokenCount =\noriginalMaxInputTokenCount * (1 - RESERVE_PERCENTAGE)\n\nFor example, with the default reserve percentage of 10% (0.1) and the default max input\ntoken count of 8191, the actual max input token count used will be 7371.\n\nThe strategy batches documents based on their token counts, ensuring that each batch\ndoes not exceed the calculated max input token count.",
+      "translation": "针对<a href=\"BatchingStrategy.html\" title=\"interface in org.springframework.ai.embedding\"><code>BatchingStrategy</code></a>实现的基于令牌计数的策略。默认使用 OpenAI 的<a href=\"https://platform.openai.com/docs/guides/embeddings#embedding-models\">embedding-models</a>中的最大输入令牌数：\n\n该策略包含一个保留百分比，以在潜在的处理开销或令牌计数意外增加时提供缓冲。实际使用的最大输入令牌数计算方式如下：actualMaxInputTokenCount = originalMaxInputTokenCount * (1 - RESERVE_PERCENTAGE)。\n\n例如，使用默认的 10%（0.1）保留百分比和默认的 8191 个最大输入令牌数，实际使用的最大输入令牌数将为 7371。\n\n该策略根据文档的令牌计数对文档进行分批处理，确保每个批次不超过计算出的最大输入令牌数。",
+      "count": 1
+    },
+    {
+      "source": "<span class=\"description-from-type-label\">Description copied from interface: <code><a href=\"BatchingStrategy.html#batch(java.util.List)\">BatchingStrategy</a></code></span>",
+      "translation": "<span class=\"description-from-type-label\">描述从接口复制：<code><a href=\"BatchingStrategy.html#batch(java.util.List)\">BatchingStrategy</a></code></span>",
+      "count": 1
+    },
+    {
+      "source": "EmbeddingModel implementations can call this method to optimize embedding tokens.",
+      "translation": "EmbeddingModel 实现可以调用此方法来优化嵌入令牌。",
+      "count": 1
+    },
+    {
+      "source": "<code><a href=\"BatchingStrategy.html#batch(java.util.List)\">batch</a></code> in interface <code><a href=\"BatchingStrategy.html\" title=\"interface in org.springframework.ai.embedding\">BatchingStrategy</a></code>",
+      "translation": "<code><a href=\"BatchingStrategy.html#batch(java.util.List)\">batch</a></code> 接口 <code><a href=\"BatchingStrategy.html\" title=\"interface in org.springframework.ai.embedding\">BatchingStrategy</a></code> 中",
+      "count": 1
+    },
+    {
+      "source": "<code>contentFormatter</code> - the <a href=\"../document/ContentFormatter.html\" title=\"interface in org.springframework.ai.document\"><code>ContentFormatter</code></a> to be used for formatting\ncontent.",
+      "translation": "<code>contentFormatter</code> - 用于格式化内容的<a href=\"../document/ContentFormatter.html\" title=\"org.springframework.ai.document 中的接口\"><code>ContentFormatter</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "<code>metadataMode</code> - The <a href=\"../document/MetadataMode.html\" title=\"enum class in org.springframework.ai.document\"><code>MetadataMode</code></a> to be used for handling metadata.",
+      "translation": "<code>metadataMode</code> - 用于处理元数据的<a href=\"../document/MetadataMode.html\" title=\"org.springframework.ai.document 中的枚举类\"><code>MetadataMode</code></a>。",
+      "count": 1
+    },
+    {
+      "source": "<code>encodingType</code> - The <code>EncodingType</code> to be used for token counting.",
+      "translation": "<code>encodingType</code> - 用于标记计数的 <code>EncodingType</code>。",
+      "count": 1
+    },
+    {
+      "source": "a list of sub-batches that contain <a href=\"../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a>s.",
+      "translation": "包含<a href=\"../document/Document.html\" title=\"org.springframework.ai.document 中的类\"><code>Document</code></a>的子批次列表。",
+      "count": 1
+    },
+    {
+      "source": "<code>maxInputTokenCount</code> - upper limit for input tokens",
+      "translation": "<code>maxInputTokenCount</code> - 输入 token 的上限",
+      "count": 1
+    },
+    {
+      "source": "<code>maxInputTokenCount</code> - The initial upper limit for input tokens.",
+      "translation": "<code>maxInputTokenCount</code> - 输入令牌的初始上限。",
+      "count": 1
+    },
+    {
+      "source": "<code>reservePercentage</code> - The percentage of tokens to reserve from the max input\ntoken count. This creates a buffer for potential token count increases during\nprocessing.",
+      "translation": "`reservePercentage` - 从最大输入令牌数量中预留的百分比。这为处理过程中可能增加的令牌数量创建了缓冲空间。",
+      "count": 1
+    },
+    {
+      "source": "<code>tokenCountEstimator</code> - the TokenCountEstimator to be used for estimating token\ncounts.",
+      "translation": "<code>tokenCountEstimator</code> - 用于估算 token 数量的 TokenCountEstimator。",
+      "count": 1
+    },
+    {
+      "source": "<code>maxInputTokenCount</code> - the initial upper limit for input tokens.",
+      "translation": "<code>maxInputTokenCount</code> - 输入令牌的初始上限。",
+      "count": 1
+    },
+    {
+      "source": "<code>contentFormatter</code> - the ContentFormatter to be used for formatting content.",
+      "translation": "<code>contentFormatter</code> - 用于格式化内容的 ContentFormatter。",
+      "count": 1
+    },
+    {
+      "source": "<code>metadataMode</code> - the MetadataMode to be used for handling metadata.",
+      "translation": "<code>metadataMode</code> - 用于处理元数据的元数据模式。",
+      "count": 1
+    },
+    {
+      "source": "<code>documents</code> - to batch",
+      "translation": "<code>documents</code> - 批量处理",
+      "count": 1
+    },
+    {
+      "source": "Soby Chacko, Mark Pollack, Laura Trotta, Jihoon Kim, Yanming Zhou",
+      "translation": "Soby Chacko，Mark Pollack，Laura Trotta，Jihoon Kim，Yanming Zhou",
+      "count": 1
+    }
+  ]
+}

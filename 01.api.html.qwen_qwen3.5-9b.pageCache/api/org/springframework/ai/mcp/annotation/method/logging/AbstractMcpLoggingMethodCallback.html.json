@@ -1,0 +1,146 @@
+{
+  "created_at": "2026-06-15 08:30:45",
+  "updated_at": "2026-06-15 08:30:45",
+  "stats": {
+    "total_entries": 26,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 31,
+    "entries_with_hits": 26,
+    "entries_without_hits": 0,
+    "hit_rate": 1.1923076923076923,
+    "usage_percentage": 0.0026
+  },
+  "items": [
+    {
+      "source": "<code>method</code> - The method to validate",
+      "translation": "<code>method</code> - 待验证的方法",
+      "count": 3
+    },
+    {
+      "source": "Constructor for AbstractMcpLoggingConsumerMethodCallback.",
+      "translation": "AbstractMcpLoggingConsumerMethodCallback 的构造函数。",
+      "count": 2
+    },
+    {
+      "source": "Builds the arguments array for invoking the method.",
+      "translation": "构建用于调用方法的参数数组。",
+      "count": 2
+    },
+    {
+      "source": "Validates that the method signature is compatible with the logging consumer\ncallback.",
+      "translation": "验证方法签名是否与日志消费者回调兼容。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "This method checks that the return type is valid and that the parameters match the\nexpected pattern.",
+      "translation": "该方法会检查返回类型是否有效，并验证参数是否符合预期模式。",
+      "count": 1
+    },
+    {
+      "source": "This method constructs an array of arguments based on the method's parameter types\nand the available values (exchange, notification).",
+      "translation": "该方法根据方法的参数类型和可用值（exchange、notification）构建一个参数数组。",
+      "count": 1
+    },
+    {
+      "source": "Abstract base class for creating callbacks around logging consumer methods.\n\nThis class provides common functionality for both synchronous and asynchronous logging\nconsumer method callbacks. It contains shared logic for method validation, argument\nbuilding, and other common operations.",
+      "translation": "用于在日志消费者方法周围创建回调的抽象基类。\n\n该类为同步和异步日志消费者方法回调提供通用功能。它包含方法验证、参数构建及其他常见操作的共享逻辑。",
+      "count": 1
+    },
+    {
+      "source": "Abstract builder for creating McpLoggingConsumerMethodCallback instances.",
+      "translation": "用于创建 McpLoggingConsumerMethodCallback 实例的抽象构建器。",
+      "count": 1
+    },
+    {
+      "source": "Exception thrown when there is an error invoking a logging consumer method.",
+      "translation": "调用日志消费者方法时发生错误，抛出异常。",
+      "count": 1
+    },
+    {
+      "source": "Validates method parameters.",
+      "translation": "验证方法参数。",
+      "count": 1
+    },
+    {
+      "source": "Validates that the method return type is compatible with the logging consumer\ncallback.",
+      "translation": "验证方法返回类型是否与日志消费者回调兼容。",
+      "count": 1
+    },
+    {
+      "source": "Validates that the method return type is compatible with the logging consumer\ncallback. This method should be implemented by subclasses to handle specific return\ntype validation.",
+      "translation": "验证方法返回类型是否与日志消费者回调兼容。此方法应由子类实现，以处理特定的返回类型验证。",
+      "count": 1
+    },
+    {
+      "source": "Validates method parameters. This method provides common validation logic and\ndelegates exchange type checking to subclasses.",
+      "translation": "验证方法参数。此方法提供通用的验证逻辑，并将交换类型检查委托给子类。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if the method signature is not compatible",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果方法签名不兼容",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if the return type is not compatible",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果返回类型不兼容",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"class or interface in java.lang\">IllegalArgumentException</a></code> - if the parameters are not compatible",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html\" title=\"java.lang 中的类或接口\">IllegalArgumentException</a></code> - 如果参数不兼容。",
+      "count": 1
+    },
+    {
+      "source": "<code>method</code> - The method to create a callback for",
+      "translation": "<code>method</code> - 用于创建回调的方法",
+      "count": 1
+    },
+    {
+      "source": "<code>bean</code> - The bean instance that contains the method",
+      "translation": "<code>bean</code> - 包含该方法的 Bean 实例",
+      "count": 1
+    },
+    {
+      "source": "<code>method</code> - The method to build arguments for",
+      "translation": "<code>method</code> - 用于构建参数的方法",
+      "count": 1
+    },
+    {
+      "source": "<code>exchange</code> - The server exchange",
+      "translation": "<code>exchange</code> - 服务器交换机",
+      "count": 1
+    },
+    {
+      "source": "<code>notification</code> - The logging message notification",
+      "translation": "<code>notification</code> - 日志消息通知",
+      "count": 1
+    },
+    {
+      "source": "Christian Tzolov",
+      "translation": "克里斯蒂安·茨洛夫",
+      "count": 1
+    },
+    {
+      "source": "An array of arguments for the method invocation",
+      "translation": "方法调用的参数数组",
+      "count": 1
+    },
+    {
+      "source": "Nested Class Summary",
+      "translation": "嵌套类摘要",
+      "count": 1
+    },
+    {
+      "source": "Field Details",
+      "translation": "字段详情",
+      "count": 1
+    }
+  ]
+}

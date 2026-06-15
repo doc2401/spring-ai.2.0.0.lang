@@ -1,0 +1,71 @@
+{
+  "created_at": "2026-06-15 08:47:43",
+  "updated_at": "2026-06-15 08:47:43",
+  "stats": {
+    "total_entries": 11,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 11,
+    "entries_with_hits": 11,
+    "entries_without_hits": 0,
+    "hit_rate": 1.0,
+    "usage_percentage": 0.0011
+  },
+  "items": [
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "<b>Not enabled by default</b> because native structured output support varies\nacross models and providers. Known limitations:",
+      "translation": "<b>默认未启用</b>，因为原生结构化输出支持因模型和提供商而异。已知限制：",
+      "count": 1
+    },
+    {
+      "source": "Configures optional behaviour for <code>entity(...)</code> calls. Options may be\ncombined.",
+      "translation": "配置 `entity(...)` 调用的可选行为。选项可以组合使用。",
+      "count": 1
+    },
+    {
+      "source": "Validates the model's JSON response against the entity schema and retries with\nthe error feedback on failure, up to <code>maxRepeatAttempts</code> times (default:\n3).",
+      "translation": "验证模型对实体模式的 JSON 响应，并在失败时根据错误反馈重试，最多重试 <code>maxRepeatAttempts</code> 次（默认值为 3）。",
+      "count": 1
+    },
+    {
+      "source": "Validates the model's JSON response against the entity schema and retries with\nthe error feedback on failure, up to <code>maxRepeatAttempts</code> times (default:\n3). Streaming is not supported.",
+      "translation": "验证模型对实体模式的 JSON 响应，若失败则根据错误反馈重试，最多重试 <code>maxRepeatAttempts</code> 次（默认值为 3）。不支持流式传输。",
+      "count": 1
+    },
+    {
+      "source": "Delivers the JSON schema to the AI provider as an API-level constraint rather\nthan appending it as prompt text.",
+      "translation": "将 JSON Schema 作为 API 级别的约束传递给 AI 提供商，而不是将其附加为提示文本。",
+      "count": 1
+    },
+    {
+      "source": "<b>Ollama</b>: models with a built-in reasoning/thinking mode (e.g.\n<code>qwen3:8b</code>, <code>qwen3.5:9b</code>) may return plain text instead of JSON,\ncausing deserialization failures. Use <a href=\"#validateSchema()\"><code>validateSchema()</code></a> alongside this\noption for automatic retry, or switch to a non-reasoning model such as\n<code>llama3.1:latest</code>.",
+      "translation": "<b>Ollama</b>：内置推理/思考模式（例如 <code>qwen3:8b</code>、<code>qwen3.5:9b</code>）的模型可能会返回纯文本而非 JSON，从而导致反序列化失败。请配合此选项使用 <a href=\"#validateSchema()\"><code>validateSchema()</code></a> 以实现自动重试，或切换到非推理模型（如 <code>llama3.1:latest</code>）。",
+      "count": 1
+    },
+    {
+      "source": "<b>OpenAI</b>: the Structured Outputs API does not accept a top-level JSON\narray schema. Requesting a <code>List&lt;T&gt;</code> with this option enabled will fail.\nWrap the list in a container record or use the default prompt-based approach\ninstead.",
+      "translation": "<b>OpenAI</b>：结构化输出 API 不接受顶层 JSON 数组模式。启用此选项时请求 <code>List&lt;T&gt;</code> 将会失败。请将列表包装在容器记录中，或者改用默认的基于提示的方法。",
+      "count": 1
+    },
+    {
+      "source": "Mark Pollack, Christian Tzolov, Josh Long, Arjen Poutsma, Thomas Vitale",
+      "translation": "Mark Pollack，Christian Tzolov，Josh Long，Arjen Poutsma，Thomas Vitale",
+      "count": 1
+    },
+    {
+      "source": "Delivers the JSON schema to the AI provider as an API-level constraint rather\nthan appending it as prompt text. Has no effect if the underlying\n<a href=\"../model/ChatModel.html\" title=\"interface in org.springframework.ai.chat.model\"><code>ChatModel</code></a> does not support\n<a href=\"../../model/tool/StructuredOutputChatOptions.html\" title=\"interface in org.springframework.ai.model.tool\"><code>StructuredOutputChatOptions</code></a>.",
+      "translation": "将 JSON 架构作为 API 级别的约束传递给 AI 提供商，而不是将其附加为提示文本。如果底层的<a href=\"../model/ChatModel.html\" title=\"interface in org.springframework.ai.chat.model\"><code>ChatModel</code></a>不支持<a href=\"../../model/tool/StructuredOutputChatOptions.html\" title=\"interface in org.springframework.ai.model.tool\"><code>StructuredOutputChatOptions</code></a>，则此设置无效。",
+      "count": 1
+    },
+    {
+      "source": "<ul>\n<li><b>Ollama</b>：内置推理/思考模式（例如 <code>qwen3:8b</code>、<code>qwen3.5:9b</code>）的模型可能会返回纯文本而非 JSON，从而导致反序列化失败。请配合此选项使用 <a href=\"#validateSchema()\"><code>validateSchema()</code></a> 以实现自动重试，或切换到非推理模型（如 <code>llama3.1:latest</code>）。</li>\n<li><b>OpenAI</b>：结构化输出 API 不接受顶层 JSON 数组模式。启用此选项时请求 <code>List&lt;T&gt;</code> 将会失败。请将列表包装在容器记录中，或者改用默认的基于提示的方法。</li>\n</ul>",
+      "translation": "<ul>\n<li><b>Ollama</b>：内置推理/思考模式（例如 <code>qwen3:8b</code>、<code>qwen3.5:9b</code>）的模型可能会返回纯文本而非 JSON，从而导致反序列化失败。请配合此选项使用 <a href=\"#validateSchema()\"><code>validateSchema()</code></a> 以实现自动重试，或切换到非推理模型（如 <code>llama3.1:latest</code>）。</li>\n<li><b>OpenAI</b>：结构化输出 API 不支持顶层 JSON 数组模式。启用此选项时请求 <code>List&lt;T&gt;</code> 将会失败。请将列表包装在容器记录中，或者改用默认的基于提示的方法。</li>\n</ul>",
+      "count": 1
+    }
+  ]
+}

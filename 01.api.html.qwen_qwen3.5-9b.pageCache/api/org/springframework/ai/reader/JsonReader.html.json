@@ -1,0 +1,56 @@
+{
+  "created_at": "2026-06-15 07:34:25",
+  "updated_at": "2026-06-15 07:34:25",
+  "stats": {
+    "total_entries": 8,
+    "maxsize": 1000000,
+    "cache_full": false,
+    "total_hits": 9,
+    "entries_with_hits": 8,
+    "entries_without_hits": 0,
+    "hit_rate": 1.125,
+    "usage_percentage": 0.0007999999999999999
+  },
+  "items": [
+    {
+      "source": "Retrieves documents from the JSON resource using a JSON Pointer.",
+      "translation": "使用 JSON 指针从 JSON 资源中检索文档。",
+      "count": 2
+    },
+    {
+      "source": "<small>Copyright © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>. All rights reserved.</small>",
+      "translation": "<small>版权所有 © 2026 <a href=\"https://spring.io\">Broadcom Inc.</a>。保留所有权利。</small>",
+      "count": 1
+    },
+    {
+      "source": "A class that reads JSON documents and converts them into a list of <a href=\"../document/Document.html\" title=\"class in org.springframework.ai.document\"><code>Document</code></a>\nobjects.",
+      "translation": "一个用于读取 JSON 文档并将其转换为 <a href=\"../document/Document.html\" title=\"org.springframework.ai.document 中的类\"><code>Document</code></a>对象列表的类。",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html#get()\" title=\"class or interface in java.util.function\">get</a></code> in interface <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html\" title=\"class or interface in java.util.function\">Supplier</a>&lt;<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"class or interface in java.util\">List</a>&lt;<a href=\"../document/Document.html\" title=\"class in org.springframework.ai.document\">Document</a>&gt;&gt;</code>",
+      "translation": "接口 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html\" title=\"类或 java.util.function 中的接口\">Supplier</a>&lt;<a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html\" title=\"类或 java.util 中的接口\">List</a>&lt;<a href=\"../document/Document.html\" title=\"org.springframework.ai.document 中的类\">Document</a>&gt;&gt;</code> 中的 <code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html#get()\" title=\"java.util.function 中的类或接口\">get</a></code>",
+      "count": 1
+    },
+    {
+      "source": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/RuntimeException.html\" title=\"class or interface in java.lang\">RuntimeException</a></code> - if the JSON cannot be parsed or the pointer is invalid",
+      "translation": "<code><a class=\"external-link\" href=\"https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/RuntimeException.html\" title=\"java.lang 中的类或接口\">RuntimeException</a></code> - 如果无法解析 JSON 或指针无效",
+      "count": 1
+    },
+    {
+      "source": "<code>pointer</code> - A JSON Pointer string (RFC 6901) to locate the desired element",
+      "translation": "<code>pointer</code> - 用于定位目标元素的 JSON Pointer 字符串（RFC 6901）",
+      "count": 1
+    },
+    {
+      "source": "Mark Pollack, Christian Tzolov, rivkode rivkode",
+      "translation": "马克·波拉克，克里斯蒂安·茨佐洛夫，rivkode rivkode",
+      "count": 1
+    },
+    {
+      "source": "A list of Documents parsed from the located JSON element",
+      "translation": "从定位到的 JSON 元素中解析出的文档列表",
+      "count": 1
+    }
+  ]
+}
